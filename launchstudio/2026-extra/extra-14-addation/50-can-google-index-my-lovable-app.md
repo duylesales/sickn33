@@ -17,11 +17,26 @@ Target Persona: AI-Native Founder (Non-Technical)
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2028-02-27",
   "inLanguage": "en",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/can-google-index-my-lovable-app" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/can-google-index-my-lovable-app" },
+  "citation": [
+    { "@type": "CreativeWork", "name": "Google: JavaScript SEO basics", "url": "https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics" },
+    { "@type": "CreativeWork", "name": "Google: Creating helpful, reliable, people-first content", "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content" },
+    { "@type": "CreativeWork", "name": "Google: Introduction to structured data", "url": "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data" },
+    { "@type": "CreativeWork", "name": "Google SEO Starter Guide", "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide" },
+    { "@type": "CreativeWork", "name": "web.dev: Web Vitals", "url": "https://web.dev/articles/vitals" }
+  ]
 }
 </script>
 
 **Short answer:** yes, Google can index a Lovable app, because Google renders JavaScript. But it often happens slower and less completely than for server-rendered pages, every route tends to share the same title and description unless you change that, and many other crawlers, including several AI assistants' crawlers, read little or no JavaScript. For pages that need to rank or be cited, give them per-page metadata, consider prerendering, or put them on a separate server-rendered marketing site.
+
+## Key Takeaways
+
+- **Google can index Lovable apps,** because it renders JavaScript, but rendering may be deferred and every route shares the same title unless you change it.
+- **Many AI crawlers execute little or no JavaScript,** so client-rendered content may be invisible to the assistants you want to be cited by.
+- **Fix the basics first:** per-route titles and descriptions, sitemap, robots.txt, canonical URLs and redirects from preview domains.
+- **For pages that must rank, use prerendering or a server-rendered marketing site,** often on the main domain with the app on a subdomain.
+- **Structured data and helpful, specific content** make your pages easier for both search engines and AI assistants to understand, in line with Google's guidance on helpful content.
 
 ## Why Lovable Apps Are Harder to Index
 
@@ -62,6 +77,87 @@ Many SaaS companies keep the marketing site and the app separate: `yourapp.nl` o
 ## AI Search Visibility
 
 AI assistants cite pages they can read. Clear server-rendered or prerendered content, structured data (Organization, Product, FAQPage), specific facts such as prices and locations, and a stable domain make your pages easier to understand and cite.
+
+## How Google Processes JavaScript Sites
+
+Google's documentation on JavaScript SEO describes three phases: crawling, rendering and indexing. Googlebot fetches the HTML, queues the page for rendering in a headless browser that executes JavaScript, and indexes the rendered result. Rendering can happen later than crawling, depending on resources. For a client-rendered app, the initial HTML contains little more than a root element and script tags; meaningful content appears only after rendering. Google states that server-side rendering or prerendering is often a more reliable approach for content that must be indexed promptly.
+
+## What Google Wants From Content
+
+Google's guidance on creating helpful, reliable, people-first content emphasises original information, expertise, clear authorship and satisfying the searcher's need. For SaaS founders, that means pages that answer specific questions your customers ask, with concrete details: prices, steps, examples, comparisons and evidence. Thin pages generated in bulk, or pages that exist only to rank, perform poorly over time. A focused set of genuinely useful pages beats a large set of generic ones.
+
+## Structured Data That Helps
+
+Structured data in JSON-LD format tells search engines what a page represents. Useful types for SaaS and service businesses include Organization (your company, logo, contact details, profiles), SoftwareApplication or Product (your app, pricing, ratings where genuine), FAQPage for genuine FAQs, Article for blog posts and BreadcrumbList for site structure. Google's structured data documentation explains requirements and eligibility for rich results. Structured data does not guarantee rich results, but it reduces ambiguity, which also helps AI systems interpret your pages.
+
+## Generative Engine Optimisation (GEO) Basics
+
+AI assistants increasingly answer questions directly, citing sources. To be cited, your pages need to be readable without JavaScript, specific and trustworthy. Practical habits:
+
+- Put a direct answer to the page's main question in the first paragraph
+- Use clear headings that match how people phrase questions
+- Include concrete facts: prices, timelines, locations, steps, comparisons
+- Show who you are: company details, team, experience, contact information
+- Keep information consistent across your site and external profiles
+
+These habits overlap heavily with good SEO; they simply matter more when an AI is summarising rather than a person skimming.
+
+## Technical Checklist for a Lovable App's Public Pages
+
+| Item | Why it matters |
+| --- | --- |
+| Unique title and meta description per route | Distinct search results and link previews |
+| Canonical URL on your production domain | Avoids duplicate content from preview domains |
+| `sitemap.xml` listing public pages | Helps discovery |
+| `robots.txt` blocking app-only paths | Keeps private routes out of search |
+| Prerendered or server-rendered public pages | Content visible to all crawlers |
+| Open Graph and social tags | Good previews on LinkedIn, WhatsApp and social media |
+| Fast loading on mobile | Page experience and conversion |
+| Structured data | Clear meaning for search engines and AI |
+
+## Measuring Progress
+
+Use Google Search Console to see which pages are indexed, which queries bring impressions and clicks, and how Google renders individual URLs through the URL inspection tool. Check indexing a few weeks after changes, and review queries monthly to find questions you could answer better. For AI visibility, periodically ask major assistants the questions your customers ask and note whether and how your pages are cited.
+
+## Common Mistakes
+
+- Leaving the Lovable preview domain indexable alongside the real domain
+- Blocking JavaScript or CSS files in robots.txt, which prevents proper rendering
+- Putting important content only inside images or interactive widgets
+- Creating dozens of near-identical landing pages for slight keyword variations
+- Forgetting redirects when URLs change
+
+## Prerendering in Practice
+
+Prerendering generates static HTML for chosen routes at build time. For a Lovable app built with Vite and React Router, that typically means adding a prerendering step to the build that visits each public route in a headless browser and saves the rendered HTML. The host then serves that HTML to every visitor and crawler, and the React app takes over once loaded. Prerendering suits pages whose content changes with deployments, such as features, pricing and landing pages. For frequently changing content, such as listings updated daily, rebuild on a schedule or consider server rendering.
+
+## Splitting Marketing From the App
+
+For content-led growth, many founders put the marketing site on the main domain with a CMS or a server-rendered framework, and the Lovable app on a subdomain such as `app.yourdomain.nl`. Benefits include a publishing workflow for non-developers, SEO tooling, faster public pages and a clean separation between what is public and what requires login. The cost is one more system to maintain, which is usually worthwhile once you publish regularly.
+
+## Local SEO for Dutch Businesses
+
+If your customers search locally - "physiotherapy booking Utrecht" or "rental property software Netherlands" - include clear location information on relevant pages, a consistent company name, address and contact details, and a Google Business Profile where appropriate. Write pages in Dutch for Dutch searches, with `hreflang` linking to English versions if you have them. Local relevance often matters more than general authority for early-stage businesses.
+
+## Timeline Expectations
+
+SEO is slow. After fixing technical issues, expect indexing changes within days to weeks and ranking changes over months. Publish genuinely useful pages consistently, measure in Search Console and resist chasing short-term tricks; Google's guidance warns against content made primarily to manipulate rankings.
+
+## Internal Linking and Site Structure
+
+Search engines discover and understand pages through links. Link from your homepage to key feature and pricing pages, from articles to the relevant product pages and between related articles. Use descriptive anchor text rather than "click here". A clear structure - home, features, use cases, pricing, resources, about - helps users, crawlers and AI assistants understand what you offer and how pages relate.
+
+## The Bottom Line
+
+Your Lovable app can be found, but its public pages need deliberate work: unique metadata, crawlable content, structured data and genuinely useful information. Do that for the pages that matter, keep the logged-in app focused on users, and measure progress in Search Console.
+
+## Where to Start Today
+
+Open Google Search Console, inspect your three most important public URLs and look at the rendered HTML. If titles are identical or content is missing, start with per-route metadata and prerendering for those pages before writing anything new.
+
+## Related Reading
+
+If you are planning a separate marketing site, our guide on adding a blog or marketing site to a Lovable app compares the setups in detail, and our v0 versus Lovable comparison shows when a Next.js site is the better home for public pages.
 
 ## Getting It Done
 

@@ -17,11 +17,25 @@ Target Persona: AI-Native Founder (Non-Technical)
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2028-04-13",
   "inLanguage": "en",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/prototype-vs-mvp-vs-production-app" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/prototype-vs-mvp-vs-production-app" },
+  "citation": [
+    { "@type": "CreativeWork", "name": "Eric Ries: The Lean Startup", "url": "https://theleanstartup.com/" },
+    { "@type": "CreativeWork", "name": "Veracode 2025 GenAI Code Security Report", "url": "https://www.veracode.com/resources/analyst-reports/2025-genai-code-security-report/" },
+    { "@type": "CreativeWork", "name": "Perry et al., Do Users Write More Insecure Code with AI Assistants?", "url": "https://arxiv.org/abs/2211.03622" },
+    { "@type": "CreativeWork", "name": "OWASP Top 10", "url": "https://owasp.org/www-project-top-ten/" }
+  ]
 }
 </script>
 
 **Short answer:** a prototype shows that an idea can work, usually only for its builder. An MVP (minimum viable product) is the smallest version real customers can use and pay for, to learn whether they want it. A production app is one that keeps working reliably and safely for many customers over time. AI tools have made prototypes nearly free; the expensive misunderstandings happen when a prototype is treated as an MVP, or an MVP is treated as finished production software.
+
+## Key Takeaways
+
+- **A prototype proves an idea can work; an MVP proves people will use and pay for it; a production app serves customers reliably and safely at scale.**
+- **The most common mistake is treating a prototype as an MVP,** putting real users and data on code never designed for them.
+- **An MVP must include real authentication, access control, data protection and working payments,** even if features are minimal.
+- **Moving from MVP to production adds** monitoring, backups, environments, performance work and compliance documentation.
+- **AI tools compress the prototype stage dramatically,** which makes the gap to production more visible, not smaller.
 
 ## The Three Stages Side by Side
 
@@ -53,6 +67,98 @@ What an MVP can skip: advanced roles, every integration, polished admin tools, a
 ## From MVP to Production
 
 As customers grow, add: staging and CI, automated tests on critical paths, performance work, deeper monitoring, documented operations, and processes for incidents and security reviews. This is ongoing, not a one-off.
+
+## Origins of the Terms
+
+The term minimum viable product was popularised by Eric Ries in "The Lean Startup", building on work by Frank Robinson and Steve Blank: the smallest version of a product that lets a team learn from real customers with the least effort. Crucially, "viable" means it actually works for those customers. A prototype, by contrast, is a model built to explore or demonstrate an idea, often with faked data and shortcuts. Production refers to software running for real users with the reliability, security and support they expect.
+
+## What Changes Between Stages
+
+| Aspect | Prototype | MVP | Production app |
+| --- | --- | --- | --- |
+| Users | Founder, testers, investors | Early real customers | Growing customer base |
+| Data | Fake or sample | Real, limited | Real, growing |
+| Authentication | Optional or mocked | Real, secure | Real, with recovery and MFA options |
+| Access control | Often missing | Required | Required and tested |
+| Payments | Mocked | Real, verified webhooks | Real, with dunning, invoices, tax |
+| Monitoring | None | Basic error tracking | Errors, uptime, alerts, logs |
+| Backups | None | Automatic | Automatic and restore-tested |
+| Environments | One | Staging and production | Staging, production, CI |
+
+## How AI Tools Change the Picture
+
+AI app builders can produce a polished prototype in hours, which used to take weeks. That speed is valuable for validation, but it creates a trap: the prototype looks finished, so founders invite real users. Under the surface, access control, secrets and payment handling may still be prototype-grade. Veracode's 2025 research found security flaws in around 45% of AI-generated code samples, and the Stanford study by Perry and colleagues showed AI-assisted developers were often overconfident in their code's security. The visible quality of AI output makes it more important to check the invisible parts.
+
+## What a Prototype Is For
+
+A prototype answers questions quickly. Does this flow make sense to users? Will investors understand the idea? Can this integration work at all? Is this design clear? For these purposes, shortcuts are fine: fake data, a single shared login, hardcoded values and missing error handling. The prototype has done its job when it has answered the question. Problems start only when it quietly becomes the product.
+
+## Signs Your Prototype Became a Product Without Planning
+
+Watch for these signals: real customers have accounts and enter real data; you have taken money, even once; customers rely on the app for their work; you share links with prospects without explaining it is a demo; or data from one user could, in theory, be seen by another. If any of these apply, you are running an MVP or production app, whether or not you planned to, and the requirements of those stages apply.
+
+## The Minimum in "Minimum Viable Product"
+
+"Minimum" refers to features, not quality. An MVP can have one core workflow, a simple interface and manual processes behind the scenes, but it must protect the data customers trust it with and handle money correctly. A good test: if a customer's data leaked or a payment was lost, would you be able to say you took reasonable care? Under the GDPR, Article 32 requires appropriate technical and organisational measures from the moment you process personal data, regardless of how early your product is.
+
+## Practical MVP Checklist
+
+- Authentication with real accounts, email verification and password reset
+- Access control enforced in the database or backend, tested with two users
+- Secrets kept server-side, none in the browser or repository
+- Payments confirmed through signed webhooks, not success pages
+- Automatic database backups enabled
+- Separate staging and production environments
+- Basic error tracking that alerts you
+- A privacy statement listing the services you use
+
+## From MVP to Production in Practice
+
+As customers grow, production readiness adds layers: restore-tested backups, uptime and performance monitoring, logs with retention, structured deployments through continuous integration, dunning and invoices in billing, documented incident response, processor agreements and answers to security questionnaires. These are added gradually, driven by real customer needs and risks, rather than all at once.
+
+## Common Mistakes
+
+- Inviting paying customers onto a prototype without reviewing access control
+- Polishing the interface while the backend remains prototype-grade
+- Delaying payments until "production", missing early validation
+- Treating production readiness as a single event rather than an ongoing practice
+- Assuming AI-generated code is secure because it looks professional
+
+## Where to Start Today
+
+Decide honestly which stage your app is in today, based on who uses it and what data it holds, not on how it looks. Then compare it against the checklist for that stage and fix the gaps before inviting more users.
+
+## How Investors and Customers See the Stages
+
+Investors at pre-seed often accept a prototype as evidence of vision, but expect an MVP with real users as evidence of traction. Business customers rarely care about stage labels; they care whether their data is safe and the product works. Some ask for a security overview or processing agreement before their first payment. Being honest about your stage, while showing that the essentials such as access control, backups and payments are in place, builds more trust than claiming production maturity you cannot demonstrate.
+
+## Budgeting for Each Stage
+
+Prototype costs with AI tools are mostly subscriptions and your time. Moving to a solid MVP typically requires a focused investment in the production essentials; LaunchStudio's Launch Ready engagements of €800-€3,500 cover that step for many AI-built apps. Production maturity grows with ongoing costs for monitoring, hosting, support and occasional reviews, which Launch & Grow covers at €2,500-€7,500 plus €49 per month. Planning these steps in advance avoids rushing them after a problem.
+
+## The Bottom Line
+
+Prototypes are for learning, MVPs are for real customers and production apps are for growth. Know which one you have, and make sure its foundations match the trust your users place in it.
+
+## Questions to Ask Yourself
+
+Who is using my app today, and what would they lose if it failed? Is any real personal or payment data stored? Could one user see another's data? Would I know within an hour if the app went down? Could I restore yesterday's data? Your answers place your app in a stage more accurately than any feature list, and they show which foundations to add next.
+
+## Related Reading
+
+Our guides on rebuilding versus refactoring an AI-built app, the vibe code audit checklist and LaunchStudio versus doing production yourself explain the practical next steps once you know your stage.
+
+## One Final Tip
+
+Write down the date your app first stored real customer data. From that day on, treat security, backups and privacy as requirements rather than future tasks, whatever label you give the product.
+
+## Final Thought
+
+Labels matter less than responsibilities. The moment someone trusts your app with real data or money, it deserves production-grade foundations.
+
+## Summary
+
+Name your stage honestly, then build the foundations it requires.
 
 ## Where LaunchStudio Fits
 

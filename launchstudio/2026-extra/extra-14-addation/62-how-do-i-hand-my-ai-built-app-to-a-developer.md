@@ -17,11 +17,25 @@ Target Persona: AI-Native Founder (Non-Technical)
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2028-03-10",
   "inLanguage": "en",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/how-do-i-hand-my-ai-built-app-to-a-developer" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/how-do-i-hand-my-ai-built-app-to-a-developer" },
+  "citation": [
+    { "@type": "CreativeWork", "name": "GitHub: About READMEs", "url": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes" },
+    { "@type": "CreativeWork", "name": "OWASP Secrets Management Cheat Sheet", "url": "https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html" },
+    { "@type": "CreativeWork", "name": "GDPR Article 28: Processor", "url": "https://gdpr-info.eu/art-28-gdpr/" },
+    { "@type": "CreativeWork", "name": "GitHub: About protected branches", "url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches" }
+  ]
 }
 </script>
 
 **Short answer:** before the developer starts, make sure the code is in a GitHub repository you own, collect a list of every service the app uses, write a one-page description of how the product works and what must not break, and prepare a staging environment they can safely experiment in. Grant access through their own accounts with the least privileges needed, never by sharing your passwords. Then plan the first week around understanding, not new features.
+
+## Key Takeaways
+
+- **Prepare before the developer starts:** repository in your company's GitHub, a systems list, a one-page product description, known issues and a staging environment.
+- **Grant access through individual accounts with least privilege;** never share your own logins or secret keys in chat.
+- **Plan the first week around understanding,** ending with a small fix shipped through the full process.
+- **Agree how AI tools and the developer will share the codebase,** to avoid overwriting each other's work.
+- **Good preparation prevents rewrite proposals,** which often come from undocumented code rather than bad code.
 
 ## Why Handovers of AI-Built Apps Go Wrong
 
@@ -70,6 +84,99 @@ Starting with a small fix proves the whole pipeline before anything important ch
 ## Agree on How You Will Keep Using AI Tools
 
 Decide whether you will keep prompting in Lovable or Bolt, on which branch, and which areas are off limits. Most conflicts between founders and developers in AI-built projects come from both changing the same files without coordination.
+
+## Why Onboarding Time Matters
+
+Every hour a developer spends reverse-engineering your app is an hour you pay for without new value. In AI-built codebases, that time can be substantial: logic spread across components, policies and functions, few comments and no tests. Good preparation shortens it dramatically. It also changes the developer's first impression of the codebase, which influences whether they propose targeted improvements or a full rewrite.
+
+## The Systems List in Detail
+
+For each service your app uses, record:
+
+| Field | Example |
+| --- | --- |
+| Service | Supabase |
+| Purpose | Database, authentication, storage, edge functions |
+| Environments | Staging project, production project |
+| Account owner | Company organisation, admin email |
+| Region | Frankfurt (EU) |
+| Who has access | Founder (owner), developer (staging write, production read) |
+| Secrets | Stored in edge function secrets and host settings |
+| Notes | Daily backups, PITR enabled |
+
+Repeat for hosting, domain, payments, email, analytics, error tracking and AI providers. This table answers half of a new developer's questions on day one, and doubles as your sub-processor list for GDPR purposes.
+
+## Least-Privilege Access
+
+Give developers what they need, not everything. Typical starting access: write access to the repository, full access to staging, read-only or no access to production data, test-mode access to payment providers and no access to the domain registrar. Expand access when a specific task requires it, and remove it when the engagement ends. OWASP's guidance on secrets management recommends rotating credentials when people with access leave; include that in your offboarding routine.
+
+## Contracts and Confidentiality
+
+Before granting access, have a written agreement covering intellectual property (code belongs to your company), confidentiality, data protection and handover obligations. If the developer will see personal data, a data processing agreement under Article 28 of the GDPR may be required, depending on the arrangement. Freelancers and agencies usually have standard templates; read them for IP clauses, which sometimes default to the developer retaining rights.
+
+## Explaining the Product Well
+
+Developers build better when they understand why. In your product page, describe the customer and their problem, the main user journeys in plain steps, how the business makes money and which three things must never break. Include screenshots or a short screen recording of the main flows. Ten minutes of explanation saves hours of misinterpretation.
+
+## Defining Done
+
+Agree what "done" means for each task: code merged through review, tested on staging, documentation updated, no new errors in monitoring after release. Clear definitions prevent misunderstandings about whether work is finished, which are a common source of friction between founders and developers.
+
+## Communication Rhythm
+
+A simple rhythm works for most collaborations: a short written update from the developer at the end of each working day or session, a weekly call to review progress and priorities, and a shared task list visible to both. Agree response times for urgent issues. For developers in other time zones, written updates matter even more and allow work to continue across the day.
+
+## Ending an Engagement Cleanly
+
+When the engagement ends, ensure all work is merged and documented, remove the developer's access to every service, rotate any secrets they handled and update the systems list. A clean exit makes it easy to bring the same person back later, or to onboard someone new without starting from zero.
+
+## What Developers Wish Founders Knew
+
+Developers joining AI-built projects consistently mention the same wishes. They want to know which parts are fragile before touching them, which decisions were deliberate and which were accidental, which areas the founder will keep changing in Lovable and how quickly they can get answers to questions. They also want permission to say "this part needs restructuring" without it being read as criticism of the founder. A short conversation covering these points on day one builds trust quickly.
+
+## Documentation Worth Writing Before Day One
+
+| Document | Contents | Time to write |
+| --- | --- | --- |
+| README | How to run, configure and deploy the app | 1-2 hours |
+| Systems list | Every service, owner, region, access | 1 hour |
+| Product page | Users, flows, money, must-not-break items | 1 hour |
+| Known issues | Bugs, fragile areas, postponed work | 30 minutes |
+| Decisions log | Why key choices were made | 30 minutes, then ongoing |
+
+Five short documents, written in a single afternoon, often save a week of developer time.
+
+## Common Handover Mistakes
+
+- Sharing the founder's own login instead of individual accounts
+- Leaving the repository on a personal account
+- Giving production database access on day one without need
+- Expecting new features in week one before the developer understands the system
+- Continuing to prompt in the same files the developer is changing, without coordination
+
+## Measuring Whether the Handover Worked
+
+After two weeks, check: can the developer deploy a change through staging without help? Have they fixed at least one known issue? Can they explain the architecture in their own words? Have they added to the documentation? If the answers are yes, the handover succeeded and you can start planning features with confidence.
+
+## Using AI Tools Together With the Developer
+
+Many founders keep using Lovable after a developer joins, which works well with clear boundaries. Agree that Lovable changes interface files on `main`, while the developer owns policies, functions and integrations through branches and pull requests. Add those boundaries to Lovable's project knowledge so prompts respect them. Review Lovable's commits together for the first few weeks; it quickly shows both of you where the boundaries need adjusting.
+
+## Related Reading
+
+Our guides on exporting Lovable code to GitHub, staging environments and preventing prompts from breaking security cover the setup that makes developer handovers smooth.
+
+## Summary
+
+Own the repository and accounts, write five short documents, prepare staging, grant least-privilege access, start with understanding and a small fix, and agree how AI tools and the developer share the codebase. A handover prepared this way turns a new developer into a productive contributor within days instead of weeks.
+
+## The Payoff
+
+A prepared handover shows developers that you take the product seriously, earns their respect and gets them building value in days rather than spending weeks deciphering what exists.
+
+## One More Tip
+
+Record a ten-minute screen video walking through the app and its admin areas. Developers revisit it more often than any document.
 
 ## Getting the Handover Ready
 

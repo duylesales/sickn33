@@ -17,11 +17,26 @@ Target Persona: AI-Native Founder (Non-Technical)
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2028-04-06",
   "inLanguage": "en",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/stripe-checkout-vs-payment-links-vs-embedded-payments" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/stripe-checkout-vs-payment-links-vs-embedded-payments" },
+  "citation": [
+    { "@type": "CreativeWork", "name": "Stripe: Payment Links", "url": "https://docs.stripe.com/payment-links" },
+    { "@type": "CreativeWork", "name": "Stripe Checkout", "url": "https://docs.stripe.com/payments/checkout" },
+    { "@type": "CreativeWork", "name": "Stripe: Payment Element", "url": "https://docs.stripe.com/payments/payment-element" },
+    { "@type": "CreativeWork", "name": "Stripe: Webhooks", "url": "https://docs.stripe.com/webhooks" },
+    { "@type": "CreativeWork", "name": "PCI Security Standards Council", "url": "https://www.pcisecuritystandards.org/" }
+  ]
 }
 </script>
 
 Stripe gives founders several ways to get paid, from a link you can create in two minutes to fully embedded payment forms inside your app. AI builders often pick one without explaining why. The right option depends on how much your app needs to know about each payment, how much control you want over the experience and how much integration work you are prepared to do.
+
+## Key Takeaways
+
+- **Stripe offers three common ways to take payments:** Payment Links (no code), Checkout (Stripe-hosted page started from your app) and embedded payments with the Payment Element (inside your own pages).
+- **Payment Links suit validation and simple sales;** Checkout suits most SaaS subscriptions; embedded payments suit products where the payment experience is part of the product.
+- **Every option needs verified webhooks** to update your database reliably, because redirects can be missed or faked.
+- **Stripe handles card data and Strong Customer Authentication** in all three, reducing PCI DSS scope compared with handling cards yourself.
+- **European payment methods such as iDEAL and Bancontact** are available across all three when enabled in your Stripe dashboard.
 
 ## The Three Options
 
@@ -64,6 +79,82 @@ Stripe gives founders several ways to get paid, from a link you can create in tw
 - Checkout sessions created in the browser with prices from the frontend
 - Embedded forms built without handling 3D Secure or failed payments
 - Custom card fields that send card data to your own server, which you should never do; see [whether it is safe to store payment data](https://launchstudio.eu/en/blog/is-it-safe-to-store-payment-data-in-my-lovable-app)
+
+## How Each Option Works Technically
+
+Payment Links are URLs created in the Stripe dashboard or API that open a Stripe-hosted payment page for a product or price. No code is required, but connecting the payment to a user in your app needs extra work, such as passing a client reference ID or matching email addresses. Stripe Checkout is created by your backend through the API, with the customer, price, success URL and metadata set per session; Stripe hosts the page and returns the customer to your app. Embedded payments use Stripe Elements, particularly the Payment Element, rendered inside your pages, with your backend creating PaymentIntents or SetupIntents and your frontend confirming them.
+
+## Why Webhooks Matter for All Three
+
+After payment, customers are redirected to your success URL, but they may close the browser, lose connection or tamper with the URL. Stripe's documentation recommends handling fulfilment through webhooks: events such as `checkout.session.completed`, `invoice.paid` and `customer.subscription.updated` are sent to your endpoint, signed with a secret you verify. Your handler updates the database, grants access and records the event ID to avoid processing duplicates. AI-built apps frequently grant access on the success page instead, which lets anyone who guesses the URL unlock paid features.
+
+## Compliance and Card Security
+
+PCI DSS sets security requirements for anyone handling card data. When card details are entered on Stripe-hosted pages or Stripe Elements, card data never touches your servers, which keeps your compliance scope small, typically a self-assessment questionnaire. In Europe, PSD2 requires Strong Customer Authentication for many online payments; Stripe's hosted and embedded components handle 3D Secure challenges automatically. Building your own card form outside Stripe's components would bring much larger obligations.
+
+## Subscriptions and the Customer Portal
+
+For subscriptions, Checkout in subscription mode creates the customer and subscription, collects payment details and handles authentication. Stripe's Customer Portal then lets customers update cards, change plans, download invoices and cancel without you building those screens. Embedded flows can create subscriptions too, but you build more of the experience yourself. For most early SaaS products, Checkout plus the Customer Portal covers billing with little custom code.
+
+## European Payment Methods
+
+Dutch customers often expect iDEAL, Belgian customers Bancontact and German customers SEPA Direct Debit or cards. Stripe supports these through dynamic payment methods: enable them in the dashboard, and Checkout or the Payment Element shows relevant methods based on currency and location. Note that some methods, such as iDEAL, are single payments; for recurring billing, Stripe can use iDEAL to set up a SEPA Direct Debit mandate for future charges.
+
+## Choosing by Situation
+
+| Situation | Best fit |
+| --- | --- |
+| Testing willingness to pay before building | Payment Links |
+| One-off product sales from a landing page | Payment Links or Checkout |
+| SaaS subscriptions with plans and trials | Checkout plus Customer Portal |
+| Usage-based or hybrid pricing | Checkout or embedded, with metered billing |
+| Payment as part of a multi-step in-app flow | Embedded Payment Element |
+| Marketplace with payouts to sellers | Stripe Connect with Checkout or embedded |
+
+## Conversion and User Experience
+
+Stripe-hosted Checkout is optimised and tested across devices, supports wallets such as Apple Pay and Google Pay and localises into many languages automatically. Embedded payments keep customers on your domain and match your design, which some products need for trust or flow, but you take responsibility for loading states, errors and mobile layout. Redirects to a well-known payment page rarely hurt conversion in practice; slow or confusing custom forms often do.
+
+## Taxes and Invoices
+
+Selling in the EU means handling VAT correctly, including reverse charge for business customers in other member states. Stripe Tax can calculate and collect VAT in Checkout and subscriptions, and Stripe can generate invoices. Collect business customers' VAT numbers in Checkout where needed, and confirm with your accountant how Stripe invoices fit your Dutch administration requirements.
+
+## Testing Payments Before Launch
+
+Use Stripe's test mode and test cards to simulate successful payments, declines, 3D Secure challenges and failed renewals. Use the Stripe CLI to forward webhooks to your local or staging environment and trigger events. Check that access is granted only after the webhook arrives, that duplicate events are ignored, that cancellations remove access at the right time and that refunds are reflected. Then run one real low-value payment in live mode before announcing your launch.
+
+## Moving Between Options
+
+Many products start with Payment Links, move to Checkout when they add accounts and subscriptions, and add embedded flows later for specific journeys. Because all three use the same Stripe customers, products and prices, moving is incremental. Keep your webhook handler as the single place that updates subscription state, and each new option plugs into it.
+
+## Common Mistakes
+
+- Granting access on the success page instead of after a verified webhook
+- Not verifying webhook signatures
+- Creating Checkout Sessions from the frontend with prices the user can change
+- Ignoring failed renewal and cancellation events
+- Using Payment Links for subscriptions without linking them to user accounts
+- Hardcoding live keys in frontend code
+
+## Summary
+
+Use Payment Links to validate, Checkout for most SaaS billing and embedded payments when the payment experience is part of your product. In every case, rely on signed webhooks, enable European payment methods and test failures as carefully as successes.
+
+## Security Checklist for Any Option
+
+Before going live, confirm the following. Secret keys exist only on the server, in environment variables or function secrets. Webhook endpoints verify signatures using the endpoint secret and reject unsigned requests. Prices and quantities are set on the server, never accepted from the browser. Webhook handlers are idempotent, storing processed event IDs. Access changes happen only from webhook events. Test and live keys are separated by environment. Restricted API keys are used where a service needs only limited access. These checks apply equally to Payment Links, Checkout and embedded payments, and they cover the issues we most often find when reviewing AI-built payment code.
+
+## Where to Start Today
+
+If you have no payments yet, create a Payment Link for your main plan and share it with five prospects. If people pay, build Checkout with webhooks next.
+
+## Refunds, Disputes and Customer Communication
+
+Payments do not end at checkout. Refunds issued in the Stripe dashboard should update your app through `charge.refunded` events, and disputes through `charge.dispute.created`, so access and records stay accurate. Send clear receipts, name your company consistently on card statements through the statement descriptor and make support contact details easy to find; recognisable charges and responsive support prevent many disputes from happening at all.
+
+## The Bottom Line
+
+The right Stripe option is the simplest one that fits your current sales model; the webhook handler behind it is what keeps your billing trustworthy as you grow.
 
 ## Getting Payments Right
 

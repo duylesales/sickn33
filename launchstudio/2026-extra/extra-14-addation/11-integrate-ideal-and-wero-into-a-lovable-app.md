@@ -17,13 +17,29 @@ Target Persona: AI-Native Founder (Non-Technical)
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2028-01-19",
   "inLanguage": "en",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/integrate-ideal-and-wero-into-a-lovable-app" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/integrate-ideal-and-wero-into-a-lovable-app" },
+  "citation": [
+    { "@type": "CreativeWork", "name": "iDEAL", "url": "https://www.ideal.nl/en/" },
+    { "@type": "CreativeWork", "name": "European Payments Initiative", "url": "https://www.epicompany.eu/" },
+    { "@type": "CreativeWork", "name": "Wero", "url": "https://www.wero-wallet.eu/" },
+    { "@type": "CreativeWork", "name": "Mollie API documentation", "url": "https://docs.mollie.com/" },
+    { "@type": "CreativeWork", "name": "Stripe: Receive events in your webhook endpoint", "url": "https://docs.stripe.com/webhooks" },
+    { "@type": "CreativeWork", "name": "Stripe: Idempotent requests", "url": "https://docs.stripe.com/api/idempotent_requests" }
+  ]
 }
 </script>
 
 If you sell to Dutch consumers and your checkout only accepts cards, you are leaving money on the table. iDEAL is by far the most used online payment method in the Netherlands, and many Dutch shoppers abandon a checkout that does not offer it. Lovable will happily generate a card checkout with Stripe. Getting iDEAL working properly, and preparing for the move to Wero, takes a few extra decisions.
 
 This guide walks through those decisions in the order you will meet them.
+
+## Key Takeaways
+
+- **iDEAL is the default way Dutch consumers pay online,** and a checkout without it loses Dutch buyers. iDEAL is now owned by the European Payments Initiative (EPI), which is moving it towards Wero in phases.
+- **Integrate through a payment provider, not directly.** With Mollie or Stripe, your code requests "iDEAL" and the provider handles the scheme transition and branding.
+- **Create payments on the server and trust only verified webhooks.** The success page is a convenience, not proof of payment.
+- **iDEAL is a one-off method.** For subscriptions, use the first iDEAL payment to set up a SEPA Direct Debit mandate.
+- **Adding iDEAL properly is a typical €400 add-on** within a LaunchStudio quote of €1,200-€3,500, keeping your Lovable frontend.
 
 ## iDEAL, Wero and What Is Changing
 
@@ -76,6 +92,57 @@ iDEAL payments can end as paid, cancelled, expired or failed. A Lovable-generate
 ## Step 5: Test Like a Dutch Customer
 
 Use your provider's test mode to simulate each outcome. Then do one real payment of a small amount in live mode with your own bank, on your phone, through the banking app. Many problems only appear on mobile, where the bank app switch interrupts the browser session.
+
+## How an iDEAL Payment Actually Flows
+
+Understanding the flow makes the integration rules obvious:
+
+1. Your server creates a payment at the provider for a specific amount and order.
+2. The customer is redirected to a payment page and selects iDEAL.
+3. The customer confirms in their bank's app or website, which on mobile usually means switching apps.
+4. The bank confirms to the scheme, which confirms to your provider.
+5. The provider sends your webhook an update and redirects the customer back to your site.
+
+Steps 3 and 5 are where real-world problems appear. On mobile, the switch to the banking app and back can drop the browser session. The customer may never return to your success page even though the payment succeeded. That is why fulfilment must be driven by step 5's webhook, not by the redirect.
+
+## Strong Customer Authentication and Why It Matters Here
+
+Under the EU's revised Payment Services Directive (PSD2), most online payments require strong customer authentication: two independent factors such as a phone and a PIN or biometric. iDEAL satisfies this naturally because the customer authenticates in their banking app. For founders, the practical consequence is that payment confirmation always involves an external step you do not control, which reinforces the webhook-first design.
+
+## Testing iDEAL Without Real Money
+
+Both Mollie and Stripe offer test modes where you can simulate every outcome: paid, cancelled, expired and failed. A good test plan covers:
+
+- A successful payment where you close the browser before returning to the app
+- A cancellation in the banking step
+- An expired payment left open too long
+- A double click on the pay button
+- A webhook delivered twice
+
+Only after these pass should you run one real payment of a small amount in live mode, on a phone, with your own bank, and then refund it. Many founders discover mobile-specific issues only at this step.
+
+## Preparing for Wero Without Rebuilding Later
+
+The European Payments Initiative, the bank-backed company behind Wero, acquired the company behind iDEAL and announced a phased migration in which iDEAL payments become Wero payments, starting with co-branded checkouts. The exact timeline evolves, so the safest preparation is architectural rather than speculative:
+
+- Keep all payment logic behind your provider's API, never hard-coding scheme-specific flows
+- Store your provider's payment ID and status, not scheme-specific details
+- Use the provider's hosted checkout or official components, which update branding for you
+- Follow your provider's changelog and re-run your payment tests when they announce scheme changes
+
+Built this way, the Wero transition becomes a test pass rather than a project.
+
+## Reconciliation: Proving That Money and Orders Match
+
+Once iDEAL payments flow, reconcile monthly: the number and total of paid payments in your provider's dashboard should match paid orders in your app, and payouts should match bank deposits after fees. A small admin report listing payments without orders, and orders without payments, catches webhook failures early. Accountants appreciate this report; so will you during your first VAT return.
+
+## Refunds, Disputes and Customer Service
+
+iDEAL payments are bank transfers authorised by the customer, so they cannot be "charged back" the way card payments can. Refunds are initiated by you through your provider, which returns the money to the customer's account. That simplicity is one reason Dutch merchants like iDEAL. It also means your refund process should be deliberate: a staff-only action in your admin panel, a reason recorded for each refund, an automatic email to the customer and, for bookkeeping, a credit note linked to the original invoice. Building this once avoids ad-hoc refunds from the provider dashboard that never appear in your app or your books.
+
+## A Note on Fees and Payouts
+
+iDEAL is usually charged per transaction at a fixed fee rather than a percentage, which makes it attractive for higher-value Dutch orders compared with card payments. Check your provider's current pricing and payout schedule, and include both in your margin calculations and cash flow planning.
 
 ## Common Mistakes With iDEAL in AI-Built Apps
 

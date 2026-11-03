@@ -17,11 +17,25 @@ Target Persona: AI-Native Founder (Non-Technical)
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2028-02-02",
   "inLanguage": "en",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/can-i-publish-my-lovable-app-to-the-app-store" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/can-i-publish-my-lovable-app-to-the-app-store" },
+  "citation": [
+    { "@type": "CreativeWork", "name": "Apple App Store Review Guidelines: Minimum Functionality", "url": "https://developer.apple.com/app-store/review/guidelines/#minimum-functionality" },
+    { "@type": "CreativeWork", "name": "Capacitor documentation", "url": "https://capacitorjs.com/docs" },
+    { "@type": "CreativeWork", "name": "web.dev: What are Progressive Web Apps?", "url": "https://web.dev/articles/what-are-pwas" },
+    { "@type": "CreativeWork", "name": "WebKit: Web Push for Web Apps on iOS and iPadOS", "url": "https://webkit.org/blog/13878/web-push-for-web-apps-on-ios-and-ipados/" }
+  ]
 }
 </script>
 
 **Short answer:** yes, but not directly. Lovable builds web apps, not native iOS or Android apps. You have two routes to phones: turn your Lovable app into a **Progressive Web App (PWA)** that users install from the browser, or wrap it with **Capacitor** to publish a real app in the Apple App Store and Google Play. A PWA is faster and cheaper. Capacitor gets you into the stores, but Apple will reject a plain website in a wrapper, so the app needs genuinely app-like features.
+
+## Key Takeaways
+
+- **Lovable builds web apps, not native apps,** but you can still reach phones: as a Progressive Web App installed from the browser, or wrapped with Capacitor for the App Store and Google Play.
+- **PWAs are faster and cheaper,** update instantly and support push notifications on iPhone once added to the home screen, a capability Apple added in iOS 16.4.
+- **Apple's App Store Review Guideline 4.2 (Minimum Functionality) rejects "websites in a box".** A wrapped Lovable app needs genuine app value such as push, device features or offline use.
+- **The backend must be production ready first,** because a mobile app bundle exposes any key or weak access rule just as a website does.
+- **Mobile launches typically cost €3,000-€7,500** with LaunchStudio, including store submission; a PWA added to a web launch costs much less.
 
 ## Route 1: Progressive Web App
 
@@ -78,6 +92,52 @@ Other common rejection reasons for wrapped apps: login required without a demo a
 | You sell digital subscriptions to consumers | Plan payment rules carefully with Capacitor |
 
 Many founders start with a PWA, measure how many users install it, and move to Capacitor once mobile demand is proven.
+
+## How a PWA Works Under the Hood
+
+A Progressive Web App is a website with three additions, as Google's web.dev explains: a web app manifest that tells the device how to display it (name, icons, colours, full-screen mode), a service worker that can cache files and handle background tasks such as push notifications, and HTTPS. Together they let users "install" the site to their home screen and open it like an app. For a Lovable app, adding these is a contained piece of work: generate icons, write the manifest, add a service worker with a sensible caching strategy and test installation on iOS and Android.
+
+The caching strategy matters. Caching the app shell (HTML, JavaScript, CSS, icons) makes the app open instantly and work briefly offline. Caching API responses requires more care, because stale data can confuse users or show information they should no longer see. For most apps, cache the shell and fetch data fresh, with clear messages when the device is offline.
+
+## Push Notifications on iPhone
+
+For years, the lack of web push on iOS was the main argument against PWAs. Since iOS 16.4, WebKit supports push notifications for web apps that the user has added to their home screen. That changes the calculation for many founders: reminders, booking confirmations and status updates can now reach iPhone users without an App Store app. The trade-off is discoverability: users must add the app to their home screen first, which requires a clear prompt and instructions.
+
+## How Capacitor Works
+
+Capacitor, maintained by the Ionic team, wraps your web app in a native iOS and Android project. Your Lovable code runs inside a native web view, and Capacitor's plugins expose device features through JavaScript: camera, geolocation, push notifications, biometrics, file system, haptics and more. Because the same code powers the web and mobile versions, you avoid maintaining two codebases. The native projects live in your repository alongside the web code and are built with Xcode for iOS and Android Studio for Android.
+
+## Passing Apple Review in Practice
+
+Apple's review guidelines are public, and Guideline 4.2 on minimum functionality is the one most wrapped apps trip over. Reviewers look for apps that offer something beyond a mobile website. Practical ways to meet that bar:
+
+- **Native push notifications** with real value, such as reminders, status changes or messages
+- **Device integration**, such as camera for scanning or uploading, location for check-ins, or biometrics for login
+- **Offline support** for core content
+- **Mobile-first navigation**, using native-feeling patterns rather than desktop menus
+- **A complete experience inside the app,** without sending users to the website for core tasks
+
+Other frequent rejection reasons are easier to avoid: provide a demo account if login is required, explain features in the review notes, include a privacy policy URL, and make sure account deletion is available in the app if users can create accounts, as Apple requires.
+
+## Payments Inside Mobile Apps
+
+Payments are the most complex policy area. Apple and Google have rules about selling digital goods and services inside apps, and these rules have changed in recent years, partly due to regulation such as the EU's Digital Markets Act. Physical goods and services consumed outside the app, such as bookings or deliveries, can generally use normal payment providers. Digital subscriptions may fall under in-app purchase rules depending on your region and the current guidelines. Check the latest rules before deciding your mobile monetisation, and design your web and app pricing accordingly.
+
+## Security Considerations for Wrapped Apps
+
+A mobile app bundle can be unpacked. Anything in it - API keys, endpoints, configuration - should be considered public, exactly as in a browser. The same production principles apply: secret keys only on the server, Row Level Security on every table, short-lived tokens and secure storage for session data using platform keychains where possible. Mobile adds one more consideration: app updates take time to reach users, so security fixes in the backend are far preferable to fixes that require a new app version.
+
+## Maintenance After Launch
+
+Mobile apps need ongoing care: operating system updates, new device sizes, plugin updates, certificate renewals for push notifications and periodic re-review when you submit updates. Budget a few hours per month, and keep your web and mobile versions in step by deploying backend changes in a backwards-compatible way, because some users will run older app versions for weeks.
+
+## Google Play Is Usually Easier
+
+Google Play's review is generally less strict about wrapped web apps than Apple's, and Android also supports Trusted Web Activities, which let a PWA appear in the Play Store with little native code. Many founders therefore launch on Android first, learn from early mobile users and refine the app before submitting to Apple.
+
+## Measuring Mobile Demand First
+
+Before investing in store apps, measure. Add PWA install prompts and track how many users install, how often installed users return compared with browser users, and which features they use on mobile. If installed users are a meaningful share and engage more, a store app is worth building. If few users install, improve the mobile web experience first.
 
 ## What the Production Work Involves
 

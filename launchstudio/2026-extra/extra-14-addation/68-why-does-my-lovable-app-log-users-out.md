@@ -17,11 +17,24 @@ Target Persona: AI-Native Founder (Non-Technical)
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2028-03-16",
   "inLanguage": "en",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/why-does-my-lovable-app-log-users-out" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/why-does-my-lovable-app-log-users-out" },
+  "citation": [
+    { "@type": "CreativeWork", "name": "Supabase: User sessions", "url": "https://supabase.com/docs/guides/auth/sessions" },
+    { "@type": "CreativeWork", "name": "Supabase: Redirect URLs", "url": "https://supabase.com/docs/guides/auth/redirect-urls" },
+    { "@type": "CreativeWork", "name": "OWASP Top 10 2021: A07 Identification and Authentication Failures", "url": "https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures/" }
+  ]
 }
 </script>
 
 **Short answer:** usually one of six things: users switching between domains (preview, www and non-www), several Supabase clients created in the code fighting over the same session, token refresh failing because the app was offline or in the background, session storage being cleared by browsers or in-app webviews, redirect URLs pointing to the wrong place after login, or session timeout settings that are stricter than you intended. Each has a specific, fixable cause.
+
+## Key Takeaways
+
+- **Random logouts in Lovable and Supabase apps usually have six causes:** multiple domains, multiple Supabase clients, failed token refreshes, cleared storage, wrong redirects and strict session settings.
+- **Sessions are stored per domain,** so www, non-www and preview URLs behave like separate apps.
+- **Create one Supabase client and reuse it everywhere;** several clients can overwrite each other's sessions.
+- **Mobile browsers and in-app browsers** suspend tabs and restrict storage, making refresh failures more likely.
+- **Session handling is a security concern too:** OWASP lists identification and authentication failures among its top web application risks.
 
 ## Cause 1: More Than One Domain
 
@@ -56,6 +69,93 @@ Supabase lets you configure session behaviour, such as time limits and inactivit
 | Logged out only on iPhone or in Instagram/Facebook links | Storage restrictions in webviews |
 | Login loop: logs in, then back to login | Redirect configuration or session not persisted |
 | Logged out every morning | Session time limit or inactivity timeout |
+
+## How Supabase Sessions Work
+
+When a user logs in, Supabase Auth issues two tokens: a short-lived access token, a JSON Web Token that proves the user's identity on each request, and a longer-lived refresh token used to obtain new access tokens. The Supabase client stores both, by default in browser storage, and refreshes the access token automatically before it expires. Supabase's sessions documentation describes this lifecycle and the settings that control it. Most logout problems are failures somewhere in this cycle: tokens stored where the app cannot find them, refreshed by competing clients or lost when storage is cleared.
+
+## Why Duplicate Clients Cause Trouble
+
+AI-generated code often creates a new Supabase client inside individual components or pages. Each client may start its own refresh timer. When two clients refresh at nearly the same moment, one can use a refresh token that the other has already rotated, causing the server to reject it and sign the user out. The fix is simple and permanent: create one client in a single module, export it and import it everywhere. Searching your codebase for `createClient` usually reveals the problem in minutes.
+
+## Domains, Cookies and Storage
+
+Browsers isolate storage by origin: protocol, domain and port. `https://yourapp.nl`, `https://www.yourapp.nl` and a preview URL are different origins with separate sessions. Users who move between them appear logged out. Choose one canonical domain, redirect all others to it with permanent redirects and use that domain everywhere: in Supabase's site URL, redirect allow list, email templates and links in your app.
+
+## Mobile Realities
+
+On phones, browsers suspend background tabs to save battery, networks switch between wifi and mobile data and in-app browsers inside social media apps may restrict storage. Each can interrupt a token refresh. Robust handling means listening to the client's auth state changes, retrying refreshes when the connection returns rather than signing out immediately, and saving user input locally so a rare logout does not destroy work in progress. For important flows, such as payments, encourage users to open your app in their regular browser.
+
+## Session Settings and Security
+
+Session length is a trade-off between convenience and security. Long sessions mean fewer logins; short sessions limit damage if a device is stolen. Supabase lets you configure aspects of session behaviour on supported plans. Consider your audience: a consumer app can usually keep users logged in for a long time, while an app with financial or health data may require re-authentication after inactivity and MFA for sensitive actions. OWASP's guidance on authentication failures emphasises proper session invalidation on logout and timeouts appropriate to the risk.
+
+## Logout That Actually Logs Out
+
+The opposite problem matters too. When a user clicks "log out", the session should end on the server as well as in the browser, so refresh tokens cannot be reused. On shared devices this is important. Supabase's sign-out methods can revoke sessions; for "log out everywhere" features, use the global sign-out option. Test that after logging out, pressing the browser's back button does not show private data from cache.
+
+## Diagnosing Logouts Systematically
+
+Ask affected users which device, browser and how they reached the app (link in email, bookmark, social media). Check Supabase Auth logs for refresh failures around the reported time. Reproduce on the same browser type. Then match the evidence to the six causes above. Most cases resolve within a day once the pattern is clear.
+
+## A Fix Checklist
+
+- Search for `createClient` and consolidate to one shared Supabase client
+- Choose one canonical domain and redirect all others
+- Set Supabase's site URL and redirect list to production and legitimate environments
+- Update email templates and links to use the canonical domain
+- Handle auth state changes without signing out on transient refresh errors
+- Save drafts locally for forms where users invest time
+- Review session timeout settings against your security needs
+- Test on iOS Safari, Android Chrome and at least one in-app browser
+
+## Monitoring Session Health
+
+Track logout and refresh failure rates through Supabase Auth logs and error tracking. A sudden increase after a release usually points to a code change that introduced another client or altered redirects. Alerting on unusual spikes helps you catch regressions before customers flood your support inbox.
+
+## Common Mistakes
+
+- Fixing logouts by making sessions extremely long without considering security
+- Creating clients inside components that render often
+- Mixing preview and production URLs in emails
+- Storing tokens in custom places instead of letting the client manage them
+- Ignoring in-app browser behaviour for users arriving from social media
+
+## The Payoff
+
+Reliable sessions are invisible to users, which is exactly the goal. Fixing them removes one of the most frustrating experiences in any app, reduces support load and protects the work users put into your product.
+
+## Related Reading
+
+Our guides on Google login in Lovable apps, Supabase emails not arriving and two-factor authentication cover the related parts of authentication in more depth.
+
+## When Logouts Are Intentional
+
+Not every logout is a bug. Security-sensitive apps may log users out after inactivity, require re-authentication for sensitive actions or end sessions when a password changes. Make these behaviours explicit: show a message explaining why the user was logged out and what to do, warn before an inactivity timeout and preserve unsaved work. Users accept security measures they understand; they resent ones that look like failures.
+
+## Explaining Changes to Users
+
+If you fix a long-standing logout problem, tell affected users. A short message - "We fixed an issue that logged some users out unexpectedly" - restores confidence and often turns frustrated users back into active ones.
+
+## Questions to Ask Affected Users
+
+When users report logouts, a few questions narrow down the cause quickly: Which device and browser were you using? Did you open the app from an email, a bookmark or a social media app? Were you logged out while using the app or when you came back later? Did it happen on wifi or mobile data? Collect the answers in a simple form or support template; patterns usually appear after a handful of reports.
+
+## Summary
+
+One client, one domain, correct redirects, resilient refresh handling and sensible session settings solve almost every logout problem in Lovable and Supabase apps.
+
+## Where to Start Today
+
+Search your project for `createClient`. If it appears more than once, consolidate it first; that single change fixes a large share of unexplained logouts in Lovable apps. Then check that your app is reachable on exactly one domain.
+
+## The Bottom Line
+
+Most "random" logouts are not random. Trace the session lifecycle, fix the shared client and domain issues, and users stop noticing authentication at all.
+
+## Related Reading
+
+See our guide on moving a Lovable app to your own hosting for setting a single canonical domain with redirects.
 
 ## Getting It Fixed
 

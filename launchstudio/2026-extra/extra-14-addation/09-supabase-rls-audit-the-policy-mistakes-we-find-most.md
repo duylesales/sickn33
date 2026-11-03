@@ -17,13 +17,28 @@ Target Persona: Technical Solo Founder / Indie Hacker
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2028-01-17",
   "inLanguage": "en",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/supabase-rls-audit-the-policy-mistakes-we-find-most" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/supabase-rls-audit-the-policy-mistakes-we-find-most" },
+  "citation": [
+    { "@type": "CreativeWork", "name": "Supabase: Row Level Security", "url": "https://supabase.com/docs/guides/database/postgres/row-level-security" },
+    { "@type": "CreativeWork", "name": "PostgreSQL: Row Security Policies", "url": "https://www.postgresql.org/docs/current/ddl-rowsecurity.html" },
+    { "@type": "CreativeWork", "name": "OWASP Top 10 2021: A01 Broken Access Control", "url": "https://owasp.org/Top10/A01_2021-Broken_Access_Control/" },
+    { "@type": "CreativeWork", "name": "Veracode 2025 GenAI Code Security Report", "url": "https://www.veracode.com/resources/analyst-reports/2025-genai-code-security-report/" },
+    { "@type": "CreativeWork", "name": "OWASP Authorization Cheat Sheet", "url": "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html" }
+  ]
 }
 </script>
 
 Row Level Security is a short feature to describe and a long one to get right. In a Supabase app, the browser queries your database directly with a public key, and RLS policies are the only thing between one user and another user's data. When LaunchStudio runs a Supabase RLS audit on an app built with Lovable, Bolt or Cursor, we almost always find at least one of the seven mistakes below.
 
 This is a technical article. If you write or review SQL, you can use it as a checklist on your own project.
+
+## Key Takeaways
+
+- **In Supabase, Row Level Security is the only barrier between users,** because the browser queries the database directly with a public key. PostgreSQL's row security policies are powerful but must be complete for every table and every operation.
+- **Seven mistakes account for most findings:** RLS disabled on late tables, policies returning `true`, ownership-only rules on team data, missing `with check`, user-writable role columns, public storage and slow policies.
+- **The dashboard proves nothing.** Supabase's SQL editor and table view use an elevated role that bypasses RLS; only tests with real user sessions through the API count.
+- **Permissive policies combine with OR.** A single broad policy added by a prompt overrides all careful restrictions on the same table.
+- **An RLS audit from LaunchStudio starts at €800,** with written findings in three to five business days.
 
 ## How an RLS Audit Works
 
@@ -120,6 +135,49 @@ Database policies do not protect files. Supabase Storage has its own policies on
 A policy runs for every row a query touches. A subquery without an index, or calling `auth.uid()` in a way that is evaluated per row, can turn a 20 ms query into a 2-second one at scale. Founders then blame Supabase and consider migrating, when an index would solve it.
 
 **Fix:** index the columns policies filter on, wrap `auth.uid()` in a `select` so it is evaluated once, and use helper functions as shown above. Supabase's [RLS performance recommendations](https://supabase.com/docs/guides/database/postgres/row-level-security#rls-performance-recommendations) go into detail.
+
+## How PostgreSQL Evaluates Policies
+
+Understanding a few rules of PostgreSQL's row security, as described in the PostgreSQL documentation, explains most of the mistakes above.
+
+- **No policy means no access.** When RLS is enabled on a table and no policy applies to an operation, the operation is denied. This is why enabling RLS is safe even before policies are written.
+- **Permissive policies are combined with OR.** If one policy allows a row, the row is visible, regardless of other policies. This is how an extra "allow all authenticated users" policy silently undoes everything else.
+- **Restrictive policies are combined with AND.** They can enforce conditions that must always hold, such as "the row's organisation must match", on top of permissive policies. They are underused in AI-generated schemas.
+- **`using` and `with check` do different jobs.** `using` filters which existing rows an operation can see or touch; `with check` validates new or modified rows.
+- **Table owners and privileged roles bypass RLS** unless forced. Supabase's service role is designed to bypass it, which is why that key must never reach a browser.
+
+## Testing Policies Properly
+
+A reliable test routine for any Supabase project:
+
+1. Create two organisations and at least two users in each, with different roles.
+2. For every table, attempt select, insert, update and delete as each user through the API, using their real access tokens.
+3. Try to read another organisation's rows by ID, list them through filters, and insert rows with another organisation's ID.
+4. Repeat for storage: upload, list and download objects across organisations.
+5. Automate the most important cases as tests that run on every deployment.
+
+Supabase also offers a database advisor in the dashboard that flags tables without RLS and other risky configurations. It is a useful first pass, but like any automated tool it cannot judge whether a policy matches your business intent.
+
+## Why AI Builders Produce These Mistakes
+
+Access control is the OWASP Top 10's number one category for a reason: in OWASP's 2021 data, 94% of tested applications showed some form of broken access control. AI builders add their own twist. Policies are generated per prompt, so a feature added in week six may come with a different pattern from one added in week one. Visibility bugs invite loosening. And the model has no knowledge of your customers' contracts, so it cannot know that a staffing agency's candidate files must never be visible to another agency.
+
+Veracode's 2025 study of AI-generated code, which found security flaws in about 45% of samples, reinforces the point: generated code needs review in proportion to what it protects. In a Supabase app, that is the policy layer.
+
+## Maintaining Policies Over Time
+
+Policies decay as products grow. A few practices keep them correct:
+
+- Keep every policy in migration files in git, reviewed like code.
+- Use helper functions for membership and roles so new tables reuse proven logic.
+- Add an automated cross-tenant test for each new table that holds customer data.
+- Re-run an audit after large AI-generated features or before major customer onboarding.
+
+Done this way, the policy layer becomes a stable foundation rather than a recurring source of incidents.
+
+## A Note on Views and Functions
+
+Policies protect tables, but data can also leave the database through views and functions. A view created by the table owner may run with the owner's privileges and return rows that the caller's policies would hide, unless it is defined with `security_invoker` so that the caller's permissions apply. Likewise, a `security definer` function exposed through the API runs with elevated privileges and must apply its own checks. When auditing, we list every view and function in exposed schemas alongside the tables, because they are frequent, quiet bypasses.
 
 ## Audit Findings at a Glance
 

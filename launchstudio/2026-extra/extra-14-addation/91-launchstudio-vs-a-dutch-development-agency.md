@@ -17,11 +17,24 @@ Target Persona: AI-Native Founder (Non-Technical)
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2028-04-08",
   "inLanguage": "en",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/launchstudio-vs-a-dutch-development-agency" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/launchstudio-vs-a-dutch-development-agency" },
+  "citation": [
+    { "@type": "CreativeWork", "name": "OWASP Top 10", "url": "https://owasp.org/www-project-top-ten/" },
+    { "@type": "CreativeWork", "name": "OWASP Application Security Verification Standard", "url": "https://owasp.org/www-project-application-security-verification-standard/" },
+    { "@type": "CreativeWork", "name": "Veracode 2025 GenAI Code Security Report", "url": "https://www.veracode.com/resources/analyst-reports/2025-genai-code-security-report/" }
+  ]
 }
 </script>
 
 The Netherlands has many excellent development agencies (app bouwers, softwarebureaus) that design and build products from scratch. When a founder arrives with an AI-built prototype, though, the agency model and the founder's situation often do not match: agencies are organised around discovery, design and full builds, while the founder needs the last mile on something that already exists. Here is how a Dutch agency and LaunchStudio compare, and when each is the right call.
+
+## Key Takeaways
+
+- **Dutch development agencies offer full-service teams, local presence and long-term relationships,** typically at hourly rates well above offshore alternatives and with longer timelines.
+- **LaunchStudio focuses on one job:** taking an AI-built app to production at a fixed price of €800-€7,500, usually in one to three weeks.
+- **Agencies often propose rebuilding** an AI-built app on their own stack; refactoring the existing code is frequently faster and cheaper.
+- **Choose an agency** for complex new products, regulated sectors needing extensive documentation, or long-term product teams.
+- **Choose LaunchStudio** when your app already works and needs security, data, payments and deployment made production-grade.
 
 ## Side-by-Side
 
@@ -65,6 +78,81 @@ Some founders launch with LaunchStudio, grow, and later engage an agency or a de
 3. Who owns the code and accounts during and after the project?
 4. What happens after launch, and what does it cost?
 5. Have you worked with AI-generated codebases before?
+
+## How Agencies Typically Work
+
+A Dutch software agency usually starts with discovery workshops, followed by design, development in sprints, testing and launch, with project managers, designers, developers and testers on the team. Pricing is often time and materials or fixed-price for clearly scoped phases, with hourly rates that reflect Dutch salaries and overheads. This model suits building complex products from scratch, where requirements evolve and a team needs to understand the business deeply. It is less suited to a narrow, technical job on an app that already exists.
+
+## How LaunchStudio Works
+
+LaunchStudio starts from your existing AI-built app. An assessment identifies what blocks production: access control, secrets, payments, data integrity, deployment and monitoring. A fixed-price proposal lists exactly what will be done. Engineers from Manifera, with 11+ years of experience, 160+ delivered projects and 120+ engineers across Amsterdam, Singapore and Ho Chi Minh City, carry out the work in your repository. You keep building with your AI tool afterwards. The focus is narrow by design, which keeps prices fixed and timelines short.
+
+## Comparing Cost Structures
+
+Agency projects for custom software in the Netherlands commonly run from tens of thousands of euros upwards, reflecting discovery, design, development and project management. A production-readiness engagement on an existing app is a different scope: it fixes and completes what exists rather than creating something new. Comparing the two directly is only fair when the scope is the same. If your app already does what customers need, paying for a full rebuild means paying twice for features you have.
+
+## Communication and Location
+
+Agencies in the Netherlands offer face-to-face meetings and Dutch-speaking teams, which some founders value highly. LaunchStudio operates from Herengracht 420 in Amsterdam with engineering teams in Singapore and Ho Chi Minh City, communicating in English and Dutch, with work visible through pull requests and regular updates. For founders who work remotely and asynchronously, the difference matters less; for those who prefer in-person workshops, an agency may feel more comfortable.
+
+## Quality and Accountability
+
+Ask any provider how quality is assured: code review, automated tests, staging environments, security checks and documentation. Ask who owns the code and accounts at the end. Ask what happens if something breaks after launch. Good agencies and good specialists answer these questions clearly. Be cautious of anyone who cannot explain how they test access control or verify payment webhooks, because those are the areas where AI-built apps most often fail.
+
+## Timelines Compared
+
+Agency projects typically include weeks of discovery and design before development starts, and full builds run for months. That timeline makes sense for new products with uncertain requirements. A production-readiness engagement on an existing app skips discovery of features, because the features exist, and focuses on technical gaps. LaunchStudio engagements usually take one to three weeks from assessment to production deployment. For founders with customers waiting or a funding milestone ahead, the difference in time can matter as much as the difference in price.
+
+## Ownership and Lock-In
+
+Some agencies host and maintain the apps they build under ongoing contracts, sometimes on infrastructure they control. That can be convenient, but it can also make changing providers difficult. Before signing with anyone, confirm that the code lives in your GitHub organisation, that hosting, database and payment accounts are registered in your company's name and that you receive all credentials and documentation. LaunchStudio works in your accounts from the start, so nothing needs to be handed over at the end.
+
+## Ongoing Support After Launch
+
+After launch, apps need monitoring, dependency updates, small fixes and occasional features. Agencies typically offer service-level agreements with retainers. LaunchStudio's Launch & Grow option includes ongoing monitoring and support for €49 per month, while founders continue building features with their AI tools. For larger feature work later, founders can engage Manifera's development teams or an agency, with a codebase already in good shape.
+
+## A Fair Comparison Table
+
+| Factor | Dutch agency | LaunchStudio |
+| --- | --- | --- |
+| Typical scope | New product or major features | Production readiness of an existing app |
+| Pricing | Time and materials or phased fixed price | Fixed €800-€7,500 |
+| Timeline | Months for full builds | One to three weeks |
+| Starting point | Requirements and design | Your working AI-built app |
+| After launch | Retainer or SLA | Optional €49/month support |
+| Code ownership | Varies by contract | Always yours |
+
+## Common Mistakes When Choosing
+
+- Comparing a rebuild quote with a production-readiness quote as if they covered the same work
+- Accepting a rebuild without asking whether refactoring is possible
+- Signing without confirming code and account ownership
+- Choosing purely on hourly rate rather than total cost and timeline
+- Not asking how access control and payments will be tested
+
+## Where to Start Today
+
+Write down what your app already does well and what is blocking launch. If the blockers are technical, such as security, payments and deployment, a production specialist fits. If they are product questions, such as what to build next and for whom, an agency's discovery process may be worth the investment.
+
+## Questions to Ask Yourself
+
+Is my app's core functionality already working with real users or testers? Are my blockers technical rather than product-related? Do I need to launch within weeks rather than months? Is my budget closer to a few thousand euros than tens of thousands? If you answered yes to most of these, a production specialist is probably the better fit. If not, an agency's broader service may be worth it.
+
+## Working With Both
+
+Founders do not always have to choose. Some use LaunchStudio to make their AI-built app production-ready quickly, start selling and then engage an agency or Manifera's development teams for larger features once revenue and requirements are clearer. Others work with an agency on a new product and bring in a specialist review for security before launch. A codebase in good shape makes every future collaboration cheaper.
+
+## The Bottom Line
+
+Agencies build products; LaunchStudio makes existing AI-built products ready for customers. Match the provider to the job you actually need done, and insist on code ownership whichever you choose.
+
+## What Customers Will Notice
+
+Your customers will not know who made your app production-ready. They will notice whether it is fast, whether their data stays private, whether payments work and whether problems are solved quickly. Judge any provider by how well they secure those outcomes, not by the size of their team or office.
+
+## One Final Tip
+
+Ask every provider for a written scope listing what is included and excluded; the clearest proposal is usually the one you can hold them to.
 
 ## Who Is Behind LaunchStudio
 

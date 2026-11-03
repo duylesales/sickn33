@@ -17,13 +17,27 @@ Target Persona: SaaS Founder Scale-Up
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2028-01-21",
   "inLanguage": "en",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ideal-recurring-payments-for-saas-sepa-direct-debit-with-mollie" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ideal-recurring-payments-for-saas-sepa-direct-debit-with-mollie" },
+  "citation": [
+    { "@type": "CreativeWork", "name": "Mollie: Recurring payments", "url": "https://docs.mollie.com/docs/recurring-payments" },
+    { "@type": "CreativeWork", "name": "iDEAL", "url": "https://www.ideal.nl/en/" },
+    { "@type": "CreativeWork", "name": "Stripe Billing", "url": "https://docs.stripe.com/billing" },
+    { "@type": "CreativeWork", "name": "GDPR Article 32", "url": "https://gdpr-info.eu/art-32-gdpr/" }
+  ]
 }
 </script>
 
 "Can I just pay with iDEAL every month?" Dutch SaaS customers ask it constantly, and the honest answer is: not quite. iDEAL is built for single payments confirmed in a banking app. For iDEAL recurring payments, the standard approach is to use the first iDEAL payment to set up a SEPA Direct Debit mandate, which then collects every renewal automatically. Customers experience "I paid with iDEAL"; your business gets reliable monthly revenue.
 
 Here is how it works with Mollie, and where AI-built apps typically get it wrong.
+
+## Key Takeaways
+
+- **iDEAL itself is not recurring.** Dutch SaaS subscriptions usually start with an iDEAL payment that creates a SEPA Direct Debit mandate, which then collects renewals automatically.
+- **Mollie supports this with customers, first payments, mandates and subscriptions;** Stripe offers a comparable pattern with Stripe Billing.
+- **Direct debit behaves differently from cards:** confirmation takes days, failures are normal, and consumers can request refunds of authorised debits for eight weeks under the SEPA rules.
+- **AI-built subscription flows often send a new payment link every month,** which leaks revenue and creates manual work.
+- **A complete mandate-based subscription setup** typically fits LaunchStudio's Launch & Grow package (€2,500-€7,500 plus €49 per month hosting).
 
 ## The Flow in Plain Language
 
@@ -75,6 +89,73 @@ A policy many Dutch SaaS businesses use:
 - A chargeback after payment triggers the same flow.
 
 This keeps good customers happy while protecting revenue.
+
+## SEPA Direct Debit Rules Founders Should Know
+
+SEPA Direct Debit is governed by rules set by the European Payments Council. A few of them shape how your app should behave:
+
+- **Refund rights:** consumers can request a refund of an authorised direct debit from their bank, no questions asked, for eight weeks after the debit. For unauthorised debits the period is much longer. Your app must handle these reversals.
+- **Pre-notification:** the payer should be informed in advance of the amount and date of a debit. A short email before each renewal, or a clear schedule at sign-up, satisfies this and reduces disputes.
+- **Mandate reference:** each mandate has a reference and creation date. Store your provider's mandate ID with the customer so you can answer questions and trace payments.
+- **Settlement time:** a direct debit is not final immediately. Treat renewals as pending until your provider confirms them.
+
+## Designing the Customer Experience
+
+The technical flow is only half the job. Customers need to understand what they agreed to:
+
+- On the plan page, state the price, interval and that renewals are collected automatically by direct debit
+- After the first iDEAL payment, confirm the mandate in plain language and by email
+- In account settings, show the next billing date, the amount and how to cancel
+- When a renewal fails, send a friendly email with a one-click iDEAL catch-up payment and a clear grace period
+
+Clear communication reduces both failed payments and chargebacks.
+
+## Measuring Subscription Health
+
+Once mandates are live, track a few numbers monthly:
+
+| Metric | Why it matters |
+| --- | --- |
+| Renewal success rate | Shows how much revenue fails at collection |
+| Recovery rate after dunning | Shows whether your emails and catch-up payments work |
+| Chargebacks and refund requests | Early signal of unclear communication or unhappy customers |
+| Involuntary churn | Customers lost to failed payments rather than cancellations |
+
+Small improvements in renewal success and recovery often matter more to revenue than new sign-ups, especially for subscription businesses with modest prices.
+
+## Data and Privacy
+
+Mandates involve bank account details, which are personal data. Let your payment provider hold them, store only references in your database, and list the provider in your processing records. Under the GDPR's security requirements, financial data deserves particular care in access control and logging.
+
+## When to Choose Stripe Billing Instead
+
+Mollie's subscription model suits fixed-price plans well. If your pricing involves trials, seat-based billing, mid-cycle upgrades with proration or usage-based charges, Stripe Billing's built-in logic may save significant custom work. Our comparison of Mollie and Stripe for Dutch subscriptions covers this decision in detail.
+
+## Upgrades, Downgrades and Plan Changes
+
+Subscriptions rarely stay on one plan. Customers add users, switch from monthly to yearly, or downgrade during a quiet season. With Mollie, plan changes are handled by updating or replacing the subscription through the API, and your own logic decides how to handle the difference in price. A simple, defensible policy works for most founders:
+
+- **Upgrades take effect immediately**, with a one-off payment for the remaining days of the current period, or simply starting the new plan at the next renewal if you prefer simplicity
+- **Downgrades take effect at the next renewal**, so customers keep what they paid for
+- **Switching to yearly** cancels the monthly subscription and starts a yearly one, with the first yearly payment collected by direct debit on the agreed date
+
+Whatever you choose, show the effect clearly before the customer confirms, and record every change with a timestamp.
+
+## Cancellations and Retention
+
+Make cancelling easy. Customers who cannot find the cancel button contact their bank instead, which leads to reversed debits and administrative overhead. A cancel option in account settings, an optional reason field and a confirmation email showing the end date are enough. If you want to reduce churn, offer a pause or a cheaper plan in the same flow, not a maze.
+
+## Testing Recurring Payments
+
+Recurring flows span weeks, which makes them easy to under-test. In Mollie's test mode you can create customers, first payments, mandates and subscriptions, and simulate renewal outcomes. Test at least: a successful first payment creating a valid mandate, a renewal that succeeds, a renewal that fails, a renewal later reversed, a cancellation before renewal and an upgrade mid-period. Automating these as integration tests saves you from discovering problems on the first of the month with real customers.
+
+## Accounting for Recurring Revenue
+
+Each renewal should produce an invoice or receipt with your company details, VAT information and the service period, issued at the moment the payment is confirmed rather than when the debit is initiated. Reversed debits should produce credit notes. Connecting this to your bookkeeping software, such as Moneybird or Exact Online, saves hours every month and gives your accountant a consistent audit trail.
+
+## Annual Plans and Large Amounts
+
+Yearly plans collected by direct debit involve larger single amounts, which some customers' banks flag or which exceed limits customers have set. For annual plans, consider offering an iDEAL payment for each yearly renewal as an alternative, send a reminder two weeks before the renewal date, and make the amount and date prominent in that reminder. It reduces failed collections and surprised customers.
 
 ## Building It Into Your App
 

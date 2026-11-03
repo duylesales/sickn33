@@ -17,13 +17,27 @@ Target Persona: Technical Solo Founder / Indie Hacker
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2028-02-03",
   "inLanguage": "en",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/how-to-export-lovable-code-to-github-and-keep-building" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/how-to-export-lovable-code-to-github-and-keep-building" },
+  "citation": [
+    { "@type": "CreativeWork", "name": "GitHub: About protected branches", "url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches" },
+    { "@type": "CreativeWork", "name": "OWASP Secrets Management Cheat Sheet", "url": "https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html" },
+    { "@type": "CreativeWork", "name": "GitHub Actions documentation", "url": "https://docs.github.com/en/actions" },
+    { "@type": "CreativeWork", "name": "Lovable documentation", "url": "https://docs.lovable.dev/" }
+  ]
 }
 </script>
 
 **Short answer:** connect your Lovable project to GitHub from Lovable's GitHub integration. Lovable creates a repository under your GitHub account and keeps it in two-way sync: changes made in Lovable are pushed to GitHub, and commits pushed to the synced branch appear back in Lovable. From then on, the code is yours, and you can keep building in Lovable, in Cursor or with a developer, as long as you agree on a workflow so the different sources of changes do not overwrite each other.
 
 The setup takes minutes. The workflow is what makes it last.
+
+## Key Takeaways
+
+- **Connect your Lovable project to GitHub** through Lovable's integration; the repository stays in two-way sync with the branch Lovable uses.
+- **Create the repository under a company organisation,** not a personal account, so the code clearly belongs to the business.
+- **Scan for secrets before sharing access.** A key deleted in a later commit still exists in git history and must be rotated.
+- **Choose a working model** - Lovable-first, branch-and-merge or hand-over - and agree on who changes what to avoid overwriting each other's work.
+- **Protect logic Lovable should not rewrite** by moving it into database policies, database functions and edge functions, and by documenting protected files.
 
 ## Step 1: Connect to GitHub
 
@@ -74,6 +88,53 @@ The most common problem after export: a developer fixes something carefully, the
 ## Step 6: Deploy From GitHub
 
 With the code in GitHub, you can deploy through a pipeline instead of publishing from the builder: Vercel or Netlify for the frontend, Supabase migrations applied through CI, environment variables per environment. That gives you previews, rollbacks and a record of what went live when.
+
+## Why Git Matters More Than It Seems
+
+For a non-technical founder, GitHub can feel like a developer tool you will never need. In practice, it is the single most important ownership step for an AI-built product. Git gives you a complete history of every change, the ability to restore any previous version, a place where developers can review and collaborate, and an independent copy of your code outside the builder. Investors and acquirers ask about code ownership; a repository in your company's GitHub organisation is the clearest answer.
+
+## Branching Basics for Founders
+
+A branch is a parallel line of work. Lovable usually works on `main`. A developer can create a branch, such as `fix-invoice-rounding`, make changes there and open a pull request: a proposal to merge those changes into `main`, which can be reviewed and tested first. GitHub's documentation on protected branches explains how to require reviews or passing checks before anything merges into important branches. For a small team, a simple rule works well: Lovable on `main`, developers on feature branches, and a separate `production` branch that only receives tested changes.
+
+## Handling Secrets Properly
+
+OWASP's Secrets Management Cheat Sheet recommends storing secrets in a dedicated secret store, never in source code, and rotating them after any exposure. For a Lovable project that means:
+
+- Frontend environment variables contain only public values, such as the Supabase URL and publishable key
+- Secret keys for payments, email or AI providers live in Supabase edge function secrets or your host's secret settings
+- `.env` files with real values are listed in `.gitignore` and never committed
+- A secret found in history is rotated at the provider, and optionally removed from history with a history-rewriting tool
+
+GitHub's secret scanning can also alert you when known key formats are pushed to a repository.
+
+## Code Review for AI-Generated Changes
+
+When Lovable commits to your repository, each commit can be reviewed like a junior developer's work. You do not need to read every line. Focus on changes in four places: `supabase/migrations` (database and policies), `supabase/functions` (server logic), configuration files and anything touching payments or authentication. A quick look after each building session catches most risky changes, such as a new policy that grants broad access or a key added to frontend code.
+
+## Continuous Integration
+
+With code in GitHub, you can add automated checks that run on every change: building the app, linting for errors such as case-mismatched imports, type checking and a few end-to-end tests. If a check fails, the change does not reach production. This is one of the most effective protections against regressions introduced by prompts, and it costs little once set up.
+
+## Documentation That Lives With the Code
+
+Add a README to the repository with how to run the app, which environment variables are needed (names only), where the backend lives and which files or folders prompts should not modify. Keep a short `docs/` folder with the systems map and release procedure. Documentation in the repository travels with the code, which makes onboarding any future developer faster.
+
+## When to Stop Using Lovable for a Part of the App
+
+Over time, some parts of your app may be better maintained by hand: complex calculations, integrations with external systems, performance-critical queries. It is normal for a mature product to use Lovable for interface work while developers own specific modules. Mark those modules clearly in documentation and Lovable's project knowledge so prompts leave them alone. This hybrid model keeps the speed of AI-assisted building where it helps and the stability of hand-maintained code where it matters.
+
+## Releases and Rollbacks
+
+Once your code lives in GitHub and deploys through a host such as Vercel or Netlify, every deployment is tied to a specific commit. That gives you something the builder's publish button cannot: the ability to roll back instantly to the last known good version when a change causes problems. Practise a rollback once on staging so you know the steps before you need them under pressure. Pair it with additive database migrations, meaning you add new columns or tables rather than renaming or deleting existing ones in the same release, so that rolling back the app does not break the database.
+
+## Working With More Than One Developer
+
+As your product grows, you may have a freelancer for backend work, an agency for a mobile app and yourself in Lovable. GitHub keeps this manageable: each person works on their own branch, pull requests show what changed and why, and automated checks protect the main branch. Agree on naming conventions for branches, who approves merges and how often `main` is promoted to production. Small agreements like these prevent the confusion that otherwise appears as soon as a second contributor joins.
+
+## A Simple Weekly Routine
+
+Once a week, spend fifteen minutes in GitHub: skim the commits from Lovable and any developers, check that automated checks passed, confirm staging matches what you expect and promote tested changes to production. This small habit gives a non-technical founder real oversight of the codebase without needing to read code in depth, and it surfaces surprises while they are still small.
 
 ## Handling Conflicts
 

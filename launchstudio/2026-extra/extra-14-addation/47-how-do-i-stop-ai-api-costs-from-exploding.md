@@ -17,11 +17,24 @@ Target Persona: SaaS Founder Scale-Up
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2028-02-24",
   "inLanguage": "en",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/how-do-i-stop-ai-api-costs-from-exploding" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/how-do-i-stop-ai-api-costs-from-exploding" },
+  "citation": [
+    { "@type": "CreativeWork", "name": "OWASP Top 10 for Large Language Model Applications", "url": "https://owasp.org/www-project-top-10-for-large-language-model-applications/" },
+    { "@type": "CreativeWork", "name": "Supabase: Database performance", "url": "https://supabase.com/docs/guides/platform/performance" },
+    { "@type": "CreativeWork", "name": "EU Artificial Intelligence Act", "url": "https://artificialintelligenceact.eu/" }
+  ]
 }
 </script>
 
 **Short answer:** control AI API costs at five points: who can call the AI (authentication and quotas), how often (rate limits), how much text each call sends (prompt size and context), which model handles it (routing cheap tasks to cheaper models) and whether you repeat work (caching). Add provider-side spending limits and daily cost monitoring, and tie usage to pricing plans so heavy users pay for what they use.
+
+## Key Takeaways
+
+- **Control AI API costs at five points:** who can call, how often, how much text each call sends, which model handles it and whether work is repeated.
+- **Quotas tied to plans turn AI from an uncapped cost into a feature with a margin.**
+- **Unbounded consumption is a recognised risk:** OWASP's Top 10 for LLM Applications lists it explicitly.
+- **Smaller prompts and smaller models often reduce cost and improve quality** for classification, extraction and short answers.
+- **Log cost per call, user and feature,** so pricing decisions are based on data rather than guesses.
 
 ## Where the Money Actually Goes
 
@@ -70,6 +83,87 @@ If many users ask for the same summary, explanation or translation, store the re
 ## Monitoring
 
 Log every AI call with user, feature, model, tokens and estimated cost. A simple daily report answers the questions that matter: which feature costs most, which users are heavy, and whether a plan is unprofitable.
+
+## How AI Pricing Works
+
+Most language model APIs charge per token, a unit of text roughly comparable to a few characters. You pay for input tokens (your instructions, context and the user's content) and output tokens (the model's response), usually at different rates, with larger models costing considerably more per token than smaller ones. Some providers also offer discounts for cached input or batch processing. The practical consequence: cost scales with how much text you send and receive, multiplied by the model's price and the number of calls.
+
+## A Worked Example
+
+Imagine a feature that summarises customer documents. Each call sends a 1,500-word document plus a 300-word instruction and receives a 200-word summary. With a large model, a few thousand such calls per day can add up to hundreds or thousands of euros per month. Switching to a mid-sized model for summaries, trimming the instruction, sending only the relevant sections and caching summaries of documents that do not change can reduce that cost by an order of magnitude, often without users noticing any difference in quality. Measure your own numbers; the pattern is consistent.
+
+## Designing Quotas That Customers Accept
+
+Quotas work best when they are visible and fair. Show users how many AI actions they have left this month, warn them before they run out and offer an upgrade path. Base quotas on actual usage data from your logs rather than guesses: if 90% of users need fewer than 50 generations per month, a 100-generation limit on a starter plan protects you without affecting most customers.
+
+## Abuse Patterns to Watch
+
+- **Scripted access:** automated calls to your AI endpoint, often after a key leak or through an unprotected endpoint
+- **Free account farming:** many sign-ups to consume free credits
+- **Prompt stuffing:** very long inputs designed to maximise your costs
+- **Retry loops:** client bugs that resend requests on every error
+
+Rate limits per user and IP, CAPTCHA on sign-up, maximum input lengths and sensible retry logic address these.
+
+## Caching Strategies
+
+| Strategy | Good for | Watch out for |
+| --- | --- | --- |
+| Exact-match cache | Identical inputs, such as the same product description | Include prompt version and model in the cache key |
+| Precomputation | Content that many users view, such as summaries of shared documents | Recompute when the source changes |
+| Provider prompt caching | Long, repeated instructions or context | Check provider-specific rules and pricing |
+
+## Budgeting and Forecasting
+
+Forecast AI costs from three inputs: active users, average AI actions per user and average cost per action. Revisit monthly. If cost per action rises, a prompt or model change is the likely cause; if actions per user rise, check for new usage patterns or abuse. Tie these numbers to plan pricing so each plan stays profitable.
+
+## When to Consider Self-Hosted or Open Models
+
+At high volumes or with strict data requirements, open-weight models hosted in your own EU cloud environment can reduce costs and simplify data residency. They also bring operational work: hosting, scaling, monitoring and quality evaluation. For most founder-stage products, managed APIs with good cost controls remain simpler; revisit the question when AI costs become a major share of revenue.
+
+## Setting Up Cost Logging in a Supabase App
+
+A minimal cost logging setup takes a few hours: create an `ai_usage` table with user ID, organisation ID, feature, model, input tokens, output tokens, estimated cost and timestamp; have your edge function insert a row after every call using the token counts the provider returns; protect the table with Row Level Security so users can see only their own usage; and build a simple admin view grouped by day, feature and customer. That one table answers most cost questions you will ever have.
+
+## Alerts That Prevent Surprises
+
+Combine provider-side budget alerts with your own: an alert when daily spend exceeds a threshold, when one customer's usage spikes far above normal, or when error rates rise, since failing calls that retry can still cost money. Alerts sent to your phone turn a potential month-end shock into a same-day fix.
+
+## Pricing Your AI Features
+
+Use your cost data to set prices. Calculate the cost per AI action, add a margin that covers variation and support, and decide whether AI usage is included in plans with limits, sold as credits or priced per use. Many SaaS products include a generous allowance in each plan and sell additional usage, which keeps pricing simple while protecting margins.
+
+## Reviewing Costs Monthly
+
+Once a month, look at total AI spend, spend per active user, the most expensive features and the heaviest customers. Small changes - a shorter prompt, a cheaper model for one feature, a cache for repeated work - often produce significant savings with no visible change for users.
+
+## Common Mistakes to Avoid
+
+- Calling the most expensive model for every task by default
+- Sending entire documents or chat histories when a section or summary would do
+- Allowing unlimited AI actions on free plans
+- Regenerating identical content on every page view
+- Leaving the API key in frontend code where anyone can copy it
+- Not setting a spending limit at the provider
+- Ignoring failed calls that retry automatically and still incur cost
+
+Each of these is easy to fix once you can see it, which is why cost logging comes first.
+
+## A Note on Free Trials
+
+Free trials that include AI features are particularly exposed. Limit AI usage during trials more tightly than on paid plans, require email confirmation before AI features unlock and watch for patterns of repeated trial sign-ups from the same devices or domains. A trial should show the value of your AI features, not fund someone else's workload.
+
+## The Payoff
+
+With quotas, logging, smaller prompts, sensible model choices and caching, AI features become a predictable cost line with a healthy margin. That predictability is what lets you price confidently and invest in better AI features rather than worrying about the next invoice.
+
+## Where to Start This Week
+
+If you do only three things: set a spending limit at your AI provider, add a per-user daily quota in your edge function, and start logging cost per call. Those three steps prevent the worst surprises and give you the data for every other optimisation.
+
+## The Bottom Line
+
+AI features are worth offering. Uncontrolled AI costs are not. Measure, limit and optimise from the first day.
 
 ## Getting It in Place
 

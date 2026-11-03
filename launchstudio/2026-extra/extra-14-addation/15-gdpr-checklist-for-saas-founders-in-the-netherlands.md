@@ -17,11 +17,25 @@ Target Persona: SaaS Founder Scale-Up
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2028-01-23",
   "inLanguage": "en",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/gdpr-checklist-for-saas-founders-in-the-netherlands" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/gdpr-checklist-for-saas-founders-in-the-netherlands" },
+  "citation": [
+    { "@type": "CreativeWork", "name": "GDPR Article 28: Processor", "url": "https://gdpr-info.eu/art-28-gdpr/" },
+    { "@type": "CreativeWork", "name": "GDPR Article 32: Security of processing", "url": "https://gdpr-info.eu/art-32-gdpr/" },
+    { "@type": "CreativeWork", "name": "GDPR Article 33: Breach notification", "url": "https://gdpr-info.eu/art-33-gdpr/" },
+    { "@type": "CreativeWork", "name": "Autoriteit Persoonsgegevens", "url": "https://www.autoriteitpersoonsgegevens.nl/en" }
+  ]
 }
 </script>
 
 B2B SaaS changes your position under the GDPR in a way many founders miss. When a Dutch business uses your software to manage its customers, employees or patients, that business is the controller of the data, and you are its processor. That single fact decides which documents you need, which questions you will be asked and what your app must be able to do. This GDPR checklist for SaaS is organised around that reality.
+
+## Key Takeaways
+
+- **In B2B SaaS you are usually both controller and processor:** controller for your own customers' account data, processor for the personal data they store in your product.
+- **Article 28 of the GDPR requires a processing agreement** (verwerkersovereenkomst) whenever you process personal data on a customer's behalf.
+- **Dutch business customers ask for a predictable document pack:** processing agreement, sub-processor list, security summary, privacy statement, processing register and incident procedure.
+- **Every document must be backed by a technical measure,** especially tenant isolation, EU hosting, audit logging and organisation-level deletion.
+- **LaunchStudio implements the technical side** for typically €2,000-€6,000, giving your lawyer accurate facts to write from.
 
 ## Part 1: Know Your Role
 
@@ -90,6 +104,66 @@ If any answer starts with "I think", that is your next task.
 - [ ] Run a restore test each quarter
 - [ ] Update the security summary when anything material changes
 - [ ] Keep a simple log of privacy-related decisions
+
+## What Article 28 Actually Requires
+
+The GDPR's Article 28 describes what a processing agreement must contain. Knowing the list helps you review templates and answer customer redlines:
+
+- The subject matter, duration, nature and purpose of the processing
+- The types of personal data and categories of data subjects
+- That you process only on the customer's documented instructions
+- Confidentiality obligations for people with access
+- Appropriate security measures, referring to Article 32
+- Conditions for engaging sub-processors, including notice of changes
+- Assistance with data subject requests and with the customer's own obligations
+- Deletion or return of data at the end of the contract
+- Making information available and allowing audits
+
+Each item has a technical counterpart in your app. "Deletion at the end of the contract" means an organisation-level deletion function. "Assistance with data subject requests" means you can find and export one person's data quickly. "Appropriate security measures" means tenant isolation, encryption, access control and logging that actually work.
+
+## Sub-Processor Management in Practice
+
+Your sub-processor list is a living document. A practical setup:
+
+- A table with each service, purpose, data categories, location and transfer mechanism
+- A public page or a document available on request
+- A process for notifying customers before adding a new sub-processor, as most agreements require
+- A review whenever you add a tool, including analytics, error tracking and AI APIs
+
+AI APIs deserve special attention. If you send customer content to a language model provider, that provider is a sub-processor. Check its retention and training settings, data location and terms, and disclose it.
+
+## Answering a Security Questionnaire Efficiently
+
+Dutch questionnaires vary in length, but most questions fall into recurring themes. Prepare standard answers once:
+
+| Theme | Prepared answer covers |
+| --- | --- |
+| Hosting and location | Providers, regions, backups location |
+| Access control | Tenant isolation method, roles, MFA, admin access |
+| Encryption | In transit and at rest |
+| Logging and monitoring | What is logged, retention, alerting |
+| Incident management | Detection, response steps, notification timelines |
+| Business continuity | Backups, restore testing, recovery time |
+| Development practices | Code review, staging, dependency management |
+| Personnel | Who has access, confidentiality agreements |
+
+Keep the answers in one document and update them when your setup changes. Your second questionnaire then takes an hour instead of a week.
+
+## When Customers Send Their Own Agreement
+
+Larger Dutch organisations often send their own processing agreement rather than signing yours. Read it carefully for obligations you cannot meet, such as audit rights with short notice, very short breach notification deadlines or requirements to host only in the Netherlands. Negotiate what is unrealistic rather than signing promises you cannot keep; most customers prefer an honest discussion to a broken commitment later.
+
+## Building Privacy Into Your Roadmap
+
+Each new feature can create new processing. A lightweight habit keeps documentation accurate: for every feature that touches personal data, note what data it uses, why, where it goes and how long it stays. Update the processing register and sub-processor list in the same pull request that ships the feature. It takes minutes and prevents the drift that makes questionnaires painful.
+
+## Data Subject Requests in a B2B Context
+
+When an individual asks to see, correct or delete their data, the request may reach you or your customer. Under a processing agreement, you typically assist the customer rather than deciding yourself. Build the tools that make assistance quick: an admin search that finds all records linked to an email address within an organisation, an export of that person's data in a readable format, and a deletion or anonymisation function that respects records your customer must keep. Log each request and the action taken. When a customer asks "how would you help us with an access request?", a short demonstration is far more convincing than a paragraph in a contract.
+
+## A Realistic Timeline
+
+For a typical AI-built B2B SaaS, getting from "no documentation" to "questionnaire-ready" takes two to four weeks: one to two weeks for technical measures such as tenant isolation, EU hosting, logging and deletion, and one to two weeks in parallel for your lawyer to finalise the processing agreement and privacy statement based on accurate facts. Starting before your first large prospect asks saves that prospect's patience.
 
 ## Where LaunchStudio Fits
 

@@ -17,11 +17,26 @@ Target Persona: SaaS Founder Scale-Up
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2028-03-03",
   "inLanguage": "en",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/can-i-sell-a-saas-built-with-lovable" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/can-i-sell-a-saas-built-with-lovable" },
+  "citation": [
+    { "@type": "CreativeWork", "name": "Veracode 2025 GenAI Code Security Report", "url": "https://www.veracode.com/resources/analyst-reports/2025-genai-code-security-report/" },
+    { "@type": "CreativeWork", "name": "GDPR Article 83: Fines", "url": "https://gdpr-info.eu/art-83-gdpr/" },
+    { "@type": "CreativeWork", "name": "GDPR Article 28: Processor", "url": "https://gdpr-info.eu/art-28-gdpr/" },
+    { "@type": "CreativeWork", "name": "Acquire.com", "url": "https://acquire.com/" },
+    { "@type": "CreativeWork", "name": "OWASP Top 10 2021: A01 Broken Access Control", "url": "https://owasp.org/Top10/A01_2021-Broken_Access_Control/" }
+  ]
 }
 </script>
 
 **Short answer:** yes. Buyers care about revenue, customers and transferability far more than about which tool wrote the code. But technical due diligence will check that the code is yours and transferable, that customer data is secure and compliant, that the app runs independently of personal accounts, and that someone other than you can operate it. AI-built apps often have gaps exactly there, and gaps lower the price or delay the deal.
+
+## Key Takeaways
+
+- **AI-built SaaS products are bought and sold;** buyers price risk, not the tool that wrote the code.
+- **Technical due diligence focuses on ownership, transferability, security, data protection, operations, code quality, dependencies and costs.**
+- **Typical red flags in AI-built apps:** personal-email accounts, leaked keys, permissive access policies, untested backups, builder-only deployment and missing GDPR documents.
+- **Three to six months of preparation** resolves most issues and protects the price; even eight focused weeks can close the main gaps.
+- **An independent audit summary in the data room** turns assurances into evidence.
 
 ## What Acquirers Actually Look At
 
@@ -58,6 +73,92 @@ Each of these becomes a negotiating point, an escrow, a price reduction or a rea
 5. **Prepare GDPR documents:** processing register, processor list, data locations.
 6. **Clean up costs:** know your infrastructure and AI API costs per customer.
 7. **Collect metrics:** uptime, incidents, support volume, churn.
+
+## How Buyers Value Small SaaS Businesses
+
+Small SaaS businesses are commonly valued as a multiple of recurring revenue or profit, adjusted for growth, churn, concentration of customers and risk. Technical risk feeds directly into that adjustment. A buyer who finds that customer data could be exposed, that the business depends on accounts held by the founder personally or that nobody else can operate the product will either lower the multiple, hold back part of the price in escrow or walk away. Removing those risks before a sale is therefore one of the highest-return activities a founder can undertake.
+
+## The Due Diligence Process
+
+A typical acquisition follows a pattern: initial interest and high-level metrics, a letter of intent with indicative price, then due diligence across finance, legal and technology, followed by final negotiation and transfer. Technical due diligence often includes:
+
+- Access to the repository for code review
+- A walkthrough of architecture and infrastructure
+- Review of security practices, incidents and any audits
+- Review of privacy documentation and processor agreements
+- Questions about key person dependency and documentation
+- Review of infrastructure costs and scalability
+
+Preparing a data room with this material in advance shortens the process and signals professionalism.
+
+## Security Evidence Buyers Trust
+
+Buyers want evidence, not statements. Useful items include an independent code or security audit summary with dates and remediation status, a description of access control and tenant isolation, records of backup restore tests, an incident log (even if empty), dependency vulnerability reports and evidence of MFA on critical accounts. For AI-built products, buyers may specifically ask how generated code was reviewed; a recent audit is the strongest answer. Research such as Veracode's 2025 finding that roughly 45% of AI-generated code samples contained security flaws has made buyers more alert to this question.
+
+## Privacy and the GDPR in a Sale
+
+A buyer inherits your data protection obligations and history. Expect questions about the legal basis for processing, privacy statements, processor agreements with every sub-processor, data location, retention, handling of data subject requests and any breaches. Under the GDPR, fines can reach €20 million or 4% of worldwide turnover for serious violations, so buyers treat gaps seriously. Having a processing register, sub-processor list and documented measures ready removes a major source of friction.
+
+## Transferring the Business Technically
+
+At closing, everything must move cleanly to the buyer: GitHub organisation, Supabase organisation, hosting, domain, payment provider, email provider, analytics, app store accounts and any AI provider accounts. Practise this in your mind - or better, on paper - before the sale: list each account, its owner, how ownership transfers and any data or contracts that need consent to move. Payment provider accounts in particular may require new verification by the buyer; plan for that time.
+
+## Key Person Risk
+
+Many small SaaS products depend on the founder's knowledge. Buyers reduce that risk through transition periods, documentation and sometimes earn-outs. You can reduce it before the sale with an operating document, a README that lets a new developer run and deploy the app, and a short recorded walkthrough of the architecture. The less the product depends on your memory, the stronger your negotiating position.
+
+## Preparing Without Signalling a Sale
+
+You do not need to announce a sale to prepare for one. The same work - security audit, ownership consolidation, documentation, independence from the builder - also helps with fundraising, enterprise sales and simply running a healthier business. Many founders do this preparation as part of normal maturity, which keeps options open without changing anything customers see.
+
+## A Preparation Timeline
+
+| Months before sale | Focus |
+| --- | --- |
+| 6 | Independent security audit; fix critical and high findings |
+| 5 | Consolidate all accounts under the company; enable MFA everywhere |
+| 4 | Make the app independent of the builder; deploy from GitHub |
+| 3 | Write operating documentation; record architecture walkthrough |
+| 2 | Complete GDPR documentation; sign missing processor agreements |
+| 1 | Prepare the data room; run a final restore test and re-audit summary |
+
+Compressing this into eight weeks is possible with focused help, but six months lets fixes run in production long enough to prove they work.
+
+## Metrics That Complement the Technical Story
+
+Buyers combine technical review with business metrics: monthly recurring revenue, growth rate, churn, customer concentration, gross margin and support load. Technical work influences several of these. Lower infrastructure and AI costs raise margins; fewer incidents reduce churn and support. Showing improvement in these numbers after technical work strengthens your story.
+
+## Common Mistakes When Selling
+
+- Starting technical clean-up only after the buyer's review begins
+- Overstating security or compliance in early conversations
+- Not knowing which accounts are on personal emails
+- Forgetting app store, domain or payment provider transfers
+- Leaving no documentation for the buyer's developers
+
+## The Bottom Line
+
+A SaaS built with Lovable can be sold on normal terms. What buyers need is confidence: that the product is owned, secure, compliant, documented and transferable. Build that confidence before the sale, and the tool you used to build becomes a footnote rather than a negotiating point.
+
+## What Buyers Say About AI-Built Products
+
+Buyers generally do not object to AI-generated code as such. Many buyers' own teams use AI tools daily. What concerns them is unreviewed code: products where nobody has checked access control, secrets or data handling, and where the founder cannot explain how the system works. A founder who can show an audit, documented architecture and clean ownership changes the conversation from "is this safe to buy?" to "how fast can we grow it?".
+
+## Choosing Advisers
+
+For larger transactions, founders typically work with a lawyer and sometimes an M&A adviser or broker. Add technical support early: someone who can prepare the technical data room, answer reviewers' questions and fix issues they raise quickly. Responsiveness during due diligence keeps momentum, and momentum protects price.
+
+## Questions to Answer Before Your First Buyer Call
+
+Can I list every account the business uses and who owns each? Has an independent party reviewed the code in the last year? Can someone other than me deploy and restore the app? Do I have processor agreements for every service handling personal data? What are my infrastructure and AI costs per customer? If you can answer all five confidently, you are ready for serious conversations.
+
+## Related Reading
+
+Our guides on AI-generated code audits, what happens if Lovable changes or shuts down and data retention for Dutch SaaS cover the three areas buyers examine most closely in AI-built products.
+
+## Summary
+
+Buyers pay for confidence. Give them owned accounts, an audited and documented product, complete privacy paperwork and a clean transfer plan.
 
 ## The AI-Built Question Itself
 

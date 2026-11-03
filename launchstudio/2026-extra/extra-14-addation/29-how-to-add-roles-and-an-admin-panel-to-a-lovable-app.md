@@ -17,13 +17,28 @@ Target Persona: Technical Solo Founder / Indie Hacker
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2028-02-06",
   "inLanguage": "en",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/how-to-add-roles-and-an-admin-panel-to-a-lovable-app" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/how-to-add-roles-and-an-admin-panel-to-a-lovable-app" },
+  "citation": [
+    { "@type": "CreativeWork", "name": "OWASP Top 10 2021: A01 Broken Access Control", "url": "https://owasp.org/Top10/A01_2021-Broken_Access_Control/" },
+    { "@type": "CreativeWork", "name": "OWASP Authorization Cheat Sheet", "url": "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html" },
+    { "@type": "CreativeWork", "name": "OWASP Logging Cheat Sheet", "url": "https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html" },
+    { "@type": "CreativeWork", "name": "Supabase: Row Level Security", "url": "https://supabase.com/docs/guides/database/postgres/row-level-security" },
+    { "@type": "CreativeWork", "name": "Verizon Data Breach Investigations Report", "url": "https://www.verizon.com/business/resources/reports/dbir/" }
+  ]
 }
 </script>
 
 **Short answer:** store roles in a separate table that users cannot write to, check those roles in Supabase Row Level Security policies, and perform admin actions through edge functions that verify the caller's role on the server. The admin panel itself can be a normal Lovable page, but hiding it from non-admins is only cosmetic. Real protection happens in the database and on the server.
 
 Here is the pattern step by step.
+
+## Key Takeaways
+
+- **Hiding an admin page is not security.** Anyone can type the URL or call the same queries; protection must live in the database and on the server.
+- **Store roles in a dedicated table users cannot write to,** and check them in Row Level Security policies through a helper function.
+- **Perform privileged actions in edge functions** that verify the caller's role and write an audit log entry.
+- **B2B apps usually need organisation roles** (owner, admin, member per organisation) rather than only global roles.
+- **Broken access control is the number one risk in the OWASP Top 10,** and privilege escalation through user-editable role columns is one of its most common forms in AI-built apps.
 
 ## The Insecure Pattern Lovable Often Generates
 
@@ -105,6 +120,62 @@ Now Lovable can build the admin interface freely. It reads data the policies all
 - Try to update your own `profiles` row with a role field, if one still exists
 
 Every attempt should fail.
+
+## The Principle of Least Privilege
+
+Security engineering has a long-standing principle: every user and component should have only the access it needs to do its job. OWASP's Authorization Cheat Sheet translates this into practical rules for web applications: deny by default, enforce authorisation on every request on the server, check permissions on specific objects rather than only on pages, and centralise authorisation logic so it is consistent. A role system built on these rules is boring in the best sense: predictable, testable and hard to bypass.
+
+AI-generated admin panels typically violate several of these rules at once. Access is allowed by default and restricted in the interface, checks live in components rather than on the server, and each new page reimplements its own version of the rule.
+
+## Designing Your Role Model Before You Build It
+
+Spend thirty minutes on paper before writing any policy:
+
+1. **List user types:** for example customer, staff, manager, administrator.
+2. **List resources:** orders, invoices, users, settings, reports.
+3. **For each pair, write the allowed actions:** read, create, update, delete, export, approve.
+4. **Mark sensitive actions:** refunds, role changes, deletions, data exports.
+5. **Decide scope:** own records, team records, organisation records or everything.
+
+This matrix becomes the specification for your policies and functions, and the checklist for your tests. It also makes conversations with customers easier when they ask "who on your side can see our data?"
+
+## Audit Logging Done Right
+
+Every sensitive admin action should leave a trace: who did it, to which record, when, from where and with what result. Store audit entries in a table that normal users cannot read or modify, and that administrators can read but not edit. OWASP's Logging Cheat Sheet recommends logging security-relevant events such as authorisation failures and administrative actions, protecting log integrity and avoiding sensitive data like passwords or full payment details in logs. For B2B customers, a readable audit log is also a selling point; many security questionnaires ask for it explicitly.
+
+## Common Role Mistakes in AI-Built Apps
+
+| Mistake | Consequence | Fix |
+| --- | --- | --- |
+| Role stored on the user's profile, profile fully editable | Any user can promote themselves | Separate roles table without write policies |
+| Admin check only in React | Admin URL and actions reachable by anyone | Server-side checks in policies and functions |
+| One policy per page, slightly different each time | Inconsistent and hard-to-test rules | Central helper functions reused by all policies |
+| Admin actions with the service role key in the browser | Full database access for anyone | Edge functions with role verification |
+| No audit trail | Disputes and incidents cannot be investigated | Audit log table and review screen |
+
+## Two-Factor Authentication for Admins
+
+Administrator accounts are the most valuable targets in any app, because they can see and change everyone's data. Require multi-factor authentication for all administrators and staff accounts. Supabase Auth supports TOTP authenticator apps and exposes the session's assurance level, which you can check in policies so that admin-only data requires a session verified with a second factor. The Verizon Data Breach Investigations Report has consistently found stolen or misused credentials among the most common breach patterns; MFA blunts that attack for the accounts that matter most.
+
+## Support Access Without Shared Logins
+
+Founders often give support staff a shared admin login. That makes it impossible to know who did what and difficult to remove access when someone leaves. Give each staff member their own account with the narrowest role that fits their work, and if support occasionally needs to see the app as a customer does, build an explicit, logged "view as" feature rather than sharing customer credentials.
+
+## Testing Your Roles
+
+Turn your role matrix into tests: log in as each role and attempt every allowed and disallowed action through the API. Automate the most important ones, especially "a member cannot call admin functions" and "a user cannot change their own role", so that future prompts cannot silently weaken them.
+
+## Admin Panels and Customer Trust
+
+Business customers increasingly ask who on the supplier's side can access their data and how that access is controlled. A role model with least privilege, MFA for staff and an audit log of sensitive actions gives a concrete, credible answer. It also protects you internally: when a customer disputes a refund or a deletion, the audit log shows exactly what happened and who did it. Building this once, early, costs far less than reconstructing events from memory during a dispute.
+
+## Prompting Lovable Safely After Roles Exist
+
+Once roles are in place, tell Lovable explicitly in project knowledge that the roles table, helper functions and admin edge functions must not be changed, and that new admin features must call the existing functions. Review any change in `supabase/migrations` before it reaches production. These two habits keep a carefully designed role model from eroding one prompt at a time.
+
+## Start Simple, Grow Deliberately
+
+Most apps launch well with three roles: admin, staff and member. Add roles only when a real customer need appears, and add each one to your role matrix, policies and tests at the same time. A small, well-tested role model is far safer than a large one nobody fully understands.
 
 ## Roles Beyond Admin and Member
 

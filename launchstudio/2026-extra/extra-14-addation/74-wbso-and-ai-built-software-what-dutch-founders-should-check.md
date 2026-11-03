@@ -17,13 +17,26 @@ Target Persona: SaaS Founder Scale-Up
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2028-03-22",
   "inLanguage": "en",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/wbso-and-ai-built-software-what-dutch-founders-should-check" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/wbso-and-ai-built-software-what-dutch-founders-should-check" },
+  "citation": [
+    { "@type": "CreativeWork", "name": "RVO: WBSO", "url": "https://www.rvo.nl/subsidies-financiering/wbso" },
+    { "@type": "CreativeWork", "name": "KVK", "url": "https://www.kvk.nl/en/" },
+    { "@type": "CreativeWork", "name": "Belastingdienst", "url": "https://www.belastingdienst.nl/" }
+  ]
 }
 </script>
 
 Can the WBSO pay for part of your app? Dutch founders ask this often, and the honest answer is: sometimes, for specific work, if you apply in advance and keep records. The WBSO (Wet Bevordering Speur- en Ontwikkelingswerk) is a Dutch tax incentive for research and development. It can apply to software development, but not to everything that involves writing software, and certainly not automatically to building an app with AI tools.
 
 This article is general information, not tax advice. The Netherlands Enterprise Agency (RVO) administers the scheme and publishes the current rules; a specialised adviser can assess your situation.
+
+## Key Takeaways
+
+- **The WBSO is a Dutch tax incentive for research and development,** reducing payroll tax for qualifying R&D hours by employees, or providing a deduction for self-employed entrepreneurs.
+- **Applications are made in advance** to the Netherlands Enterprise Agency (RVO), describing planned technical work.
+- **Routine software building with AI tools rarely qualifies;** genuinely new technical problems for your company may.
+- **The scheme focuses on R&D carried out by your own people;** outsourced work is generally not counted as your R&D hours.
+- **This is general information, not tax advice.** Check RVO's current rules or use a specialised adviser.
 
 ## What WBSO Is, in Brief
 
@@ -59,6 +72,91 @@ The WBSO is aimed at R&D carried out by your own staff (or yourself as an entrep
 3. Apply in advance, describing technical problems and planned approaches
 4. Keep hour records and technical notes during the work
 5. Consider an adviser if the amounts justify it
+
+## How the WBSO Works in Practice
+
+The WBSO (Wet Bevordering Speur- en Ontwikkelingswerk) is administered by RVO, the Netherlands Enterprise Agency. Companies with employees can receive a reduction in the payroll tax and social security contributions they pay for hours employees spend on qualifying R&D. Self-employed entrepreneurs who spend enough hours on R&D themselves can claim a deduction through their income tax. Applications cover a defined period and must be submitted before the work is done. Afterwards, companies report actual hours. RVO publishes the current rates, thresholds and deadlines, which can change from year to year.
+
+## What "Technical Novelty" Means
+
+The key test for software is whether the work solves technical problems that are new to the applicant, where the solution is not obvious from existing knowledge. Typical qualifying examples include developing a new algorithm for a specific problem, building a technically novel way to process or combine data, or overcoming a real technical bottleneck such as performance, scalability or integration constraints in a way that requires genuine experimentation. The emphasis is on technical uncertainty and the work done to resolve it, not on whether the product is commercially new.
+
+## What Usually Does Not Qualify
+
+Many activities in building a product are valuable but not R&D in the WBSO sense:
+
+- Building standard features such as login, payments, dashboards and forms
+- Configuring existing platforms, tools and libraries
+- Generating interfaces with AI builders
+- Testing, deployment, bug fixing and maintenance
+- Design, content and marketing work
+- Implementing well-known techniques that are documented and widely used
+
+For AI-built products, this means the bulk of building with Lovable or Bolt is unlikely to qualify, while specific technical work around it might.
+
+## Documentation That Supports an Application
+
+If you apply, good records matter. Describe the technical problems in the application, keep a project log during the work with hours per person and per project, and record technical notes: approaches tried, results, dead ends and decisions. These records support your reporting and any later review. Many founders keep this log in the same tool they use for development tasks, tagging R&D-related work.
+
+## Combining WBSO With Outsourcing
+
+Because WBSO focuses on R&D by your own people, founders who outsource most development may benefit less. A common pattern is to keep the genuinely innovative work in-house, such as a custom algorithm or data model developed by the founder or an employee, while outsourcing routine production work such as security hardening, payments and deployment. This separation can also make the technical story of the product clearer for investors and partners. Rules on costs and expenses related to R&D have their own conditions; check RVO's current guidance.
+
+## Other Dutch Support Schemes
+
+Beyond the WBSO, Dutch founders may encounter innovation credits, regional programmes and EU funding instruments, each with specific criteria. RVO's website lists national schemes and their conditions. Treat any subsidy as a bonus rather than a foundation of your budget, and avoid shaping your product around a scheme's criteria if they do not match what your customers need.
+
+## Working With Advisers
+
+Specialised advisers help prepare WBSO applications, often for a fee or percentage. They can be valuable for larger claims or complex projects, especially in judging what qualifies. For small claims, founders often apply themselves using RVO's guidance. Either way, the application should describe real technical work honestly; overstated applications create risk in later reviews.
+
+## A Worked Example of Separating Work
+
+Consider a founder building a scheduling SaaS with an unusual optimisation engine. The interface, accounts, payments and notifications are built with Lovable and production work is outsourced; these are routine and unlikely to qualify. The optimisation engine, developed by the founder over several months with real uncertainty about whether constraints could be solved fast enough, is a candidate for WBSO. Applying only for the engine, with clear technical descriptions and records, produces a credible application and keeps the rest of the project simple.
+
+## Timeline and Planning
+
+Because WBSO applications are made in advance, planning matters. Before starting a technically uncertain project, check RVO's application windows, describe the project and expected hours, and set up time tracking from day one. Founders who discover the scheme halfway through a project often cannot claim the work already done.
+
+## Common Mistakes
+
+- Applying for all development hours, including routine building
+- Applying after the work has started or finished
+- Keeping no records of hours and technical progress
+- Counting outsourced work as own R&D hours
+- Overstating novelty, which creates risk in reviews
+
+## Questions to Ask Before Applying
+
+Is there a technical problem whose solution is genuinely uncertain for us? Will our own people do that work? Can we describe the problem, approach and expected result clearly? Can we record hours and progress throughout? If all four answers are yes, the WBSO is worth investigating with RVO's current guidance.
+
+## Summary
+
+The WBSO can support genuinely technical work by your own team, not routine app building. Separate the innovative core from standard features, apply in advance, keep records and use outsourced help for the production layer where it makes sense.
+
+## Questions Founders Ask About WBSO
+
+**"Does using AI tools disqualify my R&D?"** Not in itself. What matters is whether the work addresses genuine technical problems with uncertainty. Using AI assistants as tools within that work is not the issue; routine work generated by AI tools is unlikely to be R&D regardless.
+
+**"Can I apply as a solo founder?"** Self-employed entrepreneurs can use the R&D deduction if they meet the hour requirements; incorporated companies with employees use the payroll tax reduction. Check RVO's current conditions for your legal form.
+
+**"What if my project changes direction?"** Projects evolve. Keep your records honest and consult RVO's rules on reporting changes.
+
+## Where to Start Today
+
+Write one paragraph describing the hardest technical problem in your product and why its solution is uncertain. If you cannot, your current work is probably not R&D in the WBSO sense; if you can, read RVO's current WBSO conditions and consider applying for that specific work before it starts.
+
+## The Bottom Line
+
+The WBSO rewards genuine technical exploration by your own team. Use it for that, document it well and do not let it distort how you build the rest of your product.
+
+## Related Reading
+
+For overall budgeting, see our MVP cost guide for the Netherlands and our three-year total cost comparison for app development.
+
+## One Last Note
+
+Rules and rates change; always check RVO's current WBSO pages before relying on any figure or condition.
 
 ## Where LaunchStudio Fits
 

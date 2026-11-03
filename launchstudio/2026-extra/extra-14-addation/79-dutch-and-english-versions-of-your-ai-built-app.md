@@ -17,11 +17,24 @@ Target Persona: SaaS Founder Scale-Up
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2028-03-27",
   "inLanguage": "en",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/dutch-and-english-versions-of-your-ai-built-app" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/dutch-and-english-versions-of-your-ai-built-app" },
+  "citation": [
+    { "@type": "CreativeWork", "name": "Google: Tell Google about localized versions of your page", "url": "https://developers.google.com/search/docs/specialty/international/localized-versions" },
+    { "@type": "CreativeWork", "name": "Supabase: Custom SMTP", "url": "https://supabase.com/docs/guides/auth/auth-smtp" },
+    { "@type": "CreativeWork", "name": "web.dev: Web Vitals", "url": "https://web.dev/articles/vitals" }
+  ]
 }
 </script>
 
 Dutch customers expect Dutch. International employees at Dutch companies expect English. Belgian, German and expat users add more variety. AI builders usually hard-code every label in whichever language you prompted in, which makes adding a second language a search-and-replace nightmare. Doing internationalisation (i18n) properly once makes Dutch and English, and later other languages, manageable.
+
+## Key Takeaways
+
+- **Many Dutch SaaS products need both Dutch and English;** AI builders often hard-code text in one language, which makes adding a second painful.
+- **Proper internationalisation covers more than buttons:** errors, emails, auth emails, PDFs, notifications and database content.
+- **Store user language preferences, format dates and numbers by locale and keep timestamps in UTC.**
+- **For public pages, use language-specific URLs with `hreflang`,** as Google recommends for localised versions.
+- **Choose "je" or "u" deliberately in Dutch** and stay consistent across the product.
 
 ## What Needs Translating
 
@@ -65,6 +78,98 @@ For marketing pages, use language-specific URLs (`/nl/` and `/en/`), `hreflang` 
 ## Translation Quality
 
 Machine translation is a good start; native review is worth it for key screens, emails and marketing pages. Tone matters: Dutch SaaS products usually address users informally with "je", while some sectors expect "u".
+
+## Internationalisation Versus Localisation
+
+Internationalisation (i18n) is preparing your app so it can support multiple languages and regions: text in translation files, locale-aware formatting, layouts that handle longer words. Localisation (l10n) is the work of adapting content for a specific language and market: translation, tone, examples, currency and legal references. Doing i18n once makes each new localisation much cheaper. AI-built apps usually skip i18n, so the first translation project often includes a one-time refactor.
+
+## Extracting Strings Safely
+
+Moving hard-coded text into translation files is mechanical but error-prone. A good approach: introduce an i18n library, extract strings screen by screen with meaningful keys such as `checkout.payButton`, run the app in a "pseudo-locale" that wraps every translated string in brackets to spot anything missed and add a check in CI that flags hard-coded text in components. AI tools can help with extraction; review their output, as they sometimes miss strings in error handling or conditional branches.
+
+## Handling Plurals, Gender and Word Order
+
+Languages differ in how they handle plurals ("1 item" versus "2 items"), word order and formality. Use your i18n library's pluralisation features rather than concatenating strings, and avoid building sentences from fragments. Dutch and English are relatively close, but adding German or French later will expose fragmentation, so design translation keys as complete sentences from the start.
+
+## Formatting Dates, Numbers and Currency
+
+Use locale-aware formatting from the browser's internationalisation APIs or your library: dates such as "14 maart 2028" versus "14 March 2028", numbers such as "1.250,00" versus "1,250.00", and currency formatting appropriate to the locale. Store values in neutral formats - UTC timestamps, amounts in cents - and format only for display. Time zones matter as well: show times in the user's time zone, and be careful around daylight saving changes.
+
+## SEO for Multilingual Sites
+
+Google's documentation on localised versions recommends separate URLs for each language, such as `/nl/` and `/en/`, with `hreflang` annotations linking the versions so the right page appears for each language and region. Translate titles, meta descriptions and structured data as well as body text. Avoid automatically redirecting users based on IP address without letting them choose, since crawlers and travellers may be redirected incorrectly. For AI assistants, clear language-specific pages make it easier to cite the right version for Dutch or English questions.
+
+## Machine Translation and Human Review
+
+Machine translation has become very good and is a sensible starting point for interface text. Key pages, legal texts, onboarding flows and marketing content deserve native review: tone, idioms and domain terms matter. In Dutch, choose between informal "je" and formal "u" based on your audience and apply it consistently; mixing them looks careless. For Belgian audiences, a Flemish reviewer can catch Netherlands-specific phrasing.
+
+## Translating User-Generated and Admin Content
+
+If administrators create content such as product names, help articles or email templates, decide whether it should be translated and how. Common approaches include separate fields per language, a translations table keyed by content ID and language, or translation on demand with an AI service whose output is reviewed. Always define a fallback language so missing translations never show empty text.
+
+## Accessibility and Language
+
+Set the `lang` attribute on your HTML so screen readers pronounce text correctly, and update it when users switch languages. Make sure translated text still fits layouts on mobile; Dutch words can be long and break designs created with English text.
+
+## Multilingual Emails and Documents
+
+Emails and documents often stay in one language long after the interface is translated. Store each user's preferred language and pass it to every email and document function. Maintain templates per language for confirmations, password resets, receipts, notifications and reminders. Supabase's built-in auth templates can be customised, but supporting several languages usually means sending auth-related emails through your own function with language-specific templates. Invoices may need a fixed language for your bookkeeping while customer-facing text follows the user's preference; ask your accountant.
+
+## A Practical Rollout Plan
+
+1. Introduce an i18n library and extract strings from the most-used screens first.
+2. Add a language switcher and store preferences in the profile.
+3. Translate interface, errors and validation messages.
+4. Translate transactional and auth emails.
+5. Localise dates, numbers and currency.
+6. Add language-specific public pages with `hreflang`.
+7. Review key flows with native speakers.
+8. Add a CI check that blocks new hard-coded strings.
+
+## Testing Multilingual Apps
+
+Test each language on key flows: sign-up, onboarding, the core action, payments and emails. Look for untranslated strings, truncated text, wrong date formats and mixed languages in a single screen. Test switching languages mid-session and with users whose browser language differs from their profile preference.
+
+## Common Mistakes
+
+- Translating the interface but not emails, errors or PDFs
+- Building sentences from fragments that cannot be translated naturally
+- Mixing "je" and "u" in Dutch
+- Redirecting visitors by IP without letting them choose
+- Forgetting the `lang` attribute and `hreflang` tags
+- No fallback when a translation is missing
+
+## The Payoff
+
+A properly multilingual product serves Dutch customers in their own language, welcomes international employees and opens new markets with modest extra effort. Each additional language becomes a translation project rather than an engineering one.
+
+## Summary
+
+Separate text from code, format by locale, translate every channel, structure public pages for multilingual SEO and choose your Dutch tone deliberately. Do it once, and languages stop being a barrier to growth.
+
+## Choosing an i18n Library
+
+For React apps built with Lovable or Bolt, established libraries such as i18next with its React bindings, or FormatJS-based solutions, handle translation files, plurals, interpolation and formatting. Choose one that supports lazy loading of language files, so users download only the language they need, and that integrates with your build tooling. Avoid inventing a homemade system; translation edge cases are well solved in mature libraries.
+
+## Managing Translations as the Product Grows
+
+As features multiply, translation files grow and drift. Keep them organised by feature, use a translation management tool or a simple review process for new keys, and include translation updates in the same change that adds a feature. A CI check that flags missing keys in any language prevents half-translated releases.
+
+## Where to Start Today
+
+Pick your most important screen - often sign-up or checkout - and move its text into translation files. Seeing one screen work in two languages makes the rest of the project concrete and shows how much work remains.
+
+## Questions to Answer Before Translating
+
+Which languages do your current and target customers need? Will the whole product be translated, or only customer-facing parts? Who reviews translations? Should Dutch use "je" or "u"? How will you handle content created by administrators? Answering these before starting keeps the project focused and avoids rework.
+
+## Related Reading
+
+For Belgian audiences and payments, see our Bancontact and iDEAL checkout guide; for multilingual SEO on a separate marketing site, see our guide on adding a blog or marketing site to a Lovable app.
+
+## The Bottom Line
+
+Treat language as infrastructure rather than decoration: set it up once, properly, and every new market becomes much easier to serve.
 
 ## Getting It Done
 

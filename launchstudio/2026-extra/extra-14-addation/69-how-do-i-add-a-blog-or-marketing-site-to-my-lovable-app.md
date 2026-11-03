@@ -17,11 +17,25 @@ Target Persona: SaaS Founder Scale-Up
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2028-03-17",
   "inLanguage": "en",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/how-do-i-add-a-blog-or-marketing-site-to-my-lovable-app" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/how-do-i-add-a-blog-or-marketing-site-to-my-lovable-app" },
+  "citation": [
+    { "@type": "CreativeWork", "name": "Google: Creating helpful, reliable, people-first content", "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content" },
+    { "@type": "CreativeWork", "name": "Google SEO Starter Guide", "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide" },
+    { "@type": "CreativeWork", "name": "Google: Introduction to structured data", "url": "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data" },
+    { "@type": "CreativeWork", "name": "Google: JavaScript SEO basics", "url": "https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics" }
+  ]
 }
 </script>
 
 **Short answer:** for most SaaS founders, the most effective setup is a separate, server-rendered marketing site and blog on your main domain (`yourapp.nl`), using a CMS such as WordPress or a framework like Next.js or Astro, with the Lovable app on a subdomain (`app.yourapp.nl`). It gives you fast, crawlable pages that rank and get cited by AI assistants, while the app stays focused on logged-in users. Putting a blog inside the Lovable app is possible with prerendering, but harder to maintain for regular publishing.
+
+## Key Takeaways
+
+- **For most SaaS founders, a separate, server-rendered marketing site and blog on the main domain, with the Lovable app on a subdomain, performs best** for search and AI citation.
+- **A blog inside a client-rendered Lovable app can work** with prerendering, but is harder to maintain for regular publishing.
+- **Google's guidance rewards helpful, people-first content** with clear expertise; publishing workflow and site structure matter as much as technology.
+- **Structured data, internal links and consistent company information** help search engines and AI assistants understand and cite your pages.
+- **Keep the handoff between site and app smooth:** consistent design, clear sign-up links and correct authentication redirects for the app subdomain.
 
 ## Three Setups Compared
 
@@ -50,6 +64,102 @@ You can, and for a handful of pages it works. For a content strategy with dozens
 - Clear pricing and feature pages in plain text
 - Internal links from blog posts to the relevant product or service pages
 - An about page that names your company, location and people, which helps AI assistants understand who you are
+
+## Why Content Matters for SaaS Growth
+
+For many SaaS companies, content is a durable acquisition channel. Articles that answer real questions attract visitors searching for solutions, build trust before a sales conversation and increasingly get cited by AI assistants. Google's guidance on helpful, reliable, people-first content describes what works: content created for people, demonstrating first-hand expertise, providing substantial value and clearly identifying who is behind it. A blog full of generic articles written only to rank tends to underperform; a smaller set of genuinely useful pages compounds over time.
+
+## Choosing a Platform for Marketing and Blog
+
+| Platform | Strengths | Considerations |
+| --- | --- | --- |
+| WordPress | Mature editor, SEO plugins, large ecosystem | Needs updates and security maintenance |
+| Headless CMS with Next.js or Astro | Fast, flexible, modern | Requires a developer for setup |
+| Static site generator with Markdown | Very fast, simple hosting | Writers need to be comfortable with Markdown or a Git-based editor |
+| Lovable with prerendering | One tool for everything | Publishing requires prompts or code changes |
+
+The best choice depends on who writes. If non-technical team members publish weekly, a CMS with a friendly editor matters more than technical elegance.
+
+## Site Structure That Helps Search and AI
+
+Organise content around topics your customers care about. A clear structure might include: homepage, product or features pages, use cases by customer type, pricing, a resources section with articles grouped by topic, case studies and an about page. Link related articles to each other and to the relevant product pages. Google's SEO starter guide recommends descriptive URLs, logical site hierarchy and meaningful internal links; the same structure helps AI assistants understand your expertise.
+
+## Structured Data for Marketing Sites
+
+Add Organization structured data with your legal name, logo, contact details and social profiles; Article structured data on blog posts with author and dates; FAQPage on genuine FAQ sections; and BreadcrumbList for navigation. Google's structured data documentation explains requirements. Consistency matters: your company name, address and details should match across your site, Google Business Profile and other listings.
+
+## Writing for AI Assistants as Well as Search
+
+AI assistants answer questions by summarising sources they trust. Pages that state a direct answer early, use clear headings, include specific facts such as prices, steps and locations, and show who is behind the content are more likely to be cited. Avoid hiding key information in images or interactive widgets. Update pages when facts change; outdated prices or steps damage trust with both people and machines.
+
+## Measuring Content Performance
+
+Use Google Search Console for impressions, clicks and queries per page, and your analytics tool, configured with appropriate consent, for engagement and conversions from content to sign-up. Review monthly: which articles bring visitors, which convert, which queries you appear for but do not answer well. Update and expand the articles that perform best rather than only writing new ones.
+
+## Legal and Privacy Considerations
+
+Marketing sites usually use analytics and sometimes advertising pixels. Under e-privacy rules, non-essential cookies and tracking require consent in the EU; implement a consent banner that genuinely blocks trackers until consent is given. Keep your privacy statement accurate for both the marketing site and the app, and show your company details clearly, as Dutch and EU rules expect.
+
+## A Content Plan for the First Three Months
+
+| Month | Focus | Examples |
+| --- | --- | --- |
+| 1 | Foundation pages | Features, pricing, about, three cornerstone guides for your main customer problem |
+| 2 | Questions customers ask | Answers to the ten most common sales or support questions |
+| 3 | Comparisons and use cases | Your product versus alternatives; one page per customer segment |
+
+Publish consistently rather than in bursts, and update the best-performing pages as you learn more.
+
+## Technical Setup Checklist
+
+- Marketing site on the main domain, app on a subdomain
+- Supabase site URL and redirect list updated for the app subdomain
+- Sign-up and login buttons linking to the app, with plan parameters where useful
+- Sitemap, robots.txt and canonical URLs on the marketing site
+- Structured data for organisation, articles and FAQs
+- Consent banner blocking non-essential trackers until accepted
+- Consistent branding across site and app
+- Analytics events for sign-ups originating from content
+
+## Common Mistakes
+
+- Publishing dozens of thin articles targeting slight keyword variations
+- Leaving the app's preview domain indexable
+- Hiding pricing behind a contact form when competitors show it
+- Forgetting to update old articles when the product changes
+- Measuring traffic but not sign-ups from content
+
+## Using AI to Write Content
+
+AI tools can help draft content, but Google's guidance focuses on whether content is helpful, original and demonstrates expertise, regardless of how it was produced. Use AI for outlines and first drafts, then add what only you know: real customer examples, specific numbers, opinions from experience and up-to-date facts. Review every claim. Content that reads like everyone else's earns neither rankings nor citations.
+
+## The Payoff
+
+A well-structured marketing site and blog becomes an asset that compounds: each useful article keeps attracting the right visitors, supports sales conversations and gives AI assistants reasons to recommend you. Separating it from the app lets each do its job well.
+
+## Questions to Answer Before Choosing
+
+Who will write and publish content, and how comfortable are they with technical tools? How often will you publish? Do you need multiple languages, such as Dutch and English? Which pages must rank for which searches? How much design control do you need? The answers usually point clearly to a CMS, a framework or prerendering inside Lovable.
+
+## Related Reading
+
+Our guides on whether Google can index a Lovable app, v0 versus Lovable and Dutch and English versions of your app cover rendering, framework choice and multilingual SEO in more depth.
+
+## Summary
+
+Put content where it can be crawled, published easily and measured, keep the app focused on logged-in users and connect the two with consistent design and clear sign-up paths. That setup serves people, search engines and AI assistants equally well.
+
+## The Role of Your About Page
+
+An about page is easy to neglect and important for trust. Describe who you are, where you are based, why you built the product and who is behind it, with real names and photos where appropriate. Search engines and AI assistants use these signals to judge expertise and trustworthiness, and customers read them before buying. For Dutch businesses, include company details such as KvK number on the site as well.
+
+## Where to Start Today
+
+List the ten questions prospects ask most often. Each one is a candidate for a page that answers it clearly on a crawlable marketing site.
+
+## The Payoff
+
+Content that ranks and gets cited keeps working long after you publish it, bringing qualified visitors to your app every month.
 
 ## Getting It Set Up
 

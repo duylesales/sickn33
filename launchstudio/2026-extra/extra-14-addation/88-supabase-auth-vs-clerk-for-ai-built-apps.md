@@ -17,11 +17,25 @@ Target Persona: Technical Solo Founder / Indie Hacker
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2028-04-05",
   "inLanguage": "en",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/supabase-auth-vs-clerk-for-ai-built-apps" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/supabase-auth-vs-clerk-for-ai-built-apps" },
+  "citation": [
+    { "@type": "CreativeWork", "name": "Supabase Auth documentation", "url": "https://supabase.com/docs/guides/auth" },
+    { "@type": "CreativeWork", "name": "Supabase: Third-party auth with Clerk", "url": "https://supabase.com/docs/guides/auth/third-party/clerk" },
+    { "@type": "CreativeWork", "name": "Clerk documentation", "url": "https://clerk.com/docs" },
+    { "@type": "CreativeWork", "name": "OWASP Authentication Cheat Sheet", "url": "https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html" }
+  ]
 }
 </script>
 
 If your AI-built app uses Supabase, authentication is already there: Supabase Auth, integrated with your database and Row Level Security. Clerk is a dedicated authentication service with ready-made sign-in components, user management, organisations and multi-factor options. Founders often consider switching when they need B2B features or a more polished login experience. Here is how the two compare for apps built with Lovable, Bolt or v0.
+
+## Key Takeaways
+
+- **Supabase Auth is included with Supabase and integrates directly with Row Level Security;** Clerk is a dedicated authentication service with prebuilt UI, organisations and user management.
+- **Supabase Auth is enough for most AI-built SaaS** with email, magic links, social login and simple roles.
+- **Clerk is worth it** when you need polished organisation management, invitations, multi-factor options and B2B features quickly.
+- **Combining Clerk with Supabase requires configuring Supabase to trust Clerk tokens,** which Supabase supports as a third-party auth integration.
+- **For European customers, check where user data is stored and processed,** and include the auth provider in your processor list.
 
 ## Side-by-Side
 
@@ -61,6 +75,74 @@ Adding Clerk adds a processor that holds identity data. Check its data location 
 ## Migration Between Them
 
 Moving from Supabase Auth to Clerk, or back, involves migrating users (often with password reset flows), remapping user IDs in your data and rewriting policies. It is manageable with planning but not trivial; decide early when you can.
+
+## How Each Service Works
+
+Supabase Auth issues JSON Web Tokens after sign-in; the Supabase client sends them with every request, and PostgreSQL policies read the user ID and claims to decide access. Users live in an `auth.users` table in your own database, which you can reference from your tables. Clerk runs authentication as a hosted service with prebuilt sign-in, sign-up and profile components, session management, organisations with roles, and a dashboard for managing users. Your app receives Clerk sessions and tokens, and your backend verifies them.
+
+## Developer Experience With AI Builders
+
+Lovable and similar tools set up Supabase Auth automatically when you connect Supabase, including sign-in pages and session handling. Clerk requires adding its SDK, components and configuration, and connecting it to Supabase if your data lives there. AI tools can write that integration, but subtle mistakes, such as policies still referencing `auth.uid()` when user IDs now come from Clerk, can leave data unprotected or inaccessible. Plan the integration deliberately and test it with multiple users.
+
+## B2B Features Compared
+
+B2B SaaS often needs organisations, invitations, roles per organisation, domain-based joining and single sign-on for larger customers. Clerk provides organisations, invitations and roles out of the box with UI components. With Supabase Auth, you build organisation tables, membership and invitation flows yourself, which AI builders can generate but which need careful policy design. Supabase offers SAML single sign-on on paid plans. If your sales motion depends on these features from day one, Clerk saves weeks; if you can start simple, Supabase Auth keeps your stack smaller.
+
+## Security Features
+
+Both support multi-factor authentication, secure session handling and protections against common attacks. Clerk adds features such as bot protection and device management on certain plans. Supabase Auth supports MFA with authenticator apps, rate limits on auth endpoints and CAPTCHA integration. OWASP's Authentication Cheat Sheet describes the controls to look for: strong password handling, MFA, secure recovery and protection against credential stuffing. Whichever you choose, configure email templates, redirect URLs and rate limits for production.
+
+## Costs at Scale
+
+Supabase Auth is included in Supabase plans with generous monthly active user limits, with additional usage charged beyond them. Clerk offers a free tier and charges per monthly active user above it, with B2B features on paid plans. For consumer apps with many users, per-user pricing can become significant; for B2B apps with fewer, higher-value users, it is usually minor compared with revenue. Model your expected users before deciding.
+
+## Common Mistakes
+
+- Adding Clerk without updating Row Level Security policies to read Clerk user IDs
+- Keeping two user tables in sync manually with fragile scripts
+- Leaving default email templates and redirect URLs in production
+- Building custom organisation logic without testing cross-organisation access
+- Forgetting to list the auth provider in your privacy statement and processor register
+
+## Migration Between Them in Practice
+
+Moving from Supabase Auth to Clerk, or the reverse, is possible but needs planning. User accounts can be imported with email addresses and, depending on hashing formats, password hashes; otherwise users reset passwords or sign in with magic links. Data tables that reference user IDs need mapping from old IDs to new ones, and policies or backend checks must be updated. Test the migration on a staging copy, communicate the change to users and keep a rollback plan.
+
+## User Experience Considerations
+
+Clerk's prebuilt components look polished and handle edge cases such as email verification, password reset and account linking consistently. Supabase Auth gives you full control over UI, which AI builders generate quickly but which may miss edge cases: unclear error messages, missing verification flows or broken redirects. Whichever you choose, test sign-up, sign-in, password reset, email change and account deletion as a new user on mobile and desktop.
+
+## Questions to Ask Before Choosing
+
+Do my customers need organisations, invitations and roles from day one? Will large customers require single sign-on soon? How many monthly active users do I expect in two years? Do I want one less vendor in my stack and privacy register? Is my data in Supabase, and am I comfortable configuring third-party auth? Clear answers usually point to one option.
+
+## Where to Start Today
+
+If you already use Supabase and have fewer than a few hundred business users, start with Supabase Auth and add organisation tables. Revisit Clerk when organisation management or enterprise features become a sales blocker.
+
+## Summary
+
+Supabase Auth is the simplest choice for most AI-built apps on Supabase; Clerk is worth paying for when B2B identity features matter immediately. Either way, align identity with your data rules, test access with several users and document the provider for privacy purposes.
+
+## Organisations With Supabase Auth
+
+If you stay with Supabase Auth for a B2B product, a proven structure keeps things manageable. Create an `organisations` table, a `memberships` table linking users to organisations with a role, and an `invitations` table with a token, email, role and expiry. Every business table gets an `organisation_id`, and Row Level Security policies check membership through a security definer function that returns the organisations the current user belongs to. Invitations are accepted through an edge function that validates the token and creates the membership. Add tests that sign in as users from two organisations and confirm neither can see the other's data. This pattern takes days rather than weeks with AI assistance, provided someone reviews the policies.
+
+## Clerk With Supabase in Practice
+
+Supabase supports Clerk as a third-party authentication provider: you configure your Supabase project to accept Clerk-issued tokens, and policies read the Clerk user ID from the token claims instead of `auth.uid()`. Store Clerk user and organisation IDs as text in your tables, and update policies to compare against `auth.jwt()` claims. Keep a minimal profile table synced through Clerk webhooks for data you need in queries, such as display names. Test thoroughly, because an incorrect claim reference can make every policy fail closed or, worse, open.
+
+## Privacy and Data Processing
+
+Both providers process personal data such as names, emails, IP addresses and device information on your behalf. Supabase Auth stores users in your project's region. Clerk stores user data in its own infrastructure; check its current documentation for data location options and its DPA. List the provider in your records of processing and privacy statement, and answer customer questionnaires accurately about where authentication data lives.
+
+## Common Integration Pitfalls
+
+When founders ask an AI builder to "add Clerk", the result often works for a single user but breaks under real conditions. Typical problems include sessions that expire without refreshing Supabase tokens, sign-out that clears Clerk but leaves cached data visible, webhooks that create duplicate profile rows and server functions that trust a user ID sent from the browser instead of verifying the token. Each is easy to fix once spotted. Test the full lifecycle: sign-up, invitation, role change, removal from an organisation, sign-out and account deletion, with two users in different organisations.
+
+## The Bottom Line
+
+Authentication is the front door to every customer's data. Choose the provider that fits your product's identity needs, then spend as much effort on connecting identity to data rules as on the sign-in screen itself.
 
 ## Getting Authentication Right
 

@@ -17,11 +17,26 @@ Target Persona: Technical Solo Founder / Indie Hacker
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2028-03-05",
   "inLanguage": "en",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/how-do-i-test-my-ai-built-app-before-launch" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/how-do-i-test-my-ai-built-app-before-launch" },
+  "citation": [
+    { "@type": "CreativeWork", "name": "Perry et al., Do Users Write More Insecure Code with AI Assistants?", "url": "https://arxiv.org/abs/2211.03622" },
+    { "@type": "CreativeWork", "name": "DORA 2024 Accelerate State of DevOps Report", "url": "https://dora.dev/research/2024/dora-report/" },
+    { "@type": "CreativeWork", "name": "Playwright documentation", "url": "https://playwright.dev/docs/intro" },
+    { "@type": "CreativeWork", "name": "OWASP Top 10 2021: A01 Broken Access Control", "url": "https://owasp.org/Top10/A01_2021-Broken_Access_Control/" },
+    { "@type": "CreativeWork", "name": "web.dev: Web Vitals", "url": "https://web.dev/articles/vitals" }
+  ]
 }
 </script>
 
 **Short answer:** test the few things that would hurt most if they broke, in a staging environment, with more than one user. Write down your critical paths (sign-up, login, the core action, payment, data visibility), test each with at least two accounts and different roles, run payments in test mode through success, failure and cancellation, automate the most important paths with end-to-end tests, and do a launch rehearsal on the production setup before you announce anything.
+
+## Key Takeaways
+
+- **Test what would hurt most if it broke:** sign-up and login, the core action, payments, data visibility, password reset and deletion.
+- **Always test with more than one user and role;** access control failures only appear when a second account exists.
+- **AI-assisted code needs more testing, not less.** Stanford researchers found AI-assisted developers were more confident in less secure code, and Google's DORA research ties automated testing to stable delivery.
+- **Automate the top three or four paths** with end-to-end tests such as Playwright, running on every deployment.
+- **Rehearse the launch on production:** a real small payment, real emails, alerts, rollback and a backup restore.
 
 ## Why Clicking Through Is Not Enough
 
@@ -74,6 +89,92 @@ On the production setup, before announcing:
 - Monitoring alerts tested
 - Rollback tested
 - Backup restore tested
+
+## Why AI-Built Apps Need Deliberate Testing
+
+When code is generated quickly, it is easy to assume it was checked. In practice, the AI optimised for the scenario you described, not for the ones you did not. The Stanford study by Perry and colleagues found that participants using AI assistants produced less secure code and were more likely to believe it was secure. Google's DORA research has long associated automated testing and continuous delivery with better outcomes, and its 2024 report linked higher AI adoption to lower delivery stability when such practices were missing. Testing is how you convert generated confidence into earned confidence.
+
+## A Risk-Based Testing Plan
+
+You cannot test everything, so test by risk. For each feature, ask two questions: how likely is it to break, and how bad would it be? Features with money, personal data or access control are always high impact. Features recently changed by prompts are always more likely to break. Combine the two to decide where to spend testing time:
+
+| Impact / likelihood | Low likelihood | High likelihood |
+| --- | --- | --- |
+| High impact | Test before every major release | Test before every release, automate |
+| Low impact | Spot-check occasionally | Test when changed |
+
+## Writing Good Test Scenarios
+
+A good scenario is concrete: who the user is, what they do, what should happen. For example: "A member of Organisation A opens an invoice URL belonging to Organisation B and sees an error, not the invoice." Write scenarios in plain language first; they are useful for manual testing, for briefing developers and for generating automated tests. Twenty well-chosen scenarios cover most of what matters for a typical founder app.
+
+## Testing Access Control Properly
+
+Access control deserves its own session. Create two organisations with two users each - an admin and a member - and try:
+
+- Listing records from the other organisation through the interface and the API
+- Opening another organisation's record by changing an ID in the URL
+- Updating or deleting another organisation's record
+- A member calling admin-only actions directly
+- Downloading another organisation's files by guessing or reusing links
+
+Every attempt should fail on the server. If any succeeds, fix it before launch; OWASP ranks broken access control as the top web application risk.
+
+## End-to-End Tests With Playwright
+
+Playwright drives a real browser through your app and checks results. For a founder app, start with three tests: sign-up and login, the core action for a paying customer and a cross-organisation access check. Run them against staging on every deployment through your CI pipeline. AI tools can write first drafts of these tests; review that the assertions check the correct behaviour, not simply what the app currently does.
+
+## Testing Payments End to End
+
+Use your payment provider's test mode to cover successful payment, cancellation, failure, double click and closing the browser before redirect. For subscriptions, use tools such as Stripe's test clocks to simulate renewals, failed renewals and cancellations without waiting weeks. Check that your database reflects each outcome correctly and that customers receive the right emails.
+
+## Performance and Mobile Testing
+
+Test key screens on a mid-range phone over a throttled connection. Seed staging with realistic data volumes, because a list that loads instantly with ten rows may take seconds with ten thousand. Google's Web Vitals give useful targets for loading and responsiveness on public pages.
+
+## Accessibility Basics
+
+Check that forms have labels, buttons are reachable by keyboard, contrast is sufficient and images have alternative text. Beyond being good practice, accessibility requirements apply to many consumer-facing digital services in the EU under the European Accessibility Act, with exemptions for microenterprises.
+
+## A Two-Day Testing Sprint Before Launch
+
+Day one: write your twenty scenarios, create test users and organisations in staging, run all access control and payment scenarios manually and log every issue. Day two: fix launch blockers, re-test them, write the first three Playwright tests and add them to CI, then test key flows on two phones and two browsers. Two focused days catch most issues that would otherwise appear in your first week with customers.
+
+## Involving Early Users
+
+Before a public launch, invite a few trusted users to a beta on staging or production with clear expectations. Real users find problems that builders never would, because they do not know which buttons are supposed to be pressed. Give them an easy way to report issues and respond quickly; early users who see their feedback acted upon often become your strongest advocates.
+
+## Keeping Tests Alive
+
+Tests that nobody maintains become noise. When a feature changes intentionally, update its tests in the same change. When a test fails, treat it as information: either the app broke or the test is outdated, and both deserve attention. A small set of trusted tests is worth far more than a large set nobody believes.
+
+## What to Do With the Results
+
+Sort every issue into three groups. Launch blockers: anything involving data access, payments, login or data loss - fix before launch. First-week fixes: broken layouts on some devices, confusing messages, slow screens - fix right after launch. Backlog: polish and nice-to-haves. Write the list down and share it with whoever helps you build; a prioritised list is far more useful than a long, unsorted one.
+
+## Testing After Launch
+
+Testing does not stop at launch. Add a test for every bug customers report, so it cannot return unnoticed. Re-run the access control scenarios after any feature that touches data or roles. And review your automated tests whenever a test fails for a reason other than a real bug; flaky tests erode trust in the whole suite.
+
+## Related Reading
+
+Testing works best with staging and CI. Our guides on setting up a staging environment and automatic deployments for Lovable or Bolt apps show how to run these tests on every change.
+
+## Testing Checklist
+
+- Twenty written scenarios covering critical paths
+- Access control tested with two organisations and two roles each
+- Payment outcomes tested in test mode, including double click and closed browser
+- Key flows tested on two phones and two browsers
+- Three automated end-to-end tests running on every deployment
+- Launch rehearsal on production with a real small payment and refund
+
+## The Payoff
+
+A few days of deliberate testing protects the first impression your product makes, and first impressions are hard to repair.
+
+## Related Reading
+
+Our 25-point vibe code audit checklist complements this plan with the security and operations checks to run alongside functional testing.
 
 ## A Bug List That Actually Helps
 

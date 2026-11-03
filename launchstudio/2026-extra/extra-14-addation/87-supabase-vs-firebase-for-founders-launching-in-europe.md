@@ -17,11 +17,27 @@ Target Persona: Technical Solo Founder / Indie Hacker
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2028-04-04",
   "inLanguage": "en",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/supabase-vs-firebase-for-founders-launching-in-europe" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/supabase-vs-firebase-for-founders-launching-in-europe" },
+  "citation": [
+    { "@type": "CreativeWork", "name": "Supabase documentation", "url": "https://supabase.com/docs" },
+    { "@type": "CreativeWork", "name": "Firebase documentation", "url": "https://firebase.google.com/docs" },
+    { "@type": "CreativeWork", "name": "Firebase: Cloud Firestore locations", "url": "https://firebase.google.com/docs/firestore/locations" },
+    { "@type": "CreativeWork", "name": "Firebase Security Rules", "url": "https://firebase.google.com/docs/rules" },
+    { "@type": "CreativeWork", "name": "Supabase: Row Level Security", "url": "https://supabase.com/docs/guides/database/postgres/row-level-security" },
+    { "@type": "CreativeWork", "name": "Veracode 2025 GenAI Code Security Report", "url": "https://www.veracode.com/resources/analyst-reports/2025-genai-code-security-report/" }
+  ]
 }
 </script>
 
 Most AI-built apps sit on one of two backends: Supabase, which Lovable and many other builders favour, or Firebase, Google's long-established platform, common in mobile and FlutterFlow projects. Both offer database, authentication, file storage and server functions. For founders launching in Europe, the decision has a few extra dimensions: where data lives, how access rules work, how pricing behaves and how easily you can move later.
+
+## Key Takeaways
+
+- **Supabase is built on PostgreSQL, a relational database; Firebase uses Firestore, a document database.** The data model difference matters more than any feature list.
+- **For most B2B SaaS with related data, reports and multi-tenancy, PostgreSQL's relational model is a natural fit;** Firestore suits real-time, document-shaped data and mobile-first apps.
+- **Both offer EU regions,** but European founders should check where every component, including authentication and functions, runs and processes data.
+- **Security depends on rules you write:** Row Level Security in Supabase, Security Rules in Firebase. Both are frequently misconfigured.
+- **Pricing behaves differently:** Supabase charges mainly by plan and resources; Firestore charges by reads, writes and storage, which can surprise apps with chatty queries.
 
 ## Side-by-Side
 
@@ -58,6 +74,70 @@ Firebase's pay-per-operation model can be very cheap at small scale and surprisi
 
 - **Supabase** for relational business apps, SQL familiarity, portability and alignment with Lovable and Bolt
 - **Firebase** for mobile-first apps with real-time sync, FlutterFlow projects or teams already in Google Cloud
+
+## How Each Backend Is Built
+
+Supabase combines open-source components around a PostgreSQL database: an authentication service, auto-generated REST and GraphQL APIs, real-time subscriptions, storage and edge functions running on Deno. Because the core is PostgreSQL, you get SQL, joins, constraints, transactions, views and extensions, and you can move the database to any PostgreSQL host. Firebase, from Google, combines Firestore or the Realtime Database with Firebase Authentication, Cloud Functions, Cloud Storage and hosting, tightly integrated with Google Cloud. Firestore stores documents in collections, optimised for real-time sync and offline support on mobile devices.
+
+## Relational Versus Document Data in Practice
+
+Imagine a B2B app with organisations, users, projects, tasks and invoices. In PostgreSQL, each is a table with foreign keys; a report of open tasks per organisation is one query with joins and aggregates. In Firestore, you design documents around how screens read data, often duplicating information such as an organisation name inside each task, and you maintain those copies when they change. Aggregations and cross-collection queries are more limited, so reports often require extra functions or exports to analytics tools. For apps with many relationships and reporting needs, PostgreSQL usually saves effort; for apps where each screen reads one document tree, Firestore can be simpler and very fast.
+
+## Authentication Compared
+
+Supabase Auth supports email and password, magic links, one-time codes, social providers and SAML single sign-on on higher plans, with user IDs available directly in Row Level Security policies through functions such as `auth.uid()`. Firebase Authentication supports a similar range, with additional enterprise features through Google Cloud Identity Platform. Both are mature. The practical difference lies in how identity connects to data rules: in Supabase through SQL policies, in Firebase through Security Rules referencing `request.auth`.
+
+## Real-Time and Offline
+
+Firestore's real-time listeners and offline persistence are among its strongest features, especially for mobile apps where connectivity varies. Supabase Realtime broadcasts database changes, presence and messages over websockets and works well for collaborative features, but offline-first behaviour requires more work on the client. If offline use is central to your product, such as field service apps, weigh this heavily.
+
+## Lock-In and Portability
+
+Supabase's open-source stack and standard PostgreSQL make migration to another host comparatively straightforward: a database dump restores on any PostgreSQL server, though authentication, storage and functions need attention. Firestore data can be exported, but moving it to another database means redesigning the data model and rewriting queries and rules. Founders who value portability, or expect investors to ask about it, often prefer PostgreSQL for that reason.
+
+## AI Builders and Each Backend
+
+Most AI app builders, including Lovable, Bolt and v0 templates, generate apps for Supabase by default, because SQL migrations and policies are text the AI can write. Firebase is well supported by general AI coding tools and by Google's own tooling. If you build with Lovable, choosing Supabase keeps you on the path the tool was designed for. Independent research such as Veracode's 2025 study, which found flaws in around 45% of AI-generated code samples, applies to both: review generated rules and policies before launch.
+
+## GDPR and Data Location in Detail
+
+Under the GDPR, you need a data processing agreement with each processor and must know where personal data is processed. Supabase lets you choose an EU region per project and offers a DPA. Firebase services let you choose Firestore and Storage locations, including EU multi-region and individual European regions; some Firebase services process data globally, so check Google's documentation on Firebase data processing locations for each product you use. Document your choices in your records of processing and privacy statement.
+
+## Pricing Models in Practice
+
+Supabase plans charge a monthly fee per project with included database size, bandwidth, storage and monthly active users, plus compute add-ons and usage beyond the included amounts. Costs therefore track resources rather than individual operations. Firestore charges per document read, write and delete, plus storage and network egress, with a free daily quota. A dashboard that loads hundreds of documents per page view, or listeners that re-read data frequently, can multiply reads quickly. Neither model is inherently cheaper; estimate costs with realistic usage, and in Firestore design queries and data shape with read counts in mind.
+
+## Security Rules Compared in Depth
+
+Row Level Security policies in Supabase are SQL expressions attached to tables: for example, allow a user to select rows where the organisation ID belongs to one of their memberships. Policies apply to every query through the API, which makes them powerful, but a missing policy on a new table, or a policy using the wrong condition, exposes data. Firebase Security Rules use their own language, matching document paths and checking `request.auth` and document fields. Rules do not filter queries automatically; a query must match the rules or it is rejected entirely. Both systems need tests: Supabase supports testing policies with database tests, and Firebase offers the Emulator Suite to test rules locally.
+
+## Questions to Ask Before Choosing
+
+Is my data highly relational with reports across entities? Do I need offline support on mobile? Will I build with Lovable or another tool that defaults to Supabase? How important is portability to investors or customers? Which EU regions and DPAs do my customers expect? Who on my team knows SQL, and who knows Firebase? Clear answers usually decide the question.
+
+## Migration Between Them
+
+Migrating from Firebase to Supabase is a common project for founders whose data has grown relational. It involves designing a relational schema, transforming and importing Firestore exports, migrating users from Firebase Authentication (Supabase documents tooling for this), rewriting Security Rules as Row Level Security policies and replacing Cloud Functions with edge functions or database functions. Plan rehearsals on staging and a short cut-over window.
+
+## Common Mistakes
+
+- Designing Firestore collections like relational tables, causing many reads
+- Leaving Row Level Security disabled on new Supabase tables
+- Choosing a US region by default and discovering it at a customer audit
+- Testing rules only with an admin account
+- Assuming either backend makes an app secure by default
+
+## Summary
+
+Choose Supabase for relational B2B data, SQL, portability and AI-builder compatibility; choose Firebase for real-time, offline-first and mobile apps in the Google ecosystem. In both, pick EU locations, sign DPAs and test your access rules.
+
+## Where to Start Today
+
+Sketch your five most important entities and how they relate. If the sketch looks like a web of connections, with reports across them, Supabase will likely serve you better. If it looks like independent documents that each screen reads in full, Firestore may be simpler. Then check the regions available for every service you plan to use.
+
+## The Bottom Line
+
+The backend you pick shapes your data model for years. Decide with your data, your users' locations and your team's skills in mind, rather than with whichever tutorial you watched last.
 
 ## Getting Either One Production-Ready
 

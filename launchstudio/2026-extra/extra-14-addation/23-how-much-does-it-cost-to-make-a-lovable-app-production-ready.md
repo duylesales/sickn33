@@ -17,13 +17,27 @@ Target Persona: AI-Native Founder (Non-Technical)
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2028-01-31",
   "inLanguage": "en",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/how-much-does-it-cost-to-make-a-lovable-app-production-ready" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/how-much-does-it-cost-to-make-a-lovable-app-production-ready" },
+  "citation": [
+    { "@type": "CreativeWork", "name": "Veracode 2025 GenAI Code Security Report", "url": "https://www.veracode.com/resources/analyst-reports/2025-genai-code-security-report/" },
+    { "@type": "CreativeWork", "name": "OWASP Top 10 2021: A01 Broken Access Control", "url": "https://owasp.org/Top10/A01_2021-Broken_Access_Control/" },
+    { "@type": "CreativeWork", "name": "IBM Cost of a Data Breach Report", "url": "https://www.ibm.com/reports/data-breach" },
+    { "@type": "CreativeWork", "name": "Supabase: Production Checklist", "url": "https://supabase.com/docs/guides/deployment/going-into-prod" }
+  ]
 }
 </script>
 
 **Short answer:** making a Lovable app production ready usually costs between €800 and €7,500 when you work with a specialist such as LaunchStudio, at a fixed price. A simple website or tool sits at the lower end; a SaaS with subscriptions, roles and integrations sits at the upper end. Freelancers typically quote €5,000-€20,000 for the same work, and agencies start around €20,000, often proposing a rebuild.
 
 The rest of this article explains what moves your price within that range.
+
+## Key Takeaways
+
+- **Making a Lovable app production ready usually costs €800-€7,500** with a fixed-price specialist such as LaunchStudio; freelancers commonly quote €5,000-€20,000 and agencies start around €20,000.
+- **App type sets the base:** from €800-€2,000 for a website to €2,833-€7,167 for a SaaS product and €3,000-€7,500 for a mobile app.
+- **Add-ons adjust the price:** payments (+€400), accounts (+€250), hosting (+€200), security (+€500), backend (+€350), email (+€150), API connections (+€250).
+- **The biggest cost driver is not screens** but roles, subscriptions, sensitive data, integrations and the state of the data model.
+- **Skipping production work is not free.** IBM's breach research puts average incident costs in the millions; for small founders the components - downtime, notification, lost customers - still hurt.
 
 ## Price by Type of Lovable App
 
@@ -71,6 +85,86 @@ You can combine these in the [price calculator](https://launchstudio.eu/en/#calc
 - **Clear launch scope.** Knowing what must work on day one, and what can wait, avoids paying for everything at once.
 - **Supabase already connected.** Lovable apps on Supabase are faster to harden than apps with data in local storage or mock arrays.
 - **Your own accounts.** If the domain, Supabase and Stripe accounts are yours and accessible, setup is quicker.
+
+## Where the Money Actually Goes
+
+Founders often assume most of the cost goes into "coding". In production work on Lovable apps, the effort typically divides as follows:
+
+| Activity | Share of effort (typical) | Why it matters |
+| --- | --- | --- |
+| Assessment and planning | 10-15% | Understanding what Lovable generated, mapping data and risks |
+| Access control and security | 25-35% | Row Level Security, keys, admin protection, storage |
+| Payments and integrations | 15-25% | Webhooks, statuses, provider configuration |
+| Deployment and environments | 10-15% | Domain, SSL, staging, environment variables |
+| Testing | 15-20% | Multiple roles, payment outcomes, mobile, edge cases |
+| Documentation and handover | 5-10% | So you or any developer can continue |
+
+Security and testing together usually take half the effort. That reflects where AI-generated apps are weakest: Veracode's 2025 study found security flaws in about 45% of AI-generated code samples, and access control problems top the OWASP Top 10.
+
+## Three Example Budgets
+
+**A booking site for a local business.** Website-sized app with online booking, customer accounts and iDEAL payments. Typical range: €1,500-€2,800. Main work: RLS for bookings, payment webhooks, email confirmations, domain and backups.
+
+**A B2B SaaS for small teams.** Organisations, roles, subscriptions with trials, a couple of integrations. Typical range: €4,500-€7,500. Main work: membership-based access, Stripe or Mollie subscriptions, invitations, audit logging, staging and monitoring.
+
+**An internal tool for a company.** Staff-only access, data from existing systems, reporting. Typical range: €1,200-€3,000. Main work: authentication with company accounts, role-based access, secure data connections and audit logging.
+
+## Why Fixed Prices Are Possible
+
+Fixed prices on unfamiliar code would be reckless. They work when the provider has seen many similar projects and scopes carefully before quoting. Lovable apps share structure: React frontends, Supabase backends, similar patterns in policies, edge functions and payment code. After a short call and a look at the project, the remaining uncertainty is small enough to absorb. That is also why LaunchStudio keeps the frontend: rewriting it would add exactly the uncertainty fixed pricing avoids.
+
+## Hourly Quotes: What to Watch For
+
+If you receive hourly quotes, ask for an estimate range with assumptions, what happens if work exceeds the upper bound, and whether testing, deployment and documentation are included. Ask whether the developer has worked with Lovable or Supabase before; unfamiliarity is the main reason hourly estimates grow. And ask what they intend to do with your frontend.
+
+## Monthly Costs After Launch
+
+Production readiness creates a few recurring costs: a paid Supabase plan for reliable backups and no pausing, hosting, a transactional email provider, monitoring and your Lovable subscription if you keep editing. For most early apps, the total sits between €25 and €150 per month. LaunchStudio's managed hosting, €49 per month in the Launch & Grow package, bundles hosting, SSL, monitoring, backups and security updates.
+
+## Ways to Reduce Your Quote
+
+- **Stabilise the prototype** before requesting quotes, so the scope is clear
+- **Define the launch scope** in five bullet points and postpone everything else
+- **Prepare access** to your domain, Supabase, payment and email accounts
+- **Connect GitHub** so the code can be reviewed quickly
+- **Choose one payment provider** and one pricing model for launch
+
+Each of these reduces uncertainty, and uncertainty is what makes software expensive.
+
+## The Cost of Waiting Versus the Cost of Fixing
+
+Founders sometimes postpone production work to save money, planning to "fix it once we have customers". The arithmetic rarely works. Every customer added before the fix adds data to migrate, people to inform if something goes wrong and support time when things break. Under the GDPR, a reportable personal data breach must be notified to the Autoriteit Persoonsgegevens within 72 hours, and affected users may need to be informed; preparing that notification without proper logs takes days of founder time. Meanwhile, customers who experience a broken checkout or a leaked record rarely return.
+
+A fixed-price production engagement measured in days and a few thousand euros is, in almost every case, cheaper than one serious incident. The best time to do it is just before your first paying customers; the second-best time is now.
+
+## Paying in Stages
+
+If budget is tight, split the work into stages that each leave the app safer than before:
+
+1. **Stage 1 - safety:** Row Level Security, keys server-side, private storage, backups. Often €800-€1,800.
+2. **Stage 2 - revenue:** payments with verified webhooks, transactional email, custom domain. Often €800-€2,000.
+3. **Stage 3 - operations:** staging, monitoring, CI, documentation. Often €600-€1,500.
+
+Stage 1 should never be skipped once real users arrive. Stages 2 and 3 can follow as revenue starts to come in.
+
+## Questions to Ask Before You Pay Anyone
+
+- What exactly is included, and what is explicitly out of scope?
+- Will my frontend be kept?
+- Is testing with multiple user roles included?
+- Do I get documentation and a walkthrough?
+- What support is included after launch?
+- Is the price fixed, and what triggers a change?
+
+Clear answers to these questions are worth more than a lower headline price.
+
+## Comparing Value, Not Just Price
+
+Two quotes can look similar and deliver very different outcomes. Compare what you will have afterwards: a secured database with tested policies, payments that reconcile, a staging environment, monitoring, backups you have restored, documentation and code in your own repository. A cheaper quote that leaves out testing or documentation often becomes the more expensive option within months, when the next developer has to rediscover how everything works.
+
+## A Final Check Before You Sign
+
+Before accepting any quote, ask the provider to describe in one paragraph what your app will be able to do safely after their work that it cannot do today. A clear, specific answer shows they understood your product; a generic answer about "best practices" suggests they did not look closely.
 
 ## What You Get for the Money
 

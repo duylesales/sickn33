@@ -17,11 +17,25 @@ Target Persona: SaaS Founder Scale-Up
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2028-03-11",
   "inLanguage": "en",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/how-do-i-add-teams-and-invites-to-my-saas" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/how-do-i-add-teams-and-invites-to-my-saas" },
+  "citation": [
+    { "@type": "CreativeWork", "name": "OWASP Authorization Cheat Sheet", "url": "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html" },
+    { "@type": "CreativeWork", "name": "Supabase: Row Level Security", "url": "https://supabase.com/docs/guides/database/postgres/row-level-security" },
+    { "@type": "CreativeWork", "name": "OWASP Top 10 2021: A01 Broken Access Control", "url": "https://owasp.org/Top10/A01_2021-Broken_Access_Control/" },
+    { "@type": "CreativeWork", "name": "GDPR Article 28: Processor", "url": "https://gdpr-info.eu/art-28-gdpr/" }
+  ]
 }
 </script>
 
 **Short answer:** introduce three tables (organisations, memberships with a role, and invitations), move ownership of business data from users to organisations, rewrite Row Level Security to check membership instead of `user_id`, build an invitation flow with expiring tokens handled by a server function, and attach billing to the organisation rather than the user. Then migrate every existing user into a personal organisation so nothing breaks.
+
+## Key Takeaways
+
+- **Adding teams turns a single-user tool into a B2B SaaS:** data moves from belonging to users to belonging to organisations.
+- **Three tables do most of the work:** organisations, memberships with roles and invitations with expiring tokens.
+- **Every Row Level Security policy changes** from `user_id = auth.uid()` to membership checks through a helper function.
+- **Billing attaches to the organisation,** with seat limits enforced in the invitation flow.
+- **Existing users migrate into personal organisations,** so nothing breaks for current customers.
 
 ## Why This Is a Bigger Change Than It Looks
 
@@ -66,6 +80,101 @@ Attach the Stripe or Mollie customer to the organisation. Decide whether you cha
 ## Migrating Existing Users
 
 Create a personal organisation for every existing user, make them owner, and set `organisation_id` on their records in a migration. Test on staging with a copy of realistic data before running in production.
+
+## Why Teams Increase Revenue
+
+B2B customers buy for teams, not individuals. Team accounts raise average revenue per customer through seats or tiered plans, improve retention because switching tools affects many people, and open doors to larger companies. They also introduce expectations: roles, invitations, shared data, admin controls and billing that matches how companies buy. Planning these together avoids a patchwork of features that never quite fit.
+
+## Designing the Membership Model
+
+A membership model answers three questions: who belongs to which organisation, with which role, and what each role may do. Keep it simple at first:
+
+| Role | Typical permissions |
+| --- | --- |
+| Owner | Billing, deleting the organisation, everything an admin can do |
+| Admin | Inviting and removing members, changing roles (except owner), settings |
+| Member | Using the product within the organisation |
+
+Store roles in the memberships table, never on the user's profile where they could be edited. Enforce permissions in Row Level Security policies and server functions, using helper functions such as `is_member(org_id)` and `has_role(org_id, 'admin')`. OWASP's Authorization Cheat Sheet recommends exactly this pattern: centralised, server-side, deny-by-default checks.
+
+## Users in Multiple Organisations
+
+Consultants, agencies and freelancers often belong to several customer organisations. Support this from the start: let users switch between organisations, show the current organisation clearly in the interface and include the organisation ID in every query. Policies based on membership naturally handle multi-organisation users, as long as every table that holds organisation data has an `organisation_id` column.
+
+## Invitation Edge Cases
+
+Real-world invitations raise questions worth answering before launch:
+
+- **Invitee already has an account:** link the invitation to the existing account on acceptance
+- **Invitee uses a different email:** decide whether to allow acceptance with a different address; safer to require the invited email
+- **Invitation expires:** show a clear message and let admins resend
+- **Seat limit reached:** block the invitation with a message suggesting an upgrade
+- **Member removed:** revoke access immediately and decide what happens to content they created
+
+Handling these cases explicitly prevents both security holes and frustrated customers.
+
+## Data Ownership When Members Leave
+
+When someone leaves a company, their account should lose access to the organisation's data, but the data itself usually belongs to the organisation and must remain. Keep `created_by` for history, transfer ownership of items where needed and never delete organisation content because one member left. For GDPR purposes, the individual's personal data, such as their profile, can be deleted or anonymised, while organisation records remain under the customer's control as controller.
+
+## Organisation-Level Settings and Security
+
+Business customers often want controls: requiring two-factor authentication for all members, restricting sign-in to their email domain, viewing an audit log of member changes and exporting their data. These features are often the difference between a pilot and a signed contract with a larger customer. Build them on the same membership model, enforced server-side.
+
+## Migration Without Disruption
+
+Migrating existing single-user accounts is usually the riskiest part. Write the migration as a script that creates one organisation per user, makes the user owner and sets `organisation_id` on all their records. Rehearse it on a staging copy with realistic data, verify that each user sees exactly their previous data and nothing else, then run it in production during a quiet period. Update policies in the same release so there is no window where data is unprotected.
+
+## Billing Models for Teams
+
+| Model | How it works | Best for |
+| --- | --- | --- |
+| Per seat | Price per active member, quantity updated on invite or removal | Collaboration tools where every user gets value |
+| Tiered plans | Fixed price for up to N members | Simpler pricing, predictable invoices |
+| Per organisation | One price regardless of members | Products where only a few users per company are active |
+| Usage-based | Price per transaction, document or action | Products whose value scales with volume |
+
+Attach the subscription to the organisation, let only owners or billing admins change it, and enforce limits on the server: an invitation that would exceed the seat limit should fail with a clear upgrade message.
+
+## Testing a Team Setup
+
+Before launching team features, test with at least two organisations and three roles. Verify that members of one organisation cannot see the other's data through the interface or the API, that members cannot invite others or change roles, that admins cannot remove the owner, that expired or revoked invitations cannot be accepted and that removing a member revokes their access immediately. Automate the cross-organisation test so future changes cannot silently break it.
+
+## Communicating the Change to Existing Users
+
+When existing single users gain team features, explain what changed: their data now lives in a personal workspace they own, they can invite colleagues, and billing may move to the workspace. Most users welcome the change, especially when it unlocks collaboration they wanted. Clear in-app messages and a short email reduce confusion.
+
+## Common Mistakes
+
+- Adding a teams table without changing existing policies
+- Storing roles on profiles that users can edit
+- Attaching subscriptions to individual users in a team product
+- Forgetting `organisation_id` on newly added tables
+- Allowing invitations to be accepted by a different email without checks
+
+## Enterprise Features That Follow
+
+Once teams work, larger customers ask for more: single sign-on with their identity provider, SCIM user provisioning, custom roles, data export and audit logs covering all member activity. You do not need these on day one, but designing the membership model cleanly makes them much easier to add. Keep membership changes in one place, log them consistently and avoid hard-coding role names throughout the interface.
+
+## Performance Considerations
+
+Membership checks run on almost every query. Index `memberships` on `(user_id, organisation_id)` and `organisation_id` columns on every data table. Use helper functions with a fixed `search_path` and wrap `auth.uid()` so it is evaluated once per query. Without these, team features can make an app noticeably slower as organisations grow.
+
+## Related Reading
+
+Our guides on roles and admin panels, single-tenant versus multi-tenant SaaS and Stripe subscriptions cover the closely related decisions in more depth.
+
+## Summary
+
+Model organisations and memberships first, move data ownership to organisations, rewrite policies around membership, build a secure invitation flow, attach billing to the organisation and migrate existing users carefully. Done as one planned change, teams become the foundation for B2B growth rather than a source of bugs.
+
+## A Rollout Plan
+
+Week one: design the data model and policies, write the migration and test it on staging with realistic data. Week two: build invitations, roles in the interface and organisation billing, test cross-organisation access thoroughly. Release with existing users migrated into personal organisations, announce the new team features and monitor closely for a week. Two weeks of focused work is typical for a small SaaS.
+
+## Questions to Answer First
+
+Who can invite members? Can a user belong to several organisations? What happens to content when a member leaves? How is billing calculated? Answer these before building, and the implementation follows naturally.
 
 ## Getting It Built
 

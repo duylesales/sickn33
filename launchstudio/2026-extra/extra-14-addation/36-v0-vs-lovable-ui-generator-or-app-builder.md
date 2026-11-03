@@ -17,11 +17,26 @@ Target Persona: Technical Solo Founder / Indie Hacker
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2028-02-13",
   "inLanguage": "en",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/v0-vs-lovable-ui-generator-or-app-builder" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/v0-vs-lovable-ui-generator-or-app-builder" },
+  "citation": [
+    { "@type": "CreativeWork", "name": "Next.js documentation", "url": "https://nextjs.org/docs" },
+    { "@type": "CreativeWork", "name": "Next.js: Data Security", "url": "https://nextjs.org/docs/app/guides/data-security" },
+    { "@type": "CreativeWork", "name": "Google: JavaScript SEO basics", "url": "https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics" },
+    { "@type": "CreativeWork", "name": "web.dev: Web Vitals", "url": "https://web.dev/articles/vitals" },
+    { "@type": "CreativeWork", "name": "Supabase: Row Level Security", "url": "https://supabase.com/docs/guides/database/postgres/row-level-security" }
+  ]
 }
 </script>
 
 Is v0 a UI generator or an app builder? Is Lovable? In 2026 both tools blur the line, and that is exactly why the v0 vs Lovable comparison confuses founders. The useful distinction is not what each can do in principle, but where each starts: v0 starts from interfaces and the Next.js ecosystem; Lovable starts from a complete web app with a database attached. That starting point shapes everything you will do afterwards.
+
+## Key Takeaways
+
+- **v0 starts from interfaces and the Next.js ecosystem; Lovable starts from a complete web app with a Supabase backend.** That starting point shapes everything afterwards.
+- **v0 suits Next.js teams, SEO-heavy public pages and Vercel hosting;** Lovable suits non-technical founders building logged-in apps with the fewest decisions.
+- **Server rendering is v0's SEO advantage,** while Lovable's client-rendered default is fine behind a login but weaker for content that must rank.
+- **Both need production work:** v0 apps usually need a real data model and authorised server actions; Lovable apps usually need complete Row Level Security and server-side keys.
+- **A split setup often wins:** v0 for the marketing site, Lovable for the app, one shared Supabase backend.
 
 ## Where Each Tool Starts
 
@@ -66,6 +81,69 @@ In both cases, the frontend is usually the most finished part, and it should be 
 ## A Combination That Works
 
 Some founders use v0 for the marketing site and public pages, where server rendering and SEO matter, and Lovable for the logged-in app. Both can share a Supabase backend. This gives you strong SEO pages and fast app development, at the cost of two codebases to maintain.
+
+## Rendering and SEO in More Detail
+
+Search engines and AI assistants read pages most reliably when content is present in the initial HTML. Next.js, which v0 generates, can render pages on the server or at build time, so content is there from the first byte. Lovable's default React setup renders in the browser: the initial HTML is mostly empty until JavaScript runs. Google renders JavaScript and can index such pages, but its own documentation on JavaScript SEO notes that rendering can be deferred and that server-side or static rendering is more robust. Many AI crawlers execute little or no JavaScript at all.
+
+For a logged-in dashboard, none of this matters. For pricing pages, feature pages, blog posts and public listings, it can decide whether you are found and cited.
+
+## Data and Authentication Defaults
+
+Lovable's integration with Supabase means data and authentication are part of the default workflow: tables, policies, auth and storage appear as you build. That speeds things up and also concentrates risk in Row Level Security, which must be complete and tested. v0's defaults are lighter: it can scaffold server actions and data calls, but you or your developers choose the database, auth provider and data model. That gives more control and requires more decisions. The Next.js documentation's data security guide is explicit that server actions must authenticate and authorise every call, a responsibility that falls on whoever builds the backend.
+
+## Developer Experience and Handover
+
+If you plan to hand the project to developers, consider their familiarity. Next.js developers are plentiful and will feel at home in v0 output, especially with shadcn/ui components. React developers will be comfortable with Lovable output, and Supabase skills are widespread. Neither is a barrier; but a team that already knows Next.js will move faster with v0, and a team new to it may prefer Lovable's simpler structure.
+
+## Performance Characteristics
+
+Server-rendered Next.js pages can load quickly, especially on mobile, because users receive content without waiting for JavaScript. Client-rendered apps can feel very responsive after the initial load, which suits dashboards used for long sessions. Google's Web Vitals measure loading, responsiveness and visual stability; both approaches can score well with care, but they get there differently.
+
+## Cost and Hosting
+
+v0 apps deploy naturally to Vercel, with environments for development, preview and production. Lovable apps can publish through Lovable or deploy from GitHub to Vercel, Netlify or other hosts, with Supabase as the backend. At founder scale, hosting costs for either are modest; at larger scale, function usage on server-rendered sites and database usage on data-heavy apps become the main cost drivers.
+
+## A Practical Decision Framework
+
+1. **Is organic search a major acquisition channel?** If yes, use v0 or another server-rendered setup for public pages.
+2. **Is the core product behind a login?** If yes, either tool works; Lovable is simpler for non-technical founders.
+3. **Who will maintain the code in a year?** Choose the stack your future team knows.
+4. **How much backend control do you need?** More control favours v0 with a custom backend; faster defaults favour Lovable with Supabase.
+
+## Running Both Without Chaos
+
+If you choose the split setup, keep it disciplined: one Supabase project as the single source of truth, shared design tokens so the two parts look consistent, clear domain separation (`yourapp.nl` and `app.yourapp.nl`), authentication only in the app, and one repository or a clearly linked pair of repositories. With those rules, the combination is easier to run than a single tool forced into a job it was not designed for.
+
+## Common Mistakes When Choosing Between Them
+
+**Choosing on the demo alone.** v0's interfaces and Lovable's interfaces are both impressive in a first session. The differences show up in week three: when you need roles, payments, SEO pages or a developer to join.
+
+**Assuming v0 is "for developers only".** Non-technical founders use v0 successfully, especially for marketing sites and simple apps. The trade-off is that backend decisions arrive sooner.
+
+**Assuming Lovable cannot do SEO.** Lovable apps can rank with per-route metadata, sitemaps and prerendering for public pages. It simply takes extra work compared with Next.js defaults.
+
+**Rebuilding the whole app to switch.** If you have a working Lovable app and need better SEO, adding a v0 or other server-rendered marketing site is usually faster than migrating the app itself.
+
+## What Customers Notice
+
+Your customers do not care which builder you used. They notice whether pages load quickly, whether the app works on their phone, whether sign-in is reliable, whether their data is safe and whether they can find you in search. Choose the tool that helps you deliver those outcomes with the team you have, and invest the saved time in talking to customers.
+
+## Long-Term Ownership
+
+Both tools produce code you can own in your GitHub repository. That is the most important property for the long term. Whatever you choose, keep the code in your organisation's repository, the backend in accounts you control and documentation alongside the code. With that in place, changing tools later is a project, not a crisis.
+
+## A Two-Week Plan for the Split Setup
+
+Week one: build or refine the marketing site in v0 with pricing, features and a few articles, deploy it on Vercel on your main domain, add structured data and a sitemap. Week two: move the Lovable app to an `app.` subdomain, connect both to one Supabase project, configure authentication redirects for the subdomain and link "Start free" buttons to the app's sign-up. After two weeks you have search-friendly public pages and a fast-moving app, with one backend and clear responsibilities.
+
+## When the Answer Changes
+
+Your choice is not permanent. A product that started in Lovable may add a v0 marketing site when content marketing becomes important; a product started in v0 may adopt Supabase for faster backend work. Revisit the decision when your acquisition channels, team or customer requirements change, and keep code portable so that adjusting course stays affordable.
+
+## Final Recommendation
+
+Non-technical founder building a logged-in product: start with Lovable. Team comfortable with Next.js, or content-led growth: start with v0. Both: split marketing and app, share one backend, and keep everything in repositories you own.
 
 ## Getting Either One Live
 

@@ -17,11 +17,27 @@ Target Persona: AI-Native Founder (Non-Technical)
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2028-02-04",
   "inLanguage": "en",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/is-my-lovable-app-secure" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/is-my-lovable-app-secure" },
+  "citation": [
+    { "@type": "CreativeWork", "name": "Veracode 2025 GenAI Code Security Report", "url": "https://www.veracode.com/resources/analyst-reports/2025-genai-code-security-report/" },
+    { "@type": "CreativeWork", "name": "Perry et al., Do Users Write More Insecure Code with AI Assistants?", "url": "https://arxiv.org/abs/2211.03622" },
+    { "@type": "CreativeWork", "name": "OWASP Top 10 2021: A01 Broken Access Control", "url": "https://owasp.org/Top10/A01_2021-Broken_Access_Control/" },
+    { "@type": "CreativeWork", "name": "OWASP Secrets Management Cheat Sheet", "url": "https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html" },
+    { "@type": "CreativeWork", "name": "IBM Cost of a Data Breach Report", "url": "https://www.ibm.com/reports/data-breach" },
+    { "@type": "CreativeWork", "name": "GDPR Article 33", "url": "https://gdpr-info.eu/art-33-gdpr/" }
+  ]
 }
 </script>
 
 **Short answer:** not automatically. Lovable generates working apps and includes security checks, but an app's security depends on decisions Lovable cannot make for you: who should see which data, which keys belong on the server, and how payments are verified. Many Lovable apps have at least one serious gap, most often in Supabase Row Level Security. You can find the most common ones yourself in about 30 minutes with the test below.
+
+## Key Takeaways
+
+- **A Lovable app is not secure automatically.** Security depends on decisions Lovable cannot make for you: who sees which data, where keys live and how payments are verified.
+- **AI-generated code commonly contains security flaws:** Veracode's 2025 study found them in roughly 45% of samples, and Stanford researchers found AI-assisted developers were more confident in less secure code.
+- **The six-test, 30-minute self-check** covers the most common gaps: two users, the URL trick, admin doors, page source, files and payments.
+- **Failing any one test proves a problem; passing all six does not prove safety.** Policy logic, input validation and payment edge cases need a technical review.
+- **Lovable's built-in scanning helps** but cannot know your business intent, such as which customers may see which records.
 
 ## Why "It Works" Is Not the Same as "It Is Secure"
 
@@ -65,6 +81,73 @@ Passing all six does not prove your app is secure, but failing any one proves it
 ## What Lovable's Own Security Checks Cover
 
 Lovable includes security scanning that can flag issues such as tables without RLS and exposed keys. Use it; it catches real problems. Its limits are the same as any automated tool: it cannot know your intent. A policy that lets all logged-in users read all invoices is technically valid; only you know that customers should only see their own. Logic problems like that need human review.
+
+## Why AI-Built Apps Have Predictable Weak Spots
+
+Security failures in AI-built apps are not random. They cluster where the generating model lacks context. The model knows how to write a query that returns invoices; it does not know that your customers must never see each other's invoices unless you say so explicitly, every time. It knows how to call a payment API; it does not know your refund policy or that webhooks can arrive twice. This is why the OWASP Top 10's leading category, broken access control, dominates findings in AI-built apps. In OWASP's 2021 data, 94% of tested applications had some form of it.
+
+There is also a human factor. In the Stanford study by Perry and colleagues, participants using an AI assistant wrote less secure code and rated it as more secure than participants without one. Polished interfaces amplify that effect: when an app looks professional, founders assume the parts they cannot see are equally finished.
+
+## What Each Test Actually Checks
+
+| Test | Security property | Standard reference |
+| --- | --- | --- |
+| Two users, two views | Tenant isolation | OWASP A01 Broken Access Control |
+| URL trick | Object-level authorisation | OWASP A01; OWASP API Security |
+| Admin doors | Function-level authorisation | OWASP A01 |
+| Page source | Secrets management | OWASP A05 Security Misconfiguration; Secrets Management Cheat Sheet |
+| Files | Storage access control | OWASP A01 |
+| Payments | Integrity of business logic | Payment provider guidance on webhooks |
+
+Each failed test points to a specific fix, which makes the self-check a useful brief for any developer you bring in.
+
+## Beyond the Six Tests: What a Professional Review Adds
+
+A technical review goes deeper in areas the self-check cannot reach:
+
+- **Policy logic:** reading every Row Level Security policy for select, insert, update and delete, and checking `with check` clauses
+- **Input validation:** confirming server-side validation on every form and API call, and safe handling of HTML and file uploads
+- **Authentication details:** password reset token expiry, session handling, rate limits on login and optional MFA
+- **Dependencies:** known vulnerabilities in packages the app uses
+- **Operations:** backups, logging, monitoring and incident readiness
+
+## The Business Impact of a Security Incident
+
+For a small company, the most serious cost of an incident is usually trust. Customers who learn their data was exposed often leave, and business customers may terminate contracts. There are also legal obligations: under the GDPR, a reportable personal data breach must be notified to the Autoriteit Persoonsgegevens within 72 hours, and affected individuals may need to be informed. IBM's annual Cost of a Data Breach research shows that detection and escalation, notification and lost business make up most incident costs, all of which scale down to small companies in painful ways.
+
+## Building a Security Habit
+
+Security is not a one-time project. A simple routine keeps a Lovable app safe as it grows:
+
+1. **Before each release:** run the two-users and URL tests on new features.
+2. **Weekly:** review changes to migrations, policies and edge functions.
+3. **Monthly:** check dependency alerts and review who has access to accounts.
+4. **Quarterly:** test a backup restore and re-run the full six-test self-check.
+5. **Annually or before big deals:** commission an independent review.
+
+## Common Fixes and How Long They Take
+
+| Finding | Typical fix | Typical time |
+| --- | --- | --- |
+| Missing or permissive RLS | Membership-based policies, tested | 1-3 days |
+| Secret key in frontend | Move to edge function, rotate | Hours to 1 day |
+| Admin check only in UI | Server-side role checks | 1 day |
+| Public storage bucket | Private bucket, signed URLs, migration | 1 day |
+| Payment upgrade on success page | Verified webhook, idempotent handler | 1-2 days |
+
+Most apps need several of these at once, which is why combined fixes usually take one to two weeks.
+
+## Security Questions Business Customers Will Ask
+
+If you sell to companies, expect security questions even before an audit. The most common ones map directly to the six tests: How is our data separated from other customers? Who in your company can access it? Where are your keys stored? Are uploaded files protected? How do you detect and respond to incidents? Being able to answer each with a concrete measure, rather than "Lovable handles that", is often what turns a promising pilot into a signed contract.
+
+## A Note on Lovable's Own Security Features
+
+Lovable has added security scanning and guidance over time, and using them is worthwhile. Treat them as a first filter. Automated checks flag missing RLS or exposed keys well; they cannot decide whether a policy that lets every logged-in user read every invoice is correct for your business.
+
+## The Takeaway for Founders
+
+You do not need to become a security engineer to run a safe Lovable app. You need to know the six places problems hide, test them regularly, fix what fails before customers arrive and get an independent review when the stakes rise. That combination covers the large majority of real-world risk for founder-stage products.
 
 ## When to Get a Professional Review
 

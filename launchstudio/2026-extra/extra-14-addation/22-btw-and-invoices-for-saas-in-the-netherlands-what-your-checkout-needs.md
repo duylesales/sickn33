@@ -17,13 +17,28 @@ Target Persona: SaaS Founder Scale-Up
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2028-01-30",
   "inLanguage": "en",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/btw-and-invoices-for-saas-in-the-netherlands-what-your-checkout-needs" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/btw-and-invoices-for-saas-in-the-netherlands-what-your-checkout-needs" },
+  "citation": [
+    { "@type": "CreativeWork", "name": "Belastingdienst: VAT", "url": "https://www.belastingdienst.nl/wps/wcm/connect/bldcontenten/belastingdienst/business/vat/" },
+    { "@type": "CreativeWork", "name": "EU VAT One Stop Shop", "url": "https://vat-one-stop-shop.ec.europa.eu/index_en" },
+    { "@type": "CreativeWork", "name": "VIES VAT number validation", "url": "https://ec.europa.eu/taxation_customs/vies/" },
+    { "@type": "CreativeWork", "name": "KVK", "url": "https://www.kvk.nl/en/" },
+    { "@type": "CreativeWork", "name": "GDPR Article 5: Principles", "url": "https://gdpr-info.eu/art-5-gdpr/" }
+  ]
 }
 </script>
 
 Your first B2B customer pays, and the next morning their bookkeeper emails: "Could you send a proper invoice with your BTW number and ours, and is this reverse charged?" Lovable built you a checkout. It did not build you a VAT-compliant billing system. For a Dutch SaaS, getting BTW and invoices right is part of launching, not an administrative detail for later.
 
 This article explains the rules that affect how your checkout is built. It is not tax advice; confirm your specific situation with an accountant.
+
+## Key Takeaways
+
+- **AI-built checkouts rarely handle Dutch BTW correctly.** VAT treatment depends on whether the customer is a consumer or business and where they are located.
+- **EU business customers with a valid VAT number are generally reverse charged;** validate numbers with the EU's VIES service.
+- **EU consumers abroad are charged their own country's VAT once you exceed the EU-wide threshold,** declared through the One Stop Shop (OSS).
+- **Dutch invoices must contain specific details** such as your KvK and VAT numbers, sequential numbering and VAT breakdown, and records are generally kept for seven years.
+- **The simplest compliant route** is usually letting your payment provider or accounting software generate invoices while your app supplies correct customer data.
 
 ## The Three Customer Types That Matter
 
@@ -80,6 +95,66 @@ For most early-stage Dutch SaaS, the simplest compliant route is to let the paym
 3. **Invoice numbers generated from database IDs with gaps.** Sequences should be continuous per series.
 4. **Invoices regenerated from live data.** Address or price changes rewrite history.
 5. **No credit notes.** Refunds need a credit note referencing the original invoice, not a deleted invoice.
+
+## How the EU VAT Rules for Digital Services Work
+
+SaaS is treated as an electronically supplied service for VAT purposes, and the rules depend on the customer:
+
+- **B2B within the EU:** the place of supply is generally where the business customer is established. With a valid VAT number, the reverse charge mechanism usually applies: you invoice without Dutch BTW and the customer accounts for VAT in their own country.
+- **B2C within the EU:** the place of supply is generally where the consumer lives. Below an EU-wide threshold for cross-border distance sales and electronic services, you may charge Dutch VAT; above it, you charge the consumer's local rate and declare it through the One Stop Shop.
+- **Outside the EU:** usually no Dutch BTW, but local rules in the customer's country may apply.
+
+The European Commission's OSS portal explains the scheme, and the Belastingdienst publishes Dutch guidance. Your accountant should confirm how these rules apply to your exact situation.
+
+## Validating VAT Numbers
+
+Reverse charge depends on a valid VAT number. The EU's VIES service lets you check whether a number is valid at the time of the transaction. Good practice is to validate at sign-up or checkout, store the validation result and timestamp, and re-validate periodically for recurring customers. If validation fails, charge Dutch BTW until the customer provides a valid number. Payment platforms such as Stripe can perform this validation as part of their tax features.
+
+## Evidence of Customer Location
+
+For consumers, you need evidence of where they are located. Typical evidence includes billing address, the country of the payment method and IP-based location. Collect at least two consistent pieces where required, store them with the transaction and keep them with your records. Payment providers' tax tools often collect and store this automatically.
+
+## Invoice Numbering and Immutability
+
+Two invoicing principles cause the most trouble in AI-built apps:
+
+- **Sequential numbering:** invoices need unique, sequential numbers within a series. Generating them from database IDs or timestamps can create gaps or duplicates. Assign numbers in a database transaction or let your invoicing tool do it.
+- **Immutability:** an issued invoice must not change. Store invoice data at the moment of issue, including customer details and prices, rather than regenerating from current data. Corrections happen through credit notes.
+
+## Record Keeping
+
+Dutch businesses generally must keep their administration, including invoices, for seven years, with longer periods for some records. This interacts with the GDPR's storage limitation principle: keep what tax law requires, restrict access to it, and delete other personal data when it is no longer needed. Document both in your retention policy.
+
+## Working With Your Accountant
+
+Before building, spend an hour with your accountant on four questions: which customer types you serve, which countries, whether you will use OSS, and which tool will issue invoices. The answers determine the fields your checkout needs and the integration you build. A quarterly export that matches your accountant's needs then saves hours every quarter.
+
+## Pricing Pages: Showing VAT Clearly
+
+How you display prices shapes both conversion and compliance. Consumers in the EU must see total prices including VAT. Business-focused SaaS commonly shows prices excluding VAT with a clear "excl. BTW" or "excl. VAT" label. If you serve both, let visitors choose between business and personal pricing or show both figures. Make sure the price at checkout matches what the pricing page promised for that customer type; mismatches are a common source of abandoned checkouts and support questions.
+
+## Refunds and Credit Notes
+
+When you refund a customer, do not delete or edit the original invoice. Issue a credit note that references it, with the same VAT treatment, so your records and VAT returns stay consistent. Payment providers' invoicing tools usually support credit notes; if you build your own invoicing, add them before you need them, because the first refund always arrives sooner than expected.
+
+## Testing Your Tax Setup
+
+Before launch, run test purchases as a Dutch consumer, a Dutch business, an EU business with a valid VAT number, an EU business with an invalid number and an EU consumer in another country. Check each invoice for the correct rate, wording and details. Ten minutes of testing prevents a quarter of corrections.
+
+## When Rules Change
+
+VAT thresholds, rates and reporting requirements change over time, and EU-wide reforms affect digital services periodically. Rather than hard-coding rates and rules into your app, rely on your payment provider's or accounting software's tax features where possible, keep rates configurable, and ask your accountant to review your setup once a year. That way a rule change becomes a configuration update rather than a code change.
+
+## Quick Reference
+
+| Customer | Location | Typical VAT on invoice |
+| --- | --- | --- |
+| Business or consumer | Netherlands | Dutch BTW (21% standard rate) |
+| Business with valid VAT number | Other EU country | No Dutch BTW, "VAT reverse charged" |
+| Consumer | Other EU country | Consumer's local VAT above the EU threshold, via OSS |
+| Business or consumer | Outside the EU | Usually no Dutch BTW; check local rules |
+
+Use this as orientation only and confirm specifics with your accountant.
 
 ## How LaunchStudio Helps
 

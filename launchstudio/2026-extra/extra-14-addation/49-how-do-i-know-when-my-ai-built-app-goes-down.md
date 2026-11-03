@@ -17,11 +17,25 @@ Target Persona: AI-Native Founder (Non-Technical)
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2028-02-26",
   "inLanguage": "en",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/how-do-i-know-when-my-ai-built-app-goes-down" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/how-do-i-know-when-my-ai-built-app-goes-down" },
+  "citation": [
+    { "@type": "CreativeWork", "name": "Google SRE Book: Monitoring Distributed Systems", "url": "https://sre.google/sre-book/monitoring-distributed-systems/" },
+    { "@type": "CreativeWork", "name": "Sentry documentation", "url": "https://docs.sentry.io/" },
+    { "@type": "CreativeWork", "name": "GDPR Article 33", "url": "https://gdpr-info.eu/art-33-gdpr/" },
+    { "@type": "CreativeWork", "name": "OWASP Logging Cheat Sheet", "url": "https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html" }
+  ]
 }
 </script>
 
 **Short answer:** set up three things: an uptime monitor that checks your app and a health endpoint every minute or few minutes, error tracking that captures frontend and backend errors with context, and a few business checks, such as "a sign-up or order happened in the last hours", that catch silent failures. Route alerts to your phone, not just email. Without these, your customers are your monitoring system.
+
+## Key Takeaways
+
+- **Most founders learn about outages from customers.** A minimal monitoring stack - uptime checks, a real health endpoint, error tracking and business checks - changes that.
+- **Google's Site Reliability Engineering guidance focuses on four signals:** latency, traffic, errors and saturation. Small apps can start with errors and availability.
+- **The worst failures are silent:** webhooks that stop, scheduled jobs that stop and emails that stop, none of which produce visible errors.
+- **Alerts must reach a phone,** be few enough to take seriously and come with a simple first-response plan.
+- **Error tracking must respect privacy:** EU data regions, scrubbed personal data and limited retention.
 
 ## The Minimal Monitoring Stack
 
@@ -65,6 +79,102 @@ Too many alerts and you will ignore them. Start with a handful, tune thresholds 
 3. Check recent deployments and roll back if a release caused it
 4. Communicate with affected customers early
 5. Afterwards, write down what happened and what will prevent it
+
+## The Four Golden Signals, Simplified
+
+Google's SRE book describes four signals for monitoring any user-facing system:
+
+| Signal | Question it answers | Simple way to measure it |
+| --- | --- | --- |
+| Latency | How long do requests take? | Response times from your host or error tracking tool |
+| Traffic | How much demand is there? | Requests or active users per minute |
+| Errors | How many requests fail? | Error rate from your host and error tracking |
+| Saturation | How close are you to limits? | Database CPU, connections, function limits |
+
+For a founder-stage app, start with errors and availability, add latency on your most important endpoints and check saturation weekly in your Supabase and hosting dashboards.
+
+## Designing a Health Endpoint
+
+A health endpoint is a small URL, often an edge function, that your uptime monitor calls every minute or few minutes. A useful one checks more than "the server responds": it runs a trivial database query, confirms critical configuration is present and returns a clear status. Keep it fast, avoid heavy queries and do not expose sensitive details in the response. If any check fails, the endpoint returns an error, and the monitor alerts you.
+
+## Error Tracking Configuration That Helps
+
+Error tracking tools capture exceptions with context: which page, which browser, which user action. Configure them deliberately:
+
+- **Group errors** so one bug does not produce hundreds of alerts
+- **Alert on new error types and sudden increases,** not every occurrence
+- **Tag releases** so you can see which deployment introduced an error
+- **Scrub personal data** such as emails, tokens and form contents
+- **Choose an EU data region** if your users are in Europe and set a retention period
+
+## Business Checks: Catching Silent Failures
+
+Silent failures are the most expensive because they continue unnoticed. Write a few scheduled queries that compare expected and actual activity:
+
+- Paid orders in the last 24 hours versus your normal minimum
+- Sign-ups in the last 12 hours
+- Last successful run time of each scheduled job
+- Webhook events received from your payment provider in the last day
+- Emails sent in the last hour during business hours
+
+When a value falls below its threshold, send an alert. These checks take an hour to set up and catch problems that no error tracker sees.
+
+## Incident Response for a Small Team
+
+When an alert fires, a simple routine keeps you calm: confirm the problem, check provider status pages, check recent deployments and roll back if needed, communicate with affected customers early and honestly, then fix the root cause. Afterwards, write a short note: what happened, how it was detected, how long it lasted and what will prevent it. Under the GDPR, if the incident involves personal data, assess whether it is a reportable breach; Article 33 requires notification within 72 hours where it applies.
+
+## Status Pages and Customer Communication
+
+For B2B products, a simple public status page builds trust. It tells customers you know about the problem and are working on it, which reduces support load during incidents. Several services offer hosted status pages; even a manually updated page is better than silence.
+
+## Avoiding Alert Fatigue
+
+Too many alerts lead to ignoring all of them. Start with a handful, review every alert after the first two weeks and ask: did this need action? If not, adjust the threshold or remove it. If a real incident happened without an alert, add one. Over time, the alerts you keep become trustworthy, and that trust is what makes monitoring work.
+
+## A Monitoring Setup for Under an Hour
+
+1. Create a free or low-cost uptime monitor for your domain and health endpoint, checking every one to five minutes from several regions.
+2. Configure alerts by push notification or SMS to your phone, not only email.
+3. Add error tracking to your frontend and edge functions with an EU data region and personal data scrubbing.
+4. Subscribe to status pages of Supabase, your host, your payment provider and your email provider.
+5. Write one business check, such as "paid orders in the last 24 hours", as a scheduled query with an alert.
+6. Write a five-line incident procedure in your README.
+
+That hour moves you from finding out from customers to finding out first.
+
+## Monitoring for AI Features
+
+If your app uses AI providers, add their failures to your monitoring: error rates, latency and spending. Provider outages and rate limits are common enough that you should know about them before customers report broken features.
+
+## Reviewing Monitoring Monthly
+
+Once a month, look at uptime percentage, the most frequent errors, slowest endpoints and any incidents. Fix the top recurring error and the slowest important endpoint each month. Small, steady improvements compound into a noticeably more reliable product.
+
+## Uptime Targets and What They Mean
+
+| Availability | Allowed downtime per month (approx.) | Typical for |
+| --- | --- | --- |
+| 99% | About 7 hours | Early prototypes |
+| 99.5% | About 3.6 hours | Small SaaS products |
+| 99.9% | About 43 minutes | Mature SaaS with on-call coverage |
+
+Promise customers only what your monitoring can measure and your team can deliver. A realistic target you consistently meet builds more trust than an ambitious one you miss.
+
+## Who Responds When You Are Asleep
+
+For a solo founder, honest answers matter: nobody may respond at 3 AM. That is acceptable for many products if customers know your support hours. As customers depend on you more, consider managed hosting with monitoring, a partner who watches alerts outside your hours, or a small rota once you have a team.
+
+## The Bottom Line
+
+Monitoring is not about collecting dashboards. It is about knowing before your customers do, with enough context to act quickly. An uptime check, a real health endpoint, error tracking and two or three business checks achieve that for most founder-stage apps at very low cost.
+
+## Where to Start Today
+
+Add an uptime monitor with phone alerts and connect error tracking to your app. Then pick the one silent failure that would hurt you most - usually payments or sign-ups - and write a single check for it. Everything else can follow.
+
+## Related Reading
+
+Monitoring pairs naturally with backups and staging. Our guides on backing up a Lovable app's database and setting up a staging environment cover the other two pillars of calm operations: recovering from mistakes and preventing them reaching customers.
 
 ## Getting It Set Up
 

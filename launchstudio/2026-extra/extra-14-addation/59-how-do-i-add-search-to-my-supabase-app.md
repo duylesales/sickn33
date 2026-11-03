@@ -17,11 +17,25 @@ Target Persona: Technical Solo Founder / Indie Hacker
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2028-03-07",
   "inLanguage": "en",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/how-do-i-add-search-to-my-supabase-app" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/how-do-i-add-search-to-my-supabase-app" },
+  "citation": [
+    { "@type": "CreativeWork", "name": "Supabase: Full text search", "url": "https://supabase.com/docs/guides/database/full-text-search" },
+    { "@type": "CreativeWork", "name": "Supabase: pgvector", "url": "https://supabase.com/docs/guides/database/extensions/pgvector" },
+    { "@type": "CreativeWork", "name": "Supabase: Database performance", "url": "https://supabase.com/docs/guides/platform/performance" },
+    { "@type": "CreativeWork", "name": "Supabase: Row Level Security", "url": "https://supabase.com/docs/guides/database/postgres/row-level-security" }
+  ]
 }
 </script>
 
 **Short answer:** do the search in the database, not in the browser. For simple needs, use filtered queries with indexes. For searching text such as descriptions or notes, use Postgres full-text search with the right language configuration (Dutch, English or both). For typo-tolerant name search, add the `pg_trgm` extension. For "find things that mean the same", use `pgvector` embeddings. All of these run in Supabase and respect Row Level Security when called correctly.
+
+## Key Takeaways
+
+- **Search in the database, not in the browser.** Loading every record to filter in JavaScript is slow and can leak data that Row Level Security should hide.
+- **PostgreSQL offers several search tools:** indexed filters, full-text search with language configurations including Dutch, trigram similarity with `pg_trgm` and vector similarity with `pgvector`.
+- **Full-text search with the Dutch configuration handles stemming,** so "fietsen" matches "fiets"; trigram matching adds typo tolerance.
+- **Semantic search with embeddings** finds results by meaning for knowledge bases, support content and listings.
+- **Search must respect the same access rules** as the rest of your app; search endpoints are a common place where those rules are accidentally bypassed.
 
 ## The Pattern to Avoid
 
@@ -62,6 +76,90 @@ For knowledge bases, support content or listings described in many ways, generat
 - Index everything you filter or sort on
 - Debounce search input so you do not query on every keystroke
 - Return only the columns the results list needs
+
+## How PostgreSQL Full-Text Search Works
+
+PostgreSQL's full-text search converts text into a `tsvector`, a list of normalised words (lexemes) with positions, using a language configuration that handles stemming and stop words. Queries are converted into a `tsquery`. The `@@` operator checks whether a document matches a query, and ranking functions order results by relevance. A GIN index on the `tsvector` column makes searches fast even across large tables. Supabase documents this in its full-text search guide, and the same concepts apply in any PostgreSQL database.
+
+## Choosing Language Configurations
+
+PostgreSQL ships with configurations for many languages, including `dutch` and `english`. The configuration determines how words are stemmed: in Dutch, plural and verb forms are reduced to a common stem, so searches match related forms. For bilingual content, options include storing a language per record and building the `tsvector` with the matching configuration, or maintaining separate columns for each language. Compound words, common in Dutch, are not always split; trigram matching on key fields helps fill that gap.
+
+## Ranking and Relevance
+
+Not all matches are equal. Weight fields differently - a match in the title should count more than one in the description - using PostgreSQL's weighting functions when building the `tsvector`. Combine text relevance with business signals where useful, such as recency, popularity or availability. Test ranking with real queries from your users; the best ranking is the one that puts the result people actually choose near the top.
+
+## Trigram Search for Names and Typos
+
+The `pg_trgm` extension breaks strings into three-character sequences and measures similarity between them. It is ideal for names, product titles and addresses, where users misspell or partially remember terms. With a trigram index, queries such as "find customers whose name is similar to 'Janssen'" return "Jansen" and "Janssens" quickly. Set a similarity threshold that balances recall and precision for your data.
+
+## Semantic Search With pgvector
+
+For content where users describe what they want in their own words - help articles, product descriptions, documents - semantic search finds results by meaning. You generate an embedding (a numeric vector) for each record with an AI model, store it with the `pgvector` extension and compare it with the embedding of the user's query. Practical considerations:
+
+- Generate embeddings server-side and keep the API key secret
+- Re-embed records when their content changes
+- Combine semantic results with filters for organisation, status and permissions
+- Consider hybrid search, mixing full-text and semantic scores, for the best of both
+- Remember that sending content to an embedding provider is processing personal data if the content contains it
+
+## Performance at Scale
+
+Search performance depends on indexes and query shape. Use GIN indexes for full-text and trigram searches, appropriate vector indexes for embeddings, and filters on indexed columns such as organisation ID. Paginate results and return only the columns the results list needs. Debounce search input in the interface so you do not send a query on every keystroke. Supabase's performance guidance and query reports help identify slow searches.
+
+## Keeping Search Secure
+
+Search often runs through database functions or views for convenience. Make sure those respect Row Level Security: views created with `security_invoker` apply the caller's permissions, while `security definer` functions run with elevated privileges and must apply their own checks. Return only public fields to public users, and test search as two users from different organisations to confirm neither sees the other's results.
+
+## When to Use a Dedicated Search Service
+
+Dedicated search engines offer advanced features such as faceting, synonyms and typo tolerance tuned for search. For most founder-stage apps, PostgreSQL's capabilities are sufficient and avoid an extra service to secure, sync and pay for. Consider a dedicated service when search becomes central to your product, data volumes grow very large or you need features PostgreSQL does not provide comfortably.
+
+## Designing the Search Experience
+
+Good search is as much interface as database. Show results as users type, after a short delay, with clear highlighting of matched terms. Offer filters for the attributes users care about, such as location, category, status or date. Handle empty results helpfully with suggestions or related items rather than a blank page. Keep the search box visible on pages where users need it most. For mobile users, make filters easy to open and close.
+
+## Measuring Search Quality
+
+Log searches (without unnecessary personal data): the query, number of results and which result, if any, the user clicked. Review queries with zero results weekly; they reveal missing content, synonyms you need and spelling variants. Track how often users refine their search; frequent refinement suggests ranking problems. These small data points lead to steady improvements.
+
+## Synonyms and Domain Language
+
+Users rarely use the words in your database. A plumber might be searched as "loodgieter", "installateur" or "cv-monteur"; a product might have a brand name and a generic name. Maintain a small synonyms table and expand queries with it, or include alternative terms in the indexed text. This is one of the cheapest ways to improve search for Dutch audiences, where regional and professional vocabulary varies.
+
+## Common Mistakes
+
+- Filtering all records in the browser
+- Search functions that bypass Row Level Security
+- Indexing private fields alongside public ones
+- No index on the search column
+- Ignoring zero-result queries
+
+## A Step-by-Step Plan
+
+1. Identify the searches users perform most and the fields they search.
+2. Add a generated `tsvector` column with the right language configuration and a GIN index.
+3. Add `pg_trgm` and a trigram index for names and titles.
+4. Move search into a database function that applies access rules and returns only needed columns.
+5. Paginate and debounce in the interface.
+6. Log queries and review zero-result searches weekly.
+7. Consider semantic search once text search is working well and users still struggle.
+
+## The Payoff
+
+Fast, accurate search makes products feel professional and saves users time every day. Done in the database with proper access rules, it also removes one of the quiet data leaks common in AI-built apps.
+
+## Search for Dutch Audiences
+
+Dutch users search with compound words, regional terms and English loanwords mixed in. Use the Dutch configuration for stemming, add trigram matching to catch compounds and typos, maintain a synonyms list for professional and regional vocabulary, and consider indexing both Dutch and English terms for products used by international teams. Test with real queries from Dutch customers; small vocabulary fixes often produce large improvements.
+
+## Summary
+
+Index the right columns, use the Dutch or English configuration, add trigram matching for names, keep search inside your access rules and learn from zero-result queries.
+
+## Related Reading
+
+If search is slow alongside other screens, our guide on whether a Lovable app can handle real users covers indexes, RLS performance and query consolidation in more depth.
 
 ## Getting It Built
 

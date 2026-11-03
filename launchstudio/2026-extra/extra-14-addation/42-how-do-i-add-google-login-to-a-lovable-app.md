@@ -17,11 +17,25 @@ Target Persona: AI-Native Founder (Non-Technical)
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2028-02-19",
   "inLanguage": "en",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/how-do-i-add-google-login-to-a-lovable-app" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/how-do-i-add-google-login-to-a-lovable-app" },
+  "citation": [
+    { "@type": "CreativeWork", "name": "Supabase: Login with Google", "url": "https://supabase.com/docs/guides/auth/social-login/auth-google" },
+    { "@type": "CreativeWork", "name": "Supabase: Redirect URLs", "url": "https://supabase.com/docs/guides/auth/redirect-urls" },
+    { "@type": "CreativeWork", "name": "GDPR Article 5: Principles", "url": "https://gdpr-info.eu/art-5-gdpr/" },
+    { "@type": "CreativeWork", "name": "OWASP Top 10 2021: A07 Identification and Authentication Failures", "url": "https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures/" }
+  ]
 }
 </script>
 
 **Short answer:** create an OAuth client in Google Cloud, enable the Google provider in Supabase Auth with that client's ID and secret, add your Supabase callback URL to Google, add your app's domains to Supabase's allowed redirect URLs, and call Supabase's Google sign-in from your Lovable login page. It takes under an hour to work in the preview. Making it work reliably in production takes a few more decisions.
+
+## Key Takeaways
+
+- **Google login in a Lovable app runs through Supabase Auth** and an OAuth client you create in Google Cloud.
+- **Most production failures are configuration:** a consent screen still in testing, redirect URLs pointing to the preview domain, or a mismatched redirect URI.
+- **Decide on account linking before launch,** so users who sign up with email and later use Google do not end up with two accounts.
+- **Request only basic scopes** (email and profile) to avoid extra verification and to respect data minimisation under the GDPR.
+- **Always offer an email-based fallback;** not every user has or wants to use a Google account.
 
 ## Setup Overview
 
@@ -57,6 +71,86 @@ The authorised redirect URI in Google points to Supabase's callback endpoint for
 3. Login works on mobile browsers and in-app browsers
 4. Logout and login again works without loops
 5. A user outside your allowed domains (if restricted) is refused
+
+## How OAuth Sign-In Works, Step by Step
+
+Understanding the flow makes troubleshooting straightforward. When a user clicks "Continue with Google":
+
+1. Your app asks Supabase to start a Google sign-in, including where to return afterwards.
+2. Supabase redirects the browser to Google's consent screen with your OAuth client ID.
+3. The user chooses an account and approves the requested scopes.
+4. Google redirects to Supabase's callback URL with an authorisation code.
+5. Supabase exchanges the code for the user's identity, creates or finds the user and issues a session.
+6. Supabase redirects the browser back to your app at an allowed URL, where the session is picked up.
+
+Problems at step 3 are usually consent screen settings. Problems at step 4 are usually the authorised redirect URI in Google Cloud. Problems at step 6 are usually Supabase's site URL and redirect allow list. Supabase's guide to Google login and its documentation on redirect URLs describe each setting.
+
+## Configuring the Google Cloud Side
+
+In Google Cloud Console, you set up an OAuth consent screen with your app name, support email, logo and links to your privacy policy and terms. You then create an OAuth client of type "web application" and add Supabase's callback URL as an authorised redirect URI. A few practical notes:
+
+- Use a Google Cloud project owned by your company account, not a personal one
+- Keep the consent screen branding consistent with your app so users trust it
+- Publish the consent screen before launch; in testing mode only listed test users can sign in
+- Request the minimal scopes; additional sensitive scopes trigger Google's verification process
+
+## Configuring the Supabase Side
+
+In Supabase Auth settings, enable the Google provider and paste the client ID and secret. Set the site URL to your production domain, and list every legitimate redirect destination: production, staging and preview URLs if you use them. If your app runs on several subdomains, include each. Store the Google client secret only in Supabase; it should never appear in frontend code.
+
+## Profiles, Roles and Organisations for Google Users
+
+Users who sign in with Google skip your sign-up form, so anything that form did - creating a profile row, assigning a default role, joining an organisation - must also happen for them. The robust approach is a database trigger on new users that creates the profile, plus server-side logic that handles organisation membership, for example through invitations. Test the first-login experience for a brand-new Google user; it is the path most often broken.
+
+## Restricting Sign-In for Business Apps
+
+For B2B products, you may want only users from certain companies to sign in, or to place users into an organisation based on their email domain. Implement these rules on the server: check the email domain in a trigger or edge function, and refuse or route accordingly. Do not rely on hiding the Google button in the interface.
+
+## Adding Microsoft and Apple Too
+
+Business users often have Microsoft accounts; iPhone users may prefer Sign in with Apple, which Apple requires in some App Store situations when other social logins are offered. Supabase supports both through similar configuration. Add them based on your audience rather than by default, and keep identity linking consistent across providers.
+
+## Privacy and Transparency
+
+Social login means Google, Microsoft or Apple process data about the sign-in. Mention each provider in your privacy statement, explain what data you receive (usually name, email and profile picture) and store only what you need. Under the GDPR's data minimisation principle, there is no reason to request calendar, contacts or drive access for authentication.
+
+## Testing Before Launch
+
+Test on desktop and mobile browsers, including in-app browsers from apps like Instagram or LinkedIn, which sometimes block or alter OAuth flows. Test a new user, a returning user, a user who previously registered by email, a user from a blocked domain if you restrict access, and logout followed by login. These tests take half an hour and catch nearly every launch-day problem.
+
+## Common Error Messages and What They Mean
+
+| Message or symptom | Likely cause |
+| --- | --- |
+| "Access blocked: app has not completed verification" | Consent screen in testing or requesting sensitive scopes |
+| "redirect_uri_mismatch" | Authorised redirect URI in Google does not match Supabase's callback |
+| Returned to the preview domain | Supabase site URL or redirect list not updated |
+| Logged in but app shows errors | Missing profile row or role for new Google users |
+| Login loop on mobile | Redirect URL or session storage issues in in-app browsers |
+
+## Security Considerations for Social Login
+
+Social login shifts password security to Google, which is a strength: Google accounts commonly have two-factor authentication and strong breach detection. It also creates dependencies worth managing. If a user loses access to their Google account, they lose access to your app unless an alternative exists; offer email-based recovery. If someone's Google account is compromised, your app is exposed too; for sensitive apps, consider requiring your own second factor for administrators. OWASP's guidance on identification and authentication failures applies regardless of provider: protect sessions, handle logout properly and avoid leaking tokens in URLs or logs.
+
+## Conversion Effects
+
+Social login usually reduces sign-up friction, particularly on mobile, where typing passwords is cumbersome. Measure it rather than assuming: compare completion rates for the Google button and the email form over a few weeks. Some B2B audiences prefer Microsoft; some privacy-conscious audiences avoid social login entirely. Your own data will show which options deserve prominence.
+
+## Keeping It Working After Launch
+
+OAuth configurations break silently when domains change. Whenever you add a domain, move to a custom Supabase domain, change hosting or launch a new environment, update both Google's authorised redirect URIs and Supabase's redirect list, then test login on the new URL. A short line in your deployment checklist prevents a surprisingly common outage.
+
+## When Google Login Is Not Enough
+
+Some customers will ask for single sign-on through their own identity provider, such as Microsoft Entra ID or Okta, so their IT department controls access. That is a later-stage requirement for most founders. Supabase supports SAML-based SSO on certain plans; plan for it when your first enterprise customer requests it, not before.
+
+## Summary
+
+Configure Google Cloud and Supabase carefully, publish the consent screen, align redirect URLs, create profiles for every new user, decide on account linking and test on real devices. Done once, Google login is one of the lowest-maintenance features in your app.
+
+## One Last Tip
+
+Keep a short note in your repository listing every place OAuth is configured - Google Cloud project, Supabase settings, redirect URLs - so the next person to change a domain knows exactly what to update.
 
 ## Getting It Done
 

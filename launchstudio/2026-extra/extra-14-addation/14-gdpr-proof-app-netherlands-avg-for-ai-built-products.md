@@ -17,13 +17,29 @@ Target Persona: AI-Native Founder (Non-Technical)
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2028-01-22",
   "inLanguage": "en",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/gdpr-proof-app-netherlands-avg-for-ai-built-products" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/gdpr-proof-app-netherlands-avg-for-ai-built-products" },
+  "citation": [
+    { "@type": "CreativeWork", "name": "GDPR Article 5: Principles", "url": "https://gdpr-info.eu/art-5-gdpr/" },
+    { "@type": "CreativeWork", "name": "GDPR Article 32: Security of processing", "url": "https://gdpr-info.eu/art-32-gdpr/" },
+    { "@type": "CreativeWork", "name": "GDPR Article 33: Breach notification", "url": "https://gdpr-info.eu/art-33-gdpr/" },
+    { "@type": "CreativeWork", "name": "GDPR Article 83: Fines", "url": "https://gdpr-info.eu/art-83-gdpr/" },
+    { "@type": "CreativeWork", "name": "Autoriteit Persoonsgegevens", "url": "https://www.autoriteitpersoonsgegevens.nl/en" },
+    { "@type": "CreativeWork", "name": "European Commission: EU-US data transfers", "url": "https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/eu-us-data-transfers_en" }
+  ]
 }
 </script>
 
 Everyone says AI can build your entire app. Nobody mentions that the AI has never heard of the Autoriteit Persoonsgegevens. Lovable, Bolt and v0 will generate sign-up forms, analytics, file uploads and email flows without a moment's thought about where personal data goes or how long it stays there. For a Dutch founder, a GDPR-proof app - an "AVG-proof" app, in Dutch - is not optional. It is the baseline that customers, partners and regulators expect.
 
 This guide is not legal advice. It translates the parts of the GDPR that affect how your app is built into concrete steps. For legal wording, involve a privacy lawyer; for the technical side, read on.
+
+## Key Takeaways
+
+- **AVG is the Dutch name for the GDPR,** supervised in the Netherlands by the Autoriteit Persoonsgegevens. Fines can reach €20 million or 4% of worldwide annual turnover under Article 83.
+- **AI builders ignore data protection by default:** US regions, extra form fields, processors without agreements, no deletion and data kept forever.
+- **A GDPR-proof app answers six questions in writing** - what, why, where, who, how long and what if - and behaves the way the answers say.
+- **Security is a legal duty, not a nice-to-have.** Article 32 requires appropriate technical measures, and Article 33 requires breach notification within 72 hours.
+- **LaunchStudio handles the technical half** (EU hosting, access control, deletion, retention, logging, documentation) for typically €1,500-€7,500, alongside your privacy lawyer.
 
 ## What "GDPR-Proof" Means for an App
 
@@ -74,6 +90,62 @@ An app is "GDPR-proof" when you can answer each question in writing and the app 
 ## Special Care: AI Features Inside Your App
 
 If your app sends user content to an AI model, such as summarising documents or generating replies, treat the AI provider as a processor. Check its data retention and training policies, choose settings that exclude training on your data where available, send only what is needed and mention it in your privacy statement. For sensitive categories, such as health data, think twice and consider a data protection impact assessment (DPIA).
+
+## The Principles Behind the Steps
+
+The GDPR's Article 5 sets out the principles every processing activity must respect. Translated into app terms, they explain why each step above matters:
+
+| Principle (Article 5) | What it means in your app |
+| --- | --- |
+| Lawfulness, fairness and transparency | A legal basis for each purpose, and a privacy statement that matches reality |
+| Purpose limitation | Data collected for bookings is not reused for unrelated marketing |
+| Data minimisation | No birthday, phone or address fields "just in case" |
+| Accuracy | Users can correct their data |
+| Storage limitation | Retention periods and automatic deletion |
+| Integrity and confidentiality | Access control, encryption, secrets management, logging |
+| Accountability | You can demonstrate all of the above with documentation |
+
+Accountability is the principle founders most often overlook. It is not enough to do the right things; you must be able to show that you do them, which is why the processing register, processor list and security description matter.
+
+## Legal Bases in Practice
+
+Most features in a typical SaaS or marketplace rely on one of three legal bases. Choosing the right one avoids unnecessary consent banners and unnecessary risk:
+
+- **Contract:** data needed to deliver the service the user signed up for, such as their account, bookings or uploaded documents.
+- **Legitimate interest:** reasonable processing users would expect, such as fraud prevention, security logging or basic product analytics, after weighing their interests.
+- **Consent:** needed for marketing emails, non-essential cookies and many forms of tracking. Consent must be freely given, specific and as easy to withdraw as to give.
+
+Sensitive categories such as health data need an additional condition under Article 9, which is why health-related apps deserve extra care and often a data protection impact assessment.
+
+## International Transfers Without Panic
+
+Many tools founders rely on are operated by US companies. Transfers outside the EU are allowed when a recognised mechanism applies. Since 2023, the EU-US Data Privacy Framework allows transfers to certified US companies, and Standard Contractual Clauses remain available for others, as the European Commission explains in its guidance on EU-US data transfers. Practically: prefer EU regions for your database and storage, check each provider's certification or clauses, and document the mechanism in your processor list. That is usually enough to answer a customer's transfer questions confidently.
+
+## Breach Readiness
+
+Even well-protected apps can suffer incidents. Article 33 requires notifying the Autoriteit Persoonsgegevens within 72 hours of becoming aware of a reportable breach, and Article 34 may require informing affected users. Meeting that deadline requires preparation:
+
+- Logs that show who accessed which data and when
+- Alerts that tell you something unusual is happening
+- A one-page incident procedure: who decides, who investigates, who communicates
+- Contact details for your hosting and database providers' support
+- A template notification you can adapt quickly
+
+Founders who prepare this in advance handle incidents calmly; those who do not often discover the 72-hour clock only after it has started.
+
+## Common Myths About the AVG for Small Apps
+
+**"The GDPR is only for big companies."** The regulation applies to any organisation processing personal data of people in the EU, regardless of size. Some record-keeping duties are lighter for small organisations, but security, transparency and data subject rights apply fully.
+
+**"A cookie banner makes me compliant."** Cookie consent is a small part of compliance, governed largely by e-privacy rules. Most GDPR obligations concern how you store, protect and use data inside your app.
+
+**"My provider is compliant, so I am."** Providers offer compliant building blocks. Whether your app is compliant depends on how you configure and use them: regions, access rules, retention and agreements.
+
+**"Anonymous data is fine, so I will just anonymise."** True anonymisation is hard. Pseudonymised data, such as data with names replaced by IDs, is still personal data under the GDPR.
+
+## The Business Case
+
+Compliance is often framed as a cost. For B2B founders in the Netherlands it is equally a sales asset. Dutch organisations in healthcare, education, government and larger companies routinely send privacy questionnaires before signing. Founders who can answer with documented EU hosting, access control, processor agreements and deletion close those deals in days instead of weeks. The work described here is what makes those answers true.
 
 ## How LaunchStudio Helps
 

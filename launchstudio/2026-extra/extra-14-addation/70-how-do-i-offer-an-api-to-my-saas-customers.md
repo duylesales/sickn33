@@ -17,11 +17,25 @@ Target Persona: SaaS Founder Scale-Up
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2028-03-18",
   "inLanguage": "en",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/how-do-i-offer-an-api-to-my-saas-customers" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/how-do-i-offer-an-api-to-my-saas-customers" },
+  "citation": [
+    { "@type": "CreativeWork", "name": "OWASP API Security Project", "url": "https://owasp.org/www-project-api-security/" },
+    { "@type": "CreativeWork", "name": "OWASP Authorization Cheat Sheet", "url": "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html" },
+    { "@type": "CreativeWork", "name": "OWASP Secrets Management Cheat Sheet", "url": "https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html" },
+    { "@type": "CreativeWork", "name": "Stripe: Receive events in your webhook endpoint", "url": "https://docs.stripe.com/webhooks" }
+  ]
 }
 </script>
 
 **Short answer:** do not hand customers your Supabase keys. Build a small, versioned API on top of your app, typically with edge functions, where each customer organisation creates its own API keys with limited scopes. Store only hashed keys, check scope and organisation on every request, apply rate limits, log usage, and publish clear documentation. Add outgoing webhooks if customers need to react to events.
+
+## Key Takeaways
+
+- **Do not give customers your Supabase keys as an "API".** Build a small, versioned API with customer-specific keys on top of your app.
+- **Store API keys hashed, scope them to an organisation and permissions, and allow revocation.**
+- **API authorisation is a top risk:** OWASP's API Security Top 10 lists broken object level authorisation first.
+- **Rate limits, usage logs, versioning and documentation** turn an endpoint into a product customers can rely on.
+- **Outgoing webhooks, signed and retried,** let customers react to events without polling.
 
 ## Why Not Just Share Supabase Access?
 
@@ -60,6 +74,89 @@ If customers need real-time updates, send signed webhook requests to URLs they c
 ## Pricing and Plans
 
 APIs are often a feature of higher plans. Rate limits per plan keep costs predictable, and usage logs support fair upgrades.
+
+## Why Customers Ask for an API
+
+Business customers want your product to fit into their workflows: pulling data into reporting tools, syncing records with their CRM or ERP, automating actions from their own systems. An API turns your app from a standalone tool into part of their infrastructure, which increases retention and opens larger deals. It also creates responsibility: once customers build on your API, changes can break their systems, so design and versioning matter from day one.
+
+## The OWASP API Security Top 10
+
+OWASP publishes a Top 10 specifically for APIs. Several risks are directly relevant to founder-built APIs:
+
+| Risk | What it means | Mitigation |
+| --- | --- | --- |
+| Broken object level authorisation | Accessing another customer's object by changing an ID | Check organisation ownership on every request |
+| Broken authentication | Weak keys or token handling | Long random keys, hashed storage, HTTPS only |
+| Broken object property level authorisation | Returning or accepting fields users should not see or set | Explicit allow-lists of fields |
+| Unrestricted resource consumption | No limits on requests or payload size | Rate limits, pagination, payload limits |
+| Broken function level authorisation | Calling admin functions with normal keys | Scopes checked per endpoint |
+
+Reading the list once is the quickest way to avoid the common mistakes.
+
+## Designing Endpoints Customers Love
+
+Good APIs are predictable. Use consistent naming, such as plural nouns for collections (`/v1/projects`) and IDs for items (`/v1/projects/{id}`). Return consistent JSON structures with stable field names, use standard HTTP status codes and provide clear error messages with codes customers can handle programmatically. Paginate list endpoints with cursors or page tokens. Support filtering on the fields customers actually need. Above all, design from customer use cases rather than exposing your internal tables directly.
+
+## API Keys Done Properly
+
+Generate keys with sufficient randomness, show them to the customer once and store only a hash, as you would with passwords. Include a prefix in the key, such as `ls_live_`, so customers and secret scanning tools can recognise them. Let customers create multiple keys with descriptive names, scope each key to read or write and to specific resources, and revoke keys instantly. Log key usage so you can show customers which key made which calls.
+
+## Rate Limiting and Fair Use
+
+Rate limits protect your service and your customers. Apply limits per key and per organisation, with higher limits on higher plans. Return a standard status code when limits are exceeded, with headers indicating when the client can retry. Document limits clearly. For expensive operations, consider asynchronous processing: accept a request, return a job ID and let the customer poll or receive a webhook when it completes.
+
+## Versioning and Deprecation
+
+Include a version in the URL, such as `/v1/`, or in a header. Treat everything in a released version as a contract: you can add optional fields and new endpoints, but removing or renaming fields requires a new version. When you introduce `/v2/`, announce a deprecation timeline for `/v1/`, notify customers using it based on your logs and keep both running during the transition.
+
+## Outgoing Webhooks
+
+Webhooks notify customer systems when events happen, such as an order created or a document signed. Sign each payload with a secret per customer so they can verify authenticity, retry failed deliveries with backoff, let customers see delivery logs and replay events, and include an event ID so they can deduplicate. These are the same patterns payment providers use, and customers who integrate with Stripe or Mollie will recognise them.
+
+## Documentation as a Product
+
+Customers judge your API by its documentation. Provide a getting-started guide, authentication instructions, endpoint references with examples, error codes, rate limits, webhook payloads and a changelog. An OpenAPI specification lets customers generate clients and lets you keep documentation in sync with code. Publishing documentation publicly also helps developers and AI assistants discover that your product integrates with their tools.
+
+## Building the API on Supabase
+
+A typical implementation uses Supabase edge functions for the API layer. Each request passes through shared middleware that reads the API key from a header, looks up its hash, resolves the organisation and scopes, checks rate limits and logs the call. Handlers then query the database using server-side credentials while explicitly filtering by the resolved organisation. Alternatively, handlers can use database functions that take the organisation ID as a parameter and enforce access internally. Either way, never trust an organisation ID supplied in the request body.
+
+## Testing Your API
+
+Test the API like an attacker: use a key from organisation A to request objects from organisation B by ID; send fields that should be read-only, such as `organisation_id` or `role`; exceed rate limits; send oversized payloads and malformed JSON; use revoked keys. Automate these tests so future changes cannot reintroduce problems. Also test the happy paths customers rely on, with examples from your documentation, so docs and implementation never drift.
+
+## Pricing and Packaging
+
+APIs often belong to higher plans, sometimes with usage-based components. Decide what is included: which endpoints, how many requests per month, how many keys, webhook support and support level. Usage logs let you see real consumption and adjust packaging over time. Make limits visible in documentation and account settings so customers can plan.
+
+## Common Mistakes
+
+- Exposing internal database tables directly as the public API
+- Storing API keys in plain text
+- Trusting organisation IDs sent by the client
+- No versioning, so every change risks breaking integrations
+- Undocumented rate limits that surprise customers
+- Webhooks without signatures or retries
+
+## The Payoff
+
+A well-designed API makes your product part of customers' daily workflows, reduces churn and supports larger deals, while protecting your data and your freedom to evolve the internal system.
+
+## Starting Small
+
+You do not need a comprehensive API on day one. Start with the two or three endpoints your first integration customer needs, built on the patterns above: hashed scoped keys, organisation checks, rate limits, versioning and documentation. Add endpoints as customers ask. A small, solid API earns more trust than a large, inconsistent one.
+
+## Related Reading
+
+For automation-platform integrations, see our guide on connecting Zapier or Make to an AI-built app; for the access model behind API keys, see our guides on teams and invitations and on roles and admin panels.
+
+## Questions to Answer Before Building
+
+Which customers need the API, and for what exact use cases? Which objects and actions must be available in version one? How will you price access? Who supports integration questions? What is your deprecation policy? Answering these five questions before writing code keeps the first version focused and sets clear expectations with customers.
+
+## Summary
+
+Build a small, versioned API on top of your app with hashed scoped keys, strict organisation checks, rate limits, signed webhooks and clear documentation, and grow it with your customers' needs.
 
 ## Getting It Built
 

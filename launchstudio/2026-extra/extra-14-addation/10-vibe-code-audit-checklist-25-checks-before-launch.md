@@ -17,13 +17,28 @@ Target Persona: AI-Native Founder (Non-Technical)
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2028-01-18",
   "inLanguage": "en",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/vibe-code-audit-checklist-25-checks-before-launch" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/vibe-code-audit-checklist-25-checks-before-launch" },
+  "citation": [
+    { "@type": "CreativeWork", "name": "OWASP Top 10 2021: A01 Broken Access Control", "url": "https://owasp.org/Top10/A01_2021-Broken_Access_Control/" },
+    { "@type": "CreativeWork", "name": "OWASP Secrets Management Cheat Sheet", "url": "https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html" },
+    { "@type": "CreativeWork", "name": "Verizon Data Breach Investigations Report", "url": "https://www.verizon.com/business/resources/reports/dbir/" },
+    { "@type": "CreativeWork", "name": "Google SRE Book: Monitoring Distributed Systems", "url": "https://sre.google/sre-book/monitoring-distributed-systems/" },
+    { "@type": "CreativeWork", "name": "GDPR Article 32", "url": "https://gdpr-info.eu/art-32-gdpr/" }
+  ]
 }
 </script>
 
 Eighty percent of AI-built projects never reach production. Many of the ones that do launch with avoidable problems, simply because nobody went through a list. This vibe code audit checklist is that list: 25 checks you can run before launch, most of them without reading code. Where a check needs technical help, we say so.
 
 Print it, open your app in a second window and go through it in one sitting. It takes about two hours.
+
+## Key Takeaways
+
+- **Twenty-five checks, about two hours, mostly without code.** The checklist covers accounts, data access, keys, payments, privacy and operations.
+- **Checks 5-10 and 13-16 are launch blockers.** Failures there can expose other people's data or let users get paid features for free.
+- **Access control deserves the most attention.** It has been the top web application risk in the OWASP Top 10 since 2021, and it is where AI-generated apps fail most often.
+- **Operations count as security.** The Verizon Data Breach Investigations Report repeatedly links most breaches to human elements such as errors and misused credentials, which is why account hygiene and two-factor authentication open the list.
+- **Repeat the checklist** before launch, after large AI-generated features and at least quarterly.
 
 ## Accounts and Ownership
 
@@ -78,6 +93,52 @@ Print it, open your app in a second window and go through it in one sitting. It 
 | Under 12 | The app is still a prototype. Plan a production phase before inviting customers |
 
 Any failure in checks 5-10 or 13-16 should be treated as a launch blocker regardless of your total.
+
+## Why a Checklist Works for AI-Built Apps
+
+Checklists are a proven tool in fields where experts are fallible under time pressure, from aviation to surgery. Software launches share that profile: many small steps, each easy to forget, any one of which can cause an incident. AI-built apps add a further reason. The builder generates working features quickly, but it does not remind you of what it did not do. A checklist is that reminder.
+
+The list is ordered deliberately. Accounts come first because they determine whether you can act at all during an incident. Data access and keys come next because they carry the highest impact. Payments follow because they combine money and trust. Privacy and operations close the list because they determine how bad an incident becomes and how fast you recover.
+
+## How the Checks Map to Recognised Standards
+
+Each section of the checklist corresponds to established guidance, so passing it is not an arbitrary exercise:
+
+| Checklist section | Related standard or guidance |
+| --- | --- |
+| Accounts and ownership | Verizon DBIR findings on credential misuse; MFA best practice |
+| Data and access | OWASP Top 10 A01 Broken Access Control; OWASP Authorization Cheat Sheet |
+| Keys and secrets | OWASP Secrets Management Cheat Sheet |
+| Payments | Payment provider guidance on webhooks and idempotency |
+| Privacy and the EU | GDPR Articles 5, 17, 28 and 32 |
+| Operations | Google SRE guidance on monitoring; tested backups |
+
+For a founder, the practical point is that passing the checklist gives you language and evidence for customer questionnaires, investor questions and your own peace of mind.
+
+## Common Ways Founders Misread the Results
+
+- **"I passed check 7, so RLS is fine."** Check 7 only confirms RLS is enabled. The policies themselves can still allow too much; checks 5 and 6 test that in practice.
+- **"My keys are in environment variables, so they are secret."** Variables prefixed for the frontend, such as `VITE_` or `NEXT_PUBLIC_`, are bundled into browser code. Only server-side variables are secret.
+- **"Backups are on, so check 23 passes."** The check requires a restore you have actually performed. Untested backups regularly fail when needed.
+- **"Nobody would try that."** Most automated attacks are not personal; bots try common paths and IDs on every site they find.
+
+## Turning Results Into a Plan
+
+Score yourself, then sort failures into three groups: launch blockers (data, keys, payments), first-week items (monitoring, backups, staging) and first-month items (documentation, retention, processor agreements). Fix the first group before inviting customers, schedule the second immediately after, and put the third on a calendar. If the first group is long or you cannot verify your fixes, that is the moment to bring in a reviewer rather than continuing to prompt.
+
+## Making the Checklist a Habit
+
+The most valuable use of this list is not a single pass before launch. It is a short routine after each significant change. Many founders keep a copy in their repository and tick it in the pull request that ships a large feature. Over time, the routine becomes quicker, the findings become rarer, and the app becomes easier to defend in front of customers, investors and regulators.
+
+## What This Checklist Does Not Cover
+
+No founder checklist replaces a technical review, and it is worth being explicit about the limits. The list does not verify the logic inside every database policy, test for injection vulnerabilities in custom queries, review third-party dependencies for known vulnerabilities, assess performance under load, or evaluate whether your AI features could be manipulated through prompt injection. It also cannot tell you whether your privacy statement is legally sufficient. Those questions belong to an engineer and, for legal texts, a privacy lawyer.
+
+What the checklist does well is catch the most common and most damaging gaps quickly, and give you a clear, shared picture of where your app stands. Many founders use their completed checklist as the starting brief for a professional review, which shortens that review and reduces its cost.
+
+## Who Should Run the Checklist
+
+Ideally two people. The founder knows what the app is supposed to do and who should see what; a second person, such as a co-founder, a friend who works in IT or an early customer you trust, approaches the app without assumptions and tries things the builder would never try. In many LaunchStudio projects, the most important finding came from someone other than the person who built the app, precisely because they did not know which buttons were "supposed" to be clicked.
 
 ## When to Get a Professional Audit
 

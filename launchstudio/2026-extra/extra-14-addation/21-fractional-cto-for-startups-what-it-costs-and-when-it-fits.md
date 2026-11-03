@@ -17,11 +17,24 @@ Target Persona: SaaS Founder Scale-Up
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2028-01-29",
   "inLanguage": "en",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/fractional-cto-for-startups-what-it-costs-and-when-it-fits" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/fractional-cto-for-startups-what-it-costs-and-when-it-fits" },
+  "citation": [
+    { "@type": "CreativeWork", "name": "DORA 2024 Accelerate State of DevOps Report", "url": "https://dora.dev/research/2024/dora-report/" },
+    { "@type": "CreativeWork", "name": "Harvard Business Review", "url": "https://hbr.org/search?term=fractional%20executive" },
+    { "@type": "CreativeWork", "name": "Stack Overflow Developer Survey 2024: AI", "url": "https://survey.stackoverflow.co/2024/ai" }
+  ]
 }
 </script>
 
 A fractional CTO for startups sounds like the perfect compromise: senior technical leadership without a senior salary. For some companies it is exactly right. For others, especially founders whose product was built with AI tools and now needs to go live, it is an expensive way to receive advice they cannot yet act on. The difference lies in what problem you are solving.
+
+## Key Takeaways
+
+- **A fractional CTO provides part-time technical leadership,** typically one to six days a month, for roughly €800-€1,500 per day or €1,500-€8,000 per month in the Netherlands.
+- **Fractional CTOs lead; they rarely build.** Their value depends on having someone to direct, whether a team, an agency or freelancers.
+- **For AI-built products that need to go live, execution comes first.** A launch partner delivers a working production app; a fractional CTO delivers decisions and reviews.
+- **The two are complementary,** and a common sequence is: launch with a partner, gain traction, then add a fractional CTO when the first developers join.
+- **Ask how many hours you will actually get, who builds what they design and what they hand over** before signing a retainer.
 
 ## What a Fractional CTO Does
 
@@ -81,6 +94,67 @@ The two are not mutually exclusive. A common sequence: launch with a partner, ga
 3. Have you worked with AI-generated codebases?
 4. What will you hand over if the engagement ends?
 5. Who builds what you design?
+
+## What Good Fractional Leadership Looks Like
+
+The best fractional CTO engagements share a few traits. There is a written scope: architecture decisions, hiring support, reviews, due diligence preparation. There is a rhythm: a fixed weekly or biweekly slot, plus availability for urgent decisions. There are artefacts: architecture decision records, a technical roadmap, coding standards, hiring scorecards. And there is a clear owner for execution, because a fractional CTO who must also build becomes an expensive part-time developer.
+
+Weak engagements usually lack one of these. Most often, nobody is executing the recommendations, so documents accumulate while the product stands still.
+
+## The Role of AI in Fractional Leadership
+
+AI tools change what a fractional CTO spends time on. With founders and teams generating more code faster, the leadership value shifts towards review, standards and risk. Google's DORA 2024 research associated higher AI adoption with lower software delivery stability when supporting practices were missing; a good fractional CTO installs those practices: small batches, code review, automated tests, staged releases and monitoring. For AI-built codebases, that guardian function is often worth more than new architecture.
+
+## Due Diligence Preparation
+
+One of the clearest use cases for fractional technical leadership is investor or acquirer due diligence. Reviewers ask about architecture, security, scalability, code ownership, documentation and team. A fractional CTO can prepare answers, close gaps and represent the company in technical conversations. For AI-built products, an independent code audit before the process starts is a strong complement, because it provides evidence rather than assurances.
+
+## Comparing Total Cost Over a Year
+
+| Approach | Typical yearly cost | What you get |
+| --- | --- | --- |
+| Fractional CTO, light retainer | €18,000-€36,000 | Direction, reviews, hiring help |
+| Fractional CTO, heavy retainer | €36,000-€90,000 | Active leadership of a team |
+| Launch partner, one or two engagements | €2,000-€15,000 | Production-ready product, documentation |
+| Launch partner plus light fractional CTO later | €20,000-€40,000 | Execution first, leadership when there is a team |
+
+The numbers are indicative, but the pattern is consistent: paying for leadership before there is anything to lead is the most expensive way to spend a small budget.
+
+## Finding a Good Fractional CTO
+
+Look for relevant experience rather than titles: someone who has built and operated products similar in scale and domain to yours, who has hired engineers, and who has worked with AI-assisted teams. Ask for references from founders at a similar stage. Agree on a trial period with a concrete deliverable, such as a technical roadmap or a review of your current codebase, before committing to a long retainer.
+
+## When the Answer Is "Both"
+
+For founders with a live product, a small team and investor conversations ahead, the right answer is often both: a fractional CTO for direction and representation, and an execution partner or team for delivery. Clear boundaries make the combination work: the CTO decides standards and priorities, the partner implements and documents, and the founder owns the product.
+
+## Red Flags in Fractional CTO Proposals
+
+Some proposals look attractive but deliver little. Watch for these signs:
+
+- **No defined hours or deliverables.** "Strategic support as needed" often means very little support.
+- **A long retainer from day one,** without a trial period or initial deliverable.
+- **Technology recommendations disconnected from your stage,** such as microservices, Kubernetes or a full rewrite for a product with a few dozen users.
+- **No plan for execution.** If nobody will build what is designed, the engagement produces documents, not progress.
+- **Unfamiliarity with AI-assisted development.** Your codebase was likely partly generated; the CTO should know how to review and govern that.
+
+A good proposal names the first month's outputs, the time commitment, the decisions the CTO will own and the ones that stay with you.
+
+## Equity for Fractional CTOs
+
+Some fractional CTOs ask for equity, typically a small percentage with vesting, in exchange for a lower cash rate. That can align incentives, but treat it as seriously as any equity decision: vesting tied to continued involvement, clear expectations, and a written agreement. Equity for a few days a month should be modest; it should not compete with what you will need to offer a full-time technical co-founder or first senior engineer later.
+
+## Questions to Ask Yourself First
+
+Before hiring any fractional leader, answer three questions honestly. What decision am I stuck on that an experienced person would unblock? Who will carry out the decisions once they are made? And what will success look like after three months? If you cannot answer the second question, you probably need execution before leadership. If you cannot answer the third, you are not yet ready to judge whether the engagement works, and a short, deliverable-based trial is safer than a retainer.
+
+## Combining Fractional Leadership With Offshore Teams
+
+Fractional CTOs often work well alongside dedicated offshore or nearshore teams: the CTO sets direction and standards, the team builds, and the founder owns the product. This combination works best when the team already has its own senior engineers and delivery processes, so the CTO spends time on decisions rather than day-to-day supervision. Manifera's dedicated teams are organised this way, with senior engineers and Dutch coordination.
+
+## The Short Version
+
+Hire a fractional CTO when you have people to lead and recurring decisions to make. Hire an execution partner when you have a product to ship. If you are unsure which describes you, look at your calendar for the next month: if it is full of decisions nobody can make, you need leadership; if it is full of work nobody is doing, you need execution.
 
 ## How LaunchStudio Relates
 

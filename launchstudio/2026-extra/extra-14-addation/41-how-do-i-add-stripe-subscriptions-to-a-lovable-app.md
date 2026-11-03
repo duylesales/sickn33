@@ -17,13 +17,28 @@ Target Persona: AI-Native Founder (Non-Technical)
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2028-02-18",
   "inLanguage": "en",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/how-do-i-add-stripe-subscriptions-to-a-lovable-app" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/how-do-i-add-stripe-subscriptions-to-a-lovable-app" },
+  "citation": [
+    { "@type": "CreativeWork", "name": "Stripe: Build subscriptions", "url": "https://docs.stripe.com/billing/subscriptions/build-subscriptions" },
+    { "@type": "CreativeWork", "name": "Stripe Billing", "url": "https://docs.stripe.com/billing" },
+    { "@type": "CreativeWork", "name": "Stripe: Receive events in your webhook endpoint", "url": "https://docs.stripe.com/webhooks" },
+    { "@type": "CreativeWork", "name": "Stripe: Idempotent requests", "url": "https://docs.stripe.com/api/idempotent_requests" },
+    { "@type": "CreativeWork", "name": "Supabase: Row Level Security", "url": "https://supabase.com/docs/guides/database/postgres/row-level-security" }
+  ]
 }
 </script>
 
 **Short answer:** create your plans as Products and Prices in Stripe, start subscriptions with Stripe Checkout from a Supabase edge function, store each customer's subscription status in a Supabase table updated only by a verified Stripe webhook, and let customers manage billing through the Stripe Customer Portal. Your Lovable app then grants access based on that table, never on the checkout success page.
 
 Lovable can generate much of this. The parts it tends to get wrong are the ones that decide whether you get paid.
+
+## Key Takeaways
+
+- **Stripe subscriptions in a Lovable app need four pieces:** Products and Prices in Stripe, server-created Checkout sessions, a verified webhook and the Customer Portal.
+- **Access must follow webhook events, never the success page.** Stripe's own guidance recommends fulfilment from webhook events with signature verification.
+- **Handle the full lifecycle:** trials, renewals, failed payments, cancellations and plan changes, not just the first payment.
+- **Protect subscription status with Row Level Security** so users can read but never write it.
+- **For Dutch customers,** iDEAL can start a subscription by setting up SEPA Direct Debit for renewals.
 
 ## The Four Pieces
 
@@ -60,6 +75,88 @@ Your Lovable app reads the user's subscription row and shows or hides features. 
 ## Step 5: Add the Customer Portal
 
 Instead of building upgrade, downgrade and cancel screens, open Stripe's Customer Portal from an edge function. It handles card updates, invoices and plan changes, and every change arrives back through your webhook.
+
+## The Subscription Lifecycle Explained
+
+A subscription is a state machine. Stripe documents the statuses a subscription can have; in practice, your app needs to react to a handful of them:
+
+| Status | Meaning | What your app should do |
+| --- | --- | --- |
+| `trialing` | In a free trial | Grant access, show trial end date |
+| `active` | Paid and current | Grant access |
+| `past_due` | A renewal payment failed, retries ongoing | Keep access during grace period, notify the customer |
+| `canceled` | Ended | Remove paid access, keep data per your retention policy |
+| `incomplete` | First payment not completed | No access yet |
+| `unpaid` | Retries exhausted, depending on settings | Restrict access, offer to pay |
+
+Mirroring these statuses in your `subscriptions` table, updated by webhooks, lets your app make consistent decisions everywhere.
+
+## Webhook Security and Reliability
+
+Stripe signs every webhook with a secret specific to your endpoint. Your handler must verify that signature before trusting the event; otherwise anyone could send a fake "payment succeeded" event to your endpoint. Stripe also retries events that fail and may deliver events more than once or out of order. Practical rules:
+
+- Verify the signature on every request
+- Store processed event IDs and ignore duplicates
+- Fetch the latest subscription object from Stripe when order matters, rather than relying on event order
+- Respond quickly and do slow work afterwards
+- Monitor failed deliveries in the Stripe dashboard
+
+## Trials and Free Plans
+
+Trials increase sign-ups but complicate billing. Decide whether trials require a payment method upfront: requiring one reduces sign-ups but increases conversion; not requiring one does the opposite. With Stripe, both are possible. For free plans, model them as a plan in your app rather than a Stripe subscription, and create a Stripe subscription only when a customer upgrades.
+
+## Taxes and Invoices
+
+Stripe Billing creates invoices for each subscription period, and Stripe Tax can calculate VAT for EU customers, including reverse charge for businesses with valid VAT numbers. For Dutch SaaS, make sure your invoices include your company details and VAT number, and collect customers' business details and VAT numbers where relevant. Your accountant should confirm the setup.
+
+## Testing Subscriptions Without Waiting a Month
+
+Stripe's test mode includes test clocks, which let you simulate the passage of time for a customer and trigger renewals, trial endings and failed payments in minutes. Use them to test every lifecycle path before launch. This is the single most effective way to avoid discovering billing bugs on the first of the month with real customers.
+
+## Pricing Changes Later
+
+You will change prices. Create new Prices in Stripe rather than editing existing ones, decide whether existing customers keep their old price, and communicate changes in advance. Because your app refers to Price IDs and reads plan information from your subscriptions table, price changes become configuration rather than code changes.
+
+## Handling Plan Changes and Proration
+
+When customers upgrade or downgrade mid-period, Stripe can prorate charges automatically, creating credits or extra charges for the difference. Decide your policy before launch: immediate upgrades with proration, downgrades at the end of the period, or simpler rules if your audience prefers predictability. The Customer Portal can enforce these rules, and every change arrives in your app through `customer.subscription.updated` events, so your access logic stays in one place.
+
+## Dunning: Recovering Failed Payments
+
+Failed renewals are a normal part of subscriptions: expired cards, insufficient funds, bank declines. Stripe offers automatic retries and customer emails; combine them with your own in-app notice and a grace period. Measure how many failed renewals you recover. For many subscription businesses, improving recovery is one of the cheapest ways to increase revenue, and it requires no new customers.
+
+## Organisation-Level Billing for B2B
+
+For team products, attach the Stripe customer and subscription to the organisation rather than to an individual user. Seat-based pricing can be implemented with quantities on the subscription item, updated when members are added or removed. Make sure only organisation owners or billing admins can change plans, enforced on the server, and keep billing contact details separate from personal user profiles.
+
+## What to Monitor After Launch
+
+Watch webhook delivery success in the Stripe dashboard, the number of subscriptions in each status, failed payment recovery rates and any mismatch between active Stripe subscriptions and active paid accounts in your app. A small weekly reconciliation report catches issues before customers or your accountant do.
+
+## Security Checklist for Stripe in Lovable Apps
+
+- Secret key only in edge function secrets, never in frontend variables
+- Webhook signature verified on every request
+- Prices taken from Stripe Price IDs on the server, never amounts from the browser
+- Subscription table readable by its owner, writable only by server code
+- Customer Portal sessions created server-side for the authenticated user only
+- Test and live keys separated per environment
+
+## Why Not Build Billing Yourself
+
+AI builders can generate a homemade subscription system with its own renewal logic and card storage. Avoid it. Stripe handles card data, strong customer authentication, retries, invoices, tax and compliance; your job is to connect its events to your app correctly. Building billing yourself means taking on payment card industry obligations and edge cases that Stripe has already solved.
+
+## A Note on Lovable's Stripe Integration
+
+Lovable can set up a Stripe connection and generate checkout code quickly, which is a good starting point. Treat the result as a draft: confirm that sessions are created server-side, that webhooks are verified, that the subscription table is protected and that every lifecycle event is handled. Those four checks turn a working demo into reliable billing.
+
+## Communicating Billing Clearly to Customers
+
+Billing surprises cause churn and support tickets. Show the plan, price, interval and next billing date in account settings; send a receipt for every payment; warn customers before a trial converts to paid; and explain what happens when a payment fails. Stripe's emails can handle some of this, but in-app clarity matters just as much. Customers who understand their billing rarely dispute it.
+
+## Keep Billing Logic in One Place
+
+Put every billing decision - which plan a user has, which features it unlocks, what happens on failure - in server-side code and policies that read the subscriptions table. Scattered checks across components drift apart over time, especially as prompts regenerate files.
 
 ## Mistakes We See Most
 

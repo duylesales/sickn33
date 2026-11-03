@@ -17,11 +17,25 @@ Target Persona: SaaS Founder Scale-Up
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2028-03-04",
   "inLanguage": "en",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/how-do-i-add-two-factor-authentication-to-my-app" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/how-do-i-add-two-factor-authentication-to-my-app" },
+  "citation": [
+    { "@type": "CreativeWork", "name": "Supabase: Multi-Factor Authentication", "url": "https://supabase.com/docs/guides/auth/auth-mfa" },
+    { "@type": "CreativeWork", "name": "Verizon Data Breach Investigations Report", "url": "https://www.verizon.com/business/resources/reports/dbir/" },
+    { "@type": "CreativeWork", "name": "OWASP Top 10 2021: A07 Identification and Authentication Failures", "url": "https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures/" },
+    { "@type": "CreativeWork", "name": "GDPR Article 32: Security of processing", "url": "https://gdpr-info.eu/art-32-gdpr/" }
+  ]
 }
 </script>
 
 **Short answer:** Supabase Auth supports multi-factor authentication with authenticator apps (TOTP). Add an enrolment screen where users scan a QR code, a challenge step after login, and, importantly, enforce MFA in your Row Level Security policies by checking the session's assurance level for sensitive data. Plan recovery before you launch, because users will lose phones.
+
+## Key Takeaways
+
+- **Supabase Auth supports multi-factor authentication with authenticator apps (TOTP)** and exposes session assurance levels you can check in Row Level Security policies.
+- **MFA is one of the most effective controls against credential theft,** which the Verizon Data Breach Investigations Report consistently ranks among the leading causes of breaches.
+- **Enforcement must happen on the server:** require assurance level 2 (aal2) in policies and functions for sensitive data and actions.
+- **Require MFA for administrators and staff;** offer it to all users; let business customers require it for their members.
+- **Plan recovery before launch:** multiple factors, a verified support process and an audit trail for resets.
 
 ## Why Customers Ask for It
 
@@ -64,6 +78,102 @@ Hiding pages from users without MFA is not enforcement. Use the `aal` claim in t
 ## Step 6: Communicate
 
 Announce MFA to existing users, explain why it helps, and link to setup instructions. Mention it on your security page; it is a fact business buyers look for.
+
+## Why MFA Matters
+
+Passwords fail in predictable ways: reuse across sites, phishing, guessing and leaks. Attackers routinely test leaked email and password combinations against other services, a practice known as credential stuffing. The Verizon Data Breach Investigations Report has repeatedly found stolen or misused credentials among the most common ways breaches begin. A second factor stops most of these attacks, because a stolen password alone is no longer enough. For apps holding financial, health or business-critical data, MFA is now an expectation rather than a premium feature.
+
+## Factor Types Compared
+
+| Factor | Security | User experience | Notes |
+| --- | --- | --- | --- |
+| Authenticator app (TOTP) | Strong | Good, widely familiar | Supported by Supabase Auth |
+| SMS codes | Moderate | Familiar | Vulnerable to SIM swapping and interception |
+| Email codes | Moderate | Easy | Only as strong as the email account |
+| Passkeys and security keys | Very strong, phishing-resistant | Excellent once set up | Check current support in your auth provider |
+
+Start with authenticator apps, which Supabase supports directly, and consider passkeys as support matures.
+
+## Assurance Levels Explained
+
+Supabase sessions carry an authenticator assurance level. After a password or social login, the session is at aal1. After the user completes an MFA challenge, it is upgraded to aal2. The level is included in the user's token, so Row Level Security policies and edge functions can check it. For example, a policy on a salaries table can require aal2, so even a user with the right role cannot read salary data without completing MFA in that session. That is real enforcement, independent of what the interface shows.
+
+## Rolling Out MFA to Existing Users
+
+Introducing MFA to an existing user base works best in stages:
+
+1. **Announce it** with a short explanation of why it protects users.
+2. **Make it optional** for all users, with clear setup instructions.
+3. **Require it for staff and administrators** immediately.
+4. **Offer organisation-level enforcement** to business customers who want it.
+5. **Measure adoption** and consider requiring it for sensitive roles after a transition period.
+
+Forcing MFA on everyone overnight tends to generate support requests and frustration; a staged rollout builds adoption with goodwill.
+
+## Recovery Without Weakening Security
+
+Every MFA system needs a recovery path, and recovery is where attackers look for weaknesses. Good practices:
+
+- Encourage users to register more than one factor
+- Provide recovery codes at enrolment and ask users to store them safely
+- Require identity verification for support-led resets, never based solely on an email request
+- Log every reset with who requested it and who approved it
+- Notify the user by email when MFA is reset on their account
+
+## MFA in Security Questionnaires and Contracts
+
+Business customers often ask whether MFA is available, whether it can be enforced for all their users and whether your own staff use it to access production systems. Answer all three: yes, yes and yes. Then include MFA in your security summary and, where relevant, your processing agreement's description of technical measures, in line with the GDPR's Article 32 requirement for appropriate security.
+
+## Usability Details That Matter
+
+Small details reduce friction: show the QR code and a manual setup key, name common authenticator apps, allow users to remember trusted devices for a limited period where appropriate, and give clear error messages for expired codes. Test the flow on a phone, since many users will set it up on the same device they use to log in.
+
+## Implementing MFA in a Lovable App, Step by Step
+
+1. **Enable MFA** in your Supabase Auth settings.
+2. **Build an enrolment page** in Lovable that calls Supabase's MFA enrol method, displays the QR code and manual key, and verifies the first code.
+3. **Add a challenge step after login** that checks whether the user has a verified factor and whether the session is still aal1, and asks for a code if so.
+4. **Update Row Level Security policies** for sensitive tables to require aal2, using the assurance level claim in the user's token.
+5. **Protect edge functions** for sensitive actions with the same check.
+6. **Add organisation settings** that let business admins require MFA for all members, enforced server-side.
+7. **Build recovery** with recovery codes and a verified support process.
+8. **Test** with users who have and do not have MFA, across devices.
+
+## Common Mistakes
+
+- Showing an MFA screen in the interface but not enforcing aal2 in policies
+- Requiring MFA for customers while staff accounts with broader access have none
+- Allowing MFA resets through a simple email request to support
+- Not testing enrolment on mobile devices
+- Forgetting that API calls with an aal1 session can still reach unprotected tables
+
+## The Payoff
+
+MFA turns stolen passwords from a breach into a failed login attempt. For a few days of work, it removes one of the most common attack paths, satisfies a standard questionnaire item and gives business customers a reason to trust you with their data.
+
+## MFA for Your Own Team and Tools
+
+MFA inside your app protects users; MFA on your own accounts protects everything. Require it on GitHub, Supabase, your hosting provider, payment provider, email provider, domain registrar and any AI or analytics tools with access to customer data. An attacker who takes over your Supabase or GitHub account bypasses every policy in your app. This takes an afternoon to set up and is one of the most valuable security steps a founder can take.
+
+## Monitoring Authentication Events
+
+Watch for signs of attacks: spikes in failed logins, many MFA challenges failing for one account, logins from unusual locations for admin accounts and MFA resets. Supabase Auth logs these events; send alerts for the most suspicious patterns, especially for staff and administrator accounts.
+
+## Related Reading
+
+MFA works best alongside the other controls covered in our guides on bot protection, roles and admin panels, and our 25-point launch checklist.
+
+## What Customers Experience
+
+For most users, MFA adds a few seconds at login and a one-time setup of two minutes. Explain it in plain language: "We ask for a code from your phone so that nobody else can log in with your password." Users who understand why accept it readily, and many business customers will see it as a sign of maturity rather than a hurdle. Measure login completion before and after introducing MFA; with a clear flow, the impact is usually small.
+
+## Summary
+
+Offer MFA to all users, require it for staff and admins, enforce it in policies and functions, plan recovery carefully and turn it on for every account that runs your business.
+
+## Related Reading
+
+See our guides on roles and admin panels and on protecting apps from bots for the controls that work alongside MFA.
 
 ## Getting It Built
 

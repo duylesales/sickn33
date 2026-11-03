@@ -17,13 +17,29 @@ Target Persona: AI-Native Founder (Non-Technical)
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2028-01-16",
   "inLanguage": "en",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/fix-my-lovable-app-the-problems-founders-bring-us-most" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/fix-my-lovable-app-the-problems-founders-bring-us-most" },
+  "citation": [
+    { "@type": "CreativeWork", "name": "OWASP Top 10 2021: A01 Broken Access Control", "url": "https://owasp.org/Top10/A01_2021-Broken_Access_Control/" },
+    { "@type": "CreativeWork", "name": "Veracode 2025 GenAI Code Security Report", "url": "https://www.veracode.com/resources/analyst-reports/2025-genai-code-security-report/" },
+    { "@type": "CreativeWork", "name": "Perry et al., Do Users Write More Insecure Code with AI Assistants?", "url": "https://arxiv.org/abs/2211.03622" },
+    { "@type": "CreativeWork", "name": "Supabase: Redirect URLs", "url": "https://supabase.com/docs/guides/auth/redirect-urls" },
+    { "@type": "CreativeWork", "name": "GDPR Article 33", "url": "https://gdpr-info.eu/art-33-gdpr/" },
+    { "@type": "CreativeWork", "name": "IBM Cost of a Data Breach Report", "url": "https://www.ibm.com/reports/data-breach" }
+  ]
 }
 </script>
 
 It's Thursday evening. Your Lovable app worked yesterday. Today the dashboard is empty for half your users, and every prompt you try makes Lovable confidently announce "I've fixed the issue" while nothing changes. You type "fix my lovable app" into Google because you are out of ideas.
 
 You are in good company. Most messages LaunchStudio receives start exactly like that. The good news: the problems behind them are few and repetitive. Here are the eight we see most, what causes them and how to tell whether prompting will help.
+
+## Key Takeaways
+
+- **Most broken Lovable apps share the same eight root causes,** and nearly all of them sit below the interface: database policies, keys, webhooks, email configuration, queries and deployment settings.
+- **Prompting can make some problems worse.** A common "fix" for invisible data is loosening a Row Level Security policy until everyone sees everything, which swaps a bug for a data breach.
+- **Access control is the highest-stakes category.** Broken access control has topped the OWASP Top 10 since 2021, and Veracode's 2025 research found security flaws in roughly 45% of AI-generated code samples.
+- **Diagnose before you prompt.** Ask Lovable to explain the cause and list the files it would change; if the answer mentions policies, keys or webhooks, slow down.
+- **Most single fixes take one to five business days** with a specialist; LaunchStudio repair jobs typically cost €800-€3,500 fixed.
 
 ## 1. Data Disappears or Shows Up Empty for Some Users
 
@@ -93,6 +109,47 @@ A useful habit whatever you choose: before asking Lovable to fix anything, ask i
 We keep your frontend, fix only what is needed and get you live quickly. A typical Lovable fix engagement starts with a 15-minute call, then a fixed quote between €800 and €3,500 for most repair jobs. The work happens in your GitHub repository, so Lovable stays in sync and you can keep building. If you want to understand the hire route in more detail, see our page on [hiring a Lovable developer](https://launchstudio.eu/en/blog/lovable-developer-for-hire-fix-and-finish-your-lovable-app).
 
 LaunchStudio is powered by Manifera, a software development company with 11+ years of experience and 160+ delivered projects. Manifera's founder, Herre Roelevink, put the shift simply: the challenge is no longer turning good ideas into software, but the architecture and security needed to let those products mature. That is precisely where Lovable apps break. You can explore Manifera's [web application work](https://www.manifera.com/services/web-app-develop/) for context. For Supabase-specific background, the [Supabase auth redirect URL guide](https://supabase.com/docs/guides/auth/redirect-urls) explains problem 7 in detail.
+
+## Why Lovable Bugs Behave Differently From Normal Bugs
+
+In a hand-written codebase, a developer who fixes a bug usually understands why the fix works. In a prompt-built codebase, the fix is generated from a description of the symptom. That difference explains several frustrating patterns founders report.
+
+**The fix addresses the symptom, not the cause.** If you describe "the dashboard is empty for my colleague", the most direct way to make data appear is to change the query or the policy that hides it. Whether that data should be visible to your colleague is a business decision the AI cannot make.
+
+**Fixes are not durable.** Lovable may regenerate a component during a later prompt and drop an earlier change. Fixes that live in database policies, database functions or edge functions survive far better than fixes in React components.
+
+**Success messages are not evidence.** An AI tool reports success when it has changed the code it believes is responsible. If the real cause sits in a scheduled function, a Supabase setting or a third-party dashboard, the report can be sincere and still wrong.
+
+Research on AI-assisted coding supports caution here. A Stanford study by Perry and colleagues found that developers using an AI assistant produced less secure code and were more likely to believe it was secure. The same dynamic applies to fixes: confidence rises faster than correctness.
+
+## A Diagnostic Routine You Can Run Yourself
+
+Before paying anyone, spend thirty minutes on a structured diagnosis. It often narrows the problem to one of the eight categories above.
+
+1. **Reproduce with two accounts.** Most data problems only appear when a second user exists. Create one if you have not.
+2. **Check the browser console and network tab.** Errors mentioning `401`, `403`, `row-level security` or `JWT` point to access rules or sessions; `404` on refresh points to routing; CORS errors point to allowed origins.
+3. **Check the Supabase logs.** Auth logs show failed logins and email sends; database logs show policy violations and slow queries.
+4. **Check external dashboards.** Stripe or Mollie webhook delivery logs show whether events reached your app and what it answered.
+5. **Write down the timeline.** "It broke after I added X" is the single most useful sentence for any developer you bring in.
+
+If the trail leads to policies, keys or payments, stop prompting and get help: these are the categories where a wrong fix creates a security or financial incident rather than a visible bug.
+
+## The Cost of Waiting
+
+Founders often tolerate a broken Lovable app for weeks, hoping the next prompt will fix it. The costs accumulate quietly. Users who hit an error during onboarding rarely return. Payments that do not reconcile create refunds, disputes and accounting work. And data exposure carries obligations: under the GDPR, a reportable personal data breach must be notified to the supervisory authority within 72 hours, which is hard to do when you cannot tell from logs what happened.
+
+IBM's Cost of a Data Breach research puts the global average cost of a breach in the millions of dollars. A small founder will not face that figure, but the same components - investigation time, notification, lost customers, reputational damage - scale down painfully rather than disappearing. A fixed-price repair measured in days is almost always cheaper than another month of uncertainty.
+
+## Preventing the Next Breakage
+
+Once your app is repaired, four habits prevent most repeat incidents:
+
+- **A staging environment** where every Lovable change lands before customers see it.
+- **Project rules in Lovable's knowledge settings** stating what prompts must not change: policies, the roles table, payment functions.
+- **A small automated test** that logs in as two users and confirms neither can see the other's data, run on every deployment.
+- **A two-minute review** of changes to migrations, policies and edge functions after each building session.
+
+These habits keep the speed that made Lovable attractive while removing most of the risk.
 
 ## Real example
 

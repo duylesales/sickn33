@@ -17,11 +17,25 @@ Target Persona: SaaS Founder Scale-Up
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2028-02-17",
   "inLanguage": "en",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/launchstudio-vs-an-offshore-dev-team" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/launchstudio-vs-an-offshore-dev-team" },
+  "citation": [
+    { "@type": "CreativeWork", "name": "DORA 2024 Accelerate State of DevOps Report", "url": "https://dora.dev/research/2024/dora-report/" },
+    { "@type": "CreativeWork", "name": "Google Cloud: State of DevOps", "url": "https://cloud.google.com/devops/state-of-devops" },
+    { "@type": "CreativeWork", "name": "GDPR Article 28: Processor", "url": "https://gdpr-info.eu/art-28-gdpr/" },
+    { "@type": "CreativeWork", "name": "Stack Overflow Developer Survey 2024: AI", "url": "https://survey.stackoverflow.co/2024/ai" }
+  ]
 }
 </script>
 
 Herre Roelevink has spent more than a decade building software for Dutch clients with engineering teams in Vietnam. So when founders ask whether they should use LaunchStudio or hire an offshore dev team, the answer comes from someone who runs both: it depends on your stage. A launch partner finishes and ships what you have built. An offshore team builds continuously under your direction. Choosing the wrong one costs either money or momentum.
+
+## Key Takeaways
+
+- **A launch partner and an offshore team solve different problems.** LaunchStudio ships an AI-built prototype to production at a fixed price; an offshore team provides ongoing development capacity.
+- **Fixed scope suits uncertainty; capacity suits a roadmap.** Paying for monthly capacity before you know what customers want is the most common way founders overspend.
+- **Offshore risks are real but manageable** with clear contracts, local coordination, documentation, code in your repository and long-tenured engineers.
+- **Small, frequent releases outperform big batches,** a finding repeated in Google's DORA research, which applies to launch projects and teams alike.
+- **The usual sequence:** build with AI, launch with a partner, learn from customers, then scale with a dedicated team on the same codebase.
 
 ## Two Different Models
 
@@ -72,6 +86,77 @@ Many founders follow a path that uses both, at different moments:
 4. **Scale** with a dedicated team when the roadmap and revenue justify it.
 
 Because LaunchStudio and Manifera share engineering standards, the code from step 2 is ready for a team in step 4 without a rewrite.
+
+## Why Offshore Development Has a Mixed Reputation
+
+Founders often have heard offshore horror stories: missed deadlines, communication gaps, code nobody else can maintain, developers who disappear mid-project. These stories are real, and they usually share causes: unclear requirements, no local point of contact, work done in the vendor's accounts, high staff turnover and no documentation. None of these is inherent to geography. Teams anywhere fail under those conditions; offshore teams succeed when they are removed.
+
+## What Makes Offshore Work
+
+| Factor | What good looks like |
+| --- | --- |
+| Coordination | A local contact who understands your market and language |
+| Seniority | Senior engineers who can make decisions, not only execute tickets |
+| Continuity | Low turnover, shared knowledge across the team |
+| Ownership | Code in your repository, accounts in your name |
+| Process | Clear sprint rhythm, reviews, staging, automated tests |
+| Documentation | Architecture notes, runbooks, onboarding guides |
+| Time zones | Overlapping hours for calls, asynchronous updates for the rest |
+
+Manifera's model was built around these factors: Dutch leadership and client contact in Amsterdam, a hub in Singapore and an engineering centre in Ho Chi Minh City with long-tenured engineers. The same engineering standards apply to LaunchStudio's fixed-scope launches.
+
+## The Hidden Cost of Hiring Capacity Too Early
+
+A monthly team costs the same whether you know what to build or not. Before product-market fit, priorities change weekly, and a team working through shifting priorities produces features that may never be used. Founders sometimes judge the team harshly in this phase, when the real problem is that the product's direction was not yet clear. Launching first, with a fixed scope, gives you customer evidence that makes later team capacity far more productive.
+
+## Delivery Practices That Matter in Either Model
+
+Google's DORA research has consistently linked strong delivery performance to practices such as small batch sizes, trunk-based development, automated testing and continuous delivery. Its 2024 report also found that rising AI adoption was associated with lower delivery stability when these practices were missing. Whether you work with a launch partner or an offshore team, ask how they release: how often, with what testing, through which environments and with what rollback. The answers predict reliability better than any portfolio.
+
+## Communication Rhythms That Work
+
+For a fixed-scope launch: a kickoff call, short daily written updates, a mid-point demo and a handover walkthrough. For an ongoing team: a weekly planning call, a short demo every one or two weeks, written updates on blockers and a monthly review of priorities and costs. Time zones help when used well: a team in Ho Chi Minh City can work while Dutch founders sleep, with a few overlapping hours for calls.
+
+## Contract Points to Get Right
+
+- **Intellectual property:** all code and assets belong to your company from creation
+- **Accounts:** repositories, hosting, databases and domains in your name
+- **Confidentiality:** NDAs and data processing agreements where personal data is involved
+- **Notice periods:** reasonable notice on both sides for ongoing teams
+- **Handover:** documentation and knowledge transfer obligations at the end
+
+## A Hybrid Path
+
+Some founders combine both models: a fixed-scope launch now, followed by a small dedicated team of one or two engineers once there is a roadmap, growing as revenue grows. Because LaunchStudio and Manifera share engineering standards, the team inherits a codebase that is already documented and production ready.
+
+## Cost Comparison Over Twelve Months
+
+| Scenario | Indicative 12-month cost | Outcome |
+| --- | --- | --- |
+| Offshore team of three from month one | €80,000-€120,000+ | Many features, uncertain fit before customer feedback |
+| Launch partner, then one dedicated engineer from month five | €40,000-€60,000 | Live product early, focused development after learning |
+| Launch partner plus founder building in AI tools all year | €5,000-€15,000 | Lowest cost, slower once demands grow |
+
+Figures vary widely by seniority and location; the pattern matters more than the numbers. Paying for capacity after you know what to build makes every euro go further.
+
+## Questions to Ask an Offshore Provider
+
+- Who will be on my team, how senior are they and how long have they been with the company?
+- Who is my local point of contact, and in which time zone?
+- How do you handle code reviews, testing and releases?
+- Will all work happen in my repositories and accounts?
+- What happens if a team member leaves?
+- Can I see examples of documentation you hand over?
+
+Clear, specific answers are a good sign; vague answers about "agile processes" are not.
+
+## Signs It Is Time to Move From Launch to Team
+
+You are ready for a dedicated team when your backlog is driven by customer requests rather than guesses, when you release more than once a week and still cannot keep up, when revenue or funding covers at least six months of team costs, and when you have someone - yourself, a product manager or a fractional CTO - who can set priorities every week. Before those signs appear, fixed-scope engagements and your own building in AI tools are usually the better investment.
+
+## The Short Version
+
+Launch first with fixed scope; scale with a team once customers tell you what to build. Keep the code in your repository throughout, so moving from one model to the next never requires starting over.
 
 ## Who Is Behind Both
 

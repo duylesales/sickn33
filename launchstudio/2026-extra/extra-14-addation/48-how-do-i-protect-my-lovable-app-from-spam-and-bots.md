@@ -17,11 +17,25 @@ Target Persona: AI-Native Founder (Non-Technical)
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2028-02-25",
   "inLanguage": "en",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/how-do-i-protect-my-lovable-app-from-spam-and-bots" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/how-do-i-protect-my-lovable-app-from-spam-and-bots" },
+  "citation": [
+    { "@type": "CreativeWork", "name": "Supabase: Enable CAPTCHA protection", "url": "https://supabase.com/docs/guides/auth/auth-captcha" },
+    { "@type": "CreativeWork", "name": "Verizon Data Breach Investigations Report", "url": "https://www.verizon.com/business/resources/reports/dbir/" },
+    { "@type": "CreativeWork", "name": "OWASP Top 10 2021: A07 Identification and Authentication Failures", "url": "https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures/" },
+    { "@type": "CreativeWork", "name": "GDPR Article 5: Principles", "url": "https://gdpr-info.eu/art-5-gdpr/" }
+  ]
 }
 </script>
 
 **Short answer:** layer several defences. Enable CAPTCHA protection on Supabase Auth (Supabase supports providers such as Cloudflare Turnstile and hCaptcha), require email confirmation, rate-limit sign-ups and form submissions on the server, validate every input server-side, and monitor for unusual spikes. No single measure stops all bots; together they make your app an unattractive target.
+
+## Key Takeaways
+
+- **Public sign-up and contact forms attract bots within days of launch,** often before real users arrive in numbers.
+- **Layer your defences:** CAPTCHA on Supabase Auth, email confirmation, rate limits, server-side validation, protection of email-sending features and monitoring.
+- **Bots are a security issue, not just a nuisance.** Credential stuffing and automated abuse appear consistently in the Verizon Data Breach Investigations Report.
+- **Protect your email reputation:** features that send email on a user's behalf can be abused to send spam from your domain.
+- **Respond quickly if bots get in:** enable protections, identify fake accounts by pattern, clean up with server-side scripts and check sender reputation.
 
 ## What Bots Do to AI-Built Apps
 
@@ -65,6 +79,85 @@ Track sign-ups per hour, failed logins and form submissions. A sudden spike at 3
 3. Delete or disable them in bulk with a server-side script
 4. Check whether any were used to send email or consume paid resources
 5. Review your sender reputation with your email provider
+
+## Why Bots Find New Apps So Quickly
+
+Automated scanners constantly crawl the web for sign-up forms, login pages, contact forms and exposed APIs. They do not need to know your app exists in any meaningful sense; finding a form is enough. Common motives include creating accounts for spam, testing stolen credentials against your login, exploiting free trials or credits, collecting email addresses and probing for vulnerabilities. Newly launched apps are attractive precisely because they often lack protections.
+
+## Credential Stuffing
+
+When large password databases leak elsewhere, attackers try those email and password combinations on many other sites, betting that people reuse passwords. Your app's login becomes a target even if you were never breached. The Verizon Data Breach Investigations Report has repeatedly identified stolen credentials as one of the most common ways breaches begin. Defences include CAPTCHA on login after failed attempts, rate limiting per IP and per account, alerts on unusual login volumes, encouraging or requiring multi-factor authentication for sensitive accounts and offering social login, which shifts password security to providers with strong protections.
+
+## Choosing a CAPTCHA
+
+Supabase Auth supports CAPTCHA providers including Cloudflare Turnstile and hCaptcha. Modern options often run invisibly for most users and only challenge suspicious traffic. When choosing, consider privacy: some CAPTCHA services set cookies or collect data that may require mention in your privacy statement or consent under e-privacy rules. Turnstile, for example, is designed as a privacy-friendlier alternative to traditional challenges. Apply CAPTCHA to sign-up, login and password reset, and to public forms such as contact or waitlist forms.
+
+## Rate Limiting in Practice
+
+Rate limits restrict how often an action can happen within a time window. Effective limits are specific: five sign-up attempts per IP per hour, ten password reset requests per email per day, three invitations per minute per user. Store counters in your database or a key-value store, apply them in edge functions before doing expensive or risky work, and return clear messages so legitimate users understand what happened. Supabase applies some auth rate limits itself; your own functions need their own.
+
+## Protecting Public Content From Scraping
+
+If your app shows public listings, prices or content, scrapers may copy it. Full protection is impossible, but you can raise the cost: rate-limit public APIs, avoid exposing more data than pages need, paginate results and monitor unusual access patterns. For valuable data, require login to see full details.
+
+## Spam in User-Generated Content
+
+Marketplaces, forums and comment features attract spam posts with links. Effective measures include restricting links for new accounts, requiring email confirmation before posting, rate-limiting posts, adding a simple report button and reviewing flagged content. Search engines may treat pages full of spam links as low quality, so moderation also protects your visibility.
+
+## Monitoring for Abuse
+
+Track sign-ups per hour, failed logins, password reset requests, invitations sent and posts created. Establish a normal baseline during the first weeks and alert when values exceed it significantly. A spike at an unusual hour is a strong signal. Combine this with your email provider's bounce and complaint dashboards, which often reveal abuse of email-sending features first.
+
+## Privacy Considerations
+
+Bot defences process data such as IP addresses and device signals. Process only what you need, keep logs for limited periods and describe these measures in your privacy statement. Security measures are generally a legitimate interest under the GDPR, but transparency and minimisation still apply.
+
+## A Practical Defence Plan by Stage
+
+| Stage | Minimum protections |
+| --- | --- |
+| Before launch | CAPTCHA on sign-up and reset, email confirmation, server-side validation |
+| First weeks | Rate limits on auth and forms, sign-up monitoring, link restrictions for new accounts |
+| Growing | Abuse reporting, moderation tools, alerts on anomalies, MFA for staff |
+| Under attack | Stricter CAPTCHA, temporary invite-only sign-up, blocking abusive IP ranges, clean-up scripts |
+
+Starting with the first row costs little and prevents most problems.
+
+## Cleaning Up Safely
+
+When fake accounts slip through, clean up methodically. Export a list of suspected accounts based on clear criteria, review a sample by hand to avoid deleting real users, then disable or delete them with a server-side script. Remove their content, revoke sessions and check whether they used features that send email or consume paid resources. Keep a record of what you removed and why, in case a real user was caught by mistake and needs restoring.
+
+## Protecting Your Domain's Email Reputation
+
+If bots used your invitation or sharing features to send spam, mailbox providers may start treating all your emails as suspicious, including password resets for real users. Check your email provider's complaint and bounce rates, pause abused features, and contact the provider if your domain appears on blocklists. Prevention through limits on email-sending features is far easier than repairing a damaged reputation.
+
+## Balancing Security and Conversion
+
+Every protection adds some friction. Measure the effect: track sign-up completion before and after adding CAPTCHA or email confirmation. Invisible or low-friction CAPTCHA usually has little impact on real users while stopping most bots. If conversion drops noticeably, adjust thresholds rather than removing protections entirely.
+
+## Questions to Ask Before Launch
+
+Can a script create a hundred accounts on your app in a minute? Can someone try a thousand passwords against one account? Can a new account send invitations or messages to arbitrary email addresses? Can anyone post links on public pages without review? If any answer is yes, add the corresponding protection before you announce your launch. The newspaper article, Product Hunt post or partner newsletter that brings real users also brings bots.
+
+## The Payoff
+
+A well-protected sign-up flow keeps your user list clean, your metrics honest, your email reputation intact and your support inbox manageable. It also protects real users from credential stuffing and spam, which builds the trust that turns early users into advocates.
+
+## A Simple Weekly Routine
+
+Once a week, glance at four numbers: new sign-ups, confirmed sign-ups, failed logins and emails sent. A healthy app shows stable ratios between them. A jump in sign-ups without a matching rise in confirmations, or a jump in failed logins, is usually your first sign of automated abuse - and the earlier you notice, the smaller the clean-up.
+
+## The Bottom Line
+
+Assume bots will find your forms within days of launch. CAPTCHA, email confirmation, rate limits and monitoring cost a day or two to set up and save weeks of clean-up, damaged email reputation and frustrated real users.
+
+## Where to Start Today
+
+Turn on CAPTCHA for sign-up and password reset in Supabase, enable email confirmation and add a rate limit to any form that sends email. Those three steps take an afternoon and block the large majority of automated abuse.
+
+## Related Reading
+
+For the email side of bot protection, see our guide on why Supabase sign-up emails stop arriving; for the wider security picture, our 25-point launch checklist covers bots alongside access control and keys.
 
 ## Getting It Set Up
 

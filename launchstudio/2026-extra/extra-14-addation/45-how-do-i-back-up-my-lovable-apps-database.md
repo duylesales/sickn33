@@ -17,11 +17,25 @@ Target Persona: AI-Native Founder (Non-Technical)
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2028-02-22",
   "inLanguage": "en",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/how-do-i-back-up-my-lovable-apps-database" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/how-do-i-back-up-my-lovable-apps-database" },
+  "citation": [
+    { "@type": "CreativeWork", "name": "Supabase: Database backups", "url": "https://supabase.com/docs/guides/platform/backups" },
+    { "@type": "CreativeWork", "name": "GDPR Article 32: Security of processing", "url": "https://gdpr-info.eu/art-32-gdpr/" },
+    { "@type": "CreativeWork", "name": "GDPR Article 5: Principles", "url": "https://gdpr-info.eu/art-5-gdpr/" },
+    { "@type": "CreativeWork", "name": "ENISA Threat Landscape", "url": "https://www.enisa.europa.eu/topics/cyber-threats/threat-landscape" }
+  ]
 }
 </script>
 
 **Short answer:** your Lovable app's data is in Supabase (your own project or Lovable Cloud). On paid Supabase plans, daily backups are managed for you, and point-in-time recovery can be added for finer restores. For real protection, add your own scheduled export to separate storage, back up uploaded files separately, and run a restore test so you know how long recovery actually takes. A backup you have never restored is a hope, not a plan.
+
+## Key Takeaways
+
+- **Your Lovable app's data lives in Supabase,** and whether it is backed up depends on your plan and settings, not on Lovable.
+- **Use three layers:** managed daily backups on a paid plan, point-in-time recovery for recent mistakes and your own off-site export for independence.
+- **Files in Supabase Storage are not part of database backups** and need their own protection.
+- **A backup you have never restored is a hope, not a plan.** Test restores quarterly and measure how long they take.
+- **Backups contain personal data,** so keep them in the EU, restrict access and document retention for GDPR purposes.
 
 ## Three Layers of Protection
 
@@ -65,6 +79,94 @@ The time you measure is your realistic recovery time. If it is longer than your 
 ## Backups and the GDPR
 
 Backups contain personal data. Keep them in the EU, restrict access, and define a retention period. When a user asks for deletion, their data will age out of backups within that period; document this in your privacy statement.
+
+## Recovery Objectives in Plain Language
+
+Professionals describe backup needs with two numbers. The **recovery point objective** (RPO) is how much data you can afford to lose, measured in time: if your RPO is 24 hours, a daily backup is enough; if it is minutes, you need point-in-time recovery. The **recovery time objective** (RTO) is how long you can afford to be down while restoring. Writing these two numbers down for your app turns vague worry into concrete requirements. A booking app taking payments may need an RPO of minutes and an RTO of an hour; an internal tool may tolerate a day for both.
+
+## What Typically Causes Data Loss
+
+Hardware failures are rare on managed platforms. The common causes are human and logical:
+
+- A bulk delete or update run against the wrong records
+- A migration that drops or transforms a column incorrectly
+- A bug that overwrites data for many users at once
+- A compromised key used to delete or encrypt data
+- An accidental deletion of a project or bucket
+
+Each of these happens inside your own system, which is why provider redundancy alone does not protect you. You need backups that reach back before the mistake, and ideally one copy outside the account that could be compromised.
+
+## The 3-2-1 Principle, Adapted
+
+A classic backup rule says: keep three copies of your data, on two different types of storage, with one copy off-site. For a founder's Supabase app, a practical adaptation is: the live database, Supabase's managed backups, and your own encrypted export stored with a different provider or account. That third copy protects you against account-level problems, such as lost access or a compromised admin, which managed backups inside the same account cannot.
+
+## Protecting Backups Themselves
+
+Backups are attractive targets: they contain everything. Encrypt your own exports, store them in a private bucket with restricted access, use separate credentials for the backup job and avoid giving the backup storage delete rights to the same identity that writes to it. Ransomware attacks increasingly target backups first, so making them hard to delete is part of the design.
+
+## Storage Files: A Separate Plan
+
+Files in Supabase Storage need their own approach. Options include periodically syncing important buckets to separate storage, versioning where supported or, for critical documents such as signed contracts and invoices, writing a copy to an archive bucket at creation time. Decide which files you truly cannot lose and protect those first.
+
+## Restoring Without Making Things Worse
+
+When something goes wrong, the instinct is to restore immediately over the live database. That can destroy evidence and newer valid data. A safer pattern: restore into a separate project, compare the affected tables with production, then copy back only the records you need. Practise this once in calm conditions so you are not learning it during an incident.
+
+## Backups and the GDPR
+
+Backups hold personal data and fall under the same rules as your live database: security appropriate to the risk under Article 32, location considerations for transfers and storage limitation under Article 5. Keep backups in EU regions, set a retention period, restrict access and mention in your privacy statement that deleted data may persist in backups until they expire. When restoring, make sure data previously deleted at a user's request is not brought back into production.
+
+## Costs
+
+Managed backups come with Supabase paid plans; point-in-time recovery is an add-on on supported plans; your own exports cost little in storage. Compared with the cost of losing customer data, these are among the cheapest protections available.
+
+## A Restore Drill You Can Run This Week
+
+Block an hour and follow these steps:
+
+1. Note the time and pick a recent backup or a point in time.
+2. Create a scratch Supabase project in the same region.
+3. Restore the backup into it, or load your latest own export with standard PostgreSQL tools.
+4. Compare row counts for your five most important tables with production.
+5. Open three recent records and check they look correct.
+6. Point a local or staging copy of the app at the scratch project and log in as a test user.
+7. Note how long the whole process took and write down anything that was unclear.
+8. Delete the scratch project and its data.
+
+That hour turns your backup from an assumption into a tested capability, and the notes become your recovery runbook.
+
+## Questions Customers Will Ask
+
+Business customers commonly ask: How often do you back up? Where are backups stored? How long are they kept? When did you last test a restore? How quickly can you recover? Having written answers, backed by an actual restore test, is often decisive in procurement for healthcare, education and B2B SaaS.
+
+## Ownership of the Backup Process
+
+Someone must own backups, even in a two-person company. That person checks monthly that backups are running, quarterly that a restore works, and after every major change that new tables and buckets are covered. Write their name in your operating document. Backups without an owner tend to stop quietly; nobody notices until the day they are needed.
+
+## Backups for Apps on Builder-Integrated Backends
+
+If your app runs on a builder's integrated backend rather than your own Supabase project, check what backup options and exports are available to you, how far back they go and whether you can restore them yourself. If the answers are limited and your app holds important customer data, consider moving to a project you control, where backup settings, point-in-time recovery and exports are in your hands.
+
+## Summary
+
+Know your RPO and RTO, use managed backups plus your own export, protect files separately, keep backups secure and in the EU, and test restores on a schedule. Those five habits cover the vast majority of data loss scenarios founders face.
+
+## Common Backup Mistakes
+
+- Running production on a free plan with no meaningful backup guarantees
+- Assuming database backups include uploaded files
+- Storing your own exports in the same account that could be compromised
+- Never restoring a backup until an emergency
+- Restoring over live data without first comparing in a separate project
+- Forgetting new tables or buckets added after the backup plan was written
+
+## The Payoff
+
+A tested backup turns a potential disaster into an inconvenience. When a mistake happens - and in a growing app it eventually will - you restore the affected records, inform anyone who needs to know and move on, instead of rebuilding data from emails and memory.
+
+## One More Habit
+
+After every major release, ask a single question: if this release had deleted the wrong data, how quickly could we get it back? If the answer is unclear, test it before the next release.
 
 ## Getting It Done
 

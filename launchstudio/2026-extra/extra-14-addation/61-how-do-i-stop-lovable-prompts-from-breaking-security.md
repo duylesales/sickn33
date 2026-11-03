@@ -17,11 +17,26 @@ Target Persona: AI-Native Founder (Non-Technical)
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2028-03-09",
   "inLanguage": "en",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/how-do-i-stop-lovable-prompts-from-breaking-security" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/how-do-i-stop-lovable-prompts-from-breaking-security" },
+  "citation": [
+    { "@type": "CreativeWork", "name": "Perry et al., Do Users Write More Insecure Code with AI Assistants?", "url": "https://arxiv.org/abs/2211.03622" },
+    { "@type": "CreativeWork", "name": "PostgreSQL: Row Security Policies", "url": "https://www.postgresql.org/docs/current/ddl-rowsecurity.html" },
+    { "@type": "CreativeWork", "name": "OWASP Authorization Cheat Sheet", "url": "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html" },
+    { "@type": "CreativeWork", "name": "Lovable documentation", "url": "https://docs.lovable.dev/" },
+    { "@type": "CreativeWork", "name": "Veracode 2025 GenAI Code Security Report", "url": "https://www.veracode.com/resources/analyst-reports/2025-genai-code-security-report/" }
+  ]
 }
 </script>
 
 **Short answer:** combine five guardrails. Give Lovable written project rules about what it must never change, ask it to explain its plan before making changes, keep security logic in database policies and edge functions rather than in components, review every change touching policies, keys or payments, and run automated checks that fail when a user can see another user's data. No single guardrail is enough; together they make regressions rare and quickly caught.
+
+## Key Takeaways
+
+- **After an app is secured, the next prompt can quietly undo it,** because AI builders optimise for the request in front of them.
+- **Combine five guardrails:** project rules, plan-before-change prompts, security logic outside regenerated components, reviews of risky diffs and automated permission tests.
+- **In PostgreSQL, permissive policies combine with OR,** so a single broad policy added by a prompt can override all careful restrictions.
+- **Research shows AI-assisted developers tend to overestimate the security of their code;** guardrails replace confidence with checks.
+- **Automated tests turn silent security regressions into failed builds.**
 
 ## Why Prompts Break Security
 
@@ -72,6 +87,94 @@ A small end-to-end test that logs in as user A and confirms user B's records are
 - RLS disabled on a table in a migration
 - New environment variables starting with `VITE_` that look like secrets
 - Payment success handled in a page component again
+
+## Why Regressions Happen With AI Builders
+
+Software regressions - features that worked and then break - are a familiar problem in all development. AI builders introduce a specific variant. Each prompt is handled with limited awareness of earlier decisions and the reasons behind them. A developer who fixed an access rule last month knows why it exists; the model regenerating that file today may not. The Stanford study by Perry and colleagues found that developers using AI assistants were more likely to believe their code was secure even when it was not, which means regressions can go unnoticed by the person prompting.
+
+## Writing Effective Project Rules
+
+Project rules work best when they are specific, short and explain the reason. Compare "be careful with security" with "Do not create, modify or delete Row Level Security policies or the user_roles table. These enforce customer data isolation and are maintained by our engineer." The second gives the model a clear boundary and context. Useful rules cover policies and migrations, roles and permissions, payment functions, secrets and environment variables, and files containing business-critical calculations. Revisit rules when your architecture changes.
+
+## Prompt Patterns That Reduce Risk
+
+| Instead of | Try |
+| --- | --- |
+| "Fix the dashboard, my colleague can't see data" | "Explain why my colleague cannot see data and list the policies involved. Do not change any policies." |
+| "Add an admin page" | "Add an admin page that calls the existing admin edge functions. Do not query tables directly." |
+| "Make payments work" | "Show me how the current payment flow decides that an order is paid before changing anything." |
+| "Clean up old data" | "Write a query that lists the records that would be deleted. Do not run it." |
+
+Asking for explanations and dry runs before changes is the single most effective prompting habit for production apps.
+
+## Where Security Logic Should Live
+
+Think of your app in layers. The interface, generated and regenerated frequently, should contain presentation and convenience checks only. Database policies, constraints and functions, changed rarely and deliberately, should contain the rules that protect data. Edge functions should contain privileged operations such as payments, admin actions and integrations with secret keys. OWASP's Authorization Cheat Sheet recommends centralised, server-side enforcement; for Lovable apps, that naturally means the database and edge function layers.
+
+## Reviewing Diffs Without Being a Developer
+
+You do not need to read every line to catch risky changes. Look at which files changed. Changes in `supabase/migrations` deserve attention: search them for `create policy`, `using (true)`, `disable row level security`, `grant` and `security definer`. Changes in `supabase/functions` deserve a look for removed checks. Changes adding new environment variables deserve a check that secrets are not prefixed for the frontend. A few minutes per building session is enough.
+
+## Automated Guardrails
+
+Beyond tests, you can add automated checks in CI that fail when risky patterns appear: a script that scans migrations for policies granting broad access, a check that every table in exposed schemas has RLS enabled, a search for secret key patterns in the frontend bundle. Supabase's database advisors can flag missing RLS and other risky settings. These checks run on every change and catch mistakes even when nobody remembers to look.
+
+## Building a Culture of Safe Prompting
+
+If several people prompt in the same project - co-founders, contractors, team members - share the rules and patterns above, and agree who reviews changes to sensitive areas. Treat the AI builder like a capable but new team member: productive, fast and in need of clear boundaries and review where stakes are high.
+
+## What to Do When a Prompt Has Already Broken Something
+
+If you discover a regression in production, act in this order: contain the problem by reverting the change or disabling the affected feature; check logs to understand whether data was accessed improperly; fix the root cause in the protected layer rather than adjusting the interface; add a test that would have caught it; and document what happened. If personal data may have been exposed, assess your obligations under the GDPR, which can include notifying the Autoriteit Persoonsgegevens within 72 hours.
+
+## A Weekly Guardrail Routine
+
+- Skim the week's commits in `supabase/migrations` and `supabase/functions`
+- Confirm automated tests and CI checks are passing
+- Re-run the two-user access test on any new feature
+- Update project rules if new sensitive areas were added
+- Note any surprising prompt results to discuss with your engineer
+
+Fifteen minutes a week keeps the guardrails effective as the app grows.
+
+## The Payoff
+
+Guardrails let you keep the speed that made AI building attractive without slowly undoing the security work that made your app trustworthy. Founders who adopt them describe the same effect: they prompt with confidence again, because they know what the AI cannot touch and what will catch mistakes if it does.
+
+## Common Guardrail Mistakes
+
+- Writing project rules so vague that they do not constrain anything
+- Moving logic into the database but leaving old checks in components that prompts keep "fixing"
+- Running permission tests manually once and never again
+- Reviewing only the interface while migrations change silently
+- Giving every collaborator permission to merge into production
+
+## When to Get a Second Opinion
+
+If a prompt's plan mentions policies, roles, payments or secrets and you are unsure whether the change is safe, ask an engineer before accepting it. A five-minute review is far cheaper than a data exposure. Many founders arrange a small monthly review with a trusted engineer precisely for these moments.
+
+## Related Reading
+
+Guardrails rely on staging, tests and a secure baseline. Our guides on staging environments, testing AI-built apps and Supabase RLS mistakes cover each piece.
+
+## A Sample Project Rule Set
+
+- Never create, modify or delete Row Level Security policies, grants or the roles tables.
+- Never add secret keys to frontend code or `VITE_`/`NEXT_PUBLIC_` variables.
+- Payments are handled only by the existing checkout and webhook edge functions.
+- Admin actions must call existing admin edge functions; do not query tables directly from admin pages.
+- Do not change files in `supabase/migrations` unless explicitly asked.
+- Before changing data access, explain the cause and list affected files, then wait for approval.
+
+Adapt the list to your app and keep it short enough that it is actually applied.
+
+## Summary
+
+Write clear project rules, ask for plans before changes, keep security logic in the database and functions, review risky diffs and automate permission tests. Together they let you prompt freely without undoing your security.
+
+## The Payoff
+
+Guardrails make security durable. Without them, every prompt is a small gamble; with them, your app stays as safe as the day it was secured.
 
 ## Getting Guardrails in Place
 

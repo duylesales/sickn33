@@ -17,11 +17,27 @@ Target Persona: SaaS Founder Scale-Up
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2028-03-30",
   "inLanguage": "en",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/data-retention-periods-for-dutch-saas" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/data-retention-periods-for-dutch-saas" },
+  "citation": [
+    { "@type": "CreativeWork", "name": "GDPR Article 5: Principles", "url": "https://gdpr-info.eu/art-5-gdpr/" },
+    { "@type": "CreativeWork", "name": "GDPR Article 17: Right to erasure", "url": "https://gdpr-info.eu/art-17-gdpr/" },
+    { "@type": "CreativeWork", "name": "Belastingdienst", "url": "https://www.belastingdienst.nl/" },
+    { "@type": "CreativeWork", "name": "IBM Cost of a Data Breach Report", "url": "https://www.ibm.com/reports/data-breach" },
+    { "@type": "CreativeWork", "name": "Supabase Cron", "url": "https://supabase.com/docs/guides/cron" },
+    { "@type": "CreativeWork", "name": "Autoriteit Persoonsgegevens", "url": "https://www.autoriteitpersoonsgegevens.nl/en" }
+  ]
 }
 </script>
 
 Two rules pull in opposite directions. The GDPR (AVG) says personal data must not be kept longer than necessary for its purpose. Dutch tax law says bookkeeping records generally must be kept for seven years. Most AI-built apps resolve the tension by doing nothing: everything is kept forever. A retention policy, automated in your database, is how you respect both rules and reduce the damage of any future incident. This article is general information; confirm specific periods with your accountant or lawyer.
+
+## Key Takeaways
+
+- **The GDPR's storage limitation principle (Article 5) requires keeping personal data no longer than necessary;** Dutch tax law generally requires keeping bookkeeping records for seven years.
+- **Most AI-built apps keep everything forever,** increasing risk, cost and the impact of any incident.
+- **Define retention per data category,** document the reasons and automate deletion or anonymisation with scheduled jobs.
+- **In B2B, customers decide part of retention** through your processing agreement, including deletion at contract end.
+- **Backups and logs need retention rules too,** and your privacy statement should describe them.
 
 ## Typical Data Categories and Starting Points
 
@@ -58,6 +74,87 @@ Our guide on [scheduled jobs and reminders in Supabase](https://launchstudio.eu/
 ## Document It
 
 Record your retention periods in your processing register and summarise them in your privacy statement. When customers or regulators ask, a clear table is more convincing than "we delete data when it is no longer needed".
+
+## Why Retention Is a Security Measure
+
+Data you no longer hold cannot leak. Every old account, outdated CV, expired trial and forgotten upload adds to the potential impact of a breach. IBM's Cost of a Data Breach research consistently links breach costs to the volume and sensitivity of records involved. Retention rules are therefore not only a compliance exercise; they shrink your attack surface and the consequences of any incident. They also reduce storage costs and make your database faster and easier to manage.
+
+## The Legal Framework in Brief
+
+Article 5 of the GDPR sets out storage limitation: personal data must be kept in a form that permits identification for no longer than necessary for its purposes. It does not prescribe specific periods; you define them per purpose and must be able to justify them. Article 17 gives individuals the right to erasure in many situations, with exceptions including legal obligations to retain data. On the other side, Dutch fiscal rules generally require businesses to keep their administration, including invoices and related records, for seven years, with longer periods for certain records such as real estate. The Belastingdienst and your accountant can confirm what applies.
+
+## Building a Retention Schedule
+
+A retention schedule is a table listing each category of data, its purpose, retention period, trigger for the period to start, action at the end and the reason. Start with your data map and work through each category:
+
+| Category | Trigger | Period | Action |
+| --- | --- | --- | --- |
+| Invoices and payments | Invoice date | 7 years | Delete |
+| Closed customer accounts | Account closure | 30-90 days | Delete or anonymise |
+| Inactive trial accounts | Last activity | 12 months, with warning | Delete |
+| Support tickets | Ticket closed | 1-2 years | Delete |
+| Application logs | Log date | 30-90 days | Delete |
+| Security and audit logs | Log date | 6-12 months or as agreed | Delete |
+| Uploaded documents | Related record deleted | Immediately | Delete files |
+
+These periods are examples; choose your own based on your purposes and legal advice.
+
+## Anonymisation Instead of Deletion
+
+Sometimes you want to keep statistics without personal data, such as total orders per month. Anonymisation must remove the ability to identify a person by any reasonably likely means. Removing names and emails while keeping exact addresses, dates of birth or free-text notes often leaves data identifiable, which means it is still personal data under the GDPR. Aggregate where possible: store monthly totals instead of individual records once detailed data is no longer needed.
+
+## Automating Retention in a Supabase App
+
+Implement retention as scheduled jobs. Supabase Cron can run database functions or edge functions daily that find records past their retention period and delete or anonymise them, including related storage files. Log each run with counts, not contents. Send warning emails before deleting inactive accounts where users might want to keep them. Test every job on staging with seeded data that covers edge cases, such as accounts with recent invoices that must be retained while other data is removed.
+
+## Retention in B2B Contracts
+
+As a processor for business customers, you follow their instructions on retention, usually described in your processing agreement. Typical clauses require returning or deleting all customer data at the end of the contract, sometimes after a short grace period, and allow customers to configure retention for certain data. Build organisation-level deletion and configurable retention where customers ask for it, and record when deletions happen in case customers request confirmation.
+
+## Backups and Logs
+
+Backups contain all data at the time they were made. Use rolling backup retention, such as 30 days, so deleted data eventually disappears from backups too, and document this delay in your privacy statement. Logs often contain personal data such as emails and IP addresses; set retention on application logs, error tracking and analytics, and avoid logging more personal data than you need.
+
+## Communicating Retention to Users
+
+Describe retention in your privacy statement in a way users can understand: for example, "We keep your account data while your account is active and delete it within 90 days after you close your account. Invoices are kept for seven years because Dutch tax law requires it. Backups are kept for 30 days." Clear statements build trust and reduce questions. When deleting inactive accounts, send a warning email in advance with an easy way to keep the account.
+
+## Reviewing Retention Regularly
+
+Retention schedules drift as products grow. Each new feature can create new data categories: chat messages, AI conversation history, uploaded media, analytics events. Add retention decisions to your feature checklist, review the schedule at least yearly and check that scheduled jobs are running and deleting what they should. A retention job that silently stopped months ago is a common finding in audits.
+
+## Common Mistakes
+
+- Keeping all data forever because deleting feels risky
+- Deleting invoices that tax law requires you to keep
+- Deleting database records but leaving files in storage
+- Anonymisation that leaves people identifiable
+- No warning before deleting inactive accounts
+- Retention jobs without monitoring
+
+## The Payoff
+
+A clear, automated retention policy reduces risk, storage costs and the effort of answering privacy questions. It also signals maturity to business customers, who increasingly ask how long you keep their data and how you delete it.
+
+## Summary
+
+Map your data, define a retention period per category with a reason, automate deletion and anonymisation with monitored jobs, align with customers' processing agreements, include backups and logs, and explain it all clearly in your privacy statement.
+
+## Where to Start Today
+
+List your five largest tables and your storage buckets. For each, write down why you keep the data and for how long you actually need it. Wherever the answer is "forever" without a reason, you have found the first retention rule to implement.
+
+## Related Reading
+
+Retention works hand in hand with deletion, backups and scheduled jobs. Our guides on GDPR deletion in Supabase, backing up a Lovable app's database and automatic reminders from a Supabase app cover the building blocks.
+
+## Questions Customers Ask About Retention
+
+Business customers and privacy officers frequently ask: How long do you keep our data? What happens when we end the contract? How long until deleted data disappears from backups? Can we configure retention for our users' data? Prepare short, accurate answers backed by your retention schedule and scheduled jobs; they often appear in security questionnaires and processing agreement annexes.
+
+## The Bottom Line
+
+Keep what the law or your purpose requires, delete the rest automatically and explain both clearly.
 
 ## Getting It in Place
 

@@ -17,13 +17,27 @@ Target Persona: SaaS Founder Scale-Up
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2028-02-07",
   "inLanguage": "en",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/how-to-migrate-from-lovable-cloud-to-your-own-supabase" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/how-to-migrate-from-lovable-cloud-to-your-own-supabase" },
+  "citation": [
+    { "@type": "CreativeWork", "name": "Supabase: Migrating to Supabase", "url": "https://supabase.com/docs/guides/platform/migrating-to-supabase" },
+    { "@type": "CreativeWork", "name": "Lovable documentation", "url": "https://docs.lovable.dev/" },
+    { "@type": "CreativeWork", "name": "GDPR Article 28: Processor", "url": "https://gdpr-info.eu/art-28-gdpr/" },
+    { "@type": "CreativeWork", "name": "PostgreSQL documentation", "url": "https://www.postgresql.org/docs/current/ddl-rowsecurity.html" }
+  ]
 }
 </script>
 
 **Short answer:** create a new Supabase project in the region you need, recreate the schema from the migrations in your Lovable repository, export and import the data, migrate files and edge functions, handle user accounts carefully, then point your Lovable app at the new project and switch over during a short maintenance window. The schema and code move easily. User authentication and files need the most planning.
 
 Lovable Cloud's features and export options evolve, so check what access Lovable currently provides before you start. The plan below works with the common case.
+
+## Key Takeaways
+
+- **Lovable Cloud is a fast start; your own Supabase project gives control** over region, direct database access, your own processing agreement, plans and portability.
+- **Schema and edge functions move easily** because they live in your repository; data, files and especially user accounts need careful planning.
+- **Rehearse the migration at least once** on a staging target, verifying row counts, samples, files and logins before the real switch.
+- **User passwords may or may not transfer,** depending on what can be exported; plan a friendly reset or magic link flow if needed.
+- **A typical migration costs €2,000-€5,000** with LaunchStudio, with a maintenance window under an hour for most apps.
 
 ## Why Founders Move to Their Own Supabase
 
@@ -74,6 +88,58 @@ None of these are criticisms of Lovable Cloud. They are signs a product is becom
 **9. Switch over.** Announce a short maintenance window. Make the old project read-only, run the final data and file sync, point the app's configuration at the new project, deploy and test the critical flows.
 
 **10. Keep the old project for a while.** Do not delete it until you have run in production for a few weeks and confirmed nothing is missing.
+
+## Deciding When to Migrate
+
+Not every app needs to leave Lovable Cloud. A useful decision rule: migrate when an external requirement or a growth constraint appears, not because of a general feeling that "real apps run elsewhere". Typical triggers are a customer contract that requires a specific EU region or a direct processing agreement with the database provider, a need for database access from analytics or reporting tools, operational needs such as point-in-time recovery or specific compute sizes, or an investor or acquirer asking about platform dependency.
+
+If none of these apply, staying put and focusing on customers is often the better use of time.
+
+## The Data Migration in More Detail
+
+Database migrations look simple on paper and hide details in practice. Things to plan for:
+
+- **Order of tables:** foreign keys require parent rows before child rows, or constraints temporarily deferred
+- **Sequences and identity columns:** after importing rows with existing IDs, sequences must be advanced, or the next insert fails
+- **Triggers:** triggers that send emails or create related rows should be disabled during import to avoid side effects
+- **Time zones and types:** timestamps and enum types must match exactly
+- **Large tables:** may need batching to avoid timeouts
+
+PostgreSQL's standard dump and restore tools handle much of this when you have direct database access. Where access is limited, exports per table in a consistent order work, with careful verification afterwards.
+
+## Authentication: The Part Users Notice
+
+Users notice only one thing about your migration: whether they can still log in. Three scenarios, from best to acceptable:
+
+1. **Password hashes and user IDs can be exported and imported.** Users notice nothing.
+2. **User IDs and emails migrate, passwords do not.** Users receive a clear email explaining the change and a one-click link to set a new password, or you switch to magic links or one-time codes.
+3. **Social login users** (Google, Microsoft, Apple) log in again once the providers are configured on the new project, provided their user IDs or emails are mapped to their data.
+
+Whatever applies, communicate before the switch, not after. A short notice a few days in advance prevents a flood of support requests.
+
+## Files and URLs
+
+Storage files must be copied with the same bucket structure and paths. Watch for absolute URLs stored in the database that include the old project's domain; these need updating. Signed URLs generated before the switch will stop working, which is usually harmless because they expire anyway.
+
+## External Services
+
+List every service that calls your backend or that your backend calls: payment webhooks, OAuth redirect URLs, email provider callbacks, automation tools, analytics. Update each one during the switch window and test them immediately after. Forgotten payment webhooks are the most expensive omission because payments keep succeeding while your app stops recording them.
+
+## Post-Migration Verification
+
+After the switch, run a checklist within the first hour: sign-up, login, password reset, a core action for each role, a test payment, an email, a file upload and download, and a scheduled job if you have them. Keep the old environment available read-only for a few weeks in case you need to compare data. Then decommission it deliberately, including deleting any personal data it still holds.
+
+## Privacy Documentation Update
+
+Moving to your own Supabase project changes your processor relationships. Sign Supabase's data processing agreement, update your processor list and privacy statement with the new region, and inform business customers if your processing agreements require notice of sub-processor changes. This is often the reason for the migration in the first place, so make sure the paperwork reflects it.
+
+## Communicating the Change to Users and Customers
+
+A migration is also a communication task. A few days before the switch, tell users what will happen, when, how long the maintenance window will be and whether they need to do anything, such as set a new password. After the switch, send a short confirmation. For business customers, add a note about the new data location and updated processor information. Clear communication turns a technical change into a trust-building moment instead of a source of confusion.
+
+## Timeline of a Typical Migration
+
+For a small to medium Lovable app, a realistic timeline is: two days for inventory and planning, two to three days for setting up the new project and rehearsing the data migration, one day for authentication and external service preparation, a maintenance window of under an hour for the switch, and a few days of close monitoring afterwards. Larger data volumes or complex authentication add time; plan the switch for a quiet period such as an early weekday morning.
 
 ## Risks to Plan For
 

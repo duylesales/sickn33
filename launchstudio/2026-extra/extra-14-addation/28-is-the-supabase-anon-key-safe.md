@@ -17,11 +17,26 @@ Target Persona: Technical Solo Founder / Indie Hacker
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2028-02-05",
   "inLanguage": "en",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/is-the-supabase-anon-key-safe" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/is-the-supabase-anon-key-safe" },
+  "citation": [
+    { "@type": "CreativeWork", "name": "Supabase: API keys", "url": "https://supabase.com/docs/guides/api/api-keys" },
+    { "@type": "CreativeWork", "name": "Supabase: Row Level Security", "url": "https://supabase.com/docs/guides/database/postgres/row-level-security" },
+    { "@type": "CreativeWork", "name": "OWASP Secrets Management Cheat Sheet", "url": "https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html" },
+    { "@type": "CreativeWork", "name": "OWASP Top 10 2021: A01 Broken Access Control", "url": "https://owasp.org/Top10/A01_2021-Broken_Access_Control/" },
+    { "@type": "CreativeWork", "name": "GDPR Article 33", "url": "https://gdpr-info.eu/art-33-gdpr/" }
+  ]
 }
 </script>
 
 **Short answer:** yes, the Supabase anon key is designed to be public, and it is normal to see it in your app's frontend code. But it is only safe if your Row Level Security policies are correct. The anon key lets anyone talk to your database as an anonymous or logged-in user; RLS decides what they can actually do. The key that must never be exposed is the **service role key** (or the newer **secret key**), which bypasses RLS completely.
+
+## Key Takeaways
+
+- **The Supabase anon (or publishable) key is designed to be public.** Seeing it in your frontend is normal.
+- **It is only safe when Row Level Security is correct,** because it lets anyone query your database as an anonymous or logged-in user, within what your policies allow.
+- **The service role (or secret) key bypasses RLS entirely** and must never appear in a browser, mobile app, repository or log.
+- **"Hiding" the anon key in environment variables does not hide it;** frontend variables are bundled into browser code.
+- **If a service role key was exposed, treat it as an incident:** rotate immediately, move privileged code server-side, review logs and assess GDPR notification duties.
 
 ## The Keys, Side by Side
 
@@ -70,6 +85,52 @@ Everything. Read every table, change any row, delete data, create admin users, a
 **"I'll put the service role key in the frontend just for the admin page."** The admin page's code is downloaded by every visitor. Use an edge function that checks the caller is an admin, then performs the privileged action server-side.
 
 **"RLS is enabled, so I'm safe."** Enabled with a policy of `using (true)` protects nothing. What matters is what the policies say.
+
+## How Supabase's Architecture Explains the Key Design
+
+Supabase exposes your PostgreSQL database through an automatically generated REST and GraphQL API. Requests carry a key that identifies which Postgres role to use. The anon or publishable key maps to restricted roles: `anon` for visitors and `authenticated` for logged-in users, whose access is filtered by Row Level Security policies. The service role or secret key maps to a role that bypasses RLS, intended for trusted server code. Supabase's API key documentation describes this model and explains the newer publishable and secret key formats.
+
+This design is deliberate. It lets frontends talk to the database without a custom backend, while keeping security in the database where it cannot be bypassed by changing frontend code. The price is that RLS must be right.
+
+## A Short History of the Two Key Formats
+
+Supabase originally issued keys as JSON Web Tokens, with the role encoded inside: `anon` or `service_role`. Newer projects can use publishable keys (starting with `sb_publishable_`) and secret keys (starting with `sb_secret_`), which are easier to rotate and revoke independently. Many projects use both formats during transition. The rule is the same for both generations: the public one may be in clients, the secret one may not.
+
+## What Attackers Actually Do With an Anon Key
+
+Automated scanners routinely crawl websites, extract Supabase URLs and anon keys from JavaScript bundles and probe the API. Typical probes include listing tables, requesting all rows from common table names such as `users`, `profiles`, `orders` or `messages`, and attempting inserts. If RLS is disabled or permissive on any of these, data is exposed within minutes, without any human attacker paying attention to your app specifically. That is why "nobody knows about my app yet" offers no protection.
+
+## Defence in Depth Beyond RLS
+
+RLS is the primary control, but a few additional layers reduce risk further:
+
+- **Limit exposed schemas** so internal tables are not reachable through the API at all
+- **Use views with `security_invoker`** or restricted functions to expose only the columns clients need
+- **Enable CAPTCHA on sign-up** so attackers cannot freely create authenticated accounts to test policies
+- **Rate-limit sensitive operations** through edge functions
+- **Monitor logs** for unusual query patterns, such as large reads from tables normal users rarely touch
+
+## Rotating Keys Safely
+
+Rotation is easiest when planned. Keep secret keys only in server-side secret stores so they can be replaced in one place, use separate keys for staging and production, and document which services use which key. With the newer key format, you can create a new secret key, deploy it, then revoke the old one without downtime. Rotate whenever someone with access leaves, after any suspected exposure and periodically as a habit.
+
+## Checking a Mobile App or Third-Party Integration
+
+The same rules apply beyond your web frontend. Mobile apps can be unpacked, so treat everything in them as public. Automation tools such as Zapier or Make should never receive the secret key; give them a dedicated, restricted endpoint instead. Before connecting any tool, ask: if this tool's account were compromised, what could someone do with the credentials stored in it?
+
+## A Real-World Pattern: The "Temporary" Service Key
+
+A recurring story in AI-built apps goes like this: a feature needs to update rows that the current user's policies do not allow, such as one user accepting another's shift swap or an admin approving a request. The quickest way to make it work is to use the service role key in the frontend "temporarily". The feature works, the deadline is met, and the key stays. Weeks later, the key is still in the bundle, giving anyone full database access.
+
+The correct pattern takes a little longer but is standard: create an edge function that verifies the caller, checks that the action is allowed for them, performs the update with server-side credentials and logs it. The frontend calls the function with the user's normal session. The key never leaves the server.
+
+## Checking Your Own App in Practice
+
+Open your app in a browser, open the developer tools, go to the network tab and reload. Click on a request to your Supabase URL and look at the request headers: you will see the key being sent. Copy it into a JWT decoder if it is a legacy key and check the role. Then search all loaded JavaScript files for `service_role` and `sb_secret_`. This takes five minutes and gives a definitive answer about the most dangerous mistake. If you find nothing secret, move on to testing your policies with two user accounts.
+
+## The One-Sentence Rule
+
+If you remember one thing: the publishable or anon key is a door anyone can walk through, so your Row Level Security policies are the locks on every room; the secret or service role key is a master key, so it must never leave your server. Everything else in this article follows from that.
 
 ## Production Setup We Recommend
 
