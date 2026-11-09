@@ -120,6 +120,28 @@ If your app stores embeddings for AI search, vector data can grow quickly, with 
 
 **Fixes:** embed only what is needed, avoid re-embedding unchanged content, choose appropriate vector dimensions and index settings and remove embeddings for deleted content.
 
+## Cause 10: Development Habits
+
+Some costs come from how the team works rather than from customers:
+
+- **Running load tests or bulk imports against production,** generating egress, compute load and sometimes storage growth
+- **Developers' local tools polling production** with dashboards or scripts left running
+- **Seed scripts** that insert large test datasets into the wrong project
+- **AI agents running migrations or scripts repeatedly** while iterating on a task
+
+Use staging for experiments, give development tools access to staging rather than production, and keep production changes behind reviewed pipelines.
+
+## Setting Up Cost Alerts
+
+Bills are easiest to control when you notice changes early. Practical measures:
+
+- **Check usage weekly** during growth phases, and monthly once stable.
+- **Use billing alerts and spend controls** offered by Supabase for your plan.
+- **Track key metrics yourself,** such as storage per bucket, largest tables and function invocations, with alerts when they jump.
+- **Assign an owner** who reviews the bill and explains changes.
+
+A sudden doubling of egress or invocations usually means a bug, an attack or a feature behaving differently than intended. Catching it in days instead of at the end of the month saves money and often reveals a product problem.
+
 ## How to Investigate a Rising Bill
 
 1. **Open the organisation's usage page** and compare the current period with previous ones per line item.
@@ -142,6 +164,10 @@ If your app stores embeddings for AI search, vector data can grow quickly, with 
 | Realtime | Are subscriptions narrow and cleaned up? |
 | Add-ons | Is every add-on still needed? |
 | Spend controls | Is a spend cap or alerting configured as intended? |
+
+## When Growth Is Healthy
+
+Not every increase is a problem. If the bill grows in line with active customers and revenue, and cost per customer stays stable or falls, the business is scaling as it should. The goal is not the lowest possible bill, but a bill that grows for the right reasons: real usage by paying customers, not forgotten projects, oversized files or bugs.
 
 ## Costs and Pricing Your Own Product
 
