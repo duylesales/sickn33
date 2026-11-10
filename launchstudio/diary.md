@@ -5,6 +5,8 @@
 ### Tháng 11
 #### Ngày 10
 
+- **Khôi phục toàn bộ các dấu tích xanh `✅` trong [`launchstudio/extra_content_inventory.md`](file:///Users/duyle/sickn33/launchstudio/extra_content_inventory.md)**: Khôi phục lại đầy đủ 38 dấu `✅` ở các chuỗi Extra 1, 5, 7, 8, 11, 12, 13 và 14 (bài 1 - 3) từ lịch sử Git, đồng thời cập nhật dấu `✅` cho toàn bộ các bài từ 04 đến 48 của Extra 14 đã hoàn thành ảnh banner thực tế. Tổng cộng 83 bài viết đã hoàn tất ảnh đều được đánh dấu tích `✅` đồng bộ chuẩn xác.
+
 - **Tạo tiếp ảnh banner siêu thực sát thực tế (photorealistic documentary style, không có cảm giác AI) cho cụm [`launchstudio/2026-extra/extra-14-addation/`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-14-addation/) từ bài 36 đến 48 (tổng cộng 13 ảnh)**:
   - **Quy chuẩn mỹ thuật & phong cách mới**: Tuân thủ chỉ đạo của người dùng ("tiếp tục làm hình siêu thực, hạn chế các tấm bảng hay các USB, các hardware phần cứng, làm các thứ nhìn thực tế") kết hợp nghiêm ngặt các quy tắc trong `AGENTS.md` (loại bỏ hoàn toàn các tấm bảng thông tin khổng lồ nhân tạo, loại bỏ USB/dongle phần cứng, tập trung vào đời sống phát triển phần mềm chân thực, con người tương tác tự nhiên, không gian văn phòng công nghệ châu Âu, bàn làm việc mộc mạc, kiến trúc studio bờ kênh, ánh sáng ban ngày tự nhiên, luân phiên 6 visual archetypes):
     - **36 (36-v0-vs-lovable-ui-generator-or-app-builder)**: *Over-the-Shoulder / Human in Active Motion* - Chụp qua vai nữ designer và nam frontend developer cùng trao đổi trước bàn đứng gỗ bạch dương tại studio bờ kênh Amsterdam, lập trình viên chỉ tay vào màn hình so sánh code React TypeScript và bản xem trước giao diện trực tiếp, trên bàn có sổ phác thảo wireframe vẽ tay.
