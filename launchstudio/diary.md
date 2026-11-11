@@ -3,6 +3,17 @@
 ## 2026
 
 ### Tháng 11
+#### Ngày 11
+
+- **Hoàn tất bản Dutch và bài Social (EN + NL) cho toàn bộ cụm [`launchstudio/2026-extra/extra-16-addation/`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-16-addation/)**: Đủ 400 file (100 chủ đề × 4 định dạng: EN, NL, Social EN, Social NL).
+  - **Nội dung cụm**: Câu hỏi thường gặp của founder (01-13), các dịch vụ production tại LaunchStudio (14-35), so sánh lựa chọn (36-59), production launch theo ngành (60-79), quy trình và cách làm việc với LaunchStudio (80-100). Giai đoạn: 87 Decision, 9 Consideration, 4 Awareness.
+  - **Quy chuẩn bản Dutch**: Front matter `Titel / Trefwoorden / Koperfase / Doelgroep`, Article JSON-LD với `"inLanguage": "nl-NL"` và URL `/nl/blog/<slug>`, citations giữ nguyên bản EN, FAQPage JSON-LD 5 câu hỏi, xưng hô "u", định dạng số kiểu Hà Lan (€3.300). Thân bài khoảng 2.020-2.280 từ (không tính FAQ). Các nội dung pháp lý/thuế (AVG 72 uur, OSS, btw verlegd, Wkb, Impressum, Peppol) giữ nguyên mức thận trọng của bản EN, không thêm khẳng định mới.
+  - **Bài Social**: Khoảng 235-290 từ, mở đầu bằng câu chuyện founder, 4 ❌ vấn đề + 4 ✅ giải pháp, link `/en/blog/` hoặc `/nl/blog/`, hashtag luôn có #AIFounder #LaunchStudio #Manifera.
+  - **Kiểm tra tự động**: Toàn bộ 400 file qua checker (không em dash, 2 khối ld+json hợp lệ, 5 FAQ, đúng heading bắt buộc). Sửa bài 34 và 100: đổi heading phụ "Veelgestelde Vragen …" thành "Vragen …" để không trùng với mục FAQ.
+- **Rà soát chất lượng tiếng Dutch cụm extra-16**: Quét toàn bộ bằng script và đọc mẫu 4 bài (05, 33, 52, 66). Đã sửa 14 bài: viết hoa chữ đầu sau "Kort antwoord:" ở bài 01-13, đổi "u hebt" thành "u heeft" (bài 01), bỏ cách xưng "je" trong thân bài 49. Giữ nguyên kiểu viết hoa mọi từ ở heading vì đồng bộ với extra-13 đến extra-15.
+- **Cập nhật [`launchstudio/extra_content_inventory.md`](file:///Users/duyle/sickn33/launchstudio/extra_content_inventory.md)**: Thêm bảng "Extra 16" với 100 dòng (tiêu đề, từ khóa, giai đoạn EN/NL, link 4 file, tóm lược EN/NL, ước tính views/tháng theo khoảng của từng giai đoạn ở các cụm trước). Cập nhật phần giới thiệu thành "Extra 1 đến Extra 16".
+- **Còn lại**: Chưa có ảnh banner cho extra-16 (0/100). Chưa commit.
+
 #### Ngày 10
 
 - **Tạo tiếp ảnh banner siêu thực sát thực tế (photorealistic documentary style, không có cảm giác AI) cho cụm [`launchstudio/2026-extra/extra-14-addation/`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-14-addation/) từ bài 49 đến 61 (tổng cộng 13 ảnh)**:

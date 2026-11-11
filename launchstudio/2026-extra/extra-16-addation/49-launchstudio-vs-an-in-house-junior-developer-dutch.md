@@ -58,7 +58,7 @@ Junior developers brengen energie en dagelijkse aanwezigheid mee. Ze kunnen func
 
 ## Waar Juniors Meestal Moeite Mee Hebben
 
-Productie-engineering leer je door ervaring, vaak pijnlijke ervaring. De meeste junior developers hebben nog niet:
+Productie-engineering leert een developer vooral door ervaring, vaak pijnlijke ervaring. De meeste junior developers hebben nog niet:
 
 - Toegangsregels voor een database ontworpen die standhouden als klanten proberen bij elkaars gegevens te komen
 - Betaalwebhooks, nieuwe pogingen, terugbetalingen en afstemming afgehandeld

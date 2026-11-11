@@ -27,7 +27,7 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 }
 </script>
 
-**Kort antwoord:** voor een klein met AI gebouwd SaaS-product in productie omvat het jaarlijkse onderhoud doorgaans een paar honderd tot een paar duizend euro aan infrastructuur en diensten, plus engineeringtijd voor beveiligingsupdates, upgrades van afhankelijkheden en platforms, bugfixes, monitoring en kleine verbeteringen. Afhankelijk van de complexiteit en hoeveel u zelf doet, komen veel kleine producten uit tussen een paar duizend en enkele tienduizenden euro's per jaar. De vaak genoemde vuistregel dat onderhoud jaarlijks 15 tot 25 procent van de oorspronkelijke ontwikkelkosten kost, is minder bruikbaar voor apps gebouwd met AI, omdat de bouw goedkoop was maar het onderhoudswerk dat niet is.
+**Kort antwoord:** Voor een klein met AI gebouwd SaaS-product in productie omvat het jaarlijkse onderhoud doorgaans een paar honderd tot een paar duizend euro aan infrastructuur en diensten, plus engineeringtijd voor beveiligingsupdates, upgrades van afhankelijkheden en platforms, bugfixes, monitoring en kleine verbeteringen. Afhankelijk van de complexiteit en hoeveel u zelf doet, komen veel kleine producten uit tussen een paar duizend en enkele tienduizenden euro's per jaar. De vaak genoemde vuistregel dat onderhoud jaarlijks 15 tot 25 procent van de oorspronkelijke ontwikkelkosten kost, is minder bruikbaar voor apps gebouwd met AI, omdat de bouw goedkoop was maar het onderhoudswerk dat niet is.
 
 ## Belangrijkste Punten
 

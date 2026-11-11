@@ -27,7 +27,7 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 }
 </script>
 
-**Kort antwoord:** meestal wel, maar "verhuizen" betekent verschillende dingen. Zowel Bolt als Lovable genereren doorgaans React-apps met moderne tooling en gebruiken vaak Supabase als backend, dus uw code, design en database kunnen de verhuizing grotendeels overleven. Wat niet automatisch meegaat, is de eigen projectstatus van de builder: de geschiedenis, instellingen, hosting en, als u ingebouwde clouddiensten gebruikte, mogelijk uw data en gebruikers. Controleer of de doelbuilder een bestaande repository kan importeren, plan hoe de backend verhuist en overweeg of een code-first tool zoals Cursor of Claude Code een betere volgende stap is dan nog een builder.
+**Kort antwoord:** Meestal wel, maar "verhuizen" betekent verschillende dingen. Zowel Bolt als Lovable genereren doorgaans React-apps met moderne tooling en gebruiken vaak Supabase als backend, dus uw code, design en database kunnen de verhuizing grotendeels overleven. Wat niet automatisch meegaat, is de eigen projectstatus van de builder: de geschiedenis, instellingen, hosting en, als u ingebouwde clouddiensten gebruikte, mogelijk uw data en gebruikers. Controleer of de doelbuilder een bestaande repository kan importeren, plan hoe de backend verhuist en overweeg of een code-first tool zoals Cursor of Claude Code een betere volgende stap is dan nog een builder.
 
 ## Belangrijkste Punten
 

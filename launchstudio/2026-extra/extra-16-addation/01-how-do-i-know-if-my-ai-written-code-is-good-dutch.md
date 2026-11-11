@@ -27,7 +27,7 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 }
 </script>
 
-**Kort antwoord:** u kunt door AI geschreven code niet beoordelen aan de hand van de vraag of de app in een demo werkt. Goede code gedraagt zich correct met echte gebruikers en echte data, houdt de gegevens van elke klant gescheiden, faalt op een veilige manier, kan worden aangepast zonder andere functies te breken en is te begrijpen voor iemand anders dan de tool die haar schreef. Als niet-technische oprichter kunt u veel hiervan zelf controleren met een paar gedragstests en controles in de repository, de rest meten met geautomatiseerde tools, en een expertreview inschakelen vóór de lancering of voordat grote klanten en investeerders goed gaan kijken.
+**Kort antwoord:** U kunt door AI geschreven code niet beoordelen aan de hand van de vraag of de app in een demo werkt. Goede code gedraagt zich correct met echte gebruikers en echte data, houdt de gegevens van elke klant gescheiden, faalt op een veilige manier, kan worden aangepast zonder andere functies te breken en is te begrijpen voor iemand anders dan de tool die haar schreef. Als niet-technische oprichter kunt u veel hiervan zelf controleren met een paar gedragstests en controles in de repository, de rest meten met geautomatiseerde tools, en een expertreview inschakelen vóór de lancering of voordat grote klanten en investeerders goed gaan kijken.
 
 ## Belangrijkste Punten
 
@@ -166,7 +166,7 @@ Slechte code faalt zelden in één keer. Het uit zich in tragere ontwikkeling, t
 
 ## Hoe LaunchStudio Helpt
 
-LaunchStudio reviewt door AI geschreven codebases en repareert wat telt voor productie: toegangscontrole, geheimen, betalingen, foutafhandeling, datamodel, prestaties, tests, CI-controles en deployment. We schrijven ook projectinstructies en voegen vangrails toe, zodat toekomstige wijzigingen met AI de kwaliteit behouden waarvoor u hebt betaald.
+LaunchStudio reviewt door AI geschreven codebases en repareert wat telt voor productie: toegangscontrole, geheimen, betalingen, foutafhandeling, datamodel, prestaties, tests, CI-controles en deployment. We schrijven ook projectinstructies en voegen vangrails toe, zodat toekomstige wijzigingen met AI de kwaliteit behouden waarvoor u heeft betaald.
 
 Het **Launch Ready**-pakket (€800-€3.500) omvat een productiereview met kritieke fixes, deployment en 48 uur support; **Launch & Grow** (€2.500-€7.500 plus €49 per maand) voegt beheerde hosting, monitoring en prioriteitssupport toe. Gebruik de [prijscalculator](https://launchstudio.eu/nl/#calculator) voor een schatting.
 

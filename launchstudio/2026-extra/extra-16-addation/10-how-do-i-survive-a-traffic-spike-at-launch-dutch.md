@@ -27,7 +27,7 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 }
 </script>
 
-**Kort antwoord:** bereid de paar journeys voor die er het meest toe doen, landingspagina, aanmelden, onboarding en afrekenen, in plaats van de hele app. Serveer de landingspagina statisch of vanaf een CDN, test aanmelden en afrekenen onder belasting, zorg dat authenticatie-e-mails via een e-mailprovider voor productie met voldoende limieten lopen, verplaats traag werk zoals e-mails en AI-calls naar achtergrondtaken, voeg bescherming tegen bots toe, verhoog de capaciteit tijdelijk als dat nodig is, en volg tijdens de lancering de dashboards met een plan om netjes terug te schakelen. De meeste crashes op de lanceringsdag van met AI gebouwde apps komen voort uit een handvol voorspelbare knelpunten die in een paar dagen te repareren zijn.
+**Kort antwoord:** Bereid de paar journeys voor die er het meest toe doen, landingspagina, aanmelden, onboarding en afrekenen, in plaats van de hele app. Serveer de landingspagina statisch of vanaf een CDN, test aanmelden en afrekenen onder belasting, zorg dat authenticatie-e-mails via een e-mailprovider voor productie met voldoende limieten lopen, verplaats traag werk zoals e-mails en AI-calls naar achtergrondtaken, voeg bescherming tegen bots toe, verhoog de capaciteit tijdelijk als dat nodig is, en volg tijdens de lancering de dashboards met een plan om netjes terug te schakelen. De meeste crashes op de lanceringsdag van met AI gebouwde apps komen voort uit een handvol voorspelbare knelpunten die in een paar dagen te repareren zijn.
 
 ## Belangrijkste Punten
 

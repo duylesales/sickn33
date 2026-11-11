@@ -27,7 +27,7 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 }
 </script>
 
-**Kort antwoord:** voorkom eerst verdere schade en controleer daarna welke back-ups u heeft. Op betaalde Supabase-plannen kunt u met dagelijkse back-ups en, met de add-on, point-in-time recovery de database terugzetten naar een eerder moment, maar het terugzetten van het hele project draait ook elke legitieme wijziging sinds dat moment terug. Bij per ongeluk verwijderde specifieke records is het meestal veiliger om een back-up terug te zetten in een apart project, de ontbrekende rijen daaruit te halen en ze opnieuw in productie in te voegen. Bestanden in Supabase Storage worden apart van databaseback-ups behandeld. Voorkom het volgende incident met soft delete, beperkte verwijderrechten, gereviewde migraties en regelmatig geteste herstelprocedures.
+**Kort antwoord:** Voorkom eerst verdere schade en controleer daarna welke back-ups u heeft. Op betaalde Supabase-plannen kunt u met dagelijkse back-ups en, met de add-on, point-in-time recovery de database terugzetten naar een eerder moment, maar het terugzetten van het hele project draait ook elke legitieme wijziging sinds dat moment terug. Bij per ongeluk verwijderde specifieke records is het meestal veiliger om een back-up terug te zetten in een apart project, de ontbrekende rijen daaruit te halen en ze opnieuw in productie in te voegen. Bestanden in Supabase Storage worden apart van databaseback-ups behandeld. Voorkom het volgende incident met soft delete, beperkte verwijderrechten, gereviewde migraties en regelmatig geteste herstelprocedures.
 
 ## Belangrijkste Punten
 

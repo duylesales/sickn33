@@ -27,7 +27,7 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 }
 </script>
 
-**Kort antwoord:** ja. Investeerders financieren bedrijven, geen codebases, en veel investeerders verwachten inmiddels dat vroege producten met AI-tools worden gebouwd, omdat dat snel en kapitaalefficiënt is. Wat veranderd is, zijn de vragen die ze stellen. Omdat een demo goedkoop te maken is, kijken ze kritischer naar tractie, verdedigbaarheid en technisch risico: wordt het product gebruikt en betaald, wat houdt iemand tegen om het in een weekend na te bouwen, zijn klantgegevens veilig, is de code en zijn de accounts eigendom van het bedrijf, en kan het product groeien zonder opnieuw gebouwd te worden? Zorg voor heldere antwoorden, en zorg dat het product achter uw pitch echt live en productierijp is.
+**Kort antwoord:** Ja. Investeerders financieren bedrijven, geen codebases, en veel investeerders verwachten inmiddels dat vroege producten met AI-tools worden gebouwd, omdat dat snel en kapitaalefficiënt is. Wat veranderd is, zijn de vragen die ze stellen. Omdat een demo goedkoop te maken is, kijken ze kritischer naar tractie, verdedigbaarheid en technisch risico: wordt het product gebruikt en betaald, wat houdt iemand tegen om het in een weekend na te bouwen, zijn klantgegevens veilig, is de code en zijn de accounts eigendom van het bedrijf, en kan het product groeien zonder opnieuw gebouwd te worden? Zorg voor heldere antwoorden, en zorg dat het product achter uw pitch echt live en productierijp is.
 
 ## Belangrijkste Punten
 

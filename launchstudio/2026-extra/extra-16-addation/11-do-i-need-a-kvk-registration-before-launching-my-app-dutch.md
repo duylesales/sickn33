@@ -27,7 +27,7 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 }
 </script>
 
-**Kort antwoord:** u moet zich inschrijven bij de KVK, de Kamer van Koophandel, zodra uw app een onderneming is: wanneer u hem zelfstandig aanbiedt, winst wilt maken en deelneemt aan het economisch verkeer, bijvoorbeeld door gebruikers te laten betalen, abonnementen te verkopen of hem als commerciële dienst te exploiteren. Inschrijving is in de regel nodig vóór of bij de start van uw onderneming, niet na maanden verkoop. Een gratis hobbyproject dat vrienden gebruiken, hoeft meestal niet ingeschreven te worden, maar zodra u betalende klanten, zakelijke contracten, een zakelijk betaalaccount of een organisatieaccount in appstores plant, schrijft u zich in, kiest u een rechtsvorm en regelt u de btw. Dit is algemene informatie; controleer uw situatie bij de KVK, de Belastingdienst of een adviseur.
+**Kort antwoord:** U moet zich inschrijven bij de KVK, de Kamer van Koophandel, zodra uw app een onderneming is: wanneer u hem zelfstandig aanbiedt, winst wilt maken en deelneemt aan het economisch verkeer, bijvoorbeeld door gebruikers te laten betalen, abonnementen te verkopen of hem als commerciële dienst te exploiteren. Inschrijving is in de regel nodig vóór of bij de start van uw onderneming, niet na maanden verkoop. Een gratis hobbyproject dat vrienden gebruiken, hoeft meestal niet ingeschreven te worden, maar zodra u betalende klanten, zakelijke contracten, een zakelijk betaalaccount of een organisatieaccount in appstores plant, schrijft u zich in, kiest u een rechtsvorm en regelt u de btw. Dit is algemene informatie; controleer uw situatie bij de KVK, de Belastingdienst of een adviseur.
 
 ## Belangrijkste Punten
 

@@ -27,7 +27,7 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 }
 </script>
 
-**Kort antwoord:** er is geen vast getal. Een goed gebouwde Supabase-app kan vele duizenden gebruikers bedienen, en Supabase draait grote productieworkloads, maar een slecht geoptimaliseerde app kan al moeite hebben met een paar honderd mensen die hem tegelijk gebruiken. Het gaat niet om het aantal accounts, maar om hoeveel gebruikers tegelijk actief zijn, hoeveel requests elk van hen doet en hoe efficiënt die requests zijn. Meet uw eigen app onder realistische belasting, los eerst inefficiënties op en schaal compute op of voeg read replicas toe wanneer de werkelijke vraag daarom vraagt.
+**Kort antwoord:** Er is geen vast getal. Een goed gebouwde Supabase-app kan vele duizenden gebruikers bedienen, en Supabase draait grote productieworkloads, maar een slecht geoptimaliseerde app kan al moeite hebben met een paar honderd mensen die hem tegelijk gebruiken. Het gaat niet om het aantal accounts, maar om hoeveel gebruikers tegelijk actief zijn, hoeveel requests elk van hen doet en hoe efficiënt die requests zijn. Meet uw eigen app onder realistische belasting, los eerst inefficiënties op en schaal compute op of voeg read replicas toe wanneer de werkelijke vraag daarom vraagt.
 
 ## Belangrijkste Punten
 

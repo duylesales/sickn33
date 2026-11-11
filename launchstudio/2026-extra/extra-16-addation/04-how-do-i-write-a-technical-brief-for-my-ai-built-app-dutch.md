@@ -27,7 +27,7 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 }
 </script>
 
-**Kort antwoord:** een technische briefing vertelt developers wat uw product is, wie het gebruikt, in welke staat het is, wat er gedaan moet worden, wat niet mag veranderen, welke randvoorwaarden gelden en hoe u succes beoordeelt. Voor een met AI gebouwde app staat er ook in waar de code en accounts zich bevinden, wat de AI-tool heeft gegenereerd en welke problemen u al kent. Een briefing van twee tot vier pagina's, met links naar de repository en een korte schermopname, is meestal genoeg voor nauwkeurige offertes en voorkomt weken van misverstanden.
+**Kort antwoord:** Een technische briefing vertelt developers wat uw product is, wie het gebruikt, in welke staat het is, wat er gedaan moet worden, wat niet mag veranderen, welke randvoorwaarden gelden en hoe u succes beoordeelt. Voor een met AI gebouwde app staat er ook in waar de code en accounts zich bevinden, wat de AI-tool heeft gegenereerd en welke problemen u al kent. Een briefing van twee tot vier pagina's, met links naar de repository en een korte schermopname, is meestal genoeg voor nauwkeurige offertes en voorkomt weken van misverstanden.
 
 ## Belangrijkste Punten
 

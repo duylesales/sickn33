@@ -27,7 +27,7 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 }
 </script>
 
-**Kort antwoord:** gebruik een gehoste dienst voor statuspagina's, zet de pagina op een subdomein zoals `status.uwproduct.nl`, host haar los van uw app zodat ze online blijft wanneer uw app niet werkt, en definieer componenten rond wat klanten werkelijk gebruiken, zoals inloggen, dashboard, betalingen en API. Koppel haar aan uptimemonitoring voor automatische detectie, maar schrijf de updates over incidenten zelf, in begrijpelijke taal. Laat klanten zich abonneren op updates, kondig onderhoud vooraf aan en publiceer na grote incidenten een kort rapport. Voor een kleine SaaS kost het een dag om dit in te richten, en het betaalt zich terug zodra er voor het eerst iets misgaat.
+**Kort antwoord:** Gebruik een gehoste dienst voor statuspagina's, zet de pagina op een subdomein zoals `status.uwproduct.nl`, host haar los van uw app zodat ze online blijft wanneer uw app niet werkt, en definieer componenten rond wat klanten werkelijk gebruiken, zoals inloggen, dashboard, betalingen en API. Koppel haar aan uptimemonitoring voor automatische detectie, maar schrijf de updates over incidenten zelf, in begrijpelijke taal. Laat klanten zich abonneren op updates, kondig onderhoud vooraf aan en publiceer na grote incidenten een kort rapport. Voor een kleine SaaS kost het een dag om dit in te richten, en het betaalt zich terug zodra er voor het eerst iets misgaat.
 
 ## Belangrijkste Punten
 

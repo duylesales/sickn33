@@ -27,7 +27,7 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 }
 </script>
 
-**Kort antwoord:** zoek eerst de duplicatie die risico oplevert, niet alles tegelijk. In Lovable-projecten zit de schadelijkste duplicatie meestal in datatoegang, rechtencontroles, berekeningen van bedragen en datums en kerncomponenten. Voeg die samen in gedeelde modules, beschermd door tests, in kleine stappen, waarbij elke wijziging op staging wordt gecontroleerd. Houd het project compatibel met Lovable door via GitHub te synchroniseren en één grote herstructurering te vermijden, en schrijf projectinstructies die Lovable vertellen de gedeelde modules te hergebruiken, zodat duplicatie niet terugkomt met de volgende prompt.
+**Kort antwoord:** Zoek eerst de duplicatie die risico oplevert, niet alles tegelijk. In Lovable-projecten zit de schadelijkste duplicatie meestal in datatoegang, rechtencontroles, berekeningen van bedragen en datums en kerncomponenten. Voeg die samen in gedeelde modules, beschermd door tests, in kleine stappen, waarbij elke wijziging op staging wordt gecontroleerd. Houd het project compatibel met Lovable door via GitHub te synchroniseren en één grote herstructurering te vermijden, en schrijf projectinstructies die Lovable vertellen de gedeelde modules te hergebruiken, zodat duplicatie niet terugkomt met de volgende prompt.
 
 ## Belangrijkste Punten
 
