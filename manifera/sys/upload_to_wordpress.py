@@ -184,7 +184,7 @@ def markdown_to_clean_html(content):
     content = sanitize_waf_patterns(content)
 
     # Split into body and FAQ section
-    faq_split = re.split(r"##\s+(?:Frequently Asked Questions|FAQ)", content, flags=re.IGNORECASE)
+    faq_split = re.split(r"(?:##|###)\s+(?:Frequently Asked Questions|FAQs|FAQ)", content, flags=re.IGNORECASE)
     body_md = faq_split[0]
     faq_md = faq_split[1] if len(faq_split) > 1 else ""
 
@@ -314,7 +314,7 @@ def markdown_to_clean_html(content):
             '  }\n'
             '</style>'
         )
-        html_parts.append("<h2>Frequently Asked Questions</h2>")
+        html_parts.append("<h3>FAQs</h3>")
         html_parts.append(faq_style)
         html_parts.append('<div class="faq-accordion">')
 

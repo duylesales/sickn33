@@ -1,7 +1,7 @@
 # Workspace Rules & Guidelines
 
 ## Content Generation Guidelines
-- **FAQ Requirement:** All generated articles (whether for blogs, long-form content, or whitepapers) MUST include exactly **5 FAQ questions**. Never generate fewer than 5 FAQs.
+- **FAQ Requirement & Heading:** All generated articles (whether for blogs, long-form content, or whitepapers) MUST include exactly **5 FAQ questions**. Never generate fewer than 5 FAQs. The section heading must ALWAYS use the abbreviation **"FAQs"** (or **"FAQ"**), NEVER write out in full ("Frequently Asked Questions").
 - **JSON-LD Schema:** The 5 FAQs must also be properly formatted and included in a JSON-LD `<script type="application/ld+json">` block for SEO (as a `FAQPage` schema) at the bottom of the file.
 - **No Em Dash (All Projects - Mandatory):** In every article across all folders/projects (launchstudio, manifera, onlyaijobs and any new project), including Dutch versions, social posts, FAQs and JSON-LD, use ONLY the short hyphen `-`. NEVER use the em dash `—`. Write `word - word` (with spaces), never `word—word` or `word — word`.
 
@@ -21,6 +21,7 @@
 ## WordPress Publishing & Easy MCP AI Guidelines (Manifera & LaunchStudio)
 To avoid Web Application Firewall (WAF/Wordfence/ModSecurity) `403 Forbidden` errors and optimize execution speed when publishing or drafting posts:
 - **Strict Ban on `<script>` in Post Content:** NEVER send `<script type="application/ld+json">` or inline `<script>` tags in the WordPress REST API post payload. The server firewall treats them as XSS injection vectors and blocks requests with 403 Forbidden.
+- **FAQ Heading Abbreviation:** Always use the abbreviated heading `<h3>FAQs</h3>` (or `<h2>FAQs</h2>`). Never write out the full phrase "Frequently Asked Questions" in post content or headings.
 - **Native Semantic HTML5 for FAQ Accordions:** Format all 5 FAQs using semantic HTML5 elements (`<details><summary>`) styled with the scoped `.faq-accordion` stylesheet (which adds `+` and `−` indicators):
   ```html
   <style>
