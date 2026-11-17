@@ -2,6 +2,26 @@
 
 ## 2026
 
+### Tháng 11
+
+#### Ngày 17
+
+- **Tạo ảnh minh họa siêu thực cho cụm `extra-3-longtail` - Phiên chiều (Hoàn thành Bài 01 - Bài 11, tổng cộng 11/100 bài)**:
+  - **Quy chuẩn mỹ thuật & phong cách**: Tuân thủ nghiêm ngặt chỉ đạo của người dùng và quy tắc tại `AGENTS.md` (nhiếp ảnh tài liệu đời thực 35mm/full-frame, không dùng billboard, không dùng bảng thông tin hay bảng trắng chữ, không dùng thiết bị phần cứng/USB dongle, không dùng mô-típ thiết bị để không trên bàn, luân phiên tương phản góc máy và bối cảnh liền kề $N$ và $N+1$):
+    - [`01-mobile-app-development-cost-2026_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026-extra/extra-3-longtail/01-mobile-app-development-cost-2026_pic.jpg) (*Over-the-Shoulder*: Trưởng nhóm kỹ thuật mobile và nữ giám đốc sản phẩm đứng trao đổi bên bàn gỗ bạch dương cạnh cửa sổ lớn nhìn ra bờ kênh Amsterdam, tay cầm điện thoại hiển thị giao diện dark-mode và đối chiếu cấu trúc kiến trúc trên màn hình).
+    - [`02-custom-software-development-cost-breakdown_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026-extra/extra-3-longtail/02-custom-software-development-cost-breakdown_pic.jpg) (*Architectural Wide-Angle*: Không gian nhà kho cảng cổ gạch đỏ và vì kèo gỗ cải tạo tại Rotterdam nhìn ra bến tàu, CTO và hai kiến trúc sư phần mềm trao đổi tự nhiên quanh bàn gỗ sồi dài).
+    - [`03-fixed-price-vs-hourly-software-development_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026-extra/extra-3-longtail/03-fixed-price-vs-hourly-software-development_pic.jpg) (*Tactile Macro*: Cận cảnh bàn tay lãnh đạo công nghệ cầm bút máy đen mờ trên sổ vải lanh bên cửa sổ mưa tại The Hague, tách espresso gốm và hậu cảnh mờ bokeh của tiến độ milestone trên laptop).
+    - [`04-cheapest-software-development-quote-risk_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026-extra/extra-3-longtail/04-cheapest-software-development-quote-risk_pic.jpg) (*First-Person POV*: Góc nhìn bước qua cửa kính mở vào phòng kiểm toán mã nguồn tại Utrecht ngập nắng chiều, hai kỹ sư cao cấp ngồi đối diện rà soát các khối code lỗi đỏ/xanh trên màn hình cong).
+    - [`05-evaluate-custom-software-development-company_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026-extra/extra-3-longtail/05-evaluate-custom-software-development-company_pic.jpg) (*High-Angle Mezzanine*: Góc cao từ hành lang tầng lửng nhìn xuống studio công nghệ trần cao tại Eindhoven với cây xanh nội thất, CTO khách hàng ngồi đối diện hai kỹ sư trưởng thẩm định kiến trúc trực tiếp).
+    - [`06-software-development-company-vs-freelancer_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026-extra/extra-3-longtail/06-software-development-company-vs-freelancer_pic.jpg) (*Over-the-Shoulder*: Nhóm kỹ sư đa chức năng 3 người tại studio gạch mộc Delft cùng phối hợp trước trạm làm việc hai màn hình bên cửa sổ lớn, chỉ tay vào sơ đồ triển khai đa dịch vụ).
+    - [`07-in-house-hiring-vs-dedicated-team_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026-extra/extra-3-longtail/07-in-house-hiring-vs-dedicated-team_pic.jpg) (*Low-Angle Upward Architectural*: Góc thấp bên trong sảnh thông tầng đá vôi và mái kính cao vút tại Amsterdam Zuidas, VP Kỹ thuật và Giám đốc Tài chính ngồi trên ghế băng da thảo luận kế hoạch nhân sự trên laptop).
+    - [`08-best-software-development-company-rankings_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026-extra/extra-3-longtail/08-best-software-development-company-rankings_pic.jpg) (*Tactile Macro*: Cận cảnh đôi bàn tay nhà sáng lập thao tác chuột và bàn phím cơ trên mặt bàn gỗ sồi bên cửa sổ tại Haarlem, hậu cảnh mờ bokeh hiển thị lưới tần suất đóng góp Git commit thực tế).
+    - [`09-questions-to-ask-software-development-firm_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026-extra/extra-3-longtail/09-questions-to-ask-software-development-firm_pic.jpg) (*Architectural Wide-Angle*: Phòng họp nhà phố cổ nhìn ra kênh đào Amsterdam rợp bóng cây, hai nhà sáng lập ngồi đối diện trực tiếp đội ngũ 3 kỹ sư dự án trong buổi họp khởi động kỹ thuật).
+    - [`10-stages-of-software-development-explained_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026-extra/extra-3-longtail/10-stages-of-software-development-explained_pic.jpg) (*First-Person POV*: Góc nhìn dọc hành lang gỗ và vách kính tại studio Rotterdam nhìn vào phòng kỹ thuật nơi các lập trình viên đang song song thiết kế wireframe giao diện và lập trình backend).
+    - [`11-native-vs-cross-platform-mobile-app_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026-extra/extra-3-longtail/11-native-vs-cross-platform-mobile-app_pic.jpg) (*Over-the-Shoulder*: Nữ kiến trúc sư mobile đứng bên bàn gỗ sáng màu tại căn loft Utrecht, hai tay cầm hai thiết bị điện thoại đối chiếu trực tiếp hiệu năng giao diện trước màn hình profiler).
+  - Cắt và nén chuẩn tỷ lệ 16:9 (`1365x768`, center-crop JPEG quality 95) qua `manifera/sys/crop_to_16_9.py`.
+  - **Tạm dừng trước Bài 12**: Khi chuyển sang Bài 12 (`12-what-mobile-app-developers-wish-clients-knew.md`), model native `gemini-3.1-flash-image` đạt hạn mức phiên (`429 RESOURCE_EXHAUSTED`, thời gian chờ reset sau `4h27m30s`, tức `20:01:16` giờ địa phương / `2026-11-17T13:01:16Z`). Tuân thủ nghiêm ngặt quy định tại `AGENTS.md`, tạm dừng tại bài 12 chờ làm mới hạn ngạch.
+
 ### Tháng 10
 
 #### Ngày 09
