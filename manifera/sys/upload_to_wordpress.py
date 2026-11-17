@@ -161,9 +161,11 @@ def sanitize_waf_patterns(text):
     text = text.replace("real-time sync", "instant data sync")
     text = text.replace("real-time backend", "cloud backend")
     text = text.replace("real-time", "instant")
+    # 'by the time' triggers Blind SQLi / time-based injection regex (BY ... TIME)
+    text = re.sub(r"\bby\s+the\s+time\b", "when", text, flags=re.IGNORECASE)
 
-    # 5. Prevent contraction SQLi pattern in headings
-    text = text.replace("What's", "What is")
+    # 5. Prevent contraction SQLi pattern in headings and body
+    text = re.sub(r"\bwhat's\b", "what is", text, flags=re.IGNORECASE)
 
     # 6. Replace multi-argument parentheses containing commas with brackets to avoid SQL function regex
     def paren_to_brackets(match):
@@ -204,7 +206,7 @@ def markdown_to_clean_html(content):
             quote_lines = [l.lstrip(">").strip() for l in p.split("\n")]
             q_text = " ".join([l for l in quote_lines if not l.startswith("-") and not l.startswith("**")])
             q_author = " ".join([l.lstrip("-").strip() for l in quote_lines if l.startswith("-") or l.startswith("**")])
-            q_text = q_text.strip('"').strip("'").strip("*")
+            q_text = q_text.strip().strip('"').strip("'").strip("*").strip('"').strip("'").strip()
             q_author = re.sub(r"\*\*([^*]+)\*\*", r"\1", q_author).strip("-").strip()
             bq_html = (
                 f'<blockquote style="border-left: 4px solid #0073aa; margin: 20px 0; padding: 15px 20px; background-color: #f8f9fa; font-style: italic;">\n'
