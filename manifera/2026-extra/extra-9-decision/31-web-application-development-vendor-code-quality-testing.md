@@ -44,7 +44,7 @@ During the session, ask specifically why a particular approach was chosen over a
 
 Functional correctness is table stakes; performance under realistic load is where quality differences actually surface. If the vendor has a staging environment for a comparable past project, ask for load test results - response times at 100, 500, and 1,000 concurrent users, database query times under load, and how the application degrades when it exceeds capacity. A team that has never run a load test on a production application is a team that hasn't been forced to confront the consequences of sloppy architecture. That's a meaningful signal for any application you expect to scale.
 
-As Gartner has observed, technical due diligence on outsourced software delivery is one of the most under-invested steps in the vendor selection process, precisely because the cost of skipping it doesn't show up until well after the contract is signed. The vendors who welcome this level of scrutiny are, almost by definition, the ones with nothing to hide.
+Technical due diligence on outsourced software delivery is one of the most under-invested steps in vendor selection, precisely because the cost of skipping it doesn't show up until well after the contract is signed. The vendors who welcome this level of scrutiny are, almost by definition, the ones with nothing to hide.
 
 It's worth being specific about what "realistic load" means for your application, because generic benchmarks are close to useless. A vendor might proudly report that their application handled 5,000 concurrent users in a synthetic test, but if that test used uniform, cached requests rather than the mixed read-write traffic pattern your actual users generate, the number tells you almost nothing. Ask instead for a benchmark that approximates your real usage: if you're building an internal dashboard for 200 employees, ask how the app performs when 40 of them run the same complex report simultaneously at 9 a.m. If you're building a customer-facing portal, ask about database query time under load once the underlying tables have millions of rows, not the few hundred used in a demo environment. The specificity of the vendor's answer is itself diagnostic - a team that has genuinely load-tested production systems will answer in concrete milliseconds and percentiles; a team that hasn't will answer in vague reassurances about "modern infrastructure."
 
@@ -62,27 +62,37 @@ We also structure our teams so that English-fluent engineers communicate directl
 
 Don't leave this evaluation to gut feeling after the fact. Before your final round of vendor calls, build a one-page rubric scoring each finalist on: test coverage evidence, static analysis cleanliness, commit discipline, live pairing session quality, and load test transparency. Score each 1-5 and weight them according to what matters most for your specific application - a fintech dashboard should weight security and testing heavily; a marketing site can weight speed more. Score immediately after each call while details are fresh, and compare totals only after every finalist has been through the identical process. This removes recency bias, where the last vendor you spoke to unfairly benefits from being freshest in memory, and gives your final decision a defensible, auditable basis if leadership asks how you chose.
 
+**The code quality scoring rubric, one row per finalist call:**
+
+| Criterion | Evidence to request | Red flag that scores a 1 |
+| --- | --- | --- |
+| Test coverage | Coverage report plus real test assertions from a comparable project | Below 40% on business logic, or tests that run code without checking outcomes |
+| Static analysis | Linter or analyzer output for the sample, run with permission | A wall of unaddressed warnings |
+| Commit discipline | Recent commit history from the assigned team | Giant "final fixes" and "WIP" commits pushed without review |
+| Live pairing session | Thirty minutes with an assigned engineer on a real pull request | A hurried hand-off to someone else, or no clear trade-off reasoning |
+| Load test transparency | Response times and query times under realistic load | Vague reassurances about "modern infrastructure" instead of milliseconds |
+
 ## Making the Final Call
 
 By the time you've run these four checks - code sample review, live pairing session, performance benchmarking, and a scored rubric comparison - you'll have a materially clearer picture than anything a proposal document or reference call could offer. The vendors that pass this bar aren't just claiming quality; they're demonstrating it under conditions they don't fully control, which is the entire point of due diligence at the decision stage.
 
 Talk to one of our senior architects about your specific code-quality challenge - we're happy to walk through our own process under exactly this kind of scrutiny before you sign anything.
 
-## Frequently Asked Questions
+## FAQ
 
-### What test coverage percentage should I expect from a web application development vendor?
+### (Scenario: CTO reviewing a vendor's coverage report) What test coverage percentage should I expect from a web application development vendor?
 For business-critical logic, 70% or higher is a reasonable baseline for a production web application, though the number matters less than whether the tests verify meaningful behavior rather than simply executing code paths. Ask to see the actual test assertions, not just the coverage report, since a high percentage can still hide shallow tests.
 
-### How do I know if a vendor will staff my project with the same engineers who built their portfolio examples?
+### (Scenario: CTO impressed by a demo from a senior architect) How do I know if a vendor will staff my project with the same engineers who built their portfolio examples?
 Ask explicitly, in writing, for the names and backgrounds of the engineers who will be assigned to your account, and request a live session with those specific people before signing. Vendors that hesitate to name the assigned team or substitute a different presenter at the last minute are a meaningful warning sign.
 
-### Is it reasonable to ask a web app development vendor for a live code review before signing a contract?
+### (Scenario: CTO worried a request will look unusual to the vendor) Is it reasonable to ask a web app development vendor for a live code review before signing a contract?
 Yes, and most established vendors will accommodate a thirty-minute session without hesitation, since it's a standard part of technical due diligence. If a vendor resists or treats the request as unusual, that reluctance itself is useful information about how transparent their delivery process really is.
 
-### What's the difference between reviewing code quality and reviewing a vendor's portfolio?
+### (Scenario: Procurement team relying on case studies alone) What's the difference between reviewing code quality and reviewing a vendor's portfolio?
 A portfolio shows finished, polished output selected specifically to impress; code quality review examines the underlying craftsmanship - test coverage, static analysis results, commit discipline, and documentation - that determines how expensive the application will be to maintain and extend after launch. Portfolios answer "can they build something that works," while code quality answers "will it still be healthy in eighteen months."
 
-### How long does a proper technical due diligence process take before choosing a web application development vendor?
+### (Scenario: CTO under pressure to sign before quarter end) How long does a proper technical due diligence process take before choosing a web application development vendor?
 A focused evaluation - code sample review, one live pairing session, and a performance benchmark discussion - typically takes two to three hours spread across a single week per finalist, which is a small time investment relative to a multi-month, multi-thousand-euro engagement. Rushing this step to save a few hours is the single most common reason vendor relationships underperform expectations.
 
 <script type="application/ld+json">

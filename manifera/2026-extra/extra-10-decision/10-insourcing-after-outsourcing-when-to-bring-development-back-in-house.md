@@ -36,6 +36,17 @@ A second genuine signal is strategic IP concentration: when the core, differenti
 
 "We're paying too much" is also frequently a miscalculation rather than a genuine signal, because it usually compares a vendor's day rate to a gross salary rather than to a fully loaded internal cost. In-house hiring in Western Europe, once recruiter fees, benefits, employer social contributions, office overhead, and realistic churn are counted, typically runs 1.4-1.8x above the headline salary number - a comparison that frequently reverses the "outsourcing is expensive" conclusion once it's done honestly. Before treating cost as the driver, run the actual total-cost-of-ownership comparison rather than the gross-rate one.
 
+**Insourcing signals: which ones justify the move:**
+
+| Signal | Verdict | What to verify before acting |
+|---|---|---|
+| Sustained need of 25-40+ engineers | Strong signal | Headcount forecast holds for at least 2-3 years, not one peak quarter |
+| Core IP concentrated in a few vendor engineers | Strong signal | Which named individuals hold the knowledge, and whether they could be hired or converted |
+| Work has shifted to steady-state maintenance | Strong signal | Share of roadmap that is predictable feature work versus experimentation |
+| Investors asking for an in-house team | Weak on its own | Whether better governance reporting on the current model answers the concern |
+| "We're paying too much" | Usually a miscalculation | Fully loaded internal cost (1.4-1.8x salary) against the vendor's all-in rate |
+| Leadership preference for "real" employees | Not a signal | Any measurable delivery, quality or risk problem behind the preference |
+
 ## What Insourcing Actually Costs to Execute
 
 A genuine insourcing transition is a hiring project layered on top of a knowledge-transfer project, and underestimating either half is the most common reason these transitions run long and expensive. On the hiring side, expect the same 90-plus-day time-to-hire for mid-to-senior engineers that made outsourcing attractive in the first place - insourcing does not make the European hiring market move faster, and a transition plan that assumes new hires will be in seat within a month of the decision is planning against reality.
@@ -54,11 +65,30 @@ Sequence insourcing by system, not by percentage of headcount, starting with the
 
 Negotiate the knowledge-transfer overlap explicitly into the outgoing vendor relationship's terms before announcing the transition internally, and treat the internal hiring plan and the vendor transition timeline as jointly managed, not sequential - hiring delays are common enough that the vendor relationship should have a defined off-ramp that adjusts to actual hiring progress rather than an arbitrary calendar date that forces a premature handover.
 
+**Example sequence: a 30-engineer SaaS company moving its core platform in-house:**
+
+| Phase | Timing | System moving | Vendor role | Exit criterion |
+|---|---|---|---|---|
+| 1. Hire first internal leads | Months 1-4 | None yet | Full delivery, starts documentation sprint | Tech lead and two senior engineers in seat |
+| 2. First system handover | Months 4-7 | Billing service (well documented, high strategic value) | Pairs with internal hires for 8-12 weeks | Internal team ships and runs on-call alone for 4 weeks |
+| 3. Core platform handover | Months 7-12 | Core application and data model | Overlap on core, keeps delivering other systems | Internal team owns roadmap and incident response |
+| 4. Hybrid steady state | Month 12 onward | Mobile app and data pipeline stay with vendor | Bounded scope with its own review cadence | Quarterly review of whether the split still fits |
+
+The timings in that table are deliberately wide. Each phase starts only when the previous exit criterion is met, not when the calendar says so, which is what keeps a hiring delay from turning into a quality incident.
+
+## Measuring Whether the Transition Is Working
+
+An insourcing move needs a baseline, and the only time to capture one is before the first system changes hands. Record the current vendor team's delivery metrics for at least one quarter: deployment frequency, lead time from merged code to production, escaped defects per release, and incident count and recovery time. These are the numbers the internal team will be compared against, and without them every post-transition discussion becomes a debate about impressions rather than evidence.
+
+During the transition, track two additional measures that vendors rarely report but that decide whether the move succeeds. The first is knowledge coverage: for each system being transferred, how many internal engineers can independently deploy, debug and extend it. A system with a coverage of one has simply moved its single point of failure from the vendor to your payroll. The second is hiring pipeline health: open roles, candidates at offer stage, and average days to fill, reviewed every two weeks alongside the handover plan, because hiring is the constraint that sets the pace for everything else.
+
+Expect a temporary dip. A drop in deployment frequency or a rise in lead time during the first eight to twelve weeks of each handover is normal and should be planned for in the roadmap. What should trigger a pause is a dip that is still present after the overlap period ends, or a rise in escaped defects on a system the internal team now owns alone. Either one is a signal to extend the vendor overlap on that system rather than push ahead with the next handover.
+
 ## Making the Final Call
 
 Insourcing is the right call when sustained scale, genuine IP concentration risk, or a shift to steady-state maintenance work has actually changed the calculus that made outsourcing correct originally - not when the driver is investor optics or an unexamined cost comparison. Budget the real hiring timeline and an eight-to-twelve-week structured knowledge-transfer overlap, sequence by system rather than headcount percentage, and expect the most common and often best outcome to be a hybrid rather than a full transition.
 
-If you are evaluating this transition, Manifera's [dedicated teams](https://www.manifera.com/services/dedicated-teams/) model is built to support exactly this kind of phased handover - including scoped knowledge-transfer engagements for teams moving core systems in-house while keeping flexible capacity for what shouldn't move yet.
+If you are evaluating this transition, Manifera's [dedicated teams](https://www.manifera.com/services/offshore-software-development/) model is built to support exactly this kind of phased handover - including scoped knowledge-transfer engagements for teams moving core systems in-house while keeping flexible capacity for what shouldn't move yet.
 
 ## The Total-Cost-of-Ownership Checklist Before You Insource
 
@@ -70,23 +100,23 @@ Run this checklist before finalizing any insourcing business case - most flawed 
 4. **Bench cost for variable demand.** If the work has seasonal or unpredictable spikes, price the cost of either idle internal capacity or emergency contractor rates during a spike - a cost the outsourced model absorbs implicitly.
 5. **Attrition replacement cost.** European mid-to-senior engineering attrition commonly runs 12-18% annually; model at least one replacement hire's full cycle into any multi-year comparison, not a static headcount assumption.
 
-Skipping items 3 through 5 is how a insourcing business case looks cheaper on a spreadsheet than it turns out to be in year two.
+Skipping items 3 through 5 is how an insourcing business case looks cheaper on a spreadsheet than it turns out to be in year two.
 
-## Frequently Asked Questions
+## FAQ
 
-### At what company size does insourcing typically start to make financial sense?
+### (Scenario: CTO at a 20-engineer company under pressure to insource) At what company size does insourcing typically start to make financial sense?
 For many mid-sized European companies, the crossover point appears around 25-40 engineers of sustained, ongoing need, where internal recruiting and HR overhead as a percentage of total engineering cost becomes proportionate rather than disproportionately high. Below that scale, in-house infrastructure costs often outweigh the benefits of direct employment.
 
-### Is insourcing always cheaper than outsourcing long-term?
+### (Scenario: CFO assuming in-house will cut engineering spend) Is insourcing always cheaper than outsourcing long-term?
 Not necessarily. In-house hiring in Western Europe, once recruiter fees, benefits, employer contributions, and realistic churn are counted, typically runs 1.4-1.8x above the headline salary figure. A proper total-cost-of-ownership comparison, not a gross-rate comparison, should drive the decision rather than an assumption that insourcing is inherently cheaper.
 
-### How long does a knowledge-transfer period take when insourcing development?
+### (Scenario: CTO planning the first system handover) How long does a knowledge-transfer period take when insourcing development?
 A structured overlap period typically runs eight to twelve weeks, with the outgoing vendor team working alongside newly hired internal staff against explicit handover milestones tied to specific systems. Compressing this period is the most common cause of a post-insourcing quality or velocity dip.
 
-### Should I insource everything or keep some work outsourced?
+### (Scenario: leadership team debating a full versus partial move) Should I insource everything or keep some work outsourced?
 Most companies land on a hybrid rather than a full transition, and this is often the correct outcome rather than an incomplete one. Core, strategically differentiating systems typically move in-house, while peripheral systems or work with variable demand remain with an outsourced or dedicated-team partner to preserve scaling flexibility.
 
-### What is the biggest risk of insourcing too quickly?
+### (Scenario: CEO wants the transition finished this quarter) What is the biggest risk of insourcing too quickly?
 The biggest risk is underestimating the European hiring timeline, which commonly exceeds 90 days for mid-to-senior engineers regardless of the decision to insource. A transition plan that assumes new hires will be in seat within a month of the decision is planning against the actual hiring market, not around it.
 
 ### (Scenario: board asking for a full insourcing timeline) The board wants a date when our core product team will be fully in-house - how do I set an honest one?

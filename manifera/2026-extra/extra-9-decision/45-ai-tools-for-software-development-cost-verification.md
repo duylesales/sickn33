@@ -34,6 +34,8 @@ A vendor billing you a flat "AI tooling fee" without breaking out which category
 
 To give you a concrete reference point, current publicly available pricing for the most common categories looks roughly like this per developer per month: AI coding assistant subscriptions typically run €15-€35 per seat; API-based LLM usage for a moderately active developer using AI assistance throughout the day typically totals €30-€80 depending on the model tier and call volume; and any project-specific fine-tuning or vector database infrastructure is usually a shared cost across the whole team rather than a per-seat cost, often landing between €200-€600 per month total for a mid-sized project, regardless of team size.
 
+**AI tooling cost reference ranges and reasonable markups:**
+
 | Cost Category | Typical Vendor Cost (per developer/month) | Reasonable Markup Range |
 |---|---|---|
 | AI coding assistant seat license | €15 - €35 | 0-15% (often passed through at cost) |
@@ -51,7 +53,7 @@ The clearest way to test this in a final contract negotiation is to ask what spe
 
 ## ROI Calculation: Does the Productivity Gain Justify the Line Item
 
-Beyond verifying that the cost itself is reasonable, it's worth running a simple ROI check on whether AI tooling is delivering enough measurable productivity gain to justify the expense at all, since not every project benefits equally. Independent studies on AI coding assistant adoption have generally found productivity gains in the range of 15-35% on well-scoped, boilerplate-heavy tasks, with much smaller gains on complex, novel architecture work where the tools have less useful pattern-matching to draw on. If your project is heavily weighted toward the latter, a vendor charging premium AI tooling fees across the entire team, rather than scoping the tooling to the specific developers and task types where it actually helps, may be selling you a productivity story that doesn't match your project's actual composition of work.
+Beyond verifying that the cost itself is reasonable, it's worth running a simple ROI check on whether AI tooling is delivering enough measurable productivity gain to justify the expense at all, since not every project benefits equally. Reported productivity gains from AI coding assistants vary widely by study, team and task type; a range of 15-35% on well-scoped, boilerplate-heavy tasks is a commonly used planning assumption, with much smaller gains on complex, novel architecture work where the tools have less useful pattern-matching to draw on. If your project is heavily weighted toward the latter, a vendor charging premium AI tooling fees across the entire team, rather than scoping the tooling to the specific developers and task types where it actually helps, may be selling you a productivity story that doesn't match your project's actual composition of work.
 
 A straightforward way to validate this: ask your vendor for sprint velocity or cycle-time data from before and after AI tool adoption on a comparable project, ideally one similar in complexity to yours. A vendor with genuine confidence in the tools' value will have this data and will share it without hesitation, since it directly supports their pricing argument.
 
@@ -102,25 +104,25 @@ When an AI tooling invoice actually lands, run it against six checks before appr
 5. **Model tier matches what was scoped.** Confirm the LLM tier billed matches the tier named in your contract, not a quietly downgraded cheaper model.
 6. **Quarter-over-quarter trend is flat or explained.** An unexplained month-over-month increase above 10% with no corresponding usage or scope change warrants a direct question before payment.
 
-## Frequently Asked Questions
+## FAQ
 
-### How much should AI coding assistant tools cost per developer per month?
+### (Scenario: VP of Engineering checking a proposed AI tooling line item) How much should AI coding assistant tools cost per developer per month?
 
 Seat-based AI coding assistant subscriptions typically cost €15-€35 per developer per month at current market pricing, with additional usage-based API costs for heavier LLM use ranging from €30-€80 depending on model tier and call volume. Any vendor charging significantly above this without an itemized explanation is worth questioning directly.
 
-### What markup is reasonable for a vendor to charge on AI development tools?
+### (Scenario: vendor adds a management fee on top of tool costs) What markup is reasonable for a vendor to charge on AI development tools?
 
 A markup in the 10-25% range is generally reasonable when it corresponds to real managed activity, such as usage monitoring, license administration, or security review of AI-generated output. A markup applied as a flat fee with no corresponding service or itemized justification is harder to defend and worth raising in contract negotiations.
 
-### How do I know if AI coding tools are actually improving my team's productivity?
+### (Scenario: leadership asks whether the AI tooling spend is paying off) How do I know if AI coding tools are actually improving my team's productivity?
 
-Ask your vendor for sprint velocity or cycle-time data from before and after AI tool adoption on a comparable project, and compare it against independent research showing typical productivity gains of 15-35% on boilerplate-heavy tasks with smaller gains on complex architectural work. If your project skews toward complex, novel work, expect more modest returns than the headline figures suggest.
+Ask your vendor for sprint velocity or cycle-time data from before and after AI tool adoption on a comparable project, and compare it against the commonly used planning range of 15-35% on boilerplate-heavy tasks, with smaller gains on complex architectural work. If your project skews toward complex, novel work, expect more modest returns than the headline figures suggest.
 
-### Is it cheaper to manage AI development tools in-house or through a vendor?
+### (Scenario: mid-sized engineering team weighing internal tool management) Is it cheaper to manage AI development tools in-house or through a vendor?
 
 For most mid-sized engineering organizations, vendor-managed AI tooling is more cost-efficient once you account for the internal platform engineering effort required to monitor usage, manage security review, and keep pace with a fast-changing tool landscape. Very large engineering organizations with sufficient scale may find internal management more cost-effective.
 
-### What should be included in a vendor contract to ensure AI tooling billing transparency?
+### (Scenario: final contract review before signing) What should be included in a vendor contract to ensure AI tooling billing transparency?
 
 The contract should itemize AI tooling costs by category - seat licenses, API usage, and shared infrastructure - separately from day rates, name the specific activities any markup covers, and include a right to periodic billing review. Without this itemization, a bundled AI tooling fee is difficult to verify or renegotiate later.
 

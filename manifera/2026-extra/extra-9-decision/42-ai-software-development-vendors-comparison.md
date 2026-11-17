@@ -74,6 +74,8 @@ If a proposal on your desk right now is missing two or more of these four elemen
 
 ## A Practical Scoring Table for Your Shortlist
 
+**AI vendor archetypes scored on production evidence:**
+
 | Evaluation Criterion | Boutique AI Studio | Enterprise SI | Dedicated Offshore Partner |
 |---|---|---|---|
 | Production deployment references (12+ months) | Often limited | Available, but team may have changed | Verify explicitly per vendor |
@@ -82,7 +84,7 @@ If a proposal on your desk right now is missing two or more of these four elemen
 | Full lifecycle cost transparency | Often build-only | Usually available, priced high | Ask for 12-month TCO estimate |
 | Typical cost efficiency | Low to medium | Low | High, if quality is verified |
 
-Use this table as a starting point in your own vendor scorecard, filling in each cell with what you actually learn from reference calls rather than what the sales deck claims. As analysts such as Gartner have pointed out in their coverage of AI vendor risk, the gap between a vendor's marketed capability and its delivered capability is now one of the single largest sources of failed enterprise AI initiatives - larger, in most documented cases, than the underlying technical difficulty of the AI itself.
+Use this table as a starting point in your own vendor scorecard, filling in each cell with what you actually learn from reference calls rather than what the sales deck claims. In practice, the gap between a vendor's marketed capability and its delivered capability is one of the most common reasons enterprise AI initiatives stall, and it is usually harder to see than the underlying technical difficulty of the AI itself.
 
 ## The Reference Call Script That Gets Past the Rehearsed Answer
 
@@ -100,25 +102,25 @@ Finally, resist the temptation to compress this verification step because a dead
 
 If your shortlist still has gaps after this exercise, or you want a second opinion on a proposal you've already received, get a custom team proposal within 48 hours from Manifera's delivery team, including named seniority levels and a 12-month cost estimate you can compare directly against what's already on your desk.
 
-## Frequently Asked Questions
+## FAQ
 
-### What questions should I ask AI software development vendors before signing a contract?
+### (Scenario: IT Manager preparing final-round vendor questions) What questions should I ask AI software development vendors before signing a contract?
 
 Ask for a reference client whose AI system has been in production for at least twelve months, the specific named team members who will work on your project with their seniority levels, their standard approach to model monitoring and retraining, and a 12-month total cost of ownership estimate rather than just an initial build quote. Vendors who hedge on any of these are showing you a gap worth investigating further before signing.
 
-### How do I verify an AI vendor's case studies are real production deployments, not pilots?
+### (Scenario: shortlisted vendor's flagship case study looks too polished) How do I verify an AI vendor's case studies are real production deployments, not pilots?
 
 Ask directly whether the referenced project is still in active production use today, request a reference contact who can speak specifically to post-launch performance, and ask what has changed about the system since the original launch. A genuine production deployment will have a maintenance and iteration history the vendor can describe in detail; a stalled pilot usually cannot.
 
-### Is a boutique AI studio or a larger systems integrator better for production AI work?
+### (Scenario: shortlist split between a boutique studio and a large SI) Is a boutique AI studio or a larger systems integrator better for production AI work?
 
 Neither is inherently better - boutique studios tend to excel at model performance but sometimes lack production-hardening discipline, while large systems integrators bring process maturity but often at higher cost and with less senior staffing than their sales process suggested. The deciding factor should be which specific gap matters most for your project and how well each vendor answers the verification questions in this guide.
 
-### How much does ongoing AI model maintenance typically add to the initial development cost?
+### (Scenario: finance asks for the full AI budget, not just the build) How much does ongoing AI model maintenance typically add to the initial development cost?
 
 Ongoing maintenance, monitoring, and periodic retraining for a production AI system commonly add 20-40% of the initial build cost annually, depending on how frequently the underlying data changes and how business-critical the model's accuracy is. Any vendor proposal that doesn't address this cost explicitly should be treated as incomplete, not just optimistic.
 
-### What is the biggest mistake IT Managers make when comparing AI development vendors?
+### (Scenario: IT Manager about to sign after a strong demo) What is the biggest mistake IT Managers make when comparing AI development vendors?
 
 The most common mistake is weighting the demo and sales presentation too heavily relative to verifiable production evidence, since a polished demo requires far less organizational maturity than a system that stays healthy in production for a year or more. The second most common mistake is not getting the actual delivery team's names and seniority levels in writing before signing, which allows a vendor to substitute a less experienced team after the contract is in place.
 

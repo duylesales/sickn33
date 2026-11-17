@@ -69,6 +69,44 @@ Since prototyping time doesn't predict production time, it's worth knowing which
 
 Knowing this ranking doesn't replace an actual audit, but it does let you make a reasonable guess about which end of a timeline range your specific product likely falls toward before that audit happens.
 
+## The Five Drivers at a Glance
+
+| Driver | Typical effect on hardening time | What to check in your prototype |
+| --- | --- | --- |
+| Regulated or sensitive data | Largest | Does it store health, financial or identity data, and where is it hosted? |
+| External integrations | Medium to large, per integration | How many third-party APIs does it call, and how well are they documented? |
+| Multi-tenant or multi-role access | Medium | Can one customer, practice or role ever see another's records? |
+| Direct payment handling | Medium | Hosted checkout through Mollie or Stripe, or card details inside your own app? |
+| Prototype code quality | Smallest | Is the code organised into clear parts, or grown into a few very large files? |
+
+Read the table from the top down. A founder who answers "no" to the first four questions is usually looking at the short end of the one-to-three-week hardening range, whatever the state of the code. A founder who answers "yes" to the first two is usually looking at the long end, even with a beautifully built prototype.
+
+## Three Prototypes, Three Different Production Phases
+
+The pattern is easier to see side by side. The first two rows below are typical scopes rather than named clients; the third is Iris's case, described in full further down.
+
+| Prototype | Prototype phase | What the audit found | Production hardening |
+| --- | --- | --- | --- |
+| Internal stock tracker for one shop | About two weeks | One user role, no payments, no personal data beyond staff names | 3-4 business days |
+| Booking app for a group of yoga studios | Five days | Customer accounts per studio, Mollie hosted checkout, email confirmations | About 8 business days |
+| TandAfspraak, dental appointment scheduling | Four days | Patient scheduling data, two practice management APIs, SMS opt-out rules | 17 business days |
+
+The slowest prototype in the table had the fastest production phase, and the fastest prototype had the slowest. That is not a coincidence or a quirk of these examples. The stock tracker took longer to build because its owner kept changing what the screens should show, which costs nothing to harden later. TandAfspraak was fast to build because Iris knew exactly what she wanted, but what she wanted involved patient data and two external systems, and those are exactly the factors that set the length of phase three.
+
+## How to Shorten the Production Phase Without Cutting Corners
+
+The production phase cannot be skipped, but it can be made shorter and more predictable with a few decisions that founders control directly.
+
+**Scope integrations into phases.** If an integration is useful but not essential for the first paying customers, launch without it and add it once the core product is live. Every integration removed from the first release removes its error handling, authentication and failure-mode testing from the critical path.
+
+**Use hosted payment pages.** Letting Mollie or Stripe host the checkout keeps card details out of your application entirely, which keeps the compliance work small. Building a custom card form inside your own app is one of the most reliable ways to lengthen this phase.
+
+**Decide where data lives before the audit.** Knowing that customer data must stay in an EU region, and which services are allowed to process it, avoids a migration halfway through hardening.
+
+**Prepare access in advance.** Hardening stalls when engineers wait days for access to the code repository, the database, the hosting account or a supplier's API documentation. A short list of accounts and owners, ready on day one, routinely saves several days.
+
+**Freeze new features during hardening.** Every new feature added while hardening is underway needs the same security and reliability work as everything else, and pushes the launch date out by more than the feature itself.
+
 ## Why Founders Consistently Misjudge This Timeline
 
 The most common error isn't underestimating any single phase - it's assuming phase three's length correlates with phase one's, since both phases feel, subjectively, like "building the product" from the founder's perspective. In reality, a founder who prototyped quickly and confidently often has no intuition for how much hardening their specific product needs, because the variables that determine hardening time (data sensitivity, external dependencies, regulatory exposure) are largely invisible during prototyping, when the focus is entirely on whether the feature works as intended.

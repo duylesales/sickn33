@@ -93,25 +93,34 @@ Boards fund decisions they can see the math behind, so build the comparison as a
 
 Add a fourth row your CFO will specifically ask about: flexibility cost, meaning what it costs to resize the team if the roadmap shifts. In-house downsizing carries severance and notice-period obligations that vary by jurisdiction but commonly add weeks of cost and legal overhead per departure; a dedicated team's scaling clause typically executes in two to four weeks with no severance exposure at all. Presented as a table rather than a verbal argument, this format resolves the build-versus-buy debate in a single board meeting far more often than another round of anecdotal experience from a previous company.
 
-## Frequently Asked Questions
+**The board slide: in-house mobile team vs. dedicated agency team, 12 months:**
 
-### Are the best mobile app development agencies actually cheaper than hiring in-house?
+| Line | In-house mobile team | Dedicated agency team |
+| --- | --- | --- |
+| 12-month fully loaded cost | €450,000-€650,000 for a five-to-six-person squad | 40-60% lower for comparable output |
+| Time to first sprint | 3-6 months of recruiting before the first commit | 2-4 weeks from contract signature |
+| Cost of a mis-hire | 2-3 months of undetected drag plus a new recruiting cycle | Bench rotation within days, absorbed by the vendor |
+| Cost of resizing the team | Severance and notice periods, weeks per departure | Scaling clause, 2-4 weeks, no severance exposure |
+
+## FAQ
+
+### (Scenario: A CEO comparing an agency quote with a hiring plan the CFO has flagged as expensive) Are the best mobile app development agencies actually cheaper than hiring in-house?
 
 For most 12-24 month engagements, yes - typically 40-60% below the fully loaded cost of an equivalent in-house team once salary, benefits, recruiting fees, and idle capacity are accounted for. The gap narrows only for multi-year, single-product companies planning to carry a large permanent engineering team regardless.
 
-### How much faster can an agency get a mobile app project started compared to hiring in-house?
+### (Scenario: A CEO whose board expects a launch next quarter) How much faster can an agency get a mobile app project started compared to hiring in-house?
 
 An established agency can typically move from signed contract to first sprint in 2-4 weeks, since the team already exists and works together. Recruiting an equivalent in-house team from scratch usually takes 3-6 months before any development work begins.
 
-### Does using a mobile app development agency mean giving up quality control?
+### (Scenario: A CEO burned by a previous agency engagement) Does using a mobile app development agency mean giving up quality control?
 
 Not if the agency runs a rigorous Agile process with code review discipline and defined QA coverage. Quality depends on process rigor and accountability structure, not physical proximity to your office.
 
-### When does building an in-house mobile app team make more sense than using an agency?
+### (Scenario: A CEO whose mobile app is the company's single core product) When does building an in-house mobile app team make more sense than using an agency?
 
 In-house ownership makes more sense when the app is your company's permanent core product requiring a large team indefinitely, when deep specialized domain expertise needs continuous internal exposure, or when funding is explicitly earmarked for a long-term internal engineering organization.
 
-### Can I scale a dedicated development team up or down the way I could with in-house hiring?
+### (Scenario: A CEO planning a heavy release push followed by a quieter maintenance period) Can I scale a dedicated development team up or down the way I could with in-house hiring?
 
 Yes, and typically faster. A dedicated team engagement can usually scale up ahead of a major release or scale down afterward within a few weeks, without the legal and morale overhead of layoffs that come with resizing an in-house team.
 

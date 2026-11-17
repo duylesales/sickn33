@@ -58,6 +58,21 @@ Contract transition costs also belong in a complete model: if switching vendors 
 
 A defensible total-cost-of-ownership model for an in-house hire, per engineer per year, should sum: gross salary, employer social contributions (20-30% of salary), recruiting and agency fees amortized over expected tenure (18-25% of first-year salary, divided by expected tenure in years), benefits and overhead (10-15% of salary), ramp-time cost (roughly one month of fully-loaded cost, non-recurring in year one), and an attrition-adjusted re-hiring reserve based on your realistic tenure assumption for the role and market. Run this same structure against the outsourced dedicated team's fully-loaded monthly rate, including its own onboarding period, and you have a comparison built on comparable, complete figures rather than a gross-salary illusion on one side and an all-inclusive rate on the other.
 
+**The in-house cost calculator, line by line:**
+
+| Cost line | Typical range | How to calculate | Recurs every year? |
+|---|---|---|---|
+| Gross salary | Market rate for role and seniority | Offer letter figure | Yes |
+| Employer social contributions | 20-30% of salary | Gross salary × local employer rate | Yes |
+| Recruiting and agency fees | 18-25% of first-year salary | Fee ÷ expected tenure in years | Yes, while tenure is short |
+| Benefits, equipment and overhead | 10-15% of salary | Gross salary × overhead rate | Yes |
+| Ramp-time cost | About 1 month of fully-loaded cost | Monthly fully-loaded cost × productivity gap × ramp months | Year one, then again after every departure |
+| Attrition re-hiring reserve | 15-22% annual attrition | Annual attrition × (recruiting fee + ramp cost) | Yes |
+| Management overhead | Share of a manager's time | Manager cost × share of time spent on this engineer | Yes |
+| **Total fully-loaded cost** | **1.4x-1.8x gross salary** | **Sum of all lines** | - |
+
+Two lines in that table deserve a note on method. The management overhead line is the one most finance teams leave blank because it requires an estimate rather than a pulled figure; a reasonable starting point is to ask the engineering manager how many hours per week go to one-on-ones, reviews and hiring panels per direct report, and price those hours at the manager's own fully-loaded rate. The attrition reserve line is the one that changes most between markets, so use your own HR data for the specific role family rather than a generic industry figure whenever that data exists.
+
 Manifera builds this exact comparison for CFOs evaluating a dedicated team engagement, using real client data from 160+ delivered projects to show where the fully-loaded numbers typically land for comparable roles and seniority levels. You can request a detailed cost breakdown specific to your team composition and see how the model applies to your own hiring plan through our [dedicated development team](https://www.manifera.com/services/offshore-software-development/) service, or review how engagements scale over time in our [portfolio](https://www.manifera.com/portfolio/).
 
 ## Making the Case to Your Board With Real Numbers
@@ -86,21 +101,40 @@ Put real numbers against the framework. A senior backend engineer hired in the N
 
 Run the same engineer as part of a five-person dedicated offshore team at a blended $4,300/month fully-loaded rate: roughly $258,000/year for the team of five (€237,000), or €47,400 per engineer - already inclusive of the vendor's own recruiting, benefits, and management overhead, with no separate attrition reserve needed since backfill is contractually the vendor's responsibility. Set side by side, the €133,400 in-house figure and the €47,400 per-head offshore figure are the numbers a CFO should actually be comparing, not €80,000 against a headline monthly rate - the gap the naive comparison misses is nearly €86,000 per engineer per year.
 
-## Frequently Asked Questions
+**Worked example: one senior engineer, Netherlands, year one:**
 
-### What is the real total cost of an in-house software engineer versus gross salary?
+| Cost line | In-house hire | Offshore dedicated team (per engineer) |
+|---|---|---|
+| Gross salary | €80,000 | Included in rate |
+| Employer social contributions (25%) | €20,000 | Included in rate |
+| Recruiting fees (22%, amortized over 16 months) | €13,200 | Included in rate |
+| Benefits and overhead (12%) | €9,600 | Included in rate |
+| Ramp-time cost (1 month fully-loaded) | €10,600 | Shorter onboarding, model separately |
+| Attrition backfill | Your cost | Vendor's contractual responsibility |
+| **Total year one** | **€133,400** | **€47,400** |
+| **Multiplier vs. gross salary** | **1.67x** | - |
+
+## Year Two: Why the Gap Does Not Close on Its Own
+
+A common objection from finance teams is that the in-house figure is inflated by one-off year-one costs, and that the comparison will look very different once the hire is settled. Part of that is true: the ramp-time cost for the original hire does not repeat in year two. But with a realistic 16-month tenure, the attrition reserve replaces it almost exactly. Steady-state cost for the same engineer is roughly €80,000 salary, €20,000 contributions and €9,600 overhead, plus a re-hiring reserve of about €21,000 (roughly 0.75 replacement cycles per year, each costing a new recruiting fee and a new ramp period). That lands near €130,800, or about 1.64x gross salary - barely lower than year one.
+
+The offshore side changes less, because the vendor carries recruiting, ramp and backfill inside its own rate. The figures to watch there are contractual rather than operational: any annual rate indexation clause, the notice period for scaling the team down, and what the contract says about replacing an engineer who leaves. A CFO presenting a multi-year view should model both columns for at least three years, so the board sees that the cost gap is structural rather than a year-one artifact.
+
+## FAQ
+
+### (Scenario: CFO reviewing a first-draft hiring budget) What is the real total cost of an in-house software engineer versus gross salary?
 When employer contributions, recruiting fees, benefits, ramp-time, and an attrition-adjusted re-hiring reserve are all included, the real annualized cost typically runs 1.4x to 1.8x the gross salary figure most spreadsheets start with.
 
-### Why does attrition matter so much in a cost comparison?
+### (Scenario: CFO whose last two engineering hires left within 18 months) Why does attrition matter so much in a cost comparison?
 Because when an engineer departs after a typical 14-18 month tenure in competitive EU markets, the company has usually not yet recouped the recruiting, onboarding, and ramp-time investment, and must repeat the full cycle - a cost rarely modeled explicitly in a standard hiring budget.
 
-### How long does it take a new in-house hire to become fully productive?
+### (Scenario: CFO planning a senior hire into a legacy codebase) How long does it take a new in-house hire to become fully productive?
 Meaningful productivity ramp typically takes eight to sixteen weeks depending on role seniority and codebase complexity, representing roughly one additional month of fully-loaded cost that is almost never itemized separately in a hiring budget.
 
-### Does an outsourced team's monthly rate already include overhead costs?
+### (Scenario: CFO comparing a vendor quote against internal salary bands) Does an outsourced team's monthly rate already include overhead costs?
 Typically yes - a dedicated team's rate usually already folds in the vendor's own recruiting, benefits, and management overhead, which is why it should be compared against the fully-loaded in-house figure rather than gross salary alone for a fair comparison.
 
-### Is in-house hiring ever the right call despite the higher total cost?
+### (Scenario: CTO arguing to keep core IP work in-house) Is in-house hiring ever the right call despite the higher total cost?
 Yes, particularly for roles close to core IP or requiring deep, hard-to-transfer institutional context, where long-term ownership and control outweigh the cost differential. The goal of a complete cost model is an honest comparison, not a predetermined conclusion favoring either option.
 
 ### (Scenario: CFO building a board deck comparing five in-house hires against a dedicated offshore team) How do I scale this per-engineer model up to a full team comparison for a board presentation?

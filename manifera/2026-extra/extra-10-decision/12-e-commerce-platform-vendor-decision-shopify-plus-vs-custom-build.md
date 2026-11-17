@@ -30,6 +30,18 @@ Shopify Plus's published pricing understates the real cost at scale, and a custo
 
 A custom build's total cost of ownership is dominated not by the initial build - commonly €150,000-€400,000 for a full-featured custom commerce platform with a modern headless architecture - but by ongoing engineering headcount required to maintain, secure, and evolve it indefinitely, since a custom platform has no vendor absorbing platform-level security patching, PCI compliance maintenance, or infrastructure scaling the way Shopify does. Budget at minimum two to three dedicated engineers on an ongoing basis for a custom commerce platform at real transaction volume, which at fully loaded European engineering cost typically runs €300,000-€500,000 annually - a number that makes Shopify Plus's all-in cost look reasonable unless the custom build unlocks revenue or margin gains that genuinely exceed that gap.
 
+**Five-year cost comparison, using the ranges above:**
+
+| Cost line | Shopify Plus | Custom build |
+|---|---|---|
+| Initial build or setup | Covered by platform and agency fees | €150,000-€400,000 |
+| Platform fees, apps and agency support (per year) | €80,000-€200,000 | - |
+| Dedicated engineering team, 2-3 engineers (per year) | Not needed for platform upkeep | €300,000-€500,000 |
+| PCI compliance, security patching, scaling | Handled by the platform | Your team's responsibility |
+| **Five-year total** | **€400,000-€1,000,000** | **€1,650,000-€2,900,000** |
+
+The gap in that table is the number a custom build has to earn back. If the custom platform cannot plausibly generate more than €1,000,000-€2,000,000 in additional margin over five years, through higher conversion, a pricing model Shopify cannot support, or savings elsewhere in the stack, the cost case for custom does not hold on its own.
+
 ## Where Shopify Plus Genuinely Wins
 
 Shopify Plus wins decisively on time-to-market and on offloading commerce-specific compliance burden. PCI DSS compliance for payment processing, uptime during high-traffic events like Black Friday, and the deep app ecosystem covering nearly every common commerce need (subscriptions, loyalty, personalization, tax calculation across EU VAT jurisdictions) are handled by a platform that has already solved these problems at a scale almost no individual merchant's engineering team could match cost-effectively. For a Head of Product whose team needs to ship new campaign landing pages, promotional flows, and merchandising changes weekly, Shopify's app and theme ecosystem lets non-engineering staff execute a meaningful share of this work directly, which a custom build almost never replicates without significant additional internal tooling investment.
@@ -48,9 +60,29 @@ Between full Shopify Plus and a fully custom build sits headless commerce: using
 
 Headless is not free of trade-offs: it requires real frontend engineering investment and forfeits some of Shopify's out-of-box theme and app convenience on the customer-facing side, and it still carries platform fees for the backend. But for a Head of Product whose core complaint about Shopify Plus is frontend rigidity rather than checkout logic or backend compliance overhead, headless frequently resolves the actual pain point at a fraction of a fully custom build's ongoing engineering burden.
 
+**Shopify Plus vs. headless vs. custom build at a glance:**
+
+| Factor | Shopify Plus | Headless on Shopify | Custom build |
+|---|---|---|---|
+| Time to market | Fastest | Medium | Slowest |
+| Frontend flexibility | Limited to themes and apps | Full | Full |
+| Checkout control | Shopify Functions and Checkout UI extensions | Same as Shopify Plus | Full |
+| PCI and platform compliance | Handled by Shopify | Handled by Shopify | Your team |
+| Marketing self-service | High | Low on the frontend unless you build tooling | Low unless you build tooling |
+| Ongoing engineering need | Low | Frontend team | 2-3 engineers minimum |
+| Reversibility if the bet is wrong | High | Medium | Low |
+
 ## Migration Risk and Reversibility
 
 Weigh reversibility explicitly, because the two paths are not symmetric in how expensive a wrong choice is to unwind. Migrating away from Shopify Plus, while disruptive, follows well-trodden paths with established migration tooling and a market of agencies experienced in the transition. Migrating away from a custom build carries much higher risk, because the replacement decision inherits years of proprietary business logic that has to be re-implemented or reverse-engineered, not just data migrated - a custom platform that turns out to be the wrong bet is a substantially harder and more expensive mistake to correct than a Shopify Plus platform that turns out to be too limiting.
+
+## Running the Technical Spike Before You Commit
+
+The single most useful step before choosing custom is a time-boxed technical spike against Shopify's extensibility, and most teams skip it because the decision already feels made. Keep it to one or two weeks and give it a clear scope: pick the three requirements that are driving the custom conversation, usually bundling logic, a marketplace or split-payment model, and a pricing rule tied to proprietary data, and try to build each of them with Shopify Functions and Checkout UI extensions on a development store.
+
+Define pass and fail before the spike starts, not after. A requirement passes if it works end to end in checkout with realistic data and acceptable performance; it fails if it needs workarounds that would break on the next platform update or that customer service could not support. Staff the spike with one engineer who knows Shopify's extensibility well and one who knows your business logic, so the result is not dismissed as either a platform sales exercise or an internal team defending its preference.
+
+The output should be a one-page memo per requirement: what was built, what worked, what did not, and what the gap would cost to close with headless or custom. That memo turns a debate about control into a decision about specific capabilities, and it is the document a Head of Product can take into a roadmap review with confidence. If all three requirements pass, the custom conversation is usually over. If one or two fail, headless is often enough. Only when the core checkout logic itself fails does a full custom build become the clear answer.
 
 ## Making the Final Call
 
@@ -68,21 +100,21 @@ Score your situation against these five signals rather than debating the choice 
 4. **Existing integration depth.** A proprietary ERP or pricing engine already deeply embedded in your stack pulls toward headless or custom, since Shopify's app-ecosystem integration patterns assume a simpler surrounding stack.
 5. **Engineering headcount committable indefinitely.** Custom only pencils out if 2-3 engineers can be dedicated to the platform on an ongoing basis, not just for the initial build - a team that can't commit this is choosing custom without the resources to sustain it.
 
-## Frequently Asked Questions
+## FAQ
 
-### How much does Shopify Plus actually cost at scale?
+### (Scenario: Head of Product preparing next year's platform budget) How much does Shopify Plus actually cost at scale?
 Realistic all-in cost for a substantial mid-market merchant, including platform fees, stacked app subscriptions, and partner agency support, typically runs €80,000-€200,000 annually before any custom development layered on top. This is significantly higher than the headline platform fee alone suggests once a mature app stack is factored in.
 
-### Is a custom e-commerce build cheaper than Shopify Plus long-term?
+### (Scenario: CFO asking whether owning the platform saves money) Is a custom e-commerce build cheaper than Shopify Plus long-term?
 Rarely, once ongoing maintenance is counted honestly. A custom build typically requires two to three dedicated engineers indefinitely, running €300,000-€500,000 annually at fully loaded European engineering cost, in addition to the initial €150,000-€400,000 build. This usually exceeds Shopify Plus's all-in cost unless the custom platform unlocks revenue or margin gains that clearly outweigh the gap.
 
-### Can Shopify Plus handle complex checkout customization?
+### (Scenario: product team with non-standard checkout requirements) Can Shopify Plus handle complex checkout customization?
 Shopify Plus has substantially expanded checkout customization through Shopify Functions and Checkout UI extensions, closing much of the gap that historically justified a custom build. Verify specific requirements against these tools before assuming a custom checkout is necessary, since the bar for genuinely needing custom checkout logic is now considerably higher than it used to be.
 
-### What is headless commerce and when does it make sense?
+### (Scenario: brand team frustrated by theme limitations) What is headless commerce and when does it make sense?
 Headless commerce uses a platform like Shopify as the backend engine for checkout, inventory, and payment processing while a fully custom frontend is built on top via an API. It makes sense when the core complaint about a platform like Shopify Plus is frontend rigidity rather than checkout logic or backend compliance overhead, since it resolves that pain point without the maintenance burden of a fully custom platform.
 
-### How risky is it to migrate away from a custom-built e-commerce platform later?
+### (Scenario: leadership weighing the downside of a custom bet) How risky is it to migrate away from a custom-built e-commerce platform later?
 Significantly riskier than migrating away from Shopify Plus. A custom platform's replacement decision inherits years of proprietary business logic that must be reverse-engineered or rebuilt, not just migrated, making a wrong custom-build bet substantially more expensive to correct than choosing a platform that later proves too limiting.
 
 ### (Scenario: marketing wants weekly campaign flexibility, engineering wants full control) Our marketing team wants Shopify's app ecosystem for fast campaigns, but engineering is pushing for a custom build for architectural control - how do we resolve this without picking a side?

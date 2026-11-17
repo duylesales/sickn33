@@ -13,11 +13,11 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
   "@type": "Article",
   "headline": "Base44-App naar Productie: Eigenaarschap, Data en Lancering",
   "description": "Base44 bouwt binnen enkele minuten werkende applicaties met een beheerde backend, maar de stap naar productie vraagt duidelijke keuzes over eigenaarschap, dataportabiliteit, toegangscontrole, betalingen, compliance en exit-opties. Deze gids legt uit wanneer u op Base44 lanceert, wanneer u verhuist en hoe LaunchStudio beide paden tegen een vaste prijs realiseert.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2028-04-20",
   "inLanguage": "nl-NL",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/base44-app-to-production-ownership-data-and-launch" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/base44-app-naar-productie-eigenaarschap-data-en-lancering/" },
   "citation": [
     { "@type": "CreativeWork", "name": "Base44 documentation", "url": "https://docs.base44.com/" },
     { "@type": "CreativeWork", "name": "GDPR Article 20: Right to data portability", "url": "https://gdpr-info.eu/art-20-gdpr/" },
@@ -137,7 +137,7 @@ Oprichters vragen ons geregeld wanneer de beslissing over eigenaarschap uiterlij
 
 Voor **Traject A** valt een launch review en het verstevigen van een Base44-app doorgaans binnen het **Launch Ready**-pakket (€800 - €3.500): permissies, data-afhandeling, back-ups, domeinkoppeling, juridische checklist en 48 uur nazorg na livegang.
 
-Voor **Traject B** valt een volledige migratie naar Supabase met eigen hosting binnen **Launch & Grow** (€2.500 - €7.500 plus €49 per maand), inclusief betalingen, managed hosting, back-ups, transactionele e-mail en prioritaire ondersteuning. Compacte apps met weinig datamodellen zitten aan de onderkant van de bandbreedte; apps met veel gebruikersrollen, bestanden en externe integraties aan de bovenkant. U ontvangt een vaste prijs na een kennismaking van 15 minuten. Onze [prijscalculator](https://launchstudio.eu/nl/#calculator) geeft een betrouwbare eerste schatting.
+Voor **Traject B** valt een volledige migratie naar Supabase met eigen hosting binnen **Launch & Grow** (€2.500 - €7.500 plus €49 per maand), inclusief betalingen, managed hosting, back-ups, transactionele e-mail en prioritaire ondersteuning. Compacte apps met weinig datamodellen zitten aan de onderkant van de bandbreedte; apps met veel gebruikersrollen, bestanden en externe integraties aan de bovenkant. U ontvangt een vaste prijs na een kennismaking van 15 minuten. Onze [prijscalculator](https://launchstudio.eu/#calculator) geeft een betrouwbare eerste schatting.
 
 ## Waarom Oprichters Kiezen Voor LaunchStudio
 
@@ -145,9 +145,9 @@ LaunchStudio wordt ondersteund door Manifera, een softwarebedrijf met 11+ jaar e
 
 Wij hebben geen commercieel belang bij welk platform u kiest. Past Base44 bij uw fase, dan vertellen we dat eerlijk en helpen we u daar veilig live te gaan. Vraagt uw situatie om een eigen stack, dan verzorgen we de migratie zonder dat het gevalideerde product verloren gaat. Zoals CEO Herre Roelevink stelt: de uitdaging is niet langer om ideeën om te zetten in software, maar om de architectuur en security te leveren waarmee die producten volwassen kunnen worden.
 
-Vergelijkt u tevens andere AI-bouwers? Onze gids over [Lovable alternatieven in 2026](https://launchstudio.eu/nl/blog/lovable-alternatives-2026-which-builder-fits-your-next-step) zet de belangrijkste opties overzichtelijk op een rij.
+Vergelijkt u tevens andere AI-bouwers? Onze gids over [no-code versus AI-codebuilders](https://launchstudio.eu/no-code-versus-ai-codebuilders-wat-verandert-er-als-u-de-code-bezit/) legt uit wat er verandert als u de code zelf bezit.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een AI-Native Oprichter in Actie: De Schoonmaak-Inspectieapp Die Zijn Platform Ontgroeide
 
@@ -164,7 +164,7 @@ LaunchStudio bracht elke entity, permissie en automatisering in Schoonscore nauw
 
 **Kosten & Doorlooptijd:** €6.400 (Launch & Grow-pakket: migratie naar Supabase, RLS per organisatie, Mollie-abonnementen, managed hosting en monitoring) - afgerond in 16 werkdagen.
 
-## Veelgestelde Vragen
+## Veelgestelde vragen
 
 ### Kan ik een betaald product lanceren op Base44?
 
@@ -180,7 +180,7 @@ Idealiter slechts eenmalig. Met een doordacht migratieplan blijft de app er exac
 
 ### Waarom is Manifera's achtergrond relevant voor een keuze rondom Base44?
 
-Manifera verhuist al meer dan 11 jaar bedrijfskritische systemen tussen technologieën zonder verlies van data of klantervaring. Die ervaring helpt LaunchStudio om objectief te beoordelen of blijven of verhuizen het beste past, en beide trajecten uit te voeren met enterprisecoureur tegen scherpe oprichterstarieven.
+Manifera verhuist al meer dan 11 jaar bedrijfskritische systemen tussen technologieën zonder verlies van data of klantervaring. Die ervaring helpt LaunchStudio om objectief te beoordelen of blijven of verhuizen het beste past, en beide trajecten uit te voeren met de zorgvuldigheid van enterpriseprojecten, tegen tarieven die passen bij oprichters.
 
 ### Helpt een eigen softwarestack bij de vindbaarheid in Google en AI-zoekmachines?
 
