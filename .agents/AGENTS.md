@@ -20,13 +20,24 @@
 
 ## WordPress Publishing & Easy MCP AI Guidelines (Manifera & LaunchStudio)
 To avoid Web Application Firewall (WAF/Wordfence/ModSecurity) `403 Forbidden` errors and optimize execution speed when publishing or drafting posts:
-- **Strict Ban on `<script>` and `<style>` in Post Content:** NEVER send `<script type="application/ld+json">` or `<style>` blocks in the WordPress REST API post payload. The server firewall treats them as XSS/malicious injection vectors and temporarily blocks requests.
-- **Native Semantic HTML5 for FAQ Accordions:** Format all 5 FAQs using semantic HTML5 elements with inline styles directly on the elements:
+- **Strict Ban on `<script>` in Post Content:** NEVER send `<script type="application/ld+json">` or inline `<script>` tags in the WordPress REST API post payload. The server firewall treats them as XSS injection vectors and blocks requests with 403 Forbidden.
+- **Native Semantic HTML5 for FAQ Accordions:** Format all 5 FAQs using semantic HTML5 elements (`<details><summary>`) styled with the scoped `.faq-accordion` stylesheet (which adds `+` and `−` indicators):
   ```html
+  <style>
+    .faq-accordion { max-width: 100%; margin: 20px auto; font-family: inherit; }
+    .faq-accordion details { border-bottom: 1px solid #eaeaea; padding: 15px 0; }
+    .faq-accordion summary { cursor: pointer; list-style: none; display: flex; align-items: center; justify-content: space-between; outline: none; }
+    .faq-accordion summary::-webkit-details-marker { display: none; }
+    .faq-accordion summary h3 { margin: 0; font-size: 1.2em; font-weight: 600; color: #1a1a1a; padding-right: 20px; }
+    .faq-accordion summary::after { content: '+'; font-size: 1.5em; color: #0073aa; font-weight: bold; transition: transform 0.2s ease; }
+    .faq-accordion details[open] summary::after { content: '−'; }
+    .faq-accordion .faq-answer { padding-top: 15px; color: #444; line-height: 1.6; font-size: 1em; }
+    .faq-accordion .faq-answer p { margin: 0; }
+  </style>
   <div class="faq-accordion">
-    <details style="border-bottom: 1px solid #eaeaea; padding: 15px 0;">
-      <summary style="cursor: pointer; outline: none;"><h3 style="margin: 0; font-size: 1.2em; font-weight: 600; color: #1a1a1a;">[Scenario: Persona description] Question text?</h3></summary>
-      <div class="faq-answer" style="padding-top: 15px; color: #444; line-height: 1.6;">
+    <details>
+      <summary><h3 style="margin: 0; font-size: 1.2em; font-weight: 600; color: #1a1a1a;">[Scenario: Persona description] Question text?</h3></summary>
+      <div class="faq-answer">
         <p>Answer text.</p>
       </div>
     </details>
