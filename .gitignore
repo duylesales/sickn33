@@ -9,3 +9,6 @@ awesome-agentic-advertising/
 .claude/
 scratch/
 .~lock.*
+
+__pycache__/
+*.pyc
