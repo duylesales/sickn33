@@ -11,7 +11,7 @@ The beauty of building a SaaS startup is that your software is instantly accessi
 
 Many founders incorrectly assume that because their LLC is registered in Delaware, they only owe US taxes. This is false. Software is classified as a "digital good" or "electronically supplied service" in most tax jurisdictions, and the taxing right generally follows the *customer's* location, not the seller's.
 
-If a customer sitting in Berlin subscribes to your $20/month AI tool, the European Union legally requires you to collect a 19% Value Added Tax (VAT) on that sale and remit it to the German government - even though your company has zero physical presence in Germany. In the US, the concept of "Economic Nexus" means if you sell more than a specific threshold (e.g., $100,000 in revenue or 200 transactions, depending on the state) to customers in New York, you must register and collect New York sales tax. Every US state sets its own threshold and its own definition of taxable software, and several states tax SaaS as a service (not always taxable) while others tax it as tangible personal property delivered electronically (usually taxable) - the rules genuinely conflict from state to state. Tracking the laws of roughly 195 countries and 50 US states manually is impossible for a small engineering team, and getting it wrong compounds: unpaid VAT typically accrues interest and can trigger penalties of 10–50% of the unpaid amount depending on jurisdiction.
+If a customer sitting in Berlin subscribes to your $20/month AI tool, the European Union legally requires you to collect a 19% Value Added Tax (VAT) on that sale and remit it to the German government - even though your company has zero physical presence in Germany. In the US, the concept of "Economic Nexus" means if you sell more than a specific threshold (e.g., $100,000 in revenue or 200 transactions, depending on the state) to customers in New York, you must register and collect New York sales tax. Every US state sets its own threshold and its own definition of taxable software, and several states tax SaaS as a service (not always taxable) while others tax it as tangible personal property delivered electronically (usually taxable) - the rules genuinely conflict from state to state. Tracking the laws of roughly 195 countries and 50 US states manually is impossible for a small engineering team, and getting it wrong compounds: unpaid VAT typically accrues interest and can trigger penalties of 10-50% of the unpaid amount depending on jurisdiction.
 
 ## Enter Stripe Tax
 
@@ -40,6 +40,50 @@ To do this manually, you would have to build a system to collect their VAT ID, q
 You don't need to register for taxes in a state or country until you hit their specific revenue threshold. Stripe Tax provides a "Monitoring Dashboard" inside the Stripe dashboard's Tax section. It tracks your global sales in real-time against every jurisdiction's threshold. If you are approaching the $100,000 limit in California, Stripe surfaces an alert: *"You are at 90% of the California threshold. Prepare to register."* This is the single most valuable feature for a bootstrapped founder, because it converts an invisible legal liability into a visible, actionable to-do item well before you cross the line.
 
 **Important Note:** Stripe Tax calculates and collects the tax money, keeping it in your bank account alongside your revenue. It also generates detailed liability reports broken down by jurisdiction. However, Stripe does *not* file the tax returns or send the money to the governments for you. You must hand the Stripe Tax reports to your accountant, or use a dedicated remittance service like TaxJar, Kintsugi, or Avalara, to handle the actual filing and payment. Budget for this as an ongoing operational cost, not a one-time setup task - most SaaS companies file VAT returns quarterly and sales tax returns monthly or quarterly per state.
+
+## What Is Stripe Tax?
+
+Stripe Tax is Stripe's built-in tax engine that calculates and collects sales tax, VAT and GST on payments, subscriptions and invoices, based on the customer's location, the product's tax code and the jurisdictions where you are registered. It handles calculation, collection and reporting; filing and paying the tax remain your responsibility.
+
+That last sentence is the one founders most often misread. Stripe Tax answers the question "how much tax should this customer pay?" correctly and automatically. It does not answer "where am I legally obliged to register?" for you, and it does not submit returns. Treat it as the calculation layer of your tax setup, sitting between your checkout and your accountant.
+
+## EU VAT for SaaS: The One Stop Shop (OSS) Explained
+
+The EU One Stop Shop (OSS) lets you declare and pay VAT on cross-border digital services to EU consumers through a single quarterly return in one EU country, instead of registering separately in all 27 member states. For most AI SaaS companies selling B2C in Europe, OSS is what makes EU VAT compliance manageable.
+
+There are two schemes that matter here:
+
+| Scheme | Who uses it | Key rule |
+|---|---|---|
+| Union OSS | Businesses established in an EU member state | Below €10,000 in total cross-border B2C sales of digital services per year, home-country VAT may apply; above it, the customer's country rate applies |
+| Non-Union OSS | Businesses established outside the EU, such as a Delaware LLC | No threshold: VAT of the customer's country applies from the first B2C sale |
+
+B2B sales with a valid VAT ID stay outside OSS, because the reverse charge applies. In practice, this means your Stripe data must reliably separate B2C sales (reported through OSS) from verified B2B sales (reverse charge), which is exactly what the `tax_id_collection` setup described above makes possible.
+
+## What Must a Compliant SaaS Invoice Contain?
+
+A compliant EU invoice must contain at least a unique sequential invoice number, the issue date, the supplier's and (for B2B) the customer's VAT identification numbers, names and addresses, a description of the service, the taxable amount, the VAT rate and the VAT amount. These requirements come from Article 226 of the EU VAT Directive (2006/112/EC).
+
+For B2B reverse-charge invoices, the invoice must also carry a reverse charge notation, such as the words "Reverse charge". Stripe Invoicing covers most of this when it is configured correctly:
+
+- Add your own VAT number to your Stripe account so it appears on every invoice.
+- Collect and store the customer's tax ID on the Customer object, not only in a free-text field.
+- Choose an invoice numbering scheme in Stripe settings and do not reset it, since gaps or duplicate numbers cause problems in an audit.
+- Check that the customer's full billing address is collected, because the address drives both the tax calculation and the invoice details.
+
+## Stripe Tax Go-Live Checklist for an AI SaaS Platform
+
+Use this sequence when you move an AI SaaS platform from a prototype checkout to production tax handling:
+
+1. **Confirm your registrations with an accountant**, including whether you need EU OSS, UK VAT or any US state registrations today.
+2. **Add every registration in Stripe Tax settings**, so Stripe only collects tax where you are actually registered.
+3. **Set product tax codes** on every Product, for example `txcd_10000000` for general SaaS.
+4. **Set tax behavior on every Price** (`inclusive` or `exclusive`), consistently per market.
+5. **Enable automatic tax** on Checkout Sessions, subscriptions and invoices with `automatic_tax[enabled]=true`.
+6. **Collect addresses and tax IDs** by requiring a billing address and enabling `tax_id_collection`.
+7. **Migrate existing subscriptions**, since subscriptions created before you enabled Stripe Tax do not automatically start calculating tax.
+8. **Test in test mode** with customers in several countries, both B2C and B2B, and compare every invoice with what you expect.
+9. **Agree on a monthly export** of Stripe Tax reports with your accountant or remittance service.
 
 ## Common Implementation Mistakes
 

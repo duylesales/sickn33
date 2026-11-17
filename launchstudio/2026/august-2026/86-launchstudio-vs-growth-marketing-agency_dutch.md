@@ -78,6 +78,30 @@ Oprichters die alle drie kunnen afvinken - gedetailleerde funnel-analytics, test
 
 Niets van dit alles betekent dat de twee investeringen in elk geval strikt opeenvolgend moeten zijn. Voor oprichters met een bestaande relatie met een growth-bureau is het praktischer pad vaak een korte, gerichte technische audit die parallel loopt met voortgezette (maar bescheiden afgeschaalde) campagneactiviteit, in plaats van de acquisitie-uitgaven volledig te pauzeren voor meerdere weken. Het bureau blijft creatie, doelgroepen en kanalen testen met een verlaagd budget terwijl het technische team parallel de betrouwbaarheid van analytics en onboarding repareert; zodra de fixes live gaan, wordt de uitgave weer opgeschaald tegen een funnel die eindelijk accuraat meet en converteert. Deze aanpak vermijdt beide uitersten - blindelings uitgaven opschalen tegen een kapotte funnel, en alle groeiactiviteit bevriezen terwijl engineering geïsoleerd werkt - en levert doorgaans een sneller totaalpad op naar een groeimotor die zowel goed geoptimaliseerd als technisch degelijk is. De belangrijkste discipline is simpelweg de prestaties van het bureau niet beoordelen, of grote budgetbeslissingen nemen, op basis van data verzameld voordat de technische basis daadwerkelijk was gerepareerd.
 
+## Growth Marketing Bureau of Engineeringteam: Wie Repareert Wat?
+
+Een growth marketing bureau zorgt ervoor dat meer van de juiste mensen uw product bereiken; een engineeringteam zorgt ervoor dat er goed met hen wordt omgegaan zodra ze er zijn. Infrastructuur voor conversietracking - de events, identificatoren en datapijplijn die elke stap van eerste bezoek tot betaald account vastleggen - hoort aan de engineeringkant, ook al is het bureau er elke dag van afhankelijk. De onderstaande tabel laat zien welke veelvoorkomende funnelproblemen bij welke partij horen.
+
+| Funnelprobleem | Typisch symptoom | Wie het oplost |
+|----------------|------------------|----------------|
+| Verkeerde doelgroep of zwakke advertentiecreatie | Hoge kosten per klik, lage doorklikratio | Growth marketing bureau |
+| Boodschap op de landingspagina komt niet aan | Bezoekers verlaten de pagina zonder te scrollen | Growth marketing bureau, met ontwerpondersteuning |
+| Ontbrekende of dubbel afgevuurde analytics-events | Rapporten die tussen tools niet kloppen | Engineering |
+| Aanmeldformulier faalt in sommige browsers | Uitval geconcentreerd in één browser of apparaat | Engineering |
+| Verificatiemail komt niet aan | Veel aanmeldingen worden nooit geactiveerd | Engineering |
+| Trage eerste laadtijd voor nieuwe accounts | Activatie lager bij betaald verkeer dan bij organisch verkeer | Engineering |
+| Zwakke lifecycle-e-mails na aanmelding | Geactiveerde gebruikers komen nooit terug | Growth marketing bureau, met de events van engineering |
+
+## Hoe U een Gerepareerde Funnel Overdraagt aan een Growth-bureau
+
+Zodra de technische basis op orde is, hoort de overdracht aan een growth marketing bureau dagen te duren, geen weken, als u deze goed voorbereidt. Een goede overdracht volgt deze stappen:
+
+1. **Deel de lijst met events.** Geef het bureau een schriftelijke lijst van elk gevolgd event, wat het activeert en hoe het heet in uw analytics-tool, zodat hun rapporten dezelfde definities gebruiken als die van u.
+2. **Spreek één definitie van activatie af.** Bepaal welke eerste gebruiksmijlpaal als geactiveerd telt, en maak dat de belangrijkste succesmaatstaf voor campagnes.
+3. **Leg een nulmeting vast.** Registreer de huidige conversie per stap en de activatiegraad voordat nieuwe uitgaven beginnen, zodat elke verandering eerlijk kan worden toegeschreven.
+4. **Stel UTM- en naamgevingsconventies vast.** Consistente campagnetags voorkomen dat betaald verkeer verschijnt als direct of niet-toegeschreven bezoek.
+5. **Houd rekening met cookietoestemming.** Onder de AVG en de ePrivacy-richtlijn moeten EU-bezoekers toestemming geven voor niet-essentiële tracking, waardoor sommige conversies nooit in client-side analytics verschijnen. Spreek vooraf af hoe het bureau met dat gat omgaat, bijvoorbeeld door server-side aanmeldings- en betalingsevents als bron van waarheid te gebruiken.
+
 ## Belangrijkste inzichten
 
 - Growth marketing bureaus zijn gespecialiseerd in acquisitiestrategie, advertentietesten en conversieoptimalisatie - niet in het diagnosticeren of oplossen van kapotte analytics of een technisch gebrekkige onboarding-flow.

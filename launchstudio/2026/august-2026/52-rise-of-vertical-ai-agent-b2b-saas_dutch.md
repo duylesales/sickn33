@@ -64,6 +64,64 @@ Verticale AI transformeert het traditionele SaaS-verdienmodel. U rekent niet lan
 
 Betaalt een accountantskantoor een junior medewerker € 30 per uur om facturen handmatig te matchen, en uw Verticale Boekhoud-Agent klaart diezelfde klus autonoom in 5 seconden met gelijke of hogere accuratesse, dan rekent u bijvoorbeeld € 2 per succesvol verwerkte boeking. U verkoopt arbeid in plaats van softwarelicenties. Dit verschuift uw marktpotentieel van het kleine IT-softwarebudget naar het reusachtige operationele salaris- en loonkostenbudget van de onderneming.
 
+## Horizontale AI versus Verticale AI-Agenten: Een Vergelijking
+
+| Factor | Horizontale AI-assistent | Verticale AI-agent |
+|---|---|---|
+| Reikwijdte | Elke taak, elke sector | Eén workflow in één sector |
+| Interface | Chatvenster en lege prompt | Achtergrondproces, gestart door events |
+| Kennis | Publieke trainingsdata | Bedrijfseigen data via RAG of fine-tuning |
+| Geheugen | Grotendeels per sessie | Blijvend, gekoppeld aan de systemen van de klant |
+| Acties | Beschrijft wat er moet gebeuren | Voert uit via API's, met rechten |
+| Uitvoer | Vrije tekst | Gestructureerde uitvoer in een vast formaat |
+| Prijsmodel | Per gebruiker, per maand | Per resultaat of per taak |
+| Verdedigbaarheid | Laag, eenvoudig te kopiëren | Hoger, gebouwd op data en integraties |
+
+## Hoe Bouwt U een Verticale AI-Agent? Een Stappenplan
+
+U bouwt een verticale AI-agent door te beginnen bij één kostbare, repetitieve workflow, een standaardmodel te verankeren in de eigen data van de klant en het model nauw afgebakende tools te geven, met een menselijke goedkeuringsstap voor alles wat risico met zich meebrengt. Een praktische volgorde voor een AI SaaS-platform ziet er zo uit:
+
+1. **Kies één workflow met een duidelijke werkeenheid.** "Een geheimhoudingsovereenkomst toetsen aan het playbook van het kantoor" is een goede eenheid. "Advocaten helpen met contracten" is dat niet.
+2. **Breng de bronsystemen in kaart.** Leg vast waar de invoer zich bevindt (een documentenkluis, een ERP, een praktijkmanagementsysteem) en hoe de agent zich authenticeert, meestal via OAuth 2.0 of een serviceaccount met beperkte rechten.
+3. **Bouw de retrieval-laag.** Indexeer de documenten van de klant in een vectordatabase, bewaar de bron-ID's en dwing toegang per klant af, zodat de agent alleen kan ophalen wat de gebruiker mag inzien.
+4. **Definieer gestructureerde uitvoer.** Leg het exacte JSON-schema of documentsjabloon vast dat de agent moet opleveren, en valideer elk antwoord voordat het wordt opgeslagen of verstuurd.
+5. **Voeg tools toe met minimale rechten.** Geef de agent alleen de API-acties die nodig zijn. Leesrechten zijn eenvoudig toe te kennen, schrijfrechten vragen om goedkeuringsregels.
+6. **Bouw menselijke controle in waar het ertoe doet.** Routeer uitvoer met grote impact, zoals een memo die naar een cliënt gaat, naar de reviewwachtrij van een professional.
+7. **Stel een evaluatieset samen.** Verzamel echte voorbeelden met bekende juiste antwoorden en draai ze opnieuw bij elke wijziging van de prompt, het model of de retrieval-logica.
+8. **Meet de kosten per resultaat.** Volg tokens, tool-aanroepen en reviewtijd per voltooide taak, zodat resultaatgerichte prijsstelling winstgevend blijft.
+
+## Wat Is Er Nodig om een Verticale AI-Agent te Schalen naar Duizenden Dagelijkse Gebruikers?
+
+Het schalen van een verticale AI-agent naar duizenden dagelijkse gebruikers is vooral een backend-engineeringvraagstuk en geen modelvraagstuk: het model huurt u, maar wachtrijen, databases, klantscheiding en kostenbeheersing zijn uw eigen verantwoordelijkheid. Een AI-prototype dat in een tool als Bolt of Lovable is gebouwd, werkt vaak prima voor tien gebruikers en loopt vast bij enkele duizenden, door de onderstaande problemen.
+
+### Wachtrijen in plaats van synchrone aanroepen
+
+Langlopende agent-taken, zoals het doorzoeken van duizenden documenten, horen als achtergrondtaken op een wachtrij te draaien (bijvoorbeeld AWS SQS, of BullMQ op Redis), met voortgangsupdates voor de gebruiker. Synchrone HTTP-verzoeken lopen in een time-out en worden opnieuw verstuurd, wat de LLM-kosten verdubbelt en dubbele resultaten oplevert.
+
+### Connection pooling voor de database
+
+Serverless functies openen veel kortstondige databaseverbindingen. Zonder een pooler zoals PgBouncer vóór PostgreSQL kan een piek in het verkeer het maximale aantal verbindingen uitputten en het hele product platleggen, ook als de LLM-provider gewoon werkt.
+
+### Rate limits en fallbacks
+
+Elke LLM-provider hanteert rate limits. Houd het gebruik per klant bij, stel eigen limieten in zodat één grote klant de anderen niet verdringt, en configureer een fallback-model voor momenten waarop de primaire provider afknijpt of uitvalt.
+
+### Scheiding tussen klanten
+
+In een juridische of financiële sector mogen de documenten van de ene klant nooit opduiken in het antwoord aan een andere klant. Dwing die scheiding af in de database (bijvoorbeeld met row-level security in PostgreSQL) en in de vectorindex, niet alleen in de applicatiecode.
+
+### Observability
+
+Log elke agent-run met de promptversie, het model, de opgehaalde bronnen, de tool-aanroepen, de latentie en de kosten. Meldt een gebruiker een fout antwoord, dan moet u dat binnen enkele minuten kunnen reproduceren.
+
+## Veelgemaakte Fouten bij het Bouwen van Verticale AI-Agenten
+
+- **Te breed beginnen.** Een agent die vanaf dag één een heel beroep probeert te bedienen, levert overal middelmatige resultaten.
+- **Te vroeg schrijfrechten toekennen.** Laat de agent eerst concepten en voorstellen maken, en automatiseer acties pas zodra de nauwkeurigheid is gemeten.
+- **Bedrijfseigen data als eenmalige import behandelen.** Het concurrentievoordeel houdt alleen stand als de data actueel blijft. Bouw daarom synchronisatietaken in plaats van één upload.
+- **Beroepsplichten negeren.** Advocaten, artsen en accountants hebben geheimhoudings- en aansprakelijkheidsplichten. De uitvoer van de agent moet hun controle ondersteunen en die niet ongemerkt vervangen.
+- **Per resultaat factureren zonder de kosten per resultaat te meten.** Als één taak tientallen modelaanroepen veroorzaakt, kan een vaste prijs per taak omslaan in verlies.
+
 ## Belangrijkste Inzichten
 
 - Horizontale AI-modellen zijn generalisten; ze missen de diepe sector-workflows, institutionele context en actieve tool-koppelingen die complexe enterprise-organisaties vereisen.
@@ -71,6 +129,7 @@ Betaalt een accountantskantoor een junior medewerker € 30 per uur om facturen 
 - Het concurrentievoordeel van Verticale AI rust op gesloten, bedrijfseigen data en diepe integraties met sectorspecifieke systemen.
 - Verticale agents werken autonoom op de achtergrond via API's en vergen waterdichte databeveiliging en audittrails.
 - Het verdienmodel verschuift van maandelijkse licenties per gebruiker naar 'Outcome-Based Pricing' (betalen per voltooid resultaat), wat toegang geeft tot operationele salarisbudgetten.
+- Het schalen van een verticale agent naar duizenden dagelijkse gebruikers hangt meer af van backend-engineering - wachtrijen, connection pooling met PgBouncer, rate limits, klantscheiding en observability - dan van het model zelf.
 
 ## Bouw Gespecialiseerde AI-Agenten
 

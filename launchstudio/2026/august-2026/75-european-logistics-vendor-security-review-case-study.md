@@ -60,6 +60,36 @@ NIS2 formally expanded the EU's critical-infrastructure cybersecurity obligation
 
 Lukas's experience is a preview of what's coming for AI SaaS founders across several regulated European sectors - logistics, energy, healthcare, financial services - where the enterprise buyer's own compliance obligations dictate the vendor review, not generic industry best practice. The founders who win these deals aren't necessarily the ones with the most polished product; they're the ones who understand which regulation is actually driving their buyer's questionnaire and can map their own controls directly onto its specific language, rather than submitting a generic security overview and hoping it's close enough.
 
+## What Is NIS2, and Does It Apply to an AI SaaS Vendor?
+
+The NIS2 Directive (Directive (EU) 2022/2555) is the EU's cybersecurity law for organisations in critical and important sectors, and EU member states had to transpose it into national law by 17 October 2024. It replaced the original NIS Directive and widened its scope to more sectors, including transport, postal and courier services, and digital providers.
+
+A small AI SaaS vendor is often not a regulated entity itself. It still feels NIS2 compliance pressure, because Article 21 requires regulated entities to address "supply chain security", including the security of their relationships with direct suppliers and service providers. In practice, that obligation reaches the vendor through the security questionnaire, the contract and the audit rights the customer asks for. Whether your own company falls directly under NIS2 depends on your sector, your size and the national transposition law, so check that question separately with your legal adviser.
+
+## How NIS2 Article 21 Measures Map to Vendor Controls
+
+The fastest way to answer a NIS2-driven vendor review is to map each risk-management measure from Article 21 to a concrete control you can evidence. This is how the measures translated for RouteMatch AI:
+
+| NIS2 Article 21 measure | What the reviewer asks the vendor | Evidence RouteMatch AI provided |
+|---|---|---|
+| Risk analysis and information system security policies | How is customer data separated and protected? | Row Level Security policies per carrier account |
+| Incident handling | Can you report within the customer's 24-hour and 72-hour windows? | NIS2-mapped incident response plan |
+| Business continuity | What happens during an outage? | Read replicas, health monitoring, documented uptime targets |
+| Supply chain security | Which third parties process our data? | Subprocessor list with signed DPAs |
+| Security in development and maintenance | How are integrations protected? | Signed authentication, rate limiting, payload validation |
+| Cryptography and encryption | How is data protected in transit and at rest? | AES-256 at rest, TLS on every endpoint |
+| Access control | Who can see live tracking data? | Role-restricted internal access |
+
+## Common Mistakes in a NIS2 Vendor Security Review
+
+Most delays in a NIS2-scoped review come from answers that are true but not evidenced.
+
+1. **Answering with a generic security page.** Reviewers need answers mapped to their own questionnaire, not a marketing overview.
+2. **Relying on UI-level tenant separation.** Hiding another tenant's data in the interface is not isolation; enforcement has to sit in the database or API layer.
+3. **Forgetting machine-to-machine integrations.** EDI and API endpoints are part of the attack surface, and reviewers increasingly ask about them separately.
+4. **No subprocessor list.** If you cannot name your hosting, database and LLM providers with signed DPAs under GDPR Article 28, the supply-chain question stays open.
+5. **An incident plan without timelines.** A plan that says "we will inform customers promptly" does not show how you support a 24-hour early warning.
+
 ## Key Takeaways
 
 - Under NIS2, transport and logistics entities are classified as "important entities" with supply-chain risk management obligations that legally extend down to their software vendors, not just their own internal systems.

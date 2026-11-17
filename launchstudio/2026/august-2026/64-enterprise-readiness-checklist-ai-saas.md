@@ -58,6 +58,50 @@ Manifera's own client roster - including enterprise names like Vodafone and TNO 
 
 The founders who lose enterprise deals at this stage aren't losing because their product isn't good enough. They're losing because they find out what's required with three weeks left on the clock and no plan to close the gap. The founders who win are the ones who treat the enterprise readiness checklist as a known, fixable list - not a surprise.
 
+## What Does "Enterprise Readiness" Actually Mean?
+
+Enterprise readiness is the state in which a SaaS product can pass a large buyer's procurement, security, and IT review without new engineering work: identity, data isolation, logging, availability, and documentation are already in place and can be proven on request. It is not a feature set your users see. It is the evidence layer underneath the product that lets a risk-averse organization sign a contract and defend that decision internally.
+
+A useful way to think about it: your demo convinces the business sponsor, but enterprise readiness convinces everyone the business sponsor has to get past - the CISO, the IT architect, the data protection officer, and the procurement lead who owns the vendor file.
+
+## The Enterprise Readiness Checklist at a Glance
+
+The enterprise readiness checklist below maps each requirement to what reviewers check and what an AI-builder prototype usually ships with, so you can see your own gaps in one pass.
+
+| Requirement | What the reviewer checks | Typical AI-builder default | What "ready" looks like |
+|---|---|---|---|
+| SSO | SAML 2.0 or OIDC with the buyer's IdP (Okta, Microsoft Entra ID) | Email/password or social login | SSO per tenant, plus automated deprovisioning (often via SCIM) |
+| Tenant isolation | RLS policies scoped to a tenant ID, enforced in the database | RLS off, or permissive policies | Documented policies and a test that proves cross-tenant reads fail |
+| Audit logging | Who did what, when, with export for the buyer | Error logs only | Immutable, queryable log of security-relevant actions |
+| Availability | SLA percentage and uptime history | No monitoring | Public status page and a written SLA |
+| Security posture | Policies, controls, SOC 2 or a roadmap toward it | Nothing written down | A short, specific security overview document |
+| Data protection | GDPR Article 28 data processing agreement and subprocessor list | None | Signed-ready DPA template and current subprocessor list |
+| Secrets | No credentials in the browser or the repository | Keys in client code or `.env` files | Server-side secrets in a managed vault |
+| Incident response | Detection, escalation, and notification timelines | Ad hoc | A written, rehearsed incident response plan |
+
+## How to Run Your Own Enterprise Readiness Audit Before Procurement Asks
+
+You can run a first-pass enterprise readiness audit in a single afternoon, long before a questionnaire arrives. Follow these steps in order:
+
+1. **Collect a real questionnaire.** Ask a friendly prospect for a blank copy, or work from a widely used standard such as the Shared Assessments SIG or the Cloud Security Alliance CAIQ. Either gives you the actual questions instead of guesses.
+2. **Answer every question honestly, in writing.** Mark each answer as "done and provable," "partly done," or "not started." Anything you can't back with a screenshot, a policy, or a config file counts as not started.
+3. **Test tenant isolation yourself.** Log in as a user in one account and try to read another account's records through the API. If it works even once, isolation is your first fix.
+4. **Inventory your secrets.** Search the frontend bundle and repository history for API keys. Rotate anything that was ever exposed.
+5. **Prioritize by deal blockers.** SSO, isolation, and audit logging usually block contracts outright; a status page and incident plan are quick wins that build trust.
+6. **Write the documentation as you fix.** Every fix should produce the paragraph or diagram that will later answer a questionnaire item.
+
+## Common Mistakes That Stall Enterprise Deals
+
+The most common mistake is promising roadmap items as if they were shipped. Security reviewers compare answers against evidence, and a "yes" that later turns out to be "planned" damages trust more than an honest "in progress, target date attached."
+
+Other mistakes show up again and again:
+
+- **Treating SSO as an add-on for later.** For many large buyers it is a gate, not a nice-to-have.
+- **Copying a generic security policy template.** Reviewers recognize boilerplate that doesn't match your actual stack.
+- **Forgetting subprocessors.** If your AI features call the OpenAI API or another model provider, that provider belongs on your subprocessor list and in your DPA.
+- **Logging too little, or logging personal data carelessly.** An audit log should capture actions and actors without dumping sensitive payloads into plain-text logs.
+- **Waiting for the first enterprise lead to start.** Every week of preparation before the questionnaire arrives is a week you don't have to find under deadline pressure.
+
 ## Key Takeaways
 
 - Enterprise procurement teams evaluate SaaS vendors against a known, repeatable checklist - SSO/SAML, documented RLS-based tenant isolation, audit logging, uptime SLAs, and incident response plans - and AI-builder prototypes almost never meet it out of the box.

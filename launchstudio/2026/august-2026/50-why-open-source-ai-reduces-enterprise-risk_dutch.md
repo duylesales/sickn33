@@ -73,6 +73,63 @@ Open-source AI is niet vrij van kosten of complexiteit: u ruilt variabele API-ko
 
 Het opzetten van deze multi-vendor architecturen is exact waar Manifera sinds **2014** in adviseert, met 160+ gerealiseerde projecten voor opdrachtgevers zoals Vodafone en TNO vanuit haar hoofdkantoor aan de Herengracht 420 in Amsterdam. Zoals Herre Roelevink, Oprichter & Managing Director van Manifera, stelt: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Bekijk Manifera's [offshore softwareontwikkeling diensten](https://www.manifera.com/services/offshore-software-development/).
 
+## Wat Is Datasoevereiniteit bij AI?
+
+Datasoevereiniteit bij AI betekent dat de data die uw AI-systeem verwerkt - prompts, documenten, embeddings en uitvoer - onder de juridische en fysieke controle blijft van een rechtsgebied en een organisatie die de klant zelf heeft gekozen, in plaats van door infrastructuur te gaan die wordt beheerd door een derde partij die de klant niet kan auditen. Voor een Europese inkoper betekent dat doorgaans infrastructuur die in de EU wordt gehost, een bekende lijst met subverwerkers en geen doorgifte van persoonsgegevens buiten de EU zonder geldig doorgiftemechanisme onder de AVG.
+
+Het zelf hosten van een open-weight model is de meest directe manier om datasoevereiniteit te leveren, omdat de inferentiestap - het moment waarop gevoelige tekst daadwerkelijk door het model wordt gelezen - plaatsvindt op infrastructuur die u of de klant zelf beheert.
+
+## Open-Weight Is Niet Altijd Open-Source: Controleer de Licentie
+
+Lees de licentie van een model voordat u uw AI-deployment eromheen bouwt, want "open" modellen worden onder zeer uiteenlopende voorwaarden uitgebracht. Sommige verschijnen onder permissieve licenties zoals Apache 2.0, die Mistral voor meerdere van zijn modellen heeft gebruikt, en staan breed commercieel gebruik toe. Andere, zoals de Llama-modellen van Meta, worden geleverd onder een eigen community-licentie met een acceptable use policy en aanvullende voorwaarden voor zeer grote platforms.
+
+Voor een B2B SaaS-startup zijn drie vragen het belangrijkst:
+
+- **Mag u het model commercieel gebruiken** binnen een betaald product, ook in het eigen cloudaccount van een klant?
+- **Gelden er gebruiksbeperkingen** die botsen met uw sector, zoals beperkingen in een acceptable use policy?
+- **Wat moet u doorgeven** aan klanten, zoals naamsvermeldingen of een kopie van de licentie, wanneer u de modelgewichten binnen hun VPC levert?
+
+Juridische teams van enterprise-klanten stellen deze vragen tijdens de inkoopprocedure. Leg daarom de licentie van elk model in uw stack vast, naast uw software bill of materials.
+
+## Zo Host U een Open-Source Model Zelf: Stap voor Stap
+
+Het zelf hosten van een model voor productie volgt een voorspelbare volgorde, en het overslaan van de evaluatiestap is de meest voorkomende reden dat projecten vastlopen.
+
+1. **Definieer de workload.** Leg de taak vast (classificatie, extractie, samenvatting, chat), het verwachte volume, de latentiedoelstelling en de gevoeligheid van de data.
+2. **Selecteer twee of drie modellen.** Vergelijk open-weight modellen van verschillende omvang, want een kleiner model dat op één GPU past, is voor afgebakende taken vaak voldoende.
+3. **Evalueer op uw eigen data.** Stel een testset samen van echte, geanonimiseerde voorbeelden en scoor elke kandidaat tegen uw huidige baseline met een gesloten API, voordat u een keuze maakt.
+4. **Kies een serving-stack.** Inference-servers zoals vLLM of Hugging Face Text Generation Inference zijn gangbare keuzes voor productie, terwijl Ollama populair is voor lokale ontwikkeling.
+5. **Optimaliseer de kosten.** Overweeg kwantisatie om het geheugengebruik te verlagen, en meet het effect op de kwaliteit met uw testset.
+6. **Rol uit binnen de juiste perimeter.** Draai het model in uw eigen EU-cloudaccount of verpak het met Kubernetes voor de VPC van de klant, met netwerkregels die uitgaand verkeer van de inference-service blokkeren.
+7. **Leg de modelgewichten vast en verifieer ze.** Bewaar het exacte checkpoint met een checksum, zodat u kunt aantonen welke modelversie welke uitvoer heeft gegenereerd.
+8. **Monitor en plan upgrades.** Volg latentie, GPU-benutting en uitvoerkwaliteit, en behandel een modelupgrade als een release met een eigen evaluatieronde.
+
+## Gesloten API versus Zelf-Gehost Open Model versus Hybride
+
+| Factor | Alleen gesloten API | Zelf-gehost open model | Hybride met routering |
+|---|---|---|---|
+| Data verlaat uw perimeter | Ja | Nee | Alleen voor gerouteerde taken |
+| VPC-deployment voor klanten | Meestal niet mogelijk | Mogelijk | Mogelijk voor gevoelige taken |
+| Modelgedrag kan buiten u om veranderen | Ja | Nee | Gedeeltelijk |
+| Initiële engineeringinspanning | Laag | Hoog | Gemiddeld |
+| Kosten bij laag volume | Laag | Hoog (ongebruikte GPU's) | Gemiddeld |
+| Kosten bij hoog volume | Hoog | Lager | Lager |
+| Redeneerkwaliteit op frontier-niveau | Hoogst | Verschilt per model | Beschikbaar wanneer nodig |
+| Verantwoordelijkheid voor MLOps | Provider | U | Gedeeld |
+
+## Lost Zelf Hosten de Naleving van de AVG en de AI Act Op?
+
+Zelf hosten lost een deel van het compliancevraagstuk op, maar niet alles. Door de inferentie binnen de EU te houden, valt een externe LLM-provider weg als subverwerker en vermijdt u voor die stap internationale doorgiften onder Hoofdstuk V van de AVG. Het verandert echter niets aan uw rol als verwerkingsverantwoordelijke of verwerker, aan uw verplichtingen rond grondslag, dataminimalisatie en beveiliging, of aan de plicht om een verwerkersovereenkomst volgens Artikel 28 van de AVG met de klant te sluiten wanneer u namens die klant gegevens verwerkt.
+
+De Europese AI Act werkt op dezelfde manier. Verplichtingen voor AI-modellen voor algemene doeleinden rusten vooral op de aanbieder van het model, terwijl verplichtingen voor toepassingen met een hoog risico afhangen van wat uw product met het model doet, niet van waar het draait. Een zelf-gehost model dat wordt ingezet voor kredietbeoordeling of werving heeft nog steeds de logging, het menselijk toezicht en de documentatie nodig die de AI Act voorschrijft voor systemen met een hoog risico.
+
+## Veelgemaakte Fouten bij het Zelf Hosten van AI-Modellen
+
+- **Te veel GPU-capaciteit inkopen voordat er vraag is.** Ongebruikte GPU-capaciteit is duur. Begin met autoscaling of serverless GPU-opties en stap pas over op gereserveerde capaciteit zodra het gebruik voorspelbaar is.
+- **Beveiligingshardening overslaan.** Een inference-endpoint zonder authenticatie, rate limits en netwerkisolatie is op zichzelf al een AI-beveiligingsrisico.
+- **Het model als "af" beschouwen.** Open modellen vragen nog steeds om evaluatie, monitoring en een patchproces voor de serving-stack en de onderliggende afhankelijkheden.
+- **Het operationele team van de klant vergeten.** Bij een VPC-deployment moet het team van de klant uw container kunnen draaien, bijwerken en terugdraaien. Lever daarom heldere runbooks mee.
+
 ## Belangrijkste Inzichten
 
 - Exclusief bouwen op gesloten API's creëert groot Platform-Risico door onverwachte prijsstijgingen, moderatiewijzigingen en model-drift.
@@ -81,6 +138,7 @@ Het opzetten van deze multi-vendor architecturen is exact waar Manifera sinds **
 - Maak uw software 'Model-Agnostisch' met een routeringslaag om verkeer dynamisch te verdelen tussen open en gesloten modellen.
 - Verlaag tokenkosten met 70-90% door eenvoudige bulktaken via open-source LLM's af te handelen.
 - Weeg de infrastructuur- en hostingkosten van GPU's zorgvuldig af tegen het operationele gemak van directe API's.
+- Zelf hosten levert datasoevereiniteit op, maar controleer de licentie van elk model en onthoud dat verplichtingen onder de AVG en de AI Act afhangen van wat uw product doet, niet van waar het model draait.
 
 ## Krijg Volledige Controle Over Uw AI-Infrastructuur
 

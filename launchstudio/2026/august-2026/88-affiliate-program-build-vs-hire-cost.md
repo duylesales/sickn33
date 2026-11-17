@@ -61,6 +61,30 @@ Founders already running a DIY affiliate program can look for a few specific sig
 
 None of these signals require an affiliate program to be visibly broken to be worth addressing. By the time disputes become public or affiliates start quietly disengaging, the reputational cost described above has usually already been paid.
 
+## Build, Buy or Hire: Which Affiliate Program Setup Fits You?
+
+There are three realistic ways to run an affiliate program: build the tracking yourself, buy off-the-shelf affiliate tracking software, or have the infrastructure built for you by engineers. An affiliate program, in this context, is a system that attributes paying customers to the partners who referred them and pays those partners a commission based on the revenue they generated. Hosted tools that connect to Stripe Billing, such as Rewardful or FirstPromoter, sit in the middle option and are often the fastest way to launch. The right choice depends on how standard your billing and referral rules are.
+
+| Option | Best for | Main strengths | Main limitations |
+|--------|----------|----------------|------------------|
+| DIY build | Testing whether an affiliate channel works at all | Full control, no extra subscription | Edge cases surface one dispute at a time |
+| Off-the-shelf affiliate tracking software | Standard Stripe subscriptions with simple commission rules | Fast setup, built-in dashboards and payouts | Monthly fee, limited fit with custom usage-based billing or unusual attribution rules |
+| Engineered build (such as LaunchStudio) | Custom billing, cross-device journeys, or strict data-location needs | Logic fits your product and data model exactly | Upfront project cost, and you own the code afterwards |
+
+A useful rule of thumb: if your billing is a plain monthly or annual Stripe subscription, start by testing a hosted tool. If commissions depend on usage, credits, seats, or events your billing provider does not see, the hosted tool will usually need a custom integration anyway.
+
+## Affiliate Program Launch Checklist
+
+Before inviting the first affiliate, make sure each of these points is settled and written down:
+
+1. **Commission rules.** Percentage or flat fee, one-time or recurring, and for how many months.
+2. **Attribution window.** How many days after a click a referral still counts, and which touchpoint wins.
+3. **Refund and chargeback policy.** How long commissions stay pending before they are payable.
+4. **Fraud rules.** What counts as self-referral or abuse, and what happens when it is detected.
+5. **Payout terms.** Minimum payout amount, payout method and payment schedule.
+6. **Tax and identity data.** What information you need from each affiliate before paying them, as confirmed by your accountant.
+7. **Privacy and cookies.** Referral cookies are generally non-essential, so under GDPR and the ePrivacy Directive your consent banner must cover them for EU visitors.
+
 ## Key Takeaways
 
 - Basic affiliate link tracking is easy to prototype, but multi-touch attribution, cross-device tracking, and fraud detection are what determine whether the system is actually trustworthy with real money.

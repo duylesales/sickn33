@@ -83,6 +83,50 @@ Manifera's eigen klantenportfolio - met enterprise-namen zoals Vodafone en TNO -
 
 Oprichters die enterprise-deals in dit stadium verliezen, verliezen niet omdat hun product niet goed genoeg is. Ze verliezen omdat ze pas ontdekken wat er vereist is met nog drie weken op de klok, zonder plan om het gat te dichten. De oprichters die winnen zijn degenen die de enterprise-gereedheidschecklist behandelen als een bekende, oplosbare lijst - niet als een verrassing.
 
+## Wat betekent "enterprise readiness" eigenlijk?
+
+Enterprise readiness is de toestand waarin een SaaS-product de inkoop-, security- en IT-beoordeling van een grote koper kan doorstaan zonder nieuw engineeringwerk: identiteit, data-isolatie, logging, beschikbaarheid en documentatie zijn al aanwezig en kunnen op verzoek worden aangetoond. Het is geen functieset die uw gebruikers zien. Het is de bewijslaag onder het product waarmee een risicomijdende organisatie een contract kan tekenen en die beslissing intern kan verdedigen.
+
+Een bruikbare manier om ernaar te kijken: uw demo overtuigt de business-sponsor, maar enterprise readiness overtuigt iedereen langs wie die sponsor nog moet - de CISO, de IT-architect, de functionaris gegevensbescherming en de inkoper die het leveranciersdossier beheert.
+
+## De enterprise readiness checklist in één oogopslag
+
+De onderstaande enterprise readiness checklist koppelt elke vereiste aan wat beoordelaars controleren en wat een AI-builder-prototype doorgaans standaard meelevert, zodat u uw eigen gaten in één keer ziet.
+
+| Vereiste | Wat de beoordelaar controleert | Typische AI-builder-standaard | Hoe "klaar" eruitziet |
+|---|---|---|---|
+| SSO | SAML 2.0 of OIDC met de IdP van de koper (Okta, Microsoft Entra ID) | E-mail/wachtwoord of social login | SSO per tenant, plus geautomatiseerde deprovisioning (vaak via SCIM) |
+| Tenant-isolatie | RLS-beleid gekoppeld aan een tenant-ID, afgedwongen in de database | RLS uit, of te ruim beleid | Gedocumenteerd beleid en een test die aantoont dat cross-tenant reads mislukken |
+| Audit logging | Wie wat wanneer deed, met export voor de koper | Alleen foutlogs | Onveranderlijk, doorzoekbaar log van security-relevante acties |
+| Beschikbaarheid | SLA-percentage en uptime-geschiedenis | Geen monitoring | Publieke statuspagina en een schriftelijke SLA |
+| Beveiligingsbeleid | Beleid, controles, SOC 2 of een roadmap daarnaartoe | Niets op papier | Een kort, specifiek beveiligingsoverzicht |
+| Gegevensbescherming | Verwerkersovereenkomst volgens AVG artikel 28 en een lijst met subverwerkers | Geen | Een tekenklaar DPA-sjabloon en een actuele lijst met subverwerkers |
+| Geheimen | Geen inloggegevens in de browser of de repository | Sleutels in clientcode of `.env`-bestanden | Server-side geheimen in een beheerde kluis |
+| Incidentrespons | Termijnen voor detectie, escalatie en melding | Ad hoc | Een schriftelijk, geoefend incidentresponsplan |
+
+## Hoe voert u uw eigen enterprise readiness audit uit voordat inkoop erom vraagt?
+
+U kunt een eerste enterprise readiness audit in één middag uitvoeren, lang voordat er een vragenlijst binnenkomt. Volg deze stappen in volgorde:
+
+1. **Verzamel een echte vragenlijst.** Vraag een welwillende prospect om een blanco exemplaar, of werk vanuit een veelgebruikte standaard zoals de Shared Assessments SIG of de Cloud Security Alliance CAIQ. Beide geven u de werkelijke vragen in plaats van aannames.
+2. **Beantwoord elke vraag eerlijk en schriftelijk.** Markeer elk antwoord als "gereed en aantoonbaar", "deels gereed" of "niet gestart". Alles wat u niet kunt onderbouwen met een screenshot, een beleidsdocument of een configuratiebestand telt als niet gestart.
+3. **Test de tenant-isolatie zelf.** Log in als gebruiker in het ene account en probeer via de API records van een ander account te lezen. Als dat ook maar één keer lukt, is isolatie uw eerste oplossing.
+4. **Inventariseer uw geheimen.** Doorzoek de frontend-bundle en de repositorygeschiedenis op API-sleutels. Roteer alles wat ooit is blootgesteld.
+5. **Prioriteer op deal-blokkers.** SSO, isolatie en audit logging blokkeren contracten meestal volledig; een statuspagina en een incidentplan zijn snelle winst die vertrouwen opbouwt.
+6. **Schrijf de documentatie terwijl u repareert.** Elke oplossing moet de alinea of het diagram opleveren dat later een vraag in de vragenlijst beantwoordt.
+
+## Veelgemaakte fouten die enterprise-deals vertragen
+
+De meest gemaakte fout is roadmap-items beloven alsof ze al zijn opgeleverd. Security-beoordelaars vergelijken antwoorden met bewijs, en een "ja" dat later "gepland" blijkt te zijn, schaadt het vertrouwen meer dan een eerlijk "in uitvoering, met streefdatum".
+
+Andere fouten komen steeds terug:
+
+- **SSO behandelen als een uitbreiding voor later.** Voor veel grote kopers is het een harde drempel, geen leuke extra.
+- **Een generiek sjabloon voor beveiligingsbeleid kopiëren.** Beoordelaars herkennen standaardtekst die niet overeenkomt met uw werkelijke stack.
+- **Subverwerkers vergeten.** Als uw AI-functies de OpenAI API of een andere modelprovider aanroepen, hoort die provider op uw lijst met subverwerkers en in uw verwerkersovereenkomst.
+- **Te weinig loggen, of persoonsgegevens onzorgvuldig loggen.** Een audit log moet acties en actoren vastleggen zonder gevoelige inhoud in platte-tekstlogs te dumpen.
+- **Wachten met beginnen tot de eerste enterprise-lead zich meldt.** Elke week voorbereiding voordat de vragenlijst binnenkomt, is een week die u niet onder deadlinedruk hoeft te vinden.
+
 ## Belangrijkste inzichten
 
 - Inkoopteams bij ondernemingen beoordelen SaaS-leveranciers aan de hand van een bekende, herhaalbare checklist - SSO/SAML, gedocumenteerde RLS-gebaseerde tenant-isolatie, audit logging, uptime SLA's en incidentresponsplannen - en prototypes van AI-builders voldoen hier vrijwel nooit standaard aan.

@@ -61,7 +61,7 @@ Geen van deze zaken zijn exotische bugs. Het is de voorspelbare uitkomst van een
 
 Het instinct om iemand in te huren voelt logisch: "ik heb iemand nodig die hierin gespecialiseerd is." Maar het vinden van een echte React-performance-specialist - iemand die daadwerkelijk een flame graph in de React DevTools Profiler kan lezen, dit kan correleren met het Chrome Performance-tabblad, en het verschil kan aangeven tussen een render die traag is door onnodige re-renders versus een render die traag is door een oprecht dure berekening - is een smallere zoektocht dan het klinkt. De meeste kandidaten voor "senior React-developer" kunnen vloeiend functies bouwen en hebben nog nooit uit frustratie een profiler geopend.
 
-Op de Europese freelance- en contractmarkt in 2026 rekent een contractor met echte, aantoonbare performance-optimalisatie-ervaring doorgaans €80–€130 per uur, en een gerichte re-render-audit-en-fix-opdracht op een middelgrote app duurt 40–80 factureerbare uren, inclusief de ontdekkingsfase waarin hij of zij eerst een onbekende, door AI gegenereerde codebase moet leren kennen voordat er veilig aan gesleuteld kan worden. Dat brengt de directe kosten op ongeveer **€3.200–€10.400** - voordat de tijd is meegerekend die is besteed aan het vinden, screenen en interviewen van die contractor, wat voor een oprecht gespecialiseerde vaardigheid als deze vaak drie tot zes weken van de aandacht van een founder kost, omdat de meeste freelance-marktplaatsen overspoeld zijn met generalisten die performance-expertise claimen die ze onder kritische vragen niet daadwerkelijk kunnen aantonen. Er is ook een reëel evaluatierisico: tenzij de founder zelf al weet hoe een renderboom te profileren, is het lastig om tijdens een sollicitatiegesprek te bepalen of de performance-claims van een kandidaat oprecht zijn of ingestudeerd.
+Op de Europese freelance- en contractmarkt in 2026 rekent een contractor met echte, aantoonbare performance-optimalisatie-ervaring doorgaans €80-€130 per uur, en een gerichte re-render-audit-en-fix-opdracht op een middelgrote app duurt 40-80 factureerbare uren, inclusief de ontdekkingsfase waarin hij of zij eerst een onbekende, door AI gegenereerde codebase moet leren kennen voordat er veilig aan gesleuteld kan worden. Dat brengt de directe kosten op ongeveer **€3.200-€10.400** - voordat de tijd is meegerekend die is besteed aan het vinden, screenen en interviewen van die contractor, wat voor een oprecht gespecialiseerde vaardigheid als deze vaak drie tot zes weken van de aandacht van een founder kost, omdat de meeste freelance-marktplaatsen overspoeld zijn met generalisten die performance-expertise claimen die ze onder kritische vragen niet daadwerkelijk kunnen aantonen. Er is ook een reëel evaluatierisico: tenzij de founder zelf al weet hoe een renderboom te profileren, is het lastig om tijdens een sollicitatiegesprek te bepalen of de performance-claims van een kandidaat oprecht zijn of ingestudeerd.
 
 ## Optie B: LaunchStudio's audit en fix voor re-renders met vaste omvang
 
@@ -75,14 +75,14 @@ LaunchStudio benadert hetzelfde probleem als een afgebakende opdracht met vaste 
 
 4. **Beoordeling van context- en statusarchitectuur.** Te brede context providers worden opgesplitst in gescopede providers, zodat een verandering in één deel van de app-status niet cascadeert door niet-gerelateerde componenten, en status die lokaal bij een component hoort, wordt teruggebracht uit gedeelde bovenliggende componenten.
 
-Dat werk wordt geleverd als een opdracht met vaste omvang, doorgaans onder het **Launch Ready**- of **Launch & Grow**-pakket, binnen **1 tot 2 weken**, tegen een kostprijs van ongeveer **€1.200–€2.800**, afhankelijk van hoe diepgeworteld het re-render-probleem is - zonder wervingstijd, zonder screeningsrisico en zonder inwerkperiode, omdat het diagnosticeren van precies dit patroon in AI-gegenereerde React-code voor het uitvoerende team geen nieuw probleem is.
+Dat werk wordt geleverd als een opdracht met vaste omvang, doorgaans onder het **Launch Ready**- of **Launch & Grow**-pakket, binnen **1 tot 2 weken**, tegen een kostprijs van ongeveer **€1.200-€2.800**, afhankelijk van hoe diepgeworteld het re-render-probleem is - zonder wervingstijd, zonder screeningsrisico en zonder inwerkperiode, omdat het diagnosticeren van precies dit patroon in AI-gegenereerde React-code voor het uitvoerende team geen nieuw probleem is.
 
 ## Naast elkaar: kosten en tijd tot oplossing
 
-- **Toegewijde performance engineer inhuren**: €3.200–€10.400 aan directe contractorkosten, plus 3–6 weken wervings- en screeningstijd, plus het risico dat de performance-claims van de aangenomen persoon niet standhouden zodra hij of zij daadwerkelijk in de codebase zit.
-- **LaunchStudio-opdracht**: €1.200–€2.800 vaste kosten, werk begint binnen enkele dagen, opgelost binnen 1–2 weken, geleverd door engineers die dit specifieke faalpatroon routinematig diagnosticeren in plaats van het op de werkvloer te leren.
+- **Toegewijde performance engineer inhuren**: €3.200-€10.400 aan directe contractorkosten, plus 3-6 weken wervings- en screeningstijd, plus het risico dat de performance-claims van de aangenomen persoon niet standhouden zodra hij of zij daadwerkelijk in de codebase zit.
+- **LaunchStudio-opdracht**: €1.200-€2.800 vaste kosten, werk begint binnen enkele dagen, opgelost binnen 1-2 weken, geleverd door engineers die dit specifieke faalpatroon routinematig diagnosticeren in plaats van het op de werkvloer te leren.
 
-Voor het specifieke, afgebakende probleem "onze React-app rendert te vaak opnieuw en het kost ons gebruikers" is het traject met vaste omvang doorgaans 2–4x goedkoper en ongeveer 3–4x sneller daadwerkelijk op te lossen - omdat de wervingstrechter volledig wordt overgeslagen en er wordt begonnen met mensen die het patroon al herkennen.
+Voor het specifieke, afgebakende probleem "onze React-app rendert te vaak opnieuw en het kost ons gebruikers" is het traject met vaste omvang doorgaans 2-4x goedkoper en ongeveer 3-4x sneller daadwerkelijk op te lossen - omdat de wervingstrechter volledig wordt overgeslagen en er wordt begonnen met mensen die het patroon al herkennen.
 
 ## Wanneer u wél een fulltime performance engineer nodig heeft
 
@@ -94,9 +94,9 @@ Er is een reëel omslagpunt waarop een toegewijde aanwerving zinvol is: zodra ee
 
 - De terugkerende hoofdoorzaken zijn voorspelbaar: inline props die memoization teniet doen, te brede context providers, ontbrekende `useMemo`/`useCallback` bij dure berekeningen, niet-gevirtualiseerde lange lijsten, en status die te hoog in de componentenboom is getild.
 
-- Een echte React-performance-specialist is een smalle, lastig te screenen vaardigheid; het inhuren van een contractor kost doorgaans €3.200–€10.400 en duurt 3–6 weken voordat het werk zelfs maar begint.
+- Een echte React-performance-specialist is een smalle, lastig te screenen vaardigheid; het inhuren van een contractor kost doorgaans €3.200-€10.400 en duurt 3-6 weken voordat het werk zelfs maar begint.
 
-- LaunchStudio lost dezelfde klasse re-render-problemen op voor ongeveer €1.200–€2.800 binnen 1–2 weken, met profilering-eerst-diagnose in plaats van reflexmatige, blinde memoization.
+- LaunchStudio lost dezelfde klasse re-render-problemen op voor ongeveer €1.200-€2.800 binnen 1-2 weken, met profilering-eerst-diagnose in plaats van reflexmatige, blinde memoization.
 
 - Een toegewijde performance-aanwerving wordt pas echt gerechtvaardigd zodra de kernwaarde van een product afhangt van continue, complexe rendering - niet de eerste keer dat een dashboard na de lancering traag aanvoelt.
 

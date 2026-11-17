@@ -93,6 +93,43 @@ Het verhaal van Fatima wordt eerder de norm dan de uitzondering. Naarmate meer e
 
 De oprichters die deze deals verliezen, zijn niet degenen met slechtere producten. Het zijn degenen die de kloof tussen "het werkt" en "het is aantoonbaar veilig" voor het eerst ontdekken terwijl een klok van 10 werkdagen al loopt. De oprichters die deze deals winnen, zijn degenen die de vragenlijst zelf als specificatie behandelen - en engineers inschakelen die al weten hoe ze deze punt voor punt kunnen beantwoorden, vóór de deadline verstrijkt.
 
+## Wat is een vendor security questionnaire?
+
+Een vendor security questionnaire is een gestructureerde lijst met vragen die een enterprise naar een leverancier stuurt om te beoordelen of de beveiligingsmaatregelen van die leverancier sterk genoeg zijn om de gegevens van de enterprise aan toe te vertrouwen. Sommige kopers gebruiken hun eigen spreadsheet, zoals het document met 40 punten dat Fatima ontving; andere baseren hun vragenlijst op standaardformaten zoals de Shared Assessments SIG-vragenlijst of de Cloud Security Alliance CAIQ. Ongeacht het formaat worden de antwoorden meestal onderdeel van het leveranciersdossier en kan er later in het contract naar worden verwezen.
+
+Dat laatste punt is precies waarom de vragenlijst aandacht van engineering verdient, en niet alleen zorgvuldige formuleringen. Een antwoord dat u tijdens de inkoopprocedure geeft, is een verklaring waaraan u later kunt worden gehouden.
+
+## Hoe beantwoordt u een vendor security questionnaire? Stap voor stap
+
+De snelste betrouwbare manier om een vendor security questionnaire te beantwoorden, is elke vraag te behandelen als bewijs dat u al heeft of als een werkpunt dat u nog moet afronden. Dit is het proces dat de sprint van Fatima volgde, en het werkt voor elke vragenlijst:
+
+1. **Beoordeel elke regel.** Markeer elk punt als "ja, aantoonbaar", "deels" of "nee". Wees streng: een maatregel die bestaat maar niet is gedocumenteerd, telt als "deels".
+2. **Groepeer de gaten naar wat de deal blokkeert.** Tenant-isolatie, SSO en incidentrespons blokkeren deals meestal; documentatiegaten zijn doorgaans sneller te dichten.
+3. **Maak van elk "nee" een ticket.** Wijs een eigenaar en een streefdatum toe, precies zoals u dat bij een productfunctie zou doen.
+4. **Verzamel het bewijs onderweg.** Beleidsdocumenten, RLS-beleidscode, een logboek van een back-upherstel, de lijst van subverwerkers - elk antwoord moet naar iets concreets verwijzen.
+5. **Schrijf antwoorden in specifieke taal.** Noem de maatregel, de tool en de reikwijdte, bijvoorbeeld "Row Level Security-beleid in Postgres beperkt elke klanttabel tot het geauthenticeerde account."
+6. **Maak de resterende gaten openbaar, met datums.** Roadmap-items met een streefkwartaal, zoals de penetratietest en SOC 2 Type II van Fatima, worden veel eerder geaccepteerd dan ontwijkende antwoorden.
+7. **Bewaar alles als herbruikbare antwoordenbibliotheek.** De volgende enterprise-vragenlijst zal grotendeels overlappen met deze.
+
+## Antwoorden die slagen vs. antwoorden die zakken
+
+Het verschil tussen een antwoord dat slaagt en een antwoord dat zakt, is bijna altijd specificiteit en bewijs. De onderstaande voorbeelden komen uit de categorieën in de vragenlijst van Fatima.
+
+| Onderwerp | Antwoord dat zakt voor de review | Antwoord dat slaagt voor de review |
+|---|---|---|
+| Tenant-isolatie | "Onze app toont gebruikers alleen hun eigen gegevens." | "Isolatie wordt afgedwongen op databaseniveau met RLS-beleid gekoppeld aan `auth.uid()` en account-ID; beleidsdocumentatie bijgevoegd." |
+| Encryptie | "Alles is versleuteld." | "AES-256 in rust op de databaselaag; TLS 1.2+ met HSTS op alle endpoints; samenvatting bijgevoegd." |
+| Incidentrespons | "We zouden direct reageren." | "Schriftelijk IR-plan met benoemde eigenaar, escalatiepad en klantmelding in lijn met de 72-uurseis van de AVG." |
+| Subverwerkers | "We gebruiken standaard cloudproviders." | "Volledige lijst bijgevoegd, elk met een getekende verwerkersovereenkomst (DPA)." |
+| Back-ups | "Onze provider regelt de back-ups." | "Point-in-time recovery ingeschakeld, RPO/RTO gedocumenteerd, laatste testherstel uitgevoerd en vastgelegd." |
+| SSO | "Komt binnenkort." | "SAML-gebaseerde SSO ondersteund met de identity provider van de klant." |
+
+## Veelgemaakte fouten bij het invullen van een beveiligingsvragenlijst
+
+De schadelijkste fout is "ja" antwoorden op een maatregel die alleen nog gepland is. Security-beoordelaars vragen regelmatig om het bewijs achter een "ja", en een antwoord dat tijdens het reviewgesprek niet overeind blijft, ondermijnt elk ander antwoord in de inzending.
+
+Andere fouten vertragen deals: velden leeg laten in plaats van een gedeeltelijke maatregel toe te lichten, generieke beleidstekst plakken die niet overeenkomt met uw werkelijke stack, AI-specifieke subverwerkers zoals de LLM-provider vergeten, en pas in de laatste twee dagen beginnen, waardoor er geen tijd overblijft om iets te repareren dat bij de beoordeling naar boven komt.
+
 ## Belangrijkste inzichten
 
 - Een vendor security questionnaire test gedocumenteerde, aantoonbare beheersmaatregelen - versleuteling, tenant-isolatie, incident response, back-ups, SSO - niet of het product werkt tijdens een demo.

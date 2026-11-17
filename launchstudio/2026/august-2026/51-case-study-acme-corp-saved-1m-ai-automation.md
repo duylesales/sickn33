@@ -52,6 +52,49 @@ Herre Roelevink, Founder & Managing Director of Manifera, put it this way: "We s
 
 Manifera, founded in 2014, has spent more than a decade building exactly this kind of production-grade data infrastructure for enterprise clients, including organizations like Vodafone and TNO in the Netherlands. That track record - 120+ engineers, 160+ delivered projects - is what makes a six-week timeline realistic rather than aspirational. You can see more of that portfolio at [manifera.com/portfolio](https://www.manifera.com/portfolio/).
 
+## Manual Entry vs. Rules-Based OCR vs. an LLM Pipeline
+
+The table below summarises the three approaches Acme Corp went through, using the figures from this project.
+
+| Factor | Manual data entry | Rules-based OCR | Multimodal LLM pipeline |
+|---|---|---|---|
+| Handles 400+ changing layouts | Yes, slowly | No | Yes |
+| Time per document | About 4 minutes | Fast, when it works | About 3.5 seconds |
+| Error rate | 4% | Silent failures, abandoned within three months | 0.5%, with uncertain cases routed to humans |
+| Annual cost | $1.2 million in payroll | Not sustainable in practice | Roughly $85,000 all-in |
+| Behaviour when unsure | Human judgment | Guesses or fails silently | Returns null and escalates |
+
+## What Is Semantic Caching, and How Does It Cut LLM API Costs?
+
+Semantic caching is a technique that stores the results of previous LLM requests and reuses them when a new request means the same thing, even if the wording is different, so you do not pay for the same inference twice. Instead of matching the exact text of a prompt, the system converts each request into a vector embedding, searches a vector store such as Redis for a previous request above a similarity threshold, and returns the stored answer when it finds a close enough match.
+
+In an AI SaaS product, semantic caching works best for repeated questions: support queries, policy lookups, classification of near-identical inputs, or standard instructions that many users trigger. It needs more care in financial document extraction. Two invoices from the same vendor can look almost identical while containing different amounts, so caching the extracted values would be dangerous. Safer uses in a pipeline like Acme's are exact-match caching of duplicate documents (the checksum step already does this), caching layout analysis per vendor template, and caching classification steps such as "is this an invoice or a bill of lading?".
+
+To use semantic caching safely, follow three rules:
+
+1. **Set a strict similarity threshold** and test it on real data, because a threshold that is too loose returns wrong answers that look right.
+2. **Scope the cache per tenant**, so one customer's cached answer can never be served to another customer.
+3. **Expire entries** when prompts, models or source data change, and log cache hits in the same audit trail as fresh generations.
+
+## How to Calculate the ROI of AI Document Automation
+
+You calculate the ROI of AI document automation by comparing the full cost of the current manual process with the full running cost of the pipeline, then adjusting for the error rate on both sides. A practical sequence looks like this:
+
+1. **Count the volume.** Documents per day, pages per document and seasonal peaks.
+2. **Price the manual process.** Payroll and benefits for the people doing the work, plus the cost of errors, such as delays, penalties or rework. At Acme, this was $1.2 million a year plus demurrage costs from customs holds.
+3. **Price the pipeline.** API fees per page (about $0.02 here), cloud functions, storage, monitoring, and the human review time for escalated documents.
+4. **Add build and maintenance.** Include the initial build and an ongoing budget for prompt updates, model changes and new document types.
+5. **Compare error costs.** A lower error rate has a value of its own, because each avoided mistake saves rework and customer friction.
+
+Run this calculation before you build. If the manual process is small, the business case may rest on speed or accuracy rather than payroll savings.
+
+## Common Mistakes When You Build an AI App for Document Processing
+
+- **Trusting a demo accuracy number.** Test on a large historical sample, as Acme did with 3,000 documents, before going live.
+- **No human review queue.** Without an escalation path, uncertain extractions go straight into your ERP.
+- **Hardcoding one model.** A model-agnostic design lets you switch providers when prices or quality change.
+- **Skipping security basics.** AI-generated pipeline code often lacks input validation and access controls, which creates AI vulnerabilities around sensitive financial documents.
+
 ## Key Takeaways
 
 - Manual data entry of unstructured documents (like PDFs and emails) is one of the most expensive and error-prone bottlenecks in traditional enterprise operations, often hiding in plain sight as a "normal" cost center until someone runs the ROI math.
@@ -63,6 +106,8 @@ Manifera, founded in 2014, has spent more than a decade building exactly this ki
 - A custom AI pipeline can reduce processing times from minutes to seconds, and reduce operational costs by over 90% compared to manual human labor, but only if it is architected with a "fail safely" escalation path rather than a "always guess" default.
 
 - AI automation does not necessarily mean mass layoffs; it allows companies to reallocate human capital away from robotic transcription and toward high-value strategic and relationship-driven tasks.
+
+- Semantic caching reuses answers to requests that mean the same thing, cutting LLM API costs, but in financial extraction it must be scoped per tenant and limited to steps where a cached answer cannot be wrong.
 
 ## Automate Your Bottlenecks
 

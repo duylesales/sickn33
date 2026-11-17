@@ -73,6 +73,57 @@ Stel daarnaast een strikte aansprakelijkheidslimiet in, doorgaans gemaximeerd op
 
 Ongeveer 45% van de met AI gegenereerde code bevat kwetsbaarheden rondom authenticatie en acceptatie-flows. Het sluitend inrichten van zowel de juridische tekst als de technische click-wrap toestemming is exact wat Herre Roelevink, Oprichter & Managing Director van Manifera, omschrijft: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Manifera bouwt deze juridisch en technisch geharde architecturen sinds **2014** vanuit **Amsterdam** (Herengracht 420) en **Ho Chi Minhstad, Vietnam**.
 
+## Welke clausules horen in algemene voorwaarden voor generatieve AI?
+
+Algemene voorwaarden voor generatieve AI zijn de overeenkomst tussen uw AI SaaS-product en de gebruikers ervan, waarin staat wie verantwoordelijk is voor AI-output, wat gebruikers wel en niet mogen genereren en hoe hun gegevens worden gebruikt. Een enterprise-waardige versie bevat minimaal de onderstaande clausules. Gebruik deze tabel als checklist wanneer u uw huidige concept met uw jurist doorneemt.
+
+| Clausule | Wat het regelt | Waarom generatieve AI het nodig heeft |
+|---|---|---|
+| Nauwkeurigheids- en Vertrouwensdisclaimer | Output kan onjuist zijn; de gebruiker moet controleren | Hallucinaties zijn een inherente eigenschap van LLM's |
+| Beleid voor Toegestaan Gebruik (AUP) | Benoemde verboden content en gedragingen | Kwaadwillenden kunnen op grote schaal schadelijke content produceren |
+| Pass-Through Bepaling | Afhankelijkheid van upstream modelproviders | Storingen en moderatiewijzigingen liggen buiten uw invloed |
+| Eigenaarschap van Input en Output | Wie eigenaar is van prompts, uploads en antwoorden | Auteursrecht op AI-output is onzeker |
+| Overeenkomstigheidsdisclaimer | Output is niet gegarandeerd uniek | Modellen komen vaak op vergelijkbare antwoorden uit |
+| Datagebruik en training | Of Input wordt gebruikt om modellen te trainen of te verbeteren | Enterprise-klanten vragen hier als eerste naar |
+| Aansprakelijkheidslimiet en toepasselijk recht | Maximale blootstelling en bevoegde rechter | Voorkomt ongelimiteerde claims rond één enkele output |
+| Wijziging van de voorwaarden | Hoe en wanneer u de voorwaarden aanpast | Modelproviders en regelgeving veranderen regelmatig |
+
+### De clausule over datagebruik en training
+
+De clausule over datagebruik vertelt klanten in heldere taal of hun Input en Output worden gebruikt om enig model te trainen of te verbeteren, van uzelf of van uw provider. In de meeste B2B-deals is dit de eerste clausule die het juridische team van de klant leest. Houd deze consistent met uw privacyverklaring en met de API-tier die u daadwerkelijk gebruikt. Traint de enterprise-API van uw provider niet op klantdata, vermeld dat dan en noem de bewaartermijn. Voor Europese klanten die persoonsgegevens via uw product verwerken, hoort de voorwaarden te verwijzen naar een aparte verwerkersovereenkomst, omdat Artikel 28 AVG een schriftelijke overeenkomst tussen verwerkingsverantwoordelijke en verwerker vereist.
+
+### AI-transparantie onder de EU AI Act
+
+De EU AI Act voegt transparantieverplichtingen toe die deels in uw product en deels in uw voorwaarden thuishoren. Artikel 50 vereist dat mensen worden geïnformeerd wanneer zij met een AI-systeem communiceren, tenzij dat uit de context duidelijk is, en dat bepaalde door AI gegenereerde of gemanipuleerde content, zoals deepfakes, als kunstmatig wordt aangemerkt. Uw voorwaarden kunnen vastleggen welke partij, u of de zakelijke klant die uw tool inzet, verantwoordelijk is voor die melding aan eindgebruikers. Maak die verdeling expliciet in plaats van haar onbenoemd te laten.
+
+## Hoe maakt u algemene voorwaarden voor AI afdwingbaar?
+
+Algemene voorwaarden zijn alleen afdwingbaar als u kunt aantonen dat elke gebruiker akkoord is gegaan met de specifieke versie die op dat moment gold, en dat betekent in de praktijk een click-wrap-proces met vastgelegde toestemming. Browse-wrap-voorwaarden, waarbij een link in de footer staat en voortgezet gebruik als akkoord geldt, worden veel eerder met succes aangevochten. Een praktische implementatie ziet er zo uit:
+
+1. **Geef elk document een versie.** Voorzie de algemene voorwaarden, de AUP en de privacyverklaring van een versienummer en een ingangsdatum.
+2. **Gebruik een expliciete acceptatiestap.** Een niet vooraf aangevinkt vakje of een knop "Ik ga akkoord" naast een zichtbare link naar de voorwaarden, zowel bij registratie als bij een upgrade.
+3. **Leg de acceptatie vast.** Sla gebruikers-ID, account-ID, documentversie, tijdstempel en de wijze van acceptatie op in een tabel waaraan alleen kan worden toegevoegd (append-only).
+4. **Vraag opnieuw akkoord bij wezenlijke wijzigingen.** Verandert u hoe data wordt gebruikt of hoe aansprakelijkheid is geregeld, toon dan de nieuwe versie en vraag opnieuw om akkoord voordat het gebruik wordt voortgezet.
+5. **Kondig wijzigingen vooraf aan.** Mail accounteigenaren tijdig, zodat enterprise-klanten de wijzigingen kunnen beoordelen.
+6. **Koppel de AUP aan handhaving.** Markeer content die het beleid schendt, leg het bewijs vast en laat besluiten over blokkering via een auditeerbaar beheerproces lopen.
+
+Voor enterprise-klanten die een onderhandelde raamovereenkomst (Master Services Agreement) tekenen, is de rangorde van documenten belangrijk. Leg duidelijk vast of de getekende overeenkomst voorgaat op de online voorwaarden, zodat beide documenten elkaar niet tegenspreken.
+
+### Algemene voorwaarden naar Nederlands recht
+
+Kiest u Nederlands recht als toepasselijk recht, dan gelden de regels van afdeling 6.5.3 van het Burgerlijk Wetboek (artikel 6:231 en verder). Twee punten verdienen bijzondere aandacht. Ten eerste de informatieplicht: u moet de wederpartij een redelijke mogelijkheid bieden om van de voorwaarden kennis te nemen, en bij een elektronisch gesloten overeenkomst betekent dat dat u ze vóór of bij het sluiten elektronisch beschikbaar stelt op een manier waarop de gebruiker ze kan opslaan. Een downloadbare PDF-versie naast de click-wrap-stap is daarom geen overbodige luxe. Ten tweede de zogenoemde zwarte en grijze lijst (artikelen 6:236 en 6:237 BW), die bij consumenten bepaalde bedingen als onredelijk bezwarend aanmerkt of vermoedt. Verkoopt u ook aan consumenten, dan heeft u in de praktijk een aparte consumentenversie nodig. In B2B-relaties speelt bovendien de "battle of forms": verwijzen beide partijen naar hun eigen voorwaarden, dan gelden volgens artikel 6:225 lid 3 BW in beginsel die van de partij die er als eerste naar verwees, tenzij die uitdrukkelijk zijn van de hand gewezen.
+
+## Veelgemaakte fouten in algemene voorwaarden voor generatieve AI
+
+De meeste problemen met AI-voorwaarden komen voort uit inconsistentie, niet uit ontbrekende clausules. Dit zijn de fouten die in enterprise-beoordelingen het vaakst opduiken:
+
+- **Marketingteksten die de disclaimer tegenspreken.** Wie op de landingspagina "100% correcte antwoorden" belooft, ondermijnt de nauwkeurigheidsdisclaimer in de eigen voorwaarden.
+- **Voorwaarden en privacyverklaring die elkaar tegenspreken** over de vraag of klantdata wordt gebruikt om een model te trainen.
+- **De voorwaarden van upstream-providers negeren.** OpenAI, Anthropic en Google publiceren elk een gebruiksbeleid, en uw AUP moet minstens zo streng zijn als het beleid van elke provider waarvan u afhankelijk bent.
+- **B2B-bepalingen toepassen op consumenten.** Verkoopt u aan consumenten in de EU, dan beperkt de Richtlijn oneerlijke bedingen (93/13/EEG) hoe ver u aansprakelijkheid kunt uitsluiten, dus een consumentenversie vraagt meestal om andere formuleringen.
+- **Geen wijzigingsclausule.** Zonder zo'n clausule kunt u de voorwaarden niet netjes aanpassen wanneer een model, een provider of de regelgeving verandert.
+- **Voorwaarden die het product niet handhaaft.** Een AUP zonder detectie, logging of blokkeringsproces erachter is een belofte die u niet kunt waarmaken.
+
 ## Belangrijkste Inzichten
 
 - Generieke SaaS-voorwaarden beschermen niet tegen de specifieke risico's van Generatieve AI.

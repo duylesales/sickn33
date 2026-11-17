@@ -83,6 +83,38 @@ Niets van dit alles is de moeite waard zonder meting, want "onboarding voelt bet
 
 De producten die op dit moment distributie winnen in AI SaaS, zijn niet noodzakelijk de producten met de meeste functies - het zijn vaak de producten die een gebruiker voor het eerst naar een oprecht "wow, dat is nuttig"-moment brengen voordat de aandacht van die gebruiker afdwaalt naar het volgende open tabblad. Een briljant AI-model verpakt in een onboardingflow die drie minuten en vijf klikken nodig heeft om waarde te bereiken, is vanuit groeioogpunt functioneel niet te onderscheiden van een middelmatig product: beide verliezen het merendeel van hun aanmeldingen voordat het product ooit wordt beoordeeld op zijn daadwerkelijke verdiensten.
 
+## Hoe definieert u de juiste activatiegebeurtenis?
+
+Een activatiegebeurtenis is de ene, meetbare actie die laat zien dat een nieuwe gebruiker de kernwaarde heeft ontvangen die uw product belooft - geen paginaweergave en geen klik op "Aan de slag". Die goed kiezen is de stap die de meeste founders overslaan, en zonder die stap is elk time-to-value-cijfer giswerk. Een praktische manier om haar te definiëren:
+
+1. **Schrijf de belofte van uw landingspagina op.** Als de kop zegt "AI-taakverdelingen in seconden", dan is het waardemoment een gegenereerde taakverdeling, geen ingevuld profiel.
+2. **Kies de eerste output die die belofte waarmaakt.** Het moet iets zijn dat het systeem kan loggen, zoals "eerste AI-resultaat getoond" of "eerste rapport geëxporteerd".
+3. **Maak haar binair en voorzien van een tijdstempel.** De gebeurtenis heeft wel of niet plaatsgevonden, en ze heeft een tijdstempel die u kunt vergelijken met de tijdstempel van de aanmelding.
+4. **Stuur haar als benoemde gebeurtenis naar uw analysetool.** Productanalysetools zoals PostHog, Mixpanel en Amplitude ondersteunen allemaal aangepaste events, zodat het verschil tussen `signed_up` en `first_value_delivered` uw gemeten time-to-value wordt.
+5. **Toets haar aan retentie.** Als gebruikers die de gebeurtenis bereiken op dag 2 veel vaker terugkomen dan gebruikers die dat niet doen, heeft u de juiste gekozen.
+
+## Audit van de onboardingflow: trage vs snelle time-to-value
+
+De snelste manier om een onboardingflow te beoordelen, is uzelf aanmelden als gloednieuwe gebruiker, een timer starten en elke stap vergelijken met de patronen hieronder.
+
+| Onderdeel van de eerste sessie | Patroon met trage time-to-value | Patroon met snelle time-to-value |
+|---|---|---|
+| Eerste scherm na aanmelding | Leeg dashboard | Voorbeeldproject of voorbeelddata |
+| Configuratiestappen | Profiel, integraties en uitnodigingen vooraf | Uitgesteld tot na het eerste resultaat |
+| Eerste actie | Een dozijn even zwaar wegende opties | Eén duidelijke call-to-action |
+| Wachttijd van de AI | Spinner zonder feedback | Streamende output of een eerlijke voortgangsindicator |
+| Meting | Alleen aanmeldingen | Aanmelding en activatiegebeurtenis, beide met tijdstempel |
+
+## Veelgemaakte fouten bij het repareren van een onboardingflow
+
+De meeste mislukte onboardingfixes gaan mis omdat ze veranderen hoe de flow eruitziet, zonder het pad naar waarde te veranderen.
+
+- **Een producttour toevoegen in plaats van een resultaat.** Een rondleiding met tooltips legt het product uit, maar levert de waarde niet, en veel gebruikers slaan haar toch over.
+- **Activatie te vroeg definiëren.** Wie "dashboard geopend" als activatie telt, krijgt gezond ogende cijfers terwijl de echte uitval verborgen blijft.
+- **Configuratie schrappen die het eerste resultaat echt nodig heeft.** Uitstellen werkt alleen voor stappen die niet vereist zijn; is een integratie essentieel, bied dan voorbeelddata aan totdat die gekoppeld is.
+- **Alles tegelijk veranderen.** Wie vijf onboardingwijzigingen in één release uitbrengt, kan niet meer vaststellen welke de activatiegraad heeft verschoven.
+- **De AVG vergeten bij het toevoegen van analytics.** Activatietracking voor gebruikers in de EU vereist nog steeds een rechtsgrond onder de AVG (GDPR) en, voor niet-essentiële cookies, toestemming onder de ePrivacy-regels (in Nederland de Telecommunicatiewet) - plan dit voordat u iets instrumenteert.
+
 ## Belangrijkste inzichten
 
 - Time-to-value is de kloof tussen het aanmaken van een account en de eerste oprechte ervaring van een gebruiker met de kernwaarde van het product, en voor zelfbedienings-AI SaaS moet dat binnen 60 seconden gebeuren om de aandacht van een nieuwe gebruiker vast te houden.

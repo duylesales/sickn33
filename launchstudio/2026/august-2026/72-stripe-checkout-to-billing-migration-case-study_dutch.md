@@ -79,6 +79,46 @@ De fout is niet het kiezen van Stripe Checkout - het is de juiste tool om snel e
 
 Het goede nieuws is dat deze migratie geen herbouw van het product vereist. Het vereist het herbouwen van de factureringslaag eronder - en omdat de migratietooling van Stripe specifiek is ontworpen om bestaande klant- en betaalgeschiedenis te behouden, kan een live platform met betalende klanten overstappen van Checkout naar Billing zonder dat ook maar één klant merkt dat de overgang heeft plaatsgevonden.
 
+## Stripe Checkout vs Stripe Billing: wat elk van beide afhandelt
+
+Stripe Checkout handelt het moment van betalen af; Stripe Billing handelt alles af wat er met een abonnement gebeurt na dat moment. De tabel hieronder laat zien waar elk onderdeel van de levenscyclus van terugkerende omzet ligt wanneer Checkout op zichzelf wordt gebruikt in de modus voor eenmalige betalingen, zoals in de oorspronkelijke scaffold van InvoiceIQ.
+
+| Factureringstaak | Alleen Checkout (betaalmodus) | Stripe Billing |
+|---|---|---|
+| De eerste betaling innen | Gehoste betaalpagina | Gehoste pagina, ingebed betaalformulier of factuur |
+| De factureringscyclus bijhouden | Niet afgehandeld - eigen code of een spreadsheet | Abonnementsobject met een factureringscyclusanker |
+| Upgrades en downgrades van plannen | Nieuwe sessie plus een handmatige terugbetaling | Automatische proratie op het abonnement |
+| Mislukte verlengingsbetalingen | Niet afgehandeld | Configureerbaar herhalingsschema en herinneringsmails |
+| Facturen | Ontvangstbewijs voor één betaling | Een factuur voor elke factureringsperiode |
+| Kaartwijzigingen en opzeggingen | Klant mailt de founder | Door Stripe gehost Customer Portal |
+| Levenscyclusgebeurtenissen voor uw app | Eén succes-redirect | Webhooks zoals `invoice.paid` en `customer.subscription.updated` |
+
+Eén nuance is goed om te weten: Checkout kan ook in abonnementsmodus draaien, waarbij achter de gehoste pagina een Stripe Billing-abonnement wordt aangemaakt. De echte vraag bij een migratie van Stripe Checkout naar Stripe Billing is daarom niet welke pagina de klant ziet, maar of er een abonnementsobject bestaat dat na de eerste betaling eigenaar is van de factureringscyclus.
+
+## Veelgemaakte fouten bij een Stripe Billing-migratie
+
+De duurste migratiefouten zijn de fouten die live klanten raken: een dubbele afschrijving, een verschoven verlengingsdatum of toegang die van de ene op de andere dag verdwijnt. Dit zijn de fouten die het vaakst voorkomen wanneer founders de overstap zelf proberen te maken:
+
+1. **Het factureringscyclusanker resetten.** Een nieuw abonnement aanmaken dat "vandaag" begint in plaats van op de oorspronkelijke verlengingsdatum van elke klant, betekent dat mensen te vroeg worden belast of gratis dagen krijgen.
+2. **Vertrouwen op de succes-redirect in plaats van op webhooks.** Een redirect wordt alleen geactiveerd terwijl de klant in de browser zit. Verlengingen, mislukkingen en opzeggingen gebeuren zonder de klant, dus toegangsrechten moeten geverifieerde webhook-gebeurtenissen volgen.
+3. **Handtekeningcontroles en idempotentie overslaan.** Stripe kan dezelfde gebeurtenis meer dan eens afleveren. Een listener die de `Stripe-Signature`-header niet verifieert en dubbele event-ID's niet negeert, kan twee keer toegang verlenen of een opzegging twee keer verwerken.
+4. **Dubbele Customer-objecten aanmaken.** Als het migratiescript een nieuwe Stripe Customer aanmaakt in plaats van de bestaande te hergebruiken, blijven de opgeslagen kaart en de betaalgeschiedenis achter op het oude record.
+5. **Dunning inschakelen zonder "achterstallig" te definiëren.** Herinneringsmails zijn maar de helft van dunning. Uw app heeft ook een duidelijke regel nodig voor wat een klant nog mag gebruiken zolang een betaling openstaat, en wat er gebeurt wanneer de laatste poging mislukt.
+6. **Iedereen overzetten zonder parallelle test.** Door proratie en portaaltoegang eerst te testen op een kleine set testabonnementen, zoals het team van InvoiceIQ op dag 6 deed, worden koppelingsfouten opgespoord voordat ze betalende klanten bereiken.
+
+## Een checklist vóór de migratie naar Stripe Billing
+
+U bent klaar om een abonnementsmigratie te starten wanneer u op elk van deze punten ja kunt antwoorden:
+
+- Elke betalende klant is gekoppeld aan precies één bestaande Stripe Customer-ID.
+- U kent van elke klant het huidige plan, de prijs en de volgende verlengingsdatum.
+- Er bestaan Products en Prices in Stripe Billing voor elk plan, inclusief oudere prijzen die bestaande klanten nog betalen.
+- Uw proratiebeleid voor upgrades en downgrades is op papier gezet.
+- Uw dunning-schema en de toegangsregels tijdens een periode met een mislukte betaling zijn afgesproken.
+- De configuratie van het Customer Portal legt vast welke acties klanten zelf mogen uitvoeren: een kaart bijwerken, van plan wisselen of opzeggen.
+- Een webhook-endpoint met handtekeningverificatie is getest in de testmodus van Stripe.
+- Er is een terugvalplan en iemand die het overgangsvenster in realtime bewaakt.
+
 ## Belangrijkste inzichten
 
 - Stripe Checkout is gebouwd om een betaling te innen, niet om een doorlopend abonnement te runnen - het heeft geen native concept van proratie, dunning of zelfbedieningsplanwijzigingen, wat de reden is waarom founders eindigen met het handmatig afstemmen van facturatie in een spreadsheet.
@@ -88,6 +128,8 @@ Het goede nieuws is dat deze migratie geen herbouw van het product vereist. Het 
 - Stripe Billing voegt abonnementsobjecten, automatische proratie, configureerbare dunning-herhalingsschema's en een gehost klantenportaal toe - waardoor facturatie verandert van een handmatige wekelijkse klus in een geautomatiseerd systeem.
 
 - Een live, omzetgenererend platform kan migreren van Checkout naar Billing zonder klanten opnieuw te belasten of verlengingsdatums te verstoren, zolang de bestaande klant- en betaalgeschiedenis correct wordt gekoppeld aan de nieuwe abonnementsobjecten vóór de overgang.
+
+- De meeste migratiefouten ontstaan door het resetten van factureringscyclusankers, door te vertrouwen op redirects in plaats van ondertekende webhooks, of door een parallelle test over te slaan - een korte checklist vóór de migratie vangt ze op voordat de overgang plaatsvindt.
 
 - LaunchStudio voltooide de volledige migratie van InvoiceIQ - objectkoppeling, webhook-infrastructuur, proratie, dunning en klantenportaal - in 6 werkdagen onder het Launch & Grow-pakket, zonder enige verstoring voor klanten.
 

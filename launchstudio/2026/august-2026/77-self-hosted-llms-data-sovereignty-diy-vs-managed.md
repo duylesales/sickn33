@@ -63,6 +63,39 @@ For a founder whose entire deal depends on proving data sovereignty correctly on
 
 A team with genuine, demonstrated experience running production ML infrastructure - GPU cluster management, network security engineering, model ops - can reasonably build this in-house, particularly if sovereign inference is close to the company's core technical differentiation rather than a compliance requirement bolted onto an otherwise unrelated product. The mistake isn't attempting it in-house; it's treating a sovereignty-driven deployment with the same casual urgency as a cost-optimization project, when the actual stakes - a procurement-blocking requirement from a hospital, ministry, or bank - are considerably higher.
 
+## Hosted API vs EU Region vs Self-Hosted LLM: Which Meets Data Sovereignty?
+
+Only a self-hosted LLM inside infrastructure you control gives a buyer verifiable proof that inference stays within an EU boundary; a hosted API or an EU region of a US provider improves data residency but leaves the jurisdiction question open. The difference matters because the US CLOUD Act allows US authorities to compel US-based providers to disclose data they control, wherever it is stored. The EU-US Data Privacy Framework gives many companies a legal basis for transfers, but some healthcare and public-sector buyers still require an EU-only architecture regardless.
+
+| | Hosted LLM API | EU region of a US cloud or AI provider | Self-hosted LLM in an isolated EU VPC |
+|---|---|---|---|
+| Where inference runs | Provider's infrastructure | EU data center, provider-controlled | EU data center, your environment |
+| Jurisdiction of the operator | Often US | US parent company | Depends on your hosting choice |
+| Proof you can give procurement | Provider's compliance documents | Region settings plus provider documents | Your own architecture and network documentation |
+| Operational burden | Lowest | Low | Highest: GPUs, patching, failover |
+| Typical fit | Most SaaS buyers | Buyers who need EU data residency | Buyers who need provable sovereignty |
+
+## How to Choose an Open-Source Model for a Sovereign Deployment
+
+The right model for a sovereign deployment is the smallest one that meets your quality bar under a licence your buyer accepts. A practical selection process:
+
+1. **Check the licence first.** Some open-weight models use permissive licences such as Apache 2.0, while others, such as Meta's Llama community licence, carry their own conditions. Your buyer's legal team may review this.
+2. **Build an evaluation set from your real task.** Fifty to a hundred anonymised examples of your actual workload reveal more than public benchmarks.
+3. **Size the model to your latency target.** A smaller model that answers within your latency budget often beats a larger one that needs more GPUs.
+4. **Pick a serving stack.** Open-source inference servers such as vLLM or Hugging Face Text Generation Inference handle batching and GPU memory for you.
+5. **Document the choice.** Record model version, licence, evaluation results and hosting location; this becomes part of the procurement file.
+
+## Sovereign Deployment Readiness Checklist
+
+Before you present a self-hosted LLM to a hospital, ministry or bank, confirm that you can show:
+
+- The data center location and the legal entity that operates it.
+- That outbound internet access from the inference environment is blocked, with documented exceptions.
+- Where logs, backups and caches are stored, and that none leave the boundary.
+- A signed data processing agreement with every subprocessor under GDPR Article 28.
+- A patching and model-update process with a named owner.
+- A failover test result, not just a failover design.
+
 ## Key Takeaways
 
 - Data sovereignty has become a hard procurement requirement for healthcare, government, and financial buyers specifically because GDPR's international transfer rules and the Schrems II ruling mean even a compliant US cloud API can't fully satisfy an EU-only requirement.

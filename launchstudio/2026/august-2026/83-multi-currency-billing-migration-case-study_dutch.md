@@ -85,6 +85,30 @@ Valutamismatch is vaak de grootste afzonderlijke oorzaak van internationale beta
 
 Een correct afgebakende migratie van internationale betalingen beoordeelt al deze factoren samen, in plaats van valuta als een geïsoleerde fix te behandelen, precies omdat een oprichter die internationale groei nastreeft zelden een tweede kans krijgt om een goede eerste indruk te maken met een checkout-flow die stilletjes aanneemt dat elke klant eruitziet als een binnenlandse.
 
+## Wat Is Multi-Currency Billing Precies?
+
+Multi-currency billing betekent dat een klant een prijs ziet, betaalt en gefactureerd wordt in zijn eigen valuta, waarbij die valuta vast blijft gedurende de hele looptijd van het abonnement. Dat is iets anders dan alleen omgerekende prijzen tonen: bij echte facturatie in meerdere valuta's wordt de betaling zelf in de lokale valuta uitgevoerd, zodat de bank van de klant deze nooit als een buitenlandse transactie behandelt. De onderstaande tabel laat zien hoe beide benaderingen zich verhouden op de punten die het foutpercentage van Kwame veroorzaakten.
+
+| Aspect | Facturatie in één valuta (alleen EUR) | Facturatie in meerdere valuta's (EUR, GBP, USD) |
+|--------|----------------------------------------|-------------------------------------------------|
+| Wat een bezoeker uit het VK of de VS ziet | Prijzen in EUR | Prijzen in de eigen valuta |
+| Hoe de kaartuitgever de betaling behandelt | Transactie in vreemde valuta | Transactie in binnenlandse valuta |
+| Prijspunten | Eén prijs, door de bank omgerekend tegen een onbekende koers | Ronde, bewust vastgestelde lokale prijzen |
+| Verlengingsbedrag | Verandert mee met de wisselkoers | Vast in de valuta van het abonnement |
+| Factuur | Eén EUR-sjabloon voor iedereen | Valuta en belastingbehandeling per regio |
+| Monitoring van mislukte betalingen | Eén gemengd weigeringspercentage | Weigeringspercentage per valuta |
+
+## Hoe U een Stripe Valuta Migratie Stap voor Stap Plant
+
+Een Stripe valuta migratie verloopt het soepelst wanneer u de commerciële vragen beantwoordt voordat iemand de configuratie aanraakt. Een praktische volgorde ziet er zo uit:
+
+1. **Haal uw weigeringsdata per land op.** Bevestig dat mislukte betalingen echt geconcentreerd zijn bij internationale klanten voordat u in een oplossing investeert.
+2. **Kies uw valuta's.** Begin met de twee of drie valuta's die het grootste deel van uw internationale verkeer dekken, in plaats van elke valuta die Stripe ondersteunt.
+3. **Stel lokale prijspunten vast.** Spreek ronde bedragen per markt af en leg vast hoe vaak u deze herziet.
+4. **Beslis wat er met bestaande klanten gebeurt.** De meeste oprichters laten huidige abonnees in hun oorspronkelijke valuta en passen de nieuwe prijzen alleen toe op nieuwe aanmeldingen.
+5. **Controleer de belastingafhandeling.** Sinds de Brexit zijn de Britse btw en de EU-btw afzonderlijke regimes, en de Amerikaanse sales tax werkt weer anders. Een tool zoals Stripe Tax kan helpen, maar iemand moet nog steeds uw registraties bevestigen.
+6. **Test elke valuta van begin tot eind.** Voer in elke valuta een checkout, verlenging en mislukte betaling in testmodus uit voordat u live gaat.
+
 ## Belangrijkste inzichten
 
 - Een hoog betalingsfoutpercentage geconcentreerd bij internationale klanten is vaak een valutamismatch, geen product- of fraudeprobleem - kosten in vreemde valuta worden veel vaker gemarkeerd en geweigerd door kaartuitgevers dan kosten in de eigen valuta.

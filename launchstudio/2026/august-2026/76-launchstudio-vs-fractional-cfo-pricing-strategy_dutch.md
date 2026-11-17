@@ -75,6 +75,40 @@ Deze twee opdrachten in de verkeerde volgorde uitvoeren is duurder dan de meeste
 
 De omgekeerde fout is subtieler en brandt langzamer op: maandenlang betalen voor de retainer van een fractional CFO terwijl een gevalideerde prijsstrategie onuitgevoerd blijft omdat niemand in het team de Stripe-logica kan bouwen om die uit te voeren. Bij €2.500-€6.000/maand is drie maanden retainer zonder uitvoering €7.500-€18.000 besteed aan een plan dat nog geen enkele euro heeft opgeleverd van de extra omzet die het ontwikkeld was om te ontsluiten - en elke week dat het onuitgevoerd blijft, is een week gemiste MRR-groei die de strategie juist had moeten oplossen. Beide opdrachten correct opeenvolgen - eerst valideren, dan bouwen, waarbij elke rol een concreet resultaat overdraagt aan de ander - is wat de totale kosten en doorlooptijd dicht bij de som van elk onderdeel houdt in plaats van aanzienlijk meer.
 
+## Fractional CFO vs LaunchStudio: een vergelijking naast elkaar
+
+Een fractional CFO beantwoordt de vraag "wat moet onze SaaS-prijsstrategie zijn?", terwijl LaunchStudio de vraag beantwoordt "hoe laten we die prijsstelling in het product werken?". De tabel hieronder zet beide naast elkaar, op basis van de bedragen hierboven.
+
+| | Fractional CFO | LaunchStudio |
+|---|---|---|
+| Kernvraag | Wat brengen we in rekening, en hoe structureren we de niveaus? | Hoe meten, factureren en ontsluiten we functies passend bij die prijsstelling? |
+| Belangrijkste resultaat | Prijsstrategie: unit-economicsmodel, ontwerp van niveaus, inzichten in betalingsbereidheid | Werkende infrastructuur: gebruiksmeting, Stripe Billing-logica, feature gating, migratie van klanten |
+| Gebruikelijke kosten | €800-€1.800 per dag of €2.500-€6.000 per maand | Ongeveer €1.600-€3.200 binnen Launch & Grow |
+| Gebruikelijke doorlooptijd | 3-6 weken tot een aanbeveling | 1-2 weken tot een live implementatie |
+| Raakt de code aan | Nee | Ja |
+| Past het best wanneer | Het prijsmodel zelf onzeker is | Het prijsmodel vaststaat maar nog niet is gebouwd |
+
+## Hoe beslist u wie u eerst inhuurt?
+
+De snelste manier om te kiezen is vijf vragen eerlijk te beantwoorden; de antwoorden laten zien of uw onzekerheid in de strategie of in de uitvoering zit.
+
+1. **Kent u uw brutomarge per plan, inclusief de kosten van LLM-API's?** Zo niet, begin dan met financiële analyse.
+2. **Kunt u uitleggen welk klantsegment de meeste waarde haalt, en waarom?** Zo niet, dan komt onderzoek naar betalingsbereidheid eerst.
+3. **Is er een vastgelegd prijsbesluit waar de oprichters en het bestuur het over eens zijn?** Zo ja, dan zit het knelpunt waarschijnlijk in de uitvoering.
+4. **Meet uw product al de gebruiksmaatstaf waar uw nieuwe niveaus van afhangen?** Zo niet, dan moet die meting hoe dan ook worden gebouwd, ongeacht wie de strategie heeft ontworpen.
+5. **Wacht een prijsplan al langer dan een maand op implementatie?** Zo ja, dan is engineering de beperkende factor, niet de strategie.
+
+Overwegend "nee" op vraag 1 en 2 wijst op een fractional CFO als eerste stap. Overwegend "ja" op vraag 3 en 5 wijst op een engineeringopdracht als eerste stap.
+
+## Veelgemaakte fouten bij het implementeren van een nieuwe SaaS-prijsstrategie
+
+Zelfs een goed ontworpen prijsstrategie kan stranden in de implementatiefase, meestal op een van deze manieren:
+
+- **De verkeerde eenheid meten.** Als niveaus afhangen van "gegenereerde rapporten" maar het systeem alleen API-calls logt, sluiten facturen en planlimieten nooit op elkaar aan.
+- **Geen plan voor bestaande klanten.** Iedereen in één keer naar nieuwe prijzen overzetten, zonder oude tarieven te respecteren of vooraf te informeren, veroorzaakt churn waar de strategie nooit rekening mee hield.
+- **Feature gates alleen in de frontend.** Een knop verbergen is geen afdwinging; planlimieten moeten ook op de server worden gecontroleerd.
+- **Geen regels voor overschrijding.** Een gebruiksgebaseerd niveau heeft een helder antwoord nodig op wat er gebeurt als een klant de limiet overschrijdt: blokkeren, een toeslag rekenen of een upgrade voorstellen.
+
 ## Belangrijkste inzichten
 
 - Vlakke of stagnerende MRR-groei wordt zelden opgelost door een ander enkel getal te kiezen - de vaker voorkomende hoofdoorzaak is structureel: geen op gebruik gebaseerde component, tiers die niet aansluiten op waarde, of een prijsmodel dat de variabele kosten van AI-inferentie negeert.

@@ -14,20 +14,20 @@ When a founder realizes their Bolt- or Lovable-built app has no Row Level Securi
 
 ## The True Cost of One Senior Engineer in the Netherlands or EU
 
-A senior backend/security engineer capable of correctly implementing Postgres RLS policies, hardening a Stripe integration, and setting up production monitoring is not a junior hire. In the Dutch and broader EU tech market in 2026, that profile commands a base salary of roughly €75,000–€95,000 per year. Employer costs on top of base salary - social security contributions, pension, holiday allowance (vakantiegeld), and mandatory insurances - typically add another 25–35%, pushing the fully-loaded cost to **€94,000–€128,000 per year** before the person has shipped a single line of code.
+A senior backend/security engineer capable of correctly implementing Postgres RLS policies, hardening a Stripe integration, and setting up production monitoring is not a junior hire. In the Dutch and broader EU tech market in 2026, that profile commands a base salary of roughly €75,000-€95,000 per year. Employer costs on top of base salary - social security contributions, pension, holiday allowance (vakantiegeld), and mandatory insurances - typically add another 25-35%, pushing the fully-loaded cost to **€94,000-€128,000 per year** before the person has shipped a single line of code.
 
 Add the costs founders routinely forget to model:
 
-- **Recruiting agency fees**: 15–25% of first-year salary if you use a recruiter, or 6–10 weeks of a founder's own time if you don't.
-- **Equipment, tooling, and SaaS seats**: laptop, IDE licenses, staging environment costs, Sentry/monitoring seats - €3,000–€6,000 in year one.
-- **Onboarding and ramp-up**: even a strong senior hire takes 4–8 weeks to become familiar with an unfamiliar AI-generated codebase before they're safely shipping production changes to auth and payments - the two systems where mistakes are most expensive.
-- **Severance risk**: Dutch employment law makes termination slow and costly if the hire doesn't work out; a bad hire can cost 3–6 months of salary in transition pay (transitievergoeding) plus the sunk cost of the original ramp-up.
+- **Recruiting agency fees**: 15-25% of first-year salary if you use a recruiter, or 6-10 weeks of a founder's own time if you don't.
+- **Equipment, tooling, and SaaS seats**: laptop, IDE licenses, staging environment costs, Sentry/monitoring seats - €3,000-€6,000 in year one.
+- **Onboarding and ramp-up**: even a strong senior hire takes 4-8 weeks to become familiar with an unfamiliar AI-generated codebase before they're safely shipping production changes to auth and payments - the two systems where mistakes are most expensive.
+- **Severance risk**: Dutch employment law makes termination slow and costly if the hire doesn't work out; a bad hire can cost 3-6 months of salary in transition pay (transitievergoeding) plus the sunk cost of the original ramp-up.
 
 Run the full math and a single senior engineering hire costs a pre-revenue or early-revenue founder somewhere between **€100,000 and €140,000** in the first twelve months - for a person whose actual hardening work (RLS, webhooks, secrets, monitoring) might realistically take three to six weeks to complete.
 
 ## The Recruiting Tax: Weeks You Don't Get Back
 
-The salary number is only half the story. The other half is time. A realistic senior-engineer hiring funnel in 2026 looks like this: 2–3 weeks to write the role, post it, and get it in front of candidates; 4–6 weeks of screening, technical interviews, and reference checks; 1–2 weeks of offer negotiation; and then a 4–8 week notice period if the candidate is currently employed (standard in the Netherlands and much of the EU). That's a **10-to-16-week runway hit** before the new hire even opens the codebase - and none of it touches the actual RLS policy or webhook bug sitting in production the entire time. For a founder trying to close enterprise deals or launch to a waitlist, that's not a hiring delay. It's a go-to-market delay wearing a hiring delay's clothes.
+The salary number is only half the story. The other half is time. A realistic senior-engineer hiring funnel in 2026 looks like this: 2-3 weeks to write the role, post it, and get it in front of candidates; 4-6 weeks of screening, technical interviews, and reference checks; 1-2 weeks of offer negotiation; and then a 4-8 week notice period if the candidate is currently employed (standard in the Netherlands and much of the EU). That's a **10-to-16-week runway hit** before the new hire even opens the codebase - and none of it touches the actual RLS policy or webhook bug sitting in production the entire time. For a founder trying to close enterprise deals or launch to a waitlist, that's not a hiring delay. It's a go-to-market delay wearing a hiring delay's clothes.
 
 ## What You're Actually Buying When You Hire Full-Time
 
@@ -48,18 +48,49 @@ That work is delivered in **1 to 3 weeks**, priced from roughly €800 for a lig
 
 Put the two paths next to each other for a founder solving exactly the "harden my AI-built app" problem:
 
-- **In-house hire**: €100,000–€140,000 fully-loaded first-year cost, 10–16 weeks before the hire starts, another 4–8 weeks of ramp-up before they're safely touching auth and payments code - roughly 4 months before the actual RLS and webhook work is even underway.
-- **LaunchStudio engagement**: €800–€7,500 depending on scope, work starts within days of the quote, and the hardened, production-ready MVP ships in 1–3 weeks.
+- **In-house hire**: €100,000-€140,000 fully-loaded first-year cost, 10-16 weeks before the hire starts, another 4-8 weeks of ramp-up before they're safely touching auth and payments code - roughly 4 months before the actual RLS and webhook work is even underway.
+- **LaunchStudio engagement**: €800-€7,500 depending on scope, work starts within days of the quote, and the hardened, production-ready MVP ships in 1-3 weeks.
 
-For the specific job of taking an AI-builder prototype and making it safe for real users and real transactions, the hire costs roughly 15–100x more and takes roughly 8–10x longer to even begin than the engineering-partner path - for work that, once defined, doesn't actually require a permanent headcount to complete.
+For the specific job of taking an AI-builder prototype and making it safe for real users and real transactions, the hire costs roughly 15-100x more and takes roughly 8-10x longer to even begin than the engineering-partner path - for work that, once defined, doesn't actually require a permanent headcount to complete.
 
 ## When a Full-Time Hire Is Still the Right Call
 
 None of this means founders should never hire engineers. Once an AI-built MVP has been hardened and is generating revenue, sustained product development - new features, ongoing architecture decisions, day-to-day customer-driven iteration - genuinely benefits from a dedicated, in-house team member who grows with the company. The mistake isn't hiring; it's hiring too early, for the wrong problem, at the wrong moment - using a multi-year commitment to solve a three-week technical gap. The smarter sequence for most founders is: harden first with a fixed-scope partner, prove the business model with paying customers, and then hire full-time engineers to scale what's already working - with a much clearer, evidence-based job description than "please figure out our security."
 
+## How to Decide: Is Your Problem a Project or a Role?
+
+Your problem is a project if you can write down the finished state in a single page and it does not need to change every week; it is a role if the work is open-ended and tied to the ongoing evolution of the product. That one test settles most "hire or partner" debates before any salary is discussed.
+
+Use this checklist. If most of your answers land in the left column, you need a fixed-scope engagement first. If most land in the right column, you are ready to start building an in-house AI engineering team.
+
+| Question | Points to a project (partner) | Points to a role (hire) |
+|---|---|---|
+| Can you list the deliverables today? | Yes - RLS policies, Stripe webhooks, secret migration, monitoring | No - the work depends on what customers ask for next |
+| Does the work have an end date? | Yes, within weeks | No, it continues for years |
+| Do you have paying customers yet? | Not yet, or only a few | Yes, with steady feature demand |
+| Who would manage the engineer day to day? | Nobody with technical depth | A technical co-founder or CTO |
+| Is the main risk security or compliance? | Yes - it must be right before launch | No - the main need is feature velocity |
+| Can you commit to a multi-year salary? | Not comfortably | Yes, backed by revenue or funding |
+
+### Three questions to ask before you open a job posting
+
+1. **What exactly will this person ship in their first 90 days?** If the honest answer is "fix the security gaps in our Bolt app," that is a defined project and a recruiter is the slowest route to it.
+2. **Who will review their work?** A single senior hire with no technical peer has nobody to check their RLS policies or webhook logic. An engineering partner works as a team, so changes to auth and payments are reviewed before they ship.
+3. **What happens if they leave?** With one engineer, all infrastructure knowledge lives in one head. Plan for documentation and handover whichever route you choose.
+
+## Common Mistakes When Choosing Between a Hire and an Engineering Partner
+
+The most common mistake is comparing a monthly salary with a project quote, instead of comparing the full cost and the full timeline of getting the same outcome. Other recurring errors include:
+
+- **Writing a vague job description.** "Own our infrastructure" attracts generalists. If the real need is Supabase RLS and Stripe webhook hardening, say so, and you may discover it is a project.
+- **Hiring before the product is validated.** A permanent hire made before product-market fit locks in cost at exactly the moment flexibility matters most.
+- **Skipping the handover.** Whether you hire or use a partner, insist on written documentation of every RLS policy, webhook flow and secret location, so the next engineer does not start from zero.
+- **Treating the partner engagement as a black box.** Ask for a clear scope, a list of changes and access to the repository throughout. You should own the code and understand what was changed.
+- **Assuming one hire covers every specialism.** Security, payments, DevOps and AI integration are different skills. A single senior engineer rarely covers all of them at the same depth.
+
 ## Key Takeaways
 
-- A fully-loaded senior backend/security hire in the Netherlands or EU costs €100,000–€140,000 in year one once salary, employer costs, recruiting fees, tooling, and onboarding time are all counted.
+- A fully-loaded senior backend/security hire in the Netherlands or EU costs €100,000-€140,000 in year one once salary, employer costs, recruiting fees, tooling, and onboarding time are all counted.
 
 - The recruiting funnel alone - sourcing, interviews, offer, notice period - typically takes 10 to 16 weeks before a new hire even opens the codebase, delaying the actual fix far longer than the fix itself would take.
 

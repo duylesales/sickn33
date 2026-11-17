@@ -52,6 +52,40 @@ An AI copyright or IP dispute is simultaneously a legal problem and a technical 
 
 Founders who haven't yet faced a dispute can get a useful early signal by asking their own attorney one direct question: "If a copyright or IP notice arrived tomorrow, what specific technical documentation would you need from us in the first 48 hours, and do we currently have it?" Most attorneys can answer the first half of that question clearly, based on general dispute experience. The second half is usually where founders discover the gap, because it requires someone who has actually looked at the codebase, not just the legal landscape - which is exactly why this is a two-person conversation, attorney and engineer together, rather than a question either can fully answer alone.
 
+## What Is Legal-Technical Help in an AI Copyright Dispute?
+
+Legal-technical help in an AI copyright dispute is engineering work done alongside your attorney to produce the evidence a legal response needs: where the training data came from, how a specific output was generated, and how much it actually overlaps with the material in the claim. The attorney decides the strategy and speaks for the company. The engineering team finds, preserves, and documents the facts inside your systems so that strategy rests on evidence instead of assumptions.
+
+## When Should You Bring In Legal-Technical Help? A Decision Framework
+
+You should bring in legal-technical help for an AI copyright or IP dispute as soon as a claim asks a question that only your codebase, data pipeline, or logs can answer. The trigger is the type of question, not the size of the threat. This table maps common situations to the right first move:
+
+| Situation | Urgency | Who leads | First technical action |
+|---|---|---|---|
+| DMCA takedown notice for specific outputs | High, response window is short | Attorney | Locate and preserve the accused outputs and their generation logs |
+| Cease-and-desist alleging training on protected work | High | Attorney | Inventory and document training and fine-tuning data sources |
+| Enterprise customer asks about training data and output rights | Medium, deal-dependent | Founder with attorney review | Prepare a provenance summary and describe output logging |
+| Questions about EU AI Act transparency duties | Medium | Attorney | Check what training-content documentation already exists |
+| No claim yet, but no provenance records | Low today, high later | Engineering | Start provenance tracking and generation logging now |
+
+In the EU, the regulatory background is moving in the same direction. The EU AI Act requires providers of general-purpose AI models to keep a copyright-compliance policy and publish a sufficiently detailed summary of the content used for training, and the text-and-data-mining rules in Article 4 of the EU Copyright Directive (2019/790) let rights holders opt out of commercial mining. Whether these duties apply to you depends on your role, which is a question for your attorney, but the evidence they rely on is technical either way.
+
+## What to Do in the First 72 Hours After an AI Copyright Notice
+
+The most important thing to do in the first 72 hours after an AI copyright notice is to preserve evidence and avoid changing your systems in ways that destroy it. A practical sequence:
+
+1. **Forward the notice to your attorney immediately** and agree who will communicate with the other side. Do not reply informally yourself.
+2. **Freeze deletion.** Pause any automated log rotation, dataset cleanup, or model retraining that could overwrite relevant data.
+3. **Snapshot the current state.** Record the model version, fine-tuning dataset, prompts, and configuration in use, with dates.
+4. **Find the accused outputs.** Use the examples in the notice to locate matching generations and their inputs, if logs exist.
+5. **List what you cannot answer.** A clear list of gaps helps your attorney decide what to say and what to investigate.
+6. **Start provenance documentation.** Record the source, licence, and date of acquisition for each dataset you can identify.
+7. **Agree on any product change with counsel.** Disabling a feature may be sensible, but it should be a decision your attorney knows about.
+
+## Common Mistakes Founders Make in AI IP Disputes
+
+The most damaging mistake is quietly deleting the dataset or outputs in question, which can look like destroying evidence and weakens your position far more than the original overlap. Other common mistakes include answering the claimant directly before speaking to counsel, assuming a model provider's terms automatically cover your fine-tuning data, and treating the dispute as closed once it settles without adding the logging that would make the next one easier.
+
 ## Key Takeaways
 
 - An AI copyright or IP dispute depends heavily on technical evidence - training data provenance, output traceability, generation logging - that most AI-builder-generated products don't produce by default.

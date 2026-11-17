@@ -56,6 +56,39 @@ LaunchStudio doesn't draft legal documents - that work genuinely requires qualif
 
 The founders who get this right generally follow the same sequence: engage LaunchStudio (or an equivalent technical partner) first to accurately document the product's data flows, AI provider relationships, and technical architecture; bring that documentation to a qualified AI-specialist lawyer to draft the Terms of Service, indemnification language, and liability provisions; and implement any product-level disclosure requirements - AI interaction notices, content labeling - as part of the same technical engagement. Skipping the technical documentation step and going straight to a lawyer usually just moves the ambiguity from the contract to the lawyer's intake interview, producing terms that are legally polished but technically inaccurate about what the product actually does.
 
+## Which EU Rules Shape AI Copyright Compliance?
+
+AI copyright compliance in the EU is shaped by a handful of specific rules, and an enterprise legal team will expect your Terms of Service to reflect the ones that apply to your product. The table below names the most common ones; which of them applies, and how, is a question for your legal partner.
+
+| Rule | What it covers | Why it matters for your terms |
+|---|---|---|
+| EU AI Act, Article 50 | Transparency: telling people they are interacting with an AI system and marking AI-generated content in certain cases | Your product and your terms need to describe the same disclosures |
+| EU AI Act, Article 53 | Obligations for providers of general-purpose AI models, including a copyright policy and a public summary of training content | Helps you understand what your foundation model provider can document about training data |
+| Copyright in the Digital Single Market Directive (EU) 2019/790, Article 4 | Text and data mining exception, with an opt-out for rights holders | Relevant to any training-data provenance representation you make |
+| GDPR, Article 28 | Contracts between controllers and processors | Covers how customer prompts and outputs are processed, including by AI subprocessors |
+
+## Enterprise Terms of Service Checklist for AI Products
+
+Before your enterprise Terms of Service go to a prospect's legal team, check that you can answer each of these from documentation rather than memory:
+
+- Which foundation model or models the product uses, and under which provider terms.
+- Whether prompts, outputs or uploaded files are stored, and for how long.
+- Whether any customer data is used for training or fine-tuning, and how a customer opts out.
+- Who owns generated output, stated affirmatively in the terms.
+- The scope and the cap of any copyright indemnification you offer.
+- Which in-product AI disclosures exist and where users see them.
+- A current subprocessor list with signed DPAs.
+
+## Common Mistakes in Enterprise AI Terms of Service
+
+The most common mistakes are promises that the product's real architecture can't support.
+
+1. **Promising "no training on your data" while a provider setting says otherwise.** The terms must match the actual configuration of every AI provider in the stack.
+2. **Copying a foundation model provider's indemnity as if it were your own.** A provider's protection for its customers doesn't automatically pass through to yours.
+3. **Offering uncapped indemnification to close a deal.** It creates a liability an early-stage company can rarely carry.
+4. **Leaving output ownership implied.** Silence on ownership is the clause enterprise legal teams flag first.
+5. **Describing AI disclosures that the product doesn't show.** A disclosure that only exists in the terms, not in the interface, doesn't meet a transparency requirement.
+
 ## Key Takeaways
 
 - Generic SaaS Terms of Service templates don't address the specific legal questions AI products raise - output ownership, training data provenance, AI-specific liability, and EU AI Act transparency obligations.

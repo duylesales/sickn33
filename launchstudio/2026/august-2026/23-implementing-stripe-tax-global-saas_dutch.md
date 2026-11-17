@@ -64,6 +64,52 @@ U hoeft zich in een Amerikaanse staat of land pas fiscaal te registreren zodra u
 
 **Belangrijke nuance:** Stripe Tax berekent en int het belastinggeld en bewaart dit op uw rekening. Stripe doet echter *niet* automatisch de officiële belastingaangifte bij de overheden voor u. U overhandigt de gedetailleerde Stripe Tax rapportages aan uw accountant, of koppelt een geautomatiseerde indieningsdienst zoals TaxJar, Kintsugi of Avalara om de periodieke afdracht te verzorgen.
 
+## Wat is Stripe Tax?
+
+Stripe Tax is de ingebouwde belastingengine van Stripe die btw, sales tax en GST berekent en int op betalingen, abonnementen en facturen, op basis van de locatie van de klant, de belastingcode van het product en de jurisdicties waar u geregistreerd bent. Stripe Tax verzorgt de berekening, de inning en de rapportage; de aangifte en de afdracht blijven uw eigen verantwoordelijkheid.
+
+Die laatste zin wordt door oprichters het vaakst verkeerd gelezen. Stripe Tax beantwoordt de vraag "hoeveel belasting moet deze klant betalen?" correct en automatisch. Het beantwoordt niet voor u de vraag "waar ben ik wettelijk verplicht mij te registreren?", en het dient geen aangiftes in. Zie het als de rekenlaag van uw belastinginrichting, tussen uw checkout en uw accountant.
+
+## Btw voor SaaS in de EU: het One Stop Shop-systeem (OSS) uitgelegd
+
+Met het Europese One Stop Shop-systeem (OSS) geeft u btw op grensoverschrijdende digitale diensten aan EU-consumenten aan en betaalt u die via één kwartaalaangifte in één EU-land, in plaats van dat u zich in alle 27 lidstaten afzonderlijk registreert. Voor de meeste AI SaaS-bedrijven die in Europa aan consumenten verkopen, maakt OSS btw-naleving beheersbaar.
+
+Hier zijn twee regelingen van belang:
+
+| Regeling | Wie gebruikt deze | Belangrijkste regel |
+|---|---|---|
+| Unieregeling (Union OSS) | Bedrijven die in een EU-lidstaat gevestigd zijn | Onder € 10.000 per jaar aan totale grensoverschrijdende B2C-verkopen van digitale diensten kan de btw van het eigen land gelden; daarboven geldt het tarief van het land van de klant |
+| Niet-Unieregeling (non-Union OSS) | Bedrijven die buiten de EU gevestigd zijn, zoals een Delaware LLC | Geen drempel: de btw van het land van de klant geldt vanaf de eerste B2C-verkoop |
+
+B2B-verkopen met een geldig btw-nummer vallen buiten OSS, omdat daar de verleggingsregeling geldt. In de praktijk betekent dit dat uw Stripe-data B2C-verkopen (aangegeven via OSS) betrouwbaar moet scheiden van geverifieerde B2B-verkopen (btw verlegd), en precies dat maakt de hierboven beschreven `tax_id_collection`-instelling mogelijk.
+
+Is uw bedrijf in Nederland gevestigd, dan regelt u de aanmelding voor de Unieregeling via de Belastingdienst en doet u daar ook de OSS-aangifte per kwartaal. Die aangifte staat los van uw gewone Nederlandse btw-aangifte. Uw verkopen aan Nederlandse consumenten blijven gewoon in de reguliere aangifte met het Nederlandse tarief van 21%, terwijl de verkopen aan consumenten in andere lidstaten via OSS lopen. Spreek met uw accountant af welke Stripe-rapportage u per kwartaal aanlevert, zodat de bedragen per land zonder handmatig rekenwerk overgenomen kunnen worden.
+
+## Wat moet er op een correcte SaaS-factuur staan?
+
+Een correcte Europese factuur bevat ten minste een uniek, opeenvolgend factuurnummer, de factuurdatum, de btw-identificatienummers van de leverancier en (bij B2B) van de klant, namen en adressen, een omschrijving van de dienst, het bedrag exclusief btw, het btw-tarief en het btw-bedrag. Deze eisen komen uit artikel 226 van de Europese btw-richtlijn (2006/112/EG).
+
+Bij B2B-facturen met verlegging moet de factuur bovendien een vermelding van de verlegging bevatten, zoals "Btw verlegd" of "Reverse charge". Stripe Invoicing dekt het grootste deel hiervan af wanneer het correct is ingericht:
+
+- Voeg uw eigen btw-nummer toe aan uw Stripe-account, zodat het op elke factuur verschijnt.
+- Verzamel het btw-nummer van de klant en sla het op in het Customer-object, niet alleen in een vrij tekstveld.
+- Kies in de Stripe-instellingen een nummering voor facturen en zet die niet terug, want gaten of dubbele nummers leveren problemen op bij een controle.
+- Controleer dat het volledige factuuradres van de klant wordt verzameld, omdat het adres zowel de belastingberekening als de factuurgegevens bepaalt.
+
+## Stripe Tax go-live-checklist voor een AI SaaS-platform
+
+Gebruik deze volgorde wanneer u een AI SaaS-platform overzet van een prototype-checkout naar belastingafhandeling in productie:
+
+1. **Bevestig uw registraties met een accountant**, inclusief de vraag of u vandaag al EU OSS, Britse btw of registraties in Amerikaanse staten nodig heeft.
+2. **Voeg elke registratie toe in de Stripe Tax-instellingen**, zodat Stripe alleen belasting int waar u daadwerkelijk geregistreerd bent.
+3. **Stel belastingcodes in** op elk Product, bijvoorbeeld `txcd_10000000` voor algemene SaaS.
+4. **Stel de belastingbehandeling in op elke Price** (`inclusive` of `exclusive`), consistent per markt.
+5. **Schakel automatische belasting in** op Checkout Sessions, abonnementen en facturen met `automatic_tax[enabled]=true`.
+6. **Verzamel adressen en btw-nummers** door een factuuradres verplicht te maken en `tax_id_collection` in te schakelen.
+7. **Migreer bestaande abonnementen**, want abonnementen die zijn aangemaakt voordat u Stripe Tax inschakelde, gaan niet automatisch belasting berekenen.
+8. **Test in testmodus** met klanten in meerdere landen, zowel B2C als B2B, en vergelijk elke factuur met wat u verwacht.
+9. **Spreek een maandelijkse export af** van de Stripe Tax-rapportages met uw accountant of indieningsdienst.
+
 ## Veelvoorkomende Implementatiefouten
 
 Zelfs wanneer Stripe Tax het zware rekenwerk doet, maken oprichters bij het overzetten van een prototype naar productie vaak een aantal voorspelbare fouten:

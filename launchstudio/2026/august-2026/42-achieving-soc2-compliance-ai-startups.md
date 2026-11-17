@@ -52,6 +52,52 @@ A SOC 2 Type I report is a point-in-time assessment: an auditor confirms your co
 
 Getting this architecture right the first time - rather than discovering gaps mid-audit - is precisely where an experienced engineering partner earns its fee. Manifera, LaunchStudio's parent company, has delivered 160+ production projects for enterprise clients including Vodafone and TNO since it was founded in **2014**, and that track record of building auditable, access-controlled systems from day one is what "Herre Roelevink, Founder & Managing Director of Manifera" means when he says: "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's now about the architecture and security needed to bring those products to maturity. We have eleven years of experience in exactly that." You can review the underlying delivery track record on [Manifera's portfolio](https://www.manifera.com/portfolio/).
 
+## How Long Does SOC 2 Compliance Take for an AI SaaS Platform?
+
+For most AI startups using an automation platform, getting from zero to a first SOC 2 Type II report takes roughly 6-8 weeks of preparation plus the length of the observation window, so around five months with a 3-month window. The steps run in a fixed order, and skipping ahead is the most common way to lose time.
+
+1. **Define the scope.** Decide which Trust Services Criteria you will include (usually Security, often Confidentiality) and which systems are in scope: production cloud, code repository, LLM providers, vector database and logging tools.
+2. **Connect the automation platform.** Link Vanta, Drata or Secureframe to your cloud, GitHub or GitLab, identity provider and HR system so the gaps appear on one dashboard.
+3. **Close the technical gaps.** Enforce 2FA everywhere, encrypt data at rest, restrict access to production prompt logs, and prove tenant isolation in your vector database.
+4. **Close the administrative gaps.** Adopt and actually follow policies, run background checks, install MDM on every laptop, and document your offboarding process.
+5. **Collect vendor evidence.** Gather current SOC 2 reports and DPAs from OpenAI, Anthropic, Pinecone and every other sub-processor.
+6. **Run a Type I or a readiness assessment.** This confirms your control design before the clock starts.
+7. **Start the observation window.** Controls must now operate consistently for 3, 6 or 12 months, and the platform keeps collecting evidence.
+8. **Complete the audit.** The CPA firm tests samples from the window and issues the Type II report you can share with enterprise buyers under NDA.
+
+## SOC 2 vs. ISO 27001: Which One Does Your AI Startup Need?
+
+SOC 2 is the default expectation for US enterprise buyers, while ISO 27001 is often what European procurement teams ask for, so the right choice depends on where your largest prospects sit. Many AI SaaS platforms eventually hold both, because the underlying controls overlap heavily.
+
+| | SOC 2 | ISO 27001 |
+|---|---|---|
+| Issued by | Independent CPA firm, under AICPA standards | Accredited certification body, under the ISO/IEC 27001 standard |
+| Output | Attestation report (Type I or Type II), shared under NDA | Public certificate |
+| Control structure | You define controls against the Trust Services Criteria | Information Security Management System plus Annex A controls |
+| Validity | Type II covers a past observation window, renewed yearly | Certificate valid for three years, with annual surveillance audits |
+| Typical demand | US enterprise and SaaS procurement | European and international procurement, public sector |
+
+If your first enterprise prospects are in the Netherlands, Germany or France, ask them directly which report their vendor security team accepts before you commit budget. A Type II report your buyer does not recognise will not speed up the deal.
+
+## AI-Specific Controls Your Auditor Will Ask About
+
+Beyond the classic infrastructure controls, an auditor reviewing an AI SaaS platform will usually probe four AI security areas, and having written answers ready shortens the fieldwork considerably.
+
+- **Model and prompt change management.** Changing a system prompt or switching from one model version to another changes product behaviour. Treat it like a code change under change-management criteria (CC8.1): reviewed, approved, versioned and deployable with a rollback.
+- **Prompt injection and output handling.** Show how you stop user input from overriding system instructions, and how AI output is validated before it triggers actions or reaches other tenants.
+- **Secrets management.** LLM API keys belong in a secrets manager such as AWS Secrets Manager or Doppler, never in the frontend bundle or a committed `.env` file. Leaked keys are one of the most frequent AI security vulnerabilities in AI-built prototypes.
+- **Availability of upstream providers.** If you include the Availability criterion, document what happens when your LLM provider has an outage, for example a fallback model or a graceful error state.
+
+## Common SOC 2 Mistakes AI Startups Make
+
+Most delayed SOC 2 projects fail on planning rather than on technology. Watch for these patterns:
+
+- **Over-scoping the first audit.** Adding Privacy and Processing Integrity before a buyer asks for them adds controls and cost without unlocking deals.
+- **Starting the observation window too early.** If 2FA or MDM is not yet enforced on day one, every sample before the fix becomes an exception in your report.
+- **Using policy templates nobody follows.** Automation platforms ship policy templates, but auditors test whether you actually do what the policy says.
+- **Forgetting AI tooling in the scope.** Observability and evaluation tools that store customer prompts are part of your system, and leaving them out creates a gap a CISO will find in the security questionnaire.
+- **Treating SOC 2 as a one-off project.** A Type II report must be renewed, so controls that only worked during the first window will show up as findings next year.
+
 ## Key Takeaways
 
 - A SOC 2 report is a mandatory prerequisite for selling B2B AI software to large enterprises; without it, procurement and IT departments will stall or block the sale for months.

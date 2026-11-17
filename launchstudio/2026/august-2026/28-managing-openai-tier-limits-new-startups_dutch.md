@@ -55,7 +55,7 @@ U moet een **Server-Side Queue** implementeren met tools zoals Inngest, Upstash 
 
 ## Het Ultieme Vangnet: Multi-Model Fallbacks
 
-Ongeacht hoe goed uw tiers zijn ingericht, OpenAI kan op de dag van uw lancering te maken krijgen met een wereldwijde storing of degradatie.
+Ongeacht hoe goed uw tiers zijn ingericht, OpenAI kan op de dag van uw lancering te maken krijgen met een wereldwijde storing of degradatie. Dat gebeurt bovendien relatief vaak op dagen waarop het verkeer in de hele sector piekt, zoals bij een grote modelrelease of een veelgedeelde demo, omdat iedereen dan tegelijk dezelfde infrastructuur belast.
 
 Het ultieme vangnet is een **Multi-Provider Fallback-Architectuur**. Vangt uw Node.js of Python backend een 429 (Rate Limit) of 503 (Service Unavailable) statuscode op van OpenAI, dan moet uw applicatie deze fout direct afvangen, de API-endpoint omleiden en exact dezelfde prompt direct doorsturen naar Anthropic Claude Sonnet via een secundaire API-sleutel (bijvoorbeeld via een abstractielaag zoals LiteLLM). De gebruiker ervaart hooguit één seconde extra wachttijd, maar uw applicatie blijft 100% online en uw lancering is gered.
 
@@ -63,9 +63,52 @@ Het ultieme vangnet is een **Multi-Provider Fallback-Architectuur**. Vangt uw No
 
 Voorbereiding stopt niet zodra de tier-upgrade is toegekend - de lanceringsdag zelf vereist actieve monitoring. Richt een realtime dashboard in (Grafana of gerichte Slack-alerts) dat continu uw actuele RPM/TPM-benutting, wachtrijdiepte en 429-foutpercentages toont.
 
-Ziet u het verbruik boven de 70% van uw limiet stijgen, dan is dat het directe signaal om niet-kritieke achtergrondtaken (zoals batch-samenvattingen) tijdelijk af te knijpen om volledige capaciteit vrij te houden voor realtime gebruikersverzoeken. De eerste 30 tot 90 minuten van een virale piek zijn het meest risicovol.
+Ziet u het verbruik boven de 70% van uw limiet stijgen, dan is dat het directe signaal om niet-kritieke achtergrondtaken (zoals batch-samenvattingen) tijdelijk af te knijpen om volledige capaciteit vrij te houden voor realtime gebruikersverzoeken. De eerste 30 tot 90 minuten van een virale piek zijn het meest risicovol. Wijs daarom gedurende de eerste zes uur na uw lanceringsbericht één engineer aan die uitsluitend dit dashboard bewaakt, zodat uw team een verandering in het verkeer opmerkt voordat gebruikers die merken.
 
 Dit niveau van productierijpheid is exact wat Herre Roelevink, Oprichter & Managing Director van Manifera, omschrijft: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Manifera bouwt deze lanceerbestendige architecturen sinds **2014** vanuit **Amsterdam** (Herengracht 420) en **Ho Chi Minhstad, Vietnam**.
+
+## Wat Betekenen API-Foutmeldingen Tijdens een AI-Deployment?
+
+Tijdens een AI-deployment wijst elke API-foutcode op een ander probleem, en uw backend moet op elke code anders reageren in plaats van steeds dezelfde algemene foutmelding te tonen. Een rate-limit is het maximale aantal verzoeken of tokens dat een API-aanbieder uw account per minuut laat gebruiken; wie daarboven komt, krijgt een 429-fout totdat het tijdvenster opnieuw begint. De onderstaande tabel behandelt de fouten die u op de lanceringsdag het vaakst zult zien.
+
+| Fout | Wat het meestal betekent | Juiste reactie |
+|---|---|---|
+| 429 rate limit reached | Te veel verzoeken of tokens in de huidige minuut | Wachten en opnieuw proberen met exponentiële backoff, de wachtrij vertragen |
+| 429 insufficient quota | Uw account heeft geen tegoed meer of heeft de uitgavenlimiet bereikt | Niet opnieuw proberen - tegoed aanvullen of de limiet verhogen, het team alarmeren |
+| 500 / 503 | Fout of overbelasting aan de kant van de aanbieder | Enkele keren opnieuw proberen, daarna overschakelen naar een tweede aanbieder |
+| 400 context length exceeded | Prompt plus gevraagde output is te lang voor het model | De invoer inkorten of eerst samenvatten - opnieuw proberen helpt niet |
+| 401 | Ongeldige of ingetrokken API-sleutel | Stoppen en alarmeren - sleutelrotatie en opslag van secrets controleren |
+
+Het onderscheid tussen de twee soorten 429 is belangrijk. OpenAI gebruikt dezelfde statuscode voor "te snel" en "geen tegoed meer", en de tekst van de foutmelding vertelt u welke van de twee het is. Een insufficient-quota-fout opnieuw proberen vult alleen uw logs, terwijl elke gebruiker een fout ziet.
+
+## Hoe Leest u Rate-Limit-Headers Voordat u Tegen de Muur Loopt?
+
+De betrouwbaarste manier om 429-fouten te voorkomen, is de rate-limit-headers lezen die elke API-respons al meestuurt, en vertragen voordat de limiet is bereikt. OpenAI stuurt bij elke respons headers mee zoals `x-ratelimit-remaining-requests`, `x-ratelimit-remaining-tokens` en `x-ratelimit-reset-requests`. Anthropic stuurt vergelijkbare `anthropic-ratelimit-*`-headers en een `retry-after`-header wanneer u wordt begrensd.
+
+Voer deze waarden in uw wachtrij in. Zakt het resterende aantal tokens onder een veiligheidsmarge, verlaag dan automatisch de concurrency van de wachtrij in plaats van op fouten te wachten. Krijgt u toch een 429, respecteer dan de `retry-after`-waarde als die aanwezig is, en gebruik anders exponentiële backoff met willekeurige jitter, zodat honderden wachtende taken niet allemaal in dezelfde seconde opnieuw proberen en de limiet direct weer raken.
+
+## Hoe Blijft u Onder Uw TPM-Limiet Zonder te Upgraden?
+
+Vaak kunt u uw effectieve capaciteit verdubbelen zonder hoger tier door per verzoek minder tokens te versturen. Tokens Per Minute is meestal de eerste limiet die een groeiende AI-app raakt, dus elk token dat u schrapt, levert ruimte op. Gebruik deze technieken:
+
+1. **Stel een realistische `max_tokens` in.** De rate-limit-documentatie van OpenAI vermeldt dat een zeer hoge `max_tokens`-waarde tegen uw limieten kan meetellen, ook als het model minder schrijft. Stel deze in op de antwoordlengte die u werkelijk nodig heeft.
+2. **Kort systeemprompts in.** Lange instructies worden bij elke aanroep meegestuurd. Verwijder herhalingen en voorbeelden die het model niet meer nodig heeft.
+3. **Haal minder context op.** Stuur in RAG-opstellingen de drie meest relevante tekstfragmenten mee in plaats van tien.
+4. **Gebruik kleinere modellen voor eenvoudige stappen.** Classificatie, routering en korte extracties hebben zelden uw grootste model nodig, en kleinere modellen hebben vaak hogere limieten.
+5. **Verplaats niet-urgent werk naar de Batch API.** De Batch API van OpenAI verwerkt grote takenbestanden asynchroon binnen een venster van 24 uur, tegen een lagere prijs en met een aparte pool van rate-limits, zodat nachtelijke rapporten en bulksamenvattingen niet concurreren met live gebruikers.
+
+## Uw Quotum Beschermen Tegen Eén Zware Gebruiker
+
+Uw gedeelde API-quotum heeft eigen limieten per gebruiker nodig, omdat één zware of kwaadwillende gebruiker de volledige capaciteit van het account kan opsouperen en voor iedereen 429-fouten kan veroorzaken. Bouw een rate-limit in uw eigen backend in, per gebruiker en per werkruimte, zoals een maximum aantal generaties per minuut en per dag. Redis-gebaseerde limiters (bijvoorbeeld met Upstash Ratelimit) zijn een gangbare, lichte keuze. Combineer dit met een credit- of verbruikslimiet per pakket, en geef klanten met veel bulkwerk een eigen wachtrij met lagere prioriteit. Werkt u met Azure OpenAI Service, dan geldt hetzelfde principe: het quotum wordt per modeldeployment toegewezen, dus door live- en batchverkeer over aparte deployments te verdelen, voorkomt u dat het een het ander verdringt.
+
+## Veelgemaakte Rate-Limit-Fouten op de Lanceringsdag
+
+De meest gemaakte fout op de lanceringsdag is mislukte verzoeken direct in een strakke lus opnieuw proberen. Dat vermenigvuldigt het verkeer precies op het moment dat de aanbieder u vraagt te vertragen. Andere fouten die van een verkeerspiek een storing maken:
+
+- **Alleen testen met een sleutel op een hoog tier.** Heeft uw staging-sleutel veel hogere limieten dan productie, dan bewijst uw load-test niets.
+- **Eén API-sleutel voor alles.** Aparte sleutels of projecten voor productie, staging en batchtaken maken duidelijk welke workload de limiet verbruikt.
+- **Geen meldingen voor uitgavenlimieten.** Een virale dag kan een prepaid tegoed sneller uitputten dan verwacht. Stel budgetmeldingen in en houd automatisch opwaarderen in gedachten.
+- **Fouten verbergen voor gebruikers.** Staat een verzoek in de wachtrij of wordt het opnieuw geprobeerd, laat de gebruiker dan weten dat het in behandeling is in plaats van een draaiend icoontje zonder uitleg te tonen.
 
 ## Belangrijkste Inzichten
 

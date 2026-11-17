@@ -47,6 +47,10 @@ Het Trojaanse Paard is een micro-product: een uiterst specifieke, laagdrempelige
 
 Pitch in plaats daarvan een handige Chrome-extensie van 50 dollar per maand genaamd *"Support Summarizer"*. Wanneer een supportmedewerker een lange e-mailthread van 50 berichten opent in Zendesk, klikt deze op de extensie. De tool leest de thread direct uit en genereert een beknopte samenvatting van 3 bullets. Dit bespaart de medewerker 10 minuten per ticket. Er is geen onboarding nodig en IT hoeft niets te configureren.
 
+### Wat maakt een goede Trojaans Paard-functie?
+
+Niet elke micro-tool werkt als infiltratiewig. De sterkste kandidaten hebben drie eigenschappen gemeen. Ze lossen een taak op die de doelgebruiker nu al elke dag handmatig uitvoert, want frequentie creëert gewoonte. Ze leveren een zichtbare tijdsbesparing op waar de gebruiker naar kan wijzen, zoals een samengevatte thread, een herschreven e-mail of een gegenereerd rapport. En ze vereisen geen datamigratie of aanpassing van de workflow: de tool observeert of assisteert, maar vervangt niets. Als uw micro-tool vereist dat de gebruiker eerst anders gaat werken voordat er waarde ontstaat, dan heeft u een klein platform gebouwd en geen Trojaans Paard.
+
 ## Inkoopafdelingen omzeilen via 'Shadow IT'
 
 De kracht van het Trojaanse Paard zit in de prijs. Voor 50 dollar per maand kan een individuele teamleider de tool direct afrekenen op diens zakelijke creditcard, omdat de meeste bedrijven declaraties onder de 100 euro zonder inkoopprocedure goedkeuren. Er is geen goedkeuring van de directie of een security-review van 6 maanden nodig.
@@ -64,6 +68,74 @@ Nu stuurt u een e-mail naar de VP Customer Success - geen koude pitch, maar hard
 De VP beoordeelt nu geen onbekende startup meer, maar een bewezen leverancier waar het eigen team al dagelijks op vertrouwt. Het risico is verdwenen en het enterprise-contract van 50.000 euro wordt vlot getekend.
 
 Manifera bouwt en versterkt enterprise-architecturen sinds **2014**, met 11+ jaar ervaring en meer dan 160 opgeleverde projecten voor organisaties zoals Vodafone en TNO. Zoals Herre Roelevink, oprichter en Managing Director van Manifera, benadrukt: "Het draait nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied."
+
+### Omgaan met de security-review die uiteindelijk komt
+
+Het Trojaanse Paard levert u tijd op, geen immuniteit. Zodra de VP uw voetafdruk wil uitbreiden, voert IT security vroeg of laat een echte review uit: SOC 2-documentatie, dataflowdiagrammen en resultaten van penetratietests. Startups die de micro-tool-fase zien als reden om beveiligingsfundamenten over te slaan, lopen hier vast. Dezelfde lichtgewicht architectuur waarmee u voor 50 dollar per maand de inkoop omzeilde, faalt bij een enterprise-audit van 50.000 euro per jaar als authenticatie, encryptie en toegangslogging niet vanaf dag één zijn ingebouwd. De Trojaans Paard-strategie werkt omdat zij de controle uitstelt, niet omdat zij die overbodig maakt.
+
+## Wat is de Trojaans Paard-strategie in AI SaaS-verkoop?
+
+De Trojaans Paard-strategie is een land-and-expand-verkoopaanpak waarbij een AI SaaS-bedrijf een organisatie binnenkomt via een goedkope tool met één doel, die door individuele medewerkers wordt aangeschaft. Vervolgens gebruikt het bedrijf de gebruiksdata die daaruit ontstaat om een veel groter platformcontract aan het management te verkopen. De micro-tool is het paard; het platform zat er al die tijd in.
+
+Het verschil met een klassieke top-down enterprise-pitch ziet u het best naast elkaar:
+
+| Dimensie | Platform-first pitch | Trojaans Paard-aanpak |
+|---|---|---|
+| Eerste koper | CIO of VP met budgetbevoegdheid | Individuele teamleider of eindgebruiker |
+| Instapprijs | Jaarcontract van vijf of zes cijfers | Laag maandbedrag op een zakelijke creditcard |
+| Workflowwijziging op dag één | Groot - vervangt bestaande systemen | Geen - werkt naast bestaande systemen |
+| Gevraagde datatoegang | Brede lees- en schrijfrechten | Smalle, bij voorkeur read-only scope |
+| Bewijs richting management | Prognoses, demo's, referenties | Waargenomen gebruik door eigen medewerkers |
+| Belangrijkste risico voor de koper | Carrièrerisico als de uitrol mislukt | Vrijwel geen in de instapfase |
+
+De tabel laat niet zien dat platforms slecht zijn. Hij laat zien dat de volgorde ertoe doet: eerst vertrouwen, dan reikwijdte.
+
+## Waarom conservatieve sectoren eerst reageren op kleine AI-tools
+
+Conservatieve sectoren zoals banken, verzekeraars, juridische dienstverlening, de zorg en logistiek adopteren AI één smalle toepassing tegelijk, omdat elk nieuw systeem eerst door compliance-, gegevensbeschermings- en auditeisen moet voordat het de kernprocessen raakt. Een kleine tool met een minimale datavoetafdruk heeft simpelweg minder uit te leggen.
+
+In de EU bepalen twee kaders deze gesprekken. Volgens **artikel 28 van de AVG (GDPR)** heeft elke leverancier die namens een klant persoonsgegevens verwerkt een schriftelijke verwerkersovereenkomst nodig, waarin staat welke gegevens worden verwerkt, voor welk doel en met welke subverwerkers. Een read-only samenvattingstool die één ticketthread tegelijk verwerkt, geeft op die vragen een veel eenvoudiger antwoord dan een platform dat het complete CRM inleest. De **EU AI Act** voegt daar een risicogebaseerde laag aan toe: tools die een mens ondersteunen bij het samenvatten vallen in een heel ander gesprek dan systemen die zelfstandig beslissingen over klanten nemen. Door te starten met een ondersteunende tool houdt u uw eerste deal buiten de zwaarste compliance-discussies.
+
+Er is ook een culturele reden. In risicomijdende organisaties wil niemand degene zijn die het mislukte transformatieproject heeft gesteund. Een tool van 50 dollar per maand die één team stilletjes in gebruik neemt, draagt dat reputatierisico niet, en juist daarom wordt hij geadopteerd.
+
+In Nederland ziet u dit patroon duidelijk terug bij accountantskantoren, verzekeraars en logistieke dienstverleners. Daar beslist vaak een combinatie van IT, de functionaris gegevensbescherming en de lijnmanager over nieuwe software. Hoe minder vragen uw tool bij elk van die drie oproept, hoe groter de kans dat hij ongemerkt blijft groeien tot het moment dat u zelf het gesprek opent.
+
+## Zo voert u een Trojaans Paard-verkoopstrategie uit: stap voor stap
+
+De Trojaans Paard-strategie wordt uitgevoerd als een reeks, en elke stap levert het bewijs op dat de volgende stap nodig heeft. Een praktische versie ziet er zo uit:
+
+1. **Breng het platform terug tot de kleinste pijnlijke taak.** Neem uw volledige AI SaaS-visie en maak een lijst van elke handmatige taak die het uiteindelijk automatiseert. Kies de taak die het vaakst voorkomt en gebruikers het meest ergert.
+2. **Bouw de wig met productiediscipline.** Lever een tool die die ene taak goed uitvoert, binnen een omgeving waar gebruikers al dagelijks in werken: een Chrome-extensie, een Zendesk-app, een Slack-bot of een Microsoft Teams-add-in.
+3. **Vraag de kleinst mogelijke rechten.** Gebruik waar mogelijk read-only OAuth-scopes, sla zo weinig mogelijk klantdata op en documenteer precies wat u bewaart.
+4. **Prijs onder de declaratiegrens.** Houd het self-service-abonnement goedkoop genoeg zodat een manager het zonder inkooporder kan declareren.
+5. **Meet het gebruik per account.** Volg actieve gebruikers, acties per dag en geschatte tijdsbesparing, gegroepeerd per bedrijfsdomein, zodat u ziet wanneer één organisatie een betekenisvolle drempel passeert.
+6. **Identificeer de economische koper.** Wanneer het gebruik binnen één account dicht wordt, zoekt u de leidinggevende die het budget beheert voor het team dat uw tool gebruikt.
+7. **Open met hun eigen data.** Begin het uitbreidingsgesprek met de gebruikscijfers van hun team en introduceer het platform daarna als de logische volgende stap.
+8. **Bereid het securitypakket vooraf voor.** Zorg dat uw dataflowdiagram, verwerkersovereenkomst, lijst met subverwerkers en beschrijving van toegangsbeheer klaarliggen vóór het eerste enterprise-gesprek, niet erna.
+
+## Veelgemaakte fouten die het Trojaanse Paard ten val brengen
+
+De meeste pogingen mislukken om voorspelbare redenen die niets met het idee zelf te maken hebben:
+
+- **De wig is te breed.** Als de micro-tool configuratie, training of een beheerder nodig heeft, is het geen wig meer. Het is een klein platform met een kleine prijs.
+- **De wig heeft geen pad naar het platform.** Een samenvattingstool die logisch leidt naar een autonome supportagent is een Trojaans Paard. Een samenvattingstool voor een product dat u nooit gaat bouwen, is gewoon een goedkope tool.
+- **Te veel rechten vragen.** Schrijfrechten aanvragen "voor later" is de snelste manier om door het securityteam te worden gesignaleerd voordat u gebruikers heeft die het verdedigen waard zijn.
+- **Geen analytics op accountniveau.** Zonder gebruiksdata per bedrijf ziet u het moment voor de upsell niet, en kunt u niets bewijzen wanneer u het gesprek wel aangaat.
+- **Shadow IT als blijvende situatie zien.** Medewerkers die uw tool met een creditcard kopen, vormen een toegangspunt, geen verdienmodel. Plan vanaf het begin de overstap naar een officieel goedgekeurd contract.
+- **Kwetsbare AI-gegenereerde code.** Een prototype dat snel met AI-tools is gebouwd, kan perfect werken voor 15 gebruikers en toch zakken voor de eerste serieuze review door ontbrekende authenticatiecontroles, blootgestelde API-sleutels of ontbrekende logging.
+
+## Hoe bepaalt u of uw AI SaaS past bij het Trojaans Paard-model?
+
+Uw AI SaaS past bij het Trojaans Paard-model als één veelvoorkomende taak zelfstandig kan worden opgelost, in een tool die individuen zonder goedkeuring kunnen kopen, en die taak rechtstreeks naar uw platform leidt. Gebruik deze checklist voordat u zich vastlegt:
+
+- Is er een taak die uw doelgebruiker dagelijks uitvoert en die uw AI beter afhandelt dan de gebruiker handmatig doet?
+- Kan die taak worden geleverd zonder datamigratie of workflowwijziging?
+- Kan de tool werken met read-only of minimale datatoegang?
+- Is een self-service-prijs onder de gebruikelijke declaratiegrenzen voor u nog rendabel?
+- Creëert het oplossen van de kleine taak vanzelf vraag naar het grotere platform?
+- Is uw architectuur nu al veilig genoeg om over een paar maanden een enterprise-review te doorstaan?
+
+Beantwoordt u de laatste vraag met "nee", los dat dan eerst op. Het uitbreidingsmoment komt op het tempo van de klant, niet op het uwe.
 
 ## Belangrijkste inzichten
 

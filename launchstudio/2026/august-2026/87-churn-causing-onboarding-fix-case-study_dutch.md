@@ -83,6 +83,29 @@ De diagnostische aanpak die werkte voor BudgetBuddy AI generaliseert probleemloo
 
 Voordat er roadmap-tijd wordt besteed aan nieuwe functies gericht op het verminderen van churn, kunnen oprichters een snelle, goedkope controle uitvoeren: haal de lijst op van klanten die opzegden binnen hun eerste factureringscyclus en kruis deze met of ze daadwerkelijk de onboarding voltooiden en het kernwaardemoment van het product bereikten. Als een groot deel van de opgezegde klanten dat nooit haalde, kan het churn-cijfer een oprichter niets vertellen over of de kernfunctie overtuigend is - die klanten hebben deze nooit daadwerkelijk ervaren. Deze ene kruisverwijzing, die de meeste oprichters direct uit hun bestaande analytics- en factureringsdata kunnen halen zonder nieuwe instrumentatie, is vaak genoeg om de engineeringprioriteiten van een heel kwartaal om te leiden van nieuwe functies naar de handvol onboarding-wrijvingspunten die het cijfer daadwerkelijk veroorzaken.
 
+## Welke Onboardingstatistieken Voorspellen Churn Daadwerkelijk?
+
+De onboardingstatistieken die vroege churn het best voorspellen, zijn het voltooiingspercentage van de installatie, de activatiegraad en de time to value, gemeten per stap in plaats van als één totaalcijfer. De activatiegraad is het aandeel nieuwe aanmeldingen dat het eerste moment bereikt waarop het product zijn kernwaarde levert - voor BudgetBuddy AI is dat het zien van een eerste door AI gegenereerd budget. Time to value is hoe lang dat vanaf de aanmelding duurt. De onderstaande tabel laat zien wat elke statistiek u vertelt en waar een slechte uitkomst meestal op wijst.
+
+| Statistiek | Wat het meet | Wat een zwakke uitkomst meestal betekent |
+|------------|--------------|------------------------------------------|
+| Voltooiing per stap | Aandeel gebruikers dat elke onboardingstap afrondt | Eén specifieke stap heeft een gebruiks- of technisch probleem |
+| Voltooiing van de installatie | Aandeel aanmeldingen dat de hele flow afrondt | Te veel stappen, of geen gevoel van voortgang |
+| Activatiegraad | Aandeel aanmeldingen dat het kernwaardemoment bereikt | Waarde zit verstopt achter de installatie, of komt te laat |
+| Time to value | Minuten of dagen van aanmelding tot eerste waarde | Trage verwerking zonder feedback, of overbodige stappen |
+| Opzeggingen in de eerste cyclus | Aandeel betalende klanten dat in de eerste factureringsperiode opzegt | Gebruikers betaalden voordat ze zagen waarvoor ze betaalden |
+
+## Hoe U Uw Eigen Onboarding Flow Controleert op Uitval
+
+U kunt de meeste uitvalpunten in uw onboarding binnen een paar dagen zelf vinden, voordat u beslist of hulp van buitenaf nodig is. Doorloop deze stappen op volgorde:
+
+1. **Definieer uw waardemoment.** Schrijf het ene scherm of resultaat op dat bewijst dat uw product werkt. Alles in de onboarding hoort daarheen te leiden.
+2. **Volg elke stap als een event.** Vuur een apart analytics-event af wanneer elke stap begint en wanneer deze is voltooid, zodat u precies ziet waar gebruikers stoppen.
+3. **Bekijk echte sessies.** Tools zoals Hotjar of de session replay van PostHog laten zien wat gebruikers doen op het moment dat ze vertrekken - vaak een scherm dat bevroren lijkt of een onduidelijke foutmelding.
+4. **Test stappen van derden onder echte omstandigheden.** Bankkoppelingen, identiteitscontroles en koppelingen met agenda of e-mail gedragen zich bij echte accounts vaak anders dan in een sandbox. In de EU voegen open-bankingkoppelingen onder PSD2 vaak een authenticatiestap bij de bank toe die uw flow moet uitleggen.
+5. **Meet elke wachttijd.** Elke stap waarin de app langer dan een paar seconden verwerkt, heeft zichtbare voortgangsfeedback nodig.
+6. **Haal één stuk waarde naar voren.** Zoek het eerste gedeeltelijke resultaat dat u kunt tonen voordat de installatie klaar is, en toon het.
+
 ## Belangrijkste inzichten
 
 - Hoge vroeg-churn-percentages worden vaak veroorzaakt door uitval tijdens onboarding, niet door onvoldoende productwaarde - klanten die de installatie nooit voltooien, ervaren nooit daadwerkelijk wat het product doet.

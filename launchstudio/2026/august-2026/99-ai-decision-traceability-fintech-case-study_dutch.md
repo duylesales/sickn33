@@ -83,6 +83,44 @@ Beslissingstraceerbaarheid is geen eenmalig compliancevinkje - het is infrastruc
 
 Fintech-oprichters die bouwen op AI-gedreven scoring kunnen een vroege inschatting van hun eigen blootstelling krijgen met één directe oefening: kies willekeurig één beslissing uit de afgelopen maand, en probeer precies te reconstrueren waarom het model die specifieke uitkomst produceerde, met gebruik van alleen wat momenteel is gelogd. Als die reconstructie meer dan een paar minuten duurt, of helemaal niet mogelijk is, is dat dezelfde kloof die Elena's toezichthouder vond, ontdekt op de eigen tijdlijn van de oprichter in plaats van een compliance-deadline. Deze oefening elk kwartaal uitvoeren, telkens op een willekeurig gekozen beslissing, is een laagdrempelige manier om traceerbaarheidsgaten ruim voordat de eerste harde vraag van een toezichthouder de kwestie forceert op te sporen.
 
+## Wat is traceerbaarheid van AI-beslissingen?
+
+Traceerbaarheid van AI-beslissingen is het vermogen om voor elke afzonderlijke geautomatiseerde beslissing te reconstrueren welke inputs zijn gebruikt, welke modelversie ze heeft verwerkt, wat het model teruggaf, welke factoren dat resultaat bepaalden en welke uiteindelijke beslissing daarop volgde. Het is smaller en praktischer dan algemene "verklaarbaarheid": een traceerbaar systeem kan de vraag "waarom kreeg deze specifieke aanvrager deze specifieke uitkomst?" beantwoorden op basis van opgeslagen gegevens, zonder te gissen.
+
+Voor fintechs komt de juridische druk uit meerdere richtingen tegelijk. De EU AI Act noemt AI-systemen die worden gebruikt om de kredietwaardigheid van natuurlijke personen te beoordelen of hun kredietscore vast te stellen als toepassingen met een hoog risico, en systemen met een hoog risico moeten de automatische registratie van gebeurtenissen via logging ondersteunen. Artikel 22 AVG beperkt besluiten die uitsluitend op geautomatiseerde verwerking zijn gebaseerd en mensen in aanmerkelijke mate treffen, en het SCHUFA-arrest van het Hof van Justitie van de EU uit 2023 bevestigde dat het genereren van een kredietscore zelf onder artikel 22 kan vallen wanneer kredietverstrekkers er zwaar op leunen. In Nederland houden De Nederlandsche Bank (DNB) en de Autoriteit Financiële Markten (AFM) toezicht op financiële instellingen, en zij verwachten dat een instelling haar eigen besluitvorming kan uitleggen, ook als een leverancier het model levert. Al deze kaders wijzen op dezelfde technische behoefte: een volledig, doorzoekbaar dossier van elke beslissing.
+
+## Wat moet een dossier van een AI-beslissing bevatten?
+
+Een dossier van een AI-beslissing moet genoeg informatie bevatten zodat iemand buiten het engineeringteam de beslissing maanden later kan naspelen en begrijpen. De velden die CreditLens AI uiteindelijk opsloeg, vormen een bruikbare basis voor elk traceerbaarheidsproject voor AI-beslissingen:
+
+| Veld | Waarom het ertoe doet | Voorbeeld |
+|---|---|---|
+| Beslissings-ID en tijdstempel | Koppelt het dossier aan de klantzaak | Unieke ID, UTC-tijd |
+| Momentopname van de input | Laat precies zien wat het model op dat moment zag | Kenmerken van de aanvrager zoals ingediend, niet zoals ze nu zijn |
+| Modelversie | Bepaalt welke modellogica van toepassing is | Versielabel gekoppeld aan een trainingsrun en een deploymentdatum |
+| Ruwe modeloutput | Scheidt het resultaat van het model van de bedrijfsregels | Risicoscore vóór drempelwaarden |
+| Belangrijkste bijdragende factoren | Verklaart het individuele resultaat | Waarden voor featurebelang, bijvoorbeeld SHAP-waarden |
+| Toegepaste bedrijfsregels | Laat zien hoe de score een beslissing werd | Drempelwaarde, overrides, beleidsregels |
+| Uiteindelijke uitkomst | Legt vast wat er gebeurde | Goedgekeurd, afgewezen, doorverwezen |
+| Menselijke betrokkenheid | Laat zien of iemand de beslissing heeft beoordeeld | ID en handeling van de beoordelaar, indien van toepassing |
+
+De momentopname van de input is het veld dat teams het vaakst overslaan, en juist dat veld maakt reconstructie mogelijk. Klantgegevens veranderen in de loop van de tijd, dus de huidige waarden uit de hoofddatabase vertellen u niet wat het model op het moment van de beslissing zag.
+
+## Hoe bouwt u traceerbaarheid van AI-beslissingen op, stap voor stap?
+
+De snelste manier om traceerbaarheid van AI-beslissingen op te bouwen, is eerst volledige dossiers te loggen voor nieuwe beslissingen en daarna te herstellen wat mogelijk is voor oudere beslissingen. Een praktische volgorde:
+
+1. **Geef elke modeldeployment een versie** en leg die versie bij elke voorspelling vast.
+2. **Schrijf een append-only beslissingslog** met de bovenstaande velden, beschermd tegen latere wijzigingen.
+3. **Genereer factorrapporten per beslissing** op het moment van scoren, niet maanden later op verzoek.
+4. **Stel een bewaartermijn vast** die past bij uw wettelijke en contractuele verplichtingen, en documenteer die.
+5. **Bouw een eenvoudige beoordelingsweergave** zodat compliancemedewerkers elke beslissing kunnen openen zonder hulp van engineering.
+6. **Test het elk kwartaal met een willekeurige beslissing**, zoals hieronder beschreven.
+
+## Veelgemaakte fouten rond traceerbaarheid bij fintech-AI
+
+De meest gemaakte fout is de score loggen maar niet de inputs, waardoor er een getal overblijft zonder verhaal erachter. Andere veelvoorkomende leemtes zijn het overschrijven van modelbestanden bij hertraining in plaats van oude versies te bewaren, het samenvoegen van modeloutput en overrides door bedrijfsregels in één veld, en het opslaan van traceerbaarheidslogs in een systeem met zwakker toegangsbeheer dan de hoofddatabase, terwijl ze dezelfde persoonsgegevens bevatten.
+
 ## Belangrijkste inzichten
 
 - Een financiële toezichthouder die een AI-gedreven krediet- of risicobeslissing beoordeelt, verwacht traceerbaarheid op individueel beslissingsniveau, niet alleen geaggregeerde modelaccuratesse - dit zijn oprecht verschillende vereisten.

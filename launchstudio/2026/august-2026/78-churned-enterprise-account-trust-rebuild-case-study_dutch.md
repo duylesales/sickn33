@@ -77,6 +77,39 @@ Het is de moeite waard om expliciet te zijn over waarom een vertrouwensherstelsp
 
 Een teruggewonnen account daarentegen slaat bijna de hele verkoopcyclus over: het product is al geïntegreerd in de workflows van de klant, de interne pleitbezorgers die de tool oorspronkelijk voorstonden zijn er meestal nog steeds, en de enige openstaande vraag is of de leverancier opnieuw kan worden vertrouwd - niet of het product een echt probleem oplost, wat al was bewezen over vijf maanden live gebruik. Daarom is een tweeweekse engineeringsprint van onder de €5.000, gericht op het terugwinnen van een verloren account, vaak de uitgave met de hoogste hefboomwerking die een founder kan doen na een incident, nog voordat rekening wordt gehouden met de reputatieschade van een publieke enterprise-opzegging die zich informeel verspreidt door de beveiligings- en inkoopgemeenschap van een branche.
 
+## Wat zijn uw verplichtingen na een datalek onder de AVG?
+
+Wanneer een AI SaaS-leverancier gegevens van een klant verwerkt, treedt die onder de AVG meestal op als verwerker, en artikel 33, lid 2, verplicht een verwerker om de verwerkingsverantwoordelijke - de klant - zonder onredelijke vertraging te informeren zodra hij kennis heeft genomen van een inbreuk in verband met persoonsgegevens. De verwerkingsverantwoordelijke beslist vervolgens of de toezichthouder moet worden ingelicht (in Nederland de Autoriteit Persoonsgegevens), wat artikel 33 binnen 72 uur vereist, tenzij het niet waarschijnlijk is dat de inbreuk een risico voor personen oplevert. Uw verwerkersovereenkomst onder artikel 28 van de AVG voegt daar meestal contractuele details aan toe, zoals een vaste meldtermijn en de informatie die u moet aanleveren.
+
+Bij fintechklanten komt daar vaak een tweede laag bij. De Europese Digital Operational Resilience Act (DORA), die van toepassing is sinds 17 januari 2025, verplicht financiële entiteiten om het risico van hun externe ICT-dienstverleners te beheersen. Dat is een van de redenen waarom het beveiligingsteam van een fintechbedrijf een incident bij een leverancier zo formeel beoordeelt: de eigen wettelijke verplichtingen hangen af van het antwoord. Snel en nauwkeurig melden is daarom de eerste stap in elk churnherstel, geen vrijblijvende beleefdheid.
+
+## Wat moet een incident-postmortem voor een enterprise-klant bevatten?
+
+Een postmortem op enterprise-niveau is een gestructureerd document waarmee een beveiligingsteam kan nagaan wat er is gebeurd, waarom, en wat er is veranderd zodat het niet op dezelfde manier opnieuw kan gebeuren. Dit zijn de onderdelen die het document van SupportPilot behandelde:
+
+| Onderdeel | Welke vraag het beantwoordt |
+|---|---|
+| Samenvatting | Wat er gebeurde, in twee of drie heldere zinnen |
+| Tijdlijn | Wanneer het probleem begon, werd ontdekt, ingedamd en opgelost |
+| Impact | Welke gegevens, welke gebruikers, en of er iets de organisatie heeft verlaten |
+| Grondoorzaak | De technische oorzaak en de procesfout die het mogelijk maakte |
+| Directe oplossing | Wat werd uitgeschakeld of gepatcht, en wanneer |
+| Structurele oplossing | Architectuurwijzigingen die de hele categorie problemen wegnemen |
+| Proceswijziging | Nieuwe reviewpoorten of controles die herhaling voorkomen |
+| Bewijs | Auditlogs, testresultaten en onafhankelijke review |
+| Doorlopende toezeggingen | Wat de klant voortaan ontvangt, zoals kwartaalrapportages |
+
+## Een stappenplan voor churnherstel na een beveiligingsincident
+
+Churnherstel na een incident werkt het best als een reeks stappen, waarbij elke stap bewijs oplevert voor de volgende:
+
+1. **Indammen en melden.** Schakel de getroffen functie uit en informeer de klant conform uw verwerkersovereenkomst, voordat die het op een andere manier hoort.
+2. **Onderzoek de hele categorie problemen.** Audit elk vergelijkbaar pad voor gegevenstoegang, niet alleen het pad dat faalde.
+3. **Herstel eerst de architectuur, daarna het proces.** Dwing toegangsregels af in de databaselaag en voeg een reviewpoort toe voor risicovolle functies.
+4. **Documenteer het.** Schrijf de postmortem volgens de structuur hierboven, met logs en testresultaten als bijlage.
+5. **Zorg voor onafhankelijke verificatie.** Een schriftelijke review van een derde partij weegt zwaarder dan het eigen verhaal van een founder.
+6. **Vraag om een heroverwegingsgesprek.** Neem het bewijs mee en richt het gesprek op toekomstig vertrouwen, niet op het oorspronkelijke incident.
+
 ## Belangrijkste inzichten
 
 - Een vertrouwensbreukend incident bij een enterprise-account wordt zelden alleen opgelost door een snelle technische patch - enterprise-beveiligings- en inkoopteams hebben bewijs nodig dat de onderliggende architectuur en het proces zijn veranderd, niet alleen dat de specifieke bug is opgelost.

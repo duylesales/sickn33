@@ -41,6 +41,49 @@ Preparation doesn't end when the tier upgrade is approved - the launch day itsel
 
 This kind of production hardening - the difference between a prototype that works in a demo and one that survives its first real traffic spike - is exactly what Herre Roelevink, Founder & Managing Director of Manifera, describes: "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's now about the architecture and security needed to bring those products to maturity. We have eleven years of experience in exactly that." Manifera has been building that launch-day resilience into client applications since it was founded in **2014**, with engineering teams based in **Amsterdam** (Herengracht 420) and **Ho Chi Minh City, Vietnam**.
 
+## What Do API Errors Mean During an AI Deployment?
+
+During an AI deployment, each API error code points to a different problem, and your backend should respond to each one differently instead of showing the same generic failure. A rate limit is the maximum number of requests or tokens an API provider lets your account use per minute; going over it returns a 429 error until the window resets. The table below covers the errors you are most likely to see on launch day.
+
+| Error | What it usually means | Correct response |
+|---|---|---|
+| 429 rate limit reached | Too many requests or tokens in the current minute | Wait and retry with exponential backoff, slow the queue |
+| 429 insufficient quota | Your account has no remaining credit or hit its spend limit | Do not retry - top up billing or raise the limit, alert the team |
+| 500 / 503 | Provider-side error or overload | Retry a few times, then fail over to a second provider |
+| 400 context length exceeded | Prompt plus requested output is too long for the model | Trim the input or summarise it first - retrying will not help |
+| 401 | Invalid or revoked API key | Stop and alert - check key rotation and secret storage |
+
+The distinction between the two kinds of 429 matters. OpenAI uses the same status code for "too fast" and "out of credit", and the message text tells you which one it is. Retrying an insufficient-quota error just floods your logs while every user sees a failure.
+
+## How to Read Rate Limit Headers Before You Hit the Wall
+
+The most reliable way to avoid 429 errors is to read the rate limit headers every API response already gives you, and slow down before the limit is reached. OpenAI returns headers such as `x-ratelimit-remaining-requests`, `x-ratelimit-remaining-tokens` and `x-ratelimit-reset-requests` with each response. Anthropic returns comparable `anthropic-ratelimit-*` headers and a `retry-after` header when you are limited.
+
+Feed these values into your queue. When the remaining token count drops below a safety margin, lower the queue's concurrency automatically instead of waiting for errors. When you do receive a 429, respect the `retry-after` value if it is present, and otherwise use exponential backoff with random jitter, so that hundreds of waiting jobs do not all retry in the same second and trigger the limit again.
+
+## How to Stay Under Your TPM Limit Without Upgrading
+
+You can often double your effective capacity without a higher tier by sending fewer tokens per request. Tokens Per Minute is usually the first limit a growing AI app hits, so every token you remove creates headroom. Use these techniques:
+
+1. **Set a realistic `max_tokens`.** OpenAI's rate limit documentation notes that a very high `max_tokens` value can count against your limits even if the model writes less. Set it close to the answer length you actually need.
+2. **Shorten system prompts.** Long instructions are sent with every call. Remove repetition and examples the model no longer needs.
+3. **Retrieve less context.** In RAG setups, send the three most relevant chunks instead of ten.
+4. **Use smaller models for simple steps.** Classification, routing and short extractions rarely need your largest model, and smaller models often have higher limits.
+5. **Move non-urgent work to the Batch API.** OpenAI's Batch API processes large job files asynchronously within a 24-hour window, at a lower price and with a separate rate limit pool, so nightly reports and bulk summaries do not compete with live users.
+
+## Protecting Your Quota From a Single Heavy User
+
+Your shared API quota needs its own per-user limits, because one heavy or abusive user can consume the whole account's capacity and cause 429 errors for everyone else. Add a rate limit in your own backend, per user and per workspace, such as a maximum number of generations per minute and per day. Redis-based limiters (for example with Upstash Ratelimit) are a common, lightweight choice. Combine this with a credit or usage cap per plan, and give batch-heavy customers their own lower-priority queue. If you are on Azure OpenAI Service, the same principle applies: quota is assigned per model deployment, so separating live and batch traffic into different deployments keeps one from starving the other.
+
+## Common Rate Limit Mistakes on Launch Day
+
+The most common launch-day mistake is retrying failed requests immediately in a tight loop, which multiplies traffic exactly when the provider is telling you to slow down. Other errors that turn a traffic spike into an outage:
+
+- **Testing only on a high-tier key.** If your staging key has much higher limits than production, your load test proves nothing.
+- **One API key for everything.** Separate keys or projects for production, staging and batch jobs make it clear which workload is consuming the limit.
+- **No spend limit alerts.** A viral day can drain a prepaid balance faster than expected. Set budget alerts and keep auto-recharge in mind.
+- **Hiding errors from users.** When a request is queued or retried, tell the user it is in progress instead of leaving a spinner with no feedback.
+
 ## Key Takeaways
 
 - OpenAI restricts new accounts with severe limits on Requests Per Minute (RPM) and Tokens Per Minute (TPM). A viral launch will instantly trigger '429 Rate Limit' errors if you haven't prepared, and roughly 80% of AI-built projects never survive that kind of production stress test.

@@ -55,6 +55,29 @@ The upside works the other direction just as strongly. Founders who can demonstr
 
 Founders facing this for the first time often assume every technical requirement needs to be built simultaneously, which turns a manageable sprint into an overwhelming one. A more practical approach is to prioritize by exposure: start with whichever AI-driven decision has the most direct, individual impact on a person (a hiring decision, a credit approval) since that's typically where audit logging and human oversight matter most and where an enterprise customer's due diligence will look first. From there, prioritize the systems already closest to a live enterprise deal or renewal, since that's where the technical gap is most likely to surface soonest and do the most immediate damage if left unaddressed. Lower-stakes internal tooling or systems still in early validation can reasonably wait a cycle, provided legal has flagged them as lower risk. This kind of triage is exactly the conversation that needs to happen jointly between legal and engineering before any code gets written - treating every system as equally urgent usually means the highest-exposure one doesn't get the attention it actually needs first.
 
+## Which EU AI Act Requirements Map to Which Technical Controls?
+
+For a high-risk AI system, most of the EU AI Act's provider obligations translate directly into a specific piece of engineering work. The EU AI Act (Regulation (EU) 2024/1689) sorts AI systems into risk tiers, and the use cases listed in its Annex III - including employment and recruitment, education, access to essential services such as credit scoring, and biometrics - are where the heaviest obligations apply. The table below shows how the main articles divide between legal and engineering.
+
+| EU AI Act article | What it requires | Who leads | What gets built |
+|-------------------|------------------|-----------|-----------------|
+| Article 9 - Risk management | An ongoing risk management system across the lifecycle | Legal, with engineering input | Risk register linked to real system components |
+| Article 10 - Data governance | Quality and bias checks on training, validation and test data | Engineering | Dataset provenance records and bias checks |
+| Article 11 and Annex IV - Technical documentation | A documented description of the system and its design | Both | Architecture and data-flow docs verified against production |
+| Article 12 - Record-keeping | Automatic logging of events over the system's lifetime | Engineering | Audit-logging pipeline |
+| Article 13 - Transparency to deployers | Instructions and information for those who use the system | Both | Usage documentation and in-product information |
+| Article 14 - Human oversight | Measures that let people oversee and override the system | Engineering | Review and override interface with its own log |
+| Article 50 - Transparency obligations | Telling people when they interact with AI or see AI-generated content | Both | Disclosure notices at the point of interaction |
+
+## Common Mistakes in an EU AI Act Compliance Sprint
+
+The most expensive mistake is assuming a product is not high-risk without checking it against Annex III. A feature that ranks job applicants or filters loan requests can move a whole product into the high-risk tier, even if it is only one screen in a broader tool. Other recurring mistakes:
+
+1. **Logging outputs but not inputs.** An audit log that records only the score, not the data and model version behind it, cannot explain a decision afterwards.
+2. **Oversight that arrives too late.** A human review screen that opens after an automated rejection has already been sent does not meet the intent of Article 14.
+3. **Confusing provider and deployer duties.** A SaaS founder who builds the system is usually the provider, while the enterprise customer using it is the deployer. Each has different obligations, and contracts should reflect that.
+4. **Treating the sprint as a one-off.** Every model update or new AI feature can change what needs to be logged, disclosed and documented.
+
 ## Key Takeaways
 
 - The EU AI Act requires working technical capabilities - audit logs, human oversight, transparency notices - not just policy documents describing intended behavior.

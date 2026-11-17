@@ -81,6 +81,27 @@ De scorekaart is diagnostisch, niet voorschrijvend op zichzelf - de volgende sta
 
 Een scorekaart die eenmalig wordt uitgevoerd, heeft een korte houdbaarheid, omdat zowel complianceverplichtingen als monetisatiebehoeften verschuiven naarmate een product groeit. Een tenant-isolatie-opzet die adequaat was bij 50 klanten, kan een aansprakelijkheid worden bij 500, zodra een oprecht competitieve multi-tenant workload de database gaat belasten op manieren die vroeg gebruik nooit deed. Een plat prijsplan dat zinvol was voor een ongedifferentieerd vroeg gebruikersbestand houdt vaak op zinvol te zijn zodra gebruikspatronen sterk uiteenlopen tussen een handvol poweruser en een veel grotere groep lichte gebruikers - een splitsing die bij lancering vaak nog niet bestaat en pas ontstaat nadat echte gebruiksdata zich heeft opgestapeld. De scorekaart opnieuw uitvoeren bij duidelijke groeimijlpalen - het sluiten van het eerste enterprise-logo, het overschrijden van een betekenisvolle MRR-drempel, of het betreden van een nieuwe gereguleerde vertical of land - vangt deze verschuivingen op terwijl ze nog goedkoop te repareren zijn, in plaats van nadat een specifieke deal of audit de vraag onder tijdsdruk afdwingt.
 
+## Hoe scoort u gereedheid voor de EU AI Act en monetisatie?
+
+De eenvoudigste manier om gereedheid voor de EU AI Act, AVG-compliance en monetisatie te scoren, is een beoordeling op drie niveaus voor elk item: 0 voor ontbrekend, 1 voor gedeeltelijk aanwezig of niet gedocumenteerd, en 2 voor geïmplementeerd en gedocumenteerd. Een compliance- en monetarisatiescorekaart is in deze zin een vaste lijst van compliance- en monetisatiecontroles die u elke keer op dezelfde manier beoordeelt, zodat vooruitgang tussen twee metingen meetbaar wordt in plaats van anekdotisch.
+
+| Score | Betekenis | Voorbeeld (tenant-isolatie) | Wat u vervolgens doet |
+|-------|-----------|-----------------------------|-----------------------|
+| 0 - Ontbreekt | De controle bestaat niet | Elke query vertrouwt erop dat de app filtert op account | Zet het nu op de lijst met reparaties |
+| 1 - Gedeeltelijk | Bestaat, maar is onvolledig of niet gedocumenteerd | RLS op sommige tabellen, geen schriftelijk beleid | Dicht het gat en leg het vast |
+| 2 - Gereed | Geïmplementeerd, getest en gedocumenteerd | RLS op elke tabel, getest, beschreven in uw beveiligingsoverzicht | Controleer opnieuw bij de volgende groeimijlpaal |
+
+Twee regels houden de scores eerlijk. Ten eerste verdient een controle alleen een 2 als u vandaag bewijs zou kunnen tonen aan de beveiligingsbeoordelaar van een koper - een beleidsdocument, een testresultaat, een ondertekende verwerkersovereenkomst. Ten tweede scoort u sectie een en sectie twee afzonderlijk en neemt u nooit het gemiddelde, omdat een hoge monetisatiescore een 0 op de gereedheid voor datalekmeldingen onder artikel 33 AVG niet compenseert.
+
+## Veelgemaakte fouten bij het uitvoeren van een compliance-scorekaart
+
+De meest voorkomende fout is het scoren van intenties in plaats van de werkelijkheid. Een founder die van plan is volgend kwartaal AI-transparantielabels toe te voegen, scoort vandaag een 0 op dat item, geen 1. Andere fouten komen steeds terug:
+
+1. **Documentatie verwarren met implementatie.** Een privacyverklaring die verwijdering binnen 30 dagen belooft, is niets waard als er geen werkende verwijderingsflow achter zit.
+2. **Subverwerkers overslaan.** Modelaanbieders zoals OpenAI of Anthropic, e-mailtools en analysescripts tellen allemaal als subverwerkers onder artikel 28 AVG en moeten worden vermeld.
+3. **Alleen scoren.** De persoon die het systeem heeft gebouwd, beoordeelt het meestal te gunstig. Een tweede beoordelaar, intern of extern, ziet wat de bouwer niet meer ziet.
+4. **De prijskant negeren.** Veel founders voeren een beveiligingsreview uit en stoppen daar, waardoor de marge- en factureringsgaten uit sectie twee onzichtbaar blijven tot de omzet stagneert.
+
 ## Belangrijkste inzichten
 
 - MRR-groei alleen geeft niet aan of een AI SaaS-platform de controle van Europese enterprise-inkoop of regelgevingsaandacht kan overleven - compliance- en monetisatiegereedheid moeten apart worden beoordeeld.

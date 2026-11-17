@@ -86,6 +86,30 @@ Oprichters die al een zelfgebouwd affiliateprogramma draaien, kunnen naar een pa
 
 Geen van deze signalen vereist dat een affiliateprogramma zichtbaar kapot is om de moeite waard te zijn om aan te pakken. Tegen de tijd dat geschillen publiek worden of affiliates zich stilletjes beginnen terug te trekken, is de reputatiekost hierboven beschreven meestal al betaald.
 
+## Bouwen, Kopen of Uitbesteden: Welke Opzet van een Affiliateprogramma Past bij U?
+
+Er zijn drie realistische manieren om een affiliateprogramma te draaien: de tracking zelf bouwen, kant-en-klare software voor affiliate-tracking kopen, of de infrastructuur door engineers laten bouwen. Een affiliateprogramma is in deze context een systeem dat betalende klanten toeschrijft aan de partners die hen hebben doorverwezen, en die partners een commissie uitbetaalt op basis van de omzet die zij hebben gegenereerd. Gehoste tools die koppelen met Stripe Billing, zoals Rewardful of FirstPromoter, vormen de middelste optie en zijn vaak de snelste manier om te starten. Bij de kosten van het bouwen van een affiliateprogramma hangt de juiste keuze af van hoe standaard uw facturatie en verwijzingsregels zijn.
+
+| Optie | Het meest geschikt voor | Belangrijkste sterke punten | Belangrijkste beperkingen |
+|-------|-------------------------|-----------------------------|---------------------------|
+| Zelf bouwen | Testen of een affiliatekanaal überhaupt werkt | Volledige controle, geen extra abonnement | Randgevallen komen één geschil tegelijk aan het licht |
+| Kant-en-klare software voor affiliate-tracking | Standaard Stripe-abonnementen met eenvoudige commissieregels | Snelle inrichting, ingebouwde dashboards en uitbetalingen | Maandelijkse kosten, beperkte aansluiting bij maatwerk voor verbruiksgebaseerde facturatie of ongebruikelijke toeschrijvingsregels |
+| Engineered bouw (zoals LaunchStudio) | Maatwerkfacturatie, klantreizen over meerdere apparaten of strikte eisen aan datalocatie | Logica past precies bij uw product en datamodel | Projectkosten vooraf, en u bent daarna eigenaar van de code |
+
+Een bruikbare vuistregel: als uw facturatie een gewoon maand- of jaarabonnement in Stripe is, test dan eerst een gehoste tool. Als commissies afhangen van verbruik, credits, seats of events die uw betalingsprovider niet ziet, heeft een Rewardful-integratie of een vergelijkbare tool meestal toch een maatwerkkoppeling nodig.
+
+## Checklist voor de Lancering van een Affiliateprogramma
+
+Zorg ervoor dat elk van deze punten is geregeld en op papier staat voordat u de eerste affiliate uitnodigt:
+
+1. **Commissieregels.** Percentage of vast bedrag, eenmalig of terugkerend, en voor hoeveel maanden.
+2. **Toeschrijvingsvenster.** Hoeveel dagen na een klik een verwijzing nog telt, en welk contactmoment voorrang krijgt.
+3. **Beleid voor restituties en chargebacks.** Hoe lang commissies in afwachting blijven voordat ze uitbetaalbaar zijn.
+4. **Frauderegels.** Wat telt als zelfverwijzing of misbruik, en wat er gebeurt wanneer het wordt ontdekt.
+5. **Uitbetalingsvoorwaarden.** Minimaal uitbetalingsbedrag, uitbetalingsmethode en betalingsschema.
+6. **Belasting- en identiteitsgegevens.** Welke informatie u van elke affiliate nodig heeft voordat u uitbetaalt, zoals bevestigd door uw accountant.
+7. **Privacy en cookies.** Verwijzingscookies zijn over het algemeen niet-essentieel, dus onder de AVG en de ePrivacy-richtlijn moet uw toestemmingsbanner ze voor EU-bezoekers dekken.
+
 ## Belangrijkste inzichten
 
 - Basale affiliate-linktracking is eenvoudig te prototypen, maar multi-touch-attributie, cross-device-tracking en fraudedetectie bepalen of het systeem daadwerkelijk betrouwbaar is met echt geld.

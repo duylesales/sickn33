@@ -48,6 +48,53 @@ Two clauses founders routinely underweight: governing law and liability caps. Pi
 
 Roughly 45% of AI-generated code ships with at least one security vulnerability, and application logic gaps around exactly these liability and consent flows - click-wrap acceptance, AUP enforcement, refund logic - are a disproportionate share of what shows up when that code reaches production. Getting the legal architecture *and* its technical enforcement right together is the point. This is the kind of joint legal-and-engineering discipline Manifera has applied since being founded in **2014**, delivering 160+ production projects - including for regulated clients like TNO - from its Amsterdam HQ at Herengracht 420. As Herre Roelevink, Founder & Managing Director of Manifera, puts it: "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's now about the architecture and security needed to bring those products to maturity. We have eleven years of experience in exactly that."
 
+## What Clauses Should Generative AI Terms of Service Include?
+
+Generative AI Terms of Service are the contract between your AI SaaS product and its users that sets out who is responsible for AI output, what users may and may not generate, and how their data is used. At minimum, an enterprise-ready version covers the clauses below. Use this table as a checklist when you review your current draft with counsel.
+
+| Clause | What it covers | Why generative AI needs it |
+|---|---|---|
+| Accuracy and Reliance Disclaimer | Outputs may be wrong; the user must verify | Hallucinations are an inherent property of LLMs |
+| Acceptable Use Policy | Named prohibited content and behaviour | Bad actors can mass-produce harmful content |
+| Pass-Through Term | Dependence on upstream model providers | Outages and moderation changes sit outside your control |
+| Input and Output Ownership | Who owns prompts, uploads and responses | Copyright in AI output is uncertain |
+| Similarity Disclaimer | Outputs are not guaranteed unique | Models converge on similar answers |
+| Data Use and Training | Whether Inputs are used to train or improve models | Enterprise buyers ask this first |
+| Liability Cap and Governing Law | Maximum exposure and forum | Prevents uncapped claims tied to one output |
+| Changes to Terms | How and when you update the terms | Model providers and regulations change often |
+
+### The Data Use and Training Clause
+
+The data use clause tells customers, in plain words, whether their Inputs and Outputs are used to train or improve any model, yours or your provider's. In most B2B deals this is the first clause a buyer's legal team reads. Keep it consistent with your Privacy Policy and with the API tier you actually use. If your provider's enterprise API does not train on customer data, say so and name the retention window. For European customers who send personal data through your product, the ToS should reference a separate Data Processing Agreement, because GDPR Article 28 requires a written contract between controller and processor.
+
+### AI Transparency Under the EU AI Act
+
+The EU AI Act adds transparency duties that belong partly in your product and partly in your terms. Article 50 requires that people are informed when they interact with an AI system, unless that is obvious from the context, and that certain AI-generated or manipulated content such as deepfakes is disclosed as artificial. Your ToS can make clear which party, you or the business customer deploying your tool, is responsible for that disclosure to end users. Make the allocation explicit rather than leaving it unstated.
+
+## How Do You Make AI Terms of Service Enforceable?
+
+Terms of Service are only enforceable if you can prove each user agreed to the specific version that applied at the time, which in practice means a click-wrap flow with logged consent. Browse-wrap terms, where a link sits in the footer and continued use counts as agreement, are much more likely to be challenged. A practical implementation looks like this:
+
+1. **Version every document.** Give the ToS, AUP and Privacy Policy a version number and an effective date.
+2. **Use an explicit acceptance step.** An unchecked checkbox or an "I agree" button next to a visible link to the terms, at sign-up and at the point of upgrade.
+3. **Log the acceptance.** Store user ID, account ID, document version, timestamp and the method of acceptance in an append-only table.
+4. **Re-prompt on material changes.** When you change how data is used or how liability works, show the new version and require fresh acceptance before continued use.
+5. **Give notice before changes take effect.** Email account owners in advance, so enterprise customers can review the changes.
+6. **Connect the AUP to enforcement.** Flag violating content, record the evidence and route suspension decisions through an auditable admin flow.
+
+For enterprise customers who sign a negotiated Master Services Agreement, the order of precedence matters. State clearly whether the signed agreement overrides the online terms, so the two do not conflict.
+
+## Common Mistakes in Generative AI Terms of Service
+
+Most problems with AI terms come from inconsistency rather than missing clauses. These are the mistakes that surface most often in enterprise reviews:
+
+- **Marketing copy that contradicts the disclaimer.** Promising "100% accurate answers" on your landing page undermines the accuracy disclaimer in your ToS.
+- **ToS and Privacy Policy saying different things** about whether customer data trains a model.
+- **Ignoring upstream provider terms.** OpenAI, Anthropic and Google each publish usage policies, and your AUP should be at least as strict as the policies of every provider you depend on.
+- **Applying B2B clauses to consumers.** If you sell to consumers in the EU, the Unfair Contract Terms Directive (93/13/EEC) limits how far you can exclude liability, so a consumer version usually needs different wording.
+- **No change clause.** Without one, you cannot update terms cleanly when a model, a provider or a regulation changes.
+- **Terms that the product does not enforce.** An AUP with no detection, logging or suspension flow behind it is a promise you cannot keep.
+
 ## Key Takeaways
 
 - Generic SaaS Terms of Service templates do not protect against the unique liabilities of Generative AI. You must add specific clauses to shield your startup.

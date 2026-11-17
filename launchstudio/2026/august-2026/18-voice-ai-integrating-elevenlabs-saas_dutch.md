@@ -71,6 +71,54 @@ ElevenLabs biedt krachtige mogelijkheden voor voice cloning - waarbij een gebrui
 
 Manifera, het moederbedrijf achter LaunchStudio, specialiseert zich al sinds **2014** in het enterprise-ready maken van dergelijke systemen, met 11+ jaar ervaring en 160+ opgeleverde projecten voor organisaties zoals Vodafone en TNO. "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied," benadrukt Herre Roelevink, Oprichter & Managing Director van Manifera. Aangezien circa 80% van de met AI gebouwde projecten nooit een stabiele productierelease bereikt, is een haperende voice-pipeline of een ontbrekende toestemmingsflow een veelvoorkomende reden waarom een voice-demo strandt.
 
+## Wat is een Voice AI-pipeline?
+
+Een Voice AI-pipeline is de keten van diensten die de spraak van een gebruiker omzet in tekst, met een taalmodel een antwoord genereert en dat antwoord weer omzet in spraak, snel genoeg om als een gesprek aan te voelen. In de meeste AI SaaS-producten levert ElevenLabs de laatste spraaklaag, terwijl andere providers de transcriptie en de redenering verzorgen.
+
+De pipeline is slechts zo goed als de traagste en meest kwetsbare schakel. Een prachtige ElevenLabs-stem helpt niet als de transcriptie te lang op stilte wacht, of als de LLM-aanroep blokkeert tot het volledige antwoord is geschreven. Daarom wegen de architectuurbeslissingen in deze handleiding zwaarder dan de keuze voor één specifieke stem.
+
+## Realtime vs asynchrone Voice AI: wat bouwt u eerst?
+
+Bouw eerst asynchrone spraak, tenzij een live gesprek de kern van uw product is. Realtime spraak is de moeilijkere en duurdere optie, en die verdient zich alleen terug wanneer gebruikers echt moeten kunnen terugpraten.
+
+| Criterium | Asynchrone spraak (vooraf gegenereerde audio) | Realtime conversationele spraak |
+|---|---|---|
+| Typische toepassing | Briefings, samenvattingen, voorgelezen rapporten, audiolessen | Sales-coaching, sollicitatiegesprekken, AI-receptionisten, bijles |
+| Transport | Standaard HTTP-verzoek en een opgeslagen audiobestand | WebSockets of WebRTC met streaming |
+| Eis aan latentie | Seconden of minuten zijn acceptabel | Het antwoord moet binnen ongeveer een seconde starten |
+| Afhandeling van onderbrekingen | Niet nodig | Vereist (VAD en annulering bij barge-in) |
+| Kostenbeheersing | Per gegenereerd bestand goed te voorspellen | Vereist credits per minuut en harde limieten |
+| Engineeringinspanning | Laag | Hoog |
+| Impact van een storing | Een bestand komt later | Het gesprek voelt kapot aan |
+
+Veel teams beginnen in de linkerkolom, leren welke content gebruikers daadwerkelijk beluisteren, en investeren pas daarna in de rechterkolom.
+
+## De ElevenLabs API toevoegen aan uw AI SaaS, stap voor stap
+
+Het veilig toevoegen van spraak aan een AI SaaS-product volgt dezelfde volgorde, of u nu asynchroon of realtime begint:
+
+1. **Bepaal de toepassing en het budget.** Leg vast hoeveel spraakminuten een gebruiker per abonnement mag verbruiken, voordat u code schrijft.
+2. **Houd de API-sleutel op de server.** Uw ElevenLabs-sleutel staat in een omgevingsvariabele aan de serverkant. De browser communiceert met uw backend, of ontvangt een kortlevend token dat uw backend uitgeeft, maar nooit de sleutel zelf.
+3. **Bouw eerst de metering.** Implementeer de hierboven beschreven creditaftrek, zodat elk gegenereerd karakter aan een gebruiker wordt toegeschreven en tegen diens saldo wordt gecontroleerd.
+4. **Lever de asynchrone versie op.** Genereer audio uit afgeronde tekst, sla die op in object storage en serveer die via een ondertekende URL die verloopt.
+5. **Voeg streaming-weergave toe.** Stap over op het streaming-endpoint en speel audio af zodra de fragmenten binnenkomen. Zo verdwijnt de lange wachttijd, zonder dat er al een tweerichtingsgesprek nodig is.
+6. **Voeg gesprek en barge-in toe.** Introduceer STT, VAD en de annuleringslogica pas wanneer de eenrichtingsflow stabiel is en gemeten wordt.
+7. **Monitor latentie en kosten per sessie.** Log de tijd tot de eerste audio en de uitgaven per sessie, zodat regressies zichtbaar worden in dashboards in plaats van in klachten van gebruikers.
+
+## Veelgemaakte fouten bij Voice AI-integraties
+
+De meest gemaakte fout is alleen testen op een snelle kantoorverbinding met een goede headset. Echte gebruikers hebben laptopspeakers, achtergrondgeluid en instabiele mobiele netwerken, en elk daarvan breekt een voice-pipeline op een andere manier.
+
+Andere fouten die regelmatig opduiken in met AI gebouwde voice-prototypes:
+
+- **Autoplay-regels van browsers negeren.** Browsers blokkeren het afspelen van audio totdat de gebruiker interactie heeft gehad met de pagina. Start elke spraaksessie daarom vanuit een expliciete klik of tik.
+- **Geen echo-onderdrukking.** Zonder de `echoCancellation`-instelling in `getUserMedia` vangt de microfoon de stem van de AI zelf op en ziet de VAD dat als een onderbreking.
+- **Vergeten dat opnames persoonsgegevens zijn.** Spraakopnames en transcripties vallen onder de AVG (GDPR). Wanneer een stem wordt verwerkt om een specifieke persoon te identificeren, wordt het biometrische data onder artikel 9 van de AVG, waarvoor een expliciete rechtsgrond nodig is. Bewaar opnames niet langer dan nodig.
+- **Ontbrekende vermelding van AI-content.** Op grond van artikel 50 van de EU AI Act, van toepassing vanaf augustus 2026, moeten aanbieders van systemen die synthetische audio genereren die audio markeren als kunstmatig gegenereerd, en moeten gebruikers van deepfake-audio dit kenbaar maken. Label AI-stemmen duidelijk in uw product.
+- **Sessies zonder limiet.** Zonder een maximale sessieduur kan één vergeten geopend tabblad urenlang kosten blijven genereren.
+
+Voor Nederlandstalige producten komt daar nog een praktisch punt bij: test de volledige keten in het Nederlands, en ook met Vlaamse accenten als u in België verkoopt. Transcriptiekwaliteit, uitspraak van productnamen en de natuurlijkheid van de gegenereerde stem kunnen per taal duidelijk verschillen. Een pipeline die in het Engels vlekkeloos werkt, kan in het Nederlands nog steeds woorden verkeerd transcriberen of Engelse vaktermen vreemd uitspreken. Houd een lijst bij van termen die vaak misgaan en controleer die bij elke wijziging van model of stem.
+
 ## Belangrijkste Inzichten
 
 - Voice AI vervangt tekstuele interfaces in specifieke verticale toepassingen (sales-coaching, sollicitatietraining, taalleren, telefonische receptie).

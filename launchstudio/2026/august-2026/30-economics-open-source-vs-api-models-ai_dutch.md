@@ -71,6 +71,47 @@ Kosten zijn de opvallendste factor, maar latentie en uptime verdienen een gelijk
 
 Herre Roelevink, Oprichter & Managing Director van Manifera, omschrijft deze strategische afweging als volgt: "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Manifera adviseert oprichters al sinds **2014** bij deze build-vs-rent vraagstukken vanuit haar Europese hoofdkantoor aan de **Herengracht 420 in Amsterdam** en ontwikkelingshubs in **Singapore** en **Ho Chi Minhstad, Vietnam**.
 
+## Wat Is de Echte TCO van een LLM voor een AI SaaS-Platform?
+
+De total cost of ownership (TCO) van een LLM is alles wat u betaalt om AI-features in productie te draaien: model- of API-kosten, rekenkracht, engineering- en beheertijd, monitoring, redundantie en compliancewerk. Wie alleen de tokenprijs van een API vergelijkt met de uurprijs van een GPU, laat het grootste deel van die lijst buiten beschouwing. Bovendien zijn er drie implementatieopties en niet twee, omdat veel open-weight modellen inmiddels ook als beheerde dienst met betaling per token beschikbaar zijn.
+
+| Dimensie | Gesloten API (OpenAI, Anthropic, Google) | Beheerde open-weight hosting (bijv. AWS Bedrock, Azure AI Foundry) | Zelf gehoste open-source op eigen GPU's |
+|---|---|---|---|
+| Prijsmodel | Per token | Per token of gereserveerde capaciteit | Vaste GPU-huur plus personeelstijd |
+| DevOps-inspanning | Minimaal | Laag | Hoog - schalen, batching, monitoring |
+| Kosten bij laag volume | Laag | Laag | Hoog, omdat stilstaande GPU's ook geld kosten |
+| Kosten bij hoog, stabiel volume | Stijgen lineair | Stijgen lineair, vaak tegen een lager tarief | Vlakken af naarmate de bezettingsgraad stijgt |
+| Controle over data | Contractuele garanties | Draait in het account en de regio van uw cloudaanbieder | Volledige controle binnen uw eigen VPC |
+| Modelkeuze | Alleen de modellen van de aanbieder | Een catalogus van open-weight modellen | Elk model dat u kunt draaien en mag gebruiken |
+
+De middelste optie wordt vaak over het hoofd gezien. Daarmee test u open-weight modellen zoals Llama of Mistral zonder personeel voor GPU-infrastructuur aan te nemen, en ziet u of hun kwaliteit volstaat voor uw toepassing voordat u zich vastlegt op zelf hosten.
+
+## Hoe Berekent u de TCO van een LLM Stap voor Stap?
+
+Om de TCO van een LLM correct te berekenen, vergelijkt u voor elke optie de volledige maandkosten bij uw werkelijke verkeerspatroon, inclusief mensen en niet alleen infrastructuur. Volg dit proces:
+
+1. **Meet het werkelijke verbruik.** Exporteer een maand aan tokenaantallen per model, gesplitst naar input en output, en noteer uw piekuren.
+2. **Bereken de API-optie.** Vermenigvuldig de tokenvolumes met de actuele lijstprijzen en trek kortingen af die u werkelijk zou gebruiken, zoals batchverwerking.
+3. **Dimensioneer de zelf gehoste optie.** Schat hoeveel GPU-instanties u nodig heeft voor de piekbelasting, plus minimaal één extra voor redundantie, zoals hierboven beschreven.
+4. **Tel engineeringtijd op.** Neem het deel van het salaris van een infrastructuur-engineer mee dat nodig is om het systeem te beheren, plus de weken die de migratie zelf kost.
+5. **Tel kwaliteitswerk op.** Reserveer tijd om het open-source model te evalueren tegen uw huidige output en om prompts aan te passen.
+6. **Vergelijk over 12 maanden.** Eenmalige migratiekosten verdienen zich alleen terug als de maandelijkse besparing standhoudt.
+
+Met de bedragen uit dit artikel als voorbeeld: is uw API-factuur $ 10.000 per maand en kost een GPU-cluster $ 3.000, dan is de brutobesparing ongeveer $ 7.000. Een engineer met een volledige loonsom van $ 150.000 per jaar kost ongeveer $ 12.500 per maand. Vraagt het beheer van het cluster die persoon fulltime, dan kost de migratie geld. Vraagt het slechts een deel van zijn tijd, of heeft uw team de kennis al in huis, dan kan het zich wel terugverdienen. Daarom hangt het omslagpunt zo sterk af van uw team en niet alleen van uw verkeer.
+
+## Open-Source Licenties: Niet Elk "Gratis" Model Is Gelijk
+
+Open-source LLM's hebben zeer uiteenlopende licenties, dus controleer de licentie voordat u er een commercieel AI SaaS-product op bouwt. Verschillende modellen van Mistral en Qwen worden uitgebracht onder de ruime Apache 2.0-licentie. De Llama-modellen van Meta vallen onder de Llama Community License, die commercieel gebruik toestaat maar voorwaarden toevoegt, waaronder een acceptable use policy en een aparte licentieplicht voor bedrijven boven een zeer hoge drempel van maandelijks actieve gebruikers. Sommige andere modellen staan alleen onderzoek of niet-commercieel gebruik toe. Leg de licentie vast van elk model dat u inzet, en neem die op in de informatie die u aan enterprise-kopers geeft, want hun juridische afdelingen vragen er steeds vaker naar.
+
+## Veelgemaakte Fouten bij de Keuze Tussen Open-Source en API-Modellen
+
+De meest gemaakte fout is overstappen op open-source om geld te besparen, zonder eerst te controleren of het open model goed genoeg presteert voor uw gebruikers. Een goedkoper model met slechtere output kan u meer kosten aan klantverloop dan u bespaart op infrastructuur. Vermijd ook deze fouten:
+
+- **Piekdoorvoer van GPU's vergelijken met gemiddeld API-gebruik.** Uw GPU's moeten op piekverkeer zijn berekend, dus ze staan het grootste deel van de dag gedeeltelijk stil.
+- **Geen fallback tijdens de migratie.** Houd het API-pad beschikbaar achter uw routeringslaag totdat het zelf gehoste model zich in productie heeft bewezen.
+- **Opties voor dataresidentie bij API's negeren.** Gaat het om de locatie van data in de EU, dan kan de regiokeuze bij een aanbieder, zoals een EU-regio in Azure OpenAI Service, de eis oplossen zonder zelf te hosten.
+- **Beveiligingsupdates vergeten.** Zelf gehoste inferentieservers, drivers en containers hebben net als elk ander productiesysteem regelmatig updates nodig.
+
 ## Belangrijkste Inzichten
 
 - Beheerde API's (OpenAI, Anthropic) zijn ideaal voor vroege startups wegens nul onderhoud, maar hun lineaire kosten per token knijpen de winstmarges af bij grote schaal.

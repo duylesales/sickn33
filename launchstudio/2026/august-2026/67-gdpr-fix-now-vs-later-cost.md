@@ -62,6 +62,43 @@ When LaunchStudio retrofits GDPR compliance into an AI-builder-generated app, th
 
 Because this work happens on top of your existing frontend and product logic - the same non-rebuild philosophy LaunchStudio applies to security and payments hardening - you don't lose the months of product work already done. You close the legal and architectural gap without starting over.
 
+## GDPR Compliance: Fix Now vs. Fix Later, Side by Side
+
+Fixing GDPR compliance now is cheaper on almost every dimension that matters, because the work scales with the size of your schema, your integrations, and your data. The comparison below summarizes the trade-off in qualitative terms.
+
+| Dimension | Fix now (prototype or early MVP) | Fix later (months of growth) |
+|---|---|---|
+| Tables holding personal data | Few, easy to map | Many, often undocumented |
+| Copies of personal data | Mostly the primary database | Database, backups, analytics, CRM, queues, logs |
+| Erasure implementation | Designed in once | Retrofitted across every system data reached |
+| Retention policy | Set before data piles up | Requires cleaning up historical data first |
+| Subprocessor DPAs | A short list to sign | A longer list, some tools already in daily use |
+| Sales impact | Ready when legal review asks | Deals pause while the fix happens |
+| Regulatory exposure | Limited window of non-compliance | Every month counts as non-compliance |
+
+## What Should You Fix First? A GDPR Compliance Priority Order
+
+The first GDPR compliance fix for most AI SaaS apps is knowing where personal data lives, because every other obligation depends on that map. Work through the items in this order:
+
+1. **Map your data.** List every table, field, and third-party tool that holds personal data. This becomes the basis for your record of processing activities under GDPR Article 30.
+2. **Document the lawful basis.** For each processing purpose, record which Article 6 basis applies, such as contract performance or consent.
+3. **Sign DPAs with subprocessors.** Hosting, the OpenAI API or other model providers, email, and analytics tools all need an Article 28 agreement. Check where each one processes data, because transfers outside the EU need a valid mechanism such as Standard Contractual Clauses or the EU-US Data Privacy Framework.
+4. **Build erasure and export.** Implement real Article 17 deletion and an Article 20 export across every location on your data map.
+5. **Set and enforce retention.** Define a retention period per data category and schedule automated purges.
+6. **Add access logging and a breach process.** Log access to personal data and write down how you would notify the supervisory authority within the 72 hours required by Article 33.
+
+## Common GDPR Mistakes in AI-Built Apps
+
+The most common GDPR mistake in AI-built apps is sending personal data to a model provider without checking the contract and data-use terms first. User prompts, uploaded documents, and chat histories are often personal data, and the provider handling them is a subprocessor like any other.
+
+Other recurring mistakes:
+
+- **Soft deletes presented as erasure.** An `is_deleted` flag keeps the data intact and recoverable.
+- **Personal data in logs.** Debug logs and error tools such as Sentry can capture emails, prompts, or payloads that then live outside your retention rules.
+- **Ignoring backups.** Your erasure and retention approach needs a documented answer for what happens to backup copies.
+- **Pre-ticked consent.** Under the ePrivacy rules and GDPR, consent has to be an active choice, not a default.
+- **Treating the privacy policy as the fix.** A policy describes what you do; regulators and enterprise reviewers check whether the system actually does it.
+
 ## Key Takeaways
 
 - GDPR fines can reach €20 million or 4% of global annual turnover, whichever is higher - but for most early-stage founders, stalled enterprise deals and compounding engineering debt are the more immediate costs of delay.

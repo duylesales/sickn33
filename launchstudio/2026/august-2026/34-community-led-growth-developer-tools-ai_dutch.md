@@ -75,6 +75,71 @@ Stuur niet op oppervlakkige statistieken zoals het totale aantal Discord-leden. 
 
 Dit niveau van productierijpheid is exact wat Herre Roelevink, Oprichter & Managing Director van Manifera, omschrijft: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Manifera bouwt deze developer-oplossingen sinds **2014** vanuit **Amsterdam** (Herengracht 420) en **Ho Chi Minhstad, Vietnam**.
 
+## Wat Is Community-Led Growth voor een AI SaaS Platform?
+
+Community-Led Growth voor een AI SaaS platform is een go-to-market-model waarbij een community van ontwikkelaars - op GitHub, Discord of een forum - uw product ontdekt, ondersteunt, verbetert en aanbeveelt, zodat adoptie groeit via vertrouwen tussen vakgenoten in plaats van via betaalde acquisitie. De community is geen marketingkanaal dat bovenop het product wordt geplakt. Zij is onderdeel van hoe het product wordt gebouwd, ondersteund en verkocht.
+
+Het helpt om CLG te vergelijken met de twee verkoopmodellen die oprichters meestal al kennen:
+
+| Dimensie | Sales-led groei | Product-led groei | Community-led groei |
+|---|---|---|---|
+| Eerste contactmoment | Salesmedewerker of outbound e-mail | Gratis aanmelding of proefperiode | GitHub-repository, Discord, aanbeveling van een vakgenoot |
+| Wie bouwt vertrouwen op | Het salesteam | Het product zelf | Vakgenoten en de oprichtende engineers |
+| Gebruikelijk supportmodel | Accountmanager | Documentatie en hulp in de app | Openbare antwoorden in community-kanalen |
+| Belangrijkste groeisignaal | Waarde van de pipeline | Activatie en conversie | Actieve contributors en herhaald gebruik |
+| Beste toepassing | Grote, complexe enterprise-deals | Self-service SaaS | Developer tools, API's, open-source AI-infrastructuur |
+
+De drie sluiten elkaar niet uit. De meeste succesvolle DevTools-bedrijven combineren CLG aan de bovenkant van de funnel met product-led self-service-upgrades en een klein salesteam voor de enterprise-deals die bottom-up adoptie oplevert.
+
+## Een Developer-Community Lanceren: Stap voor Stap
+
+Een developer-community wordt een succes wanneer er al iets bruikbaars is, een duidelijke route naar het eerste werkende resultaat en een plek waar vragen snel worden beantwoord. Een praktische volgorde:
+
+1. **Laat de eerste vijf minuten werken.** Publiceer een README met een installatie in één commando, een minimaal werkend voorbeeld en de verwachte output. Als een ontwikkelaar niet snel resultaat ziet, redt geen enkel community-kanaal het project.
+2. **Schrijf taakgerichte documentatie.** Organiseer de documentatie rond wat mensen willen doen - "RAG toevoegen aan een Next.js-app", "antwoorden streamen" - en niet rond uw interne architectuur.
+3. **Open de repository met de basis voor contributors.** Voeg een duidelijk LICENSE-bestand toe, een CONTRIBUTING.md, sjablonen voor issues en pull requests, en een handvol issues met het label `good first issue`.
+4. **Kies één thuisbasis voor de community.** Kies Discord, Slack of GitHub Discussions als hoofdplek voor vragen. Een kleine community verspreid over meerdere platforms laat elk platform leeg ogen.
+5. **Lanceer waar ontwikkelaars al zijn.** Een "Show HN"-bericht op Hacker News, een technisch artikel op uw blog en een voorbeeldproject in de relevante subreddit of framework-community werken beter dan een persbericht.
+6. **Ontwikkel in het openbaar.** Houd een changelog bij, label releases met semantic versioning en plaats release notes in het community-kanaal, zodat actieve gebruikers de voortgang zien.
+7. **Maak van antwoorden documentatie.** Komt dezelfde vraag drie keer terug, schrijf het antwoord dan in de documentatie en verwijs ernaar.
+8. **Waardeer contributors.** Noem hen in de release notes, geef actieve leden een rol en nodig uw meest behulpzame gebruikers uit om mee te denken over de roadmap.
+
+## Developer Experience Checklist Voordat U Jaagt op GitHub Stars
+
+GitHub stars zijn een signaal van interesse, geen bewijs van adoptie. Verbeter daarom eerst uw Developer Experience voordat u probeert ze te laten groeien. Gebruik deze checklist voor uw eigen repository:
+
+- Een README die in één zin uitlegt wat de tool doet en een werkend voorbeeld laat zien.
+- Een installatie en quickstart die op een schone machine werken, zonder ongedocumenteerde stappen.
+- Een API-referentie die uit de code wordt gegenereerd, zodat deze nooit afwijkt van de werkelijkheid.
+- SDK's voor de talen die uw gebruikers echt gebruiken, voor AI-tooling doorgaans TypeScript en Python.
+- Duidelijke foutmeldingen die de ontwikkelaar vertellen wat er misging en hoe het op te lossen is.
+- Semantic versioning en een changelog, zodat upgrades productie niet ongemerkt breken.
+- Voorbeeldprojecten die direct te klonen en te deployen zijn, niet alleen losse codefragmenten.
+- Een openbare roadmap of issue-board, zodat contributors weten waar hulp welkom is.
+
+## Beveiliging en Vertrouwen in Open-Source AI-Tools
+
+Beveiliging is de snelste manier om het vertrouwen van ontwikkelaars te winnen of te verliezen, omdat een open-source repository elke keuze die u maakte zichtbaar maakt voor iedereen die meeleest. Een aantal werkwijzen wordt inmiddels verwacht:
+
+- **Een SECURITY.md-bestand** dat uitlegt hoe kwetsbaarheden vertrouwelijk kunnen worden gemeld, met de toezegging dat u reageert.
+- **OAuth-scopes volgens het principe van minimale rechten.** Koppelt uw tool met GitHub, vraag dan alleen de scopes die nodig zijn. Het vragen om admin-rechten op organisatieniveau is een veelvoorkomende reden dat ontwikkelaars een aanmelding afbreken.
+- **Secret scanning en waarschuwingen voor afhankelijkheden.** GitHub secret scanning en Dependabot vangen gelekte sleutels en kwetsbare packages af voordat uw gebruikers ze vinden.
+- **Verdediging tegen prompt-injectie.** Volg voor AI-tools die code, documenten of webcontent inlezen de OWASP Top 10 for LLM Applications en documenteer hoe uw tool met onbetrouwbare invoer omgaat.
+- **Heldere omgang met data.** Vermeld of code of prompts die naar uw managed cloud worden gestuurd, worden opgeslagen, gelogd of doorgegeven aan externe modelaanbieders.
+
+Enterprise-engineers lezen dit materiaal voordat zij uw tool intern aanbevelen. Wie dit vroeg goed regelt, zorgt dat bottom-up adoptie de onvermijdelijke security-review overleeft. Voor Europese enterprise-klanten hoort daar ook een duidelijke verwerkersovereenkomst onder de AVG bij zodra uw managed cloud persoonsgegevens verwerkt, bijvoorbeeld namen en e-mailadressen van gebruikers of inhoud van repositories.
+
+## Veelgemaakte Fouten bij Community-Led Growth
+
+De meeste CLG-initiatieven lopen vast om redenen die de oprichters hadden kunnen voorkomen:
+
+- **De community lanceren voordat het product werkt.** Vroege gebruikers die op een kapotte installatie stuiten, komen zelden terug.
+- **De community behandelen als advertentiekanaal.** Promotionele berichten in een technische omgeving ondermijnen het vertrouwen snel.
+- **Support te vroeg delegeren.** Verdwijnen de oprichters in de eerste maanden uit de kanalen, dan lopen de reactietijden op en sterft de community langzaam uit.
+- **Pull requests negeren.** Contributors die weken op een review wachten, stoppen met bijdragen.
+- **Onverwacht de licentie wijzigen.** Overstappen van een permissieve naar een restrictieve licentie nadat de adoptie op gang is gekomen, is een van de snelste manieren om de goodwill van ontwikkelaars te verliezen.
+- **Optimaliseren voor stars.** Het aantal stars is te manipuleren en zegt weinig over werkelijk gebruik. Wekelijks actieve gebruikers en terugkerende contributors vertellen u veel meer.
+
 ## Belangrijkste Inzichten
 
 - Softwareontwikkelaars weren traditionele marketing en cold outreach af; zij kiezen tools op basis van documentatiekwaliteit, collegiale aanbevelingen en transparantie.

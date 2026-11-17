@@ -81,6 +81,38 @@ Oprichters verwarren Zero Data Retention soms met een ondertekende verwerkersove
 
 Dit onderscheid is praktisch belangrijk omdat oprichters soms aannemen dat zodra juristen een ondertekende DPA hebben met een AI-provider, de dataretentiekwestie is opgelost - dezelfde kloof tussen documentatie en systeem die elders in enterprise-gereedheid naar voren komt. Een DPA beschrijft de juridische verplichtingen waarmee een leverancier heeft ingestemd; het verifieert niet dat elke loggingstatement, cache-entry en back-upsnapshot in de daadwerkelijke codebase van een app die verplichtingen in de praktijk naleeft. Deze twee behandelen als aparte werkstromen - juristen behandelen de DPA, engineering behandelt de technische ZDR-implementatie - en beide onafhankelijk verifiëren is wat de kloof daadwerkelijk dicht die een enterprise-beveiligingsbeoordeling is ontworpen om te vinden.
 
+## Hoe Werkt een Zero Data Retention-retrofit, Stap voor Stap?
+
+Een Zero Data Retention-retrofit verloopt in een vaste volgorde: breng elke plek in kaart waar data doorheen stroomt, sluit elk retentiepunt laag voor laag af en bewijs het resultaat vervolgens met bewijsmateriaal dat een auditor kan controleren. Het overslaan van de inventarisatiestap is de meest voorkomende reden dat een ZDR-project eindigt met een kloof die nog steeds bestaat. Een praktische volgorde ziet er zo uit:
+
+1. **Bepaal de reikwijdte van de toezegging.** Leg precies vast welke klanten, datatypen en functies onder de ZDR-belofte vallen - bijvoorbeeld "alle documentuploads en prompts van accounts op het enterprise-abonnement." Al het andere in de retrofit wordt aan deze zin getoetst.
+2. **Breng de dataflow van begin tot eind in kaart.** Volg één echte request van de browser via de API, de AI-provideraanroep, eventuele wachtrijen of achtergrondtaken, de cache, de logs en de database. Noteer elk systeem dat de payload ziet, inclusief tools van derden zoals Sentry, Datadog, PostHog of een session-replay-script.
+3. **Controleer de voorwaarden van de provider en de instellingen van requests.** Controleer of de AI-provider ZDR voor het account heeft goedgekeurd en of de endpoints die u gebruikt daarvoor in aanmerking komen. Bij OpenAI kan standaard API-verkeer bijvoorbeeld tot 30 dagen worden bewaard voor misbruikmonitoring, tenzij Zero Data Retention voor de organisatie is goedgekeurd, en functies die van nature gegevens opslaan - zoals geüploade bestanden of opgeslagen gespreksobjecten - vragen aparte aandacht.
+4. **Herconfigureer logging en monitoring.** Vervang het loggen van payloads door gestructureerde metadata: request-ID, tijdstempel, modelnaam, tokenaantallen, latency en foutklasse. Voeg scrubbingregels toe in uw error-monitoringtool, zodat request-bodies de server nooit verlaten.
+5. **Pak caches en wachtrijen aan.** Schakel caching uit of omzeil deze voor accounts binnen de reikwijdte, of stel een korte vervaltermijn met versleuteling in als de toezegging dat toestaat. Zorg ervoor dat wachtrijen taken na verwerking verwijderen in plaats van ze te bewaren voor herhaling.
+6. **Stem de retentie van back-ups af.** Controleer of databasesnapshots, versiebeheer van objectopslag en herstelvensters voor point-in-time recovery overeenkomen met wat u heeft beloofd.
+7. **Test en documenteer.** Verstuur een gemarkeerde testrequest en doorzoek daarna logs, caches en opslag op de inhoud ervan. Leg het resultaat vast als bewijs.
+
+### Retentielagen en waar auditors om vragen
+
+| Laag | Gebruikelijke standaard in een AI-gebouwde app | ZDR-conforme instelling | Bewijs dat een beveiligingsteam accepteert |
+|---|---|---|---|
+| AI-provider | Standaard API-retentie voor misbruikmonitoring | Goedgekeurde ZDR-voorwaarden, alleen geschikte endpoints | Bevestiging van de provider plus requestconfiguratie |
+| Applicatielogs | Volledige request- en response-bodies | Alleen metadata, payload geredigeerd | Logvoorbeelden waarin de redactie zichtbaar is |
+| Error-monitoring | Request-bodies gekoppeld aan fouten | Scrubbingregels ingeschakeld | Screenshot van de instellingen en een testevent |
+| Caching | Prompts en responses gecachet voor kostenbesparing | Omzeild of kortlevend voor accounts binnen de reikwijdte | Cacheconfiguratie en ontwerp van de cachesleutels |
+| Back-ups | Lange retentie van snapshots | Retentie afgestemd op de toezegging | Back-upbeleidsdocument |
+
+## Veelgemaakte Fouten die een ZDR-toezegging Breken
+
+De meest voorkomende ZDR-fout is de overeenkomst met de provider als eindstreep beschouwen, terwijl die overeenkomst slechts één van de vijf lagen dekt. Andere fouten keren steeds terug in AI-gebouwde codebases:
+
+- **Tools aan de browserkant vergeten.** Session-replay- en productanalyticsscripts kunnen vastleggen wat een gebruiker in een promptveld typt, nog voordat de request uw server bereikt.
+- **Debugmodus aan laten staan in productie.** Uitgebreide logging die tijdens de ontwikkeling is ingeschakeld, overleeft vaak tot in de live-omgeving en legt ongemerkt volledige payloads vast.
+- **ZDR alleen toepassen op het hoofdendpoint.** Achtergrondtaken, retries, webhooks en beheertools roepen de AI-provider vaak aan via een apart codepad dat nooit is bijgewerkt.
+- **Meer beloven dan de reikwijdte.** Een klant vertellen "wij slaan niets op" terwijl het product het definitieve document moet bewaren dat de klant wilde opslaan, creëert een tegenstrijdigheid die de beoordelaars zullen opmerken. Wees precies over wat wordt verwerkt, wat bewust wordt opgeslagen en wat nooit wordt bewaard.
+- **Geen regressiecontrole.** Eén nieuwe logregel in een toekomstige release kan de retrofit ongedaan maken. Een korte geautomatiseerde test die logs doorzoekt op een gemarkeerde payload houdt de toezegging ook op de lange termijn waar.
+
 ## Belangrijkste inzichten
 
 - Zero Data Retention raakt bijna elke laag van een AI SaaS-stack - AI-providerconfiguratie, applicatielogging, caching, analytics en back-ups - niet slechts één API-instelling.

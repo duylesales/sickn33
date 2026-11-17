@@ -52,6 +52,43 @@ A Dutch enterprise vendor security review isn't harder than other enterprise rev
 
 Founders targeting the Dutch market should expect this review the moment a pilot conversation turns serious, not after - because the gap between "AI-builder prototype" and "documentation a Dutch compliance officer will actually sign off on" is entirely fixable, but not fixable in the two or three days most founders leave themselves once the questionnaire lands.
 
+## What Is a Dutch Enterprise Vendor Security Review?
+
+A Dutch enterprise vendor security review is the formal assessment a Dutch company's information-security office runs before it lets a supplier process its data, checking hosting location, access control, incident response, and contractual safeguards against GDPR and the client's own internal standards. In Dutch it is often called a *leveranciersbeoordeling* or *leveranciersassessment*, and it usually arrives as a spreadsheet or portal questionnaire alongside a draft processing agreement (*verwerkersovereenkomst*) based on GDPR Article 28.
+
+The review typically draws on a small set of well-known frameworks. NEN 7510 sets the tone in healthcare, ISO/IEC 27001 is the international standard most Dutch security teams also recognize, and NEN 7510 itself builds on the ISO 27001 and 27002 control structure. Breach notification is judged against GDPR Article 33, which requires a controller to notify the supervisory authority - in the Netherlands, the Autoriteit Persoonsgegevens - within 72 hours of becoming aware of a reportable breach. As a processor, your job is to tell your client without undue delay, so they can meet that deadline.
+
+## How to Prepare for a Dutch Enterprise Vendor Security Review: A Checklist
+
+The fastest way to prepare for a Dutch enterprise vendor security review is to assemble the evidence before the questionnaire arrives, because most questions ask for proof rather than promises. LogiFlow AI's sprint covered the items below, and almost every Dutch review asks about the same ground:
+
+| Area | What the reviewer asks | Evidence to prepare |
+|---|---|---|
+| Data residency | Where is data stored and processed, including AI calls? | Data-flow diagram with the region per system |
+| Subprocessors | Who else touches the data, and where are they based? | Subprocessor list with location and purpose |
+| Access control | How is one customer's data isolated from another's? | RLS policy logic and automated test results |
+| Encryption | Is data protected at rest and in transit? | Provider settings and TLS configuration |
+| Incident response | How fast will you inform us of a breach? | Written plan with roles and notification steps |
+| Contract | Will you sign our processing agreement? | Reviewed *verwerkersovereenkomst* or your own DPA |
+| Framework alignment | How do your controls map to what our auditors use? | Control mapping to NEN 7510 or ISO 27001 categories |
+
+A practical preparation order:
+
+1. **Fix the technical gaps first.** Enforce RLS on every table, choose EU regions on purpose, and confirm which AI provider region handles inference.
+2. **Write the data-flow document second.** It answers residency, subprocessor, and encryption questions in one place.
+3. **Draft the incident-response plan.** Name who detects, who decides, and who contacts the client.
+4. **Map controls to the reviewer's framework.** Use their categories, not your own.
+5. **Add a one-page summary in plain language.** This is the page that gets forwarded to legal or the works council.
+
+## Common Mistakes Founders Make in Dutch Vendor Reviews
+
+The most common mistake is answering a Dutch enterprise vendor security review with marketing copy instead of evidence. Phrases like "bank-grade security" give a reviewer nothing to file and usually trigger a round of follow-up questions. Other mistakes slow the process just as reliably:
+
+- **Leaving the hosting region on its default.** Supabase, Vercel, and most cloud platforms let you choose a region, and a default outside the EU becomes a residency finding even if no one meant it.
+- **Forgetting the AI provider.** Your database may sit in Frankfurt while prompts go to a model endpoint in the United States. Reviewers ask about this directly.
+- **Treating the processing agreement as a formality.** Clauses on subprocessors and audit rights often need a careful reply, and silence delays the contract.
+- **Answering in fragments.** Spreading answers across emails makes it hard for the client's security office to file one coherent record.
+
 ## Key Takeaways
 
 - Dutch enterprise vendor security reviews go further than a generic international questionnaire - expect explicit questions on EU data residency, NEN 7510-aligned controls, and documentation built to survive internal legal and works-council circulation.

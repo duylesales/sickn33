@@ -71,6 +71,56 @@ Audittrails zijn geen luxe extra: ze zijn een harde wettelijke verplichting onde
 
 Het bouwen van deze enterprise-klare infrastructuren is exact waar Manifera sinds **2014** in gespecialiseerd is, met 160+ gerealiseerde projecten voor onder meer Vodafone en TNO. Zoals Herre Roelevink, Oprichter & Managing Director van Manifera, stelt: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Bekijk Manifera's [maatwerk softwareontwikkeling praktijk](https://www.manifera.com/services/custom-software-development/).
 
+## Wat Is een AI-Audittrail?
+
+Een AI-audittrail is een volledig en manipulatiebestendig overzicht van alle invoer, configuratie en uitvoer die bij een AI-beslissing betrokken waren, zo gedetailleerd dat iemand buiten uw team kan reconstrueren waarom het systeem op een specifiek moment een specifiek resultaat gaf. Het verschil met gewone applicatielogging is wezenlijk: applicatielogs helpen engineers bij het oplossen van bugs, terwijl een audittrail als bewijs moet standhouden tegenover een klant, een auditor of een toezichthouder.
+
+Dat verschil bepaalt uw ontwerpkeuzes. Debuglogs mogen worden gesampled, geroteerd en na enkele dagen verwijderd. Een audittrail voor een AI SaaS-platform moet daarentegen volledig zijn voor elke beslissing die binnen de scope valt, gedurende een vastgestelde periode bewaard blijven, beschermd zijn tegen wijzigingen en doorzoekbaar zijn per klant (tenant), per gebruiker en per beslissings-ID.
+
+## Hoe Bouwt U een AI-Audittrail? Een Stappenplan
+
+U bouwt een AI-audittrail door te bepalen welke beslissingen er een nodig hebben, één logschema vast te leggen, dat schema op het moment van generatie te vullen en het asynchroon naar onveranderlijke opslag te sturen die u op verzoek kunt doorzoeken. In de praktijk volgen de meeste teams deze volgorde:
+
+1. **Classificeer uw AI-beslissingen.** Breng elke plek in uw product in kaart waar een LLM wordt aangeroepen en markeer welke uitkomsten gevolgen hebben voor mensen, geld of juridische posities. Een functie die "deze e-mail samenvat" vraagt niet om hetzelfde bewijsniveau als een functie die "deze kredietaanvrager markeert".
+2. **Definieer één beslissingsschema.** Spreek één JSON-structuur af: beslissings-ID, tenant-ID, gebruikers-ID, tijdstempel, promptversie, model-snapshot, ID's van opgehaalde fragmenten, parameters, tool-aanroepen, uitvoer en hashes. Eén schema voor alle functies houdt latere zoekopdrachten eenvoudig.
+3. **Versioneer uw prompts als code.** Bewaar systeemprompts met een versienummer in uw repository of een prompt-register, zodat het logbestand naar `prompt_v14` kan verwijzen in plaats van een ongelabelde tekst te kopiëren.
+4. **Leg vast op de plek van de aanroep.** Verpak uw LLM-client in één centrale functie die bij elke aanroep het logevent schrijft, zodat geen enkele ontwikkelaar een nieuwe AI-functie kan uitrollen die de logging omzeilt.
+5. **Verstuur asynchroon.** Publiceer het event naar uw wachtrij en stuur het antwoord naar de gebruiker zonder op de opslag te wachten.
+6. **Verzegel en sla op.** Koppel de records via een hash-chain en schrijf ze weg naar append-only opslag met object lock of naar een ledger-database.
+7. **Bouw het terugzoekpad.** Ontwikkel een interne tool die op basis van een beslissings-ID de volledige context op één scherm reconstrueert. Kost een reconstructie een engineer twee dagen, dan werkt de audittrail in de praktijk niet.
+8. **Test met een proefaudit.** Kies een willekeurige beslissing van vorige maand en vraag een collega om die uitsluitend met behulp van de logs te verklaren.
+
+## Basislogging versus een Volledige AI-Audittrail
+
+De onderstaande tabel laat zien waarom een log met alleen "vraag en antwoord" niet volstaat voor enterprise AI-securityreviews.
+
+| Functionaliteit | Basale request-logging | Volledige AI-audittrail |
+|---|---|---|
+| Gebruikersinvoer en eindresultaat | Ja | Ja |
+| Exacte versie van de systeemprompt | Nee | Ja |
+| Exacte model-snapshot | Zelden | Ja |
+| Opgehaalde RAG-fragmenten met bron-ID's | Nee | Ja |
+| Sampling-parameters en tool-aanroepen | Nee | Ja |
+| Manipulatiebewijs (hashes, hash-chain) | Nee | Ja |
+| Bewaarbeleid per klant | Ad hoc | Vastgelegd en afgedwongen |
+| Kan de vraag "waarom besliste de AI dit?" beantwoorden | Nee | Ja |
+
+## Veelgemaakte Fouten bij het Loggen van AI-Beslissingen
+
+De meeste mislukte AI-audits ontstaan door een klein aantal vermijdbare architectuurfouten, niet door ontbrekende tools.
+
+- **Alleen loggen bij fouten.** Geschillen gaan vaak over uitkomsten die op dat moment correct leken. Logt u alleen fouten, dan is de beslissing die een klant drie maanden later betwist niet meer terug te vinden.
+- **Prompts ter plekke overschrijven.** Wie de live systeemprompt aanpast zonder nieuw versienummer, maakt elk ouder logrecord dubbelzinnig.
+- **Geheimen en onbewerkte persoonsgegevens in logs opslaan.** API-sleutels, wachtwoorden en overbodige persoonsgegevens in een onveranderlijke opslag vormen een serieuze AI-kwetsbaarheid, omdat u ze niet eenvoudig kunt verwijderen. Verwijder geheimen voordat u wegschrijft en beperk persoonsgegevens tot wat de audit werkelijk nodig heeft.
+- **Geen scheiding tussen klanten.** In een multi-tenant AI SaaS-platform moeten auditlogs per klant gepartitioneerd zijn, zodat u één klant zijn eigen records kunt overhandigen zonder die van een ander bloot te stellen.
+- **Tool-aanroepen en agent-stappen vergeten.** Wanneer een AI-agent API's aanroept of meerdere modelaanroepen aan elkaar koppelt, is elke stap onderdeel van de beslissing en moet die onder hetzelfde beslissings-ID worden gelogd.
+
+## Hoe Lang Moet U AI-Auditlogs Bewaren?
+
+U bewaart AI-auditlogs zo lang als uw wettelijke verplichtingen en klantcontracten vereisen, en niet langer. Voor systemen met een hoog risico verplicht de Europese AI Act aanbieders en gebruiksverantwoordelijken om automatisch gegenereerde logs te bewaren gedurende een periode die past bij het doel van het systeem, met een minimum van zes maanden, tenzij ander Europees of nationaal recht een andere termijn voorschrijft. Sectorregels in de financiële sector of de zorg kunnen een langere termijn vereisen.
+
+De AVG trekt de andere kant op. Het beginsel van opslagbeperking en het beginsel van dataminimalisatie betekenen dat u persoonsgegevens niet eindeloos in logs mag bewaren "voor het geval dat". Een veelgebruikte techniek is het pseudonimiseren van gebruikers-ID's in het logbestand en het versleutelen van persoonlijke velden met een sleutel per gebruiker. Komt er een geldig verwijderingsverzoek binnen, dan vernietigt u die sleutel - vaak crypto-shredding genoemd - waardoor de persoonsgegevens onleesbaar worden, terwijl de hash-chain en de rest van het auditrecord intact blijven. Leg uw bewaartermijnen per logtype vast en neem ze op in uw verwerkersovereenkomst, zodat enterprise-inkopers ze tijdens de inkoopprocedure kunnen inzien.
+
 ## Belangrijkste Inzichten
 
 - Enterprise-klanten mogen wettelijk geen 'Black Box' AI inzetten voor beslissingen die mensenrechten of financiële posities beïnvloeden; zorg voor volledige herleidbaarheid.
@@ -79,6 +129,7 @@ Het bouwen van deze enterprise-klare infrastructuren is exact waar Manifera sind
 - Sla auditlogs op in onveranderlijke (append-only) tamper-evident storage om juridische bewijskracht voor toezichthouders te waarborgen.
 - Verwerk logs asynchroon via message queues naar goedkope cold storage (S3/Parquet) om de operationele databasesnelheid te behouden.
 - Een robuuste audittrail voldoet gelijktijdig aan de loggingseisen van de AI Act en de AVG.
+- Bewaar AI-logs van hoog-risicosystemen minimaal de zes maanden die de AI Act voorschrijft, en gebruik pseudonimisering en crypto-shredding om onveranderlijke opslag te verenigen met het AVG-recht op verwijdering.
 
 ## Maak Uw AI-Beslissingen Uitlegbaar en Audit-Ready
 

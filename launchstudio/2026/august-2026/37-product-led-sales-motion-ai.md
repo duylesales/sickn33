@@ -50,6 +50,78 @@ You do not sell them better AI. You sell them **Control**. You pitch Single Sign
 
 Product-Led Sales works best when your product has a low-friction free or cheap entry tier and usage naturally scales with team size - image generation, code assistants, analytics tools. It fits poorly for products with a single, all-or-nothing use case (a one-time migration tool, for instance) where there's no meaningful usage signal to build triggers around. If your product doesn't generate rich usage telemetry by nature, forcing a PLS motion onto it usually means building instrumentation that measures noise rather than genuine buying intent.
 
+## What Is Product-Led Sales for an AI SaaS Platform?
+
+Product-Led Sales for an AI SaaS platform is a go-to-market motion in which self-serve product usage generates the leads, and a sales team steps in only for the accounts whose usage signals enterprise potential. The product does the first half of the selling; humans close the part that self-serve checkout cannot.
+
+The three common motions compare like this:
+
+| Dimension | Pure PLG | Product-Led Sales | Traditional sales-led |
+|---|---|---|---|
+| Lead source | Sign-ups | Sign-ups with strong usage signals (PQLs) | Marketing campaigns and outbound (MQLs) |
+| Who closes the deal | Checkout page | Checkout for small plans, sales for enterprise | Sales team for every deal |
+| Proof of value | Self-discovered by the user | Already in the usage data | Promised in demos and pilots |
+| Typical deal size | Small, monthly | Small self-serve plus large annual contracts | Large, annual |
+| Key system | Billing and onboarding | Telemetry, PQL scoring, CRM alerts | CRM and sales process |
+
+For most AI SaaS companies, PLS is not a replacement for PLG. It is a layer on top of it that activates once enterprise users start appearing in the sign-up data.
+
+## How to Build a PQL Scoring Model Step by Step
+
+A PQL scoring model works by giving each account points for signals that historically precede a purchase, and alerting sales when an account crosses a threshold. You can build a first version in a few steps:
+
+1. **Define your activation event.** Pick the moment a user first gets real value, such as their first generated report or first successful integration.
+2. **List candidate signals.** Corporate domain, company size, number of active users in the same domain, weekly usage, invited teammates, plan limits hit, and visits to the pricing or security pages.
+3. **Look back at past upgrades.** Check which signals your paying customers showed in the weeks before they upgraded. Weight those more heavily.
+4. **Score at the account level, not the user level.** Group users by company domain, because enterprise deals are signed by organizations, not individuals.
+5. **Set a threshold and an owner.** Decide the score that triggers an alert, and make sure each alert is assigned to a specific person.
+6. **Send context with the alert.** Include the account's top features, active users and the limit they hit, as described above.
+7. **Review monthly.** Compare alerts against closed deals. Remove signals that never predict revenue and add new ones that do.
+
+An illustrative starting model might look like this, adjusted to your own data:
+
+| Signal | Example weight |
+|---|---|
+| Signed up with a corporate domain | Low |
+| Three or more active users from the same domain | High |
+| Hit a plan limit in the last 7 days | High |
+| Visited the security, SSO or pricing page | Medium |
+| Usage growing week over week | Medium |
+| Invited a teammate | Medium |
+
+## Pricing and Packaging That Support Product-Led Sales
+
+Pricing supports Product-Led Sales when each tier has a clear job: free and pro plans prove value to individuals, a team plan captures small groups, and an enterprise plan sells control. A typical structure for an AI SaaS platform:
+
+- **Free:** enough usage to reach the activation event, with clear limits.
+- **Pro:** self-serve via Stripe Billing or a similar tool, for individuals who need more volume.
+- **Team:** shared workspaces, basic admin and pooled usage, still self-serve.
+- **Enterprise:** SSO/SAML, role-based access control, audit logs, invoice billing, a data processing agreement and security documentation, sold through a conversation.
+
+Two rules keep this structure working. First, limits should be visible inside the product, so hitting them feels like a natural upgrade moment rather than a surprise. Second, the enterprise tier should contain the features IT and procurement require, not features end users would want on day one, so you never block adoption to force a sales call.
+
+## Privacy and Consent When You Track Usage for Sales
+
+Tracking product usage for sales purposes is processing personal data under the **GDPR** when events are tied to identifiable users, so it needs a lawful basis, a clear privacy notice and a data processing agreement under **GDPR Article 28** with your analytics provider. In practice:
+
+- Tell users in your privacy notice that usage data may be used to offer relevant plans or contact their organization.
+- Where analytics rely on cookies or similar browser storage, follow the consent rules derived from the **ePrivacy Directive**.
+- Choose analytics hosting deliberately. PostHog, for example, offers an EU-hosted cloud, which simplifies conversations with European enterprise buyers.
+- Collect the events you need for scoring, not every click, and avoid sending prompt content or uploaded files into your analytics tool.
+
+Enterprise buyers will ask about this during security review. A clean answer strengthens the very deal your PQL model surfaced.
+
+## Common Mistakes in Product-Led Sales
+
+Product-Led Sales usually fails for operational reasons, not strategic ones:
+
+- **Selling to individuals instead of accounts.** Pitching an enterprise plan to a single junior user rarely works; find the team lead or budget owner.
+- **Alerting on every sign-up from a big domain.** One curious employee is not a buying signal. Combine domain with usage.
+- **Pushy outreach.** A message that reads like a sales script undoes the trust the product built.
+- **Hiding the enterprise features.** If users cannot see that SSO or admin controls exist, they will not ask IT to buy them.
+- **No feedback loop.** Without comparing alerts to closed deals, your scoring model never improves.
+- **Weak security foundations.** An AI product that cannot pass an enterprise security review will stall at exactly the moment PLS creates the opportunity.
+
 ## Key Takeaways
 
 - Pure self-serve Product-Led Growth (PLG) has a revenue ceiling; large enterprises require human sales interactions to sign six-figure contracts, and this is a go-to-market gap, not a product gap.

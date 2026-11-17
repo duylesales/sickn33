@@ -88,6 +88,39 @@ Voor een founder wiens hele deal afhangt van het correct bewijzen van datasoever
 
 Een team met oprechte, aantoonbare ervaring in het draaien van productie-ML-infrastructuur - GPU-clusterbeheer, netwerkbeveiligingsengineering, model ops - kan dit redelijkerwijs intern bouwen, vooral als soevereine inferentie dicht bij de kern-technische differentiatie van het bedrijf ligt in plaats van een compliance-vereiste die is vastgeschroefd aan een verder ongerelateerd product. De fout is niet het intern proberen; het is het behandelen van een op soevereiniteit gedreven implementatie met dezelfde nonchalante urgentie als een kostenoptimalisatieproject, terwijl de daadwerkelijke inzet - een inkoopblokkerende vereiste van een ziekenhuis, ministerie of bank - aanzienlijk hoger is.
 
+## Gehoste API vs EU-regio vs zelf-gehoste LLM: wat voldoet aan datasoevereiniteit?
+
+Alleen een zelf-gehoste LLM binnen infrastructuur die u zelf beheert, geeft een koper aantoonbaar bewijs dat inferentie binnen een EU-grens blijft; een gehoste API of een EU-regio van een Amerikaanse aanbieder verbetert de dataresidentie, maar laat de vraag naar de jurisdictie open. Dat verschil doet ertoe omdat de Amerikaanse CLOUD Act Amerikaanse autoriteiten in staat stelt in de VS gevestigde aanbieders te verplichten gegevens te verstrekken die zij beheren, ongeacht waar die zijn opgeslagen. Het EU-VS Data Privacy Framework biedt veel bedrijven een juridische grondslag voor doorgiften, maar sommige kopers in de zorg en de publieke sector eisen hoe dan ook een architectuur die uitsluitend in de EU draait.
+
+| | Gehoste LLM-API | EU-regio van een Amerikaanse cloud- of AI-aanbieder | Zelf-gehoste LLM in een geïsoleerde EU-VPC |
+|---|---|---|---|
+| Waar inferentie draait | Infrastructuur van de aanbieder | EU-datacenter, beheerd door de aanbieder | EU-datacenter, uw eigen omgeving |
+| Jurisdictie van de beheerder | Vaak de VS | Amerikaans moederbedrijf | Afhankelijk van uw hostingkeuze |
+| Bewijs voor de inkoopafdeling | Compliancedocumenten van de aanbieder | Regio-instellingen plus documenten van de aanbieder | Uw eigen architectuur- en netwerkdocumentatie |
+| Operationele last | Laagst | Laag | Hoogst: GPU's, patches, failover |
+| Past meestal bij | De meeste SaaS-kopers | Kopers die EU-dataresidentie nodig hebben | Kopers die aantoonbare soevereiniteit nodig hebben |
+
+## Hoe kiest u een open-sourcemodel voor een soevereine implementatie?
+
+Het juiste model voor een soevereine implementatie is het kleinste model dat aan uw kwaliteitseis voldoet, onder een licentie die uw koper accepteert. Een praktisch selectieproces:
+
+1. **Controleer eerst de licentie.** Sommige open-weight-modellen gebruiken ruime licenties zoals Apache 2.0, terwijl andere, zoals de Llama-communitylicentie van Meta, eigen voorwaarden kennen. De juridische afdeling van uw koper kan dit beoordelen.
+2. **Stel een evaluatieset samen uit uw echte taak.** Vijftig tot honderd geanonimiseerde voorbeelden van uw daadwerkelijke werklast zeggen meer dan publieke benchmarks.
+3. **Stem de modelgrootte af op uw latentiedoel.** Een kleiner model dat binnen uw latentiebudget antwoordt, verslaat vaak een groter model dat meer GPU's nodig heeft.
+4. **Kies een serving-stack.** Open-source inferentieservers zoals vLLM of Hugging Face Text Generation Inference regelen batching en GPU-geheugen voor u.
+5. **Documenteer de keuze.** Leg modelversie, licentie, evaluatieresultaten en hostinglocatie vast; dit wordt onderdeel van het inkoopdossier.
+
+## Checklist voor een soevereine implementatie
+
+Voordat u een zelf-gehoste LLM presenteert aan een ziekenhuis, ministerie of bank, controleert u of u het volgende kunt aantonen:
+
+- De locatie van het datacenter en de juridische entiteit die het beheert.
+- Dat uitgaand internetverkeer vanuit de inferentieomgeving is geblokkeerd, met gedocumenteerde uitzonderingen.
+- Waar logs, back-ups en caches worden opgeslagen, en dat geen daarvan de grens verlaat.
+- Een ondertekende verwerkersovereenkomst met elke subverwerker onder artikel 28 van de AVG.
+- Een proces voor patches en modelupdates met een benoemde eigenaar.
+- Een resultaat van een failovertest, niet alleen een failoverontwerp.
+
 ## Belangrijkste inzichten
 
 - Datasoevereiniteit is een harde inkoopvereiste geworden voor kopers in de zorg, overheid en financiële sector, specifiek omdat de internationale overdrachtsregels van de AVG en het Schrems II-arrest betekenen dat zelfs een compliant Amerikaanse cloud-API niet volledig kan voldoen aan een alleen-EU-vereiste.

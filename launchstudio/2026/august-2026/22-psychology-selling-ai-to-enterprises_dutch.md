@@ -79,6 +79,54 @@ Enterprise AI-salestrajecten duren gemiddeld 3 tot 9 maanden, aanzienlijk langer
 
 Dit is exact het gat dat Herre Roelevink, Oprichter & Managing Director van Manifera, omschrijft: "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Manifera bouwt en beveiligt deze enterprise-systemen sinds **2014**, met 160+ projecten voor klanten als Vodafone en TNO vanuit haar hoofdkantoor in Amsterdam (Herengracht 420) en ontwikkelcentrum in Ho Chi Minhstad.
 
+## Wat is een enterprise vendor security review?
+
+Een enterprise vendor security review is de gestructureerde beoordeling die een grote organisatie uitvoert voordat zij een leverancier toegang geeft tot haar data. Meestal bestaat die uit een beveiligingsvragenlijst, een beoordeling van uw compliancerapporten en contracten, en een juridische toets van hoe persoonsgegevens en AI-modellen worden behandeld. Voor een AI SaaS-platform is dit de fase waarin de meeste deals óf vaart krijgen óf geruisloos vastlopen.
+
+De vragenlijst volgt vaak een standaardformaat, zoals de SIG-vragenlijst van Shared Assessments of de CAIQ van de Cloud Security Alliance, aangevuld met eigen AI-specifieke vragen van de koper. Die AI-vragen gaan doorgaans over welke modelproviders u gebruikt, of klantdata wordt gebruikt voor training, hoe lang prompts en output worden bewaard, en hoe u prompt injection en datalekken tussen klanten voorkomt.
+
+## De enterprise-readinesschecklist voor uw AI SaaS-platform
+
+De snelste weg door een security review is elk document klaar hebben voordat iemand erom vraagt. Deze tabel laat zien wat kopers doorgaans opvragen, wie in het inkoopcomité het belangrijk vindt en wat elk onderdeel aantoont:
+
+| Document of functionaliteit | Wie vraagt erom | Wat het aantoont |
+|---|---|---|
+| SOC 2-rapport (Type I, later Type II) of ISO/IEC 27001-certificaat | CISO, inkoop | Onafhankelijke verificatie van uw beveiligingsmaatregelen |
+| Verwerkersovereenkomst (DPA) | Juridische afdeling, privacy officer | Uw verplichtingen als verwerker onder artikel 28 van de AVG (GDPR) |
+| Lijst van subverwerkers, inclusief modelproviders | Juridische afdeling, CISO | Precies waar klantdata naartoe gaat, en in welke landen |
+| Datavoorwaarden van de modelprovider | AI-governance-beoordelaar | Prompts en output worden niet gebruikt voor training |
+| Samenvatting van een penetratietest | CISO | Uw applicatie is door een externe partij getest |
+| Positie onder de EU AI Act | AI-governance-beoordelaar, juridische afdeling | Of u aanbieder of gebruiksverantwoordelijke bent, en de risicocategorie van uw toepassing |
+| Incidentresponsplan | CISO | Hoe snel en hoe open u handelt wanneer er iets misgaat |
+| SSO (SAML of OIDC) en auditlogs | IT, security | Toegang kan centraal worden beheerd en gecontroleerd |
+
+Europese kopers vragen vaak om ISO/IEC 27001 in plaats van, of naast, SOC 2. Controleer welke uw eerste doelklanten verwachten voordat u kiest waarin u investeert.
+
+Voor Nederlandse kopers komt daar regelmatig een DPIA bij. Een gegevensbeschermingseffectbeoordeling (DPIA) is onder artikel 35 van de AVG verplicht wanneer een verwerking waarschijnlijk een hoog risico voor betrokkenen oplevert, en grote organisaties voeren die vaak uit voordat zij een nieuwe AI-toepassing inzetten. De DPIA is formeel de verantwoordelijkheid van de klant, maar zij hebben uw input nodig: welke gegevens u verwerkt, waar, hoe lang, en met welke maatregelen. Een leverancier die een kant-en-klare beschrijving aanlevert die de klant direct in de DPIA kan overnemen, scheelt de privacy officer weken werk. Verkoopt u aan de Nederlandse overheid of de zorg, verwacht dan bovendien vragen over sectorkaders zoals de Baseline Informatiebeveiliging Overheid (BIO) of NEN 7510.
+
+## Hoe beantwoordt u beveiligingsvragenlijsten over AI?
+
+Beantwoord beveiligingsvragenlijsten kort, consistent en naar waarheid, en claim nooit een maatregel of certificering die u nog niet heeft. Een beoordelaar die één opgeblazen antwoord ontdekt, wantrouwt de rest van het document.
+
+Een praktisch proces ziet er zo uit:
+
+1. **Bouw een antwoordenbibliotheek.** Bewaar goedgekeurde antwoorden op terugkerende vragen op één plek, zodat elke vragenlijst dezelfde formulering gebruikt.
+2. **Wijs één eigenaar aan.** Eén persoon, in een jonge startup vaak de CTO, keurt elk beveiligingsantwoord goed.
+3. **Benoem tekortkomingen eerlijk.** Ontbreekt een maatregel, zeg dat dan en voeg de geplande datum toe, bijvoorbeeld "SOC 2 Type I-audit gepland voor volgend kwartaal".
+4. **Voeg bewijs toe.** Koppel elk antwoord aan het beleid, rapport of screenshot dat het onderbouwt.
+5. **Evalueer na elke deal.** Voeg nieuwe vragen toe aan de bibliotheek, zodat de volgende vragenlijst sneller gaat.
+
+## Veelgemaakte fouten bij het verkopen van AI SaaS aan enterprises
+
+De meest gemaakte fout is een gratis pilot zonder einddatum. Zonder afgesproken succescriteria, een vaste looptijd en een benoemde beslisser wordt een pilot onbetaald advieswerk dat eindigt met "laten we er volgend jaar nog eens naar kijken".
+
+Andere fouten die enterprise-deals vertragen:
+
+- **Nauwkeurigheid overdrijven.** Wie "100% nauwkeurige" AI-output belooft, lokt een discussie over aansprakelijkheid uit die u gaat verliezen. Beschrijf de nauwkeurigheid op realistische data en leg het human-in-the-loop-controlepunt uit.
+- **Ontbrekende enterprise-basics.** Single sign-on, rolgebaseerde toegang en exporteerbare auditlogs zijn standaardverwachtingen in grotere organisaties. Het ontbreken ervan kan een deal blokkeren, hoe goed de AI ook is.
+- **AI-beveiligingskwetsbaarheden in uw eigen stack negeren.** Kopers vragen steeds vaker hoe u test op prompt injection en datalekken tussen klanten. "Daar hebben we nog niet naar gekeken" beëindigt het gesprek.
+- **De juridische afdeling als formaliteit zien.** Aanpassingen in de verwerkersovereenkomst, aansprakelijkheidsplafonds en AI-clausules duren vaak langer dan de technische review. Start die trajecten parallel, niet achteraf.
+
 ## Belangrijkste Inzichten
 
 - Bedrijven kopen geen 'AI'-technologie; ze investeren in workflow-automatisering, risicobeperking en aantoonbare Return on Investment (ROI).

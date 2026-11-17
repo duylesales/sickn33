@@ -58,6 +58,29 @@ The diagnostic approach that worked for BudgetBuddy AI generalizes cleanly to an
 
 Before committing roadmap time to new features aimed at reducing churn, founders can run a quick, low-cost check: pull the list of customers who canceled within their first billing cycle and cross-reference it against whether they actually completed onboarding and reached the product's core value moment. If a large share of canceled customers never got that far, the churn number can't be telling a founder anything about whether the core feature is compelling - those customers never actually experienced it. This single cross-reference, which most founders can pull directly from their existing analytics and billing data without any new instrumentation, is often enough to redirect an entire quarter's engineering priorities away from new features and toward the handful of onboarding friction points actually driving the number.
 
+## Which Onboarding Metrics Actually Predict Churn?
+
+The onboarding metrics that best predict early churn are setup completion rate, activation rate and time to value, measured per step rather than as one overall number. Activation rate is the share of new signups who reach the first moment the product delivers its core value - for BudgetBuddy AI, seeing a first AI-generated budget. Time to value is how long that takes from signup. The table below shows what each metric tells you and what a bad reading usually points to.
+
+| Metric | What it measures | What a weak result usually means |
+|--------|------------------|----------------------------------|
+| Step completion rate | Share of users who finish each onboarding step | One specific step has a usability or technical problem |
+| Setup completion rate | Share of signups who finish the whole flow | Too many steps, or no sense of progress |
+| Activation rate | Share of signups who reach the core value moment | Value is hidden behind setup, or arrives too late |
+| Time to value | Minutes or days from signup to first value | Slow processing with no feedback, or unnecessary steps |
+| First-cycle cancellation rate | Share of paying customers who cancel in their first billing period | Users paid before they saw what they paid for |
+
+## How to Audit Your Own Onboarding Flow for Drop-Off
+
+You can find most onboarding drop-off points yourself in a few days, before deciding whether outside help is needed. Work through these steps in order:
+
+1. **Define your value moment.** Write down the single screen or result that proves your product works. Everything in onboarding should lead there.
+2. **Track every step as an event.** Fire a separate analytics event when each step starts and when it completes, so you can see exactly where users stop.
+3. **Watch real sessions.** Tools such as Hotjar or PostHog session replay show what users do at the moment they leave - often a frozen-looking screen or an unclear error.
+4. **Test third-party steps under real conditions.** Bank linking, identity checks and calendar or email connections often behave differently for real accounts than in sandbox mode. In the EU, open-banking connections under PSD2 frequently add a bank-side authentication step that your flow needs to explain.
+5. **Time every wait.** Any step where the app processes for more than a few seconds needs visible progress feedback.
+6. **Move one piece of value earlier.** Find the first partial result you can show before setup is complete, and show it.
+
 ## Key Takeaways
 
 - High early-churn rates are frequently caused by onboarding drop-off, not insufficient product value - customers who never complete setup never actually experience what the product does.

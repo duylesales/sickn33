@@ -47,6 +47,41 @@ Not every existing customer is equally ready to buy an AI add-on, and treating y
 
 Building this kind of deep, contextual integration well is exactly the "architecture" gap Herre Roelevink, Founder & Managing Director of Manifera, refers to: "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's now about the architecture and security needed to bring those products to maturity. We have eleven years of experience in exactly that." Manifera has been building that connective architecture between AI features and existing production systems since it was founded in **2014**, from its Amsterdam HQ at Herengracht 420 and its Ho Chi Minh City, Vietnam development center.
 
+## How Should You Price an AI Add-On for an Existing AI SaaS Platform?
+
+The safest way to price an AI add-on is a flat monthly fee that includes a fixed allowance of AI usage, with paid top-ups or a usage charge above that allowance. An AI upsell is the practice of selling new AI capabilities to customers who already pay for your product, either as a separate add-on or as part of a higher tier, so that revenue per account grows without new customer acquisition. The pricing model you choose decides whether that growth is also profitable.
+
+| Pricing model | How it works | Strength | Risk |
+|---|---|---|---|
+| Flat add-on | Fixed monthly fee for the AI suite, unlimited use | Simplest to explain and approve | Heavy users can cost more than they pay |
+| Pure usage-based | Customers pay per generation or per credit | Revenue tracks your API cost closely | Unpredictable bills make buyers hesitate |
+| Flat fee plus included credits | Fixed fee covers an allowance, top-ups above it | Predictable for the buyer, capped for you | Needs a credit ledger and clear usage display |
+| Tier-gated | AI only in the highest plan | Pushes plan upgrades | High friction, as described above |
+
+For most B2B SaaS teams, the third model is the best balance. Stripe Billing supports both fixed-price and metered (usage-based) prices on the same subscription, so you can add the AI add-on as an extra subscription item without rebuilding your plans. Whatever you choose, calculate your gross margin per add-on customer using real API costs from your beta, not estimates.
+
+## How to Roll Out an AI Upsell to Existing Customers Step by Step
+
+A reliable AI upsell rollout moves from cost measurement to beta to paywall in a fixed order, so that every pricing decision is based on real usage data. Use this sequence:
+
+1. **Measure the cost per action.** Before launch, log the token or credit cost of each AI feature on realistic customer data. This becomes the floor for your pricing.
+2. **Choose the pricing model and allowance.** Set the included usage so that your median beta user stays within it, and your heaviest users pay for top-ups.
+3. **Prepare billing and contracts.** Add the add-on as a separate subscription item in your billing system, and check how annual contracts and existing price agreements handle new paid modules.
+4. **Update your data processing documents.** If the AI feature sends customer data to a model provider such as OpenAI or Anthropic, that provider becomes a sub-processor. Under GDPR Article 28, a processor may only engage sub-processors with the controller's prior written authorisation, and most data processing agreements require you to notify customers of new sub-processors in advance.
+5. **Launch the time-boxed beta.** Give existing customers 30 days of access, track usage per account, and segment by intensity as described above.
+6. **Switch on teasers and the paywall.** At the end of the beta, keep computing results for non-paying users at a capped rate and show the blurred preview with a clear upgrade action.
+7. **Review margins after the first billing cycle.** Compare revenue per add-on account with its actual API cost, and adjust the allowance before you raise prices.
+
+## Common Mistakes When Upselling AI Features in SaaS
+
+The most damaging upsell mistake is moving a feature customers already use for free behind a paywall without warning. That feels like a price increase, not a new product, and it invites churn and support tickets. Plan the transition in the open and avoid these other errors:
+
+- **No usage visibility.** If customers cannot see how many credits or generations they have left, every top-up charge feels like a surprise. Show usage inside the product and in the billing portal.
+- **Ignoring annual contracts.** Customers on a signed annual plan may be protected from mid-term changes. Offer the add-on as optional for them until renewal.
+- **Unlimited plans with frontier models.** An unlimited add-on that runs your most expensive model on every request is the fastest way to turn expansion revenue into a loss.
+- **Forgetting procurement.** In larger B2B accounts, a new sub-processor or a new AI feature can trigger a security or legal review. Prepare a short AI data-handling summary before your sales and success teams need it.
+- **Measuring only signups.** Track attach rate (the share of eligible accounts that buy the add-on), expansion MRR and gross margin per add-on account. A high attach rate with a negative margin is not a success.
+
 ## Key Takeaways
 
 - Never give heavy generative AI features away for free to your existing user base indefinitely; the variable API costs will crush your profit margins even though your intent was to boost retention.

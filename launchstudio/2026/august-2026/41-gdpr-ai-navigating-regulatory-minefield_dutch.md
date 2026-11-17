@@ -69,6 +69,52 @@ U bent dan verplicht om transparante toelichtingen te bieden over hoe de AI tot 
 
 Het oplossen van deze complexe compliance-architecturen is exact waar **Manifera**, het moederbedrijf achter LaunchStudio, sinds **2014** in gespecialiseerd is. Manifera's Europese hoofdkantoor aan de Herengracht 420, 1017 BZ Amsterdam opereert midden in het Europese wetgevingsklimaat. Zoals Herre Roelevink, Oprichter & Managing Director van Manifera, stelt: "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Bekijk Manifera's [maatwerk softwareontwikkeling diensten](https://www.manifera.com/services/custom-software-development/).
 
+## Welke rechtsgrond dekt uw AI-functionaliteiten?
+
+Elke AI-functionaliteit die persoonsgegevens verwerkt, heeft een van de zes rechtsgronden uit Artikel 6 AVG nodig, en voor de meeste B2B AI SaaS-producten zijn de realistische opties uitvoering van een overeenkomst, gerechtvaardigd belang of toestemming. Het kiezen van de rechtsgrond is geen papierwerk: het bepaalt wat u later met de gegevens mag doen.
+
+- **Overeenkomst (Artikel 6, lid 1, onder b):** Past wanneer de AI-functionaliteit precies de dienst is waarvoor de klant heeft gekozen, zoals het samenvatten van de eigen documenten van de klant. Het strekt zich niet uit tot hergebruik van die data voor andere doeleinden, zoals het trainen van een model dat ook andere klanten bedient.
+- **Gerechtvaardigd belang (Artikel 6, lid 1, onder f):** Kan activiteiten zoals misbruikdetectie of productanalyse dekken, maar vereist een vastgelegde belangenafweging waaruit blijkt dat uw belang niet zwaarder weegt dan de rechten en vrijheden van de gebruiker.
+- **Toestemming (Artikel 6, lid 1, onder a, en Artikel 7):** In de praktijk nodig voor alles wat gebruikers redelijkerwijs niet verwachten, zoals modeltraining op hun content. Toestemming moet actief, specifiek en geïnformeerd zijn, en even eenvoudig in te trekken als te geven.
+
+Doelbinding onder Artikel 5, lid 1, onder b, is hier de valkuil. Gegevens die zijn verzameld om de vraag van een gebruiker te beantwoorden, mogen niet zes maanden later stilletjes trainingsdata worden, alleen omdat dat het model zou verbeteren.
+
+## Fine-tuning versus RAG versus zero-retention API's: een AVG-vergelijking
+
+De architectuur die u kiest, bepaalt hoe moeilijk AVG-naleving wordt, en RAG in combinatie met een zero-retention API-tier is doorgaans de standaard met het laagste risico voor AI-databeveiliging.
+
+| Aanpak | Waar persoonsgegevens terechtkomen | Recht op gegevenswissing (Artikel 17) | Typisch AVG-risico |
+|---|---|---|---|
+| Fine-tuning op klantdata | In de modelgewichten | Geen betrouwbare manier om één gebruiker te verwijderen | Hoog |
+| RAG met een vectordatabase | Vectoropslag plus brondatabase | Vectoren en records wissen via `user_id` | Gemiddeld, beheersbaar met cascading deletes |
+| Zero-retention API, geen opslag | Alleen tijdelijk bij de verwerker | Niets blijvends te wissen aan de kant van de provider | Laag, mits de DPA en bewaartermijnen schriftelijk zijn vastgelegd |
+| Zelf gehost open-weight model in de EU | Uw eigen infrastructuur | Volledig onder uw eigen controle | Laag doorgifterisico, maar u bent zelf volledig verantwoordelijk voor de beveiliging |
+
+## AVG-checklist voor AI SaaS-oprichters
+
+Voordat u een AI-functionaliteit lanceert voor Europese gebruikers, moet u elk punt op deze lijst kunnen afvinken:
+
+1. **Breng de datastroom in kaart.** Leg vast welke persoonsgegevens in prompts terechtkomen, welke in embeddings worden opgenomen en welke de EU/EER verlaten.
+2. **Leg de rechtsgrond vast** voor elk AI-verwerkingsdoel in uw register van verwerkingsactiviteiten (Artikel 30).
+3. **Sluit verwerkersovereenkomsten** met elke verwerker, inclusief LLM-providers, hosts van vectordatabases en observability-tools.
+4. **Bevestig de waarborgen voor doorgifte:** SCC's plus een Transfer Impact Assessment, of verwerking binnen een EU-regio.
+5. **Implementeer cascading deletes** over uw primaire database, vectoropslag, bestandsopslag en caches.
+6. **Beperk wat er in prompts terechtkomt.** Verwijder of pseudonimiseer identificatoren die het model niet nodig heeft, in lijn met het beginsel van dataminimalisatie uit Artikel 5, lid 1, onder c.
+7. **Stel bewaartermijnen in** voor logs van prompts en antwoorden, niet alleen voor gebruikersaccounts.
+8. **Werk uw privacyverklaring bij** (Artikelen 13 en 14), zodat de AI-verwerking en de categorieën betrokken verwerkers expliciet worden genoemd.
+9. **Voer de DPIA uit** als uw functionaliteit gebruikers profileert of geautomatiseerde besluiten neemt.
+10. **Richt een procedure voor datalekken in.** Onder Artikel 33 moet u uw toezichthouder, in Nederland de Autoriteit Persoonsgegevens, binnen 72 uur nadat u er kennis van heeft genomen informeren over een inbreuk in verband met persoonsgegevens, tenzij het onwaarschijnlijk is dat de inbreuk een risico voor personen oplevert.
+
+## Veelgemaakte AVG-fouten in met AI gebouwde prototypes
+
+De meest voorkomende AVG-fouten in met AI gebouwde prototypes zitten niet in het model zelf, maar in de logging en tooling eromheen.
+
+- **Volledige prompts in applicatielogs.** Debug-logging schrijft vaak complete prompts, inclusief namen en e-mailadressen, weg naar tools als Sentry of de logstream van een hostingprovider, zonder enige bewaartermijn.
+- **Observability-platforms zonder verwerkersovereenkomst.** LLM-tracingtools slaan elke prompt en elk antwoord op. Verwerken zij Europese persoonsgegevens, dan zijn zij ook verwerkers en horen zij op uw lijst met subverwerkers.
+- **Verwijdering die back-ups en caches overslaat.** Een gebruiker wissen uit PostgreSQL terwijl diens documenten achterblijven in objectopslag, een Redis-cache of een semantische cache, is een onvolledige gegevenswissing.
+- **Gratis API-sleutels in productie.** Een sleutel die is aangemaakt onder een consumenten- of proefabonnement kan andere voorwaarden voor datagebruik hebben dan de enterprise-overeenkomst waarvan u denkt dat die op u van toepassing is.
+- **Geen bewijs van toestemming.** Als u zich op toestemming baseert, moet u kunnen aantonen wanneer en hoe die is gegeven (Artikel 7, lid 1). Dat vraagt om een audittrail met tijdstempels in plaats van een vinkje dat geen enkel spoor achterlaat.
+
 ## Belangrijkste Inzichten
 
 - Het trainen van LLM's op gebruikersdata schendt het 'Recht op Vergetelheid' omdat individuele data niet selectief uit neurale modelgewichten gewist kan worden.

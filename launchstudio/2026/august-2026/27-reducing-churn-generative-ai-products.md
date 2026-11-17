@@ -45,6 +45,52 @@ Most teams find out a customer churned when the cancellation email hits their in
 
 This kind of retention architecture is exactly what Herre Roelevink, Founder & Managing Director of Manifera, means when he says: "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's now about the architecture and security needed to bring those products to maturity. We have eleven years of experience in exactly that." Manifera has been refactoring exactly these prototype-to-retention gaps since it was founded in **2014**, running engineering teams from **Amsterdam** (Herengracht 420) and **Ho Chi Minh City, Vietnam**.
 
+## What Kinds of Churn Hit an AI SaaS Platform?
+
+Churn in an AI SaaS platform is the share of paying customers, or of recurring revenue, that you lose in a given period, and it comes in several types that each need a different fix. Treating all cancellations as one number hides the cause. The table below separates the main churn types for generative AI products.
+
+| Churn type | What it looks like | Typical cause | Main fix |
+|---|---|---|---|
+| Novelty churn | Heavy use in month 1, cancel in month 2 or 3 | Product is a toy, not a workflow | System of Record and switching costs |
+| Onboarding churn | Cancels within days, low usage | Blank canvas, weak first result | Guided first-run experience |
+| Episodic churn | Cancels between projects, returns later | Need is periodic, billing is monthly | Pause or low-cost storage tier |
+| Quality churn | Complaints about worse outputs, then cancel | Model change, prompt drift, regressions | Version pinning and output evaluations |
+| Involuntary churn | Subscription ends without a cancel click | Failed card payments, expired cards | Dunning, retries and card updates |
+
+Track logo churn (customers lost) and revenue churn (MRR lost) separately. In B2B, losing one large account can matter more than losing twenty small ones.
+
+## Why Do Output Quality Changes Cause Churn in Generative AI Products?
+
+Output quality changes cause churn because users judge a generative AI product by the results it gave them last week, and any visible drop in quality feels like the product got worse. This often happens without any change to your own code. A model provider releases a new version, your prompt behaves differently on it, and answers that used to be sharp become generic.
+
+Protect against this in three ways. First, pin a specific model version in production where your provider offers it - OpenAI, for example, publishes dated model snapshots - instead of always calling the newest alias. Second, keep a small evaluation set of real (anonymised) user inputs with known good outputs, and run it before every model or prompt change. Third, roll out changes to a small share of users first and compare usage and feedback before switching everyone. This turns model upgrades from a churn risk into a controlled release.
+
+## Involuntary Churn: Failed Payments You Can Recover
+
+Involuntary churn is the loss of customers who did not decide to leave, but whose payment failed, and it is often the easiest churn to reduce. Cards expire, banks decline transactions, and in the EU the PSD2 Strong Customer Authentication rules can require an extra confirmation step that some renewals fail.
+
+Stripe Billing includes tools for this: Smart Retries, which retry failed payments at better moments, automatic card updates for many card networks, and customisable emails that ask customers to update their payment details. Turn these on, add an in-app banner for workspace owners when a payment fails, and give customers a grace period before you restrict access. A customer who simply needs to update a card should never lose their work.
+
+## How to Reduce Churn in an AI SaaS Platform Step by Step
+
+A churn reduction program works best as a fixed sequence: measure, segment, fix the biggest leak, then automate. Use these steps:
+
+1. **Measure churn by type and cohort.** Split cancellations by signup month, plan and churn type from the table above.
+2. **Add a short cancellation survey.** Ask one required question with fixed answers, such as "no longer needed", "too expensive", "output quality" or "switched tool".
+3. **Find the largest leak.** Fix the churn type that loses the most revenue first, not the one that is easiest to build.
+4. **Ship the matching fix.** Guided onboarding for onboarding churn, a pause option for episodic churn, version pinning for quality churn.
+5. **Automate the health score.** Connect the leading indicators described above to alerts for your customer success team.
+6. **Review every month.** Compare the cohort that received the fix with earlier cohorts, and keep only the changes that actually move retention.
+
+## Common Mistakes When Fighting AI Churn
+
+The most common churn mistake is offering a discount to every user who clicks cancel, which trains customers to threaten cancellation and does nothing about the real cause. Discounts can help for price-sensitive users, but only when the survey says price is the problem. Other mistakes to avoid:
+
+- **Hiding the cancel button.** Making cancellation hard creates angry customers and chargebacks, and it does not fix churn.
+- **Deleting data immediately after cancellation.** Keep data for a clear, stated period so reactivation is easy, in line with your privacy notice and the GDPR storage limitation principle.
+- **Measuring only monthly averages.** Averages hide whether new cohorts retain better than older ones.
+- **Ignoring silent users.** Customers who pay but no longer log in are the next cancellations. Reach out before the renewal date.
+
 ## Key Takeaways
 
 - AI wrappers suffer massive churn because they act as disposable utilities; roughly 80% of AI-built products never reach a durable, retained production state. To retain users, you must become a 'System of Record' where their critical data lives permanently.

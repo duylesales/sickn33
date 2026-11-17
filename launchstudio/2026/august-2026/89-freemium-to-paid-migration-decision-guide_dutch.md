@@ -70,6 +70,29 @@ De technische implementatie bepaalt of een paywall correct werkt; de communicati
 
 Niets hiervan vervangt het technische werk - een prachtig geformuleerde aankondiging repareert geen paywall die gebruikers ten onrechte buitensluit door onnauwkeurige gebruikstracking. Maar gecombineerd met correct uitgevoerde technische implementatie is doordachte communicatie vaak het verschil tussen een migratie die loyale gebruikers omzet in betalende klanten en een die ze verandert in mondige critici op precies de platforms waarop een oprichter hun goodwill nodig heeft.
 
+## Moet U Eigenlijk Wel Afstappen van Freemium?
+
+U moet afstappen van puur freemium wanneer gratis gebruikers u elke maand echt geld kosten en een betekenisvol deel van hen het product intensief gebruikt zonder ooit een natuurlijke reden te bereiken om te betalen. Een freemium naar betaald migratie is het proces waarin u verandert waartoe bestaande gratis gebruikers toegang hebben, en onder welke voorwaarden, zodat langdurig of geavanceerd gebruik een betaald abonnement vereist. Het is niet de enige optie. De onderstaande tabel vergelijkt de vier modellen waartussen oprichters het vaakst kiezen.
+
+| Model | Hoe het werkt | Werkt goed wanneer | Belangrijkste risico |
+|-------|---------------|--------------------|----------------------|
+| Freemium met limieten | Een blijvend gratis abonnement, met gebruikslimieten of afgeschermde functies | Gratis gebruikers goedkoop te bedienen zijn en het product aanbevelen | Het gratis niveau is te ruim, waardoor weinig gebruikers upgraden |
+| Gratis proefperiode | Volledige toegang voor een vaste periode, daarna is betaling vereist | De waarde binnen enkele dagen duidelijk is | Gebruikers vertrekken aan het einde van de proefperiode voordat ze de waarde zien |
+| Reverse trial | Volledige betaalde functies tijdens een proefperiode, daarna terug naar het gratis abonnement | U wilt dat gebruikers de betaalde functies ervaren voordat ze beslissen | De downgrade voelt als verlies als deze niet goed wordt uitgelegd |
+| Alleen betaald | Geen gratis abonnement, soms met een geld-terug-garantie | Elke gebruiker duur is om te bedienen, bijvoorbeeld door zware AI-inferentie | Minder aanmeldingen bovenin de funnel |
+
+Voor veel AI SaaS-producten, waarbij elke generatie directe inferentiekosten met zich meebrengt, is de stap zelden van freemium naar alleen betaald. Vaker gaat het van een onbeperkt gratis abonnement naar freemium met strakke gebruikslimieten, of naar een reverse trial.
+
+## Veelgemaakte Fouten bij een Migratie van Freemium naar Betaald
+
+De schadelijkste fout is de limieten, de prijzen en de namen van de abonnementen allemaal tegelijk veranderen, waardoor gebruikers niet kunnen begrijpen wat er is veranderd en u niet kunt meten wat het resultaat heeft veroorzaakt. Andere fouten komen vaak voor:
+
+1. **Geen opruiming aan de factureringskant.** Oude abonnementen in Stripe Billing, webhook-handlers die de nieuwe niveaus niet kennen, en downgrade-events die de toegangsregels nooit bijwerken, zorgen er allemaal voor dat gebruikers de verkeerde limieten zien.
+2. **Teamaccounts negeren.** Een werkruimte met meerdere leden heeft duidelijke regels nodig over de vraag of limieten per gebruiker of per werkruimte gelden.
+3. **Geen tracking per cohort.** Zonder aparte conversiecijfers voor gebruikers met grandfathering en nieuwe gebruikers kunt u niet vaststellen of de migratie heeft gewerkt.
+4. **Geen terugdraaiplan.** Met feature flags moet u een limiet binnen enkele minuten kunnen versoepelen als deze verkeerd blijkt te zijn ingesteld.
+5. **Uw eigen voorwaarden vergeten.** Controleer wat uw algemene voorwaarden gratis gebruikers hebben beloofd over aankondigingstermijnen en data, en houd u daaraan.
+
 ## Belangrijkste inzichten
 
 - Bestaande gratis gebruikers migreren naar een betaalde structuur is een live operatie op een actieve gebruikersbasis, geen wijziging van een prijzenpagina - krijg de volgorde verkeerd en de mislukking is publiek.

@@ -67,13 +67,61 @@ Een veelgebruikt productiepatroon is Firecrawl inzetten als standaardroute voor 
 
 Soms heeft u meer nodig dan één enkele webpagina. Vraagt een gebruiker bijvoorbeeld: "Bouw een AI-chatbot op basis van de complete helpdesk van dit bedrijf", dan moet u het volledige domein scrapen.
 
-Firecrawl biedt hiervoor **Crawl Endpoints**. U geeft het hoofddomein op, waarna de API autonoom de sitemap volgt, alle subpagina's tot een instelbare diepte bezoekt en een gestructureerde array van Markdown-documenten retourneert. Uw Next.js-backend verdeelt deze documenten in chunks (500–1000 tokens), genereert vector-embeddings en slaat deze op in Supabase met `pgvector` - waarmee binnen enkele minuten een volwaardige RAG-kennisbank operationeel is.
+Firecrawl biedt hiervoor **Crawl Endpoints**. U geeft het hoofddomein op, waarna de API autonoom de sitemap volgt, alle subpagina's tot een instelbare diepte bezoekt en een gestructureerde array van Markdown-documenten retourneert. Uw Next.js-backend verdeelt deze documenten in chunks (500-1000 tokens), genereert vector-embeddings en slaat deze op in Supabase met `pgvector` - waarmee binnen enkele minuten een volwaardige RAG-kennisbank operationeel is.
 
 ## robots.txt en Juridische Kaders Respecteren
 
 Scraping-infrastructuur is dermate krachtig dat men gemakkelijk vergeet dat web scraping niet zonder juridische en ethische grenzen is. Het respecteren van `robots.txt`-richtlijnen, het instellen van rate-limits om doelservers niet te overbelasten en het niet zonder toestemming scrapen van data achter betaalmuren of logins zijn essentiële waarborgen.
 
 Manifera, het moederbedrijf achter LaunchStudio, bouwt al sinds **2014** dit soort compliance- en enterprise-veilige data-pipelines, met 11+ jaar ervaring en 160+ opgeleverde projecten voor organisaties zoals Vodafone en TNO. "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied," aldus Herre Roelevink, Oprichter & Managing Director van Manifera.
+
+## Wat is web scraping voor AI?
+
+Web scraping voor AI is het geautomatiseerd ophalen van live webpagina's, gevolgd door het renderen, opschonen en omzetten ervan naar compacte tekst of gestructureerde data die een taalmodel als context kan gebruiken. Het doel is niet om een website te kopiëren, maar om het model actuele, relevante feiten te geven met zo min mogelijk ruis.
+
+Die definitie verklaart waarom scraping voor AI een pipeline is en geen enkel verzoek. Het ophalen van de pagina is het makkelijke deel. Het renderen van JavaScript, het passeren van botbescherming, het verwijderen van overbodige elementen en het opslaan van het resultaat in een vorm die uw RAG-systeem kan doorzoeken: daar zit de engineeringinspanning.
+
+## Firecrawl vs Browserless: een directe vergelijking
+
+Het korte antwoord: Firecrawl is de snellere route naar schone, LLM-klare content, terwijl Browserless u volledige controle geeft over een echte browser. De tabel hieronder vat de afwegingen uit dit artikel samen.
+
+| Criterium | Firecrawl | Browserless |
+|---|---|---|
+| Belangrijkste output | Schone Markdown, platte tekst of gestructureerde JSON | Gerenderde pagina, DOM, screenshots of PDF's |
+| Mate van controle | API op hoog niveau: scrapen, crawlen, extraheren | Volledige scripting met Puppeteer of Playwright |
+| Logins en flows met meerdere stappen | Beperkt | Zeer geschikt |
+| Een volledig domein crawlen | Ingebouwd crawl-endpoint | U schrijft de crawlerlogica zelf |
+| HTML opschonen | Wordt voor u gedaan | U bouwt zelf een opschoonstap of voegt die toe |
+| Engineeringinspanning | Laag | Gemiddeld tot hoog |
+| Typische rol in productie | Standaardroute voor het inlezen van content | Terugvaloptie voor complexe of afgeschermde sites |
+
+Omdat de twee elkaar overlappen, is de echte beslissing meestal niet "welke van de twee", maar "welke is de standaardroute en welke handelt de uitzonderingen af".
+
+## Een scraping-pipeline bouwen: een workflow voor AI code ontwikkeling
+
+Een productieklare scraping-pipeline voor een AI-app doorloopt zeven fasen, en elke fase beschermt de volgende tegen slechte input:
+
+1. **Bepaal de toegestane bronnen.** Houd een allowlist van domeinen bij, of regels voor welke door gebruikers ingediende URL's u accepteert, en controleer `robots.txt` vóór het eerste verzoek.
+2. **Controleer eerst uw cache.** Sla elke gescrapete URL op met een tijdstempel en een hash van de content, en scrape alleen opnieuw wanneer de gecachte versie ouder is dan uw versheidstermijn.
+3. **Haal op via het juiste hulpmiddel.** Stuur standaardpagina's via Firecrawl en leid alleen de bekende complexe sites naar een Browserless-script.
+4. **Stel time-outs en limieten voor herhaalpogingen in.** Elk verzoek krijgt een maximale duur en een klein, vast aantal herhaalpogingen met oplopende wachttijd, zodat één trage site niet een hele taak blokkeert.
+5. **Schoon op en valideer.** Controleer dat de geretourneerde Markdown niet leeg is, geen cookiemuur is en geen pagina met "bevestig dat u een mens bent", voordat u die doorgeeft.
+6. **Chunk, embed en sla op.** Verdeel de content, maak embeddings en sla die op met de bron-URL en de scrapedatum, zodat antwoorden kunnen vermelden waar feiten vandaan komen.
+7. **Draai het op de achtergrond.** Voer crawls uit in een wachtrij of achtergrondtaak in plaats van in een API-route voor gebruikers die een time-out krijgt.
+
+## Veelgemaakte fouten bij scraping voor AI-apps
+
+De gevaarlijkste fout is gescrapete tekst behandelen als betrouwbare input. Een webpagina kan verborgen instructies voor uw model bevatten, zoals witte tekst op een witte achtergrond die het model opdraagt eerdere instructies te negeren. Dit heet indirecte prompt injection. De verdediging is om gescrapete content duidelijk gescheiden te houden van uw systeeminstructies en die content nooit zelfstandig acties te laten starten.
+
+Andere terugkerende fouten:
+
+- **Steeds opnieuw dezelfde pagina scrapen.** Zonder cache wordt een populaire URL bij elk gebruikersverzoek opgehaald. Dat vermenigvuldigt de kosten en vergroot de kans op blokkades.
+- **Persoonsgegevens negeren.** Het scrapen van pagina's over personen, zoals teampagina's of openbare profielen, blijft verwerking van persoonsgegevens onder de AVG (GDPR). U heeft een rechtsgrond nodig, en artikel 14 verplicht u om mensen van wie u indirect gegevens verzamelt te informeren, op enkele beperkte uitzonderingen na.
+- **Opt-outs voor tekst- en datamining over het hoofd zien.** Onder artikel 4 van de Europese Auteursrechtrichtlijn (2019/790) kunnen rechthebbenden hun content op een machineleesbare manier uitsluiten van tekst- en datamining. Respecteer die voorbehouden in uw crawlerbeleid.
+- **Stille fouten.** Een scraper die bij een blokkade een lege tekst teruggeeft, lijkt succesvol, tenzij u per domein de lengte van de content en het foutpercentage bewaakt.
+- **Geen limieten per klant.** Als gebruikers URL's kunnen indienen, begrens dan de crawldiepte en het aantal pagina's per account, anders kan één klant een enorme crawlrekening veroorzaken.
+
+Voor organisaties in Nederland verdient het punt over persoonsgegevens extra aandacht. De Autoriteit Persoonsgegevens heeft in 2024 een handreiking over scraping gepubliceerd waarin zij stelt dat het scrapen van persoonsgegevens door private partijen in de meeste gevallen in strijd is met de AVG. Bouwt u bijvoorbeeld een AI-salesagent die bedrijfswebsites onderzoekt, beperk de scraper dan tot bedrijfsinformatie zoals producten, prijzen en nieuws, en filter namen, e-mailadressen en foto's van medewerkers zoveel mogelijk weg voordat de data in uw kennisbank belandt. Leg die keuze vast in uw verwerkingsregister, zodat u haar kunt toelichten wanneer een enterprise-klant of toezichthouder ernaar vraagt.
 
 ## Belangrijkste Inzichten
 

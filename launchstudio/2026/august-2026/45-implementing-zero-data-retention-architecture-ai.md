@@ -44,6 +44,55 @@ The solution is **VPC (Virtual Private Cloud) Deployment**. Using infrastructure
 
 Roughly 80% of AI-built projects never make it to production, and a disproportionate share of the ones that do stall are healthcare and fintech tools that were architected stateful from the start and then discovered - mid-procurement - that retrofitting zero retention meant rebuilding the entire data layer. This is precisely the kind of foundational architecture decision Manifera has been making correctly since it was founded in **2014**, building 160+ production systems, including privacy-sensitive work with TNO, from its Amsterdam HQ at Herengracht 420. As Herre Roelevink, Founder & Managing Director of Manifera, puts it: "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's now about the architecture and security needed to bring those products to maturity. We have eleven years of experience in exactly that."
 
+## Zero Data Retention vs. Short Retention vs. Standard Storage
+
+Zero Data Retention is an architecture in which neither your application nor your AI provider keeps any persistent copy of a user's input or the model's output once the request is complete. It is the strictest point on a spectrum, and not every product needs to sit there. The table compares the three common models for AI data security.
+
+| | Standard storage | Short retention | Zero Data Retention |
+|---|---|---|---|
+| Your database | Stores prompts, files and outputs | Stores them for a fixed window, then deletes | Stores nothing from the transaction |
+| LLM provider | Default retention, often around 30 days | Default retention, often around 30 days | ZDR program approved for your key |
+| Chat history | Yes | Yes, until the window expires | No; output is pushed to the client's systems |
+| Breach blast radius | All historical data | Data inside the window | Only requests in flight |
+| Typical buyers | B2C, SMB | Mid-market B2B | Banks, healthcare, defence, public sector |
+
+Under GDPR, storage limitation (Article 5(1)(e)) and data protection by design (Article 25) already push you toward the right-hand columns whenever personal data is involved. Zero retention is the most direct way to show a regulator or a CISO that you took both principles seriously.
+
+## Where Does Data Leak Out of a "Stateless" Pipeline?
+
+Most pipelines that are described as stateless still leak data into logs, monitoring tools or the browser, and these hidden copies are exactly what a careful CISO looks for. Removing the database write is only the first step. Check every one of these locations:
+
+- **Application and function logs.** A single `console.log(prompt)` left in a Next.js API route ends up in Vercel or AWS CloudWatch logs, often with a long default retention.
+- **Error tracking.** Tools like Sentry can capture request bodies and local variables when an exception occurs, which means a failed PDF parse can ship the full document text to a third party.
+- **LLM observability platforms.** Tracing tools such as LangSmith or Helicone store full prompts and responses by default. In a zero-retention product, configure them to log only metadata such as token counts, latency and model name.
+- **Session replay and analytics.** Product analytics with session recording can capture text rendered on screen. Mask the input and output elements or disable recording on those pages.
+- **Browser storage.** Saving the generated report in `localStorage` or IndexedDB "for convenience" quietly creates a copy on a device you do not control.
+- **Provider features outside the ZDR scope.** Stateful features such as file storage, assistants-style threads, batch jobs or cached prompts may not be covered by your provider's Zero Data Retention approval. Confirm in writing which endpoints your approval covers before you use them.
+- **Temporary files and queues.** Background jobs that write uploads to `/tmp`, object storage or a message queue create persistence, even if only for minutes.
+
+## How to Prove Zero Data Retention to a CISO
+
+You prove Zero Data Retention with evidence, not with a sentence in your security questionnaire. Assemble this pack before your first enterprise security review:
+
+1. **A data-flow diagram** showing every hop from browser to backend to LLM and back, with "no persistence" marked at each step.
+2. **The provider's written ZDR approval** for your API key or organisation, plus the endpoints it covers.
+3. **Logging configuration** from your hosting, error tracking and observability tools, showing that bodies and prompts are excluded or redacted.
+4. **Database schema evidence** that no table stores prompt text, file contents or outputs.
+5. **Test results** from a run in which a marked test document is processed and every log, store and tool is then searched for the marker.
+6. **A change-control rule** that any new logging, analytics or storage in the AI path needs security sign-off, so the guarantee survives future releases.
+
+## When Is Zero Data Retention the Wrong Choice?
+
+Zero Data Retention is the wrong default when your product's value depends on memory, such as long-running projects, collaborative workspaces or personalisation that improves over time. In those cases, a short, documented retention window or a VPC deployment usually serves the customer better than removing history altogether.
+
+A simple way to decide:
+
+- **Choose Zero Data Retention** when buyers are regulated, the task is one-off (summarise, classify, extract) and the output can live in the client's own system.
+- **Choose short retention** when users need history for days or weeks, and your buyers accept a clear deletion schedule.
+- **Choose VPC deployment** when the product relies on RAG or persistent memory and the buyer will not let data leave their cloud.
+
+Many AI SaaS products end up offering two tiers: a standard multi-tenant plan with short retention and an enterprise plan with Zero Data Retention or VPC deployment. Deciding this early keeps your AI deployment architecture from being rebuilt mid-sale.
+
 ## Key Takeaways
 
 - Highly regulated industries (finance, healthcare, defense) will reject AI software that saves their proprietary data into a third-party startup's database - retrofitting this later usually means a full data-layer rebuild.

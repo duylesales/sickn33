@@ -38,6 +38,61 @@ Suppose your LLM script runs overnight and generates a JSON object containing th
 
 Regardless of which API you choose, deliverability is mostly a function of your own domain configuration and sending behavior, not the provider's raw infrastructure. You must configure SPF, DKIM, and DMARC records correctly at the DNS level; warm up a new sending domain gradually rather than blasting thousands of emails on day one; keep bounce and complaint rates below roughly 0.1% and 0.3% respectively; and honor unsubscribe requests immediately, since spam complaints on AI-generated "automated report" emails climb fast if users feel spammed. A perfectly built React Email template sent from a misconfigured domain will still land in spam - this DNS and reputation layer is exactly the kind of unglamorous, easy-to-skip production work that separates a working MVP from a reliable growth channel.
 
+## What Is a Transactional Email API?
+
+A transactional email API is a service that lets your application send individual, event-triggered emails (password resets, receipts, AI-generated reports) through an HTTP request instead of a personal mailbox. The provider handles the SMTP connections, retries, bounce processing and reputation monitoring, while your code decides who gets which message and when.
+
+For an AI SaaS product, this distinction matters. A newsletter tool sends the same message to many people. Your AI report pipeline sends a different message to every user, built from that user's own data. That is transactional by nature, even when it runs on a schedule, and it is why both SendGrid and Resend expose a simple "send this one email" endpoint as their core product.
+
+## SendGrid vs Resend: Side-by-Side Comparison for AI SaaS
+
+The short answer: SendGrid wins on enterprise depth and history, Resend wins on developer experience and on rendering variable AI output. The table below summarizes the differences covered in this article.
+
+| Criterion | SendGrid | Resend |
+|---|---|---|
+| Ownership and maturity | Part of Twilio, long track record at very high volume | Newer, developer-first company |
+| Template approach | Visual drag-and-drop builder or Handlebars-based dynamic templates | React Email components rendered to email-safe HTML |
+| Handling variable-length AI output | Possible, but loops and conditionals live in a separate template language | Native: map over an array in JSX |
+| Local preview | Mainly through the dashboard or test sends | `react-email` dev server on your own machine |
+| API surface | Several product lines with different conventions | Small, focused REST API and SDKs |
+| Enterprise features | Dedicated IPs, subusers, detailed suppression management | Fewer legacy enterprise controls |
+| Best fit | High-volume senders with compliance teams | Next.js and React teams shipping AI-generated content |
+
+Neither column changes the deliverability rules from the previous section. Both providers will happily send a badly authenticated email straight into a spam folder.
+
+## How to Build an AI Email Report Pipeline, Step by Step
+
+A reliable AI report pipeline has six stages, and skipping any one of them is how founders end up with broken, duplicated or spam-flagged emails.
+
+1. **Generate structured output, not prose.** Ask your model for JSON that matches a fixed schema (for example via OpenAI Structured Outputs or a tool call), then validate it in code with a library such as Zod before anything else touches it.
+2. **Clean the content.** Strip or escape HTML in model output, check that every link points to a domain you expect, and cap list lengths so a runaway response cannot produce a 40-screen email.
+3. **Render the template.** Pass the validated data as props into your React Email component and render it to HTML and to a plain-text version. The plain-text part helps both accessibility and spam filtering.
+4. **Send with protection against duplicates.** Record each send in your database with a unique key such as user ID plus report date, so a retried cron job never emails the same report twice.
+5. **Schedule outside the request cycle.** Run the job from a scheduler (Vercel Cron Jobs, a queue worker or a background job service) rather than from a user-facing API route that can time out.
+6. **Listen to webhooks.** Subscribe to bounce, complaint and delivery events, and stop sending to addresses that hard-bounce or complain.
+
+## Common Mistakes When Sending AI-Generated Emails
+
+The most common mistake is trusting raw LLM output inside an email. A model that hallucinates a link or emits half-closed Markdown produces an email your user cannot unsee, and unlike a web page you cannot fix it after it has been delivered.
+
+Other mistakes we regularly see in AI-built prototypes:
+
+- **Sending from the root domain.** Use a dedicated subdomain such as `reports.yourdomain.com`, so a reputation problem with automated reports does not hurt your sales team's normal email.
+- **No one-click unsubscribe.** Since 2024, Gmail and Yahoo require bulk senders to support one-click unsubscribe via the `List-Unsubscribe` header. Even below their bulk thresholds, a clear opt-out reduces spam complaints.
+- **No plain-text alternative.** HTML-only messages look less trustworthy to filters and are harder to read in some clients.
+- **API keys in client-side code.** The email API key must only live on the server, in an environment variable, never in a `NEXT_PUBLIC_` variable.
+- **Forgetting the data processing agreement.** Your email provider processes personal data (names, addresses, report contents) on your behalf, so under GDPR Article 28 you need a data processing agreement with it. Both SendGrid and Resend publish one, but you still have to have it in place and list the provider in your privacy policy.
+
+## How to Choose: A Decision Checklist
+
+Choose based on your team and your content, not on brand recognition. Answer these questions in order:
+
+- Is your frontend built with React or Next.js? If yes, Resend and React Email fit your existing skills.
+- Does your AI output vary in length or structure from send to send? If yes, component-based templates save the most time.
+- Do you already send tens of millions of emails a month or need dedicated IP pools and subuser accounts today? If yes, SendGrid's enterprise features justify its complexity.
+- Does a non-developer marketing team need to edit templates visually? If yes, SendGrid's builder may serve them better for marketing mail, while product emails can still run elsewhere.
+- Is your SPF, DKIM and DMARC setup verified? If not, fix that first, because no provider choice will compensate for it.
+
 ## The Verdict
 
 If you are a massive enterprise sending 50 million marketing blasts a month and require legacy compliance features and dedicated IP pools, use SendGrid. It is an industrial-grade pipe.

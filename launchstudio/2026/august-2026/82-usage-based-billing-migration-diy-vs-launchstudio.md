@@ -59,6 +59,18 @@ None of these issues are exotic edge cases; they're the kind of details that sep
 
 Beyond a shadow-billing period, there are a few concrete checks worth running before flipping any customer's real billing over to the new system. Replay a sample of historical usage data through the new metering logic and compare the resulting invoice totals against what the old flat-rate system would have produced, to sanity-check that the new pricing lands where the business model intended. Deliberately simulate failure conditions - a dropped network connection mid-event, a duplicate webhook delivery, a burst of concurrent requests from a single customer - and confirm the system handles each one without double-counting or losing usage records. And run the reconciliation job against a full billing cycle's worth of real data before cutover, not just a few days, since some drift patterns (a batch job that silently fails once a week, for instance) only become visible over a longer observation window. Founders who skip straight from development to a live cutover are, in effect, running these tests for the first time against real customer money - exactly the scenario a shadow-billing period and a validation checklist are meant to prevent.
 
+## When Should You Migrate to Usage-Based Billing?
+
+You should migrate to usage-based billing when your variable costs per customer differ so much that one flat price can no longer cover your heaviest users without overcharging your lightest ones. Usage-based billing, in plain terms, means the invoice is calculated from what a customer actually consumed in a billing period - API calls, tokens, documents, minutes - instead of a fixed monthly fee. Before starting a usage-based billing migration, check these signals:
+
+1. **Your inference or compute bill per customer varies widely.** If a small group of accounts drives most of your AI provider costs, flat pricing is already subsidising them.
+2. **You can name the billable unit.** Customers need to understand what they pay for. If you cannot define one clear unit, such as "documents processed", fix that first.
+3. **Your backend can record that unit reliably.** If the event is only visible in the frontend today, instrumentation comes before any Stripe metered billing setup.
+4. **You have a plan for existing customers.** Decide on grandfathering, a hybrid plan or a cutover date before you announce anything.
+5. **You can run a shadow period.** If you cannot afford a few weeks of parallel invoices, the migration is being rushed.
+
+If three or more of these are not yet true, a hybrid model - a base subscription with included usage and overage pricing - is often a safer first step than a full switch to pay-as-you-go pricing.
+
 ## Key Takeaways
 
 - Usage-based billing is a distributed-systems problem - reliable event tracking, idempotency, and reconciliation - not a simple Stripe configuration change.

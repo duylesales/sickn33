@@ -80,6 +80,29 @@ De keerzijde werkt net zo sterk in de andere richting. Oprichters die werkende a
 
 Oprichters die dit voor het eerst meemaken, nemen vaak aan dat elke technische vereiste tegelijkertijd moet worden gebouwd, wat een beheersbare sprint verandert in een overweldigende. Een praktischer aanpak is prioriteren op basis van blootstelling: begin met welke AI-gedreven beslissing dan ook de meest directe, individuele impact heeft op een persoon (een wervingsbeslissing, een kredietgoedkeuring), aangezien dat typisch is waar audit-logging en menselijk toezicht het meest belangrijk zijn en waar het due-diligenceonderzoek van een enterprise-klant het eerst zal kijken. Prioriteer vandaaruit de systemen die al het dichtst bij een live enterprise-deal of -verlenging staan, aangezien dat is waar de technische kloof waarschijnlijk het snelst naar voren komt en de meeste onmiddellijke schade aanricht als deze onaangepakt blijft. Interne tooling met lagere inzet of systemen die zich nog in vroege validatie bevinden, kunnen redelijkerwijs een cyclus wachten, mits juristen deze als lager risico hebben gemarkeerd. Dit soort triage is precies het gesprek dat gezamenlijk tussen juristen en engineering moet plaatsvinden voordat er code wordt geschreven - elk systeem als even urgent behandelen betekent meestal dat het systeem met de hoogste blootstelling niet als eerste de aandacht krijgt die het daadwerkelijk nodig heeft.
 
+## Welke Eisen van de EU AI Act Horen bij Welke Technische Maatregelen?
+
+Voor een AI-systeem met een hoog risico vertalen de meeste verplichtingen van de EU AI Act voor aanbieders zich direct naar een specifiek stuk engineeringwerk. De EU AI Act (Verordening (EU) 2024/1689) deelt AI-systemen in naar risiconiveau, en de toepassingen in bijlage III - waaronder werkgelegenheid en werving, onderwijs, toegang tot essentiële diensten zoals kredietbeoordeling, en biometrie - zijn waar de zwaarste verplichtingen gelden. De onderstaande tabel laat zien hoe de belangrijkste artikelen zich verdelen tussen juristen en engineering.
+
+| Artikel EU AI Act | Wat het vereist | Wie leidt | Wat er wordt gebouwd |
+|-------------------|-----------------|-----------|----------------------|
+| Artikel 9 - Risicobeheer | Een doorlopend systeem voor risicobeheer gedurende de hele levenscyclus | Juristen, met input van engineering | Risicoregister gekoppeld aan echte systeemcomponenten |
+| Artikel 10 - Data en datagovernance | Kwaliteits- en biascontroles op trainings-, validatie- en testdata | Engineering | Herkomstregistratie van datasets en biascontroles |
+| Artikel 11 en bijlage IV - Technische documentatie | Een gedocumenteerde beschrijving van het systeem en het ontwerp | Beide | Architectuur- en datastroomdocumentatie, getoetst aan productie |
+| Artikel 12 - Registratie | Automatische logging van gebeurtenissen gedurende de levensduur van het systeem | Engineering | Pijplijn voor auditlogging |
+| Artikel 13 - Transparantie voor gebruiksverantwoordelijken | Instructies en informatie voor wie het systeem inzet | Beide | Gebruiksdocumentatie en informatie in het product |
+| Artikel 14 - Menselijk toezicht | Maatregelen waarmee mensen het systeem kunnen overzien en overrulen | Engineering | Beoordelings- en overrule-interface met een eigen log |
+| Artikel 50 - Transparantieverplichtingen | Mensen laten weten wanneer zij met AI communiceren of door AI gegenereerde content zien | Beide | Meldingen op het moment van interactie |
+
+## Veelgemaakte Fouten in een EU AI Act Compliance Sprint
+
+De duurste fout is aannemen dat een product geen hoog risico vormt zonder het te toetsen aan bijlage III. Een functie die sollicitanten rangschikt of kredietaanvragen filtert, kan een volledig product in de hoogrisicocategorie plaatsen, zelfs als het maar één scherm is in een breder hulpmiddel. Andere fouten die steeds terugkomen:
+
+1. **Uitkomsten loggen, maar geen invoer.** Een auditlog die alleen de score vastlegt, en niet de data en de modelversie erachter, kan een beslissing achteraf niet verklaren.
+2. **Toezicht dat te laat komt.** Een scherm voor menselijke beoordeling dat pas opent nadat een geautomatiseerde afwijzing al is verstuurd, voldoet niet aan de bedoeling van artikel 14.
+3. **Plichten van aanbieder en gebruiksverantwoordelijke door elkaar halen.** Een SaaS-founder die het systeem bouwt, is meestal de aanbieder, terwijl de enterprise-klant die het gebruikt de gebruiksverantwoordelijke is. Beide hebben andere verplichtingen, en contracten moeten dat weerspiegelen.
+4. **De sprint als eenmalige actie zien.** Elke modelupdate of nieuwe AI-functie kan veranderen wat er gelogd, gemeld en gedocumenteerd moet worden.
+
 ## Belangrijkste inzichten
 
 - De EU AI Act vereist werkende technische mogelijkheden - audit-logs, menselijk toezicht, transparantiemeldingen - niet alleen beleidsdocumenten die beoogd gedrag beschrijven.

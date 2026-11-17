@@ -46,6 +46,31 @@ The teams winning the most enterprise deals with the smallest headcount are the 
 
 It's also worth building a lightweight internal eval process: periodically sampling 20-30 AI-generated RFP answers and having a human score them for accuracy before they go out the door, the same discipline that AI product teams apply to any generative feature shipped to customers. Herre Roelevink, Founder & Managing Director of Manifera, frames the broader shift this way: "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's now about the architecture and security needed to bring those products to maturity. We have eleven years of experience in exactly that." Procurement is a good example of that maturity gap in miniature - the AI can draft your RFP response in minutes, but only a properly architected, security-reviewed product survives the sandbox test that comes after.
 
+## How Do You Prepare Your AI SaaS for an AI-Assisted Procurement Review?
+
+You prepare for an AI-assisted procurement review by making every fact a buyer's AI might extract - pricing, security posture, data handling, contract terms - explicit, consistent and backed by evidence before the RFP arrives. In practice, each stage of the cycle has a predictable set of checks:
+
+| Procurement stage | What the buyer's AI typically checks | What you should have ready |
+|---|---|---|
+| Vendor shortlisting | Pricing, core features, target industries | A public pricing page with numeric tiers and a structured feature list |
+| Security assessment | Certifications, encryption, access control, incident response | A current SOC 2 or ISO 27001 report if you have one, plus a short security overview document |
+| Data protection review | Data residency, sub-processors, retention, GDPR terms | A Data Processing Agreement aligned with GDPR Article 28 and a published sub-processor list |
+| AI-specific review | Which models are used, whether customer data trains them, human oversight | A plain-language AI usage statement naming your model providers and your data retention settings |
+| Legal review | Liability caps, SLAs, renewal terms, indemnities | A standard MSA template already reviewed against common enterprise playbooks |
+| Technical evaluation | Sandbox access, authentication, tenant isolation, stability | A self-serve sandbox with real auth and isolated demo data |
+
+### A five-step readiness sequence
+
+1. **Audit your public surfaces.** Compare your website, pricing page, sales deck and RFP knowledge base for contradictions, and fix them at the source.
+2. **Write the AI usage statement.** Buyers increasingly ask whether customer data is sent to OpenAI, Anthropic or another provider, and whether it is used for training. Answer that once, accurately, and reuse it everywhere.
+3. **Package your security evidence.** Collect certifications, penetration test summaries and policies in one place your RFP pipeline can retrieve from.
+4. **Harden the sandbox.** Make sure every prospect gets an isolated tenant, that API keys are never exposed in the frontend and that the environment survives several evaluators testing at once.
+5. **Standardise the contract.** Remove clauses a redlining agent will flag as non-standard, so legal review starts from agreement rather than conflict.
+
+### Common mistakes that cost startups the deal
+
+The most common mistake is letting the knowledge base claim more than the product delivers, for example describing "enterprise-grade security" without evidence a buyer's AI can find. Other frequent errors are hiding pricing entirely, which often drops a vendor from an automated comparison table, giving different answers about data residency in different documents, and offering a demo environment that shares data between prospects. Each of these is easy for an AI evaluator to detect and hard to explain away afterwards.
+
 ## Key Takeaways
 
 - AI has leveled the playing field for startups bidding on enterprise contracts. "RFP Copilots" built on RAG pipelines can autonomously answer 70-85% of a 300-question procurement document in minutes, with a human reviewer closing the gap.

@@ -56,6 +56,38 @@ Founders sometimes conflate Zero Data Retention with a signed Data Processing Ag
 
 This distinction matters practically because founders sometimes assume that once legal has a signed DPA in place with an AI provider, the data-retention question is settled - the same documentation-versus-system gap that shows up elsewhere in enterprise readiness. A DPA describes the legal obligations a vendor has agreed to; it doesn't verify that every logging statement, cache entry, and backup snapshot in an app's actual codebase honors those obligations in practice. Treating the two as separate work streams - legal handling the DPA, engineering handling the technical ZDR implementation - and verifying both independently is what actually closes the gap an enterprise security review is designed to find.
 
+## How Does a Zero Data Retention Retrofit Work, Step by Step?
+
+A zero data retention retrofit works as a fixed sequence: map every place data flows, close each retention point layer by layer, then prove the result with evidence an auditor can check. Skipping the mapping step is the most common reason a ZDR project finishes with a gap still in place. A practical order looks like this:
+
+1. **Define the scope of the commitment.** Write down exactly which customers, data types, and features the ZDR promise covers - for example, "all document uploads and prompts from accounts on the enterprise plan." Everything else in the retrofit is measured against this sentence.
+2. **Map the data flow end to end.** Follow one real request from the browser through the API, the AI provider call, any queue or background job, the cache, the logs, and the database. List every system that sees the payload, including third-party tools such as Sentry, Datadog, PostHog, or a session-replay script.
+3. **Confirm provider terms and request settings.** Check that the AI provider has approved ZDR for the account and that the endpoints you use are eligible. With OpenAI, for example, standard API traffic can be kept for up to 30 days for abuse monitoring unless zero data retention has been approved for the organization, and features that store state by design - such as uploaded files or stored conversation objects - need separate attention.
+4. **Reconfigure logging and monitoring.** Replace payload logging with structured metadata: request ID, timestamp, model name, token counts, latency, and error class. Add scrubbing rules in your error-monitoring tool so request bodies never leave the server.
+5. **Fix caches and queues.** Disable or bypass caching for in-scope accounts, or set short expiry with encryption if the commitment allows it. Make sure message queues delete jobs after processing instead of keeping them for replay.
+6. **Align backup retention.** Check that database snapshots, object storage versioning, and point-in-time recovery windows match what you have promised.
+7. **Test and document.** Send a marked test request, then search logs, caches, and storage for its content. Record the result as evidence.
+
+### Retention layers and what auditors ask for
+
+| Layer | Typical default in an AI-built app | ZDR-compliant setting | Evidence a security team accepts |
+|---|---|---|---|
+| AI provider | Standard API retention for abuse monitoring | Approved ZDR terms, eligible endpoints only | Provider confirmation plus request configuration |
+| Application logs | Full request and response bodies | Metadata only, payload redacted | Log samples with redaction visible |
+| Error monitoring | Request bodies attached to errors | Scrubbing rules enabled | Tool settings screenshot and test event |
+| Caching | Prompts and responses cached for cost savings | Bypassed or short-lived for in-scope accounts | Cache configuration and key design |
+| Backups | Long snapshot retention | Retention matched to the commitment | Backup policy document |
+
+## Common Mistakes That Break a ZDR Commitment
+
+The most common ZDR mistake is treating the provider agreement as the finish line, when the agreement covers only one of the five layers. Other mistakes come up again and again in AI-built codebases:
+
+- **Forgetting browser-side tools.** Session-replay and product-analytics scripts can record what a user types into a prompt box before the request ever reaches your server.
+- **Leaving debug mode on in production.** Verbose logging enabled during development often survives into the live environment and quietly captures full payloads.
+- **Applying ZDR only to the main endpoint.** Background jobs, retries, webhooks, and admin tools often call the AI provider through a separate code path that was never updated.
+- **Promising more than the scope.** Telling a customer "we store nothing" when the product needs to keep the final document they asked to save creates a contradiction their reviewers will spot. Be precise about what is processed, what is stored on purpose, and what is never retained.
+- **No regression check.** A single new log line in a future release can undo the retrofit. A short automated test that searches logs for a marked payload keeps the commitment true over time.
+
 ## Key Takeaways
 
 - Zero Data Retention touches nearly every layer of an AI SaaS stack - AI provider configuration, application logging, caching, analytics, and backups - not just a single API setting.

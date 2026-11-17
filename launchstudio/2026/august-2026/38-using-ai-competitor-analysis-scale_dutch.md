@@ -81,6 +81,72 @@ Het scrapen van publiek toegankelijke informatie (prijzen, blogs, vacatures) is 
 
 Dit niveau van robuuste automatisering is exact wat Herre Roelevink, Oprichter & Managing Director van Manifera, omschrijft: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Manifera bouwt deze datagestuurde architecturen sinds **2014** vanuit **Amsterdam** (Herengracht 420) en **Ho Chi Minhstad, Vietnam**.
 
+### Persoonsgegevens en Databankrechten in de EU
+
+Twee Europese regels zijn het waard om te kennen voordat u de pijplijn opschaalt. Ten eerste bevatten reviews, Reddit-threads en social posts vaak namen, gebruikersnamen of profiellinks. Dat zijn persoonsgegevens onder de **AVG (GDPR)**. Slaat u ze op, dan heeft u een rechtsgrond nodig, een bewaartermijn en een reden om identificerende gegevens überhaupt te bewaren - in de meeste gevallen kunt u namen verwijderen en alleen de tekst en de datum bewaren. Ten tweede geeft de **Europese Databankrichtlijn** makers van databanken een afzonderlijk recht tegen het opvragen van een substantieel deel van hun databank, wat relevant is als u van plan bent grote verzamelingen reviews in hun geheel te kopiëren. Steekproeven analyseren en samenvattingen opslaan houdt u op veel veiliger terrein dan een volledig reviewplatform spiegelen. Laat bij twijfel eenmalig een jurist naar de reikwijdte kijken, voordat de pijplijn elke week draait.
+
+## Wat Is AI-Concurrentieanalyse?
+
+AI-concurrentieanalyse is het inzetten van geplande dataverzameling en grote taalmodellen om websites, prijzen, productreleases, vacatures en klantsentiment van concurrenten te monitoren, en de wijzigingen om te zetten in korte samenvattingen waarop u direct kunt beslissen. Het vervangt incidenteel handmatig onderzoek door een doorlopende, voordelige stroom marktinformatie.
+
+Het verschil met de traditionele aanpak zit vooral in frequentie, dekking en consistentie:
+
+| Dimensie | Handmatig concurrentieonderzoek | AI-pijplijn voor concurrentieanalyse |
+|---|---|---|
+| Frequentie | Maandelijks of per kwartaal, als iemand eraan denkt | Wekelijks of dagelijks, volgens schema |
+| Dekking | Enkele pagina's per concurrent | Prijzen, homepage, changelog, vacatures, reviews, social |
+| Historie | Screenshots in willekeurige mappen | Momentopnamen met tijdstempel in een database |
+| Signaleren van wijzigingen | Afhankelijk van of iemand het opmerkt | Semantische diff markeert strategische wijzigingen |
+| Output | Lange presentatie die snel veroudert | Korte wekelijkse samenvatting in Slack |
+| Kostendrijver | Tijd van een analist of oprichter | Scraping-API, modeltokens, onderhoud |
+
+De pijplijn vervangt het oordeelsvermogen niet. Hij neemt het verzamel- en vergelijkingswerk weg, zodat de mensen in uw team hun tijd kunnen besteden aan de vraag wat ze met de wijzigingen doen.
+
+## Zo Bouwt U Stap voor Stap een AI-Pijplijn voor Concurrentieanalyse
+
+U bouwt een AI-pijplijn voor concurrentieanalyse voor uw AI SaaS-bedrijf in een beperkt aantal duidelijke stappen. Begin met een smalle scope en breid uit zodra de output nuttig blijkt:
+
+1. **Kies drie tot vijf concurrenten.** Neem de partijen op aan wie u het vaakst deals verliest, niet alleen de bekendste namen.
+2. **Maak per concurrent een lijst van pagina's en bronnen.** Prijzen, homepage, changelog, vacaturepagina en een of twee reviewbronnen.
+3. **Plan de dataverzameling in.** Gebruik een cron-job, een Vercel Cron-functie of een geplande Supabase-functie om een scraping-API zoals Firecrawl aan te roepen.
+4. **Sla opgeschoonde tekst op als momentopname.** Bewaar de geëxtraheerde tekst, de URL en een tijdstempel in een databasetabel, één rij per pagina per run.
+5. **Voer de LLM-diff uit.** Vergelijk elke nieuwe momentopname met de vorige via een strikte prompt zoals hierboven, en sla het resultaat op met de betrouwbaarheidsscore.
+6. **Vat sentiment apart samen.** Bundel reviews en vermeldingen, vraag het model naar de meest voorkomende klachten en complimenten, en vermeld de steekproefgrootte in de output.
+7. **Combineer en lever af.** Voeg de diffs, het sentiment en de vacature- of financieringssignalen samen tot één maandagbericht in uw `#competitor-intel` kanaal.
+8. **Monitor ook de pijplijn zelf.** Waarschuw iemand wanneer een scrape mislukt of lege tekst oplevert, zodat een kapotte scraper nooit lijkt op "geen wijzigingen".
+
+## Van Inzicht naar Actie: Battlecards en Sales Enablement
+
+Concurrentie-informatie levert pas waarde op wanneer zij verandert wat uw team zegt en doet, en het meest praktische format daarvoor is een battlecard per concurrent. Een battlecard is een samenvatting van één pagina die uw salesteam tijdens een gesprek kan gebruiken.
+
+Gebruik de wekelijkse output van de pijplijn om elke battlecard actueel te houden:
+
+- **Positionering in één zin:** hoe de concurrent zichzelf vandaag omschrijft, op basis van de laatste momentopname van de homepage.
+- **Actuele prijzen en limieten:** bijgewerkt zodra de diff een wijziging signaleert.
+- **Recente lanceringen:** de laatste changelog-items die voor uw kopers relevant zijn.
+- **Bekende zwakke plekken:** de meest voorkomende klachten uit de sentimentanalyse, met de steekproefgrootte.
+- **Onze tegenpositie:** waar uw product aantoonbaar sterker is, in woorden die uw verkopers echt kunnen gebruiken.
+- **Vragen die u de prospect meegeeft:** vragen die een koper aan elke leverancier zou moeten stellen en die de zwakke plek van de concurrent blootleggen.
+
+Bewaar battlecards waar uw team al werkt, zoals Notion, Confluence of uw CRM, en verwijs ernaar vanuit de wekelijkse Slack-samenvatting.
+
+## Veelgemaakte Fouten bij AI-Concurrentieanalyse
+
+De meeste projecten voor concurrentiemonitoring mislukken stilletjes in plaats van spectaculair:
+
+- **Te veel concurrenten volgen.** Twintig concurrenten leveren ruis op. Vijf leveren beslissingen op.
+- **Scrapers die ongemerkt falen.** Een gewijzigde paginaopbouw of een geblokkeerd verzoek kan lege tekst opleveren, die een LLM vervolgens als "Geen wijzigingen" rapporteert.
+- **Vertrouwen op sentiment uit één bron.** Tien boze reviews zijn een anekdote. Vermeld altijd de steekproefgrootte en de bron.
+- **Op elke wijziging reageren.** Een prijsverlaging van een concurrent is informatie, geen opdracht. Leg een reactieproces vast voordat de meldingen beginnen.
+- **Geen eigenaar.** Als niemand verantwoordelijk is voor het lezen van het maandagrapport en het bijwerken van de battlecards, draait de pijplijn voor niets.
+- **Meer persoonsgegevens opslaan dan nodig.** Bewaar tekst en datum, niet de namen en profiel-URL's van reviewers.
+
+## Wat Kost een AI-Systeem voor Concurrentiemonitoring?
+
+Een AI-systeem voor concurrentiemonitoring kost relatief weinig in vergelijking met de tijd van een analist, omdat de belangrijkste kosten bestaan uit een scraping-API, modeltokens voor een wekelijkse diff, een kleine database en af en toe onderhoud. De kosten die oprichters vaak onderschatten, zitten in dat onderhoud: websites van concurrenten veranderen, scrapers breken en prompts moeten worden bijgesteld. Daarom richtte het praktijkvoorbeeld hieronder zich op het bestand maken van de scraper tegen wijzigingen in de paginaopbouw, voor €2.100, en niet op het toevoegen van meer databronnen.
+
+Voor Nederlandse B2B-bedrijven is het daarnaast verstandig om ook Nederlandstalige bronnen mee te nemen, zoals Nederlandse reviewplatforms, vakmedia en vacaturesites. Concurrenten positioneren zich op de Nederlandse markt soms anders dan op hun internationale website, en juist die verschillen zijn voor uw salesteam waardevol.
+
 ## Belangrijkste Inzichten
 
 - Handmatige concurrentieanalyse is te traag voor het AI-tijdperk; bouw een geautomatiseerde wekelijkse dataverzamelings- en analysepijplijn.

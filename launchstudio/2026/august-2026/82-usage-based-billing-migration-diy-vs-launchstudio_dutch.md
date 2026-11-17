@@ -84,6 +84,18 @@ Geen van deze problemen zijn exotische randgevallen; het zijn precies de details
 
 Naast een schaduw-billingperiode zijn er een paar concrete controles de moeite waard om uit te voeren voordat de daadwerkelijke facturering van een klant wordt omgezet naar het nieuwe systeem. Speel een steekproef van historische gebruiksdata af door de nieuwe meteringslogica en vergelijk de resulterende factuurtotalen met wat het oude vaste-tariefsysteem zou hebben opgeleverd, om te controleren of de nieuwe prijsstelling uitkomt waar het businessmodel bedoeld was. Simuleer bewust faalcondities - een weggevallen netwerkverbinding midden in een gebeurtenis, een dubbele webhook-levering, een uitbarsting van gelijktijdige verzoeken van één klant - en bevestig dat het systeem elk van deze afhandelt zonder dubbel te tellen of gebruiksrecords te verliezen. En draai de verzoeningstaak tegen een volledige factureringscyclus aan echte data vóór de overstap, niet slechts een paar dagen, aangezien sommige afwijkingspatronen (bijvoorbeeld een batchtaak die eens per week stilletjes faalt) pas zichtbaar worden over een langer observatievenster. Oprichters die direct van ontwikkeling naar een live overstap springen, voeren deze tests in feite voor het eerst uit tegen echt geld van klanten - precies het scenario dat een schaduw-billingperiode en een validatiechecklist moeten voorkomen.
 
+## Wanneer Moet U Migreren naar Usage-Based Billing?
+
+U moet migreren naar usage-based billing wanneer uw variabele kosten per klant zo sterk uiteenlopen dat één vaste prijs uw zwaarste gebruikers niet meer kan dekken zonder uw lichtste gebruikers te veel te laten betalen. Usage-based billing betekent in gewone taal dat de factuur wordt berekend op basis van wat een klant in een factureringsperiode daadwerkelijk heeft verbruikt - API-calls, tokens, documenten, minuten - in plaats van een vast maandbedrag. Controleer deze signalen voordat u aan een usage-based billing-migratie begint:
+
+1. **Uw inferentie- of rekenkosten per klant lopen sterk uiteen.** Als een kleine groep accounts het grootste deel van uw kosten bij uw AI-aanbieder veroorzaakt, subsidieert uw vaste prijs hen nu al.
+2. **U kunt de factureerbare eenheid benoemen.** Klanten moeten begrijpen waarvoor ze betalen. Als u niet één duidelijke eenheid kunt definiëren, zoals "verwerkte documenten", lost u dat eerst op.
+3. **Uw backend kan die eenheid betrouwbaar vastleggen.** Als de gebeurtenis vandaag alleen in de frontend zichtbaar is, komt instrumentatie vóór elke inrichting van Stripe metering.
+4. **U heeft een plan voor bestaande klanten.** Beslis over grandfathering, een hybride plan of een overstapdatum voordat u iets aankondigt.
+5. **U kunt een schaduwperiode draaien.** Als u zich geen paar weken parallelle facturen kunt veroorloven, wordt de migratie overhaast.
+
+Als drie of meer van deze punten nog niet kloppen, is een hybride model - een basisabonnement met inbegrepen verbruik en een prijs voor meerverbruik - vaak een veiligere eerste stap dan een volledige overstap naar pay-as-you-go-prijzen.
+
 ## Belangrijkste inzichten
 
 - Usage-based billing is een gedistribueerd-systemenprobleem - betrouwbare gebeurtenisregistratie, idempotentie en verzoening - geen eenvoudige Stripe-configuratiewijziging.

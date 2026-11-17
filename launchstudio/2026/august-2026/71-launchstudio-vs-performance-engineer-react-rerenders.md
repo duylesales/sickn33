@@ -36,7 +36,7 @@ None of these are exotic bugs. They're the predictable output of a tool optimizi
 
 The instinct to hire feels reasonable: "I need someone who specializes in this." But sourcing a genuine React performance specialist - someone who can actually read a flame graph in the React DevTools Profiler, correlate it with the Chrome Performance tab, and tell the difference between a render that's slow because of unnecessary re-renders versus one that's slow because of a genuinely expensive computation - is a narrower search than it sounds. Most "senior React developer" candidates can ship features fluently and have never once opened a profiler in anger.
 
-In the European freelance and contract market in 2026, a contractor with real, demonstrable performance-optimization experience typically bills €80–€130 per hour, and a focused re-render audit-and-fix engagement on a mid-sized app runs 40–80 billable hours once you include the discovery phase where they have to learn an unfamiliar, AI-generated codebase before they can safely touch it. That puts the direct cost at roughly **€3,200–€10,400** - before counting the time spent finding, vetting, and interviewing that contractor in the first place, which for a genuinely specialized skill like this often takes three to six weeks of a founder's own attention, since most freelance marketplaces are flooded with generalists claiming performance expertise they can't actually demonstrate under questioning. There's also a real evaluation risk: unless the founder already knows how to profile a render tree themselves, it's difficult to tell during an interview whether a candidate's performance claims are genuine or rehearsed.
+In the European freelance and contract market in 2026, a contractor with real, demonstrable performance-optimization experience typically bills €80-€130 per hour, and a focused re-render audit-and-fix engagement on a mid-sized app runs 40-80 billable hours once you include the discovery phase where they have to learn an unfamiliar, AI-generated codebase before they can safely touch it. That puts the direct cost at roughly **€3,200-€10,400** - before counting the time spent finding, vetting, and interviewing that contractor in the first place, which for a genuinely specialized skill like this often takes three to six weeks of a founder's own attention, since most freelance marketplaces are flooded with generalists claiming performance expertise they can't actually demonstrate under questioning. There's also a real evaluation risk: unless the founder already knows how to profile a render tree themselves, it's difficult to tell during an interview whether a candidate's performance claims are genuine or rehearsed.
 
 ## Option B: LaunchStudio's Fixed-Scope Re-Render Audit & Fix
 
@@ -50,14 +50,14 @@ LaunchStudio approaches the same problem as a defined, fixed-scope engagement ra
 
 4. **Context and state architecture review.** Overly broad context providers get split into scoped providers so a change in one part of the app state doesn't cascade through unrelated components, and state that belongs locally to a component gets moved back down out of shared parents.
 
-That work is delivered as a fixed-scope engagement, typically under the **Launch Ready** or **Launch & Grow** package, in **1 to 2 weeks**, at a cost of roughly **€1,200–€2,800** depending on how deep the re-render problem runs - with no recruiting time, no vetting risk, and no ramp-up period, because diagnosing this exact pattern in AI-generated React code is not a new problem for the team doing the work.
+That work is delivered as a fixed-scope engagement, typically under the **Launch Ready** or **Launch & Grow** package, in **1 to 2 weeks**, at a cost of roughly **€1,200-€2,800** depending on how deep the re-render problem runs - with no recruiting time, no vetting risk, and no ramp-up period, because diagnosing this exact pattern in AI-generated React code is not a new problem for the team doing the work.
 
 ## Side-by-Side: Cost and Time to Resolution
 
-- **Dedicated performance engineer hire**: €3,200–€10,400 in direct contractor cost, plus 3–6 weeks of sourcing and vetting time, plus the risk of hiring someone whose performance claims don't hold up once they're actually inside the codebase.
-- **LaunchStudio engagement**: €1,200–€2,800 fixed cost, work starts within days, resolved in 1–2 weeks, delivered by engineers who diagnose this specific failure pattern routinely rather than learning it on the job.
+- **Dedicated performance engineer hire**: €3,200-€10,400 in direct contractor cost, plus 3-6 weeks of sourcing and vetting time, plus the risk of hiring someone whose performance claims don't hold up once they're actually inside the codebase.
+- **LaunchStudio engagement**: €1,200-€2,800 fixed cost, work starts within days, resolved in 1-2 weeks, delivered by engineers who diagnose this specific failure pattern routinely rather than learning it on the job.
 
-For the specific, bounded problem of "our React app re-renders too much and it's costing us users," the fixed-scope path is typically 2–4x cheaper and roughly 3–4x faster to actually resolve - because it skips the sourcing funnel entirely and starts with people who already recognize the pattern on sight.
+For the specific, bounded problem of "our React app re-renders too much and it's costing us users," the fixed-scope path is typically 2-4x cheaper and roughly 3-4x faster to actually resolve - because it skips the sourcing funnel entirely and starts with people who already recognize the pattern on sight.
 
 ## When You Actually Need a Full-Time Performance Engineer
 
@@ -69,9 +69,9 @@ There is a real point where a dedicated hire makes sense: once a product is hand
 
 - The recurring root causes are predictable: inline props defeating memoization, overly broad context providers, missing `useMemo`/`useCallback` on expensive computations, unvirtualized long lists, and state lifted too high in the component tree.
 
-- A genuine React performance specialist is a narrow, hard-to-vet skill; sourcing one as a contractor typically costs €3,200–€10,400 and takes 3–6 weeks before work even begins.
+- A genuine React performance specialist is a narrow, hard-to-vet skill; sourcing one as a contractor typically costs €3,200-€10,400 and takes 3-6 weeks before work even begins.
 
-- LaunchStudio resolves the same class of re-render problem for roughly €1,200–€2,800 in 1–2 weeks, using profiling-first diagnosis rather than blanket, reflexive memoization.
+- LaunchStudio resolves the same class of re-render problem for roughly €1,200-€2,800 in 1-2 weeks, using profiling-first diagnosis rather than blanket, reflexive memoization.
 
 - A dedicated performance hire becomes genuinely justified once a product's core value depends on continuous, complex rendering - not the first time a dashboard feels sluggish after launch.
 

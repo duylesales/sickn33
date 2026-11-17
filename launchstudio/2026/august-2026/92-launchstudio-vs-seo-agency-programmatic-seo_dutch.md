@@ -77,6 +77,50 @@ Dit is geen pleidooi om SEO-bureaus over te slaan. Tobias' zoekwoordenonderzoek 
 
 Gezien hoe vaak precies deze kloof naar boven komt, moeten oprichters die een SEO-bureau evalueren voor een programmatic SEO-push vooraf een directe vraag stellen: "Als uw aanbevelingen wijzigingen vereisen in hoe onze pagina's renderen of hoe onze sitemap wordt gegenereerd, heeft u dan engineers die dat kunnen implementeren, of komt dat op ons neer?" Een goed bureau zal eerlijk antwoorden, en veel gerenommeerde bureaus werken tegenwoordig samen met of besteden technische implementatie uit in plaats van te doen alsof het buiten de scope valt. De oprichters die hierdoor worden getroffen, hebben niet per se een slecht bureau ingehuurd - het bureau van Tobias leverde oprecht sterk strategisch werk - het zijn degenen die deze vraag nooit stelden en aannamen dat "SEO-bureau" impliciet de engineeringcapaciteit omvatte om technische aanbevelingen uit te voeren, terwijl dat bij de meeste bureaus niet zo is. Deze vraag stellen vóór het tekenen van een retainer, in plaats van de kloof drie weken later te ontdekken, is de meest impactvolle vraag in deze hele beslissing.
 
+## Wat is programmatic SEO?
+
+Programmatic SEO is het genereren van een groot aantal op zoekopdrachten gerichte landingspagina's vanuit een gestructureerde dataset en een gedeelde template, zodat elke pagina één specifieke long-tail zoekvraag beantwoordt. Een vergelijkingssite zoals ToolMatch AI, een overzicht van integraties of een reeks pagina's per stad en dienst zijn typische voorbeelden. De template bepaalt de opmaak en de data vullen in wat uniek is. Daarom bepaalt de technische kwaliteit van de template het lot van elke pagina die erop is gebouwd.
+
+## LaunchStudio vs. een SEO-bureau: een vergelijking naast elkaar
+
+Een SEO-bureau is eigenaar van de strategie voor programmatic SEO, terwijl een engineeringteam zoals LaunchStudio eigenaar is van de applicatie die die strategie moet dragen. De onderstaande tabel laat zien waar elk van beide past:
+
+| Taak | SEO-bureau | LaunchStudio |
+|---|---|---|
+| Zoekwoordonderzoek en clustering van zoekvragen | Kernkwaliteit | Niet de focus |
+| Contenttemplates en schrijfrichtlijnen | Kernkwaliteit | Implementeert ze in code |
+| Server-side rendering of statische generatie | Adviseert | Bouwt en deployt |
+| Titels, beschrijvingen en schema.org-markup per pagina | Specificeert | Genereert vanuit de dataset |
+| XML-sitemaps en indexbestanden | Vraagt erom | Automatiseert bij het aanmaken van pagina's |
+| Canonical tags en omgang met duplicaten | Signaleert problemen | Implementeert routeringsregels |
+| Core Web Vitals en crawlefficiëntie | Auditeert | Verbetert templates en hosting |
+| Linkbuilding en outreach | Kernkwaliteit | Niet aangeboden |
+
+De praktische conclusie is dat de twee elkaar aanvullen en elkaar niet vervangen. Als uw pagina's al correct renderen voor crawlers, is een bureau de betere eerste keuze. Als dat niet zo is, moet engineering eerst komen.
+
+## Hoe controleert u of uw app klaar is voor programmatic SEO?
+
+U kunt in ongeveer een uur met gratis tools controleren of uw app klaar is voor programmatic SEO, voordat u iemand betaalt. Voer deze stappen uit op drie of vier gegenereerde pagina's, niet alleen op de homepage:
+
+1. **Bekijk de ruwe HTML.** Gebruik "paginabron weergeven" of `curl` op een pagina-URL. Als de hoofdcontent ontbreekt en u alleen een leeg root-element ziet, is de pagina afhankelijk van client-side rendering.
+2. **Gebruik de tool URL-inspectie in Google Search Console.** Vergelijk de gerenderde HTML die Google ziet met wat u in de browser ziet.
+3. **Lees het rapport Paginaindexering.** Grote aantallen onder "Gevonden - momenteel niet geïndexeerd" (Discovered - currently not indexed) of "Gecrawld - momenteel niet geïndexeerd" (Crawled - currently not indexed) wijzen vaak op problemen met rendering, kwaliteit of crawlbudget.
+4. **Vergelijk titels tussen pagina's.** Als meerdere gegenereerde pagina's dezelfde titel of metabeschrijving delen, komt de metadata uit een statische template.
+5. **Open uw sitemap.** Controleer of deze elke gegenereerde pagina bevat en wordt bijgewerkt wanneer er nieuwe bijkomen. Eén sitemapbestand is beperkt tot 50.000 URL's, dus grote sites hebben een sitemapindex nodig.
+6. **Controleer de canonicals op paginavarianten.** Gefilterde of anders gesorteerde versies van dezelfde pagina moeten naar één canonieke URL verwijzen.
+7. **Test de snelheid op een mobiel profiel.** PageSpeed Insights toont veldgegevens voor Core Web Vitals wanneer Google genoeg verkeer heeft om die te rapporteren.
+
+Als twee of meer van deze controles mislukken, zit het probleem in de applicatie, en levert een bureaucontract vooral aanbevelingen op waar u nog niets mee kunt.
+
+## Veelgemaakte fouten bij programmatic SEO op AI-gebouwde apps
+
+De grootste fout bij programmatic SEO is het publiceren van duizenden pagina's die alleen verschillen door een verwisseld zoekwoord. Het spambeleid van Google noemt "scaled content abuse" (misbruik van content op schaal) expliciet, dus elke pagina heeft data of inzicht nodig die haar op zichzelf echt nuttig maken. Andere veelvoorkomende fouten:
+
+- **Alle pagina's tegelijk lanceren op een trage site.** Crawlers besteden per bezoek beperkte tijd, en trage templates betekenen dat er minder pagina's worden gevonden.
+- **AI gaten laten opvullen met gissingen.** Ontbrekende waarden in de dataset moeten een sectie verbergen, niet leiden tot verzonnen tekst.
+- **Geen interne links tussen pagina's.** Verwante vergelijkingen moeten naar elkaar linken, zodat crawlers en gebruikers zich door de hele set kunnen bewegen.
+- **Het indexeringsrapport na de lancering negeren.** Indexering is een cijfer om wekelijks te volgen, geen eenmalige instelling.
+
 ## Belangrijkste inzichten
 
 - Programmatic SEO voor AI SaaS faalt het vaakst op infrastructuurniveau - uitsluitend client-side rendering, ontbrekende sitemaps en dubbele metadata - niet op het niveau van contentstrategie, waar de meeste SEO-bureaus zich op richten.

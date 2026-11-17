@@ -58,6 +58,41 @@ The reason slow LCP survives so long in most AI-builder-built products is that i
 
 Founders don't need a full audit to get a first read on whether this problem applies to them. Open Google Search Console's Core Web Vitals report, filter to the highest-traffic page on the site, and compare its LCP against the bounce rate for that same page over the same period. If LCP sits above 4 seconds and bounce rate is elevated relative to other pages on the site, that pairing alone is usually enough to justify a deeper look, even before commissioning a formal audit. It's a five-minute check that turns "our page might be a bit slow" into a specific, page-level number a founder can act on immediately, and it's often the exact piece of evidence that gets a performance fix prioritized on a roadmap that would otherwise keep pushing it behind visible feature work.
 
+## What Counts as a Good LCP Score?
+
+A good Largest Contentful Paint score is 2.5 seconds or less, measured at the 75th percentile of real page loads, split by mobile and desktop. That last detail matters: Google judges a page by how it performs for most real visitors, not by a single fast test on an office laptop. LCP is one of three Core Web Vitals, alongside Interaction to Next Paint (INP), which replaced First Input Delay in March 2024, and Cumulative Layout Shift (CLS).
+
+| Metric | Good | Needs improvement | Poor |
+|---|---|---|---|
+| Largest Contentful Paint (LCP) | 2.5 s or less | 2.5 s to 4.0 s | Over 4.0 s |
+| Interaction to Next Paint (INP) | 200 ms or less | 200 ms to 500 ms | Over 500 ms |
+| Cumulative Layout Shift (CLS) | 0.1 or less | 0.1 to 0.25 | Over 0.25 |
+
+Amara's 6.8-second mobile LCP sat well inside the "poor" band, which is why the business impact was so large. It is also worth knowing the difference between lab and field data. Lighthouse and the lab section of PageSpeed Insights simulate one load under fixed conditions, which is useful for debugging. The Chrome User Experience Report (CrUX), which feeds Search Console's Core Web Vitals report, reflects what real Chrome users experienced, and that field data is what you should use in an ROI case.
+
+## How to Calculate the ROI of Fixing a Slow LCP
+
+You calculate the ROI of fixing a slow LCP by multiplying the traffic you already pay for by a conservative estimate of recovered conversions, then comparing that monthly gain with the one-time cost of the fix. Amara's team followed the same logic, and any founder can repeat it with their own numbers:
+
+1. **Pick the page that matters.** Choose the highest-traffic page on the path to revenue: a landing page, search-results page, or pricing page.
+2. **Pull the field LCP for that page.** Use Search Console or PageSpeed Insights and note the mobile value.
+3. **Record current traffic, bounce rate, and conversion rate.** Use the same date range for all three.
+4. **Add the acquisition cost of that traffic.** Include paid search, paid social, and any sponsored placements that land on the page.
+5. **Apply a conservative recovery range.** Use the low end of any estimate, so the case still holds if the result is modest.
+6. **Compare monthly gain with the cost of the fix.** A fixed-scope engagement such as a LaunchStudio Launch & Grow package (€2,500-€7,500 plus €49/month) is easy to weigh against a recurring monthly leak.
+7. **Agree on how you will measure success.** Decide in advance which metric - bounce rate, conversion rate, or cost per lead - proves the fix worked, and check it after two to four weeks of field data.
+
+The result does not need to be precise. It needs to show the order of magnitude, which is usually enough to move performance work ahead of the next feature.
+
+## Common LCP Mistakes in AI-Built Apps
+
+The most common LCP mistake in AI-generated code is lazy-loading the very image that forms the largest element in view, which delays exactly the paint the metric measures. Lazy loading belongs below the fold. The hero image or first product image should load eagerly, ideally with `fetchpriority="high"` or a preload hint. Other frequent mistakes:
+
+- **Optimizing the lab score only.** A perfect Lighthouse result on a fast connection can hide a poor field LCP on mid-range phones.
+- **Waiting on client-side data before rendering.** If the main content depends on an API call made from the browser, the paint waits for the network.
+- **Loading web fonts that block text.** Using `font-display: swap` lets text appear while the font downloads.
+- **Fixing once and never checking again.** New images, scripts, and tracking tags creep in with every release, so LCP should be part of regular monitoring.
+
 ## Key Takeaways
 
 - Largest Contentful Paint above 2.5 seconds correlates with meaningfully lower conversion rates, and every second beyond that threshold compounds the loss - often in the range of 7-12% per additional second for marketplace and e-commerce experiences.

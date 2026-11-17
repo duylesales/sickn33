@@ -71,6 +71,39 @@ The value of this scorecard isn't the exact number - it's that it turns a vague 
 
 To run this yourself, score each of the ten dimensions from 0 (doesn't exist) to 10 (fully implemented, documented, and demonstrable), being deliberately conservative wherever the honest answer is "sort of" or "mostly." Add the ten scores together for a total out of 100, then treat anything below 40 as an active risk to your next enterprise pitch rather than a someday project. The exercise takes under an hour and, as it did for Jonas, tends to be far more useful than another round of internal debate about whether the product "feels" enterprise-ready.
 
+## What Does a 10 out of 10 Look Like on Each Dimension?
+
+A 10 out of 10 on an enterprise-sales readiness scorecard means the control exists, is documented, and can be demonstrated to a reviewer on request. "Exists" alone earns roughly half the points. The table gives a reference point for each dimension, so your own scores are anchored to evidence rather than optimism:
+
+| Dimension | What a 10 looks like | Evidence a buyer accepts |
+|---|---|---|
+| SSO/SAML | SAML 2.0 or OpenID Connect with Okta and Microsoft Entra ID, ideally SCIM provisioning | Test login with the buyer's identity provider |
+| Row Level Security | Policies on every table, tested for cross-tenant access | Policy list and automated test results |
+| Security documentation | Controls document mapped to SOC 2 or ISO 27001 categories | The document itself, version-dated |
+| Audit logging | Immutable log of logins, permission changes, and exports | Sample export filtered by user and date |
+| Uptime SLA | Monitoring, public status page, committed percentage | Status page history and SLA wording |
+| Questionnaire readiness | Reusable answer library for common questions | Completed answers ready to paste into a portal |
+| Rate limiting | Per-key and per-tenant limits, load-tested | Configuration and test report |
+| Secrets management | No secrets in client code, keys rotated | Code scan result and rotation record |
+| Data residency | Named regions and documented subprocessors | Subprocessor list with locations |
+| Incident response | Written plan with roles and notification steps | The plan and a record of a test run |
+
+Two terms are worth defining because buyers use them precisely. A SOC 2 Type I report checks that controls are designed correctly at one point in time, while a Type II report checks that they operated effectively over a period, usually several months. Many buyers accept a strong controls document and a Type I report as a starting point for a younger vendor. An uptime SLA percentage also translates directly into allowed downtime: 99.9% leaves roughly 43 minutes of downtime in a 30-day month, so only commit to a figure your monitoring history supports.
+
+## How to Prioritize Your Gaps After Scoring
+
+You should fix enterprise readiness gaps in the order a buyer will hit them: access and data isolation first, documentation second, operational polish third. A practical order once you have your scores:
+
+1. **Fix the blockers.** SSO, Row Level Security, and exposed secrets usually stop a deal outright, so any score below 5 here comes first.
+2. **Close the evidence gaps.** Audit logging and incident response turn "we take security seriously" into something a reviewer can check.
+3. **Write the documents once.** A security controls document, a subprocessor list, and a questionnaire answer library can be reused for every future buyer.
+4. **Add monitoring and a status page.** Start collecting uptime history now, because an SLA is only credible with data behind it.
+5. **Re-score and keep the evidence.** Save the proof for every line in one folder so the next questionnaire takes hours, not weeks.
+
+## Common Mistakes When Using a Readiness Scorecard
+
+The most common mistake is giving yourself credit for a feature that exists but has never been shown to anyone outside the team. Other mistakes include scoring the product as you plan it to be next quarter, treating documents as finished once written instead of keeping them in step with the product, and running the scorecard once instead of before every major enterprise pitch.
+
 ## Key Takeaways
 
 - A structured ten-dimension scorecard - SSO, RLS, security documentation, audit logging, uptime SLA, questionnaire readiness, rate limiting, secrets management, data residency, and incident response - predicts enterprise deal outcomes far better than pitch enthusiasm alone.

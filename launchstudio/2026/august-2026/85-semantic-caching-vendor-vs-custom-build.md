@@ -61,6 +61,29 @@ For most support-bot and FAQ-style AI SaaS products processing more than a few t
 
 Getting the initial threshold and exclusion rules right isn't the end of the work - a semantic cache needs ongoing monitoring, because both the app's query patterns and the underlying model's behavior can drift over time in ways that quietly erode cache quality. A threshold tuned correctly against last quarter's query mix can start misfiring as user behavior shifts, new features introduce new question types, or a model upgrade changes how responses are phrased. The practical fix is a lightweight, recurring review: sample a percentage of cache hits each month, have a human spot-check whether the served response actually matched the query's intent, and track any drift in user-reported dissatisfaction (thumbs-down feedback, immediate follow-up questions) specifically on cached responses versus fresh ones. Treating a semantic cache as a "build once" project rather than a system that needs periodic recalibration is one of the more common ways a well-implemented cache slowly degrades into a source of subtly wrong answers nobody notices until a customer complains.
 
+## Should You Use a Semantic Cache Vendor or Build Your Own?
+
+Use a semantic cache vendor when you need a quick answer to whether caching helps at all; build your own when you already know it helps and need control over thresholds, data location and caching rules. Open-source libraries such as GPTCache, or a vector cache on Redis or Postgres with pgvector, sit between the two: they remove the vendor fee but still need engineering time to tune and operate. The decision framework below covers the situations founders most often find themselves in.
+
+| Your situation | Recommended path | Why |
+|----------------|------------------|-----|
+| Low query volume, unsure if users repeat questions | Vendor trial or no cache yet | Not enough volume to justify a build |
+| Clear repeat questions, general support domain | Vendor or open-source library | Generic thresholds may be good enough |
+| Specialised domain (legal, medical, financial answers) | Custom build | Needs per-intent thresholds and strict exclusions |
+| EU data-residency requirements | Self-hosted cache | Query text and embeddings stay in your own infrastructure |
+| Vendor fee growing in step with usage | Custom build | Removes the per-query cost that scales with traffic |
+
+## How to Roll Out Semantic Caching Safely
+
+The safest way to introduce semantic caching is to run it in observation mode before it serves a single real answer. A practical rollout looks like this:
+
+1. **Log first.** Record every query, its embedding and the model's fresh answer for a few weeks, without serving anything from cache.
+2. **Replay and compare.** Run the stored queries through the cache logic offline and check which ones would have been served a cached answer, and whether that answer would have been correct.
+3. **Set thresholds per category.** Use the replay results to pick a stricter threshold for sensitive question types and a looser one for generic FAQs.
+4. **Write exclusion rules.** Block account-specific, pricing and time-sensitive queries from the cache entirely.
+5. **Go live on a slice of traffic.** Start with a small share of users and compare satisfaction signals against the uncached group.
+6. **Expand and keep sampling.** Widen the rollout once quality holds, and keep the monthly spot-checks described above.
+
 ## Key Takeaways
 
 - Semantic caching serves cached responses to semantically similar (not just identical) queries, which can meaningfully cut redundant model calls in support bots, FAQ assistants, and document-Q&A tools.

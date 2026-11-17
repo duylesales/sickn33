@@ -52,6 +52,49 @@ LaunchStudio doesn't replace Vercel - in most engagements, the app keeps deployi
 
 5. **A documented incident response path.** Instead of "figure it out live at 2am," there's a written, specific process for what happens when an alert fires: who's notified, what the rollback path is, and how a fix gets shipped without guesswork under pressure.
 
+## What Is Managed Hosting for an AI SaaS App?
+
+Managed hosting is a setup in which an engineering team configures, monitors, and responds to incidents on your production environment, so the platform underneath - often Vercel - is operated rather than just deployed to. You still own the code and the hosting account. What you hand off is the operational responsibility: watching error rates, tuning limits, and acting when an alert fires.
+
+That makes managed hosting different from switching providers. In most LaunchStudio engagements the Vercel project stays exactly where it is; what changes is that someone is accountable for how it behaves in production.
+
+## Self-Managed Vercel Hosting vs. Managed Hosting: Side by Side
+
+The practical difference between self-managed Vercel hosting and managed hosting is who carries the operational work, not which platform serves the requests. The table below compares the two for a typical AI SaaS app.
+
+| Area | Self-managed Vercel hosting | Managed hosting by LaunchStudio |
+|---|---|---|
+| Deployment | Git-based deploys, previews, rollbacks | Same Vercel workflow, unchanged |
+| Environment variables | Set by the founder, often copied between environments | Audited and scoped per preview, staging, and production |
+| Function timeouts | Usually left at defaults | Set deliberately per route, for example with Vercel's `maxDuration` setting |
+| Long LLM calls | Run synchronously in the request | Streamed, or moved to a background job where needed |
+| Error tracking | Often missing | Sentry or equivalent across frontend and backend |
+| Alerting | Customers report problems | Alerts to Slack or email with tuned thresholds |
+| Incident response | Improvised | Documented path with rollback steps |
+| Who gets the 2am problem | The founder, if they notice | A defined responder and process |
+
+## When Should You Self-Manage Vercel Hosting?
+
+You can reasonably self-manage Vercel hosting when your app is low-risk, your traffic is small and predictable, and someone on the team has the time and experience to own operations. Use this decision framework:
+
+1. **Self-manage if** you have no paying customers yet, your AI calls are short, and a few hours of downtime would not cost you revenue or trust.
+2. **Self-manage with help if** you have an engineer comfortable with Vercel configuration and Sentry, but no one has yet set up alerting and an incident plan. A one-time configuration pass closes that gap.
+3. **Choose managed hosting if** paying customers depend on the product, your AI features run long or bursty workloads, you are entering enterprise sales where uptime and incident response get questioned, or every hour you spend on DevOps is an hour not spent on product and sales.
+
+The honest test is simple: if an alert fired at 2am tonight, who would see it, and what would they do? If you can't answer both parts, you are not yet operating your hosting, only deploying to it.
+
+## Common Mistakes When Running an AI App on Vercel
+
+The most common mistake is assuming that a successful deploy means a healthy production system. A green deployment only tells you the build worked; it says nothing about timeouts, error rates, or slow model responses under real traffic.
+
+Other mistakes come up again and again in AI-built apps:
+
+- **Sharing secrets across environments.** Using the same API keys in preview and production means a preview branch can touch live data or burn production quota.
+- **Waiting on long LLM calls synchronously.** Streaming responses or moving heavy work to a background job avoids requests that hang until they are killed.
+- **Installing Sentry without alert rules.** Error tracking that nobody is notified about is a log, not monitoring.
+- **Ignoring usage and spend notifications.** Bursty AI traffic can drive up function usage and model-provider costs quickly; set alerts before a launch, not after the invoice.
+- **No rollback rehearsal.** Vercel makes rolling back to a previous deployment easy, but only if someone knows when to do it and has done it before.
+
 ## Key Takeaways
 
 - Vercel is a strong deployment platform; the operational work of running production infrastructure well - monitoring, alerting, scaling configuration, incident response - is a separate, ongoing job that deployment alone doesn't solve.

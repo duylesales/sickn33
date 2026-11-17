@@ -12,7 +12,7 @@ In B2B software, data is everything. Yet, the vast majority of valuable corporat
 
 Traditional PDF parsers read files by extracting text based on absolute X/Y coordinates on the page, generally in reading order - left to right, top to bottom. If an invoice has a complex, multi-column layout, the parser will jumble the price of Item A with the description of Item B, because it has no concept of which numbers visually belong to which row. If the PDF is a scanned image of a physical document rather than a digitally-generated file, standard text parsers fail completely - there is no embedded text layer to extract, only pixels.
 
-To build a robust data extraction tool in 2026, you must abandon traditional parsers for anything beyond simple single-column invoices, and use **Vision Models** (like GPT-4o, Claude Sonnet, or Gemini's multimodal endpoints). Rather than parsing the underlying document structure, you convert the PDF pages into high-resolution images (typically rendered at 150–200 DPI using a library like `pdf2image` or `pdf-lib`) and send the images to the model's API alongside your extraction prompt. The AI "looks" at the document with genuine spatial awareness, perfectly understanding tables, multi-column layouts, checkboxes, stamps, and even handwriting - because it's reasoning over pixels the way a human eye does, not over a coordinate list.
+To build a robust data extraction tool in 2026, you must abandon traditional parsers for anything beyond simple single-column invoices, and use **Vision Models** (like GPT-4o, Claude Sonnet, or Gemini's multimodal endpoints). Rather than parsing the underlying document structure, you convert the PDF pages into high-resolution images (typically rendered at 150-200 DPI using a library like `pdf2image` or `pdf-lib`) and send the images to the model's API alongside your extraction prompt. The AI "looks" at the document with genuine spatial awareness, perfectly understanding tables, multi-column layouts, checkboxes, stamps, and even handwriting - because it's reasoning over pixels the way a human eye does, not over a coordinate list.
 
 ## Enforcing Structured JSON Outputs
 
@@ -44,6 +44,55 @@ Manifera, the company behind LaunchStudio, has been closing exactly this kind of
 ## Auditing and Storing Extraction Provenance
 
 For any regulated or financially sensitive use case, you also need an audit trail, not just a final JSON blob. Store the original uploaded file, the exact model and prompt version used for extraction, the raw model response, and the final (possibly human-corrected) structured record - ideally as separate, immutable rows rather than overwriting the AI's output in place. When a customer disputes an extracted invoice total six months later, "the model said so" is not an acceptable answer; being able to show exactly which page, which model version, and which confidence score produced that figure is what turns a data extraction feature from a neat demo into something a finance team will actually trust with real money.
+
+## What Is AI PDF Data Extraction?
+
+AI PDF data extraction is the process of turning the contents of a PDF (invoice totals, contract dates, line items) into typed, validated database fields by sending page images or text to a multimodal model and constraining its answer with a JSON Schema. The model supplies the reading and the understanding of the layout; your code supplies the schema, the validation and the business rules.
+
+That split of responsibilities is the core idea of this whole guide. The model is good at reading messy documents. It is not responsible for deciding whether a number is plausible, whether a field is allowed to be empty, or what happens when it is unsure. Those decisions belong in deterministic code that you control and test.
+
+## Traditional OCR vs AI Vision Extraction
+
+The short answer: template-based OCR is cheap and predictable for one fixed layout, while AI vision extraction handles layouts you have never seen before. Many production pipelines use both, as the OCR fallback in the example below shows.
+
+| Criterion | Template-based OCR and text parsers | AI vision models with JSON Schema |
+|---|---|---|
+| New vendor layout | Needs a new template or rules | Usually works without changes |
+| Multi-column tables | Often mixes up rows and columns | Understands visual row structure |
+| Scanned documents | Requires an OCR engine such as Tesseract | Reads page images directly |
+| Handwriting and stamps | Weak | Often usable, but should be reviewed |
+| Cost per page | Very low | Higher, especially for image tokens |
+| Output format | Raw text that you still have to parse | Typed JSON that matches your schema |
+| Failure mode | Visible breakage | Plausible but wrong values, which is why confidence scoring matters |
+
+The last row is the important one. A broken OCR template fails loudly. A vision model fails quietly, by returning a well-formatted value that happens to be wrong.
+
+## AI Code Development Checklist for a Production PDF Pipeline
+
+Use this checklist before you call a PDF extraction feature production-ready. Each item maps to a section of this guide:
+
+1. **Upload validation:** real MIME type check, file size cap, page count cap, and parsing in a sandboxed process.
+2. **Text layer detection:** decide per document whether the fast text pass is possible or the document is a scan.
+3. **Page selection:** run the cheap model to find the relevant pages before you render any high-resolution images.
+4. **Rendering settings:** a fixed DPI per document type, tested for legibility on your worst real samples.
+5. **Strict schema:** required and nullable fields defined explicitly, with enums for things like currency codes.
+6. **Server-side validation:** a Zod (or equivalent) parse on every response, with a retry or review path on failure.
+7. **Business rule checks:** line items add up to the subtotal, tax plus subtotal equals the total, dates fall in a plausible range.
+8. **Confidence routing:** low-confidence or failed checks go to a human review queue instead of straight into the database.
+9. **Provenance storage:** original file, model and prompt version, raw response and final record kept as separate rows.
+10. **Cost monitoring:** tokens and spend tracked per document, with an alert when a single upload exceeds your budget.
+
+## Common Mistakes When Extracting Data from PDFs
+
+The most common mistake is trusting a value because it is valid JSON. Schema validation proves the shape of the data, not its truth, so a total of `4000` instead of `40000` passes every type check.
+
+Other mistakes that appear again and again in AI-built extraction tools:
+
+- **Ignoring number and date formats.** European invoices often write `1.250,00` where US invoices write `1,250.00`, and `03/04` can mean March 4 or 3 April. Ask the model to return normalized values (a plain number and an ISO 8601 date) and keep the original string for review.
+- **Assuming one document per file.** Users upload a single PDF that contains five scanned invoices. Detect document boundaries before extraction, or the model will merge them.
+- **Sending personal data without a legal basis.** Invoices, contracts and medical records contain personal data. Under GDPR Article 28, your model provider acts as a processor and needs a data processing agreement, and you should check the provider's data retention settings before you send customer documents.
+- **No retry budget.** A failed extraction should retry a limited number of times and then fall back to human review, not loop and keep spending tokens.
+- **Overwriting corrections.** When a reviewer fixes a value, store the correction as a new record so you can later measure where the model goes wrong.
 
 ## Key Takeaways
 

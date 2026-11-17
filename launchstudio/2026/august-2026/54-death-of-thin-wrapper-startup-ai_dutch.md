@@ -42,6 +42,8 @@ Een Thin Wrapper heeft nagenoeg nul verdedigbaarheid. Als de gehele waarde van u
 
 Dit is de hoofdreden waarom circa 80% van de met AI gegenereerde prototypes nooit uitgroeit tot een duurzaam productiebedrijf: het idee verschilde structureel niet van een directe API-call.
 
+Dit is geen hypothetisch scenario. Meerdere goed gefinancierde "AI-wrapper"-startups uit de lichting van 2023 zijn gestopt of van koers veranderd, juist omdat een platformupdate hun kernfunctie overbodig maakte. Er was simpelweg niets dat de moeite waard was om productieklaar te maken.
+
 ## De Transformatie naar een 'Thick Wrapper'
 
 Elk softwarebedrijf bouwt voort op onderliggende bouwstenen. Uber is een schil rond GPS en betalingsverkeer; Airbnb is een schil rond een database van accommodaties en Stripe. Het doel is niet om het gebruik van externe API's te vermijden, maar om zoveel bedrijfseigen architectuur rond die API te bouwen dat gebruikers de uitkomst onmogelijk zelf kunnen nabootsen. U moet de schil dikker maken via drie pijlers:
@@ -64,7 +66,73 @@ Tekstgeneratie is een commodity van fracties van centen per token. **Het autonoo
 
 Een Thin Wrapper genereert een stappenplan over hoe je een server uitrolt. Een Thick Wrapper (een autonome agent) schrijft het Terraform-script, authenticeert bij AWS met beperkte IAM-rechten, rolt de infrastructuur uit, voert gezondheidschecks uit, rolt automatisch terug bij fouten (rollback) en stuurt de developer een Slack-notificatie wanneer het gereed is.
 
+U maakt zo de overstap van een tool die *adviseert* naar een tool die *uitvoert*. De engineeringdiscipline die daarvoor nodig is - idempotentie, herhaalpogingen, rollback-logica en audittrails - is een orde van grootte moeilijker dan prompt engineering, en precies daarom is het verdedigbaar. Behandel het moment waarop "de AI naar productie kan pushen" daarom als een beveiligingsmoment dat om een formele review vraagt, en niet als een leuke demofunctie.
+
 Ongeveer 45% van de door AI gegenereerde code bevat kwetsbaarheden; actie-agents met productietoegang moeten daarom worden gebouwd met strikte security-reviews en audittrails.
+
+## 4. De Vertrouwens-Pijler (Beveiliging en Compliance)
+
+Een vierde pijler is vertrouwen: het beveiligings-, compliance- en betrouwbaarheidswerk dat een enterprise-organisatie in staat stelt uw product daadwerkelijk aan te schaffen. Een Thin Wrapper die in een weekend is gebouwd, slaagt vrijwel nooit voor een security review van een inkoopafdeling, terwijl een Thick Wrapper vanaf dag één is ontworpen om die vragen te beantwoorden.
+
+In de praktijk bestaat de vertrouwens-pijler uit enkele concrete bouwstenen:
+
+- **Single sign-on.** Enterprise-klanten verwachten dat gebruikers inloggen via hun eigen identiteitsprovider met SAML of OpenID Connect, bijvoorbeeld Microsoft Entra ID of Okta.
+- **Rolgebaseerde toegangscontrole.** Verschillende gebruikers zien verschillende data, en de AI kan alleen documenten ophalen die de huidige gebruiker mag openen.
+- **Auditlogs.** Elk AI-verzoek, elke tool-aanroep en elke beheerdersactie wordt vastgelegd, zodat een klant kan zien wie wat wanneer heeft gedaan.
+- **Afspraken over gegevensbescherming.** Een verwerkersovereenkomst volgens Artikel 28 van de AVG, een lijst met subverwerkers waarin uw LLM-providers worden genoemd, en duidelijke regels voor het bewaren van data.
+- **Bewijs van beveiligingspraktijk.** Resultaten van penetratietests en, naarmate u groeit, een SOC 2- of ISO 27001-programma.
+
+Niets hiervan is zichtbaar in een demo, en precies daarom kunnen concurrenten die uw interface kopiëren dit niet snel nabouwen.
+
+## Wat Is een Thin Wrapper AI-Startup?
+
+Een Thin Wrapper AI-startup is een bedrijf waarvan het product vooral bestaat uit een gebruikersinterface en een systeemprompt bovenop de API van een extern model, zonder bedrijfseigen data, integraties, geheugen of acties die een klant niet zelf zou kunnen nabootsen door het model rechtstreeks te gebruiken. Een Thick Wrapper gebruikt hetzelfde commodity-model, maar omringt het met systemen die moeilijk te kopiëren zijn: integraties, geheugen, autonome acties en vertrouwensinfrastructuur.
+
+Het onderscheid draait niet om de vraag of u OpenAI, Anthropic of een open-weight model gebruikt. Het draait om wat er van uw product overblijft als u de modelaanroep weghaalt. Bij een Thin Wrapper blijft er vrijwel niets over. Bij een Thick Wrapper blijft het grootste deel van het product bestaan en is het model een vervangbaar onderdeel.
+
+## Thin Wrapper versus Thick Wrapper
+
+| Factor | Thin Wrapper | Thick Wrapper |
+|---|---|---|
+| Belangrijkste bezit | Systeemprompt | Integraties, data, geheugen en acties |
+| Tijd die een concurrent nodig heeft om te kopiëren | Dagen | Maanden of langer |
+| Databronnen | Kopiëren en plakken door de gebruiker | Directe API-koppelingen met OAuth |
+| Geheugen | Geen, tussen sessies | Gestructureerd langetermijngeheugen in een database |
+| Uitvoer | Tekst op een scherm | Voltooide acties in andere systemen |
+| Enterprise-gereedheid | Geen SSO, geen auditlogs | SSO, toegangscontrole, auditlogs, verwerkersovereenkomst |
+| Risico door platformupdates | Hoog | Laag |
+
+## Is Uw AI SaaS een Thin Wrapper? Een Checklist voor Zelfevaluatie
+
+U kunt vaststellen of uw AI SaaS een Thin Wrapper is door u af te vragen wat een klant zou verliezen als hij morgen overstapt naar de eigen app van de modelprovider. Gebruik deze checklist en tel het aantal eerlijke "ja"-antwoorden:
+
+- [ ] Haalt uw product automatisch data op uit ten minste één systeem dat de klant al gebruikt?
+- [ ] Onthoudt het context tussen sessies in een echte database, en niet alleen in het contextvenster van het model?
+- [ ] Voert het acties uit in andere systemen, met foutafhandeling en rollback?
+- [ ] Gebruikt het data die de klant niet eenvoudig aan een algemene chatbot kan geven, zoals zijn geschiedenis binnen uw product?
+- [ ] Zou het vandaag een enterprise-beveiligingsvragenlijst doorstaan?
+- [ ] Zou uw product nog waardevol zijn als de modelprovider uw kernfunctie gratis lanceerde?
+
+Beantwoordt u de meeste vragen met "nee", dan is uw product nog steeds een Thin Wrapper, hoe verzorgd de interface er ook uitziet.
+
+## Zo Maakt U Uw Wrapper Dikker: Een Stappenplan
+
+De meeste oprichters die een app met AI-tools zoals Lovable, Bolt of Cursor hebben gebouwd, kunnen hun product verdikken zonder opnieuw te beginnen. Een realistische volgorde ziet er zo uit:
+
+1. **Bepaal de taak, niet de functie.** Schrijf de volledige workflow op die uw gebruiker vóór en na het gebruik van uw tool doorloopt, inclusief elke stap waarin wordt gekopieerd en geplakt.
+2. **Schrap de eerste kopieer-en-plakstap.** Bouw één directe koppeling met het systeem waar de invoerdata zich bevindt, met OAuth en de kleinst mogelijke scopes die werken.
+3. **Voeg een degelijk datamodel toe.** Stap over van staatloze aanroepen naar een databaseschema dat gebruikers, werkruimtes, geschiedenis en voorkeuren opslaat.
+4. **Voeg geheugen en retrieval toe.** Sla eerdere besluiten en documenten op als embeddings met bron-ID's, zodat de AI de eigen context van de klant kan ophalen.
+5. **Automatiseer één actie.** Laat het product één stap in een ander systeem voltooien, zoals het aanmaken van een concept, een ticket of een update, met logging en een mogelijkheid om het ongedaan te maken.
+6. **Versterk de beveiliging.** Verplaats geheimen naar de server, dwing toegangscontrole af, voeg rate limits toe en laat door AI gegenereerde code op kwetsbaarheden controleren voordat die klantdata verwerkt.
+7. **Maak het product enterprise-klaar.** Voeg SSO, auditlogs en een verwerkersovereenkomst toe zodra uw eerste grotere klanten erom vragen.
+
+## Veelgemaakte Fouten bij de Stap voorbij de Thin Wrapper
+
+- **Functies toevoegen in plaats van diepgang.** Tien oppervlakkige AI-functies zijn nog steeds tien Thin Wrappers.
+- **Integraties bouwen zonder foutafhandeling.** Een koppeling die ongemerkt faalt, is erger dan kopiëren en plakken, omdat gebruikers de uitvoer niet meer vertrouwen.
+- **Geheugen opslaan zonder rechtenstructuur.** Langetermijngeheugen dat toegangsrechten negeert, wordt een datalek binnen de eigen organisatie van de klant.
+- **Agents zonder grenzen laten handelen.** Elke geautomatiseerde actie vraagt om afgebakende inloggegevens, logging en een manier om de actie terug te draaien.
 
 ## Belangrijkste Inzichten
 
@@ -73,6 +141,7 @@ Ongeveer 45% van de door AI gegenereerde code bevat kwetsbaarheden; actie-agents
 - Bouw een Integratie-Moat: koppel uw AI direct aan enterprise-tools (Salesforce, Jira, Slack) om dataverkeer end-to-end te automatiseren zonder handmatig knippen en plakken.
 - Bouw een Geheugen-Moat: sla historische context, gebruikersgedrag en bedrijfsregels gestructureerd op in een relationele database.
 - Verschuif van tekstgeneratie naar autonome actie-uitvoering (Agentic Workflows) met ingebouwde foutafhandeling en rollback-mechanismen.
+- Bouw een Vertrouwens-Moat met SSO, toegangscontrole, auditlogs en een verwerkersovereenkomst volgens Artikel 28 AVG - beveiligings- en compliancewerk dat een gekopieerde interface niet kan nabootsen.
 
 ## Versterk Uw Concurrentievoordeel
 

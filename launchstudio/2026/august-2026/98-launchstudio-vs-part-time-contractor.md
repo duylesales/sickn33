@@ -58,6 +58,44 @@ This isn't an argument against freelance contractors broadly - for well-scoped, 
 
 Ravi's rule of thumb going forward, which he now applies before hiring anyone for engineering work: if a mistake in the work could expose customer data, break a payment flow, or otherwise create real liability, it goes to a fixed-scope team engagement, full stop, regardless of how it compares on an hourly rate. Lower-stakes work - a marketing site update, a minor UI tweak, a one-off script - stays fair game for a part-time contractor, because the cost of something going wrong is genuinely low. That single filter, applied honestly before a hiring decision rather than after a problem surfaces, would have saved him the nine weeks and the security gap entirely.
 
+## LaunchStudio vs. a Part-Time Contractor: Side-by-Side Comparison
+
+The main difference between LaunchStudio and a part-time contractor is the structure of the engagement: a fixed scope delivered by a small reviewed team, versus open-ended hours from one person sharing their week with other clients. The table shows how that plays out on the factors that mattered in Ravi's case:
+
+| Factor | Part-time contractor | LaunchStudio fixed-scope engagement |
+|---|---|---|
+| Pricing model | Hourly, total unknown upfront | Fixed price agreed before work starts (Launch Ready €800-€3,500; Launch & Grow €2,500-€7,500 plus €49/month) |
+| Timeline | Depends on availability across other clients | Defined, typically 1 to 3 weeks |
+| Scope control | Grows with each new request | Written scope, changes agreed explicitly |
+| Code review | Usually none | Built into the team's process |
+| Continuity | Ends if the contractor leaves | Not tied to one person |
+| Documentation | Optional, often skipped | Part of the deliverable |
+| Best suited for | Low-stakes, flexible tasks | Security- and payment-critical hardening |
+
+Neither option is better in every case. The table helps you match the structure of the engagement to the risk of the work.
+
+## How Do You Calculate the True Cost of a Part-Time Contractor?
+
+The true cost of a part-time contractor is the hourly rate multiplied by all hours billed, plus the cost of delays, rework, and any incident caused by unreviewed code. Founders usually compare only the hourly rate with a fixed price, which is why the contractor route looks cheaper on day one. A more honest calculation:
+
+1. **Estimate total hours, not weekly hours.** Multiply the weekly hours by a realistic number of weeks, including the scope additions that almost always arrive.
+2. **Add your own management time.** Briefing, chasing updates, and reviewing work all take founder hours.
+3. **Add the cost of delay.** If a deal, launch, or enterprise review is waiting on the work, every extra week has a price.
+4. **Add the cost of rework.** Assume someone will need to audit and fix part of the work, as happened with Ravi's batch-export endpoint.
+5. **Add continuity risk.** Consider what it would cost to re-hire and onboard someone halfway through.
+6. **Compare the total with a fixed quote.** Only now is the comparison like-for-like.
+
+## Checklist: Protecting Yourself on Any Engineering Engagement
+
+Whichever route you choose, a few basic safeguards protect a founder from the problems Ravi ran into. Before any security- or payment-critical work starts, make sure that:
+
+- **Scope is written down** with clear acceptance criteria for each item, such as "RLS enabled and tested on every table, including export endpoints."
+- **Code lives in your repository** on GitHub or GitLab from the first day, not on the contractor's machine.
+- **Intellectual property is assigned to your company** in the contract, so the code you paid for is legally yours.
+- **Interim documentation is delivered weekly,** not saved for a final handoff that may never come.
+- **A second person reviews security-critical changes** before they reach production.
+- **Access is removed at the end** - repository, hosting, database, Stripe dashboard, and any shared secrets, which should also be rotated.
+
 ## Key Takeaways
 
 - Hourly, part-time freelance engagements have a natural tendency toward scope creep, since there's no structural mechanism forcing a defined boundary around the work.

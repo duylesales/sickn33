@@ -96,6 +96,39 @@ De waarde van deze scorekaart zit niet in het exacte cijfer - het zit erin dat h
 
 Om dit zelf uit te voeren, scoort u elk van de tien dimensies van 0 (bestaat niet) tot 10 (volledig geïmplementeerd, gedocumenteerd en aantoonbaar), en wees bewust conservatief overal waar het eerlijke antwoord "een beetje" of "meestal" is. Tel de tien scores bij elkaar op voor een totaal van 100, en behandel alles onder de 40 als een actief risico voor uw volgende enterprise-pitch in plaats van een ooit-project. De oefening duurt minder dan een uur en is, zoals bij Jonas, doorgaans veel nuttiger dan nog een ronde interne discussie over of het product "aanvoelt" als enterprise-klaar.
 
+## Hoe ziet een 10 uit 10 eruit op elke dimensie?
+
+Een 10 uit 10 op een enterprise-sales readiness scorekaart betekent dat de maatregel bestaat, is gedocumenteerd en op verzoek aan een beoordelaar kan worden aangetoond. Alleen "bestaat" levert ongeveer de helft van de punten op. De tabel geeft per dimensie een referentiepunt, zodat uw eigen scores verankerd zijn in bewijs in plaats van in optimisme:
+
+| Dimensie | Hoe een 10 eruitziet | Bewijs dat een koper accepteert |
+|---|---|---|
+| SSO/SAML | SAML 2.0 of OpenID Connect met Okta en Microsoft Entra ID, bij voorkeur met SCIM-provisioning | Een testlogin met de identity provider van de koper |
+| Row Level Security | Policies op elke tabel, getest op toegang tussen tenants | Overzicht van policies en resultaten van geautomatiseerde tests |
+| Beveiligingsdocumentatie | Document met maatregelen, gemapt op SOC 2- of ISO 27001-categorieën | Het document zelf, met versiedatum |
+| Auditlogging | Onveranderbare log van logins, wijzigingen in rechten en exports | Een voorbeeldexport, gefilterd op gebruiker en datum |
+| Uptime SLA | Monitoring, publieke statuspagina, toegezegd percentage | Historie van de statuspagina en de SLA-tekst |
+| Gereedheid voor vragenlijsten | Herbruikbare bibliotheek met antwoorden op veelgestelde vragen | Uitgewerkte antwoorden, klaar om in een portaal te plakken |
+| Rate limiting | Limieten per sleutel en per tenant, getest onder belasting | Configuratie en testrapport |
+| Geheimenbeheer | Geen secrets in clientcode, sleutels geroteerd | Resultaat van een codescan en een rotatieoverzicht |
+| Dataresidentie | Benoemde regio's en gedocumenteerde subverwerkers | Lijst van subverwerkers met locaties |
+| Incidentrespons | Schriftelijk plan met rollen en meldingsstappen | Het plan en een verslag van een oefening |
+
+Twee begrippen verdienen een definitie, omdat kopers ze precies gebruiken. Een SOC 2 Type I-rapport controleert of maatregelen op één moment correct zijn ontworpen, terwijl een Type II-rapport controleert of ze gedurende een periode, meestal enkele maanden, effectief hebben gewerkt. Veel kopers accepteren bij een jongere leverancier een sterk document met maatregelen en een Type I-rapport als vertrekpunt. Een uptime-percentage in een SLA vertaalt zich bovendien direct in toegestane downtime: 99,9% laat in een maand van 30 dagen ongeveer 43 minuten downtime toe, dus zeg alleen een percentage toe dat uw monitoringhistorie onderbouwt.
+
+## Hoe stelt u prioriteiten na het scoren?
+
+U lost gaten in enterprise-gereedheid op in de volgorde waarin een koper ze tegenkomt: eerst toegang en datascheiding, dan documentatie en daarna operationele afwerking. Een praktische volgorde zodra u uw scores heeft:
+
+1. **Los de blokkades op.** SSO, Row Level Security en blootgestelde secrets houden een deal meestal direct tegen, dus elke score onder de 5 op deze punten komt eerst.
+2. **Dicht de gaten in het bewijs.** Auditlogging en incidentrespons maken van "wij nemen beveiliging serieus" iets wat een beoordelaar kan controleren.
+3. **Schrijf de documenten één keer.** Een document met beveiligingsmaatregelen, een lijst van subverwerkers en een antwoordenbibliotheek voor vragenlijsten kunt u voor elke toekomstige koper hergebruiken.
+4. **Voeg monitoring en een statuspagina toe.** Begin nu met het verzamelen van uptimehistorie, want een SLA is alleen geloofwaardig met data erachter.
+5. **Scoor opnieuw en bewaar het bewijs.** Bewaar het bewijs voor elke regel in één map, zodat de volgende vragenlijst uren kost in plaats van weken.
+
+## Veelgemaakte fouten bij het gebruik van een readiness scorekaart
+
+De meest gemaakte fout is uzelf punten geven voor een functie die bestaat maar nooit aan iemand buiten het team is getoond. Andere fouten zijn het product scoren zoals u het volgend kwartaal van plan bent te maken, documenten als af beschouwen zodra ze zijn geschreven in plaats van ze gelijk te houden met het product, en de scorekaart één keer invullen in plaats van vóór elke grote enterprise-pitch.
+
 ## Belangrijkste inzichten
 
 - Een gestructureerde scorekaart met tien dimensies - SSO, RLS, beveiligingsdocumentatie, auditlogging, uptime SLA, gereedheid voor vragenlijsten, rate limiting, geheimenbeheer, dataresidentie en incidentrespons - voorspelt enterprise-dealuitkomsten veel beter dan pitchenthousiasme alleen.

@@ -37,7 +37,7 @@ In B2B-software is data allesbepalend. Toch zit het overgrote merendeel van waar
 
 Traditionele PDF-parsers lezen bestanden uit door tekst te extraheren op basis van absolute X/Y-coördinaten op de pagina, doorgaans in een vaste leesvolgorde van links naar rechts en van boven naar beneden. Bevat een factuur een complexe kolomstructuur, dan verwisselt de parser al snel de prijs van Item A met de omschrijving van Item B, omdat het systeem geen ruimtelijk inzicht heeft in welke getallen visueel bij welke rij horen. Is de PDF een gescande afbeelding van een fysiek document in plaats van een digitaal gegenereerd bestand, dan falen standaard tekstparsers volledig: er is immers geen ingebedde tekstlaag om uit te lezen, alleen pixels.
 
-Om in 2026 een robuuste data-extractietool te bouwen, moet u traditionele parsers achter u laten voor alles wat complexer is dan een eenvoudige factuur met één kolom, en overstappen op **Vision Modellen** (zoals GPT-4o, Claude Sonnet of Gemini's multimodale endpoints). In plaats van de onderliggende code van het document te parsen, converteert u de PDF-pagina's naar afbeeldingen met een hoge resolutie (doorgaans gerenderd op 150–200 DPI met bibliotheken zoals `pdf2image` of `pdf-lib`) en stuurt u deze beelden samen met uw extractieprompt naar het model. De AI "kijkt" met echt ruimtelijk inzicht naar het document en begrijpt tabellen, kolomstructuren, selectievakjes, stempels en zelfs handgeschreven notities moeiteloos - exact zoals een menselijk oog dat doet.
+Om in 2026 een robuuste data-extractietool te bouwen, moet u traditionele parsers achter u laten voor alles wat complexer is dan een eenvoudige factuur met één kolom, en overstappen op **Vision Modellen** (zoals GPT-4o, Claude Sonnet of Gemini's multimodale endpoints). In plaats van de onderliggende code van het document te parsen, converteert u de PDF-pagina's naar afbeeldingen met een hoge resolutie (doorgaans gerenderd op 150-200 DPI met bibliotheken zoals `pdf2image` of `pdf-lib`) en stuurt u deze beelden samen met uw extractieprompt naar het model. De AI "kijkt" met echt ruimtelijk inzicht naar het document en begrijpt tabellen, kolomstructuren, selectievakjes, stempels en zelfs handgeschreven notities moeiteloos - exact zoals een menselijk oog dat doet.
 
 ## Gestructureerde JSON-Outputs Afdwingen
 
@@ -69,6 +69,55 @@ Voordat een PDF uw vision-pipeline bereikt, moet uw backend het werkelijke MIME-
 ## Auditing en Oorsprong van Geëxtraheerde Data Opslaan
 
 Voor gereguleerde of financiële processen volstaat het niet om alleen de uiteindelijke JSON-data op te slaan; u heeft een sluitende audittrail nodig. Sla het originele geüploade bestand, de exacte model- en promptversie, de ruwe modelrespons en het definitieve (eventueel door een mens gecorrigeerde) record op als afzonderlijke, onwijzigbare database-rijen. Wanneer een klant maanden later een factuurbedrag betwist, is "dat zei het model" geen acceptabel antwoord; exact kunnen aantonen welke pagina, welk model en welke betrouwbaarheidsscore tot dat cijfer hebben geleid, maakt het verschil tussen een vrijblijvend prototype en een betrouwbaar enterprise-systeem.
+
+## Wat is PDF data extractie met AI?
+
+PDF data extractie met AI is het proces waarbij u de inhoud van een PDF (factuurtotalen, contractdata, factuurregels) omzet in getypeerde, gevalideerde databasevelden door pagina-afbeeldingen of tekst naar een multimodaal model te sturen en het antwoord te begrenzen met een JSON Schema. Het model zorgt voor het lezen en het begrijpen van de lay-out; uw code zorgt voor het schema, de validatie en de bedrijfsregels.
+
+Die taakverdeling is de kern van deze hele handleiding. Het model is goed in het lezen van rommelige documenten. Het is niet verantwoordelijk voor de beslissing of een getal plausibel is, of een veld leeg mag zijn, of wat er gebeurt wanneer het twijfelt. Die beslissingen horen thuis in deterministische code die u zelf beheert en test.
+
+## Traditionele OCR vs AI vision-extractie
+
+Het korte antwoord: OCR op basis van sjablonen is goedkoop en voorspelbaar voor één vaste lay-out, terwijl AI vision-extractie ook lay-outs aankan die u nog nooit eerder heeft gezien. Veel productiepipelines gebruiken beide, zoals de OCR-terugvaloptie in het voorbeeld hieronder laat zien.
+
+| Criterium | OCR op basis van sjablonen en tekstparsers | AI vision-modellen met JSON Schema |
+|---|---|---|
+| Nieuwe lay-out van een leverancier | Vereist een nieuw sjabloon of nieuwe regels | Werkt meestal zonder aanpassingen |
+| Tabellen met meerdere kolommen | Haalt vaak rijen en kolommen door elkaar | Begrijpt de visuele rijstructuur |
+| Gescande documenten | Vereist een OCR-engine zoals Tesseract | Leest pagina-afbeeldingen direct |
+| Handschrift en stempels | Zwak | Vaak bruikbaar, maar moet worden gecontroleerd |
+| Kosten per pagina | Zeer laag | Hoger, vooral door afbeeldings-tokens |
+| Outputformaat | Ruwe tekst die u nog moet parsen | Getypeerde JSON die aan uw schema voldoet |
+| Faalwijze | Zichtbare fouten | Plausibele maar onjuiste waarden, daarom zijn betrouwbaarheidsscores belangrijk |
+
+De laatste rij is de belangrijkste. Een kapot OCR-sjabloon faalt zichtbaar. Een vision-model faalt geruisloos, door een keurig geformatteerde waarde terug te geven die toevallig onjuist is.
+
+## Checklist voor AI code ontwikkeling van een productieklare PDF-pipeline
+
+Gebruik deze checklist voordat u een functie voor PDF-extractie productieklaar noemt. Elk punt sluit aan op een sectie van deze handleiding:
+
+1. **Uploadvalidatie:** controle van het werkelijke MIME-type, een limiet op bestandsgrootte en aantal pagina's, en parsen in een afgeschermd proces.
+2. **Detectie van de tekstlaag:** bepaal per document of de snelle tekstfase mogelijk is of dat het om een scan gaat.
+3. **Paginaselectie:** laat het goedkope model eerst de relevante pagina's vinden voordat u afbeeldingen met hoge resolutie rendert.
+4. **Renderinstellingen:** een vaste DPI per documenttype, getest op leesbaarheid met uw slechtste echte voorbeelden.
+5. **Strikt schema:** verplichte en optionele velden expliciet gedefinieerd, met enums voor zaken als valutacodes.
+6. **Validatie op de server:** een Zod-parse (of vergelijkbaar) op elke respons, met een herhaalpoging of reviewroute bij een fout.
+7. **Controle van bedrijfsregels:** factuurregels tellen op tot het subtotaal, btw plus subtotaal is gelijk aan het totaal, datums vallen binnen een plausibel bereik.
+8. **Routering op betrouwbaarheid:** velden met een lage betrouwbaarheid of mislukte controles gaan naar een menselijke reviewwachtrij in plaats van direct de database in.
+9. **Opslag van herkomst:** origineel bestand, model- en promptversie, ruwe respons en definitief record als afzonderlijke rijen bewaard.
+10. **Kostenmonitoring:** tokens en uitgaven per document bijgehouden, met een melding wanneer één upload uw budget overschrijdt.
+
+## Veelgemaakte fouten bij het extraheren van data uit PDF's
+
+De meest gemaakte fout is een waarde vertrouwen omdat het geldige JSON is. Schemavalidatie bewijst de vorm van de data, niet de juistheid ervan, dus een totaal van `4000` in plaats van `40000` doorstaat elke typecontrole.
+
+Andere fouten die steeds weer opduiken in met AI gebouwde extractietools:
+
+- **Getal- en datumnotaties negeren.** Europese facturen schrijven vaak `1.250,00` waar Amerikaanse facturen `1,250.00` schrijven, en `03/04` kan 4 maart of 3 april betekenen. Vraag het model om genormaliseerde waarden terug te geven (een kaal getal en een ISO 8601-datum) en bewaar de originele tekst voor controle.
+- **Aannemen dat elk bestand één document bevat.** Gebruikers uploaden één PDF met vijf gescande facturen. Detecteer de grenzen tussen documenten vóór de extractie, anders voegt het model ze samen.
+- **Persoonsgegevens versturen zonder rechtsgrond.** Facturen, contracten en medische dossiers bevatten persoonsgegevens. Onder artikel 28 van de AVG (GDPR) treedt uw modelprovider op als verwerker en is een verwerkersovereenkomst nodig. Controleer daarnaast de instellingen voor dataretentie van de provider voordat u klantdocumenten verstuurt.
+- **Geen limiet op herhaalpogingen.** Een mislukte extractie moet een beperkt aantal keren opnieuw worden geprobeerd en daarna terugvallen op menselijke controle, in plaats van eindeloos door te lopen en tokens te blijven verbruiken.
+- **Correcties overschrijven.** Wanneer een controleur een waarde corrigeert, slaat u die correctie op als nieuw record, zodat u later kunt meten waar het model de mist in gaat.
 
 ## Belangrijkste Inzichten
 

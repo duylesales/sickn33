@@ -78,6 +78,80 @@ Product-Led Sales floreert wanneer een tool een laagdrempelig instapmodel heeft 
 
 Het technisch inrichten van deze telemetrie en workflows is exact wat Herre Roelevink, Oprichter & Managing Director van Manifera, omschrijft: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Manifera bouwt deze enterprise-systemen sinds **2014** vanuit **Amsterdam** (Herengracht 420) en **Ho Chi Minhstad, Vietnam**.
 
+## Wat Is Product-Led Sales voor een AI SaaS Platform?
+
+Product-Led Sales voor een AI SaaS platform is een go-to-market-aanpak waarbij self-service productgebruik de leads oplevert, en een salesteam alleen instapt bij de accounts waarvan het gebruik op enterprise-potentieel wijst. Het product doet de eerste helft van de verkoop; mensen sluiten het deel af dat een self-service checkout niet kan afronden.
+
+De drie gangbare modellen verhouden zich als volgt:
+
+| Dimensie | Puur PLG | Product-Led Sales | Traditioneel sales-led |
+|---|---|---|---|
+| Bron van leads | Aanmeldingen | Aanmeldingen met sterke gebruikssignalen (PQL's) | Marketingcampagnes en outbound (MQL's) |
+| Wie sluit de deal | De checkoutpagina | Checkout voor kleine pakketten, sales voor enterprise | Het salesteam bij elke deal |
+| Bewijs van waarde | Zelf ontdekt door de gebruiker | Al aanwezig in de gebruiksdata | Beloofd in demo's en pilots |
+| Gebruikelijke dealomvang | Klein, maandelijks | Kleine self-service plus grote jaarcontracten | Groot, jaarlijks |
+| Belangrijkste systeem | Facturatie en onboarding | Telemetrie, PQL-scoring, CRM-meldingen | CRM en salesproces |
+
+Voor de meeste AI SaaS-bedrijven is PLS geen vervanging van PLG. Het is een laag erbovenop die actief wordt zodra enterprise-gebruikers in de aanmeldingsdata verschijnen.
+
+## Zo Bouwt U Stap voor Stap een PQL-Scoringsmodel
+
+Een PQL-scoringsmodel werkt door elk account punten te geven voor signalen die in het verleden aan een aankoop voorafgingen, en sales te waarschuwen zodra een account een drempel passeert. Een eerste versie bouwt u in een paar stappen:
+
+1. **Definieer uw activatiemoment.** Kies het moment waarop een gebruiker voor het eerst echte waarde ervaart, zoals het eerste gegenereerde rapport of de eerste geslaagde integratie.
+2. **Maak een lijst van mogelijke signalen.** Zakelijk domein, bedrijfsgrootte, aantal actieve gebruikers binnen hetzelfde domein, wekelijks gebruik, uitgenodigde collega's, bereikte limieten en bezoeken aan de prijs- of securitypagina.
+3. **Kijk terug naar eerdere upgrades.** Controleer welke signalen uw betalende klanten lieten zien in de weken voordat zij upgradeden. Geef die signalen meer gewicht.
+4. **Score op accountniveau, niet op gebruikersniveau.** Groepeer gebruikers per bedrijfsdomein, want enterprise-deals worden door organisaties getekend, niet door individuen.
+5. **Stel een drempel en een eigenaar vast.** Bepaal bij welke score een melding afgaat en zorg dat elke melding aan een specifieke persoon wordt toegewezen.
+6. **Stuur context mee met de melding.** Vermeld de belangrijkste features van het account, de actieve gebruikers en de limiet waar men tegenaan liep, zoals hierboven beschreven.
+7. **Evalueer maandelijks.** Vergelijk meldingen met gesloten deals. Verwijder signalen die nooit omzet voorspellen en voeg nieuwe toe die dat wel doen.
+
+Een illustratief startmodel kan er zo uitzien, aangepast aan uw eigen data:
+
+| Signaal | Voorbeeldgewicht |
+|---|---|
+| Aangemeld met een zakelijk domein | Laag |
+| Drie of meer actieve gebruikers uit hetzelfde domein | Hoog |
+| Abonnementslimiet bereikt in de afgelopen 7 dagen | Hoog |
+| Security-, SSO- of prijspagina bezocht | Gemiddeld |
+| Gebruik groeit week op week | Gemiddeld |
+| Collega uitgenodigd | Gemiddeld |
+
+## Prijsstelling en Pakketten die Product-Led Sales Ondersteunen
+
+Prijsstelling ondersteunt Product-Led Sales wanneer elk pakket een duidelijke taak heeft: gratis en pro-abonnementen bewijzen waarde voor individuen, een teampakket bedient kleine groepen en een enterprise-pakket verkoopt controle. Een gebruikelijke structuur voor een AI SaaS platform:
+
+- **Gratis:** genoeg gebruik om het activatiemoment te bereiken, met duidelijke limieten.
+- **Pro:** self-service via Stripe Billing of een vergelijkbare tool, voor individuen die meer volume nodig hebben.
+- **Team:** gedeelde workspaces, basisbeheer en gedeeld gebruik, nog steeds self-service.
+- **Enterprise:** SSO/SAML, rolgebaseerd toegangsbeheer, audit-logs, facturatie op rekening, een verwerkersovereenkomst en securitydocumentatie, verkocht via een gesprek.
+
+Twee regels houden deze structuur werkend. Ten eerste moeten limieten zichtbaar zijn in het product, zodat het bereiken ervan voelt als een logisch upgrademoment en niet als een verrassing. Ten tweede moet het enterprise-pakket de features bevatten die IT en inkoop eisen, niet de features die eindgebruikers op dag één willen. Zo blokkeert u nooit de adoptie om een salesgesprek af te dwingen.
+
+Voor Nederlandse en Europese enterprise-klanten staan facturatie op rekening, een verwerkersovereenkomst en duidelijkheid over waar data wordt opgeslagen vaak hoger op de lijst dan nieuwe AI-features. Zorg dat die onderdelen in het enterprise-pakket zichtbaar zijn benoemd.
+
+## Privacy en Toestemming bij het Meten van Gebruik voor Sales
+
+Het meten van productgebruik voor salesdoeleinden is verwerking van persoonsgegevens onder de **AVG (GDPR)** zodra gebeurtenissen aan identificeerbare gebruikers zijn gekoppeld. Daarvoor heeft u een rechtsgrond nodig, een duidelijke privacyverklaring en een verwerkersovereenkomst onder **artikel 28 AVG** met uw analytics-aanbieder. In de praktijk:
+
+- Vermeld in uw privacyverklaring dat gebruiksdata kan worden gebruikt om relevante pakketten aan te bieden of contact op te nemen met de organisatie van de gebruiker.
+- Waar analytics gebruikmaken van cookies of vergelijkbare opslag in de browser, volgt u de toestemmingsregels die voortvloeien uit de **ePrivacy-richtlijn**.
+- Kies bewust waar uw analytics worden gehost. PostHog biedt bijvoorbeeld een in de EU gehoste cloud, wat gesprekken met Europese enterprise-kopers vereenvoudigt.
+- Verzamel de gebeurtenissen die u nodig heeft voor scoring, niet elke klik, en stuur geen promptinhoud of geüploade bestanden naar uw analytics-tool.
+
+Enterprise-kopers vragen hiernaar tijdens de security-review. Een helder antwoord versterkt precies de deal die uw PQL-model zichtbaar maakte.
+
+## Veelgemaakte Fouten bij Product-Led Sales
+
+Product-Led Sales mislukt meestal om operationele redenen, niet om strategische:
+
+- **Verkopen aan individuen in plaats van aan accounts.** Een enterprise-pakket pitchen aan één junior gebruiker werkt zelden; zoek de teamleider of budgethouder.
+- **Melden bij elke aanmelding vanuit een groot domein.** Eén nieuwsgierige medewerker is geen koopsignaal. Combineer het domein met gebruik.
+- **Opdringerige outreach.** Een bericht dat leest als een salesscript maakt het vertrouwen dat het product heeft opgebouwd ongedaan.
+- **De enterprise-features verbergen.** Als gebruikers niet zien dat SSO of beheerfuncties bestaan, vragen zij IT er ook niet om.
+- **Geen terugkoppeling.** Zonder meldingen te vergelijken met gesloten deals wordt uw scoringsmodel nooit beter.
+- **Zwakke beveiligingsfundamenten.** Een AI-product dat geen enterprise security-review doorstaat, loopt vast op precies het moment dat PLS de kans creëert.
+
 ## Belangrijkste Inzichten
 
 - Puur self-service PLG kent een structureel omzetplafond; grote zakelijke contracten van zes cijfers vereisen menselijke salestrajecten.

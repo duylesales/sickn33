@@ -60,6 +60,30 @@ Currency mismatch is often the single biggest driver of international payment fa
 
 A properly scoped international payments migration reviews all of these factors together, rather than treating currency as an isolated fix, precisely because a founder chasing international growth rarely gets a second chance to make a good first impression with a checkout flow that quietly assumes every customer looks like a domestic one.
 
+## What Is Multi-Currency Billing, Exactly?
+
+Multi-currency billing means a customer sees a price, pays, and is invoiced in their own currency, with that currency staying fixed for the life of their subscription. It is different from simply displaying converted prices: in a real multi-currency billing setup, the charge itself is made in the local currency, so the customer's bank never treats it as a foreign transaction. The table below shows how the two approaches compare on the points that drove Kwame's failure rate.
+
+| Aspect | Single-currency billing (EUR only) | Multi-currency billing (EUR, GBP, USD) |
+|--------|------------------------------------|----------------------------------------|
+| What a UK or US visitor sees | Prices in EUR | Prices in their own currency |
+| How their card issuer treats the charge | Foreign-currency transaction | Domestic-currency transaction |
+| Price points | One price, converted by the bank at an unknown rate | Round, deliberately set local prices |
+| Renewal amount | Changes with the exchange rate | Fixed in the subscribed currency |
+| Invoice | One EUR template for everyone | Currency and tax treatment per region |
+| Failure monitoring | One blended decline rate | Decline rate per currency |
+
+## How to Plan a Stripe Multi-Currency Migration Step by Step
+
+A Stripe multi-currency migration goes most smoothly when you decide the commercial questions before anyone touches configuration. A practical order of work looks like this:
+
+1. **Pull your decline data by country.** Confirm that failures really cluster among international customers before you invest in a fix.
+2. **Choose your currencies.** Start with the two or three currencies that cover most of your international traffic, rather than every currency Stripe supports.
+3. **Set local price points.** Agree on round numbers per market and write down how often you will review them.
+4. **Decide what happens to existing customers.** Most founders leave current subscribers in their original currency and apply the new prices to new sign-ups only.
+5. **Check tax handling.** UK VAT and EU VAT are separate regimes since Brexit, and US sales tax works differently again. A tool such as Stripe Tax can help, but someone still needs to confirm your registrations.
+6. **Test each currency end to end.** Run a test-mode checkout, renewal and failed payment in every currency before going live.
+
 ## Key Takeaways
 
 - A high payment failure rate concentrated among international customers is frequently a currency mismatch, not a product or fraud problem - foreign-currency charges get flagged and declined by card issuers far more often than native-currency ones.

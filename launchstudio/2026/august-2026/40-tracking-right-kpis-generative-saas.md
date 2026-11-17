@@ -46,6 +46,65 @@ In web development, we track page load speed. In AI, we track **Time to First To
 
 Customer Acquisition Cost (CAC) alone is misleading for generative AI products, because it ignores the ongoing serving cost of every retained user. **Cost-per-Retained-User** combines your acquisition spend with your cumulative AI serving cost for users who stick around past 90 days. A user who was cheap to acquire but expensive to serve every month can be a net loss even at healthy retention rates - this metric catches that trap before it shows up as a shrinking bank balance. Calculate it monthly per cohort, and treat any upward trend as an early warning that your pricing tiers or usage limits need revisiting.
 
+## What Is a Customer Health Score for an AI SaaS Platform?
+
+A customer health score for an AI SaaS platform is a single composite number, usually on a 0-100 scale, that combines usage, output quality and serving cost into one signal of whether an account is likely to renew profitably. Traditional health scores look mostly at engagement, logins and support tickets. In AI SaaS that misses half the picture, because an account can be highly engaged, perfectly happy and still unprofitable.
+
+The five KPIs above are the raw ingredients. The health score is what turns them into something your customer success team, or you as a solo founder, can act on every week without opening five separate dashboards.
+
+### Which Signals Belong in an AI SaaS Health Score?
+
+| Signal | KPI source | Healthy account | Warning sign |
+|---|---|---|---|
+| Profitability | AI Gross Margin per User | Margin stays above 60% | Margin trending toward or below 60% |
+| Output quality | Generation Success Rate | GSR at or above 80% | Repeated "Regenerate" streaks, GSR below 80% |
+| Activation | Time-to-Value | First successful generation within 60 seconds | No successful generation in the first session |
+| Experience | Feature-specific latency | Stable TTFT on the features the account uses | Latency spikes on the account's most-used features |
+| Engagement | Weekly active usage | Steady or growing usage across seats | Usage dropping, or concentrated in a single seat |
+| Commercial | Cost-per-Retained-User | Flat or falling per cohort | Rising month over month |
+
+Notice that engagement is only one row. In a classic SaaS health score it would carry most of the weight. For an AI SaaS platform, high engagement combined with a collapsing margin is a red flag, not a green one.
+
+## How to Set Up Customer Health Scoring Step by Step
+
+You can build a first working health score in a few days if your event tracking is already in place. The order matters, because each step depends on the data produced by the one before it.
+
+1. **Log every generation as an event.** Store user ID, account ID, model, feature, input tokens, output tokens, latency and the outcome (copied, saved, regenerated or abandoned). This is the `usage_events` table from KPI 1.
+2. **Attach a cost to each event.** Multiply token counts by your provider's current per-token price for that model and store the result on the event. Keep the price table in configuration rather than hard-coded, because OpenAI and Anthropic adjust pricing and release new models regularly.
+3. **Roll events up per account per week.** Weekly is the right cadence for most B2B AI SaaS products: daily is too noisy, and monthly is too late to act on.
+4. **Normalise each signal to a 0-100 sub-score.** For example, a GSR of 80% or higher scores 100, falling in a straight line to 0 at 50%. Write these thresholds down so everyone on the team reads the score the same way.
+5. **Weight and combine the sub-scores.** Start simple. Many teams give profitability and output quality the largest weights, because those two signals predict both churn and cash burn. Revisit the weights once you have a few months of real renewal data.
+6. **Define three bands with an action for each.** Healthy (no action), At risk (review within a week) and Critical (the founder or account owner reaches out, or usage limits kick in).
+7. **Put the score where people already work.** A PostHog dashboard, a field in a CRM such as HubSpot, or a weekly Slack digest. A score nobody looks at does not change any outcome.
+
+### Health Scores vs. Usage Limits: Two Different Jobs
+
+A health score tells you which accounts need attention, while usage limits protect you automatically while you decide what to do. You need both. A score on its own means a power user can still run up a large API bill over a weekend. Limits on their own mean you throttle your best customers without ever understanding why they hit the ceiling, which is often a sign they would happily pay for a higher tier.
+
+## Common Mistakes When Tracking AI SaaS KPIs
+
+Most AI SaaS teams make the same handful of measurement mistakes, and almost all of them come from copying a traditional SaaS dashboard without adapting it to variable AI costs.
+
+- **Treating high usage as automatically good.** In AI SaaS, usage is also cost. Always read engagement next to margin.
+- **Tracking margin only in aggregate.** A healthy company-wide margin can hide a cohort that is barely breaking even.
+- **Counting input and output tokens together.** Output tokens typically cost several times more, so a blended count understates the cost of verbose features.
+- **Relying on thumbs-up and thumbs-down alone.** Explicit feedback is sparse and skewed toward frustrated users. Implicit signals such as copy, save and regenerate tell you far more.
+- **Ignoring model and prompt changes.** When a provider updates a model, GSR and latency can shift overnight. Annotate every model switch and prompt release on your dashboards so you can link a drop to its cause.
+- **Starting the TTV clock in the wrong place.** Start it at "Sign Up", not at the first login after email verification, or you hide exactly the friction that loses users.
+- **Building the dashboard before the logging.** A polished dashboard on top of incomplete events gives you confident but wrong answers.
+
+## How Do You Decide Which AI SaaS KPI to Fix First?
+
+Fix whichever KPI is costing you money or customers fastest, and in most early-stage AI SaaS products that means margin first, then output quality, then activation. A simple decision framework looks like this:
+
+1. **If any cohort's AI Gross Margin is below 60%,** fix pricing, overage billing or rate limits first. Every new user in that cohort makes the problem bigger.
+2. **If GSR is below 80%,** fix prompts, retrieval or model choice next. Poor output quality tends to turn into churn within a billing cycle or two.
+3. **If TTV is above 60 seconds,** fix onboarding. This is your top-of-funnel leak, and it matters most once you start paying to acquire users.
+4. **If latency spikes on key features,** add alerting and a fallback model route.
+5. **If CPRU is rising,** review acquisition channels and plan tiers together, because the cause can sit on either side.
+
+This order is not fixed forever. Once margins and output quality are stable, activation and retention usually become the main growth levers for an AI-native product, and the weights in your health score should shift to reflect that.
+
 ## Key Takeaways
 
 - Standard SaaS metrics (like pure MRR and DAU) are dangerous for AI startups because they ignore the massive variable costs of API generation that scale directly with usage.
@@ -57,6 +116,8 @@ Customer Acquisition Cost (CAC) alone is misleading for generative AI products, 
 - Optimize 'Time-to-Value' (TTV). Your onboarding must be designed to deliver a jaw-dropping AI result to the user within 60 seconds of signing up, using pre-loaded sample data if needed.
 
 - Monitor generation latency (Time to First Token) by model and feature, and track Cost-per-Retained-User alongside CAC so a cheap-to-acquire but expensive-to-serve user doesn't quietly become a net loss.
+
+- Combine these KPIs into a weekly customer health score per account, and fix them in order of financial impact: margin first, then output quality, then activation.
 
 ## Instrument Your Growth
 

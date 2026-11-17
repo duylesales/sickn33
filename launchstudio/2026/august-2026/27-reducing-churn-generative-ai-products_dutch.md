@@ -57,6 +57,8 @@ Veel opzeggingen vinden al plaats op dag één, nog voordat de gebruiker de echt
 
 Toon op dag één nooit een leeg canvas. Begeleid de gebruiker via gestructureerde invoervelden: *"Selecteer uw doelgroep (dropdown). Wat is uw prijsniveau (getal)? Wat is het belangrijkste klantvoordeel (tekstvak)?"* Op de achtergrond construeert uw backend een perfect geoptimaliseerde prompt met alle benodigde context. Zo garandeert u dat de allereerste interactie direct een verbluffend kwalitatief resultaat oplevert.
 
+Deze ene wijziging - een open tekstvak in de eerste gebruikservaring vervangen door begeleide invoervelden - is een van de krachtigste activatieverbeteringen die een generatief AI-product kan doorvoeren. Toch ontbreekt ze vaak in prototypes die rechtstreeks uit een v0- of Bolt-build worden gelanceerd. U neemt de gebruiker het risico van een slechte prompt uit handen, en daarmee ook de belangrijkste reden om op dag één af te haken.
+
 ## De Periodieke Pauze-Optie (Subscription Pause)
 
 Veel generatieve AI-taken zijn periodiek en projectmatig van aard. Een oprichter kan uw tool twee weken intensief gebruiken tijdens een investeringsronde om pitchdeck-teksten te schrijven, en de tool vervolgens zes maanden niet nodig hebben. Biedt u uitsluitend een doorlopend maandabonnement aan, dan zal hij rationeel opzeggen zodra het project is afgerond.
@@ -70,6 +72,52 @@ De meeste softwarebedrijven ontdekken dat een klant verloren is gegaan pas wanne
 Koppel deze signalen aan een automatische gezondheidsscore in uw database en stuur proactief een persoonlijk bericht vanuit Customer Success vóórdat de klant mentaal het besluit heeft genomen om te vertrekken. Een gerichte interventie in de risicofase behoudt aanzienlijk meer klanten dan een exit-enquête na opzegging.
 
 Herre Roelevink, Oprichter & Managing Director van Manifera, onderstreept waarom deze volwassenheid in software-architectuur noodzakelijk is: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Manifera bouwt deze retentie- en database-architecturen sinds **2014** vanuit **Amsterdam** (Herengracht 420) en haar ontwikkelhub in **Ho Chi Minhstad, Vietnam**.
+
+## Welke Soorten Klantverloop Raken een AI SaaS-Platform?
+
+Klantverloop in een AI SaaS-platform is het aandeel betalende klanten, of terugkerende omzet, dat u in een bepaalde periode verliest, en het komt voor in verschillende soorten die elk een andere oplossing vragen. Wie alle opzeggingen als één getal behandelt, verbergt de oorzaak. De onderstaande tabel onderscheidt de belangrijkste soorten churn bij generatieve AI-producten.
+
+| Soort churn | Hoe het eruitziet | Typische oorzaak | Belangrijkste oplossing |
+|---|---|---|---|
+| Nieuwigheidschurn | Intensief gebruik in maand 1, opzegging in maand 2 of 3 | Het product is speelgoed, geen workflow | System of Record en overstapkosten |
+| Onboarding-churn | Opzegging binnen enkele dagen, weinig gebruik | Leeg canvas, zwak eerste resultaat | Begeleide eerste ervaring |
+| Periodieke churn | Opzegging tussen projecten, later terugkeer | De behoefte is periodiek, de facturatie maandelijks | Pauze- of goedkope opslagoptie |
+| Kwaliteitschurn | Klachten over slechtere output, daarna opzegging | Modelwijziging, prompt-drift, regressies | Vastgezette modelversies en output-evaluaties |
+| Onvrijwillige churn | Abonnement eindigt zonder opzegklik | Mislukte kaartbetalingen, verlopen kaarten | Herinneringen, herhaalpogingen en kaartupdates |
+
+Meet logo-churn (verloren klanten) en omzetchurn (verloren MRR) afzonderlijk. In B2B kan het verlies van één groot account zwaarder wegen dan het verlies van twintig kleine.
+
+## Waarom Leiden Wijzigingen in Outputkwaliteit tot Churn bij Generatieve AI-Producten?
+
+Wijzigingen in outputkwaliteit leiden tot churn omdat gebruikers een generatief AI-product beoordelen op de resultaten die het vorige week leverde, en elke zichtbare kwaliteitsdaling voelt alsof het product slechter is geworden. Dat gebeurt vaak zonder enige wijziging in uw eigen code. Een modelaanbieder brengt een nieuwe versie uit, uw prompt gedraagt zich daar anders op, en antwoorden die eerst scherp waren, worden generiek.
+
+Bescherm uzelf op drie manieren. Zet ten eerste in productie een specifieke modelversie vast waar uw aanbieder dat mogelijk maakt - OpenAI publiceert bijvoorbeeld gedateerde model-snapshots - in plaats van altijd de nieuwste alias aan te roepen. Houd ten tweede een kleine evaluatieset bij van echte (geanonimiseerde) gebruikersinvoer met bekende goede output, en draai die vóór elke wijziging van model of prompt. Rol ten derde wijzigingen eerst uit naar een klein deel van de gebruikers en vergelijk gebruik en feedback voordat u iedereen overzet. Zo wordt een modelupgrade geen churnrisico, maar een gecontroleerde release.
+
+## Onvrijwillige Churn: Mislukte Betalingen die u Kunt Terugwinnen
+
+Onvrijwillige churn is het verlies van klanten die niet hebben besloten te vertrekken, maar van wie de betaling is mislukt, en het is vaak de churn die het makkelijkst te verlagen is. Kaarten verlopen, banken weigeren transacties en in de EU kunnen de PSD2-regels voor sterke klantauthenticatie (Strong Customer Authentication) een extra bevestigingsstap vereisen waarop sommige verlengingen stranden.
+
+Stripe Billing bevat hiervoor hulpmiddelen: Smart Retries, dat mislukte betalingen op gunstigere momenten opnieuw probeert, automatische kaartupdates voor veel kaartnetwerken en aanpasbare e-mails die klanten vragen hun betaalgegevens bij te werken. Schakel deze in, toon een in-app-banner aan de eigenaar van de werkruimte wanneer een betaling mislukt, en geef klanten een respijtperiode voordat u de toegang beperkt. Een klant die alleen een kaart hoeft bij te werken, mag nooit zijn werk kwijtraken.
+
+## Hoe Verlaagt u Klantverloop in een AI SaaS-Platform Stap voor Stap?
+
+Een programma om churn te verlagen werkt het best als vaste volgorde: meten, segmenteren, het grootste lek dichten en dan automatiseren. Volg deze stappen:
+
+1. **Meet churn per soort en per cohort.** Splits opzeggingen uit naar aanmeldmaand, pakket en de soort churn uit de tabel hierboven.
+2. **Voeg een korte opzegvraag toe.** Stel één verplichte vraag met vaste antwoorden, zoals "niet meer nodig", "te duur", "outputkwaliteit" of "overgestapt naar andere tool".
+3. **Vind het grootste lek.** Pak eerst de soort churn aan die de meeste omzet kost, niet de soort die het makkelijkst te bouwen is.
+4. **Lever de passende oplossing.** Begeleide onboarding voor onboarding-churn, een pauze-optie voor periodieke churn, vastgezette modelversies voor kwaliteitschurn.
+5. **Automatiseer de gezondheidsscore.** Koppel de leidende indicatoren die hierboven zijn beschreven aan meldingen voor uw Customer Success-team.
+6. **Evalueer maandelijks.** Vergelijk het cohort dat de oplossing kreeg met eerdere cohorten en behoud alleen de wijzigingen die de retentie aantoonbaar verbeteren.
+
+## Veelgemaakte Fouten in de Strijd tegen AI-Churn
+
+De meest gemaakte churnfout is iedere gebruiker die op opzeggen klikt een korting aanbieden. Dat leert klanten te dreigen met opzeggen en doet niets aan de werkelijke oorzaak. Kortingen kunnen helpen bij prijsgevoelige gebruikers, maar alleen wanneer de opzegvraag aangeeft dat de prijs het probleem is. Vermijd ook deze fouten:
+
+- **De opzegknop verstoppen.** Opzeggen moeilijk maken levert boze klanten en chargebacks op, en lost churn niet op.
+- **Data direct na opzegging verwijderen.** Bewaar data gedurende een duidelijke, vermelde periode zodat heractivatie eenvoudig blijft, in lijn met uw privacyverklaring en het AVG-beginsel van opslagbeperking.
+- **Alleen maandgemiddelden meten.** Gemiddelden verbergen of nieuwe cohorten beter behouden blijven dan oudere.
+- **Stille gebruikers negeren.** Klanten die betalen maar niet meer inloggen, zijn de volgende opzeggingen. Neem vóór de verlengingsdatum contact op.
 
 ## Belangrijkste Inzichten
 

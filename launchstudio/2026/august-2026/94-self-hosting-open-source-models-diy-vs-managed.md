@@ -62,6 +62,42 @@ None of this means self-hosting is a mistake. For founders with genuine in-house
 
 Founders weighing this decision can use a rough gut-check before commissioning a full cost analysis: if nobody on the current team has hands-on production experience running GPU infrastructure - not "read about it," but has actually been on call for one - treat self-hosting as a managed engagement from day one rather than a DIY weekend project. The per-token savings on a spreadsheet are real, but they're savings that only materialize once the operational discipline exists to capture them reliably; without it, the "savings" are just deferred costs waiting to show up as downtime, security exposure, or emergency firefighting a few weeks later, exactly as they did for Felix.
 
+## DIY vs. Managed Self-Hosting of Open-Source Models: Side by Side
+
+Self-hosting open-source models means running the model weights on infrastructure you control, usually a GPU instance with an inference server such as vLLM or Hugging Face Text Generation Inference, instead of calling a provider's hosted API. The difference between the DIY and managed versions of that setup is not the model, but who owns the operational work around it:
+
+| Area | DIY self-hosting | Managed self-hosting |
+|---|---|---|
+| Setup | A weekend deployment on one instance | Provisioned, monitored infrastructure from day one |
+| Monitoring and alerts | Usually none until customers complain | Automated alerts on latency, errors, and GPU health |
+| Security patching | Manual, often forgotten | Scheduled updates for drivers, CUDA, and the inference server |
+| Failover | Single point of failure | Redundant instances plus a commercial API fallback |
+| Performance tuning | Default settings | Batching, quantization, and caching tuned to real traffic |
+| Model updates | Frozen at the first deployed version | Planned evaluation and redeployment of newer releases |
+| Hidden cost | Founder and engineer time, downtime risk | Visible in the engagement price |
+
+Both columns run the same open-source model. What changes is whether the reliability work is done on purpose or left to chance.
+
+## How to Decide Whether to Self-Host Open-Source Models
+
+The decision to self-host open-source models comes down to four questions, and you should only move ahead when you can answer most of them with a confident yes. Work through them in this order:
+
+1. **Is the volume high and steady enough?** GPU instances cost money whether they are busy or idle. Self-hosting pays off when utilization stays high most of the day, not when traffic arrives in short bursts.
+2. **Is there a real data-control requirement?** If a customer contract or regulation demands that prompts never leave your own environment, self-hosting may be the cleanest answer. If not, a commercial API with suitable data-processing terms may be simpler.
+3. **Does the model licence fit your use?** Check the licence before you build on it. Some Mistral models are released under Apache 2.0, while Meta's Llama models come with their own community licence and acceptable-use policy, which add conditions you need to read.
+4. **Who is on call?** Someone has to respond when a GPU driver fails at 3 a.m. If that person does not exist yet, plan for a managed setup or a fallback API from the start.
+
+If the honest answers are "yes, yes, yes, nobody," the hybrid route described above is usually the safest first step: self-host the high-volume work, keep a commercial API behind it, and build operational maturity before shifting more traffic.
+
+## Common Mistakes When Self-Hosting Open-Source Models
+
+The most expensive self-hosting mistake is comparing a GPU rental price with an API invoice and calling the difference savings. Other mistakes come up again and again:
+
+- **Sizing the GPU for average load instead of peak.** Queues build quickly when several long documents arrive at once.
+- **Skipping evaluation after quantization.** A smaller, faster model version can lose accuracy on exactly the edge cases your customers care about. Test it against real examples first.
+- **No fallback path in the code.** If the application can only call one endpoint, any outage becomes a full product outage.
+- **Exposing the inference server publicly.** The model endpoint should sit behind your application with authentication, not on an open port.
+
 ## Key Takeaways
 
 - A per-token cost comparison between commercial APIs and self-hosted open-source models routinely omits GPU availability risk, inference optimization work, security patching, and failover engineering - the real drivers of a self-hosted model's total cost.

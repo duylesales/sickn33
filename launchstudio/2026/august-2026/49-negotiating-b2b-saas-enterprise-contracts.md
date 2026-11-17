@@ -40,6 +40,71 @@ Two clauses founders routinely forget to negotiate: who owns derivative work pro
 
 Enterprise contract negotiation is ultimately a proxy for a deeper question the buyer is really asking: *can this vendor be trusted to run production-grade, secure infrastructure for years, not just demo it once?* That's the same question Manifera has been answering for enterprise clients like Vodafone and TNO since it was founded in **2014**, building 160+ delivered projects from its Amsterdam HQ at Herengracht 420. As Herre Roelevink, Founder & Managing Director of Manifera, puts it: "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's now about the architecture and security needed to bring those products to maturity. We have eleven years of experience in exactly that." That track record is documented on [Manifera's About Us page](https://www.manifera.com/about-us/).
 
+## What Is an Enterprise MSA?
+
+An enterprise Master Services Agreement (MSA) is the umbrella contract that sets the legal rules for the whole relationship - liability, warranties, confidentiality, IP, payment and termination - while separate Order Forms define what is bought, for how long and at what price. The Data Processing Addendum (DPA), the SLA and the security exhibit usually hang off the MSA as schedules.
+
+This structure matters for an AI SaaS platform startup because the MSA is negotiated once and then reused. If you concede uncapped liability in the MSA, it applies to every renewal, every expansion and every new department that signs an Order Form under it.
+
+## How Do Security Questionnaires Affect Your Contract?
+
+Security questionnaires affect your contract because procurement often attaches your answers to the agreement as a security exhibit or treats them as representations you make, so an optimistic answer in a spreadsheet can become a contractual promise. Before the MSA is final, most enterprise buyers send a standard questionnaire such as the Shared Assessments SIG, the Cloud Security Alliance CAIQ, or their own in-house list of a few hundred questions.
+
+Treat these answers with the same care as contract language:
+
+- **Answer what is true today, not what is on your roadmap.** If you do not yet have SOC 2 Type II or ISO 27001 certification, say so and describe the controls you do have.
+- **Keep one master answer library.** Store approved answers in one place so that sales, engineering and the founders give consistent responses across deals.
+- **Prepare an AI section.** Buyers now ask which LLM providers you use, where prompts are processed, whether customer data is used for model training, and how you prevent prompt injection and data leakage between tenants.
+- **Link answers to evidence.** A short security overview, a sub-processor list, a penetration test summary and your incident response policy answer a large share of questions before they are asked.
+
+## AI-Specific Clauses Enterprise Buyers Now Add
+
+Enterprise buyers now add clauses that address how your AI SaaS platform handles their data inside third-party models, and these clauses deserve as much attention as liability and payment terms.
+
+### No training on customer data
+
+Expect a clause stating that customer data, prompts and outputs will not be used to train or fine-tune models. Before you sign, check that your own LLM providers' business terms support this. OpenAI and Anthropic, for example, state that data sent through their commercial APIs is not used for training by default, but you must confirm the current terms of every provider you actually use.
+
+### Sub-processors and GDPR Article 28
+
+Under GDPR Article 28, your DPA must set out that you process personal data only on the customer's documented instructions, keep it confidential, apply appropriate security measures, engage sub-processors only with the customer's authorisation, assist with data subject requests, delete or return data at the end of the contract, and make information available for audits. Your LLM provider, vector database host and cloud provider are all sub-processors. List them, and agree on a notice period for adding new ones instead of requiring prior written consent for every change.
+
+### Output ownership and AI warranties
+
+Buyers may ask you to warrant that AI output is accurate or does not infringe third-party rights. Avoid absolute warranties for probabilistic output. Instead, commit to process: human review options, citation features, logging and a documented model change policy.
+
+## Common Procurement Asks vs. Startup-Safe Positions
+
+| Clause | Typical procurement ask | Startup-safe position |
+|---|---|---|
+| Contract template | Their Paper | Our Paper, or Their Paper with your DPA and SLA attached |
+| Limitation of liability | Unlimited | 1x-2x ACV, with narrow carve-outs |
+| SLA remedy | Cash penalties | Service Credits on a sliding scale |
+| Third-party outages | Counted against the SLA | Excluded from uptime calculation |
+| Payment terms | Net 90 | Net 30, or Net 60 traded against discount |
+| Audit rights | On-site audits on demand | Annual audit via reports and questionnaires, with notice |
+| Sub-processor changes | Prior written consent | Advance notice with a right to object |
+| Model training | Silent or ambiguous | Explicit "no training on customer data" commitment |
+
+## Common Mistakes in Enterprise SaaS Negotiations
+
+The most expensive mistakes in enterprise contract negotiation are usually made out of eagerness to close, not ignorance of the law.
+
+- **Negotiating clause by clause without priorities.** Decide in advance which three points you will not move on, such as the liability cap, the SLA remedy and payment terms, and where you can be generous.
+- **Promising features in the contract.** A roadmap item written into an Order Form becomes a delivery obligation with a deadline.
+- **Letting the champion disappear.** Keep your internal sponsor involved, because they can escalate when procurement stalls on minor points.
+- **Ignoring renewal and price increase terms.** A cap on annual price increases that is too low can lock you into unprofitable pricing for years.
+- **Signing before the infrastructure is real.** If the contract promises data isolation, SSO or audit logging, it must already exist or have a realistic delivery date.
+
+## How to Negotiate an Enterprise SaaS Contract: Step by Step
+
+1. **Send your paper first.** Share your MSA, DPA and SLA as soon as the champion confirms intent, before procurement sends theirs.
+2. **Complete the security questionnaire early.** Use your answer library, and flag any gaps honestly.
+3. **Agree on your walk-away points internally.** Write down the minimum liability cap, payment term and SLA remedy you will accept.
+4. **Redline in one round where possible.** Return a complete, explained markup rather than drip-feeding changes.
+5. **Trade, do not concede.** Exchange payment terms for discount, longer commitments for price protection, and audit rights for better notice periods.
+6. **Check that delivery matches the paper.** Before signing, confirm your engineering team can actually meet every technical commitment in the final draft.
+
 ## Key Takeaways
 
 - Always attempt to negotiate using 'Our Paper' (your startup's standard contract). Enterprise contracts are structurally hostile to startups and expensive to redline - budget $8,000-$15,000 in legal fees if forced onto theirs.
@@ -53,6 +118,8 @@ Enterprise contract negotiation is ultimately a proxy for a deeper question the 
 - Fight aggressively against 'Net 90' payment terms. Waiting three months for payment can destroy startup cash flow; demand 'Net 30' and use pricing discounts as a negotiating trade rather than conceding outright.
 
 - Negotiate a bounded Termination Assistance period for data export, and make sure your MSA clearly protects your underlying platform IP even when built partly around one customer's requirements.
+
+- Treat security questionnaire answers and AI clauses (no training on customer data, GDPR Article 28 sub-processor terms) as binding contract language, because procurement often attaches them to the agreement.
 
 ## Close the Deal Without Losing the Company
 

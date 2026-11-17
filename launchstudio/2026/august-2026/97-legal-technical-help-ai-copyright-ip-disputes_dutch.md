@@ -77,6 +77,40 @@ Een AI-auteursrecht- of IP-geschil is tegelijkertijd een juridisch en een techni
 
 Oprichters die nog geen geschil hebben meegemaakt, kunnen een nuttig vroeg signaal krijgen door hun eigen advocaat één directe vraag te stellen: "Als er morgen een auteursrecht- of IP-kennisgeving zou binnenkomen, welke specifieke technische documentatie zou u dan in de eerste 48 uur van ons nodig hebben, en hebben we die momenteel?" De meeste advocaten kunnen de eerste helft van die vraag duidelijk beantwoorden, gebaseerd op algemene ervaring met geschillen. De tweede helft is meestal waar oprichters de kloof ontdekken, omdat het iemand vereist die daadwerkelijk naar de codebase heeft gekeken, niet alleen naar het juridische landschap - precies waarom dit een gesprek tussen twee personen is, advocaat en engineer samen, in plaats van een vraag die één van beiden volledig alleen kan beantwoorden.
 
+## Wat is juridisch-technische hulp bij een AI-auteursrechtgeschil?
+
+Juridisch-technische hulp bij een AI-auteursrechtgeschil is engineeringwerk dat naast uw advocaat wordt uitgevoerd om het bewijs te leveren dat een juridische reactie nodig heeft: waar de trainingsdata vandaan kwamen, hoe een specifieke output is gegenereerd en hoeveel die daadwerkelijk overlapt met het materiaal uit de claim. De advocaat bepaalt de strategie en spreekt namens het bedrijf. Het engineeringteam zoekt, bewaart en documenteert de feiten in uw systemen, zodat die strategie op bewijs rust in plaats van op aannames.
+
+## Wanneer schakelt u juridisch-technische hulp in? Een beslissingskader
+
+U schakelt juridisch-technische hulp in bij een AI-auteursrecht- of IP-geschil zodra een claim een vraag stelt die alleen uw codebase, datapijplijn of logs kunnen beantwoorden. De aanleiding is het soort vraag, niet de omvang van de dreiging. Deze tabel koppelt veelvoorkomende situaties aan de juiste eerste stap:
+
+| Situatie | Urgentie | Wie leidt | Eerste technische actie |
+|---|---|---|---|
+| DMCA-takedownverzoek voor specifieke outputs | Hoog, de reactietermijn is kort | Advocaat | De betwiste outputs en hun generatielogs opsporen en veiligstellen |
+| Sommatiebrief over training op beschermd werk | Hoog | Advocaat | De bronnen van trainings- en fine-tuningdata inventariseren en documenteren |
+| Enterprise-klant vraagt naar trainingsdata en rechten op output | Gemiddeld, afhankelijk van de deal | Oprichter, met review door de advocaat | Een samenvatting van de herkomst opstellen en de outputlogging beschrijven |
+| Vragen over transparantieplichten onder de EU AI Act | Gemiddeld | Advocaat | Nagaan welke documentatie over trainingscontent al bestaat |
+| Nog geen claim, maar ook geen herkomstregistratie | Vandaag laag, later hoog | Engineering | Nu beginnen met herkomstregistratie en generatielogging |
+
+In de EU beweegt het regelgevende kader in dezelfde richting. De EU AI Act verplicht aanbieders van AI-modellen voor algemene doeleinden een beleid voor naleving van het auteursrecht te hanteren en een voldoende gedetailleerde samenvatting te publiceren van de content die voor training is gebruikt, en de regels voor tekst- en datamining in artikel 4 van de Auteursrechtrichtlijn (EU) 2019/790 stellen rechthebbenden in staat zich af te melden voor commerciële datamining. Of deze plichten op u van toepassing zijn, hangt af van uw rol, en dat is een vraag voor uw advocaat. Het bewijs waarop ze steunen is hoe dan ook technisch.
+
+## Wat doet u in de eerste 72 uur na een AI-auteursrechtkennisgeving?
+
+Het belangrijkste in de eerste 72 uur na een AI-auteursrechtkennisgeving is bewijs veiligstellen en uw systemen niet zo aanpassen dat dat bewijs verloren gaat. Een praktische volgorde:
+
+1. **Stuur de kennisgeving direct door naar uw advocaat** en spreek af wie met de wederpartij communiceert. Reageer niet zelf op informele wijze.
+2. **Bevries verwijdering.** Zet automatische logrotatie, het opschonen van datasets of het opnieuw trainen van modellen stil als daardoor relevante data overschreven kunnen worden.
+3. **Leg de huidige toestand vast.** Noteer de modelversie, de fine-tuningdataset, de prompts en de configuratie die in gebruik zijn, met datums.
+4. **Zoek de betwiste outputs op.** Gebruik de voorbeelden uit de kennisgeving om overeenkomende generaties en hun inputs te vinden, als er logs bestaan.
+5. **Maak een lijst van wat u niet kunt beantwoorden.** Een duidelijke lijst van leemtes helpt uw advocaat te bepalen wat er gezegd en wat er onderzocht moet worden.
+6. **Begin met herkomstdocumentatie.** Leg voor elke dataset die u kunt identificeren de bron, de licentie en de datum van verkrijging vast.
+7. **Stem elke productwijziging af met uw advocaat.** Een functie uitschakelen kan verstandig zijn, maar het moet een beslissing zijn waarvan uw advocaat op de hoogte is.
+
+## Veelgemaakte fouten van oprichters bij AI-IP-geschillen
+
+De meest schadelijke fout is het stilletjes verwijderen van de betreffende dataset of outputs. Dat kan eruitzien als het vernietigen van bewijs en verzwakt uw positie veel meer dan de oorspronkelijke overlap. Andere veelgemaakte fouten zijn rechtstreeks aan de eiser antwoorden voordat u met een advocaat heeft gesproken, aannemen dat de voorwaarden van een modelprovider automatisch uw fine-tuningdata dekken, en het geschil als afgesloten beschouwen zodra het is geschikt, zonder de logging toe te voegen die het volgende geschil eenvoudiger zou maken.
+
 ## Belangrijkste inzichten
 
 - Een AI-auteursrecht- of IP-geschil hangt sterk af van technisch bewijs - herkomst van trainingsdata, output-traceerbaarheid, generatielogging - dat de meeste door AI-builders gegenereerde producten standaard niet produceren.

@@ -40,6 +40,60 @@ Herre Roelevink, Founder & Managing Director of Manifera, sees this shift direct
 
 If you are an AI-native founder building for the European market, the practical checklist looks different from a US-focused playbook: host your data in an EU region from day one rather than migrating later under deal pressure, document your data flows before a prospect's legal team asks for them, choose infrastructure providers with clear GDPR processing agreements, and be able to explain in plain language exactly what happens to a customer's data at every step. This is unglamorous work compared to shipping a new AI feature, but it is precisely the work that turns a promising European AI prototype into a contract-signable product - and it is also, not coincidentally, where the roughly 45% vulnerability rate found in unreviewed AI-generated code becomes a genuine deal-breaker rather than an abstract statistic, since a single failed penetration test can stall a six-figure enterprise contract for months.
 
+## What Skills Does AI Software Engineering Require for the European Market?
+
+AI software engineering for the European B2B market requires less model research and more integration, security and compliance engineering. The scarce skill is not training a model; it is wiring a commodity model into a business workflow in a way that survives a procurement audit.
+
+For most application-layer startups, the capabilities that matter break down like this:
+
+| Capability | What it covers | Why European buyers care |
+|---|---|---|
+| Backend and integration engineering | APIs, background jobs, connections to ERP, CRM and legacy systems | Vertical AI only creates value when it plugs into the systems the enterprise already runs |
+| LLM application engineering | Prompting, retrieval (RAG), evaluation, model-agnostic adapters | Lets you switch between providers such as OpenAI, Anthropic or Mistral AI, or deploy an open-weight model in the client's own cloud |
+| Security engineering | Authentication, authorisation, secrets management, penetration testing | Security questionnaires and penetration tests are standard gates in enterprise procurement |
+| Data protection engineering | Data mapping, retention rules, EU hosting, deletion workflows | GDPR obligations have to be demonstrable in the architecture, not just stated in a policy |
+| AI governance | Risk classification under the EU AI Act, logging, human oversight | Buyers increasingly ask how an AI system is classified and controlled before they sign |
+
+Very few early-stage teams have all five capabilities in-house. That is normal. What matters is knowing which ones your product needs before the first enterprise deal, and where you will get them.
+
+## How to Hire for AI Software Engineering: A Step-by-Step Approach
+
+The most effective way for a European founder to staff AI software engineering is to hire for the product's core workflow and to source specialist security and compliance work deliberately, instead of hoping a generalist will cover everything. A practical sequence:
+
+1. **Define the workflow before the role.** Write down the one business process your product automates and the systems it must connect to. That tells you whether you need integration depth, retrieval expertise or both.
+2. **Separate core from specialist work.** Product logic and customer-facing features are core and usually belong close to the founder. Security reviews, infrastructure hardening and data protection architecture are specialist work that many startups source from a partner.
+3. **Test for production thinking, not demos.** In technical interviews, ask candidates how they would store API keys, isolate tenant data, log model calls and handle a data subject's deletion request. These answers reveal far more than a slick prototype.
+4. **Check European context.** Ask how they would host data in an EU region, what a Data Processing Agreement under GDPR Article 28 must cover, and when a Data Protection Impact Assessment under GDPR Article 35 is required.
+5. **Plan for review capacity.** If your team relies heavily on AI coding tools such as Cursor, Lovable or Bolt, budget for experienced reviewers who check the generated code for security gaps before it reaches production.
+6. **Choose the hiring model last.** Only once the work is clear should you decide between in-house hires, freelancers, a dedicated team or a fixed-scope engagement.
+
+### Should you hire in-house or work with an engineering partner?
+
+You should hire in-house for the skills that define your product and change every week, and use a partner for the hardening, security and compliance work that is critical but episodic. Hiring a full-time security engineer before you have paying enterprise customers is expensive; skipping security work until a prospect's audit fails is more expensive. A fixed-scope engagement, such as LaunchStudio's Launch Ready package (€800-€3,500), is designed for exactly that gap between a working prototype and a product that can pass review.
+
+## EU Compliance Checklist for AI Data Security
+
+AI data security in Europe comes down to being able to show, on request, where data goes, who processes it and what controls apply. Before your first enterprise sales cycle, check that you can tick off each of these:
+
+- **Data map.** A current diagram of every system that stores or processes customer data, including model providers and vector databases.
+- **EU hosting.** Production databases and file storage in an EU region, with backups in the same jurisdiction.
+- **Processor agreements.** A Data Processing Agreement for your own customers that meets GDPR Article 28, plus a published list of your sub-processors.
+- **International transfers.** If any provider processes data outside the EU, a documented legal basis such as Standard Contractual Clauses or certification under the EU-US Data Privacy Framework.
+- **DPIA where required.** A Data Protection Impact Assessment for processing that is likely to result in high risk, which is common for AI systems handling personal data at scale.
+- **EU AI Act classification.** A written assessment of whether your system falls into a high-risk category, and how you meet the transparency obligations that apply when users interact with an AI system.
+- **Retention and deletion.** Defined retention periods and a tested process for deleting a customer's data, including from logs and embeddings.
+- **Access control and logging.** Role-based access, tenant isolation and audit logs for both human and AI actions.
+
+## Common Mistakes European AI Founders Make
+
+The most expensive mistake is postponing compliance architecture until a deal depends on it. Other recurring errors include:
+
+- **Choosing a US-only region by default.** Many AI app builders and backend platforms default to US hosting. Migrating later, under deadline pressure, costs far more than choosing an EU region on day one.
+- **Assuming the model provider handles GDPR for you.** Your provider's terms cover its own processing. Your obligations as a processor to your customers remain yours.
+- **Sending more data to the model than necessary.** Data minimisation is a GDPR principle. Strip identifiers that the model does not need to perform the task.
+- **Building for one model only.** Hard-coding a single US API makes it difficult to offer a sovereign alternative when a client requires Mistral AI or a self-hosted open-weight model.
+- **Treating compliance documents as paperwork.** Procurement teams compare your documentation with your actual architecture. A policy that the code does not enforce is a liability, not an asset.
+
 ## Key Takeaways
 
 - The US dominates the "Model Layer" (the raw intelligence), but intelligence is commoditizing into a basic utility. The true value lies in the "Application Layer" - building secure, compliant workflows on top of the models.
@@ -51,6 +105,8 @@ If you are an AI-native founder building for the European market, the practical 
 - European startups should avoid building broad, generic AI tools and focus intensely on "Vertical AI" - solving highly specific, localized problems for traditional European industries like manufacturing, banking, or shipping.
 
 - The success of European AI founders relies on deployment, integration, and compliance discipline - not trying to out-spend Silicon Valley on GPU clusters.
+
+- Hiring for AI software engineering in Europe means prioritising integration, security and data protection skills over model research, and sourcing episodic hardening work from a partner when it is not core to the product.
 
 ## Build for the European Enterprise
 

@@ -37,13 +37,59 @@ These tools solve overlapping but distinct problems, and many production AI apps
 
 Sometimes you need more than a single page. If a user uploads a URL to their company's help center and says, "Build an AI chatbot based on my website," you need to scrape the entire domain.
 
-Firecrawl and similar APIs offer **Crawl endpoints**. You pass the root domain URL, and the API autonomously navigates the sitemap, visits every subpage up to a configurable depth or page limit, scrapes the content, and returns a structured array of Markdown documents. Your Next.js backend then loops through this array, chunks the text (typically 500–1000 tokens per chunk with some overlap), creates vector embeddings, and stores them in a vector-enabled Postgres setup like Supabase with `pgvector` - instantly creating a fully functioning RAG knowledge base without writing a single custom crawler or link-follower.
+Firecrawl and similar APIs offer **Crawl endpoints**. You pass the root domain URL, and the API autonomously navigates the sitemap, visits every subpage up to a configurable depth or page limit, scrapes the content, and returns a structured array of Markdown documents. Your Next.js backend then loops through this array, chunks the text (typically 500-1000 tokens per chunk with some overlap), creates vector embeddings, and stores them in a vector-enabled Postgres setup like Supabase with `pgvector` - instantly creating a fully functioning RAG knowledge base without writing a single custom crawler or link-follower.
 
 ## Respecting robots.txt and Legal Boundaries
 
 Scraping infrastructure is powerful enough that it's easy to forget scraping isn't legally or ethically unlimited. Respecting `robots.txt` directives, rate-limiting your own requests to avoid degrading a target site's performance, and avoiding scraping content explicitly behind authentication or paywalls without permission are not just good citizenship - several high-profile lawsuits in the past few years have turned on exactly these distinctions. Building a scraping feature into a commercial product without at least a documented policy on what you will and won't scrape is a liability gap that tends to surface only when a target site's legal team notices unusual traffic patterns.
 
 This is the kind of production-maturity gap Manifera, the company behind LaunchStudio, has been closing since **2014**, with 11+ years of engineering experience across 160+ delivered projects for clients including Vodafone and TNO. "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's now about the architecture and security needed to bring those products to maturity. We have eleven years of experience in exactly that," says Herre Roelevink, Founder & Managing Director of Manifera.
+
+## What Is Web Scraping for AI?
+
+Web scraping for AI is the automated retrieval of live web pages, followed by rendering, cleaning and converting them into compact text or structured data that a language model can use as context. The goal is not to copy a website, but to give the model current, relevant facts with as little noise as possible.
+
+That definition explains why "scraping" for AI is a pipeline rather than a single request. Fetching the page is the easy part. Rendering JavaScript, getting past bot protection, stripping boilerplate, and storing the result in a form your RAG system can search are where the engineering effort goes.
+
+## Firecrawl vs Browserless: Side-by-Side Comparison
+
+The short answer: Firecrawl is the faster path to clean, LLM-ready content, while Browserless gives you full control over a real browser. The table below sums up the trade-offs discussed above.
+
+| Criterion | Firecrawl | Browserless |
+|---|---|---|
+| Primary output | Clean Markdown, plain text or structured JSON | Rendered page, DOM, screenshots or PDFs |
+| Level of control | High-level API: scrape, crawl, extract | Full Puppeteer or Playwright scripting |
+| Logins and multi-step flows | Limited | Strong fit |
+| Whole-domain crawling | Built-in crawl endpoint | You write the crawler logic yourself |
+| HTML cleaning | Done for you | You build or add your own cleaning step |
+| Engineering effort | Low | Medium to high |
+| Typical role in production | Default path for content ingestion | Fallback for complex or authenticated sites |
+
+Because the two overlap, the real decision is usually not "which one" but "which one is the default path and which one handles the exceptions".
+
+## How to Build a Scraping Pipeline: An AI Code Development Workflow
+
+A production scraping pipeline for an AI app moves through seven stages, and each stage protects the next one from bad input:
+
+1. **Define the allowed sources.** Keep an allowlist of domains, or rules for which user-submitted URLs you accept, and check `robots.txt` before the first request.
+2. **Check your cache first.** Store each scraped URL with a timestamp and a content hash, and only re-scrape when the cached version is older than your freshness window.
+3. **Fetch through the right tool.** Send standard pages through Firecrawl, and route only the known complex sites to a Browserless script.
+4. **Set timeouts and retry limits.** Every request gets a maximum duration and a small, fixed number of retries with backoff, so one slow site cannot block a whole job.
+5. **Clean and validate.** Confirm that the returned Markdown is not empty, not a cookie wall and not a "please verify you are human" page before you pass it on.
+6. **Chunk, embed and store.** Split content, create embeddings and store them with the source URL and scrape date, so answers can cite where facts came from.
+7. **Run it in the background.** Execute crawls in a queue or background job instead of inside a user-facing API route that will time out.
+
+## Common Mistakes When Scraping for AI Apps
+
+The most dangerous mistake is treating scraped text as trusted input. A web page can contain hidden instructions aimed at your model, such as white-on-white text telling it to ignore previous instructions. This is indirect prompt injection, and the defence is to keep scraped content clearly separated from your system instructions and never let it trigger actions on its own.
+
+Other recurring mistakes:
+
+- **Scraping the same page over and over.** Without caching, a popular URL gets fetched on every user request, which multiplies cost and makes blocks more likely.
+- **Ignoring personal data.** Scraping pages about people, such as team pages or public profiles, is still processing personal data under the GDPR. You need a lawful basis, and Article 14 requires informing people whose data you collect indirectly, with only narrow exceptions.
+- **Overlooking text and data mining opt-outs.** Under Article 4 of the EU Copyright Directive (2019/790), rightsholders can reserve their content from text and data mining in a machine-readable way. Respect those reservations in your crawler policy.
+- **Silent failures.** A scraper that returns an empty string when blocked looks like success unless you monitor content length and error rates per domain.
+- **No per-customer limits.** If users can submit URLs, cap crawl depth and page count per account, or one customer can trigger an enormous crawl bill.
 
 ## Key Takeaways
 

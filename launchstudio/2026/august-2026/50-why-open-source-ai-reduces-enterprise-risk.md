@@ -50,6 +50,63 @@ This mirrors LaunchStudio's own approach to production-hardening AI-native proto
 
 Open source isn't free of cost or complexity - it trades API fees for infrastructure and MLOps overhead. You now own GPU provisioning, model serving latency, scaling under load, and the security patching of your own inference stack, which is real engineering effort that a pure API call doesn't require. It only pays off once you have either meaningful volume (where the token-cost savings outweigh hosting costs) or a specific enterprise requirement (VPC deployment, data sovereignty) that a closed API structurally cannot satisfy. For an early-stage product still finding product-market fit, starting on a closed API and adding open-source routing once you have real usage and real enterprise demand is usually the more capital-efficient sequencing - roughly 80% of AI-built projects never reach production at all, and premature infrastructure investment is a common way to burn runway before you've validated anything worth protecting.
 
+## What Is Data Sovereignty in AI?
+
+Data sovereignty in AI means that the data your AI system processes - prompts, documents, embeddings and outputs - stays under the legal and physical control of a jurisdiction and an organisation the customer has chosen, instead of passing through infrastructure run by a third party they cannot audit. For a European buyer, that usually means EU-hosted infrastructure, a known list of sub-processors, and no transfer of personal data outside the EU without a valid GDPR transfer mechanism.
+
+Self-hosting an open-weight model is the most direct way to deliver data sovereignty, because the inference step - the moment sensitive text is actually read by the model - happens on infrastructure you or the client control.
+
+## Open-Weight Is Not Always Open-Source: Check the License
+
+Before you build your AI deployment around a model, read its license, because "open" models come with very different terms. Some are released under permissive licenses such as Apache 2.0, which Mistral has used for several of its models, and allow broad commercial use. Others, such as Meta's Llama models, ship under a custom community license with an acceptable use policy and additional conditions for very large platforms.
+
+For a B2B SaaS startup, three questions matter most:
+
+- **Can you use it commercially** inside a paid product, including in a client's own cloud account?
+- **Are there use restrictions** that conflict with your sector, such as limits in an acceptable use policy?
+- **What must you pass on** to customers, such as attribution notices or a copy of the license, when you ship the weights inside their VPC?
+
+Enterprise legal teams will ask these questions during procurement, so record the license of every model in your stack alongside your software bill of materials.
+
+## How to Self-Host an Open-Source Model: Step by Step
+
+Self-hosting a model for production follows a predictable sequence, and skipping the evaluation step is the most common reason projects stall.
+
+1. **Define the workload.** Write down the task (classification, extraction, summarisation, chat), the expected volume, the latency target and the data sensitivity.
+2. **Shortlist two or three models.** Compare open-weight models of different sizes, since a smaller model that fits on one GPU is often enough for narrow tasks.
+3. **Evaluate on your own data.** Build a test set of real, anonymised examples and score each candidate against your current closed-API baseline before committing.
+4. **Choose a serving stack.** Inference servers such as vLLM or Hugging Face Text Generation Inference are common production choices, while Ollama is popular for local development.
+5. **Optimise for cost.** Consider quantisation to reduce memory needs, and measure the quality impact on your test set.
+6. **Deploy inside the right perimeter.** Run the model in your own EU cloud account or package it for the client's VPC with Kubernetes, with network policies that block outbound traffic from the inference service.
+7. **Pin and verify the weights.** Store the exact checkpoint with a checksum, so you can prove which model version produced which output.
+8. **Monitor and plan upgrades.** Track latency, GPU utilisation and output quality, and treat a model upgrade as a release with its own evaluation run.
+
+## Closed API vs. Self-Hosted Open Model vs. Hybrid
+
+| Factor | Closed API only | Self-hosted open model | Hybrid with routing |
+|---|---|---|---|
+| Data leaves your perimeter | Yes | No | Only for routed tasks |
+| VPC deployment for clients | Usually not possible | Possible | Possible for sensitive tasks |
+| Model behaviour can change without you | Yes | No | Partly |
+| Upfront engineering effort | Low | High | Medium |
+| Cost at low volume | Low | High (idle GPUs) | Medium |
+| Cost at high volume | High | Lower | Lower |
+| Frontier reasoning quality | Highest | Varies by model | Available when needed |
+| MLOps responsibility | Provider | You | Shared |
+
+## Does Self-Hosting Solve GDPR and EU AI Act Compliance?
+
+Self-hosting solves part of the compliance problem, not all of it. Keeping inference inside the EU removes an external LLM provider as a sub-processor and avoids international data transfers under GDPR Chapter V for that step. It does not change your role as controller or processor, your obligations on lawful basis, data minimisation and security, or your duty to sign a GDPR Article 28 agreement with the client when you process data on their behalf.
+
+The EU AI Act works the same way. Obligations for general-purpose AI models fall mainly on the model provider, while obligations for high-risk use cases depend on what your product does with the model, not on where it runs. A self-hosted model used for credit scoring or recruitment still needs the logging, human oversight and documentation the Act requires for high-risk systems.
+
+## Common Mistakes When Self-Hosting AI Models
+
+- **Overprovisioning GPUs before demand exists.** Idle GPU capacity is expensive. Start with autoscaling or serverless GPU options and move to reserved capacity once usage is predictable.
+- **Skipping security hardening.** An inference endpoint without authentication, rate limits and network isolation is an AI security risk in its own right.
+- **Treating the model as "done".** Open models still need evaluation, monitoring and a patching process for the serving stack and its dependencies.
+- **Ignoring the client's operations team.** In a VPC deployment, the client's team must be able to run, update and roll back your container, so ship clear runbooks with it.
+
 ## Key Takeaways
 
 - Building exclusively on closed APIs creates real Platform Risk. You are vulnerable to sudden pricing changes, moderation policy shifts, and silent model drift or deprecation.
@@ -63,6 +120,8 @@ Open source isn't free of cost or complexity - it trades API fees for infrastruc
 - Use open models for high-volume, lower-complexity tasks to cut token costs by 70-90% on that workload, reserving expensive closed APIs for the reasoning tasks that actually need frontier quality.
 
 - Open source trades API fees for real infrastructure and MLOps overhead - it's usually the right sequencing once you have volume or a specific enterprise VPC requirement, not necessarily on day one.
+
+- Self-hosting delivers data sovereignty, but check every model license and remember that GDPR and EU AI Act obligations still depend on what your product does, not where the model runs.
 
 ## Own Your Infrastructure
 

@@ -46,6 +46,68 @@ The VP is no longer evaluating an unproven startup. They are evaluating a vendor
 
 The Trojan Horse buys you time, not immunity. Once the VP wants to expand your footprint, IT security will eventually run a real review - SOC 2 documentation, data flow diagrams, penetration test results. Startups that treat the micro-tool phase as a reason to skip security fundamentals get burned here: the same lightweight architecture that let you bypass procurement at $50/month will fail an enterprise audit at $50,000/year if authentication, encryption, and access logging weren't built in from day one. The Trojan Horse strategy works because it defers scrutiny - it does not eliminate it.
 
+## What Is the Trojan Horse Strategy in AI SaaS Sales?
+
+The Trojan Horse strategy is a land-and-expand sales motion in which an AI SaaS company enters an enterprise through a cheap, single-purpose tool bought by individual employees, then uses the resulting usage data to sell a much larger platform contract to leadership. The micro-tool is the horse; the platform is what was inside it all along.
+
+The difference from a classic top-down enterprise pitch is easiest to see side by side:
+
+| Dimension | Platform-first pitch | Trojan Horse approach |
+|---|---|---|
+| First buyer | CIO or VP with budget authority | Individual team lead or end user |
+| Entry price | Five- or six-figure annual contract | Low monthly fee on a corporate card |
+| Workflow change on Day 1 | Large - replaces existing systems | None - sits alongside existing systems |
+| Data access requested | Broad read/write access | Narrow, ideally read-only scope |
+| Proof offered to leadership | Projections, demos, references | Observed usage from their own staff |
+| Main risk for the buyer | Career risk if the rollout fails | Almost none at the entry stage |
+
+The point of the table is not that platforms are bad. It is that the order of operations matters: trust first, scope second.
+
+## Why Conservative Industries Respond to Small AI Tools First
+
+Conservative industries such as banking, insurance, legal services, healthcare and logistics adopt AI one narrow use case at a time because every new system has to pass compliance, data protection and audit requirements before it touches core operations. A small tool with a tiny data footprint simply has less to explain.
+
+In the EU, two frameworks shape these conversations. Under **GDPR Article 28**, any vendor that processes personal data on a customer's behalf needs a written data processing agreement that covers what data is processed, for what purpose, and with which sub-processors. A read-only summarizer that handles one ticket thread at a time produces a far simpler answer to those questions than a platform that ingests the entire CRM. The **EU AI Act** adds a risk-based layer: tools that assist a human with summarization sit in a very different conversation from systems that make autonomous decisions about customers. Starting with an assistive tool keeps your first deal out of the hardest compliance discussions.
+
+There is also a cultural reason. In risk-averse organizations, nobody wants to be the person who championed the failed transformation project. A $50/month tool that one team quietly adopts carries no such reputational weight, which is exactly why it gets adopted.
+
+## How to Run a Trojan Horse Sales Strategy: Step by Step
+
+The Trojan Horse strategy is executed as a sequence, and each step produces the evidence the next one needs. A practical version looks like this:
+
+1. **Map the platform to its smallest painful task.** Take your full AI SaaS vision and list every manual task it eventually automates. Pick the one that happens most often and annoys users most.
+2. **Build the wedge with production discipline.** Ship a tool that does that one task well, inside a surface users already live in - a Chrome extension, a Zendesk app, a Slack bot or a Microsoft Teams add-in.
+3. **Request the narrowest possible permissions.** Use OAuth scopes that are read-only where you can, store as little customer data as possible, and document exactly what you keep.
+4. **Price below the expense threshold.** Keep the self-serve plan cheap enough that a manager can expense it without a purchase order.
+5. **Instrument usage per account.** Track active users, actions per day and estimated time saved, grouped by company domain, so you can see when one organization crosses a meaningful threshold.
+6. **Identify the economic buyer.** When usage inside one account becomes dense, find the leader who owns the budget for the team using your tool.
+7. **Lead with their own data.** Open the expansion conversation with the usage numbers from their team, then introduce the platform as the natural next step.
+8. **Prepare the security package in advance.** Have your data flow diagram, DPA, sub-processor list and access-control description ready before the first enterprise call, not after.
+
+## Common Mistakes That Kill the Trojan Horse
+
+Most Trojan Horse attempts fail for predictable reasons that have nothing to do with the idea itself:
+
+- **The wedge is too broad.** If the micro-tool needs configuration, training or an admin, it is no longer a wedge. It is a small platform with a small price.
+- **The wedge has no path to the platform.** A summarizer that leads naturally to an autonomous support agent is a Trojan Horse. A summarizer for a product you never intend to build is just a cheap tool.
+- **Over-requesting permissions.** Asking for write access "for later" is the fastest way to get flagged by the security team before you have any users worth defending.
+- **No account-level analytics.** Without usage data grouped by company, you cannot see the moment to upsell, and you cannot prove anything when you do.
+- **Treating Shadow IT as permanent.** Employees buying your tool on a card is an entry point, not a business model. Plan the move to a sanctioned contract from the start.
+- **Fragile AI-generated code.** A prototype built quickly with AI tools can work perfectly for 15 users and still fail the first serious review because of missing authentication checks, exposed API keys or absent logging.
+
+## How to Decide If Your AI SaaS Fits the Trojan Horse Model
+
+Your AI SaaS fits the Trojan Horse model if a single high-frequency task can be solved on its own, in a tool individuals can buy without approval, and that task leads directly toward your platform. Use this checklist before you commit:
+
+- Is there a task your target user performs daily that your AI handles better than they do manually?
+- Can that task be delivered without data migration or workflow change?
+- Can the tool operate with read-only or minimal data access?
+- Is a self-serve price below typical expense thresholds still viable for you?
+- Does solving the small task naturally create demand for the larger platform?
+- Is your architecture already secure enough to survive an enterprise review in a few months?
+
+If you answer "no" to the last question, fix it first. The expansion moment arrives on the customer's timeline, not yours.
+
 ## Key Takeaways
 
 - Pitching massive, 'All-in-One' AI platforms scares enterprise buyers because it requires migrating entire workflows and carries massive operational risk with a single point of failure.

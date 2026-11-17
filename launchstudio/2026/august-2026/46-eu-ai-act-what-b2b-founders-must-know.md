@@ -46,6 +46,59 @@ If you are building on top of, or are yourself, a foundation model provider, the
 
 Determining your risk tier requires mapping your actual decision logic - what the AI outputs, what happens to that output next, and who it affects - not just describing your product in marketing language. This is a joint legal-and-architecture exercise, and it's exactly the kind of cross-cutting compliance work Manifera has built its reputation on since its founding in **2014**, delivering 160+ projects, including regulator-adjacent work with TNO, from its Amsterdam HQ at Herengracht 420 and its engineering hub in Ho Chi Minh City, Vietnam. Herre Roelevink, Founder & Managing Director of Manifera, describes the shift plainly: "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's now about the architecture and security needed to bring those products to maturity. We have eleven years of experience in exactly that." See the underlying delivery model at [Manifera's offshore software development services](https://www.manifera.com/services/offshore-software-development/).
 
+## When Do EU AI Act Obligations Apply?
+
+The EU AI Act entered into force on 1 August 2024, and its obligations apply in stages, with most rules for AI SaaS products applying from 2 August 2026. The table summarises the main milestones.
+
+| Date | What starts to apply |
+|---|---|
+| 1 August 2024 | The Act enters into force |
+| 2 February 2025 | Prohibited practices (Article 5) and the AI literacy duty (Article 4) |
+| 2 August 2025 | Obligations for General Purpose AI model providers and the governance and penalty framework |
+| 2 August 2026 | Most remaining rules, including Annex III High-Risk systems and Article 50 transparency |
+| 2 August 2027 | High-Risk rules for AI that is a safety component of products covered by existing EU product legislation |
+
+Proposals to adjust some High-Risk deadlines have been discussed at EU level, so confirm the current timetable with counsel before you plan a launch around a specific date. What does not change is the direction: transparency and AI literacy duties already apply, and enterprise buyers increasingly ask about AI Act readiness in procurement today.
+
+### The AI Literacy Duty Applies to Almost Everyone
+
+Article 4 requires providers and deployers of AI systems to take measures to ensure a sufficient level of AI literacy among the staff who operate or use those systems. This applies regardless of risk tier. For a small AI SaaS team, a documented internal briefing on how your models work, where they fail and how to escalate problems, refreshed when your product changes, is a sensible starting point.
+
+## Provider or Deployer: What Is Your Role Under the EU AI Act?
+
+Your obligations under the EU AI Act depend as much on your role as on your risk tier. A **provider** is the organisation that develops an AI system, or has it developed, and places it on the market under its own name. A **deployer** is the organisation that uses an AI system under its own authority in a professional context. Most B2B AI SaaS founders are providers of their product, and their business customers are deployers.
+
+The distinction matters because the roles can shift. Under Article 25, a deployer or other third party can become the provider of a High-Risk system if it puts its own name or trademark on it, makes a substantial modification, or changes its intended purpose so that it becomes High-Risk. A white-label reseller of your AI hiring tool, for example, may take on provider obligations. Deployers of High-Risk systems have their own duties under Article 26, including using the system according to its instructions, assigning human oversight to competent people and keeping the automatically generated logs for at least six months. Your product should make those duties easy for your customers to meet.
+
+## Is Your Annex III Use Case Really High-Risk?
+
+Not every system that touches an Annex III area is automatically High-Risk. Article 6(3) provides that a system is not High-Risk if it does not pose a significant risk of harm, for example because it only performs a narrow procedural task, improves the result of an activity a human has already completed, detects patterns in past decisions without replacing human assessment, or performs a preparatory task. Two limits apply: a system that profiles natural persons is always High-Risk, and a provider that relies on this exception must document its assessment before placing the system on the market.
+
+In practice this means product design choices change your legal position. A tool that drafts interview questions for a recruiter is in a very different place from a tool that ranks and rejects candidates automatically.
+
+## EU AI Act Compliance Checklist for AI SaaS Founders
+
+Use this sequence to move from "we think we are fine" to a documented position you can show to customers and investors:
+
+1. **Inventory every AI feature** in your product, including features that call third-party models.
+2. **Describe the intended purpose** of each feature in one sentence: what it outputs, what happens next and who is affected.
+3. **Classify each feature** against Article 5 (prohibited), Annex III and Article 6 (High-Risk), Article 50 (transparency) or minimal risk.
+4. **Record your role** as provider or deployer for each feature, and check whether resellers or integrators change that.
+5. **Implement transparency**: disclose AI interaction in the interface and mark synthetic media where Article 50 applies.
+6. **For High-Risk features**, plan the risk management system, data governance, technical documentation, logging, human oversight and conformity assessment.
+7. **Document AI literacy measures** for your team.
+8. **Review on every major release**, because a new feature or a new customer use case can move you into a different tier.
+
+## Common EU AI Act Mistakes B2B Founders Make
+
+Most early-stage AI Act problems come from classification shortcuts rather than from deliberate risk-taking.
+
+- **Classifying the model instead of the use case.** "We only use GPT-4o" says nothing about your risk tier; what you do with the output does.
+- **Assuming non-EU incorporation means non-applicability.** The Act follows the market and the output, like GDPR.
+- **Ignoring customer configuration.** If customers can point your general tool at hiring or credit decisions, your documentation and terms should address that intended purpose explicitly.
+- **Treating human oversight as a button.** A reviewer who cannot see why the AI reached its result cannot meaningfully override it.
+- **Leaving logging until later.** Record-keeping is far cheaper to design in from the first production release than to reconstruct during an audit.
+
 ## Key Takeaways
 
 - The EU AI Act applies to any startup, worldwide, that provides AI services to users located within the European Union, or whose AI output is used within the EU. Extraterritoriality is enforced strictly, similar to GDPR.

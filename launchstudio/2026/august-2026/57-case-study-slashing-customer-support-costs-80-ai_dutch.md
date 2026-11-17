@@ -66,6 +66,61 @@ Het systeem werd gelanceerd bij 10% van de gebruikers en na twee weken van stren
 
 Ongeveer 45% van de AI-gegenereerde code bevat kwetsbaarheden; professionele RAG-architecturen vereisen strenge beveiliging en autorisatielagen alvorens ze met productiedatabases communiceren. Manifera bouwt deze enterprise-systemen sinds **2014**, met 160+ gerealiseerde projecten voor onder meer Vodafone en TNO vanuit haar Europese hoofdkantoor aan de Herengracht 420 in Amsterdam. Zoals Herre Roelevink, Oprichter & Managing Director van Manifera, stelt: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Bekijk Manifera's [maatwerk softwareontwikkeling diensten](https://www.manifera.com/services/custom-software-development/).
 
+## Wat Is een RAG-Support-Agent?
+
+Een RAG-support-agent is een AI-assistent die klantvragen beantwoordt door eerst relevante passages op te halen uit uw eigen documentatie en opgeloste tickets, en vervolgens een taalmodel te vragen een antwoord te schrijven dat uitsluitend op die passages is gebaseerd. Retrieval-Augmented Generation houdt het antwoord verankerd in de werkelijke kennis van uw bedrijf, in plaats van in de algemene trainingsdata van het model.
+
+Het verschil met eerdere benaderingen wordt het duidelijkst naast elkaar:
+
+| Aanpak | Hoe het antwoordt | Kan onverwachte formuleringen aan | Risico op hallucinatie | Typisch resultaat |
+|---|---|---|---|---|
+| Beslisboom-chatbot | Volgt een vooraf geschreven menu of script | Nee | Laag, maar zelden nuttig | Hoge escalatieratio, gefrustreerde gebruikers |
+| Generieke LLM-chatbot | Antwoordt vanuit de algemene kennis van het model | Ja | Hoog | Vloeiende antwoorden die over uw product onjuist kunnen zijn |
+| RAG-agent met escalatie | Haalt uw documenten op, antwoordt alleen daaruit, escaleert bij twijfel | Ja | Laag, mits betrouwbaarheidsdrempels worden afgedwongen | Echte deflectie met een veilige menselijke terugvaloptie |
+
+De derde rij is wat PayFlow in productie nam. De escalatieregel is net zo belangrijk als de retrieval: een RAG-agent die niet kan zeggen "dat weet ik niet", is nog steeds een generieke chatbot met beter bronmateriaal.
+
+## Hoe Implementeert U een RAG-Support-Agent? Stap voor Stap
+
+De snelste veilige route naar een AI-support-agent begint bij uw bestaande tickethistorie, niet bij het model. Een praktische implementatievolgorde ziet er zo uit:
+
+1. **Analyseer uw ticketcategorieën.** Exporteer enkele maanden aan tickets uit Zendesk of Intercom en groepeer ze op intentie. De categorieën die vaak voorkomen, repetitief zijn en al gedocumenteerd zijn, vormen uw eerste deflectiedoelen.
+2. **Schoon de kennisbank op.** Verwijder verouderde artikelen, voeg dubbele artikelen samen en voorzie elk document van een datum van laatste controle. Retrieval kan nooit nauwkeuriger zijn dan de content die wordt opgehaald.
+3. **Knip op en embed.** Splits documenten in samenhangende secties, genereer embeddings en sla ze op in een vectordatabase zoals Pinecone of pgvector, met metadata over productonderdeel, actualiteit en zichtbaarheid voor klanten.
+4. **Schrijf de grounding-prompt.** Instrueer het model om alleen te antwoorden op basis van de opgehaalde context, de bron te vermelden en een vaste escalatieterm terug te geven wanneer de context onvoldoende is.
+5. **Bouw het geruisloze escalatiepad.** Stuur geëscaleerde gesprekken door naar een menselijke wachtrij, met het volledige transcript en de opgehaalde documenten als bijlage, zodat de medewerker nooit opnieuw hoeft te beginnen.
+6. **Draai in schaduwmodus.** Laat de AI conceptantwoorden opstellen die menselijke medewerkers beoordelen maar niet versturen. Vergelijk die concepten met wat de medewerkers daadwerkelijk schreven.
+7. **Rol geleidelijk uit.** Lanceer bij een klein deel van de gebruikers, zoals PayFlow deed met 10%, en verbreed pas wanneer deflectie, escalatienauwkeurigheid en CSAT stabiel blijven.
+8. **Houd de lus draaiende.** Voer nieuw opgeloste tickets terug in de index en beoordeel elke week een steekproef van AI-antwoorden.
+
+## AI-Beveiliging voor Support-Agents: Tenant-Isolatie en Row Level Security
+
+Een support-agent die accountgegevens kan opzoeken, mag uitsluitend de data zien van de klant met wie hij op dat moment communiceert. In een multi-tenant AI SaaS is dat de belangrijkste beveiligingsmaatregel van het hele systeem, en die hoort te worden afgedwongen in de database, niet in de prompt.
+
+Promptinstructies zoals "bespreek alleen het account van deze gebruiker" vormen geen beveiligingsgrens, omdat prompt injection ze kan omzeilen. De grens hoort in de datalaag:
+
+- **Row Level Security (RLS).** In PostgreSQL, en in platforms die erop gebouwd zijn zoals Supabase, beperken RLS-policies elke query tot de rijen die bij de geauthenticeerde tenant horen. Zelfs als de tool-aanroep van de agent wordt gemanipuleerd, weigert de database de records van een andere tenant terug te geven.
+- **Afgebakende credentials voor tools.** De agent hoort interne API's aan te roepen met een kortlevend token dat aan de huidige gebruiker is gekoppeld, nooit met een servicesleutel die alles kan lezen.
+- **Gefilterde retrieval.** Gedeelde publieke documentatie kan in één index staan, maar klantspecifieke content moet worden gescheiden via een namespace of metadatafilter, zodat de tickets van de ene merchant nooit voor een andere worden opgehaald.
+- **Redactie en logging.** Verwijder overbodige persoonsgegevens voordat ze het model bereiken, en log elke tool-aanroep voor audits.
+- **Verwerkersverplichtingen.** Onder artikel 28 van de AVG (GDPR) zijn de modelaanbieder en de leverancier van de vectordatabase subverwerkers. Ze horen dus in uw verwerkersovereenkomsten en in de lijst met subverwerkers die u aan klanten toont.
+
+Deze maatregelen maken van een slim prototype een AI-implementatie die een beveiligingsbeoordelaar in FinTech of de zorg daadwerkelijk goedkeurt.
+
+### Wat betekent dit voor zorgtoepassingen en NEN 7510?
+
+Voor Nederlandse zorgorganisaties komt daar een extra laag bij. NEN 7510 is de Nederlandse norm voor informatiebeveiliging in de zorg, en zorginstellingen verwachten doorgaans dat leveranciers die met patiëntgegevens werken aantoonbaar volgens die norm handelen. Gezondheidsgegevens vallen bovendien onder de bijzondere categorieën persoonsgegevens van artikel 9 van de AVG, waarvoor strengere eisen gelden. In de praktijk betekent dit voor een AI-support-agent in de zorg: tenant-isolatie via RLS is geen optie maar een vereiste, elke inzage in dossiergegevens wordt gelogd, gevoelige gegevens worden zoveel mogelijk weggelaten voordat ze een extern model bereiken, en u kunt per subverwerker uitleggen waar de data wordt verwerkt. Wie dit vanaf de eerste versie in de architectuur verwerkt, voorkomt dat een veelbelovende pilot strandt op de inkoop- of securitytoets van een ziekenhuis of zorggroep.
+
+## Veelgemaakte Fouten bij het Inzetten van AI in de Klantenservice
+
+De meeste mislukte AI-supportprojecten stranden op proces en data, niet op de keuze van het model. De terugkerende fouten zijn:
+
+- **Alleen deflectie meten.** Een bot die tickets sluit doordat gebruikers gefrustreerd afhaken, ziet er prachtig uit in een deflectiegrafiek. Meet escalatienauwkeurigheid en CSAT ernaast.
+- **Verouderde documentatie indexeren.** Als oude artikelen in de index blijven staan, herhaalt de agent vol overtuiging achterhaalde antwoorden.
+- **De menselijke optie verbergen.** Klanten moeten altijd een mens kunnen bereiken. Een zichtbare overdrachtsmogelijkheid vergroot juist het vertrouwen in de AI-antwoorden.
+- **De agent brede schrijfrechten geven.** Begin met alleen-lezen opzoekacties. Acties zoals terugbetalingen of accountwijzigingen vereisen expliciete toegangsscopes en in eerste instantie menselijke goedkeuring.
+- **De beveiligingsreview overslaan.** Door AI gegenereerde integratiecode bevat vaak blootgestelde sleutels of ontbrekende autorisatiecontroles. Laat die code beoordelen voordat de agent productiedata aanraakt.
+
 ## Belangrijkste Inzichten
 
 - Traditionele beslisboom-chatbots falen bij natuurlijke spreektaal en lossen support-overbelasting zelden structureel op.

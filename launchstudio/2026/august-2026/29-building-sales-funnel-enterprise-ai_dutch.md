@@ -35,7 +35,7 @@ Zelfbediening in SaaS (Product-Led Growth) werkt fantastisch wanneer u een AI-be
 
 ## De 'Vraag een Demo Aan' Drempel
 
-De enterprise-trechter begint met het bewust afschermen van uw hoogste abonnementslaag. Uw prijspagina toont "Starter" (€ 49/mnd) en "Pro" (€ 199/mnd) met directe Stripe-knoppen. Maar bij de "Enterprise"-laag staat uitsluitend een **"Vraag een Demo Aan"** of **"Spreek met Sales"** knop. Vermeld hier géén vaste prijs. Prijs wordt bepaald door de geleverde waarde, en die kunt u pas kwantificeren nadat u de specifieke behoeften van de klant heeft geanalyseerd.
+De enterprise-trechter begint met het bewust afschermen van uw hoogste abonnementslaag. Uw prijspagina toont "Starter" (€ 49/mnd) en "Pro" (€ 199/mnd) met directe Stripe-knoppen. Maar bij de "Enterprise"-laag staat uitsluitend een **"Vraag een Demo Aan"** of **"Spreek met Sales"** knop. Vermeld hier géén vaste prijs. Prijs wordt bepaald door de geleverde waarde, en die kunt u pas kwantificeren nadat u de specifieke behoeften van de klant heeft geanalyseerd. Een vast gepubliceerd enterprise-bedrag schrikt ofwel kopers af met een groter budget dan u had durven vragen, ofwel verankert het uw prijs onder wat een werkelijk maatwerk-implementatie waard is.
 
 Zodra een bezoeker op deze knop klikt, wordt hij geleid naar een gestructureerd kwalificatieformulier: *"Hoeveel medewerkers telt uw organisatie? Wat is uw huidige proces voor [het specifieke knelpunt]?"* Betreft het een klein team, leid hen dan automatisch naar een self-service proefperiode of productvideo. Is het antwoord "500+ medewerkers" of betreft het een gerenommeerd bedrijf, stuur hen dan direct door naar uw agenda (via Calendly of Chili Piper) voor directe opvolging.
 
@@ -57,7 +57,7 @@ Grote ondernemingen nemen trage beslissingen. Een VP vragen om direct een 12-maa
 
 Bied een **Betaalde Proof of Concept (POC)** aan: *"Laten we de AI gedurende 30 dagen uitrollen binnen een pilot-team van 5 medewerkers. Dit kost € 5.000. We spreken vooraf duidelijke doelen af: automatiseert de AI succesvol 80% van de workload, dan gaan we over tot de volledige uitrol van € 100.000."*
 
-Een POC moet altijd betaald zijn (nooit gratis) om te garanderen dat de klant echte interne resources en data toewijst aan de pilot. Slaagt de POC, dan is de handtekening onder het hoofdcontract vrijwel gegarandeerd omdat de ROI in de eigen praktijk onomstotelijk is bewezen.
+Een POC moet altijd betaald zijn (nooit gratis) om te garanderen dat de klant echte interne resources en data toewijst aan de pilot - een projectsponsor, echte data en vrijgemaakte tijd van het pilotteam. Een gratis POC krijgt geen prioriteit meer zodra er iets anders tussenkomt; achter een betaalde POC staat de aandacht van de budgethouder. Slaagt de POC, dan is de handtekening onder het hoofdcontract vrijwel gegarandeerd omdat de ROI in de eigen praktijk onomstotelijk is bewezen.
 
 ## Trechter-Gezondheid Monitoren Voorbij 'Geboekte Demo's'
 
@@ -68,6 +68,65 @@ Veel B2B-teams sturen puur op het aantal geboekte demo's en verliezen het zicht 
 Geen van deze fasen werkt als uw product faalt zodra de security officer van de klant het inspecteert. Een openbare "Trust Center" pagina - met uw SOC 2 status, dataretentiebeleid en uptime-historie - moet al live staan vóór uw eerste verkoopgesprek.
 
 Dit is exact het gat dat Herre Roelevink, Oprichter & Managing Director van Manifera, benadrukt: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Manifera bouwt deze enterprise-systemen sinds **2014**, met 160+ gerealiseerde projecten voor organisaties zoals Vodafone en TNO vanuit haar hoofdkantoor in Amsterdam en ontwikkelcentrum in Ho Chi Minhstad.
+
+## Wat Is een Enterprise AI-Verkooptrechter?
+
+Een enterprise AI-verkooptrechter is de reeks van kwalificatie, intake, demo, pilot en inkoop die een grote organisatie van eerste interesse naar een getekend AI-contract brengt. Anders dan bij een self-service trechter heeft elke fase een duidelijk exitcriterium en zijn er aan de kant van de koper meer mensen betrokken. De onderstaande tabel vat de hierboven beschreven fasen samen, aangevuld met de inkoopfase die vaak de doorlooptijd bepaalt.
+
+| Fase | Doel | Exitcriterium | Wie is betrokken aan de kant van de koper |
+|---|---|---|---|
+| Kwalificatie | Enterprise-leads scheiden van kleine teams | Bedrijfsgrootte en knelpunt passen | Champion |
+| Intakegesprek | Het probleem kwantificeren in de woorden van de koper | Overeengekomen kosten van het huidige proces | Champion, teamleider |
+| Toegespitste demo | De AI laten zien op hun exacte situatie | Verzoek om een pilot of voorstel | Champion, eindgebruikers, soms IT |
+| Betaalde POC | ROI bewijzen op echte data | Succescriteria behaald en vastgelegd | Pilotteam, projectsponsor |
+| Security en inkoop | Juridische, security- en leverancierscontroles doorstaan | Getekend contract en verwerkersovereenkomst | CISO, juridische zaken, inkoop, economic buyer |
+
+Veel oprichters behandelen de laatste fase als papierwerk. Bij enterprise AI-deals is het echter vaak de langste fase, dus die moet parallel aan de POC starten en niet pas daarna.
+
+## Hoe Kwalificeert u Enterprise AI-Leads Voordat u er Weken in Steekt?
+
+De snelste manier om een enterprise AI-lead te kwalificeren, is vroeg in het proces bevestigen dat er een meetbaar knelpunt is, een persoon met budgetbevoegdheid en een vastgelegd besluitvormingsproces. Veel B2B-salesteams gebruiken hiervoor het MEDDICC-framework: Metrics, Economic buyer, Decision criteria, Decision process, Identify pain, Champion en Competition. U hoeft het niet star toe te passen, maar elke serieuze enterprise-deal moet op elke letter een antwoord hebben voordat u een POC start.
+
+Gebruik deze vragen in uw intakegesprek en leg de antwoorden vast in uw CRM:
+
+- **Metrics:** Welk getal verbetert er, en met hoeveel, als dit werkt?
+- **Economic buyer:** Wie tekent een contract van deze omvang, en is die persoon op de hoogte van dit project?
+- **Decision process:** Welke afdelingen moeten akkoord geven - IT, security, juridische zaken, de ondernemingsraad?
+- **Competition:** Evalueren zij ook een andere leverancier, of willen ze het zelf bouwen?
+
+Een deal zonder bekende economic buyer of besluitvormingsproces is niet klaar voor een betaalde POC, hoe enthousiast uw champion ook is.
+
+## Hoe Doorstaat u de Security-Review van een Enterprise-Klant?
+
+U doorstaat een enterprise AI security-review door de vragen van de koper te beantwoorden voordat ze worden gesteld, met documenten die klaarliggen om te delen. Grote organisaties sturen meestal een security-vragenlijst, soms gebaseerd op standaarden zoals de CAIQ van de Cloud Security Alliance of de SIG van Shared Assessments. Voor AI-producten kunt u vragen verwachten over:
+
+- **Certificeringen:** De status van SOC 2 Type II of ISO/IEC 27001, of een geloofwaardige roadmap als u nog niet gecertificeerd bent.
+- **Gegevensverwerking:** Een verwerkersovereenkomst die voldoet aan artikel 28 van de AVG (GDPR), een lijst van subverwerkers inclusief uw modelaanbieders, en waar de data wordt opgeslagen.
+- **Gebruik van data door modellen:** Of klantdata wordt gebruikt om modellen te trainen, en hoe lang prompts en output worden bewaard door u en door uw AI-aanbieder.
+- **EU AI Act:** Hoe uw systeem wordt geclassificeerd onder de EU AI Act, en welke transparantie- of documentatieverplichtingen gelden voor de toepassing die de koper voor ogen heeft.
+- **Toegang en logging:** Single sign-on via SAML of OIDC, rolgebaseerde toegang en auditlogs van wie welke data heeft geraadpleegd.
+
+Stel één keer een standaard antwoordpakket samen en hergebruik het. Een securityteam dat binnen dagen in plaats van weken heldere, consistente antwoorden ontvangt, houdt de deal in beweging.
+
+## Hoe Richt u een Betaalde POC Stap voor Stap In?
+
+Een goed gestructureerde betaalde POC is een kort, schriftelijk vastgelegd miniproject met een vaste scope, een vaste prijs en succescriteria waarover beide partijen het eens zijn voordat het werk begint. Volg deze stappen:
+
+1. **Schrijf een POC-plan van één pagina.** Beschrijf de use case, het pilotteam, de benodigde data, de looptijd en de prijs.
+2. **Spreek meetbare succescriteria af.** Bijvoorbeeld het aandeel correct verwerkte documenten of de tijdsbesparing per dossier, gemeten tegen de nulmeting uit het intakegesprek.
+3. **Teken de verwerkersovereenkomst vroeg.** Echte data kan pas stromen als de verwerkersovereenkomst is getekend, dus start die vóórdat de POC begint.
+4. **Houd een kick-off en wekelijkse check-ins.** Korte overleggen met het pilotteam houden het gebruik hoog en brengen problemen vroeg aan het licht.
+5. **Presenteer een resultatenrapport.** Vergelijk de resultaten in cijfers met de afgesproken criteria.
+6. **Neem de vervolgstap op in de POC-overeenkomst.** Spreek vooraf af wat de volledige uitrol kost als de criteria worden gehaald, zodat de beslissing over resultaten gaat en niet over een nieuwe onderhandeling.
+
+## Veelgemaakte Fouten in Enterprise AI-Verkoop
+
+De meest gemaakte fout in enterprise AI-verkoop is single-threading: vertrouwen op één champion, waardoor de deal stilvalt zodra die persoon van baan wisselt of zijn budget verliest. Bouw ten minste ook een relatie op met de economic buyer en de securityverantwoordelijke. Andere veelvoorkomende fouten:
+
+- **Inkoop pas na de POC starten.** Juridische afstemming en leveranciersregistratie kunnen net zo lang duren als de pilot zelf.
+- **Pilots zonder einde.** Een POC zonder einddatum of succescriteria converteert zelden.
+- **Te hoge nauwkeurigheid beloven.** Generatieve AI maakt fouten. Beschrijf hoe fouten worden opgevangen en gecorrigeerd, bijvoorbeeld via menselijke controlestappen, in plaats van perfectie te beloven.
+- **Te vroeg korting geven.** Een prijs is makkelijker te verdedigen zodra de POC de waarde heeft bewezen.
 
 ## Belangrijkste Inzichten
 

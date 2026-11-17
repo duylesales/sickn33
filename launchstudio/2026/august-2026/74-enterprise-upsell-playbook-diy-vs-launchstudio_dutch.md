@@ -88,6 +88,36 @@ De echte vergelijking is niet euro's tegen euro's - het is engineeringtijd die k
 
 Als expansie-infrastructuur - SSO, gebruiksmeting, beheerderstools - daadwerkelijk aansluit bij de kerndifferentiatie van uw product, of als het team van een founder al diepgaande ervaring heeft met het leveren van enterprise-identiteitsintegraties, kan intern bouwen de juiste keuze zijn. De fout is niet het zelf bouwen; het is het behandelen van onaantrekkelijk infrastructuurwerk als gelijkwaardig in prioriteit aan de kernproductroadmap, terwijl een partner met vaste omvang het sneller kan leveren en het team gefocust kan laten blijven op wat daadwerkelijk onderscheidend is.
 
+## Wat is Net Revenue Retention, en hoe berekent u die?
+
+Net Revenue Retention (NRR) is het percentage terugkerende omzet dat u over een periode behoudt van een bestaande groep klanten, nadat u expansie heeft opgeteld en downgrades en churn heeft afgetrokken. De standaardberekening is:
+
+**NRR = (terugkerende omzet bij aanvang + expansie - contractie - verloren omzet door churn) ÷ terugkerende omzet bij aanvang**
+
+Neem een cohort dat het jaar begint met €10.000 aan maandelijks terugkerende omzet. Als diezelfde accounts €3.000 toevoegen via extra seats, €500 downgraden en €1.000 aan churn verliezen, dan is de NRR (10.000 + 3.000 - 500 - 1.000) ÷ 10.000 = 115%. Nieuwe klanten die in de periode zijn binnengehaald, worden bewust buiten beschouwing gelaten - precies daarom laat NRR zien of een enterprise upsell-beweging op zichzelf werkt.
+
+## Welke signalen moeten een enterprise upsell in gang zetten?
+
+De beste triggers voor een enterprise upsell zijn productsignalen die uw systeem automatisch kan detecteren, elk gekoppeld aan een duidelijke vervolgstap. Een praktische indeling:
+
+| Expansiesignaal | Wat het product moet bijhouden | Wie een melding krijgt | Gebruikelijke vervolgstap |
+|---|---|---|---|
+| Account zit op 80-90% van de seat-limiet | Actieve seats vs gelicentieerde seats | Accountbeheerder en uw salesverantwoordelijke | Prompt voor een self-service seat-upgrade |
+| Gebruikslimiet komt in zicht | API-calls, rapporten of opslag per factureringsperiode | Accountbeheerder | Aanbod voor het volgende niveau |
+| Nieuwe gebruikers uit een andere afdeling | E-maildomein plus team- of workspace-metadata | Uw salesverantwoordelijke | Gesprek over een uitrol naar de afdeling |
+| IT vraagt naar SSO of SCIM | Beveiligingsvragenlijst of supporttickets | Founder of technisch lead | Enterprise-plan met identiteitsfuncties |
+| Beheerder exporteert gebruiksrapporten | Dashboard- en export-events | Uw salesverantwoordelijke | ROI-gesprek in aanloop naar de verlenging |
+
+## Veelgemaakte fouten in een enterprise upsell-beweging
+
+De meeste vastgelopen expansiedeals sneuvelen op productgereedheid, niet op het verkoopverhaal.
+
+1. **SSO pas aanpakken wanneer IT blokkeert.** Als single sign-on pas ter sprake komt wanneer IT een uitrol tegenhoudt, wacht de expansie op een engineeringproject.
+2. **Handmatig seats toevoegen.** Elke factuur die met de hand moet worden opgesteld, voegt dagen toe aan een expansie die de klant al wilde.
+3. **Geen eigenaar voor expansiesignalen.** Drempelmeldingen die in een gedeelde inbox belanden die niemand leest, zijn niet beter dan helemaal geen meldingen.
+4. **Alleen nieuwe logo's meten.** Zonder NRR per cohort bij te houden, kan een founder niet zien of accounts groeien of stilletjes krimpen.
+5. **Deprovisioning negeren.** IT-teams van enterprises hechten evenveel waarde aan het snel verwijderen van vertrekkende medewerkers via SCIM als aan het toevoegen van nieuwe gebruikers, dus een integratie die maar één kant op werkt, komt zelden door de beoordeling.
+
 ## Belangrijkste inzichten
 
 - Net revenue retention, aangedreven door expansie binnen bestaande accounts, is een duurzamere groeimotor dan alleen acquisitie van nieuwe logo's, maar het gebeurt alleen wanneer het product specifieke infrastructuur bevat om het te triggeren en te ondersteunen.

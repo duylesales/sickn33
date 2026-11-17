@@ -83,6 +83,41 @@ De reden dat een trage LCP zo lang overleeft in de meeste door AI-builders gebou
 
 Oprichters hebben geen volledige audit nodig om een eerste indruk te krijgen of dit probleem op hen van toepassing is. Open het Core Web Vitals-rapport van Google Search Console, filter op de pagina met het meeste verkeer op de site, en vergelijk de LCP ervan met het bouncepercentage voor diezelfde pagina over dezelfde periode. Als de LCP boven de 4 seconden ligt en het bouncepercentage verhoogd is ten opzichte van andere pagina's op de site, is die combinatie op zichzelf meestal genoeg om een diepere blik te rechtvaardigen, zelfs vóór het in opdracht geven van een formele audit. Het is een controle van vijf minuten die "onze pagina is misschien een beetje traag" verandert in een specifiek getal op paginaniveau waar een oprichter direct naar kan handelen, en het is vaak precies het bewijsstuk dat een performance-fix prioriteit geeft op een roadmap die deze anders zou blijven wegduwen achter zichtbaar featurewerk.
 
+## Wat geldt als een goede LCP-score?
+
+Een goede Largest Contentful Paint-score is 2,5 seconden of minder, gemeten op het 75e percentiel van echte paginaladingen, apart voor mobiel en desktop. Dat laatste detail is belangrijk: Google beoordeelt een pagina op hoe deze presteert voor de meeste echte bezoekers, niet op één snelle test op een kantoorlaptop. LCP is een van de drie Core Web Vitals, naast Interaction to Next Paint (INP), dat in maart 2024 First Input Delay verving, en Cumulative Layout Shift (CLS).
+
+| Metriek | Goed | Verbetering nodig | Slecht |
+|---|---|---|---|
+| Largest Contentful Paint (LCP) | 2,5 s of minder | 2,5 s tot 4,0 s | Meer dan 4,0 s |
+| Interaction to Next Paint (INP) | 200 ms of minder | 200 ms tot 500 ms | Meer dan 500 ms |
+| Cumulative Layout Shift (CLS) | 0,1 of minder | 0,1 tot 0,25 | Meer dan 0,25 |
+
+De mobiele LCP van 6,8 seconden bij Amara lag ruim in de categorie "slecht", en daarom was de zakelijke impact zo groot. Het is ook goed om het verschil tussen labdata en velddata te kennen. Lighthouse en het labgedeelte van PageSpeed Insights simuleren één paginalading onder vaste omstandigheden, wat nuttig is bij het debuggen. Het Chrome User Experience Report (CrUX), dat het Core Web Vitals-rapport in Search Console voedt, weerspiegelt wat echte Chrome-gebruikers hebben ervaren, en die velddata zijn wat u in een ROI-onderbouwing moet gebruiken.
+
+## Hoe berekent u de ROI van het oplossen van een trage LCP?
+
+U berekent de ROI van het oplossen van een trage LCP door het verkeer waarvoor u al betaalt te vermenigvuldigen met een voorzichtige schatting van teruggewonnen conversies, en die maandelijkse winst vervolgens te vergelijken met de eenmalige kosten van de oplossing. Het team van Amara volgde dezelfde logica, en elke oprichter kan die met de eigen cijfers herhalen:
+
+1. **Kies de pagina die ertoe doet.** Neem de pagina met het meeste verkeer op het pad naar omzet: een landingspagina, een pagina met zoekresultaten of een prijspagina.
+2. **Haal de veld-LCP van die pagina op.** Gebruik Search Console of PageSpeed Insights en noteer de mobiele waarde.
+3. **Leg huidig verkeer, bounce rate en conversieratio vast.** Gebruik voor alle drie dezelfde periode.
+4. **Voeg de acquisitiekosten van dat verkeer toe.** Neem betaald zoeken, betaalde social en eventuele gesponsorde plaatsingen mee die op de pagina uitkomen.
+5. **Pas een voorzichtige herstelmarge toe.** Gebruik de onderkant van elke schatting, zodat de onderbouwing ook standhoudt als het resultaat bescheiden uitvalt.
+6. **Vergelijk de maandelijkse winst met de kosten van de oplossing.** Een opdracht met een vaste scope, zoals een LaunchStudio Launch & Grow-pakket (€2.500-€7.500 plus €49 per maand), is eenvoudig af te wegen tegen een terugkerend maandelijks lek.
+7. **Spreek af hoe u succes meet.** Bepaal vooraf welke metriek - bounce rate, conversieratio of kosten per lead - aantoont dat de oplossing heeft gewerkt, en controleer die na twee tot vier weken velddata.
+
+Het resultaat hoeft niet precies te zijn. Het moet de orde van grootte laten zien, en dat is meestal genoeg om performancewerk vóór de volgende feature te plaatsen.
+
+## Veelgemaakte LCP-fouten in AI-gebouwde apps
+
+De meest voorkomende LCP-fout in door AI gegenereerde code is het lazy loaden van precies de afbeelding die het grootste zichtbare element vormt, waardoor juist de weergave wordt vertraagd die de metriek meet. Lazy loading hoort onder de vouw. De hero-afbeelding of de eerste productafbeelding moet direct laden, bij voorkeur met `fetchpriority="high"` of een preload-hint. Andere veelvoorkomende fouten:
+
+- **Alleen de labscore optimaliseren.** Een perfect Lighthouse-resultaat op een snelle verbinding kan een slechte veld-LCP op middenklasse-telefoons verbergen.
+- **Wachten op data aan de clientkant voordat er wordt gerenderd.** Als de hoofdcontent afhangt van een API-aanroep vanuit de browser, wacht de weergave op het netwerk.
+- **Webfonts laden die tekst blokkeren.** Met `font-display: swap` verschijnt tekst al terwijl het lettertype wordt gedownload.
+- **Eén keer oplossen en daarna nooit meer controleren.** Nieuwe afbeeldingen, scripts en trackingtags sluipen er bij elke release in, dus LCP hoort bij de vaste monitoring.
+
 ## Belangrijkste inzichten
 
 - Een Largest Contentful Paint boven 2,5 seconden correleert met significant lagere conversieratio's, en elke seconde voorbij die drempel vergroot het verlies - vaak in de orde van 7-12% per extra seconde voor marketplace- en e-commerce-ervaringen.

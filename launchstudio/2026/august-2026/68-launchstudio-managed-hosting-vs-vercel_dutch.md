@@ -77,6 +77,49 @@ LaunchStudio vervangt Vercel niet - bij de meeste trajecten blijft de app precie
 
 5. **Een gedocumenteerd incidentresponspad.** In plaats van "het live om 2 uur 's nachts uitzoeken" is er een geschreven, specifiek proces voor wat er gebeurt als een melding afgaat: wie wordt geïnformeerd, wat is het terugdraaipad, en hoe wordt een fix uitgerold zonder giswerk onder druk.
 
+## Wat Is Managed Hosting voor een AI SaaS-app?
+
+Managed hosting is een opzet waarbij een engineeringteam uw productieomgeving configureert, monitort en op incidenten reageert, zodat het onderliggende platform - vaak Vercel - daadwerkelijk wordt beheerd in plaats van alleen gebruikt om naartoe te deployen. U blijft eigenaar van de code en van het hostingaccount. Wat u overdraagt, is de operationele verantwoordelijkheid: foutpercentages in de gaten houden, limieten afstemmen en handelen wanneer een melding afgaat.
+
+Daarmee verschilt managed hosting van overstappen naar een andere provider. In de meeste LaunchStudio-opdrachten blijft het Vercel-project precies waar het is; wat verandert, is dat iemand verantwoordelijk is voor hoe het zich in productie gedraagt.
+
+## Zelfbeheerde Vercel-hosting vs. Managed Hosting: Naast Elkaar
+
+Het praktische verschil tussen zelfbeheerde Vercel-hosting en managed hosting is wie het operationele werk draagt, niet welk platform de verzoeken afhandelt. De onderstaande tabel vergelijkt beide voor een typische AI SaaS-app.
+
+| Onderdeel | Zelfbeheerde Vercel-hosting | Managed hosting door LaunchStudio |
+|---|---|---|
+| Deployment | Git-gebaseerde deploys, previews, rollbacks | Dezelfde Vercel-workflow, ongewijzigd |
+| Omgevingsvariabelen | Ingesteld door de oprichter, vaak gekopieerd tussen omgevingen | Gecontroleerd en afgebakend per preview, staging en productie |
+| Function-timeouts | Meestal op de standaardwaarden gelaten | Bewust per route ingesteld, bijvoorbeeld met de `maxDuration`-instelling van Vercel |
+| Lange LLM-aanroepen | Synchroon binnen het verzoek uitgevoerd | Gestreamd, of waar nodig verplaatst naar een achtergrondtaak |
+| Foutopsporing | Ontbreekt vaak | Sentry of een gelijkwaardige tool in frontend en backend |
+| Meldingen | Klanten melden problemen | Meldingen naar Slack of e-mail met afgestemde drempels |
+| Incidentrespons | Geïmproviseerd | Gedocumenteerd pad met terugdraaistappen |
+| Wie krijgt het probleem om 2 uur 's nachts | De oprichter, als die het merkt | Een vaste verantwoordelijke en een vast proces |
+
+## Wanneer Kunt U Vercel-hosting Zelf Beheren?
+
+U kunt Vercel-hosting redelijkerwijs zelf beheren wanneer uw app weinig risico draagt, uw verkeer klein en voorspelbaar is en iemand in het team de tijd en ervaring heeft om de operatie te dragen. Gebruik dit beslissingskader:
+
+1. **Beheer het zelf als** u nog geen betalende klanten heeft, uw AI-aanroepen kort zijn en een paar uur downtime u geen omzet of vertrouwen zou kosten.
+2. **Beheer het zelf met hulp als** u een engineer heeft die vertrouwd is met Vercel-configuratie en Sentry, maar nog niemand meldingen en een incidentplan heeft ingericht. Eén configuratieronde dicht die kloof.
+3. **Kies voor managed hosting als** betalende klanten van het product afhankelijk zijn, uw AI-functies lange of piekerige workloads draaien, u enterprise-verkoop ingaat waar uptime en incidentrespons kritisch worden bevraagd, of elk uur dat u aan DevOps besteedt een uur is dat niet naar product en verkoop gaat.
+
+De eerlijke toets is eenvoudig: als er vannacht om 2 uur een melding afgaat, wie ziet die dan, en wat doet die persoon? Als u niet beide delen kunt beantwoorden, beheert u uw hosting nog niet, maar deployt u er alleen naartoe.
+
+## Veelgemaakte Fouten bij het Draaien van een AI-app op Vercel
+
+De meest gemaakte fout is aannemen dat een geslaagde deploy betekent dat het productiesysteem gezond is. Een groene deployment vertelt u alleen dat de build werkte; het zegt niets over timeouts, foutpercentages of trage modelantwoorden onder echt verkeer.
+
+Andere fouten komen in door AI gebouwde apps steeds terug:
+
+- **Geheimen delen tussen omgevingen.** Dezelfde API-sleutels gebruiken in preview en productie betekent dat een previewbranch live data kan raken of productiequota kan opmaken.
+- **Synchroon wachten op lange LLM-aanroepen.** Antwoorden streamen of zwaar werk naar een achtergrondtaak verplaatsen voorkomt verzoeken die blijven hangen totdat ze worden afgebroken.
+- **Sentry installeren zonder meldingsregels.** Foutopsporing waar niemand een melding van krijgt, is een logbestand, geen monitoring.
+- **Gebruiks- en kostenmeldingen negeren.** Piekerig AI-verkeer kan het functiegebruik en de kosten bij de modelprovider snel opdrijven; stel meldingen in vóór een lancering, niet na de factuur.
+- **Nooit een rollback oefenen.** Vercel maakt terugdraaien naar een eerdere deployment eenvoudig, maar alleen als iemand weet wanneer dat moet en het al eens heeft gedaan.
+
 ## Belangrijkste Inzichten
 
 - Vercel is een sterk deploymentplatform; het operationele werk van het goed draaien van productie-infrastructuur - monitoring, alerting, schaalconfiguratie, incidentrespons - is een aparte, doorlopende taak die deployment alleen niet oplost.

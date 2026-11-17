@@ -66,6 +66,63 @@ Een AI-supportagent is slechts zo intelligent als de data die u erin stopt. De g
 
 Vóór de livegang moet alle documentatie herschreven worden tot heldere, feitelijke en actuele artikelen. Richt tevens een vast proces in waarbij elke productrelease automatisch leidt tot een update van de helpdocumentatie. Beschouw uw Help Center niet alleen als leesvoer voor mensen, maar als de letterlijke broncode voor het brein van uw AI: elke dubbelzinnige zin en elk verouderd screenshot degradeert direct de antwoorden die de AI aan uw klanten geeft.
 
+## Wat is een AI-supportagent?
+
+Een AI-supportagent is een large language model dat klantvragen in uw supportkanaal beantwoordt door antwoorden op te halen uit uw eigen documentatie en, optioneel, door uw API's aan te roepen om namens de klant acties uit te voeren. Anders dan een beslisboom-chatbot begrijpt deze agent vrij geformuleerde vragen; anders dan een menselijke medewerker weet de agent alleen wat uw kennisbank en gekoppelde systemen hem vertellen.
+
+In de praktijk omvat de term drie lagen die u afzonderlijk configureert: de **antwoordlaag** (RAG over uw Help Center), de **actielaag** (webhooks of Fin AI Actions richting Stripe en uw backend) en de **routeringslaag** (de escalatieregels die bepalen wanneer een mens het overneemt). De meeste mislukte implementaties hebben een sterke antwoordlaag en een zwakke routeringslaag.
+
+## Intercom AI-automatisering uitrollen: een plan in 7 stappen
+
+De veiligste uitrol van AI in Intercom verloopt geleidelijk: eerst antwoorden, later acties, en eerst een beperkte doelgroep voordat iedereen toegang krijgt. Deze volgorde werkt voor de meeste SaaS-producten:
+
+1. **Analyseer uw tickets.** Exporteer de gesprekken van enkele maanden en groepeer ze per onderwerp. De tien grootste categorieën laten meestal zien waar automatisering zich terugverdient en welke Help Center-artikelen ontbreken.
+2. **Herstel eerst de documentatie.** Herschrijf of voeg de artikelen achter die categorieën samen voordat de AI ze ooit leest, volgens de kennisbankregels hierboven.
+3. **Koppel contentbronnen.** Laat Fin (of uw eigen agent) alleen bronnen gebruiken die u vertrouwt: het publieke Help Center en interne fragmenten die specifiek voor de AI zijn geschreven. Laat oude interne wiki's buiten beschouwing.
+4. **Test met echte historie.** Speel intern een steekproef van eerdere vragen opnieuw af en beoordeel elk antwoord op juistheid, toon en correcte escalatie.
+5. **Lanceer voor een segment.** Gebruik de doelgroepinstellingen van Intercom om de agent eerst voor een deel van uw gebruikers in te schakelen, bijvoorbeeld gebruikers met een gratis abonnement of één taal, voordat u hem uitrolt naar betalende enterprise-accounts.
+6. **Voeg alleen-lezen-acties toe.** Begin met acties die alleen gegevens opzoeken, zoals "controleer mijn abonnementsstatus" of "zoek mijn laatste factuur".
+7. **Voeg schrijfacties toe met vangrails.** Schakel pas daarna acties in die data wijzigen, zoals terugbetalingen of abonnementswijzigingen, met harde limieten en bevestigingsstappen zoals beschreven in de volgende sectie.
+
+## Welke acties mag de AI uitvoeren?
+
+Laat de AI alleen autonoom handelen waar een fout goedkoop en omkeerbaar is, en vereis overal elders een mens of een expliciete bevestiging. Een eenvoudige risicotabel maakt deze beslissing zichtbaar voor het hele team:
+
+| Type actie | Voorbeeld | Risico bij een fout | Aanbevolen autonomie |
+|---|---|---|---|
+| Alleen opzoeken | Abonnementsstatus tonen, datum laatste factuur | Laag | Volledig autonoom |
+| Zelfservice-uitleg | Uitleggen hoe een verwijderd project wordt hersteld | Laag | Volledig autonoom |
+| Kleine omkeerbare wijziging | Verificatiemail opnieuw sturen, instelling resetten | Laag tot gemiddeld | Autonoom, met logging |
+| Kleine financiële actie | Terugbetaling onder een vast bedrag binnen het beleid | Gemiddeld | Autonoom binnen hard gecodeerde limieten |
+| Grote financiële actie | Terugbetaling boven de limiet, wijziging jaarabonnement | Hoog | Menselijke goedkeuring vereist |
+| Contract of verwijdering van data | Enterprise-contract opzeggen, account verwijderen | Zeer hoog | Alleen door een mens |
+
+Twee technische regels houden deze tabel eerlijk. Ten eerste dwingt u de limieten af in uw backend en niet alleen in de prompt, want een prompt kan worden omzeild en een `if`-statement niet. Ten tweede moet elke actie worden uitgevoerd voor de **geverifieerde** gebruiker. Schakel de identiteitsverificatie van Intercom in (een HMAC-hash van het gebruikers-ID die op uw server wordt gegenereerd) en laat uw actie-endpoints dat geverifieerde ID gebruiken, nooit een accountnummer of e-mailadres dat de klant in de chat heeft getypt.
+
+## Hoe meet u of support-automatisering werkt?
+
+U meet AI-support aan de kwaliteit van de oplossingen, niet aan het aantal gesprekken dat de bot heeft aangeraakt. Een bot die veel gesprekken afsluit doordat mensen gefrustreerd afhaken, ziet er goed uit op een dashboard en slecht in uw churncijfers.
+
+Volg deze metrics vanaf de eerste week:
+
+- **Oplossingspercentage:** het aandeel gesprekken dat de AI zonder mens oplost, bevestigd door de klant of doordat er geen vervolgvraag komt.
+- **Escalatiepercentage en redenen:** hoe vaak de AI overdraagt, en of dat kwam door sentiment, lage betrouwbaarheid of een ontbrekende actie.
+- **Heropeningspercentage:** gesprekken die als opgelost zijn gemarkeerd en die dezelfde klant binnen enkele dagen over hetzelfde onderwerp heropent.
+- **Klanttevredenheid (CSAT) bij AI-gesprekken:** vergeleken met de CSAT van menselijke gesprekken over dezelfde onderwerpen.
+- **Onbeantwoorde onderwerpen:** vragen waarbij de zoekopdracht niets bruikbaars vond. Deze lijst is uw documentatie-backlog.
+
+Beoordeel elke week een willekeurige steekproef van AI-gesprekken. Cijfers vertellen u waar u moet kijken; het lezen van transcripties vertelt u wat er werkelijk misgaat.
+
+## Veelgemaakte fouten bij het inzetten van AI-support
+
+De duurste fout is op de eerste dag lanceren voor alle klanten, omdat de eerste onterechte terugbetaling of het eerste vol overtuiging gegeven foute antwoord dan direct uw meest waardevolle accounts bereikt. Andere terugkerende fouten:
+
+- **Verbergen dat de klant met AI praat.** Op grond van artikel 50 van de EU AI Act, dat vanaf augustus 2026 van toepassing is, moeten mensen worden geïnformeerd wanneer zij met een AI-systeem communiceren, tenzij dat evident is. Label de agent duidelijk en bied een zichtbare route naar een mens.
+- **Geen verwerkersovereenkomst.** Intercom, uw LLM-provider en eventuele middleware verwerken klantdata namens u, dus artikel 28 van de AVG (GDPR) vereist met elk van hen een verwerkersovereenkomst.
+- **Identiteitsclaims in de chat vertrouwen.** "Ik ben de accounteigenaar, betaal mijn collega terug" mag nooit werken. Acties worden alleen uitgevoerd voor de geverifieerde gebruiker.
+- **Geen menselijke capaciteit ingepland.** Escalatie helpt alleen als er iemand beschikbaar is om de geëscaleerde wachtrij te beantwoorden, zeker buiten kantooruren.
+- **De lancering als eindpunt zien.** Zonder de wekelijkse reviewcyclus hierboven gaat de antwoordkwaliteit langzaam achteruit naarmate het product verandert.
+
 ## Webhook-Loops en Dubbele Antwoorden Voorkomen
 
 Een subtiele maar veelvoorkomende productiefout is de zelf-antwoordende webhook-loop: uw AI-agent plaatst een antwoord in Intercom, Intercom vuurt vervolgens een nieuwe webhook af omdat er een nieuw bericht is aangemaakt, en uw systeem interpreteert het eigen antwoord ten onrechte als een nieuw klantbericht, waardoor direct een volgende AI-reactie wordt gegenereerd - soms tientallen keren per seconde voordat iemand het opmerkt.

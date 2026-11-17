@@ -77,6 +77,43 @@ Een leveranciersbeveiligingsbeoordeling van een Nederlandse enterprise is niet m
 
 Oprichters die zich richten op de Nederlandse markt moeten deze beoordeling verwachten zodra een pilotgesprek serieus wordt, niet erna - want de kloof tussen "AI-builder-prototype" en "documentatie waar een Nederlandse compliance officer daadwerkelijk voor tekent" is volledig te dichten, maar niet in de twee of drie dagen die de meeste oprichters zichzelf gunnen zodra de vragenlijst binnenkomt.
 
+## Wat is een vendor security review van een Nederlandse enterprise?
+
+Een vendor security review van een Nederlandse enterprise is de formele beoordeling die de informatiebeveiligingsafdeling van een Nederlands bedrijf uitvoert voordat het een leverancier toestaat zijn data te verwerken. Daarbij worden hostinglocatie, toegangsbeheer, incidentrespons en contractuele waarborgen getoetst aan de AVG en aan de eigen interne normen van de klant. In het Nederlands heet dit vaak een *leveranciersbeoordeling* of *leveranciersassessment*, en het komt meestal binnen als spreadsheet of portaalvragenlijst, samen met een concept-verwerkersovereenkomst op basis van artikel 28 AVG.
+
+De beoordeling steunt doorgaans op een klein aantal bekende kaders. NEN 7510 is leidend in de zorg, ISO/IEC 27001 is de internationale norm die de meeste Nederlandse beveiligingsteams eveneens herkennen, en NEN 7510 bouwt zelf voort op de controlestructuur van ISO 27001 en 27002. Meldingen van datalekken worden beoordeeld aan de hand van artikel 33 AVG, dat een verwerkingsverantwoordelijke verplicht de toezichthouder - in Nederland de Autoriteit Persoonsgegevens - binnen 72 uur te informeren nadat deze kennis heeft gekregen van een meldplichtig datalek. Als verwerker is het uw taak de klant zonder onredelijke vertraging te informeren, zodat die deze termijn kan halen.
+
+## Hoe bereidt u zich voor op een vendor security review van een Nederlandse enterprise: een checklist
+
+De snelste manier om u voor te bereiden op een vendor security review van een Nederlandse enterprise is het bewijsmateriaal te verzamelen voordat de vragenlijst binnenkomt, omdat de meeste vragen om bewijs vragen in plaats van beloften. De sprint van LogiFlow AI besloeg de onderstaande onderdelen, en vrijwel elke Nederlandse beoordeling vraagt naar hetzelfde terrein:
+
+| Onderdeel | Wat de beoordelaar vraagt | Voor te bereiden bewijs |
+|---|---|---|
+| Dataresidentie | Waar worden data opgeslagen en verwerkt, inclusief AI-aanroepen? | Dataflowdiagram met de regio per systeem |
+| Subverwerkers | Wie heeft nog meer toegang tot de data, en waar zijn zij gevestigd? | Lijst van subverwerkers met locatie en doel |
+| Toegangsbeheer | Hoe worden de data van de ene klant gescheiden van die van een andere? | RLS-beleidslogica en resultaten van geautomatiseerde tests |
+| Versleuteling | Zijn de data beschermd in rust en tijdens transport? | Providerinstellingen en TLS-configuratie |
+| Incidentrespons | Hoe snel informeert u ons over een datalek? | Schriftelijk plan met rollen en meldingsstappen |
+| Contract | Ondertekent u onze verwerkersovereenkomst? | Beoordeelde *verwerkersovereenkomst* of uw eigen DPA |
+| Afstemming op kaders | Hoe sluiten uw maatregelen aan op wat onze auditors gebruiken? | Controlemapping op NEN 7510- of ISO 27001-categorieën |
+
+Een praktische volgorde voor de voorbereiding:
+
+1. **Los eerst de technische gaten op.** Dwing RLS af op elke tabel, kies bewust EU-regio's en controleer welke regio van de AI-provider de inferentie verwerkt.
+2. **Schrijf daarna het dataflowdocument.** Dit beantwoordt vragen over residentie, subverwerkers en versleuteling op één plek.
+3. **Stel het incidentresponsplan op.** Benoem wie detecteert, wie beslist en wie contact opneemt met de klant.
+4. **Breng de maatregelen in kaart volgens het kader van de beoordelaar.** Gebruik hun categorieën, niet die van uzelf.
+5. **Voeg een samenvatting van één pagina in begrijpelijke taal toe.** Dit is de pagina die wordt doorgestuurd naar juridische zaken of de ondernemingsraad.
+
+## Veelgemaakte fouten van oprichters bij Nederlandse leveranciersbeoordelingen
+
+De meest voorkomende fout is een vendor security review van een Nederlandse enterprise beantwoorden met marketingteksten in plaats van bewijs. Formuleringen als "beveiliging op bankniveau" geven een beoordelaar niets om te archiveren en leiden meestal tot een extra ronde vervolgvragen. Andere fouten vertragen het proces net zo betrouwbaar:
+
+- **De hostingregio op de standaardinstelling laten staan.** Supabase, Vercel en de meeste cloudplatforms laten u een regio kiezen, en een standaardregio buiten de EU wordt een bevinding over residentie, ook als niemand dat zo bedoelde.
+- **De AI-provider vergeten.** Uw database kan in Frankfurt staan terwijl prompts naar een modelendpoint in de Verenigde Staten gaan. Beoordelaars vragen hier rechtstreeks naar.
+- **De verwerkersovereenkomst als formaliteit behandelen.** Bepalingen over subverwerkers en auditrechten vragen vaak een zorgvuldig antwoord, en stilzwijgen vertraagt het contract.
+- **In losse fragmenten antwoorden.** Antwoorden die over meerdere e-mails verspreid zijn, maken het voor de beveiligingsafdeling van de klant moeilijk om één samenhangend dossier aan te leggen.
+
 ## Belangrijkste inzichten
 
 - Leveranciersbeveiligingsbeoordelingen van Nederlandse enterprises gaan verder dan een generieke internationale vragenlijst - verwacht expliciete vragen over EU-dataresidentie, NEN 7510-afgestemde controles en documentatie die is opgebouwd om interne verspreiding naar juridische zaken en soms een ondernemingsraad te overleven.

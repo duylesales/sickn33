@@ -40,6 +40,52 @@ As of 2026, the EU AI Act adds another compliance layer on top of GDPR. If your 
 
 This is exactly the kind of cross-cutting architecture problem LaunchStudio's parent company, **Manifera**, has been solving since it was founded in **2014**. Manifera's European headquarters at Herengracht 420, 1017 BZ Amsterdam sits inside the same regulatory environment its clients are trying to launch into, which is why "Dutch management with Vietnamese mastery" isn't just a tagline - it means the compliance requirements are understood locally, while the engineering execution happens through Manifera's development center in Ho Chi Minh City, Vietnam. As Herre Roelevink, Founder & Managing Director of Manifera, puts it: "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's now about the architecture and security needed to bring those products to maturity. We have eleven years of experience in exactly that." You can review the underlying engineering practice at [Manifera's custom software development services](https://www.manifera.com/services/custom-software-development/).
 
+## Which Lawful Basis Covers Your AI Features?
+
+Every AI feature that processes personal data needs one of the six lawful bases in GDPR Article 6, and for most B2B AI SaaS products the realistic options are contract, legitimate interest or consent. Choosing the basis is not paperwork: it decides what you are allowed to do with the data later.
+
+- **Contract (Article 6(1)(b)):** Fits when the AI feature is the service the customer signed up for, such as summarising the customer's own documents. It does not stretch to reusing that data for unrelated purposes, like training a model that serves other customers.
+- **Legitimate interest (Article 6(1)(f)):** Can cover activities such as abuse detection or product analytics, but requires a documented balancing test showing that your interest does not override the user's rights and freedoms.
+- **Consent (Article 6(1)(a) and Article 7):** Needed in practice for anything users would not reasonably expect, such as model training on their content. It must be opt-in, specific, informed and as easy to withdraw as it was to give.
+
+Purpose limitation under Article 5(1)(b) is the trap here. Data collected to answer a user's query cannot quietly become training data six months later simply because it would improve the model.
+
+## Fine-Tuning vs. RAG vs. Zero-Retention APIs: A GDPR Comparison
+
+The architecture you choose determines how hard GDPR compliance will be, and RAG combined with a zero-retention API tier is usually the lowest-risk default for AI data security.
+
+| Approach | Where personal data ends up | Right to erasure (Article 17) | Typical GDPR risk |
+|---|---|---|---|
+| Fine-tuning on customer data | Inside the model weights | No reliable way to remove a single user | High |
+| RAG with a vector database | Vector store plus source database | Delete vectors and rows via `user_id` | Moderate, manageable with cascading deletes |
+| Zero-retention API, no storage | Only transiently at the processor | Nothing persistent to delete on the provider side | Low, if the DPA and retention terms are in writing |
+| Self-hosted open-weight model in the EU | Your own infrastructure | Fully under your control | Low transfer risk, but you own all of the security |
+
+## GDPR Compliance Checklist for AI SaaS Founders
+
+Before you launch an AI feature to European users, you should be able to tick off every item on this list:
+
+1. **Map the data flow.** Document which personal data enters prompts, which goes into embeddings, and which leaves the EU/EEA.
+2. **Record the lawful basis** for each AI processing purpose in your Record of Processing Activities (Article 30).
+3. **Sign DPAs** with every processor, including LLM providers, vector database hosts and observability tools.
+4. **Confirm transfer safeguards:** SCCs plus a Transfer Impact Assessment, or EU-region processing.
+5. **Implement cascading deletion** across your primary database, vector store, file storage and caches.
+6. **Minimise what goes into prompts.** Strip or pseudonymise identifiers the model does not need, in line with the data minimisation principle of Article 5(1)(c).
+7. **Set retention limits** on prompt and response logs, not just on user accounts.
+8. **Update your privacy notice** (Articles 13 and 14) so it names the AI processing and the categories of processors involved.
+9. **Run the DPIA** if your feature profiles users or makes automated decisions.
+10. **Prepare a breach process.** Under Article 33 you must notify your supervisory authority within 72 hours of becoming aware of a personal data breach, unless the breach is unlikely to result in a risk to individuals.
+
+## Common GDPR Mistakes in AI-Built Prototypes
+
+The most common GDPR failures in AI-built prototypes are not in the model at all, but in the logging and tooling around it.
+
+- **Full prompts in application logs.** Debug logging often writes complete prompts, including names and email addresses, into tools like Sentry or a hosting provider's log stream, with no retention limit.
+- **Observability platforms without a DPA.** LLM tracing tools store every prompt and response. If they process EU personal data, they are processors too and belong in your sub-processor list.
+- **Deletion that skips backups and caches.** Deleting a user from PostgreSQL while leaving their documents in object storage, a Redis cache or a semantic cache is incomplete erasure.
+- **Free-tier API keys in production.** A key created on a consumer or trial plan may come with different data-use terms than the enterprise agreement you think you are covered by.
+- **No proof of consent.** If you rely on consent, you must be able to demonstrate when and how it was given (Article 7(1)), which requires a timestamped audit trail rather than a checkbox that leaves no record.
+
 ## Key Takeaways
 
 - Training LLMs on user data directly violates the GDPR's 'Right to be Forgotten' because you cannot easily delete specific user data from a model's neural weights.

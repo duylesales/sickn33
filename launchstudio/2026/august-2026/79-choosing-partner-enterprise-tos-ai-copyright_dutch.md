@@ -81,6 +81,39 @@ LaunchStudio stelt geen juridische documenten op - dat werk vereist oprecht gekw
 
 De founders die dit goed doen, volgen over het algemeen dezelfde volgorde: schakel eerst LaunchStudio (of een gelijkwaardige technische partner) in om de datastromen, AI-providerrelaties en technische architectuur van het product nauwkeurig te documenteren; breng die documentatie naar een gekwalificeerde AI-specialist-advocaat om de algemene voorwaarden, indemnificatietaal en aansprakelijkheidsbepalingen op te stellen; en implementeer eventuele openbaarmakingsvereisten op productniveau - AI-interactiemeldingen, contentlabeling - als onderdeel van dezelfde technische opdracht. De technische documentatiestap overslaan en direct naar een advocaat gaan, verplaatst de dubbelzinnigheid meestal gewoon van het contract naar het intake-gesprek van de advocaat, wat resulteert in voorwaarden die juridisch gepolijst maar technisch onnauwkeurig zijn over wat het product daadwerkelijk doet.
 
+## Welke EU-regels bepalen de naleving van AI-auteursrecht?
+
+De naleving van AI-auteursrecht in de EU wordt bepaald door een handvol specifieke regels, en een juridisch team van een enterprise verwacht dat uw algemene voorwaarden de regels weerspiegelen die op uw product van toepassing zijn. De tabel hieronder noemt de meest voorkomende; welke daarvan van toepassing is, en hoe, is een vraag voor uw juridische partner.
+
+| Regel | Waar die over gaat | Waarom die ertoe doet voor uw voorwaarden |
+|---|---|---|
+| EU AI Act, artikel 50 | Transparantie: mensen laten weten dat ze met een AI-systeem communiceren en door AI gegenereerde content in bepaalde gevallen markeren | Uw product en uw voorwaarden moeten dezelfde openbaarmakingen beschrijven |
+| EU AI Act, artikel 53 | Verplichtingen voor aanbieders van AI-modellen voor algemene doeleinden, waaronder een auteursrechtbeleid en een openbare samenvatting van de trainingscontent | Helpt u begrijpen wat de aanbieder van uw foundation model kan documenteren over trainingsdata |
+| DSM-richtlijn (EU) 2019/790 inzake auteursrecht in de digitale eengemaakte markt, artikel 4 | Uitzondering voor tekst- en datamining, met een opt-out voor rechthebbenden | Relevant voor elke verklaring over de herkomst van trainingsdata die u afgeeft |
+| AVG, artikel 28 | Overeenkomsten tussen verwerkingsverantwoordelijken en verwerkers | Regelt hoe prompts en output van klanten worden verwerkt, ook door AI-subverwerkers |
+
+## Checklist voor enterprise-algemene voorwaarden van AI-producten
+
+Voordat uw enterprise-algemene voorwaarden naar het juridische team van een prospect gaan, controleert u of u elk van deze punten kunt beantwoorden op basis van documentatie in plaats van geheugen:
+
+- Welk foundation model of welke modellen het product gebruikt, en onder welke voorwaarden van de aanbieder.
+- Of prompts, output of geüploade bestanden worden opgeslagen, en hoe lang.
+- Of klantdata wordt gebruikt voor training of fine-tuning, en hoe een klant zich daarvoor kan afmelden.
+- Wie eigenaar is van gegenereerde output, uitdrukkelijk vastgelegd in de voorwaarden.
+- De reikwijdte en het plafond van een eventuele vrijwaring voor auteursrechtclaims die u biedt.
+- Welke AI-openbaarmakingen in het product bestaan en waar gebruikers die zien.
+- Een actuele lijst van subverwerkers met ondertekende verwerkersovereenkomsten.
+
+## Veelgemaakte fouten in enterprise-algemene voorwaarden voor AI
+
+De meest voorkomende fouten zijn beloftes die de werkelijke architectuur van het product niet kan waarmaken.
+
+1. **"Geen training op uw data" beloven terwijl een instelling bij de aanbieder iets anders zegt.** De voorwaarden moeten overeenkomen met de daadwerkelijke configuratie van elke AI-aanbieder in de stack.
+2. **De vrijwaring van een foundation-modelaanbieder kopiëren alsof die van uzelf is.** De bescherming die een aanbieder zijn klanten biedt, gaat niet automatisch over op uw klanten.
+3. **Onbeperkte vrijwaring aanbieden om een deal te sluiten.** Dat creëert een aansprakelijkheid die een jong bedrijf zelden kan dragen.
+4. **Eigendom van output impliciet laten.** Zwijgen over eigendom is de bepaling die juridische teams van enterprises als eerste aanstrepen.
+5. **AI-openbaarmakingen beschrijven die het product niet toont.** Een openbaarmaking die alleen in de voorwaarden staat en niet in de interface, voldoet niet aan een transparantievereiste.
+
 ## Belangrijkste inzichten
 
 - Generieke SaaS-sjablonen voor algemene voorwaarden pakken de specifieke juridische vragen die AI-producten oproepen niet aan - eigendom van output, herkomst van trainingsdata, AI-specifieke aansprakelijkheid en transparantieverplichtingen onder de EU AI Act.

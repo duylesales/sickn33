@@ -48,6 +48,56 @@ Audit trails aren't just a nice-to-have for enterprise sales - they're a direct 
 
 This is exactly the kind of compounding, cross-regulation architecture work Manifera has specialized in since being founded in **2014** - 160+ delivered projects, including audit-heavy, regulator-facing work for clients like TNO, run out of its Amsterdam HQ at Herengracht 420. Herre Roelevink, Founder & Managing Director of Manifera, sums up the shift: "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's now about the architecture and security needed to bring those products to maturity. We have eleven years of experience in exactly that."
 
+## What Is an AI Audit Trail?
+
+An AI audit trail is a complete, tamper-evident record of every input, configuration and output involved in an AI decision, detailed enough that someone outside your team can reconstruct why the system produced a specific result at a specific moment. It differs from ordinary application logging in one key way: application logs help engineers fix bugs, while an audit trail has to stand up as evidence in front of a customer, an auditor or a regulator.
+
+That difference changes your design choices. Debug logs can be sampled, rotated and deleted after a few days. An audit trail for an AI SaaS platform must be complete for every decision in scope, retained for a defined period, protected against editing, and searchable per tenant, per user and per decision ID.
+
+## How Do You Build an AI Audit Trail? A Step-by-Step Process
+
+You build an AI audit trail by deciding which decisions need it, defining one log schema, capturing that schema at the moment of generation, and shipping it asynchronously to immutable storage that you can query on demand. In practice, most teams follow this sequence:
+
+1. **Classify your AI decisions.** List every place your product calls an LLM and mark which outputs affect people, money or legal positions. A "summarise this email" feature and a "flag this loan applicant" feature do not need the same level of evidence.
+2. **Define one decision schema.** Agree on a single JSON structure: decision ID, tenant ID, user ID, timestamp, prompt version, model snapshot, retrieved chunk IDs, parameters, tool calls, output, and hashes. One schema across all features keeps later queries simple.
+3. **Version your prompts like code.** Store system prompts in your repository or a prompt registry with a version number, so the log can reference `prompt_v14` instead of copying an unlabelled string.
+4. **Capture at the call site.** Wrap your LLM client in a single function that writes the log event every time, so no developer can ship a new AI feature that bypasses logging.
+5. **Ship asynchronously.** Publish the event to your queue and return the response to the user without waiting for storage.
+6. **Seal and store.** Hash-chain the records and write them to append-only storage with object lock or a ledger database.
+7. **Build the retrieval path.** Create an internal tool that takes a decision ID and rebuilds the full context in one screen. If reconstruction takes an engineer two days, the audit trail is not really working.
+8. **Test it with a mock audit.** Pick a random decision from last month and ask a colleague to explain it using only the logs.
+
+## Basic Logging vs. a Full AI Audit Trail
+
+The table below shows why a "question and answer" log is not enough for enterprise AI security reviews.
+
+| Capability | Basic request logging | Full AI audit trail |
+|---|---|---|
+| User input and final output | Yes | Yes |
+| Exact system prompt version | No | Yes |
+| Exact model snapshot | Rarely | Yes |
+| Retrieved RAG chunks with source IDs | No | Yes |
+| Sampling parameters and tool calls | No | Yes |
+| Tamper evidence (hashes, hash chain) | No | Yes |
+| Retention policy per tenant | Ad hoc | Defined and enforced |
+| Can answer "why did the AI decide this?" | No | Yes |
+
+## Common Mistakes When Logging AI Decisions
+
+Most failed AI audits come from a small set of avoidable architecture mistakes, not from missing tools.
+
+- **Logging only on errors.** Disputes often concern outputs that looked fine at the time. If you only log failures, the decision a client questions three months later is gone.
+- **Overwriting prompts in place.** Editing the live system prompt without a new version number makes every older log entry ambiguous.
+- **Storing secrets and raw personal data in logs.** API keys, passwords and unnecessary personal data in an immutable store are a serious AI vulnerability, because you cannot easily remove them. Redact secrets before writing, and minimise personal data to what the audit genuinely needs.
+- **No tenant separation.** In a multi-tenant AI SaaS platform, audit logs must be partitioned per customer, so you can hand one client its own records without exposing another's.
+- **Forgetting tool calls and agent steps.** When an AI agent calls APIs or chains several model calls, each step is part of the decision and must be logged under the same decision ID.
+
+## How Long Should You Keep AI Audit Logs?
+
+You should keep AI audit logs for as long as your legal obligations and customer contracts require, and no longer. For high-risk systems, the EU AI Act requires providers and deployers to keep automatically generated logs for a period appropriate to the system's purpose, of at least six months, unless other EU or national law sets a different period. Sector rules in finance or healthcare can require longer.
+
+GDPR pulls in the other direction. Its storage limitation and data minimisation principles mean you cannot keep personal data in logs forever "just in case". A common technique is to pseudonymise user identifiers in the log and encrypt personal fields with a per-user key. If a valid erasure request arrives, you destroy that key - often called crypto-shredding - and the personal data becomes unreadable while the hash chain and the rest of the audit record stay intact. Document your retention periods per log type, and put them in your data processing agreement so enterprise buyers can see them during procurement.
+
 ## Key Takeaways
 
 - Enterprises cannot legally use 'Black Box' AI for decisions that affect people's rights or livelihoods. If your AI makes a critical error, you must be able to prove exactly what data and configuration led to that decision.
@@ -61,6 +111,8 @@ This is exactly the kind of compounding, cross-regulation architecture work Mani
 - Do not store massive AI logs in your primary transactional database. Use asynchronous queues to write log data into cheap cold storage, keeping application performance fast while retaining full forensic detail.
 
 - A properly built audit trail satisfies both EU AI Act Article 12 record-keeping obligations and GDPR Article 22 explanation rights with the same infrastructure.
+
+- Keep high-risk AI logs for at least the EU AI Act minimum of six months, and use pseudonymisation and crypto-shredding to reconcile immutable storage with GDPR erasure rights.
 
 ## Make Your AI Explainable
 

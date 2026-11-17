@@ -36,11 +36,11 @@ In every case, the compliance platform is a very good smoke detector. It is not 
 
 ## The Order-of-Operations Problem
 
-This is where the buy-vs-build decision actually gets made, usually without the founder realizing it. Managed compliance platforms run $1,000 to $3,000 per month depending on plan tier and company size, frequently sold as annual contracts in the $10,000–$30,000 range. That price is entirely reasonable for a company that needs continuous evidence collection across dozens of real, implemented controls. It is a poor use of capital for a pre-revenue or early-revenue founder whose application doesn't have those controls yet, because the subscription is billing monthly for a monitoring layer sitting on top of nothing.
+This is where the buy-vs-build decision actually gets made, usually without the founder realizing it. Managed compliance platforms run $1,000 to $3,000 per month depending on plan tier and company size, frequently sold as annual contracts in the $10,000-$30,000 range. That price is entirely reasonable for a company that needs continuous evidence collection across dozens of real, implemented controls. It is a poor use of capital for a pre-revenue or early-revenue founder whose application doesn't have those controls yet, because the subscription is billing monthly for a monitoring layer sitting on top of nothing.
 
 Consider the math. If it takes an under-resourced solo founder four to six months of nights-and-weekends effort to teach themselves Postgres RLS policy syntax, rebuild a Stripe webhook handler with proper signature verification, and migrate secrets into an Edge Function - all while a compliance platform subscription runs in the background - that's $4,000 to $18,000 in subscription spend before a single meaningful finding is closed. Worse, that timeline is optimistic; most founders learning backend security concepts from scratch while also running the business take longer, and some findings (like retroactively adding audit logging) are genuinely hard to bolt on without real backend experience.
 
-Compare that to hiring the engineering work out directly. A focused hardening engagement that implements RLS across the schema, rebuilds the webhook listener, migrates secrets, and adds structured logging and error monitoring is a bounded, one-time cost - typically in the €2,500–€4,500 range for a "Relaunch & Scale" scope - delivered in one to three weeks by engineers who have done this exact pattern dozens of times. The compliance platform's own dashboard becomes the natural checklist for what to fix, but the fixing itself is engineering labor, not a SaaS subscription feature.
+Compare that to hiring the engineering work out directly. A focused hardening engagement that implements RLS across the schema, rebuilds the webhook listener, migrates secrets, and adds structured logging and error monitoring is a bounded, one-time cost - typically in the €2,500-€4,500 range for a "Relaunch & Scale" scope - delivered in one to three weeks by engineers who have done this exact pattern dozens of times. The compliance platform's own dashboard becomes the natural checklist for what to fix, but the fixing itself is engineering labor, not a SaaS subscription feature.
 
 ## When the Compliance Platform Becomes Worth Every Dollar
 
@@ -59,11 +59,50 @@ The founders who get the best outcome treat this as two separate purchases in a 
 
 Done in this order, the compliance platform's dashboard goes green quickly because there's very little left to flag, and the ongoing subscription is money spent proving something true rather than money spent discovering something broken.
 
+## What Is Compliance Automation, and What Is It Not?
+
+Compliance automation is software that continuously checks your systems against a framework such as SOC 2, ISO 27001, or GDPR, collects evidence that your controls are working, and organizes that evidence for an auditor. It automates the *proving* of compliance. It does not automate the *engineering* that makes a control exist in the first place.
+
+That distinction is the whole buy-vs-build question in one sentence. "Buy" means paying for the proving layer. "Build" means paying for the engineering layer. Most AI-builder apps need both, but they need the engineering layer first.
+
+## Compliance Platform vs. Engineering Hardening: Side-by-Side
+
+The table below compares a compliance automation subscription with a one-time hardening engagement on the dimensions founders usually weigh.
+
+| Dimension | Compliance automation platform (Vanta, Drata) | Engineering hardening engagement (LaunchStudio) |
+|---|---|---|
+| Primary output | Monitoring, policies, evidence for auditors | Working controls in your code and database |
+| Access to your systems | Read-only integrations | Write access to the codebase and schema |
+| Can enable RLS policies | Detects missing RLS | Writes and tests the policies |
+| Can fix Stripe webhooks | Flags missing signature checks | Rebuilds the listener server-side |
+| Pricing model | Recurring subscription, often annual | Bounded, one-time scope |
+| Cost figures in this article | $1,000-$3,000 per month | Typically €2,500-€4,500 for "Relaunch & Scale" |
+| Best moment to start | After core controls exist | Before the audit window begins |
+| Value for SOC 2 Type II | High - automates evidence over time | Indirect - makes controls pass |
+
+## How to Decide: Five Questions Before You Sign a Compliance Contract
+
+You should buy a compliance automation platform now only if you can answer "yes" to most of the questions below; otherwise, harden first. Work through them in order:
+
+1. **Is Row Level Security enabled and scoped on every table that holds customer data?** If you don't know, the answer is no.
+2. **Are all API keys, including OpenAI or Anthropic keys, kept server-side?** A single key in the browser bundle is a finding the platform will show you on day one.
+3. **Do your Stripe webhooks verify signatures and handle retries idempotently?** Payment integrity is one of the first things a technical reviewer checks.
+4. **Do you already log who accessed or changed sensitive data?** Audit logging is hard to add retroactively and is central to SOC 2 evidence.
+5. **Is a real audit or enterprise questionnaire expected within the next few months?** If not, a subscription mostly bills you for waiting.
+
+Three or more "no" answers usually mean the faster, cheaper path is to fix the application first and subscribe once the dashboard has something real to confirm.
+
+## Common Mistakes in the Buy-vs-Build Decision
+
+The most expensive mistake is treating a compliance subscription as a substitute for engineering capacity. A dashboard full of red findings does not shrink on its own, and every month it stays red is subscription spend with no audit progress.
+
+Two other mistakes are frequent. First, adopting policy templates that describe controls the product doesn't actually have - an auditor tests whether practice matches policy, so a template that promises audit logging you never built creates a finding rather than preventing one. Second, starting the SOC 2 Type II observation window before the controls are stable, which means evidence from the early months can show failures that later count against you.
+
 ## Key Takeaways
 
 - Managed compliance platforms like Vanta and Drata excel at continuous monitoring, policy templates, and evidence collection - but they only have read access to your systems, not write access to your code.
 - These platforms can detect that Row Level Security is disabled, that a Stripe webhook lacks signature verification, or that an API key is exposed - but an engineer, not the platform, has to actually implement the fix.
-- Subscribing to a compliance platform before your AI-builder app has real technical controls typically means paying $1,000–$3,000/month to stare at unresolved red flags for months, often longer than a focused hardening engagement would take.
+- Subscribing to a compliance platform before your AI-builder app has real technical controls typically means paying $1,000-$3,000/month to stare at unresolved red flags for months, often longer than a focused hardening engagement would take.
 - A one-time engineering engagement to implement RLS, secure webhooks, migrate secrets, and add logging is usually more cost-effective and faster than trying to close those gaps yourself while a compliance subscription runs in the background.
 - The right sequence is hardening first, monitoring second: fix the underlying application, then let a compliance platform earn its subscription by collecting evidence against controls that actually exist.
 
@@ -104,7 +143,7 @@ No. These platforms connect to your infrastructure with read-only integrations t
 
 ### How much does a managed compliance platform cost compared to a one-time hardening engagement?
 
-Compliance platforms typically run $1,000–$3,000 per month, often sold as annual contracts of $10,000–$30,000. A focused engineering engagement to implement RLS, secure webhooks, migrate secrets, and add logging is usually a one-time cost in the low thousands of euros, delivered in one to three weeks - often cheaper in total than several months of compliance subscription spent waiting for findings to close.
+Compliance platforms typically run $1,000-$3,000 per month, often sold as annual contracts of $10,000-$30,000. A focused engineering engagement to implement RLS, secure webhooks, migrate secrets, and add logging is usually a one-time cost in the low thousands of euros, delivered in one to three weeks - often cheaper in total than several months of compliance subscription spent waiting for findings to close.
 
 ### Do I still need a compliance platform if I use LaunchStudio to harden my app?
 
@@ -140,7 +179,7 @@ LaunchStudio is operated by Manifera, an international software engineering comp
       "name": "How much does a managed compliance platform cost compared to a one-time hardening engagement?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Compliance platforms typically run $1,000–$3,000 per month, often sold as annual contracts of $10,000–$30,000. A focused engineering engagement to implement RLS, secure webhooks, migrate secrets, and add logging is usually a one-time cost in the low thousands of euros, delivered in one to three weeks - often cheaper in total than several months of compliance subscription spent waiting for findings to close."
+        "text": "Compliance platforms typically run $1,000-$3,000 per month, often sold as annual contracts of $10,000-$30,000. A focused engineering engagement to implement RLS, secure webhooks, migrate secrets, and add logging is usually a one-time cost in the low thousands of euros, delivered in one to three weeks - often cheaper in total than several months of compliance subscription spent waiting for findings to close."
       }
     },
     {

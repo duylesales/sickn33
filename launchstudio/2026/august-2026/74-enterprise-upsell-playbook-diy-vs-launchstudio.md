@@ -63,6 +63,36 @@ The real comparison isn't dollars against dollars - it's engineering time that c
 
 If expansion infrastructure - SSO, usage metering, admin tooling - is actually adjacent to your product's core differentiation, or if a founder's team already has deep experience shipping enterprise identity integrations, building in-house can be the right call. The mistake isn't building it yourself; it's treating unglamorous infrastructure work as equivalent in priority to the core product roadmap when a fixed-scope partner can deliver it faster and let the team stay focused on what's actually differentiating.
 
+## What Is Net Revenue Retention, and How Do You Calculate It?
+
+Net revenue retention (NRR) is the percentage of recurring revenue you keep from an existing group of customers over a period, after adding expansion and subtracting downgrades and churn. The standard calculation is:
+
+**NRR = (starting recurring revenue + expansion - contraction - churned revenue) ÷ starting recurring revenue**
+
+Take a cohort that starts the year at €10,000 in monthly recurring revenue. If those same accounts add €3,000 through seat upgrades, downgrade by €500 and churn €1,000, NRR is (10,000 + 3,000 - 500 - 1,000) ÷ 10,000 = 115%. New customers signed during the period are deliberately left out, which is exactly why NRR shows whether an enterprise upsell motion is working on its own.
+
+## Which Signals Should Trigger an Enterprise Upsell?
+
+The best enterprise upsell triggers are product signals your system can detect automatically, each paired with a clear next action. A practical mapping:
+
+| Expansion signal | What the product must track | Who gets notified | Typical next step |
+|---|---|---|---|
+| Account at 80-90% of its seat limit | Active seats vs licensed seats | Account admin and your sales owner | Self-service seat upgrade prompt |
+| Usage limit approaching | API calls, reports or storage per billing period | Account admin | Offer of the next tier |
+| New users from a different department | Email domain plus team or workspace metadata | Your sales owner | Conversation about a department rollout |
+| IT asks about SSO or SCIM | Security questionnaire or support tickets | Founder or technical lead | Enterprise plan with identity features |
+| Admin exports usage reports | Dashboard and export events | Your sales owner | ROI review ahead of renewal |
+
+## Common Mistakes in an Enterprise Upsell Motion
+
+Most stalled expansion deals fail on product readiness, not on the sales pitch.
+
+1. **Gating SSO behind an upsell nobody can see coming.** If single sign-on is only discussed when IT blocks a rollout, the expansion waits on an engineering project.
+2. **Manual seat additions.** Every invoice that has to be created by hand adds days to an expansion the customer already wanted.
+3. **No owner for expansion signals.** Threshold alerts that land in a shared inbox nobody reads are no better than no alerts.
+4. **Measuring only new logos.** Without tracking NRR per cohort, a founder can't tell whether accounts are growing or quietly shrinking.
+5. **Ignoring deprovisioning.** Enterprise IT teams care as much about removing leavers quickly through SCIM as about adding new users, so a one-way integration rarely passes review.
+
 ## Key Takeaways
 
 - Net revenue retention, driven by expansion within existing accounts, is a more durable growth engine than new-logo acquisition alone, but it only happens when the product contains specific infrastructure to trigger and support it.

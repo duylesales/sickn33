@@ -78,6 +78,75 @@ Een prachtige landingspagina die de gebruiker na de klik in een haperend registr
 
 Herre Roelevink, Oprichter & Managing Director van Manifera, omschrijft deze kwaliteitsstandaard: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Manifera bouwt deze converterende landingspagina's en achterliggende systemen sinds **2014** vanuit **Amsterdam** (Herengracht 420) en **Ho Chi Minhstad, Vietnam**.
 
+## Wat Is Time-to-Value in een AI SaaS Platform?
+
+Time-to-value is de tijd tussen de eerste klik van een nieuwe gebruiker op uw call to action en het moment waarop die gebruiker het kernvoordeel ervaart dat uw landingspagina beloofde - de eerste bruikbare AI-output, de eerste gesynchroniseerde factuur, het eerste gegenereerde rapport. Voor een AI SaaS platform ligt het doel onder de 60 seconden, omdat bezoekers binnenkomen met de belofte nog vers in het geheugen en weinig geduld voor configuratie.
+
+Het grootste deel van die tijd gaat verloren aan een handvol voorspelbare frictiepunten:
+
+| Frictiepunt | Wat de gebruiker ervaart | Betere aanpak |
+|---|---|---|
+| Lang registratieformulier | Acht velden voordat er iets te zien is | Alleen e-mail of inloggen met Google/Microsoft |
+| Verplichte e-mailverificatie vooraf | Moet de app verlaten om eerst te bevestigen | Laat de gebruiker binnen en verifieer op de achtergrond |
+| Profielvragenlijst | Vragen over functie, teamgrootte en doelen | Vraag het later, of leid het af uit gebruik |
+| Lege werkruimte | Een leeg scherm zonder begeleiding | Voorbeelddata of een kant-en-klaar sjabloon |
+| Leeg promptveld | Geen idee wat in te typen | Twee of drie voorgestelde prompts |
+| Verplichte integratie | Eerst een tool koppelen voordat er waarde is | Eerst laten proberen met voorbeelddata |
+
+Elke rij links is een reden waarom een gebruiker die uw kop geloofde, toch vertrekt voordat het product zich heeft bewezen.
+
+## Zo Brengt U Nieuwe Gebruikers Binnen 60 Seconden naar Waarde
+
+U brengt nieuwe gebruikers binnen 60 seconden naar waarde door elke stap te schrappen die niet direct naar het eerste bruikbare resultaat leidt, en al het andere naar later te verplaatsen. Een praktische volgorde voor een AI SaaS platform:
+
+1. **Definieer de "eerste winst".** Schrijf het ene resultaat op dat een nieuwe gebruiker in de eerste minuut moet zien, zoals "één factuur uitgelezen en getoond".
+2. **Beperk de registratie tot het minimum.** Bied inloggen met Google en Microsoft via OAuth aan, of e-mail met een magic link. Vraag alleen wat nodig is om het account aan te maken.
+3. **Zet de gebruiker direct in de taak, niet op het dashboard.** Het eerste scherm na registratie moet de actie zijn die de eerste winst oplevert.
+4. **Bied voorbeeldinvoer aan.** Geef een voorbeeld-PDF, dataset of prompt, zodat gebruikers zonder eigen data het product toch zien werken.
+5. **Toon voortgang terwijl de AI werkt.** Streaming output of een duidelijke voortgangsindicator laat een paar seconden verwerking snel aanvoelen.
+6. **Vier het resultaat en stel de volgende stap voor.** Wijs na de eerste output op de volgende actie, zoals het koppelen van de eigen databron.
+7. **Stel profielvragen later.** Zodra de gebruiker waarde heeft gezien, voelen korte vragen over functie en team redelijk in plaats van hinderlijk.
+8. **Meet de tijd tot de eerste winst.** Volg voor elke nieuwe gebruiker de tijd van registratie tot de eerste-winstgebeurtenis en bekijk de traagste gevallen wekelijks.
+
+## Checklist voor de Landingspagina van een AI SaaS Platform
+
+Een goed converterende landingspagina voor een AI SaaS platform beantwoordt op het eerste scherm wat het is, waarom het ertoe doet en hoe u eraan komt, en onderbouwt dat antwoord verderop met bewijs. Controleer vóór de lancering of een herontwerp:
+
+- Een kop die in gewone woorden zegt wat het product doet.
+- Een subkop met de werking en een concreet resultaat.
+- Een echte screenshot of korte, gedempte video van het product boven de vouw.
+- Eén primaire CTA in een gereserveerde kleur, herhaald in de navigatie, de Hero en de footer.
+- Een social proof balk direct onder de Hero, met testimonials op naam of logo's.
+- Drie tot vijf feature-rijen in een Z-patroon, elk met een op voordeel gerichte subkop en een visual.
+- Een korte sectie over beveiliging en omgang met data.
+- Snel laden op mobiel, met gecomprimeerde afbeeldingen en lazy-loaded assets.
+- Een registratiestroom die binnen 60 seconden naar de eerste winst leidt.
+
+## Vertrouwenssignalen waar B2B-Kopers op Letten bij AI SaaS
+
+B2B-kopers die een AI SaaS platform beoordelen, zoeken vóór de registratie naar duidelijke antwoorden over de omgang met hun data, omdat hun IT- en juridische teams later precies dezelfde vragen stellen. Een korte vertrouwenssectie in begrijpelijke taal op de landingspagina beantwoordt ze vroeg:
+
+- **Gebruik van data voor training:** vermeld expliciet of klantdata wordt gebruikt om modellen te trainen. Veel kopers vragen dit als eerste.
+- **Modelaanbieders:** noem de aanbieders die u gebruikt, zoals OpenAI of Anthropic, en of u hun API onder zakelijke voorwaarden gebruikt.
+- **Locatie van data:** vermeld waar data wordt opgeslagen en verwerkt, wat voor Europese kopers onder de AVG (GDPR) van belang is.
+- **Verwerkersovereenkomst:** vermeld dat een verwerkersovereenkomst onder **artikel 28 AVG** beschikbaar is.
+- **Basisbeveiliging:** versleuteling tijdens transport en in opslag, toegangsbeheer en hoe men een kwetsbaarheid kan melden.
+- **AI-transparantie:** als gebruikers met een AI-assistent communiceren, maak dat dan duidelijk, in lijn met de transparantieverplichtingen van de **EU AI Act**.
+- **Toegankelijkheid:** door **WCAG 2.1 AA** te volgen, is de pagina voor meer mensen bruikbaar en voorkomt u problemen in inkoopchecklists.
+
+Verwijs voor details naar een aparte securitypagina, maar houd de samenvatting zichtbaar op de landingspagina zelf. Nederlandse overheidsorganisaties en grotere zakelijke inkopers vragen in aanbestedingen en leveranciersbeoordelingen vaak expliciet naar deze punten; wie ze al op de pagina beantwoordt, verkort het inkooptraject.
+
+## Veelgemaakte Fouten op Landingspagina's en in de Onboarding
+
+De meeste conversieproblemen bij AI SaaS komen voort uit een kleine set terugkerende fouten:
+
+- **Beginnen met de technologie.** "Powered by GPT" is geen waardepropositie. Het resultaat wel.
+- **Meerdere CTA's met hetzelfde gewicht.** Een proefperiode, een demo, een nieuwsbrief en een webinar strijden om dezelfde klik.
+- **Claims zonder bewijs.** Percentages en tijdsbesparingen zonder bron of klant met naam worden genegeerd.
+- **Een snelle pagina met een trage app.** Wie de landingspagina optimaliseert terwijl het eerste scherm in de app seconden nodig heeft om te laden, verplaatst het afhaakmoment in plaats van het op te lossen.
+- **Te vroeg een salesgesprek afdwingen.** Bij self-service pakketten jaagt "Plan een demo" als enige optie gebruikers weg die het alleen willen proberen.
+- **Nooit testen.** Zonder A/B-tests op kop en CTA, of op zijn minst voor-en-navergelijkingen, weet u niet welke wijzigingen helpen.
+
 ## Belangrijkste Inzichten
 
 - De Hero-sectie moet glashelder zijn, niet poëtisch: benoem in de allereerste zin exact wat de software doet en welke harde ROI het oplevert.

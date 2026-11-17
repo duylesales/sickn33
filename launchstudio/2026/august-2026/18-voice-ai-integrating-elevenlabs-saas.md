@@ -28,7 +28,7 @@ To architect this, you must use **WebSockets** or **WebRTC** rather than standar
 
 Founders frequently underestimate the unit economics of Voice AI. Text tokens are cheap; high-fidelity audio generation is not, by an order of magnitude.
 
-ElevenLabs charges by the character generated. A conversational AI agent that speaks for 15 minutes during a simulated sales call might generate roughly 15,000 characters of response. That single session will cost you roughly $0.45–$1.00 in ElevenLabs API fees depending on the voice model tier, plus separate STT and LLM token costs layered on top - a fully-loaded 15-minute session commonly runs well over a dollar once every layer is counted.
+ElevenLabs charges by the character generated. A conversational AI agent that speaks for 15 minutes during a simulated sales call might generate roughly 15,000 characters of response. That single session will cost you roughly $0.45-$1.00 in ElevenLabs API fees depending on the voice model tier, plus separate STT and LLM token costs layered on top - a fully-loaded 15-minute session commonly runs well over a dollar once every layer is counted.
 
 If you charge $20/month for "Unlimited AI Coaching," a single engaged user doing 45 minutes of usage per day will burn through more than your subscription revenue within the first week of the month. You must implement a **Credits System** - the same server-side, atomic-deduction pattern used for text generation limits - charging users based on "Voice Minutes" consumed rather than a flat monthly subscription, and reconciling that against Stripe the same way you would for any metered AI feature.
 
@@ -43,6 +43,52 @@ The user clicks "Generate Briefing." Your Next.js server compiles the text, send
 ElevenLabs' voice cloning capability - letting a user upload a short sample and generate speech in that cloned voice - is a powerful feature but also a legal and trust minefield if implemented carelessly. You need explicit, logged consent from the person being cloned before generating any speech in their voice, clear labeling in your product that a given audio clip is AI-generated (several jurisdictions are moving toward mandatory AI-content disclosure), and safeguards against a user uploading someone else's voice sample without authorization. This isn't a hypothetical risk: voice cloning misuse is one of the fastest-growing categories of AI-related legal exposure, and it's exactly the kind of second-order risk that a prototype built quickly rarely accounts for.
 
 This is precisely the production-hardening work Manifera, the company behind LaunchStudio, has specialized in since **2014** - 11+ years of engineering experience across 160+ delivered projects for clients including Vodafone and TNO. "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's now about the architecture and security needed to bring those products to maturity. We have eleven years of experience in exactly that," says Herre Roelevink, Founder & Managing Director of Manifera. With roughly 80% of AI-built projects never reaching a stable production release, a voice pipeline that never properly cancels a barge-in stream, or a consent flow that's missing entirely, is a common reason a promising voice AI demo never ships to real users.
+
+## What Is a Voice AI Pipeline?
+
+A voice AI pipeline is the chain of services that turns a user's speech into text, generates a response with a language model, and turns that response back into speech, fast enough to feel like a conversation. In most AI SaaS products, ElevenLabs supplies the final speech layer, while separate providers handle transcription and reasoning.
+
+The pipeline is only as good as its slowest and most fragile link. A beautiful ElevenLabs voice does not help if transcription waits for silence too long, or if the LLM call blocks until the full answer is written. That is why the architecture decisions in this guide matter more than the choice of any single voice.
+
+## Real-Time vs Asynchronous Voice AI: Which Should You Build First?
+
+Build asynchronous voice first unless a live conversation is the core of your product. Real-time voice is the harder, more expensive option, and it only pays off when users genuinely need to talk back.
+
+| Criterion | Asynchronous voice (pre-generated audio) | Real-time conversational voice |
+|---|---|---|
+| Typical use case | Briefings, summaries, narrated reports, audio lessons | Sales coaching, interviews, AI receptionists, tutoring |
+| Transport | Standard HTTP request and a stored audio file | WebSockets or WebRTC with streaming |
+| Latency requirement | Seconds or minutes are acceptable | Response should start within about a second |
+| Interruption handling | Not needed | Required (VAD and barge-in cancellation) |
+| Cost control | Easy to predict per generated file | Needs per-minute credits and hard limits |
+| Engineering effort | Low | High |
+| Failure impact | A file is late | The conversation feels broken |
+
+Many teams start in the left column, learn which content users actually listen to, and only then invest in the right column.
+
+## How to Add ElevenLabs to Your AI SaaS, Step by Step
+
+Adding voice to an AI SaaS product safely follows the same order whether you start asynchronous or real-time:
+
+1. **Define the voice use case and the budget.** Decide how many voice minutes a user on each plan may consume, before writing code.
+2. **Keep the API key on the server.** Your ElevenLabs key lives in a server-side environment variable. The browser talks to your backend, or receives a short-lived token issued by your backend, never the raw key.
+3. **Add metering first.** Implement the credit deduction described above so every generated character is attributed to a user and checked against their balance.
+4. **Ship the asynchronous version.** Generate audio from finished text, store it in object storage, and serve it with a signed URL that expires.
+5. **Add streaming playback.** Switch to the streaming endpoint and play audio as chunks arrive, which removes the long wait without needing two-way conversation yet.
+6. **Add conversation and barge-in.** Introduce STT, VAD and the cancellation logic once the one-way flow is stable and measured.
+7. **Monitor latency and cost per session.** Log time to first audio and spend per session, so regressions show up in dashboards rather than in user complaints.
+
+## Common Mistakes in Voice AI Integrations
+
+The most common mistake is testing only on a fast office connection with a good headset. Real users have laptop speakers, background noise and unstable mobile networks, and each of these breaks a voice pipeline in a different way.
+
+Other mistakes that regularly appear in AI-built voice prototypes:
+
+- **Ignoring browser autoplay rules.** Browsers block audio playback until the user has interacted with the page. Start every voice session from an explicit click or tap.
+- **No echo cancellation.** Without the `echoCancellation` constraint in `getUserMedia`, the microphone picks up the AI's own voice and the VAD treats it as an interruption.
+- **Forgetting that recordings are personal data.** Voice recordings and transcripts fall under the GDPR. When voice is processed to identify a specific person, it becomes biometric data under GDPR Article 9, which needs an explicit legal basis. Store recordings only as long as you need them.
+- **Missing AI-content disclosure.** Under Article 50 of the EU AI Act, applying from August 2026, providers of systems that generate synthetic audio must mark it as artificially generated, and deployers of deepfake audio must disclose it. Label AI voices clearly in your product.
+- **Unbounded sessions.** Without a maximum session length, one forgotten open tab can keep generating cost for hours.
 
 ## Key Takeaways
 

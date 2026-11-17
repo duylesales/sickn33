@@ -39,20 +39,20 @@ Wanneer een oprichter beseft dat de met Bolt of Lovable gebouwde app geen Row Le
 
 ## De Werkelijke Kosten van Eén Senior Engineer in Nederland of de EU
 
-Een senior backend/security engineer die in staat is om Postgres RLS-beleid correct te implementeren, een Stripe-integratie te verharden en productiemonitoring op te zetten, is geen junior aanwerving. Op de Nederlandse en bredere EU-techmarkt in 2026 vraagt dat profiel een basissalaris van ongeveer € 75.000–€ 95.000 per jaar. Werkgeverskosten bovenop het basissalaris - sociale premies, pensioen, vakantiegeld en verplichte verzekeringen - komen doorgaans neer op nog eens 25–35% extra, waardoor de volledig belaste kosten oplopen tot **€ 94.000–€ 128.000 per jaar** voordat de persoon ook maar één regel code heeft geleverd.
+Een senior backend/security engineer die in staat is om Postgres RLS-beleid correct te implementeren, een Stripe-integratie te verharden en productiemonitoring op te zetten, is geen junior aanwerving. Op de Nederlandse en bredere EU-techmarkt in 2026 vraagt dat profiel een basissalaris van ongeveer € 75.000-€ 95.000 per jaar. Werkgeverskosten bovenop het basissalaris - sociale premies, pensioen, vakantiegeld en verplichte verzekeringen - komen doorgaans neer op nog eens 25-35% extra, waardoor de volledig belaste kosten oplopen tot **€ 94.000-€ 128.000 per jaar** voordat de persoon ook maar één regel code heeft geleverd.
 
 Voeg de kosten toe die oprichters routinematig vergeten mee te rekenen:
 
-- **Wervingsbureaukosten**: 15–25% van het eerstejaarssalaris als je een recruiter gebruikt, of 6–10 weken van de eigen tijd van de oprichter als je dat niet doet.
-- **Apparatuur, tooling en SaaS-licenties**: laptop, IDE-licenties, kosten voor staging-omgevingen, Sentry/monitoring-licenties - € 3.000–€ 6.000 in het eerste jaar.
-- **Onboarding en inwerktijd**: zelfs een sterke senior aanwerving heeft 4–8 weken nodig om vertrouwd te raken met een onbekende, door AI gegenereerde codebase voordat hij of zij veilig productiewijzigingen kan doorvoeren aan authenticatie en betalingen - de twee systemen waar fouten het duurst zijn.
-- **Ontslagrisico**: de Nederlandse arbeidswetgeving maakt beëindiging traag en kostbaar als de aanwerving niet werkt; een slechte aanwerving kan 3–6 maanden salaris kosten aan transitievergoeding, plus de verzonken kosten van de oorspronkelijke inwerkperiode.
+- **Wervingsbureaukosten**: 15-25% van het eerstejaarssalaris als je een recruiter gebruikt, of 6-10 weken van de eigen tijd van de oprichter als je dat niet doet.
+- **Apparatuur, tooling en SaaS-licenties**: laptop, IDE-licenties, kosten voor staging-omgevingen, Sentry/monitoring-licenties - € 3.000-€ 6.000 in het eerste jaar.
+- **Onboarding en inwerktijd**: zelfs een sterke senior aanwerving heeft 4-8 weken nodig om vertrouwd te raken met een onbekende, door AI gegenereerde codebase voordat hij of zij veilig productiewijzigingen kan doorvoeren aan authenticatie en betalingen - de twee systemen waar fouten het duurst zijn.
+- **Ontslagrisico**: de Nederlandse arbeidswetgeving maakt beëindiging traag en kostbaar als de aanwerving niet werkt; een slechte aanwerving kan 3-6 maanden salaris kosten aan transitievergoeding, plus de verzonken kosten van de oorspronkelijke inwerkperiode.
 
 Reken de volledige som door en een enkele senior engineering-aanwerving kost een pre-revenue of vroege-omzet-oprichter ergens tussen **€ 100.000 en € 140.000** in de eerste twaalf maanden - voor een persoon wiens daadwerkelijke verhardingswerk (RLS, webhooks, geheimen, monitoring) realistisch gezien slechts drie tot zes weken zou kosten om af te ronden.
 
 ## De Wervingsbelasting: Weken Die Je Niet Terugkrijgt
 
-Het salarisbedrag is slechts de helft van het verhaal. De andere helft is tijd. Een realistische wervingsfunnel voor een senior engineer in 2026 ziet er als volgt uit: 2–3 weken om de rol te schrijven, te plaatsen en onder ogen van kandidaten te brengen; 4–6 weken screening, technische interviews en referentiechecks; 1–2 weken onderhandeling over het aanbod; en dan een opzegtermijn van 4–8 weken als de kandidaat momenteel in dienst is (standaard in Nederland en een groot deel van de EU). Dat is een **runway-klap van 10 tot 16 weken** voordat de nieuwe aanwerving de codebase überhaupt opent - en niets daarvan raakt de daadwerkelijke RLS-beleidsfout of webhook-bug die de hele tijd in productie blijft staan. Voor een oprichter die probeert enterprise-deals te sluiten of naar een wachtlijst te lanceren, is dat geen wervingsvertraging. Het is een go-to-market-vertraging vermomd als wervingsvertraging.
+Het salarisbedrag is slechts de helft van het verhaal. De andere helft is tijd. Een realistische wervingsfunnel voor een senior engineer in 2026 ziet er als volgt uit: 2-3 weken om de rol te schrijven, te plaatsen en onder ogen van kandidaten te brengen; 4-6 weken screening, technische interviews en referentiechecks; 1-2 weken onderhandeling over het aanbod; en dan een opzegtermijn van 4-8 weken als de kandidaat momenteel in dienst is (standaard in Nederland en een groot deel van de EU). Dat is een **runway-klap van 10 tot 16 weken** voordat de nieuwe aanwerving de codebase überhaupt opent - en niets daarvan raakt de daadwerkelijke RLS-beleidsfout of webhook-bug die de hele tijd in productie blijft staan. Voor een oprichter die probeert enterprise-deals te sluiten of naar een wachtlijst te lanceren, is dat geen wervingsvertraging. Het is een go-to-market-vertraging vermomd als wervingsvertraging.
 
 ## Wat Je Werkelijk Koopt Wanneer Je Fulltime Aanwerft
 
@@ -73,8 +73,8 @@ Dat werk wordt geleverd binnen **1 tot 3 weken**, geprijsd vanaf ongeveer € 80
 
 Zet de twee paden naast elkaar voor een oprichter die precies het "verhard mijn door AI gebouwde app"-probleem probeert op te lossen:
 
-- **Interne aanwerving**: € 100.000–€ 140.000 volledig belaste kosten in het eerste jaar, 10–16 weken voordat de aanwerving begint, nog eens 4–8 weken inwerktijd voordat hij of zij veilig authenticatie- en betalingscode kan aanraken - ruwweg 4 maanden voordat het daadwerkelijke RLS- en webhookwerk zelfs maar is begonnen.
-- **LaunchStudio-engagement**: € 800–€ 7.500 afhankelijk van de scope, het werk begint binnen dagen na de offerte, en de verharde, productieklare MVP wordt binnen 1–3 weken opgeleverd.
+- **Interne aanwerving**: € 100.000-€ 140.000 volledig belaste kosten in het eerste jaar, 10-16 weken voordat de aanwerving begint, nog eens 4-8 weken inwerktijd voordat hij of zij veilig authenticatie- en betalingscode kan aanraken - ruwweg 4 maanden voordat het daadwerkelijke RLS- en webhookwerk zelfs maar is begonnen.
+- **LaunchStudio-engagement**: € 800-€ 7.500 afhankelijk van de scope, het werk begint binnen dagen na de offerte, en de verharde, productieklare MVP wordt binnen 1-3 weken opgeleverd.
 
 Voor de specifieke taak om een AI-builder-prototype veilig te maken voor echte gebruikers en echte transacties, kost de aanwerving ruwweg 15 tot 100 keer meer en duurt het ruwweg 8 tot 10 keer langer om zelfs maar te beginnen dan het pad met een engineeringpartner - voor werk dat, eenmaal gedefinieerd, eigenlijk geen permanente hoofdtelling vereist om af te ronden.
 
@@ -82,9 +82,40 @@ Voor de specifieke taak om een AI-builder-prototype veilig te maken voor echte g
 
 Niets van dit alles betekent dat oprichters nooit engineers zouden moeten aannemen. Zodra een door AI gebouwde MVP is verhard en omzet genereert, profiteert duurzame productontwikkeling - nieuwe features, doorlopende architectuurbeslissingen, dagelijkse klantgedreven iteratie - echt van een toegewijd, intern teamlid dat meegroeit met het bedrijf. De fout is niet het aannemen zelf; het is te vroeg aannemen, voor het verkeerde probleem, op het verkeerde moment - een meerjarige verplichting gebruiken om een technisch hiaat van drie weken op te lossen. De slimmere volgorde voor de meeste oprichters is: verhard eerst met een partner met vaste scope, bewijs het businessmodel met betalende klanten, en huur pas daarna fulltime engineers in om te schalen wat al werkt - met een veel duidelijkere, op bewijs gebaseerde functieomschrijving dan "los alsjeblieft onze beveiliging op."
 
+## Hoe Beslis Je: Is Je Probleem een Project of een Rol?
+
+Je probleem is een project als je de eindsituatie op één pagina kunt beschrijven en die niet elke week verandert; het is een rol als het werk open is en verbonden blijft aan de doorlopende ontwikkeling van het product. Met die ene toets is het merendeel van de discussies over "aannemen of een partner inschakelen" beslecht voordat er ook maar één salaris ter sprake komt.
+
+Gebruik deze checklist. Vallen de meeste antwoorden in de linkerkolom, dan heb je eerst een opdracht met vaste scope nodig. Vallen de meeste in de rechterkolom, dan ben je klaar om een intern AI engineering team op te bouwen.
+
+| Vraag | Wijst op een project (partner) | Wijst op een rol (aannemen) |
+|---|---|---|
+| Kun je de op te leveren onderdelen vandaag opsommen? | Ja - RLS-policies, Stripe-webhooks, migratie van geheimen, monitoring | Nee - het werk hangt af van wat klanten hierna vragen |
+| Heeft het werk een einddatum? | Ja, binnen enkele weken | Nee, het loopt jaren door |
+| Heb je al betalende klanten? | Nog niet, of slechts enkele | Ja, met een constante vraag naar nieuwe features |
+| Wie zou de engineer dagelijks aansturen? | Niemand met technische diepgang | Een technische medeoprichter of CTO |
+| Is het grootste risico beveiliging of compliance? | Ja - het moet kloppen vóór de lancering | Nee - de grootste behoefte is ontwikkelsnelheid |
+| Kun je je vastleggen op een meerjarig salaris? | Niet met een gerust hart | Ja, gedekt door omzet of financiering |
+
+### Drie vragen om te stellen voordat je een vacature plaatst
+
+1. **Wat gaat deze persoon precies opleveren in de eerste 90 dagen?** Luidt het eerlijke antwoord "de beveiligingslekken in onze Bolt-app dichten", dan is dat een afgebakend project en is een recruiter de langzaamste route ernaartoe.
+2. **Wie beoordeelt het werk?** Een enkele senior engineer zonder technische collega heeft niemand die zijn RLS-policies of webhooklogica controleert. Een engineeringpartner werkt als team, zodat wijzigingen aan authenticatie en betalingen worden beoordeeld voordat ze live gaan.
+3. **Wat gebeurt er als deze persoon vertrekt?** Met één engineer zit alle kennis over de infrastructuur in één hoofd. Plan documentatie en overdracht in, welke route je ook kiest.
+
+## Veelgemaakte Fouten bij de Keuze Tussen Aannemen en een Engineeringpartner
+
+De meest gemaakte fout is een maandsalaris vergelijken met een projectofferte, in plaats van de volledige kosten en de volledige doorlooptijd om hetzelfde resultaat te bereiken. Andere terugkerende fouten zijn:
+
+- **Een vage functieomschrijving schrijven.** "Eigenaar van onze infrastructuur" trekt generalisten aan. Is de echte behoefte het verharden van Supabase RLS en Stripe-webhooks, zeg dat dan, en mogelijk ontdek je dat het om een project gaat.
+- **Aannemen voordat het product is gevalideerd.** Een vaste aanstelling vóór product-market fit legt kosten vast op precies het moment dat flexibiliteit het belangrijkst is.
+- **De overdracht overslaan.** Of je nu iemand aanneemt of een partner inschakelt, eis schriftelijke documentatie van elke RLS-policy, elke webhookflow en elke locatie van geheimen, zodat de volgende engineer niet bij nul begint.
+- **De partneropdracht als black box behandelen.** Vraag om een heldere scope, een lijst met wijzigingen en doorlopende toegang tot de repository. Je hoort eigenaar te zijn van de code en te begrijpen wat er is veranderd.
+- **Aannemen dat één aanstelling elk specialisme afdekt.** Beveiliging, betalingen, DevOps en AI-integratie zijn verschillende vaardigheden. Eén senior engineer beheerst ze zelden allemaal op hetzelfde niveau.
+
 ## Belangrijkste inzichten
 
-- Een volledig belaste senior backend/security-aanwerving in Nederland of de EU kost € 100.000–€ 140.000 in het eerste jaar zodra salaris, werkgeverskosten, wervingskosten, tooling en inwerktijd allemaal zijn meegeteld.
+- Een volledig belaste senior backend/security-aanwerving in Nederland of de EU kost € 100.000-€ 140.000 in het eerste jaar zodra salaris, werkgeverskosten, wervingskosten, tooling en inwerktijd allemaal zijn meegeteld.
 
 - De wervingsfunnel alleen al - sourcing, interviews, aanbod, opzegtermijn - duurt doorgaans 10 tot 16 weken voordat een nieuwe aanwerving de codebase überhaupt opent, waardoor de daadwerkelijke oplossing veel langer op zich laat wachten dan de oplossing zelf zou kosten.
 

@@ -66,6 +66,59 @@ De oplossing hiervoor is een **VPC (Virtual Private Cloud) Deployment**. Met Inf
 
 Circa 80% van de AI-projecten bereikt nooit een volwassen productiestadium omdat oprichters deze data-architectuur niet vooraf hebben overdacht. Manifera bouwt deze enterprise-systemen sinds **2014**, met 160+ gerealiseerde projecten voor onder meer Vodafone en TNO vanuit haar Europese hoofdkantoor aan de Herengracht 420 in Amsterdam. Zoals Herre Roelevink, Oprichter & Managing Director van Manifera, stelt: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Lees meer op [Manifera's webapp-ontwikkeling diensten](https://www.manifera.com/services/web-app-develop/).
 
+## Zero Data Retention versus korte bewaartermijn versus standaardopslag
+
+Zero Data Retention is een architectuur waarin noch uw applicatie, noch uw AI-provider een blijvende kopie bewaart van de invoer van een gebruiker of de output van het model zodra het verzoek is afgerond. Het is het strengste punt op een spectrum, en niet elk product hoeft daar te zitten. De tabel vergelijkt de drie gangbare modellen voor AI-databeveiliging.
+
+| | Standaardopslag | Korte bewaartermijn | Zero Data Retention |
+|---|---|---|---|
+| Uw database | Slaat prompts, bestanden en output op | Slaat ze op voor een vaste termijn en wist ze daarna | Slaat niets van de transactie op |
+| LLM-provider | Standaard bewaartermijn, vaak rond de 30 dagen | Standaard bewaartermijn, vaak rond de 30 dagen | ZDR-programma goedgekeurd voor uw sleutel |
+| Chatgeschiedenis | Ja | Ja, tot de termijn verloopt | Nee; output wordt naar de systemen van de klant gestuurd |
+| Impact van een datalek | Alle historische data | Data binnen de termijn | Alleen verzoeken die op dat moment lopen |
+| Typische klanten | B2C, mkb | B2B middensegment | Banken, zorg, defensie, publieke sector |
+
+Onder de AVG duwen opslagbeperking (Artikel 5, lid 1, onder e) en gegevensbescherming door ontwerp (Artikel 25) u al richting de rechterkolommen zodra er persoonsgegevens in het spel zijn. Zero retention is de meest directe manier om een toezichthouder of een CISO te laten zien dat u beide beginselen serieus neemt.
+
+## Waar lekt data weg uit een "staatloze" pijplijn?
+
+De meeste pijplijnen die als staatloos worden omschreven, lekken nog steeds data naar logs, monitoringtools of de browser, en juist die verborgen kopieën zoekt een zorgvuldige CISO op. Het verwijderen van de databaseschrijfactie is slechts de eerste stap. Controleer elk van deze locaties:
+
+- **Applicatie- en functielogs.** Eén vergeten `console.log(prompt)` in een Next.js API-route belandt in de logs van Vercel of AWS CloudWatch, vaak met een lange standaard bewaartermijn.
+- **Error tracking.** Tools zoals Sentry kunnen bij een exceptie request bodies en lokale variabelen vastleggen, waardoor een mislukte PDF-verwerking de volledige documenttekst naar een derde partij kan sturen.
+- **LLM-observabilityplatforms.** Tracingtools zoals LangSmith of Helicone slaan standaard volledige prompts en antwoorden op. Configureer ze in een zero-retention product zo dat ze alleen metadata loggen, zoals tokenaantallen, latentie en modelnaam.
+- **Session replay en analytics.** Productanalyse met sessie-opnames kan tekst vastleggen die op het scherm wordt getoond. Maskeer de invoer- en outputelementen of schakel opnames op die pagina's uit.
+- **Browseropslag.** Het gegenereerde rapport "voor het gemak" opslaan in `localStorage` of IndexedDB creëert ongemerkt een kopie op een apparaat waarover u geen controle heeft.
+- **Providerfuncties buiten de ZDR-scope.** Staatvolle functies zoals bestandsopslag, threads in assistants-stijl, batchtaken of gecachete prompts vallen mogelijk niet onder de Zero Data Retention-goedkeuring van uw provider. Laat schriftelijk bevestigen welke endpoints uw goedkeuring dekt voordat u ze gebruikt.
+- **Tijdelijke bestanden en wachtrijen.** Achtergrondtaken die uploads wegschrijven naar `/tmp`, objectopslag of een message queue creëren persistentie, ook al is het maar voor enkele minuten.
+
+## Hoe bewijst u Zero Data Retention aan een CISO?
+
+U bewijst Zero Data Retention met bewijsstukken, niet met een zin in uw beveiligingsvragenlijst. Stel dit pakket samen vóór uw eerste enterprise security review:
+
+1. **Een datastroomdiagram** dat elke stap toont van browser naar backend naar LLM en terug, met bij elke stap de markering "geen persistentie".
+2. **De schriftelijke ZDR-goedkeuring van de provider** voor uw API-sleutel of organisatie, plus de endpoints die eronder vallen.
+3. **De loggingconfiguratie** van uw hosting, error tracking en observabilitytools, waaruit blijkt dat request bodies en prompts worden uitgesloten of geanonimiseerd.
+4. **Bewijs uit het databaseschema** dat geen enkele tabel prompttekst, bestandsinhoud of output opslaat.
+5. **Testresultaten** van een run waarin een gemarkeerd testdocument wordt verwerkt en daarna elke log, opslag en tool wordt doorzocht op die markering.
+6. **Een change control-regel** die bepaalt dat elke nieuwe logging, analytics of opslag in het AI-pad security-goedkeuring nodig heeft, zodat de garantie ook toekomstige releases overleeft.
+
+### Wat betekent dit voor Nederlandse gereguleerde klanten?
+
+Nederlandse banken, verzekeraars en zorginstellingen toetsen leveranciers steeds vaker aan sectorspecifieke kaders, en een aantoonbare zero-retention architectuur maakt die toets veel eenvoudiger. Voor financiële instellingen geldt sinds 17 januari 2025 de Europese Digital Operational Resilience Act (DORA), die hen verplicht het risico van externe ICT-dienstverleners te beheersen en bepaalde afspraken contractueel vast te leggen, onder meer over de locatie van data en de toegang daartoe. Zorginstellingen werken met NEN 7510 en overheidsorganisaties met de BIO. Al deze kaders stellen vragen die neerkomen op dezelfde kern: waar staat de data, wie kan erbij en hoe lang blijft die bewaard. Hoe minder data u bewaart, hoe korter en overtuigender uw antwoorden worden.
+
+## Wanneer is Zero Data Retention de verkeerde keuze?
+
+Zero Data Retention is de verkeerde standaard wanneer de waarde van uw product afhangt van geheugen, zoals langlopende projecten, gedeelde werkruimtes of personalisatie die in de loop van de tijd beter wordt. In die gevallen bedient een korte, gedocumenteerde bewaartermijn of een VPC-deployment de klant doorgaans beter dan het volledig schrappen van de geschiedenis.
+
+Een eenvoudige manier om te kiezen:
+
+- **Kies Zero Data Retention** wanneer klanten gereguleerd zijn, de taak eenmalig is (samenvatten, classificeren, extraheren) en de output in het eigen systeem van de klant kan worden opgeslagen.
+- **Kies een korte bewaartermijn** wanneer gebruikers dagen of weken geschiedenis nodig hebben en uw klanten een helder verwijderschema accepteren.
+- **Kies een VPC-deployment** wanneer het product afhankelijk is van RAG of blijvend geheugen en de klant niet toestaat dat data de eigen cloud verlaat.
+
+Veel AI SaaS-producten bieden uiteindelijk twee niveaus aan: een standaard multi-tenant abonnement met een korte bewaartermijn en een enterprise-abonnement met Zero Data Retention of VPC-deployment. Door dit vroeg te bepalen, voorkomt u dat de architectuur van uw AI-deployment midden in een verkooptraject opnieuw moet worden gebouwd.
+
 ## Belangrijkste Inzichten
 
 - Gereguleerde sectoren (financiën, zorg, overheid) wijzen AI-software af die vertrouwelijke data opslaat in databases van derden.

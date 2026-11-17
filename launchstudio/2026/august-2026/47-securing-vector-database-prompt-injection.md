@@ -48,6 +48,51 @@ Unless absolutely necessary, all LLM tools should default to **Read-Only**. If t
 
 Roughly 80% of AI-built projects never reach production at all, and a meaningful share of the ones that fail their security review fail specifically here - an impressive demo where the AI agent has broad tool access, and no version of privilege separation once real customer data enters the picture. Getting this architecture right from the start, rather than retrofitting it under enterprise pressure, is core to what Manifera has delivered since being founded in **2014** - 160+ production systems, including security-adjacent work like the "Dark Web Monitor" project built with TNO, from its Amsterdam HQ at Herengracht 420. Herre Roelevink, Founder & Managing Director of Manifera, puts the shift this way: "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's now about the architecture and security needed to bring those products to maturity. We have eleven years of experience in exactly that."
 
+## What Is Data Poisoning in an AI Database?
+
+Data poisoning is an attack in which someone plants manipulated content in the data your AI retrieves or learns from, so that the model later produces wrong, biased or attacker-controlled answers. In a RAG product, the target is usually the vector database: a single document uploaded to a shared knowledge base, a scraped web page or a synced wiki article can carry false facts or hidden instructions that are retrieved again and again.
+
+Poisoning and indirect prompt injection often travel together. The poisoned chunk is the delivery mechanism, and the hidden instruction inside it is the payload. The difference is persistence: a direct injection lasts one conversation, while a poisoned record keeps working until someone finds and removes it.
+
+### How to Defend the Ingestion Pipeline
+
+The best defence against data poisoning is to control what enters your AI database, not to hope the model ignores it later. Practical controls include:
+
+- **Treat every source as untrusted by default.** Customer uploads, connectors to tools like Google Drive or Notion, and web crawls should all pass through the same sanitisation step before embedding.
+- **Strip hidden content during parsing.** Remove HTML comments, invisible text, zero-width characters and off-screen elements before the text is chunked.
+- **Store provenance metadata** with every vector: source system, uploader, ingestion time and a trust level. This makes it possible to filter by trust at query time and to delete everything from a compromised source in one operation.
+- **Separate tenants physically or by namespace,** so one customer's poisoned upload can never be retrieved for another customer.
+- **Quarantine high-impact sources.** Content that will be shown to many users, such as a shared help centre, should require review before it becomes retrievable.
+- **Keep the ability to re-index from source.** If you can rebuild the index from clean originals, recovery from poisoning becomes a routine job rather than a forensic investigation.
+
+## Mapping Your Defences to the OWASP Top 10 for LLM Applications
+
+The OWASP Top 10 for Large Language Model Applications is the most widely referenced checklist for AI security vulnerabilities, and enterprise security teams increasingly use it to structure their reviews. The table maps the risks most relevant to a RAG product onto the defences described in this article.
+
+| OWASP LLM risk (2025 list) | What it looks like in a RAG product | Primary defence |
+|---|---|---|
+| LLM01 Prompt Injection | User or document text overrides system instructions | Privilege separation, LLM firewall, read-only tools |
+| LLM02 Sensitive Information Disclosure | Model reveals data the user should not see | Metadata filtering at the database layer |
+| LLM04 Data and Model Poisoning | Manipulated documents in the vector store | Ingestion sanitisation, provenance, quarantine |
+| LLM05 Improper Output Handling | Output rendered or executed without validation | Encode output, block untrusted links and images |
+| LLM06 Excessive Agency | Agent has more tool permissions than it needs | Narrow scopes, Human-in-the-Loop approval |
+| LLM08 Vector and Embedding Weaknesses | Cross-tenant retrieval, leaky embeddings | Namespaces per tenant, access-controlled queries |
+
+### Do Not Forget Output Handling
+
+Output handling is the defence teams most often skip, because the risk seems to sit after the model rather than in the AI database. If your chat interface renders Markdown, an injected instruction can make the model output an image link whose URL contains retrieved data, and the user's browser leaks that data to the attacker's server simply by loading the image. Restrict rendered images and links to an allow-list of domains, encode any output that is inserted into HTML, and never pass model output directly into a shell, SQL query or `eval` call.
+
+## How to Test Your AI Database for Prompt Injection
+
+You test for prompt injection the same way you test for any other vulnerability: with a repeatable set of attacks that runs before every release. A simple programme looks like this:
+
+1. **Build an attack library** of direct injections, role-play jailbreaks and indirect payloads hidden in documents, emails and web pages.
+2. **Seed a test tenant** with documents carrying canary strings that should never appear in another tenant's answers.
+3. **Run the library automatically** in CI against a staging environment whenever prompts, models or retrieval logic change.
+4. **Check for canary leaks and unauthorised tool calls,** not just for refusals in the chat output.
+5. **Log and review firewall decisions** to find new attack patterns and false positives.
+6. **Repeat with a human red team** before major launches and enterprise security reviews.
+
 ## Key Takeaways
 
 - Prompt Injection is a critical vulnerability where attackers use natural language to override an AI's system instructions and hijack its behavior - and because LLMs lack a code/data boundary, prompting alone cannot fully fix it.

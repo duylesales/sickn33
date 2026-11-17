@@ -68,6 +68,43 @@ Fatima's story is becoming the norm rather than the exception. As more enterpris
 
 The founders who lose these deals aren't the ones with worse products. They're the ones who discover the gap between "it works" and "it's provably secure" for the first time when a 10-business-day clock is already running. The founders who win them are the ones who treat the questionnaire itself as the specification - and bring in engineers who already know how to answer it, item by item, before the deadline arrives.
 
+## What Is a Vendor Security Questionnaire?
+
+A vendor security questionnaire is a structured list of questions an enterprise sends a supplier to assess whether the supplier's controls are strong enough to be trusted with the enterprise's data. Some buyers use their own spreadsheet, like the 40-item document Fatima received; others base theirs on standard formats such as the Shared Assessments SIG questionnaire or the Cloud Security Alliance CAIQ. Whatever the format, the answers usually become part of the vendor file and can be referenced later in the contract.
+
+That last point is why the questionnaire deserves engineering attention, not just careful wording. An answer you give in procurement is a statement you may be held to.
+
+## How to Answer a Vendor Security Questionnaire: Step by Step
+
+The fastest reliable way to answer a vendor security questionnaire is to treat every question as either evidence you already have or a work item you still need to finish. This is the process Fatima's sprint followed, and it works for any questionnaire:
+
+1. **Triage every line.** Mark each item "yes, provable," "partly," or "no." Be strict: a control that exists but isn't documented counts as "partly."
+2. **Group the gaps by blocker.** Tenant isolation, SSO, and incident response tend to block deals; documentation gaps are usually faster to close.
+3. **Turn each "no" into a ticket.** Assign an owner and a target date, exactly as you would for a product feature.
+4. **Collect the evidence as you go.** Policy documents, RLS policy code, a backup restore log, the subprocessor list - each answer should point to something real.
+5. **Write answers in specific language.** Name the control, the tool, and the scope, for example "Row Level Security policies in Postgres restrict every customer table to the authenticated account."
+6. **Disclose the remaining gaps with dates.** Roadmap items with target quarters, like Fatima's penetration test and SOC 2 Type II, are accepted far more readily than evasive answers.
+7. **Save everything as a reusable answer library.** The next enterprise questionnaire will overlap heavily with this one.
+
+## Questionnaire Answers That Pass vs. Answers That Fail
+
+The difference between an answer that passes and one that fails is almost always specificity and evidence. The examples below are drawn from the categories in Fatima's questionnaire.
+
+| Topic | Answer that fails review | Answer that passes review |
+|---|---|---|
+| Tenant isolation | "Our app only shows users their own data." | "Isolation is enforced at the database layer with RLS policies scoped to `auth.uid()` and account ID; policy documentation attached." |
+| Encryption | "Everything is encrypted." | "AES-256 at rest on the database layer; TLS 1.2+ with HSTS on all endpoints; summary attached." |
+| Incident response | "We would respond immediately." | "Written IR plan with named owner, escalation path, and customer notification aligned with the GDPR 72-hour requirement." |
+| Subprocessors | "We use standard cloud providers." | "Full list attached, each with a signed DPA." |
+| Backups | "Our provider handles backups." | "Point-in-time recovery enabled, documented RPO/RTO, last test restore completed and logged." |
+| SSO | "Coming soon." | "SAML-based SSO supported with the customer's identity provider." |
+
+## Common Mistakes When Filling In a Security Questionnaire
+
+The most damaging mistake is answering "yes" to a control that is only planned. Security reviewers frequently ask for the evidence behind a "yes," and an answer that falls apart on the review call undermines every other answer in the submission.
+
+Other mistakes slow deals down: leaving fields blank instead of explaining a partial control, pasting generic policy text that doesn't match your actual stack, forgetting AI-specific subprocessors such as the LLM provider, and waiting until the last two days to start, which leaves no time to fix anything that triage uncovers.
+
 ## Key Takeaways
 
 - A vendor security questionnaire tests documented, provable controls - encryption, tenant isolation, incident response, backups, SSO - not whether the product works in a demo.

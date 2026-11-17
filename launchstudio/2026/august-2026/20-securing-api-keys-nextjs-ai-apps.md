@@ -49,9 +49,49 @@ Beyond encryption, mature key management includes rotation and scoping. Most AI 
 
 Code is written by humans - and increasingly by AI coding assistants - and both make mistakes. You might accidentally push your `.env` file to a public GitHub repository, or an AI pair-programming tool might generate a code sample that echoes a key into a log statement. To protect yourself from a catastrophic financial event regardless of how a leak happens, you must rely on provider-level safeguards as a last line of defense.
 
-Log into your OpenAI or Anthropic API dashboard and set a **Hard Billing Limit**. If you expect your startup to use $50 of credits a month, set a hard limit of $100–150. If your key is stolen and a hacker tries to generate $10,000 of usage, the provider will automatically disable your API access once the limit is hit. Your application will go offline, but your bank account - and your ability to keep operating the business at all - will survive.
+Log into your OpenAI or Anthropic API dashboard and set a **Hard Billing Limit**. If you expect your startup to use $50 of credits a month, set a hard limit of $100-150. If your key is stolen and a hacker tries to generate $10,000 of usage, the provider will automatically disable your API access once the limit is hit. Your application will go offline, but your bank account - and your ability to keep operating the business at all - will survive.
 
 This exact category of gap is why security review is a standard part of taking an AI-generated prototype to production. Industry data suggests roughly 45% of AI-generated code ships with at least one exploitable security vulnerability, and an exposed API key from a `NEXT_PUBLIC_`-prefixed environment variable is one of the single most common findings when a prototype built quickly in Lovable, Bolt, Cursor, or v0 gets its first real security audit. Manifera, the company behind LaunchStudio, has been performing exactly this kind of production security hardening since **2014**, with 11+ years of engineering experience across 160+ delivered projects for enterprise clients including Vodafone and TNO (the Netherlands Organisation for Applied Scientific Research). "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's now about the architecture and security needed to bring those products to maturity. We have eleven years of experience in exactly that," says Herre Roelevink, Founder & Managing Director of Manifera. Given that roughly 80% of AI-built projects never make it to a stable production release, an exposed API key discovered post-launch - rather than caught in review - is a disproportionately common reason a promising product's costs spiral before it ever finds product-market fit.
+
+## Which Keys Are Safe to Expose in a Next.js AI App?
+
+Only keys that were designed to be public, and that are protected by a second control on the server side, are safe in the browser. Everything else is a secret and belongs in a server-only environment variable. AI-generated code often mixes the two, so it helps to classify every key in your `.env` file explicitly:
+
+| Key | Designed to be public? | Where it belongs | Why |
+|---|---|---|---|
+| OpenAI or Anthropic API key | No | Server only | Direct access to paid compute on your account |
+| Supabase anon (public) key | Yes | Browser is acceptable | Safe only when row-level security policies are enabled and correct |
+| Supabase service role key | No | Server only | Bypasses row-level security entirely |
+| Stripe publishable key | Yes | Browser is acceptable | Can only create client-side payment flows |
+| Stripe secret key | No | Server only | Can issue refunds, read customers and change subscriptions |
+| Webhook signing secrets | No | Server only | Lets an attacker forge webhook events if leaked |
+| BYOK master encryption key | No | Secrets manager | Decrypts every stored user key |
+
+If a value in the right-hand column says "server only", it must never carry the `NEXT_PUBLIC_` prefix.
+
+## How to Prevent AI Security Vulnerabilities Before They Ship
+
+You prevent key-related AI security vulnerabilities by making leaks hard to write, easy to detect, and cheap if they still happen. This checklist covers all three:
+
+- **Mark server modules as server-only.** Add `import 'server-only'` at the top of any module that reads a secret. Next.js then fails the build if a Client Component imports it.
+- **Keep `.env` files out of Git.** Confirm `.env*.local` and similar files are in `.gitignore`, and commit only an `.env.example` with placeholder values.
+- **Scan for secrets automatically.** Enable GitHub secret scanning and push protection on your repository, and add a scanner such as Gitleaks to your pre-commit hooks or CI pipeline.
+- **Check the build output.** Add a CI step that searches the compiled client bundle for patterns such as `sk-` and fails the deployment if one appears.
+- **Authenticate every Server Action.** Server Actions are reachable through plain HTTP POST requests, so treat each one as a public API endpoint and verify the session and permissions inside it.
+- **Rate-limit per user.** Even with a hidden key, an unauthenticated or unlimited route lets attackers use your AI budget through your own backend.
+- **Never log credentials.** Strip `Authorization` headers and SDK configuration objects from logs and error reports.
+
+## What to Do When an API Key Leaks: Step-by-Step Response
+
+When a key leaks, revoke it first and investigate second, because every minute the key stays valid can cost money. Follow this order:
+
+1. **Revoke or rotate the key** in the OpenAI, Anthropic or other provider dashboard immediately, and deploy the new key as a server-only environment variable.
+2. **Check usage and billing** for the period the key was exposed, and contact the provider's support if you see usage that is not yours.
+3. **Find the source of the leak.** Was it a `NEXT_PUBLIC_` variable, a committed `.env` file, a log statement or a shared screenshot? Fix the cause, not just the key.
+4. **Clean the history.** Remove the secret from Git history with a tool such as `git filter-repo`, but remember that anyone who already cloned the repository still has it, which is why step 1 comes first.
+5. **Assess personal data impact.** If the leaked credential gave access to user data, for example a Supabase service role key or stored BYOK keys, GDPR Article 33 requires notifying your supervisory authority within 72 hours of becoming aware of a personal data breach, unless it is unlikely to result in a risk to people.
+6. **Inform affected users** when their own keys or data were exposed, and tell them to rotate their BYOK keys.
+7. **Add a guardrail** from the checklist above so the same leak cannot happen again.
 
 ## Key Takeaways
 

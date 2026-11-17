@@ -40,6 +40,51 @@ Founders often treat copyright risk as purely a Terms of Service problem. It isn
 
 Building this correctly, alongside the underlying product, is exactly the kind of production-hardening work Manifera has delivered since its founding in **2014** - 160+ projects for clients including Vodafone and CFLW Cyber Strategies, run from its Amsterdam HQ at Herengracht 420 and engineering hub in Ho Chi Minh City, Vietnam. Herre Roelevink, Founder & Managing Director of Manifera, frames it this way: "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's now about the architecture and security needed to bring those products to maturity. We have eleven years of experience in exactly that." More on that engineering track record is available on [Manifera's portfolio](https://www.manifera.com/portfolio/).
 
+## Who Owns the Code in an AI-Generated Application?
+
+The same human authorship rule applies to code: lines written autonomously by an AI coding tool are on weak copyright footing, while the code your team designs, structures, edits and integrates is protected as normal. For founders who built their product with Cursor, Lovable, Bolt or GitHub Copilot, this matters less than it sounds, because a real application is rarely raw AI output. Architecture decisions, data models, prompts, integration logic and the many manual fixes that make a prototype production-ready are human contributions.
+
+The bigger practical risks for an AI-generated application sit elsewhere:
+
+- **Open-source licence contamination.** A model can reproduce snippets that closely match licensed open-source code. If that code is under a copyleft licence such as the GPL, copying it into a proprietary product can create licence obligations. GitHub Copilot offers a setting that blocks suggestions matching public code, and a dependency and licence scan before launch is a sensible safeguard.
+- **Tool terms of service.** Check that your AI coding tool's terms assign output rights to you and do not claim a licence over your codebase.
+- **Contractor and agency agreements.** If freelancers or an agency wrote part of the code, with or without AI help, your contract should assign all IP to your company. Investors check this during due diligence.
+
+Your real moat is rarely the copyright in individual lines of code. It is the combination of your product, your data, your customer relationships and your ability to ship, which is why trade secrets and good contracts often protect an AI SaaS business better than copyright alone.
+
+## How Does EU Law Treat AI-Generated Works?
+
+EU copyright law protects only works that are the "author's own intellectual creation", a standard the Court of Justice of the European Union set out in *Infopaq* (C-5/08) and which requires free and creative choices by a human. Purely machine-generated output does not meet that standard, so the position in the EU is broadly in line with the USCO's human authorship requirement, even though the legal route is different.
+
+Two other EU rules affect generative AI products directly:
+
+- **Text and data mining.** Article 4 of the Directive on Copyright in the Digital Single Market (EU) 2019/790 allows text and data mining for commercial purposes, unless rightsholders have opted out in a machine-readable way. This is the legal basis much of the training-data debate in Europe turns on.
+- **The EU AI Act.** Providers of general-purpose AI models must put a policy in place to comply with EU copyright law, including respecting those opt-outs, and must publish a sufficiently detailed summary of the content used for training (Article 53). These obligations sit with model providers such as OpenAI, Anthropic or Mistral, not with most AI SaaS startups building on top of them, but they give you useful documentation to point enterprise buyers to.
+
+## Copyright Status at a Glance
+
+The table below summarises how different kinds of generative AI output are usually treated under current guidance, and what your product should do about each.
+
+| Type of output | Typical copyright position | What your AI SaaS product should do |
+|---|---|---|
+| Raw AI image or text from a prompt | Generally not protected | Label it as AI-generated; disclaim exclusivity |
+| AI output substantially edited by a human | Human contributions protected ("thin" copyright) | Keep version history of human edits |
+| Human-written text with AI suggestions | Protected as a human work | Make clear which parts the user authored |
+| AI-generated code in a larger codebase | Weak for raw snippets; strong for human design and edits | Run licence scans; keep commit history |
+| Logos and core brand assets from raw AI | Hard to protect or register | Advise clients to have a designer rework them |
+
+## IP Protection Checklist for AI SaaS Founders
+
+A short, repeatable checklist keeps IP risk from turning into a deal-breaker in enterprise procurement:
+
+1. **Use enterprise model tiers with copyright indemnification** where your clients need it, and keep a copy of the relevant terms.
+2. **Assign Output rights to users "to the extent permitted by law"** and state clearly that outputs are not guaranteed unique.
+3. **Record provenance.** Store which model generated what, when, and which human edits followed.
+4. **Add similarity and trademark checks** for high-risk outputs such as logos, slogans and product names.
+5. **Scan your own codebase** for licence conflicts before a funding round or enterprise deal.
+6. **Get IP assignment clauses signed** by every employee, freelancer and agency that contributed to the product.
+7. **Brief enterprise clients in writing** on what can and cannot be protected, so expectations are set before a dispute arises.
+
 ## Key Takeaways
 
 - Raw AI output (text, code, or images) generally cannot be copyrighted under current US and most international guidance because it lacks 'human authorship.' A machine cannot hold a copyright.

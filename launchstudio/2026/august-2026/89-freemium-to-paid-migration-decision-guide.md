@@ -45,6 +45,29 @@ The technical implementation determines whether a paywall works correctly; the c
 
 None of this is a substitute for the technical work - a beautifully worded announcement doesn't fix a paywall that incorrectly locks out users due to inaccurate usage tracking. But paired with the technical implementation done right, thoughtful communication is frequently the difference between a migration that converts loyal users into paying customers and one that turns them into vocal critics on the exact platforms a founder needs their goodwill on.
 
+## Should You Move Away From Freemium at All?
+
+You should move away from pure freemium when free users cost you real money every month and a meaningful share of them use the product heavily without ever reaching a natural reason to pay. A freemium to paid migration is the process of changing what existing free users can access, and on what terms, so that sustained or advanced use requires a paid plan. It is not the only option. The table below compares the four models founders most often choose between.
+
+| Model | How it works | Works well when | Main risk |
+|-------|--------------|-----------------|-----------|
+| Freemium with limits | A free plan forever, with usage limits or gated features | Free users are cheap to serve and spread the word | Free tier is too generous, so few users upgrade |
+| Free trial | Full access for a fixed period, then payment required | Value is clear within days | Users leave at the end of the trial before seeing value |
+| Reverse trial | Full paid features for a trial period, then a drop to the free plan | You want users to feel the paid features before deciding | Downgrade feels like a loss if not explained well |
+| Paid only | No free plan, sometimes with a money-back guarantee | Each user is expensive to serve, for example heavy AI inference | Fewer signups at the top of the funnel |
+
+For many AI SaaS products, where every generation has a direct inference cost, the move is rarely from freemium to paid-only. It is more often from an unlimited free plan to freemium with tight usage limits, or to a reverse trial.
+
+## Common Freemium to Paid Migration Mistakes
+
+The most damaging mistake is changing the limits, the prices and the plan names all at once, which makes it impossible for users to understand what changed and for you to measure what caused the result. Other mistakes come up often:
+
+1. **No billing-side cleanup.** Old plans in Stripe Billing, webhook handlers that do not know the new tiers, and downgrade events that never update access rules all cause users to see the wrong limits.
+2. **Ignoring team accounts.** A workspace with several members needs clear rules on whether limits apply per user or per workspace.
+3. **No cohort tracking.** Without separate conversion numbers for grandfathered and new users, you cannot tell whether the migration worked.
+4. **No rollback plan.** Feature flags should let you loosen a limit within minutes if it turns out to be set wrong.
+5. **Forgetting your own terms.** Check what your terms of service promised free users about notice periods and data, and follow it.
+
 ## Key Takeaways
 
 - Migrating existing free users onto a paid structure is a live operation on an active user base, not a pricing page edit - get the sequencing wrong and the failure is public.

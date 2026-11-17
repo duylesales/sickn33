@@ -23,11 +23,11 @@ Founders using Lovable, Bolt, or similar AI builders tend to see the same recurr
 - **No formal incident response process**: no documented plan for what happens if there's a breach, who's notified, and within what timeline - a requirement under both SOC 2 and GDPR.
 - **No vendor management documentation**: subprocessors (hosting, AI model providers, email services) aren't inventoried or risk-assessed, which auditors expect to see mapped.
 
-A findings report with 15–25 items like these is typical for an AI-builder MVP going through readiness assessment for the first time - the tools are excellent at shipping features and nearly silent on the controls an auditor needs to see.
+A findings report with 15-25 items like these is typical for an AI-builder MVP going through readiness assessment for the first time - the tools are excellent at shipping features and nearly silent on the controls an auditor needs to see.
 
 ## Why Audit Firms Are the Wrong Team to Fix What They Find
 
-Audit firms are built around independence and assessment methodology, not production engineering. Some maintain a consulting arm that will remediate findings for a fee, but that fee is priced like consulting, not like focused engineering work - often €15,000–€25,000 for the kind of RLS, logging, and secret-management fixes that a specialized engineering team delivers in two to three weeks. There's also a structural conflict worth naming: an auditor grading its own remediation work sits at an awkward angle to the independence SOC 2 is supposed to represent, even when the individuals involved are entirely professional about it. The cleaner model - and the one most experienced compliance consultants recommend - is to separate the two functions: an engineering partner closes the technical gaps, and the audit firm independently verifies the result.
+Audit firms are built around independence and assessment methodology, not production engineering. Some maintain a consulting arm that will remediate findings for a fee, but that fee is priced like consulting, not like focused engineering work - often €15,000-€25,000 for the kind of RLS, logging, and secret-management fixes that a specialized engineering team delivers in two to three weeks. There's also a structural conflict worth naming: an auditor grading its own remediation work sits at an awkward angle to the independence SOC 2 is supposed to represent, even when the individuals involved are entirely professional about it. The cleaner model - and the one most experienced compliance consultants recommend - is to separate the two functions: an engineering partner closes the technical gaps, and the audit firm independently verifies the result.
 
 ## What a SOC 2 Readiness Engineering Pass Actually Involves
 
@@ -55,17 +55,61 @@ This sequencing typically saves a founder both money (engineering-rate remediati
 
 ## What This Costs in Practice
 
-A realistic budget comparison for a founder with a 15–25 item findings report:
+A realistic budget comparison for a founder with a 15-25 item findings report:
 
-- **Audit firm's own consulting remediation**: €15,000–€25,000, billed at consulting rates, often with limited flexibility on scope and a queue before work even starts.
+- **Audit firm's own consulting remediation**: €15,000-€25,000, billed at consulting rates, often with limited flexibility on scope and a queue before work even starts.
 - **LaunchStudio engineering pass**: from roughly €800 for a light Launch Ready gap-close up to €7,500 for full Enterprise Hardening covering the complete list above - delivered in 1 to 3 weeks, priced as fixed-scope engineering work, not compliance consulting.
-- **Formal SOC 2 Type I audit fee** (separate, paid to the audit firm regardless of who did the remediation): typically €10,000–€30,000 depending on scope and firm, largely unaffected by whether the underlying gaps were closed by the audit firm or an engineering partner - except that a properly hardened system is far more likely to pass on the first attempt.
+- **Formal SOC 2 Type I audit fee** (separate, paid to the audit firm regardless of who did the remediation): typically €10,000-€30,000 depending on scope and firm, largely unaffected by whether the underlying gaps were closed by the audit firm or an engineering partner - except that a properly hardened system is far more likely to pass on the first attempt.
 
-Closing the same 20-odd findings through an engineering partner rather than an audit firm's consulting arm routinely saves €10,000–€18,000 and several weeks, while producing a system that's more likely to pass certification cleanly the first time because the fixes were built by engineers who do this kind of hardening as their core discipline.
+Closing the same 20-odd findings through an engineering partner rather than an audit firm's consulting arm routinely saves €10,000-€18,000 and several weeks, while producing a system that's more likely to pass certification cleanly the first time because the fixes were built by engineers who do this kind of hardening as their core discipline.
+
+## What Is SOC 2 Readiness, and Do You Need Type I or Type II?
+
+SOC 2 readiness means your systems, controls and documentation are in a state where an independent auditor can test them against the AICPA's Trust Services Criteria and issue a clean report. Security is the one criterion every SOC 2 report covers; availability, confidentiality, processing integrity and privacy are added only when they are relevant to what you promise customers.
+
+Most early-stage founders start with Type I, and the difference matters for planning:
+
+| | SOC 2 Type I | SOC 2 Type II |
+|---|---|---|
+| What it tests | Whether controls are suitably designed at a specific point in time | Whether controls operated effectively over an observation period |
+| Observation period | None - a single date | Typically several months, often between 3 and 12 |
+| Typical use | Unblocking a first enterprise deal quickly | Meeting the expectations of mature enterprise security teams over time |
+| Engineering implication | Controls must exist and be demonstrable | Controls must also produce consistent evidence, such as logs and access reviews, throughout the period |
+
+Because Type II examines a period of operation, every gap you close before the observation window starts is a gap that cannot show up as an exception later. That is one more reason to finish the engineering work first.
+
+## Who Does What: Audit Firm vs. Engineering Partner
+
+The audit firm's job is to assess and attest; the engineering partner's job is to build and fix. Keeping those roles separate is both cheaper and cleaner. A practical division of responsibilities looks like this:
+
+| Task | Audit firm | Engineering partner such as LaunchStudio | Founder |
+|---|---|---|---|
+| Readiness assessment and gap list | Yes | Can provide an engineering-led gap review | Supplies access and context |
+| RLS, RBAC and tenant isolation | No | Yes | Approves scope |
+| Audit logging and monitoring | No | Yes | Decides who reviews alerts |
+| Secret management and rotation | No | Yes | Owns the rotation schedule afterwards |
+| Policies (incident response, vendor management) | Reviews them | Drafts the technical parts | Approves and adopts them |
+| Formal testing and the SOC 2 report | Yes | No | Provides evidence |
+
+The founder column is easy to overlook. SOC 2 tests what your company actually does, so someone inside the company has to own the policies and keep the controls running after the engineering work is finished.
+
+### Does SOC 2 make you GDPR compliant?
+
+No. SOC 2 is a voluntary attestation framework, while the GDPR is binding EU law with its own obligations, such as processor contracts under GDPR Article 28 and breach notification to the supervisory authority within 72 hours under Article 33. Many controls overlap - access control, logging, encryption, vendor inventories - so a well-planned engineering pass can serve both at once. But a SOC 2 report does not replace a Data Processing Agreement, a record of processing activities or a lawful basis for processing.
+
+## Common SOC 2 Readiness Mistakes
+
+The most common SOC 2 readiness mistake is writing policies that describe controls the system does not actually enforce. Auditors test evidence, not intentions. Other frequent mistakes include:
+
+- **Scoping every Trust Services Criterion by default.** Adding privacy or processing integrity without a clear customer reason expands the audit and the cost.
+- **Forgetting AI providers in the vendor inventory.** If prompts or documents containing customer data go to OpenAI, Anthropic or another model API, that provider belongs in your subprocessor list.
+- **Keeping shared admin accounts.** Shared logins make individual access impossible to trace, which undermines audit logging entirely.
+- **Starting the observation window too early.** For Type II, beginning the period before controls are stable turns every early inconsistency into a documented exception.
+- **Treating certification as the finish line.** Controls have to keep running after the report is issued, or the next audit cycle reopens the same findings.
 
 ## Key Takeaways
 
-- SOC 2 audit firms are built for independent assessment, not production engineering - their own remediation consulting is typically priced at €15,000–€25,000 for work a specialized engineering team can close in a fraction of the time and cost.
+- SOC 2 audit firms are built for independent assessment, not production engineering - their own remediation consulting is typically priced at €15,000-€25,000 for work a specialized engineering team can close in a fraction of the time and cost.
 
 - The right sequence is engineer first, certify second: close the technical gaps with an engineering partner, then bring the audit firm back to formally test and certify what's already built.
 

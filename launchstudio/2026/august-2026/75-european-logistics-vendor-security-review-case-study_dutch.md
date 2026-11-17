@@ -85,6 +85,36 @@ NIS2 heeft de cyberbeveiligingsverplichtingen voor kritieke infrastructuur van d
 
 De ervaring van Lukas is een voorproefje van wat komen gaat voor AI SaaS-founders in verschillende gereguleerde Europese sectoren - logistiek, energie, gezondheidszorg, financiële dienstverlening - waar de eigen compliance-verplichtingen van de enterprise-koper de leveranciersreview bepalen, niet generieke best practices uit de branche. De founders die deze deals winnen, zijn niet per se degenen met het meest gepolijste product; het zijn degenen die begrijpen welke regelgeving daadwerkelijk de vragenlijst van hun koper aanstuurt en hun eigen controles direct kunnen koppelen aan die specifieke taal, in plaats van een generiek beveiligingsoverzicht in te dienen en te hopen dat het dicht genoeg in de buurt komt.
 
+## Wat is NIS2, en geldt het voor een AI SaaS-leverancier?
+
+De NIS2-richtlijn (Richtlijn (EU) 2022/2555) is de cybersecuritywet van de EU voor organisaties in kritieke en belangrijke sectoren, en de EU-lidstaten moesten haar uiterlijk 17 oktober 2024 omzetten in nationale wetgeving. In Nederland gebeurt dat via de Cyberbeveiligingswet (Cbw). NIS2 verving de oorspronkelijke NIS-richtlijn en breidde de reikwijdte uit naar meer sectoren, waaronder vervoer, post- en koeriersdiensten en digitale aanbieders.
+
+Een kleine AI SaaS-leverancier is vaak zelf geen gereguleerde entiteit. Toch voelt die de druk van NIS2-compliance, omdat artikel 21 gereguleerde entiteiten verplicht om "beveiliging van de toeleveringsketen" te regelen, inclusief de beveiliging van hun relaties met directe leveranciers en dienstverleners. In de praktijk bereikt die verplichting de leverancier via de beveiligingsvragenlijst, het contract en de auditrechten die de klant vraagt. Of uw eigen bedrijf rechtstreeks onder NIS2 valt, hangt af van uw sector, uw omvang en de nationale omzettingswet - laat die vraag dus apart toetsen door uw juridisch adviseur.
+
+## Hoe de maatregelen uit artikel 21 van NIS2 zich vertalen naar leverancierscontroles
+
+De snelste manier om een op NIS2 gebaseerde leveranciersreview te beantwoorden, is elke risicobeheersmaatregel uit artikel 21 te koppelen aan een concrete controle die u kunt aantonen. Zo vertaalden de maatregelen zich voor RouteMatch AI:
+
+| Maatregel uit artikel 21 van NIS2 | Wat de reviewer de leverancier vraagt | Bewijs dat RouteMatch AI aanleverde |
+|---|---|---|
+| Risicoanalyse en beleid voor informatiebeveiliging | Hoe worden klantgegevens gescheiden en beschermd? | Row Level Security-policies per vervoerdersaccount |
+| Incidentafhandeling | Kunt u rapporteren binnen de vensters van 24 en 72 uur van de klant? | Op NIS2 afgestemd incidentresponsplan |
+| Bedrijfscontinuïteit | Wat gebeurt er tijdens een storing? | Read replicas, health monitoring, gedocumenteerde uptimedoelen |
+| Beveiliging van de toeleveringsketen | Welke derden verwerken onze gegevens? | Lijst van subverwerkers met ondertekende verwerkersovereenkomsten |
+| Beveiliging bij ontwikkeling en onderhoud | Hoe zijn integraties beschermd? | Ondertekende authenticatie, rate limiting, payloadvalidatie |
+| Cryptografie en versleuteling | Hoe worden gegevens beschermd tijdens transport en in opslag? | AES-256 in opslag, TLS op elk endpoint |
+| Toegangsbeheer | Wie kan live trackinggegevens zien? | Interne toegang beperkt tot specifieke rollen |
+
+## Veelgemaakte fouten bij een NIS2-leveranciersreview
+
+De meeste vertragingen in een review onder NIS2 ontstaan door antwoorden die wel kloppen, maar niet worden onderbouwd.
+
+1. **Antwoorden met een generieke beveiligingspagina.** Reviewers hebben antwoorden nodig die aansluiten op hun eigen vragenlijst, geen marketingoverzicht.
+2. **Vertrouwen op scheiding tussen tenants in de UI.** De gegevens van een andere tenant verbergen in de interface is geen isolatie; de afdwinging moet in de database- of API-laag zitten.
+3. **Machine-tot-machine-integraties vergeten.** EDI- en API-endpoints maken deel uit van het aanvalsoppervlak, en reviewers vragen er steeds vaker apart naar.
+4. **Geen lijst van subverwerkers.** Als u uw hosting-, database- en LLM-aanbieders niet kunt noemen met ondertekende verwerkersovereenkomsten onder artikel 28 van de AVG, blijft de vraag over de toeleveringsketen open.
+5. **Een incidentplan zonder termijnen.** Een plan waarin staat "we informeren klanten zo snel mogelijk" laat niet zien hoe u een vroegtijdige waarschuwing binnen 24 uur ondersteunt.
+
 ## Belangrijkste inzichten
 
 - Onder NIS2 worden transport- en logistiekentiteiten geclassificeerd als "belangrijke entiteiten" met supply chain-risicobeheerverplichtingen die zich juridisch uitstrekken tot hun softwareleveranciers, niet alleen hun eigen interne systemen.

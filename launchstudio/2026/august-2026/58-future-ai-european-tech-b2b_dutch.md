@@ -71,6 +71,60 @@ Bouwt u een AI-applicatie voor de Europese markt, hanteer dan een duidelijke str
 
 Ongeveer 45% van de met AI gegenereerde code bevat kwetsbaarheden; een professionele security- en architectuurreview voorkomt dat een enterprise-deal van zes cijfers strandt tijdens de penetratietest. Manifera bouwt deze conforme architecturen sinds **2014** vanuit **Amsterdam** (Herengracht 420) en **Ho Chi Minhstad, Vietnam**. Bekijk meer op de [Manifera Over Ons pagina](https://www.manifera.com/about-us/).
 
+## Welke Vaardigheden Vraagt AI Software Engineering voor de Europese Markt?
+
+AI software engineering voor de Europese B2B-markt vraagt minder modelonderzoek en meer integratie-, beveiligings- en compliance-engineering. De schaarse vaardigheid is niet het trainen van een model, maar het zo inbouwen van een standaardmodel in een bedrijfsworkflow dat het een inkoopaudit doorstaat.
+
+Voor de meeste startups in de applicatielaag zijn de belangrijkste competenties als volgt te verdelen:
+
+| Competentie | Wat het omvat | Waarom Europese inkopers het belangrijk vinden |
+|---|---|---|
+| Backend- en integratie-engineering | API's, achtergrondprocessen, koppelingen met ERP, CRM en legacy-systemen | Verticale AI levert pas waarde op als zij aansluit op de systemen die de onderneming al gebruikt |
+| LLM-applicatie-engineering | Prompting, retrieval (RAG), evaluatie, model-agnostische adapters | Maakt het mogelijk te wisselen tussen aanbieders zoals OpenAI, Anthropic of Mistral AI, of een open-weight model in de eigen cloud van de klant uit te rollen |
+| Security-engineering | Authenticatie, autorisatie, secrets management, penetratietesten | Securityvragenlijsten en penetratietesten zijn standaardpoorten in enterprise-inkoop |
+| Engineering voor gegevensbescherming | Datamapping, bewaarregels, EU-hosting, verwijderprocessen | AVG-verplichtingen moeten aantoonbaar in de architectuur zitten, niet alleen in een beleidsdocument staan |
+| AI-governance | Risicoclassificatie onder de EU AI Act, logging, menselijk toezicht | Inkopers vragen steeds vaker hoe een AI-systeem is geclassificeerd en beheerst voordat zij tekenen |
+
+Zeer weinig teams in een vroege fase beschikken intern over alle vijf de competenties. Dat is normaal. Waar het om gaat, is dat u vóór de eerste enterprise-deal weet welke uw product nodig heeft en waar u ze vandaan haalt.
+
+## AI Engineers Aannemen: Een Stapsgewijze Aanpak
+
+De meest effectieve manier voor een Europese oprichter om AI software engineering te bemensen, is aannemen voor de kernworkflow van het product en gespecialiseerd security- en compliancewerk bewust in te kopen, in plaats van te hopen dat een generalist alles afdekt. Een praktische volgorde:
+
+1. **Definieer de workflow vóór de functie.** Schrijf het ene bedrijfsproces op dat uw product automatiseert en de systemen waarmee het moet koppelen. Daaruit blijkt of u integratiediepte, retrieval-expertise of beide nodig heeft.
+2. **Scheid kernwerk van specialistisch werk.** Productlogica en klantgerichte functies zijn kernwerk en horen meestal dicht bij de oprichter. Securityreviews, het verharden van infrastructuur en de architectuur voor gegevensbescherming zijn specialistisch werk dat veel startups bij een partner inkopen.
+3. **Toets op productiedenken, niet op demo's.** Vraag kandidaten in technische interviews hoe zij API-sleutels zouden opslaan, tenantdata zouden isoleren, modelaanroepen zouden loggen en een verwijderverzoek van een betrokkene zouden afhandelen. Die antwoorden zeggen veel meer dan een gelikt prototype.
+4. **Controleer de Europese context.** Vraag hoe zij data in een EU-regio zouden hosten, wat een verwerkersovereenkomst onder artikel 28 van de AVG moet regelen en wanneer een gegevensbeschermingseffectbeoordeling (DPIA) onder artikel 35 van de AVG verplicht is.
+5. **Plan reviewcapaciteit in.** Leunt uw team sterk op AI-codeertools zoals Cursor, Lovable of Bolt, reserveer dan budget voor ervaren reviewers die de gegenereerde code op beveiligingslekken controleren voordat die in productie gaat.
+6. **Kies het aannamemodel als laatste.** Pas wanneer het werk helder is, beslist u tussen interne medewerkers, freelancers, een dedicated team of een opdracht met vaste scope.
+
+### Neemt u intern aan of werkt u met een engineeringpartner?
+
+U neemt intern aan voor de vaardigheden die uw product bepalen en elke week veranderen, en u schakelt een partner in voor het verhardings-, security- en compliancewerk dat cruciaal maar periodiek is. Een fulltime security engineer aannemen voordat u betalende enterprise-klanten heeft, is duur; securitywerk uitstellen tot de audit van een prospect mislukt, is duurder. Een opdracht met vaste scope, zoals het Launch Ready-pakket van LaunchStudio (€800-€3.500), is precies bedoeld voor die kloof tussen een werkend prototype en een product dat een review doorstaat.
+
+## EU-Compliancechecklist voor AI-Databeveiliging
+
+AI-databeveiliging in Europa komt erop neer dat u op verzoek kunt aantonen waar data naartoe gaat, wie haar verwerkt en welke maatregelen gelden. Controleer vóór uw eerste enterprise-verkooptraject of u elk van deze punten kunt afvinken:
+
+- **Datamap.** Een actueel overzicht van elk systeem dat klantdata opslaat of verwerkt, inclusief modelaanbieders en vectordatabases.
+- **EU-hosting.** Productiedatabases en bestandsopslag in een EU-regio, met back-ups binnen hetzelfde rechtsgebied.
+- **Verwerkersovereenkomsten.** Een verwerkersovereenkomst voor uw eigen klanten die voldoet aan artikel 28 van de AVG, plus een gepubliceerde lijst van uw subverwerkers.
+- **Internationale doorgifte.** Verwerkt een aanbieder data buiten de EU, dan een gedocumenteerde rechtsgrond zoals Standard Contractual Clauses (modelcontractbepalingen) of certificering onder het EU-US Data Privacy Framework.
+- **DPIA waar vereist.** Een gegevensbeschermingseffectbeoordeling voor verwerkingen die waarschijnlijk een hoog risico opleveren, wat bij AI-systemen die op grote schaal persoonsgegevens verwerken vaak het geval is.
+- **Classificatie onder de EU AI Act.** Een schriftelijke beoordeling of uw systeem in een hoog-risicocategorie valt, en hoe u voldoet aan de transparantieverplichtingen die gelden wanneer gebruikers met een AI-systeem communiceren.
+- **Bewaren en verwijderen.** Vastgestelde bewaartermijnen en een getest proces om de data van een klant te verwijderen, ook uit logs en embeddings.
+- **Toegangscontrole en logging.** Rolgebaseerde toegang, tenant-isolatie en auditlogs voor zowel menselijke als AI-acties.
+
+## Veelgemaakte Fouten van Europese AI-Oprichters
+
+De duurste fout is het uitstellen van compliance-architectuur tot een deal ervan afhangt. Andere terugkerende fouten zijn:
+
+- **Standaard een Amerikaanse regio kiezen.** Veel AI-appbouwers en backendplatforms hosten standaard in de VS. Later migreren onder tijdsdruk kost veel meer dan op dag één een EU-regio kiezen.
+- **Aannemen dat de modelaanbieder de AVG voor u regelt.** De voorwaarden van uw aanbieder dekken diens eigen verwerking. Uw verplichtingen als verwerker richting uw klanten blijven de uwe.
+- **Meer data naar het model sturen dan nodig.** Dataminimalisatie is een kernbeginsel van de AVG. Verwijder identificerende gegevens die het model niet nodig heeft om de taak uit te voeren.
+- **Voor slechts één model bouwen.** Wie één Amerikaanse API vastprogrammeert, kan moeilijk een soeverein alternatief bieden wanneer een klant Mistral AI of een zelf-gehost open-weight model eist.
+- **Compliancedocumenten als papierwerk behandelen.** Inkoopteams vergelijken uw documentatie met uw werkelijke architectuur. Een beleid dat de code niet afdwingt, is een risico en geen bezit.
+
 ## Belangrijkste Inzichten
 
 - De VS domineert de kapitaalintensieve modellaag, maar de echte economische waarde verschuift naar de gespecialiseerde B2B Applicatielaag.
@@ -78,6 +132,7 @@ Ongeveer 45% van de met AI gegenereerde code bevat kwetsbaarheden; een professio
 - 'Sovereign AI' en Europese open-source modellen (Mistral) winnen snel terrein bij enterprise-klanten die data binnen de EU willen houden.
 - Focus op diepe Verticale AI voor traditionele Europese industrieën (logistiek, productie, finance) in plaats van generieke horizontale chatbots.
 - Succes in Europese enterprise SaaS vereist discipline in data-residentie, architectuur en cybersecurity.
+- AI engineers aannemen in Europa betekent integratie-, security- en privacyvaardigheden voorrang geven boven modelonderzoek, en periodiek verhardingswerk bij een partner onderbrengen wanneer het niet tot de kern van het product behoort.
 
 ## Bouw voor de Europese Enterprise Markt
 

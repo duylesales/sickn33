@@ -45,6 +45,49 @@ It's also worth deciding early whether affiliates can bid on your own brand name
 
 Herre Roelevink, Founder & Managing Director of Manifera, has seen this exact pattern across dozens of client builds: "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's now about the architecture and security needed to bring those products to maturity. We have eleven years of experience in exactly that." Getting affiliate attribution and payout logic right the first time is a small but telling example of that maturity gap - one Manifera has been closing since it was founded in **2014**, operating out of Amsterdam (Herengracht 420) and its engineering hub in **Ho Chi Minh City, Vietnam**.
 
+## Affiliate vs. Referral vs. Reseller: Which Partner Program Fits an AI SaaS Platform?
+
+An affiliate program is a performance-based partnership in which independent creators promote your product with a tracked link and earn a commission only on paying customers they bring in. It is one of three common partner models, and an AI SaaS platform usually starts with one of them before adding the others.
+
+| Model | Who promotes | How they are paid | Best for |
+|---|---|---|---|
+| Affiliate program | Creators, newsletter writers, consultants | Commission on revenue from tracked signups | Self-serve plans with a clear monthly price |
+| Customer referral program | Your existing users | Account credit, discounts or small rewards | Products with strong word of mouth inside teams |
+| Reseller or agency partner | Agencies and integrators who sell and implement | Margin or discount on resold licences | Larger B2B deals that need setup and training |
+
+For an early-stage AI SaaS platform with self-serve pricing, an affiliate program is usually the fastest to launch. Referral programs work well once you have a base of happy users, and reseller programs only make sense when customers need help implementing your product.
+
+## How Much Commission Should an AI SaaS Affiliate Program Pay?
+
+An AI SaaS affiliate commission should be set from your gross margin, not copied from traditional SaaS programs, because AI products carry API costs that ordinary software does not. A 30% recurring commission is common in SaaS, but traditional SaaS often runs on very high gross margins. If model costs take a meaningful share of each subscription, the same 30% can leave very little for support, infrastructure and profit.
+
+Run the calculation per plan before you publish your terms. For example, on a $50/mo plan, a 30% commission is $15 a month. If your API and hosting costs for an average customer on that plan are also around $15, you keep $20 of the $50 for everything else. That can still be a good deal, since you paid nothing upfront, but you should know the number. Three practical levers keep commissions sustainable:
+
+- **Limit the duration.** A 12-month recurring commission is easier to sustain than a lifetime one if your margins are still settling.
+- **Pay on net revenue.** Calculate commissions after refunds, VAT and chargebacks, and state this clearly in your terms.
+- **Exclude usage overages.** Pay commission on the base subscription, not on credit top-ups whose cost scales directly with API usage.
+
+## How to Launch an AI SaaS Affiliate Program Step by Step
+
+You can launch a working affiliate program in a few weeks if you follow a fixed order: economics first, then terms, tooling, recruitment and review. Use this process:
+
+1. **Set the commission model.** Decide percentage, duration and what counts as commissionable revenue, based on the margin calculation above.
+2. **Write clear affiliate terms.** Cover payout timing, refund handling, brand-term bidding, self-referral and required disclosure.
+3. **Connect the tracking platform.** Integrate Rewardful, FirstPromoter or PartnerStack with your Stripe account and test the full flow: click, signup, payment, refund.
+4. **Respect consent rules.** Under the EU ePrivacy Directive, non-essential tracking cookies generally need user consent, so make sure your referral tracking works with your cookie banner and has a server-side fallback.
+5. **Prepare a creator kit.** Give affiliates screenshots, a short demo video, key use cases and approved claims, so their content is accurate.
+6. **Recruit 10 to 20 workflow experts.** Start small with niche creators whose audiences match your buyer, and learn from their results before scaling.
+7. **Review monthly.** Check conversions, refunds and payout accuracy per affiliate, and move top performers to a higher commission tier.
+
+## Common Affiliate Program Mistakes to Avoid
+
+The most expensive affiliate mistake is paying out before you know a customer will stay, because refunds and early churn turn commissions into pure losses. Holding payouts for a short review window, as described above, solves most of this. Other frequent errors:
+
+- **No disclosure rules.** The US FTC Endorsement Guides require creators to disclose material connections such as commissions, and the EU Unfair Commercial Practices Directive prohibits hidden advertising. Require clear disclosure in your terms - it protects your brand as well as the creator.
+- **Allowing unverified claims.** Affiliates who promise results your AI cannot deliver create churn and support load. Share approved messaging and correct misleading content quickly.
+- **Recruiting for reach instead of fit.** As covered earlier, large generic audiences convert poorly. Fit with your buyer matters more than follower count.
+- **Ignoring affiliate support.** Partners who cannot get answers about tracking or payouts stop promoting you. A clear dashboard and a named contact keep them active.
+
 ## Key Takeaways
 
 - Traditional paid ads (Google/Facebook) are often too expensive for early-stage AI startups due to massive keyword competition and high Cost Per Click (CPC), sometimes exceeding $15/click.

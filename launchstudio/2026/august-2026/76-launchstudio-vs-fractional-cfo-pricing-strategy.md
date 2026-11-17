@@ -50,6 +50,40 @@ Running these two engagements in the wrong order is more expensive than most fou
 
 The opposite mistake is subtler and slower-burning: paying a fractional CFO's monthly retainer for two or three months while a validated pricing strategy sits unimplemented because no one on the team can build the Stripe logic to execute it. At €2,500-€6,000/month, three months of a retainer without execution is €7,500-€18,000 spent on a plan that hasn't yet generated a single euro of the additional revenue it was designed to unlock - and every week it sits unbuilt is a week of MRR growth the strategy was supposed to fix. Sequencing the two engagements correctly - validate first, then build, with each role handing off a concrete deliverable to the other - is what keeps the total cost and timeline close to the sum of each part rather than considerably more.
 
+## Fractional CFO vs LaunchStudio: Side-by-Side Comparison
+
+A fractional CFO answers "what should our SaaS pricing strategy be?", while LaunchStudio answers "how do we make that pricing work in the product?". The table below puts the two side by side, using the figures above.
+
+| | Fractional CFO | LaunchStudio |
+|---|---|---|
+| Core question | What should we charge, and how should tiers be structured? | How do we meter, bill and gate features to match that pricing? |
+| Main deliverable | Pricing strategy: unit economics model, tier design, willingness-to-pay findings | Working infrastructure: usage metering, Stripe Billing logic, feature gating, customer migration |
+| Typical cost | €800-€1,800 per day or €2,500-€6,000 per month | Roughly €1,600-€3,200 under Launch & Grow |
+| Typical timeline | 3-6 weeks to a recommendation | 1-2 weeks to a live implementation |
+| Touches the code | No | Yes |
+| Best fit when | The pricing model itself is uncertain | The pricing model is decided but not built |
+
+## How to Decide Who to Hire First
+
+The quickest way to choose is to answer five questions honestly; the answers show whether your uncertainty sits in strategy or in execution.
+
+1. **Do you know your gross margin per plan, including LLM API costs?** If not, start with financial analysis.
+2. **Can you explain which customer segment gets the most value, and why?** If not, willingness-to-pay research comes first.
+3. **Is there a written pricing decision that the founders and board agree on?** If yes, the bottleneck is probably execution.
+4. **Does your product already track the usage metric your new tiers would depend on?** If not, metering has to be built regardless of who designed the strategy.
+5. **Has a pricing plan been waiting more than a month for implementation?** If yes, engineering is the constraint, not strategy.
+
+Mostly "no" to questions 1 and 2 points to a fractional CFO first. Mostly "yes" to questions 3 and 5 points to an engineering engagement first.
+
+## Common Mistakes When Implementing a New SaaS Pricing Strategy
+
+Even a well-designed pricing strategy can fail at the implementation stage, usually in one of these ways:
+
+- **Metering the wrong unit.** If tiers depend on "reports generated" but the system only logs API calls, invoices and plan limits will never line up.
+- **No plan for existing customers.** Moving everyone to new prices at once, without grandfathering or notice, creates churn the strategy never accounted for.
+- **Feature gates only in the frontend.** Hiding a button is not enforcement; plan limits must be checked on the server as well.
+- **No overage rules.** A usage-based tier needs a defined answer for what happens when a customer exceeds it: block, charge an overage or prompt an upgrade.
+
 ## Key Takeaways
 
 - Flat or stalled MRR growth is rarely fixed by picking a different single number - the more common root cause is structural: no usage-based component, tiers that don't map to value, or a pricing model that ignores the variable cost of AI inference.

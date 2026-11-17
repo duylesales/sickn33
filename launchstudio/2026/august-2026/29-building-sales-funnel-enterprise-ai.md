@@ -41,6 +41,65 @@ Most B2B AI teams obsess over top-of-funnel demo bookings and lose visibility th
 
 None of these phases work if your product itself can't survive scrutiny once the CISO actually opens it up. A "Trust Center" page - listing your SOC 2 status, data retention policy, subprocessors, and uptime history - should exist before your first enterprise call, not get built reactively after a security team asks for it. This is the exact gap Herre Roelevink, Founder & Managing Director of Manifera, points to: "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's now about the architecture and security needed to bring those products to maturity. We have eleven years of experience in exactly that." Manifera has been building that enterprise-grade maturity into client products since it was founded in **2014**, delivering 160+ projects for organizations including Vodafone and TNO from its Amsterdam HQ and its Ho Chi Minh City, Vietnam development center.
 
+## What Is an Enterprise AI Sales Funnel?
+
+An enterprise AI sales funnel is the sequence of qualification, discovery, demo, pilot and procurement stages that moves a large organisation from first interest to a signed AI contract. Unlike a self-serve funnel, each stage has a clear exit criterion and involves more people on the buyer's side. The table below summarises the stages described above, plus the procurement stage that often decides the timeline.
+
+| Stage | Goal | Exit criterion | Who is involved on the buyer side |
+|---|---|---|---|
+| Qualification | Filter enterprise leads from small teams | Company size and pain point fit | Champion |
+| Discovery call | Quantify the problem in the buyer's words | Agreed cost of the current process | Champion, team lead |
+| Tailored demo | Show the AI solving their exact case | Request for a pilot or proposal | Champion, end users, sometimes IT |
+| Paid POC | Prove ROI on real data | Success metrics met and documented | Pilot team, project sponsor |
+| Security and procurement | Pass legal, security and vendor checks | Signed contract and DPA | CISO, legal, procurement, economic buyer |
+
+Many founders treat the last stage as paperwork. In enterprise AI deals it is often the longest stage, so it should start in parallel with the POC, not after it.
+
+## How to Qualify Enterprise AI Leads Before You Invest Weeks
+
+The fastest way to qualify an enterprise AI lead is to confirm, early in the process, that there is a measurable pain, a person with budget authority and a defined decision process. Many B2B sales teams use the MEDDICC framework for this: Metrics, Economic buyer, Decision criteria, Decision process, Identify pain, Champion and Competition. You do not need to apply it rigidly, but every serious enterprise deal should have an answer to each letter before you start a POC.
+
+Use these questions in your discovery call and write the answers into your CRM:
+
+- **Metrics:** What number will improve, and by how much, if this works?
+- **Economic buyer:** Who signs a contract of this size, and have they heard of this project?
+- **Decision process:** Which teams must approve - IT, security, legal, works council?
+- **Competition:** Are they also evaluating another vendor, or building it in-house?
+
+A deal without a known economic buyer or decision process is not ready for a paid POC, however enthusiastic your champion is.
+
+## How to Pass the Enterprise AI Security Review
+
+You pass an enterprise AI security review by answering the buyer's questions before they ask them, with documents ready to share. Large organisations usually send a security questionnaire, sometimes based on standards such as the Cloud Security Alliance CAIQ or the Shared Assessments SIG. For AI products, expect questions about:
+
+- **Certifications:** SOC 2 Type II or ISO/IEC 27001 status, or a credible roadmap if you are not certified yet.
+- **Data processing:** A data processing agreement that meets GDPR Article 28, a list of sub-processors including your model providers, and where data is stored.
+- **Model data use:** Whether customer data is used to train models, and how long prompts and outputs are retained by you and by your AI provider.
+- **EU AI Act:** How your system is classified under the EU AI Act, and what transparency or documentation obligations apply to the use case the buyer has in mind.
+- **Access and logging:** Single sign-on through SAML or OIDC, role-based access, and audit logs of who accessed which data.
+
+Prepare a standard answer pack once and reuse it. A security team that receives clear, consistent answers in days instead of weeks keeps the deal moving.
+
+## How to Structure a Paid POC Step by Step
+
+A well-structured paid POC is a short, written mini-project with fixed scope, fixed price and success criteria both sides agree on before work starts. Follow these steps:
+
+1. **Write a one-page POC plan.** State the use case, the pilot team, the data needed, the duration and the price.
+2. **Agree on measurable success criteria.** For example, the share of documents processed correctly, or time saved per case, measured against the baseline from discovery.
+3. **Sign the DPA early.** Real data cannot flow until the data processing agreement is signed, so start it before the POC begins.
+4. **Run a kickoff and weekly check-ins.** Short meetings with the pilot team keep usage high and surface issues early.
+5. **Present a results report.** Compare the results with the agreed criteria, in numbers.
+6. **Include the next step in the POC agreement.** Agree in advance what the full rollout costs if the criteria are met, so the decision is about results, not a new negotiation.
+
+## Common Mistakes in Enterprise AI Sales
+
+The most common enterprise AI sales mistake is single-threading: relying on one champion, so the deal stops when that person changes jobs or loses budget. Build relationships with at least the economic buyer and the security lead. Other frequent mistakes:
+
+- **Starting procurement after the POC.** Legal and vendor onboarding can take as long as the pilot itself.
+- **Open-ended pilots.** A POC without an end date or success criteria rarely converts.
+- **Overpromising accuracy.** Generative AI makes mistakes. Describe how errors are caught and corrected, for example through human review steps, instead of promising perfection.
+- **Discounting too early.** Price is easier to defend once the POC has proven value.
+
 ## Key Takeaways
 
 - Enterprise AI contracts cannot be sold via a self-serve checkout page; you must gate high-tier plans behind a 'Book a Demo' funnel to initiate a complex, multi-stakeholder sales process.

@@ -88,6 +88,50 @@ Een realistische budgetvergelijking voor een oprichter met een bevindingenrappor
 
 Het dichten van dezelfde ruim 20 bevindingen via een engineeringpartner in plaats van de adviestak van een auditbureau bespaart doorgaans € 10.000-€ 18.000 en meerdere weken, terwijl het een systeem oplevert dat waarschijnlijker de certificering in één keer haalt omdat de oplossingen zijn gebouwd door engineers voor wie dit soort verharding de kerndiscipline is.
 
+## Wat Is SOC 2-Gereedheid, en Heb Je Type I of Type II Nodig?
+
+SOC 2-gereedheid betekent dat je systemen, beheersmaatregelen en documentatie zo op orde zijn dat een onafhankelijke auditor ze kan toetsen aan de Trust Services Criteria van het AICPA en een rapport zonder voorbehoud kan afgeven. Beveiliging is het enige criterium dat elk SOC 2-rapport afdekt; beschikbaarheid, vertrouwelijkheid, verwerkingsintegriteit en privacy worden alleen toegevoegd wanneer ze relevant zijn voor wat je klanten belooft.
+
+De meeste oprichters in een vroege fase beginnen met Type I, en het verschil is belangrijk voor de planning:
+
+| | SOC 2 Type I | SOC 2 Type II |
+|---|---|---|
+| Wat wordt getoetst | Of beheersmaatregelen op een specifiek moment adequaat zijn ontworpen | Of beheersmaatregelen gedurende een observatieperiode effectief hebben gewerkt |
+| Observatieperiode | Geen - één peildatum | Doorgaans enkele maanden, vaak tussen 3 en 12 |
+| Typisch gebruik | Snel een eerste enterprise-deal deblokkeren | Op termijn voldoen aan de verwachtingen van volwassen enterprise-securityteams |
+| Gevolg voor engineering | Beheersmaatregelen moeten bestaan en aantoonbaar zijn | Beheersmaatregelen moeten bovendien gedurende de hele periode consistent bewijs opleveren, zoals logs en toegangsreviews |
+
+Omdat Type II een periode van werking onderzoekt, is elk hiaat dat je dicht vóór het observatievenster begint een hiaat dat later niet als uitzondering in het rapport kan opduiken. Dat is nog een reden om het engineeringwerk eerst af te ronden.
+
+## Wie Doet Wat: Auditbureau vs. Engineeringpartner
+
+De taak van het auditbureau is beoordelen en attesteren; de taak van de engineeringpartner is bouwen en herstellen. Die rollen gescheiden houden is zowel goedkoper als zuiverder. Een praktische verdeling van verantwoordelijkheden ziet er zo uit:
+
+| Taak | Auditbureau | Engineeringpartner zoals LaunchStudio | Oprichter |
+|---|---|---|---|
+| Gereedheidsbeoordeling en lijst met hiaten | Ja | Kan een door engineering geleide gap-review leveren | Levert toegang en context |
+| RLS, RBAC en tenant-isolatie | Nee | Ja | Keurt de scope goed |
+| Audit logging en monitoring | Nee | Ja | Bepaalt wie meldingen beoordeelt |
+| Geheimenbeheer en rotatie | Nee | Ja | Is daarna eigenaar van het rotatieschema |
+| Beleid (incidentrespons, leveranciersbeheer) | Beoordeelt het | Stelt de technische onderdelen op | Keurt het goed en voert het in |
+| Formele toetsing en het SOC 2-rapport | Ja | Nee | Levert bewijs aan |
+
+De kolom van de oprichter wordt gemakkelijk over het hoofd gezien. SOC 2 toetst wat je bedrijf daadwerkelijk doet, dus iemand binnen het bedrijf moet eigenaar zijn van het beleid en de beheersmaatregelen draaiende houden nadat het engineeringwerk is afgerond.
+
+### Maakt SOC 2 je AVG-compliant?
+
+Nee. SOC 2 is een vrijwillig attestatiekader, terwijl de AVG (GDPR) bindende Europese wetgeving is met eigen verplichtingen, zoals verwerkersovereenkomsten onder artikel 28 van de AVG en het melden van datalekken aan de toezichthoudende autoriteit binnen 72 uur onder artikel 33. In Nederland is dat de Autoriteit Persoonsgegevens. Veel beheersmaatregelen overlappen - toegangscontrole, logging, versleuteling, leveranciersoverzichten - zodat een goed gepland engineeringtraject beide tegelijk kan bedienen. Maar een SOC 2-rapport vervangt geen verwerkersovereenkomst, geen register van verwerkingsactiviteiten en geen rechtsgrond voor de verwerking.
+
+## Veelgemaakte Fouten bij SOC 2-Gereedheid
+
+De meest gemaakte fout bij SOC 2-gereedheid is beleid schrijven dat beheersmaatregelen beschrijft die het systeem in werkelijkheid niet afdwingt. Auditors toetsen bewijs, geen intenties. Andere veelvoorkomende fouten zijn:
+
+- **Standaard elk Trust Services Criterium in scope nemen.** Privacy of verwerkingsintegriteit toevoegen zonder duidelijke reden vanuit de klant vergroot de audit en de kosten.
+- **AI-aanbieders vergeten in het leveranciersoverzicht.** Gaan prompts of documenten met klantdata naar OpenAI, Anthropic of een andere model-API, dan hoort die aanbieder in je lijst met subverwerkers.
+- **Gedeelde beheerdersaccounts aanhouden.** Gedeelde logins maken individuele toegang onnaspeurbaar, wat audit logging volledig ondermijnt.
+- **Het observatievenster te vroeg laten beginnen.** Bij Type II verandert een periode die start voordat de beheersmaatregelen stabiel zijn elke vroege inconsistentie in een gedocumenteerde uitzondering.
+- **Certificering als eindstreep zien.** Beheersmaatregelen moeten blijven werken nadat het rapport is afgegeven, anders heropent de volgende auditcyclus dezelfde bevindingen.
+
 ## Belangrijkste inzichten
 
 - SOC 2-auditbureaus zijn gebouwd voor onafhankelijke beoordeling, niet voor productie-engineering - hun eigen herstelconsultancy is doorgaans geprijsd op € 15.000-€ 25.000 voor werk dat een gespecialiseerd engineeringteam in een fractie van de tijd en kosten kan dichten.

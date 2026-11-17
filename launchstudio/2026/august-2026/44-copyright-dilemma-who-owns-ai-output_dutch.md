@@ -65,6 +65,55 @@ Oprichters beschouwen auteursrecht vaak puur als een juridische disclaimer. Dat 
 
 Dit soort enterprise-architecturen is exact waar Manifera sinds **2014** aan bouwt, met 160+ gerealiseerde projecten voor opdrachtgevers zoals Vodafone en TNO vanuit haar hoofdkantoor aan de Herengracht 420 in Amsterdam. Zoals Herre Roelevink, Oprichter & Managing Director van Manifera, stelt: "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Bekijk Manifera's [portfolio van enterprise-software](https://www.manifera.com/portfolio/).
 
+## Wie is eigenaar van de code in een met AI gegenereerde applicatie?
+
+Voor code geldt dezelfde regel van menselijk auteurschap: regels die een AI-codeertool zelfstandig schrijft, staan auteursrechtelijk zwak, terwijl de code die uw team ontwerpt, structureert, bewerkt en integreert gewoon beschermd is. Voor oprichters die hun product met Cursor, Lovable, Bolt of GitHub Copilot hebben gebouwd, is dit minder ingrijpend dan het klinkt, omdat een echte applicatie zelden uit ruwe AI-output bestaat. Architectuurkeuzes, datamodellen, prompts, integratielogica en de vele handmatige correcties die een prototype productierijp maken, zijn menselijke bijdragen.
+
+De grotere praktische risico's voor een met AI gegenereerde applicatie liggen elders:
+
+- **Besmetting met open-sourcelicenties.** Een model kan fragmenten reproduceren die sterk lijken op gelicentieerde open-sourcecode. Valt die code onder een copyleft-licentie zoals de GPL, dan kan het kopiëren ervan in een propriëtair product licentieverplichtingen opleveren. GitHub Copilot biedt een instelling die suggesties blokkeert die overeenkomen met openbare code, en een scan van afhankelijkheden en licenties vóór de lancering is een verstandige voorzorg.
+- **Gebruiksvoorwaarden van de tool.** Controleer of de voorwaarden van uw AI-codeertool de rechten op de output aan u toekennen en geen licentie claimen op uw codebase.
+- **Overeenkomsten met freelancers en bureaus.** Hebben freelancers of een bureau een deel van de code geschreven, met of zonder AI-hulp, dan moet uw contract alle IP-rechten aan uw onderneming overdragen. Investeerders controleren dit tijdens de due diligence.
+
+Uw werkelijke voorsprong zit zelden in het auteursrecht op afzonderlijke regels code. Het is de combinatie van uw product, uw data, uw klantrelaties en uw vermogen om te leveren. Daarom beschermen bedrijfsgeheimen en goede contracten een AI SaaS-onderneming vaak beter dan auteursrecht alleen.
+
+### Auteursrecht en code onder Nederlands recht
+
+Onder de Nederlandse Auteurswet is een werk beschermd als het een eigen, oorspronkelijk karakter heeft en het persoonlijk stempel van de maker draagt. Dat sluit aan bij de Europese maatstaf van de "eigen intellectuele schepping" en vereist creatieve keuzes van een mens. Voor software-eigendom zijn daarnaast twee bepalingen van groot praktisch belang. Artikel 7 Auteurswet bepaalt dat de werkgever als maker geldt van werken die een werknemer in dienstverband maakt, tenzij anders is afgesproken. Voor freelancers en externe bureaus geldt dat niet: daar blijven de rechten bij de maker, tenzij ze worden overgedragen. Zo'n overdracht vereist op grond van artikel 2 Auteurswet een daartoe bestemde akte, dus een schriftelijk en ondertekend document. Een mondelinge afspraak of een factuur volstaat niet. Controleer daarom vóór een investeringsronde of elke externe bijdrage aan uw codebase met een getekende IP-overdracht is afgedekt.
+
+## Hoe behandelt het EU-recht door AI gegenereerde werken?
+
+Het Europese auteursrecht beschermt alleen werken die een "eigen intellectuele schepping van de auteur" zijn, een maatstaf die het Hof van Justitie van de Europese Unie heeft geformuleerd in *Infopaq* (C-5/08) en die vrije en creatieve keuzes van een mens vereist. Puur door een machine gegenereerde output voldoet daar niet aan, zodat de positie in de EU in grote lijnen overeenkomt met de eis van menselijk auteurschap van de USCO, ook al verloopt de juridische route anders.
+
+Twee andere Europese regels raken generatieve AI-producten rechtstreeks:
+
+- **Tekst- en datamining.** Artikel 4 van de Richtlijn auteursrecht in de digitale eengemaakte markt (EU) 2019/790 staat tekst- en datamining voor commerciële doeleinden toe, tenzij rechthebbenden zich daartegen op machineleesbare wijze hebben verzet (opt-out). Dit is de juridische basis waar een groot deel van het Europese debat over trainingsdata om draait.
+- **De EU AI Act.** Aanbieders van AI-modellen voor algemene doeleinden moeten beleid hebben om aan het Europese auteursrecht te voldoen, inclusief het respecteren van die opt-outs, en moeten een voldoende gedetailleerde samenvatting publiceren van de content die voor training is gebruikt (Artikel 53). Deze verplichtingen liggen bij modelproviders zoals OpenAI, Anthropic of Mistral, niet bij de meeste AI SaaS-startups die daarop bouwen, maar ze leveren wel nuttige documentatie op waarnaar u enterprise-klanten kunt verwijzen.
+
+## De auteursrechtelijke status in één oogopslag
+
+De onderstaande tabel vat samen hoe verschillende soorten generatieve AI-output onder de huidige richtlijnen doorgaans worden behandeld, en wat uw product daarmee moet doen.
+
+| Soort output | Gebruikelijke auteursrechtelijke positie | Wat uw AI SaaS-product moet doen |
+|---|---|---|
+| Ruwe AI-afbeelding of -tekst op basis van een prompt | In het algemeen niet beschermd | Label het als AI-gegenereerd; sluit exclusiviteit uit |
+| AI-output die substantieel door een mens is bewerkt | Menselijke bijdragen beschermd ("dun auteursrecht") | Bewaar de versiegeschiedenis van menselijke bewerkingen |
+| Door een mens geschreven tekst met AI-suggesties | Beschermd als menselijk werk | Maak duidelijk welke delen de gebruiker zelf heeft geschreven |
+| AI-gegenereerde code in een grotere codebase | Zwak voor ruwe fragmenten; sterk voor menselijk ontwerp en bewerkingen | Voer licentiescans uit; bewaar de commitgeschiedenis |
+| Logo's en kernmerkuitingen uit ruwe AI | Moeilijk te beschermen of te registreren | Adviseer klanten deze door een ontwerper te laten herwerken |
+
+## IP-checklist voor AI SaaS-oprichters
+
+Een korte, herhaalbare checklist voorkomt dat IP-risico's een dealbreker worden in enterprise-inkooptrajecten:
+
+1. **Gebruik enterprise-modeltiers met auteursrechtelijke vrijwaring** waar uw klanten dat nodig hebben, en bewaar een kopie van de betreffende voorwaarden.
+2. **Draag de rechten op Output over aan gebruikers "voor zover wettelijk toegestaan"** en vermeld duidelijk dat outputs niet gegarandeerd uniek zijn.
+3. **Leg herleidbaarheid vast.** Sla op welk model wat heeft gegenereerd, wanneer, en welke menselijke bewerkingen daarna zijn uitgevoerd.
+4. **Voeg overeenkomstigheids- en merkcontroles toe** voor risicovolle outputs zoals logo's, slogans en productnamen.
+5. **Scan uw eigen codebase** op licentieconflicten vóór een investeringsronde of enterprise-deal.
+6. **Laat IP-overdrachtsclausules ondertekenen** door elke medewerker, freelancer en elk bureau dat aan het product heeft bijgedragen.
+7. **Informeer enterprise-klanten schriftelijk** over wat wel en niet beschermd kan worden, zodat de verwachtingen helder zijn voordat er een geschil ontstaat.
+
 ## Belangrijkste Inzichten
 
 - Ruwe AI-outputs (tekst, code, beeld) genieten geen auteursrechtelijke bescherming wegens het ontbreken van menselijk auteurschap; algoritmes kunnen geen auteur zijn.

@@ -54,6 +54,58 @@ Use an interest-based, soft CTA: *"Are you currently exploring solutions for thi
 
 Open rate is a vanity metric in 2026 - Apple Mail Privacy Protection and Gmail's image proxying mean "opens" are frequently triggered by security scanners, not humans. Track positive reply rate and meeting-booked rate instead, segmented by the specific icebreaker template used. This is where the enrichment pipeline pays for itself: you can A/B test which data source (LinkedIn posts vs. company news vs. GitHub activity) produces the highest-converting icebreakers, and kill the ones that don't.
 
+## What Is AI-Personalised Cold Email?
+
+AI-personalised cold email is outbound email to prospects who have not contacted you, where an LLM writes a specific opening line from verified research about each recipient, while the offer and call to action stay human-written. It differs from mass AI copy because the AI is used for research and synthesis, not for volume. The table below shows how it compares with the older approaches.
+
+| Approach | How it is built | Typical result in 2026 inboxes | Main risk |
+|---|---|---|---|
+| Spray and pray | Scraped list, `{{first_name}}` template, high volume | Spam folder, domain damage | Blacklisting of the sending domain |
+| Generic AI copy | LLM writes the full email from a short prompt | Recognised as AI, deleted or reported | Spam complaints, weak replies |
+| Manual research | SDR researches and writes each email by hand | Good replies, very low volume | Does not scale, high cost per email |
+| AI-personalised | Enrichment, constrained LLM icebreaker, verification, human pitch | Relevant emails at moderate volume | Hallucinated facts if verification is skipped |
+
+## The Cold Email Deliverability Checklist
+
+A cold email setup is ready to send only when authentication, domains, lists and sending limits are all in place before the first campaign. Use this checklist with your technical team:
+
+| Item | What it does | How to check |
+|---|---|---|
+| SPF record | Lists the servers allowed to send for your domain | DNS lookup or your email provider's setup page |
+| DKIM signing | Adds a cryptographic signature that proves the email was not altered | Send a test email and check the message headers for "dkim=pass" |
+| DMARC policy | Tells receivers what to do when SPF or DKIM fails, and sends you reports | A `_dmarc` TXT record, starting with `p=none` and tightening over time |
+| One-click unsubscribe | Lets recipients opt out in one step, as Gmail and Yahoo require for bulk senders | Test the unsubscribe link and the List-Unsubscribe header |
+| Custom tracking domain | Avoids sharing link-tracking domains with other senders | Check the links in your sequencing tool settings |
+| Verified email list | Keeps bounce rates low | Run the list through an email verification tool before every campaign |
+| Spam rate monitoring | Warns you before you reach Gmail's 0.3% threshold | Google Postmaster Tools for each sending domain |
+
+## Is Cold Email Legal Under GDPR?
+
+B2B cold email can be legal in the EU, but only when you have a valid legal basis, respect national e-marketing rules and make opting out easy. Under the GDPR, a business email address of a named person is personal data. Recital 47 of the GDPR states that direct marketing may be regarded as a legitimate interest, and Article 21 gives every recipient an absolute right to object to direct marketing, so every email needs a clear way to opt out, and opt-outs must be honoured permanently.
+
+The EU ePrivacy Directive adds a second layer, and national rules differ. Some countries, such as Germany, are strict and often require prior consent even for B2B email. Others allow B2B outreach more freely. In the United States, the CAN-SPAM Act requires accurate sender information, a physical postal address and a working opt-out that is honoured within 10 business days. Check the rules for each country you target, keep a suppression list across all tools and domains, and record where you obtained each contact.
+
+## How to Launch an AI Cold Email Campaign Step by Step
+
+An AI cold email campaign should go live only after the infrastructure, list and copy have each been tested on a small batch. Follow this order:
+
+1. **Define a narrow ideal customer profile.** Pick one industry, role and company size. Personalisation works better when the pitch is already relevant.
+2. **Set up and warm the secondary domains.** Allow the 3-4 weeks of warming described above.
+3. **Build and verify the list.** Pull contacts, remove unsubscribes and previous bounces, and verify every address.
+4. **Run the enrichment and verification pipeline.** Generate icebreakers and fact-check them against the source data.
+5. **Review a sample by hand.** Read at least a few dozen emails before sending. If any look generic or wrong, fix the prompt, not the individual email.
+6. **Send a small test batch.** Measure bounce rate, spam complaints and positive replies before scaling up.
+7. **Scale gradually and keep measuring.** Increase volume per mailbox slowly and track replies per icebreaker source.
+
+## Common Cold Email Mistakes in the AI Era
+
+The most damaging cold email mistake is sending to an unverified list, because high bounce rates hurt sender reputation faster than almost anything else. Other common mistakes:
+
+- **Too many links and images in the first email.** Plain text with no more than one link looks like a personal message and is less likely to be filtered.
+- **Letting the LLM write the pitch.** Keep the offer and CTA human-written and consistent, so you can test them properly.
+- **Ignoring replies that say "not interested".** Add them to your suppression list straight away, across all domains and tools.
+- **Long sequences.** Sending many follow-ups to someone who never replied increases spam complaints. Three or four short, useful touches are usually enough.
+
 ## Key Takeaways
 
 - AI has flooded inboxes with generic spam, and Gmail's spam-rate thresholds now punish poorly-targeted domains within days. To stand out, you must use AI for deep data enrichment to write hyper-personalized emails, not just to generate generic copy faster.

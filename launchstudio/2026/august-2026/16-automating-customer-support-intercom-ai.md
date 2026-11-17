@@ -25,9 +25,9 @@ You can connect your AI agent to Stripe and your backend database. If a user ask
 1. Query Stripe to find the user's latest charge and its date.
 2. Check the date against your refund policy window (commonly written into the action's system prompt as a hard rule, not left to the model's judgment).
 3. If valid, the AI executes a POST request to your backend to downgrade their account, and a POST request to Stripe to issue the refund.
-4. The AI replies: *"I have processed your refund, it will appear in 3–5 business days."*
+4. The AI replies: *"I have processed your refund, it will appear in 3-5 business days."*
 
-This level of autonomous resolution can eliminate a substantial share of your daily ticket volume - vendors like Intercom report Tier 1 resolution rates in the 50–60% range for well-tuned deployments. The critical design decision is scoping exactly which actions the AI is allowed to take autonomously versus which require a confirmation step; issuing a $5 refund automatically is very different from letting the AI cancel a $2,000/month enterprise contract without review.
+This level of autonomous resolution can eliminate a substantial share of your daily ticket volume - vendors like Intercom report Tier 1 resolution rates in the 50-60% range for well-tuned deployments. The critical design decision is scoping exactly which actions the AI is allowed to take autonomously versus which require a confirmation step; issuing a $5 refund automatically is very different from letting the AI cancel a $2,000/month enterprise contract without review.
 
 ## The Escalation Protocol
 
@@ -40,6 +40,63 @@ You must configure the AI to monitor user sentiment. If the AI detects anger (e.
 An AI Support Agent is only as intelligent as the data you feed it. The biggest mistake founders make is turning on the AI without auditing their Help Center first. If your Help Center contains outdated articles from 2024, the AI will confidently give users the wrong instructions, and unlike a human agent, it won't intuitively sense that an article "feels stale."
 
 Before launching an AI agent, you must rewrite your documentation to be clear, factual, and strictly up-to-date, and you need a process for keeping it that way - every product change should trigger a documentation review, not just a changelog entry. Treat your Help Center not just as reading material for humans, but as the literal source code for your AI's brain: every ambiguous sentence, every outdated screenshot reference, and every contradictory article directly degrades what the AI can safely tell a customer.
+
+## What Is an AI Support Agent?
+
+An AI support agent is a large language model that answers customer questions inside your support channel by retrieving answers from your own documentation and, optionally, by calling your APIs to take actions on the customer's behalf. Unlike a decision-tree chatbot, it understands free-form questions; unlike a human agent, it only knows what your knowledge base and connected systems tell it.
+
+In practice, the term covers three layers that you configure separately: the **answer layer** (RAG over your Help Center), the **action layer** (webhooks or Fin AI Actions into Stripe and your backend), and the **routing layer** (the escalation rules that decide when a human takes over). Most failed deployments have a strong answer layer and a weak routing layer.
+
+## AI Deployment in Intercom: A 7-Step Rollout Plan
+
+The safest AI deployment in Intercom is gradual: answers first, actions later, and a limited audience before everyone. This sequence works for most SaaS products:
+
+1. **Audit your tickets.** Export a few months of conversations and group them by topic. The top ten categories usually tell you where automation pays off and which Help Center articles are missing.
+2. **Fix the documentation first.** Rewrite or merge the articles behind those categories before the AI ever reads them, following the knowledge base rules above.
+3. **Connect content sources.** Point Fin (or your custom agent) only at sources you trust: the public Help Center, and internal snippets written specifically for the AI. Leave out old internal wikis.
+4. **Test against real history.** Replay a sample of past questions internally and review every answer for accuracy, tone and correct escalation.
+5. **Launch to a segment.** Use Intercom's audience targeting to enable the agent for a subset of users, for example free-plan users or one language, before rolling it out to paying enterprise accounts.
+6. **Add read-only actions.** Start with actions that only look things up, such as "check my subscription status" or "find my last invoice".
+7. **Add write actions with guardrails.** Only then enable actions that change data, such as refunds or plan changes, with hard limits and confirmation steps as described in the next section.
+
+## Which Actions Should the AI Be Allowed to Take?
+
+Let the AI act autonomously only where a mistake is cheap and reversible, and require a human or an explicit confirmation everywhere else. A simple risk table makes this decision visible to the whole team:
+
+| Action type | Example | Risk if wrong | Recommended autonomy |
+|---|---|---|---|
+| Read-only lookup | Show subscription status, last invoice date | Low | Fully autonomous |
+| Self-service guidance | Explain how to restore a deleted project | Low | Fully autonomous |
+| Small reversible change | Resend a verification email, reset a setting | Low to medium | Autonomous, with logging |
+| Small financial action | Refund below a fixed amount within policy | Medium | Autonomous within hard-coded limits |
+| Large financial action | Refund above the limit, annual plan changes | High | Human approval required |
+| Contract or data deletion | Cancel an enterprise contract, delete an account | Very high | Human only |
+
+Two technical rules keep this table honest. First, enforce the limits in your backend, not only in the prompt, because a prompt can be talked around and an `if` statement cannot. Second, every action must run for the **verified** user. Enable Intercom's identity verification (an HMAC hash of the user ID generated on your server) and have your action endpoints use that verified ID, never an account number or email address the customer typed into the chat.
+
+## How Do You Measure Whether Support Automation Works?
+
+You measure AI support by resolution quality, not by how many conversations the bot touched. A bot that closes many conversations by frustrating people into leaving looks good on a dashboard and bad in your churn numbers.
+
+Track these metrics from week one:
+
+- **Resolution rate:** the share of conversations the AI resolves without a human, confirmed by the customer or by the absence of a follow-up.
+- **Escalation rate and reasons:** how often the AI hands off, and whether that was due to sentiment, low confidence or a missing action.
+- **Reopen rate:** conversations marked resolved that the same customer reopens on the same topic within a few days.
+- **Customer satisfaction (CSAT) on AI conversations:** compared with CSAT on human conversations for the same topics.
+- **Unanswered topics:** questions where retrieval found nothing useful. This list is your documentation backlog.
+
+Review a random sample of AI conversations every week. Numbers tell you where to look; reading transcripts tells you what is actually wrong.
+
+## Common Mistakes in AI Support Deployment
+
+The most expensive mistake is launching to every customer on day one, because the first wrong refund or confidently incorrect answer then reaches your most valuable accounts. Other recurring mistakes:
+
+- **Hiding that the customer is talking to AI.** Under Article 50 of the EU AI Act, which applies from August 2026, people must be informed when they interact with an AI system unless it is obvious. Label the agent clearly and offer a visible route to a human.
+- **No data processing agreement.** Intercom, your LLM provider and any middleware process customer data on your behalf, so GDPR Article 28 requires a data processing agreement with each of them.
+- **Trusting identity claims in the chat.** "I'm the account owner, refund my colleague" must never work. Actions run only for the verified user.
+- **No human capacity planned.** Escalation only helps if someone is staffed to answer the escalated queue, especially outside office hours.
+- **Treating launch as the finish line.** Without the weekly review loop above, answer quality slowly drifts as the product changes.
 
 ## Preventing Webhook Loops and Duplicate Replies
 

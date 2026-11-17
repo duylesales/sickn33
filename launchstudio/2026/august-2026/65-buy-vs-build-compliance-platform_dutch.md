@@ -61,11 +61,11 @@ In elk geval is het compliance-platform een zeer goede rookmelder. Het is geen b
 
 ## Het Volgorde-probleem
 
-Hier wordt de keuze tussen kopen en bouwen daadwerkelijk gemaakt, meestal zonder dat de oprichter het beseft. Managed compliance-platforms kosten $1.000 tot $3.000 per maand, afhankelijk van het plan en de bedrijfsgrootte, vaak verkocht als jaarcontracten in de range van $10.000–$30.000. Die prijs is volledig redelijk voor een bedrijf dat continue bewijsverzameling nodig heeft over tientallen echte, geïmplementeerde controls. Het is een slechte besteding van kapitaal voor een pre-revenue of vroege-omzet-oprichter wiens applicatie die controls nog niet heeft, omdat het abonnement maandelijks wordt gefactureerd voor een monitoringlaag die bovenop niets ligt.
+Hier wordt de keuze tussen kopen en bouwen daadwerkelijk gemaakt, meestal zonder dat de oprichter het beseft. Managed compliance-platforms kosten $1.000 tot $3.000 per maand, afhankelijk van het plan en de bedrijfsgrootte, vaak verkocht als jaarcontracten in de range van $10.000-$30.000. Die prijs is volledig redelijk voor een bedrijf dat continue bewijsverzameling nodig heeft over tientallen echte, geïmplementeerde controls. Het is een slechte besteding van kapitaal voor een pre-revenue of vroege-omzet-oprichter wiens applicatie die controls nog niet heeft, omdat het abonnement maandelijks wordt gefactureerd voor een monitoringlaag die bovenop niets ligt.
 
 Bekijk de rekensom. Als het een onderbemande solo-oprichter vier tot zes maanden avond- en weekendwerk kost om zichzelf de syntax van Postgres RLS-beleid aan te leren, een Stripe-webhookhandler met correcte handtekeningverificatie opnieuw te bouwen en geheimen naar een Edge Function te migreren - allemaal terwijl er op de achtergrond een compliance-abonnement doorloopt - dan is dat $4.000 tot $18.000 aan abonnementskosten voordat ook maar één betekenisvolle bevinding is opgelost. Erger nog, die tijdlijn is optimistisch; de meeste oprichters die vanaf nul backend-beveiligingsconcepten leren terwijl ze ook het bedrijf runnen, doen er langer over, en sommige bevindingen (zoals achteraf audit-logging toevoegen) zijn oprecht lastig te implementeren zonder echte backend-ervaring.
 
-Vergelijk dat met het uitbesteden van het engineeringwerk. Een gerichte hardeningsopdracht die RLS implementeert over het volledige schema, de webhook-listener opnieuw opbouwt, geheimen migreert en gestructureerde logging en foutmonitoring toevoegt, is een afgebakende, eenmalige kostenpost - doorgaans in de range van €2.500–€4.500 voor een "Relaunch & Scale"-scope - opgeleverd binnen één tot drie weken door engineers die dit exacte patroon al tientallen keren hebben uitgevoerd. Het dashboard van het compliance-platform zelf wordt de natuurlijke checklist voor wat er gerepareerd moet worden, maar het repareren zelf is engineeringwerk, geen SaaS-abonnementsfunctie.
+Vergelijk dat met het uitbesteden van het engineeringwerk. Een gerichte hardeningsopdracht die RLS implementeert over het volledige schema, de webhook-listener opnieuw opbouwt, geheimen migreert en gestructureerde logging en foutmonitoring toevoegt, is een afgebakende, eenmalige kostenpost - doorgaans in de range van €2.500-€4.500 voor een "Relaunch & Scale"-scope - opgeleverd binnen één tot drie weken door engineers die dit exacte patroon al tientallen keren hebben uitgevoerd. Het dashboard van het compliance-platform zelf wordt de natuurlijke checklist voor wat er gerepareerd moet worden, maar het repareren zelf is engineeringwerk, geen SaaS-abonnementsfunctie.
 
 ## Wanneer het Compliance-platform Elke Euro Waard Wordt
 
@@ -84,11 +84,50 @@ De oprichters die het beste resultaat behalen, behandelen dit als twee aparte aa
 
 Wanneer dit in deze volgorde gebeurt, wordt het dashboard van het compliance-platform snel groen omdat er heel weinig overblijft om te signaleren, en is het lopende abonnement geld dat wordt besteed aan het bewijzen van iets dat waar is, in plaats van geld dat wordt besteed aan het ontdekken van iets dat kapot is.
 
+## Wat Is Compliance-automatisering, en Wat Is Het Niet?
+
+Compliance-automatisering is software die uw systemen continu toetst aan een framework zoals SOC 2, ISO 27001 of de AVG (GDPR), bewijs verzamelt dat uw controls werken en dat bewijs ordent voor een auditor. Het automatiseert het *aantonen* van compliance. Het automatiseert niet het *engineeringwerk* waardoor een control überhaupt bestaat.
+
+Dat onderscheid is de hele buy-vs-build-vraag in één zin. "Buy" betekent betalen voor de bewijslaag. "Build" betekent betalen voor de engineeringlaag. De meeste AI-builder-apps hebben beide nodig, maar ze hebben de engineeringlaag als eerste nodig.
+
+## Compliance-platform vs. Engineering-hardening: Naast Elkaar
+
+De onderstaande tabel vergelijkt een abonnement op compliance-automatisering met een eenmalige hardeningsopdracht op de punten die oprichters meestal afwegen.
+
+| Dimensie | Compliance-automatiseringsplatform (Vanta, Drata) | Engineering-hardeningsopdracht (LaunchStudio) |
+|---|---|---|
+| Primaire output | Monitoring, beleid, bewijs voor auditors | Werkende controls in uw code en database |
+| Toegang tot uw systemen | Read-only integraties | Schrijftoegang tot codebase en schema |
+| Kan RLS-beleid inschakelen | Detecteert ontbrekende RLS | Schrijft en test het beleid |
+| Kan Stripe-webhooks repareren | Signaleert ontbrekende handtekeningcontroles | Bouwt de listener server-side opnieuw op |
+| Prijsmodel | Terugkerend abonnement, vaak jaarlijks | Afgebakende, eenmalige scope |
+| Bedragen in dit artikel | $1.000-$3.000 per maand | Doorgaans €2.500-€4.500 voor "Relaunch & Scale" |
+| Beste startmoment | Nadat de kerncontrols bestaan | Voordat het auditvenster begint |
+| Waarde voor SOC 2 Type II | Hoog - automatiseert bewijs over tijd | Indirect - zorgt dat controls slagen |
+
+## Hoe Beslist U? Vijf Vragen Voordat U een Compliance-contract Tekent
+
+U zou nu alleen een compliance-automatiseringsplatform moeten aanschaffen als u de meeste van de onderstaande vragen met "ja" kunt beantwoorden; anders hardt u eerst. Loop ze in volgorde door:
+
+1. **Is Row Level Security ingeschakeld en correct afgebakend op elke tabel met klantgegevens?** Als u het niet weet, is het antwoord nee.
+2. **Worden alle API-sleutels, inclusief OpenAI- of Anthropic-sleutels, server-side bewaard?** Eén sleutel in de browserbundle is een bevinding die het platform u op dag één laat zien.
+3. **Verifiëren uw Stripe-webhooks handtekeningen en verwerken ze herhaalde aanroepen idempotent?** Betalingsintegriteit is een van de eerste dingen die een technische beoordelaar controleert.
+4. **Logt u al wie gevoelige gegevens heeft bekeken of gewijzigd?** Audit logging is achteraf lastig toe te voegen en staat centraal in SOC 2-bewijs.
+5. **Wordt er binnen enkele maanden een echte audit of enterprise-vragenlijst verwacht?** Zo niet, dan betaalt u met een abonnement vooral voor het wachten.
+
+Drie of meer keer "nee" betekent doorgaans dat de snellere en goedkopere route is om eerst de applicatie te repareren en pas een abonnement af te sluiten zodra het dashboard iets echts te bevestigen heeft.
+
+## Veelgemaakte Fouten bij de Buy-vs-Build-beslissing
+
+De duurste fout is een compliance-abonnement behandelen als vervanging voor engineeringcapaciteit. Een dashboard vol rode bevindingen krimpt niet vanzelf, en elke maand dat het rood blijft, is abonnementsgeld zonder voortgang richting de audit.
+
+Twee andere fouten komen vaak voor. Ten eerste: beleidssjablonen overnemen die controls beschrijven die het product niet heeft - een auditor toetst of de praktijk overeenkomt met het beleid, dus een sjabloon dat audit logging belooft die u nooit hebt gebouwd, levert juist een bevinding op in plaats van er een te voorkomen. Ten tweede: het observatievenster voor SOC 2 Type II starten voordat de controls stabiel zijn, waardoor bewijs uit de eerste maanden fouten kan tonen die later tegen u tellen.
+
 ## Belangrijkste inzichten
 
 - Managed compliance-platforms zoals Vanta en Drata excelleren in continue monitoring, beleidssjablonen en bewijsverzameling - maar ze hebben alleen leestoegang tot uw systemen, geen schrijftoegang tot uw code.
 - Deze platforms kunnen detecteren dat Row Level Security is uitgeschakeld, dat een Stripe-webhook geen handtekeningverificatie heeft, of dat een API-sleutel is blootgesteld - maar een engineer, niet het platform, moet de oplossing daadwerkelijk implementeren.
-- Een abonnement afsluiten op een compliance-platform vóórdat uw met een AI-builder gebouwde app echte technische controls heeft, betekent doorgaans dat u $1.000–$3.000 per maand betaalt om maandenlang naar onopgeloste rode vlaggen te staren, vaak langer dan een gerichte hardeningsopdracht zou kosten.
+- Een abonnement afsluiten op een compliance-platform vóórdat uw met een AI-builder gebouwde app echte technische controls heeft, betekent doorgaans dat u $1.000-$3.000 per maand betaalt om maandenlang naar onopgeloste rode vlaggen te staren, vaak langer dan een gerichte hardeningsopdracht zou kosten.
 - Een eenmalige engineeringopdracht om RLS te implementeren, webhooks te beveiligen, geheimen te migreren en logging toe te voegen, is doorgaans kostenefficiënter en sneller dan zelf proberen die gaten te dichten terwijl er op de achtergrond een compliance-abonnement loopt.
 - De juiste volgorde is eerst harden, daarna monitoren: repareer eerst de onderliggende applicatie, en laat een compliance-platform daarna zijn abonnement verdienen door bewijs te verzamelen tegen controls die daadwerkelijk bestaan.
 
@@ -130,7 +169,7 @@ Nee. Deze platforms koppelen aan uw infrastructuur met read-only integraties om 
 
 ### Hoeveel kost een managed compliance-platform in vergelijking met een eenmalige hardeningsopdracht?
 
-Compliance-platforms kosten doorgaans $1.000–$3.000 per maand, vaak verkocht als jaarcontracten van $10.000–$30.000. Een gerichte engineeringopdracht om RLS te implementeren, webhooks te beveiligen, geheimen te migreren en logging toe te voegen, is doorgaans een eenmalige kostenpost van enkele duizenden euro's, opgeleverd binnen één tot drie weken - vaak goedkoper in totaal dan meerdere maanden compliance-abonnement terwijl u wacht tot bevindingen worden opgelost.
+Compliance-platforms kosten doorgaans $1.000-$3.000 per maand, vaak verkocht als jaarcontracten van $10.000-$30.000. Een gerichte engineeringopdracht om RLS te implementeren, webhooks te beveiligen, geheimen te migreren en logging toe te voegen, is doorgaans een eenmalige kostenpost van enkele duizenden euro's, opgeleverd binnen één tot drie weken - vaak goedkoper in totaal dan meerdere maanden compliance-abonnement terwijl u wacht tot bevindingen worden opgelost.
 
 ### Heb ik nog steeds een compliance-platform nodig als ik LaunchStudio gebruik om mijn app te harden?
 
@@ -166,7 +205,7 @@ LaunchStudio wordt geëxploiteerd door Manifera, een internationaal software-eng
       "name": "Hoeveel kost een managed compliance-platform in vergelijking met een eenmalige hardeningsopdracht?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Compliance-platforms kosten doorgaans $1.000–$3.000 per maand, vaak verkocht als jaarcontracten van $10.000–$30.000. Een gerichte engineeringopdracht om RLS te implementeren, webhooks te beveiligen, geheimen te migreren en logging toe te voegen, is doorgaans een eenmalige kostenpost van enkele duizenden euro's, opgeleverd binnen één tot drie weken - vaak goedkoper in totaal dan meerdere maanden compliance-abonnement terwijl u wacht tot bevindingen worden opgelost."
+        "text": "Compliance-platforms kosten doorgaans $1.000-$3.000 per maand, vaak verkocht als jaarcontracten van $10.000-$30.000. Een gerichte engineeringopdracht om RLS te implementeren, webhooks te beveiligen, geheimen te migreren en logging toe te voegen, is doorgaans een eenmalige kostenpost van enkele duizenden euro's, opgeleverd binnen één tot drie weken - vaak goedkoper in totaal dan meerdere maanden compliance-abonnement terwijl u wacht tot bevindingen worden opgelost."
       }
     },
     {

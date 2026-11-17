@@ -63,6 +63,63 @@ Stel dat uw LLM 's nachts een JSON-object genereert met drie belangrijke marktin
 
 Ongeacht de gekozen API hangt de daadwerkelijke inbox-bezorging voor 90% af van uw eigen domeinconfiguratie en verzendgedrag. U moet SPF-, DKIM- en DMARC-records foutloos configureren in uw DNS, nieuwe verzenddomeinen geleidelijk 'opwarmen' en uitschrijfverzoeken direct respecteren om te voorkomen dat uw geautomatiseerde AI-rapporten in de spamfolder belanden.
 
+## Wat is een transactionele e-mail-API?
+
+Een transactionele e-mail-API is een dienst waarmee uw applicatie individuele, door een gebeurtenis getriggerde e-mails (wachtwoordherstel, betaalbewijzen, AI-gegenereerde rapporten) verstuurt via een HTTP-verzoek in plaats van via een persoonlijke mailbox. De provider regelt de SMTP-verbindingen, herhaalpogingen, bounceverwerking en reputatiebewaking, terwijl uw code bepaalt wie welk bericht ontvangt en wanneer.
+
+Voor een AI SaaS-product is dit onderscheid belangrijk. Een nieuwsbrieftool stuurt hetzelfde bericht naar veel mensen. Uw AI-rapportpijplijn stuurt elke gebruiker een ander bericht, opgebouwd uit de eigen data van die gebruiker. Dat is van nature transactioneel, ook als het volgens een vast schema draait, en daarom bieden zowel SendGrid als Resend een eenvoudig endpoint om "deze ene e-mail te versturen" als kernproduct.
+
+## SendGrid vs Resend: een directe vergelijking voor AI SaaS
+
+Het korte antwoord: SendGrid wint op enterprise-diepgang en staat van dienst, Resend wint op ontwikkelaarservaring en op het renderen van variabele AI-output. De onderstaande tabel vat de verschillen uit dit artikel samen.
+
+| Criterium | SendGrid | Resend |
+|---|---|---|
+| Eigendom en volwassenheid | Onderdeel van Twilio, lange staat van dienst bij zeer hoge volumes | Nieuwer, op ontwikkelaars gericht bedrijf |
+| Aanpak van templates | Visuele drag-and-drop-editor of dynamische templates op basis van Handlebars | React Email-componenten, gerenderd naar e-mailveilige HTML |
+| Omgaan met AI-output van wisselende lengte | Mogelijk, maar loops en voorwaarden zitten in een aparte templatetaal | Standaard: u itereert over een array in JSX |
+| Lokale preview | Vooral via het dashboard of testverzendingen | `react-email` dev-server op uw eigen machine |
+| Omvang van de API | Meerdere productlijnen met verschillende conventies | Kleine, gerichte REST API en SDK's |
+| Enterprise-functies | Dedicated IP's, subusers, gedetailleerd suppressiebeheer | Minder klassieke enterprise-instellingen |
+| Beste toepassing | Verzenders met hoge volumes en een eigen complianceteam | Next.js- en React-teams die AI-gegenereerde content versturen |
+
+Geen van beide kolommen verandert iets aan de deliverability-regels uit de vorige sectie. Beide providers versturen een slecht geauthenticeerde e-mail zonder problemen rechtstreeks naar de spamfolder.
+
+## Een AI-e-mailrapportpijplijn bouwen, stap voor stap
+
+Een betrouwbare AI-rapportpijplijn bestaat uit zes fasen. Wie er één overslaat, eindigt vaak met kapotte, dubbele of als spam gemarkeerde e-mails.
+
+1. **Genereer gestructureerde output, geen proza.** Vraag uw model om JSON die aan een vast schema voldoet (bijvoorbeeld via OpenAI Structured Outputs of een tool call) en valideer die in code met een library zoals Zod, voordat er iets anders mee gebeurt.
+2. **Schoon de content op.** Verwijder of escape HTML in de modeloutput, controleer dat elke link naar een domein wijst dat u verwacht en begrens de lengte van lijsten, zodat een ontspoorde respons geen e-mail van veertig schermen oplevert.
+3. **Render het template.** Geef de gevalideerde data als props door aan uw React Email-component en render die naar HTML en naar een platte-tekstversie. De platte-tekstversie helpt zowel de toegankelijkheid als de spamfiltering.
+4. **Verstuur met bescherming tegen duplicaten.** Leg elke verzending vast in uw database met een unieke sleutel, zoals gebruikers-ID plus rapportdatum, zodat een opnieuw gestarte cronjob nooit twee keer hetzelfde rapport mailt.
+5. **Plan buiten de request-cyclus.** Laat de taak draaien vanuit een scheduler (Vercel Cron Jobs, een queue-worker of een dienst voor achtergrondtaken) in plaats van vanuit een API-route voor gebruikers die een time-out kan krijgen.
+6. **Luister naar webhooks.** Abonneer u op bounce-, klacht- en afleveringsevents en stop met verzenden naar adressen die hard bouncen of een klacht indienen.
+
+## Veelgemaakte fouten bij het versturen van AI-gegenereerde e-mails
+
+De meest gemaakte fout is blind vertrouwen op ruwe LLM-output in een e-mail. Een model dat een link verzint of half afgesloten Markdown produceert, levert een e-mail op die uw gebruiker niet meer kan vergeten. Anders dan bij een webpagina kunt u een e-mail niet meer corrigeren nadat die is afgeleverd.
+
+Andere fouten die wij regelmatig zien in met AI gebouwde prototypes:
+
+- **Verzenden vanaf het hoofddomein.** Gebruik een apart subdomein zoals `reports.uwdomein.nl`, zodat een reputatieprobleem met geautomatiseerde rapporten de gewone e-mail van uw salesteam niet raakt.
+- **Geen uitschrijving met één klik.** Sinds 2024 eisen Gmail en Yahoo dat bulkverzenders uitschrijven met één klik ondersteunen via de `List-Unsubscribe`-header. Ook onder hun drempels voor bulkverzending vermindert een duidelijke opt-out het aantal spamklachten.
+- **Geen platte-tekstalternatief.** Berichten met alleen HTML komen minder betrouwbaar over op filters en zijn in sommige clients slechter leesbaar.
+- **API-sleutels in client-side code.** De sleutel van uw e-mail-API hoort alleen op de server, in een omgevingsvariabele, en nooit in een `NEXT_PUBLIC_`-variabele.
+- **De verwerkersovereenkomst vergeten.** Uw e-mailprovider verwerkt persoonsgegevens (namen, adressen, rapportinhoud) namens u. Onder artikel 28 van de AVG (GDPR) heeft u daarom een verwerkersovereenkomst met die provider nodig. Zowel SendGrid als Resend publiceert er een, maar u moet die nog steeds afsluiten en de provider vermelden in uw privacyverklaring.
+
+Voor Nederlandse en Belgische B2B-klanten is dat laatste punt geen formaliteit. Inkoop- en securityafdelingen vragen bij grotere deals vaak expliciet naar een overzicht van subverwerkers, inclusief het land waar data wordt verwerkt. Wanneer uw AI-rapporten klantdata bevatten, hoort uw e-mailprovider op die lijst te staan. Het helpt om vooraf te documenteren welke gegevens er precies in een rapportmail terechtkomen, en om gevoelige details waar mogelijk te vervangen door een link naar uw beveiligde dashboard. Zo blijft de e-mail zelf beperkt tot een samenvatting, en staat de volledige inhoud achter een login.
+
+## Zo kiest u: een beslischecklist
+
+Kies op basis van uw team en uw content, niet op basis van naamsbekendheid. Beantwoord deze vragen in deze volgorde:
+
+- Is uw frontend gebouwd met React of Next.js? Zo ja, dan sluiten Resend en React Email aan op de kennis die uw team al heeft.
+- Varieert uw AI-output per verzending in lengte of structuur? Zo ja, dan besparen templates op basis van componenten de meeste tijd.
+- Verstuurt u nu al tientallen miljoenen e-mails per maand, of heeft u vandaag dedicated IP-pools en subuser-accounts nodig? Zo ja, dan rechtvaardigen de enterprise-functies van SendGrid de extra complexiteit.
+- Moet een marketingteam zonder ontwikkelaars templates visueel kunnen aanpassen? Zo ja, dan kan de editor van SendGrid hen beter bedienen voor marketingmail, terwijl productmails nog steeds elders kunnen draaien.
+- Is uw SPF-, DKIM- en DMARC-configuratie geverifieerd? Zo niet, los dat dan eerst op, want geen enkele providerkeuze compenseert daarvoor.
+
 ## De conclusie
 
 Bent u een grote enterprise die 50 miljoen marketingberichten per maand verstuurt met dedicated IP-pools? Kies dan SendGrid.

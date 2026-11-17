@@ -83,6 +83,40 @@ Cold-start-latency is een bijzonder verraderlijk probleem omdat het van nature o
 
 Oprichters die vermoeden dat dit in hun eigen product zou kunnen gebeuren, hoeven niet te wachten op een formele audit om een eerste signaal te krijgen. Open een functie die de laatste 10-15 minuten niet is aangeroepen en meet hoe lang het allereerste request erover doet om te reageren, vergeleken met een tweede request dat direct daarna wordt gedaan. Een verschil van meer dan ongeveer een seconde tussen de twee is een sterke indicator van een cold-start-patroon dat verder onderzoek verdient, en het is een controle die elke oprichter zelf in minder dan vijf minuten kan uitvoeren, zonder toegang nodig te hebben tot de eigen logs op functieniveau van Vercel.
 
+## Wat is een Vercel cold start?
+
+Een Vercel cold start is de extra vertraging bij een request die binnenkomt wanneer er geen warme instance van een serverless functie beschikbaar is, waardoor het platform er een moet aanmaken, de code en dependencies van de functie moet laden en de initialisatie moet uitvoeren voordat de request wordt afgehandeld. Warme requests slaan dat allemaal over en hergebruiken een instance die al draait. Cold starts zijn een normale eigenschap van serverless platforms, waaronder Vercel Functions en AWS Lambda. Het doel is niet om ze volledig te elimineren, maar om ze zeldzaam en kort te maken bij de requests die gebruikers merken.
+
+## Hoe diagnosticeert u cold-start-latency op Vercel, stap voor stap?
+
+U diagnosticeert cold-start-latency op Vercel door de timing van de eerste request te vergelijken met de timing van warme requests voor dezelfde functie, en daarna te controleren wat die functie tijdens de initialisatie doet. Het team van Noor verloor een week voordat het dit deed, dus het loont om hiermee te beginnen:
+
+1. **Verzamel tijdstippen uit klachten van gebruikers.** Noteer bij elke melding van vertraging het exacte tijdstip, de handeling en het scherm.
+2. **Koppel ze aan functie-aanroepen.** Open in het Vercel-dashboard de logs van de betreffende functie en bekijk de duur van de eerste aanroep na een rustige periode.
+3. **Meet het verschil.** Vergelijk die eerste duur met de volgende paar aanroepen. Een groot, herhaalbaar verschil wijst op cold starts in plaats van op trage businesslogica.
+4. **Inspecteer de bundle.** Controleer welke packages elke trage functie importeert. Grote SDK's die bovenaan een bestand worden geladen, voegen initialisatietijd toe, ook als er maar één hulpfunctie wordt gebruikt.
+5. **Controleer de omgang met databaseverbindingen.** Zoek naar een nieuwe client die binnen de request-handler wordt aangemaakt in plaats van te worden hergebruikt, en naar directe verbindingen waar een pooler gebruikt zou moeten worden.
+6. **Controleer de regio's.** Ga na of de functie in dezelfde regio draait als de database. Een functie in de ene regio die met een database in een andere regio praat, voegt netwerklatency toe aan elke query, warm of koud.
+
+### Cold-start-oplossingen vergeleken
+
+| Oplossing | Inspanning | Gebruikelijke impact | Let op |
+|---|---|---|---|
+| Dependencies opschonen | Laag tot gemiddeld | Kortere initialisatie bij elke cold start | Een package verwijderen dat een andere route nog nodig heeft |
+| Functies consolideren | Gemiddeld | Minder endpoints die koud worden | Zeer grote samengevoegde bundles kunnen de winst tenietdoen |
+| Connection pooling | Laag | Haalt het opzetten van een verbinding uit elke request | Gebruik de instellingen voor de transaction mode van de pooler correct |
+| Geplande keep-warm-pings | Laag | Houdt belangrijke endpoints warm tijdens kantooruren | Verwarmt één instance, niet elke gelijktijdige instance |
+| Edge Runtime voor lichte endpoints | Gemiddeld | Veel snellere start voor eenvoudige, stateless logica | Niet elke Node.js-API of elk npm-package wordt ondersteund |
+| Functie en database in dezelfde regio | Laag | Snellere queries bij elke request | Controleer de regels voor dataresidentie voordat u van regio wisselt |
+
+## Veelgemaakte fouten bij het oplossen van cold starts
+
+De meest gemaakte fout is volledig vertrouwen op keep-warm-pings. Een geplande ping, bijvoorbeeld via Vercel Cron Jobs, houdt één instance warm, maar wanneer meerdere gebruikers tegelijk binnenkomen, kan het platform alsnog nieuwe instances starten die koud zijn. Pings werken het best in combinatie met kleinere bundles en gepoolde verbindingen, zodat de cold starts die toch nog optreden kort blijven. Andere veelvoorkomende fouten:
+
+- **Alles naar de Edge Runtime verplaatsen.** Functies die volledige Node.js, zware libraries of directe databasedrivers nodig hebben, horen vaak in de standaardruntime.
+- **Alleen meten vanaf een snelle kantoorverbinding.** Test vanuit de regio's waar uw klanten daadwerkelijk werken.
+- **Geen monitoring achterlaten.** Zonder een latency-alert op belangrijke functies brengt de volgende opgeblazen dependency het probleem ongemerkt terug.
+
 ## Belangrijkste inzichten
 
 - Vercel function cold starts gebeuren wanneer een inactieve functie weer moet opstarten, en ze treffen door AI-builders gegenereerde apps onevenredig zwaar door opgeblazen dependencies, gefragmenteerde functiestructuur en ontbrekende warm-up-strategieën.

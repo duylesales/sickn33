@@ -54,6 +54,46 @@ The mistake isn't choosing Stripe Checkout - it's the right tool for getting a f
 
 The good news is that this migration doesn't require rebuilding the product. It requires rebuilding the billing layer underneath it - and because Stripe's migration tooling is specifically designed to preserve existing customer and payment history, a live platform with paying customers can move from Checkout to Billing without a single customer noticing the cutover happened at all.
 
+## Stripe Checkout vs Stripe Billing: What Each One Handles
+
+Stripe Checkout handles the moment of payment; Stripe Billing handles everything that happens to a subscription after that moment. The table below shows where each part of the recurring-revenue lifecycle sits when Checkout is used on its own in one-time payment mode, as it was in InvoiceIQ's original scaffold.
+
+| Billing task | Checkout on its own (payment mode) | Stripe Billing |
+|---|---|---|
+| Collecting the first payment | Hosted payment page | Hosted page, embedded payment form or invoice |
+| Tracking the billing cycle | Not handled - your own code or a spreadsheet | Subscription object with a billing cycle anchor |
+| Plan upgrades and downgrades | New session plus a manual refund | Automatic proration on the subscription |
+| Failed renewal payments | Not handled | Configurable retry schedule and reminder emails |
+| Invoices | Receipt for a single charge | An invoice for every billing period |
+| Card updates and cancellations | Customer emails the founder | Stripe-hosted Customer Portal |
+| Lifecycle events for your app | One success redirect | Webhooks such as `invoice.paid` and `customer.subscription.updated` |
+
+One nuance is worth knowing: Checkout can also run in subscription mode, which creates a Stripe Billing subscription behind the hosted page. The real question in a Stripe Checkout to Stripe Billing migration is therefore not which page the customer sees, but whether a subscription object exists that owns the billing cycle after the first charge.
+
+## Common Mistakes in a Stripe Billing Migration
+
+The most expensive migration mistakes are the ones that touch live customers: a duplicate charge, a shifted renewal date or access that disappears overnight. These are the errors that come up most often when founders attempt the move themselves:
+
+1. **Resetting the billing cycle anchor.** Creating a new subscription that starts "today" instead of on each customer's original renewal date either charges people early or gives them free days.
+2. **Trusting the success redirect instead of webhooks.** A redirect only fires while the customer is in the browser. Renewals, failures and cancellations happen without them, so access rights must follow verified webhook events.
+3. **Skipping signature checks and idempotency.** Stripe can deliver the same event more than once. A listener that doesn't verify the `Stripe-Signature` header and ignore duplicate event IDs can grant access twice or process a cancellation twice.
+4. **Creating duplicate Customer objects.** If the migration script creates a new Stripe Customer instead of reusing the existing one, the saved card and payment history stay behind on the old record.
+5. **Enabling dunning without defining "past due".** Retry emails are only half of dunning. Your app also needs a clear rule for what a customer can still access while a payment is outstanding, and what happens when the final retry fails.
+6. **Cutting everyone over without a parallel run.** Testing proration and portal access on a small set of test subscriptions first, as InvoiceIQ's team did on day 6, catches mapping errors before they reach paying customers.
+
+## A Pre-Migration Checklist for Stripe Billing
+
+You are ready to start a subscription migration when you can answer yes to each of these points:
+
+- Every paying customer is mapped to exactly one existing Stripe Customer ID.
+- You know each customer's current plan, price and next renewal date.
+- Products and Prices exist in Stripe Billing for every plan, including legacy prices that existing customers still pay.
+- Your proration policy for upgrades and downgrades is written down.
+- Your dunning schedule and the access rules during a failed-payment period are agreed.
+- The Customer Portal configuration states which actions customers may take themselves: update a card, switch plan or cancel.
+- A webhook endpoint with signature verification has been tested in Stripe test mode.
+- There is a rollback plan and someone watching the cutover window in real time.
+
 ## Key Takeaways
 
 - Stripe Checkout is built for collecting a payment, not for running an ongoing subscription - it has no native concept of proration, dunning, or self-service plan changes, which is why founders end up reconciling billing by hand in a spreadsheet.
@@ -63,6 +103,8 @@ The good news is that this migration doesn't require rebuilding the product. It 
 - Stripe Billing adds subscription objects, automatic proration, configurable dunning retry schedules, and a hosted customer portal - turning billing from a manual weekly chore into an automated system.
 
 - A live, revenue-generating platform can migrate from Checkout to Billing without re-charging customers or disrupting renewal dates, as long as existing customer and payment history is properly mapped to the new subscription objects before cutover.
+
+- Most migration failures come from resetting billing cycle anchors, relying on redirects instead of signed webhooks, or skipping a parallel run - a short pre-migration checklist catches them before cutover.
 
 - LaunchStudio completed InvoiceIQ's full migration - object mapping, webhook infrastructure, proration, dunning, and customer portal - in 6 business days under the Launch & Grow package, with zero customer-facing disruption.
 

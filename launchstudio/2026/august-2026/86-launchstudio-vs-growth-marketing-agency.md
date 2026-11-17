@@ -53,6 +53,30 @@ Founders who can check off all three - granular funnel analytics, real-world onb
 
 None of this means the two investments have to be strictly sequential in every case. For founders with an existing growth agency relationship already in place, the more practical path is often a short, focused technical audit that runs alongside continued (but modestly scaled-back) campaign activity, rather than pausing acquisition spend entirely for several weeks. The agency keeps testing creative, audiences, and channels at a reduced budget while the technical team fixes analytics and onboarding reliability in parallel; once the fixes ship, spend ramps back up against a funnel that's finally measuring and converting accurately. This approach avoids both extremes - blindly scaling spend against a broken funnel, and freezing all growth activity while engineering works in isolation - and tends to produce a faster overall path to a growth engine that's both well-optimized and technically sound. The key discipline is simply not judging the agency's performance, or making major budget decisions, based on data collected before the technical foundation was actually fixed.
 
+## Growth Marketing Agency or Engineering Team: Who Fixes What?
+
+A growth marketing agency fixes how many of the right people reach your product; an engineering team fixes what happens to them once they arrive. Conversion tracking infrastructure - the events, identifiers and data pipeline that record each step from first visit to paid account - sits on the engineering side, even though the agency depends on it every day. The table below shows which common funnel problems belong to which party.
+
+| Funnel problem | Typical symptom | Who fixes it |
+|----------------|-----------------|--------------|
+| Wrong audience or weak ad creative | High click cost, low click-through rate | Growth marketing agency |
+| Landing page message not landing | Visitors leave the page without scrolling | Growth marketing agency, with design support |
+| Missing or double-firing analytics events | Reports that do not add up across tools | Engineering |
+| Signup form failing on some browsers | Drop-off concentrated on one browser or device | Engineering |
+| Verification email not arriving | Many signups never activate | Engineering |
+| Slow first load for new accounts | Activation lower for paid traffic than organic | Engineering |
+| Weak lifecycle emails after signup | Activated users never return | Growth marketing agency, using engineering's events |
+
+## How to Hand a Fixed Funnel Over to a Growth Agency
+
+Once the technical foundation is sound, the handover to a growth marketing agency should take days, not weeks, if you prepare it properly. A good handover follows these steps:
+
+1. **Share the event list.** Give the agency a written list of every tracked event, what triggers it and what it is called in your analytics tool, so their reports use the same definitions as yours.
+2. **Agree on one definition of activation.** Decide which first-use milestone counts as activated, and make it the main success metric for campaigns.
+3. **Record a baseline.** Capture current step-by-step conversion and activation rates before new spend starts, so any change can be attributed fairly.
+4. **Set UTM and naming conventions.** Consistent campaign tags prevent paid traffic from showing up as direct or unattributed visits.
+5. **Account for cookie consent.** Under GDPR and the ePrivacy Directive, EU visitors must opt in to non-essential tracking, so some conversions will never appear in client-side analytics. Agree up front how the agency will treat that gap, for example by relying on server-side signup and payment events as the source of truth.
+
 ## Key Takeaways
 
 - Growth marketing agencies specialize in acquisition strategy, ad testing, and conversion-rate optimization - not diagnosing or fixing broken analytics or a technically flawed onboarding flow.

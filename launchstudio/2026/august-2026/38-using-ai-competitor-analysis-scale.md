@@ -60,6 +60,70 @@ Your entire executive team absorbs the intelligence over their morning coffee, i
 
 Scraping public-facing pages (pricing, changelogs, marketing copy) is standard practice and legally uncontroversial. Scraping content behind a login wall, circumventing rate limits aggressively enough to degrade a competitor's service, or misrepresenting your identity to access gated content crosses into legal and ethical grey area territory. Keep your pipeline scoped to genuinely public information, respect `robots.txt` where it exists, and treat the output as directional intelligence for your own strategy, not as something you'd be uncomfortable defending if a competitor found out you were doing it.
 
+### Personal Data and Database Rights in the EU
+
+Two EU rules are worth knowing before you scale the pipeline. First, reviews, Reddit threads and social posts often contain names, usernames or profile links, which are personal data under the **GDPR**. If you store them, you need a lawful basis, a retention limit and a reason to keep identifiers at all - in most cases you can strip names and keep only the text and date. Second, the **EU Database Directive** gives database makers a separate right against extraction of a substantial part of their database, which is relevant if you plan to copy large review collections wholesale. Analyzing samples and storing summaries keeps you on far safer ground than mirroring an entire review platform. When in doubt, have counsel review the scope once, before the pipeline runs every week.
+
+## What Is AI Competitor Analysis?
+
+AI competitor analysis is the use of scheduled data collection and large language models to monitor competitors' websites, pricing, product releases, hiring and customer sentiment, and to turn the changes into short, decision-ready summaries. It replaces occasional manual research with a continuous, low-cost intelligence feed.
+
+The difference with the traditional approach is mostly about frequency, coverage and consistency:
+
+| Dimension | Manual competitor research | AI competitor analysis pipeline |
+|---|---|---|
+| Frequency | Monthly or quarterly, when someone remembers | Weekly or daily, on a schedule |
+| Coverage | A few pages per competitor | Pricing, homepage, changelog, jobs, reviews, social |
+| History | Screenshots in random folders | Timestamped snapshots in a database |
+| Detection of changes | Depends on someone noticing | Semantic diff flags strategic changes |
+| Output | Long slide deck, quickly outdated | Short weekly summary in Slack |
+| Cost driver | Analyst or founder time | Scraping API, model tokens, maintenance |
+
+The pipeline does not replace judgment. It removes the collection and comparison work, so the humans on your team can spend their time deciding what to do about the changes.
+
+## How to Build an AI Competitor Analysis Pipeline Step by Step
+
+You can build an AI competitor analysis pipeline for your AI SaaS company in a small number of clear steps, starting with a narrow scope and expanding once the output proves useful:
+
+1. **Pick three to five competitors.** Include the ones you lose deals to most often, not just the best-known names.
+2. **List the pages and sources per competitor.** Pricing, homepage, changelog, careers page, and one or two review sources.
+3. **Schedule the collection.** Use a cron job, a Vercel Cron function or a Supabase scheduled function to call a scraping API such as Firecrawl.
+4. **Store clean text snapshots.** Save the extracted text, the URL and a timestamp in a database table, one row per page per run.
+5. **Run the LLM diff.** Compare each new snapshot with the previous one using a strict prompt like the one above, and store the result with its confidence level.
+6. **Summarize sentiment separately.** Batch reviews and mentions, ask the model for the most frequent complaints and praise, and keep the sample size in the output.
+7. **Combine and deliver.** Merge the diffs, sentiment and hiring or funding signals into one Monday message in your `#competitor-intel` channel.
+8. **Add monitoring for the pipeline itself.** Alert someone when a scrape fails or returns empty text, so a broken scraper never looks like "no changes."
+
+## From Intelligence to Action: Battlecards and Sales Enablement
+
+Competitive intelligence only creates value when it changes what your team says and does, and the most practical format for that is a competitor battlecard. A battlecard is a one-page summary per competitor that your sales team can use during a call.
+
+Use the weekly pipeline output to keep each battlecard current:
+
+- **Positioning in one sentence:** how the competitor describes itself today, taken from the latest homepage snapshot.
+- **Current pricing and limits:** updated whenever the diff flags a change.
+- **Recent launches:** the last few changelog items that matter to your buyers.
+- **Known weaknesses:** the most frequent complaints from the sentiment analysis, with the sample size.
+- **Our counter-position:** where your product is genuinely stronger, in words your reps can actually say.
+- **Landmines to set:** questions a prospect should ask any vendor, which expose the competitor's weak spot.
+
+Store battlecards where your team already works, such as Notion, Confluence or your CRM, and link to them from the weekly Slack summary.
+
+## Common Mistakes in AI Competitor Analysis
+
+Most competitor monitoring projects fail quietly rather than dramatically:
+
+- **Tracking too many competitors.** Twenty competitors produce noise. Five produce decisions.
+- **Silent scraper failures.** A changed page layout or a blocked request can return empty text, which an LLM may report as "No Changes."
+- **Trusting single-source sentiment.** Ten angry reviews are an anecdote. Always report the sample size and source.
+- **Reacting to every change.** A competitor's price cut is information, not an instruction. Decide on a response process before the alerts start.
+- **No owner.** If nobody is responsible for reading the Monday report and updating battlecards, the pipeline runs for nothing.
+- **Storing more personal data than needed.** Keep text and dates, not reviewers' names and profile URLs.
+
+## What Does It Cost to Run an AI Competitor Monitoring System?
+
+Running an AI competitor monitoring system costs relatively little compared with an analyst's time, because the main expenses are a scraping API, model tokens for a weekly diff, a small database and occasional maintenance. The cost that founders tend to underestimate is maintenance: competitor sites change, scrapers break, and prompts need tuning. That is why the real example below focused on making the scraper resilient to layout changes, at a cost of €2,100, rather than on adding more data sources.
+
 ## Key Takeaways
 
 - Manual competitor research is too slow for the AI era. You must build an automated pipeline to scrape and analyze rival websites weekly, since strategic shifts now happen in weeks, not quarters.

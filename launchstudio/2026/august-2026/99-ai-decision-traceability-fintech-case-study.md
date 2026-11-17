@@ -58,6 +58,44 @@ Decision traceability isn't a one-time compliance checkbox - it's infrastructure
 
 Fintech founders building on AI-driven scoring can get an early read on their own exposure with one direct exercise: pick any single decision from the past month, at random, and try to reconstruct exactly why the model produced that specific outcome, using only what's currently logged. If that reconstruction takes more than a few minutes, or isn't possible at all, that's the same gap Elena's regulator found, discovered on the founder's own timeline instead of a compliance deadline's. Running that exercise quarterly, on a randomly selected decision each time, is a low-effort way to catch traceability gaps well before a regulator's first hard question forces the issue.
 
+## What Is AI Decision Traceability?
+
+AI decision traceability is the ability to reconstruct, for any single automated decision, which inputs were used, which model version processed them, what the model returned, which factors drove that result, and what final decision followed. It is narrower and more practical than general "explainability": a traceable system can answer "why did this specific applicant receive this specific outcome?" from stored records, without guessing.
+
+For fintechs, the legal pressure comes from several directions at once. The EU AI Act lists AI systems used to evaluate the creditworthiness of natural persons or establish their credit score among its high-risk use cases, and high-risk systems must support automatic record-keeping of events through logging. GDPR Article 22 limits decisions based solely on automated processing that significantly affect people, and the Court of Justice of the EU's 2023 SCHUFA ruling confirmed that generating a credit score can itself fall under Article 22 when lenders rely on it heavily. Both point to the same technical need: a complete, queryable record of each decision.
+
+## What Should an AI Decision Record Contain?
+
+An AI decision record should contain enough information for someone outside the engineering team to replay and understand the decision months later. The fields CreditLens AI ended up storing are a useful baseline for any AI decision traceability project:
+
+| Field | Why it matters | Example |
+|---|---|---|
+| Decision ID and timestamp | Links the record to the customer case | Unique ID, UTC time |
+| Input snapshot | Shows exactly what the model saw at that moment | Applicant features as submitted, not as they are today |
+| Model version | Identifies which model logic applies | Version tag tied to a training run and deployment date |
+| Raw model output | Separates the model's result from business rules | Risk score before thresholds |
+| Top contributing factors | Explains the individual result | Feature-importance values, for example SHAP values |
+| Business rules applied | Shows how the score became a decision | Threshold, overrides, policy rules |
+| Final outcome | Records what happened | Approved, declined, referred |
+| Human involvement | Shows whether a person reviewed it | Reviewer ID and action, if any |
+
+Storing the input snapshot is the field teams most often skip, and it is the one that makes reconstruction possible. Customer data changes over time, so reading today's values back from the main database does not tell you what the model saw at decision time.
+
+## How to Build AI Decision Traceability, Step by Step
+
+The fastest way to build AI decision traceability is to start logging complete records for new decisions first, then recover what you can for older ones. A practical order:
+
+1. **Version every model deployment** and record the version with each prediction.
+2. **Write an append-only decision log** with the fields above, protected against later edits.
+3. **Generate per-decision factor reports** at scoring time, not on request months later.
+4. **Set a retention period** that matches your regulatory and contractual obligations, and document it.
+5. **Build a simple review view** so compliance staff can open any decision without engineering help.
+6. **Test it with a random decision** each quarter, as described below.
+
+## Common Traceability Mistakes in Fintech AI
+
+The most common mistake is logging the score but not the inputs, which leaves a number with no story behind it. Other frequent gaps include overwriting model files on retraining instead of keeping old versions, mixing model output and business-rule overrides into one field, and storing traceability logs in a system with weaker access control than the main database, even though they contain the same personal data.
+
 ## Key Takeaways
 
 - A financial regulator evaluating an AI-driven credit or risk decision expects individual-decision traceability, not just aggregate model accuracy - these are genuinely different requirements.

@@ -80,6 +80,63 @@ Bouwt u voort op grote basismodellen of ontwikkelt u zelf foundation models, dan
 
 Het correct bepalen en inrichten van uw risicoclassificatie vereist een diepe analyse van uw software-architectuur en beslislogica. Dit is exact waar Manifera sinds **2014** in gespecialiseerd is, met 160+ gerealiseerde projecten voor opdrachtgevers zoals Vodafone en TNO vanuit haar Europese hoofdkantoor aan de Herengracht 420 in Amsterdam. Zoals Herre Roelevink, Oprichter & Managing Director van Manifera, stelt: "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Bekijk Manifera's [offshore softwareontwikkeling diensten](https://www.manifera.com/services/offshore-software-development/).
 
+## Wanneer gelden de verplichtingen van de EU AI Act?
+
+De EU AI Act is op 1 augustus 2024 in werking getreden, en de verplichtingen gaan gefaseerd gelden, waarbij de meeste regels voor AI SaaS-producten van toepassing zijn vanaf 2 augustus 2026. De tabel vat de belangrijkste mijlpalen samen.
+
+| Datum | Wat van toepassing wordt |
+|---|---|
+| 1 augustus 2024 | De wet treedt in werking |
+| 2 februari 2025 | Verboden praktijken (Artikel 5) en de plicht tot AI-geletterdheid (Artikel 4) |
+| 2 augustus 2025 | Verplichtingen voor aanbieders van General Purpose AI-modellen en het kader voor governance en sancties |
+| 2 augustus 2026 | De meeste overige regels, waaronder Hoog Risico-systemen uit Annex III en de transparantieplicht van Artikel 50 |
+| 2 augustus 2027 | Hoog Risico-regels voor AI die een veiligheidscomponent is van producten onder bestaande Europese productwetgeving |
+
+Op Europees niveau zijn voorstellen besproken om enkele Hoog Risico-termijnen aan te passen. Laat het actuele tijdpad daarom door een jurist bevestigen voordat u een lancering rond een specifieke datum plant. Wat niet verandert, is de richting: de transparantie- en AI-geletterdheidsplichten gelden al, en enterprise-klanten vragen in inkooptrajecten nu al naar uw gereedheid voor de AI Act.
+
+### De plicht tot AI-geletterdheid geldt voor vrijwel iedereen
+
+Artikel 4 verplicht aanbieders en gebruiksverantwoordelijken van AI-systemen om maatregelen te nemen die zorgen voor een toereikend niveau van AI-geletterdheid bij het personeel dat die systemen bedient of gebruikt. Dit geldt ongeacht de risicoklasse. Voor een klein AI SaaS-team is een vastgelegde interne briefing een verstandig startpunt: hoe uw modellen werken, waar ze falen en hoe problemen worden geëscaleerd, telkens bijgewerkt wanneer uw product verandert.
+
+### Toezicht in Nederland
+
+In Nederland hebben de Autoriteit Persoonsgegevens (AP) en de Rijksinspectie Digitale Infrastructuur (RDI) een voortrekkersrol bij de inrichting van het toezicht op de AI Act, waarbij voor specifieke sectoren ook bestaande toezichthouders betrokken zijn. Verkoopt u aan Nederlandse overheidsorganisaties, houd er dan rekening mee dat veel van hen hun algoritmes publiceren in het Algoritmeregister van de overheid. Zij zullen u als leverancier vragen om een heldere, niet-technische beschrijving van wat uw AI-systeem doet, op welke data het werkt en welk menselijk toezicht er is. Wie die beschrijving al klaar heeft, versnelt het inkooptraject merkbaar.
+
+## Aanbieder of gebruiksverantwoordelijke: wat is uw rol onder de EU AI Act?
+
+Uw verplichtingen onder de EU AI Act hangen evenzeer af van uw rol als van uw risicoklasse. Een **aanbieder** (provider) is de organisatie die een AI-systeem ontwikkelt of laat ontwikkelen en het onder eigen naam op de markt brengt. Een **gebruiksverantwoordelijke** (deployer) is de organisatie die een AI-systeem onder eigen verantwoordelijkheid in een professionele context gebruikt. De meeste B2B AI SaaS-oprichters zijn aanbieder van hun product, en hun zakelijke klanten zijn gebruiksverantwoordelijken.
+
+Het onderscheid is belangrijk omdat de rollen kunnen verschuiven. Onder Artikel 25 kan een gebruiksverantwoordelijke of andere derde partij de aanbieder van een Hoog Risico-systeem worden als die er zijn eigen naam of merk op zet, er een substantiële wijziging in aanbrengt, of het beoogde doel zo verandert dat het systeem Hoog Risico wordt. Een white-label wederverkoper van uw AI-wervingstool kan zo bijvoorbeeld aanbiedersverplichtingen op zich nemen. Gebruiksverantwoordelijken van Hoog Risico-systemen hebben eigen plichten onder Artikel 26, waaronder het gebruik van het systeem volgens de gebruiksinstructies, het toewijzen van menselijk toezicht aan bekwame personen en het bewaren van de automatisch gegenereerde logs gedurende ten minste zes maanden. Uw product moet het uw klanten gemakkelijk maken om aan die plichten te voldoen.
+
+## Is uw Annex III-toepassing werkelijk Hoog Risico?
+
+Niet elk systeem dat een Annex III-domein raakt, is automatisch Hoog Risico. Artikel 6, lid 3, bepaalt dat een systeem geen Hoog Risico is als het geen significant risico op schade oplevert, bijvoorbeeld omdat het alleen een beperkte procedurele taak uitvoert, het resultaat verbetert van een activiteit die een mens al heeft afgerond, patronen in eerdere beslissingen detecteert zonder de menselijke beoordeling te vervangen, of een voorbereidende taak uitvoert. Er gelden twee grenzen: een systeem dat natuurlijke personen profileert, is altijd Hoog Risico, en een aanbieder die zich op deze uitzondering beroept, moet de beoordeling documenteren voordat het systeem op de markt komt.
+
+In de praktijk betekent dit dat productontwerpkeuzes uw juridische positie veranderen. Een tool die interviewvragen opstelt voor een recruiter staat op een heel andere plek dan een tool die kandidaten automatisch rangschikt en afwijst.
+
+## Checklist voor naleving van de EU AI Act voor AI SaaS-oprichters
+
+Gebruik deze volgorde om van "we denken dat het wel goed zit" naar een gedocumenteerde positie te gaan die u aan klanten en investeerders kunt laten zien:
+
+1. **Inventariseer elke AI-functionaliteit** in uw product, inclusief functies die modellen van derden aanroepen.
+2. **Beschrijf het beoogde doel** van elke functionaliteit in één zin: wat het oplevert, wat er daarna gebeurt en wie erdoor wordt geraakt.
+3. **Classificeer elke functionaliteit** aan de hand van Artikel 5 (verboden), Annex III en Artikel 6 (Hoog Risico), Artikel 50 (transparantie) of minimaal risico.
+4. **Leg uw rol vast** als aanbieder of gebruiksverantwoordelijke per functionaliteit, en controleer of wederverkopers of integratiepartners die rol veranderen.
+5. **Implementeer transparantie**: meld AI-interactie in de interface en markeer synthetische media waar Artikel 50 van toepassing is.
+6. **Plan voor Hoog Risico-functionaliteiten** het risicomanagementsysteem, datagovernance, technische documentatie, logging, menselijk toezicht en de conformiteitsbeoordeling.
+7. **Documenteer maatregelen voor AI-geletterdheid** binnen uw team.
+8. **Herbeoordeel bij elke grote release**, omdat een nieuwe functionaliteit of een nieuwe toepassing door een klant u in een andere risicoklasse kan brengen.
+
+## Veelgemaakte fouten van B2B-oprichters rond de EU AI Act
+
+De meeste AI Act-problemen in een vroege fase komen voort uit snelle classificatiekeuzes, niet uit bewust genomen risico's.
+
+- **Het model classificeren in plaats van de toepassing.** "Wij gebruiken alleen GPT-4o" zegt niets over uw risicoklasse; wat u met de output doet wel.
+- **Aannemen dat vestiging buiten de EU betekent dat de wet niet geldt.** De wet volgt de markt en de output, net als de AVG.
+- **De configuratie door klanten negeren.** Kunnen klanten uw algemene tool inzetten voor wervings- of kredietbeslissingen, dan moeten uw documentatie en voorwaarden dat beoogde doel expliciet adresseren.
+- **Menselijk toezicht behandelen als een knop.** Een beoordelaar die niet kan zien waarom de AI tot een resultaat kwam, kan dat resultaat niet zinvol overrulen.
+- **Logging uitstellen.** Registratie is veel goedkoper om vanaf de eerste productierelease in te bouwen dan om tijdens een audit te reconstrueren.
+
 ## Belangrijkste Inzichten
 
 - De Europese AI Act is wereldwijd van toepassing op elke softwareontwikkelaar waarvan de AI-output binnen de Europese Unie wordt gebruikt.

@@ -48,6 +48,57 @@ The system was launched to 10% of users, monitored closely for two weeks against
 
 This pattern - AI reducing headcount growth while simultaneously improving the experience - only holds because of the escalation discipline built into the architecture. A RAG system without a hard confidence threshold and a silent escalation path would have produced a worse outcome: a system happy to guess, occasionally wrong about something financial, and slowly eroding trust instead of building it. This is also where security review earns its keep - publicly documented research puts the rate of exploitable vulnerabilities in AI-generated code at around 45% when it ships without a dedicated security pass, and a support agent with database read access is exactly the kind of surface that needs that review before launch, not after an incident.
 
+## What Is a RAG Support Agent?
+
+A RAG support agent is an AI assistant that answers customer questions by first retrieving relevant passages from your own documentation and resolved tickets, and then asking a language model to write an answer based only on those passages. Retrieval-Augmented Generation keeps the answer grounded in your company's real knowledge instead of the model's general training data.
+
+The difference from earlier approaches is easiest to see side by side:
+
+| Approach | How it answers | Handles unexpected phrasing | Hallucination risk | Typical outcome |
+|---|---|---|---|---|
+| Decision-tree chatbot | Follows a pre-written menu or script | No | Low, but rarely useful | High escalation rate, frustrated users |
+| Generic LLM chatbot | Answers from the model's general knowledge | Yes | High | Fluent answers that may be wrong about your product |
+| RAG agent with escalation | Retrieves your docs, answers only from them, escalates when unsure | Yes | Low, when confidence thresholds are enforced | Real deflection with a safe human fallback |
+
+The third row is what PayFlow deployed. The escalation rule matters as much as the retrieval: a RAG agent without a way to say "I don't know" is still a generic chatbot with better source material.
+
+## How to Implement a RAG Support Agent: Step by Step
+
+The fastest safe path to an AI support agent is to start from your existing ticket history, not from the model. A practical implementation sequence looks like this:
+
+1. **Audit your ticket categories.** Export a few months of tickets from Zendesk or Intercom and group them by intent. The categories that are frequent, repetitive and already documented are your first deflection targets.
+2. **Clean the knowledge base.** Remove outdated articles, merge duplicates and tag every document with a last-reviewed date. Retrieval can only be as accurate as the content it retrieves.
+3. **Chunk and embed.** Split documents into coherent sections, generate embeddings and store them in a vector database such as Pinecone or pgvector, with metadata for product area, freshness and customer visibility.
+4. **Write the grounding prompt.** Instruct the model to answer only from retrieved context, to cite its source and to output a fixed escalation token when the context is insufficient.
+5. **Build the silent escalation path.** Route escalated conversations to a human queue with the full transcript and the retrieved documents attached, so the agent never has to start over.
+6. **Run in shadow mode.** Let the AI draft answers that human agents review but do not send. Compare its drafts with what the humans actually wrote.
+7. **Roll out gradually.** Release to a small share of users, as PayFlow did with 10%, and widen only when deflection, escalation accuracy and CSAT hold steady.
+8. **Keep the loop running.** Feed newly resolved tickets back into the index and review a sample of AI answers every week.
+
+## AI Security for Support Agents: Tenant Isolation and Row-Level Security
+
+A support agent that can look up account data must only ever see the data of the customer it is talking to. In a multi-tenant AI SaaS, that is the most important security control in the whole system, and it should be enforced in the database rather than in the prompt.
+
+Prompt instructions such as "only discuss this user's account" are not a security boundary, because prompt injection can override them. The boundary belongs in the data layer:
+
+- **Row-level security (RLS).** In PostgreSQL, and in platforms built on it such as Supabase, RLS policies restrict every query to rows belonging to the authenticated tenant. Even if the agent's tool call is manipulated, the database refuses to return another tenant's records.
+- **Scoped credentials for tools.** The agent should call internal APIs with a short-lived token tied to the current user, never with a service key that can read everything.
+- **Filtered retrieval.** Shared public documentation can live in one index, but customer-specific content must be separated by namespace or metadata filter so one merchant's tickets are never retrieved for another.
+- **Redaction and logging.** Strip unnecessary personal data before it reaches the model, and log every tool call for audit.
+- **Processor obligations.** Under GDPR Article 28, the model provider and vector database vendor are sub-processors, so they belong in your data processing agreements and your customer-facing sub-processor list.
+
+These controls are what turn a clever prototype into an AI deployment that a security reviewer in FinTech or healthcare will actually approve.
+
+## Common Mistakes When Deploying AI in Customer Support
+
+Most failed AI support projects fail on process and data, not on model choice. The recurring mistakes are:
+
+- **Measuring deflection alone.** A bot that closes tickets by frustrating users into giving up looks great on a deflection chart. Track escalation accuracy and CSAT alongside it.
+- **Indexing stale documentation.** If outdated articles stay in the index, the agent will confidently repeat old answers.
+- **Hiding the human option.** Customers should always be able to reach a person. A visible handoff increases trust in the AI answers.
+- **Giving the agent broad write access.** Start with read-only lookups. Actions such as refunds or account changes need explicit permission scopes and human approval at first.
+- **Skipping the security review.** AI-generated integration code often ships with exposed keys or missing authorisation checks. Review it before the agent touches production data.
+
 ## Key Takeaways
 
 - Traditional "If/Then" decision-tree chatbots fail because they cannot handle the nuance of natural human language, frustrating users and failing to reduce support costs even after significant engineering investment.

@@ -87,6 +87,43 @@ Wanneer LaunchStudio AVG-compliance achteraf inbouwt in een door een AI-builder 
 
 Omdat dit werk bovenop uw bestaande frontend en productlogica plaatsvindt - dezelfde filosofie zonder herbouw die LaunchStudio toepast op beveiligings- en betalingsverharding - verliest u de maanden productwerk die al zijn verricht niet. U dicht het juridische en architecturale hiaat zonder helemaal opnieuw te beginnen.
 
+## AVG-naleving: nu regelen vs. later oplossen, naast elkaar
+
+AVG-naleving nu regelen is op vrijwel elk relevant punt goedkoper, omdat het werk meegroeit met de omvang van uw schema, uw integraties en uw data. Het onderstaande overzicht vat de afweging in kwalitatieve termen samen.
+
+| Dimensie | Nu regelen (prototype of vroege MVP) | Later oplossen (na maanden groei) |
+|---|---|---|
+| Tabellen met persoonsgegevens | Weinig, eenvoudig in kaart te brengen | Veel, vaak ongedocumenteerd |
+| Kopieën van persoonsgegevens | Grotendeels de primaire database | Database, back-ups, analytics, CRM, wachtrijen, logs |
+| Implementatie van verwijdering | Eén keer goed ontworpen | Achteraf ingebouwd in elk systeem dat de data bereikte |
+| Bewaarbeleid | Ingesteld voordat data zich opstapelt | Vereist eerst het opschonen van historische data |
+| Verwerkersovereenkomsten met subverwerkers | Een korte lijst om te tekenen | Een langere lijst, sommige tools al dagelijks in gebruik |
+| Impact op verkoop | Klaar wanneer de juridische review erom vraagt | Deals liggen stil terwijl de oplossing wordt gebouwd |
+| Toezichtsrisico | Beperkte periode van niet-naleving | Elke maand telt als niet-naleving |
+
+## Wat moet u als eerste oplossen? Een prioriteitsvolgorde voor AVG-naleving
+
+De eerste AVG-oplossing voor de meeste AI SaaS-apps is weten waar persoonsgegevens zich bevinden, omdat elke andere verplichting van dat overzicht afhangt. Werk de onderdelen in deze volgorde af:
+
+1. **Breng uw data in kaart.** Maak een lijst van elke tabel, elk veld en elke externe tool die persoonsgegevens bevat. Dit vormt de basis voor uw register van verwerkingsactiviteiten onder artikel 30 van de AVG.
+2. **Leg de rechtsgrond vast.** Noteer per verwerkingsdoel welke grondslag uit artikel 6 van toepassing is, zoals de uitvoering van een overeenkomst of toestemming.
+3. **Sluit verwerkersovereenkomsten met subverwerkers.** Hosting, de OpenAI API of andere modelproviders, e-mail en analytics-tools hebben allemaal een overeenkomst volgens artikel 28 nodig. Controleer waar elke partij data verwerkt, want doorgiften buiten de EU vereisen een geldig mechanisme zoals de Standard Contractual Clauses of het EU-US Data Privacy Framework.
+4. **Bouw verwijdering en export.** Implementeer echte verwijdering volgens artikel 17 en een export volgens artikel 20 over elke locatie in uw dataoverzicht.
+5. **Stel bewaartermijnen in en dwing ze af.** Bepaal per gegevenscategorie een bewaartermijn en plan geautomatiseerde opschoningstaken.
+6. **Voeg toegangslogging en een datalekprocedure toe.** Log de toegang tot persoonsgegevens en leg vast hoe u de toezichthouder, in Nederland de Autoriteit Persoonsgegevens, binnen de 72 uur uit artikel 33 zou informeren.
+
+## Veelgemaakte AVG-fouten in door AI gebouwde apps
+
+De meest gemaakte AVG-fout in door AI gebouwde apps is persoonsgegevens naar een modelprovider sturen zonder eerst het contract en de voorwaarden voor datagebruik te controleren. Prompts van gebruikers, geüploade documenten en chatgeschiedenissen zijn vaak persoonsgegevens, en de provider die ze verwerkt is een subverwerker zoals elke andere.
+
+Andere terugkerende fouten:
+
+- **Soft deletes presenteren als verwijdering.** Een `is_deleted`-vlag laat de data intact en herstelbaar.
+- **Persoonsgegevens in logs.** Debuglogs en fouttools zoals Sentry kunnen e-mailadressen, prompts of payloads vastleggen die vervolgens buiten uw bewaarregels leven.
+- **Back-ups negeren.** Uw aanpak voor verwijdering en bewaartermijnen heeft een gedocumenteerd antwoord nodig op wat er met back-upkopieën gebeurt.
+- **Vooraf aangevinkte toestemming.** Onder de ePrivacy-regels en de AVG moet toestemming een actieve keuze zijn, geen standaardinstelling.
+- **Het privacybeleid als oplossing behandelen.** Een privacyverklaring beschrijft wat u doet; toezichthouders en enterprise-beoordelaars controleren of het systeem dat ook daadwerkelijk doet.
+
 ## Belangrijkste inzichten
 
 - AVG-boetes kunnen oplopen tot € 20 miljoen of 4% van de wereldwijde jaaromzet, wat hoger is - maar voor de meeste founders in een vroege fase zijn stilgevallen enterprise-deals en oplopende technische schuld de meer directe kosten van uitstel.

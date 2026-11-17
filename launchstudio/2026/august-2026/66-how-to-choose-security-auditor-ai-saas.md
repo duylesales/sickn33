@@ -46,7 +46,7 @@ Beyond AI-specific risk, a handful of practical questions reveal whether a firm 
 
 ## Why Fixing the Obvious Gaps First Changes Your Quote
 
-Here's the part most founders don't anticipate: the price a security firm quotes you is heavily influenced by how much is *wrong* with your app during the scoping call, not just how big your app is. An AI-builder app that has never had backend hardening typically has multiple obvious, high-severity issues sitting in plain sight - disabled RLS, plaintext API keys in the frontend bundle, no rate limiting on public endpoints, missing input validation. When an auditor's scoping call surfaces these, two things happen to the quote: the audit itself gets priced higher because there's simply more surface area to test and document, and many firms tack on a remediation-support line item billed at $150–$250 per hour to help you fix what they find - on top of the audit fee.
+Here's the part most founders don't anticipate: the price a security firm quotes you is heavily influenced by how much is *wrong* with your app during the scoping call, not just how big your app is. An AI-builder app that has never had backend hardening typically has multiple obvious, high-severity issues sitting in plain sight - disabled RLS, plaintext API keys in the frontend bundle, no rate limiting on public endpoints, missing input validation. When an auditor's scoping call surfaces these, two things happen to the quote: the audit itself gets priced higher because there's simply more surface area to test and document, and many firms tack on a remediation-support line item billed at $150-$250 per hour to help you fix what they find - on top of the audit fee.
 
 The alternative is closing the obvious, well-known gaps yourself before you ever request a quote. RLS enabled and properly scoped, secrets moved server-side, webhook signatures verified, basic rate limiting in place - these are known, well-documented issues that don't require a paid audit to identify; they require an engineer to fix. Once that baseline hardening is done, an auditor's job narrows considerably: instead of cataloguing dozens of foundational issues, they're testing edge cases, business logic flaws, and the AI-specific risks that actually require specialized expertise to find. The engagement gets faster, the report gets shorter and more useful, and the invoice reflects genuine expert time rather than hours spent documenting things an engineer already knew were broken.
 
@@ -59,6 +59,38 @@ LaunchStudio plays two distinct roles depending on where you are in the process.
 **After a formal audit:** as the team that actually implements an external auditor's findings. A pentest report full of accurately identified issues is only valuable if someone closes the gaps - and many security firms either don't offer remediation work or price it at a premium. LaunchStudio takes the report, prioritizes findings by severity, and fixes them against your existing frontend without a rebuild.
 
 Either way, the underlying principle is the same: security auditors are excellent at *finding* problems, particularly the AI-specific and business-logic issues that require real expertise. They're often expensive or unavailable for *fixing* what they find. Treating engineering hardening and formal auditing as two separate, sequenced purchases - rather than expecting one vendor to do both - consistently produces a cheaper, faster, cleaner outcome.
+
+## Which Type of Security Audit Do You Actually Need?
+
+The right security auditor depends on what you need to prove: a penetration test proves your app resists real attacks, while a compliance audit proves your controls meet a framework such as SOC 2 or ISO 27001. Founders often request "an audit" when the enterprise prospect actually asked for one specific deliverable, so confirm which one before you collect quotes.
+
+| Engagement type | What it answers | Who typically performs it | When it fits an AI SaaS founder |
+|---|---|---|---|
+| Automated vulnerability scan | Are there known, detectable weaknesses? | Tooling, sometimes resold by firms | A cheap baseline, never a substitute for manual testing |
+| Penetration test | Can a skilled attacker break in or reach other tenants' data? | Independent security testers | Enterprise deals, investor diligence, after major releases |
+| Security code review | Are there flaws in the logic, RLS policies, or prompt handling? | Engineers or auditors with source access | Before a pentest, or when the codebase came from an AI builder |
+| SOC 2 audit | Do your controls meet the AICPA Trust Services Criteria? | A licensed CPA firm | When enterprise buyers ask for a SOC 2 report |
+| ISO 27001 certification | Does your information security management system meet the standard? | An accredited certification body | Common with European enterprise and public-sector buyers |
+
+For most early-stage AI SaaS products, the first real purchase is a scoped penetration test that explicitly covers the OWASP Top 10 for LLM Applications alongside the classic OWASP Top 10.
+
+## How to Choose a Security Auditor: A Step-by-Step Process
+
+You can choose a security auditor in a structured way that takes about two weeks and avoids the most expensive mistakes. Follow this sequence:
+
+1. **Write down the requirement in the buyer's words.** If the prospect's questionnaire says "annual third-party penetration test," that is your scope, not a SOC 2 audit.
+2. **Close the known gaps first.** Enable and scope RLS, move secrets server-side, verify Stripe webhook signatures, and add rate limiting before any firm sees your app.
+3. **Prepare a one-page architecture summary.** List your stack (for example Supabase, Edge Functions, Stripe, the OpenAI API), your AI features, and where tenant data lives.
+4. **Shortlist three firms and run real scoping calls.** Use the questions above, and ask each firm how they would test your specific AI features.
+5. **Compare sample reports, not just prices.** The cheapest quote with an unusable report costs more once engineers have to interpret it.
+6. **Agree on retesting and remediation terms in writing.** Know before you sign how fixes get verified and what follow-up questions cost.
+7. **Book the remediation capacity in advance.** Line up the engineers who will close findings so the report doesn't sit unread for weeks.
+
+## Common Mistakes When Hiring a Security Auditor
+
+The most common mistake is buying an audit before the application is ready to be audited. You pay expert rates for findings any engineer could have listed, and the report is so long that the genuinely subtle issues get lost in it.
+
+Other mistakes are just as avoidable. Founders often scope out the AI features "to save money," which removes exactly the part of the product a generalist would miss. Some accept a report without asking for reproduction steps, then discover their engineers can't confirm whether a fix worked. And many forget that an audit is a snapshot: after a major release, a new AI feature, or a change to your RLS model, the previous report no longer describes the product you're selling.
 
 ## Key Takeaways
 

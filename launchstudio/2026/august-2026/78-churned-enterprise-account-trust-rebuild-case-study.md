@@ -52,6 +52,39 @@ It's worth being explicit about why a trust-rebuild sprint is usually the better
 
 A recovered account, by contrast, skips almost the entire sales cycle: the product is already integrated into the customer's workflows, the internal champions who originally advocated for the tool are usually still there, and the only open question is whether the vendor can be trusted again - not whether the product solves a real problem, which was already proven over five months of live usage. That's why a two-week, sub-€5,000 engineering sprint aimed at winning back a churned account is frequently the highest-leverage spend a founder can make after an incident, even before accounting for the reputational cost of a public enterprise cancellation spreading informally through an industry's security and procurement community.
 
+## What Are Your Obligations After a Data Exposure Under GDPR?
+
+When an AI SaaS vendor processes a customer's data, it usually acts as a processor under the GDPR, and Article 33(2) requires a processor to notify the controller - the customer - without undue delay after becoming aware of a personal data breach. The controller then decides whether to notify its supervisory authority, which Article 33 requires within 72 hours unless the breach is unlikely to result in a risk to individuals. Your data processing agreement under GDPR Article 28 usually adds contractual detail, such as a fixed notification window and the information you must supply.
+
+For fintech customers, there is often a second layer. The EU's Digital Operational Resilience Act (DORA), which applies from 17 January 2025, requires financial entities to manage the risk of their ICT third-party providers. That is one reason a fintech security team reviews a vendor incident so formally: its own regulatory obligations depend on the answer. Fast, accurate notification is therefore the first step in any churn recovery, not an optional courtesy.
+
+## What Should an Incident Post-Mortem for an Enterprise Customer Include?
+
+An enterprise-grade post-mortem is a structured document that lets a security team verify what happened, why, and what has changed so it can't happen the same way again. These are the sections SupportPilot's document covered:
+
+| Section | What it answers |
+|---|---|
+| Summary | What happened, in two or three plain sentences |
+| Timeline | When the issue started, was detected, contained and fixed |
+| Impact | Which data, which users, and whether anything left the organisation |
+| Root cause | The technical cause and the process gap that allowed it |
+| Immediate fix | What was disabled or patched, and when |
+| Structural fix | Architectural changes that remove the whole class of problem |
+| Process change | New review gates or checks that prevent recurrence |
+| Evidence | Audit logs, test results and independent review |
+| Ongoing commitments | What the customer will receive going forward, such as quarterly reports |
+
+## A Step-by-Step Churn Recovery Plan After a Security Incident
+
+Churn recovery after an incident works best as a sequence, with each step producing evidence for the next:
+
+1. **Contain and notify.** Disable the affected feature and inform the customer in line with your DPA, before they hear about it another way.
+2. **Investigate the full class of problem.** Audit every similar data-access path, not just the one that failed.
+3. **Fix the architecture, then the process.** Enforce access rules in the database layer and add a review gate for risky features.
+4. **Document it.** Write the post-mortem in the structure above, with logs and test results attached.
+5. **Get independent verification.** A written review from a third party carries weight that a founder's own account cannot.
+6. **Ask for a reconsideration meeting.** Bring the evidence and focus the conversation on future trust, not on the original incident.
+
 ## Key Takeaways
 
 - A trust-breaking incident at an enterprise account is rarely resolved by a fast technical patch alone - enterprise security and procurement teams need evidence the underlying architecture and process changed, not just that the specific bug was fixed.

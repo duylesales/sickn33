@@ -83,6 +83,44 @@ Dit is geen betoog tegen freelance contractors in het algemeen - voor goed afgeb
 
 Ravi's vuistregel voortaan, die hij nu toepast voordat hij iemand inhuurt voor engineeringwerk: als een fout in het werk klantdata kan blootstellen, een betalingsflow kan breken, of anderszins reële aansprakelijkheid kan creëren, gaat het naar een vastomlijnd teamtraject, punt uit, ongeacht hoe het scoort op uurtarief. Werk met lagere inzet - een update van de marketingsite, een kleine UI-aanpassing, een eenmalig script - blijft eerlijk speelveld voor een parttime contractor, omdat de kosten als er iets misgaat oprecht laag zijn. Dat ene filter, eerlijk toegepast vóór een inhuurbeslissing in plaats van nadat een probleem zich voordoet, had hem de negen weken en het beveiligingsgat volledig bespaard.
 
+## LaunchStudio vs. een parttime contractor: een vergelijking naast elkaar
+
+Het belangrijkste verschil tussen LaunchStudio en een parttime contractor is de structuur van het traject: een vaste scope, geleverd door een klein team dat elkaars werk reviewt, tegenover een open aantal uren van één persoon die de week deelt met andere klanten. De tabel laat zien hoe dat uitpakt op de factoren die in het geval van Ravi ertoe deden:
+
+| Factor | Parttime contractor | Vastomlijnd LaunchStudio-traject |
+|---|---|---|
+| Prijsmodel | Per uur, totaal vooraf onbekend | Vaste prijs, afgesproken vóór de start (Launch Ready €800-€3.500; Launch & Grow €2.500-€7.500 plus €49 per maand) |
+| Doorlooptijd | Afhankelijk van beschikbaarheid naast andere klanten | Vastgelegd, doorgaans 1 tot 3 weken |
+| Beheersing van de scope | Groeit met elk nieuw verzoek | Schriftelijke scope, wijzigingen expliciet afgesproken |
+| Code review | Meestal geen | Ingebouwd in het werkproces van het team |
+| Continuïteit | Stopt als de contractor vertrekt | Niet afhankelijk van één persoon |
+| Documentatie | Optioneel, vaak overgeslagen | Onderdeel van de oplevering |
+| Meest geschikt voor | Taken met weinig risico en een flexibele planning | Beveiligings- en betalingskritische hardening |
+
+Geen van beide opties is in elk geval beter. De tabel helpt u de structuur van het traject af te stemmen op het risico van het werk.
+
+## Hoe berekent u de werkelijke kosten van een parttime contractor?
+
+De werkelijke kosten van een parttime contractor zijn het uurtarief vermenigvuldigd met alle gefactureerde uren, plus de kosten van vertraging, herstelwerk en eventuele incidenten door code die niemand heeft gereviewd. Oprichters vergelijken meestal alleen het uurtarief met een vaste prijs, en daarom lijkt de route via een contractor op dag één goedkoper. Een eerlijkere berekening:
+
+1. **Schat het totale aantal uren, niet het aantal uren per week.** Vermenigvuldig de wekelijkse uren met een realistisch aantal weken, inclusief de uitbreidingen van de scope die vrijwel altijd volgen.
+2. **Tel uw eigen managementtijd mee.** Briefen, achter updates aan zitten en werk beoordelen kosten allemaal uren van de oprichter.
+3. **Tel de kosten van vertraging mee.** Als een deal, lancering of enterprise-beoordeling op het werk wacht, heeft elke extra week een prijs.
+4. **Tel de kosten van herstelwerk mee.** Ga ervan uit dat iemand een deel van het werk moet controleren en verbeteren, zoals bij het batch-export-endpoint van Ravi gebeurde.
+5. **Tel het continuïteitsrisico mee.** Bedenk wat het zou kosten om halverwege iemand nieuw te werven en in te werken.
+6. **Vergelijk het totaal met een offerte met vaste prijs.** Pas nu vergelijkt u appels met appels.
+
+## Checklist: uzelf beschermen bij elk engineeringtraject
+
+Welke route u ook kiest, een paar basiswaarborgen beschermen een oprichter tegen de problemen waar Ravi tegenaan liep. Zorg ervoor dat, voordat beveiligings- of betalingskritisch werk begint:
+
+- **De scope op papier staat**, met duidelijke acceptatiecriteria per onderdeel, zoals "RLS ingeschakeld en getest op elke tabel, inclusief export-endpoints."
+- **De code in uw eigen repository staat**, op GitHub of GitLab, vanaf de eerste dag en niet op de computer van de contractor.
+- **Het intellectuele eigendom aan uw bedrijf wordt overgedragen** in het contract, zodat de code waarvoor u betaalt juridisch van u is. Naar Nederlands recht blijft het auteursrecht op werk van een zelfstandige in beginsel bij de maker, en voor overdracht is een schriftelijke akte nodig. Een losse afspraak per e-mail is dus niet genoeg.
+- **Er wekelijks tussentijdse documentatie wordt opgeleverd**, in plaats van alles te bewaren voor een eindoverdracht die er misschien nooit komt.
+- **Een tweede persoon beveiligingskritische wijzigingen reviewt** voordat ze in productie gaan.
+- **Toegang aan het einde wordt ingetrokken** - repository, hosting, database, Stripe-dashboard en eventuele gedeelde secrets, die ook geroteerd moeten worden.
+
 ## Belangrijkste inzichten
 
 - Uur-gebaseerde, parttime freelance-trajecten hebben van nature de neiging tot scope creep, omdat er geen structureel mechanisme is dat een gedefinieerde grens rond het werk afdwingt.

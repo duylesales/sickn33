@@ -56,6 +56,27 @@ The scorecard is diagnostic, not prescriptive on its own - the next step is sequ
 
 A scorecard taken once at a single point in time has a short shelf life, because both compliance obligations and monetization needs shift as a product grows. A tenant isolation setup that was adequate at 50 customers can become a liability at 500, once a genuinely competitive multi-tenant workload starts stressing the database in ways early usage never did. A flat pricing tier that made sense for an undifferentiated early user base often stops making sense the moment usage patterns diverge sharply between a handful of power users and a much larger group of light users - a split that frequently doesn't exist yet at launch and only emerges after real usage data accumulates. Re-running the scorecard at clear growth milestones - closing the first enterprise logo, crossing a meaningful MRR threshold, or entering a new regulated vertical or country - catches these shifts while they're still cheap to fix, rather than after a specific deal or audit forces the question under time pressure.
 
+## How Do You Score EU AI Act Readiness and Monetization Readiness?
+
+The simplest way to score EU AI Act readiness, GDPR compliance and monetization readiness is a three-level rating for every item: 0 for missing, 1 for partially in place or undocumented, and 2 for implemented and documented. A scale-readiness scorecard, in this sense, is a fixed list of compliance and monetization controls that you rate the same way every time, so that progress between runs is measurable instead of anecdotal.
+
+| Score | Meaning | Example (tenant isolation) | What to do next |
+|-------|---------|----------------------------|-----------------|
+| 0 - Missing | The control does not exist | Every query relies on the app to filter by account | Put it on the fix list now |
+| 1 - Partial | Exists, but is incomplete or undocumented | RLS on some tables, no written policy | Close the gap and write it down |
+| 2 - Ready | Implemented, tested and documented | RLS on every table, tested, described in your security overview | Re-check at the next growth milestone |
+
+Two rules keep the scores honest. First, a control only earns a 2 if you could show evidence to a buyer's security reviewer today - a policy document, a test result, a signed Data Processing Agreement. Second, score Section One and Section Two separately and never average them, because a high monetization score does not offset a 0 on GDPR Article 33 breach notification readiness.
+
+## Common Mistakes When Running a Compliance Scorecard
+
+The most common mistake is scoring intentions instead of reality. A founder who plans to add AI disclosure labels next quarter scores a 0 on that item today, not a 1. Other mistakes come up again and again:
+
+1. **Treating documentation as implementation.** A privacy policy that promises deletion within 30 days is worth nothing if there is no working deletion flow behind it.
+2. **Skipping subprocessors.** Model providers such as OpenAI or Anthropic, email tools and analytics scripts all count as subprocessors under GDPR Article 28 and need to be listed.
+3. **Scoring alone.** The person who built the system tends to rate it generously. A second reviewer, internal or external, catches what the builder no longer sees.
+4. **Ignoring the pricing side.** Many founders run a security review and stop there, leaving the margin and billing gaps from Section Two invisible until revenue stalls.
+
 ## Key Takeaways
 
 - MRR growth alone doesn't indicate whether an AI SaaS platform can survive the scrutiny of European enterprise procurement or regulatory attention - compliance and monetization readiness need to be assessed separately.

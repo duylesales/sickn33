@@ -87,6 +87,42 @@ Dit alles betekent niet dat zelf hosten een vergissing is. Voor oprichters met d
 
 Oprichters die deze beslissing overwegen, kunnen een ruwe buikgevoel-check gebruiken voordat ze een volledige kostenanalyse in opdracht geven: als niemand in het huidige team praktijkervaring heeft met het draaien van GPU-infrastructuur in productie - niet "erover gelezen," maar daadwerkelijk bereikbaar is geweest voor storingen - behandel zelf hosten dan vanaf dag één als een managed traject in plaats van een DIY-weekendproject. De besparingen per token op een spreadsheet zijn reëel, maar het zijn besparingen die alleen tot stand komen zodra de operationele discipline bestaat om ze betrouwbaar vast te leggen; zonder die discipline zijn de "besparingen" gewoon uitgestelde kosten die een paar weken later opduiken als downtime, beveiligingsblootstelling of noodgevallen blussen, precies zoals bij Felix.
 
+## DIY vs. beheerd zelf hosten van open-source modellen: naast elkaar
+
+Open-source modellen zelf hosten betekent dat u de modelgewichten draait op infrastructuur die u zelf beheert, meestal een GPU-instance met een inferentieserver zoals vLLM of Hugging Face Text Generation Inference, in plaats van de gehoste API van een provider aan te roepen. Het verschil tussen de DIY-variant en de beheerde variant van die opzet zit niet in het model, maar in wie het operationele werk eromheen draagt:
+
+| Onderdeel | DIY zelf hosten | Beheerd zelf hosten |
+|---|---|---|
+| Opzet | Een deployment van één weekend op één instance | Geprovisioneerde, gemonitorde infrastructuur vanaf dag één |
+| Monitoring en alerts | Meestal geen, totdat klanten klagen | Automatische alerts op latency, fouten en GPU-status |
+| Beveiligingspatches | Handmatig, vaak vergeten | Geplande updates voor drivers, CUDA en de inferentieserver |
+| Failover | Eén enkel faalpunt | Redundante instances plus een terugval op een commerciële API |
+| Performance-tuning | Standaardinstellingen | Batching, kwantisatie en caching afgestemd op echt verkeer |
+| Modelupdates | Bevroren op de eerst uitgerolde versie | Geplande evaluatie en uitrol van nieuwere releases |
+| Verborgen kosten | Tijd van oprichter en engineers, risico op downtime | Zichtbaar in de prijs van de opdracht |
+
+Beide kolommen draaien hetzelfde open-source model. Wat verandert, is of het betrouwbaarheidswerk bewust wordt gedaan of aan het toeval wordt overgelaten.
+
+## Hoe beslist u of u open-source modellen zelf gaat hosten?
+
+De beslissing om open-source modellen zelf te hosten komt neer op vier vragen, en u zou pas verder moeten gaan als u de meeste daarvan met een overtuigd ja kunt beantwoorden. Loop ze in deze volgorde door:
+
+1. **Is het volume hoog en stabiel genoeg?** GPU-instances kosten geld, of ze nu bezig zijn of stilstaan. Zelf hosten loont wanneer de bezetting het grootste deel van de dag hoog blijft, niet wanneer verkeer in korte pieken binnenkomt.
+2. **Is er een echte eis rond datacontrole?** Als een klantcontract of regelgeving vereist dat prompts uw eigen omgeving nooit verlaten, kan zelf hosten het meest overzichtelijke antwoord zijn. Zo niet, dan is een commerciële API met passende verwerkingsvoorwaarden mogelijk eenvoudiger.
+3. **Past de modellicentie bij uw gebruik?** Controleer de licentie voordat u erop bouwt. Sommige Mistral-modellen zijn uitgebracht onder Apache 2.0, terwijl de Llama-modellen van Meta een eigen community-licentie en acceptable-use-beleid hebben, met voorwaarden die u moet lezen.
+4. **Wie heeft er dienst?** Iemand moet reageren wanneer om drie uur 's nachts een GPU-driver uitvalt. Als die persoon nog niet bestaat, plan dan vanaf het begin een beheerde opzet of een terugval-API.
+
+Als de eerlijke antwoorden "ja, ja, ja, niemand" luiden, is de hierboven beschreven hybride route meestal de veiligste eerste stap: host het werk met hoog volume zelf, houd een commerciële API achter de hand en bouw operationele volwassenheid op voordat u meer verkeer verschuift.
+
+## Veelgemaakte fouten bij het zelf hosten van open-source modellen
+
+De duurste fout bij zelf hosten is een GPU-huurprijs vergelijken met een API-factuur en het verschil besparing noemen. Andere fouten keren steeds terug:
+
+- **De GPU dimensioneren op gemiddelde belasting in plaats van op piekbelasting.** Wachtrijen lopen snel op wanneer er meerdere lange documenten tegelijk binnenkomen.
+- **Evaluatie overslaan na kwantisatie.** Een kleinere, snellere modelversie kan nauwkeurigheid verliezen op precies de randgevallen waar uw klanten om geven. Test deze eerst op echte voorbeelden.
+- **Geen terugvalpad in de code.** Als de applicatie maar één endpoint kan aanroepen, wordt elke storing een volledige productstoring.
+- **De inferentieserver publiek bereikbaar maken.** Het modelendpoint hoort achter uw applicatie te staan, met authenticatie, en niet op een open poort.
+
 ## Belangrijkste inzichten
 
 - Een kostenvergelijking per token tussen commerciële API's en zelfgehoste open-source modellen laat routinematig GPU-beschikbaarheidsrisico, inferentie-optimalisatiewerk, beveiligingspatches en failover-engineering weg - de werkelijke aanjagers van de totale kosten van een zelfgehost model.

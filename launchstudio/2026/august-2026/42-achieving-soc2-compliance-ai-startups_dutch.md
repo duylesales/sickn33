@@ -69,6 +69,56 @@ Een **SOC 2 Type I** rapport is een momentopname: een auditor bevestigt dat uw b
 
 Het direct vanaf dag één goed inrichten van deze enterprise-architectuur is exact waar Manifera sinds **2014** in gespecialiseerd is, met 160+ opgeleverde projecten voor organisaties zoals Vodafone en TNO. Zoals Herre Roelevink, Oprichter & Managing Director van Manifera, stelt: "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Bekijk Manifera's [portfolio van gerealiseerde enterprise-projecten](https://www.manifera.com/portfolio/).
 
+## Hoe lang duurt SOC 2-naleving voor een AI SaaS-platform?
+
+Voor de meeste AI-startups die een automatiseringsplatform gebruiken, duurt de weg van nul naar een eerste SOC 2 Type II rapport ongeveer 6 tot 8 weken voorbereiding plus de lengte van de observatieperiode, dus rond de vijf maanden bij een periode van 3 maanden. De stappen hebben een vaste volgorde, en het overslaan van stappen is de meest voorkomende manier om tijd te verliezen.
+
+1. **Bepaal de scope.** Kies welke Trust Services Criteria u opneemt (meestal Security, vaak aangevuld met Confidentiality) en welke systemen binnen de scope vallen: productiecloud, code-repository, LLM-providers, vector-database en loggingtools.
+2. **Koppel het automatiseringsplatform.** Verbind Vanta, Drata of Secureframe met uw cloud, GitHub of GitLab, identity provider en HR-systeem, zodat alle tekortkomingen op één dashboard zichtbaar worden.
+3. **Dicht de technische gaten.** Dwing overal 2FA af, versleutel data at-rest, beperk de toegang tot productielogs met prompts en toon tenant-isolatie in uw vector-database aan.
+4. **Dicht de administratieve gaten.** Stel beleid vast en volg het ook daadwerkelijk, voer achtergrondchecks uit, installeer MDM op elke laptop en documenteer uw offboarding-proces.
+5. **Verzamel bewijs van leveranciers.** Vraag actuele SOC 2 rapporten en verwerkersovereenkomsten op bij OpenAI, Anthropic, Pinecone en elke andere sub-verwerker.
+6. **Voer een Type I of een readiness assessment uit.** Daarmee bevestigt u het ontwerp van uw maatregelen voordat de klok begint te lopen.
+7. **Start de observatieperiode.** Uw maatregelen moeten nu 3, 6 of 12 maanden consistent functioneren, terwijl het platform doorlopend bewijs verzamelt.
+8. **Rond de audit af.** Het accountantskantoor test steekproeven uit de periode en levert het Type II rapport op dat u onder NDA met enterprise-klanten kunt delen.
+
+### Waar gaat het budget naartoe?
+
+Een realistisch SOC 2-budget bestaat uit drie posten, en startups onderschatten vrijwel altijd de laatste. De eerste is de licentie voor het automatiseringsplatform, die afhankelijk van het aantal medewerkers doorgaans tussen de $ 6.000 en $ 15.000 per jaar ligt. De tweede is de formele audit door het accountantskantoor, die los daarvan doorgaans $ 10.000 tot $ 30.000 kost. De derde is de engineeringtijd die nodig is om de gevonden tekortkomingen te dichten: tenant-isolatie aantonen, toegang tot productielogs beperken tot de juiste rollen (een bevinding onder de toegangscriteria CC6.1 tot en met CC6.3 als iedere engineer erbij kan) en de bewaartermijn van uw LLM-providers documenteren, die voor misbruikmonitoring vaak 30 dagen bedraagt. Deze derde post is het moeilijkst te begroten, maar het goedkoopst wanneer de architectuur vanaf het begin auditeerbaar is opgezet.
+
+## SOC 2 versus ISO 27001: welke heeft uw AI-startup nodig?
+
+SOC 2 is de standaardverwachting van Amerikaanse enterprise-klanten, terwijl Europese inkoopafdelingen vaak om ISO 27001 vragen. De juiste keuze hangt dus af van waar uw grootste prospects zitten. Veel AI SaaS-platforms hebben uiteindelijk beide, omdat de onderliggende maatregelen sterk overlappen.
+
+| | SOC 2 | ISO 27001 |
+|---|---|---|
+| Uitgegeven door | Onafhankelijk CPA-accountantskantoor, volgens AICPA-standaarden | Geaccrediteerde certificerende instelling, volgens de ISO/IEC 27001-norm |
+| Resultaat | Attestatierapport (Type I of Type II), gedeeld onder NDA | Openbaar certificaat |
+| Opbouw van maatregelen | U definieert zelf maatregelen op basis van de Trust Services Criteria | Information Security Management System (ISMS) plus Annex A-maatregelen |
+| Geldigheid | Type II beslaat een afgelopen observatieperiode, jaarlijks vernieuwd | Certificaat drie jaar geldig, met jaarlijkse controle-audits |
+| Typische vraag | Amerikaanse enterprise- en SaaS-inkoop | Europese en internationale inkoop, publieke sector |
+
+Zijn uw eerste enterprise-prospects gevestigd in Nederland, Duitsland of Frankrijk, vraag dan rechtstreeks welk rapport hun vendor security-team accepteert voordat u budget vastlegt. Een Type II rapport dat uw klant niet erkent, versnelt de deal niet. Voor Nederlandse overheidsorganisaties en zorginstellingen speelt daarnaast vaak de BIO (Baseline Informatiebeveiliging Overheid) of NEN 7510 een rol, die beide voortbouwen op ISO 27001.
+
+## AI-specifieke maatregelen waar uw auditor naar vraagt
+
+Naast de klassieke infrastructuurmaatregelen onderzoekt een auditor bij een AI SaaS-platform doorgaans vier AI-beveiligingsgebieden, en het vooraf klaarhebben van schriftelijke antwoorden verkort het veldwerk aanzienlijk.
+
+- **Change management voor modellen en prompts.** Het wijzigen van een systeemprompt of het overstappen naar een andere modelversie verandert het gedrag van uw product. Behandel dit als een codewijziging onder de change management-criteria (CC8.1): beoordeeld, goedgekeurd, voorzien van versiebeheer en terug te draaien.
+- **Prompt injection en de verwerking van output.** Laat zien hoe u voorkomt dat gebruikersinvoer de systeeminstructies overschrijft, en hoe AI-output wordt gevalideerd voordat die acties uitvoert of bij andere tenants terechtkomt.
+- **Beheer van secrets.** LLM API-sleutels horen thuis in een secrets manager zoals AWS Secrets Manager of Doppler, nooit in de frontend-bundel of in een gecommit `.env`-bestand. Uitgelekte sleutels behoren tot de meest voorkomende AI-beveiligingskwetsbaarheden in met AI gebouwde prototypes.
+- **Beschikbaarheid van upstream-providers.** Neemt u het criterium Availability op, documenteer dan wat er gebeurt wanneer uw LLM-provider een storing heeft, bijvoorbeeld een fallback-model of een nette foutmelding.
+
+## Veelgemaakte SOC 2-fouten van AI-startups
+
+De meeste vertraagde SOC 2-trajecten lopen vast op planning en niet op technologie. Let op deze patronen:
+
+- **De eerste audit te breed afbakenen.** Privacy en Processing Integrity toevoegen voordat een klant erom vraagt, levert extra maatregelen en kosten op zonder extra deals.
+- **De observatieperiode te vroeg starten.** Als 2FA of MDM op dag één nog niet wordt afgedwongen, wordt elke steekproef van vóór de oplossing een uitzondering in uw rapport.
+- **Beleidstemplates gebruiken die niemand volgt.** Automatiseringsplatforms leveren kant-en-klare beleidsdocumenten, maar auditors toetsen of u ook daadwerkelijk doet wat het beleid voorschrijft.
+- **AI-tooling buiten de scope laten.** Observability- en evaluatietools die klantprompts opslaan, maken deel uit van uw systeem. Laat u ze weg, dan ontstaat er een gat dat een CISO in de security questionnaire vindt.
+- **SOC 2 als eenmalig project behandelen.** Een Type II rapport moet jaarlijks worden vernieuwd, dus maatregelen die alleen tijdens de eerste periode werkten, verschijnen volgend jaar als bevindingen.
+
 ## Belangrijkste Inzichten
 
 - Een SOC 2 rapport is een harde voorwaarde om B2B AI-software te verkopen aan enterprise-ondernemingen; zonder rapport lopen inkooptrajecten maandenlang vast.

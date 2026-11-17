@@ -41,6 +41,10 @@ Bij traditionele software schommelt de brutomarge rond de 80% tot 90%, omdat de 
 
 Als u 30 dollar per maand rekent en een intensieve power-user verbruikt voor 25 dollar aan Anthropic- of OpenAI-aanroepen, bedraagt uw marge op die klant slechts 16%. U moet telemetrie inrichten (zoals PostHog in combinatie met tokentracking op gebruikersniveau) om tokenkosten per interactie direct te koppelen aan het gebruikers-ID. Zakt een gebruikersgroep onder de 60% brutomarge, dan moet u direct verbruikslimieten (rate limits) of variabele overage-tarieven instellen.
 
+### De kostenattributie-pipeline bouwen
+
+In de praktijk houden de meeste teams dit niet standaard bij. Het vraagt om het bewust loggen van tokenaantallen bij elke LLM-aanroep, gekoppeld aan het gebruikers-ID. Registreer input- en outputtokens apart, omdat outputtokens doorgaans 3 tot 5 keer duurder zijn. Sla deze gegevens op in een aparte `usage_events`-tabel en vat ze samen in een margedashboard per gebruiker. Het overslaan van deze instrumentatie is een van de meest voorkomende redenen waarom AI SaaS-oprichters pas ontdekken dat hun unit economics niet kloppen nadat een virale groeipiek al een API-factuur van vijf cijfers heeft opgeleverd.
+
 ## KPI 2: Generatie Succespercentage (Generation Success Rate - GSR)
 
 Een AI die razendsnel tekst genereert is waardeloos als de output feitelijk onjuist of onbruikbaar is. U moet de kwaliteit van de AI-antwoorden kwantitatief meten via de **Generation Success Rate**.
@@ -66,6 +70,65 @@ In webdevelopment meten we pagina-laadtijd; bij AI meten we **Time to First Toke
 
 Traditionele Customer Acquisition Cost (CAC) is misleidend bij generatieve AI omdat het de doorlopende serveerkosten negeert. **Cost-per-Retained-User** combineert de initiële acquisitiekosten met de cumulatieve API-kosten van gebruikers die na 90 dagen nog actief zijn. Dit voorkomt dat goedkoop binnengehaalde power-users ongemerkt een structurele verliespost worden.
 
+## Wat is een customer health score voor een AI SaaS-platform?
+
+Een customer health score voor een AI SaaS-platform is één samengesteld getal, meestal op een schaal van 0 tot 100, dat gebruik, outputkwaliteit en serveerkosten combineert tot één signaal of een account waarschijnlijk winstgevend verlengt. Traditionele health scores kijken vooral naar betrokkenheid, inlogfrequentie en supporttickets. Bij AI SaaS mist u daarmee de helft van het beeld, want een account kan zeer actief en volkomen tevreden zijn en toch verlieslatend.
+
+De vijf KPI's hierboven zijn de grondstoffen. De health score maakt daar iets van waarop uw customer success-team, of u als solo-oprichter, elke week kan handelen zonder vijf afzonderlijke dashboards te openen.
+
+### Welke signalen horen in een AI SaaS health score?
+
+| Signaal | KPI-bron | Gezond account | Waarschuwingssignaal |
+|---|---|---|---|
+| Winstgevendheid | AI Brutomarge per Gebruiker | Marge blijft boven 60% | Marge beweegt richting of onder 60% |
+| Outputkwaliteit | Generation Success Rate | GSR op of boven 80% | Herhaaldelijk "Regenereer", GSR onder 80% |
+| Activatie | Time-to-Value | Eerste succesvolle generatie binnen 60 seconden | Geen succesvolle generatie in de eerste sessie |
+| Ervaring | Functionaliteit-specifieke latentie | Stabiele TTFT op de functies die het account gebruikt | Latentiepieken op de meestgebruikte functies |
+| Betrokkenheid | Wekelijks actief gebruik | Stabiel of groeiend gebruik over meerdere licenties | Dalend gebruik, of geconcentreerd bij één gebruiker |
+| Commercieel | Cost-per-Retained-User | Gelijkblijvend of dalend per cohort | Maand op maand stijgend |
+
+Let op: betrokkenheid is slechts één rij. In een klassieke SaaS health score zou die het grootste gewicht krijgen. Voor een AI SaaS-platform is hoge betrokkenheid in combinatie met een instortende marge een rode vlag, geen groene.
+
+## Customer health scoring stap voor stap inrichten
+
+U kunt binnen enkele dagen een eerste werkende health score bouwen als uw event tracking al op orde is. De volgorde is belangrijk, omdat elke stap afhankelijk is van de gegevens uit de vorige stap.
+
+1. **Log elke generatie als event.** Sla gebruikers-ID, account-ID, model, functionaliteit, inputtokens, outputtokens, latentie en de uitkomst op (gekopieerd, opgeslagen, opnieuw gegenereerd of afgebroken). Dit is de `usage_events`-tabel uit KPI 1.
+2. **Koppel kosten aan elk event.** Vermenigvuldig de tokenaantallen met de actuele tokenprijs van uw provider voor dat model en sla het resultaat op bij het event. Bewaar de prijstabel in configuratie en niet hard-coded in de code, omdat OpenAI en Anthropic hun prijzen regelmatig aanpassen en nieuwe modellen uitbrengen.
+3. **Vat events wekelijks samen per account.** Wekelijks is voor de meeste B2B AI SaaS-producten het juiste ritme: dagelijks is te grillig en maandelijks is te laat om nog bij te sturen.
+4. **Zet elk signaal om naar een deelscore van 0 tot 100.** Bijvoorbeeld: een GSR van 80% of hoger scoort 100, aflopend in een rechte lijn naar 0 bij 50%. Leg deze drempels schriftelijk vast, zodat iedereen in het team de score op dezelfde manier leest.
+5. **Weeg en combineer de deelscores.** Begin eenvoudig. Veel teams geven winstgevendheid en outputkwaliteit het zwaarste gewicht, omdat die twee signalen zowel churn als cash burn voorspellen. Herzie de gewichten zodra u enkele maanden aan echte verlengingsdata heeft.
+6. **Definieer drie zones met elk een actie.** Gezond (geen actie), Risico (beoordelen binnen een week) en Kritiek (de oprichter of accounteigenaar neemt contact op, of verbruikslimieten treden in werking).
+7. **Toon de score waar mensen al werken.** Een PostHog-dashboard, een veld in een CRM zoals HubSpot, of een wekelijkse samenvatting in Slack. Een score waar niemand naar kijkt, verandert niets aan de uitkomst.
+
+### Health scores versus verbruikslimieten: twee verschillende taken
+
+Een health score vertelt u welke accounts aandacht nodig hebben, terwijl verbruikslimieten u automatisch beschermen zolang u bepaalt wat u gaat doen. U heeft beide nodig. Met alleen een score kan een power-user in één weekend nog steeds een flinke API-factuur opbouwen. Met alleen limieten remt u uw beste klanten af zonder ooit te begrijpen waarom zij tegen het plafond aanlopen, terwijl dat vaak een teken is dat zij graag zouden betalen voor een hoger abonnement.
+
+## Veelgemaakte fouten bij het meten van AI SaaS KPI's
+
+De meeste AI SaaS-teams maken dezelfde handvol meetfouten, en vrijwel allemaal komen ze voort uit het kopiëren van een traditioneel SaaS-dashboard zonder het aan te passen aan variabele AI-kosten.
+
+- **Hoog gebruik automatisch als positief zien.** Bij AI SaaS is gebruik ook kosten. Lees betrokkenheid daarom altijd naast de marge.
+- **Marge alleen op totaalniveau volgen.** Een gezonde marge voor het hele bedrijf kan een cohort verbergen dat nauwelijks quitte speelt.
+- **Input- en outputtokens bij elkaar optellen.** Outputtokens kosten doorgaans meerdere keren zoveel, dus een gemengde telling onderschat de kosten van functies die lange antwoorden geven.
+- **Uitsluitend vertrouwen op duim omhoog en duim omlaag.** Expliciete feedback is schaars en wordt vooral gegeven door gefrustreerde gebruikers. Impliciete signalen zoals kopiëren, opslaan en regenereren vertellen u veel meer.
+- **Model- en promptwijzigingen negeren.** Wanneer een provider een model bijwerkt, kunnen GSR en latentie van de ene op de andere dag verschuiven. Markeer elke modelwissel en elke nieuwe promptversie op uw dashboards, zodat u een daling aan de oorzaak kunt koppelen.
+- **De TTV-klok op het verkeerde moment starten.** Start bij "Aanmelden", niet bij de eerste login na e-mailverificatie, anders verbergt u precies de frictie waardoor u gebruikers verliest.
+- **Het dashboard bouwen vóór de logging.** Een verzorgd dashboard bovenop onvolledige events geeft u zelfverzekerde maar foute antwoorden.
+
+## Hoe bepaalt u welke AI SaaS KPI u als eerste aanpakt?
+
+Pak de KPI aan die u het snelst geld of klanten kost, en bij de meeste AI SaaS-producten in een vroege fase betekent dat eerst de marge, daarna de outputkwaliteit en dan de activatie. Een eenvoudig beslismodel ziet er zo uit:
+
+1. **Zit de AI Brutomarge van een cohort onder de 60%,** pas dan eerst uw prijzen, overage-tarieven of rate limits aan. Elke nieuwe gebruiker in dat cohort maakt het probleem groter.
+2. **Zit de GSR onder de 80%,** verbeter dan vervolgens uw prompts, retrieval of modelkeuze. Slechte outputkwaliteit leidt meestal binnen één of twee factureringsperiodes tot churn.
+3. **Duurt de TTV langer dan 60 seconden,** herzie dan de onboarding. Dit is het lek bovenin uw funnel, en het weegt het zwaarst zodra u gaat betalen voor gebruikersacquisitie.
+4. **Pieken de latenties op belangrijke functies,** richt dan alerts en een route naar een fallback-model in.
+5. **Stijgt de CPRU,** bekijk dan acquisitiekanalen en abonnementsvormen samen, omdat de oorzaak aan beide kanten kan liggen.
+
+Deze volgorde ligt niet voor altijd vast. Zodra marges en outputkwaliteit stabiel zijn, worden activatie en retentie meestal de belangrijkste groeihefbomen voor een AI-native product, en dan horen de gewichten in uw health score mee te verschuiven.
+
 Manifera ontwerpt en versterkt schaalbare cloudarchitecturen en telemetriesystemen sinds **2014**, met 11+ jaar ervaring en meer dan 160 opgeleverde projecten voor enterprise-klanten zoals Vodafone en TNO. Zoals Herre Roelevink, oprichter en Managing Director van Manifera, benadrukt: "Het draait nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied."
 
 ## Belangrijkste inzichten
@@ -79,6 +142,8 @@ Manifera ontwerpt en versterkt schaalbare cloudarchitecturen en telemetriesystem
 - Optimaliseer de 'Time-to-Value' (TTV) zodat nieuwe gebruikers binnen 60 seconden na registratie hun eerste succesvolle AI-ervaring meemaken.
 
 - Bewaak de Time to First Token (TTFT) en richt automatische fallbacks naar snellere modellen in om trage latentie-ervaringen te voorkomen.
+
+- Combineer deze KPI's tot een wekelijkse customer health score per account, en pak ze aan in volgorde van financiële impact: eerst de marge, dan de outputkwaliteit, dan de activatie.
 
 ## Krijg grip op uw AI-marges en metrics
 

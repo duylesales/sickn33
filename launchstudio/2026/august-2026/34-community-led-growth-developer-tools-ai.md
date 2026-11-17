@@ -50,6 +50,71 @@ That is how a free Discord interaction turns into a $100,000 enterprise SaaS con
 
 Vanity metrics like total Discord member count are misleading; a server can have 10,000 members and be functionally dead. Track weekly active posters, median time-to-first-response on technical questions, and the ratio of community-answered to founder-answered questions over time - a rising ratio signals the flywheel is becoming self-sustaining, which is the actual signal that CLG is working rather than just costing you founder time.
 
+## What Is Community-Led Growth for an AI SaaS Platform?
+
+Community-Led Growth for an AI SaaS platform is a go-to-market model in which a community of developers - on GitHub, Discord or a forum - discovers, supports, improves and recommends your product, so that adoption grows through peer trust instead of paid acquisition. The community is not a marketing channel added on top of the product. It is part of how the product is built, supported and sold.
+
+It helps to compare CLG with the two motions founders usually know:
+
+| Dimension | Sales-led growth | Product-led growth | Community-led growth |
+|---|---|---|---|
+| First touchpoint | Sales rep or outbound email | Free sign-up or trial | GitHub repo, Discord, peer recommendation |
+| Who builds trust | The sales team | The product itself | Peers and the founding engineers |
+| Typical support model | Account manager | Docs and in-app help | Public answers in community channels |
+| Main growth signal | Pipeline value | Activation and conversion | Active contributors and repeat usage |
+| Best fit | Large, complex enterprise deals | Self-serve SaaS | Developer tools, APIs, open-source AI infrastructure |
+
+The three are not mutually exclusive. Most successful DevTools companies combine CLG at the top of the funnel with product-led self-serve upgrades and a small sales team for the enterprise deals that bottom-up adoption creates.
+
+## How to Launch a Developer Community Step by Step
+
+A developer community launches successfully when there is already something worth using, a clear path to the first working result, and a place where questions get answered quickly. A practical sequence:
+
+1. **Make the first five minutes work.** Publish a README with a one-command install, a minimal working example and the expected output. If a developer cannot get a result quickly, no community channel will save the project.
+2. **Write task-based documentation.** Organize docs around what people want to do - "add RAG to a Next.js app", "stream responses" - not around your internal architecture.
+3. **Open the repo with contributor basics.** Add a clear LICENSE file, a CONTRIBUTING.md, issue and pull request templates, and a handful of issues labelled `good first issue`.
+4. **Pick one community home.** Choose Discord, Slack or GitHub Discussions as the main place for questions. Spreading a small community across several platforms makes each one look empty.
+5. **Launch where developers already are.** A "Show HN" post on Hacker News, a technical write-up on your blog and an example project in the relevant subreddit or framework community work better than a press release.
+6. **Ship in public.** Keep a changelog, tag releases with semantic versioning, and post release notes in the community channel so active users see momentum.
+7. **Turn answers into docs.** When the same question appears three times, write it into the documentation and link to it.
+8. **Recognize contributors.** Credit them in release notes, give active members a role, and invite your most helpful users to shape the roadmap.
+
+## Developer Experience Checklist Before You Chase GitHub Stars
+
+GitHub stars are a signal of interest, not adoption, so fix your Developer Experience before you try to grow them. Use this checklist on your own repo:
+
+- A README that explains what the tool does in one sentence and shows a working example.
+- Install and quickstart that run on a clean machine without undocumented steps.
+- An API reference generated from the code, so it never drifts from reality.
+- SDKs for the languages your users actually use, typically TypeScript and Python for AI tooling.
+- Clear error messages that tell the developer what went wrong and how to fix it.
+- Semantic versioning and a changelog, so upgrades do not break production silently.
+- Example projects that can be cloned and deployed, not just snippets.
+- A public roadmap or issue board, so contributors know where help is welcome.
+
+## Security and Trust in Open-Source AI Tools
+
+Security is the fastest way to win or lose developer trust, because an open-source repo exposes every decision you made to anyone who reads it. A few practices are now expected:
+
+- **A SECURITY.md file** that explains how to report vulnerabilities privately, plus a commitment to respond.
+- **Least-privilege OAuth scopes.** If your tool connects to GitHub, request only the scopes it needs. Asking for organization admin rights is a common reason developers abandon a sign-up.
+- **Secret scanning and dependency alerts.** GitHub secret scanning and Dependabot catch leaked keys and vulnerable packages before your users do.
+- **Prompt-injection defenses.** For AI tools that read code, documents or web content, follow the OWASP Top 10 for LLM Applications and document how your tool handles untrusted input.
+- **Clear data handling.** State whether code or prompts sent to your managed cloud are stored, logged or passed to third-party model providers.
+
+Enterprise engineers will read this material before they champion your tool internally. Getting it right early is what lets bottom-up adoption survive the eventual security review.
+
+## Common Mistakes in Community-Led Growth
+
+Most CLG efforts stall for reasons the founders could have avoided:
+
+- **Launching the community before the product works.** Early users who hit broken installs rarely come back.
+- **Treating the community as an ad channel.** Promotional posts in a technical space erode trust quickly.
+- **Delegating support too early.** If founders disappear from the channels in the first months, response times slip and the community quietly dies.
+- **Ignoring pull requests.** Contributors who wait weeks for a review stop contributing.
+- **Changing the license unexpectedly.** Moving from a permissive license to a restrictive one after adoption is one of the fastest ways to lose developer goodwill.
+- **Optimizing for stars.** Star counts can be gamed and say little about usage. Weekly active users and returning contributors tell you far more.
+
 ## Key Takeaways
 
 - Developers reject traditional marketing and cold sales. They buy software based on peer recommendations, robust documentation, and transparency, not slide decks.

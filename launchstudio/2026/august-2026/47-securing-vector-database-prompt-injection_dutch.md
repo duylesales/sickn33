@@ -73,6 +73,51 @@ Alle AI-tools moeten standaard **Read-Only** zijn. Bepaalt een AI dat er een e-m
 
 Circa 80% van de met AI gebouwde prototypes bereikt nooit een veilige productiestatus omdat deze architectonische scheiding ontbreekt. Manifera bouwt deze enterprise-veilige architecturen sinds **2014**, met 160+ projecten voor onder meer Vodafone en cybersecurity-projecten in samenwerking met TNO (zoals de 'Dark Web Monitor'). Zoals Herre Roelevink, Oprichter & Managing Director van Manifera, stelt: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Bekijk Manifera's [maatwerk softwareontwikkeling praktijk](https://www.manifera.com/services/custom-software-development/).
 
+## Wat is data poisoning in een AI-database?
+
+Data poisoning is een aanval waarbij iemand gemanipuleerde content plaatst in de data die uw AI ophaalt of waarvan het leert, zodat het model later onjuiste, bevooroordeelde of door de aanvaller gestuurde antwoorden geeft. In een RAG-product is het doelwit meestal de vectordatabase: één enkel document dat naar een gedeelde kennisbank wordt geüpload, een gescrapete webpagina of een gesynchroniseerd wiki-artikel kan valse feiten of verborgen instructies bevatten die keer op keer worden opgehaald.
+
+Data poisoning en indirecte prompt injection gaan vaak samen. Het vergiftigde fragment is het transportmiddel, en de verborgen instructie daarin is de lading. Het verschil zit in de duur: een directe injectie duurt één gesprek, terwijl een vergiftigd record blijft werken totdat iemand het vindt en verwijdert.
+
+### Hoe verdedigt u de ingestiepijplijn?
+
+De beste verdediging tegen data poisoning is controleren wat uw AI-database binnenkomt, in plaats van te hopen dat het model het later negeert. Praktische maatregelen zijn onder meer:
+
+- **Behandel elke bron standaard als onbetrouwbaar.** Uploads van klanten, koppelingen met tools zoals Google Drive of Notion en webcrawls moeten allemaal dezelfde opschoningsstap doorlopen voordat ze worden omgezet in embeddings.
+- **Verwijder verborgen content tijdens het parsen.** Haal HTML-commentaar, onzichtbare tekst, tekens zonder breedte (zero-width characters) en elementen buiten beeld weg voordat de tekst in fragmenten wordt opgedeeld.
+- **Sla herkomstmetadata op** bij elke vector: bronsysteem, uploader, tijdstip van ingestie en een vertrouwensniveau. Daarmee kunt u bij het bevragen filteren op vertrouwen en alles uit een gecompromitteerde bron in één handeling verwijderen.
+- **Scheid tenants fysiek of via namespaces,** zodat de vergiftigde upload van de ene klant nooit voor een andere klant kan worden opgehaald.
+- **Plaats bronnen met grote impact in quarantaine.** Content die aan veel gebruikers wordt getoond, zoals een gedeeld helpcentrum, hoort te worden beoordeeld voordat die vindbaar wordt.
+- **Behoud de mogelijkheid om opnieuw te indexeren vanaf de bron.** Kunt u de index opnieuw opbouwen uit schone originelen, dan wordt herstel na data poisoning een routineklus in plaats van een forensisch onderzoek.
+
+## Uw verdediging koppelen aan de OWASP Top 10 voor LLM-applicaties
+
+De OWASP Top 10 voor Large Language Model-applicaties is de meest gebruikte checklist voor AI-beveiligingskwetsbaarheden, en enterprise security-teams gebruiken deze steeds vaker om hun beoordelingen te structureren. De tabel koppelt de risico's die het meest relevant zijn voor een RAG-product aan de verdedigingsmaatregelen uit dit artikel.
+
+| OWASP LLM-risico (lijst 2025) | Hoe het eruitziet in een RAG-product | Belangrijkste verdediging |
+|---|---|---|
+| LLM01 Prompt Injection | Tekst van een gebruiker of document overschrijft systeeminstructies | Rechten-scheiding, LLM-firewall, read-only tools |
+| LLM02 Sensitive Information Disclosure | Het model toont data die de gebruiker niet mag zien | Metadatafiltering op databaseniveau |
+| LLM04 Data and Model Poisoning | Gemanipuleerde documenten in de vectoropslag | Opschoning bij ingestie, herkomstgegevens, quarantaine |
+| LLM05 Improper Output Handling | Output wordt zonder validatie weergegeven of uitgevoerd | Output coderen, onbetrouwbare links en afbeeldingen blokkeren |
+| LLM06 Excessive Agency | Een agent heeft meer toolrechten dan nodig | Smalle scopes, goedkeuring via Human-in-the-Loop |
+| LLM08 Vector and Embedding Weaknesses | Ophalen over tenants heen, lekkende embeddings | Namespaces per tenant, queries met toegangscontrole |
+
+### Vergeet de verwerking van output niet
+
+De verwerking van output is de verdediging die teams het vaakst overslaan, omdat het risico achter het model lijkt te liggen in plaats van in de AI-database. Rendert uw chatinterface Markdown, dan kan een geïnjecteerde instructie het model een afbeeldingslink laten genereren waarvan de URL opgehaalde data bevat. De browser van de gebruiker lekt die data dan naar de server van de aanvaller, simpelweg door de afbeelding te laden. Beperk weergegeven afbeeldingen en links tot een allow-list van domeinen, codeer alle output die in HTML wordt ingevoegd, en stuur modeloutput nooit rechtstreeks door naar een shell, een SQL-query of een `eval`-aanroep.
+
+## Hoe test u uw AI-database op prompt injection?
+
+U test op prompt injection op dezelfde manier als op elke andere kwetsbaarheid: met een herhaalbare set aanvallen die vóór elke release wordt uitgevoerd. Een eenvoudig testprogramma ziet er zo uit:
+
+1. **Bouw een aanvalsbibliotheek** met directe injecties, jailbreaks via rollenspel en indirecte payloads verborgen in documenten, e-mails en webpagina's.
+2. **Vul een testtenant** met documenten die canary-strings bevatten, unieke markeringen die nooit in de antwoorden van een andere tenant mogen verschijnen.
+3. **Voer de bibliotheek automatisch uit** in uw CI-pijplijn tegen een stagingomgeving zodra prompts, modellen of retrievallogica veranderen.
+4. **Controleer op gelekte canaries en ongeautoriseerde toolaanroepen,** niet alleen op weigeringen in de chatoutput.
+5. **Log en beoordeel de beslissingen van de firewall** om nieuwe aanvalspatronen en onterechte blokkades te vinden.
+6. **Herhaal dit met een menselijk red team** vóór grote lanceringen en enterprise security reviews.
+
 ## Belangrijkste Inzichten
 
 - Prompt Injection is een fundamentele kwetsbaarheid waarbij kwaadwillenden via natuurlijke taal systeemprompts overschrijven en gevoelige data buitmaken.

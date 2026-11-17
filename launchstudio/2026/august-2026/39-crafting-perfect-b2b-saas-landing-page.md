@@ -54,6 +54,75 @@ Choose one primary CTA (e.g., **"Start 14-Day Free Trial"**). This button should
 
 A beautifully designed landing page that dumps the user into a broken signup flow, a form asking for eight fields before showing any value, or a checkout page with no security badges undoes all of the trust the page just built. The landing page's job is to earn the click; the onboarding flow's job is to honor the promise the page made within the first 60 seconds after signup.
 
+## What Is Time-to-Value in an AI SaaS Platform?
+
+Time-to-value is the time between a new user's first click on your call to action and the moment they experience the core benefit your landing page promised - their first useful AI output, their first synced invoice, their first generated report. For an AI SaaS platform, the target is under 60 seconds, because visitors arrive with the promise fresh in their mind and very little patience for setup.
+
+Most of that time is lost to a handful of predictable friction points:
+
+| Friction point | What the user experiences | Better approach |
+|---|---|---|
+| Long signup form | Eight fields before seeing anything | Email or Google/Microsoft sign-in only |
+| Email verification wall | Must leave the app to confirm first | Let them in, verify in the background |
+| Profile questionnaire | Questions about role, team size, goals | Ask later, or infer from usage |
+| Empty workspace | A blank screen with no guidance | Sample data or a ready-made template |
+| Blank prompt box | No idea what to type | Two or three suggested prompts |
+| Mandatory integration | Must connect a tool before any value | Let them try with sample data first |
+
+Every row on the left is a reason a user who believed your headline still leaves before the product proves it.
+
+## How to Get New Users to Value in Under 60 Seconds
+
+You get new users to value in under 60 seconds by removing every step that does not directly lead to the first useful result, and moving everything else to later. A practical sequence for an AI SaaS platform:
+
+1. **Define the "first win."** Write down the one result a new user should see in their first minute, such as "one invoice extracted and previewed."
+2. **Cut signup to the minimum.** Offer Google and Microsoft sign-in through OAuth, or email with a magic link. Ask only for what you need to create the account.
+3. **Drop the user into the task, not the dashboard.** The first screen after signup should be the action that produces the first win.
+4. **Provide sample input.** Offer a sample PDF, dataset or prompt, so users without their own data can still see the product work.
+5. **Show progress while the AI works.** Streaming output or a clear progress indicator makes a few seconds of processing feel fast.
+6. **Celebrate the result and suggest the next step.** After the first output, point to the next action, such as connecting their real data source.
+7. **Ask profile questions later.** Once the user has seen value, short questions about role and team feel reasonable instead of obstructive.
+8. **Measure time-to-first-win.** Track the time from signup to the first-win event for every new user, and review the slowest cases weekly.
+
+## AI SaaS Landing Page Checklist
+
+A high-converting AI SaaS landing page answers what it is, why it matters and how to get it within the first screen, and supports that answer with proof further down. Before you launch or redesign, check:
+
+- A headline that states what the product does, in plain words.
+- A sub-headline with the mechanism and a concrete outcome.
+- A real screenshot or short muted video of the product above the fold.
+- One primary CTA, in a reserved color, repeated in the navigation, hero and footer.
+- A social proof bar directly below the hero, with named testimonials or logos.
+- Three to five feature rows in a Z-pattern, each with a benefit-led subheading and a visual.
+- A short section on security and data handling.
+- Fast loading on mobile, with compressed images and lazy-loaded assets.
+- A signup flow that leads to the first win in under 60 seconds.
+
+## Trust Signals B2B Buyers Look For on AI SaaS Pages
+
+B2B buyers evaluating an AI SaaS platform look for clear answers on how their data is handled before they sign up, because their IT and legal teams will ask the same questions later. A short, plain-language trust section on the landing page answers them early:
+
+- **Data use for training:** state explicitly whether customer data is used to train models. Many buyers ask this first.
+- **Model providers:** name the providers you use, such as OpenAI or Anthropic, and whether you use their API under business terms.
+- **Data location:** say where data is stored and processed, which matters for EU buyers under the GDPR.
+- **Data processing agreement:** mention that a DPA under **GDPR Article 28** is available.
+- **Security basics:** encryption in transit and at rest, access controls and how to report a vulnerability.
+- **AI transparency:** if users interact with an AI assistant, make that clear, in line with the transparency obligations of the **EU AI Act**.
+- **Accessibility:** following **WCAG 2.1 AA** makes the page usable for more people and avoids issues in procurement checklists.
+
+Link to a dedicated security page for detail, but keep the summary visible on the landing page itself.
+
+## Common Landing Page and Onboarding Mistakes
+
+Most conversion problems in AI SaaS come from a small set of recurring mistakes:
+
+- **Leading with the technology.** "Powered by GPT" is not a value proposition. The outcome is.
+- **Several CTAs with equal weight.** A trial, a demo, a newsletter and a webinar compete for the same click.
+- **Claims without proof.** Percentages and time savings with no source or named customer are ignored.
+- **A fast page with a slow app.** Optimizing the landing page while the first in-app screen takes seconds to load moves the drop-off rather than fixing it.
+- **Forcing a sales call too early.** For self-serve plans, "Book a demo" as the only option sends away users who just want to try it.
+- **Never testing.** Without A/B tests on headline and CTA, or at least before-and-after comparisons, you cannot tell which changes help.
+
 ## Key Takeaways
 
 - The Hero Section must be brutally clear, not clever. State exactly what the software does and the ROI it provides within the first sentence, since most visitors never scroll past it.

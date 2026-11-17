@@ -52,6 +52,50 @@ This isn't a case for skipping SEO agencies. Tobias's keyword research and conte
 
 Given how often this exact gap surfaces, founders evaluating an SEO agency for a programmatic SEO push should ask a direct question upfront: "If your recommendations require changes to how our pages render or how our sitemap is generated, do you have engineers who can implement that, or will that fall back on us?" A good agency will answer honestly, and many reputable agencies now partner with or subcontract technical implementation rather than pretending it's outside scope. The founders who get burned aren't the ones who hired a bad agency - Tobias's agency did genuinely strong strategic work - they're the ones who never asked this question and assumed "SEO agency" implicitly included the engineering capacity to execute technical recommendations, when for most agencies it doesn't. Asking it before signing a retainer, rather than discovering the gap three weeks in, is the single highest-leverage question in this entire decision.
 
+## What Is Programmatic SEO?
+
+Programmatic SEO is the practice of generating a large number of search-targeted landing pages from a structured dataset and a shared template, so each page answers one specific long-tail query. A comparison site like ToolMatch AI, a directory of integrations, or a set of city-by-service pages are typical examples. The template sets the layout and the data fills in what is unique, which is why the technical quality of the template decides the fate of every page built on it.
+
+## LaunchStudio vs. an SEO Agency: Side-by-Side Comparison
+
+An SEO agency owns the strategy for programmatic SEO, while an engineering team like LaunchStudio owns the application that has to carry it. The table below shows where each one fits:
+
+| Task | SEO agency | LaunchStudio |
+|---|---|---|
+| Keyword research and query clustering | Core strength | Not the focus |
+| Content templates and copy guidelines | Core strength | Implements them in code |
+| Server-side rendering or static generation | Recommends | Builds and deploys |
+| Per-page titles, descriptions, and schema.org markup | Specifies | Generates from the dataset |
+| XML sitemaps and index files | Requests | Automates as pages are created |
+| Canonical tags and duplicate handling | Flags issues | Implements routing rules |
+| Core Web Vitals and crawl efficiency | Audits | Fixes templates and hosting |
+| Link building and outreach | Core strength | Not offered |
+
+The practical reading is that the two are complements, not substitutes. If your pages already render correctly for crawlers, an agency is the better first hire. If they do not, engineering has to come first.
+
+## How to Check Whether Your App Is Ready for Programmatic SEO
+
+You can check programmatic SEO readiness in about an hour with free tools, before paying anyone. Run these steps on three or four generated pages, not just the homepage:
+
+1. **View the raw HTML.** Use "view source" or `curl` on a page URL. If the main content is missing and you only see an empty root element, the page relies on client-side rendering.
+2. **Use the URL Inspection tool in Google Search Console.** Compare the rendered HTML Google sees with what you see in the browser.
+3. **Read the Page indexing report.** Large counts under "Discovered - currently not indexed" or "Crawled - currently not indexed" often point to rendering, quality, or crawl-budget problems.
+4. **Compare titles across pages.** If several generated pages share the same title or meta description, metadata is coming from a static template.
+5. **Open your sitemap.** Confirm it lists every generated page and updates when new ones appear. A single sitemap file is limited to 50,000 URLs, so large sites need a sitemap index.
+6. **Check canonicals on page variants.** Filtered or sorted versions of the same page should point to one canonical URL.
+7. **Test speed on a mobile profile.** PageSpeed Insights shows Core Web Vitals field data where Google has enough traffic to report it.
+
+If two or more of these checks fail, the problem is in the application, and an agency retainer will mostly produce recommendations you cannot yet act on.
+
+## Common Programmatic SEO Mistakes on AI-Built Apps
+
+The biggest programmatic SEO mistake is publishing thousands of pages that differ only in a keyword swap. Google's spam policies name "scaled content abuse" explicitly, so each page needs data or insight that makes it genuinely useful on its own. Other frequent mistakes:
+
+- **Launching all pages at once on a slow site.** Crawlers spend limited time on each visit, and slow templates mean fewer pages discovered.
+- **Letting AI fill gaps with guesses.** Missing values in the dataset should hide a section, not trigger invented text.
+- **No internal linking between pages.** Related comparisons should link to each other so crawlers and users can move through the set.
+- **Ignoring the indexing report after launch.** Indexation is a metric to watch weekly, not a one-time setup.
+
 ## Key Takeaways
 
 - Programmatic SEO for AI SaaS fails most often at the infrastructure layer - client-side-only rendering, missing sitemaps, and duplicate metadata - not the content strategy layer, which is where most SEO agencies focus.
