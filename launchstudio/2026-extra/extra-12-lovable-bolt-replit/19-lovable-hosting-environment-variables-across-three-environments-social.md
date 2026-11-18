@@ -1,21 +1,31 @@
-🚨 Jelmer Ottevanger's Inkoopportaal connects 19 wholesalers with about 300 retailers. Early in the build, an AI session hit a permissions error writing an admin report - and "fixed" it with the Supabase service role key, given a public prefix so it ran in the browser. 😳
+🗓️ SIX MONTHS OF A KEY IN THE BUNDLE
 
-That key - the one that can read every wholesaler's pricing - sat in a file anyone could download for six months. Here's how configuration leaks keys and breaks deploys: 🧠
+MARCH
+Jelmer Ottevanger is building Inkoopportaal with Lovable: a purchasing portal where 19 wholesalers publish price lists and around 300 retailers place orders. An AI session hits a Row Level Security error while writing an admin report. Its fix: use the Supabase service role key. Because the report runs in the browser, the key gets a public prefix. The report works. Nobody looks at it again.
 
-❌ A server-only secret with a public VITE_ prefix, compiled into every bundle
-❌ An email provider key that leaked the same way
-❌ Staging sharing production's database and email credentials
-❌ No list of required variables and no check that they're set
+APRIL TO AUGUST
+The key that can read every wholesaler's pricing is in every JavaScript bundle the site serves.
 
-✅ The service role key rotated immediately - before anything else
-✅ The admin report rewritten as a server-side function with proper authorisation
-✅ Three fully separate environments, an example file and a startup check for eleven required variables
-✅ Protected preview deployments and a build step that scans for secret patterns and fails the build
+SEPTEMBER
+Jelmer reads an article much like this one, opens his own site's source, and searches for the variable name.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we search your deployed bundle for secrets - it takes five minutes. 🔑
+THAT SAME EVENING (LaunchStudio, 1 business day, €1,700)
+✓ The service role key rotated at Supabase, before anything else
+✓ The admin report rewritten as a server-side function with proper authorisation, using the anon key and policies like the rest of the app
+✓ The whole deployed bundle searched for other secrets, finding an email provider key that got there the same way
+✓ Both credentials rotated, and access logs reviewed with Supabase support: no unexpected usage in the period
+✓ Three separate environment sets, since staging had been sharing production's database and email credentials
+✓ An example file committed, with a startup check for eleven required variables
+✓ Preview deployments given their own values, behind access protection
+✓ A pre-deploy check that scans the built output for known secret patterns, and fails the build
 
-His result: one business day and €1,700 later, both keys were rotated with no evidence of misuse - "luck rather than a result". Six weeks later, the build scan blocked a new AI session making exactly the same mistake. 🚀
+SIX WEEKS LATER
+A new AI session tried to reference a server-side key from browser code. Same mistake, same reason. The build scan blocked it.
 
-👉 Environment variables across three environments: https://launchstudio.eu/en/blog/lovable-hosting-environment-variables-across-three-environments
+No evidence the key was ever used, which Jelmer calls luck, not a result.
+
+"It worked, so I never looked at it again. The key that can read every wholesaler's pricing had been sitting in a file anyone could download for six months." - Jelmer Ottevanger
+
+https://launchstudio.eu/en/blog/lovable-hosting-environment-variables-across-three-environments
 
 #Secrets #DevOps #Supabase #Lovable #LaunchStudio #Manifera

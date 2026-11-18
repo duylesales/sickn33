@@ -133,7 +133,7 @@ Eén werkdag, die dezelfde avond begon: de service role-sleutel direct vervangen
 
 **Kosten & Doorlooptijd:** €1.700 (vervangen van inloggegevens, herschrijven van beheerrapport, bundelcontrole, scheiding van omgevingen, voorbeeldbestand en opstartvalidatie, previewbeveiliging, geautomatiseerde scan op geheimen in de build) - afgerond in 1 werkdag.
 
-## Veelgestelde vragen
+## FAQs
 
 ### Welke variabelen zijn veilig om aan de browser bloot te stellen?
 

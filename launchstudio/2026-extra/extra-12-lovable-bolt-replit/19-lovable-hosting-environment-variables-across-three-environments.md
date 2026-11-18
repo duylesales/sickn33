@@ -133,7 +133,7 @@ One business day, starting the same evening: the service role key rotated immedi
 
 **Cost & Timeline:** €1,700 (credential rotation, admin report rewrite, bundle audit, environment separation, example file and startup validation, preview protection, automated secret scanning in the build) - completed in 1 business day.
 
-## Frequently Asked Questions
+## FAQs
 
 ### Which variables are safe to expose to the browser?
 
