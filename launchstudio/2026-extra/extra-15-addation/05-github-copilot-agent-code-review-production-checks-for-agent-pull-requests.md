@@ -153,7 +153,7 @@ LaunchStudio restored organisation-level isolation, added Postgres Row Level Sec
 
 **Cost & Timeline:** €3,100 (Launch Ready package: production audit, access control fixes, repository guardrails and agent instructions) - completed in 11 business days.
 
-## Frequently Asked Questions
+## FAQs
 
 ### Can the Copilot coding agent merge its own pull requests?
 
