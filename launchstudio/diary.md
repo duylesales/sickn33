@@ -5,6 +5,21 @@
 ### Tháng 11
 #### Ngày 18
 
+- **Đăng tải bài viết song ngữ EN & NL (Bài 16 - Cụm Extra 14) lên website LaunchStudio kèm Geotagging & Metadata (`upload_to_wordpress.py`)**:
+  - **Bài viết EN**: [`launchstudio/2026-extra/extra-14-addation/16-supabase-data-processing-agreement-what-dutch-founders-need.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-14-addation/16-supabase-data-processing-agreement-what-dutch-founders-need.md)
+  - **Bài viết NL**: [`launchstudio/2026-extra/extra-14-addation/16-supabase-data-processing-agreement-what-dutch-founders-need-dutch.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-14-addation/16-supabase-data-processing-agreement-what-dutch-founders-need-dutch.md)
+  - **Tiêu đề EN**: *Supabase Data Processing Agreement: What Dutch Founders Need*
+  - **Tiêu đề NL**: *Verwerkersovereenkomst met Supabase: Wat Nederlandse Oprichters Nodig Hebben*
+  - **Slug EN / NL**: `supabase-data-processing-agreement-what-dutch-founders-need` / `supabase-data-processing-agreement-what-dutch-founders-need-2`
+  - **Thao tác kỹ thuật**:
+    - **Geotagging & Metadata cho ảnh**: Cấu hình tọa độ GPS trụ sở Amsterdam (`Latitude: 52.366841`, `Longitude: 4.887593` - Herengracht 420, 1017 BZ Amsterdam) cùng từ khóa bài viết trực tiếp vào file ảnh [`16-supabase-data-processing-agreement-what-dutch-founders-need_pic.png`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-14-addation/16-supabase-data-processing-agreement-what-dutch-founders-need_pic.png) trước khi tải lên (Attachment ID: `2110`).
+    - **Đăng tải bản EN (Post ID: 2111)**: Tự động gán ngôn ngữ `en`, danh mục (Categories: `34` - *Security*, `4` - *Technical*), trích xuất từ khóa vào WordPress Tags (`verwerkersovereenkomst supabase`, `supabase dpa`, `supabase gdpr`, `supabase data processing agreement`), định dạng khối case study với CSS `.article-case`, và cấu trúc 5 câu hỏi FAQs accordion semantic HTML5 `<details><summary>`.
+    - **Đồng bộ bản NL (Post ID: 2112)**: Chuẩn hóa tiêu đề `## Echt voorbeeld` để khớp định dạng case study `.article-case`, kế thừa media banner ID `2110`, gán danh mục (Categories: `45` - *Beveiliging*, `41` - *Technisch*), từ khóa tiếng Hà Lan, và xuất bản bài viết chính thức.
+    - **Polylang Translation Group**: Xác nhận liên kết đa ngôn ngữ Polylang 2 chiều với thẻ `<link rel="alternate" hreflang="nl/en">` kết nối giữa bài viết 2111 (EN) và 2112 (NL).
+  - **Trạng thái**: Đã xuất bản chính thức cả 2 ngôn ngữ:
+    - EN: [https://launchstudio.eu/en/supabase-data-processing-agreement-what-dutch-founders-need/](https://launchstudio.eu/en/supabase-data-processing-agreement-what-dutch-founders-need/) (Post ID: `2111`)
+    - NL: [https://launchstudio.eu/supabase-data-processing-agreement-what-dutch-founders-need-2/](https://launchstudio.eu/supabase-data-processing-agreement-what-dutch-founders-need-2/) (Post ID: `2112`)
+
 - **Đăng tải bài viết song ngữ EN & NL (Bài 12 - Cụm Extra 14) lên website LaunchStudio kèm Geotagging & Metadata (`upload_to_wordpress.py`)**:
   - **Bài viết EN**: [`launchstudio/2026-extra/extra-14-addation/12-mollie-integration-for-ai-built-apps-step-by-step.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-14-addation/12-mollie-integration-for-ai-built-apps-step-by-step.md)
   - **Bài viết NL**: [`launchstudio/2026-extra/extra-14-addation/12-mollie-integration-for-ai-built-apps-step-by-step-dutch.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-14-addation/12-mollie-integration-for-ai-built-apps-step-by-step-dutch.md)
