@@ -99,7 +99,7 @@ No. Alkmaar founders are part of a wider Noord-Holland client base LaunchStudio 
 Manifera's engineering team reviews client work, bringing 11+ years of experience and enterprise clients like Vodafone and TNO to bear on founder-scale projects.
 
 ### What does fixing an exposed API key issue typically cost?
-Most fixes of this scope fall within LaunchStudio's standard €800–€7,500 fixed-price range, depending on how many systems and credentials are involved.
+Most fixes of this scope fall within LaunchStudio's standard €800 - €7,500 fixed-price range, depending on how many systems and credentials are involved.
 
 <script type="application/ld+json">
 {
@@ -110,7 +110,7 @@ Most fixes of this scope fall within LaunchStudio's standard €800–€7,500 f
     { "@type": "Question", "name": "How can I check if my own Bolt-built app has exposed credentials?", "acceptedAnswer": { "@type": "Answer", "text": "A rough check is inspecting network requests in browser developer tools, but a proper audit checks systematically rather than by chance." } },
     { "@type": "Question", "name": "Does LaunchStudio only take on Alkmaar-based clients?", "acceptedAnswer": { "@type": "Answer", "text": "No. Alkmaar founders are part of a wider Noord-Holland client base, alongside founders across the rest of the Netherlands and Benelux." } },
     { "@type": "Question", "name": "Who reviews the security of my code - a freelancer or a real team?", "acceptedAnswer": { "@type": "Answer", "text": "Manifera's engineering team reviews client work, bringing 11+ years of experience and enterprise clients like Vodafone and TNO." } },
-    { "@type": "Question", "name": "What does fixing an exposed API key issue typically cost?", "acceptedAnswer": { "@type": "Answer", "text": "Most fixes of this scope fall within LaunchStudio's standard €800–€7,500 fixed-price range." } }
+    { "@type": "Question", "name": "What does fixing an exposed API key issue typically cost?", "acceptedAnswer": { "@type": "Answer", "text": "Most fixes of this scope fall within LaunchStudio's standard €800 - €7,500 fixed-price range." } }
   ]
 }
 </script>
