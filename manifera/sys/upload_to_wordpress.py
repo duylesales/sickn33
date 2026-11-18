@@ -726,6 +726,19 @@ def upload_post(article_path, image_path=None, media_id=None, post_id=None, site
         }, site_key=site)
         featured_media_id = media_res.get("id")
         print(f"[+] Media uploaded successfully! Attachment ID: {featured_media_id}")
+
+        # Enrich WordPress media attachment with keywords and geolocation in caption/description
+        if featured_media_id and (raw_keywords or geo_lat):
+            try:
+                geo_addr = DEFAULT_COMPANY_ADDRESS if geo_city == "Amsterdam" else f"{geo_city}, Netherlands"
+                call_mcp(endpoint, token, "wp_update_media", {
+                    "media_id": featured_media_id,
+                    "caption": f"{img_title} - {geo_city} ({geo_lat}, {geo_lng})",
+                    "description": f"Keywords: {raw_keywords} | Location: {geo_addr} ({geo_lat}, {geo_lng})"
+                }, site_key=site)
+                print(f"[+] Attached keywords & geo metadata to Media ID {featured_media_id}")
+            except Exception as e:
+                print(f"[!] Warning: Could not update media caption/description: {e}")
     elif featured_media_id:
         print(f"[*] Using existing featured media ID: {featured_media_id}")
 
