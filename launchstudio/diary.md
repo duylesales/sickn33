@@ -5,6 +5,21 @@
 ### Tháng 11
 #### Ngày 18
 
+- **Đăng tải bài viết song ngữ EN & NL (Bài 19 - Cụm Extra 12) lên website LaunchStudio kèm Geotagging & Metadata (`upload_to_wordpress.py`)**:
+  - **Bài viết EN**: [`launchstudio/2026-extra/extra-12-lovable-bolt-replit/19-lovable-hosting-environment-variables-across-three-environments.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-12-lovable-bolt-replit/19-lovable-hosting-environment-variables-across-three-environments.md)
+  - **Bài viết NL**: [`launchstudio/2026-extra/extra-12-lovable-bolt-replit/19-lovable-hosting-environment-variables-across-three-environments-dutch.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-12-lovable-bolt-replit/19-lovable-hosting-environment-variables-across-three-environments-dutch.md)
+  - **Tiêu đề EN**: *Lovable Hosting: Environment Variables Across Three Environments*
+  - **Tiêu đề NL**: *Lovable Hosting: Omgevingsvariabelen in Drie Omgevingen*
+  - **Slug EN / NL**: `lovable-hosting-environment-variables-across-three-environments` / `lovable-hosting-environment-variables-across-three-environments-2`
+  - **Thao tác kỹ thuật**:
+    - **Geotagging & Metadata cho ảnh**: Cấu hình tọa độ GPS trụ sở Amsterdam (`Latitude: 52.366841`, `Longitude: 4.887593` - Herengracht 420, 1017 BZ Amsterdam) cùng từ khóa bài viết trực tiếp vào file ảnh [`19-lovable-hosting-environment-variables-across-three-environments_pic.png`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-12-lovable-bolt-replit/19-lovable-hosting-environment-variables-across-three-environments_pic.png) trước khi tải lên (Attachment ID: `2117`).
+    - **Đăng tải bản EN (Post ID: 2118)**: Tự động gán ngôn ngữ `en`, danh mục (Categories: `34` - *Security*, `4` - *Technical*), trích xuất từ khóa vào WordPress Tags (`lovable hosting`, `environment variables`, `secrets management`, `staging configuration`, `build-time variables`), định dạng khối case study với CSS `.article-case`, và cấu trúc 5 câu hỏi FAQs accordion semantic HTML5 `<details><summary>`.
+    - **Đồng bộ bản NL (Post ID: 2119)**: Chuẩn hóa tiêu đề `## Echt voorbeeld` để khớp định dạng case study `.article-case`, kế thừa media banner ID `2117`, gán danh mục (Categories: `45` - *Beveiliging*, `41` - *Technisch*), từ khóa tiếng Hà Lan, và xuất bản bài viết chính thức.
+    - **Polylang Translation Group**: Xác nhận liên kết đa ngôn ngữ Polylang 2 chiều với thẻ `<link rel="alternate" hreflang="nl/en">` kết nối giữa bài viết 2118 (EN) và 2119 (NL).
+  - **Trạng thái**: Đã xuất bản chính thức cả 2 ngôn ngữ:
+    - EN: [https://launchstudio.eu/en/lovable-hosting-environment-variables-across-three-environments/](https://launchstudio.eu/en/lovable-hosting-environment-variables-across-three-environments/) (Post ID: `2118`)
+    - NL: [https://launchstudio.eu/lovable-hosting-environment-variables-across-three-environments-2/](https://launchstudio.eu/lovable-hosting-environment-variables-across-three-environments-2/) (Post ID: `2119`)
+
 - **Đăng tải bài viết song ngữ EN & NL (Bài 16 - Cụm Extra 14) lên website LaunchStudio kèm Geotagging & Metadata (`upload_to_wordpress.py`)**:
   - **Bài viết EN**: [`launchstudio/2026-extra/extra-14-addation/16-supabase-data-processing-agreement-what-dutch-founders-need.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-14-addation/16-supabase-data-processing-agreement-what-dutch-founders-need.md)
   - **Bài viết NL**: [`launchstudio/2026-extra/extra-14-addation/16-supabase-data-processing-agreement-what-dutch-founders-need-dutch.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-14-addation/16-supabase-data-processing-agreement-what-dutch-founders-need-dutch.md)
