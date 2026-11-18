@@ -615,9 +615,10 @@ def upload_post(article_path, image_path=None, media_id=None, post_id=None, site
             call_mcp(endpoint, token, "wp_add_post_terms", {
                 "post_id": final_id,
                 "taxonomy": "language",
-                "terms": [target_lang]
+                "terms": [target_lang],
+                "append": False
             }, site_key=site)
-            print(f"[+] Assigned Polylang language '{target_lang}' to post ID {final_id}")
+            print(f"[+] Assigned Polylang language '{target_lang}' (append=False) to post ID {final_id}")
         except Exception as e:
             print(f"[!] Warning: Could not assign language term: {e}")
 
