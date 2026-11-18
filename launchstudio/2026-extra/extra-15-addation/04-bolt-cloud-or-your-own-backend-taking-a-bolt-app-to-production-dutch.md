@@ -152,7 +152,7 @@ Het **Launch Ready**-pakket van LaunchStudio (€800 - €3.500) omvat een grond
 
 LaunchStudio wordt aangedreven door Manifera, een softwareontwikkelingsbedrijf met 11+ jaar ervaring, meer dan 160 afgeronde projecten en een hecht team van 120+ engineers. Oprichters ontmoeten ons aan Herengracht 420 in Amsterdam; het engineeringteam opereert vanuit het ontwikkelcentrum aan Pho Quang Street in Ho Chi Minh City, ondersteund door een hub aan Tras Street in Singapore. Wij zijn volledig onafhankelijk van zowel Bolt als Supabase; ons advies volgt uitsluitend uw bedrijfsbelang.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een AI-Native Oprichter in Actie: De Evenementen-Fotoapp Die een Eigen Database Nodig Had
 
@@ -169,7 +169,7 @@ LaunchStudio koppelde Rubens Bolt-frontend aan een nieuw Supabase-project in Fra
 
 **Kosten & Doorlooptijd:** €4.900 (Launch & Grow-pakket: Supabase-migratie, private bestandsopslag met RLS, bewaarbeleid-cronjob, betalingsbeveiliging en monitoring) - afgerond in 12 werkdagen.
 
-## Veelgestelde Vragen
+## FAQs
 
 ### Is Bolt Cloud veilig en stabiel genoeg voor productie?
 

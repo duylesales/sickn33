@@ -169,7 +169,7 @@ LaunchStudio connected the Bolt frontend to a new Supabase project in Frankfurt 
 
 **Cost & Timeline:** €4,900 (Launch & Grow package: Supabase migration, private storage with RLS, retention job, payment fixes and monitoring) - completed in 12 business days.
 
-## Frequently Asked Questions
+## FAQs
 
 ### Is Bolt Cloud good enough for production?
 
