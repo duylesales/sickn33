@@ -18,6 +18,18 @@
 - **Core Technical Focus (Do NOT Base on Anecdotal Real Examples):** Imagery MUST directly represent the core technical, architectural, operational, or business subject matter of the article itself (e.g., live database schema migration pipelines, edge computing network boundaries, DNS routing infrastructure, session token authentication, transactional email delivery telemetry), rather than being tethered to the anecdotal small business or local founder case study in "Real Example" (e.g., padel club, cafe, bakery, pet clinic). The visual narrative must reflect the true software engineering and enterprise infrastructure domain of the article.
 - **Never Use Pollinations:** Under no circumstances should any agent use the `pollinations.ai` API for image generation. It produces low-quality, distorted outputs for professional use cases. If the native image generation tool or configured skill fails due to quota limits, inform the user and request a different API key (e.g., OpenAI or Midjourney) or ask them to wait.
 
+## Default Company Geolocation & Image Metadata Guidelines (Manifera & LaunchStudio)
+- **Default Company Location (Applies to both Manifera & LaunchStudio):**
+  - **Latitude:** `52.366841`
+  - **Longitude:** `4.887593`
+  - **Address:** Herengracht 420, 1017 BZ Amsterdam, Netherlands
+- **Image Geotagging & Metadata Protocol (Mandatory for all images):**
+  - Every featured image or article illustration for both Manifera and LaunchStudio MUST be geotagged with GPS metadata before upload.
+  - For general articles or when no specific local city is targeted, ALWAYS use the company headquarters coordinates: Latitude `52.366841`, Longitude `4.887593`.
+  - For local campaign articles (e.g., `extra-5-local` targeting specific Dutch cities), use the targeted city coordinates, or fallback to the company HQ coordinates (`52.366841`, `4.887593`).
+  - Embed the article's `Keywords` into image EXIF (`XPKeywords`) and PNG text chunks (`Keywords`).
+  - Embed the article's `Title` and `Description` into image EXIF (`XPTitle`, `ImageDescription`) and PNG metadata.
+
 ## WordPress Publishing & Easy MCP AI Guidelines (Manifera & LaunchStudio)
 To avoid Web Application Firewall (WAF/Wordfence/ModSecurity) `403 Forbidden` errors and optimize execution speed when publishing or drafting posts:
 - **Strict Ban on `<script>` in Post Content:** NEVER send `<script type="application/ld+json">` or inline `<script>` tags in the WordPress REST API post payload. The server firewall treats them as XSS injection vectors and blocks requests with 403 Forbidden.

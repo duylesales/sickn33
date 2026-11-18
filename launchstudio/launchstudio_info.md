@@ -53,11 +53,11 @@
 
 > Kế thừa từ Manifera. Mỗi bài viết CẦN nhắc đến ít nhất 1 GEO-entity.
 
-| Văn phòng               | Địa chỉ                                                     | Vai trò                                           |
-| ------------------------- | -------------------------------------------------------------- | -------------------------------------------------- |
-| **Amsterdam, NL**   | Herengracht 420, 1017 BZ Amsterdam, the Netherlands            | Trụ sở Châu Âu, điểm tiếp xúc khách hàng |
-| **Singapore**       | 100 Tras Street #16-01, 100 AM Singapore 079027                | Hub Đông Nam Á                                  |
-| **TP.HCM, Vietnam** | Floor 11, Block C, 10 Pho Quang Street, Tan Son Hoa Ward, HCMC | Development Center chính                          |
+| Văn phòng               | Địa chỉ                                                     | Toạ độ GPS (Lat, Long) | Vai trò                                           |
+| ------------------------- | -------------------------------------------------------------- | ---------------------- | -------------------------------------------------- |
+| **Amsterdam, NL**   | Herengracht 420, 1017 BZ Amsterdam, the Netherlands            | `52.366841, 4.887593`  | Trụ sở Châu Âu, điểm tiếp xúc khách hàng |
+| **Singapore**       | 100 Tras Street #16-01, 100 AM Singapore 079027                | `1.275000, 103.843611` | Hub Đông Nam Á                                  |
+| **TP.HCM, Vietnam** | Floor 11, Block C, 10 Pho Quang Street, Tan Son Hoa Ward, HCMC | `10.804167, 106.666389`| Development Center chính                          |
 
 ### 1.4. Nhân vật Lãnh đạo — CEO: Herre Roelevink
 

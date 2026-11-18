@@ -26,6 +26,151 @@ SITE_ENDPOINTS = {
     "launchstudio": "https://launchstudio.eu/wp-json/easy-mcp-ai/v1/mcp"
 }
 
+# Default Company Geolocation (Shared by Manifera & LaunchStudio HQ)
+DEFAULT_COMPANY_LATITUDE = 52.366841
+DEFAULT_COMPANY_LONGITUDE = 4.887593
+DEFAULT_COMPANY_CITY = "Amsterdam"
+DEFAULT_COMPANY_ADDRESS = "Herengracht 420, 1017 BZ Amsterdam, Netherlands"
+
+DUTCH_CITIES_COORDS = {
+    "alkmaar": (52.6324, 4.7534),
+    "amsterdam": (52.366841, 4.887593),
+    "haarlem": (52.3874, 4.6462),
+    "zaanstad": (52.4420, 4.8292),
+    "hilversum": (52.2292, 5.1669),
+    "rotterdam": (51.9244, 4.4777),
+    "den haag": (52.0705, 4.3007),
+    "the hague": (52.0705, 4.3007),
+    "leiden": (52.1601, 4.4970),
+    "delft": (52.0116, 4.3571),
+    "dordrecht": (51.8133, 4.6901),
+    "utrecht": (52.0907, 5.1214),
+    "amersfoort": (52.1561, 5.3878),
+    "nieuwegein": (52.0292, 5.0805),
+    "veenendaal": (52.0256, 5.5556),
+    "zeist": (52.0917, 5.2333),
+    "nijmegen": (51.8426, 5.8596),
+    "arnhem": (51.9851, 5.8987),
+    "apeldoorn": (52.2112, 5.9699),
+    "ede": (52.0442, 5.6667),
+    "doetinchem": (51.9650, 6.2883),
+    "eindhoven": (51.4416, 5.4697),
+    "tilburg": (51.5555, 5.0913),
+    "breda": (51.5719, 4.7683),
+    "den bosch": (51.6978, 5.3037),
+    "'s-hertogenbosch": (51.6978, 5.3037),
+    "helmond": (51.4817, 5.6611),
+    "maastricht": (50.8514, 5.6910),
+    "venlo": (51.3700, 6.1724),
+    "sittard": (50.9983, 5.8697),
+    "sittard-geleen": (50.9983, 5.8697),
+    "heerlen": (50.8882, 5.9795),
+    "roermond": (51.1942, 5.9875),
+    "enschede": (52.2215, 6.8937),
+    "zwolle": (52.5168, 6.0830),
+    "deventer": (52.2550, 6.1625),
+    "almelo": (52.3567, 6.6625),
+    "hengelo": (52.2658, 6.7931),
+    "almere": (52.3508, 5.2647),
+    "lelystad": (52.5185, 5.4714),
+    "dronten": (52.5250, 5.7194),
+    "zeewolde": (52.3306, 5.5417),
+    "emmeloord": (52.7108, 5.7486),
+    "groningen": (53.2194, 6.5665),
+    "veendam": (53.1067, 6.8744),
+    "winschoten": (53.1433, 7.0347),
+    "delfzijl": (53.3347, 6.9242),
+    "hoogezand": (53.1611, 6.7583),
+    "leeuwarden": (53.2012, 5.7999),
+    "sneek": (53.0333, 5.6600),
+    "drachten": (53.1058, 6.0983),
+    "heerenveen": (52.9569, 5.9256),
+    "harlingen": (53.1742, 5.4267),
+    "assen": (52.9967, 6.5625),
+    "emmen": (52.7792, 6.9069),
+    "hoogeveen": (52.7283, 6.4764),
+    "meppel": (52.6958, 6.1944),
+    "coevorden": (52.6617, 6.7417),
+    "middelburg": (51.4988, 3.6103),
+    "vlissingen": (51.4425, 3.5736),
+    "goes": (51.5042, 3.8889),
+    "terneuzen": (51.3303, 3.8272),
+    "zierikzee": (51.6497, 3.9167)
+}
+
+def deg_to_dms(deg):
+    d = int(deg)
+    m = int((deg - d) * 60)
+    s = round((deg - d - m/60) * 3600, 4)
+    return (d, m, s)
+
+def geotag_image_file(image_path, title, keywords_str, target_city=None):
+    """
+    Embeds GPS coordinates, Keywords, Title, and Description into EXIF & PNG metadata
+    using Pillow. Defaults to Amsterdam HQ (52.366841, 4.887593) unless a specific
+    city is detected or passed.
+    """
+    if not image_path or not os.path.isfile(image_path):
+        return DEFAULT_COMPANY_LATITUDE, DEFAULT_COMPANY_LONGITUDE, DEFAULT_COMPANY_CITY
+
+    try:
+        from PIL import Image, ExifTags
+        from PIL.PngImagePlugin import PngInfo
+    except ImportError:
+        print("[!] Pillow (PIL) not available, skipping local image geotagging.")
+        return DEFAULT_COMPANY_LATITUDE, DEFAULT_COMPANY_LONGITUDE, DEFAULT_COMPANY_CITY
+
+    lat = DEFAULT_COMPANY_LATITUDE
+    lng = DEFAULT_COMPANY_LONGITUDE
+    city = DEFAULT_COMPANY_CITY
+
+    search_text = f"{target_city or ''} {title} {keywords_str} {os.path.basename(image_path)}".lower()
+    for c_name, (c_lat, c_lng) in DUTCH_CITIES_COORDS.items():
+        if re.search(r"\b" + re.escape(c_name) + r"\b", search_text):
+            lat = c_lat
+            lng = c_lng
+            city = c_name.title()
+            break
+
+    try:
+        img = Image.open(image_path)
+        ext = os.path.splitext(image_path)[1].lower()
+        lat_dms = deg_to_dms(lat)
+        lng_dms = deg_to_dms(lng)
+
+        exif = img.getexif()
+        exif[0x010E] = f"{title} - {city}, Netherlands"
+        if keywords_str:
+            exif[0x9c9e] = keywords_str.replace(", ", "; ").encode("utf-16le")
+        exif[0x9c9b] = title.encode("utf-16le")
+
+        gps_ifd = exif.get_ifd(ExifTags.IFD.GPSInfo)
+        gps_ifd[1] = "N" if lat >= 0 else "S"
+        gps_ifd[2] = lat_dms
+        gps_ifd[3] = "E" if lng >= 0 else "W"
+        gps_ifd[4] = lng_dms
+
+        if ext == ".png":
+            png_info = PngInfo()
+            png_info.add_text("Title", title)
+            png_info.add_text("Description", f"{title} - {city}, Netherlands")
+            if keywords_str:
+                png_info.add_text("Keywords", keywords_str)
+            png_info.add_text("Location", f"{city}, Netherlands")
+            png_info.add_text("GPSLatitude", f"{lat} N")
+            png_info.add_text("GPSLongitude", f"{lng} E")
+            png_info.add_text("Author", "LaunchStudio / Manifera")
+            png_info.add_text("Copyright", "LaunchStudio / Manifera")
+            img.save(image_path, format="PNG", exif=exif, pnginfo=png_info)
+        elif ext in [".jpg", ".jpeg"]:
+            img.save(image_path, format="JPEG", exif=exif, quality=95)
+
+        print(f"[+] Successfully geotagged image {os.path.basename(image_path)} -> {city} ({lat}, {lng})")
+        return lat, lng, city
+    except Exception as e:
+        print(f"[!] Warning: Could not geotag image: {e}")
+        return lat, lng, city
+
 def get_auth_token(site_key="manifera"):
     endpoint = SITE_ENDPOINTS.get(site_key, site_key)
     if not os.path.exists(TOKENS_FILE):
@@ -544,7 +689,8 @@ def upload_post(article_path, image_path=None, media_id=None, post_id=None, site
     meta, content_md = parse_markdown_article(md_text)
     title = meta.get("title") or meta.get("Title") or meta.get("Titel") or os.path.basename(article_path).replace(".md", "")
     slug = meta.get("slug") or meta.get("Slug") or os.path.basename(article_path).replace("-dutch.md", "").replace(".md", "").split("-", 1)[-1]
-    focus_kw = (meta.get("keywords") or meta.get("Keywords") or meta.get("Trefwoorden") or "").split(",")[0].strip()
+    raw_keywords = meta.get("keywords") or meta.get("Keywords") or meta.get("Trefwoorden") or ""
+    focus_kw = raw_keywords.split(",")[0].strip() if raw_keywords else ""
     metadesc = meta.get("description") or meta.get("Description") or meta.get("Beschrijving") or ""
 
     print(f"[*] Title: {title}")
@@ -553,7 +699,14 @@ def upload_post(article_path, image_path=None, media_id=None, post_id=None, site
 
     clean_html = markdown_to_clean_html(content_md, site=site)
 
-    # Handle image upload if provided
+    # 1. Geotag local image file with GPS & Keywords metadata before upload
+    geo_lat, geo_lng, geo_city = DEFAULT_COMPANY_LATITUDE, DEFAULT_COMPANY_LONGITUDE, DEFAULT_COMPANY_CITY
+    if image_path and os.path.isfile(image_path):
+        res_lat, res_lng, res_city = geotag_image_file(image_path, title, raw_keywords)
+        if res_lat is not None:
+            geo_lat, geo_lng, geo_city = res_lat, res_lng, res_city
+
+    # 2. Handle image upload if provided
     featured_media_id = media_id
     if image_path and not featured_media_id:
         img_title = title
@@ -595,8 +748,14 @@ def upload_post(article_path, image_path=None, media_id=None, post_id=None, site
     if categories:
         payload["categories"] = [int(c.strip()) for c in str(categories).split(",") if c.strip().isdigit()]
 
+    # Assign tags (explicit IDs or auto-extracted from keywords)
     if tags:
         payload["tags"] = [int(t.strip()) for t in str(tags).split(",") if t.strip().isdigit()]
+    elif raw_keywords:
+        kw_tags = [k.strip() for k in raw_keywords.split(",") if k.strip()]
+        if kw_tags:
+            payload["tag_names"] = kw_tags
+            print(f"[*] Auto-assigned tag names from keywords: {kw_tags}")
 
     if post_id:
         print(f"[*] Updating existing post ID: {post_id} (status: {status})...")
@@ -607,6 +766,23 @@ def upload_post(article_path, image_path=None, media_id=None, post_id=None, site
         print(f"[*] Creating post (status: {status})...")
         post_res = call_mcp(endpoint, token, "wp_create_post", payload, site_key=site)
         final_id = post_res.get("id")
+
+    # Save geolocation metadata to post
+    if final_id and geo_lat and geo_lng:
+        try:
+            geo_address = DEFAULT_COMPANY_ADDRESS if geo_city == "Amsterdam" else f"{geo_city}, Netherlands"
+            call_mcp(endpoint, token, "wp_update_post_meta", {
+                "post_id": final_id,
+                "meta": {
+                    "geo_latitude": str(geo_lat),
+                    "geo_longitude": str(geo_lng),
+                    "geo_city": geo_city,
+                    "geo_address": geo_address
+                }
+            }, site_key=site)
+            print(f"[+] Assigned Geo Coordinates ({geo_lat}, {geo_lng}) - {geo_city} to post ID {final_id}")
+        except Exception as e:
+            print(f"[!] Warning: Could not save geo meta: {e}")
 
     # Handle Polylang language assignment on LaunchStudio
     if site == "launchstudio" and final_id:
