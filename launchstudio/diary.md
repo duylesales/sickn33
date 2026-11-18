@@ -5,6 +5,21 @@
 ### Tháng 11
 #### Ngày 18
 
+- **Đăng tải bài viết song ngữ EN & NL (Bài 04 - Cụm Extra 15) lên website LaunchStudio kèm Geotagging & Metadata (`upload_to_wordpress.py`)**:
+  - **Bài viết EN**: [`launchstudio/2026-extra/extra-15-addation/04-bolt-cloud-or-your-own-backend-taking-a-bolt-app-to-production.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-15-addation/04-bolt-cloud-or-your-own-backend-taking-a-bolt-app-to-production.md)
+  - **Bài viết NL**: [`launchstudio/2026-extra/extra-15-addation/04-bolt-cloud-or-your-own-backend-taking-a-bolt-app-to-production-dutch.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-15-addation/04-bolt-cloud-or-your-own-backend-taking-a-bolt-app-to-production-dutch.md)
+  - **Tiêu đề EN**: *Bolt Cloud or Your Own Backend: Taking a Bolt App to Production*
+  - **Tiêu đề NL**: *Bolt Cloud of een Eigen Backend: Een Bolt-App naar Productie Brengen*
+  - **Slug EN / NL**: `bolt-cloud-or-your-own-backend-taking-a-bolt-app-to-production` / `bolt-cloud-or-your-own-backend-taking-a-bolt-app-to-production-2`
+  - **Thao tác kỹ thuật**:
+    - **Geotagging & Metadata cho ảnh**: Cấu hình tọa độ GPS trụ sở Amsterdam (`Latitude: 52.366841`, `Longitude: 4.887593` - Herengracht 420, 1017 BZ Amsterdam) cùng từ khóa bài viết trực tiếp vào file ảnh [`04-bolt-cloud-or-your-own-backend-taking-a-bolt-app-to-production_pic.png`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-15-addation/04-bolt-cloud-or-your-own-backend-taking-a-bolt-app-to-production_pic.png) trước khi tải lên (Attachment ID: `2124`), đồng thời nhúng thông tin vị trí và từ khóa vào Caption và Description trên WordPress Media Library.
+    - **Đăng tải bản EN (Post ID: 2125)**: Tự động gán ngôn ngữ `en`, danh mục (Categories: `26` - *Strategy*, `4` - *Technical*), trích xuất từ khóa vào WordPress Tags (`bolt cloud`, `bolt app to production`, `bolt database vs supabase`, `bolt hosting`), định dạng khối case study với CSS `.article-case`, và cấu trúc 5 câu hỏi FAQs accordion semantic HTML5 `<details><summary>`.
+    - **Đồng bộ bản NL (Post ID: 2126)**: Chuẩn hóa tiêu đề `## Echt voorbeeld` để khớp định dạng case study `.article-case`, kế thừa media banner ID `2124`, gán danh mục (Categories: `43` - *Strategie*, `41` - *Technisch*), từ khóa tiếng Hà Lan, và xuất bản bài viết chính thức.
+    - **Polylang Translation Group**: Xác nhận liên kết đa ngôn ngữ Polylang 2 chiều với thẻ `<link rel="alternate" hreflang="nl/en">` kết nối giữa bài viết 2125 (EN) và 2126 (NL).
+  - **Trạng thái**: Đã xuất bản chính thức cả 2 ngôn ngữ:
+    - EN: [https://launchstudio.eu/en/bolt-cloud-or-your-own-backend-taking-a-bolt-app-to-production/](https://launchstudio.eu/en/bolt-cloud-or-your-own-backend-taking-a-bolt-app-to-production/) (Post ID: `2125`)
+    - NL: [https://launchstudio.eu/bolt-cloud-or-your-own-backend-taking-a-bolt-app-to-production-2/](https://launchstudio.eu/bolt-cloud-or-your-own-backend-taking-a-bolt-app-to-production-2/) (Post ID: `2126`)
+
 - **Đăng tải bài viết song ngữ EN & NL (Bài 19 - Cụm Extra 12) lên website LaunchStudio kèm Geotagging & Metadata (`upload_to_wordpress.py`)**:
   - **Bài viết EN**: [`launchstudio/2026-extra/extra-12-lovable-bolt-replit/19-lovable-hosting-environment-variables-across-three-environments.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-12-lovable-bolt-replit/19-lovable-hosting-environment-variables-across-three-environments.md)
   - **Bài viết NL**: [`launchstudio/2026-extra/extra-12-lovable-bolt-replit/19-lovable-hosting-environment-variables-across-three-environments-dutch.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-12-lovable-bolt-replit/19-lovable-hosting-environment-variables-across-three-environments-dutch.md)
