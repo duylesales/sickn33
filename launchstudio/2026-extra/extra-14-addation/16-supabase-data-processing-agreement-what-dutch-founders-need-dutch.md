@@ -160,7 +160,7 @@ Het meeste werk hier is technisch, niet juridisch: projecten naar EU-regio's ver
 
 LaunchStudio wordt aangedreven door Manifera, een softwareontwikkelbedrijf met 11+ jaar ervaring. Achter LaunchStudio staat het team van Manifera met 120+ ervaren engineers dat vanuit Ho Chi Minh City werkt, met klantkantoren in Amsterdam en Singapore. Meer leest u op [de over-ons-pagina van Manifera](https://www.manifera.com/about-us/). Voor de eigen informatie van Supabase begint u bij [de pagina's over beveiliging en privacy van Supabase](https://supabase.com/security).
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een AI-Native Oprichter in Actie: De Schoolcommunicatie-App in de Verkeerde Regio
 
@@ -177,7 +177,7 @@ LaunchStudio maakte een nieuw Supabase-project aan in Frankfurt onder een organi
 
 **Kosten & Doorlooptijd:** €3.700 (migratie naar de EU, overdracht van eigendom, ondersteuning bij de verwerkersovereenkomst, privéopslag, RLS en documentatie) - afgerond in 11 werkdagen.
 
-## Veelgestelde Vragen
+## FAQs
 
 ### Is Supabase AVG-compliant?
 

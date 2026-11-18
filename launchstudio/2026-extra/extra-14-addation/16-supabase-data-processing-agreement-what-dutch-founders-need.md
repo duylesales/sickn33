@@ -177,7 +177,7 @@ LaunchStudio created a new Supabase project in Frankfurt under a company-owned o
 
 **Cost & Timeline:** €3,700 (EU migration, ownership transfer, DPA support, private storage, RLS and documentation) - completed in 11 business days.
 
-## Frequently Asked Questions
+## FAQs
 
 ### Is Supabase GDPR-compliant?
 
