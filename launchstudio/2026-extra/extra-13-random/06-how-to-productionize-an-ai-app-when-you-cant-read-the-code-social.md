@@ -1,21 +1,30 @@
-🚨 Anouk Smit, a primary-school teacher in Haarlem, built Oppasklok in Bolt to coordinate babysitters between five families. It grew to 60 families - each profile with children's names, ages, allergies and home address. Before opening it to a parents' association of several hundred members, she ran a simple test herself: the two-account test. 😳
+🧪 The two-account test. No code reading required.
 
-It failed immediately. By changing a number in the URL, any logged-in parent could open any family's profile. "View source" also turned up a mapping API key. Here's how to productionize an AI app when you can't read the code: 🧠
+1. Create two accounts in your app.
+2. Log in as account A and open one of your own records.
+3. Copy the URL.
+4. Log in as account B and paste it.
+5. If B can see A's data, you have a problem.
 
-❌ Family data separated only by the interface, not the database
-❌ An API key visible in the page source
-❌ No tested backups, no alerts
-❌ A founder who couldn't judge the fix - until she could run the test herself
+Anouk Smit, a primary-school teacher in Haarlem, ran this test herself. It failed immediately. 👶
 
-✅ Database-level access rules: each family's data visible only to that family and invited babysitters
-✅ The mapping key moved to a server-side function with usage limits
-✅ EU-region backups with a tested restore, plus uptime alerts on Anouk's phone
-✅ The two-account test re-run together on a call, so she could see it fail safely
+She built Oppasklok in Bolt to solve a problem in her own friend group: sharing babysitters between five families. Word of mouth grew it to about 60 families, each with a profile listing children's names, ages, allergies and home addresses. Before opening it to a local parents' association of several hundred members, she read about AI app security and tried the test.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we explain every finding in plain words - and show you the evidence. ⚙️
+By changing a number in the URL, any logged-in parent could open any family's profile, children's allergies and address included. A second test, "view source," turned up a mapping API key in the page.
 
-Her result: €1,450, five business days. Oppasklok opened to the parents' association two weeks later and grew to 240 families with no data-access incidents. Anouk still runs the two-account test after every big change. 🚀
+Anouk didn't know what either finding meant technically. She knew it wasn't something to launch with.
 
-👉 How to productionize an AI app when you can't read the code: https://launchstudio.eu/en/blog/how-to-productionize-an-ai-app-when-you-cant-read-the-code
+What LaunchStudio did (5 business days, €1,450):
+✓ Database-level access rules: each family's data visible only to that family and the babysitters they explicitly invite
+✓ The mapping key moved into a server-side function, with usage limits
+✓ Backups in an EU region, with a tested restore
+✓ Simple uptime alerts to Anouk's phone
+✓ And then, on a call: the two-account test again, so she could watch it fail safely
+
+Oppasklok opened to the parents' association two weeks later, and grew to 240 families by the end of the school year, with no data-access incidents. Anouk still runs the test herself after every major change.
+
+"I couldn't read a line of the code, but I could run the test. Being able to see the fix myself mattered more than any explanation." - Anouk Smit
+
+https://launchstudio.eu/en/blog/how-to-productionize-an-ai-app-when-you-cant-read-the-code
 
 #Bolt #NoCode #AppSecurity #Startups #LaunchStudio #Manifera

@@ -1,21 +1,35 @@
-🚨 Noor El Amrani built Marktkraam with Lovable and Supabase: a PWA that about 180 market traders use on their phones to record sales, track stock and see daily takings. A bug calculated VAT wrongly on some items. Noor fixed it and deployed within the hour. Five days later, traders still reported wrong totals. 😳
+🧅 Three layers of cache between a fix and the people who needed it
 
-Some traders ran the new version, others the old one - and the old one kept writing incorrect VAT into the database. Here's why users still see the old version after a deploy: 🧠
+Noor El Amrani built Marktkraam with Lovable and Supabase: a PWA market traders use on their phones to record sales, track stock and see daily takings. About 180 traders across several weekly markets, most with it installed on their home screen.
 
-❌ A service worker caching index.html cache-first and never checking for updates
-❌ A Cloudflare "cache everything" rule caching HTML for four hours
-❌ The same one-week cache header on every file
-❌ VAT calculated on the client, so outdated apps wrote wrong totals
+A bug calculated VAT wrongly on some items. Noor fixed it with a prompt, deployed within the hour and announced the fix. Five days later, traders were still reporting wrong totals.
 
-✅ Workbox with update checks on launch and a "New version available" reload button
-✅ HTML revalidated on every request, hashed assets cached for a year, HTML excluded in Cloudflare
-✅ A version check when the app regains focus, and the version shown in settings
-✅ VAT calculated on the server, with affected records recalculated
+Peel back the layers:
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we make sure your fixes actually reach your users. 🛠️
+LAYER 1: The service worker
+Generated in an earlier prompt, it cached index.html cache-first and never checked for updates. Installed apps kept running the old code.
 
-The result: €1,800, 5 business days. The next release reached over 95% of active traders within a day, without anyone clearing a cache. 🚀
+LAYER 2: Cloudflare
+A "cache everything" rule cached HTML for four hours.
 
-👉 Deployed a fix nobody can see? Here's how caching works: https://launchstudio.eu/en/blog/why-do-users-still-see-the-old-version-after-a-deploy
+LAYER 3: The server
+The same one-week cache header for every file.
+
+AND IN THE CENTRE
+Some traders ran the new version, some the old one. Shared reports showed inconsistent VAT, and the old version kept writing wrong values to the database.
+
+The fix, layer by layer (LaunchStudio, 5 business days, €1,800):
+✓ A Workbox setup that checks for updates on launch and shows "New version available" with a reload button
+✓ HTML revalidated on every request, hashed assets cached for a year
+✓ The Cloudflare rule now excludes HTML
+✓ A version check whenever the app regains focus
+✓ VAT calculated on the server, so even an outdated client can't write wrong totals, and affected records recalculated
+✓ The current version number shown in settings
+
+The next release reached over 95% of active traders within a day, without anyone clearing a cache. Shared reports have been consistent since.
+
+"I kept telling traders the fix was live. On their phones, it wasn't. Now I can see exactly which version everyone runs." - Noor El Amrani
+
+https://launchstudio.eu/en/blog/why-do-users-still-see-the-old-version-after-a-deploy
 
 #PWA #Caching #ServiceWorker #Cloudflare #AIFounder #LaunchStudio #Manifera

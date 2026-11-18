@@ -1,21 +1,36 @@
-🚨 Rik Smeets built Kapperplanner with Lovable and Supabase: online booking for hair salons. To speed things up, a friend put Cloudflare in front of everything with a "Cache Everything" rule and Flexible SSL. Within days, one salon owner saw another salon's appointments - with clients' names and phone numbers. 😳
+⚙️ Two Cloudflare settings that made an app leak
 
-Staff also hit login loops, Mollie deposit webhooks were blocked by bot protection, and bots made fake bookings. Here's how to put Cloudflare in front of your AI-built app without breaking it: 🧠
+Cache rule: Cache Everything
+SSL mode: Flexible
 
-❌ Flexible SSL causing login loops
-❌ A cache rule serving one salon's dashboard to another
-❌ Bot protection challenging Mollie webhooks
-❌ Fake bookings from bots on public booking pages
+Rik Smeets built Kapperplanner with Lovable and Supabase: online booking for hair salons, with a public booking page per salon and a dashboard for staff. To speed up the public pages, a friend put Cloudflare in front of everything, with those two settings.
 
-✅ SSL set to Full (strict)
-✅ Caching limited to static assets, app responses set to private, no-store, caches purged
-✅ Webhook paths excluded from challenges and protected by signature verification
-✅ Turnstile on the booking form, rate limits on login and booking, and an incident assessment
+Within days:
+• Staff members got stuck in a login loop on the dashboard
+• One salon owner briefly saw another salon's appointments, with clients' names and phone numbers
+• Mollie deposit webhooks failed, because bot protection challenged them
+• Bots made fake bookings on several public booking pages
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we make Cloudflare do both jobs it should: faster and safer. 🛠️
+The corrected configuration (LaunchStudio, 5 business days, €1,900):
 
-His result: €1,900, 5 business days. Login loops and cross-salon exposure stopped immediately, deposits processed reliably again and bot bookings fell to nearly zero. 🚀
+SSL mode: Flexible ➜ Full (strict)
+That ended the login loops.
 
-👉 Using Cloudflare with your app? Here's how to configure it safely: https://launchstudio.eu/en/blog/cloudflare-in-front-of-your-ai-built-app
+Cache rule: Cache Everything ➜ removed
+Caching limited to static assets and shared assets of public booking pages. App responses sent with private, no-store headers and excluded. Edge caches purged, and the incident assessed for data exposure.
+
+Webhook paths: challenged ➜ excluded from bot challenges, protected by signature verification
+
+Booking form: open ➜ Turnstile, verified server-side
+
+Login and booking endpoints: unlimited ➜ rate limited
+
+App hostname on Vercel: proxied ➜ DNS-only, with email records checked and preserved
+
+The result: login loops and cross-salon exposure stopped immediately, deposits processed reliably again, and bot bookings fell to nearly zero. Public pages stayed fast thanks to asset caching, and Rik documented the setup so it won't happen again.
+
+"Cloudflare was meant to make my app faster. Configured wrongly, it made it leak. Configured properly, it does both jobs it should." - Rik Smeets
+
+https://launchstudio.eu/en/blog/cloudflare-in-front-of-your-ai-built-app
 
 #Cloudflare #WebSecurity #Lovable #Caching #AIFounder #LaunchStudio #Manifera

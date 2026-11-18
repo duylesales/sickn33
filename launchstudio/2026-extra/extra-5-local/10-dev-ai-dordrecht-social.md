@@ -1,20 +1,27 @@
-⏱️ Eva Mulder built Dockflow in Lovable - a berth-scheduling tool for shipping agents working the rivers around Dordrecht - and picked up four regional agents in two months, hosted on a single non-scaling server. Then a week of unusually high traffic hit the server's resource limit and took it down for four hours, zero warning.
+4 shipping agents.
+2 months.
+1 server that couldn't scale.
+0 monitoring.
+4 hours offline.
+2 phone calls at once.
 
-Dev AI tools collapse the cost of a first version. They don't collapse the cost of keeping it online. 🧠
+That's the Dockflow story in six lines.
 
-❌ No monitoring in place - Eva found out from two agents calling mid-operation
-❌ A single non-scaling server instance had no headroom for a real traffic spike
-❌ No deployment pipeline meant the emergency fix had to be pushed live, manually, untested
-❌ Four hours of downtime during an active shipment window is an operational problem, not an inconvenience
+Eva Mulder built Dockflow in Lovable for berth scheduling and cargo-handoff coordination between small shipping agents on the rivers around Dordrecht. It launched cleanly. It ran on a single server instance that had been fine in testing.
 
-✅ Move to auto-scaling infrastructure sized for real traffic, not just testing
-✅ Add uptime monitoring with real-time alerts before customers become the alert
-✅ Build a CI/CD pipeline with a staging environment so fixes are tested, not improvised
+Then came a week of unusually heavy shipping traffic. The server hit its resource limit and went down with zero warning. Eva found out when two agents called mid-operation asking where their berth schedules had gone. The emergency fix went live by hand and untested, because there was no deployment pipeline.
 
-At **LaunchStudio**, Manifera's 160+ delivered projects for clients like Vodafone and Statler BI back the same production-readiness discipline we bring to a Lovable-built logistics tool. 🛡️
+Now the other numbers:
 
-Dockflow has had zero unplanned downtime in the four months since the fix. 🚀
+6 business days to fix it
+€1,850 in total
+3 changes: auto-scaling infrastructure, uptime monitoring with real-time alerts, and a CI/CD pipeline with staging
+0 unplanned downtime in the 4 months since
 
-👉 Using dev AI tools to launch fast? Budget for the production layer before it goes down: https://launchstudio.eu/en/blog/dev-ai-dordrecht
+"Four hours doesn't sound like much until it's four hours during an actual shipment window, and two clients are calling you at once." - Eva Mulder
+
+Dev AI tools make the first version cheap. Keeping it online belongs in the budget too.
+
+👉 https://launchstudio.eu/en/blog/dev-ai-dordrecht
 
 #AINativeFounder #LaunchStudio #Manifera #DevAI #Dordrecht

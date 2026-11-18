@@ -1,21 +1,31 @@
-🚨 Laura Hermans built Studiemaatje in Lovable: secondary school students book online study coaching. She asked Lovable to "add Google Analytics" and installed a free consent banner on her Framer site. Then a parent who worked in privacy compliance emailed her. 😳
+BEFORE ➜ AFTER: analytics on a tutoring platform for teenagers 📊
 
-Google Analytics loaded before any consent choice. The banner only had an "OK" button. The app had no banner at all - and many users were minors. Meanwhile, analytics showed only around 40% of real visits. Here's how cookieless analytics compares with GA4 for EU SaaS: 🧠
+Laura Hermans built Studiemaatje in Lovable: secondary school students in the Netherlands book online study coaching, with a marketing site in Framer. She asked Lovable to "add Google Analytics," installed a free consent banner template on the site, and ran Google Ads for study help terms.
 
-❌ GA loading before consent
-❌ A banner without a genuine reject option
-❌ Only ~40% of visits visible in analytics
-❌ No view of where students dropped out of booking
+Then a parent who works in privacy compliance emailed. Many users were minors, so the concern was serious.
 
-✅ Plausible on both the Framer site and the app, with booking funnel events
-✅ Product events in Supabase without personal data
-✅ The Google tag through a consent platform with Consent Mode and a real reject option
-✅ Ads conversions only for completed bookings, and every tool listed for the privacy policy
+BEFORE: Google Analytics loaded in the app before any consent choice.
+AFTER: The hard-coded snippet removed. Plausible on both the Framer site and the app.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we give you better data and an answer you can send a privacy-savvy parent with confidence. 🛠️
+BEFORE: The marketing site banner had one button: "OK."
+AFTER: The Google tag loads through a consent management platform with Consent Mode and a genuine reject option, shared across both domains.
 
-Her result: €1,750, 6 business days. Near-complete funnel data revealed half the drop-off at a timezone step - once simplified, booking completion rose by about 15% over two months. 🚀
+BEFORE: The app had no banner at all.
+AFTER: Product events recorded in Supabase per account, with no personal data in event properties.
 
-👉 Plausible or GA4 for your EU SaaS? Here's how to choose: https://launchstudio.eu/en/blog/cookieless-analytics-for-eu-saas-plausible-vs-ga4
+BEFORE: Analytics showed only about 40% of the visits in the hosting logs.
+AFTER: Close to complete funnel data, with custom events from landing page to confirmed first session.
+
+BEFORE: No idea where students dropped out of booking.
+AFTER: Half the drop-off turned out to happen at one timezone selection step, which was quickly simplified.
+
+BEFORE: Ads conversions counted loosely.
+AFTER: Conversions sent only for completed bookings, and every tool listed with its purpose for the privacy policy.
+
+Work: 6 business days, €1,750. Result: booking completion up about 15% over the next two months, and Google Ads reporting, with modelling, stable within weeks.
+
+"I thought analytics meant pasting a Google snippet. Doing it properly gave me better data and a reply I could send to that parent with confidence." - Laura Hermans
+
+https://launchstudio.eu/en/blog/cookieless-analytics-for-eu-saas-plausible-vs-ga4
 
 #Analytics #Plausible #GA4 #GDPR #EdTech #LaunchStudio #Manifera

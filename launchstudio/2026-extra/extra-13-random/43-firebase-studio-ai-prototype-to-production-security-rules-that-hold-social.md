@@ -1,21 +1,32 @@
-🚨 Chiara Rossi, a music teacher and choir director in Dordrecht, built Koorplanner in Firebase Studio: amateur choirs schedule rehearsals, share sheet music and recordings, track attendance and collect fees. Within a season, 140 choirs and about 4,000 singers. Then in one week her Firebase bill tripled - and a choir member in IT showed her he could read every choir's member list. 😳
+🎶 Imagine a choir hall where the front door has a lock, but the lock says: "Anyone who has ever been inside may enter every room."
 
-After test mode expired, the rules had been set to "authenticated users can read and write everything". Names, phone numbers and addresses were exposed across choirs, licensed sheet music was downloadable by anyone, members could mark their own fees as paid, and the attendance screen listened in real time to the entire collection. Here's how to take a Firebase Studio prototype to production with rules that hold: 🧠
+That was Koorplanner's security, after Firebase's test mode expired.
 
-❌ "Authenticated" treated as "authorised for everything"
-❌ Open storage for licensed files
-❌ Payment status written by the client
-❌ Collection-wide listeners running up the bill
+Chiara Rossi, a music teacher and choir director in Dordrecht, built Koorplanner in Firebase Studio: amateur choirs schedule rehearsals, share sheet music and practice recordings, track attendance and collect membership fees. Through choir networks, it reached 140 choirs and around 4,000 singers in one season.
 
-✅ Firestore and Storage rules rewritten deny-by-default, scoped to choir membership and roles - with 48 emulator tests in CI
-✅ Fee status updated only by a Cloud Function on verified payment webhooks
-✅ App Check enabled and the listener replaced by a scoped, paginated query
-✅ Budget alerts and scheduled backups with a test restore
+Then, in the same week:
+• Her Firebase bill tripled
+• A choir member who works in IT told her that, with the public config from the page, he could read every choir's member list: names, phone numbers, addresses
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we make sure the rules behind your public config are a real lock on the door. ⚙️
+The API key in the page was never the problem. The rules behind it were the only lock on the door, and they said "authenticated users can read and write everything."
 
-Her result: €1,500, six business days. Cross-choir access closed the day the rules deployed, the Firebase bill fell about 70% from its peak, and Koorplanner grew to 230 choirs the next season. 🚀
+Behind other doors:
+• Open Storage rules, so sheet music licensed by individual choirs could be downloaded by anyone
+• Membership-fee status written by the client, so any member could mark themselves as paid
+• An attendance screen listening in real time to the entire attendance collection, which explained the bill
 
-👉 Firebase Studio AI prototype to production: security rules that hold: https://launchstudio.eu/en/blog/firebase-studio-ai-prototype-to-production-security-rules-that-hold
+New locks on every door (LaunchStudio, 6 business days, €1,500):
+✓ Firestore and Storage rules rewritten deny-by-default, scoped to choir membership and roles, with 48 emulator tests in CI
+✓ Queries that relied on client-side filtering fixed
+✓ Fee status updated only by a Cloud Function, triggered by verified payment webhooks
+✓ App Check enabled
+✓ The collection-wide listener replaced by a scoped, paginated query
+✓ Budget alerts, and scheduled backups with a test restore
+
+Cross-choir access closed the day the new rules went live, and affected choirs were informed. The Firebase bill dropped about 70% from its peak, and Koorplanner grew to 230 choirs the following season.
+
+"The API key in the page was never the problem. The rules behind it were - and I didn't know they were the only lock on the door." - Chiara Rossi
+
+https://launchstudio.eu/en/blog/firebase-studio-ai-prototype-to-production-security-rules-that-hold
 
 #Firebase #SecurityRules #Firestore #AppSecurity #LaunchStudio #Manifera

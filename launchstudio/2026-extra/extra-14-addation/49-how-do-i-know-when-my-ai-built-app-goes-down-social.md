@@ -1,21 +1,26 @@
-🚨 Daphne Kok runs a small yoga retreat business near Bergen and built Retraitepas in v0 and Supabase. One Friday afternoon, a configuration change rotated her payment provider's webhook signing secret. Payments kept succeeding - but every booking stayed "pending" and no confirmation went out. She found out on Monday, from an anxious guest who had paid €450 and heard nothing. 😳
+🔔 Friday 16:00: "Webhook verification failing since this afternoon."
+🔔 Friday 17:00: "Paid deposits not turning into confirmed bookings."
+🔔 Saturday: "11 bookings stuck in pending."
 
-Eleven bookings were stuck and two guests had booked elsewhere. The app never went down. It just stopped doing the one thing that mattered. Here's why nothing told her: 🧠
+None of these alerts existed. Daphne Kok found out on Monday, from an anxious guest. (Alert times are illustrative.)
 
-❌ No uptime check or health endpoint
-❌ No error tracking on the edge functions where the webhook failed
-❌ No check that paid deposits actually became confirmed bookings
-❌ No alerts reaching her phone - her customers were her monitoring system
+Daphne runs a small yoga retreat business near Bergen and built Retraitepas in v0 and Supabase: guests book retreats, pay a deposit and get packing lists. One Friday afternoon, a configuration change she made caused her payment provider to rotate a webhook signing secret. From that moment, every webhook failed verification. Payments went through. Bookings stayed "pending." Confirmations never went out.
 
-✅ Uptime checks plus a real health endpoint
-✅ Error tracking with alerts on new error types in edge functions
-✅ A business check that alerts if a paid deposit isn't a confirmed booking within an hour
-✅ A payment provider status page subscription, and all stuck bookings reconciled
+The app never went down. It just stopped doing the one thing that mattered.
 
-At **LaunchStudio**, backed by Manifera's teams in Ho Chi Minh City working ahead of European time, monitoring and alerting are part of every launch. 🛠️
+By Monday: eleven bookings stuck, one guest who'd paid €450 and heard nothing, and two guests who had booked elsewhere.
 
-💡 Her result: €980, three business days. Two months later, a similar webhook problem triggered an alert within 40 minutes, and Daphne fixed it before any guest noticed. 🚀
+What LaunchStudio set up (3 business days, €980):
+✓ Uptime checks and a health endpoint
+✓ Error tracking, with alerts on new error types in edge functions
+✓ A business check that alerts if paid deposits don't become confirmed bookings within an hour
+✓ A subscription to the payment provider's status page
+✓ The stuck bookings reconciled and confirmed
 
-👉 Would you know if your AI-built app silently stopped working? Here's the minimal monitoring stack: https://launchstudio.eu/en/blog/how-do-i-know-when-my-ai-built-app-goes-down
+🔔 Two months later, for real: a similar webhook problem after an email provider change. The alert fired within 40 minutes, and Daphne fixed it before any guest noticed.
+
+"The app never went down. It just stopped doing the one thing that mattered, and nothing told me." - Daphne Kok
+
+https://launchstudio.eu/en/blog/how-do-i-know-when-my-ai-built-app-goes-down
 
 #Monitoring #Supabase #v0 #SaaS #LaunchStudio #Manifera

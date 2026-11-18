@@ -1,23 +1,24 @@
-🏥 Hanna Brouwer runs a scheduling SaaS for physiotherapy departments from Groningen, built with Lovable and Supabase. A hospital evaluating her product asked a pointed question: who outside her company had access to patient-related data, where were they located and under what agreement? She was about to start a project with LaunchStudio and wanted to answer accurately. 🔍
+🏥 The hospital asked: "Who outside your company has access to patient-related data, where are they, and under what agreement?"
 
-Founders often can't answer because: 🧠
+Hanna's answer fit in one paragraph. Something like this (illustrative wording):
 
-❌ Developers work in their own accounts, out of the founder's sight
-❌ Production databases get copied for "testing"
-❌ Nobody knows where the engineers are or how transfers are covered
-❌ Access lingers long after the project ends
+"Our development partner works under a signed processing agreement that sets out the data categories, purposes and security measures. Remote access may occur from their engineering centre in Ho Chi Minh City, covered by the European Commission's standard contractual clauses. Development and testing use a staging environment with generated data. Production data was accessed once, by two named engineers, for a planned and logged migration. Their current access is limited to ongoing care, confirmed in writing and listed in our account inventory."
 
-Here is how Hanna's project was set up: ✅
+Hanna Brouwer runs Fysiorooster from Groningen, a scheduling SaaS for physiotherapy departments built with Lovable and Supabase. A hospital's supplier assessment asked that pointed question just as she was about to start a Launch & Grow project with LaunchStudio. She wanted to answer it accurately.
 
-✅ A processing agreement signed before the start, naming Manifera's engineering centre in Ho Chi Minh City and including the European Commission's standard contractual clauses
-✅ Development and testing on staging with generated data
-✅ Production access limited to two named engineers for one planned, logged migration step, verified with counts and anonymised samples
-✅ Access reduced at the end to what ongoing care needs, confirmed in writing and listed in the account inventory
+How each sentence became true:
+✓ Before any work began, Hanna and LaunchStudio signed a processing agreement listing the data categories, purposes and security measures, with Manifera's engineering centre in Ho Chi Minh City as a possible remote access location, and the EU's standard contractual clauses included
+✓ The project plan stated that development and testing would use staging with generated data
+✓ Production access was limited to two named engineers, for one planned migration step, scheduled with Hanna and logged
+✓ During that migration, verification used counts and anonymised samples
+✓ At the end, access was reduced to what ongoing care needs, confirmed in writing, with every remaining role in the account inventory
 
-At **LaunchStudio**, backed by Manifera's 11+ years of working with confidential systems and data for clients such as Vodafone and TNO, we treat your customers' data carefully and document how we do it. 🛠️
+The project took 13 business days, for €4,800, plus €49 a month for ongoing care.
 
-Her result: part of a €4,800 Launch & Grow project. One clear paragraph satisfied the hospital's privacy officer, and the department went live the next quarter. 🚀
+Hanna sent the hospital her paragraph, with the relevant parts of the documentation attached. The privacy officer accepted the arrangement, and the department started using Fysiorooster the next quarter.
 
-👉 How we handle your code and customer data during a project: https://launchstudio.eu/en/blog/how-we-handle-your-code-and-customer-data-during-a-project
+"The hospital did not expect zero access. They expected me to know exactly who had it, where, and why. Now I can tell them in one paragraph." - Hanna Brouwer
+
+https://launchstudio.eu/en/blog/how-we-handle-your-code-and-customer-data-during-a-project
 
 #GDPR #DataProtection #Lovable #HealthTech #AIFounder #LaunchStudio #Manifera

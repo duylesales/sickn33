@@ -1,21 +1,36 @@
-🚨 Anouk Prins, a district nurse in Purmerend, wanted Thuiszorgplanner: scheduling for small home care teams, matching nurses to client visits by skills, travel time and continuity of care. She hired a freelance developer first. Four months and €11,000 later, she had a login screen, a client list and a schedule that didn't match how her team actually worked. 😳
+🛣️ Two routes to the same home care scheduler
 
-So she rebuilt it herself in Lovable in five weeks. The scheduling flow finally matched reality - because she designed it. But underneath: 🧠
+Anouk Prins, a district nurse in Purmerend, wanted Thuiszorgplanner: a scheduling tool for small home care teams that matches nurses to client visits based on skills, travel time and continuity of care.
 
-❌ Client health notes readable by every nurse through permissive RLS policies
-❌ No audit trail of who viewed sensitive notes
-❌ The database outside the EU and no tested backups
-❌ The whole app running on a preview link
+ROUTE A: Hire a freelance developer
+Time: four months
+Cost: €11,000
+Result: a login screen, a client list and a scheduling view that didn't reflect how her team actually plans visits
+Every change: a new briefing
 
-✅ Her Lovable interface kept as it was
-✅ Team-based permissions: nurses see only their assigned clients
-✅ An audit log of every view of health notes, the database moved to an EU region, backups with a tested restore
-✅ Skill-matching logic moved into a database function so prompts can't break it, plus deployment with monitoring
+ROUTE B: Build it herself in Lovable, then bring in engineers
+Time: five weeks of building, then 11 business days with LaunchStudio
+Cost: under half of route A, including LaunchStudio's €3,500
+Result: a scheduling flow that finally matched reality, because she designed it
 
-At **LaunchStudio**, backed by Manifera's 11+ years and 120+ engineers, you build what you understand best - we handle the parts you can't see. 🛠️
+Route B still had a stretch only an engineer could pave. Her Lovable app:
+• Stored client health notes with RLS policies that let every nurse read every client
+• Had no audit trail
+• Ran entirely on a preview link
 
-💡 Her result: €3,500, eleven business days. Thuiszorgplanner went live for her team of twelve nurses, then two neighbouring teams - for less than half of what the freelancer route had cost without producing a usable product. 🚀
+What LaunchStudio added, keeping her Lovable interface:
+✓ A team-based permission model, so nurses see only their assigned clients
+✓ An audit log of who viewed health notes
+✓ The database moved to an EU region
+✓ Backups with a tested restore
+✓ Deployment with monitoring
+✓ The skill-matching logic in a database function, so Lovable prompts can't break it
 
-👉 Lovable or hiring a developer? Here's the honest comparison - and the hybrid most founders choose: https://launchstudio.eu/en/blog/lovable-vs-hiring-a-developer
+DESTINATION
+Thuiszorgplanner went live for Anouk's team of twelve nurses, then for two neighbouring teams.
+
+"The developer was skilled, but he was building my description of the work. In Lovable, I built the work itself. Then I needed an engineer for the parts I couldn't see." - Anouk Prins
+
+https://launchstudio.eu/en/blog/lovable-vs-hiring-a-developer
 
 #Lovable #HealthTech #AIFounder #NoCode #LaunchStudio #Manifera

@@ -1,21 +1,32 @@
-🚨 Esther Meijer, a language teacher in Enschede, built Praatmaatje with Lovable: Dutch learners book short video sessions with native speakers and get AI feedback on their vocabulary. Unsure about the technical side, she hired a fractional CTO at €2,500 a month. 😳
+🗓️ Three months with a fractional CTO, and one month with builders
 
-After three months and €7,500, she had an architecture document, a recommended stack and a list of security concerns. The app hadn't changed at all. Here's why: 🧠
+MONTH 1
+Esther Meijer, a language teacher in Enschede, has built Praatmaatje with Lovable: Dutch learners book short video sessions with native speakers and get AI-generated feedback on their vocabulary. Unsure about the technical side, she hires a fractional CTO at €2,500 a month.
 
-❌ Nobody was implementing the recommendations
-❌ Two CTO days a month were never meant for building
-❌ Learner and tutor data still unprotected, video room tokens still created in the browser
-❌ Learners on the waiting list drifting away
+MONTH 2
+An architecture document takes shape. A recommended stack. A list of security concerns.
 
-✅ The architecture document reused as a specification
-✅ Row Level Security for learner and tutor data, video room tokens generated server-side
-✅ Stripe for session credits, AI feedback calls moved to edge functions with minimised transcripts
-✅ Deployed with monitoring
+MONTH 3
+€7,500 spent. The advice is good. The app hasn't changed. Nobody is implementing the recommendations, and two days a month were never meant for building. Meanwhile, learners on the waiting list are drifting away.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of Agile and offshore delivery, we execute first - so the leadership you hire later has a team and a product to lead. 🛠️
+THE PAUSE
+Esther pauses the retainer and brings the architecture document to LaunchStudio. It turns out to be a useful specification.
 
-💡 Her result: €4,900, thirteen business days. About 260 learners booked roughly 1,900 sessions in the first quarter - and six months later, with two developers hired, she brought a fractional CTO back in. 🚀
+THE NEXT THIRTEEN BUSINESS DAYS (€4,900)
+✓ Row Level Security for learner and tutor data
+✓ Secure video room tokens generated server-side
+✓ Stripe for session credits
+✓ AI feedback calls moved into edge functions, with transcripts minimised before sending
+✓ Deployment with monitoring
 
-👉 Thinking about a fractional CTO? Here's what it costs and when it actually fits: https://launchstudio.eu/en/blog/fractional-cto-for-startups-what-it-costs-and-when-it-fits
+LAUNCH
+Praatmaatje goes live. First quarter: about 260 learners, roughly 1,900 sessions.
+
+SIX MONTHS LATER
+With two part-time developers on board, Esther brings a fractional CTO back in. This time, there's a team to direct.
+
+"The advice was good. I just bought it a year too early, before anyone could act on it." - Esther Meijer
+
+https://launchstudio.eu/en/blog/fractional-cto-for-startups-what-it-costs-and-when-it-fits
 
 #FractionalCTO #EdTech #Lovable #StartupNL #LaunchStudio #Manifera

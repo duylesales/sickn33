@@ -1,21 +1,35 @@
-🚨 Lieselotte Bijkerk's Taxatierapport is used by 23 independent property appraisers producing around 180 valuation reports a month. She needed it secured, payments added, and a launch to 60 more appraisers - and took the cheapest of three quotes: €3,900 fixed, agreed over email, without anyone reading the code. 😳
+⚖️ The balance sheet of a cheap quote
 
-In week two the supplier found reports vanishing on redeploys, no endpoint checking which appraiser was asking, and the valuation calculation in three places. None of it was in scope. It became €9,400, eleven weeks instead of three, and a relationship that ended badly on both sides. Here's how to choose between fixed price and hourly for production work: 🧠
+WHAT SHE SAVED
+€1,200, by skipping a paid assessment.
 
-❌ A fixed price agreed from an email, with no assessment and no itemisation
-❌ No explicit exclusions - the source of most disputes
-❌ No procedure for what happens when something unexpected is found
-❌ Refusing to pay for an assessment because it "felt like paying for a quote"
+WHAT IT COST
+€9,400 instead of the €3,900 quoted
+Eleven weeks instead of three
+A stream of change requests
+A supplier relationship that ended badly on both sides
 
-✅ A paid €1,200 assessment producing a nine-page report she owns: every finding, estimate and priority
-✅ A €6,100 fixed price quoted from that report, itemised across eleven items with four explicit exclusions
-✅ A stated procedure for new findings - used twice, each resolved in a day
-✅ Milestone payments in thirds
+Lieselotte Bijkerk built Taxatierapport in Lovable: valuation reporting for independent property appraisers, 23 appraisers, around 180 reports a month. She needed it secured, payments added, and a launch to 60 more appraisers. She took the cheapest of three quotes: €3,900 fixed, agreed over email, with no assessment and no itemisation. 🏠
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we work on fixed prices - quoted after reading the code, not before. ⚙️
+In week two, the supplier found what nobody had looked for, because nobody had read the code:
+• Reports stored as files on the app's filesystem, disappearing on redeploys
+• No endpoint checking which appraiser was asking
+• The valuation calculation in three places, with two variants
 
-Her result: €7,300 in total, eleven business days against an estimate of ten. The assessment fee she'd resisted turned out to be the cheapest part of the whole exercise. 🚀
+None of it was in scope. The supplier felt they'd been handed an undisclosed mess. Lieselotte felt she'd been quoted for a job the supplier hadn't understood.
 
-👉 Lovable developer: fixed price or hourly for production work: https://launchstudio.eu/en/blog/lovable-developer-fixed-price-or-hourly-for-production-work
+THE SECOND ATTEMPT, WITH LAUNCHSTUDIO
+€1,200 for a paid assessment: a nine-page report, owned by her, naming every finding with an estimate and a priority order
+€6,100 fixed, quoted from that report across eleven itemised items (storage migration, authorisation, calculation consolidation, payments, launch), with four explicit exclusions
+A stated procedure for new findings, used twice and handled in a day each
+Payments in thirds, by milestone
+Estimate: ten business days. Actual: eleven.
+Total: €7,300.
+
+Her conclusion: the cheap quote cost her €9,400, eight extra weeks and a supplier relationship. The assessment fee she'd resisted was the cheapest part of the whole exercise.
+
+"I refused to pay twelve hundred euros for someone to tell me what was wrong. Then I paid nine thousand four hundred to find out during the work, over eleven weeks, one argument at a time." - Lieselotte Bijkerk
+
+https://launchstudio.eu/en/blog/lovable-developer-fixed-price-or-hourly-for-production-work
 
 #Lovable #NoCode #HiringDevelopers #Startups #LaunchStudio #Manifera

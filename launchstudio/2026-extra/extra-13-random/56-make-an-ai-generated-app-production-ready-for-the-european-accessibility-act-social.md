@@ -1,21 +1,27 @@
-🚨 Rosa Veenstra, a former librarian in Drachten, built Boekenbus in Bolt: a second-hand book webshop with a "surprise box" subscription and a mobile-first checkout. 14 staff, turnover past €2 million - outside the European Accessibility Act's microenterprise exemption. Then a blind customer emailed: she couldn't complete a purchase. 😳
+Imagine buying a second-hand book with a screen reader. 📚
 
-An automated scan found 212 issues, and manual testing confirmed her experience. Icon-only "add to basket" and "next" buttons had no labels, fields used placeholders as labels, the genre filter and address autocomplete trapped keyboard focus, pale grey on cream failed contrast everywhere, checkout errors appeared only in red, and product images had no alt text. Here's how to make an AI-generated app production ready for the EAA: 🧠
+You find a book. The "add to basket" button is just an icon, so your screen reader says "button." You move on: "button." The form fields have placeholder text instead of labels, and it disappears the moment you type. The genre filter and the address autocomplete trap your keyboard focus, and you can't get out. You make a small mistake at checkout, and the only sign is red text you can't see. And none of the book covers have alt text.
 
-❌ Buttons a screen reader announces as just "button"
-❌ Placeholder-only form fields
-❌ Custom components that trap the keyboard
-❌ Errors shown only in colour
+One customer of Boekenbus emailed to say she couldn't complete a purchase.
 
-✅ Accessible names and alt text - book-cover alt text generated from title and author
-✅ Visible labels, and the filter and autocomplete rebuilt on accessible patterns
-✅ Text colours adjusted to meet contrast within Rosa's palette, errors linked and announced
-✅ Headings, landmarks, axe checks in CI - tested with the customer who reported it, plus a published accessibility statement
+Rosa Veenstra, a former librarian in Drachten, built Boekenbus in Bolt: a webshop for second-hand books, with a subscription "surprise box," search by genre and author, and a mobile-first checkout. With 14 staff across packing and customer service and turnover past €2 million, it's outside the microenterprise exemption of the European Accessibility Act.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we fix accessibility without changing how your app looks - only who can use it. ⚙️
+An automated scan found 212 issues. Manual testing confirmed the customer's experience, plus pale grey text on cream that failed contrast everywhere.
 
-Her result: €2,500, nine business days. Critical flows now meet WCAG 2.1 AA, mobile checkout completion rose about 9% for everyone, and the customer who reported the problem became a regular subscriber. 🚀
+What LaunchStudio changed (9 business days, €2,500):
+✓ Accessible names on every button, and alt text, with book-cover alt text generated from title and author data
+✓ Visible labels instead of placeholder-only fields
+✓ The filter and autocomplete rebuilt on accessible patterns
+✓ Text colours adjusted to meet contrast, within Rosa's palette
+✓ Validation errors linked to their fields and announced
+✓ Headings and landmarks, plus axe checks in CI
+✓ The customer who reported the problem tested the checkout with the team before release
+Rosa then published an accessibility statement.
 
-👉 Make an AI generated app production ready for the European Accessibility Act: https://launchstudio.eu/en/blog/make-an-ai-generated-app-production-ready-for-the-european-accessibility-act
+The critical flows now meet WCAG 2.1 AA. Mobile checkout completion rose about 9% the next quarter, for all customers. And the customer who first wrote in became a regular subscriber.
+
+"I built the shop for book lovers and forgot that some of them read with their ears. The fixes didn't change how it looks, only who can use it." - Rosa Veenstra
+
+https://launchstudio.eu/en/blog/make-an-ai-generated-app-production-ready-for-the-european-accessibility-act
 
 #Accessibility #EAA #WCAG #Ecommerce #LaunchStudio #Manifera

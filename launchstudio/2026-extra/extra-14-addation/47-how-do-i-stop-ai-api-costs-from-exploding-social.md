@@ -1,21 +1,27 @@
-🚨 Ricardo Mendes, a Portuguese copywriter based in Utrecht, built Tekstfabriek with Bolt: small shops paste product details and get product descriptions, social posts and newsletter text. His €19 monthly plan sold well. After the second month, his AI bill was higher than his revenue. 😳
+🧮 The AI cost formula of a €19 plan
 
-Every customer he added made him poorer. The fix wasn't a cheaper AI - it was using it like it cost money. Here's where the money went: 🧠
+BEFORE
+the largest model available
+× the shop's full product catalogue resent as context with every request
+× an unlimited "regenerate" button, pressed dozens of times per product by a handful of users
+× identical descriptions regenerated on every load of the history view
+= an AI bill bigger than revenue by month two
 
-❌ The largest available model used for every single generation
-❌ The shop's full product catalogue resent as context with each request
-❌ An unlimited "regenerate" button, pressed dozens of times per product
-❌ Identical descriptions regenerated on every page load of the history view
+Ricardo Mendes, a Portuguese copywriter based in Utrecht, built Tekstfabriek with Bolt: small shops paste product details and get product descriptions, social posts and newsletter text. His €19 monthly plan sold well. Every new customer made him poorer.
 
-✅ Monthly quotas per plan and a limit on regenerating
-✅ Only the selected product plus a short brand profile sent as context
-✅ Short social posts routed to a smaller model, and generated texts cached in the database
-✅ A daily cost report per feature and per customer
+AFTER (LaunchStudio, 7 business days, €2,100)
+per-plan monthly quotas
++ a regenerate limit
+× only the selected product plus a short brand profile as context, not the whole catalogue
+× a smaller model for short social posts
+− repeat generations, thanks to texts cached in the database
++ a daily cost report per feature and per customer
+= AI cost per customer down by about 80%
 
-At **LaunchStudio**, backed by Manifera's 11+ years of data-heavy systems, we make AI a cost line with a margin - quotas, caching, model routing and cost logging included. 🛠️
+The €19 plan became profitable. And with real usage data in hand, Ricardo added a higher plan for heavy users.
 
-💡 His result: €2,100, seven business days. AI cost per customer fell by about 80%, the €19 plan became profitable, and the usage data showed him exactly how to price a plan for heavy users. 🚀
+"Every customer I added made me poorer. The fix wasn't a cheaper AI, it was using it like it cost money." - Ricardo Mendes
 
-👉 AI API costs exploding? Here are the five control points that keep them predictable: https://launchstudio.eu/en/blog/how-do-i-stop-ai-api-costs-from-exploding
+https://launchstudio.eu/en/blog/how-do-i-stop-ai-api-costs-from-exploding
 
 #AI #LLM #SaaS #Pricing #LaunchStudio #Manifera

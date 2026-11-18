@@ -1,21 +1,30 @@
-🚨 Dewi Sutanto runs an Indonesian restaurant in Rotterdam and built Pesanan with Lovable and Supabase to take pickup and delivery orders without platform commissions. After three quiet weeks, she promoted it on social media. The next Friday: 63 orders in about forty minutes. 😳
+🍜 FRIDAY NIGHT SERVICE REPORT: Pesanan, Rotterdam
 
-The kitchen couldn't keep up. And two customers received orders containing peanuts. Here's what a restaurant ordering app needs to go from prototype to production: 🧠
+Dewi Sutanto runs an Indonesian restaurant in Rotterdam. She built Pesanan with Lovable and Supabase to take pickup and delivery orders without paying platform commission. After three quiet weeks of testing, she promoted it on social media.
 
-❌ No time slots - everyone chose "as soon as possible"
-❌ Orders on the kitchen tablet before payment was confirmed
-❌ Free-text allergens, and a satay option adding peanuts without updating them
-❌ Duplicate orders from Mollie retries, and multi-megabyte menu photos
+THE RUSH
+63 orders in about forty minutes, almost all for pickup between 18:00 and 19:00.
 
-✅ Pickup and delivery slots with capacity per fifteen minutes, plus a "pause orders" button
-✅ Orders reaching the kitchen only after a verified, idempotent Mollie webhook
-✅ Structured allergens per dish and option, shown before adding to cart
-✅ Compressed images, VAT per product and kitchen updates scoped to open orders
+WHAT WENT WRONG IN THE KITCHEN
+🔥 No time slots, so every customer picked "as soon as possible"
+🔥 Orders appeared on the kitchen tablet as soon as checkout started, including several whose payment later failed
+🔥 Two customers got orders containing peanuts: allergens were free text, some dishes left it empty, and the satay sauce option added peanuts without updating the information
+🔥 Duplicate orders printed when Mollie retried webhooks
+🔥 Menu photos of several megabytes made the app slow on mobile
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we make your app tell customers when you can actually cook their food. 🛠️
+THE NEW SERVICE (LaunchStudio, 12 business days, €4,800)
+✓ Pickup and delivery slots with capacity per fifteen minutes, enforced in a database function
+✓ Preparation times per dish category, and a "pause orders" button for staff
+✓ Orders reach the kitchen only after a verified Mollie webhook confirms payment, processed once
+✓ Unpaid orders release their slot after ten minutes
+✓ Allergens as structured data per dish and option, shown before adding to cart, with change history
+✓ Compressed, cached menu images, VAT per product for food and alcoholic drinks, and kitchen updates scoped to open orders
 
-Her result: €4,800, 12 business days. The next Friday promotion brought 81 orders spread across manageable slots - no unpaid orders in the kitchen, no duplicates. 🚀
+THE NEXT FRIDAY
+81 orders, spread across slots the kitchen could handle. No failed-payment orders in the kitchen. No duplicates. Dewi now keeps the commission on most of her takeaway revenue, and two neighbouring restaurants want Pesanan too.
 
-👉 Running your own restaurant ordering app? Here's how to take it to production: https://launchstudio.eu/en/blog/restaurant-ordering-app-from-prototype-to-production
+"The app worked perfectly until it worked too well. Now it tells customers when we can actually cook their food." - Dewi Sutanto
+
+https://launchstudio.eu/en/blog/restaurant-ordering-app-from-prototype-to-production
 
 #FoodTech #Restaurants #Mollie #Supabase #AIFounder #LaunchStudio #Manifera

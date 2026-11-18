@@ -1,20 +1,25 @@
-🌾 Marije van Es built FarmYield, a SaaS platform helping food producers around Ede's Food Valley track crop yield and compliance reporting, using Lovable. It grew from 3 pilot customers to 19 in four months - and at customer twelve, a support ticket revealed two producers could see each other's cached compliance data. 😳
+🎮 FarmYield: an AI SaaS in four levels
 
-Multi-tenancy is invisible at ten customers. It's expensive to fix at fifty. 🧠
+LEVEL 1: 3 pilot customers
+Marije van Es, based in Ede and working with Food Valley producers, builds FarmYield in Lovable. It tracks crop yield data and generates retailer compliance reports for small and mid-sized food producers. Everything runs fine. Multi-tenancy doesn't matter yet.
 
-❌ A caching layer keyed data by report type instead of tenant ID - a multi-tenancy failure hiding in plain sight
-❌ Stripe's proration logic for mid-cycle upgrades was miscalculating charges, over- and under-billing customers
-❌ Neither gap showed up until real customer volume arrived
-❌ In a small, trust-based B2B industry, this kind of issue can cost a client relationship, not just a bug report
+LEVEL 2: 12 customers ⚠️ BOSS FIGHT
+A support ticket: under specific conditions, two producers working at the same time can see each other's cached compliance reports. The cache was keyed by report type, not by tenant ID.
+Side quest: Stripe proration on mid-cycle upgrades is wrong. Some customers are undercharged, others overcharged.
 
-✅ Rebuild the caching layer with properly tenant-scoped keys
-✅ Correct proration using Stripe's own billing APIs instead of custom calculation logic
-✅ Add monitoring to catch cross-tenant data issues before customers do
+LEVEL 3: 19 paying subscribers in four months
+Growth has outrun what the AI-generated backend was built to assume.
 
-At **LaunchStudio**, we've shipped 160+ projects for enterprise clients as part of Manifera - experience that directly shapes how we handle SaaS-specific production risks like tenant isolation. 🛡️
+POWER-UPS (LaunchStudio, 8 business days, €1,600)
+🔑 Caching rebuilt with tenant-scoped keys
+💶 Proration handled by Stripe's own billing APIs instead of custom calculations
+📡 Monitoring that catches cross-tenant data issues before customers do
 
-Her result: FarmYield scaled to 30+ paying customers within two months of the fix, with zero data isolation incidents and accurate billing across every plan change. 🚀
+LEVEL 4: 30+ paying customers within two months of the fix
+Zero data isolation incidents. Accurate billing on every plan change.
 
-👉 Scaling past your first customer cohort? Calculate what closing these gaps costs: https://launchstudio.eu/en/blog/ai-saas-ede
+"At three customers, nothing about multi-tenancy mattered. At twelve, it almost cost me a client relationship I'd spent months building in a small, trust-based industry." - Marije van Es
+
+Which level is your AI SaaS on? https://launchstudio.eu/en/blog/ai-saas-ede
 
 #AINativeFounder #LaunchStudio #Manifera #AISaaS #FoodValley

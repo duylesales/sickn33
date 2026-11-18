@@ -1,21 +1,33 @@
-🚨 Sophie de Wit built Verzuimradar in Lovable and Supabase over eighteen months: absenteeism analytics for Dutch employers. With around 60 customers, she received an acquisition offer - conditional on technical due diligence. 😳
+140 questions.
+2 weeks to grant repository access.
+3 API keys in old commits.
+1 personal email owning the hosting and database accounts.
+0 architecture documents.
+0 price reduction at closing. 🤝
 
-The acquirer sent 140 questions and wanted repository access within two weeks. Sophie's own quick check was alarming. Here's how to prepare a technical due diligence data room for an AI-built startup: 🧠
+Sophie de Wit spent eighteen months building Verzuimradar in Lovable and Supabase: absenteeism analytics for Dutch employers, combining sick leave data with team structures to flag patterns for HR and occupational health. Around 60 customers and stable recurring revenue brought an acquisition offer from a larger HR software company, conditional on technical due diligence.
 
-❌ Health-related data with RLS on most tables, but not all
-❌ Three API keys in old commits
-❌ Hosting and database accounts on a personal email
-❌ UI-only tests, no architecture docs and unknown dependency licences
+Her own quick check before handing over access was alarming:
+• Health-related data protected by Row Level Security on most tables, not all
+• Tests that only covered the UI
+• No idea which open-source licences her dependencies used
 
-✅ Secret, dependency and licence scans, keys rotated and history cleaned
-✅ RLS completed on every table with tests per role
-✅ All accounts moved to company ownership and backup restore tested
-✅ Architecture diagram, security overview, processing register, known-issues list and a mock review
+What LaunchStudio did in 12 business days (€5,400):
+1 round of secret, dependency and licence scans
+3 exposed keys rotated, history cleaned
+RLS completed on the remaining tables, with tests for each role
+All accounts moved to company ownership
+Backup restore tested and documented
+1 document set: architecture diagram, security overview, processing register, prioritised known-issues list and repository README
+1 mock review, with questions like the acquirer's
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we fix your codebase before the acquirer's engineers look - which is far cheaper than negotiating after. 🛠️
+And the final numbers:
+140 of 140 questions answered within the deadline, documents attached
+Technical risk rated moderate with a clear remediation plan, not high
+Deal closed on the original terms
 
-Her result: €5,400, 12 business days. All 140 questions answered on time, technical risk rated moderate instead of high, and the deal closed on the original terms with no price reduction. 🚀
+"The acquirer's engineers knew exactly what to look for in an AI-built codebase. Fixing it before they looked was far cheaper than negotiating after." - Sophie de Wit
 
-👉 Selling your startup or raising money? Here's how to prepare for technical due diligence: https://launchstudio.eu/en/blog/technical-due-diligence-data-room-for-ai-built-startups
+https://launchstudio.eu/en/blog/technical-due-diligence-data-room-for-ai-built-startups
 
 #DueDiligence #MandA #StartupExit #HRTech #AIFounder #LaunchStudio #Manifera

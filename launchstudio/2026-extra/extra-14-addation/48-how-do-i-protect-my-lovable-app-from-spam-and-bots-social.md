@@ -1,21 +1,32 @@
-🚨 Sevda Arslan built Buurtruil in Lovable: a free swap marketplace for her neighbourhood in Arnhem. A local newspaper wrote about it on a Thursday. By Monday, Buurtruil had 4,300 new accounts - about 3,900 of them fake - and hundreds of listings advertising dubious crypto schemes. 😳
+📰 A neighbourhood marketplace's very long weekend
 
-The newspaper article brought her neighbours and bots. The bots were much faster. Here's why: 🧠
+THURSDAY
+A local newspaper writes about Buurtruil, Sevda Arslan's free swap marketplace for her Arnhem neighbourhood, built in Lovable. Residents post items to give away or exchange.
 
-❌ No CAPTCHA on the sign-up form
-❌ Email confirmation switched off
-❌ Listings that could contain any link
-❌ The built-in email sender exhausted by fake sign-ups, so real neighbours never got their confirmation emails
+FRIDAY TO SUNDAY
+Sign-ups pour in. Neighbours, and something faster than neighbours.
 
-✅ Cloudflare Turnstile enabled on Supabase Auth
-✅ Email confirmation turned on, with custom SMTP
-✅ Rate limits on sign-ups and listings per IP and per account, and links blocked in listings from new accounts
-✅ Fake accounts and listings removed with a server-side script, plus a daily sign-up chart with alerts
+MONDAY
+4,300 new accounts. About 3,900 of them fake. Hundreds of listings advertising dubious crypto schemes. And real neighbours can't get in: fake sign-ups have used up the built-in email sender, so confirmation emails never arrive.
 
-At **LaunchStudio**, backed by Manifera and its founder's cybersecurity background at CFLW, bot protection is layered and monitored - not just a CAPTCHA added once. 🛠️
+WHY IT HAPPENED
+• No CAPTCHA on sign-up
+• Email confirmation switched off
+• Listings could contain any link
 
-💡 Her result: €1,050, three business days. Fake sign-ups dropped to a handful per week, real membership grew to about 900 households, and the marketplace was usable again within two days. 🚀
+TUESDAY TO THURSDAY (LaunchStudio, 3 business days, €1,050)
+✓ Turnstile on Supabase Auth
+✓ Email confirmation on, with custom SMTP
+✓ Rate limits on sign-ups and listings, per IP and per account
+✓ Links blocked in listing descriptions for new accounts
+✓ Fake accounts and listings removed with a server-side clean-up script
+✓ A daily sign-up chart, with alerts to Sevda's phone
 
-👉 Protecting your Lovable app from spam sign-ups and bots? Here's the layered defence: https://launchstudio.eu/en/blog/how-do-i-protect-my-lovable-app-from-spam-and-bots
+THE WEEKS AFTER
+The marketplace was usable again within two days. Fake sign-ups fell to a handful a week, and real membership grew to about 900 households.
+
+"The newspaper article brought me neighbours and bots. The bots were much faster." - Sevda Arslan
+
+https://launchstudio.eu/en/blog/how-do-i-protect-my-lovable-app-from-spam-and-bots
 
 #Lovable #Supabase #BotProtection #AppSecurity #LaunchStudio #Manifera

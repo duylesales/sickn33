@@ -1,20 +1,25 @@
-🩺 Anouk Dijkstra built ZorgMatch - matching home care clients in Hoogezand with independent caregivers - in Lovable, moving fast on a product her community urgently needed. What she didn't know: care notes and medication schedules sat behind sequential, guessable URLs. Anyone with an account could view another client's medication schedule just by changing a number in the address bar. 😳
+WHY she built it ❤️
+Anouk Dijkstra saw a need in Hoogezand: home care clients and independent caregivers who needed to find each other. It felt urgent, so she moved fast and built ZorgMatch in Lovable.
 
-AI tools build what you asked for. They don't ask "what happens when this person wants their data deleted?" 🧠
+WHAT it holds
+Care notes. Medication schedules. Contact details for clients and caregivers. Some of the most sensitive information a person has.
 
-❌ Care records reachable via sequential, predictable URLs - a classic IDOR vulnerability
-❌ No permission check on who could view whose medication schedule
-❌ Sensitive fields stored without encryption at rest
-❌ No GDPR-required data export or deletion flow built in at all
+WHAT was wrong
+During a routine review, LaunchStudio's engineers found care records behind sequential, guessable URLs. Anyone with a ZorgMatch account could view another client's medication schedule by changing a number in the address bar. No permission check stood in the way.
 
-✅ Rebuilt authorization so every record request is checked against the logged-in user's actual permissions
-✅ Encrypted sensitive fields at rest
-✅ Added a proper data export and deletion flow to meet GDPR requirements
+HOW it was fixed (6 business days, €1,100)
+• Authorization rebuilt, so every record request is checked against the logged-in user's actual permissions
+• Sensitive fields encrypted at rest
+• A proper data export and deletion flow to meet GDPR requirements
 
-At **LaunchStudio**, this is the exact review our engineers run for AI-built apps handling personal or sensitive data - 11+ years of experience behind every audit. 🛡️
+WHERE it stands now
+ZorgMatch passes a full data access audit. Each care record is visible only to the client, their assigned caregiver and authorized staff.
 
-Her result: ZorgMatch now passes a full data access audit, with every care record accessible only to the client, their caregiver, and authorized staff. 🚀
+WHO was affected
+Nobody. It was fixed before a single client was affected.
 
-👉 Handling sensitive personal data in an AI-built app? Talk through what you might be missing: https://launchstudio.eu/en/blog/ai-privacy-issues-hoogezand
+"I built ZorgMatch to help people, and I nearly exposed their most sensitive information without knowing it. LaunchStudio fixed it before a single client was affected." - Anouk Dijkstra
+
+Building something people trust with their health? Protect that trust first: https://launchstudio.eu/en/blog/ai-privacy-issues-hoogezand
 
 #AINativeFounder #LaunchStudio #Manifera #AIPrivacy #GDPR

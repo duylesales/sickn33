@@ -1,21 +1,30 @@
-🚨 Femke Brouwers, a lifestyle coach in Zeist, built Dagritme in Lovable: habit tracking with coaching programmes on a monthly plan. Lovable connected Stripe Checkout and marked users as "pro" the moment they reached the success page. After two months, Stripe showed 58 active subscriptions. The app had 91 pro users. 😳
+🎟️ Imagine a members-only party where the bouncer checks... whether you're standing near the door.
 
-She thought Stripe was working because money came in. She just didn't know how much more was leaking out. Here's why: 🧠
+That's roughly how Dagritme decided who was "pro."
 
-❌ Users who cancelled in Stripe kept their pro access
-❌ Refreshing an old success page tab unlocked pro without paying
-❌ Failed renewals never noticed
-❌ The profiles.is_pro column writable by users themselves
+Femke Brouwers, a lifestyle coach in Zeist, built Dagritme in Lovable: habit tracking with coaching programmes on a monthly plan. Lovable connected Stripe Checkout and marked users as pro when they reached the success page.
 
-✅ A subscriptions table updated only by a verified Stripe webhook
-✅ Failed renewals handled with a seven-day grace period and an email
-✅ Plan checks moved into Row Level Security for premium content
-✅ The Stripe Customer Portal connected and existing users reconciled against Stripe
+Two months in, the guest list didn't add up:
+Stripe's list: 58 active subscriptions
+The app's list: 91 pro users
 
-At **LaunchStudio**, backed by Manifera's 11+ years of payment integrations, access follows webhook events - never the success page. 🛠️
+Who were the other 33?
+• Members who had cancelled in Stripe and kept access
+• People who opened checkout, refreshed an old tab to reach the success URL, and never paid
+• And failed renewals nobody ever noticed
+Plus one open door: the profiles.is_pro column was writable by users themselves.
 
-💡 Her result: €2,700, eight business days. App access matched Stripe exactly from the next billing cycle, and recovered failed renewals added roughly 9% to monthly revenue. 🚀
+The new door policy (LaunchStudio, 8 business days, €2,700, plus €49/month managed hosting):
+✓ A subscriptions table updated only by a verified Stripe webhook
+✓ Failed renewals handled with a seven-day grace period and email
+✓ Plan checks for premium content moved into RLS
+✓ The Stripe Customer Portal connected
+✓ Existing users reconciled against Stripe
 
-👉 Adding Stripe subscriptions to a Lovable app? Here are the four pieces you need - and the mistakes to avoid: https://launchstudio.eu/en/blog/how-do-i-add-stripe-subscriptions-to-a-lovable-app
+From the next billing cycle, app access matched Stripe exactly. And recovering failed renewals added roughly 9% to monthly revenue.
+
+"I thought Stripe was working because money came in. I just didn't know how much more was leaking out." - Femke Brouwers
+
+https://launchstudio.eu/en/blog/how-do-i-add-stripe-subscriptions-to-a-lovable-app
 
 #Stripe #Lovable #SaaS #Subscriptions #LaunchStudio #Manifera

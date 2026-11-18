@@ -1,21 +1,36 @@
-🚨 Ahmed Benali built Factuurportaal with v0, Next.js and Supabase: freelancers send invoices, clients view and pay them online. He'd carefully written Row Level Security policies. Then, while adding reporting with Cursor, the agent installed Prisma. 😳
+🔍 CASE FILE: The Policies That Were Never Consulted
 
-A client changed the invoice number in a URL and saw another freelancer's invoice. Prisma connected with the postgres role - bypassing every policy Ahmed had written. Here's what to know about Prisma or Drizzle in an AI-written Next.js app: 🧠
+THE CLIENT
+Ahmed Benali, Den Haag. Built Factuurportaal with v0, Next.js and Supabase: freelancers and small agencies send invoices to clients, who view and pay them online.
 
-❌ An ORM connection silently bypassing RLS
-❌ 14 of 23 server actions loading records by ID without ownership checks
-❌ Schema changes made both in the dashboard and through Prisma migrations
-❌ Direct connections failing under month-end invoice peaks
+THE ALIBI
+Ahmed had done his homework. After reading about Supabase security, he carefully wrote Row Level Security policies.
 
-✅ One clear pattern: Prisma server-side with scoped helpers, Supabase client for RLS-protected reads
-✅ All 23 server actions rewritten to require organisation scope, with negative tests
-✅ A single migration history with RLS kept as a second layer
-✅ Prisma through the Supabase pooler, and project instructions for Cursor
+THE INCIDENT
+A client changed the invoice number in a URL, by accident, and saw another freelancer's invoice meant for a different client.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we make sure the code doing most of the work actually respects your security rules. 🛠️
+THE INVESTIGATION
+While adding reporting features, Cursor had installed Prisma and moved most data access into server actions. Prisma connected with the postgres role from the default connection string. That role bypasses every RLS policy. The policies were there. Nobody was asking them.
 
-His result: €3,500, 9 business days, with the exposure closed within a day. Month-end connection errors disappeared, and the new tests caught two later AI changes that would have reintroduced unscoped queries. 🚀
+FURTHER EVIDENCE
+• 14 of 23 Prisma server actions and routes loaded or updated records by ID with no ownership check
+• Some screens used the Supabase client in the browser as well
+• Schema changes made both in the dashboard and through Prisma migrations
+• Direct connections from serverless functions, failing at month-end invoice peaks
 
-👉 Using Prisma or Drizzle with Supabase? Here's what to watch out for: https://launchstudio.eu/en/blog/prisma-or-drizzle-in-an-ai-written-nextjs-app
+THE RESOLUTION (LaunchStudio, €3,500)
+• Exposure closed within a day
+• Every data access path documented, and one clear pattern chosen: Prisma server-side with authorisation in scoped helper functions, the browser client only for RLS-protected reads
+• All 23 server actions rewritten to require the user's organisation scope, each with negative authorisation tests
+• One migration history, with RLS kept in SQL as a second layer
+• Prisma through the Supabase pooler, and project instructions telling Cursor which pattern to follow
+Full cleanup: 9 business days.
+
+CASE CLOSED
+Month-end connection errors disappeared. The new tests have since caught two AI-generated changes that would have brought unscoped queries back.
+
+"I had written all the right policies. I just didn't know that the code doing most of the work wasn't using them." - Ahmed Benali
+
+https://launchstudio.eu/en/blog/prisma-or-drizzle-in-an-ai-written-nextjs-app
 
 #Prisma #Drizzle #NextJS #Supabase #AIFounder #LaunchStudio #Manifera

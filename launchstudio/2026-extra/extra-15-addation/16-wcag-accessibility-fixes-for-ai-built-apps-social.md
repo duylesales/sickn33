@@ -1,21 +1,33 @@
-🚨 Hanna Bakker, a former policy adviser, built Vergunningloket with v0 and Supabase: a portal where residents apply for event and terrace permits. A municipality in Drenthe wanted it - if it passed an external WCAG 2.1 AA test before go-live. It failed on 31 criteria. 😳
+📝 ACCESSIBILITY TEST RESULT: Vergunningloket
 
-The portal looked professional. But keyboard users, screen reader users and low-vision users hit wall after wall. Here are the WCAG fixes AI-built apps need most: 🧠
+Standard: WCAG 2.1 AA
+First test: ❌ FAILED on 31 criteria
+Retest: ✅ PASSED, no failures at level A or AA
 
-❌ A document upload area keyboard users couldn't reach
-❌ Placeholders instead of labels, errors only as red outlines
-❌ Focus outlines removed project-wide, and a teal that failed contrast
-❌ Silent status updates, identical page titles and lang set to English on Dutch pages
+Hanna Bakker, a former policy adviser, built Vergunningloket with v0 and Supabase: a portal that lets residents of small municipalities apply for event and terrace permits, upload documents and follow their application. A municipality in Drenthe wanted it, but procurement required WCAG 2.1 AA, confirmed by an external test before go-live.
 
-✅ An accessible file input and button pattern for uploads
-✅ Visible labels, autoComplete attributes and linked text errors on every step
-✅ Proper dialog focus handling, focus-visible styles and a compliant teal
-✅ Live regions, unique page titles, correct language and axe checks in the pipeline
+EXAMINER'S NOTES, first test
+• Document upload: a styled div that keyboard users couldn't reach
+• Multi-step form: placeholders instead of labels, errors shown only as red outlines
+• Focus outlines removed across the whole project
+• The municipality's teal failed contrast on white
+• The confirmation dialog let focus escape behind it
+• "Document uploaded" and similar updates were silent for screen readers
+• Every page had the same title, and Dutch pages were marked as English
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we make AI-built apps usable for every user, not just good-looking. 🛠️
+REMEDIATION (LaunchStudio, 11 business days, €3,200)
+✏️ An accessible file input and button pattern for uploads
+✏️ Visible labels, autoComplete attributes and linked text errors on every step
+✏️ Radix dialogs restored with correct focus handling, plus a :focus-visible style app-wide
+✏️ A compliant teal in the design tokens
+✏️ Live regions for uploads and step changes, unique page titles, the right language
+✏️ Axe checks in the deployment pipeline, and accessibility rules in the v0 project instructions
 
-Her result: €3,200, 11 business days. The portal passed the retest with no failures at level A or AA, and two neighbouring municipalities adopted it within the year. 🚀
+AFTER THE RETEST
+The municipality went live. Within the year, two neighbouring municipalities adopted Vergunningloket too, both citing the accessibility report.
 
-👉 Is your AI-built app accessible? Here are the fixes that matter: https://launchstudio.eu/en/blog/wcag-accessibility-fixes-for-ai-built-apps
+"v0 made the portal look professional. Making it usable for every resident was the part that actually won the contract." - Hanna Bakker
+
+https://launchstudio.eu/en/blog/wcag-accessibility-fixes-for-ai-built-apps
 
 #WCAG #Accessibility #v0 #GovTech #AIFounder #LaunchStudio #Manifera

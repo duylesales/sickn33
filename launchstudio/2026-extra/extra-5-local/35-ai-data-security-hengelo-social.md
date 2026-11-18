@@ -1,20 +1,29 @@
-🏥 Marloes ten Cate, a former hospital administrator in Hengelo, built Zorgrooster - a scheduling tool for home care nurses tracking patient visits, care notes, and medication schedules - using Lovable. It worked well for her pilot of four nurses. Then LaunchStudio's review found the Supabase backend had zero row-level security: any logged-in nurse could query the entire patient database, including medication records for patients that weren't theirs. 😳
+🩺 PATIENT CHART: Zorgrooster, Hengelo
 
-That's not just a bug - with health data, that's a GDPR violation waiting to happen. 🧠
+NAME: Zorgrooster
+BUILT BY: Marloes ten Cate, former hospital administrator
+BUILT WITH: Lovable
+PURPOSE: scheduling for home care nurses, covering patient visit times, care notes and medication schedules
 
-❌ Any nurse account could read every patient's care notes and medication history
-❌ No encryption at rest on sensitive medication and care-note fields
-❌ No audit log - no record of who accessed what, or when
-❌ Roughly 45% of AI-generated code ships with at least one exploitable security gap like this
+HISTORY
+Worked well in a pilot with four nurses. Next step: a regional home care organization with more than sixty staff.
 
-✅ Implemented granular RLS policies scoping each nurse to only her assigned patients
-✅ Added encryption at rest for medication and care note fields
-✅ Built an audit log tracking every record access for GDPR compliance
+EXAMINATION (LaunchStudio data security review)
+No row-level security on the Supabase backend. Any logged-in nurse could query the full patient database, including care notes and medication records for patients they were never assigned to.
 
-At **LaunchStudio**, Manifera's 120+ engineers run this exact data security audit - the same rigor applied to enterprise clients like Vodafone and TNO. 🛡️
+DIAGNOSIS
+A direct GDPR violation, given the special category health data involved.
 
-Zorgrooster passed its regional care organization's data protection review on the first submission, and now schedules over sixty nurses across Hengelo and Twente. 🚀
+TREATMENT (7 business days, €1,450)
+💊 Granular RLS policies, so each nurse sees only their assigned patients
+💊 Encryption at rest for medication and care note fields
+💊 An audit log of every record access, for compliance
 
-👉 Handling patient data in Hengelo? Check your RLS policies before your next pilot: https://launchstudio.eu/en/blog/ai-data-security-hengelo
+PROGNOSIS
+Excellent. Zorgrooster passed the care organization's data protection review on the first submission. It now schedules more than sixty nurses across Hengelo and the wider Twente region.
+
+"I had no idea every nurse could see every patient's medication history. That's the kind of mistake that ends a healthcare product before it starts - LaunchStudio caught it before our first real client ever saw it." - Marloes ten Cate
+
+Building with health data? Book a check-up: https://launchstudio.eu/en/blog/ai-data-security-hengelo
 
 #AINativeFounder #LaunchStudio #Manifera #Hengelo #GDPR

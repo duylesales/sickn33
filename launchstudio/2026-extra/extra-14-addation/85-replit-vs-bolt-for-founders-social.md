@@ -1,21 +1,30 @@
-🚨 Sven Dijkman built Prijswacht in Bolt: a tool that lets small webshop owners track competitors' prices and get alerts when they change. The dashboard looked great in Bolt's preview. The core feature didn't work: price checks ran in the browser while the dashboard was open - so nothing was checked when users were offline. 😳
+🌙 03:00. Who's checking competitor prices?
 
-Bolt built the dashboard he wanted. The feature that mattered needed a server that never sleeps. Here's where the setup fell short: 🧠
+In Prijswacht's first version: nobody.
 
-❌ Background price checks running in a browser tab that stopped when it closed
-❌ A rebuilt Python worker connected with an over-privileged database key
-❌ No rate limiting towards competitor sites
-❌ No monitoring to show whether checks actually ran
+Sven Dijkman built Prijswacht in Bolt, so small webshop owners could track competitors' prices and get alerts when they change. The dashboard looked great in Bolt's preview. But the core feature, checking hundreds of competitor pages every few hours, ran as code in the browser while the dashboard was open. Close the tab, and the checking stopped.
 
-✅ The Bolt dashboard deployed on Netlify with Row Level Security per shop
-✅ The Replit worker on a scheduled deployment, with a restricted database role
-✅ Rate limiting towards competitor sites and retry logic
-✅ Price change alerts sent by an edge function, plus monitoring for the worker
+So Sven rebuilt the checker with Replit Agent, as a Python worker on a scheduled deployment, and kept the Bolt dashboard. A night shift, finally. But it was connected loosely: the worker wrote to the same Supabase database using an over-privileged key.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of integration work across Node.js, Python and PostgreSQL, we match each tool to the workload it fits - and connect them with least-privilege access. 🛠️
+What LaunchStudio set up, keeping both halves (11 business days, €3,600):
 
-💡 His result: €3,600, eleven business days. Price checks run reliably every four hours whether users are online or not, and Prijswacht reached 75 paying webshops within a quarter. 🚀
+THE DAY SHIFT (Bolt)
+✓ The dashboard deployed on Netlify
+✓ Row Level Security per shop
 
-👉 Replit or Bolt - which fits founders who want to ship? Here's the comparison by workload: https://launchstudio.eu/en/blog/replit-vs-bolt-for-founders
+THE NIGHT SHIFT (Replit)
+✓ A scheduled deployment with a restricted database role
+✓ Rate limiting towards competitor sites
+✓ Retry logic
+✓ Monitoring
+
+THE HANDOVER
+✓ Alerts sent by an edge function whenever a price change is detected
+
+03:00 now: the checks run, every four hours, whether anyone is online or not. Within a quarter, Prijswacht reached 75 paying webshops.
+
+"Bolt built the dashboard I wanted. The feature that mattered needed a server that never sleeps, and that's where Replit fitted." - Sven Dijkman
+
+https://launchstudio.eu/en/blog/replit-vs-bolt-for-founders
 
 #Replit #Bolt #SaaS #Supabase #LaunchStudio #Manifera

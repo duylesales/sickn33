@@ -1,21 +1,31 @@
-🚨 Hugo Dubois, a sommelier in Brussels, built Kelderclub - a monthly box of Belgian and French wines that members rate and reorder. He built it in Bolt first, then rebuilt it in Lovable after reading that "Lovable is better for production". He brought both versions to LaunchStudio: which one should he launch? 😳
+🍷 TASTING NOTES: one wine club, two vintages
 
-Each tool had got him halfway, in a different direction. Here's what the assessment found: 🧠
+Hugo Dubois, a sommelier in Brussels, built Kelderclub: members get a curated monthly box of Belgian and French wines, rate them, and reorder favourites. He started in Bolt on a friend's recommendation, then rebuilt it in Lovable after reading that "Lovable is better for production." He brought both to LaunchStudio and asked which one to launch.
 
-❌ Bolt: the better ordering logic, but member preferences stored in browser storage
-❌ Bolt: a Mollie live key in client code, and a failed first Netlify build
-❌ Lovable: a cleaner interface and real Supabase tables, but every member could read every other member's address and orders
-❌ Lovable: subscription renewals not connected to payments at all
+THE BOLT VINTAGE
+Body: the better ordering logic
+Nose: member preferences kept in browser storage
+Finish: a Mollie live key in client code, and a failed first Netlify build
 
-✅ The Lovable version kept for its interface and data foundation
-✅ Bolt's ordering logic ported into a Supabase database function
-✅ Row Level Security completed, Mollie moved to edge functions with first-payment mandates for monthly boxes
-✅ Bancontact for Belgian members, age confirmation at sign-up and deployment with monitoring
+THE LOVABLE VINTAGE
+Body: a cleaner interface and real Supabase tables
+Nose: every member able to read every other member's address and order history
+Finish: subscription renewals not connected to payments at all
 
-At **LaunchStudio**, backed by Manifera's 160+ projects, we know how Bolt and Lovable prototypes typically fail - and we fix the layer that turns either into a product. 🛠️
+THE SOMMELIER'S CHOICE
+The Lovable vintage, for its interface and data foundation. Then a blend (LaunchStudio, 12 business days, €4,200, plus €49/month managed hosting):
+🍇 The ordering logic ported from Bolt into a Supabase database function
+🍇 Row Level Security completed
+🍇 Mollie moved into edge functions, with first-payment mandates for monthly boxes
+🍇 Bancontact for Belgian members
+🍇 Age confirmation at sign-up
+🍇 Deployment with monitoring
 
-💡 His result: €4,200, twelve business days. Kelderclub launched with 160 founding members, and Hugo stopped switching tools. 🚀
+SERVED
+Kelderclub launched with 160 founding members. Hugo stopped switching tools and builds new features in Lovable. The Bolt project stays in the cellar as a record of the ordering logic.
 
-👉 Bolt or Lovable - which prototype is easier to ship? Here's where the production work really sits: https://launchstudio.eu/en/blog/bolt-vs-lovable-which-prototype-is-easier-to-ship
+"Each tool got me halfway in a different direction. The production work was what actually joined the halves." - Hugo Dubois
+
+https://launchstudio.eu/en/blog/bolt-vs-lovable-which-prototype-is-easier-to-ship
 
 #Bolt #Lovable #Mollie #Bancontact #LaunchStudio #Manifera

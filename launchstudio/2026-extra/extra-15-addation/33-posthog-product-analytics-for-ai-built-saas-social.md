@@ -1,21 +1,31 @@
-🚨 Bram Willems built Offertemaker with Lovable and Supabase: installers and contractors create professional quotes and send them for digital approval. Sign-ups grew through LinkedIn, but most trial users never paid - and Bram didn't know why. 😳
+GROUP A: companies that uploaded their own materials price list in the first session.
+GROUP B: companies that didn't.
 
-Lovable had added PostHog with autocapture. The result: thousands of events named after CSS classes, no company view, and session replays recording clients' names, addresses and prices unmasked. Here's how to set up PostHog product analytics in an AI-built SaaS: 🧠
+Group A converted to paid at about four times the rate of Group B. 📈
 
-❌ Autocapture noise instead of meaningful events
-❌ No way to see companies rather than users
-❌ Unmasked session replays with client data
-❌ Missing payment events, US cloud and no consent banner
+That one insight took Offertemaker's trial-to-paid conversion from around 9% to 17%. But first, Bram Willems had to be able to see it.
 
-✅ An event plan with nine events and activation defined as "first quote sent"
-✅ Explicit events, plus payment events from the Mollie webhook handler
-✅ Users identified by internal ID and grouped by company
-✅ PostHog EU cloud, memory persistence and masked replays excluding quote pages
+Bram built Offertemaker with Lovable and Supabase: installers and contractors create professional quotes with materials, labour and photos, then send them for digital approval. Sign-ups grew through LinkedIn, but most trial users never paid, and website page views couldn't tell him why.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we track the right few things, so the answers become obvious. 🛠️
+Lovable had added PostHog with autocapture when he asked. The result:
+• Thousands of events named after CSS classes
+• No way to look at companies instead of individual users
+• Session replays showing clients' names, addresses and prices unmasked
+• No payment events, because payments happened in a Mollie webhook
+• The US cloud with cookie persistence, and no consent banner
 
-His result: €1,950, 6 business days. Companies uploading their price list in the first session converted at about four times the rate. After an onboarding redesign, trial-to-paid rose from around 9% to 17% in a quarter. 🚀
+What LaunchStudio set up (6 business days, €1,950):
+→ An event plan of nine events, with one activation definition: "first quote sent to a client"
+→ Autocapture off, explicit events in the frontend
+→ Payment and subscription events sent from the Mollie webhook handler
+→ Users identified by internal ID and grouped by company
+→ PostHog EU cloud with memory persistence
+→ Replays masking all inputs and skipping quote detail pages, plus inputs for the privacy policy
 
-👉 Want answers from your analytics? Here's how to use PostHog in an AI-built SaaS: https://launchstudio.eu/en/blog/posthog-product-analytics-for-ai-built-saas
+Within a month, the Group A vs Group B pattern was obvious. Bram rebuilt onboarding around a price list import, and conversion nearly doubled over the next quarter.
+
+"I had analytics, but I didn't have answers. Once we tracked the right nine things, the answer was obvious within weeks." - Bram Willems
+
+What does your Group A do differently? https://launchstudio.eu/en/blog/posthog-product-analytics-for-ai-built-saas
 
 #PostHog #ProductAnalytics #SaaS #Growth #AIFounder #LaunchStudio #Manifera

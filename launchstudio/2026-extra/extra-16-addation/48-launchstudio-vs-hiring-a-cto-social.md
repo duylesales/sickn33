@@ -1,21 +1,32 @@
-💊 Yara Mulder runs a platform for independent pharmacists from Haarlem, built with Lovable and Supabase: pharmacists share stock surpluses and arrange transfers. With 70 pharmacies on board and an angel investor interested, two advisers told her: you need a technical co-founder first. A developer offered to join for a substantial share, and to rebuild everything in another framework. 🤔
+📈 THE CAP TABLE, two possible versions
 
-Yara asked the investor what they actually needed. The answer wasn't "a CTO": 🧠
+VERSION A
+Yara Mulder: founder
+New technical co-founder: a substantial share, offered in exchange for rebuilding the platform in a different framework
 
-❌ Proof that pharmacy data was secure
-❌ Clarity on who owned the code and accounts
-❌ Confidence the product could scale to a few hundred pharmacies
-❌ A plan for technical leadership later, not equity given away now
+VERSION B
+Yara Mulder: founder
+Angel investor: the round
+Technical co-founder: not on the cap table
+Cost of the alternative: €3,200, plus €49/month
 
-✅ Database policies rewritten per pharmacy and region
-✅ The project moved into her company's accounts, with staging, backups and monitoring
-✅ Audit logging for stock transfers
-✅ A plain-language summary of architecture, security and scaling headroom, plus a plan to hire a CTO after 300 pharmacies
+Yara runs Apotheekruil from Haarlem, built with Lovable and Supabase: independent pharmacists share stock surpluses and arrange transfers. 70 pharmacies used it. An angel investor was interested, and two advisers said she needed a technical co-founder before raising. A developer she knew offered to join, for that substantial share.
 
-At **LaunchStudio**, backed by Manifera's 11+ years and 160+ delivered projects for clients such as Vodafone and TNO, we help founders launch without hiring too early, and prepare the product for the CTO they hire later. 🛠️
+So Yara asked the investor what they actually needed. Three things: security of pharmacy data, ownership of the code, and whether the product could grow to a few hundred pharmacies.
 
-Her result: €3,200, eight business days. The angel round closed without a technical co-founder, and a year later her new CTO kept the existing stack. 🚀
+What LaunchStudio did (8 business days, €3,200):
+✓ Database policies rewritten per pharmacy and region
+✓ The project moved into Yara's company accounts
+✓ Staging, backups and monitoring
+✓ Audit logging for stock transfers
+✓ A plain-language summary of the architecture, security measures and scaling headroom
 
-👉 LaunchStudio vs hiring a CTO: https://launchstudio.eu/en/blog/launchstudio-vs-hiring-a-cto
+Yara sent the investor that summary, plus a plan: hire a CTO after reaching 300 pharmacies. She moved to Launch & Grow for ongoing care.
+
+The angel round closed on Version B. A year later, at around 280 pharmacies, Yara hired a CTO, who started from a documented, tested codebase and kept the existing stack.
+
+"I nearly gave away a large share of my company to rebuild something that worked. What I actually needed was evidence that it was safe, and a plan for when to hire." - Yara Mulder
+
+https://launchstudio.eu/en/blog/launchstudio-vs-hiring-a-cto
 
 #CTO #Founders #Lovable #Fundraising #AIFounder #LaunchStudio #Manifera

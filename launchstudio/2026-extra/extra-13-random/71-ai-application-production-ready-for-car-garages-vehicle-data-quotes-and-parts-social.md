@@ -1,21 +1,37 @@
-🚨 Ferry Janssen, owner of an independent garage in Helmond, built Garagepost in Bolt: customers book services by licence plate, receive photo quotes for extra work, approve them in the app and pay before collecting their car. Three more garages in the Helmond–Eindhoven area joined. Then a customer who'd approved a €480 brake-disc quote received an invoice for €560. 😳
+🔧 Two versions of the same brake job
 
-The parts catalogue price had risen between approval and invoice, and the quote was recalculated live. Approval links were guessable order numbers. Customers of one garage could see another garage's vehicles and invoices through the API. Monday mornings were routinely double-booked, payments were marked successful on browser redirect, and the plate lookup could be called without login thousands of times a day. Here's what makes a garage app production ready: 🧠
+VERSION A: the quote the customer approved
+Brake discs: €480
+Status: approved
 
-❌ Approved quotes that change price afterwards
-❌ Guessable approval links
-❌ Customers seeing other garages' data
-❌ No capacity check and browser-confirmed payments
+VERSION B: the invoice the customer received
+Brake discs: €560
+Why: the parts catalogue price rose between approval and invoicing, and the quote was recalculated live
 
-✅ Quotes frozen when sent, with parts prices stored per line and supplier references
-✅ Random expiring approval tokens tied to the customer account, approvals logged with server timestamps
-✅ Garage-level separation with row level security and capacity per lift and mechanic
-✅ Verified Mollie webhooks linked to job release, the plate lookup rate-limited behind authentication, and private photo storage
+Ferry Janssen, owner of an independent garage in Helmond, built Garagepost in Bolt: customers book services by licence plate, get photo quotes for extra work, approve them in the app, and pay before collecting their car. Three other independent garages around Helmond and Eindhoven started using it. Then one customer complained.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we make sure "yes" to a quote means the same price on the invoice. ⚙️
+Customers trust a garage that shows them the photo and the price. They stop trusting it the moment the price moves after they've said yes.
 
-His result: €2,200, eight business days. Disputed quotes stopped, Monday overbooking disappeared, and Garagepost signed four more independent garages in North Brabant. 🚀
+The review found more:
+• Approval links were order numbers anyone could guess
+• Customers of one garage could see vehicles and invoices from another, through the API
+• Monday mornings were routinely double-booked, because capacity wasn't checked
+• Payments were marked successful on the browser redirect
+• The licence plate lookup could be called without logging in, thousands of times a day
 
-👉 AI application production ready for car garages: vehicle data, quotes and parts: https://launchstudio.eu/en/blog/ai-application-production-ready-for-car-garages-vehicle-data-quotes-and-parts
+Making version A the only version (LaunchStudio, 8 business days, €2,200):
+✓ Quotes frozen the moment they're sent, with parts prices stored per line and supplier references
+✓ Approval links as random, expiring tokens tied to the customer account, with approvals logged using server timestamps
+✓ Garage-level separation with Row Level Security
+✓ Capacity per lift and per mechanic built into bookings
+✓ Payments confirmed by verified Mollie webhooks, linked to releasing the car
+✓ The plate lookup behind authentication, and rate-limited
+✓ Photos moved to private storage
+
+Disputed quotes stopped, because every approval now has a fixed price and a record. Monday overbooking disappeared. And Garagepost signed four more independent garages in North Brabant.
+
+"Customers trust a garage that shows them the photo and the price. They stop trusting it the moment the price moves after they said yes." - Ferry Janssen
+
+https://launchstudio.eu/en/blog/ai-application-production-ready-for-car-garages-vehicle-data-quotes-and-parts
 
 #Automotive #Garage #Bolt #Payments #LaunchStudio #Manifera

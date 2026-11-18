@@ -1,21 +1,30 @@
-🚨 Thijs Wolterink's Kinderopvangplanner handles rosters and parent communication for 21 childcare locations - around 1,600 children. When two Amsterdam locations asked for English for expat parents, he asked Lovable to "add English". Four months later, one parent arrived for a settling-in session a month early. 😳
+🧩 Riddle: on an English screen, what date is 04/03?
 
-The English screen showed the date in Dutch order - the 4th of March read as the 3rd of April. That was just one symptom of a language bolted on with 140 inline conditions. Here's how to run a Dutch and English product from one codebase: 🧠
+A Dutch reader says the 4th of March. An English-speaking reader may well say the 3rd of April.
 
-❌ A language toggle with Dutch and English strings side by side across 38 screens
-❌ Nine newer screens with no English at all
-❌ Dates and numbers formatted by hand instead of by the user's locale
-❌ Emails in the organisation's language, and three different English words for "group"
+One parent read it the second way and came to a settling-in session a month early. 📅
 
-✅ A translation library, with all 201 strings extracted into keyed Dutch and English files
-✅ Sentences built from fragments rewritten whole; dates, times and amounts formatted per locale
-✅ A language preference per parent for emails, and a 14-term glossary fixed in both languages
-✅ AI-drafted English reviewed by a native speaker, plus a CI check that blocks deploys with missing keys
+That was Kinderopvangplanner, the rostering and parent communication tool Thijs Wolterink built in Lovable for childcare organisations: 21 locations, around 1,600 children. Two Amsterdam locations asked for English for their expat parents, so he asked the tool to add it. The result was a language toggle, with conditions behind it on 140 pieces of text across 38 screens, each rendering Dutch or English inline.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we prepare Dutch products for their first international customers - without doubling every future change. ⚙️
+Four months later, the two languages had drifted apart:
+• Nine newer screens had no English at all
+• Dates on the English screens followed the Dutch order
+• Notification emails used the organisation's language, not the parent's
+• The English used three words for "group": group, class and unit
 
-His result: €2,900, three business days. The CI check blocked four incomplete deploys the next quarter, and three more Amsterdam locations signed within two months. 🚀
+Solving it for good (LaunchStudio, 3 business days, €2,900):
+✓ A translation library, with all 140 strings plus 61 untranslated ones from the newer screens moved into keyed Dutch and English files
+✓ Eleven sentences stitched from fragments rewritten as whole sentences with placeholders
+✓ Every date, time and amount formatted through the user's locale, with months written out on the parent-facing schedule so nobody has to guess
+✓ A language preference stored per parent and used for emails
+✓ A glossary of fourteen terms agreed in both languages, including group, location, mentor and settling-in
+✓ English drafted by the model, then reviewed by a native speaker in an afternoon
+✓ A CI check comparing the key sets in both languages, blocking any deployment where they differ
 
-👉 Lovable i18n: a Dutch and English product in one codebase: https://launchstudio.eu/en/blog/lovable-i18n-a-dutch-and-english-product-in-one-codebase
+The English version is complete and has stayed that way. In the next quarter, the CI check blocked four deployments that would have shipped untranslated screens. Three more Amsterdam locations signed within two months, two of them citing the English parent communication.
+
+"One parent came a month early because we wrote the date the Dutch way on the English screen. That was the moment I stopped thinking of translation as words." - Thijs Wolterink
+
+https://launchstudio.eu/en/blog/lovable-i18n-a-dutch-and-english-product-in-one-codebase
 
 #Lovable #Internationalisation #SaaS #NoCode #LaunchStudio #Manifera

@@ -1,20 +1,23 @@
-🚨 Roos Janssen built ChemFlow - a SaaS tool tracking safety inspection schedules for chemical and manufacturing firms near Sittard-Geleen's Chemelot site - using v0 in three weeks. Her fourth customer's mid-cycle plan upgrade triggered a duplicate charge, because v0's Stripe integration only handled net-new subscriptions with no proration or upgrade path at all. 😳
+Once upon a time in Sittard-Geleen, there was a founder named Roos. 🏰
 
-The customer noticed before Roos did. That's an uncomfortable way to learn about a gap. 🧠
+Roos Janssen had worked in process-safety compliance near the Chemelot site, so she knew exactly what small chemical and manufacturing firms struggled with. In about three weeks, with v0, she built ChemFlow: a SaaS tool that tracks safety inspection schedules and compliance documents.
 
-❌ Billing logic only handled the "happy path" - subscribe once, pay once
-❌ No proration or upgrade/downgrade handling built into the Stripe integration
-❌ No automated backups of the compliance-record database
-❌ It all worked fine until real money and real edge cases showed up
+Within a month, three firms from the region's process-industry supply chain were paying customers. And all was well.
 
-✅ Rebuild billing logic to handle upgrades, downgrades, proration, and failed payment retries
-✅ Wire it properly through Stripe's subscription lifecycle webhooks
-✅ Add automated nightly backups with a tested restore procedure
+Until the fourth customer arrived.
 
-At **LaunchStudio**, Manifera's 160+ delivered projects and engineering teams across Amsterdam, Singapore, and Ho Chi Minh City specialize in exactly this transition - from "works for the demo" to "works for the invoice." 🛡️
+The fourth customer wanted more, and upgraded mid-cycle from the starter tier to the professional tier. The billing spell broke: they were charged twice.
 
-ChemFlow's result: it processed its next eleven plan changes without incident, and Roos now advertises tested backups directly to prospects who ask about business continuity. 🚀
+You see, v0's Stripe integration only knew how to start new subscriptions. It had never learned about upgrades or proration. And the customer noticed before Roos did, which is never the happy part of a story.
 
-👉 Onboarding your first paying SaaS customers soon? Stress-test your billing logic first: https://launchstudio.eu/en/blog/28-saas-ai-sittard-geleen
+So Roos called on LaunchStudio, and in 6 business days (€1,600):
+✨ Billing was rebuilt on Stripe's subscription lifecycle webhooks, covering upgrades, downgrades, proration and failed-payment retries
+✨ The compliance-record database got automated nightly backups, with a restore procedure that had actually been tested
+
+And the ending? ChemFlow handled its next eleven plan changes without incident. Today Roos brings up her tested backups herself, because in process-safety compliance, prospects always ask about business continuity.
+
+"A refund for one wrong charge is annoying. A firm doubting whether we can be trusted with their compliance records is a different kind of problem. LaunchStudio fixed both risks at once." - Roos Janssen
+
+The end. Unless your billing code only knows the first chapter: https://launchstudio.eu/en/blog/28-saas-ai-sittard-geleen
 
 #AINativeFounder #LaunchStudio #Manifera #SaaSBilling #SittardGeleen

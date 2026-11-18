@@ -1,21 +1,30 @@
-🔓 Sanne Bakker runs a bookkeeping firm in Apeldoorn and built Boekdeel with Lovable and Supabase: a portal where clients upload receipts, sign engagement letters and download annual reports. A month before inviting her 60 clients, a friend in IT logged in with a test account and changed one number in the address bar. He saw another client's annual report. 😱
+A month before launch, a friend logged in with a test account and changed one number in the address bar. 🔢
 
-The security review found more than one open door: 🧠
+Sanne Bakker runs a small bookkeeping firm in Apeldoorn. She had built Boekdeel with Lovable and Supabase, a portal where clients upload receipts, sign engagement letters and download their annual reports. Sixty clients were about to be invited. Her friend works in IT, and he was only curious.
 
-❌ Policies letting any logged-in user read every row
-❌ A public storage bucket, so report links worked without logging in
-❌ The service role key used in a client-side function
-❌ Admin checks in the browser only and password reset links that could redirect anywhere
+He saw another test client's annual report.
 
-✅ Database policies per client and assigned staff, with automated tests for every table
-✅ Reports in a private bucket with short-lived signed links
-✅ The key rotated, email sending moved to the server and admin roles checked server-side
-✅ Rate limits, security headers, restricted redirects and a tested backup restore
+Sanne thought she was weeks away from launch. She was actually one curious visitor away from a data breach.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of delivering software for clients such as Vodafone and TNO, we harden AI-built apps before launch at a fixed price, without changing your interface. 🛠️
+The review confirmed what her friend had found, and found more:
+• Several tables had Row Level Security enabled, with a policy that let any logged-in user read all rows
+• The reports bucket was public, so anyone with a link could download a file without logging in
+• The service role key was used in a client-side function to send notification emails
+• The admin page checked the user's role in the browser only
+• Password reset links could redirect to any website
 
-Her result: €2,650, seven business days. Sanne launched to all 60 clients on schedule, and two larger clients got their security questions answered with one report. 🚀
+The weeks before launch looked different after that (LaunchStudio, 7 business days, €2,650):
+✓ Policies rewritten so each client sees only their own records and staff see their assigned clients, with automated tests for every table
+✓ Reports in a private bucket, with short-lived signed links
+✓ Email sending moved to a server function, and the exposed key rotated
+✓ The admin role checked on the server
+✓ Redirect URLs restricted to Boekdeel's own domain
+✓ Rate limits on login and upload, security headers, and a tested restore from backup
 
-👉 Security hardening for your AI app before launch: https://launchstudio.eu/en/blog/ai-app-security-hardening-service-before-launch
+Sanne launched to all 60 clients on schedule. When two of her larger clients asked how their financial documents were protected, she sent them the summary report. No follow-up meeting needed.
+
+"I thought I was weeks away from launch. I was actually one curious visitor away from a data breach. Now I can explain exactly how client data is protected." - Sanne Bakker
+
+https://launchstudio.eu/en/blog/ai-app-security-hardening-service-before-launch
 
 #Security #Lovable #Supabase #Launch #AIFounder #LaunchStudio #Manifera

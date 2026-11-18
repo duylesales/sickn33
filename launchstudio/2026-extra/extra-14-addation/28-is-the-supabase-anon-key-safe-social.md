@@ -1,21 +1,26 @@
-🚨 Olivier Maes coordinates volunteers for a music festival near Leuven and built Shiftwissel with Bolt and Supabase: volunteers pick shifts, swap them and get their wristband details. About 600 signed up in two weeks. Then a volunteer with a development background sent him a message. 😳
+🔑 A visitor badge and a master key look alike from a distance.
 
-The app's JavaScript contained a key whose decoded role was service_role. Bolt had used it as a shortcut to make shift swaps work. Here's what that meant: 🧠
+The anon key is the visitor badge. It's meant to be in your app's code. What it opens depends on your Row Level Security policies.
 
-❌ A master key that bypasses Row Level Security, shipped to every visitor's browser
-❌ Anyone could read every volunteer's phone number and address
-❌ Anyone could delete the entire shift schedule
-❌ The anon key's policies never allowed swaps - so the AI took a shortcut
+The service role key is the master key. It opens everything, ignores every policy, and should never leave the server.
 
-✅ The service role key rotated within the hour, logs checked - no access beyond the volunteer's own test
-✅ Swap logic moved into an edge function that verifies both volunteers agreed
-✅ RLS on every table: volunteers read only their own details and the public schedule
-✅ A staging project for further changes
+Olivier Maes's festival app had the master key in the bundle.
 
-At **LaunchStudio**, backed by Manifera and its founder's cybersecurity background, secrets management comes first in every review - before any feature work. 🛠️
+Olivier coordinates volunteers for a music festival near Leuven and built Shiftwissel with Bolt and Supabase: volunteers pick shifts, swap them with each other and get their wristband details. About 600 volunteers signed up in two weeks.
 
-💡 His result: €1,350, four business days. Shiftwissel handled about 1,100 shift swaps during the festival without incident, and the organisers adopted it for the following year. 🚀
+Then a volunteer with a development background sent a message: the app's JavaScript contained a key whose decoded role was service_role. Bolt had used it to make "swap shift" work, because the anon key's policies didn't let one volunteer update another's shift. With that key, anyone could read every volunteer's phone number and address, or delete the entire shift schedule.
 
-👉 Is the Supabase anon key safe in your frontend? Yes - but only if your RLS is right. Here's how to check: https://launchstudio.eu/en/blog/is-the-supabase-anon-key-safe
+What LaunchStudio did (4 business days, €1,350):
+⏱️ The key rotated within the hour
+🔍 Logs checked for unusual access: nothing beyond the volunteer's own test
+✓ Swap logic moved into an edge function that checks both volunteers agreed
+✓ RLS on every table: volunteers read only their own details and the public shift schedule
+✓ A staging project for future changes
+
+During the festival, Shiftwissel handled about 1,100 shift swaps without incident. Olivier told volunteers openly about the fix, and the organisers adopted the app for the next year.
+
+"The anon key was in the code because it should be. The other key was in the code because the AI needed a shortcut. I didn't know there was a difference." - Olivier Maes
+
+https://launchstudio.eu/en/blog/is-the-supabase-anon-key-safe
 
 #Supabase #AppSecurity #Bolt #Events #LaunchStudio #Manifera

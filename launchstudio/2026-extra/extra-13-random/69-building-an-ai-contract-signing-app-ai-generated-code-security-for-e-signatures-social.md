@@ -1,21 +1,36 @@
-🚨 Loes Vermaat ran the office of her family's roofing company in Gorinchem and built Tekenklaar with Cursor: small contractors send quotes and agreements that customers sign on their phones. 45 contractors, about 900 signed documents in year one. Then a customer disputed a €14,000 roofing contract, claiming the signed version had a lower price. Tekenklaar couldn't prove otherwise. 😳
+⚖️ THE CASE OF THE €14,000 ROOF
 
-The "signed PDF" was regenerated from the database every time it was opened - and the contractor had edited the price after signing. Signing links were sequential IDs that never expired. There was no identity check beyond holding the link, the timestamp came from the customer's browser, and signed PDFs sat in a public bucket. Here's what AI-generated code security means for e-signatures: 🧠
+THE CLAIM
+A customer disputed a €14,000 roofing contract, saying the signed version had a lower price.
 
-❌ A "signed" document that changes when the database changes
-❌ Guessable, permanent signing links
-❌ Browser timestamps and no identity verification
-❌ Signed contracts in public storage
+THE DEFENCE
+Tekenklaar, the app it was signed in, couldn't prove otherwise.
 
-✅ Each document frozen as a PDF when sent, with its SHA-256 hash stored
-✅ Random single-use signing tokens expiring after 14 days, email verification and optional SMS codes above a contractor-set threshold
-✅ A server-side evidence trail with trusted timestamps, and signed documents locked - changes need a new signed version
-✅ Private storage, a certificate page on every signed PDF, and an EU signing provider integrated for advanced signatures
+THE EVIDENCE, as it stood
+• The "signed PDF" was regenerated from the database every time it was opened
+• The contractor had edited the price after signing, to correct a line item
+• Signing links were sequential IDs that never expired
+• The only identity check was having the link
+• The timestamp came from the customer's own browser
+• Signed PDFs sat in a public storage bucket
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering and its cybersecurity roots, we build the evidence that makes a signature something you can rely on. ⚙️
+Loes Vermaat, who ran the office of her family's roofing company in Gorinchem, built Tekenklaar with Cursor: small contractors send quotes and agreements, and customers sign on their phones. Forty-five contractors used it, and about 900 documents were signed in its first year. The signature looked real. What was missing was everything that proves a signature is real.
 
-Her result: €2,400, eight business days. The dispute was settled, two later disputes were resolved quickly with the evidence certificate, and Tekenklaar grew to 70 contractors. 🚀
+THE NEW RULES OF EVIDENCE (LaunchStudio, 8 business days, €2,400)
+✓ Every document frozen as a PDF at the moment it's sent, with its SHA-256 hash stored
+✓ Signing links as random, single-use tokens that expire after 14 days
+✓ Email verification, plus optional SMS codes above a threshold each contractor sets
+✓ An evidence trail recorded on the server, with timestamps from a trusted timestamping service
+✓ Signed documents locked: any change means a new version to be signed
+✓ Documents in private storage
+✓ A signing certificate page appended to each signed PDF
+✓ An EU signing provider, integrated as an option for contractors needing advanced signatures
 
-👉 Building an AI contract signing app? AI generated code security for e-signatures: https://launchstudio.eu/en/blog/building-an-ai-contract-signing-app-ai-generated-code-security-for-e-signatures
+VERDICT
+The disputed case was settled, and Loes rebuilt trust with a transparent explanation to every contractor. Two later disputes were resolved quickly using the evidence certificate. Tekenklaar grew to 70 contractors.
+
+"The signature looked real. What was missing was everything that proves a signature is real." - Loes Vermaat
+
+https://launchstudio.eu/en/blog/building-an-ai-contract-signing-app-ai-generated-code-security-for-e-signatures
 
 #ESignature #eIDAS #AppSecurity #Cursor #LaunchStudio #Manifera

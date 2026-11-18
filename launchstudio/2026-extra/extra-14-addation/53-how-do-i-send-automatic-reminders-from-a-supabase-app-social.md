@@ -1,21 +1,26 @@
-🚨 Kees Bakkenes runs a driving school in Emmen with six instructors and built Rijlesrooster in Bolt, with SMS lesson reminders for every student. All winter, the reminders worked perfectly. Then the clocks changed in March - and every reminder started arriving an hour late. Some students missed their lessons. 😳
+🕐 Did you know? Three facts about time that a driving school learned the hard way
 
-The reminders worked for five months. Then the clocks changed, and so did his students' attendance. Here's what was hiding in the generated code: 🧠
+DID YOU KNOW #1: The Netherlands changes its clocks in March.
+Kees Bakkenes runs a driving school in Emmen with six instructors and built Rijlesrooster in Bolt: students book lessons, instructors manage availability, everyone gets SMS reminders. All winter, reminders worked. After the March clock change, every reminder arrived an hour late, and some students missed lessons. Bolt's scheduled function compared local times stored as text with UTC server time.
 
-❌ Local times stored as text, compared with UTC server time
-❌ A function running every minute that resent reminders when the SMS provider was slow - some students got the same message three times
-❌ No record of what had already been sent
-❌ No alert when the function failed after a provider outage - nobody noticed for two days
+DID YOU KNOW #2: A slow reply is not the same as no reply.
+The function ran every minute. When the SMS provider responded slowly, it sent the reminder again. Some students got the same message three times.
 
-✅ A reminders outbox table with UTC timestamps and Europe/Amsterdam scheduling logic
-✅ Scheduling moved to Supabase Cron, every five minutes
-✅ Idempotent sending with status tracking, so each reminder goes out exactly once
-✅ Retries for temporary failures and alerts for stalled jobs
+DID YOU KNOW #3: A job that fails quietly can stay failed for days.
+After an SMS provider outage, the function stopped working. Nobody noticed for two days.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of scheduling systems for enterprise and logistics clients, we treat scheduled jobs as monitored infrastructure, not a timer that hopes for the best. 🛠️
+What LaunchStudio built (5 business days, €1,400):
+✓ A reminders table with UTC timestamps and Europe/Amsterdam scheduling logic
+✓ Scheduling moved to Supabase Cron, every five minutes
+✓ Idempotent sending, with a status per reminder
+✓ Retries for temporary failures
+✓ Alerts for stalled jobs
 
-💡 His result: €1,400, five business days. Through the October clock change and the year after, reminders arrived on time with no duplicates, and missed lessons fell noticeably. 🚀
+ONE MORE THING YOU MIGHT NOT KNOW
+Through the October clock change and the whole following year, reminders arrived on time, with no duplicates. And according to Kees's instructor reports, missed lessons fell noticeably.
 
-👉 Building reminders into a Supabase app? Here are the six building blocks that make them reliable: https://launchstudio.eu/en/blog/how-do-i-send-automatic-reminders-from-a-supabase-app
+"The reminders worked perfectly for five months. Then the clocks changed and so did my students' attendance." - Kees Bakkenes
+
+https://launchstudio.eu/en/blog/how-do-i-send-automatic-reminders-from-a-supabase-app
 
 #Supabase #Bolt #pgcron #SaaS #LaunchStudio #Manifera

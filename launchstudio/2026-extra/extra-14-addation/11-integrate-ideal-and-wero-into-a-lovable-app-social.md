@@ -1,21 +1,28 @@
-🚨 Sanne Mulder runs a small plant nursery in Haarlem and built Stekje in Lovable: a monthly subscription with a cutting, care instructions and a pot. An Instagram feature brought great traffic - and more than half of the people who reached checkout left without paying. 😳
+📊 POLL: How would you like to pay for your monthly plant cutting?
 
-A quick poll of her followers gave the answer: they wanted iDEAL. Lovable's card-only Stripe checkout didn't offer it, and the first iDEAL attempt made things worse. Here's what broke: 🧠
+iDEAL ████████████████ most of you
+Card  ████ a few of you
 
-❌ A card-only checkout for Dutch shoppers
-❌ iDEAL added as a one-off payment every month, so renewals depended on customers remembering
-❌ Subscriptions activated on the success page - even for customers who cancelled in their banking app
-❌ The Stripe secret key sitting in frontend code
+That's roughly what Sanne Mulder heard when she asked her followers why more than half the people reaching checkout left without paying. 🌱
 
-✅ First payment via iDEAL, creating a SEPA Direct Debit mandate for automatic renewals
-✅ Subscriptions activated only by a verified webhook
-✅ Cancelled and expired payments handled properly
-✅ Secret key moved into an edge function, plus an admin view of failed renewals
+Sanne runs a small plant nursery in Haarlem and built Stekje in Lovable: a monthly subscription that sends a cutting, care instructions and a pot. Lovable had generated a Stripe card checkout. An Instagram feature brought good traffic, but the card-only checkout lost most of it.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of Dutch payment integrations from Amsterdam, we add iDEAL underneath your Lovable screens - ready for the move to Wero. 🛠️
+So she asked Lovable to add iDEAL. The result created a one-off iDEAL payment every month, so customers had to pay each renewal by hand. Some did. Most forgot. And because the success page upgraded subscriptions, a few customers who cancelled in their banking app still got plants.
 
-💡 Her result: €2,300, eight business days. Checkout completion rose from about 45% to roughly 80%, and Stekje grew to around 340 active subscribers by the end of the season. 🚀
+What LaunchStudio rebuilt under the existing Lovable screens (8 business days, €2,300):
+✓ A first payment with iDEAL through Stripe that also creates a SEPA Direct Debit mandate, so renewals collect automatically
+✓ Subscriptions activated only by a verified webhook
+✓ Cancelled and expired payments handled properly
+✓ The Stripe secret key moved into an edge function
+✓ A simple admin view of failed renewals for Sanne
 
-👉 Selling to Dutch customers from a Lovable app? Here's how to add iDEAL and prepare for Wero: https://launchstudio.eu/en/blog/integrate-ideal-and-wero-into-a-lovable-app
+THE NEW POLL RESULTS
+Checkout completion: from about 45% to roughly 80% in the first month after launch
+Renewals that depend on customers remembering: 0
+Active subscribers by the end of the season: around 340
+
+"I thought adding iDEAL was a checkbox. It turned out to be the difference between a webshop and a subscription business." - Sanne Mulder
+
+https://launchstudio.eu/en/blog/integrate-ideal-and-wero-into-a-lovable-app
 
 #iDEAL #Wero #Lovable #Stripe #LaunchStudio #Manifera

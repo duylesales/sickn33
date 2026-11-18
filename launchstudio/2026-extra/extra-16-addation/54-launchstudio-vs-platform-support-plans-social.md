@@ -1,21 +1,30 @@
-🧘 Linda Smeets runs an online course platform for yoga teachers from Nijmegen, built with Lovable, Supabase, Vercel, Stripe and an email provider. After a price change, some students paid but never got access or the welcome email. She opened tickets with Lovable, Supabase, Stripe and the email provider, and posted on Vercel's forum. 🎫
+🎫 Five support tickets about one bug
 
-Every platform answered helpfully, and every one was right: their part worked. The bug lived between them: 🧠
+TICKET → Stripe: "Payments and webhook deliveries confirmed." ✅
+TICKET → Supabase: "Your database is healthy." ✅
+TICKET → Email provider: "No messages were requested for those students." ✅
+TICKET → Lovable: "Try checking the webhook function." ✅
+FORUM → Vercel community: helpful replies. ✅
 
-❌ The webhook looked up courses by an old price ID after the price change
-❌ It failed silently and still returned success to Stripe
-❌ So Stripe never retried, and access was never granted
-❌ No access meant no email, and nobody was watching the whole chain
+Every answer was correct. The bug was still there. 🧘
 
-✅ The handler fixed to use product metadata instead of price IDs
-✅ Failures now returning errors so Stripe retries
-✅ Alerts added on webhook failures
-✅ 23 affected students reconciled and granted access, with an apology email Linda approved
+Linda Smeets runs Yogaleerlijn from Nijmegen, an online course platform for yoga teachers built with Lovable, Supabase, Vercel, Stripe and an email provider. After a price change, some students paid for a course but never got access, or the welcome email. Linda asked everyone. Each platform checked its own part, and each part was fine.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of running production systems across many platforms for clients such as Vodafone and TNO, we look after your app as a whole and work with platform support when their part needs attention. 🛠️
+The bug lived in the space between them.
 
-Her result: €2,600 plus €49 per month, six business days. Every affected student got access the same day, and a later Stripe API change was handled two months before its deadline. 🚀
+Linda moved to Launch & Grow. LaunchStudio traced it in an hour: after the price change, the webhook handler looked up courses by an old price ID, failed silently, and still told Stripe "success." So Stripe never retried. And because access was never granted, no welcome email was ever requested.
 
-👉 LaunchStudio vs platform support plans: https://launchstudio.eu/en/blog/launchstudio-vs-platform-support-plans
+The fix (6 business days, €2,600, plus €49/month):
+✓ The handler now uses product metadata instead of price IDs
+✓ Failures return errors, so Stripe retries
+✓ Alerts on failed processing
+✓ Staging and monitoring
+✓ Affected students reconciled, granted access, and sent an apology email Linda approved
+
+All 23 affected students had access the same day. Under the ongoing service, a later Stripe API version change was handled two months before its deadline. And Linda now opens platform tickets only for platform problems.
+
+"Every platform told me their part was fine, and they were right. The bug lived in the space between them, where nobody was looking." - Linda Smeets
+
+https://launchstudio.eu/en/blog/launchstudio-vs-platform-support-plans
 
 #Support #Stripe #Supabase #Lovable #AIFounder #LaunchStudio #Manifera

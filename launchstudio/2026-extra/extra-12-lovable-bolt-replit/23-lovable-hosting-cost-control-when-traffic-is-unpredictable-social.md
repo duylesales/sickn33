@@ -1,21 +1,32 @@
-🚨 Daniël Wubbels's Bestekcheck reads construction specifications for 40 contractors and architects at €95/month. One Friday evening he deployed a change to how documents were split before going to the model. Nothing errored. The feature worked. 😳
+🧾 MONDAY MORNING BILLING EMAIL
 
-Over the weekend, eleven documents generated 41,000 model calls. The bill: €3,100 - against monthly revenue of €3,800. He found out from a billing email on Monday. Here's how usage-priced hosting bills explode: 🧠
+Model provider charges, Saturday and Sunday: €3,100
+Monthly revenue, for comparison: €3,800
+Documents that caused it: 11
+Model calls those 11 documents generated: 41,000
 
-❌ A split that triggered further splits - recursion with no limit
-❌ Unlimited retries on model timeouts
-❌ No spending cap at the provider and no alert on call volume
-❌ No idea what each customer or document actually cost
+Daniël Wubbels built Bestekcheck with Lovable: it reads construction specifications and flags inconsistencies for small contractors and architects. 40 subscribers, €95 a month. On a Friday evening, he deployed a change to how documents were split before going to the model. On documents above a certain length, it produced overlapping segments, and each segment triggered a further split. 🏗️
 
-✅ A hard cap on segments per document and limited recursion depth - failing loudly instead of continuing
-✅ Per-account rate limits and bounded retries with backoff
-✅ A provider spending cap that suspends rather than bills, plus an hourly alert at 10× normal volume
-✅ Cost attribution per document and account, trimmed context, response limits and cached results for identical documents
+Nothing errored. The feature appeared to work. The output was correct. There was nothing to notice, except a number on a dashboard he had no reason to open on a Saturday.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we set the caps before you need them - and find the line on your bill that's actually a bug. 💸
+What LaunchStudio added (2 business days, €2,400):
+✓ A hard cap on segments per document, failing loudly instead of carrying on
+✓ Recursion depth limited, so a split can't trigger a split
+✓ Per-account rate limiting on document processing, set well above normal use
+✓ Bounded retries with backoff, replacing unlimited retries on model timeouts
+✓ A spending cap at the model provider that suspends instead of billing beyond it
+✓ An hourly alert if model call volume reaches ten times normal
+✓ Cost attribution per document and per account, so Daniël can see what each customer costs
+✓ Response length limits and context trimming, cutting ordinary per-document cost by 40%
+✓ Results cached by document hash, which covers 18% of uploads, since contractors re-upload revised specs that are mostly unchanged
 
-His result: two business days and €2,400 later, the volume alert has fired twice in two years - once catching a real bug within eleven minutes. Per-document cost is now 40% lower than before the incident. 🚀
+🧾 AFTERWARDS
+The provider credited part of the weekend after Daniël explained the loop. The remaining €1,900 was a month of profit.
+In two years since, the volume alert has fired twice: once for a real bug caught in eleven minutes, once for a legitimately large customer.
+And per-document cost is 40% lower than before the incident.
 
-👉 Cost control when traffic is unpredictable: https://launchstudio.eu/en/blog/lovable-hosting-cost-control-when-traffic-is-unpredictable
+"The feature worked. The output was correct. There was nothing to notice except a number on a dashboard I had no reason to open on a Saturday." - Daniël Wubbels
+
+https://launchstudio.eu/en/blog/lovable-hosting-cost-control-when-traffic-is-unpredictable
 
 #CloudCosts #AI #FinOps #Lovable #LaunchStudio #Manifera

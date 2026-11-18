@@ -1,21 +1,34 @@
-🚨 Hidde Vermaas's Meldpunt lets eleven municipalities receive public reports about street lighting, furniture and green space. When a larger municipality started a procurement, the questionnaire asked one thing: where is personal data stored and processed? 😳
+🌍 "Where is personal data stored and processed?"
 
-The database was in Frankfurt. Nearly everything else wasn't. Here's where an AI-built app actually runs: 🧠
+That's what a municipality's procurement questionnaire asked. Hidde's honest answer took a fortnight to find:
 
-❌ Serverless functions running wherever the visitor was - queries arriving from three continents
-❌ Error tracking capturing reporters' names and addresses, processed in the US, unscrubbed
-❌ 34,000 photos in a US storage region chosen by a default
-❌ An AI summary feature sending full reports, names included, to a model API with no data processing agreement
+Database ........................ 🇪🇺 Frankfurt (fine)
+Serverless functions ............ 🌍 whichever region was closest to the visitor, so queries arrived from three continents
+Error tracking .................. 🇺🇸 full request bodies, reporters' names and addresses included, no scrubbing
+Photos of reported problems ..... 🇺🇸 a US-region bucket, chosen by a default nobody had looked at
+AI summaries .................... 🌐 full report text, names included, sent to a model API without a data processing agreement
 
-✅ A complete inventory of every service: processing, storage and backup locations
-✅ Functions pinned to Frankfurt - which also cut response time by 240 ms
-✅ EU-hosted error tracking with request body scrubbing, and photos migrated to an EU region with links redirected
-✅ The AI feature moved to an EU endpoint with an agreement - sending only the description - plus a published subprocessor page
+Hidde Vermaas built Meldpunt in Lovable: municipalities receive and track public reports about street furniture, lighting and green space maintenance. Eleven smaller municipalities used it. Then a larger one started a procurement. Every one of those defaults had been chosen by clicking through a setup screen in an afternoon. None was a decision. All four were on the questionnaire.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we turn "I don't know where our data is" into a page procurement can tick off. 🇪🇺
+What LaunchStudio changed (6 business days, €4,200):
+✓ A complete service inventory, with processing, storage and backup locations documented
+✓ Functions pinned to Frankfurt, which also cut average response time by 240 milliseconds
+✓ Error tracking moved to an EU-hosted provider, with request body scrubbing so personal data never leaves
+✓ 34,000 photos migrated to an EU storage region, with URL generation rewritten and old links redirected
+✓ The summarisation feature on an EU-region model endpoint, under a data processing agreement, and sending only the description text, not the whole record
+✓ A published subprocessor and data location page
+✓ A process requiring a residency check before any new service is added
 
-His result: six business days and €4,200 later, the questionnaire was answered from the published page with two extra sentences - and the contract was awarded. Three existing municipalities asked for the same document within a month. 🚀
+Database ........................ 🇪🇺
+Functions ....................... 🇪🇺
+Error tracking .................. 🇪🇺
+Photos .......................... 🇪🇺
+AI summaries .................... 🇪🇺
 
-👉 EU data residency and where your app actually runs: https://launchstudio.eu/en/blog/lovable-hosting-eu-data-residency-and-where-your-app-runs
+The questionnaire was answered from the published page, plus two clarifying sentences, and the contract was awarded. Three of the eleven existing municipalities asked for the same document within a month. Hidde now sends the link before anyone asks.
+
+"Every one of those defaults was chosen by clicking through a setup screen in an afternoon. None of them was a decision, and all four of them were on the questionnaire." - Hidde Vermaas
+
+https://launchstudio.eu/en/blog/lovable-hosting-eu-data-residency-and-where-your-app-runs
 
 #GDPR #DataResidency #GovTech #Lovable #LaunchStudio #Manifera

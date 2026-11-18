@@ -1,21 +1,27 @@
-👩‍💻 Bram van Leeuwen built Klachtenloket in Lovable: complaints handling for housing corporations and municipalities. Contracts grew, so he hired a strong full-stack developer as his first employee. Two months later, almost no new features had shipped. 😟
+📢 THE JOB AD
+First developer at Klachtenloket. Build new features for housing corporations and municipalities. Shape the roadmap.
 
-The developer wasn't the problem. He had spent eight weeks cleaning up the past instead of building the future, and was close to quitting. Here's what he walked into: 🧠
+🔥 THE ACTUAL FIRST TWO MONTHS
+Fix a cross-tenant data exposure. Rotate leaked keys. Set up the backups that never existed. Untangle three different ways of sending email. Handle production incidents caused by direct deployments from Lovable. Ship almost no new features.
 
-❌ A data exposure between tenants
-❌ Leaked keys that had to be rotated
-❌ No backups, three different ways of sending email
-❌ Direct deployments from Lovable causing production incidents
+Bram van Leeuwen built Klachtenloket with Lovable and Supabase: complaints handling for housing corporations and municipalities. With contracts growing, he hired a capable full-stack developer. Two months later, Bram wondered if the hire had been a mistake. The developer was wondering whether to leave.
 
-✅ Row Level Security per organisation, with tests
-✅ Staging, automated deployments, monitoring and backups
-✅ Architecture docs and project instructions for AI tools
-✅ A lightweight review process, with managed hosting covering operations
+Neither was the problem. The work was necessary. But without documentation, environments or tests, everything took longer, and customer requests piled up.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of onboarding engineers into existing codebases, we fix the foundations so your first hire can build instead of firefight. 🛠️
+Splitting the two jobs (LaunchStudio, three weeks alongside the developer, 15 business days, €5,200):
+✓ Row Level Security per organisation completed, with tests
+✓ Email consolidated into one way of sending
+✓ Staging and automated deployments
+✓ Monitoring and backups
+✓ The architecture documented
+✓ Project instructions for AI tools, and a lightweight review process, written together
+Afterwards, the developer took over the feature roadmap, with LaunchStudio's managed hosting and priority support covering operations.
 
-The result: €5,200, fifteen business days alongside the developer. Next quarter he shipped the SSO and reporting features two municipalities were waiting for. He stayed, and now helps plan hire number two. 🚀
+📢 THE JOB, NOW
+The next quarter, the developer shipped the SSO integration and reporting features two municipalities had been waiting for. He stayed. And Bram now involves him in planning the second hire.
 
-👉 When and how to hire your first developer after vibe coding: https://launchstudio.eu/en/blog/how-do-i-hire-my-first-developer-after-vibe-coding
+"I hired a developer to build the future and accidentally gave him the past to clean up. Splitting those jobs saved the hire." - Bram van Leeuwen
+
+https://launchstudio.eu/en/blog/how-do-i-hire-my-first-developer-after-vibe-coding
 
 #Hiring #Lovable #Startups #VibeCoding #AIFounder #LaunchStudio #Manifera

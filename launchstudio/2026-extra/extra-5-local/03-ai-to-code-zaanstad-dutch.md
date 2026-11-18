@@ -13,10 +13,10 @@ Doelgroep: Niet-technische oprichter
   "@type": "Article",
   "headline": "AI gebruiken om te coderen in Zaanstad: Gids van een oprichter naar productie",
   "description": "Een praktische gids voor Zaanse oprichters die AI gebruiken om hun MVP te coderen, over wat er nog staat tussen een werkend prototype en een product dat klaar is voor betalende klanten.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-to-code-zaanstad" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/ai-gebruiken-om-te-coderen-in-zaanstad/" }
 }
 </script>
 
@@ -38,13 +38,45 @@ Die operationele mindset is in zekere zin ook precies de juiste instelling, maar
 4. **Foutafhandeling.** AI-gegenereerde code heeft de neiging om het normale succespad goed af te handelen en overal elders stilletjes - of met een onhandige crash - te mislukken.
 5. **Monitoring.** Zonder actieve alarmering horen oprichters doorgaans van storingen via een boze e-mail van een klant, niet via een dashboard.
 
-Geen van deze punten vereist het herbouwen van wat al is neergezet. Ze vereisen een laag van engineeringdiscipline die er bovenop wordt aangebracht - wat precies het werk is dat LaunchStudio doet. In de praktijk gaat dat werk vaak minder over het schrijven van nieuwe functies en meer over het stellen van de vragen die een AI-codingtool nooit stelt: wat gebeurt er als deze migratie halverwege mislukt, wie krijgt een melding als de databasegeheugenruimte opraakt, en wat is de werkelijke hersteltijd als het ergste scenario op deze lijst plaatsvindt op een vrijdagavond. LaunchStudio wordt aangedreven door Manifera, wier engineers werken vanuit een ontwikkelhub aan Tras Street in Singapore in coördinatie met het Amsterdamse team om AI-gegenereerde codebases te beoordelen en te verharden voor oprichters in heel Noord-Holland en daarbuiten, zonder de frontend aan te raken die een oprichter al met gebruikers heeft gevalideerd.
+## De vijf gaten in één oogopslag
 
-Voor een indruk van hoe dit type productieverharding heeft gewerkt voor andere bedrijven, documenteert de [portfolio](https://www.manifera.com/portfolio/) van Manifera meer dan 160 opgeleverde projecten in diverse sectoren. En als u wilt bepalen waar uw eigen in Zaanstad gebouwde prototype momenteel staat, doorloopt de [homepage van LaunchStudio](https://launchstudio.eu/nl/) het volledige pad van prototype tot lancering.
+| Gat | Wat er in productie misgaat | Wat u als eerste controleert |
+| --- | --- | --- |
+| Back-ups | Een mislukte migratie of verwijderde tabel wist gegevens zonder weg terug | Is er een automatische back-up, en heeft u er ooit een teruggezet? |
+| Beheer van geheimen | Sleutels lekken via een openbare repository of de code in de browser | Doorzoek de code en de repositorygeschiedenis op API-sleutels en wachtwoorden |
+| Gelijktijdigheid | Twee gebruikers die hetzelfde record bewerken, overschrijven elkaar | Test het drukste scherm met meerdere mensen tegelijk |
+| Foutafhandeling | Fouten gebeuren ongemerkt en gegevens worden half opgeslagen | Veroorzaak bewust een fout en kijk wat de gebruiker en de logs laten zien |
+| Monitoring | U hoort van storingen via klanten, niet via meldingen | Wie krijgt een melding, en hoe snel, als de app uitvalt? |
+
+Geen van deze punten vereist het herbouwen van wat al is neergezet. Ze vereisen een laag van engineeringdiscipline die er bovenop wordt aangebracht - wat precies het werk is dat LaunchStudio doet. In de praktijk gaat dat werk vaak minder over het schrijven van nieuwe functies en meer over het stellen van de vragen die een AI-codingtool nooit stelt: wat gebeurt er als deze migratie halverwege mislukt, wie krijgt een melding als de databasegeheugenruimte opraakt, en wat is de werkelijke hersteltijd als het ergste scenario op deze lijst plaatsvindt op een vrijdagavond. LaunchStudio wordt aangedreven door Manifera, wier engineers werken vanuit een ontwikkelhub aan Pho Quang Street in Ho Chi Minhstad, samen met het Amsterdamse team, om AI-gegenereerde codebases te beoordelen en te verharden voor oprichters in heel Noord-Holland en daarbuiten, zonder de frontend aan te raken die een oprichter al met gebruikers heeft gevalideerd.
+
+Voor een indruk van hoe dit type productieverharding heeft gewerkt voor andere bedrijven, documenteert de [portfolio](https://www.manifera.com/portfolio/) van Manifera meer dan 160 opgeleverde projecten in diverse sectoren. En als u wilt bepalen waar uw eigen in Zaanstad gebouwde prototype momenteel staat, doorloopt de [homepage van LaunchStudio](https://launchstudio.eu/) het volledige pad van prototype tot lancering.
 
 ## Van "Het draait" naar "Het is live"
 
 De praktische gids, samengevat: behandel uw met AI gecodeerde MVP als een sterke eerste conceptversie van het product, niet als de definitieve infrastructuur. Laat een paar extra ogen kijken - bij voorkeur engineers die voor hun werk AI-gegenereerde code lezen - naar het databaseschema, de authenticatiestroom en de deploymentpijplijn voordat u er echte klantgegevens of echte betalingen doorheen laat gaan. Dit is een eenmalige investering, geen voortdurende afhankelijkheid; de meeste oprichters hebben dit eenmalig nodig, op het overgangspunt tussen demo en lancering.
+
+De volgorde is net zo belangrijk als het werk zelf. Los eerst alles op waardoor klantgegevens verloren kunnen gaan of uitlekken - back-ups, geheimen en toegangsrechten - omdat die fouten na de lancering niet meer terug te draaien zijn. Foutafhandeling en monitoring komen daarna, omdat die bepalen hoe snel u problemen opmerkt en herstelt. Prestatieverbeteringen en wensen kunnen wachten tot echt gebruik laat zien waar de knelpunten werkelijk zitten, in plaats van waar u ze vermoedt.
+
+## Een productiechecklist van één week voor uw met AI gecodeerde MVP
+
+Wilt u de gevaarlijkste gaten eerst zelf in kaart brengen voordat u iemand inschakelt, dan is een gerichte week meestal genoeg om te weten waar u staat.
+
+**Dag 1: Back-ups.** Zoek uit of er überhaupt back-ups van uw database worden gemaakt, hoe vaak, en hoe lang ze worden bewaard. Doe daarna de stap die bijna iedereen overslaat: zet een back-up terug in een aparte testdatabase en controleer of de gegevens er echt in staan. Een back-up die u nooit heeft teruggezet, is een hoop, geen plan.
+
+**Dag 2: Geheimen.** Doorzoek uw code en de geschiedenis van uw repository op API-sleutels, databasewachtwoorden en betaalsleutels. Alles wat ooit in een openbare repository heeft gestaan, behandelt u als gelekt en vervangt u, ook als u het later heeft verwijderd.
+
+**Dag 3: Toegang.** Maak twee gewone testaccounts aan en controleer of het ene account gegevens van het andere kan zien of wijzigen door een URL aan te passen of een verzoek opnieuw te versturen. Dit is het gat met de hoogste kosten als het echte klanten bereikt.
+
+**Dag 4: Storingen.** Schakel een afhankelijkheid uit, zoals de e-maildienst of een testsleutel voor betalingen, en kijk wat de app doet. Ziet de gebruiker een duidelijke melding, of loopt het scherm vast terwijl de helft van de gegevens is opgeslagen?
+
+**Dag 5: Monitoring.** Stel minimaal een uptimecontrole en foutmeldingen in die uw telefoon bereiken, zodat de volgende storing u bereikt voordat die een klant bereikt.
+
+Schrijf elke dag op wat u heeft gevonden. Ook als u de oplossingen aan iemand anders overlaat, maakt die lijst van een vaag gevoel een afgebakende klus met een duidelijke prijs.
+
+## Wat productieverharding kost
+
+Voor de meeste Zaanse oprichters valt het werk in een van twee pakketten met een vaste prijs. **Launch Ready** (€800-€3.500) omvat een beveiligings- en productiereview, het oplossen van de gaten op deze lijst, deployment en 48 uur ondersteuning na de lancering. **Launch & Grow** (€2.500-€7.500 plus €49 per maand) voegt betalingen, beheerde hosting, back-ups, monitoring en doorlopende prioriteitsondersteuning toe. Een enkele oplossing zoals de back-upinrichting van Femke hieronder zit aan de onderkant; een app met betalingen, meerdere gebruikersrollen en koppelingen zit hoger. De [prijscalculator](https://launchstudio.eu/#calculator) geeft een eerste indicatie, waarna een kort gesprek er een vaste offerte van maakt.
 
 ## Een hostingprovider kiezen die u later niet verrast
 
@@ -54,7 +86,7 @@ Een beslissing die stilletjes vormgeeft hoe pijnlijk productie wordt, is naar we
 
 - **Beheerde platformen** (Vercel, Railway, Render) brengen u snel live en handelen veel infrastructuur automatisch af, maar hun gratis en hobby-pakketten bevatten vaak koudestarts, verbindingslimieten of opslagplafonds die pas opspelen zodra het gebruik groeit voorbij een handvol gebruikers
 - **Database-as-a-service tools** (Supabase, PlanetScale, Neon) passen goed bij de meeste met AI gecodeerde MVP's, maar hun standaardconfiguraties bevatten zelden geautomatiseerde back-ups op het gratis pakket - dat is meestal een expliciete upgrade of een handmatige instelstap, niet iets dat standaard is ingeschakeld
-- **Één niet-schaalbare instantie** is prima voor een demo en echt risicovol zodra een product afhankelijk is van bereikbaarheid tijdens een specifiek venster - een planningstool, een betalingsstroom, een tijdgevoelige operationele tool die wordt gebruikt door een voedselproducent die een kwaliteitsinspectie uitvoert
+- **Eén niet-schaalbare instantie** is prima voor een demo en echt risicovol zodra een product afhankelijk is van bereikbaarheid tijdens een specifiek venster - een planningstool, een betalingsstroom, een tijdgevoelige operationele tool die wordt gebruikt door een voedselproducent die een kwaliteitsinspectie uitvoert
 
 **Vragen die het waard zijn om te beantwoorden voordat u verkeer schaalt naar een hosting-setup die u niet bewust heeft gekozen**
 

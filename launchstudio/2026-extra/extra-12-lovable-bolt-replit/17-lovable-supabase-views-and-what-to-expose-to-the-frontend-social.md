@@ -1,21 +1,25 @@
-🚨 Iris Molenaar's Vakantieverhuur handles bookings and revenue for 210 holiday-rental owners on the Zeeland and South Holland coast. The owner dashboard was slow, so an AI session created a view to aggregate it. The page became instant. 😳
+✈️ Imagine an airport that builds a fast lane to cut the queues. It works. Passengers fly through. Then someone notices the fast lane skips the security checkpoint entirely.
 
-It also switched off the security on the table underneath. Any owner querying the view directly got occupancy and revenue for all 500 properties - including the competitors they priced against. Here's what to expose to the frontend in Supabase: 🧠
+Iris Molenaar's dashboard had a fast lane like that.
 
-❌ A view created without security invoker - running past row-level security entirely
-❌ Three of four client-facing views with the same defect
-❌ Underlying tables still directly reachable from the API
-❌ Tables from an abandoned experiment left exposed
+She built Vakantieverhuur in Lovable: booking and revenue administration for owners of holiday rentals on the Zeeland and Zuid-Holland coast, 210 owners with around 500 properties. The owner dashboard, with occupancy, revenue, average nightly rate and a year-on-year comparison, was slow. So an AI session created a view to aggregate it, and the page became instant.
 
-✅ Every client-facing view redefined with security invoker and tested as three different owners
-✅ Client access revoked on six tables now reachable only through views
-✅ The expensive year comparison moved to a materialized view, refreshed every 15 minutes with an "updated at" line
-✅ An automated test that queries every view as a second organisation and fails if any row comes back
+The view was created without security invoker. Row Level Security on the bookings table was correct, and always had been. The view simply ran past it. Any logged-in owner who queried the view directly, instead of through the dashboard's filtered request, got the occupancy and revenue of all 500 properties. Including those of the competitors they were pricing against.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we query your API as another customer - a ten-minute test with an occasionally uncomfortable result. 🔍
+An owner found it while building a spreadsheet against the API, and reported it the same day.
 
-Her result: two business days and €2,200 later, the exposure was closed within a day of being reported. The cross-tenant test has since caught two more faulty views from later AI sessions before production - and the dashboard still loads in under 200 ms. 🚀
+Putting the checkpoint back in the fast lane (LaunchStudio, 2 business days, €2,200):
+✓ The aggregation view redefined with security invoker, and verified by querying as three different owners
+✓ All nine views audited: four were client-facing, and three of those had the same defect
+✓ Client access revoked on six underlying tables, now reachable only through views
+✓ The expensive year-comparison turned into a materialized view refreshed every fifteen minutes, with a unique index for concurrent refresh, and an "updated at" line on the dashboard
+✓ Two tables from an abandoned pricing experiment removed from the API entirely
+✓ A test that queries every client-facing view as a second-organisation user, and fails if any row comes back
 
-👉 Views and what to expose to the frontend: https://launchstudio.eu/en/blog/lovable-supabase-views-and-what-to-expose-to-the-frontend
+The exposure closed within a day of the report. The dashboard still loads in under 200 milliseconds. And the cross-tenant test has since caught two more views, created in later AI sessions, before they reached production.
+
+"The view was created to make a page fast, and it worked. Nobody mentioned that it also switched off the security on the table underneath it." - Iris Molenaar
+
+https://launchstudio.eu/en/blog/lovable-supabase-views-and-what-to-expose-to-the-frontend
 
 #Supabase #RowLevelSecurity #DataSecurity #Lovable #LaunchStudio #Manifera

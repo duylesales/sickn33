@@ -1,21 +1,34 @@
-🚨 Lucas Verdonschot built Inruilwaarde with Bolt - trade-in value estimates for 14 used-car dealers in Noord-Brabant. His first month of tool credits cost €48. His fourth cost €740, and the product wasn't four times better. 😳
+💳 STATEMENT: AI tool spend, Inruilwaarde
 
-No version control, so two broken sessions were rebuilt by hand. Broad prompts like "make the valuation page better", then six rounds of corrections. Labels changed by prompting. And one mileage bug ate three sessions in two weeks. Here's where a prototype's money really goes: 🧠
+Month 1 ............................ €48
+Month 4 ............................ €740
+Was the product four times better? Not obviously.
 
-❌ No repository - lost work rebuilt instead of reverted
-❌ Vague requests followed by expensive correction loops
-❌ Paying a full round trip to change one word
-❌ Prompting the same bug again and again instead of reading the code
+WHERE MONTH 4 WENT
+• No version control: two sessions that went wrong were rebuilt by hand, over several days
+• Broad prompts ("make the valuation page better"), then six or seven turns correcting the result
+• Labels and colours changed by prompting
+• One mileage adjustment bug: three separate sessions across two weeks, never fixed
 
-✅ The project in a repository with history - a bad session now reverts in seconds
-✅ The mileage bug found by a human in 20 minutes: a rounding applied twice, in two files the tool kept fixing alternately
-✅ 11 abandoned files and a half-built feature deleted, and data access consolidated from 19 components into one place
-✅ New habits: one specific request at a time, small edits by hand, a fresh session per area
+Lucas Verdonschot built Inruilwaarde with Bolt: used-car dealers estimate trade-in values from vehicle data and their own sales history. 14 dealers in Noord-Brabant use it. 🚙
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we step in when three sessions on one bug means it's a structural problem, not a prompting one. 💶
+That bug, once a person read it: twenty minutes. A rounding was applied twice, in two places. The tool kept fixing it in one file while reintroducing it in the other, because it only ever looked at one of them.
 
-His result: two business days and €1,600 later, monthly tool spend fell from €740 to about €60 - and stayed there for four more months of development. The three lost weeks, he says, cost more than the credits. 🚀
+THE CORRECTION (LaunchStudio, 2 business days, €1,600)
+✓ The project in a repository with history, so a bad session is reverted in seconds
+✓ The mileage bug fixed
+✓ 11 abandoned files and a half-built feature deleted, cutting the context carried on every request
+✓ Data access gathered into one place, not spread across nineteen components
+✓ A working agreement with himself: one specific request at a time, small edits by hand, a new session per area
 
-👉 Bolt costs: token burn and what a prototype really costs: https://launchstudio.eu/en/blog/bolt-costs-token-burn-and-what-a-prototype-really-costs
+NEW BALANCE
+Monthly spend ...................... about €60
+Held for ........................... four more months of development
+Biggest saving, by Lucas's account ... version control
+The real cost ...................... the three weeks lost to the mileage bug, more than the credits
+
+"I spent three weeks and a lot of money asking a tool to fix a bug it could not see, because it was two lines in two different files and it only ever looked at one of them." - Lucas Verdonschot
+
+https://launchstudio.eu/en/blog/bolt-costs-token-burn-and-what-a-prototype-really-costs
 
 #Bolt #AIDevelopment #Startup #Budgeting #LaunchStudio #Manifera

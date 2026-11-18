@@ -1,20 +1,34 @@
-🦁 Marloes Tijssen built WildPad, a visitor booking app for Emmen's zoo-adjacent tourism sector, using Lovable across two weekends - her €50/month Lovable subscription felt like almost her whole launch budget, until she found out her database had no backup strategy and her Stripe integration was still stuck in test mode. 😳
+💶 The launch budget: expected vs. actual
 
-The subscription price and the launch-ready price are two very different numbers. 🧠
+Marloes Tijssen built WildPad in Lovable across two weekends: a visitor booking and route-planning app for families visiting Emmen's zoo and the attractions around it.
 
-❌ €50/month bought a working app generator, not a production database
-❌ Stripe was still in test mode with no webhook handling for failed payments
-❌ No plan existed for GDPR-compliant storage of visitor email addresses
-❌ None of this showed up until she actually requested a real quote to go live
+THE BUDGET SHE EXPECTED
+• Lovable subscription: €50 a month
+• A domain name
+• That's about it
 
-✅ Live Stripe integration with proper webhook and refund handling
-✅ Backed-up production database
-✅ GDPR-compliant data storage and a security pass on the booking flow
+THE BUDGET LAUNCH ACTUALLY NEEDED
+When she requested quotes to go live with real bookings and real payments, the missing lines appeared:
+• A database with no backup strategy
+• A Stripe integration still in test mode, with no webhook handling for failed payments
+• No plan for GDPR-compliant storage of visitor email addresses
 
-At **LaunchStudio**, we quote this exact production gap as a fixed price - typically 20% of what a traditional agency charges, backed by Manifera's 120+ engineers. 🛡️
+None of that was visible while testing. All of it matters the moment real families pay.
 
-Her result: WildPad launched with live payments in time for the summer holiday season, on a budget she'd actually planned for. 🚀
+THE NUMBER SHE GOT
+LaunchStudio scoped the production work as one fixed package, so Marloes had an accurate number before agreeing to anything:
+✓ Live Stripe integration with proper webhook and refund handling
+✓ A backed-up production database
+✓ GDPR-compliant data storage
+✓ A security pass on the booking flow
 
-👉 Curious what your AI app subscription doesn't cover? Run the numbers first: https://launchstudio.eu/en/blog/ai-software-price-emmen
+Fixed price: €1,900. Delivered in 9 business days, with no surprises mid-project.
+
+THE RESULT
+WildPad launched with live payments in time for the summer holiday season, on a budget Marloes had actually planned for.
+
+"I thought €50 a month was basically my whole cost. Nobody had told me the difference between an app that works when I test it and an app that's actually safe to charge real families money through. LaunchStudio gave me one number and stuck to it." - Marloes Tijssen
+
+What's the real price of your AI software? https://launchstudio.eu/en/blog/ai-software-price-emmen
 
 #AINativeFounder #LaunchStudio #Manifera #AISoftwarePrice #Emmen

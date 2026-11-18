@@ -1,21 +1,33 @@
-🚨 Dennis Kok runs a kitchen installation company in Purmerend and built Keukenplanner in Base44: customers choose layouts, upload photos and measurements and follow the installation schedule; installers update jobs from their phones. Three other Noord-Holland installers started using it under their own names. Then a housing corporation asked where the data lived - and which processors were involved. 😳
+📦 MOVING DAY: a kitchen planner leaves its builder
 
-The platform couldn't easily answer. Mollie deposits with iDEAL needed a workaround, platform costs rose with every company added, and with no staging, every change went live for four companies at once. Here's what changes when a Base44 app leaves the platform for production: 🧠
+WHY MOVE?
+Dennis Kok runs a kitchen installation company in Purmerend and built Keukenplanner in Base44: customers choose a kitchen layout, upload photos and measurements, book a measurement visit and follow the installation schedule, while installers update jobs from their phones. It worked well for his own company, and three other installation companies in Noord-Holland started using it under their own names. Then growth raised questions:
+• A housing corporation, the customer of one company, asked where data was stored and which processors were involved
+• Dennis wanted Mollie deposits with iDEAL, which needed a workaround
+• Platform costs rose with every company added
+• There was no staging, so every change went live for four companies at once
 
-❌ No clear answer on data location and processors
-❌ Payment methods forced through workarounds
-❌ Costs scaling with every tenant
-❌ Every edit going straight to four companies' customers
+The builder got him from idea to four companies. It couldn't get him to a housing corporation.
 
-✅ An EU-hosted Supabase backend with row level security separating the four companies
-✅ Scheduling and job-status logic recreated, Mollie integrated with verified webhooks
-✅ 2,300 customer records and 9,000 photos migrated with verification, users moved via a one-click "confirm your account" email
-✅ Hosting, staging, monitoring and backups - with a Sunday-evening cut-over and the old app read-only for a month
+WHAT COULD BE PACKED
+LaunchStudio's review confirmed the frontend and data could be exported, and user accounts could be moved through an email-verification flow.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we help you own the whole stack when the builder has taken you as far as it can. ⚙️
+THE NEW HOME (Launch & Grow, 13 business days, €3,700, plus €49/month)
+✓ An EU-hosted Supabase backend, with Row Level Security separating the four companies
+✓ The scheduling and job status logic recreated
+✓ Mollie integrated, with verified webhooks
+✓ The exported frontend reconnected
+✓ 2,300 customer records and 9,000 photos migrated, with verification
+✓ Hosting, staging, monitoring and backups
 
-His result: €3,700, thirteen business days. 94% of users confirmed within two weeks, the housing corporation approved the processor list - leading to a framework agreement worth more than his previous annual software revenue - and running costs fell about 40%. 🚀
+THE MOVE
+A Sunday evening. Users received a one-click "confirm your account" email. The old app stayed read-only for a month.
 
-👉 Base44 app to production: what changes when you leave the platform: https://launchstudio.eu/en/blog/base44-app-to-production-what-changes-when-you-leave-the-platform
+SETTLING IN
+94% of users confirmed within two weeks. The housing corporation approved the processor list, which led to a framework agreement worth more than Dennis's previous annual revenue from the software. And monthly running costs came in about 40% below projected platform pricing.
+
+"The builder got me from idea to four companies. It couldn't get me to a housing corporation. For that, I needed to own the whole thing." - Dennis Kok
+
+https://launchstudio.eu/en/blog/base44-app-to-production-what-changes-when-you-leave-the-platform
 
 #Base44 #Migration #Supabase #NoCode #LaunchStudio #Manifera

@@ -1,21 +1,30 @@
-🚨 Kees Zwart, from a Rijnsburg grower family and twenty years a trader in Aalsmeer, built Bloemenbord in Bolt: independent florists order directly from a group of growers, see daily lot photos and prices, and get deliveries on regional routes. About 260 florists and 19 growers. Then came Valentine's week - and between 05:00 and 06:30 on Monday, ordering stalled for twenty minutes. 😳
+🌹 VALENTINE'S MONDAY, 05:00 TO 06:30
 
-The database ran out of connections. When it recovered, several lots of red roses had been sold twice. Orders placed after the 06:00 Amsterdam cut-off were accepted - and missed the truck. Invoices recalculated from the catalogue, billing Monday's orders at Tuesday's higher prices. And full-resolution lot photos slowed every page. Here's what makes an AI application production ready for the flower trade: 🧠
+05:00 · Florists start ordering. The database runs out of connections.
+For twenty minutes · Ordering stalls.
+After recovery · Several lots of red roses have been sold twice: availability was checked and saved in two separate steps.
+06:00 · The cut-off for the Amsterdam route. Orders placed after it are accepted anyway, and miss the truck.
+And all morning · Full-resolution lot photos slow every page.
+Later that week · Florists who ordered at Monday's price get invoiced at Tuesday's higher price, because invoices recalculated from the catalogue.
 
-❌ Availability checked and saved in two steps
-❌ Cut-offs the server didn't enforce
-❌ Prices recalculated after the order
-❌ No capacity for the 05:00 peak
+Kees Zwart, from a Rijnsburg grower family and a trader in Aalsmeer for twenty years, built Bloemenbord in Bolt: independent florists order directly from a group of growers, see daily lot photos and prices, and get deliveries on regional routes. Around 260 florists and 19 growers.
 
-✅ Atomic lot reservation with ten-minute holds
-✅ Prices stored on order lines, with validity-based price lists
-✅ Route cut-offs enforced server-side, with a "move to next delivery" option
-✅ Connection pooling, catalogue indexes, background image processing, credit-limit checks - and a load test at three times the Valentine's peak
+Flowers don't forgive slow software. If the order isn't right at six, the roses are on the wrong truck.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering and an office twenty minutes from Aalsmeer, we build for mornings when the roses can't wait. ⚙️
+After the peak (LaunchStudio, Launch & Grow, 12 business days, €3,500, plus €49/month):
+✓ Atomic lot reservation, with ten-minute holds
+✓ Prices stored on order lines, with validity-based price lists
+✓ Route cut-offs enforced on the server, with a "move to next delivery" option
+✓ Connection pooling, and indexes on catalogue queries
+✓ Image processing in background jobs, with compressed variants
+✓ Credit-limit checks
+✓ A load test at three times the Valentine's peak
 
-His result: €3,500 over twelve business days, plus €49/month. On Mother's Day, Bloemenbord handled its busiest morning ever - ~4,100 order lines between 05:00 and 06:30 - with no oversold lots, no missed cut-offs and sub-second pages. Seven growers and ~90 florists joined that season. 🚀
+MOTHER'S DAY, 05:00 TO 06:30
+Bloemenbord's busiest morning ever: about 4,100 order lines. Oversold lots: zero. Missed cut-offs: zero. Page loads: under a second. That season, it added seven growers and around 90 florists.
 
-👉 AI application production ready in Aalsmeer: order apps for the flower trade: https://launchstudio.eu/en/blog/ai-application-production-ready-in-aalsmeer-order-apps-for-the-flower-trade
+"Flowers don't forgive slow software. If the order isn't right at six, the roses are on the wrong truck." - Kees Zwart
+
+https://launchstudio.eu/en/blog/ai-application-production-ready-in-aalsmeer-order-apps-for-the-flower-trade
 
 #Floriculture #Aalsmeer #B2B #Bolt #LaunchStudio #Manifera

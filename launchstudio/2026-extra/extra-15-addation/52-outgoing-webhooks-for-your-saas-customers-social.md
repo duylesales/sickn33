@@ -1,21 +1,29 @@
-🚨 Ilse Vermeer built Groothandelportaal with Cursor and Supabase: restaurants and shops order from food wholesalers online. Wholesalers wanted orders pushed to their warehouse systems, so Cursor added a database trigger that called each wholesaler's URL directly. 😳
+Unpopular opinion: "add webhooks" is never a one-line task. 🔗
 
-When one warehouse system was slow, ordering slowed. When it was down, orders failed. And the URL field accepted internal addresses - an SSRF risk into private networks. Here's how to build outgoing webhooks for your SaaS customers: 🧠
+Ilse Vermeer built Groothandelportaal with Cursor and Supabase: a B2B ordering platform where restaurants and shops order from food wholesalers. Wholesalers wanted orders sent automatically to their warehouse and accounting systems, so Ilse asked Cursor to add webhooks. The agent added a database trigger that called each wholesaler's URL directly whenever an order row changed.
 
-❌ Order placement blocked by customers' slow systems
-❌ No signatures and no retries, so orders went missing in warehouses
-❌ Payloads including internal margin fields
-❌ URLs that could reach internal networks
+It worked. Then it didn't:
+• A slow warehouse system slowed order placement for that wholesaler's customers
+• A warehouse system that was down made orders fail
+• No signatures, so wholesalers couldn't verify where a webhook came from
+• No retries, so events sent during outages vanished, and orders went missing in warehouses
+• Payloads with full order rows, internal margin fields included
+• A URL field that accepted any address, including internal ones, so the platform's own servers could be made to send requests into private networks (SSRF)
 
-✅ An events table written in the same transaction, delivered by a queue worker
-✅ Short timeouts and exponential backoff over 24 hours
-✅ HMAC-SHA256 signatures compatible with Standard Webhooks
-✅ HTTPS-only URLs checked against private ranges, customer-facing payloads, and logs with replay
+What it actually took (LaunchStudio, 13 business days, €5,100):
+→ An events table written in the same transaction as each order change
+→ A queue worker with short timeouts and exponential backoff over 24 hours
+→ HMAC-SHA256 signatures with per-endpoint secrets, compatible with the Standard Webhooks spec
+→ HTTPS required, URLs checked against private and metadata ranges at registration and at delivery, redirects off, worker isolated
+→ Payloads with customer-facing order fields only
+→ A settings screen with event selection, secret rotation, delivery logs and replay
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we treat webhooks as the small product they really are. 🛠️
+Since then: order placement no longer depends on wholesalers' systems, no events have been lost, two wholesalers integrated within a week, and the SSRF risk was closed before anyone used it.
 
-Her result: €5,100, 13 business days. Ordering became independent of wholesalers' systems, no events have been lost since, and the SSRF risk was closed before it was ever exploited. 🚀
+Quick self-test for your app: register a webhook URL pointing to localhost. If your app accepts it, you have the same open door.
 
-👉 Adding webhooks to your SaaS? Here's how to make them reliable and safe: https://launchstudio.eu/en/blog/outgoing-webhooks-for-your-saas-customers
+"I thought webhooks were a single line of code. They turned out to be a small product of their own, with security risks I'd never have spotted." - Ilse Vermeer
+
+https://launchstudio.eu/en/blog/outgoing-webhooks-for-your-saas-customers
 
 #Webhooks #APIs #B2BSaaS #AppSecurity #AIFounder #LaunchStudio #Manifera

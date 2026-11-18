@@ -1,21 +1,29 @@
-🚨 Daan Wolthuis, a backend developer in Utrecht, built Sportschoolrooster with Bolt: class scheduling and memberships for small gyms. He chose to do production work himself with Cursor, and spent five weekends on RLS, Stripe subscriptions, EU hosting and a CI pipeline. Before onboarding his first three gyms, he booked a review anyway. 😳
+💬 REVIEW COMMENTS on one developer's DIY production setup
 
-Doing it himself taught him his own stack. The review caught the two things he didn't know he didn't know: 🧠
+✅ RLS: solid
+✅ Stripe subscriptions: solid
+✅ EU hosting: solid
+✅ CI pipeline: solid
+⚠️ bookings insert policy: no "with check". Members can create bookings for other gyms.
+⚠️ Stripe webhook handler: not idempotent. A retried event can double-credit class packs.
 
-❌ An insert policy without "with check" - members could create bookings for other gyms
-❌ A Stripe webhook handler that wasn't idempotent - a retried event could double-credit class packs
-❌ Both invisible in normal testing, because everything appeared to work
-❌ Exactly the kind of gap AI tools write confidently without flagging
+Two comments. Everything else: approved. 🏋️
 
-✅ The rest of his RLS, Stripe, EU hosting and CI work confirmed as solid
-✅ Clear guidance on both findings
-✅ Daan fixed both issues himself, using the review
-✅ LaunchStudio verified the fixes before launch
+Daan Wolthuis, a backend developer in Utrecht, built Sportschoolrooster with Bolt as a side project: class scheduling and memberships for small gyms. He decided to do the production work himself, with Cursor, and spent five weekends on RLS, Stripe subscriptions, EU hosting and a CI pipeline.
 
-At **LaunchStudio**, backed by Manifera's 160+ projects and 120+ engineers, we don't only take apps to production - we also review the work of founders who did it themselves. 🛠️
+Before onboarding his first three gyms, he booked a review with LaunchStudio (4 business days, €900). The review found the two issues above, the kind you don't know you don't know.
 
-💡 His result: €900, four business days. Sportschoolrooster launched with three gyms, and Daan kept full ownership of the work and the knowledge, at a fraction of the cost of outsourcing everything. 🚀
+Daan fixed both himself, using the review's guidance. LaunchStudio verified the fixes.
 
-👉 Should you do production yourself with AI, or bring in a partner? Here's the honest comparison: https://launchstudio.eu/en/blog/launchstudio-vs-doing-production-yourself-with-ai
+✅ Insert policy: fixed
+✅ Webhook handler: fixed
+
+Sportschoolrooster launched with three gyms. Daan kept full ownership of the work and the knowledge, at a fraction of the cost of outsourcing everything.
+
+Doing production yourself with AI? Then a second pair of eyes is the cheapest part of it.
+
+"Doing it myself taught me my own stack. The review caught the two things I didn't know I didn't know." - Daan Wolthuis
+
+https://launchstudio.eu/en/blog/launchstudio-vs-doing-production-yourself-with-ai
 
 #IndieHacker #Supabase #Cursor #AppSecurity #LaunchStudio #Manifera

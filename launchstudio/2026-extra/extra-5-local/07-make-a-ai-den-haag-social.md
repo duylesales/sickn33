@@ -1,19 +1,29 @@
-🏛️ Nina de Groot built PolicyPilot in Cursor - a document review tool for NGOs and legal consultancies in Den Haag tracking regulatory changes. It piloted fine with two consultancies. Then one consultancy's IT team ran a basic security check as part of their vendor process.
+⏱️ 10 minutes.
 
-Most guides on making an AI product only ever show the frontend. Den Haag's institutional buyers check the backend first. 🧠
+That's how long it took a legal consultancy's IT team to find out PolicyPilot wasn't ready.
 
-❌ The API had no rate limiting or request authentication on several endpoints
-❌ Anyone who found the right URL pattern could pull data without logging in
-❌ Client documents were stored with zero encryption at rest
-❌ For firms handling confidential legal material, that's disqualifying
+Nina de Groot, a former policy analyst, built PolicyPilot in Cursor. It's a document review tool that helps NGOs and legal consultancies track regulatory changes and flag compliance risks in contracts. Two consultancies near the city center piloted it.
 
-✅ Add authentication middleware deliberately across every API route
-✅ Implement rate limiting before an IT team finds the gap for you
-✅ Encrypt document storage at rest, not just data in transit
+Then one of them ran its standard vendor check. If you sell to Den Haag's institutions, this is roughly the exam:
 
-At **LaunchStudio**, Manifera's work for institutional clients like TNO shapes the same backend rigor we apply to founder-built govtech and legal tools. 🛡️
+☐ Do API endpoints require authentication?
+→ ❌ Several didn't. The right URL pattern returned data without a login.
+☐ Is there rate limiting?
+→ ❌ None.
+☐ Are client documents encrypted at rest?
+→ ❌ No, in a tool built for confidential legal material.
+☐ Does the API reject malformed input?
+☐ Is there a written data retention and deletion policy?
 
-The same IT team that flagged the issue signed off on PolicyPilot for full deployment after the fix. 🚀
+Those last two are the questions an institutional buyer usually asks next. Have your answers ready.
+
+The fix: authentication middleware on every API route, rate limiting, and document storage encrypted at rest.
+
+The outcome: the same IT team that flagged the gaps signed off on PolicyPilot for full deployment.
+
+"I'd built something that looked ready for legal clients. It took their IT team about ten minutes to find out it wasn't." - Nina de Groot
+
+In a city this networked, your first reference client opens the door to the next one. Worth passing the exam first.
 
 👉 Making an AI product for institutional clients? Get your backend reviewed first: https://launchstudio.eu/en/blog/make-a-ai-den-haag
 

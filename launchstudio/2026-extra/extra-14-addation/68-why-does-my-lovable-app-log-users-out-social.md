@@ -1,21 +1,32 @@
-🚨 Ruud Koopman built Klantbezoek in Lovable: a CRM-lite for the field sales reps of a building supplies wholesaler, used on phones between customer visits. Reps complained they were logged out constantly - often while typing visit notes, which were then lost. Some were logged out twenty times a day. 😳
+💬 Four copies of the same login code, arguing (dramatized)
 
-Every logout cost a rep their notes and their patience. The cause turned out to be four copies of the same login code arguing with each other. Here's what was going on: 🧠
+CLIENT 1: I'll refresh the token now.
+CLIENT 2: No, I'll refresh it now.
+CLIENT 3: I just refreshed it. Yours is old.
+CLIENT 4: The phone was locked and the signal's weak. Refresh failed. Signing the user out.
+SALES REP: ...I was halfway through my visit notes.
 
-❌ A Supabase client created in four different components, each refreshing tokens on its own schedule
-❌ The app reachable on both klantbezoek.nl and www.klantbezoek.nl
-❌ Notification emails linking to the www version, a different session
-❌ Token refresh failing on weak mobile connections after phones locked, signing users out instead of retrying
+Ruud Koopman built Klantbezoek in Lovable: a CRM-lite for the field sales reps of a building supplies wholesaler, used on phones between customer visits. Reps complained they were logged out constantly, often while typing visit notes, which were then lost.
 
-✅ One shared Supabase client module, imported everywhere
-✅ www redirected to the canonical domain, with redirect settings updated
-✅ Refresh handling that retries when the connection returns instead of signing out
-✅ Draft visit notes saved locally, so nothing is lost if a session does expire
+LaunchStudio found three causes at once:
+1. The code created a Supabase client in four different components, each refreshing tokens on its own schedule
+2. The app ran on both klantbezoek.nl and www.klantbezoek.nl, and notification emails linked to the www version
+3. When phones locked between visits, token refresh failed on weak connections, and the app signed users out instead of retrying
 
-At **LaunchStudio**, backed by Manifera's 11+ years of authentication work, we trace the full session lifecycle - because most "random" logouts have one or two fixable causes. 🛠️
+What changed (4 business days, €1,200):
+✓ One single client module
+✓ www redirected to the canonical domain, with redirect settings updated
+✓ Refresh retried when the connection comes back, instead of signing out
+✓ Draft visit notes saved locally, so nothing is lost even if a session does expire
 
-💡 His result: €1,200, four business days. Unexpected logouts dropped from a daily complaint to essentially none, and visit notes logged per rep rose noticeably once reps trusted the app. 🚀
+The same conversation now:
+CLIENT: Connection's back. Refreshing. All good.
+SALES REP: (keeps typing)
 
-👉 Is your Lovable app logging users out at random? Here are the six usual causes and how to fix them: https://launchstudio.eu/en/blog/why-does-my-lovable-app-log-users-out
+Unexpected logouts went from a daily complaint to essentially none. And once reps trusted the app, visit notes logged per rep per week rose noticeably.
+
+"Every logout cost a rep their notes and their patience. The cause turned out to be four copies of the same login code arguing with each other." - Ruud Koopman
+
+https://launchstudio.eu/en/blog/why-does-my-lovable-app-log-users-out
 
 #Lovable #Supabase #Authentication #UX #LaunchStudio #Manifera

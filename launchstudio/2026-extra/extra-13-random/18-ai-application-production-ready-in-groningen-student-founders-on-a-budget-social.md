@@ -1,21 +1,34 @@
-🚨 Wessel Postma, a third-year student at the University of Groningen, built Kamerzoeker in Bolt: room-seekers post profiles with photos, budgets and move-in dates, and tenants looking for a housemate message them. He shared it in two student association group chats on a Tuesday evening. By Thursday, 1,300 students had signed up. Then a computer science friend checked the API. 😳
+💸 A viral student app, and €1,500 in savings. How the budget got split.
 
-Every profile - phone numbers and the "private notes" where people described their situation - could be fetched without logging in. Row level security was missing, the database sat in a US region, photos were in a public bucket and accounts couldn't be deleted. Wessel had about €1,500 saved. Here's how to make an AI application production ready on a student budget: 🧠
+TUESDAY EVENING
+Wessel Postma, a third-year student at the University of Groningen, shares Kamerzoeker in two student association group chats. Built in Bolt: students looking for rooms create profiles with photos, budgets and move-in dates, and tenants looking for a housemate browse and message them.
 
-❌ Profiles readable by anyone through the API
-❌ Profile photos in a public bucket
-❌ Database outside the EU, no tested backup
-❌ No way to delete an account
+THURSDAY
+1,300 sign-ups. And a friend studying computer science points out that every profile, phone numbers and "private notes" included, can be fetched from an API endpoint without logging in. (The anon key in the page was fine. The missing Row Level Security wasn't.) Also: a US-hosted database, profile photos in a public bucket, and no way to delete an account.
 
-✅ Row level security: profiles for logged-in users only, private fields for their owner only
-✅ Photos in private storage with signed links
-✅ Database migrated to an EU region with backups and a tested restore
-✅ Full account deletion - while Wessel did the free work himself: one project email with 2FA, a privacy notice, an uptime monitor
+THE BUDGET, SPLIT INTO THREE
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we fix exactly what can hurt people first - and tell you honestly what can wait. ⚙️
+PAID FOR (LaunchStudio, 6 business days, €1,200)
+✓ Row Level Security: profiles visible only to logged-in users, private fields only to their owner
+✓ Photos moved to private storage with signed links
+✓ The database migrated to an EU region, with backups and a tested restore
+✓ Full account deletion
 
-His result: €1,200, six business days. Kamerzoeker reached 4,800 users by the next academic year with no data incidents, and a local incubator accepted Wessel, citing the clear privacy setup. 🚀
+DONE BY WESSEL HIMSELF (€0)
+✓ Accounts consolidated under a project email with two-factor authentication
+✓ A privacy notice
+✓ A free uptime monitor
 
-👉 AI application production ready in Groningen: student founders on a budget: https://launchstudio.eu/en/blog/ai-application-production-ready-in-groningen-student-founders-on-a-budget
+WAITING, WITH A WRITTEN NOTE
+🕓 Performance work
+🕓 A planned messaging upgrade
+
+The fixes that could hurt people came first. The rest could wait.
+
+By the start of the next academic year, Kamerzoeker had 4,800 users and no data incidents. A local incubator accepted Wessel into its programme, and named the clear privacy setup as one reason it took the project seriously.
+
+"I had a viral app and a very small bank account. They fixed exactly the things that could hurt people and told me what could wait. That was the whole budget, well spent." - Wessel Postma
+
+https://launchstudio.eu/en/blog/ai-application-production-ready-in-groningen-student-founders-on-a-budget
 
 #StudentStartup #Groningen #Bolt #GDPR #LaunchStudio #Manifera

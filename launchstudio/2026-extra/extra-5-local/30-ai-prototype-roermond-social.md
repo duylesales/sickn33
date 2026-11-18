@@ -1,20 +1,26 @@
-⚠️ Iris Coenen built OutletOps - a staff scheduling and inventory-sync tool for outlet retailers near Roermond - using Bolt in two weeks. Running her own load test before the busy autumn season, simulating multiple staff clocking in at once, the scheduling database started showing one shift assigned to two employees simultaneously. 😳
+🌦️ THE ROERMOND FORECAST: Saturday morning at the outlet center
 
-Bolt's backend had zero transaction locking on shift-assignment writes. Near-simultaneous updates could silently overwrite each other. 🧠
+Outlook: busy. Autumn shopping season. Staff clocking in all at once.
+Risk level for an untested scheduling backend: high.
 
-❌ No transaction handling on concurrent shift-assignment writes
-❌ Near-simultaneous clock-ins could overwrite each other with no warning
-❌ Nothing about this showed up during normal building or testing
-❌ It only surfaced under a load spike she happened to test herself
+Iris Coenen used to run operations for a retail chain near Roermond's outlet center. In about two weeks she built OutletOps in Bolt: staff scheduling and inventory sync for small outlet retailers. Clean calendar, working inventory dashboard, staff login portal. Two boutiques were on board, with five more planned before the autumn rush.
 
-✅ Implement proper transaction handling on all shift-assignment writes
-✅ Add a monitoring alert for any data inconsistency in scheduling records
-✅ Load-test the fix against a simulated fifty-concurrent-user scenario
+Then Iris ran a load test herself, one she almost skipped. She simulated what really happens on a Saturday morning: lots of staff clocking in at the same moment.
 
-At **LaunchStudio**, backed by Manifera's 160+ delivered projects for clients like Vodafone, we apply the same production discipline to founder-stage prototypes that we do to enterprise systems handling real-world load. 🛡️
+Conditions observed:
+⚡ Inconsistent shift data
+⚡ One shift showing as assigned to two different employees at once
+⚡ The cause: no transaction locking on shift-assignment writes, so near-simultaneous updates silently overwrote each other
 
-OutletOps's result: it launched across all seven retailers ahead of the autumn season without a single scheduling conflict - something Iris credits directly to catching the bug in testing, not during the actual rush. 🚀
+Storm protection installed (LaunchStudio, 5 business days, €1,100):
+☂️ Proper transaction handling on every shift-assignment write
+☂️ A monitoring alert for any inconsistency in scheduling records
+☂️ The fix load-tested against 50 concurrent users before sign-off
 
-👉 Building something that needs to survive a Saturday rush? Load-test it before launch: https://launchstudio.eu/en/blog/30-ai-prototype-roermond
+Season report: OutletOps went live at all seven retailers ahead of the autumn season. Scheduling conflicts: zero.
+
+"I found the bug myself by accident, testing something I almost skipped. LaunchStudio made sure it couldn't happen again, at any scale I'd actually hit." - Iris Coenen
+
+Check the forecast for your AI prototype: https://launchstudio.eu/en/blog/30-ai-prototype-roermond
 
 #AINativeFounder #LaunchStudio #Manifera #AIPrototype #Roermond

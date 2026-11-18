@@ -1,21 +1,32 @@
-🚨 Pieter Hofstede left a large Eindhoven tech company to start SensaGrow: wireless sensors measuring temperature, humidity and CO₂ in commercial greenhouses. The hardware was carefully engineered. The customer dashboard was built in Cursor in about three weeks. Five Westland growers piloted 340 sensors - then a cooperative wanted to roll out 2,000. 😳
+📋 SPEC SHEET: SensaGrow
 
-Its IT consultant asked for a security overview. Every sensor shared one API key compiled into firmware, the ingestion endpoint trusted any device_id, growers could read each other's data through the API, and the ventilation-override command had no role check or audit log. Here's what hardware startups must fix before taking the dashboard to production: 🧠
+HARDWARE (a year of careful engineering)
+✓ Wireless sensors for temperature, humidity and CO₂ in commercial greenhouses
+✓ Built by Pieter Hofstede, an electrical engineer who left a large Eindhoven tech company
 
-❌ One shared device key - extract it once, impersonate every sensor
-❌ One database row per reading: 40 million rows and 20-second charts
-❌ Tenant separation only in the interface
-❌ Device commands with no roles, limits or audit trail
+DASHBOARD (about three weeks in Cursor, with Next.js and Supabase)
+✗ Every sensor using the same API key, compiled into firmware
+✗ An ingestion endpoint accepting any device_id in a request
+✗ One row per request in a single table of 40 million rows, so growers' weekly charts took up to twenty seconds
+✗ Growers able to see each other's greenhouse data through the API
+✗ A ventilation-override command with no role check and no audit log
 
-✅ Per-device tokens with a revocation list, rolled out via the next firmware update
-✅ A queue with batched, idempotent ingestion
-✅ TimescaleDB with hourly and daily rollups
-✅ Row level security per grower, and ventilation overrides limited to admins with confirmation, value limits and an audit trail
+Five growers in the Westland were piloting 340 sensors. A larger cooperative wanted 2,000. Its IT consultant asked for a security overview, and Pieter asked LaunchStudio for a review before answering.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering - including industrial and energy hardware clients - we engineer the dashboard with the same care as the device. ⚙️
+From the customer's point of view, the dashboard was the product.
 
-His result: €4,200, fifteen business days. SensaGrow passed the cooperative's security review and began the 2,000-sensor rollout. Charts load in under a second, and ingestion handles 60+ readings per second with no dropped data. 🚀
+DASHBOARD, REVISED (Launch & Grow, 15 business days, €4,200, plus €49/month)
+✓ Per-device tokens issued at provisioning, with a revocation list, rolled out in the next firmware update and the shared key retired after a transition window
+✓ Ingestion rebuilt around a queue, with batched, idempotent writes
+✓ Readings moved to TimescaleDB, with hourly and daily rollups
+✓ Tenant separation enforced with Row Level Security
+✓ Ventilation overrides limited to grower-admin roles, with confirmation, value limits and an audit trail
 
-👉 AI app to production in Eindhoven: hardware startups and their dashboards: https://launchstudio.eu/en/blog/ai-app-to-production-in-eindhoven-hardware-startups-and-their-dashboards
+THE RESULT
+SensaGrow passed the cooperative's security review and started a 2,000-sensor rollout. Weekly charts load in under a second, and ingestion has handled peaks above 60 readings per second without dropped data.
+
+"I'd spent a year making the sensor trustworthy and three weeks on the thing that decided who could read it. The dashboard was the product, from the customer's point of view." - Pieter Hofstede
+
+https://launchstudio.eu/en/blog/ai-app-to-production-in-eindhoven-hardware-startups-and-their-dashboards
 
 #IoT #Eindhoven #Brainport #AppSecurity #LaunchStudio #Manifera

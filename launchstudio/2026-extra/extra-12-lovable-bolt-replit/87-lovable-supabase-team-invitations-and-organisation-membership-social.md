@@ -1,21 +1,36 @@
-🚨 Joost Verhagen's Werkbonapp runs digital work orders for 48 installation companies - around 600 technicians. Team support had been added in Lovable with an invite button and one organisation_id column per profile. Then an installer noticed work orders being viewed by a technician they'd removed four months earlier. 😳
+🖱️ What happened when an installer clicked "Remove" on a technician
 
-"Removing" someone only hid them from the team list. Their access through the API was untouched - and the invite links never expired. Here's how to build team invitations and memberships that actually hold: 🧠
+✓ Hidden from the team list
+✓ A flag set
+✗ The organisation column on their profile: untouched
+✗ Their access through the API: untouched
+✗ Their sessions: still signed in
 
-❌ One organisation_id per profile, so a subcontractor couldn't belong to two installers
-❌ Invite links containing the organisation ID, never expiring, usable by anyone
-❌ Removal that set a flag instead of revoking access or ending sessions
-❌ No audit of who invited, changed or removed whom
+And the invite link that brought them in? It held the company's ID, never expired, and let anyone who opened it sign up into that company.
 
-✅ Separate memberships and invitations tables; all 600 profiles backfilled
-✅ Row level security rewritten across 17 tables around one membership helper, verified with cross-organisation tests
-✅ Random, hashed invite tokens: 7-day expiry, single use, bound to the invited email
-✅ Removal that deletes the membership, signs out sessions and revokes tokens - plus a last-owner guard and an audit log
+Joost Verhagen built Werkbonapp in Lovable: digital work orders for 48 installation companies, around 600 technicians. Teams had been added with an invite button and an organisation_id column on each profile. 🔧
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we build this when a single-user product gets its first team customer. ⚙️
+Two things surfaced in one month:
+• A subcontractor working for two installers couldn't be added to the second, because a profile could only hold one organisation. The workaround was a second email address.
+• An installer saw work orders being viewed by an account they'd removed four months earlier.
 
-His result: €3,400, three business days. The backfill found 37 departed technicians across 11 companies who still had access - four had used it. All revoked on day one, and two installers upgraded because adding subcontractors finally worked. 🚀
+What "Remove" does now (LaunchStudio, 3 business days, €3,400):
+✓ Deletes the membership
+✓ Signs out every session
+✓ Revokes calendar feed tokens
+✓ Keeps their work orders, attributed to "former member"
+✓ Writes the event to an audit log each company's admins can see
 
-👉 Lovable Supabase: team invitations and organisation membership: https://launchstudio.eu/en/blog/lovable-supabase-team-invitations-and-organisation-membership
+And around it:
+✓ Separate memberships and invitations tables, with all 600 profiles backfilled
+✓ Row level security on 17 tables rewritten around a membership helper, checked with a cross-organisation test suite
+✓ Invite tokens that are random, hashed, single-use, bound to the invited email, and expire after seven days, with every old-style link invalidated
+✓ A last-owner guard in the database, and seat counts checked at invite and acceptance
+
+The backfill found 37 removed technicians across 11 companies who still had working access. All were revoked on day one. Logs showed four had used it after removal. Subcontractors now belong to several installers with one login, and two installers moved to bigger plans within the month because adding subcontractors finally worked.
+
+"Removing someone took them off the screen and nothing else. Thirty-seven people who had left still had access, and four of them had used it." - Joost Verhagen
+
+https://launchstudio.eu/en/blog/lovable-supabase-team-invitations-and-organisation-membership
 
 #Supabase #Lovable #SaaS #AppSecurity #LaunchStudio #Manifera

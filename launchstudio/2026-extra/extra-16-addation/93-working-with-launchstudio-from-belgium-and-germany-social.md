@@ -1,23 +1,29 @@
-🇧🇪 Pieter-Jan De Smet runs a scheduling SaaS for physiotherapy practices from Ghent, built with Lovable and Supabase. It worked well in Belgium, then a German practice group with twelve locations in North Rhine-Westphalia wanted it. Their data protection officer asked about hosting, subprocessors and technical measures, requested a processing agreement and noticed the site had no Impressum. German patients also wanted card or SEPA rather than Bancontact. 🇩🇪
+🇧🇪 ➜ 🇩🇪 A Ghent SaaS crosses a border
 
-The cross-border gaps: 🧠
+FROM: Ghent
+Pieter-Jan De Smet runs Kinerooster, a scheduling SaaS for physiotherapy practices built with Lovable and Supabase. Belgian practices were happy with it.
 
-❌ Practices and locations not properly separated
-❌ Treatment documents in storage that wasn't private
-❌ Only Belgian payment methods configured
-❌ No Impressum, no German texts and no documentation of subprocessors
+TO: North Rhine-Westphalia
+A German practice group with twelve locations wanted to adopt it. Its data protection officer sent questions about hosting, subprocessors and technical measures, asked for a processing agreement, and pointed out that the website had no Impressum. And German patients expected to pay by card or SEPA, not Bancontact.
 
-How it was solved, with Pieter-Jan working in Dutch: ✅
+LANGUAGES ALONG THE WAY
+🇳🇱 Pieter-Jan worked with LaunchStudio in Dutch
+🇬🇧 The German group's questions were answered in English
+🇧🇪 🇫🇷 🇩🇪 The interface and email templates were prepared for Dutch, French and German
 
-✅ Practices and locations separated with roles enforced through Row Level Security, plus private buckets for documents
-✅ EU hosting confirmed, subprocessors documented and a technical annex for the processing agreement
-✅ Mollie configured for Bancontact, cards and SEPA Direct Debit, with verified webhooks for each
-✅ Dutch, French and German templates and an Impressum page with texts from his lawyer, all invoiced under reverse-charge VAT
+WHAT THE CROSSING NEEDED (LaunchStudio, Launch & Grow, 12 business days, €4,400, plus €49/month, invoiced under reverse charge)
+✓ Practices and locations separated, with roles enforced through Row Level Security
+✓ Treatment documents moved to private buckets
+✓ EU hosting confirmed, and subprocessors documented
+✓ Mollie set up for Bancontact, cards and SEPA Direct Debit, with verified webhooks for each
+✓ An Impressum page and legal page structure for the German market, with texts from Pieter-Jan's lawyer
+✓ A technical annex for the processing agreement
 
-At **LaunchStudio**, backed by Manifera's 11+ years of working with international clients such as Vodafone and TNO, the process, price and quality are the same wherever you are in Europe. 🛠️
+ARRIVAL
+The German group's data protection officer approved the platform after reviewing the documentation, and all twelve locations started using it. Pieter-Jan later onboarded two more German practices with the same documents.
 
-His result: €4,400, twelve business days. The DPO approved, all twelve locations went live and two more German practices followed with the same documents. 🚀
+"I thought working with a Dutch team and a German customer would make everything complicated. In practice, the only differences were an Impressum, a payment method and a few answers in German." - Pieter-Jan De Smet
 
-👉 Working with LaunchStudio from Belgium and Germany: https://launchstudio.eu/en/blog/working-with-launchstudio-from-belgium-and-germany
+https://launchstudio.eu/en/blog/working-with-launchstudio-from-belgium-and-germany
 
 #Belgium #Germany #Lovable #SaaS #AIFounder #LaunchStudio #Manifera

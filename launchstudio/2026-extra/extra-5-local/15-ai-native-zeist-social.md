@@ -1,20 +1,28 @@
-🧘 Femke van Beek built MindGarden - a meditation and mood-tracking app for corporate wellness programs - entirely through Lovable prompts. Fully AI native, no developer hired. During due diligence, a consultancy's IT contact asked one question: was mood-tracking data encrypted at rest? Femke didn't know. 😳
+AI native
+/ˌeɪ ˌaɪ ˈneɪtɪv/ (adjective)
 
-Being AI native describes how you built it, not how ready it is for production. 🧠
+1. Describes a founder who builds a product entirely through prompts, with no code written by hand and no developer hired.
+Example: Femke van Beek built MindGarden, a guided meditation and mood-tracking app for corporate wellness programs, in Lovable in three weeks.
 
-❌ Sensitive mood and journal entries were stored as plain text with no encryption
-❌ Authentication tokens never expired - a stolen session could be reused indefinitely
-❌ Three weeks of prompting never surfaced "is this GDPR-compliant" as a question
-❌ Roughly 80% of AI-built projects never reach production, and data-sensitive categories rarely survive skipping this step
+2. Common misreading: "ready for due diligence."
+Example: none found.
 
-✅ Implement encryption at rest for sensitive fields
-✅ Add proper token expiration and refresh logic
-✅ Document the data handling approach so compliance questions get real answers
+Two Zeist wellness consultancies wanted to white-label MindGarden for their corporate clients. Then one consultancy's IT contact asked how mood-tracking data was stored, and whether it was encrypted at rest. Femke didn't know.
 
-At **LaunchStudio**, we handle exactly this handoff - Manifera's 11+ years of production engineering, layered onto the prototype an AI-native founder already built. 🛡️
+SEE ALSO
+encrypted at rest (n.): what MindGarden's mood and journal entries were not. They sat in plain text.
+token expiration (n.): what MindGarden's login sessions lacked. A stolen session could be reused indefinitely.
 
-Her result: MindGarden passed both consultancies' due diligence reviews and signed its first white-label contract within three weeks. 🚀
+RELATED ENTRY: LaunchStudio (7 business days, €1,300)
+• Encryption at rest for sensitive fields
+• Token expiration and refresh logic
+• Documentation of how the app handles data, so Femke can answer compliance questions herself
 
-👉 Pitching your AI-native product to a partner soon? Book a free 15-minute intro call first: https://launchstudio.eu/en/blog/ai-native-zeist
+USAGE NOTE
+MindGarden passed both consultancies' due diligence and signed its first white-label contract within three weeks.
+
+"Being AI native got me a real product fast. It didn't teach me what 'encrypted at rest' meant, or that I needed it. That gap could have cost me both deals." - Femke van Beek
+
+Read the full entry: https://launchstudio.eu/en/blog/ai-native-zeist
 
 #AINativeFounder #LaunchStudio #Manifera #AINative #Zeist

@@ -1,20 +1,24 @@
-🌾 Wouter Bosscha, a Dronten agronomist, built Oogstplanner - a harvest planning tool for arable farmers - using v0, with six farmers ready to pay for a seasonal subscription. He'd wired up Stripe from a tutorial but never tested what happened after payment. LaunchStudio's review found there was no webhook handler at all: farmers were being charged, but the app never granted them access. 😳
+Imagine you're a farmer near Dronten. 🌾
 
-A checkout button that appears on the page and a payment flow that's actually verified end-to-end are not the same thing. 🧠
+An agronomist you trust, Wouter Bosscha, has built Oogstplanner: a harvest planning and yield forecasting tool for arable farmers in the region, made with v0. You like what you see. You sign up for a seasonal subscription and pay through Stripe checkout.
 
-❌ Stripe processed payments, but the app never received confirmation
-❌ Paying customers were charged and never actually let in
-❌ No subscription state management for renewals or failed payments
-❌ No automated backups - a technical failure during planting season could have wiped planning data for good
+The payment goes through.
 
-✅ Built a complete billing integration with verified webhook handling
-✅ Added proper subscription state management for renewals and failed payments
-✅ Set up automated database backups to protect seasonal planning data
+And then... nothing. No access. No welcome. As far as the app knows, you're not a customer.
 
-At **LaunchStudio**, Manifera's 120+ engineers bring 11+ years of payment and billing system experience across the Vodafone ecosystem and beyond. 🛡️
+You're one of six farmers in exactly that position. And Wouter doesn't know either.
 
-Oogstplanner onboarded all six pilot farmers as paying subscribers, with automatic access granted immediately after payment for the first time. 🚀
+Here's why. He had wired up Stripe checkout by following an online tutorial, but never tested what happens after someone pays. Oogstplanner had no webhook handler at all. Stripe took the money, and the app never got the confirmation.
 
-👉 Charging farmers in Dronten for your AI tool? Verify this before your next invoice: https://launchstudio.eu/en/blog/ai-generated-tool-dronten
+Now switch seats. You're Wouter, and LaunchStudio is reviewing your code. The fix (5 business days, €900):
+✓ A complete billing integration with verified webhook handling
+✓ Subscription state management for renewals and failed payments
+✓ Automated database backups, so seasonal planning data can't be lost to a technical failure during planting season
+
+The result: all six pilot farmers onboarded as paying subscribers, with access granted immediately after payment for the first time.
+
+"Farmers had already paid me and I didn't even know it - the app just never told them they were in. LaunchStudio fixed a bug I didn't know existed until it had already cost me trust with real customers." - Wouter Bosscha
+
+Have you tested what happens after someone pays? https://launchstudio.eu/en/blog/ai-generated-tool-dronten
 
 #AINativeFounder #LaunchStudio #Manifera #Dronten #PaymentReady

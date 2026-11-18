@@ -1,21 +1,34 @@
-🚨 Aukje Verstraeten's Ritregistratie offers trip and mileage logging to 340 company-car drivers and sole traders at €9/month. Her biggest article - tax rules for private use of a company car - brought 4,200 visits a month, 60% of all organic traffic. So she wrote four more like it. 😳
+🏆 Two leaderboards for the same blog
 
-Then she started recording which page each new customer first landed on. In two months, the popular article produced 3 signups. A small article about logging trips for several vehicles under one sole trader - 190 visits a month - produced 22. Here's how to measure what converts, not what ranks: 🧠
+LEADERBOARD 1: by traffic
+🥇 Tax rules for private use of a company car: 4,200 visits a month, about 60% of organic traffic
+🥉 Registering trips for several vehicles as one sole trader: 190 visits a month
 
-❌ Judging content by traffic and keyword positions
-❌ No link between a landing page and a signup
-❌ Dashboards full of metrics that never change a decision
-❌ Writing more of whatever has the biggest number
+LEADERBOARD 2: by signups, over two months
+🥇 Registering trips for several vehicles as one sole trader: 22
+🥉 Tax rules for private use of a company car: 3
 
-✅ First landing page and referrer stored on arrival and copied to the account at signup
-✅ A monthly query: signups, conversion rate and revenue per page
-✅ Search console checks for impressions without clicks - six pages with weak titles fixed
-✅ An optional "how did you hear about us?" free-text question at signup
+Aukje Verstraeten built Ritregistratie in Lovable: kilometre and trip registration for company car drivers and sole traders, 340 subscribers at €9 a month. Leaderboard 1 was the only one she had. The tax article's numbers were so good she'd written four follow-ups on the same theme. 🚗
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we help you see which pages actually produced customers last quarter. 📊
+The explanation is obvious in hindsight. The tax article drew employees researching their own tax position, who weren't buyers. The small article drew people with exactly the administrative problem her product solves.
 
-Her result: one business day and €1,400 later, she switched to specific how-to articles. Organic traffic fell 22% over six months - and organic signups rose 210%. The free-text answers revealed that 14% came from an accountancy forum she'd never heard of. 🚀
+How Leaderboard 2 came to exist (LaunchStudio, 1 business day plus two months of measurement, €1,400):
+✓ The first landing page and referrer captured on arrival and saved to the account at signup
+✓ A monthly query: signups, conversion rate and revenue per landing page
+✓ A search console review for impressions without clicks, which found six pages with poor titles
+✓ An optional free-text question at signup
+✓ Dashboard metrics that never led to a decision, removed
 
-👉 Measuring what converts, not what ranks: https://launchstudio.eu/en/blog/lovable-seo-measuring-what-converts-not-what-ranks
+What she did with it: no more tax explainers. Six new articles on specific registration situations instead: several vehicles, mixed private and business use, switching cars mid-year, drivers with two employers.
+
+Six months later:
+Organic traffic: down 22%
+Organic signups: up 210%
+
+And that free-text question turned up a surprise: 14% of signups came from an accountancy forum she'd never heard of.
+
+"My best page by traffic produced three customers in two months. My worst page by traffic produced twenty-two. I had spent a year writing more of the wrong one because the number was bigger." - Aukje Verstraeten
+
+https://launchstudio.eu/en/blog/lovable-seo-measuring-what-converts-not-what-ranks
 
 #SEO #Analytics #ContentMarketing #Lovable #LaunchStudio #Manifera

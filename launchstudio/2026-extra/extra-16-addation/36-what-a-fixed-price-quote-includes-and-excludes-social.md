@@ -1,21 +1,31 @@
-🐾 Marloes Peters runs a pet-sitting platform in Leiden built with Bolt and Supabase, with Mollie payments. Before launching in three more cities, she asked two suppliers to make the app production ready. Both quotes came in around €2,500. One was a single paragraph promising "full production readiness". The other listed 16 scope items, five assumptions and eight exclusions. 📄
+Two quotes. Both around €2,500. 🐾
 
-She chose the detailed one. During the review, two surprises appeared: 🧠
+QUOTE A
+One paragraph: "Full production readiness, security and optimisation."
 
-❌ Sitters' identity documents in a public storage bucket
-❌ A forgotten second Supabase project holding real email addresses
-❌ A one-line quote that would have left both unclear
-❌ No way to know in advance what "full production readiness" included
+QUOTE B
+16 scope items. 5 assumptions. 8 exclusions. A timeline. An acceptance process.
 
-✅ The public bucket fixed immediately, because it was in scope
-✅ The old project reported the same day, with a small fixed price to export and delete it
-✅ Nothing extra done without her written approval
-✅ A small text change handled without a price change, because it fitted the agreed email work
+Marloes Peters runs Oppasmaatje, a pet-sitting platform in Leiden built with Bolt and Supabase, connecting pet owners with local sitters and handling payments through Mollie. Before launching in three more cities, she asked two suppliers to make it production ready. She picked Quote B, LaunchStudio's, because she could see what she was paying for.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of fixed-scope projects for clients such as Vodafone and TNO, our quotes list scope, assumptions, exclusions and acceptance in plain language. 🛠️
+Here's what that detail meant in practice.
 
-Her result: €2,500 plus an approved €250, seven business days. She launched in three new cities on schedule and knew the total cost up front. 🚀
+INSIDE THE SCOPE
+The review found sitters' identity documents, uploaded for verification, in a public bucket. It was in scope, so it was fixed immediately.
 
-👉 What a fixed-price quote includes and excludes: https://launchstudio.eu/en/blog/what-a-fixed-price-quote-includes-and-excludes
+OUTSIDE THE SCOPE
+A second, forgotten Supabase project still held old test data, including real email addresses. That wasn't in the 16 items. LaunchStudio reported it the same day and offered to export and delete it for €250. Marloes approved.
+
+A SMALL REQUEST ALONG THE WAY
+A change to the booking confirmation text. It fit the email work already in scope, so the price didn't change.
+
+DELIVERED
+All 16 items at the agreed price, in 7 business days. Total: €2,500, plus the €250 she chose to approve.
+
+Marloes launched in three new cities on schedule, knowing her total cost before the project started. And the exclusions list became her plan for what came next: a privacy policy review with her lawyer, and Launch & Grow for ongoing care.
+
+"Both quotes had the same number on them. Only one told me what I would get for it, and what I would not." - Marloes Peters
+
+https://launchstudio.eu/en/blog/what-a-fixed-price-quote-includes-and-excludes
 
 #FixedPrice #Bolt #Supabase #StartupBudget #AIFounder #LaunchStudio #Manifera

@@ -1,21 +1,35 @@
-🧘 Mila de Vries, a yoga teacher in Leiden, built Yogaflow Online with Bolt and Supabase: on-demand video courses with monthly and yearly memberships. Bolt added Stripe Checkout and the first hundred members signed up smoothly. Then the support emails began. 📩
+🧘 Three kinds of "members" a course platform shouldn't have
 
-Members who had paid couldn't watch the videos. Others were charged after cancelling. And a few "active members" didn't exist in Stripe at all. 😳 The review explained everything: 🧠
+1. Paid, but no access
+Access was granted on the success page after Checkout. Members who closed the browser too early never got in.
 
-❌ Access granted on the success page, so closing the browser cost a sale
-❌ No webhooks, so failed renewals and cancellations never changed access
-❌ Prices sent from the browser and the secret key in a frontend file
-❌ No customer portal, so every cancellation was an email
+2. No payment, but access
+A few people reached the success URL without paying.
 
-✅ Key rotated, all Stripe calls moved to server-side edge functions
-✅ Verified, idempotent webhooks driving a subscriptions table for access
-✅ Stripe's customer portal for payment methods, plan changes and cancelling
-✅ iDEAL for first payments, reminder emails with a grace period, and existing members reconciled
+3. Cancelled, but still charged (or still watching)
+There were no webhooks, so cancellations and failed renewals never updated access.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of building payment and billing systems, we integrate Stripe the way Stripe intends, at a fixed price and without rebuilding your interface. 🛠️
+Mila de Vries, a yoga teacher in Leiden, built Yogaflow Online with Bolt and Supabase: on-demand video courses with monthly and yearly memberships. Bolt added Stripe Checkout, and the first hundred members signed up smoothly. Then the support emails started, and Mila found active members she couldn't even find in Stripe.
 
-Her result: €3,900, nine business days. Access problems disappeared, and recurring revenue rose about 12% the next quarter, mostly from recovered renewals. 🚀
+Also in the review:
+• Prices passed from the browser into the checkout session
+• The secret key in a frontend environment file
+• No customer portal, so cancelling meant emailing Mila
 
-👉 A Stripe integration service built for AI-built apps: https://launchstudio.eu/en/blog/stripe-integration-service-for-ai-built-apps
+What LaunchStudio built (9 business days, €3,900):
+✓ The secret key rotated, and every Stripe call moved into Supabase edge functions
+✓ Prices defined in Stripe, with checkout sessions created on the server
+✓ Verified, idempotent webhooks for checkout completion, invoice payment, failed payments, subscription updates and cancellations
+✓ A subscriptions table that controls access to the videos
+✓ The Stripe customer portal for payment methods, plan changes and cancellations
+✓ iDEAL for first payments
+✓ Reminder emails and a grace period for failed renewals
+✓ Existing members reconciled with Stripe
+
+Now there's only one kind of member: the one Stripe agrees with. Access problems disappeared, unpaid accounts were corrected, and cancellations stopped generating email. Monthly recurring revenue rose around 12% the next quarter, mostly from recovered renewals.
+
+"I thought Stripe was working because money arrived. Once it was set up properly, I discovered how much was slipping through the cracks." - Mila de Vries
+
+https://launchstudio.eu/en/blog/stripe-integration-service-for-ai-built-apps
 
 #Stripe #Bolt #Supabase #Payments #AIFounder #LaunchStudio #Manifera

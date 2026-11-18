@@ -1,21 +1,31 @@
-🚨 Kevin Achterberg makes handmade leather sneakers in a workshop in Waalwijk, sold with a configurator for colours, leathers and sizes. Shopify themes couldn't show it the way he wanted, so he built the whole shop in Lovable with Mollie. Sales grew across the Netherlands, Belgium and Germany. 😳
+👟 Build or buy? One sneaker brand's answer: both, split down the middle.
 
-Then a customer paid for a basic model while configuring premium leather. Here's how to choose between a webshop built with an AI builder and Shopify: 🧠
+Kevin Achterberg makes handmade leather sneakers in a workshop in Waalwijk, with a configurator for colours, leather types and sizes. Shopify themes couldn't show that configurator the way he wanted, so he built the whole shop in Lovable, with Mollie payments. Sales grew, mostly in the Netherlands, Belgium and Germany. So did the gaps:
+• Prices calculated in the browser, and one customer paid for a basic model while configuring premium leather
+• Orders confirmed on the payment redirect, so some failed payments became "orders"
+• Dutch VAT charged to every EU customer, although Kevin had passed the EU distance sales threshold
+• No withdrawal information or returns process, while his accountant warned that personalised products and standard sizes need different treatment
+• Slow configurator pages, invisible to search engines, because everything rendered in the browser
 
-❌ Prices calculated in the browser
-❌ Orders confirmed on the payment redirect, so failed payments became orders
-❌ Dutch VAT for all EU customers after passing the distance sales threshold
-❌ No withdrawal or returns process, and configurator pages invisible to search engines
+After comparing options with LaunchStudio, Kevin split the shop in two (16 business days, €6,400):
 
-✅ A headless setup with products, inventory, checkout, taxes and orders in Shopify
-✅ EU VAT with One Stop Shop and Mollie-supported methods including iDEAL and Bancontact
-✅ The custom configurator rebuilt with server rendering on the Storefront API
-✅ Withdrawal rules for standard vs personalised products, a returns flow and structured data
+HANDED TO SHOPIFY
+🛍️ Products, variants and inventory
+🛍️ Checkout and orders
+🛍️ EU VAT through the One Stop Shop
+🛍️ Mollie-supported payment methods, including iDEAL and Bancontact
+🛍️ A returns flow through a Shopify app
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we keep custom only what needs to be custom. 🛠️
+KEPT CUSTOM
+🎨 The configurator, rebuilt with server rendering for product pages
+🎨 Connected to Shopify's Storefront API, so price and options come from Shopify at checkout
+🎨 Withdrawal information that separates standard and personalised products
+🎨 Structured data and optimised images on product pages
 
-His result: €6,400, 16 business days. Pricing and VAT errors disappeared, conversion improved with Shopify's checkout, and organic traffic to configurator pages grew steadily. 🚀
+The result: pricing and VAT errors gone, better conversion after the move to Shopify's checkout, and steadily growing organic traffic to the server-rendered configurator pages. Kevin now spends his time on product, not checkout code.
 
-👉 AI-built webshop or Shopify? Here's how to decide: https://launchstudio.eu/en/blog/webshop-with-an-ai-builder-vs-shopify
+"I built a custom shop because I wanted a custom configurator. It turned out I only needed the configurator to be custom." - Kevin Achterberg
+
+https://launchstudio.eu/en/blog/webshop-with-an-ai-builder-vs-shopify
 
 #Shopify #HeadlessCommerce #Ecommerce #EUVAT #AIFounder #LaunchStudio #Manifera

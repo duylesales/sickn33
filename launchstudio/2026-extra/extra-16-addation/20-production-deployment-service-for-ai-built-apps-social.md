@@ -1,21 +1,32 @@
-🧗 Lars Mulder runs a network of climbing gyms in Utrecht and built Klimslot with Lovable and Supabase for booking slots and courses. He improved the app every Friday afternoon. Three Fridays in a row, an update broke production: no slots in the calendar, sign-ups failing, course capacity wiped. Each time he spent the weekend fixing it while members emailed the front desk. 😩
+🗓️ Fridays at Klimslot
 
-The inventory explained why every change was a live experiment: 🧠
+FRIDAY 1: Update published. The booking calendar shows no slots.
+FRIDAY 2: Update published. New members can't sign up.
+FRIDAY 3: Update published. A database change wipes course capacity for existing courses.
+Every weekend after: Lars fixes it while members email the front desk.
 
-❌ The Supabase project in a former freelancer's account
-❌ The domain registered privately by a former partner
-❌ The live Stripe key used during testing
-❌ One environment, production, and no record of database changes
+Lars Mulder runs a network of climbing gyms in Utrecht and built Klimslot with Lovable and Supabase for booking time slots and courses. He improved it every week, usually on quiet Friday afternoons. Three Fridays in a row, something broke in production.
 
-✅ Supabase project and domain moved into Lars's business accounts
-✅ Separate staging and production with their own keys and data
-✅ Lovable connected to GitHub with a pipeline and tracked database migrations
-✅ Email authentication records, tested backups, uptime monitoring and a practised rollback
+Because production was the only environment there was. And the inventory showed more:
+• The Supabase project sat in the account of a freelancer who'd helped at the start
+• The domain was registered privately by a former partner
+• The live Stripe key was used for testing
+• Database changes left no record
 
-At **LaunchStudio**, backed by Manifera's 11+ years of running production systems for clients such as Vodafone and TNO, we take AI-built apps from preview link to real production at a fixed price. 🛠️
+What LaunchStudio set up (5 business days, €1,950):
+✓ The Supabase project and domain moved into Lars's business accounts
+✓ Separate staging and production projects, each with its own keys and data
+✓ Lovable connected to GitHub, with a pipeline: staging automatically, production on approval
+✓ Database changes captured as migrations and applied through the pipeline
+✓ Email authentication records, so booking confirmations stop landing in spam
+✓ A tested restore to staging, uptime monitoring and error tracking
+✓ A rollback, practised by Lars during handover
 
-His result: €1,950, five business days. Three months of weekly releases without a production incident, and two breaking changes caught on staging. 🚀
+FRIDAYS NOW
+Changes almost every week for three months, and no production incidents. Twice, a change that would have broken bookings was caught on staging. Confirmations reach inboxes again, and front desk complaints dropped noticeably.
 
-👉 Production deployment service for AI-built apps: https://launchstudio.eu/en/blog/production-deployment-service-for-ai-built-apps
+"I still build on Friday afternoons. The difference is that now Friday's mistakes stay on staging." - Lars Mulder
+
+https://launchstudio.eu/en/blog/production-deployment-service-for-ai-built-apps
 
 #Deployment #Lovable #Supabase #DevOps #AIFounder #LaunchStudio #Manifera

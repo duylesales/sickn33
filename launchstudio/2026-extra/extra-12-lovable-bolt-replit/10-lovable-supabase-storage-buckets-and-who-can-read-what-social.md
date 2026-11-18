@@ -1,21 +1,34 @@
-🚨 Bram Nieuwenhuijs's Hypotheekmap collects payslips, employment contracts, bank statements and ID documents for 26 mortgage advisers and about 400 clients. One client copied the URL of his own payslip, swapped in a friend's surname - and the friend's employment contract loaded. 😳
+🔬 Anatomy of one link (illustrative)
 
-No hacking involved. The file naming was the vulnerability. Here's how storage buckets leak in AI-built apps: 🧠
+.../public/client-documents/jansen-payslip.pdf
 
-❌ A public bucket - readable by anyone with the URL, no login, no expiry
-❌ Files named by surname and document type, so the bucket could be walked
-❌ Permanent links embedded in emails already sent
-❌ Deleting an account never removed the stored files
+public ➜ the bucket was open to the internet
+jansen ➜ the client's surname
+payslip ➜ the document type
 
-✅ A private bucket with policies matched on the organisation segment of the path
-✅ 1,247 files migrated to adviser/client/document paths with generated IDs, plus a documents table
-✅ Server-side signed URLs: 15 minutes to view, one hour to download
-✅ Upload validation by real content type (25 MB limit), 180 old links invalidated, and deletion that removes files too
+One client copied the URL of his own payslip, changed the surname to that of a friend who used the same adviser, and his friend's employment contract opened. He emailed the founder about it, politely, on a Sunday. 🏠
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we check your bucket settings first - it takes ten minutes and it's usually where the exposure is. 🔒
+Bram Nieuwenhuijs built Hypotheekmap with Lovable: mortgage advisers collect documents from clients, like payslips, employment contracts, bank statements and identity documents, and pass a complete file to the lender. 26 advisers, around 400 clients. Uploads went into a public bucket, named by surname and document type, because it made the admin screen easier to read.
 
-His result: three business days and €3,300 later, the exposure was closed within the week. Bram reported it to the Dutch Data Protection Authority and told every affected adviser and client - two advisers said that transparency is why they stayed. 🚀
+There was no hacking. The file naming was the vulnerability.
 
-👉 Storage buckets and who can read what: https://launchstudio.eu/en/blog/lovable-supabase-storage-buckets-and-who-can-read-what
+What LaunchStudio changed (3 business days, €3,300):
+✓ A private bucket, with policies matching the organisation segment of the path
+✓ All 1,247 objects migrated to an adviser-id/client-id/document-id layout, with generated identifiers instead of names
+✓ A documents table recording uploader, path, size, type and timestamp
+✓ Signed URLs generated server-side: fifteen minutes to view, one hour to download
+✓ Uploads validated by actual content type, with a 25 MB limit
+✓ The old bucket blocked, then deleted
+✓ 180 previously issued document links from sent emails invalidated, with advisers asked to re-share from inside the product
+✓ Account deletion extended to remove stored files, which it had never done
+
+🔬 Anatomy of a link, now
+Private. Unguessable. Expiring.
+
+The exposure closed within the week. Bram reported the incident to the Autoriteit Persoonsgegevens with a description of the fix, and informed the 26 advisers and the clients whose documents had been reachable. Two advisers said the transparency was why they stayed.
+
+"He guessed one URL. There was no hacking involved - my file naming was the vulnerability, and I had chosen it because it made the admin screen easier to read." - Bram Nieuwenhuijs
+
+https://launchstudio.eu/en/blog/lovable-supabase-storage-buckets-and-who-can-read-what
 
 #Supabase #DataSecurity #GDPR #Lovable #LaunchStudio #Manifera

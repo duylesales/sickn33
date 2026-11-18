@@ -1,21 +1,40 @@
-🚨 Hilde Brouwers, an insurance broker in Doetinchem with seven advisers, built Polisportaal with Cursor: clients see policies, submit claims with photos, upload documents and chat with their adviser. Three more Achterhoek brokerages joined - about 4,800 clients in total. Then a large insurer asked all its intermediaries to complete a security questionnaire. Hilde asked for a review first. 😳
+🛡️ THE INSURER'S QUESTIONNAIRE: one broker portal, before and after
 
-Every adviser at every brokerage could open any client file through the API. Clients logged in with a password only, and sessions lasted 30 days. Health declarations for disability insurance sat in a general documents bucket with public URLs. There was no audit trail, backups had never been restored, and a premium bank-account change needed no re-authentication. Here's what AI-generated app security means for broker portals: 🧠
+☐ Can advisers only see their own clients?
+Before: every adviser at every brokerage could open any client file through the API.
 
-❌ Every adviser able to read every client
-❌ Password-only logins and month-long sessions
-❌ Health declarations at public URLs
-❌ No audit trail and untested backups
+☐ Is login protected beyond a password?
+Before: password only, with sessions lasting 30 days.
 
-✅ Brokerage and adviser–client relationships enforced with row level security
-✅ MFA for all staff and as a strong default for clients, shorter sessions and step-up authentication for bank changes and bulk downloads
-✅ Private document storage with restricted handling for health declarations and download logging
-✅ An append-only audit trail, EU hosting with a tested restore and alerting - plus technical answers for the insurer's questionnaire and an incident procedure
+☐ How are health declarations stored?
+Before: disability insurance health declarations in a general "documents" bucket, with public URLs.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we make the portal as discreet as the adviser. ⚙️
+☐ Is there a record of who viewed which files?
+Before: no audit trail.
 
-Her result: €4,300 over fourteen business days, plus €49/month. All four brokerages passed the insurer's review, and two more joined within the year. 🚀
+☐ Are sensitive changes re-confirmed?
+Before: a client's bank account for premium collection could be changed without re-authentication.
 
-👉 AI generated app security for insurance brokers: client portals under scrutiny: https://launchstudio.eu/en/blog/ai-generated-app-security-for-insurance-brokers-client-portals-under-scrutiny
+☐ Do backups actually work?
+Before: never restored.
+
+Hilde Brouwers, an insurance broker in Doetinchem with a team of seven advisers, built Polisportaal with Cursor: clients see their policies, submit claims with photos, upload documents for new applications, and chat with their adviser. She then offered it to three other brokerages in the Achterhoek, about 4,800 clients in total. When a large insurer asked all its intermediaries to fill in a security questionnaire, Hilde asked for a review first.
+
+Clients trust a broker with things they don't tell their friends. The portal had to be as discreet as the adviser.
+
+☑ All boxes, after (LaunchStudio, Launch & Grow, 14 business days, €4,300, plus €49/month):
+✓ Brokerage and adviser-client relationships enforced with Row Level Security
+✓ MFA for all staff, and as a strong default for clients
+✓ Shorter sessions, with step-up authentication for bank changes and bulk downloads
+✓ Documents in private storage, with separate restricted handling for health declarations and download logging
+✓ An append-only audit trail
+✓ EU hosting, with a tested restore and alerting
+✓ Technical answers drafted for the insurer's questionnaire, plus an incident procedure
+
+All four brokerages passed the insurer's review. Hilde now offers Polisportaal to other independent brokers with a security description that answers most questionnaires in advance, and two more brokerages joined within the year.
+
+"Clients trust a broker with things they don't tell their friends. The portal has to be as discreet as the adviser." - Hilde Brouwers
+
+https://launchstudio.eu/en/blog/ai-generated-app-security-for-insurance-brokers-client-portals-under-scrutiny
 
 #InsurTech #Insurance #AppSecurity #Cursor #LaunchStudio #Manifera

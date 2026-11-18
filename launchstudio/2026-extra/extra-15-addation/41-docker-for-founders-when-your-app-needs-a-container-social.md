@@ -1,21 +1,32 @@
-🚨 Iris Kok built Akteslim with Claude Code: a service for notary and legal offices that extracts key data from scanned deeds and contracts, with a Python API running OCR and AI extraction. Claude Code wrote a Dockerfile, and Iris deployed it to a rented server following a tutorial. 😳
+🏷️ PRODUCT LABEL: Akteslim API container (original recipe)
 
-The image was over 2 GB, deployments took twenty minutes, and the API keys were baked into the image. Here's when your app needs a container - and how to do Docker properly: 🧠
+Net weight: over 2 GB
+Contains: build tools, test data, a full copy of the repository's history
+Runs as: root
+Secret ingredients: OCR and AI provider API keys, baked in from a .env file
+Base: "latest" tag, not updated in months
+Serving suggestion: port exposed directly, no TLS
+Shelf life of logs: until the next restart
+Warning: may run out of memory on large scanned PDFs, without telling anyone
+Deployment time: about twenty minutes
 
-❌ A 2 GB image with build tools, test data and the full repo history
-❌ The container running as root, with keys copied in from a .env file
-❌ A months-old latest base image and a port exposed without TLS
-❌ Logs lost on every restart, and silent out-of-memory crashes on large PDFs
+Iris Kok built Akteslim with Claude Code: a service that extracts key data from scanned deeds and contracts for small notary and legal offices. A React frontend on Vercel, Supabase for data and authentication, and a Python API for OCR and AI extraction. Claude Code wrote the Dockerfile, and Iris deployed it to a rented server by following a tutorial.
 
-✅ A multi-stage build on a pinned slim base, down to around 400 MB, running as non-root
-✅ Keys rotated and moved to runtime environment variables
-✅ Image vulnerability scanning in a GitHub Actions pipeline
-✅ A managed EU container platform with TLS, health checks, memory limits, a job queue and central logs
+NEW RECIPE (LaunchStudio, 10 business days, €3,900)
+Net weight: around 400 MB, thanks to a multi-stage build on a pinned slim base and a .dockerignore
+Runs as: a non-root user
+Secrets: rotated, and passed in as runtime environment variables
+Quality control: image vulnerability scanning in a GitHub Actions pipeline
+Serving: a managed container platform in an EU region, with TLS, health checks, memory limits and automatic restarts
+Large documents: processed through a job queue, with progress updates
+Logs: forwarded to a central log service, with alerts on failures
+Deployment time: under three minutes
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we turn a container that works into one you can trust near customer data. 🛠️
+RESULT
+Memory crashes stopped, large documents process reliably, and Akteslim passed a security review by a notary group's IT supplier, which had asked specifically about container security and secret handling.
 
-Her result: €3,900, 10 business days. Deployments now take under three minutes, memory crashes stopped, and Akteslim passed a notary group's IT security review. 🚀
+"Claude Code gave me a working container. It took a proper review to turn it into one I'd let near my customers' deeds." - Iris Kok
 
-👉 Does your app need Docker? Here's what founders should know: https://launchstudio.eu/en/blog/docker-for-founders-when-your-app-needs-a-container
+Read your own container's label: https://launchstudio.eu/en/blog/docker-for-founders-when-your-app-needs-a-container
 
 #Docker #Containers #ClaudeCode #LegalTech #AIFounder #LaunchStudio #Manifera

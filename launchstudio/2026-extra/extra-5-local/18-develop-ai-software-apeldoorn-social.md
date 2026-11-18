@@ -1,20 +1,28 @@
-🚚 Joris Mulder built RouteWise, a fleet-tracking tool for usage-based insurance pricing, using v0. After six frustrating weeks trying to add production features himself, he was one signature away from a €35,000 rebuild quote from a traditional agency. 😳
+Two quotes for the same app. 🧾
 
-Most "let's rebuild everything" decisions are really three specific bugs wearing a trenchcoat. 🧠
+QUOTE A: Traditional agency
+Scope: full rebuild
+Price: €35,000
+Status: one signature away
 
-❌ Vehicle-tracking data wasn't properly indexed, causing slow queries that felt like broader instability
-❌ API keys for the mapping service were exposed client-side
-❌ No rate limiting - a single malfunctioning device could flood the database with requests
-❌ None of this required scrapping six weeks of real progress
+QUOTE B: LaunchStudio, audit first
+Scope: three specific fixes
+Price: €1,250
+Timeline: 6 business days
 
-✅ Index the database properly to fix the root cause of the "instability"
-✅ Move mapping API calls to a secured backend proxy
-✅ Implement rate limiting per device
+The app was RouteWise, built by Apeldoorn founder Joris Mulder with a v0 interface on a custom backend. It helps small fleet operators track vehicle usage for usage-based insurance pricing. After six slow, frustrating weeks of trying to add production features himself, Joris was ready to scrap it and start over.
 
-At **LaunchStudio**, we audit first and fix what's actually broken - Manifera's engineers finding the narrow, fixable problem before anyone commits to a six-figure rebuild. 🛡️
+Before signing, he asked for an audit. It found three narrow problems:
+1. Tracking data wasn't indexed properly, so slow queries felt like general instability
+2. API keys for the mapping service were exposed client-side
+3. There was no rate limiting, so one malfunctioning device could flood the database
 
-His result: RouteWise now handles tracking data from 40+ fleet vehicles with query times cut by roughly 90%, at a fraction of the rebuild quote he was considering. 🚀
+None of it needed a rebuild. The fixes: proper indexing, a secured backend proxy for the mapping calls, and rate limiting per device.
 
-👉 About to sign an expensive rebuild quote? Get an audit first: https://launchstudio.eu/en/blog/develop-ai-software-apeldoorn
+RouteWise now handles tracking data from 40+ fleet vehicles, with query times down by roughly 90%.
+
+"I was one signature away from paying €35,000 to rebuild something that had three specific, fixable problems. LaunchStudio found them in a week for a fraction of that." - Joris Mulder
+
+Thinking about a rebuild? Get the audit before the quote: https://launchstudio.eu/en/blog/develop-ai-software-apeldoorn
 
 #AINativeFounder #LaunchStudio #Manifera #AISoftware #Apeldoorn

@@ -1,21 +1,34 @@
-🚨 Roos Visser, a former district nurse, founded Wijkroute in Zwolle: a planning tool that schedules home care visits around care needs, qualifications, travel times and strict time windows. She believed a better optimisation approach was possible. Then her first WBSO conversation surfaced a problem. 😳
+🗂️ Sort the work: R&D or routine?
 
-The Lovable prototype mixed everything: experimental optimisation code, screens, auth, Mollie and hosting - built by the same two people, with no separation in hours. The adviser couldn't tell R&D from routine work. Here's how software startups can claim WBSO properly: 🧠
+Roos Visser, a former district nurse, founded Wijkroute in Zwolle with one employee, a data scientist. It plans visits for home care teams across clients, care needs, nurse qualifications, travel times and strict time windows. Existing tools produced schedules nurses rejected as unrealistic. Roos believed a better optimisation approach was possible.
 
-❌ R&D and routine work mixed in one project
-❌ No separation of hours between research and production
-❌ An application that was either too small or impossible to defend
-❌ A production app that wasn't ready for real customers
+Her first WBSO conversation with an adviser hit a snag. In the Lovable prototype, everything was mixed together, done by the same two people, with no split in hours:
 
-✅ The production layer handled separately: RLS, MFA, Mollie subscriptions, EU hosting
-✅ The optimisation engine isolated in its own service
-✅ Hours on the engine tracked per project
-✅ Weekly experiment notes linked to Git branches
+📦 Experimental optimisation code
+📦 Customer-facing screens
+📦 Authentication
+📦 A Mollie integration
+📦 Hosting work
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we take routine production work off your plate so your real R&D stays clear and defensible. 🛠️
+The adviser couldn't tell qualifying R&D from routine work. The application risked being too small, or impossible to defend.
 
-Her result: €5,900, 14 business days. The WBSO application covering only the research hours was approved, the app went live with three home care organisations, and the engine's third approach cut average travel time in pilot schedules by around 18%. 🚀
+So they sorted it.
 
-👉 Building software in the Netherlands? Here's how to claim WBSO: https://launchstudio.eu/en/blog/wbso-for-software-startups-claiming-the-dutch-rd-tax-credit
+ROUTINE WORK ➜ LaunchStudio, separate fixed-price engagement (14 business days, €5,900)
+• Row Level Security for care organisations and teams, MFA for planners
+• Mollie subscriptions
+• EU hosting with backups and monitoring, and a clean deployment pipeline
+
+R&D ➜ Roos and her data scientist
+• The optimisation engine isolated in its own service with a defined interface
+• Experiments with Claude Code, while the production app stayed stable
+• Hours tracked per project, with weekly experiment notes linked to Git branches
+
+THE RESULT
+The WBSO application covered only the optimisation research hours, clearly described and separated, and was approved for the following period. The production app went live with three home care organisations. The engine's third approach cut average travel time in pilot schedules by around 18%.
+
+"Separating the routine work from the real research made the WBSO application honest and easy to defend. It also made the product better." - Roos Visser
+
+https://launchstudio.eu/en/blog/wbso-for-software-startups-claiming-the-dutch-rd-tax-credit
 
 #WBSO #RnD #HealthTech #DutchStartups #AIFounder #LaunchStudio #Manifera

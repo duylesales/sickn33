@@ -1,21 +1,23 @@
-🚨 Julian Maas, a former construction project manager in Amsterdam, built Prijsbouwer with Bolt and later Cursor: SaaS that lets renovation contractors turn room measurements into detailed quotes, with client approval and deposits. Ninety contractors paid monthly. An Amsterdam seed fund issued a term sheet - subject to technical due diligence in six weeks. 😳
+📁 THE DATA ROOM, technical section
 
-Julian had a pre-diligence review done first. Contractors could read each other's material price libraries through an unprotected API route. The GitHub repo was still owned by a freelancer, with a Stripe secret key in its history. Backups covered seven days and had never been restored. There was no IP assignment, and the only documentation was a Cursor rules file. Here's what investor due diligence checks in an AI-built app: 🧠
+01 Pre-diligence review report
+   Finding: contractors could read other contractors' material price libraries through an unprotected API route ➜ RESOLVED (Row Level Security)
+   Finding: the original GitHub repository owned by a freelancer, with a Stripe secret key in its commit history ➜ RESOLVED (repository moved to the company, all secrets rotated)
+   Finding: backups enabled but never restored, covering only seven days ➜ RESOLVED (30 days, with a documented restore)
+   Finding: vulnerable dependencies ➜ RESOLVED (updated)
+02 IP assignment from the freelancer ➜ SIGNED
+03 Technical overview, four pages (before: a Cursor rules file)
 
-❌ Cross-tenant access to commercially sensitive data
-❌ Code and secrets owned by a former freelancer
-❌ Untested, short backups
-❌ No documentation an outside reviewer can follow
+Julian Maas, a former construction project manager in Amsterdam, built Prijsbouwer with Bolt and later Cursor: renovation contractors produce detailed quotes from room measurements and material libraries, with client approval and deposit payments. Ninety contractors paid monthly. Then an Amsterdam seed fund issued a term sheet, subject to technical due diligence in six weeks.
 
-✅ Row level security closing the cross-tenant exposure
-✅ All secrets rotated, the repository moved to company ownership, IP assignment signed
-✅ Backups extended to 30 days with a documented restore
-✅ Vulnerable dependencies updated and a four-page technical overview - with every finding marked resolved in the data room
+Julian could have hoped the investors wouldn't look. Instead, he commissioned a LaunchStudio pre-diligence review first, and found the issues above before anyone else did.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we look before the investors do - so their reviewer finds a clean system and a clear story. ⚙️
+The remediation took 14 business days, for €4,600. Julian obtained the IP assignment himself. The review report, with every finding marked resolved, went into the data room.
 
-His result: €4,600, fourteen business days. The fund's reviewer raised no blocking issues, the round closed on the original terms, and the overview was called "unusually clear for a company at this stage." 🚀
+The fund's technical reviewer raised no blocking issues, and the round closed on the original terms. The reviewer called the technical overview "unusually clear for a company at this stage."
 
-👉 AI application security audit for investors: what due diligence checks: https://launchstudio.eu/en/blog/ai-application-security-audit-for-investors-what-due-diligence-checks
+"I could have hoped the investors wouldn't look. They looked. The difference was that I'd looked first." - Julian Maas
+
+https://launchstudio.eu/en/blog/ai-application-security-audit-for-investors-what-due-diligence-checks
 
 #DueDiligence #SeedFunding #Startups #AppSecurity #LaunchStudio #Manifera

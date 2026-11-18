@@ -1,21 +1,32 @@
-🚨 Gijs Kramer built Evenementenhub with Bolt and Supabase: event organisers sell tickets, publish programmes and share photos. Revenue grew steadily - but the Supabase bill grew faster, becoming one of his largest costs. He'd upgraded compute twice and was considering another provider. 😳
+🧾 ITEMISED: what one Supabase bill was really paying for
 
-Only part of the bill came from production. Here's why a Supabase bill keeps growing: 🧠
+Gijs Kramer built Evenementenhub with Bolt and Supabase: event organisers sell tickets, publish programmes and share photos with attendees. Revenue grew steadily. The Supabase bill grew faster, until it was one of the company's biggest costs. Gijs had upgraded compute twice when pages got slow, and was thinking about switching providers.
 
-❌ Four other paid projects: two old prototypes, staging and a demo, one with PITR
-❌ Full-size event photos driving most of the egress
-❌ A request log table on every page view, grown to tens of gigabytes
-❌ A reconnecting realtime subscription, a failing webhook retried thousands of times a day, and bot sign-ups
+The review read the bill line by line.
 
-✅ Old prototypes deleted, the demo paused and staging downsized without add-ons
-✅ Photos resized with variants and served through a CDN
-✅ The log table archived and dropped in favour of platform logs
-✅ Realtime and webhook fixed, Turnstile on sign-up, and queries indexed so production could downsize
+LINE 1: Two old prototypes, still on paid compute
+LINE 2: A demo project for one large customer, still running
+LINE 3: A staging project, one of four with paid compute, plus point-in-time recovery switched on in one of them
+LINE 4: Egress, mostly event photos served at full size
+LINE 5: A request log table, written on every page view, grown to tens of gigabytes
+LINE 6: A realtime subscription on the programme page that reconnected on every navigation
+LINE 7: Thousands of retried function calls a day, from a ticketing webhook that kept failing
+LINE 8: Hundreds of fake accounts a week, created by bots through the open sign-up form
+LINE 9: Two compute upgrades, bought to hide slow queries
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we find what you're really paying for before you switch providers. 🛠️
+The corrections (LaunchStudio, 6 business days, €2,400):
+✂️ The two prototypes deleted, the demo paused, staging on smaller compute without add-ons
+✂️ Photos resized into variants and served through a CDN
+✂️ The request log replaced by the hosting platform's logs, with the old table archived and dropped
+✂️ The realtime subscription cleaned up, and the webhook handler repaired
+✂️ Turnstile on sign-up, with unconfirmed accounts removed after a week
+✂️ Slow queries indexed and policies optimised, so production could move back to smaller compute
 
-His result: €2,400, 6 business days. The monthly Supabase bill fell by roughly 60% while usage grew, pages got faster - and Gijs stayed with Supabase. 🚀
+THE NEW TOTAL
+Roughly 60% lower, while usage kept growing. Pages faster than before the downgrade. Gijs stayed with Supabase and now checks the usage page every month.
 
-👉 Is your Supabase bill growing faster than your revenue? Here's why: https://launchstudio.eu/en/blog/why-does-my-supabase-bill-keep-growing
+"I was paying for prototypes I'd forgotten, photos nobody needed at full size and a webhook that kept failing at night." - Gijs Kramer
+
+https://launchstudio.eu/en/blog/why-does-my-supabase-bill-keep-growing
 
 #Supabase #CloudCosts #EventTech #FinOps #AIFounder #LaunchStudio #Manifera

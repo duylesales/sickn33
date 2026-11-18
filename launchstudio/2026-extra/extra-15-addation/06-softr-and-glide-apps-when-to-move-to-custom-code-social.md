@@ -1,21 +1,33 @@
-🚨 Mehmet Yilmaz runs an interpreting agency in Rotterdam serving hospitals, municipalities and law firms. His Softr portal on Airtable, Tolkplanner, worked well for three years. Then growth exposed every limit at once. 😳
+5 signs your no-code app has outgrown its platform. Tolkplanner hit all five at once. 📈
 
-60,000 assignment records. Pages taking six to eight seconds. A hospital group wanting department-level access the filters couldn't express. And a municipal tender asking for EU data location and a full processing agreement. Here's when a Softr or Glide app should move to custom code: 🧠
+Mehmet Yilmaz runs an interpreting agency in Rotterdam that serves hospitals, municipalities and law firms. He built Tolkplanner in Softr on an Airtable base: clients request interpreters, interpreters accept assignments, the office tracks invoicing. It worked well for three years.
 
-❌ Six-to-eight-second page loads and archived data to stay within limits
-❌ Permissions too simple for departments and managers
-❌ Twenty-two automations, two failing silently for weeks
-❌ Climbing per-user costs as interpreters joined
+1. Speed drops
+The base passed 60,000 assignment records. Pages took six to eight seconds. The office archived old data just to stay within plan limits.
 
-✅ A Postgres schema on Supabase in Frankfurt with RLS for four roles
-✅ The portal rebuilt with Lovable to closely match the original
-✅ An admin screen with validation and change history replacing the Airtable grid
-✅ Automations turned into scheduled functions with logging and alerts, all 60,000 records migrated
+2. Permissions get complicated
+A hospital group wanted separate access per department, with managers seeing all their departments. The existing filters couldn't express that cleanly.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we respect what your no-code tool did well and rebuild only what it can't carry. 🛠️
+3. Costs scale per person
+Every new interpreter pushed per-user costs higher.
 
-His result: €6,900, 15 business days. Pages load in under a second, monthly platform costs fell by roughly 60%, and the municipal tender went in with one clear data processing description. 🚀
+4. Automations fail quietly
+Twenty-two automations handled reminders and invoicing. Two had been failing silently for weeks.
 
-👉 Hitting the limits of Softr or Glide? Here's when to move to custom code: https://launchstudio.eu/en/blog/softr-and-glide-apps-when-to-move-to-custom-code
+5. Tenders ask harder questions
+A municipal tender asked for EU data location and a processing agreement covering every platform involved.
+
+The move (LaunchStudio, 15 business days, €6,900):
+→ Every table, view and automation documented
+→ A Postgres schema on Supabase in Frankfurt, with Row Level Security for organisations, departments, managers and interpreters
+→ The interface rebuilt with Lovable to closely match the old portal, plus an admin screen with validation and change history
+→ Automations turned into scheduled functions with logging and alerts
+→ All 60,000 historical records migrated, archived ones included
+
+Now: pages load in under a second, platform costs are down roughly 60%, the tender went in with one clear data processing description, and the hospital's department structure went live the same month.
+
+"Softr carried my business for three years. When it stopped fitting, I needed someone who understood both what it did well and what we had to rebuild." - Mehmet Yilmaz
+
+https://launchstudio.eu/en/blog/softr-and-glide-apps-when-to-move-to-custom-code
 
 #Softr #Glide #Airtable #NoCode #AIFounder #LaunchStudio #Manifera

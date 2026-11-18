@@ -1,21 +1,34 @@
-🚨 Noah de Bruijn built Studiezaal in Lovable: tutors rent quiet study rooms in libraries and community centres by the hour. He called it his MVP and announced the launch to 200 tutors. Then a friend in software asked three questions - and every answer was wrong. 😳
+❓ Three questions to ask before you call it an MVP
 
-His MVP had all the features. It just didn't have the parts that make it safe for anyone except him to use. Here's what the questions revealed: 🧠
+1. What happens if two people book the same thing at the same moment?
+2. Can users see each other's data?
+3. Where is a payment actually confirmed?
 
-❌ Two tutors booking the same room at once? Both bookings succeeded
-❌ Could tutors see each other's bookings? Yes - phone numbers included
-❌ Where were payments confirmed? On the success page
-❌ Backups and monitoring? None
+Noah de Bruijn's answers, the week before launch:
+1. Both bookings succeed.
+2. Yes, with phone numbers.
+3. On the success page.
 
-✅ Booking made atomic with a database constraint
-✅ Row Level Security fixed so tutors see only their own bookings
-✅ Payments connected to verified webhooks
-✅ Backups, monitoring and a simple staging environment
+Plus: no backups, no monitoring. 📚
 
-At **LaunchStudio**, backed by Manifera's 11+ years taking products from MVP to mature production systems, our Launch Ready package turns AI-built prototypes into MVPs that can safely serve paying customers. 🛠️
+Noah built Studiezaal in Lovable: tutors rent quiet study rooms in libraries and community centres by the hour. He called it his MVP and announced the launch to 200 tutors on his mailing list. Then a friend in software asked him those three questions.
 
-💡 His result: €1,900, seven business days. Studiezaal launched ten days later as a real MVP - about 640 bookings across 12 locations in month one, with zero double bookings. 🚀
+Noah delayed the launch by ten days. What LaunchStudio did (7 business days, €1,900):
+✓ Booking made atomic with a database constraint
+✓ Row Level Security fixed
+✓ Payments tied to verified webhooks
+✓ Backups and monitoring
+✓ A simple staging environment
 
-👉 Is your app a prototype, an MVP or a production app? Here's the difference, and what each must include: https://launchstudio.eu/en/blog/prototype-vs-mvp-vs-production-app
+The answers, at launch:
+1. One booking succeeds. The other is refused.
+2. No.
+3. In a verified webhook.
+
+Studiezaal launched as a real MVP. In its first month, tutors made about 640 bookings across 12 locations, without a single double booking, and Noah used their feedback to decide what to build next.
+
+"My MVP had all the features. It just didn't have the parts that make it safe for anyone except me to use." - Noah de Bruijn
+
+https://launchstudio.eu/en/blog/prototype-vs-mvp-vs-production-app
 
 #MVP #Lovable #Startup #NoCode #LaunchStudio #Manifera

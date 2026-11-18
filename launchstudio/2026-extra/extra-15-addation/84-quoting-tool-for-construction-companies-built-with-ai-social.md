@@ -1,21 +1,24 @@
-🚨 Sjoerd Brinkman, a former carpenter, runs a renovation company in Apeldoorn with 18 employees. He built Begrotingsmaker with Lovable and Supabase: estimators pick a template, adjust quantities and generate a branded PDF quote. Quote time halved. Then his accountant noticed margins were lower than quoted. 😳
+🪣 Five holes in the margin bucket
 
-Extra work agreed on site went into WhatsApp and was often never invoiced. Here's what a quoting tool for construction companies needs: 🧠
+Sjoerd Brinkman, a former carpenter, runs a renovation company in Apeldoorn with 18 employees. He built Begrotingsmaker with Lovable and Supabase: estimators pick a job template, adjust quantities and generate a branded PDF quote. Quote prep time halved, and two other renovation companies wanted the tool. Then his accountant noticed that recent projects earned less than quoted.
 
-❌ Only sales prices stored, so rising material costs hid shrinking margins
-❌ Material prices typed in manually and rarely updated
-❌ Extra work noted on paper or WhatsApp, often never billed
-❌ Acceptance by email reply, and browser PDFs rounding differently from invoices
+HOLE 1: Only sales prices per line were stored. When material prices rose, nobody saw margins shrink.
+HOLE 2: Material prices were typed in by hand and rarely updated.
+HOLE 3: Extra work agreed on site went on paper or into WhatsApp, and often never got invoiced.
+HOLE 4: Clients accepted quotes by email reply, so nobody knew which version they had accepted.
+HOLE 5: The browser-generated PDF sometimes rounded totals differently from the invoice.
 
-✅ A server-side calculation with costs, labour norms and markups, showing margin per line
-✅ Price lists from two wholesalers with alerts when prices change on open quotes
-✅ Versioned quotes accepted via authenticated links recording name, time and document
-✅ Extra work registered on site with client approval, flowing into progress and final invoices
+The repairs (LaunchStudio, 17 business days, €6,800):
+🔧 A calculation model with components, costs, labour norms and markups per section, calculated on the server with exact decimals, showing cost and margin per line
+🔧 Price lists from two wholesalers imported with price dates, and alerts on open quotes when material prices change
+🔧 On-site extra work registered by project managers with photos and quantities, sent to clients for approval, and flowing into progress and final invoices
+🔧 Quote versions tracked, with clients accepting a specific version through an authenticated link that records name, time and document
+🔧 One server-side calculation, VAT per work type as advised by the accountant, and internal costs hidden from clients and subcontractors with Row Level Security
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we make your tool remember every extra hour, so you don't have to. 🛠️
+Six months later: invoiced extra work up substantially compared with the previous period, and margin gaps between quote and result narrowing. Both other companies onboarded, and Sjoerd now uses real project data to refine labour norms.
 
-His result: €6,800, 17 business days. Invoiced extra work increased substantially in six months, margin deviations narrowed, and the two other renovation companies onboarded. 🚀
+"We were good at building and bad at writing down what we built. The tool now remembers every extra hour so I don't have to." - Sjoerd Brinkman
 
-👉 Building a quoting tool for construction? Here's what it needs: https://launchstudio.eu/en/blog/quoting-tool-for-construction-companies-built-with-ai
+https://launchstudio.eu/en/blog/quoting-tool-for-construction-companies-built-with-ai
 
 #ConstructionTech #Quoting #Renovation #Margins #AIFounder #LaunchStudio #Manifera

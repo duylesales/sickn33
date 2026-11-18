@@ -1,20 +1,29 @@
-🚨 Ilona Peters built Circuo, an IoT monitoring dashboard for small manufacturing floors, with Lovable - polished enough that two Brainport-region manufacturers asked to pilot it. Then onboarding revealed the database had no row-level security at all: any logged-in user could pull another company's sensor data just by changing an ID in the URL. 😳
+🔍 CASE FILE: The Demo That Was Too Perfect
 
-It worked flawlessly in the demo because there had only ever been one account. 🧠
+THE CLIENT
+Ilona Peters, Eindhoven. Built Circuo, an IoT monitoring dashboard for small manufacturing floors, in Lovable over about two weeks of evenings.
 
-❌ Row-level security was never configured - a default Supabase gap invisible until a second real tenant showed up
-❌ API keys were sitting exposed in client-side code
-❌ The auth flow let sessions leak across companies once more than one account existed
-❌ None of it showed up anywhere in the demo
+THE SITUATION
+The frontend was polished enough that two Brainport-region manufacturers asked to pilot it. In the demo, everything worked flawlessly.
 
-✅ Audit the schema and implement proper row-level security scoped to each company's account
-✅ Rebuild the auth flow so sessions can't cross tenants
-✅ Move exposed API keys out of the frontend and into a secured backend layer
+THE CLUE
+In the demo, there had only ever been one account.
 
-At **LaunchStudio**, we treat this exact gap - the invisible layer under a polished AI-built frontend - as a checklist item, backed by Manifera's 11+ years of production engineering for clients like Vodafone and TNO. 🛡️
+THE DISCOVERY
+During onboarding, it surfaced: the database had no row-level security. Any logged-in user could read any other company's sensor data just by changing an ID in the URL. API keys were exposed in client-side code as well.
 
-Circuo's result: it went live with both pilot manufacturers within the month, and Ilona signed a third client after passing their security questionnaire outright. 🚀
+THE SOLUTION (LaunchStudio, 6 business days, €1,450)
+• Audit of the Supabase schema
+• Row-level security policies scoped to each company's account
+• A rebuilt auth flow, so sessions can't leak across tenants
+• Secrets moved into a secured backend layer
+• Ilona's Lovable frontend left untouched
 
-👉 Built an IoT or SaaS dashboard with an AI tool? Get a fixed-scope review before your next pilot: https://launchstudio.eu/en/blog/21-all-ai-tools-eindhoven
+CASE CLOSED
+Circuo went live with both pilot manufacturers that same month. Ilona then signed a third client after passing its security questionnaire, which the original build would have failed outright.
+
+"I thought I'd built a finished product. I'd actually built a very convincing demo. LaunchStudio didn't touch my design - they fixed the part I didn't know was broken." - Ilona Peters
+
+Only ever tested with one account? Open your own case file: https://launchstudio.eu/en/blog/21-all-ai-tools-eindhoven
 
 #AINativeFounder #LaunchStudio #Manifera #RowLevelSecurity #Eindhoven

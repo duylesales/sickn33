@@ -1,23 +1,33 @@
-📂 Wouter van Beek runs a maintenance planning SaaS for housing cooperatives from Zwolle, built with Bolt and Supabase. A year after his LaunchStudio project, a larger property software company offered to acquire his business, and its technical team sent a due diligence request: who owns the code and accounts, where data lives, how the app is secured, which tests exist and what risks remain. 🤝
+📂 THE ACQUIRER'S QUESTION ➜ WHERE THE ANSWER ALREADY WAS
 
-Many founders would have faced: 🧠
+"Who owns the code and the accounts?"
+➜ The account inventory, kept current, listing every service with owner, region and access
 
-❌ Passwords scattered across old emails
-❌ Accounts still in a freelancer's or agency's name
-❌ No written record of what was fixed and what was left open
-❌ A supplier as the only person who understands how releases and backups work
+"Which services do you use, and where is the data stored?"
+➜ The same inventory, plus the architecture and data overview
 
-Wouter simply opened his handover pack: ✅
+"How is the app secured?"
+➜ The written summary and its annex: security measures, findings and accepted risks, each with a status
 
-✅ An account inventory listing every service with owner, region and access, kept current under ongoing care
-✅ A written summary and annex covering security measures, findings and accepted risks
-✅ Architecture and data documentation, plus procedures for releases, rollback and restore
-✅ Tests running on every change and a year of monthly health notes as evidence
+"What tests exist?"
+➜ The pipeline history, with tests running on every change
 
-At **LaunchStudio**, backed by Manifera's 11+ years of handing over and maintaining systems for clients such as Vodafone and TNO, we design handovers so you never depend on us. 🛠️
+"How do releases and backups work?"
+➜ The procedures for releases, rollbacks and restores
 
-His result: the questionnaire answered in one afternoon and technical due diligence closed in under two weeks, with no findings affecting the price. 🚀
+"What technical risks remain?"
+➜ The accepted risks in the annex, plus a year of monthly health notes on uptime, updates and incidents
 
-👉 What you get at handover: documentation, access and ownership: https://launchstudio.eu/en/blog/what-you-get-at-handover-documentation-access-and-ownership
+Wouter van Beek runs Onderhoudsplanner from Zwolle, a maintenance planning SaaS for housing cooperatives built with Bolt and Supabase. A year after a Launch & Grow project with LaunchStudio, a larger property software company offered to acquire his business, and its technical team sent the due diligence questions above.
+
+Wouter opened the handover pack and answered the questionnaire in an afternoon. The acquirer's engineers asked for one extra walkthrough, of the database policies, which LaunchStudio gave in a one-hour call.
+
+The technical due diligence closed in under two weeks, with no findings that affected the price. And the acquirer's CTO said the documentation was more complete than at most companies of similar size they'd reviewed.
+
+The cost of all that: the handover was included in the original €4,200 Launch & Grow project, with documentation kept up to date under ongoing care at €49 a month.
+
+"I thought due diligence would take a month and cost me sleep. It took an afternoon, because everything I needed was already written down and in my name." - Wouter van Beek
+
+https://launchstudio.eu/en/blog/what-you-get-at-handover-documentation-access-and-ownership
 
 #Handover #DueDiligence #Bolt #SaaS #AIFounder #LaunchStudio #Manifera

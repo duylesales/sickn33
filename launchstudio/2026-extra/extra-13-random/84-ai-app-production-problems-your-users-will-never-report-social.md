@@ -1,21 +1,32 @@
-🚨 Tom Wijnands, a baker in Weert, built Taartbestel in Lovable: customers design a celebration cake, choose a pickup date and pay a deposit. Two other bakeries joined. Social media brought healthy traffic, and Tom received almost no complaints. Orders, however, stayed flat. 😳
+📥 INBOX: almost no complaints.
+📉 FUNNEL: about 40% of mobile visitors who started designing a cake never reached checkout.
 
-Error tracking and a simple funnel revealed why within a week. About 40% of mobile visitors who started designing never reached checkout, because iPhone (HEIC) photo uploads for custom toppers failed with no visible error. Some customers returned from iDEAL to a blank page, because the return route crashed when the webhook had already confirmed the order. And confirmation emails had a spam rate around 30%. Nobody had reported any of it. Here are the AI app production problems your users will never report: 🧠
+Both were true at the same time. 🎂
 
-❌ Uploads that fail silently on iPhones
-❌ A payment return page that crashes after success
-❌ Confirmation emails landing in spam
-❌ No error tracking or funnel to notice any of it
+Tom Wijnands, a baker in Weert, built Taartbestel in Lovable: customers design a celebration cake, pick a pickup date and pay a deposit. Two other bakeries in the region joined. Social media brought healthy traffic. Tom got almost no complaints. And orders stayed flat.
 
-✅ Uploads converted and compressed on the server
-✅ The payment return page handling already-confirmed orders gracefully
-✅ Email moved to an authenticated sending domain
-✅ A one-question survey on abandoned checkouts, plus privacy-scrubbed error tracking and funnel monitoring
+Before touching anything, LaunchStudio added error tracking and a simple funnel. Within a week, the quiet problems showed up:
+• Custom cake-topper image uploads failed on iPhones (HEIC photos), with no visible error
+• Some customers who reached payment came back from iDEAL to a blank page, because the return route crashed when the webhook had already confirmed the order
+• Order confirmation emails had a spam rate of around 30%, sent from an unauthenticated domain
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we look where users don't complain - they just leave. ⚙️
+Nobody had reported any of it. They just went to the supermarket for their cake instead.
 
-His result: €1,700, six business days. Mobile checkout completion rose by about half the next month, and orders across the three bakeries grew ~35% without extra advertising. Tom now checks the funnel every Monday instead of his inbox. 🚀
+What LaunchStudio changed (6 business days, €1,700):
+✓ Uploads converted and compressed on the server
+✓ The payment return page handling already-confirmed orders gracefully
+✓ Email sent from an authenticated domain
+✓ A one-question survey on abandoned checkouts
+✓ Privacy-scrubbed error tracking, and funnel monitoring
 
-👉 AI app production problems your users will never report: https://launchstudio.eu/en/blog/ai-app-production-problems-your-users-will-never-report
+📉 ➜ 📈 THE FUNNEL, a month later
+Mobile checkout completion: up by about half
+Orders across the three bakeries: up roughly 35%, with no extra advertising
+
+Tom now checks the funnel every Monday, instead of his inbox.
+
+"Nobody complained, so I thought it worked. They just went to the supermarket for their cake instead." - Tom Wijnands
+
+https://launchstudio.eu/en/blog/ai-app-production-problems-your-users-will-never-report
 
 #Conversion #Monitoring #Ecommerce #Lovable #LaunchStudio #Manifera

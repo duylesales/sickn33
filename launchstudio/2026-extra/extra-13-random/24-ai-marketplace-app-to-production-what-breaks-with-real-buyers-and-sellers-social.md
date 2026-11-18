@@ -1,21 +1,26 @@
-🚨 Tim de Graaf, a software tester in Breda, built Gereedschapdelen on Replit: neighbours rent each other hedge trimmers, tile cutters and carpet cleaners by the day, with a deposit. Three neighbourhoods, 600 users, about 150 rentals a month. And at any moment, Tim was holding around €2,000 of other people's money in his personal Stripe account. 😳
+In Tim's tests, he was the renter and the lender. In real life, they were two neighbours in Breda who'd never met. 🔨
 
-He paid lenders weekly from a spreadsheet. Deposits were charged in full and refunded by hand, sometimes days late. Two renters regularly booked the same tool for the same day. Anyone could leave reviews - one lender was flooded with fake ones by a disgruntled neighbour - and suspended users could still book. Here's what breaks when an AI marketplace meets real buyers and sellers: 🧠
+Tim de Graaf, a software tester, built Gereedschapdelen on Replit: neighbours list tools they rarely use, like hedge trimmers, tile cutters and carpet cleaners, and rent them to each other by the day, with a deposit. It launched in three Breda neighbourhoods and reached 600 users and about 150 rentals a month.
 
-❌ Marketplace money flowing through the founder's own account
-❌ Full deposit charges with manual refunds
-❌ Availability checked in code, not enforced in the database
-❌ Open reviews and suspensions that only hid a profile
+And then the two neighbours who'd never met started to need something the demo never had: an app that acted like the adult in the room.
 
-✅ Stripe Connect with lender onboarding and automatic payouts after the return date
-✅ Card authorisations instead of deposit charges, released on return
-✅ An exclusion constraint on tool and date range, with a 15-minute checkout hold
-✅ Reviews only after completed rentals, suspension that blocks transactions, server-side PostGIS search, fee invoices and seller reporting data
+All the money went into Tim's personal Stripe account. Every week, he paid lenders by bank transfer, from a spreadsheet. At any moment, he was holding around €2,000 of other people's money.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we turn a marketplace demo into a platform strangers can trust. ⚙️
+Deposits were charged in full and refunded by hand, sometimes days late. Two renters regularly booked the same tool for the same day. Anyone could leave a review, and one lender was flooded with fake negative reviews by a disgruntled neighbour. And suspending a user only hid their profile. They could still book.
 
-His result: €5,200, sixteen business days. Gereedschapdelen went citywide and passed 400 rentals a month. Double bookings stopped, Tim no longer holds lender funds, and he saves about six hours a week on payouts and refunds. 🚀
+So LaunchStudio's engineers made the app grow up (Launch & Grow, 16 business days, €5,200, plus €49/month):
+✓ Payments on Stripe Connect, with lender onboarding and automatic payouts after the return date
+✓ Deposits as card authorisations, released on return, instead of full charges
+✓ An exclusion constraint on tool and date range, with a 15-minute hold during checkout
+✓ Reviews only after a completed rental
+✓ Suspension that blocks every transaction
+✓ Search on the server, with PostGIS for distance filtering
+✓ Fee invoices and seller reporting data in the data model
 
-👉 AI marketplace app to production: what breaks with real buyers and sellers: https://launchstudio.eu/en/blog/ai-marketplace-app-to-production-what-breaks-with-real-buyers-and-sellers
+Gereedschapdelen expanded citywide and passed 400 rentals a month. Double bookings stopped. Tim no longer holds anyone's money, and he spends about six fewer hours a week on payouts and refunds.
+
+"In my tests I was the renter and the lender. In reality they were two neighbours who'd never met, and the app had to be the adult in the room." - Tim de Graaf
+
+https://launchstudio.eu/en/blog/ai-marketplace-app-to-production-what-breaks-with-real-buyers-and-sellers
 
 #Marketplace #StripeConnect #Replit #Breda #LaunchStudio #Manifera

@@ -1,21 +1,34 @@
-🚨 Merel Kok runs a small architecture studio in Schiedam and wanted Ontwerpkluis: a public portfolio that ranks for "renovation architect" around Rotterdam, plus a private portal where clients review drawings and approve design phases. She built it all in Lovable first. 😳
+📐 FLOOR PLAN: an architecture studio's website and client portal
 
-The portal worked. The portfolio barely got indexed in two months. She rebuilt the portfolio in v0 - it indexed quickly - then started rebuilding the portal there too, and stalled. Here's what was going on: 🧠
+Merel Kok runs a small architecture studio in Schiedam. She wanted Ontwerpkluis: a public portfolio that ranks for "renovation architect" in the Rotterdam region, plus a private client portal where clients review drawings, comment and approve design phases.
 
-❌ Lovable's client-rendered portfolio pages hardly visible to search engines
-❌ The v0 rebuild stuck on authentication and file permissions for the portal
-❌ Two half-finished versions and no shared backend
-❌ Client drawings with no proper access control
+ATTEMPT 1: Everything in Lovable
+The portal worked well. The portfolio pages were client-rendered and barely indexed after two months.
 
-✅ Both kept: the v0 Next.js site for public pages on the main domain, the Lovable portal on a subdomain
-✅ One shared Supabase project in Frankfurt, with Row Level Security so clients see only their own projects
-✅ Drawings in private storage with signed URLs, plus comment and approval flows with email notifications
-✅ Vercel environment variables per environment and structured data on project pages
+ATTEMPT 2: Everything in v0 with Next.js
+The portfolio indexed quickly. The portal stalled on authentication and file permissions.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of React and Next.js work, we let each tool do what it's good at - and connect them properly. 🛠️
+THE FINAL PLAN, drawn by LaunchStudio:
 
-💡 Her result: €4,600, thirteen business days. The portfolio was indexed within weeks and started bringing in renovation enquiries from Rotterdam and Delft, and fourteen clients used the portal in its first quarter. 🚀
+🏛️ GROUND FLOOR: open to the public
+The v0 Next.js site on the main domain, with structured data on project pages and environment variables configured per Vercel environment.
 
-👉 v0 or Lovable - UI generator or app builder? Here's how to choose, or use both: https://launchstudio.eu/en/blog/v0-vs-lovable-ui-generator-or-app-builder
+🔐 FIRST FLOOR: clients only
+The Lovable portal on a subdomain.
+• Row Level Security, so clients see only their own projects
+• Drawings in private storage with signed URLs
+• Comment and approval flows with email notifications
+
+🧱 FOUNDATION: shared by both
+One Supabase project in Frankfurt.
+
+Built in 13 business days, for €4,600.
+
+COMPLETION REPORT
+The portfolio pages were indexed within weeks and started bringing in renovation enquiries from Rotterdam and Delft. Fourteen active clients used the portal in its first quarter. Merel keeps editing each floor in the tool that suits it.
+
+"I kept trying to pick one tool. The answer was to let each do what it's good at and connect them properly." - Merel Kok
+
+https://launchstudio.eu/en/blog/v0-vs-lovable-ui-generator-or-app-builder
 
 #v0 #Lovable #NextJS #SEO #LaunchStudio #Manifera

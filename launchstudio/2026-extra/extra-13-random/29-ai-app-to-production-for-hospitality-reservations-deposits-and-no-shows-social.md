@@ -1,21 +1,36 @@
-🚨 Evi Janssens, a restaurant manager in Maastricht, built Tafelgarant in Bolt: guests book online, pay a €10-per-person deposit via iDEAL or card, get reminders and can cancel free up to 24 hours ahead. Nine restaurants in Maastricht and Heerlen, about 2,500 covers a month. Then came carnival weekend - double-booked tables and furious guests holding payment receipts. 😳
+🎭 CARNIVAL WEEKEND IN MAASTRICHT: a reservation tool's diary
 
-Deposits were confirmed when the browser returned from Mollie, so guests who paid in their banking app stayed "pending" and lost their tables. The 24-hour deadline was calculated in UTC, refusing cancellations that were still in time. Refunds were manual, capacity was a fixed count per half hour, two parties grabbed the last large table at once, and allergy notes were visible to staff at all nine restaurants. Here's what a hospitality AI app needs before production: 🧠
+Evi Janssens, a restaurant manager in Maastricht, built Tafelgarant in Bolt for her own restaurant, then offered it to others: guests book online, pay a €10 per-person deposit via iDEAL or card, get reminders, and can cancel for free up to 24 hours ahead. Nine restaurants in Maastricht and Heerlen, around 2,500 covers a month.
 
-❌ Payments confirmed by the browser redirect
-❌ Cancellation deadlines in UTC instead of local time
-❌ Slot counts that ignore table sizes and races
-❌ Guest health data shared across venues
+Then came carnival weekend, and everything showed at once.
 
-✅ Deposit confirmation via verified Mollie webhooks, with carnival bookings reconciled
-✅ Cancellation deadlines in Europe/Amsterdam time with automatic refunds
-✅ A table-based capacity model enforced in the database, with sitting duration by party size
-✅ Data separated per restaurant, allergy notes limited to that venue's floor and kitchen, and reminders via an authenticated email and SMS provider
+THE DEPOSITS
+Guests paid in their banking app and never came back to the browser. Their bookings stayed "pending," got released to others, and tables were double-booked for guests holding payment receipts.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we make sure the table is there when your guest arrives. ⚙️
+THE CANCELLATIONS
+The 24-hour deadline was calculated in UTC. Guests cancelling at 19:30 for a 20:00 dinner the next evening, still inside the free window, were refused.
 
-Her result: €2,950, ten business days. Zero double bookings in the next two months, no-shows under 2% of covers, and four more restaurants joined before terrace season. 🚀
+THE REFUNDS
+All by hand.
 
-👉 AI app to production for hospitality: reservations, deposits and no-shows: https://launchstudio.eu/en/blog/ai-app-to-production-for-hospitality-reservations-deposits-and-no-shows
+THE TABLES
+Capacity was a fixed count per half hour, ignoring table sizes. Two parties booked the last large table at the same time.
+
+THE ALLERGY NOTES
+Visible through the API to every staff account, at all nine restaurants.
+
+After carnival (LaunchStudio, 10 business days, €2,950):
+✓ Deposits confirmed by verified Mollie webhooks, and the carnival bookings reconciled
+✓ Cancellation deadlines in Europe/Amsterdam time, with automatic refunds
+✓ A table-based capacity model enforced in the database, including sitting duration by party size
+✓ Data separated per restaurant
+✓ Allergy notes visible only to that venue's floor staff and kitchen
+✓ Reminders through a transactional email and SMS provider, with authenticated sending
+
+The next two months: no double bookings. No-shows at participating restaurants under 2% of covers. And four more restaurants joined before the summer terrace season.
+
+"Our guests don't care how the booking works. They care that the table is there when they arrive. Carnival showed me it wasn't, often enough to matter." - Evi Janssens
+
+https://launchstudio.eu/en/blog/ai-app-to-production-for-hospitality-reservations-deposits-and-no-shows
 
 #Hospitality #Restaurants #iDEAL #Bolt #LaunchStudio #Manifera

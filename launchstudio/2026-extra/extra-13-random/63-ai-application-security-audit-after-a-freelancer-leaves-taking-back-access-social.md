@@ -1,21 +1,36 @@
-🚨 Nadia Bakkali, a former logistics planner in Alphen aan den Rijn, built Verhuisvriend in Lovable with two freelancers: people moving house book local helpers and vans by the hour, with Mollie payments and chat. Both freelancers moved on, and Nadia ran it alone to 1,700 completed jobs. Then a larger removals company's IT manager asked a simple question: who has access to your production systems? She couldn't answer. 😳
+🔑 KEYRING CHECK: who still holds the keys, eight months after the freelancers left?
 
-One freelancer still owned the GitHub repo and the Supabase project. The other still had a Vercel seat and a personal token that could deploy. The Mollie live key had been pasted into a shared chat and never rotated. The domain was registered in a freelancer's name, and neither had signed an IP assignment. Here's the access audit every founder needs after a freelancer leaves: 🧠
+Key: owner of the GitHub repository and the Supabase project
+Held by: freelancer one
 
-❌ Former contributors still owning core accounts
-❌ Deploy tokens nobody remembered
-❌ Live keys pasted in chats and never rotated
-❌ A domain and code without formal ownership
+Key: a Vercel team seat, plus a personal access token that can deploy
+Held by: freelancer two
 
-✅ Repository and Supabase project transferred to Nadia's company account
-✅ Both freelancers removed everywhere and the Vercel token revoked
-✅ Mollie, Supabase service role, email and maps keys rotated in a planned sequence - no downtime
-✅ Two-factor authentication everywhere and a written access register - plus the domain transferred and IP assignments signed within a week
+Key: the Mollie live API key
+Held by: anyone in a shared chat, where it was pasted during testing and never rotated
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering and its cybersecurity roots, we make sure access belongs to your company - and is lent to people, never the other way round. ⚙️
+Key: the domain
+Registered to: freelancer one
 
-Her result: €1,300, five business days. Nadia sent the access register to the removals company and the partnership went ahead. Verhuisvriend now runs a ten-minute offboarding checklist whenever a contractor finishes. 🚀
+Key: the IP for what they built
+Assigned by: neither (no signed IP assignments)
 
-👉 AI application security audit after a freelancer leaves: taking back access: https://launchstudio.eu/en/blog/ai-application-security-audit-after-a-freelancer-leaves-taking-back-access
+Nadia Bakkali, a former logistics planner in Alphen aan den Rijn, built Verhuisvriend in Lovable with help from two freelancers: a marketplace where people moving house book local helpers and vans by the hour, with Mollie payments and chat. After launch, both freelancers moved on. Nadia ran the platform alone for eight months, growing to 1,700 completed jobs. Then a larger removals company proposed a partnership, and its IT manager asked who had access to Verhuisvriend's production systems. Nadia couldn't answer.
+
+Nobody had done anything wrong. But if either of them had lost a laptop, she'd have lost her business with it.
+
+Re-cutting the keys (LaunchStudio, 5 business days, €1,300):
+✓ Repository and Supabase project transferred to Nadia's company account
+✓ Both freelancers removed from every platform, and the Vercel token revoked
+✓ The Mollie, Supabase service role, email and maps keys rotated in a planned sequence, without downtime
+✓ Two-factor authentication on everything
+✓ An access register listing exactly who holds what
+Nadia contacted the freelancers herself. They transferred the domain and signed IP assignments within a week.
+
+She sent the access register to the removals company, and the partnership went ahead. Verhuisvriend now runs a ten-minute offboarding checklist whenever a contractor finishes.
+
+"Nobody had done anything wrong. But if one of them had lost their laptop, they'd have lost my business along with it." - Nadia Bakkali
+
+https://launchstudio.eu/en/blog/ai-application-security-audit-after-a-freelancer-leaves-taking-back-access
 
 #AccessControl #Offboarding #AppSecurity #Lovable #LaunchStudio #Manifera

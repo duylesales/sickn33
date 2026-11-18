@@ -1,21 +1,38 @@
-🚨 Annelies Visscher manages twelve holiday homes on Texel and built Eilandhuisjes in Lovable - every house with its own page, photos, availability and booking. After four months, organic traffic was almost zero. Search Console showed only the homepage indexed. 😳
+👀 What Annelies saw vs. what Google saw
 
-To her it was a website with twelve houses. To Google it was one empty page with a logo. Here's why: 🧠
+ANNELIES SAW
+🏡 Twelve holiday homes on Texel
+🏡 Twelve pages, each with photos, availability and booking
+🏡 A real website
 
-❌ All twelve house pages shared the same title and description
-❌ No sitemap
-❌ Crawlers saw an empty HTML shell instead of house content
-❌ The Lovable preview domain was still live and competing with the real domain
+GOOGLE SAW
+⬜ One indexed page: the homepage
+⬜ Twelve house pages with the same title and description
+⬜ An empty HTML shell on most crawler visits
+⬜ No sitemap
+⬜ A second copy on the Lovable preview domain, competing with the real one
 
-✅ Per-house titles, descriptions and Open Graph images
-✅ The twelve house pages and main landing pages prerendered to static HTML
-✅ A sitemap, canonical URLs on the production domain, and the preview domain redirected
-✅ Structured data added for every property
+SOCIAL MEDIA SAW
+⬜ The same generic preview for every shared house link
 
-At **LaunchStudio**, backed by Manifera's 11+ years of building public websites and web apps, we keep the logged-in app built for users and the public pages built for crawlers and AI assistants. 🛠️
+Annelies Visscher manages twelve holiday homes on Texel and built Eilandhuisjes in Lovable. After four months, organic traffic was almost zero, and Search Console explained why.
 
-💡 Her result: €1,750, six business days. All house pages indexed within six weeks, and organic bookings grew from almost none to around a fifth of all bookings the following summer. 🚀
+What LaunchStudio changed (6 business days, €1,750):
+✓ A unique title, description and Open Graph image for every house
+✓ The twelve house pages and main landing pages prerendered
+✓ A generated sitemap
+✓ Canonical URLs on the production domain
+✓ The preview domain redirected
+✓ Structured data for each property
 
-👉 Can Google actually see your Lovable app? Here are the four options, from simple to thorough: https://launchstudio.eu/en/blog/can-google-index-my-lovable-app
+GOOGLE NOW SEES
+🏡 All twelve house pages, indexed within six weeks
+
+THE NEXT SUMMER SEASON
+Organic bookings went from almost none to around a fifth of all bookings.
+
+"To me it was a website with twelve houses. To Google it was one empty page with a logo." - Annelies Visscher
+
+https://launchstudio.eu/en/blog/can-google-index-my-lovable-app
 
 #Lovable #SEO #GEO #React #LaunchStudio #Manifera

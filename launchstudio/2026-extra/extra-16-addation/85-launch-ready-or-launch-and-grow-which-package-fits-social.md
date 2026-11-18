@@ -1,23 +1,35 @@
-⚖️ Two founders contacted LaunchStudio in the same week. Elif Kaya in Arnhem had built a booking app for her two massage practices with Lovable and Supabase: Mollie deposits, about 300 clients. Thijmen Bakker in Utrecht had built a planning SaaS for cleaning companies with Bolt and Supabase: eight companies, and a ninth asking for organisation accounts and Microsoft login. Same question: which package fits? 🤔
+👥 Two founders. Same week. Different answers.
 
-Common worries founders bring: 🧠
+FOUNDER A: Elif Kaya, Arnhem
+Built: a booking app for her two massage practices, with Lovable and Supabase
+Users: about 300 clients
+Payments: Mollie deposits
+Structural changes needed: no
+Enterprise customers: no
+Someone for routine updates: yes, her partner, a part-time IT administrator
 
-❌ "I'll be sold the bigger package"
-❌ "Launch Ready is only for tiny apps"
-❌ "After launch I'll be on my own"
-❌ "The monthly fee will creep up"
+FOUNDER B: Thijmen Bakker, Utrecht
+Built: a planning SaaS for cleaning companies, with Bolt and Supabase
+Users: eight companies, and a ninth asking for organisation accounts and Microsoft login
+Structural changes needed: yes, an organisation model
+Enterprise requirements: yes, Microsoft SSO and audit logs
+Developer: none
+Building: every week, with Bolt
 
-How the ten questions decided it: ✅
+Both answered the same ten questions. Elif's mostly came out "no." Thijmen's were "yes" on five of them.
 
-✅ Elif: mostly no, with no structural changes and a partner who handles updates, so Launch Ready at €1,700
-✅ Thijmen: yes to paying customers, new roles, an enterprise request, no developer and weekly Bolt changes, so Launch & Grow at €5,800 plus €49 per month
-✅ The overlap zone (€2,500-€3,500) decided mainly by whether you want ongoing care
-✅ Starting with Launch Ready and moving to Launch & Grow later is always possible
+ELIF'S QUOTE: Launch Ready, €1,700
+Database policies, verified deposits, email setup, backups and monitoring. Done in 4 business days.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of delivering both fixed projects and long-term support for clients such as Vodafone and TNO, we recommend the package that fits your app, not the one that costs more. 🛠️
+THIJMEN'S QUOTE: Launch & Grow, €5,800, plus €49/month
+The organisation model, Microsoft SSO, audit logs, and ongoing care afterwards. Done in 15 business days.
 
-Their results: Elif launched in four business days and has needed only one small request since. Thijmen onboarded the ninth company with SSO, and tests have caught two Bolt changes before release. 🚀
+SINCE THEN
+Elif launched within a week and hasn't needed more help, apart from one small ad-hoc request.
+Thijmen onboarded the ninth company with SSO, and under ongoing care, two of his Bolt changes have been caught by tests before release.
 
-👉 Launch Ready or Launch & Grow: which package fits?: https://launchstudio.eu/en/blog/launch-ready-or-launch-and-grow-which-package-fits
+"I was worried I would be sold the bigger package. I was told I did not need it, and that is why I trust them." - Elif Kaya
+
+Which package fits your app? https://launchstudio.eu/en/blog/launch-ready-or-launch-and-grow-which-package-fits
 
 #LaunchReady #LaunchAndGrow #Lovable #Bolt #AIFounder #LaunchStudio #Manifera

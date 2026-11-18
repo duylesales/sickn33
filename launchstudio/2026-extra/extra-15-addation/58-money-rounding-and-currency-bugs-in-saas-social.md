@@ -1,21 +1,34 @@
-🚨 Esther Bakker built Cateringbestel with Lovable, Supabase and Mollie: companies order lunches and catering from local caterers, with monthly invoices. Finance departments started rejecting invoices because VAT totals didn't match the lines - and one caterer was charged a fraction of a large order's value. 😳
+🧾 Spot the errors on this invoice (illustrative, but every error type was real)
 
-A caterer's admin had typed "1.250,00" - and parseFloat read it as 1.25. Here are the money rounding and currency bugs that break SaaS invoices: 🧠
+Lunch platter (VAT per line, rounded on screen) ........ total A
+Drinks (different VAT rate, merged with food) ........ total B
+VAT on the PDF (rounded on the total) ........ off by 1 or 2 cents
+Large order, price typed as "1.250,00" ........ charged €1.25
+Partial refund ........ sent to Mollie with three decimals, rejected
 
-❌ Prices as floating point numbers, totals calculated in the browser
-❌ VAT rounded per line on screen but per total in the PDF
-❌ Mixed VAT rates combined incorrectly
-❌ Dutch number input misread, and three-decimal refunds rejected by Mollie
+Esther Bakker built Cateringbestel with Lovable, Supabase and Mollie: companies order lunch and meeting catering from local caterers, and pay by monthly invoice. Then finance departments started rejecting invoices because the VAT total didn't match the lines. And one caterer complained that a large order had been charged at a fraction of its value.
 
-✅ All amounts migrated to integer cents with explicit currencies
-✅ One server-side calculation for checkout, invoices and exports
-✅ VAT per rate group with one rounding step, agreed with the accountant
-✅ Locale-aware input, Mollie-formatted amounts, idempotent refunds with credit notes, and tests
+The answers:
+• Prices stored as floating point numbers
+• Totals calculated in the browser, sent to the backend and passed to Mollie as-is
+• VAT rounded per line on screen but per total on the PDF
+• Mixed VAT rates combined incorrectly
+• parseFloat reading the Dutch "1.250,00" as 1.25
+• Refunds with three decimals
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we make every cent add up - so finance teams keep trusting your invoices. 🛠️
+The corrections (LaunchStudio, 9 business days, €3,200):
+✓ All amounts migrated to integer cents with explicit currencies
+✓ One server-side function for price, discount, VAT and total, used by checkout, invoices and exports alike
+✓ VAT per rate group with one rounding step, as agreed with Esther's accountant
+✓ Locale-aware input that accepts Dutch notation and rejects ambiguous values, and Intl.NumberFormat for display
+✓ One conversion function for Mollie's decimal string format
+✓ Refunds capped at the remaining refundable amount, idempotent, with matching credit notes
+✓ Tests for mixed rates, awkward prices, Dutch input and partial refunds
 
-Her result: €3,200, 9 business days. Invoice rejections stopped within the first billing cycle, and the accountant now gets exports that reconcile exactly with Mollie payouts. 🚀
+Invoice rejections stopped within the first billing cycle. The caterer was correctly charged with a corrected invoice. Exports now reconcile exactly with Mollie payouts.
 
-👉 Do your invoices always add up? Here are the money bugs to fix: https://launchstudio.eu/en/blog/money-rounding-and-currency-bugs-in-saas
+"A one-cent difference sounds trivial until a customer's finance team stops trusting every invoice you send." - Esther Bakker
+
+https://launchstudio.eu/en/blog/money-rounding-and-currency-bugs-in-saas
 
 #Invoicing #VAT #Mollie #FoodTech #AIFounder #LaunchStudio #Manifera

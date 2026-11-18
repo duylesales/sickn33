@@ -1,21 +1,36 @@
-🚨 Quinten Aardema built Leveranciersportaal with Bolt in a weekend - a portal where a food wholesaler's 90 suppliers submit price lists, certificates and delivery schedules. The wholesaler loved the demo and asked when it could go live. "Next week," he said. It worked. 😳
+🍽️ TODAY'S MENU, at a weekend demo about to go live "next week"
 
-The pre-launch review found the service role key in the frontend, 23 endpoints with no supplier check - so any supplier could read every competitor's prices by changing one number - and certificates in a public bucket. Here's what to fix before a Bolt app meets real users: 🧠
+STARTER
+Open the page, take the Supabase key. It's the service role key: unrestricted access to the whole database.
 
-❌ Unrestricted database keys shipped to the browser
-❌ No authorisation: every logged-in user could see every record
-❌ Validation only in the browser - negative prices and 1970 delivery dates accepted
-❌ Public storage, unauthenticated routes, no rate limits, and an old preview still holding old keys
+MAIN
+Log in as any supplier, change one number in the address bar, and read a competitor's price list. None of the 23 endpoints checked who was asking.
 
-✅ The service role key rotated, with all data access behind server functions using an anon key and policies
-✅ Row-level security on all nine tables and authorisation on all 23 endpoints
-✅ Server-side schema validation on every input, a private certificate bucket with signed URLs
-✅ Rate and size limits, timeouts, the old preview retired, and a one-page record of what was checked
+SIDE DISH
+Certificates in a public bucket, with predictable filenames.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we tell you what a stranger can currently do with your Bolt project - and close it. 🔒
+SPECIAL OF THE DAY
+A negative price, or a delivery date in 1970. Validation lived only in the browser, so both were accepted.
 
-His result: two business days and €2,900 later, the portal launched a week late with 90 suppliers and has run for two years. That week's delay, he says, was the best decision in the project. 🚀
+DESSERT
+Call the "new submission" email endpoint as often as you like. No rate limits, on anything.
 
-👉 What to fix before a Bolt app meets real users: https://launchstudio.eu/en/blog/bolt-security-what-to-fix-before-a-bolt-app-meets-real-users
+Quinten Aardema built Leveranciersportaal with Bolt in a weekend, to show a food wholesaler what was possible: a portal where its 90 suppliers submit price lists, certificates and delivery schedules. The wholesaler liked it and asked when it could go live. He said "next week," because it worked. 🥬
+
+The kitchen, closed for a review (LaunchStudio, 2 business days, €2,900):
+✓ The service role key rotated and removed, with database access moved to server-side functions using an anonymous key and policies
+✓ Row-level security, with policies on all nine tables
+✓ Authorisation on all 23 endpoints, scoped to the requesting supplier
+✓ Server-side validation on every input, with a schema per endpoint
+✓ The certificate bucket made private, with generated identifiers and signed URLs
+✓ Rate limits on authentication, submission and notification; upload size limits; timeouts on external calls
+✓ The original public preview retired, since it still held the old credentials
+✓ A one-page record of what was checked
+
+The portal launched a week late, with all 90 suppliers, and has run for two years. Quinten calls that week's delay the best decision of the project: a price list leaking between competing suppliers would have ended the wholesaler relationship on the spot.
+
+"It worked perfectly. That was the whole problem - there was nothing to see, and any supplier could have read every competitor's prices by changing one number in the address bar." - Quinten Aardema
+
+https://launchstudio.eu/en/blog/bolt-security-what-to-fix-before-a-bolt-app-meets-real-users
 
 #Bolt #AppSecurity #Prototyping #Supabase #LaunchStudio #Manifera

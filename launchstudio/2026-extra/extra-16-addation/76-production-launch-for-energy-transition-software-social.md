@@ -1,21 +1,29 @@
-🔥 Rutger Visscher runs a heat pump installation company in Assen and built Warmtewijzer with Bolt and Supabase: homeowners enter details about their home and get an advice report with a recommended heat pump, expected savings, subsidy and quote. Leads grew fast. Then customers complained that real savings were far below the report, and one report showed a subsidy from a scheme that had changed months earlier. 📉
+💡 "Expected savings: €X per year.*"
 
-The assessment found: 🧠
+* Based on last year's gas price, an optimistic efficiency, and a subsidy scheme that changed months ago. Assumptions not shown.
 
-❌ Savings calculated in the browser with a gas price a year old and optimistic efficiency, assumptions hidden
-❌ A hard-coded subsidy amount
-❌ Reports with addresses and floor plans in a public bucket
-❌ Minute-level smart meter data kept forever and visible to every installer
+That asterisk didn't exist in the original report. It should have. 🌡️
 
-✅ Server-side calculations with documented, versioned assumptions, showing a savings range and key inputs
-✅ Configurable price and efficiency assumptions, recorded per report
-✅ Subsidy rules as data with dates and sources, plus a clear note that customers apply themselves
-✅ Private reports with signed links, hourly meter data with withdrawable consent, aggregation and access limited to the responsible installer
+Rutger Visscher runs a heat pump installation company in Assen and built Warmtewijzer with Bolt and Supabase: homeowners enter details about their home and get an advice report with a recommended heat pump, expected savings, a subsidy amount and a quote. Leads came in fast. Then several customers complained after installation that their savings were far below the report. And one report showed a subsidy amount from a scheme that had changed months before.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of building data-intensive, integration-heavy systems for clients such as Vodafone and TNO, we make energy software transparent, private and reliable. 🛠️
+The fine print the assessment found:
+• Savings calculated in the browser with a fixed gas price from a year earlier and an optimistic efficiency, with no assumptions shown
+• A hard-coded subsidy amount
+• Reports with homeowners' addresses and floor plans in a public bucket
+• Minute-level smart meter data, for customers who had connected a device, kept forever and visible to every installer in the company
 
-His result: €4,500, twelve business days. Complaints dropped, conversion stayed strong and subsidy changes now take minutes. 🚀
+Putting the fine print in plain view (LaunchStudio, Launch & Grow, 12 business days, €4,500, plus €49/month):
+✓ Calculations moved to the server, with documented, versioned assumptions
+✓ A range of expected savings in each report, with the key inputs shown
+✓ Energy price and efficiency assumptions configurable, and each report recording which version it used
+✓ Subsidy rules stored as data, with effective dates and the source, plus a note that customers must meet the conditions and apply themselves
+✓ Reports in private storage with signed links
+✓ Meter data limited to hourly values, with consent recorded and withdrawable, older data aggregated to daily, and access only for the installer handling that customer
 
-👉 Production launch for energy transition software: https://launchstudio.eu/en/blog/production-launch-for-energy-transition-software
+Complaints about savings dropped once reports showed ranges and assumptions, and conversion stayed strong, because customers trusted the explanation. When subsidy amounts changed again, Rutger updated them in the admin panel within minutes.
+
+"Our old report sold heat pumps with a number nobody could explain. Now it shows what we assume and why, and customers buy because they understand." - Rutger Visscher
+
+https://launchstudio.eu/en/blog/production-launch-for-energy-transition-software
 
 #EnergyTransition #HeatPump #Solar #Bolt #AIFounder #LaunchStudio #Manifera

@@ -1,21 +1,33 @@
-🚨 Machiel Verduijn's Bandenwissel runs seasonal tyre-change scheduling and storage for 14 independent garages - around 4,000 stored tyre sets. He sent three suppliers the same message: "I built something in Lovable and need help making it production-ready." The quotes came back at €2,400, €11,000 and €38,000. 😳
+✉️ One message, sent to three suppliers: "I built something in Lovable and need help making it production-ready."
 
-Each supplier had assumed a different scope - a security review, a full launch, a complete rebuild. He spent three weeks on calls working out what each one meant. Here's how to write a brief an engineer can actually quote: 🧠
+Quote 1: €2,400 (assumed a security review)
+Quote 2: €11,000 (assumed security, payments and a launch)
+Quote 3: €38,000 (assumed a rebuild, because nobody said the product was already live with customers, which would make a rebuild a migration)
 
-❌ "Make it production-ready" - no goal, no date, no number
-❌ Not mentioning the product was already live with customers
-❌ No budget range, so suppliers guessed at everything or the minimum
-❌ Leaving out data volume, tenancy, integrations and known problems
+Three weeks of calls followed, just to find out what each had meant.
 
-✅ One page: what the product does, that 14 garages use it daily, 4,000 records, no payments yet
-✅ A concrete goal: take payments and onboard 40 garages before the October tyre season
-✅ The repository link, three known problems named, and a budget range of €4,000–€9,000
-✅ Constraints stated: stay live throughout - and he'll keep building features himself afterwards
+Machiel Verduijn built Bandenwissel in Lovable: seasonal tyre change scheduling and storage administration for independent garages, 14 garages, around 4,000 stored tyre sets. 🛞
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we quote from exactly this kind of page - an itemised quote, not a discovery call. ⚙️
+Then he spent two hours writing one page. Here it is as a fill-in template:
 
-His result: the revised quotes came back at €5,200, €6,800 and €7,500 - comparable and itemised. Two suppliers said unprompted that his slow page was probably just an index. He chose the middle one: €6,800, nine business days. 🚀
+WHAT IT DOES: Tyre change scheduling and storage. 14 garages use it daily.
+CURRENT STATE: Live. 4,000 records. No payments yet.
+GOAL, WITH A DATE AND A NUMBER: Take payments and onboard 40 garages before the October tyre season.
+THE CODE: A link to the repository, exported that morning.
+KNOWN PROBLEMS:
+  1. The list page is slow for the largest garage
+  2. Unsure whether garages can see each other's data
+  3. An email that sometimes doesn't arrive
+BUDGET: €4,000 to €9,000
+CONSTRAINT: The product stays live throughout.
+AFTERWARDS: I'll keep building features myself.
 
-👉 Lovable developer: writing a brief an engineer can quote: https://launchstudio.eu/en/blog/lovable-developer-writing-a-brief-an-engineer-can-quote
+The new quotes: €5,200, €6,800 and €7,500. Comparable, itemised, and all within range. Two of the three said, unprompted, that the slow page was probably an index, not an architecture problem.
+
+He chose the middle one, LaunchStudio at €6,800: security review and remediation, separating garages' data, payments, email deliverability, performance work and launch support. Estimated at eight days, done in nine.
+
+"Three quotes, from twenty-four hundred to thirty-eight thousand, for what I thought was the same question. It was not the same question - I had asked three different things without realising it." - Machiel Verduijn
+
+https://launchstudio.eu/en/blog/lovable-developer-writing-a-brief-an-engineer-can-quote
 
 #Lovable #NoCode #HiringDevelopers #Startups #LaunchStudio #Manifera

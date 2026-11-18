@@ -1,20 +1,29 @@
-📉 Willem Hofstra built GezinsPlanner, a household scheduling app for ~40 families around Veenendaal, using v0 with an auto-configured Supabase backend. Two months in, one user's recurring chore assignment kept silently reverting - and another family reported seeing a calendar entry that wasn't theirs. 😳
+🍳 RECIPE: How to leak one family's calendar to another (without meaning to)
 
-An AI-configured database looks done. Persistence, security, and integrity are a separate question. 🧠
+Serves: about 40 families. Prep time: two months of everything working fine.
 
-❌ A missing row-level security policy meant calendar entries were queryable across accounts under certain request patterns
-❌ A missing database constraint let concurrent edits to recurring events silently overwrite each other, with no conflict warning
-❌ It ran flawlessly for two months - the structural gaps stayed invisible until a customer noticed
-❌ "Supabase being set up" isn't the same claim as "Supabase being set up correctly"
+INGREDIENTS
+• 1 family scheduling app, built with v0
+• 1 Supabase backend, auto-configured by the tool and never checked
+• 0 row-level security policies on calendar entries
+• 0 database constraints on recurring events
+• A pinch of "it's set up, so it must be right"
 
-✅ Rebuild row-level security policies scoped to the actual sharing unit (household, not just user)
-✅ Add proper optimistic locking so concurrent edits can't silently clobber each other
-✅ Set up automated daily backups as a baseline, not an afterthought
+METHOD
+1. Launch GezinsPlanner in Veenendaal. Watch Willem Hofstra's app run flawlessly for two months.
+2. Let two edits hit the same recurring chore at once. With no constraint, one silently overwrites the other. No warning.
+3. Allow certain request patterns to query calendar entries across accounts.
+4. Serve when a family reports a calendar entry that isn't theirs.
 
-At **LaunchStudio**, we rebuild exactly this layer - database architecture underneath an AI-generated frontend, without touching the interface a founder already built. 🛡️
+THE ANTIDOTE (LaunchStudio, 6 business days, €950)
+✓ Row-level security rebuilt around household ID instead of user ID, because a family tool is shared by design
+✓ Optimistic locking for concurrent edits
+✓ Automated daily backups
 
-His result: GezinsPlanner has run five months and 150+ active families with zero data integrity reports since the fix. 🚀
+The result: five months and 150+ active families since the fix, without a single data integrity report.
 
-👉 Not sure what your AI-configured database is actually enforcing? Send us your prototype link: https://launchstudio.eu/en/blog/ai-database-veenendaal
+"I assumed Supabase being 'set up' meant it was done right. It took a customer complaint to find out the database was leaking data between families that had never interacted." - Willem Hofstra
+
+Don't cook this one at home. Check your AI database instead: https://launchstudio.eu/en/blog/ai-database-veenendaal
 
 #AINativeFounder #LaunchStudio #Manifera #AIDatabase #Veenendaal

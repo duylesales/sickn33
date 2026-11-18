@@ -1,21 +1,34 @@
-🚨 Lisanne de Groot built Kookschrift with Lovable and Supabase: home cooks share recipes, save favourites and plan weekly menus. It grew to around 15,000 users through Instagram. Then reviews mentioned slowness - and most mobile visitors left before the recipe page loaded, which took up to eleven seconds on 4G. 😳
+🍲 RECIPE: An 11-second recipe page
 
-Several causes were stacked together. Here's why AI-built apps get slow, and what fixes it: 🧠
+Lisanne de Groot built Kookschrift with Lovable and Supabase, where home cooks share recipes, save favourites and plan weekly menus. Instagram brought around 15,000 users. Then reviews mentioned slowness, and most mobile visitors left before the recipe page loaded: up to eleven seconds on 4G.
 
-❌ ~6 MB phone photos served at full size, even in thumbnail grids
-❌ Three chart libraries and a rich text editor loaded on every page
-❌ The recipe list loading every column, then filtering in the browser
-❌ Separate requests per card for author, likes and saved status, and no index on user_id
+Here's how that dish was made.
 
-✅ Resizing on upload with thumbnail, medium and large variants via a CDN with lazy loading
-✅ Heavy libraries loaded only where used, and one chart library instead of three
-✅ A database view returning card fields, author names, likes and saved status in one paginated query
-✅ Indexes for favourites, likes and filters, plus full-text search
+INGREDIENTS
+• Phone photos served at full size, around 6 MB each, even in thumbnail grids
+• Three chart libraries and a rich text editor in the bundle of every page, though only two pages used them
+• A recipe list that fetched every recipe with every column, long instructions included, then filtered in the browser
+• Separate requests per recipe card for the author, the like count and the saved status
+• No index on user_id for favourites
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we find the few bottlenecks that matter and fix them without a rewrite. 🛠️
+METHOD
+Combine everything. Serve on a 4G connection. Wait.
 
-Her result: €2,600, 7 business days. The recipe page now loads in around 1.5 seconds on 4G, the list in under a second, and app store ratings recovered within two months. 🚀
+THE NEW RECIPE (LaunchStudio, 7 business days, €2,600)
+1. Resize photos on upload into thumbnail, medium and large variants, convert existing photos, and serve them through a CDN with lazy loading
+2. Load heavy libraries only on the pages that use them, and replace two chart libraries with one
+3. Serve the list from a database view with only card fields, author names, like counts and saved status in one query, with pagination
+4. Add indexes for favourites, likes and recipe filters
+5. Move search to a full-text index
 
-👉 Is your AI-built app slow? Here are the causes and the fixes: https://launchstudio.eu/en/blog/why-is-my-ai-built-app-slow
+READY IN
+Recipe page: around 1.5 seconds on 4G. List page: under a second.
+
+SERVES
+More people, for longer. Mobile bounce rate dropped noticeably, sessions grew longer, and app store ratings recovered within two months.
+
+"I thought my users needed better recipes. They actually needed pages that loaded before they lost interest." - Lisanne de Groot
+
+Why is your AI-built app slow? https://launchstudio.eu/en/blog/why-is-my-ai-built-app-slow
 
 #Performance #WebVitals #Lovable #Supabase #AIFounder #LaunchStudio #Manifera

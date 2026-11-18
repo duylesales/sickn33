@@ -1,20 +1,36 @@
-😬 Mark Souren built PensioPortal - a tool helping small employers explain employee pension contribution statements - using Lovable over two and a half weeks. During a pilot, an HR staff member testing it changed a numeric ID in the browser address bar and pulled up a different employee's full pension history, name, and salary band. 😳
+Log in.
+Open a pension record.
+Change one number in the address bar.
+Press Enter.
 
-Lovable built good-looking pages. Nothing checked if you were allowed to view the record. 🧠
+Another employee's full pension contribution history.
+Their name.
+Their salary band.
 
-❌ No server-side authorization check confirming the logged-in user could view the requested record
-❌ Functional, polished pages that looked secure but weren't
-❌ The gap was invisible until someone changed one number in a URL
-❌ The founder assumed "security" was something Lovable already handled
+That's what an HR staff member found while testing PensioPortal, during a pilot with a mid-sized Limburg employer.
 
-✅ Implement proper server-side authorization checks on every record-level endpoint
-✅ Add structured audit logging so any access attempt is traceable
-✅ Run a broader review confirming no other endpoints share the same flaw
+Mark Souren built it in Heerlen, coming from a background close to the region's pension administration sector.
+Lovable. Two and a half weeks.
+A tool that helps small employers consolidate and explain employee pension statements.
 
-At **LaunchStudio**, backed by Manifera - trusted by Vodafone, TNO, and CFLW Cyber Strategies for security-focused engineering - we schedule this exact review as a planned pre-launch step, not a reaction to an incident. 🛡️
+The pages worked.
+The pages looked good.
+The server never checked whether you were allowed to see the record you asked for.
 
-PensioPortal's result: it relaunched with verified access controls and has since passed two employer security reviews without a follow-up question. 🚀
+Sensitive financial data was the whole point of the product.
+Security was never a separate item on the list.
 
-👉 Handling sensitive data with an AI-built app? Have the security conversation before launch, not after: https://launchstudio.eu/en/blog/29-ai-and-security-heerlen
+LaunchStudio. 5 business days. €1,250.
+Server-side authorization on every record-level endpoint.
+Structured audit logging for every access attempt.
+A wider review confirming no other endpoint shared the flaw.
+
+PensioPortal relaunched.
+Two employer security reviews since.
+Not one follow-up question.
+
+"I genuinely didn't know 'security' was a separate task from 'building the app.' I thought Lovable handled that. Now I know exactly what it doesn't." - Mark Souren
+
+Try the one-number test on your own app: https://launchstudio.eu/en/blog/29-ai-and-security-heerlen
 
 #AINativeFounder #LaunchStudio #Manifera #AISecurityRisk #Heerlen

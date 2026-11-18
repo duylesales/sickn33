@@ -110,7 +110,7 @@ At Manifera, we provide [custom software development](https://www.manifera.com/s
 
 Our Vietnamese engineering pods are governed by Dutch Architects who enforce strict PR reviews. We use automated tools in our CI/CD pipeline to detect N+1 queries *before* they are merged into the main branch. We mandate that any web request taking longer than 500ms must be moved to an asynchronous background queue.
 
-We do not just build a web application. We build an architecture that survives contact with the enterprise. Contact our Amsterdam team for a codebase scaling audit.
+We do not just build a web application. We build an architecture that survives contact with the enterprise. Contact our [Amsterdam leadership team](https://www.manifera.com/contact-us/) for a codebase scaling audit.
 
 ---
 

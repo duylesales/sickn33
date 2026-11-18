@@ -1,21 +1,30 @@
-🚨 Barend Kloosterman's Serviceplan manages maintenance contracts for 44 installation companies - about 9,000 service addresses. An installer updated a customer's address in the portal. That evening's invoice carried the old address. The engineer was sent to a third one. 😳
+❓ "Where does this customer live?"
 
-Customers lived in three tables - clients, customers and contacts - because every feature request had produced a new one. Here's what inconsistent schema naming really costs: 🧠
+ANSWER 1, from the clients table: one address.
+ANSWER 2, from the customers table: another address.
+ANSWER 3, from the contacts table: a third address.
 
-❌ Three tables for the same customer, each with a different answer
-❌ A comma-separated text column instead of a proper table
-❌ Nine missing foreign keys hiding 340 orphaned records
-❌ Money stored as floating point - and a one-cent invoice discrepancy nobody could explain
+Which one is right? Nobody could say. 🔧
 
-✅ A full schema inventory and a conventions file committed to the repo, including the product's vocabulary
-✅ Three customer tables merged into one, migrated with zero downtime (add, write both, switch reads, drop)
-✅ Foreign keys declared, orphans resolved, timestamps made time zone aware
-✅ Money columns renamed and stored as integer cents, with generated types regenerated
+Barend Kloosterman built Serviceplan in Lovable: maintenance contract administration for installation companies, 44 companies managing around 9,000 service addresses. Over fourteen months, the schema grew to 31 tables. Customers lived in three of them: clients from the original build, customers added when invoicing arrived, contacts added for the portal. Each one a reasonable answer to the question Barend had asked that day.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we clean up AI-built schemas so every change afterwards goes faster. 🗂️
+Then an installer updated a customer's address in the portal. That evening's invoice carried the old address. And the service engineer was sent to a third address, held somewhere else entirely.
 
-His result: four business days and €3,400 later, the three-address bug became structurally impossible. A contractor hired the next month was productive on day one - and his AI sessions stopped inventing new column names. 🚀
+One answer, from now on (LaunchStudio, 4 business days, €3,400):
+✓ A full schema inventory, naming every duplicate and synonym
+✓ A convention file in the repository, covering table and column names, timestamps, booleans, money and the product's vocabulary
+✓ The three customer tables merged into one customers table, with a contacts table beneath it, migrated through add, write-both, migrate and drop, with no downtime
+✓ Eleven columns renamed for consistency
+✓ A comma-separated services text column normalised into a proper table with a join
+✓ Nine missing foreign keys declared, surfacing 340 orphaned service records, each reviewed and reattached or archived
+✓ Four timestamp columns made time-zone aware
+✓ Two amount columns converted from floating point to integer minor units, which fixed a long-standing one-cent difference in invoice totals
+✓ Generated types regenerated across the app
 
-👉 Schema naming you won't regret: https://launchstudio.eu/en/blog/lovable-supabase-schema-naming-you-will-not-regret
+The three-address bug became structurally impossible. And a contractor Barend hired the next month was productive on day one, instead of spending two days asking which table was the real one. His AI sessions stopped inventing new column names too, because the convention file is now part of the project's instructions.
+
+"I had three tables of customers because each time I asked for a feature I got a new table, and each one was a reasonable answer to the question I had asked that day." - Barend Kloosterman
+
+https://launchstudio.eu/en/blog/lovable-supabase-schema-naming-you-will-not-regret
 
 #Supabase #DatabaseDesign #TechDebt #Lovable #LaunchStudio #Manifera

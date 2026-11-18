@@ -38,14 +38,17 @@ Modern [custom software development](https://www.manifera.com/services/custom-so
 Here is how the modern unified architecture works.
 
 ### 1. The Monorepo (Nx or Turborepo)
+
 Instead of having a `github.com/company/web-app` and a `github.com/company/mobile-app`, everything lives in a single Monorepo. This allows the web and mobile teams to import the exact same code files without dealing with complex NPM package publishing.
 
 ### 2. Extracting the "Core" (Shared Business Logic)
+
 In any application, 50% of the code has nothing to do with the screen. It is data fetching (React Query), state management (Zustand/Redux), form validation (Zod), and API types (TypeScript interfaces). 
 
 In a Monorepo, we extract this into a `@company/core` folder. Both the React web app and the React Native mobile app import this exact same folder. If you need to update the tax calculation logic, you change it once in the `core` folder, and it instantly updates on both Web, iOS, and Android.
 
 ### 3. React Native Web (Shared UI Components)
+
 What about the UI? Traditionally, Web uses `<div>` and `<button>`, while React Native uses `<View>` and `<TouchableOpacity>`. You couldn't share them.
 
 Enter **React Native Web**. This library takes React Native components (like `<View>`) and automatically compiles them into web-compliant DOM elements (like `<div>`) when running in a browser. 
@@ -96,9 +99,9 @@ React Native Web is not the only path to a unified codebase, and a CTO evaluatin
 
 At Manifera, we deploy this unified Monorepo architecture for clients who need simultaneous web and mobile launches. 
 
-By utilizing React Native Web and Nx Monorepos, our Dutch Architects drastically reduce the Total Cost of Ownership (TCO) of maintaining multi-platform applications. Our Vietnamese engineering pods do not waste your budget writing the same API integration twice. We build it once, test it once, and deploy it everywhere.
+By utilizing React Native Web and Nx Monorepos, our Dutch Architects drastically reduce the Total Cost of Ownership (TCO) of maintaining multi-platform applications. Our Vietnamese [offshore software development](https://www.manifera.com/services/offshore-software-development/) pods do not waste your budget writing the same API integration twice. We build it once, test it once, and deploy it everywhere.
 
-If you are currently paying two different teams to maintain your web and mobile apps, you are burning capital. Contact our Amsterdam team to discuss unifying your codebase.
+If you are currently paying two different teams to maintain your web and mobile apps, you are burning capital. Contact our [Amsterdam leadership team](https://www.manifera.com/contact-us/) to discuss unifying your codebase.
 
 ---
 

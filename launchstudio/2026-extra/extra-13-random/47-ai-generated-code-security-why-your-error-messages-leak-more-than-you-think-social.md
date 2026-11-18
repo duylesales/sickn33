@@ -1,21 +1,33 @@
-🚨 Fleur Verhoef, a logistics analyst in Bussum, built Pakketpunt with Cursor: sixty local shops in the Gooi region act as parcel pickup points, and recipients see which shop holds their parcel. Then a shop owner's nephew - a cybersecurity student - sent her a friendly report. 😳
+🔎 ERROR DECODER: what one parcel app's error messages told a stranger
 
-By submitting malformed tracking codes, he'd received full SQL statements with table and column names, the internal Postgres hostname and stack traces with library versions. A failed carrier call returned the carrier's full error, including Pakketpunt's account ID. Login told unknown emails apart from wrong passwords - and the error tracker stored full request bodies, including staff passwords. Here's why AI-generated error messages leak more than you think: 🧠
+What a malformed tracking code returned:
+➜ the full SQL statement, with table and column names
+➜ the internal hostname of the Postgres database
+➜ stack traces showing library versions
 
-❌ SQL, hostnames and stack traces returned to the browser
-❌ Third-party error responses passed straight through
-❌ Login messages that reveal which accounts exist
-❌ Passwords sitting in the error tracker
+What a failed carrier API call returned:
+➜ the carrier's full error response, including Pakketpunt's account identifier
 
-✅ A central error handler with safe messages and reference IDs
-✅ Detailed errors in the tracker only - with passwords, tokens and personal data scrubbed
-✅ Stored passwords removed from tracker history and a forced reset for affected staff
-✅ Unified login and reset messages, production config confirmed, and the tracking lookup verified as safely parameterised
+What the login form said:
+➜ different messages for "unknown email" and "wrong password"
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we make your errors helpful to you and useless to attackers. ⚙️
+What the error tracker stored:
+➜ full request bodies, including shop staff passwords submitted at login
 
-Her result: €980, four business days. Errors now reveal nothing but a friendly message and a reference, support is faster because staff quote the ref - and the nephew became Pakketpunt's part-time security tester. 🚀
+Fleur Verhoef, a logistics analyst in Bussum, built Pakketpunt with Cursor: a network of local shops acting as parcel pickup points, with an app where recipients see which shop holds their parcel and shops scan parcels in and out. Sixty shops in the Gooi region took part. Then a shop owner's nephew, who studies cybersecurity, sent her a friendly report. Her app was so helpful when it failed that it told him how her database was built.
 
-👉 AI generated code security: why your error messages leak more than you think: https://launchstudio.eu/en/blog/ai-generated-code-security-why-your-error-messages-leak-more-than-you-think
+What LaunchStudio changed (4 business days, €980):
+✓ A central error handler, with safe messages and a reference ID
+✓ Detailed errors sent only to the error tracker, scrubbed of passwords, tokens and personal data
+✓ Stored passwords removed from the tracker's history, and a password reset for affected staff
+✓ Login and reset messages unified
+✓ Production configuration confirmed
+✓ And, since SQL showing up in errors is a warning sign: a review of the tracking-code lookup, which turned out to use parameterised queries safely
+
+What an error says now: a friendly message, and a reference. Support got faster too: shop staff quote the reference, and Fleur finds the full error within seconds. And the nephew? He's now Pakketpunt's part-time security tester.
+
+"My app was so helpful when it failed that it told a stranger how my database was built. Now it's helpful to me instead." - Fleur Verhoef
+
+https://launchstudio.eu/en/blog/ai-generated-code-security-why-your-error-messages-leak-more-than-you-think
 
 #AppSecurity #ErrorHandling #OWASP #Cursor #LaunchStudio #Manifera

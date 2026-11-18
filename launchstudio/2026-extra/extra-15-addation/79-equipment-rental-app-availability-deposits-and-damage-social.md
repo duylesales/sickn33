@@ -1,21 +1,30 @@
-🚨 Mark van Rijn runs an event equipment rental company near Zwolle: tents, tables, cooling trailers and lighting. He built Feestverhuur Online with Lovable and Supabase. It worked through the quiet season. In May, his two large tents were booked three times for the same wedding weekend. 😳
+🧩 RIDDLE: You have 2 large tents. How do you rent them out 3 times for the same wedding weekend?
 
-Two tents, three bookings. Here's what an equipment rental app needs for availability, deposits and damage: 🧠
+ANSWER: Track them with a counter the browser decreases after each booking, and let two people book at the same moment.
 
-❌ Quantities in a counter decreased by the frontend, so simultaneous bookings both succeeded
-❌ No buffer for cleaning and transport between rentals
-❌ Deposits refunded manually days or weeks later
-❌ No check-out photos for damage disputes, and passport copies stored indefinitely
+Mark van Rijn runs an event equipment rental company near Zwolle: tents, tables, chairs, cooling trailers and lighting. He built Feestverhuur Online with Lovable and Supabase so customers could book and pay online. It got through the quiet season fine. Then came May.
 
-✅ Inventory per unit with asset tags, assigned automatically
-✅ An exclusion constraint per unit with buffers, and holds during payment
-✅ Card authorisation holds for short rentals, auto-refunded deposits after return inspection
-✅ Mobile check-out and return checklists with photos, and passport copies deleted
+BONUS RIDDLE: When is a tent returned on Sunday afternoon available for a Sunday evening pick-up?
+ANSWER: Never. But with no buffer for cleaning and transport, the app said it was.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we make your app know your inventory as well as you do - including when the tents are still drying. 🛠️
+The other puzzles:
+• Deposits charged with the rental, then refunded by hand days or weeks later, which drew complaints
+• Damage disputes, because nobody took check-out photos
+• Full photos of customers' passports, stored and never deleted
 
-His result: €5,900, 14 business days. Around 450 rentals with no double bookings for the rest of the season, deposit refunds within a day and far fewer damage disputes. 🚀
+How LaunchStudio solved them (14 business days, €5,900):
+✓ Inventory per unit with asset tags, assigned to bookings automatically
+✓ An exclusion constraint per unit, with buffers for cleaning, inspection and transport
+✓ A temporary hold on units during payment
+✓ Card authorisation holds as deposits for rentals up to a few days, and for longer rentals or iDEAL, a charged deposit refunded automatically after a satisfactory return inspection
+✓ Mobile check-out and return checklists with photos for warehouse staff
+✓ Damage reports shared with customers before any deposit deduction
+✓ Identity checked at pick-up without storing passport copies, and existing copies deleted
 
-👉 Building a rental app? Here's how to handle availability, deposits and damage: https://launchstudio.eu/en/blog/equipment-rental-app-availability-deposits-and-damage
+The rest of the wedding season: around 450 rentals, no double bookings. Deposit refunds now arrive within a day of return. Damage disputes dropped sharply, because both sides can see the same photos.
+
+"I have two big tents. The app now knows that as well as I do, including when they're still drying in the barn." - Mark van Rijn
+
+https://launchstudio.eu/en/blog/equipment-rental-app-availability-deposits-and-damage
 
 #RentalBusiness #EventTech #Bookings #Mollie #AIFounder #LaunchStudio #Manifera

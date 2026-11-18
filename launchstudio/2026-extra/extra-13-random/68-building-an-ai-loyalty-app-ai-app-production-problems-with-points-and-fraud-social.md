@@ -1,21 +1,35 @@
-🚨 Daan Koopman, who manages a shopping street association in Bergen op Zoom, built Spaarpas in Bolt: a digital stamp card shared by 34 local shops. Collect points anywhere, redeem vouchers at other shops, settle at month end. 5,200 residents signed up in three months. Then the first double-points Saturday exposed everything. 😳
+🪙 Congratulations. You've launched a currency.
 
-Every customer had a static QR code. Voucher screenshots were redeemed at several shops. A group of accounts claimed the sign-up bonus dozens of times with throwaway emails. Two shops' tablets issued points twice when staff retried after a dropped connection. And at month end, the settlement report didn't match what shops remembered - with no history to check. Here's what loyalty apps face in production: 🧠
+That's what happens when 34 shops let customers earn points in one place and spend them in another. You're not running a stamp card anymore. You're running a small monetary system, and it needs what every currency needs: protection against counterfeiting, controlled issuance, and bookkeeping.
 
-❌ Points stored as a single balance column
-❌ Static QR codes that can be screenshotted and replayed
-❌ Retries that double-issue points
-❌ Settlement with no ledger behind it
+Spaarpas had none of the three.
 
-✅ A points ledger, with opening balances reconstructed from logs and uncertain accounts flagged
-✅ Transactional earning and redemption with idempotency keys
-✅ Rotating single-use codes validated on the server, and sign-up bonuses tied to verified phone numbers
-✅ Every staff action logged per employee, expiry and refund reversals, and a monthly settlement report per shop
+Daan Koopman manages a shopping street association in Bergen op Zoom and built Spaarpas in Bolt: a digital stamp card shared by 34 local shops. Customers collect points at any shop and redeem them for vouchers at others. Shops pay a monthly fee and settle redeemed vouchers at month end. About 5,200 residents signed up in three months. Then came the first promotion: double points on a Saturday.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we treat points like money - because your customers, shops and fraudsters already do. ⚙️
+COUNTERFEITING
+• Each customer had a static QR code, and staff scanned it and typed an amount
+• Screenshots of vouchers were redeemed at several shops
 
-His result: €2,600, nine business days. The next promotion ran with zero duplicate redemptions, month-end settlement matched to the voucher, and Spaarpas grew to 51 shops - the treasurer now uses the ledger report instead of a spreadsheet. 🚀
+ISSUANCE
+• A group of accounts collected the sign-up bonus dozens of times, with disposable email addresses
+• Two shops' tablets issued points twice when the connection dropped and staff retried
 
-👉 Building an AI loyalty app? AI app production problems with points and fraud: https://launchstudio.eu/en/blog/building-an-ai-loyalty-app-ai-app-production-problems-with-points-and-fraud
+BOOKKEEPING
+• At month end, the settlement report didn't match what shops remembered, and there was no history to check
+
+The central bank, rebuilt (LaunchStudio, 9 business days, €2,600):
+✓ The balance column replaced by a ledger, with opening balances reconstructed from available logs and uncertain accounts flagged
+✓ Earning and redemption made transactional, with idempotency keys
+✓ Static codes replaced by rotating, single-use codes validated on the server
+✓ Sign-up bonuses tied to verified phone numbers
+✓ Every staff action logged per employee
+✓ Expiry and refund reversals
+✓ A monthly settlement report per shop
+
+The next promotion ran with no duplicate redemptions, and the month-end settlement matched to the voucher. Spaarpas grew to 51 shops, and the association's treasurer now uses the ledger report instead of a spreadsheet.
+
+"We thought we'd built a stamp card. We'd actually built a small currency with no bookkeeping." - Daan Koopman
+
+https://launchstudio.eu/en/blog/building-an-ai-loyalty-app-ai-app-production-problems-with-points-and-fraud
 
 #Loyalty #FraudPrevention #Ledger #Bolt #LaunchStudio #Manifera

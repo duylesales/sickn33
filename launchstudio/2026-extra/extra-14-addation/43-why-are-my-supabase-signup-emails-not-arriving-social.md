@@ -1,21 +1,35 @@
-🚨 Mirjam Dekkers coordinates a food bank in Helmond and built Voedselhulp in Lovable: volunteers sign up for distribution shifts and get reminders. On launch evening, the first 30 or so volunteers received their confirmation emails. After that - nothing. Volunteers tried again, created duplicate accounts and gave up. 😳
+Volunteer #1 ✉️
+Volunteer #2 ✉️
+Volunteer #3 ✉️
+...
+Volunteer #30 ✉️
+Volunteer #31 ·
+Volunteer #32 ·
+Volunteer #33 ·
 
-Thirty people got in and then the door quietly closed. Nobody saw an error, including her. Here's what happened: 🧠
+Then silence. 🔇
 
-❌ Supabase's built-in email service hit its sending limit
-❌ The emails that did go out came from a generic address, several straight into spam
-❌ Password reset links pointing to the Lovable preview domain
-❌ Duplicate accounts piling up from repeated sign-up attempts
+Mirjam Dekkers coordinates a food bank in Helmond and built Voedselhulp in Lovable: volunteers sign up for distribution shifts and get reminders. On launch evening, the first 30 or so volunteers received confirmation emails. After that, nothing. People tried again, created duplicate accounts, and gave up.
 
-✅ Custom SMTP through an EU-region transactional email provider
-✅ SPF, DKIM and DMARC records added to the food bank's own domain
-✅ Production redirect URLs and Dutch templates with the food bank's name
-✅ One-time codes instead of magic links for volunteers on work email, and duplicate accounts merged
+Nobody saw an error. Not the volunteers, not Mirjam.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of transactional email at scale, we treat email as infrastructure - not an afterthought. 🛠️
+What had happened:
+• Supabase's built-in email had hit its sending limit
+• The emails that did go out came from a generic address, and several landed in spam
+• Password reset links pointed to the Lovable preview domain
 
-💡 Her result: €850, three business days. Every waiting volunteer was confirmed the next morning, 210 volunteers registered within a month, and reminders now land in inboxes instead of spam. 🚀
+What LaunchStudio fixed (3 business days, €850):
+✓ Custom SMTP through an EU-region transactional provider
+✓ SPF, DKIM and DMARC records on the food bank's domain
+✓ Production redirect URLs
+✓ Dutch email templates with the food bank's name
+✓ One-time codes instead of magic links, for volunteers using work email
+✓ Duplicate accounts merged
 
-👉 Supabase sign-up emails not arriving? Here are the four usual causes and the fix: https://launchstudio.eu/en/blog/why-are-my-supabase-signup-emails-not-arriving
+The next morning, every waiting volunteer was confirmed. Within a month, 210 volunteers had registered, and reminders landed in inboxes, not spam.
+
+"Thirty people got in and then the door quietly closed. Nobody saw an error, including me." - Mirjam Dekkers
+
+https://launchstudio.eu/en/blog/why-are-my-supabase-signup-emails-not-arriving
 
 #Supabase #Lovable #EmailDeliverability #NonProfit #LaunchStudio #Manifera

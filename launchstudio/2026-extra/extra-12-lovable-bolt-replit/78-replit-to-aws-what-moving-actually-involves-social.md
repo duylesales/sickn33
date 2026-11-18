@@ -1,21 +1,35 @@
-🚨 Maarten Kolff's Dossierbeheer manages around 2,800 case files for nine youth care organisations, running on Replit. A regional care partnership offered a contract covering four more organisations - on condition that personal data was stored in the Netherlands, under a specific agreement, with a named certification. His board and two advisers agreed: migrate everything to AWS. 😳
+🔎 A close reading of one contract condition
 
-Estimated: seven weeks of work and about €900 a month to run. But the contract's condition was about where personal data is stored - not where the application executes. Here's what moving from Replit to AWS actually involves, and when you don't need to: 🧠
+The condition, as the regional care partnership set it:
+Personal data must be [stored] in the Netherlands, on infrastructure under a [specific agreement], with a [named certification].
 
-❌ Treating "data must be in the Netherlands" as "everything must move to AWS"
-❌ Budgeting for the migration but not for the permanent operational work after it
-❌ Not checking whether a smaller change satisfies the same requirement
-❌ Forgetting everything the platform did implicitly: networking, certificates, logging, alerting, backups, secrets
+The sentence everyone heard:
+"You need to migrate to AWS."
 
-✅ The database moved to a managed Postgres instance in a Dutch region under a qualifying agreement - rehearsed, then a 35-minute Sunday cutover
-✅ Case documents moved to object storage in the same region, with URLs generated at read time
-✅ The application left on Replit, simply pointed at the new database and storage
-✅ A published data location statement and subprocessor page, plus in-region backups with a tested restore
+What the condition covers: where personal data is stored and processed. That means the database and the case documents.
+What it doesn't mention: where the application runs. The application holds no data at rest.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we do full migrations - and more often find the smallest move that satisfies the same requirement. ⚙️
+Maarten Kolff built Dossierbeheer on Replit: case file management for nine youth care organisations, around 2,800 cases. The partnership offered a contract covering four organisations, on that condition. His board and two advisers agreed the answer was a full move to AWS. 📁
 
-His result: €8,900, nine business days instead of a quarter. The contract was signed, and infrastructure went from €95 to €340 a month - not €900. 🚀
+Doing what the sentence actually says (LaunchStudio, 9 business days, €8,900):
+✓ The database moved to a managed Postgres instance in a Netherlands region, under an agreement meeting the certification requirement, rehearsed on a copy first, with a 35-minute cutover on a Sunday
+✓ Case documents moved to object storage in the same region, with URLs generated at read time so no stored reference needed rewriting
+✓ The application left on Replit, calling the new database and storage
+✓ A subprocessor page and data location statement published
+✓ In-region backups, with a tested restore
+✓ A documented assessment of where each category of data now lives
 
-👉 Replit to AWS: what moving actually involves: https://launchstudio.eu/en/blog/replit-to-aws-what-moving-actually-involves
+The comparison:
+
+                      Targeted move      Full AWS migration (estimate)
+Work                  9 business days    seven weeks
+Monthly running cost  €95 ➜ €340         roughly €900
+Meets the condition?  yes                yes, exactly the same one
+
+The requirement was met and the contract signed.
+
+"Two advisers told me I needed to be on AWS. The contract said our patients' data had to be in the Netherlands under a specific agreement. Those are not the same sentence, and it took an afternoon to establish that." - Maarten Kolff
+
+https://launchstudio.eu/en/blog/replit-to-aws-what-moving-actually-involves
 
 #Replit #AWS #CloudMigration #DataResidency #LaunchStudio #Manifera

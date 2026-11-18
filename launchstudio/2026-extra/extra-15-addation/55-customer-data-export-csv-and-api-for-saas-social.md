@@ -1,21 +1,29 @@
-🚨 Gijs van Beek built Ledenbeheer Plus with Lovable and Supabase: membership administration for associations and foundations. A national sports federation wanted to recommend it - but its procurement checklist required a complete data export and an exit procedure. 😳
+💔 How to break up with a SaaS (and why it should be easy)
 
-The app had one "Export" button. It exported only the 50 members on the current page, opened in one column in Dutch Excel, and garbled accented names. Here's how to build customer data export for SaaS: 🧠
+Gijs van Beek built Ledenbeheer Plus with Lovable and Supabase: membership administration for associations and foundations, covering members, contributions, events and communications. A national federation of sports associations wanted to recommend it to its clubs. Its procurement checklist had one clause Gijs hadn't thought about: a complete data export in a documented format, and an exit procedure.
 
-❌ Exports limited to the current page, built in the browser
-❌ CSVs that broke in Dutch Excel and mangled accents
-❌ No export of contributions, events or documents
-❌ Formulas in name fields that ran when admins opened the file
+In other words: if a club ever wants to leave, can it take everything with it?
 
-✅ Server-side exports of all filtered rows, XLSX and Dutch-friendly CSV with UTF-8 BOM
-✅ CSV injection protection
-✅ A full account export as a ZIP with CSV, JSON, documents and a data dictionary via a 24-hour signed link
-✅ Admin role plus MFA for full exports, audit logging and a written offboarding procedure
+What leaving looked like before:
+• One "Export" button on the members list
+• It exported only the 50 members on the current page
+• The CSV was built in the browser and opened in one column in Dutch Excel
+• Accented names came out garbled
+• No export for contributions, events or uploaded documents
+• And a member could put a formula in their name field that would run when an admin opened the file
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we make your product easy to leave - which turns out to be a reason to join. 🛠️
+What leaving looks like now (LaunchStudio, 9 business days, €3,300):
+✓ List exports built on the server, covering all filtered rows within the user's permissions
+✓ XLSX and Dutch-friendly CSV, UTF-8 with byte order mark, ISO dates, and protection against CSV injection
+✓ A full account export as a background job: a ZIP with CSV and JSON for every entity, uploaded documents in folders and a data dictionary
+✓ Delivered by a signed link valid for 24 hours, deleted after seven days
+✓ Admin role and MFA confirmation required, with every export in the audit log
+✓ A written offboarding procedure for Gijs's terms
 
-His result: €3,300, 9 business days. The federation added Ledenbeheer Plus to its recommended tools, around 60 clubs signed up the next season, and two departing clubs exported everything without contacting support. 🚀
+The plot twist: the federation approved Ledenbeheer Plus and put it on its recommended list. Around 60 clubs joined the next season. Two clubs that later switched systems exported everything without contacting support.
 
-👉 Can your customers take their data with them? Here's how to build exports: https://launchstudio.eu/en/blog/customer-data-export-csv-and-api-for-saas
+"Being easy to leave turned out to be one of the reasons clubs chose to join." - Gijs van Beek
+
+https://launchstudio.eu/en/blog/customer-data-export-csv-and-api-for-saas
 
 #DataPortability #SaaS #Procurement #NonProfit #AIFounder #LaunchStudio #Manifera

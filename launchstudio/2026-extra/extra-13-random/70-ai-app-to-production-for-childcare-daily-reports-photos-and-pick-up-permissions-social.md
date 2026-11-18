@@ -1,21 +1,30 @@
-🚨 Esmee Kuiper, a pedagogical coach with twelve years in daycare, built Kinderdagboek in Lovable: staff log meals, naps and activities, share photos and messages with parents, and manage pick-up lists. Six locations around Woerden, about 480 children. Then a group photo appeared in the feed - including a child whose parents had not consented to photo sharing. 😳
+👀 WHO MAY SEE, AND WHO MAY PICK UP? A daycare diary, before and after
 
-Consent was one checkbox per family. Any parent could open any child's diary by changing an ID. Allergy and medication notes sat in the same free-text field as nap times. Staff shared one login per tablet. Either parent could edit pick-up lists without notification - even a parent restricted by a court order the centre knew about. And photos sat in a public bucket. Here's what a childcare app needs before production: 🧠
+BEFORE
+A group photo ➜ visible to every parent in the group, including a child whose parents hadn't consented to photo sharing
+Photo consent ➜ one checkbox per family, not per purpose
+Any parent ➜ any child's diary, by changing an ID
+Allergy and medication notes ➜ in the same free-text field as nap times
+Staff ➜ one shared login per group tablet
+The pick-up list ➜ editable by either parent without notification, including a parent whose access the centre knew was restricted by a court order
+Photos ➜ in a public bucket
 
-❌ One photo-consent checkbox for everything
-❌ Children's diaries reachable by changing an ID
-❌ Health notes mixed with nap times
-❌ Pick-up lists editable without logs or restrictions
+AFTER (LaunchStudio, 11 business days, €3,100)
+Families, guardians and restrictions ➜ modelled explicitly, with access enforced in the database
+Photo consent ➜ per child and per purpose, with photo tagging that controls who sees each picture
+Health information ➜ in separate, restricted and logged fields
+Staff ➜ individual PIN switching on shared tablets
+The pick-up list ➜ every change logged and notified, with restrictions honoured
+Photos ➜ private storage, with metadata stripped
+Leaving children ➜ retention rules and a data export
+Daycare organisations ➜ processor documentation, ready
 
-✅ Families, guardians and restrictions modelled explicitly, with database-enforced access
-✅ Consent per child and purpose, with photo tagging that controls visibility
-✅ Health information in restricted, logged fields and individual staff PIN switching on shared tablets
-✅ Logged, notified pick-up changes that honour restrictions, private photo storage with metadata stripped, retention and export for leaving children
+Esmee Kuiper, a pedagogical coach who had worked in daycare for twelve years, built Kinderdagboek in Lovable: staff log meals, naps and activities, share photos and messages with parents, and manage pick-up lists. Six daycare locations in and around Woerden, about 480 children. It all started with that one group photo.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we make sure your app knows the difference between every parent's photos and someone else's child. ⚙️
+The daycare organisation informed the affected family and reviewed the new setup with its privacy officer, who approved it. Kinderdagboek has since been adopted by a second childcare organisation, with eleven locations.
 
-Her result: €3,100, eleven business days. The privacy officer approved the new setup, and Kinderdagboek has since been adopted by a second childcare organisation with eleven locations. 🚀
+"Every parent wants the photos. Not every parent wants their child in someone else's. The app has to know the difference." - Esmee Kuiper
 
-👉 AI app to production for childcare: daily reports, photos and pick-up permissions: https://launchstudio.eu/en/blog/ai-app-to-production-for-childcare-daily-reports-photos-and-pick-up-permissions
+https://launchstudio.eu/en/blog/ai-app-to-production-for-childcare-daily-reports-photos-and-pick-up-permissions
 
 #Childcare #GDPR #PhotoConsent #Lovable #LaunchStudio #Manifera

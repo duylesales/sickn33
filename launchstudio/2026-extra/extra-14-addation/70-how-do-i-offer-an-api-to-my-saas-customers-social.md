@@ -1,21 +1,27 @@
-🚨 Hasan Demir built Wagenpark with Cursor and Supabase: fleet maintenance for small transport companies. A customer with 60 vans asked for API access. Under time pressure, Hasan sent them his Supabase URL and public key. It worked - until he renamed a column and broke their integration overnight. 😳
+Unpopular opinion: your database is not an API. Even when it technically works like one. 🔌
 
-Then it got worse: the customer's integration could read other tenants' vehicle registrations. He'd given a customer his database as an API. Here's what that meant: 🧠
+Hasan Demir built Wagenpark in Cursor and Supabase: fleet maintenance for small transport companies, tracking vehicles, inspections and repairs. A customer with 60 vans asked for API access to pull data into their planning system. Under time pressure, Hasan sent them his Supabase URL and public key, with instructions.
 
-❌ Customers coupled directly to his internal database schema
-❌ Every schema change a breaking change for their systems
-❌ One loosely protected table exposing other tenants' data
-❌ No way to scope, limit or measure what the customer did
+It worked. Until:
+• He renamed a column, and the customer's integration broke overnight
+• He realised their integration ran under a normal user account, whose permissions allowed reading other tenants' vehicle registrations through one loosely protected table
 
-✅ The loose policy fixed
-✅ A versioned /v1 API in edge functions for vehicles, inspections and repairs
-✅ Per-organisation API keys with read and write scopes, stored as hashes, plus rate limits per plan and usage logs
-✅ Signed outgoing webhooks for completed inspections, and public documentation
+Every schema change was now a risk to that customer. And one loose table was a risk to everyone else.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of designing enterprise integration APIs, we build small, versioned, strictly authorised APIs - never your database with a key attached. 🛠️
+The real API (LaunchStudio, 13 business days, €4,800):
+✓ The loose policy fixed
+✓ A versioned /v1 API built with edge functions, for vehicles, inspections and repairs
+✓ Per-organisation API keys with read and write scopes, stored as hashes
+✓ Rate limits per plan, and usage logs
+✓ Signed outgoing webhooks for completed inspections
+✓ Public documentation
 
-💡 His result: €4,800, thirteen business days. Hasan can now change his schema without breaking anyone, three more customers adopted the API, and API access became a feature of his top plan. 🚀
+The customer moved to the new API within a week. Hasan can change his schema now without breaking anyone's integration. Three more customers adopted the API, and API access became a feature of his highest plan.
 
-👉 Business customers asking for an API? Here's how to offer one safely from an AI-built SaaS: https://launchstudio.eu/en/blog/how-do-i-offer-an-api-to-my-saas-customers
+Self-test: if a customer's integration uses your database URL and anon key, they are one column rename away from an outage.
+
+"I gave a customer my database as an API. Every change I made after that was a risk to them, and every table was a risk to everyone else." - Hasan Demir
+
+https://launchstudio.eu/en/blog/how-do-i-offer-an-api-to-my-saas-customers
 
 #API #SaaS #Supabase #APISecurity #LaunchStudio #Manifera

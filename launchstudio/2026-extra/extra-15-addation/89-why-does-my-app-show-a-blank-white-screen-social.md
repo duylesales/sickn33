@@ -1,21 +1,35 @@
-🚨 Thijs Hendriks built Dossierdesk with Lovable and Supabase: a portal where an immigration law firm's clients upload documents, follow their application and message their lawyer. Around 220 clients used it. Then new clients started calling: the portal showed a white screen after login. 😳
+.
 
-Existing clients were fine, and Thijs couldn't reproduce it. One screenshot of the console told the story: Cannot read properties of null (reading 'case_number'). Here's why apps show a blank white screen: 🧠
+.
 
-❌ A dashboard assuming every client already had a case record
-❌ Reloading any sub-page returning a 404 on the live host
-❌ Blank pages after each deploy when old JavaScript chunks disappeared
-❌ No error boundaries and no monitoring
+.
 
-✅ Empty states, with a welcome page for new clients waiting for their case
-✅ A rewrite rule so sub-pages reload correctly
-✅ One automatic reload on failed chunk loads
-✅ Error boundaries and Sentry - which caught two more crashes in the first week
+That's roughly what new clients saw after logging in. A white screen. ⬜
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we turn total failures into contained, reported ones. 🛠️
+Thijs Hendriks built Dossierdesk with Lovable and Supabase: a portal where clients of a small immigration law firm upload documents, follow their application status and message their lawyer. Around 220 clients used it, and the firm promoted it on its website as a reason to choose them.
 
-The result: €1,900, 5 business days. No blank-screen reports since, support calls about the portal dropped from several a week to almost none, and new clients now finish uploads in their first session. 🚀
+Then new clients started calling. Existing clients were fine. Thijs couldn't reproduce it with his own account. Until one new client shared a screenshot of the console:
 
-👉 Is your app showing a white screen? Here's how to find the real error: https://launchstudio.eu/en/blog/why-does-my-app-show-a-blank-white-screen
+Cannot read properties of null (reading 'case_number')
+
+New clients had no case record until a lawyer created one. The dashboard assumed there was always a case.
+
+Two more white screens turned up:
+• Reloading any page except the homepage on the live host returned a 404
+• After each deploy, clients with the portal open got a blank page when they navigated, because the old JavaScript chunks were gone
+
+Filling in the white (LaunchStudio, 5 business days, €1,900):
+✓ Empty states: new clients now see a welcome page explaining that their lawyer will open their case shortly
+✓ Every data-driven component handles missing records
+✓ A rewrite rule, so sub-pages reload properly
+✓ One automatic reload when a chunk fails to load
+✓ A top-level error boundary plus section boundaries, showing a friendly message instead of nothing
+✓ Sentry reporting errors with page and browser, which caught two more crashes in the first week, on an older iPad and in an in-app browser
+
+No blank-screen reports since. Support calls about the portal went from several a week to almost none, and new clients now finish their document uploads in their first session.
+
+"For weeks I thought it was random. It was one missing check, and the console told us exactly where." - Thijs Hendriks
+
+https://launchstudio.eu/en/blog/why-does-my-app-show-a-blank-white-screen
 
 #React #Lovable #ErrorMonitoring #LegalTech #AIFounder #LaunchStudio #Manifera

@@ -1,20 +1,28 @@
-📄 Kevin Maes built DockFlow, a scheduling and documentation tool for freight forwarders working with Terneuzen's port logistics, using Lovable over a few weeks around his day job - when a logistics client's procurement contact asked what security standard DockFlow was held to, Kevin's only answer was "it works well." That stalled the deal. 😳
+The question: "What security standard is your software held to?" 🔐
 
-There's no official "code of AI" to point to. That's exactly why a documented review matters more, not less. 🧠
+The answer that stalls a deal: "It works well."
 
-❌ No formal, universally recognized standard exists for AI-generated code
-❌ Session tokens never expired
-❌ Shipment documents were stored without access restrictions tied to which company uploaded them
-❌ "The AI tool I used is popular" doesn't satisfy a compliance-minded procurement team
+The answer that closes one: "Here's the written review."
 
-✅ Structured review against the same checklist used on Manifera's enterprise engagements
-✅ Session and access-control issues fixed
-✅ A written summary Kevin could hand straight to the client's procurement team
+Kevin Maes built DockFlow in Lovable over a few weeks, around his existing job: a scheduling and documentation tool for freight forwarders working with Terneuzen's port logistics. A mid-sized logistics client was interested. Then their procurement contact asked that question, and "it works well" was all Kevin had. Understandably, the conversation stalled.
 
-At **LaunchStudio**, we apply Manifera's 160+-project enterprise review standard - including work with Vodafone and TNO - to AI-generated codebases from any major tool. 🛡️
+There's no official rulebook that says an AI-built app passes or fails. So LaunchStudio reviewed DockFlow against the checklist used on Manifera's enterprise engagements:
+• Database access controls
+• Authentication session handling
+• Data storage compliance
 
-His result: DockFlow passed its first serious procurement review and signed its first logistics client from Terneuzen's port sector. 🚀
+Two real issues turned up:
+❌ Session tokens that never expired
+❌ Shipment documents stored without access restrictions tied to the company that uploaded them
 
-👉 Facing a procurement question you can't answer yet? Get a documented review first: https://launchstudio.eu/en/blog/code-of-ai-terneuzen
+Both were fixed. And Kevin got the thing he was really missing: a written summary he could send straight to the client's procurement team.
+
+5 business days. €1,250.
+
+The result: DockFlow passed its first serious procurement review and signed its first logistics client from Terneuzen's port sector.
+
+"There's no rulebook that says 'your AI app passes' or 'it doesn't.' Having someone actually check it against real standards and write it down was the only thing that got the deal past procurement." - Kevin Maes
+
+What's your answer to the question? https://launchstudio.eu/en/blog/code-of-ai-terneuzen
 
 #AINativeFounder #LaunchStudio #Manifera #CodeOfAI #Terneuzen

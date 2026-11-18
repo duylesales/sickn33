@@ -1,20 +1,24 @@
-🔓 Marieke Hendriks built VeenVault - a booking and membership platform for artisan workshops around Veendam - entirely in Bolt. Proud moment... until it turned out the admin dashboard had zero authentication. Anyone who guessed the URL pattern could view every customer's name, email, and booking history without logging in. 😳
+Imagine running a pottery workshop in Veendam. 🏺
 
-"It works when I click it" and "it's secure" are two completely different questions. 🧠
+The front door has a proper lock. Members check in, book a class, pay. Everything works.
 
-❌ Admin dashboard reachable with no login check at all
-❌ Customer payment history and booking data exposed to anyone guessing the URL
-❌ The AI tool that built it never flagged the gap - it "worked" the moment it rendered
-❌ Two more unguarded admin endpoints were hiding in the same app
+But the back office, with the filing cabinet holding every customer's name, email and booking history, has no lock at all. Anyone who finds the back door can walk straight in.
 
-✅ Proper authentication middleware added to every admin-facing route
-✅ Role-based access control put in place across the app
-✅ A full audit of every other endpoint for the same pattern, same day
+That's what VeenVault looked like before its security review.
 
-At **LaunchStudio**, this is exactly the gap Manifera's 120+ engineers are trained to catch - the same rigor applied for clients like Vodafone and TNO. 🛡️
+Marieke Hendriks built VeenVault in Bolt over several weeks: a booking and membership platform for local artisan workshops in and around Veendam, from pottery classes and woodworking sessions to seasonal markets. The member portal came together fast, and she was proud of it.
 
-Her result: every customer record now sits behind verified authentication, with the exposure closed before any customer or regulator noticed. 🚀
+The admin dashboard, used to manage bookings and view customer payment history, had no authentication check guarding it. Anyone who guessed the URL pattern could see every customer's details without logging in.
 
-👉 Not sure if your AI-built app has the same blind spot? Send us the link for free advice: https://launchstudio.eu/en/blog/ai-in-it-security-veendam
+What LaunchStudio did (5 business days, €780):
+🔑 Found the exposed route during a routine security review
+🔑 Added authentication middleware and role-based access control
+🔑 Checked every other admin-facing endpoint for the same pattern, and closed two more the same day
+
+The result: all customer data now sits behind verified authentication, and the exposure was closed before any customer or regulator noticed.
+
+"I had no idea 'it works when I click it' and 'it's secure' were two completely different questions. LaunchStudio answered the second one for me." - Marieke Hendriks
+
+Is your back door locked? https://launchstudio.eu/en/blog/ai-in-it-security-veendam
 
 #AINativeFounder #LaunchStudio #Manifera #AISecurity #Veendam

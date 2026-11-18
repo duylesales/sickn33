@@ -1,20 +1,28 @@
-⚕️ Daan Peeters built ZorgConnect, a symptom-logging app for chronic condition patients around Nijmegen's Radboudumc health-tech scene, using Bolt. It "worked" in every demo. Three days before launch, a beta tester with two chronic conditions logged symptoms for both in one session - and the app silently merged them into one incomplete record. 😳
+🚀 T-minus 3 days to launch.
 
-"It works" during your own testing and "it's ready" for real users are two different claims. 🧠
+ZorgConnect is ready. Daan Peeters built it in Bolt in Nijmegen, close to the health-tech community around Radboudumc: a symptom-logging and appointment-reminder app for patients with chronic conditions. Physiotherapy practices tested it. A patient advisory group tested it. Everyone agreed: it works. The launch date is set.
 
-❌ The data model only supported one active condition per user profile
-❌ The bug never appeared because Daan had only ever tested with a single condition per account
-❌ Nobody tested it the way a real patient managing two conditions actually would
-❌ A three-day-before-launch discovery is a trust problem, not just a bug
+⏳ 3 DAYS OUT
+A beta tester living with two chronic conditions logs symptoms for both in one session. The app silently merges them into one incomplete record.
 
-✅ Rebuild the schema to support multiple concurrent condition records with proper isolation
-✅ Add validation to catch similar edge cases before they reach real patients
-✅ Stress-test with the messy, unpredictable behavior real users bring, not just the happy path
+Why nobody caught it: every test account had one condition. Real patients often don't.
 
-At **LaunchStudio**, we've shipped 160+ projects for enterprise clients as part of Manifera - the same rigor that assumes users will do the unexpected thing. 🛡️
+🔎 THE REVIEW
+LaunchStudio goes through the codebase. Root cause: the data model only allowed one active condition per user profile.
 
-His result: ZorgConnect launched on schedule and has logged data accurately across 300+ patients with multiple concurrent conditions since the fix. 🚀
+🔧 THE FIX (6 business days, €1,150)
+• Schema rebuilt for multiple concurrent condition records, each properly isolated
+• Validation added to catch similar edge cases
+• Regression testing
 
-👉 Setting a launch date soon? Get a structured review first, while there's still time to fix what it finds: https://launchstudio.eu/en/blog/ai-works-nijmegen
+✅ LAUNCH DAY
+ZorgConnect launches on schedule.
+
+📈 SINCE THEN
+Accurate data for more than 300 patients managing multiple conditions at once.
+
+"Everyone who tested it told me it worked. Nobody tested it the way a real patient managing two conditions actually would. That's the gap LaunchStudio found in three days." - Daan Peeters
+
+"It works" depends on who's testing. Test your app the way your users actually live: https://launchstudio.eu/en/blog/ai-works-nijmegen
 
 #AINativeFounder #LaunchStudio #Manifera #HealthTech #Nijmegen

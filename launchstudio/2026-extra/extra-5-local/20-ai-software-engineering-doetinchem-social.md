@@ -1,20 +1,29 @@
-🏭 Niels Terhorst built WerkVloer, a shift-scheduling and maintenance-logging tool for Achterhoek industrial workshops, using Bolt. A third, larger manufacturing client was close to signing - pending "a basic technical review." Niels requested a LaunchStudio audit first, and realized he had no idea if the app even had an audit trail. 😳
+Q&A: The one question that nearly stalled a manufacturing deal 🏭
 
-Ten developers will give you ten different answers on what an AI code audit checks. Here's what actually matters. 🧠
+Q: Who's the founder?
+A: Niels Terhorst from Doetinchem. He built WerkVloer in Bolt: shift scheduling and equipment-maintenance logging for small industrial workshops.
 
-❌ Maintenance log edits silently overwrote previous entries with no history - a compliance dealbreaker for a manufacturing client
-❌ Equipment API integration credentials were exposed in the frontend
-❌ Shift-schedule data had no row-level security between different workshop accounts
-❌ None of it surfaced until a client asked one specific question about audit trails
+Q: How far along was it?
+A: Two workshops in the Achterhoek were already using it. A third, larger manufacturer was close to signing, pending what its operations manager called "a basic technical review."
 
-✅ Implement an append-only audit log for maintenance entries
-✅ Move API credentials to a secured backend layer
-✅ Add proper workshop-level data isolation
+Q: What was the question?
+A: Whether WerkVloer kept an audit trail. Niels realized he had no idea.
 
-At **LaunchStudio**, our audits test authentication, database integrity, exposed secrets, billing logic, and monitoring by direct testing - the standard Manifera brings from clients like Vodafone and TNO. 🛡️
+Q: Did it?
+A: No. Edits to maintenance logs silently overwrote earlier entries, with no history. For a client that needs maintenance records for compliance, that's a serious gap.
 
-His result: WerkVloer passed the manufacturing client's technical review and now runs across four workshops with a full compliant maintenance audit trail. 🚀
+Q: Anything else?
+A: Two more things. The equipment API credentials were exposed in the frontend, and shift schedules had no row-level security between workshop accounts.
 
-👉 Client asking for "a basic technical review" soon? Know what they'll actually check: https://launchstudio.eu/en/blog/ai-software-engineering-doetinchem
+Q: What changed?
+A: LaunchStudio added an append-only audit log for maintenance entries, moved the credentials to a secured backend, and isolated each workshop's data. 7 business days, €1,450.
+
+Q: And the deal?
+A: WerkVloer passed the technical review. It now runs at four workshops, with a full, compliant maintenance audit trail.
+
+Q: In Niels's words?
+A: "Their operations manager asked one specific question about audit trails, and I realized I had no idea if we even had one. The LaunchStudio review found that and two other issues I'd never have caught myself."
+
+Selling to manufacturers? Get audited before their operations manager asks: https://launchstudio.eu/en/blog/ai-software-engineering-doetinchem
 
 #AINativeFounder #LaunchStudio #Manifera #AIAudit #Doetinchem

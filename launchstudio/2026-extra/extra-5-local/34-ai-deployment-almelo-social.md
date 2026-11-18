@@ -1,20 +1,34 @@
-⚙️ Bram Nijhuis, a former process engineer at an Almelo textile manufacturer, built StofStroom - a supply chain visibility tool - using v0 and a self-extended Node backend. A bad deploy two weeks before LaunchStudio's review had taken the entire app offline for six hours with zero alerting. He found out from a client's phone call, not his own monitoring. 😳
+🗯️ STOFSTROOM: A COMIC IN SIX PANELS
 
-Clicking "Publish" in Lovable or Bolt gets you a live URL. It does not get you a deployment pipeline. 🧠
+PANEL 1
+Almelo. Bram Nijhuis, a former process engineer at a textile manufacturer, at his laptop. He's built StofStroom, supply chain visibility for fabric shipments between regional manufacturers and buyers. A v0 frontend, plus a Node backend he extended himself.
+CAPTION: He can write code. He's never built a deployment pipeline.
 
-❌ Everything ran off a single Render instance with manually managed environment variables
-❌ No staging environment separate from production
-❌ A six-hour outage with no error tracking or uptime alerts
-❌ Rollback meant manually re-editing code, not a five-minute revert
+PANEL 2
+One Render instance. Environment variables managed by hand.
+CAPTION: Everything runs on this.
 
-✅ Built a real CI/CD pipeline with automated testing gates before deploy
-✅ Separated staging from production environments
-✅ Added Sentry-based error monitoring with instant alerts and connection pooling for concurrent load
+PANEL 3
+A bad deploy. The whole app goes offline for six hours.
+CAPTION: No alert fires.
 
-At **LaunchStudio**, Manifera's 120+ engineers - 11+ years handling deployment infrastructure for clients like Vodafone and Xpar Vision - build this without touching a line of your application code. 🛡️
+PANEL 4
+A phone rings. It's a client.
+CAPTION: That's how Bram finds out.
 
-StofStroom now ships multiple times a week with automatic rollback on failed health checks, and hasn't had an unplanned outage since. 🚀
+PANEL 5
+LaunchStudio's engineers build around his code, not into it (8 business days, €1,650):
+• A CI/CD pipeline with automated testing gates
+• Staging separated from production
+• Sentry error monitoring with instant alerts
+• Database connection pooling for concurrent shipment updates
 
-👉 Deploying solo in Almelo? Don't skip this infrastructure checklist: https://launchstudio.eu/en/blog/ai-deployment-almelo
+PANEL 6
+StofStroom ships new features several times a week, with automatic rollback on failed health checks.
+CAPTION: No unplanned outage since.
+
+"I could write the code, but I'd never actually built infrastructure before. LaunchStudio didn't touch a single line of my application logic - they built everything around it that I didn't know I was missing." - Bram Nijhuis
+
+Who tells you when your app goes down? https://launchstudio.eu/en/blog/ai-deployment-almelo
 
 #AINativeFounder #LaunchStudio #Manifera #Almelo #AIDeployment

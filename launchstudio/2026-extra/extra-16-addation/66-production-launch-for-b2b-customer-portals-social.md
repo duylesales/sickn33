@@ -1,21 +1,27 @@
-🍽️ Karin Wouters runs a family-owned hospitality supplies wholesaler in Roosendaal and built Bestelportaal with Lovable and Supabase: around 300 restaurants and hotels reorder, see their own prices and download invoices synced from Exact Online. Phone orders dropped within weeks. Then a hotel manager mentioned that, by changing a filter, he could see what another hotel chain paid. 😬
+A hotel manager mentioned it, almost in passing: by changing a filter, he could see what another hotel chain paid. 🏨
 
-The assessment found the portal's foundation wasn't separating customers at all: 🧠
+Karin Wouters runs a family-owned wholesaler of hospitality supplies in Roosendaal. She built Bestelportaal with Lovable and Supabase, where around 300 restaurants and hotels reorder products, see their customer-specific prices and download invoices synced from Exact Online. Customers loved it so much that phone orders dropped within weeks.
 
-❌ Prices and invoices filtered by customer only in the interface
-❌ Invoice PDFs in a public bucket with predictable names
-❌ The Exact Online sync token readable in a client-side function
-❌ Every user at a customer seeing everything, including kitchen staff who only reorder
+Three lessons from what happened next.
 
-✅ Company separation enforced with Row Level Security on prices, orders and invoices, with isolation tests
-✅ Invoices in private storage with short-lived signed links, and downloads logged
-✅ The Exact Online sync moved to a scheduled server function with a rotated, scoped token and failure alerts
-✅ Customer roles for admins, buyers and finance, and idempotent orders so a double click no longer creates two
+LESSON 1: A filter in the interface is not a lock.
+Prices and invoices were filtered by customer only on screen.
+➜ Company separation enforced with Row Level Security on prices, orders and invoices, with isolation tests.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of building portals and integrations for clients such as Vodafone and TNO, we separate your customers properly and connect your back office safely. 🛠️
+LESSON 2: Files and tokens need the same care as data.
+Invoice PDFs sat in a public bucket with predictable names, and the Exact Online sync token was readable in a client-side function.
+➜ Invoices in private storage, with signed links that expire after a few minutes and logged downloads. The sync moved to a scheduled server function, with a rotated, scoped token, the time of the last successful sync on screen, and alerts on failure.
 
-Her result: €3,200, eight business days. No customer can see another's prices anymore, and customer admins now manage their own staff. 🚀
+LESSON 3: Not everyone at a customer needs everything.
+Every user saw everything, including kitchen staff who only reorder.
+➜ Customer roles for administrators, buyers and finance, with customer administrators managing their own staff.
 
-👉 Production launch for B2B customer portals: https://launchstudio.eu/en/blog/production-launch-for-b2b-customer-portals
+Bonus fix: order submission made idempotent, so a double click no longer creates two orders.
+
+All of it took 8 business days, for €3,200. After release, no customer could see another's prices or invoices, which Karin confirmed with the hotel manager who first noticed. Portal orders kept growing, and customer admins now add and remove their own staff without calling.
+
+"The portal saved my sales team hours every day. It also very nearly told my customers what everyone else was paying. Now it does only the first." - Karin Wouters
+
+https://launchstudio.eu/en/blog/production-launch-for-b2b-customer-portals
 
 #CustomerPortal #B2B #ExactOnline #Lovable #AIFounder #LaunchStudio #Manifera

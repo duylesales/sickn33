@@ -1,21 +1,36 @@
-🚨 Marieke de Lange, a primary school teacher in Alkmaar, built Leesmaatje in Lovable: pupils read short texts, answer questions and record themselves reading aloud. Her own school loved it. When the school board wanted it for 14 schools, the privacy officer asked her to sign the education sector's model processing agreement and complete the privacy annex. 😳
+📝 SCHOOL REPORT: Leesmaatje (before the privacy annex)
 
-She wrote the app for children. The paperwork showed her how much of their data she was collecting without needing it. Here's what filling in the annex revealed: 🧠
+Reading practice ..................... A
+Pupil engagement ..................... A
+Teacher progress view ................ A
+Privacy annex readiness .............. F
 
-❌ A session recording tool capturing pupils' screens
-❌ Teachers able to see every class in the school
-❌ Pupils' audio recordings in a public bucket, and data hosted outside the EU
-❌ Pupil answers sent to an AI model without an agreement - and no way to delete a school's data
+Marieke de Lange, a primary school teacher in Alkmaar, built Leesmaatje in Lovable: pupils read short texts, answer questions and record themselves reading aloud, while teachers see progress per class. Her own school loved it. Then the school board wanted it for 14 schools, and its privacy officer asked her to sign the education sector's model processing agreement and complete the privacy annex.
 
-✅ Tracking removed from pupil pages
-✅ Access by school, class and role, and audio moved to private storage with signed URLs
-✅ Migration to an EU region, with AI feedback minimised under a processing agreement with training disabled
-✅ School-level export and deletion, with measures and sub-processors documented for the annex
+TEACHER'S COMMENTS (from filling in the annex)
+• A session recording tool captured pupils' screens
+• Teachers could see every class in the school
+• Audio recordings sat in a public bucket
+• Data was hosted outside the EU
+• Pupils' answers went to an AI model for feedback, with no agreement
+• There was no way to delete a school's data
 
-At **LaunchStudio**, backed by Manifera's Dutch roots and 11+ years with Dutch clients, we understand how Dutch privacy officers evaluate suppliers - and build EdTech apps they can approve. 🛠️
+EXTRA WORK (LaunchStudio, 15 business days, €5,600)
+✏️ Tracking removed from pupil pages
+✏️ Access by school, class and role
+✏️ Audio in private storage with signed URLs
+✏️ Migration to an EU region
+✏️ AI feedback given only what it needs, under a processing agreement with training disabled
+✏️ School-level export and deletion
+✏️ Measures and sub-processors documented for the annex
 
-💡 Her result: €5,600, fifteen business days. The board signed the model agreement and rolled Leesmaatje out to 14 schools, reaching around 2,800 pupils in the first year. 🚀
+FINAL REPORT
+Privacy annex readiness ............... A
 
-👉 Selling your AI-built app to Dutch schools? Here are the privacy requirements to prepare for: https://launchstudio.eu/en/blog/selling-an-ai-built-app-to-dutch-schools-privacy-requirements
+The board signed the model agreement and rolled Leesmaatje out to 14 schools, around 2,800 pupils in the first year.
+
+"I wrote the app for children. The paperwork made me realise how much of their data I was collecting without needing it." - Marieke de Lange
+
+https://launchstudio.eu/en/blog/selling-an-ai-built-app-to-dutch-schools-privacy-requirements
 
 #EdTech #Onderwijs #AVG #Privacy #LaunchStudio #Manifera

@@ -1,21 +1,31 @@
-🚨 Rianne Mulders built Uurwerk in Lovable: time tracking and invoicing for freelance designers. It grew to 600 users - then small design agencies started asking for team accounts with shared clients, shared projects and one invoice. She prompted "add teams". It created a teams table, team members still couldn't see shared projects, and one attempt made every project visible to everyone. 😳
+BEFORE ➜ AFTER: adding teams to a freelancer tool 👥
 
-Teams sounded like one feature. It turned out to be a new foundation under every feature she already had. Here's why prompting didn't work: 🧠
+Rianne Mulders built Uurwerk in Lovable: time tracking and invoicing for freelance designers, 600 users. Then small design agencies started asking for team accounts, with shared clients, shared projects and one invoice.
 
-❌ A teams table added, but every policy still based on user_id
-❌ No memberships or roles, so no way to say who could see what
-❌ No secure invitation flow
-❌ Stripe billing still attached to individual users
+She tried the prompt "add teams." Lovable created a teams table, but left every policy based on user_id. Team members still couldn't see shared projects. And one attempt made all projects visible to everyone.
 
-✅ Organisations, memberships and invitations designed as one change
-✅ organisation_id added to clients, projects, time entries and invoices, with every policy rewritten around membership
-✅ An invitation flow with expiring tokens and seat limits, and Stripe customers moved to organisations with per-seat pricing
-✅ All 600 existing users migrated into personal organisations over a weekend
+BEFORE: Every record belonged to one user.
+AFTER: Organisations, memberships and invitations, with organisation_id on clients, projects, time entries and invoices.
 
-At **LaunchStudio**, backed by Manifera's 120+ engineers and 11+ years of multi-tenant B2B systems, we build teams as the foundation they are - not a patchwork of prompts. 🛠️
+BEFORE: Policies asked "is this your user_id?"
+AFTER: Every policy rewritten around membership.
 
-💡 Her result: €4,700, thirteen business days. Existing freelancers noticed only a new "Invite team" button, 34 agencies joined team plans within three months, and average revenue per account roughly doubled. 🚀
+BEFORE: No way to invite anyone.
+AFTER: An invitation flow with expiring tokens and seat limits.
 
-👉 Turning your AI-built tool into a B2B SaaS? Here's how to add teams and invitations properly: https://launchstudio.eu/en/blog/how-do-i-add-teams-and-invites-to-my-saas
+BEFORE: Stripe customers were individual users.
+AFTER: Stripe customers moved to organisations, with per-seat pricing.
+
+BEFORE: 600 users on the old model.
+AFTER: All 600 migrated into personal organisations over one weekend.
+
+The work: 13 business days, €4,700.
+
+What existing freelancers noticed: one new "Invite team" button. Nothing else.
+What changed for the business: within three months, 34 agencies were on team plans, and average revenue per account roughly doubled.
+
+"Teams sounded like one feature. It turned out to be a new foundation under every feature I already had." - Rianne Mulders
+
+https://launchstudio.eu/en/blog/how-do-i-add-teams-and-invites-to-my-saas
 
 #SaaS #B2B #Supabase #Lovable #LaunchStudio #Manifera

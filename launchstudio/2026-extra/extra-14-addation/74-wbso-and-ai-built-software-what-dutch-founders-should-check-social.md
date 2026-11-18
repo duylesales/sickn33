@@ -1,21 +1,32 @@
-🚨 Lars Hendriksen founded Bezorgslim, a delivery route planner for small bakeries and florists in Gelderland. He built the interface in Lovable - and, himself, a routing algorithm combining delivery windows, fresh-product constraints and small-van capacity. He planned to put all his development hours into a WBSO application. 😳
+🗂️ Sort the hours: R&D, or routine?
 
-An adviser stopped him: building screens and checkout with Lovable was unlikely to count as R&D. The algorithm might. Here's how the work split: 🧠
+Lars Hendriksen founded Bezorgslim, a delivery route planner for small bakeries and florists in Gelderland. He planned to put all his development hours into a WBSO application. An adviser asked him to sort them first.
 
-❌ Standard screens, login and checkout generated with Lovable - routine, not R&D
-❌ Configuring existing tools and payment providers - routine
-❌ Outsourced production work - generally not your own R&D hours
-❌ Applying for everything at once - a weak, risky application
+📦 Building screens in Lovable
+📦 Ordering flows in Lovable
+📦 Checkout
+📦 An algorithm combining delivery time windows, fresh-product constraints and small-van capacity, developed in Python over several months, with real technical uncertainty
 
-✅ A WBSO application for the routing algorithm only, with clear technical descriptions
-✅ Hour records and technical notes kept for that project alone
-✅ The production layer outsourced separately: securing the Lovable app, an authenticated API to his routing service, Mollie payments and hosting
-✅ That outsourced work kept out of his WBSO records
+The sorting:
 
-At **LaunchStudio**, backed by Manifera's Dutch roots and 11+ years with Dutch clients, we handle the routine production layer, so founders can spend their own time on the parts that may be genuinely innovative. (Not tax advice - check RVO's current rules.) 🛠️
+LIKELY TO QUALIFY ➜ the routing algorithm
+Lars applied for this project only, with technical descriptions of the problems he was trying to solve.
 
-💡 His result: €3,700, eleven business days. His application focused on work with a clear technical story, Bezorgslim launched with nine bakeries, and the algorithm became the main selling point. 🚀
+UNLIKELY TO QUALIFY ➜ the screens, flows and checkout
+Built with Lovable, and routine.
 
-👉 Wondering whether WBSO covers your AI-built app? Here's what Dutch founders should check first: https://launchstudio.eu/en/blog/wbso-and-ai-built-software-what-dutch-founders-should-check
+KEPT OUT OF THE WBSO RECORDS ➜ the production layer
+Outsourced separately to LaunchStudio (11 business days, €3,700):
+✓ The Lovable app secured
+✓ Connected to his routing service through an authenticated API
+✓ Mollie payments
+✓ Hosting
+
+THE RESULT
+An application focused on work with a clear technical story, and records that were straightforward to keep. Bezorgslim launched with nine bakeries, and the routing algorithm became its main selling point.
+
+"Separating the hard technical problem from the routine building made everything clearer, the product, the budget and the paperwork." - Lars Hendriksen
+
+https://launchstudio.eu/en/blog/wbso-and-ai-built-software-what-dutch-founders-should-check
 
 #WBSO #Startup #RVO #SaaS #LaunchStudio #Manifera

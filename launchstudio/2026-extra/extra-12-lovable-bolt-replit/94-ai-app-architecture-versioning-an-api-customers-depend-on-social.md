@@ -1,21 +1,30 @@
-🚨 Ruud Schipper's Transportplanner manages transport orders for 26 regional hauliers, and their biggest shippers send orders automatically from their own systems. There was no real API - shippers called the Supabase REST endpoints directly, each with the service role key. Then an AI assistant renamed two columns during a refactor. 😳
+🀄 One domino tips, and the rest follow
 
-Nine shippers' systems stopped creating orders. For two days, around 1,100 transport orders silently never arrived - and the service keys turned out to give every shipper full access to every haulier's data. Here's how to version an API your customers depend on: 🧠
+An AI assistant renames pickup_date to pickup_at and weight to weight_kg, everywhere, database included. The new names are clearer.
+➜ The frontend still works.
+➜ Shippers' systems, calling the database's REST endpoints directly, start failing.
+➜ They log the errors. Nobody watches those logs.
+➜ For two days, around 1,100 transport orders that should have been planned are never created.
+➜ Trucks don't arrive.
+➜ Shippers phone the hauliers to ask why.
+➜ The review finds the last domino: every shipper had been given the service role key, with full read and write access to every haulier's data.
 
-❌ The database schema exposed as the "API", so a column rename broke customers
-❌ The service role key handed to integrators
-❌ No specification, no breaking-change check, no usage logs
-❌ No idempotency, no deprecation policy, no changelog
+Ruud Schipper built Transportplanner in Lovable: transport order management for 26 regional haulage companies. Several of their biggest shippers send orders automatically from their own systems. There was no API layer between them. 🚛
 
-✅ Service key rotated immediately; scoped, hashed API keys per organisation
-✅ A dedicated /v1 API with an OpenAPI spec, envelopes, cursor pagination, UTC timestamps, stable error codes and idempotency keys
-✅ A six-month compatibility layer for old field names, with Deprecation and Sunset headers and a migration guide
-✅ Spec diffing and contract tests in CI that fail on breaking changes, plus signed, versioned webhooks and per-key usage logs
+Putting a wall between the dominoes (LaunchStudio, 5 business days, €6,200):
+✓ The service role key rotated at once, and every shipper given a scoped, hashed API key belonging to its haulier's organisation
+✓ A dedicated /v1 API as edge functions, with an OpenAPI specification, generated docs, envelopes, cursor pagination, UTC timestamps and stable error codes
+✓ Idempotency keys on order creation, so retries can't duplicate orders
+✓ The old field names accepted for six months, with Deprecation and Sunset headers and a migration guide
+✓ Usage logged per key, so any shipper still on old fields can be contacted directly
+✓ Specification diffing and contract tests in CI that fail on any breaking change
+✓ Signed, versioned webhooks for order status, with a delivery log
+✓ A changelog
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we build the API layer before your first integration customer starts depending on it. ⚙️
+The 1,100 orders were recreated from the shippers' logs within a day, and no cross-haulier data access was found. Over the next year the API went through fourteen releases without a breaking incident; CI blocked three pull requests that would have broken it. Two large shippers integrated from the docs in about a week each, without calling Ruud.
 
-His result: €6,200, five business days. The orders were recreated within a day. Since then: fourteen API releases with zero breaking incidents, three risky pull requests blocked by CI, and two large shippers integrated in a week each without a single call. 🚀
+"The assistant renamed two columns because the new names were clearer. They were - and nine shippers' systems stopped creating orders, and nobody noticed for two days." - Ruud Schipper
 
-👉 AI app architecture: versioning an API customers depend on: https://launchstudio.eu/en/blog/ai-app-architecture-versioning-an-api-customers-depend-on
+https://launchstudio.eu/en/blog/ai-app-architecture-versioning-an-api-customers-depend-on
 
 #API #SoftwareArchitecture #SaaS #Supabase #LaunchStudio #Manifera

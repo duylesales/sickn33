@@ -1,21 +1,29 @@
-🚨 Jeroen Bos built Sporthal Online with Lovable and Supabase: booking for sports halls and courts run by municipalities and foundations. Password resets went through Supabase's default email, and a monthly newsletter went out from the same domain - with no authentication for either. 😳
+Would you put the fire alarm in the kitchen? 🔥
 
-After one big newsletter, users couldn't reset passwords, sign-ups never got confirmation emails and booking confirmations went missing. Here's how to choose between Resend, Postmark and Brevo for transactional email: 🧠
+Every time someone cooks, it goes off. Soon nobody trusts it. And when there's a real fire, nobody hears it.
 
-❌ Rate limits on Supabase's default email service
-❌ No SPF, DKIM or DMARC on the domain
-❌ A newsletter marked as spam dragging down login emails
-❌ Bounced addresses from old imports still receiving mail
+That's roughly what happened to Sporthal Online's email.
 
-✅ Postmark for transactional email on a dedicated, authenticated subdomain
-✅ Supabase Auth via custom SMTP with branded Dutch and English templates
-✅ The newsletter moved to Brevo on a separate subdomain with consent and unsubscribe
-✅ Bounce and complaint webhooks feeding a suppression table, with address correction prompts
+Jeroen Bos built Sporthal Online with Lovable and Supabase: a booking platform for sports halls and courts run by municipalities and sports foundations. Password resets and confirmations went through Supabase's default email service. A monthly newsletter to all users went out from the same domain through a marketing tool. Neither was domain-authenticated.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we move the fire alarm out of the kitchen - so marketing never breaks your login. 🛠️
+Then one large newsletter went out, and support tickets poured in:
+• Users couldn't reset their passwords
+• New sign-ups never got confirmation emails
+• Booking confirmations went missing
 
-His result: €1,900, 6 business days. Resets and confirmations reached inboxes within days, missing-email tickets dropped by more than 90%, and the next newsletter didn't affect transactional delivery. 🚀
+Some emails hit the default service's rate limits. Others landed in spam, because the domain had no SPF, DKIM or DMARC and had just been linked to a newsletter several recipients marked as spam. And bounced addresses from old imports kept getting mail.
 
-👉 Are your app emails landing in spam? Here's how to choose a transactional provider: https://launchstudio.eu/en/blog/transactional-email-providers-resend-vs-postmark-vs-brevo
+Moving the alarm out of the kitchen (LaunchStudio, 6 business days, €1,900):
+🚨 Transactional email on Postmark, from its own subdomain, with SPF, DKIM and a DMARC policy starting in monitoring mode
+🚨 Supabase Auth connected through custom SMTP, with branded Dutch and English templates
+🚨 Booking confirmations and reminders on the same transactional stream, through an edge function
+🍳 The newsletter moved to Brevo, on a separate authenticated subdomain, with consent records and unsubscribe links
+🧹 Bounce and complaint webhooks feeding a suppression table, and users with invalid addresses asked to fix them at next login
+
+Within days, password resets and confirmations reached inboxes reliably. Tickets about missing emails dropped by more than 90%. The next newsletter went out without touching transactional delivery.
+
+"One newsletter took down my login process. Separating the two kinds of email was like moving the fire alarm out of the kitchen." - Jeroen Bos
+
+https://launchstudio.eu/en/blog/transactional-email-providers-resend-vs-postmark-vs-brevo
 
 #EmailDeliverability #Postmark #Brevo #Resend #AIFounder #LaunchStudio #Manifera

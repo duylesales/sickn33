@@ -104,7 +104,7 @@ Our Dutch team serves as the architectural friction. We interrogate your require
 
 We do not just build what you ask for. We build what your business actually needs to survive and scale.
 
-Stop paying for transcriptions. Start paying for technical leadership. Contact our Amsterdam team today to audit your current product requirements.
+Stop paying for transcriptions. Start paying for technical leadership. Contact our [Amsterdam leadership team](https://www.manifera.com/contact-us/) today to audit your current product requirements.
 
 ---
 

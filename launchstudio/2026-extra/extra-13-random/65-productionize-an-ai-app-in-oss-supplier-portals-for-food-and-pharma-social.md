@@ -1,21 +1,33 @@
-🚨 Ruud van Kessel spent fifteen years as a quality manager at a food producer near Oss, then built Recepturo in Lovable: producers request and manage specifications, allergen declarations and certificates from their ingredient suppliers. Seven producers, about 230 suppliers. Then one producer's biggest retail customer scheduled an audit and asked for the specification history of a product line. Recepturo could only show the current files. 😳
+📋 AUDIT REPORT (pre-audit): Recepturo specification portal
 
-New uploads overwrote old ones. There was no record of who approved what, and approvals could be edited afterwards. Suppliers could open other suppliers' documents by changing an ID. And certificate-expiry reminders had silently stopped three months earlier when a scheduled function failed. Here's how to productionize an AI app for food and pharma supply chains: 🧠
+REQUEST FROM THE RETAILER'S AUDITOR
+Show the specification history for one product line.
 
-❌ Uploads that overwrite the evidence
-❌ Editable approvals with no trail
-❌ Supplier separation only in the interface
-❌ Expiry reminders nobody was monitoring
+FINDINGS
+❌ Document history: not available. New uploads overwrote old ones, so only current files existed.
+❌ Approval records: none showed who had approved what.
+❌ Approval integrity: approvals could be edited afterwards.
+❌ Supplier separation: suppliers could open other suppliers' documents through the API by changing an ID.
+❌ Certificate expiry reminders: stopped three months earlier when a scheduled function failed. Nobody noticed.
 
-✅ Document versions with statuses and validity periods - existing files migrated as version one with their upload dates
-✅ An append-only audit trail stored separately and readable by quality managers
-✅ Supplier and producer separation with row level security
-✅ Monitored expiry jobs with escalation, a time-stamped audit export per product, and EU hosting with a tested restore
+Ruud van Kessel spent fifteen years as a quality manager at a food producer near Oss before founding Recepturo, built in Lovable: food producers request and manage specifications, allergen declarations and certificates from their ingredient suppliers. Seven producers and about 230 suppliers used it. Then one producer's largest retail customer scheduled a supplier audit.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering and work with TNO and Xpar Vision, we make sure your portal keeps the evidence, not just the documents. ⚙️
+In quality management, a document without its history isn't evidence. The portal had kept the documents, and thrown the evidence away.
 
-His result: €4,600 over fifteen business days, plus €49/month. The producer passed the retail audit using Recepturo's export - the auditor praised the document control - and Recepturo grew to 16 producers, two in pharma excipients. 🚀
+CORRECTIVE ACTIONS (LaunchStudio, Launch & Grow, 15 business days, €4,600, plus €49/month)
+✓ Document versions, with statuses and validity periods
+✓ Existing files migrated as version one, with their upload dates
+✓ An append-only audit trail, stored separately and readable by quality managers
+✓ Supplier and producer separation, enforced with Row Level Security
+✓ Expiry reminders rebuilt as monitored scheduled jobs, with escalation
+✓ An audit export: a time-stamped package per product
+✓ Hosting in an EU region, with backups and a tested restore
 
-👉 Productionize an AI app in Oss: supplier portals for food and pharma: https://launchstudio.eu/en/blog/productionize-an-ai-app-in-oss-supplier-portals-for-food-and-pharma
+AUDIT OUTCOME
+The producer passed the retail audit using Recepturo's export, and the auditor's report noted the document control positively. Recepturo grew to 16 producers the following year, two of them in pharmaceutical excipients.
+
+"In quality management, a document without its history isn't evidence. My portal had the documents and had thrown the evidence away." - Ruud van Kessel
+
+https://launchstudio.eu/en/blog/productionize-an-ai-app-in-oss-supplier-portals-for-food-and-pharma
 
 #FoodSafety #Pharma #AuditTrail #Lovable #LaunchStudio #Manifera

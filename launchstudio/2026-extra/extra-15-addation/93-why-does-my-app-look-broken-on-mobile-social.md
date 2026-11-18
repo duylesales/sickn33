@@ -1,21 +1,30 @@
-🚨 Femke Janssen built Inzetplanner with Lovable and Supabase: a rota app where volunteers at sports clubs and community organisations see shifts, swap them and sign up for open slots. Fourteen clubs and around 900 volunteers used it. It looked polished on Femke's laptop. 😳
+Open the rota on your phone.
 
-But coordinators kept getting messages from volunteers who couldn't use it - and 85% of volunteer visits came from phones. Here's why AI-built apps look broken on mobile: 🧠
+Scroll right.
+Keep scrolling right.
+That's column four of ten.
 
-❌ A ten-column weekly rota that made the whole page scroll sideways
-❌ "Swap shift" only appearing on hover
-❌ A sign-up dialog taller than the screen, with the confirm button out of reach
-❌ Long Dutch club names pushing buttons off-screen
+Want to swap a shift? Hover over it.
+(You can't hover on a phone.)
 
-✅ Six key journeys audited at mobile widths and on two real phones
-✅ A mobile rota as a list of days with shift cards, the full table kept for desktop
-✅ Visible buttons with proper tap sizes and full-screen sheets with the confirm button always visible
-✅ Wrapping names, bottom navigation, responsive components and mobile rules in the Lovable instructions
+Sign up for an open slot. The dialog is taller than your screen. The confirm button is somewhere below.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we make your app work on the phones your users actually use. 🛠️
+And the club name, "Voetbalvereniging Oranje-Wit Zuidbroek", just pushed the buttons off the card. 📱
 
-The result: €2,300, 6 business days. Slots filled at least three days ahead rose from around 60% to 85% in two months, and four new clubs signed up after seeing it on volunteers' phones. 🚀
+That was Inzetplanner on a phone. Femke Janssen built it with Lovable and Supabase: a rota app for sports clubs and community organisations, where volunteers see shifts, swap with others and sign up for open slots. Fourteen clubs, around 900 volunteers. On Femke's laptop, it looked polished. But 85% of volunteer visits came from phones, and coordinators kept getting messages from volunteers who couldn't use it.
 
-👉 Does your app look broken on mobile? Here are the responsive fixes: https://launchstudio.eu/en/blog/why-does-my-app-look-broken-on-mobile
+What LaunchStudio changed (6 business days, €2,300):
+✓ An audit of the six key volunteer journeys at mobile widths and on two real phones
+✓ On phones, the rota became a list of days with shift cards, while coordinators keep the full table on desktop
+✓ Swap and sign-up became visible buttons with proper tap sizes
+✓ Dialogs became full-screen sheets on phones, with the confirm button always in view
+✓ Long names wrap properly, and a bottom navigation bar replaced the desktop menu
+✓ Responsive table, card and dialog components, plus mobile rules in Femke's Lovable project instructions so new screens follow them
+
+Messages to coordinators about the app largely stopped. The share of slots filled at least three days before an event rose from around 60% to 85% in two months. And four new clubs signed up after seeing it on volunteers' phones.
+
+"I designed a beautiful desktop app for people who only ever use their phone. Once it worked on mobile, the clubs started recommending it for me." - Femke Janssen
+
+https://launchstudio.eu/en/blog/why-does-my-app-look-broken-on-mobile
 
 #ResponsiveDesign #MobileUX #Lovable #NonProfit #AIFounder #LaunchStudio #Manifera

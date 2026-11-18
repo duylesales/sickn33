@@ -1,21 +1,32 @@
-🚨 Sem Evers, a facility coordinator turned founder in IJsselstein, built Zaalvrij with Cursor: companies in shared office buildings book meeting rooms, manage visitors and get monthly usage invoices. 26 companies across four buildings - often on shared reception computers. Then a receptionist reported that after logging out, the browser's back button showed another company's bookings. And clicking around still worked. 😳
+🏨 Imagine checking out of a hotel, handing in your key card, and the card still opens your room for the next 30 days.
 
-Cursor had built JWT auth with tokens in localStorage, valid for 30 days, and logout just deleted the token from the browser - a copied token kept working. "Remember me" cookies lacked HttpOnly and SameSite, booking-cancellation forms had no CSRF protection, password changes didn't end other sessions, and a reflected XSS in the visitor name field could have read the token. Here's AI-generated app security before and after fixing sessions and cookies: 🧠
+Copies of it too.
 
-❌ Tokens in localStorage, valid for a month
-❌ Logout that only hides the token
-❌ Cookies without HttpOnly or SameSite, and no CSRF protection
-❌ Sessions that survive a password change
+That's roughly how logout worked in Zaalvrij.
 
-✅ Custom JWT handling replaced by Supabase Auth sessions
-✅ Refresh tokens in HttpOnly, Secure, SameSite=Lax cookies and shorter access-token lifetimes
-✅ Server-side invalidation on logout and password change, plus an eight-hour idle timeout for shared-computer accounts
-✅ CSRF tokens on state-changing forms, the XSS fixed with output escaping and a Content Security Policy - and "log out everywhere"
+Sem Evers, a facility coordinator turned founder in IJsselstein, built Zaalvrij with Cursor: companies in shared office buildings book meeting rooms, manage visitors and get monthly usage invoices. Twenty-six companies across four buildings, often using shared reception computers. Then a receptionist reported that after logging out, pressing the browser's back button showed another company's bookings. And clicking around still worked.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering and its cybersecurity roots, we make sure your logout button ends the session for real. ⚙️
+The key card, examined:
+🔑 JWT tokens stored in localStorage, valid for 30 days
+🔑 Logout only removed the token from the browser. It never invalidated it. A copied token kept working.
+🔑 "Remember me" cookies without HttpOnly or SameSite flags
+🔑 No CSRF protection on the forms that cancel bookings
+🔑 Changing your password didn't end your other sessions
+🔑 A reflected XSS in the visitor name field, meaning a crafted link could have read the token from localStorage
 
-His result: €1,100, four business days. The shared-computer problem disappeared, a larger tenant's security questionnaire was answered with no follow-up questions, and Zaalvrij was adopted in two more office buildings. 🚀
+A front desk that actually deactivates keys (LaunchStudio, 4 business days, €1,100):
+✓ Custom JWT handling replaced with Supabase Auth sessions
+✓ Refresh tokens in HttpOnly, Secure, SameSite=Lax cookies, with shorter access token lifetimes
+✓ Sessions invalidated on the server at logout and on password change
+✓ An eight-hour idle timeout for accounts flagged as shared-computer use
+✓ CSRF tokens on every state-changing form
+✓ The XSS fixed, with output escaping and a Content Security Policy
+✓ A "log out everywhere" button
 
-👉 AI generated app security: before and after sessions and cookie settings: https://launchstudio.eu/en/blog/ai-generated-app-security-before-and-after-sessions-and-cookie-settings
+The shared-computer issue disappeared. A later security questionnaire from a larger tenant was answered without follow-up questions. And Zaalvrij has since moved into two more office buildings.
+
+"Our logout button was a polite suggestion. Now it actually ends the session." - Sem Evers
+
+https://launchstudio.eu/en/blog/ai-generated-app-security-before-and-after-sessions-and-cookie-settings
 
 #SessionSecurity #Cookies #CSRF #Cursor #LaunchStudio #Manifera

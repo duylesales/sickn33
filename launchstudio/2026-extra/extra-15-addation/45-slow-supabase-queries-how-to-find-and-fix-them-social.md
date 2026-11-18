@@ -1,21 +1,33 @@
-🚨 Wessel Hofman built Storingsboek with Lovable and Supabase: maintenance companies log repair requests, assign technicians and track work orders. His largest customer reached around 180,000 work orders - and the main dashboard took nine seconds to load. 😳
+⏱️ 9 seconds ➜ 400 milliseconds
 
-Technicians said their mobile assignment list was barely usable. Wessel was ready to blame Supabase. Here's how to find and fix slow Supabase queries: 🧠
+That's the main dashboard of Storingsboek, before and after.
 
-❌ All open work orders loaded with every column, filtered in JavaScript
-❌ Separate requests per work order for technician and property
-❌ An RLS policy querying team membership for every row, unindexed
-❌ No indexes on key filters, and search using ilike '%term%'
+Wessel Hofman built Storingsboek with Lovable and Supabase: property maintenance companies log repair requests, assign technicians and track work orders. After a year, his biggest customer, a maintenance company serving several housing associations, had around 180,000 work orders. The dashboard took nine seconds. Technicians said their mobile assignment list was barely usable.
 
-✅ Composite indexes for common filters and sorts
-✅ A rewritten policy with (select auth.uid()) and an indexed membership lookup
-✅ A view with only needed columns, joined names and keyset pagination
-✅ Status counts from a trigger-updated summary table and trigram search, tested at production scale
+WHERE THE SECONDS WENT
+⏳ All open work orders loaded with every column, long descriptions and history included, then filtered in JavaScript
+⏳ A separate request per work order for its technician and its property: hundreds of requests per page
+⏳ An RLS policy calling a function that checked team membership for every row, with no index on the membership table
+⏳ No indexes on organisation_id, status or assigned_to
+⏳ Search using ilike '%term%' on descriptions
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we stop your app asking the database to do the same work hundreds of times. 🛠️
+WHERE THEY CAME BACK (LaunchStudio, 8 business days, €3,100)
+⚡ Composite indexes for the most common filters and sorts
+⚡ The policy rewritten with (select auth.uid()) and an indexed membership lookup, plus explicit organisation filters
+⚡ A view returning exactly the needed columns, with technician and property names joined in
+⚡ Keyset pagination for long lists
+⚡ Status counts from a summary table kept up to date by triggers
+⚡ Search on a trigram index over titles and addresses
+⚡ Everything tested on staging with production-scale synthetic data
 
-His result: €3,100, 8 business days. The dashboard loads in about 400 milliseconds, mobile lists in under half a second, and database CPU dropped by more than half. 🚀
+THE NEW TIMES
+Dashboard: about 400 ms
+Technicians' lists on mobile networks: under half a second
+Database CPU during working hours: down by more than half
+Planned compute upgrade: postponed
 
-👉 Is your Supabase app getting slower? Here's how to find and fix slow queries: https://launchstudio.eu/en/blog/slow-supabase-queries-how-to-find-and-fix-them
+"I was ready to blame Supabase. It turned out my app was asking the database to do the same work hundreds of times on every page." - Wessel Hofman
+
+https://launchstudio.eu/en/blog/slow-supabase-queries-how-to-find-and-fix-them
 
 #Supabase #Postgres #Performance #PropTech #AIFounder #LaunchStudio #Manifera

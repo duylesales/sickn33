@@ -1,20 +1,29 @@
-💸 Nienke Hofstra, who runs a lakeside recreation business in Zeewolde, built Bosgids - an AI activity recommendation assistant - using Lovable. It worked beautifully in testing. Two weeks after a modest marketing push, her AI API bill had spiked to nearly €600 for the month, because a single visitor refreshing the page repeatedly could trigger dozens of calls with zero rate limiting in place. 😳
+🧮 The Bosgids formula
 
-Nailing the AI feature's user experience and controlling what it costs to run are two completely different jobs. 🧠
+1 visitor
+× 1 refresh button, pressed again and again
+× 1 AI model API call per recommendation
+× 0 rate limiting
+× 0 caching
+= nearly €600 in AI API costs in one month
 
-❌ No rate limiting - one visitor could trigger dozens of API calls in minutes
-❌ No caching, so common queries like "best family hike near Zeewolde" hit the API every single time
-❌ No cost monitoring dashboard, so the bill spiked silently before anyone noticed
-❌ We've seen founders discover a €400 surprise bill from a single day of unexpected usage
+Nienke Hofstra runs a small lakeside recreation business in Zeewolde. She built Bosgids in Lovable: an AI assistant that suggests hiking routes, water activities and family-friendly spots in the area's forests and lakes, based on what a visitor likes. In testing, it worked beautifully.
 
-✅ Added per-session rate limiting
-✅ Cached common recommendation queries, cutting redundant API calls by more than half
-✅ Built a simple cost-monitoring dashboard to spot trends before they become a problem
+Two weeks after a modest local marketing push, the bill arrived. Far more than a small business can absorb month after month.
 
-At **LaunchStudio**, Manifera's engineers - including a dedicated development center in Ho Chi Minh City - fix exactly this pattern without touching the AI feature's user-facing behavior. 🛡️
+LaunchStudio rewrote the equation (4 business days, €700):
 
-Bosgids's monthly AI costs dropped by roughly 70% with no noticeable change to the visitor experience. 🚀
+1 visitor
+× per-session rate limiting
+× cached answers to common questions like "best family hike near Zeewolde", cutting redundant API calls by more than half
++ a simple cost-monitoring dashboard
+= monthly AI costs down by roughly 70%
 
-👉 Adding AI features in Zeewolde? Watch your API bill before it watches you: https://launchstudio.eu/en/blog/ai-in-app-zeewolde
+Change in visitor experience: none noticeable.
+Founder visibility into usage: for the first time.
+
+"I loved the feature so much I never thought about what it cost to run. LaunchStudio didn't change how it feels to use - they just stopped it from quietly bleeding money." - Nienke Hofstra
+
+Put AI in your app? Do the math before the invoice does: https://launchstudio.eu/en/blog/ai-in-app-zeewolde
 
 #AINativeFounder #LaunchStudio #Manifera #Zeewolde #AICosts

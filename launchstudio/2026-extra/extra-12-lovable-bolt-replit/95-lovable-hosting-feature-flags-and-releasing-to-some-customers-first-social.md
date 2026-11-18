@@ -1,21 +1,32 @@
-🚨 Evelien Hartman's Tandartsplanner handles scheduling and online booking for 58 dental practices. A new booking widget went live to every practice at once on a Monday morning. For practices sharing one chair between a dentist and a hygienist, availability was calculated wrong. By ten o'clock, eleven practices had double-booked chairs. 😳
+🪜 Two ways to release an online booking widget to 58 dental practices
 
-Switching it off meant a rollback that also undid a migration and two fixes - so online booking was down everywhere for the morning. The same month, an AI recall feature spiked in cost and couldn't be stopped without a deploy. Here's how feature flags let you release to some customers first: 🧠
+THE CLIFF
+Monday morning ➜ all 58 at once.
+Practices using split chairs (one chair shared by a dentist and a hygienist in the same hour) got the wrong availability.
+Within three hours, eleven practices had double-booked chairs, and receptionists were phoning patients to move appointments.
+Turning it off meant a rollback. The release also carried a migration and two unrelated fixes, so the rollback took all morning, with online booking down everywhere.
 
-❌ Deploy and release as the same moment, for all 58 practices
-❌ No way to switch off one feature without rolling back everything
-❌ No kill switch for an AI feature that cost money per call
-❌ The largest and most complex practices meeting new features at the same time as everyone else
+THE STAIRS
+Step 1 ➜ a beta group of six practices, including the two largest and two that use split chairs
+Step 2 ➜ 25%
+Step 3 ➜ everyone
+Over two weeks, without a double booking.
 
-✅ A flag table with owners and expiry dates, per-practice overrides and stable percentage rollouts
-✅ Flags evaluated on the server, with only results sent to the browser - never used as a security boundary
-✅ Kill switches for AI suggestions, SMS reminders and the booking widget, each with a clean "temporarily unavailable" state
-✅ A beta group of six practices, errors tagged by active flag, a flag-change audit and tests with flags on and off
+Evelien Hartman built Tandartsplanner in Lovable: appointment scheduling, recall reminders and online booking for 58 dental practices. That same month, an AI recall suggestion feature had a cost spike when a loop called the model over and over, and the only way to stop it was a deploy. 🦷
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we make releases routine for products customers rely on every day. ⚙️
+Building the stairs (LaunchStudio, 3 business days, €2,800):
+✓ A feature flag table with kinds, owners and expiry dates, per-practice overrides and stable percentage rollout
+✓ Flags evaluated on the server in the booking and recall functions, with only the results sent to the browser
+✓ Kill switches for AI recall suggestions, SMS reminders and the booking widget, each with a clean "unavailable" state
+✓ The six-practice beta group, who agreed to get features first
+✓ Errors and slow requests tagged with active flags in the logs
+✓ An audit of flag changes on the admin page, and a weekly report of release flags past their expiry
+✓ Booking calculation tests with the widget's flag on and off
 
-Her result: €2,800, three business days. The fixed widget went out via beta, then 25%, then everyone - zero double bookings. Nine features followed the same way; one bug was caught at three practices and switched off in under a minute. 🚀
+In six months, nine features went out the same way. A problem in a new invoicing screen was caught at three practices and switched off in under a minute. When the model provider went down for two hours, the AI kill switch went on and practices saw a clear message instead of errors.
 
-👉 Lovable hosting: feature flags and releasing to some customers first: https://launchstudio.eu/en/blog/lovable-hosting-feature-flags-and-releasing-to-some-customers-first
+"Releasing to all fifty-eight practices at once meant eleven of them found the bug for us before ten o'clock. Now six practices find it, and I switch it off before the others even see it." - Evelien Hartman
+
+https://launchstudio.eu/en/blog/lovable-hosting-feature-flags-and-releasing-to-some-customers-first
 
 #FeatureFlags #DevOps #SaaS #Lovable #LaunchStudio #Manifera

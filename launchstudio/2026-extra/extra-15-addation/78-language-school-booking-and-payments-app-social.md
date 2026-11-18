@@ -1,21 +1,39 @@
-🚨 Anna Kowalska teaches Dutch to international employees of tech companies in the Brainport region. She built Taalklas with Bolt and Supabase: students choose a course, pay online and get lesson links. It worked well for individuals. But the school's growth came from companies. 😳
+📚 LES 1: Business vocabulary for a language school app
 
-Employers wanted to enrol groups, get one invoice with a PO number and see attendance. Instead, employees paid with their own cards - which several companies refused. Here's what a language school booking and payments app needs: 🧠
+Anna Kowalska, a Polish-born Dutch teacher in Eindhoven, teaches Dutch to international employees of Brainport technology companies. She built Taalklas with Bolt and Supabase: students choose a course by level, pay online and receive lesson links. For individual students, it worked well. But the school's growth came from companies, and the app didn't speak their language.
 
-❌ No company accounts or invoicing
-❌ Group courses overbooked because capacity was checked in the browser
-❌ Lesson times shown without time zones
-❌ One VAT treatment for all courses, against the accountant's advice
+Today's words:
 
-✅ Company accounts with VAT validation, PO references and invoices with payment terms
-✅ Capacity and waiting lists enforced in the database, with holds during payment
-✅ Attendance per session and monthly reports for employers
-✅ Time zone-aware lesson times, configurable VAT per course type and Dutch and English interface
+de werkgever (the employer)
+Wanted to enrol groups of employees. Instead, employees paid by card and claimed expenses, which several companies refused.
+➜ Now: company accounts with contact persons, invoice addresses and validated VAT numbers.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we make your app serve the customers who actually pay. 🛠️
+het inkoopnummer (the purchase order number)
+Employers needed it on one invoice with payment terms.
+➜ Now: purchase order references on invoices with payment terms.
 
-Her result: €5,600, 14 business days. Three tech companies moved their Dutch training budgets to the school within two months, bringing around 120 employee students. 🚀
+vol (full)
+Group courses were sometimes overbooked, because capacity was checked in the browser.
+➜ Now: capacity and waiting lists enforced in the database, with temporary holds during payment.
 
-👉 Running a training or language school? Here's what your booking app needs: https://launchstudio.eu/en/blog/language-school-booking-and-payments-app
+de aanwezigheid (attendance)
+Employers wanted to see it.
+➜ Now: teachers record attendance per session, and employers get monthly reports, which students are told about when they enrol.
+
+de tijdzone (the time zone)
+Lesson times showed without one, so students in other time zones missed sessions.
+➜ Now: times stored with time zones and shown in each student's local time.
+
+de btw (VAT)
+Applied the same to every course, though Anna's accountant advised a different treatment for some types.
+➜ Now: configurable per course type.
+
+Bonus: the interface and emails now come in Dutch and English.
+
+The work: 14 business days, €5,600. Within two months, three technology companies moved their Dutch training budgets to Taalklas, around 120 employee students. Overbooking and time zone mix-ups stopped.
+
+"My students were individuals, but my customers were companies. Once the app could invoice them properly, the school grew faster than I could hire teachers." - Anna Kowalska
+
+https://launchstudio.eu/en/blog/language-school-booking-and-payments-app
 
 #EdTech #LanguageLearning #B2BInvoicing #Brainport #AIFounder #LaunchStudio #Manifera

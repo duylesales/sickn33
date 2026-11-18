@@ -1,21 +1,31 @@
-🚨 Isabel Moreno moved from Madrid to Amsterdam Oost and built Plantenpost in Lovable: monthly houseplant subscriptions, a care-reminder app, plant diagnosis from photos and a marketplace. 2,300 subscribers, three part-time staff. Then a new "skip a month" feature, published straight from Lovable, quietly skipped billing for every annual subscriber. 😳
+🗓️ THE RELEASE CALENDAR, before
 
-A redesigned reminder schedule broke notifications for customers in another time zone. Reverting through Lovable produced a version that differed from the original. There was no staging - and the team had informally stopped releasing on Fridays, because broken weekends cost too much. Here's what makes an AI application production ready for a scale-up: 🧠
+MON-THU: Publish straight from Lovable, and hope.
+FRIDAY: Don't. (An informal rule, after too many weekends of broken features.)
 
-❌ Every change published straight to every customer
-❌ "Testing" by clicking through it yourself
-❌ Rollback by asking the AI tool to undo - and getting something new
-❌ Database and code changes shipped together with no plan
+What "hope" had cost:
+• A new "skip a month" feature accidentally skipped billing for every annual subscriber, for a month
+• A redesigned reminder schedule broke notifications for customers in another time zone
+• Reverting through Lovable produced a version that differed from the original
+• No staging, anywhere
 
-✅ A staging environment with anonymised, production-like data and test-mode Mollie and email
-✅ A Git-based deployment pipeline from Lovable with one-click rollback
-✅ A server-side feature-flag system for percentages and specific customers
-✅ Expand-and-contract migration guidelines, automated checks on signup, subscriptions, billing and reminders - and the billing error corrected with clear communication
+Isabel Moreno moved from Madrid to Amsterdam Oost to start a plant business, and built Plantenpost in Lovable: monthly houseplant deliveries, a care-reminder app, plant health diagnosis from photos, and a marketplace for extra pots and plants. About 2,300 subscribers and three part-time staff. A growing company, releasing like a weekend project.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we help growing AI-built SaaS ship as often as it wants - without betting the business on each release. ⚙️
+What LaunchStudio set up (Launch & Grow, 15 business days, €5,400, plus €49/month):
+✓ A staging environment with anonymised, production-like data, plus Mollie and email in test mode
+✓ A Git-based deployment pipeline from the Lovable project, with one-click rollback
+✓ A simple server-side feature-flag system, supporting percentages and specific customers
+✓ Migration guidelines using expand-and-contract
+✓ Automated checks on signup, subscription changes, billing and reminders
+✓ The billing error corrected, with affected annual subscribers charged correctly and told clearly why
 
-Her result: €5,400 over fifteen business days, plus €49/month. Plantenpost now releases several times a week, Fridays included. Two bad releases were switched off by flag within minutes with only a few percent exposed, and subscribers grew to 3,400. 🚀
+🗓️ THE RELEASE CALENDAR, after
+MON-FRI: Several releases a week. Fridays included.
 
-👉 AI application production ready for scale-ups: staging, feature flags and rollbacks: https://launchstudio.eu/en/blog/ai-application-production-ready-for-scale-ups-staging-feature-flags-and-rollbacks
+In the next quarter, two releases were switched off by flag within minutes after early error spikes, with only a few percent of customers exposed. No release has caused a billing incident since, and subscribers grew to 3,400.
+
+"We were a growing company releasing like a weekend project. Now a bad change affects a few customers for a few minutes, instead of everyone for a weekend." - Isabel Moreno
+
+https://launchstudio.eu/en/blog/ai-application-production-ready-for-scale-ups-staging-feature-flags-and-rollbacks
 
 #FeatureFlags #ScaleUp #SaaS #Lovable #LaunchStudio #Manifera

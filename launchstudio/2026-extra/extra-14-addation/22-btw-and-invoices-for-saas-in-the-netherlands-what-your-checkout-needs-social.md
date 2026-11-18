@@ -1,21 +1,27 @@
-🚨 Kevin Bos, a wedding photographer in Dordrecht, built Fotoplan with Bolt: booking and contract software for photographers, sold as a monthly subscription. Within four months he had 70 subscribers, including photographers in Belgium and Germany. Then his accountant's quarterly review arrived. 😳
+🖍️ THE ACCOUNTANT'S RED PEN: one SaaS quarter
 
-His app could take money from anywhere in Europe. It just couldn't explain to the tax office what that money was. Here's what the review found: 🧠
+✗ 21% Dutch BTW charged to every customer, including Belgian and German businesses that should have been reverse charged
+✗ "Invoices" that were really payment receipts: no KvK number, no customer address, no sequential numbering
+✗ Two refunds handled by deleting the invoice
+✗ A German photographer who asked three times for an invoice with her VAT number on it
 
-❌ 21% Dutch BTW charged to every customer, including Belgian and German businesses that should have been reverse charged
-❌ "Invoices" that were payment receipts - no KvK number, no customer addresses, no sequential numbers
-❌ Two refunds handled by deleting the invoices
-❌ A German customer asking three times for an invoice with her VAT number
+Kevin Bos, a wedding photographer in Dordrecht, built Fotoplan with Bolt: a booking and contract tool for photographers, sold as a monthly subscription. Within four months, 70 subscribers, some in Belgium and Germany. Then came his accountant's quarterly review, and the red marks above.
 
-✅ Business details and VAT ID fields at sign-up, validated through VIES
-✅ Stripe Tax calculating Dutch BTW, reverse charge and OSS rates
-✅ Stripe Invoicing with his company details and sequential numbering
-✅ Credit notes for refunds and a quarterly export for his accountant
+What LaunchStudio fixed (10 business days, €3,100, plus €49/month managed hosting):
+✓ Business details and VAT ID fields at sign-up, with VIES validation
+✓ Stripe Tax calculating Dutch BTW, reverse charge and OSS rates
+✓ Stripe Invoicing with Kevin's company details and sequential numbering
+✓ Credit notes for refunds, never deletions
+✓ A quarterly export for his accountant
+✓ Existing subscribers asked to complete their details at their next login
 
-At **LaunchStudio**, backed by Manifera's 11+ years with Dutch clients from Amsterdam, we build checkouts your accountant can actually work with. 🛠️
+THE NEXT QUARTER'S REVIEW
+✓ Filed without manual corrections
+✓ Earlier invoices corrected with credit notes and new invoices
+✓ Subscribers outside the Netherlands grown to about a third of the total, with no more invoice complaints
 
-💡 His result: €3,100, ten business days. From the next quarter his accountant filed without manual corrections, and international subscribers grew to about a third of the total. 🚀
+"My app could take money from anywhere in Europe. It just couldn't explain to the tax office what that money was." - Kevin Bos
 
-👉 Selling SaaS from the Netherlands? Here's what your checkout and invoices need for BTW: https://launchstudio.eu/en/blog/btw-and-invoices-for-saas-in-the-netherlands-what-your-checkout-needs
+https://launchstudio.eu/en/blog/btw-and-invoices-for-saas-in-the-netherlands-what-your-checkout-needs
 
 #BTW #VAT #SaaS #Stripe #LaunchStudio #Manifera

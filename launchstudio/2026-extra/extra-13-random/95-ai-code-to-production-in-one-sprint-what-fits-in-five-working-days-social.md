@@ -1,21 +1,41 @@
-🚨 Mira Hoekman runs a dog training school in Veendam and built Hondenschool in Lovable: owners book puppy and obedience courses, pay online and get weekly homework videos. Spring registration opened in eight days. She wanted the app live - in one sprint. 😳
+🐶 FIVE WORKING DAYS: a dog school app, from review to registrations
 
-The day-one review confirmed it qualified for a one-week launch: one customer type, simple Mollie payments, Supabase, no integrations. It also found what had to change: owners could see other owners' registrations and dogs' health notes by changing an ID, the admin page had no role check, the Mollie key was in the frontend, payments were confirmed by redirect, backups were off, and the app lived on a preview URL with emails in spam. Here's what fits when AI code goes to production in five working days: 🧠
+THE DEADLINE
+Mira Hoekman runs a dog training school in Veendam and built Hondenschool in Lovable: owners book puppy and obedience courses, pay online and get weekly homework videos. Spring course registration opened in eight days.
 
-❌ Registrations and health notes readable across owners
-❌ An admin page without a role check
-❌ A payment key in the frontend and browser-confirmed payments
-❌ No backups, no domain, emails in spam
+DAY 1: IS ONE WEEK REALISTIC?
+Yes. One customer type plus Mira as admin, simple one-off Mollie payments, Supabase as the backend, no integrations.
+But also, the problems:
+• Owners could see other owners' registrations, and dogs' health notes, by changing an ID
+• The admin page had no role check
+• The Mollie key was in the frontend
+• Payments were confirmed by the redirect
+• Backups were off
+• The app ran on a preview URL, and emails went to spam
+Mira froze all features, and kept her phone close.
 
-✅ Day 1: review and a feature freeze
-✅ Days 2–4: access control, admin roles, key rotation, Mollie webhooks, backups with a tested restore
-✅ Days 2–4: domain, hosting, staging, authenticated email and monitoring
-✅ Day 5: testing on real phones, a double-payment edge case fixed - and go-live that afternoon, with the waiting list deferred to summer
+DAYS 2 TO 4: THE WORK (LaunchStudio, €1,450)
+✓ Access control
+✓ Admin roles
+✓ Key rotation
+✓ Mollie webhooks
+✓ Backups, with a tested restore
+✓ Domain, hosting and staging
+✓ Authenticated email
+✓ Monitoring
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we tell you what must happen this week - and what can wait until after your busy season. ⚙️
+DAY 5: TEST AND LAUNCH
+Mira tested registrations on her phone and her partner's. A double-payment edge case was found, and fixed. Hondenschool went live that afternoon.
 
-Her result: €1,450, five business days. Registration opened on time and 64 dogs enrolled in the spring courses, with no payment mismatches or data complaints. 🚀
+WAITING UNTIL SUMMER
+🕓 A waiting list
+🕓 Course reports
 
-👉 AI code to production in one sprint: what fits in five working days: https://launchstudio.eu/en/blog/ai-code-to-production-in-one-sprint-what-fits-in-five-working-days
+THE SPRING COURSES
+Registration opened on time. 64 dogs enrolled, with no payment mismatches and no data complaints. The waiting list followed as a small summer project.
+
+"One week felt impossible until someone showed me which things had to be done that week and which could wait until summer." - Mira Hoekman
+
+https://launchstudio.eu/en/blog/ai-code-to-production-in-one-sprint-what-fits-in-five-working-days
 
 #OneSprint #FastLaunch #Lovable #SmallBusiness #LaunchStudio #Manifera

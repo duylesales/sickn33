@@ -1,20 +1,24 @@
-📋 Sander Kuipers built FlexCrew, a shift-scheduling app for staffing agencies around Hoogeveen, using Cursor over evenings after his day job - he owned the code outright, no question. Then a logistics client asked, before signing, how employee data was stored and secured. He had no confident answer. 😳
+MYTH: "I own the code, so I'm ready to sell."
+FACT: Ownership answers one question. Procurement asks several more. 📑
 
-Owning your AI-generated code and knowing it's actually safe are two completely different things. 🧠
+Sander Kuipers built FlexCrew in Cursor over several evenings after his day job: a shift-scheduling and timesheet app for staffing agencies around Hoogeveen. Under Cursor's standard terms, he owned the code outright. That was never in question.
 
-❌ Standard AI terms and conditions grant code ownership, but zero warranty on security or correctness
-❌ Employee personal data was stored without row-level security
-❌ Session tokens never expired
-❌ Sander had never had the code reviewed for anything beyond "does it work"
+MYTH: "If nobody has complained, it must be secure."
+FACT: A mid-sized logistics client in the area asked, before signing, how employee data was stored and secured. Sander didn't have confident answers, because the code had never been reviewed for anything beyond "does it work."
 
-✅ Full codebase review against real security standards
-✅ Row-level security and session expiry fixed
-✅ A written data-handling summary Sander could hand straight to procurement
+MYTH: "A review means a rebuild."
+FACT: LaunchStudio's review found two specific issues:
+• Employee personal data stored without row-level security
+• Session tokens that never expired
+Both were fixed in 5 business days, for €1,100 in total.
 
-At **LaunchStudio**, we turn "I own it" into "it's actually ready" - the same rigor Manifera applies across 160+ delivered projects for clients like Vodafone and TNO. 🛡️
+MYTH: "Clients only care about features."
+FACT: Alongside the fixes, LaunchStudio produced a short written summary of FlexCrew's data-handling practices that Sander could hand straight to procurement. The client signed within a week of receiving it.
 
-His result: FlexCrew closed its first paying logistics client, with the security summary now reused in every sales conversation since. 🚀
+The result: FlexCrew closed its first paying logistics client, and the same security summary now goes into every sales conversation.
 
-👉 Selling AI-built software into procurement conversations? Get your code reviewed first: https://launchstudio.eu/en/blog/ai-terms-and-conditions-hoogeveen
+"I owned the code the whole time, that was never the issue. What I didn't have was proof it was actually safe, and that's what actually closed the deal." - Sander Kuipers
+
+Read the AI terms and conditions, then read your own code: https://launchstudio.eu/en/blog/ai-terms-and-conditions-hoogeveen
 
 #AINativeFounder #LaunchStudio #Manifera #AITermsAndConditions #Hoogeveen

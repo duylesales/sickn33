@@ -1,21 +1,26 @@
-🧾 Lars Bakker, a teacher in Groningen, built Toetsmaker in Lovable as a side project: teachers generate and share practice tests. Colleagues loved it, so he added a premium plan via Stripe. Within six months, ~300 teachers and three schools were paying. Then a school asked for an invoice with his KVK and VAT numbers. 😬
+🔁 PERSONAL ➜ BUSINESS: the day a side project needed paperwork
 
-He had neither. His "side project" had been a business for months, and the setup didn't match: 🧠
+Lars Bakker, a teacher in Groningen, built Toetsmaker with Lovable and Supabase as a side project: teachers generate and share practice tests. Colleagues loved it, so he added a premium plan through Stripe. Within six months, around 300 teachers and three schools were paying. Then one school asked for an invoice with his KVK and VAT numbers.
 
-❌ Payments landing in a personal account, without VAT
-❌ Stripe, Supabase and the domain all in his private name
-❌ No processing agreement for the schools' procurement teams
-❌ A mobile app that would show his personal name as the seller
+He had neither. Here's what everything looked like, and where it ended up:
 
-✅ Sole proprietorship registered and VAT arranged, with his accountant
-✅ A new business Stripe account, with active subscriptions migrated and customers informed
-✅ Supabase, hosting and domain moved to business accounts
-✅ Invoices with business name, KVK and VAT numbers, a processing agreement template and an organisation app store account
+Stripe account: personal ➜ a new business account with verified details
+Bank account for payouts: personal ➜ business
+VAT on payments so far: none ➜ registered, with the past period corrected by his accountant
+Supabase project: private email ➜ business account
+Hosting and domain: private email ➜ business accounts
+Invoices: no business details ➜ business name, KVK and VAT numbers
+Processing agreement for schools: none ➜ a template, ready to sign
+App store developer name: his personal name ➜ an organisation developer account
 
-At **LaunchStudio**, backed by Manifera's 11+ years of delivering software to businesses, we don't give legal or tax advice, but we make sure your accounts, payments and invoicing match the business you registered. 🛠️
+How it happened:
+• With his accountant, Lars registered a sole proprietorship, arranged VAT registration and corrected his administration
+• LaunchStudio moved the technical side (7 business days, €2,600): the new Stripe account, migration of active subscriptions with notice to customers, account transfers, invoicing with business details, the processing agreement template, and the mobile version prepared for submission
 
-His result: €2,600, seven business days. Correct invoices, signed agreements, two more schools that term, and an easy switch to a BV later. 🚀
+The three schools got correct invoices and signed processing agreements, and two more subscribed that term. Later, when revenue grew, Lars converted to a BV. That step was easy, because every account was already in the business's name.
 
-👉 Do you need a KVK registration before launching your app? https://launchstudio.eu/en/blog/do-i-need-a-kvk-registration-before-launching-my-app
+"I thought I was still running a side project. The moment schools started paying, I was running a business, and the paperwork had to catch up." - Lars Bakker
+
+https://launchstudio.eu/en/blog/do-i-need-a-kvk-registration-before-launching-my-app
 
 #KVK #Startups #Lovable #Stripe #AIFounder #LaunchStudio #Manifera

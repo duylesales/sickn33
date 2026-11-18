@@ -1,20 +1,27 @@
-🚨 Merel Kramer built StudyLoop - a note-sharing app for study groups - with Lovable, downloaded the code, and shared it with three Utrecht study groups. Within a week, one student found she could read another user's private notes just by changing a number in the URL. 😳
+Dear Utrecht student founder who just hit "Download" on your AI-built app,
 
-An AI download gives you the frontend. It rarely gives you what's underneath. 🧠
+Congratulations. Really. You built something that works, and the code is yours.
 
-❌ No row-level security on the database - every note was technically public to anyone who knew where to look
-❌ The AI tool built query logic to fetch notes by ID without checking who actually owned them
-❌ It looked like a finished product because visually, it was - the missing 80% stayed invisible until a stranger found it
-❌ Roughly 80% of AI-built projects never make it to production, and ~45% ship with at least one vulnerability
+Before you share the link with your study group, try one small test: log in, open one of your own records, and change the number at the end of the URL.
 
-✅ Implement proper row-level security policies scoped to account ownership
-✅ Add session-based authorization checks at the database layer, not just the UI
-✅ Set up a staging environment so future changes get tested before going live
+Merel Kramer didn't know to try that. She built StudyLoop, a note-sharing platform for study groups, with Lovable. She downloaded the code, put it on a free hosting tier and shared it with three groups. Within a week, a fellow student changed a number in the URL and read someone else's private notes.
 
-At **LaunchStudio**, we close exactly this gap - Manifera's 11+ years of production engineering applied to the AI-generated backend a demo hides. 🛡️
+Nobody hacked anything. The database had no row-level security. The AI had written queries that fetched notes by ID without checking who owned them. Every note was technically public to anyone who knew where to look.
 
-Her result: StudyLoop now runs securely for 200+ active student users across three Utrecht study programs, with no unauthorized data access since the fix. 🚀
+Here's what fixed it, in 5 business days for €900:
+- Row-level security policies tied to account ownership
+- Session-based authorization checks at the database layer
+- A staging environment, so changes get tested before real users see them
 
-👉 Downloaded your AI prototype and wondering what's still missing? Get the full breakdown: https://launchstudio.eu/en/blog/ai-download-utrecht
+StudyLoop now serves 200+ active students across three Utrecht study programs, with no unauthorized access since the fix.
+
+Merel put it best: "I thought downloading the code meant I was done."
+
+You're not done yet. But you're closer than you think.
+
+Warmly,
+The LaunchStudio team, backed by Manifera's 11+ years of production engineering
+
+P.S. The full download-to-launch checklist is here: https://launchstudio.eu/en/blog/ai-download-utrecht
 
 #AINativeFounder #LaunchStudio #Manifera #AIDownload #Utrecht

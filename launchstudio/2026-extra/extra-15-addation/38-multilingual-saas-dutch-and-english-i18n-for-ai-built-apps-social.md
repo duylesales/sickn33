@@ -1,21 +1,33 @@
-🚨 Dennis Brouwer built Schoonrooster with Bolt and Supabase: planners assign cleaners to locations, cleaners see tasks on their phones. Many cleaners preferred English, planners and clients expected Dutch, and a Belgian customer asked about French. 😳
+🔎 Spot the bugs. How many can you find?
 
-The app mixed languages depending on how each prompt had been written. Dates, hours and decimal commas were all over the place. Here's how to do Dutch and English i18n properly in an AI-built app: 🧠
+Screen 1: "Jouw taken vandaag"
+Screen 2: "Your tasks today"
+Date: 03/04
+Date: 04-03
+Hours worked: 7.5
+Hours worked: 7,5
+Password reset email: English, always
 
-❌ Some screens in Dutch, others in English
-❌ Dates in month-day-year here, day-month-year there
-❌ Hours shown as "7.5" and "7,5", and Dutch decimal commas breaking invoices
-❌ Password reset emails always in English
+(Illustrative, but every type of bug here was real.)
 
-✅ react-i18next with Dutch and English files and ~640 strings extracted
-✅ A reviewed glossary of cleaning and scheduling terms
-✅ Intl formatting for dates, hours and amounts, and Dutch decimal input
-✅ Per-user language for emails and PDFs, plus /nl/ and /en/ paths with hreflang
+Dennis Brouwer built Schoonrooster with Bolt and Supabase: a scheduling tool for cleaning companies, where planners assign cleaners to locations and cleaners see their tasks on their phones. Many cleaners preferred English. Planners and clients expected Dutch. And a Belgian customer asked about French.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we make your app speak your users' languages on purpose, not by accident. 🛠️
+The app mixed languages unpredictably, depending on how each prompt had been written. Dates switched between month-day-year and day-month-year. Hours showed with a dot in some reports and a comma in others. Invoice totals sometimes failed to parse when planners typed a Dutch decimal comma.
 
-His result: €3,700, 11 business days. Cleaners use English, planners Dutch, support questions about dates and hours dropped sharply - and adding French later took only a translation file and a review. 🚀
+The answers (LaunchStudio, 11 business days, €3,700):
+✓ react-i18next with Dutch and English translation files
+✓ Around 640 strings extracted into a feature-based key structure
+✓ A glossary of cleaning and scheduling terms, reviewed by Dennis and a customer
+✓ Dates, hours and amounts formatted with Intl APIs per user language, and number input that accepts Dutch commas
+✓ A language preference on every profile, with auth and notification emails sent in that language
+✓ PDF reports in the organisation's chosen language
+✓ /nl/ and /en/ paths with hreflang on the marketing site
+✓ Project instructions requiring translation keys for every new string
 
-👉 Building a bilingual SaaS? Here's how to set up i18n in an AI-built app: https://launchstudio.eu/en/blog/multilingual-saas-dutch-and-english-i18n-for-ai-built-apps
+The result: cleaners use English, planners and clients use Dutch, and nobody is confused. Support questions about dates and hours dropped sharply. French later took just a translation file and a review.
+
+"My app spoke three languages by accident. Now it speaks two on purpose, and adding a third was easy." - Dennis Brouwer
+
+https://launchstudio.eu/en/blog/multilingual-saas-dutch-and-english-i18n-for-ai-built-apps
 
 #i18n #Localization #SaaS #CleaningIndustry #AIFounder #LaunchStudio #Manifera

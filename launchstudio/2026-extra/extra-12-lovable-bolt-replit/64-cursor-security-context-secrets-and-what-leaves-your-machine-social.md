@@ -1,21 +1,30 @@
-🚨 Marnix Bouwhuis's Debiteurenbeheer handles receivables for 29 accountancy offices - around 18,000 debtors. While debugging, he exported a production table to a CSV and left it in his project folder. For four months. Cursor indexed it, and he pasted rows from it into a chat twice to ask why amounts didn't match. 😳
+📁 Open your project folder. Now look for any of these:
 
-Nothing was hacked. But his customers' customers' data had gone to a company none of his processing agreements named. Here's what actually leaves your machine when you use an AI editor: 🧠
+• A .csv you exported from production "just for debugging"
+• A database dump
+• An environment file that isn't ignored
+• Key material
 
-❌ A production export sitting inside the project directory, picked up by the editor's index
-❌ Pasting real database rows to get help with a bug
-❌ Privacy and retention settings assumed rather than verified
-❌ No written position on whether dev tooling touches customer data
+If something's there, your editor has probably indexed it. And anything you've pasted into an AI conversation has left your machine.
 
-✅ The export deleted and a rule: production data never enters the project directory
-✅ An ignore file for env files, keys, exports and dumps - plus privacy mode and a business tier
-✅ A realistic seeded dataset, so production data isn't needed for everyday work
-✅ Redact-before-paste, an absolute no-keys rule, and a documented minimal-anonymised-delete procedure
+Marnix Bouwhuis found a production export in his. He built Debiteurenbeheer in Cursor: receivables and payment reminder administration for accountancy offices, 29 offices managing around 18,000 debtors on behalf of their clients. Chasing a reconciliation problem, he exported a production table to CSV and left it in the project directory. It stayed four months. The project index included it, and he twice pasted rows into a conversation to ask why amounts didn't match. 🧾
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we prepare your development practices for the day a customer's auditor asks about them. ⚙️
+The rows held names, addresses, outstanding amounts and payment histories of his customers' customers. He processed that data as a processor, under agreements that named his subprocessors and didn't include any AI tooling. He found it himself, while preparing answers for an accountancy group's audit.
 
-His result: €2,400, two business days. He found it himself, disclosed it fully to the affected offices, and the accountancy group's audit proceeded. 🚀
+Cleaning the folder, and the reason it got dirty (LaunchStudio, 2 business days, €2,400):
+✓ The export deleted, with a rule that production data never enters the project directory
+✓ An ignore file covering environment files, key material, exports and dumps
+✓ Editor privacy settings confirmed, retention disabled, and a business tier taken for its contractual terms
+✓ A seeded development dataset with a realistic shape, so ordinary work doesn't need production data
+✓ A procedure for when a customer's data really must be reproduced: minimum extract, anonymised, deleted afterwards, recorded
+✓ A redaction habit, and an absolute rule against pasting credentials
+✓ A written assessment concluding the four months counted as processing by an undeclared subprocessor, disclosed to the affected offices with the remediation
+✓ The provider's data handling terms filed with the subprocessor documentation
 
-👉 Cursor security: context, secrets and what leaves your machine: https://launchstudio.eu/en/blog/cursor-security-context-secrets-and-what-leaves-your-machine
+The accountancy group accepted the disclosure and went ahead. Marnix credits finding it himself and explaining it fully. The seeded dataset removed the reason he'd been exporting production data in the first place.
+
+"The file sat in my project for four months and I pasted rows from it twice. Nothing was hacked. I had simply sent my customers' customers' data to a company nobody had agreed to." - Marnix Bouwhuis
+
+https://launchstudio.eu/en/blog/cursor-security-context-secrets-and-what-leaves-your-machine
 
 #Cursor #DataPrivacy #GDPR #AppSecurity #LaunchStudio #Manifera

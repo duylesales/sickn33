@@ -1,21 +1,31 @@
-🏃‍♀️ Fleur Jansen runs outdoor bootcamp classes in Haarlem and nearby towns, and built Buitensport with Bolt and Supabase. Every Sunday at 20:00, next week's classes opened, and twenty-spot morning classes filled within minutes. Within a month: classes with more than twenty participants, customers who paid but got no spot and, after the switch to winter time, reminders an hour late. ⏰
+⏰ SUNDAY, 19:59
+Next week's outdoor bootcamp classes are about to open. Popular morning classes: twenty spots each.
 
-The assessment explained every one of them: 🧠
+20:00
+Booking opens. Within minutes, a class has more than twenty confirmed participants. Some customers pay without getting a spot. And the availability page, loading every booking ever made, slows down exactly now.
 
-❌ Availability calculated in the browser, bookings inserted without any database check
-❌ Spots held forever when customers abandoned payment, and confirmations relying on the Mollie redirect
-❌ Times stored without time zone information and reminders scheduled in UTC
-❌ An availability query loading every booking ever made, slowing down exactly at 20:00 on Sundays
+That was every Sunday for Fleur Jansen, who runs bootcamp classes in Haarlem and the towns around it and built Buitensport with Bolt and Supabase. And after the switch to winter time, reminders arrived an hour late, and two classes showed at the wrong time for some users.
 
-✅ Capacity checked and reserved inside a database transaction, with a waitlist when full
-✅ Holds expiring after ten minutes, bookings confirmed by idempotent webhooks and late payments refunded automatically
-✅ Times migrated to Europe/Amsterdam timestamps, reminders in local time and clock-change weeks tested
-✅ An indexed availability query with a short cache, plus a load test of 400 people booking at once
+WHAT WAS HAPPENING AT 20:00
+• Availability was calculated in the browser, and bookings were inserted without a database check, so simultaneous requests all succeeded
+• Spots were held forever when customers abandoned payment
+• Bookings were confirmed by the redirect after paying through Mollie
+• Times were stored without time zone information, with reminders scheduled in UTC
 
-At **LaunchStudio**, backed by Manifera's 11+ years of building scheduling and payment systems for clients such as Vodafone and TNO, we make double bookings impossible and keep times right through every clock change. 🛠️
+THE NEW SUNDAY (LaunchStudio, 7 business days, €2,600)
+✓ A database function that checks and reserves capacity inside a transaction, so overbooking is impossible, with a friendly message and a waitlist when a class is full
+✓ Holds that expire after ten minutes, released by a scheduled job
+✓ Bookings confirmed only by verified, idempotent Mollie webhooks
+✓ Automatic refunds for late payments on expired holds
+✓ Times migrated to Europe/Amsterdam timestamps, reminders in local time, and the clock-change weeks tested
+✓ Availability as an indexed query with a short cache
+✓ A load test: 400 people booking at 20:00
 
-Her result: €2,600, seven business days. About 350 bookings in ten minutes the next Sunday, without one overbooked class. 🚀
+20:10, THE NEXT SUNDAY
+Around 350 bookings in the first ten minutes. Overbooked classes: zero. Lost payments: zero. Reminders stayed on time through the next clock change, and the waitlist refilled cancelled spots by itself.
 
-👉 Production launch for booking platforms: https://launchstudio.eu/en/blog/production-launch-for-booking-platforms
+"Sunday at eight used to be the most stressful moment of my week. Now it is the moment I watch the classes fill up and do nothing." - Fleur Jansen
+
+https://launchstudio.eu/en/blog/production-launch-for-booking-platforms
 
 #Booking #Bolt #Supabase #Mollie #AIFounder #LaunchStudio #Manifera

@@ -1,21 +1,35 @@
-🔧 Lotte Vermeer built Vrijwilligersbank with Bolt and Supabase: local foundations match volunteers with tasks. It ran fine for fourteen months without a single change, so she considered it finished. Then one month brought three problems at once. 😬
+🗓️ ONE MONTH, AFTER FOURTEEN QUIET ONES
 
-Stripe donations stopped being recorded after an API change. Password reset emails started landing in spam. And a dependency alert flagged a critical vulnerability in the upload package. Fixing it all as an emergency cost more than a year of planned maintenance would have. Here's why: 🧠
+For over a year, Lotte Vermeer's platform ran without a single change. She built Vrijwilligersbank with Bolt and Supabase so local foundations can match volunteers with tasks. She considered it finished.
 
-❌ No tests, so every update broke something else
-❌ A framework two major versions behind
-❌ Backups that nobody had ever restored
-❌ No monitoring to spot problems early
+Then, in the same month:
 
-✅ Webhook handler updated and missed donations replayed
-✅ SPF, DKIM and DMARC set up for a transactional email provider
-✅ Tests, automated dependency updates and a framework upgrade
-✅ A backup restore test, monitoring and managed hosting
+💳 Stripe donations stopped being recorded, after an API change her webhook handler didn't support
+📧 Password reset emails started landing in spam, after email authentication requirements tightened
+⚠️ A dependency alert warned of a critical vulnerability in a package used for file uploads
 
-At **LaunchStudio**, backed by Manifera's 11+ years of maintaining production systems, we budget maintenance on what your app does, not on what it cost to build. 🛠️
+Fixing it all in an emergency cost more than a year of planned maintenance would have. No tests, so every update broke something else. A framework two major versions behind, with several packages no longer compatible. And nobody knew whether the backups worked.
 
-Her result: €3,900, ten business days. Since then, routine maintenance takes a few hours a month, and two later platform changes were handled before users noticed. 🚀
+What LaunchStudio did (10 business days, €3,900):
 
-👉 What app maintenance really costs per year, with example budgets: https://launchstudio.eu/en/blog/what-does-app-maintenance-cost-per-year
+FIRST, STABILISE
+✓ The webhook handler updated, and missed donation events replayed
+✓ SPF, DKIM and DMARC for a transactional email provider
+✓ The vulnerable package patched
+
+THEN, FOUNDATIONS
+✓ Tests for donations, volunteer matching and access control
+✓ Automated dependency updates with CI
+✓ A framework upgrade
+✓ A restore test of the backups
+✓ Monitoring for errors and uptime
+✓ Managed hosting with monthly maintenance
+
+THE NEXT TWELVE MONTHS
+A few hours of routine maintenance a month, with dependency updates merged automatically when tests pass. Two later platform changes, a payment API update and an authentication change, were handled before any user noticed.
+
+"I thought finished software stays finished. It turns out the world around it keeps changing, and the app has to keep up." - Lotte Vermeer
+
+https://launchstudio.eu/en/blog/what-does-app-maintenance-cost-per-year
 
 #Maintenance #Bolt #Supabase #SaaS #AIFounder #LaunchStudio #Manifera

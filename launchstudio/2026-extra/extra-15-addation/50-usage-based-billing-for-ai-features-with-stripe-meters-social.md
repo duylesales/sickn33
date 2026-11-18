@@ -1,21 +1,33 @@
-🚨 Julia van Leeuwen built Notulist with Cursor and Supabase: meeting transcription and summaries for municipalities, housing associations and consultancies, at a flat €79 per month. Three customers transcribed over 200 hours a month each - and cost several times what they paid. 😳
+🧮 The math that didn't work
 
-Capping usage risked losing her best customers. But the app had no reliable usage data to price on. Here's how usage-based billing for AI features works with Stripe meters: 🧠
+€79 per month
+− 200+ hours of meetings transcribed and summarised per month
+= a customer who costs several times what they pay
 
-❌ Heavy users costing more than they paid
-❌ Transcription jobs not recorded consistently
-❌ Retried jobs sometimes processed and counted twice
-❌ No way for customers to see their usage
+Julia van Leeuwen built Notulist with Cursor and Supabase: it transcribes and summarises meetings for municipalities, housing associations and consultancies, on one flat €79 plan. Customers loved it. Three of them, a large municipality and two consultancies, each used it for over 200 hours a month. Her AI provider's invoice told the rest of the story.
 
-✅ A usage ledger in Supabase with duration, customer and job ID
-✅ Plans with included hours and metered overage via a Stripe meter
-✅ Usage events from a backend queue with the job ID, so retries never double-count
-✅ A usage page with projections, 80% and 100% alerts, optional caps and monthly reconciliation
+Capping usage would have risked losing her best customers. Usage-based pricing made more sense, but there was no reliable usage data to price on:
+• Transcription jobs weren't recorded consistently
+• Failed jobs were sometimes retried and processed twice
+• Customers couldn't see how much they had used
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we make fair AI pricing easy to explain - and impossible to dispute. 🛠️
+The new math (LaunchStudio, 13 business days, €5,400):
 
-Her result: €5,400, 13 business days. All three heavy customers accepted the new pricing, two upgraded, margins turned healthy across all plans, and no customer has disputed a usage charge. 🚀
+base subscription with included hours
++ metered overage per extra hour, through a Stripe meter
++ a usage ledger recording each completed transcription with duration, customer and job ID
++ usage events sent from a backend queue, with the job ID as identifier, so retries never count twice
++ a usage page with a monthly projection
++ email alerts at 80% and 100% of included hours
++ an optional spending cap
++ monthly reconciliation of the ledger, Stripe invoices and AI provider costs
+= fair pricing customers can check for themselves
 
-👉 Are AI costs eating your margins? Here's how to set up usage-based billing: https://launchstudio.eu/en/blog/usage-based-billing-for-ai-features-with-stripe-meters
+THE RESULT
+All three heavy users accepted the new pricing after seeing their usage pages. Two moved to bigger plans. Gross margin on AI features went from negative for heavy users to healthy on every plan. Disputed usage charges: none.
+
+"My best customers were my most expensive ones. Showing them exactly what they used made the conversation about fair pricing easy." - Julia van Leeuwen
+
+https://launchstudio.eu/en/blog/usage-based-billing-for-ai-features-with-stripe-meters
 
 #Stripe #UsageBasedPricing #AISaaS #GovTech #AIFounder #LaunchStudio #Manifera

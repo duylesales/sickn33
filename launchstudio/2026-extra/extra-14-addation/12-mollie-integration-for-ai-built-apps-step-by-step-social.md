@@ -1,21 +1,33 @@
-🚨 Sjoerd Wiersma, treasurer of a korfball club in Leeuwarden, built Contributieman with Bolt so members could pay their annual fees online through Mollie. After the first month, the app said 212 members had paid. Mollie said 174. 😳
+📒 END OF MONTH RECONCILIATION
 
-The gap had one cause: the app trusted the return page. Anyone who landed on it was marked as paid - including members who cancelled in their banking app. Here's what was missing: 🧠
+The app says: 212 fees paid
+Mollie says: 174 fees paid
+Difference: 38 members who hadn't paid, marked as paid
 
-❌ No Mollie webhook at all
-❌ Members marked paid on the redirect, even after cancelled or expired payments
-❌ The Mollie live key in a frontend environment file
-❌ Amounts sent from the browser
+Sjoerd Wiersma, treasurer of a korfball club in Leeuwarden, built Contributieman with Bolt so members could pay annual fees and match day contributions online instead of by bank transfer. The club already had a Mollie account, so Bolt generated a flow that sent members to Mollie and back.
 
-✅ Payment creation moved into a Supabase edge function, with amounts from the database
-✅ A Mollie webhook that fetches the real status from Mollie's API and updates memberships idempotently
-✅ Every status mapped to a clear message for members
-✅ The exposed key rotated, plus a monthly reconciliation report
+Why the two columns disagreed:
+• The return page marked anyone who reached it as paid, including members who cancelled in their banking app or let the payment expire
+• There was no webhook at all
+• The Mollie live key sat in a frontend environment file
+• Amounts were sent from the browser
 
-At **LaunchStudio**, backed by Manifera's 11+ years of payment integrations from Amsterdam, we build the parts of a Mollie integration that AI tools skip. 🛠️
+What LaunchStudio changed (7 business days, €1,700):
+✓ Payment creation moved into a Supabase edge function, with amounts set on the server
+✓ A Mollie webhook that fetches the real payment status from the API and updates memberships idempotently
+✓ Every status mapped to a clear message for members
+✓ The exposed key rotated
+✓ A monthly reconciliation report comparing app and Mollie totals
 
-💡 His result: €1,700, seven business days. The next reconciliation matched to the cent, the club collected 96% of annual fees online, and the 38 members wrongly marked as paid settled within two weeks. 🚀
+NEXT MONTH'S RECONCILIATION
+The app says: matches Mollie
+Mollie says: matches the app
+Difference: €0.00
 
-👉 Using Mollie in a Lovable, Bolt or Cursor app? Here's the full integration step by step: https://launchstudio.eu/en/blog/mollie-integration-for-ai-built-apps-step-by-step
+That season, the club collected 96% of annual fees online. The 38 members wrongly marked as paid were contacted and settled within two weeks.
+
+"The app said everyone had paid. The bank said otherwise. I didn't know a webhook was the thing standing between those two numbers." - Sjoerd Wiersma
+
+https://launchstudio.eu/en/blog/mollie-integration-for-ai-built-apps-step-by-step
 
 #Mollie #iDEAL #Supabase #Bolt #LaunchStudio #Manifera

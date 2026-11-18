@@ -1,21 +1,35 @@
-🚨 Julia Snoek manages a handful of beach huts in Castricum and built Strandhuisjes in Bolt: visitors see which huts are free, book a day or a week, and pay through a hosted Mollie checkout. After reading about AI app security, she was convinced she needed a large, expensive project - and postponed launch by a month. 😳
+☑️ THE CHECKLIST that surprised one beach hut owner
 
-The review found she was close. One user type, Supabase Auth used as designed, the two-account test already failing correctly, code in GitHub and accounts in her own name. What needed fixing was small: payment confirmation partly relied on the browser redirect, backups weren't enabled, booking emails landed in spam, signup had no rate limit, and the app ran on a preview URL. Here are the signs your AI prototype is closer to production than you think: 🧠
+ALREADY IN PLACE
+✅ One user type, kept simple
+✅ Supabase Auth, used as designed
+✅ The two-account test already failing correctly: users couldn't see each other's data
+✅ The code in GitHub
+✅ Every account in her own name
+✅ Payments through a hosted Mollie checkout
 
-❌ Assuming everything is wrong after reading worst-case articles
-❌ Postponing launch without a review
-❌ Partly browser-based payment confirmation
-❌ No backups and emails going to spam
+STILL TO DO
+⬜ Payment confirmation relied partly on the browser redirect
+⬜ Backups weren't enabled
+⬜ Booking emails came from a default sender, and landed in spam
+⬜ No rate limiting on sign-up
+⬜ The app ran on a preview URL
 
+Julia Snoek manages a handful of beach huts in Castricum and built Strandhuisjes in Bolt: visitors see which huts are free for a day or a week, book, and pay through Mollie. After reading about AI app security, she was convinced she needed a big, expensive project, and postponed launch by a month.
+
+She'd read so much about what could go wrong that she assumed everything had. It turned out to be five small things.
+
+Ticking the last five boxes (LaunchStudio, 3 business days, €900):
 ✅ Confirmation moved fully to Mollie webhooks
-✅ Backups enabled and a restore tested
-✅ An authenticated sending domain and rate limits on signup
-✅ Strandhuisjes on Julia's own domain, with monitoring
+✅ Backups enabled, and a restore tested
+✅ An authenticated sending domain
+✅ Rate limits on sign-up
+✅ Julia's own domain, with monitoring
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we tell you honestly when your app needs five small fixes, not a big project. ⚙️
+Strandhuisjes launched in time for the May holidays, and was fully booked for most summer weekends. Julia spent a fraction of her budget, and put the rest into local advertising.
 
-Her result: €900, three business days. Strandhuisjes launched in time for the May holidays, was fully booked most summer weekends, and Julia spent the rest of her budget on local advertising. 🚀
+"I'd read so much about what could be wrong that I assumed everything was. It turned out five small things were." - Julia Snoek
 
-👉 AI prototype to production: ten signs your app is closer than you think: https://launchstudio.eu/en/blog/ai-prototype-to-production-ten-signs-your-app-is-closer-than-you-think
+https://launchstudio.eu/en/blog/ai-prototype-to-production-ten-signs-your-app-is-closer-than-you-think
 
 #StartupLaunch #Bolt #Mollie #SmallBusiness #LaunchStudio #Manifera

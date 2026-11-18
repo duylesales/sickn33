@@ -1,21 +1,31 @@
-🚨 Pieter-Jan Claes, an HR consultant in Ghent, built Startdag with Lovable and Cursor: onboarding software where companies send new hires contracts and policies to sign. A Dutch staffing agency with 300 placements a year wanted to roll it out - after an independent security review. 😳
+📊 AUDIT SCORECARD: Startdag
 
-The app passed every demo. The audit found eleven issues, three of them critical. Here's what "nothing looked wrong" was hiding: 🧠
+Total findings: 11
+🔴 Critical: 3
+🟠 High and medium: the rest, including missing retention rules for personal data and a non-EU email provider without a documented transfer basis
 
-❌ Signed contracts in a public storage bucket with predictable file names
-❌ An RLS policy that let any logged-in user list every company's documents
-❌ An admin endpoint that trusted an is_admin value sent from the browser
-❌ No retention rules, and an email provider outside the EU without a documented transfer basis
+Pieter-Jan Claes, an HR consultant in Ghent, built Startdag with Lovable and refined it in Cursor: small companies send new hires contracts, policies and first-week schedules, and track what each person has signed. Two Flemish companies used it. Then a Dutch staffing agency with 300 placements a year wanted to roll it out, if an independent security review came first.
 
-✅ Private bucket with signed, expiring URLs
-✅ RLS policies rewritten around company membership
-✅ Admin checks moved to the server
-✅ Retention rules plus documented processors and data locations for the agency's privacy officer
+The demo had looked perfect. The three critical findings:
+🔴 #1 Signed contracts in a public storage bucket, with predictable file names
+🔴 #2 A Row Level Security policy on documents that let any logged-in user list every company's documents
+🔴 #3 An admin endpoint that trusted an is_admin value sent from the browser
 
-At **LaunchStudio**, backed by Manifera's security-first engineering and 11+ years of delivery, a vibe code audit gives you prioritised findings, fixes and a summary you can share with customers. 🛠️
+Pieter-Jan chose audit plus fixes (14 business days, €5,400):
+✓ Documents moved to a private bucket with signed, expiring URLs
+✓ RLS policies rewritten around company membership
+✓ Admin checks moved to the server
+✓ Retention rules that delete candidate documents after a configurable period
+✓ Processors and data locations documented for the agency's privacy officer
 
-💡 His result: €5,400, fourteen business days. The re-test confirmed every critical and high finding fixed, the agency signed a two-year contract, and the audit summary is now a standard attachment in his sales calls. 🚀
+RE-TEST SCORECARD
+🔴 Critical: 0 open
+🟠 High: 0 open
 
-👉 Built with Lovable, Bolt, Cursor, v0 or Replit? See what a vibe code audit covers: https://launchstudio.eu/en/blog/ai-generated-code-audit-what-a-vibe-code-audit-covers
+The staffing agency signed a two-year contract. And the audit summary is now a standard attachment in Pieter-Jan's sales conversations.
+
+"Without the audit I would have sold contracts with a public link to every signed document. The scary part is that nothing looked wrong." - Pieter-Jan Claes
+
+https://launchstudio.eu/en/blog/ai-generated-code-audit-what-a-vibe-code-audit-covers
 
 #VibeCoding #AISecurity #CodeAudit #GDPR #LaunchStudio #Manifera

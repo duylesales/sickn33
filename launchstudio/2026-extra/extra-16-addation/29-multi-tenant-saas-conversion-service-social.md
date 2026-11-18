@@ -1,21 +1,33 @@
-🌱 Koen Janssen managed a garden centre in Venlo and built Plantvoorraad with Lovable and Supabase to track stock, plant care and supplier orders. Other garden centres saw it at a trade fair and wanted it too. His quick fix: copy the Lovable project and create a new Supabase project for every customer. By copy number seven, it was unmanageable. 😵
+1 garden centre.
+1 Lovable project.
+7 copies, one for each new customer.
+7 places to make every fix.
+7 imports for every supplier price update.
+Some copies weeks behind. 🌱
 
-Every fix had to be made seven times, and the original app had no tenant concept at all: 🧠
+Koen Janssen managed a garden centre in Venlo and built Plantvoorraad with Lovable and Supabase to track stock, plant care schedules and supplier orders. Other garden centres saw it at a trade fair and wanted it. So Koen copied the project for each one, with a new Supabase project every time. By copy seven, that approach had stopped working.
 
-❌ Seven separate databases and projects drifting apart
-❌ Supplier price updates imported into each database one by one
-❌ Every table shared by all users, with no organisation link
-❌ No way to invite colleagues or bill per location
+The original app had no idea of tenants at all. Every table was shared by the users of one single garden centre.
 
-✅ An organisation model with owner, manager and staff roles
-✅ An organisation column on 23 tables, each protected by Row Level Security
-✅ Invitations, an organisation switcher for regional managers and Stripe billing per organisation
-✅ Seven databases merged into one, rehearsed four times, with an isolation test suite
+The conversion (LaunchStudio, 18 business days, €6,800, plus €49/month):
+1 organisation model, with owner, manager and staff roles
+23 tables given an organisation column, each with its own RLS policy
+Shared supplier catalogues, kept in shared tables with read-only access
+Invitations, plus an organisation switcher for regional managers working across locations
+1 Stripe subscription per organisation, priced by number of locations
+7 databases merged into 1
+4 rehearsals of the migration scripts, on copies, with a report of every record moved
+1 isolation test suite checking every table and storage path
+1 cutover, on a Sunday night
 
-At **LaunchStudio**, backed by Manifera's 11+ years of building multi-customer platforms for clients such as Vodafone and TNO, we turn single-customer apps into multi-tenant SaaS at a fixed price. 🛠️
+The new numbers:
+7 garden centres logging in on Monday, all data intact
+1 app to maintain
+30 garden centres six months later, each onboarded in minutes with an invitation
+1 supplier price import for all of them
 
-His result: €6,800, eighteen business days. One app instead of seven, and growth to 30 garden centres, each onboarded in minutes. 🚀
+"Copying the app felt like the quick solution. It was quick for one customer and impossible for thirty. Now a new customer is just a new organisation." - Koen Janssen
 
-👉 Multi-tenant SaaS conversion service: https://launchstudio.eu/en/blog/multi-tenant-saas-conversion-service
+https://launchstudio.eu/en/blog/multi-tenant-saas-conversion-service
 
 #SaaS #MultiTenant #Supabase #Lovable #AIFounder #LaunchStudio #Manifera

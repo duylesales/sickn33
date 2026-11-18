@@ -1,21 +1,28 @@
-🚨 Ingrid Hoekstra coordinates volunteers for food banks around Leeuwarden. In three weekends, Firebase Studio built her Inzetrooster: volunteers pick shifts, coordinators see who's coming. Two weeks into a pilot with four locations, a volunteer who worked in IT warned her: the app's data was readable by anyone who knew the project ID. 😳
+One line of code:
 
-The rules were still the prototype's `if request.auth != null` - so every signed-in volunteer could read every other volunteer's phone number and address. Here's what to fix before real users arrive: 🧠
+`if request.auth != null`
 
-❌ Prototype Security Rules exposing personal data
-❌ A Firestore database in a US multi-region
-❌ An AI reminder feature callable without limits
-❌ All testing done on the live database
+It reads like security. It means: "anyone who is signed in can read everything." 🔓
 
-✅ A new production project with Firestore in europe-west4, pilot data migrated
-✅ Rules limiting volunteers to their own profile and their location's schedule
-✅ App Check enforced, the AI feature behind auth with a daily quota, budget alerts
-✅ The original project turned into staging, with deploys from GitHub
+Ingrid Hoekstra coordinates volunteers for a network of food banks around Leeuwarden. Tired of spreadsheets, she used Firebase Studio to build Inzetrooster in three weekends: volunteers pick shifts, coordinators see who's coming, and each location manages its own schedule.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we give you the confidence to put real people's data in your app. 🛠️
+Two weeks into a pilot with four locations, a volunteer who worked in IT warned her. The app's Security Rules were still that prototype line. Every signed-in volunteer could read every other volunteer's phone number and address.
 
-Her result: €2,450, 8 business days. Inzetrooster relaunched across eleven food bank locations, now used by around 380 volunteers, with monthly Firebase costs below €25. 🚀
+The same review found three more things hiding behind the clean interface:
+• Firestore created in a US multi-region
+• An AI feature that drafted shift reminders, callable without any limit
+• All testing done on the live database
 
-👉 Building with Firebase Studio? Here's what to fix before real users: https://launchstudio.eu/en/blog/firebase-studio-app-to-production-what-to-fix-before-real-users
+What LaunchStudio replaced that one line with (8 business days, €2,450):
+🇪🇺 A new production project with Firestore in europe-west4, pilot data migrated
+🔐 Rules limiting volunteers to their own profile and their location's schedule, with coordinators scoped by a custom claim
+🛡️ App Check enforced, the AI feature moved behind authentication with a daily quota, and budget alerts set
+🧪 The original project turned into staging, with deploys from GitHub
+
+Today: eleven food bank locations, around 380 volunteers, monthly Firebase costs below €25. Ingrid still builds in Firebase Studio, and tests on staging first.
+
+"Firebase Studio gave me the app. LaunchStudio gave me the confidence to put real people's addresses in it." - Ingrid Hoekstra
+
+Check your own rules before real users arrive: https://launchstudio.eu/en/blog/firebase-studio-app-to-production-what-to-fix-before-real-users
 
 #FirebaseStudio #Firebase #GDPR #NonProfit #AIFounder #LaunchStudio #Manifera

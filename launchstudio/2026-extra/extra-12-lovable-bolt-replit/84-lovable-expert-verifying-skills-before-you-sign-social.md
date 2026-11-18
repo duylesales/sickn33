@@ -1,21 +1,28 @@
-🚨 Erwin Batelaan's Bezorgplanning plans delivery routes for 16 bakeries and regional food suppliers. He needed it secured and launched to 40 more companies. He picked the most confident of three suppliers - available that week - with no trial, no reference, nothing but a conversation. 😳
+🚩 Red flags, green flags: choosing who secures your AI-built app
 
-Five weeks and €8,200 later: the frontend had been rebuilt in a framework the supplier preferred (never discussed), and the security work he was actually paying for was two days at the end - moving one API key. The authorisation gaps were still there. Here's how to verify a "Lovable expert" before you sign: 🧠
+Erwin Batelaan built Bezorgplanning in Lovable: delivery route planning for bakeries and regional food suppliers, 16 companies. He needed it secured and launched to 40 more. Three suppliers responded.
 
-❌ Choosing on confidence and immediate availability
-❌ No reference call with someone still running a product they built
-❌ No small paid trial before committing
-❌ A rebuild nobody asked for, while the real problem waited
+🚩 He chose the one who sounded most confident.
+🚩 Who was available immediately.
+🚩 With no trial, no reference, and no check beyond a conversation.
+🚩 Who spent the first three weeks rebuilding the frontend in a framework he preferred, which nobody had discussed. It looked the same and worked slightly less well.
+🚩 And left the security work, the actual reason for hiring him, to two days at the end. That consisted of moving one API key.
 
-✅ A one-day paid assessment: a written report with 19 findings - 23 of 27 endpoints had no authorisation check, and storage was public
-✅ Five revealing questions put to both remaining candidates
-✅ One reference call with a founder still running a product they'd built
-✅ A fixed-price engagement quoted from the report, with a handover included
+After five weeks and €8,200, Erwin had a product he understood less well than before, with the authorisation gaps he'd been worried about still there. 🥖
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we'll do that assessment as your trial - paid, a day or two, with a report you own whatever you decide. ⚙️
+The second time:
+✅ A paid one-day assessment (€1,000) with a written report: 19 findings with estimates. It established that 23 of 27 endpoints had no authorisation check, and that storage was public.
+✅ Five questions put to both remaining candidates, whose answers differed usefully
+✅ One reference call with a founder still running a product the supplier had built, who described what had been left behind
+✅ A fixed-price engagement quoted from the report
+✅ A handover included in the scope
 
-His result: €6,900 in total (€1,000 assessment + €5,900 fixed price), nine business days - and a product he can maintain himself. Two hours of checking would have saved five weeks and €8,200. 🚀
+The second engagement, with LaunchStudio: €5,900 and nine business days, covering authorisation across all 27 endpoints, private storage, payments, and launch. And Erwin can maintain the result.
 
-👉 Lovable expert: verifying skills before you sign: https://launchstudio.eu/en/blog/lovable-expert-verifying-skills-before-you-sign
+His math: a day of assessment and two hours of checking would have saved him five weeks and €8,200.
+
+"I picked the one who sounded most certain and was free that week. He rebuilt my frontend in a framework he preferred, and the security work I was paying for was two days at the end." - Erwin Batelaan
+
+https://launchstudio.eu/en/blog/lovable-expert-verifying-skills-before-you-sign
 
 #Lovable #NoCode #HiringDevelopers #Startups #LaunchStudio #Manifera

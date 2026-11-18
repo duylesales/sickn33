@@ -1,21 +1,30 @@
-🚨 Wessel Fokkinga's Bouwadmin handles quotes, invoices, hours and materials for 58 small construction firms - all Dutch. But the site was in English, on a .com, with no address, no phone number and prices with no VAT indication. It ranked for nothing. 😳
+📞 A sales call, more or less as it went (dramatized; the questions really were asked by two prospects)
 
-Two prospects asked on sales calls whether the company was even Dutch, and where their data was stored. Here's how a Netherlands-only product gets visible locally: 🧠
+PROSPECT: Before we go on, are you actually a Dutch company?
+WESSEL: Yes, we're in Amersfoort.
+PROSPECT: The website's in English. On a .com.
+WESSEL: Right.
+PROSPECT: No address anywhere. Prices in euros, but no word on BTW.
+WESSEL: ...
+PROSPECT: And where is our data stored?
 
-❌ A .com domain and English-first copy for an all-Dutch customer base
-❌ No KvK, VAT number, address or Dutch phone number anywhere
-❌ Prices without "excl. BTW" for B2B buyers
-❌ Nothing about the things that are specifically Dutch
+Wessel Fokkinga built Bouwadmin in Lovable: quotes, invoices, hours and material costs for small construction and renovation firms. 58 firms use it, every one of them Dutch. The home page could have described a product from anywhere, and it ranked for nothing. 🏗️
 
-✅ A .nl domain made primary, with permanent redirects from the .com
-✅ Dutch-first site, full company details in text, and organisation structured data with the Amersfoort address
-✅ Four Dutch-specific pages: BTW and the quarterly return, Dutch accounting integrations, iDEAL and direct debit, and AVG data storage
-✅ A business profile for the registered office, two construction association listings, and six named case studies
+Making the site answer before anyone has to ask (LaunchStudio, 3 business days, €3,100):
+✓ A .nl domain as primary, with permanent redirects from the .com
+✓ Dutch as the primary language, with English cut to two pages
+✓ Full company details in text in the footer and on a contact page: KvK and VAT numbers, a Dutch phone number
+✓ Organisation structured data with the Amersfoort address
+✓ Prices shown excluding BTW, the way B2B buyers expect
+✓ Four pages on the Dutch specifics: BTW and the quarterly return, links with two Dutch accounting packages, iDEAL and direct debit for customer payments, and where data is stored under the AVG
+✓ A Google Business Profile for the registered office, without opening hours
+✓ Listings with two construction sector associations and a Dutch software comparison site
+✓ Six named case studies, with real firm names and towns (with permission), replacing three anonymous ones
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we check whether your site actually reads as Dutch - several don't, and their owners are surprised. 🇳🇱
+Five months later, organic traffic went from 60 to 890 visits a month. The BTW page alone brings 310 of those and converts at four times the site average. The two association listings produced eleven enquiries in the first quarter. That BTW article took two hours, and it outperforms everything else he's written.
 
-His result: three business days and €3,100 later, organic traffic grew from 60 to 890 visits a month in five months. The BTW page alone brings 310 and converts at four times the site average, and the association listings produced eleven enquiries in the first quarter. 🚀
+"My own customers were asking if I was a Dutch company. Nothing on the site said so - not the domain, not the language, not an address, not a phone number." - Wessel Fokkinga
 
-👉 Local visibility for a Netherlands-only product: https://launchstudio.eu/en/blog/lovable-seo-local-visibility-for-a-netherlands-only-product
+https://launchstudio.eu/en/blog/lovable-seo-local-visibility-for-a-netherlands-only-product
 
 #LocalSEO #SEO #DutchMarket #Lovable #LaunchStudio #Manifera

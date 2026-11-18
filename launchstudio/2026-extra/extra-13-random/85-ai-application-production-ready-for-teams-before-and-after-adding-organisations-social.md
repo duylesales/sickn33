@@ -1,21 +1,33 @@
-🚨 Nienke Hellinga, a secondary-school teacher in Franeker, built Lesvoorbereiding in Lovable: plan lessons, link materials to curriculum goals and generate differentiated exercises. About 1,300 teachers subscribed individually. Then three school groups asked for school licences with shared plans per department and central billing. Her first attempt - a Lovable-generated "share with colleague" feature - backfired within days. 😳
+BEFORE ➜ AFTER: from a teacher's tool to a school product 📚
 
-Shared links gave access to the sharer's entire library, and teachers who changed schools kept access to former colleagues' materials. Sharing was a feature; schools needed a structure. Here's what making an AI application production ready for teams looks like - before and after adding organisations: 🧠
+Nienke Hellinga, a secondary-school teacher in Franeker, built Lesvoorbereiding in Lovable: teachers plan lessons, link materials to curriculum goals and generate differentiated exercises. About 1,300 teachers used it individually, on monthly subscriptions. Then three school groups asked for school licences, with shared lesson plans per department and central billing.
 
-❌ "Share" links exposing whole libraries
-❌ No concept of school, department or role
-❌ Access that survives a teacher changing schools
-❌ Billing only per individual
+Her first try was a Lovable-generated "share with colleague" feature. Within days, it caused problems.
 
-✅ Schools as organisations with departments, memberships and four roles
-✅ All 1,300 existing users migrated into personal workspaces without changing what they saw
-✅ Access policies rewritten around membership and role, with negative tests for each, plus expiring email-bound invitations and immediate removal
-✅ Seat-based school licences through Stripe and a workspace switcher for teachers at several schools - rehearsed on staging with anonymised data before a Sunday-evening go-live
+BEFORE: Sharing a link gave access to the sharer's entire library.
+AFTER: Schools as organisations, with departments, memberships and four roles.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we turn a single-user tool into a structure organisations can buy. ⚙️
+BEFORE: Teachers who changed schools kept access to former colleagues' materials.
+AFTER: Expiring, email-bound invitations, and immediate removal when someone leaves.
 
-Her result: €3,800 over thirteen business days, plus €49/month. All three school groups signed - around 900 teachers - no individual lost access to their materials, and school licences now make up most of the revenue. 🚀
+BEFORE: Access built around individual users.
+AFTER: Every access policy rewritten around membership and role, with negative tests for each.
 
-👉 AI application production ready for teams: before and after adding organisations: https://launchstudio.eu/en/blog/ai-application-production-ready-for-teams-before-and-after-adding-organisations
+BEFORE: 1,300 users on an individual model.
+AFTER: All 1,300 migrated into personal workspaces, seeing exactly what they saw before. Rehearsed on staging with anonymised data, then run live on a Sunday evening.
+
+BEFORE: Billing per teacher.
+AFTER: Billing per organisation, with seat-based school licences through Stripe.
+
+BEFORE: One school per teacher.
+AFTER: A workspace switcher, for teachers who work at more than one school.
+
+The work: Launch & Grow, 13 business days, €3,800, plus €49/month.
+
+All three school groups signed licences, covering around 900 teachers. No individual lost access to their own materials during the migration. And school licences now bring in most of Lesvoorbereiding's revenue.
+
+"Sharing was a feature. Schools needed a structure. Those turned out to be very different things to build." - Nienke Hellinga
+
+https://launchstudio.eu/en/blog/ai-application-production-ready-for-teams-before-and-after-adding-organisations
 
 #MultiTenant #EdTech #B2BSaaS #Lovable #LaunchStudio #Manifera

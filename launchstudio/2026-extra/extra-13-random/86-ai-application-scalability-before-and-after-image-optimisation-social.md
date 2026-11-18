@@ -1,21 +1,34 @@
-🚨 Vera Lammers rents out four holiday homes near Valkenburg and built Vakantiehuisje with v0 and a simple booking backend: full-width galleries of each home and the South Limburg hills, with direct booking to avoid platform commissions. The photos came straight from a professional photographer - 6 to 10 MB each. The homepage weighed 48 MB. 😳
+🏷️ PRODUCT LABEL: a holiday home homepage
 
-On mobile, the first photo took about nine seconds to appear. Search Console flagged most pages "poor" for Core Web Vitals. Most visitors arrived from Instagram on their phones and left before the page finished loading. The hosting bandwidth limit was exceeded twice in the spring holiday, and guest review photos kept their GPS data. Here's AI application scalability before and after image optimisation: 🧠
+BEFORE
+Net weight: 48 MB
+Per photo: 6 to 10 MB, straight from a professional photographer
+First photo on mobile: around 9 seconds
+Core Web Vitals: most pages "poor"
+Bandwidth limit: exceeded twice during the spring holiday
+Extra ingredient: GPS data in guests' review photos
 
-❌ Original camera files served in 400-pixel cards
-❌ Everything loading at once, with no dimensions declared
-❌ No CDN, no modern formats
-❌ Location metadata kept in guest photos
+Vera Lammers rents out four holiday homes near Valkenburg and built Vakantiehuisje with v0 and a simple booking backend: full-width galleries of each home, the South Limburg hills and nearby attractions, with direct booking to avoid platform commissions. Most visitors came from phones, via Instagram. And most left before the page finished loading.
 
-✅ An upload pipeline generating AVIF and WebP variants in four sizes
-✅ Responsive galleries with lazy loading below the fold and eager loading for the hero image
-✅ Declared image dimensions and CDN delivery with long cache lifetimes
-✅ Metadata stripped from existing and new uploads, and the whole photo library reprocessed
+The photos were the reason people booked. They were also the reason people left before seeing them.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we change your pages' weight - never the design your visitors love. ⚙️
+THE NEW RECIPE (LaunchStudio, 5 business days, €1,400)
+✓ An upload pipeline generating AVIF and WebP variants in four sizes
+✓ Responsive galleries, with lazy loading below the fold and eager loading for the hero image
+✓ Image dimensions declared
+✓ Everything served through a CDN, with long cache lifetimes
+✓ Metadata stripped from new and existing uploads
+✓ The whole existing photo library reprocessed
 
-Her result: €1,400, five business days. The homepage dropped from 48 MB to about 1.9 MB, the main image appears in roughly a second on 4G, most pages moved to "good", direct bookings rose by about a quarter - and bandwidth fell below the plan's limit. 🚀
+AFTER
+Net weight: about 1.9 MB
+Main image on 4G: around 1 second
+Core Web Vitals: most pages "good"
+Bandwidth: below the plan's limit
+Direct bookings: up roughly a quarter the following summer
 
-👉 AI application scalability: before and after image optimisation: https://launchstudio.eu/en/blog/ai-application-scalability-before-and-after-image-optimisation
+"The photos were the reason people booked. They were also the reason people left before they saw them." - Vera Lammers
+
+https://launchstudio.eu/en/blog/ai-application-scalability-before-and-after-image-optimisation
 
 #WebPerformance #CoreWebVitals #v0 #HolidayRental #LaunchStudio #Manifera

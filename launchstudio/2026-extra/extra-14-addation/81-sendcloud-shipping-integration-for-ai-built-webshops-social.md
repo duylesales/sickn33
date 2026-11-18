@@ -1,21 +1,33 @@
-🚨 Joyce Lambregts makes scented candles in her Tilburg workshop and built Kaarsenhuisje in Lovable, with iDEAL checkout. Around the December holidays, orders jumped to about 60 a day - and Joyce spent every evening copying addresses into PostNL's website and emailing tracking codes. Three parcels went to the wrong addresses. 😳
+📦 SHIPPING LABEL (December, before)
 
-She started a candle business, not a data entry business. December almost turned it into one. Here's what shipping looked like: 🧠
+From: a candle workshop in Tilburg
+Created by: hand, copied address by address into PostNL's website
+Tracking code: emailed by hand
+House number addition: lost along the way
+Time per evening: about three hours
+Parcels to the wrong address: three
 
-❌ Every address copied into the carrier website by hand
-❌ Labels printed one by one, evening after evening
-❌ Tracking codes emailed manually
-❌ House number additions lost along the way, sending parcels to the wrong door
+Joyce Lambregts makes scented candles and built Kaarsenhuisje in Lovable: a webshop with seasonal collections, gift wrapping options and iDEAL checkout. Around the December holidays, orders jumped to about 60 a day. Every evening went to data entry.
 
-✅ Paid orders automatically create Sendcloud parcels, with weights from the product data
-✅ Shipping rules picking PostNL for the Netherlands and DHL for Belgium and Germany, plus a service point option at checkout
-✅ Postcode lookup with a separate field for house number additions
-✅ Tracking synced back to orders, branded tracking emails and a returns portal
+What LaunchStudio connected (6 business days, €2,050):
+✓ Sendcloud: every paid order creates a parcel automatically, with weight from the product data
+✓ Shipping rules: PostNL for the Netherlands, DHL for Belgium and Germany
+✓ A service point option at checkout
+✓ Postcode lookup, with a separate field for house number additions
+✓ Tracking updates flowing back to orders
+✓ Branded tracking emails for customers
+✓ A returns portal, for the occasional broken candle
 
-At **LaunchStudio**, backed by Manifera's 11+ years of e-commerce and logistics systems, we build shipping flows triggered by verified payments - never by the checkout page. 🛠️
+📦 SHIPPING LABEL (after)
 
-💡 Her result: €2,050, six business days. Evening shipping work dropped from three hours to about twenty minutes of batch label printing, and address-related delivery problems disappeared for the rest of the season. 🚀
+Created by: the order itself
+Tracking: automatic
+House number addition: kept
+Time per evening: about twenty minutes of batch label printing
+Address-related delivery problems: none for the rest of the season
 
-👉 Still shipping your AI-built webshop's orders by hand? Here's how to connect Sendcloud properly: https://launchstudio.eu/en/blog/sendcloud-shipping-integration-for-ai-built-webshops
+"I started a candle business, not a data entry business. December almost turned it into one." - Joyce Lambregts
+
+https://launchstudio.eu/en/blog/sendcloud-shipping-integration-for-ai-built-webshops
 
 #Sendcloud #Ecommerce #PostNL #Webshop #LaunchStudio #Manifera

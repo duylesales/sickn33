@@ -1,21 +1,35 @@
-🚨 Carmen Vidal, a sustainable-fashion stylist in Amsterdam West, built Kledingruil in Lovable: members send in clothes they no longer wear, earn credits and pick items from others, shipped in monthly boxes. It launched with 180 founding members - who immediately asked for a "wishlist" feature. Carmen didn't build it. Not yet. 😳
+👗 THE FIRST 90 DAYS of a clothing swap subscription
 
-Instead she watched. Error tracking showed iPhone photo uploads failing on mobile data. The funnel showed 40% of signups never listed a single item. Later, a feature-flagged wishlist exposed a credit-calculation bug - for 20% of members only - and the item browser slowed past 3,000 items. Here's an AI development roadmap for the first 90 days after launch: 🧠
+LAUNCH
+Carmen Vidal, a sustainable-fashion stylist in Amsterdam West, built Kledingruil in Lovable: members send in clothes they no longer wear, earn credits, and choose items from other members, shipped in monthly boxes. LaunchStudio took it to production in a Launch & Grow project (10 business days, €2,500). 180 founding members.
 
-❌ Building every requested feature in week one
-❌ Guessing instead of measuring activation
-❌ Releasing to everyone at once
-❌ Waiting for slowness to become an outage
+WEEKS 1-2: WATCH, DON'T BUILD
+Members asked for a wishlist. Carmen resisted, and watched instead.
+• Error tracking: photo uploads failing for iPhone users on mobile data
+• The funnel: 40% of sign-ups never listed an item
 
-✅ Days 1–14: watch errors, funnel and payments, fix only what's critical, talk to users
-✅ Days 15–30: compressed, resumable uploads and a redesigned first-listing prompt - activation up to 78%
-✅ Days 31–60: the wishlist behind a flag for 20%, tested on staging - the bug fixed within an hour
-✅ Days 61–90: pagination and indexes for the item browser, plus an updated privacy notice for a new shipping partner
+WEEKS 3-4: FIX WHAT THE DATA SHOWED
+• LaunchStudio: image compression before upload, and resumable uploads
+• Carmen, in Lovable: a redesigned first-listing prompt
+Activation rose to 78%.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we've seen across 160+ projects that products which stabilise before they expand keep their users. ⚙️
+MONTH 2: BUILD, CAREFULLY
+• The wishlist, behind a feature flag, for 20% of members
+• Tested on staging with the critical-flow tests
+• A bug in credit calculation, for flagged members only, fixed within an hour
 
-Her result: €2,500 for launch, then €49/month. After ninety days, Kledingruil had 610 paying members, monthly churn under 4% and zero data or payment incidents - and a second-quarter roadmap built on data, not guesses. 🚀
+MONTH 3: CHECK THE GROWTH
+• A scalability check: the item browser slowing as inventory passed 3,000 items
+• LaunchStudio: pagination and indexes
+• Carmen: an updated privacy notice after adding a shipping partner
 
-👉 AI development roadmap: the first 90 days after launch: https://launchstudio.eu/en/blog/ai-development-roadmap-the-first-90-days-after-launch
+Both post-launch fixes fell within managed hosting, at €49 a month.
+
+DAY 90
+610 paying members. Monthly churn under 4%. No data or payment incidents. And a second-quarter roadmap based on data, not guesses.
+
+"The hardest part of the first two weeks was not building. It was also the most useful thing I did." - Carmen Vidal
+
+https://launchstudio.eu/en/blog/ai-development-roadmap-the-first-90-days-after-launch
 
 #PostLaunch #SaaS #ProductManagement #Lovable #LaunchStudio #Manifera

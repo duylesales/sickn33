@@ -1,21 +1,38 @@
-🚨 Pleun Maasland's Atelierplek lets ceramicists and printmakers book studio time and kiln slots at 34 workshops across the Randstad. Payments went into her own account, and every month she worked out each workshop's share and paid them by hand. Then her accountant told her €287,000 of gross bookings was sitting in her turnover. 😳
+💶 FOLLOW THE MONEY: one studio-rental marketplace
 
-That changed her VAT position - and raised the question of whether she was allowed to hold that money at all. Here's the marketplace model to avoid: 🧠
+THE OLD ROUTE
+A ceramicist books kiln time
+➜ pays Atelierplek's own account
+➜ the money sits there until the fifth of the month
+➜ Pleun calculates, by hand, what each of 34 workshops is owed
+➜ and pays them, by hand, most of a day's work, wrong twice so far
 
-❌ Collecting customers' money in your own account and paying suppliers later
-❌ A manual payout day that had already gone wrong twice
-❌ No ledger - a missing January payout took an evening to reconstruct from bank statements
-❌ Gross bookings counted as turnover instead of commission
+Pleun Maasland built Atelierplek in Lovable: independent ceramicists and printmakers rent studio time and kiln slots from workshops across the Randstad. Customers pay per session, and workshops get the fee minus a 12% commission.
 
-✅ Connected accounts, with all 34 workshops verified before they can list
-✅ Payments split at capture: the 12% commission to the platform, the rest straight to the workshop
-✅ A transaction ledger with gross, commission, share, VAT and payout reference for every booking
-✅ Visible payout schedules, a three-party refund policy, self-billing invoices, annual statements and monthly reconciliation
+Then, in the same month:
+• A workshop asked why a January session never showed up in a payout, and the answer took an evening of bank statements to reconstruct
+• Her accountant pointed out that €287,000 of gross bookings was in her turnover, changing her VAT position, making her look several times her real size, and raising the question of whether she was allowed to hold that money at all
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we set up marketplaces so the platform never holds anyone else's money. 🏦
+A day a month she could live with. Other people's €287,000 passing through her business account, she couldn't.
 
-Her result: eleven business days and €7,400 later, the manual payout day disappeared, turnover fell to the commission she actually earns, and the licensing question closed. In fourteen months, reconciliation flagged three discrepancies - each fixed the same week. 🚀
+THE NEW ROUTE (LaunchStudio, 11 business days, €7,400)
+A ceramicist books kiln time
+➜ the payment is split at capture
+➜ the 12% commission goes to Atelierplek
+➜ the session fee goes straight to the workshop's connected account
 
-👉 Marketplace payouts and who holds the money: https://launchstudio.eu/en/blog/lovable-payments-marketplace-payouts-and-who-holds-the-money
+AND ALONG THE ROUTE
+✓ All 34 workshops onboarded through identity verification, with listings blocked until cleared
+✓ A ledger recording gross, commission, workshop share, VAT and payout reference for every booking
+✓ Payout schedules visible in each workshop's dashboard
+✓ A refund policy for cancellations after payout, taken from the next settlement, agreed in the terms
+✓ Self-billing invoices to customers on behalf of workshops, plus a monthly commission invoice to each workshop
+✓ Annual statements for workshops' bookkeeping, and a monthly reconciliation against the provider's report
+
+The manual payout day disappeared. Turnover dropped to the commission Pleun actually earns, and the licensing question closed, because the platform no longer holds anyone's money. In fourteen months, reconciliation flagged three discrepancies, all fixed the same week.
+
+"A day a month I could live with. Finding out that €287,000 of other people's money had been through my business account was the part I could not." - Pleun Maasland
+
+https://launchstudio.eu/en/blog/lovable-payments-marketplace-payouts-and-who-holds-the-money
 
 #Marketplace #Payments #Payouts #Lovable #LaunchStudio #Manifera

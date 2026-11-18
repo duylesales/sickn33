@@ -1,21 +1,35 @@
-🚨 Wessel Jansen runs a padel and squash centre in Hoorn and built Baanboeker in Lovable: members book courts, pay per session and join waiting lists. One Friday evening he asked Lovable to add a "bring a guest" option and hit publish. On Saturday morning - the busiest booking time - nobody could book. 😳
+🎬 SCENE 1. FRIDAY EVENING. A PADEL CENTRE OFFICE IN HOORN.
 
-Publishing on a Friday night felt efficient. Losing Saturday morning showed him what efficient really costs. Here's what went wrong: 🧠
+Wessel Jansen asks Lovable to add a "bring a guest" option. He clicks publish and goes home.
 
-❌ A new guest field required in the database but never sent by the older mobile booking form
-❌ No staging environment to test the change first
-❌ No previous version to roll back to
-❌ Four hours of lost bookings while he reverted by prompting
+🎬 SCENE 2. SATURDAY MORNING. THE BUSIEST BOOKING TIME OF THE WEEK.
 
-✅ A staging Supabase project with seeded test members and courts
-✅ Vercel deployments for main (staging) and production
-✅ Mollie in test mode on staging and schema changes moved into migrations
-✅ A one-page release routine and one-click rollbacks through the host
+Nobody can book a court.
 
-At **LaunchStudio**, backed by Manifera's 160+ projects where separate environments are standard, we give every change a safe place to land before your customers see it. 🛠️
+The new guest field is required in the database, but the older booking form still used on mobile doesn't send it.
 
-💡 His result: €1,250, four business days. Over the next three months Wessel shipped 14 changes through staging - two would have broken bookings, and both were caught before members noticed. 🚀
+No staging. No previous version to roll back to. No idea which change caused it.
 
-👉 Setting up staging for a Lovable app? Here's the practical setup and the 15-minute release routine: https://launchstudio.eu/en/blog/how-do-i-set-up-a-staging-environment-for-a-lovable-app
+🎬 SCENE 3. THE NEXT FOUR HOURS.
+
+Wessel reverts by prompting, one attempt at a time. Every hour is lost bookings.
+
+🎬 SCENE 4. LAUNCHSTUDIO ARRIVES. (4 business days, €1,250)
+• A staging Supabase project with seeded test members and courts
+• Vercel deployments for main (staging) and production
+• Mollie test mode on staging
+• Schema changes moved into migrations
+• A one-page release routine
+• Instant rollbacks through the host
+
+🎬 SCENE 5. THE NEXT THREE MONTHS.
+
+Fourteen changes shipped through staging. Two of them would have broken bookings. Both were caught on staging and fixed before a single member noticed.
+
+FADE OUT.
+
+"Publishing on a Friday night felt efficient. Losing Saturday morning showed me what efficient really costs." - Wessel Jansen
+
+https://launchstudio.eu/en/blog/how-do-i-set-up-a-staging-environment-for-a-lovable-app
 
 #Lovable #Staging #Supabase #DevOps #LaunchStudio #Manifera

@@ -1,20 +1,27 @@
-📹 Lotte Jansen built MediaFlow with Lovable - a scheduling and rough-cut review tool for freelance video crews in Hilversum's production scene. Three companies were using it within weeks. Then a client spotted their own unreleased promo video sitting in a Google image cache.
+🎬 HILVERSUM. A PRODUCTION OFFICE. MORNING.
 
-AI tools are great at building an upload button and a media player. They're not built to check who can actually see what's inside. 🧠
+A client scrolls through Google Images. Stops. Their own unreleased promo video is sitting there in a cache preview.
 
-❌ The storage bucket holding uploaded footage had zero access restrictions
-❌ Anyone with a direct link could view embargoed, client-restricted footage without logging in
-❌ The leak was traced to a publicly indexable storage URL, not a hack
-❌ In media, a leaked unpublished asset can break a client relationship instantly
+CLIENT: "...Why is this public?"
 
-✅ Lock storage behind signed, time-limited URLs tied to authenticated sessions
-✅ Add upload validation to prevent the same misconfiguration from recurring
-✅ Treat media storage access control as core infrastructure, not an afterthought
+CUT TO: Lotte Jansen, production coordinator and founder of MediaFlow, a Lovable-built scheduling and rough-cut review tool used by three local production companies.
 
-At **LaunchStudio**, Manifera's 120+ engineers apply the same access-control discipline used for enterprise clients to founder-built media platforms. 🛡️
+LOTTE: "It's behind a login. It has to be."
 
-MediaFlow's storage is now fully locked down, with no further exposure detected in a follow-up scan. 🚀
+It wasn't. The storage bucket behind every upload had no access restrictions. Anyone with a direct link could watch embargoed footage without logging in. No hack. Just a publicly indexable URL.
 
-👉 Building a media platform with AI for coding? Lock down your storage before it leaks: https://launchstudio.eu/en/blog/ai-for-coding-hilversum
+FLASHBACK: The AI built the upload button. The media player. The review flow. Nobody asked it who should be allowed to open the files.
+
+ENTER: LaunchStudio.
+🔒 Storage locked behind signed, time-limited URLs tied to logged-in sessions
+🔒 Upload validation so the same misconfiguration can't come back
+🔒 Follow-up scan: no further exposure
+⏱️ 5 business days, €1,300
+
+LOTTE (V.O.): "In media, an unpublished asset leaking isn't just embarrassing - it can break a client relationship instantly. I had no idea the storage itself was the weak point."
+
+FADE OUT.
+
+Building for Hilversum's media crowd with AI for coding? Check who can open your files before the credits roll: https://launchstudio.eu/en/blog/ai-for-coding-hilversum
 
 #AINativeFounder #LaunchStudio #Manifera #AIforCoding #Hilversum

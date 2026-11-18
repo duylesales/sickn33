@@ -4,6 +4,65 @@
 
 ### Tháng 11
 
+#### Ngày 18
+
+- **Nâng cấp toàn diện bộ chuyển đổi Markdown -> HTML (`upload_to_wordpress.py`) & Sửa lỗi hiển thị mã code / liên kết trên website Manifera**:
+  - **Nguyên nhân sự cố trước đó**:
+    - Thẻ JSX / XML và thẻ HTML thô trong nội dung (như `<View>`, `<TouchableOpacity>`, `<div>`, `<button>`) trong bài viết Article 60 không được escape sang thực thể HTML (`&lt;` và `&gt;`), khiến trình duyệt/WordPress hiểu nhầm là thẻ DOM thật dẫn đến vỡ bố cục hoặc biến mất nội dung.
+    - Thiếu dòng trống (blank line) giữa tiêu đề `### ` và đoạn văn liền kề khiến bộ phân tích nuốt trọn toàn bộ đoạn văn vào thẻ `<h3>...</h3>`.
+    - Các đoạn inline code dạng dấu backtick (`` `code` ``) chưa được chuyển đổi thành thẻ `<code>...</code>` có style nền chuẩn, khiến code hiển thị dưới dạng văn bản thô kèm ký tự backtick.
+    - Các khối mã (fenced code blocks ```` ``` ````) chưa có bộ phân tích riêng biệt để bọc trong `<pre><code>`.
+    - Danh sách có thứ tự (`1. `, `2. `) bị rơi vào đoạn văn thường `<p>` thay vì thẻ `<ol><li>`.
+    - Ký tự phân cách `---` bị WordPress tự động chuyển thành dấu gạch ngang dài (em dash `&#8212;`), vi phạm quy tắc cấm em dash.
+    - Bộ lọc bảo mật WAF (`paren_to_brackets`) có thể làm ảnh hưởng đến các URL liên kết markdown có chứa dấu ngoặc hoặc tham số nếu không được bảo vệ trước.
+    - Cơ chế gọi curl MCP bị lỗi khi token hết hạn do curl không in mã trạng thái 401 ra stdout.
+  - **Các cải tiến kỹ thuật trong `upload_to_wordpress.py`**:
+    - Xây dựng hàm `format_inline`: tự động bảo vệ và escape các đoạn inline code `` `code` `` thành `<code style="background-color: #f1f1f1; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; color: #c7254e;">&lt;...&gt;</code>`.
+    - Hỗ trợ đầy đủ khối mã fenced code blocks (` ``` `) bọc trong `<pre style="..."><code>...</code></pre>` với mã hóa thực thể HTML an toàn.
+    - Tự động chuẩn hóa ranh giới tiêu đề (`## `, `### `) ngay cả khi không có dòng trống ngăn cách, tách biệt tuyệt đối tiêu đề và nội dung đoạn văn.
+    - Hỗ trợ thẻ danh sách có thứ tự `<ol><li>` và danh sách không thứ tự `<ul><li>`.
+    - Tự động lọc bỏ các đường kẻ `---` ngăn chặn triệt để lỗi sinh em dash của WordPress.
+    - Bảo vệ toàn bộ URL trong link markdown `[text](url)` trước khi chạy bộ lọc regex WAF (`paren_to_brackets`).
+    - Nâng cấp `call_mcp`: sử dụng `-w "\n%{http_code}"` và truyền tải binary data qua pipe stdin (`--data-binary @-`) giúp bắt chính xác mã phản hồi HTTP (đặc biệt là 401 Unauthorized) để tự động làm mới OAuth token và gửi payload lớn an toàn.
+  - **Cập nhật bài viết trực tiếp trên website**:
+    - **Bài viết 60** ([`60-mobile-app-and-web-development-company.md`](file:///Users/duyle/sickn33/manifera/2026/august-2026/60-mobile-app-and-web-development-company.md) - Post ID: `23965`): Đã bổ sung dòng trống sau heading, bổ sung liên kết nội bộ hướng về `[offshore software development](https://www.manifera.com/services/offshore-software-development/)` và `[Amsterdam leadership team](https://www.manifera.com/contact-us/)`, hiển thị chuẩn đẹp toàn bộ thẻ `<View>`, `<TouchableOpacity>`, `<div>`, `<button>`. Trực tiếp kiểm tra live tại [https://www.manifera.com/mobile-app-and-web-development-company/](https://www.manifera.com/mobile-app-and-web-development-company/).
+    - **Bài viết 54** ([`54-full-stack-web-application.md`](file:///Users/duyle/sickn33/manifera/2026/august-2026/54-full-stack-web-application.md) - Post ID: `23962`): Đã cập nhật định dạng hiển thị cho các đoạn code SQL/ORM (`User.getOrders()`, `SET`, `BEGIN...COMMIT`, `LISTEN/NOTIFY`), danh sách có thứ tự và liên kết `contact-us`. Trực tiếp kiểm tra live tại [https://www.manifera.com/full-stack-web-application/](https://www.manifera.com/full-stack-web-application/).
+    - **Bài viết 51** ([`51-offshore-web-development-company.md`](file:///Users/duyle/sickn33/manifera/2026/august-2026/51-offshore-web-development-company.md) - Draft ID: `23959`): Đã đồng bộ cập nhật nội dung nháp với bộ chuyển đổi mới.
+
+- **Đăng tải bài viết lên website Manifera qua Easy MCP AI (`upload_to_wordpress.py`)**:
+  - **Bài viết**: [`manifera/2026/august-2026/60-mobile-app-and-web-development-company.md`](file:///Users/duyle/sickn33/manifera/2026/august-2026/60-mobile-app-and-web-development-company.md)
+  - **Tiêu đề**: *Mobile App and Web Development Company: Unifying the Codebase with React Native Web*
+  - **Slug**: `mobile-app-and-web-development-company`
+  - **Thao tác kỹ thuật**:
+    - Tải ảnh đại diện bài viết [`60-mobile-app-and-web-development-company_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026/august-2026/60-mobile-app-and-web-development-company_pic.jpg) lên WordPress Media Library qua `wp_upload_media_from_url` (Attachment ID: `23964`).
+    - Tạo và xuất bản trực tiếp bài viết (Post ID: `23965`, Status: `publish`) kèm ảnh đại diện, danh mục (Categories: `7` - *Mobile Apps*, `25` - *Web Apps*, `12` - *Outsourcing / Offshoring / Remote teams*), thẻ (Tags: `2596`, `2598`, `2551`, `99`, `73`).
+    - Cấu hình siêu dữ liệu chuẩn Yoast SEO: Focus Keyword (`mobile app and web development company`) và Meta Description.
+    - Làm sạch HTML thân bài, định dạng bảng so sánh nền tảng cross-platform chuẩn responsive và cấu trúc 7 câu hỏi FAQs dạng accordion semantic HTML5 `<details><summary>`.
+  - **Trạng thái**: Đã xuất bản chính thức (Status: Publish) tại [https://www.manifera.com/mobile-app-and-web-development-company/](https://www.manifera.com/mobile-app-and-web-development-company/).
+
+- **Đăng tải bài viết lên website Manifera qua Easy MCP AI (`upload_to_wordpress.py`)**:
+  - **Bài viết**: [`manifera/2026/august-2026/54-full-stack-web-application.md`](file:///Users/duyle/sickn33/manifera/2026/august-2026/54-full-stack-web-application.md)
+  - **Tiêu đề**: *Full Stack Web Application Scaling: The 3 Bottlenecks That Break Your Database*
+  - **Slug**: `full-stack-web-application`
+  - **Thao tác kỹ thuật**:
+    - Tải ảnh đại diện bài viết [`54-full-stack-web-application_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026/august-2026/54-full-stack-web-application_pic.jpg) lên WordPress Media Library qua `wp_upload_media_from_url` (Attachment ID: `23961`).
+    - Tạo bản nháp bài viết (Draft Post ID: `23962`) kèm ảnh đại diện, danh mục (Categories: `25` - *Web Apps*, `12` - *Outsourcing / Offshoring / Remote teams*), thẻ (Tags: `99`, `73`, `2598`, `2551`).
+    - Cấu hình siêu dữ liệu chuẩn Yoast SEO: Focus Keyword (`full stack web application`) và Meta Description.
+    - Làm sạch HTML thân bài, định dạng bảng so sánh pooling mode chuẩn responsive và cấu trúc 7 câu hỏi FAQs dạng accordion semantic HTML5 `<details><summary>`.
+  - **Trạng thái**: Đã xuất bản chính thức (Status: Publish) tại [https://www.manifera.com/full-stack-web-application/](https://www.manifera.com/full-stack-web-application/).
+
+- **Đăng tải bài viết lên website Manifera qua Easy MCP AI (`upload_to_wordpress.py`)**:
+  - **Bài viết**: [`manifera/2026/august-2026/51-offshore-web-development-company.md`](file:///Users/duyle/sickn33/manifera/2026/august-2026/51-offshore-web-development-company.md)
+  - **Tiêu đề**: *Offshore Web Development Company: The 3 Warning Signs of an "Order Taker" Agency*
+  - **Slug**: `offshore-web-development-company`
+  - **Thao tác kỹ thuật**:
+    - Nâng cấp `upload_to_wordpress.py`: chuyển đổi cơ chế gọi MCP từ `urllib` (HTTP/1.1) sang `curl` (HTTP/2) để khắc phục triệt để lỗi rate-limiting 429 của LiteSpeed Web Server, đồng thời hỗ trợ linh hoạt cả frontmatter viết hoa (`Keywords:`, `Title:`).
+    - Tải ảnh đại diện bài viết [`51-offshore-web-development-company_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026/august-2026/51-offshore-web-development-company_pic.jpg) lên WordPress Media Library qua `wp_upload_media_from_url` (Attachment ID: `23958`).
+    - Tạo bản nháp bài viết (Draft Post ID: `23959`) kèm ảnh đại diện, danh mục (Categories: `12` - *Outsourcing / Offshoring / Remote teams*, `25` - *Web Apps*), thẻ (Tags: `73`, `124`, `2590`, `2534`).
+    - Cấu hình siêu dữ liệu chuẩn Yoast SEO: Focus Keyword (`offshore web development company`) và Meta Description.
+    - Làm sạch HTML thân bài, định dạng bảng chuẩn responsive và cấu trúc 7 câu hỏi FAQs dạng accordion semantic HTML5 `<details><summary>`.
+  - **Trạng thái**: Đã tạo thành công bản nháp tại `https://www.manifera.com/?p=23959`.
+
 #### Ngày 17
 
 - **Tạo ảnh minh họa siêu thực cho cụm `extra-3-longtail` - Phiên chiều (Hoàn thành Bài 01 - Bài 11, tổng cộng 11/100 bài)**:

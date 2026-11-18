@@ -1,21 +1,29 @@
-🚨 Lotte Brink built Huurdersportaal with Lovable and Supabase: tenants report maintenance issues and upload documents. A housing association in Gelderland with around 3,000 homes wanted it - but the contract required cyber insurance. 😳
+Lotte Brink thought the insurance form was paperwork. It turned out to be the first honest security review her product ever had. 📄
 
-Lotte's honest answers on the insurer's form produced a conditional offer: a high premium and issues to fix within 60 days. A quick review found worse: tenants' identity documents readable by any logged-in user. Here's what cyber insurance asks of a small SaaS in the Netherlands: 🧠
+She built Huurdersportaal with Lovable and Supabase: a portal for small property managers where tenants report maintenance issues, upload documents and receive announcements. A housing association in Gelderland with around 3,000 homes wanted to use it. The contract required cyber insurance with a minimum insured amount, next to professional liability cover.
 
-❌ No MFA on hosting, registrar and database dashboards
-❌ A former freelancer still with repository and Supabase access
-❌ Backups never restored and dependencies never updated
-❌ No DMARC, and tenant documents in a bucket open to any logged-in user
+Her broker sent the insurer's application, and Lotte answered honestly. The answers came back as a conditional offer: a high premium, and several issues to fix within 60 days.
 
-✅ MFA everywhere, named accounts and the freelancer's access removed
-✅ Private document storage with per-tenant RLS and signed links
-✅ Secrets rotated, dependencies updated with alerts, SPF, DKIM and DMARC configured
-✅ A documented restore test, monitoring and a one-page incident procedure
+What the honest answers had revealed:
+• No MFA on her hosting, domain registrar and database dashboards
+• A former freelancer who still had access to the repository and the Supabase project
+• Backups that had never been restored
+• Dependencies untouched since the app was generated
+• Email sent without DMARC
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we fix what the insurance form finds - making your product safer and your policy cheaper. 🛠️
+And a quick review found something the form hadn't even asked about: tenant documents, identity documents included, in a storage bucket any logged-in user could read.
 
-Her result: €2,900, 8 business days. The insurer removed the conditions at a substantially lower premium, and the housing association signed. 🚀
+So LaunchStudio got to work (8 business days, €2,900):
+→ MFA on every critical service, named accounts instead of shared logins, the freelancer's access removed
+→ Tenant documents in private storage, with per-tenant Row Level Security and signed links
+→ Secrets scanned and rotated, dependencies updated, automated vulnerability alerts
+→ SPF, DKIM and DMARC configured
+→ A documented restore test, monitoring and alerts, and a one-page incident procedure
 
-👉 Need cyber insurance for your SaaS? Here's what insurers check: https://launchstudio.eu/en/blog/cyber-insurance-for-small-saas-in-the-netherlands
+Lotte updated her application with evidence for every answer. The insurer removed the conditions and offered cover at a substantially lower premium. The housing association signed, and the same evidence pack now answers customer security questionnaires.
+
+"The insurance form was the first honest security review my product ever had. Fixing what it found made the product safer and the policy cheaper." - Lotte Brink
+
+https://launchstudio.eu/en/blog/cyber-insurance-for-small-saas-in-the-netherlands
 
 #CyberInsurance #Cybersecurity #PropTech #SaaS #AIFounder #LaunchStudio #Manifera

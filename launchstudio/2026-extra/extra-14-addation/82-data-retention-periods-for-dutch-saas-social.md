@@ -1,21 +1,35 @@
-🚨 Robin Geerts built Horecabaan in Lovable: a hospitality job board in Brabant where candidates upload CVs. After three years, the database held around 18,000 CVs - many from people who hadn't logged in for years, including minors applying for weekend jobs. Then a large hotel chain's data protection consultant asked one question: what's your retention policy? 😳
+🏷️ BEST BEFORE: data has an expiry date too
 
-He kept everything because deleting felt risky. Keeping everything was the actual risk. Here's what the question exposed: 🧠
+Robin Geerts built Horecabaan in Lovable: a job board for hospitality work in Brabant, where candidates upload CVs and employers browse applicants. After three years, the database held around 18,000 CVs. Many belonged to people who hadn't logged in for years. Some were from minors applying for weekend jobs.
 
-❌ No retention policy at all
-❌ Inactive candidate accounts never deleted
-❌ No way to remove CVs when employers closed vacancies
-❌ CV files piling up in storage, years after anyone needed them
+Expiry dates on file: none.
 
-✅ Inactive candidates warned after 11 months and deleted after 12
-✅ Applications deleted 6 months after a vacancy closes, unless the candidate agrees to longer storage
-✅ Logs kept for 60 days and employer invoices for 7 years
-✅ Scheduled jobs enforcing all of it - including CV files in storage - plus an updated privacy statement and processing register
+Then a data protection consultant, hired by a large hotel chain customer, asked about retention. Robin had no policy, no deletion of inactive candidates, and no way to remove CVs when employers closed a vacancy.
 
-At **LaunchStudio**, backed by Manifera's 11+ years designing data lifecycles for Dutch clients, we build retention in from the start: keep what the law requires, delete the rest automatically. 🛠️
+The labels Robin and his lawyer agreed with LaunchStudio:
 
-💡 His result: €1,900, six business days. The first run removed roughly two-thirds of stored CVs, the hotel chain signed - and storage costs dropped as a bonus. 🚀
+🏷️ Inactive candidate accounts
+Warning after 11 months. Deleted after 12.
 
-👉 Is your AI-built app keeping everything forever? Here's what to keep and what to delete: https://launchstudio.eu/en/blog/data-retention-periods-for-dutch-saas
+🏷️ Applications
+Deleted 6 months after a vacancy closes, unless the candidate agrees to longer storage.
+
+🏷️ Logs
+Kept for 60 days.
+
+🏷️ Employer invoices
+Kept for 7 years.
+
+How the labels were enforced (6 business days, €1,900):
+✓ Scheduled jobs applying every rule, CV files in storage included
+✓ Warning emails before deletion
+✓ Logging of what was removed
+✓ An updated privacy statement and processing register
+
+The first run cleared out roughly two-thirds of stored CVs. The hotel chain signed. And Robin's storage costs dropped as a side effect.
+
+"I kept everything because deleting felt risky. Keeping everything was the actual risk." - Robin Geerts
+
+https://launchstudio.eu/en/blog/data-retention-periods-for-dutch-saas
 
 #AVG #GDPR #DataRetention #SaaS #LaunchStudio #Manifera

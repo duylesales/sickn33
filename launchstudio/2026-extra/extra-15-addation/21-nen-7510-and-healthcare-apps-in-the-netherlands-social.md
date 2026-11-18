@@ -1,21 +1,36 @@
-🚨 Annemiek Dekker, a speech therapist in Enschede, built Logopedieplan with Lovable and Supabase: treatment plans, session notes, home exercises for patients and progress reports. Three practices used it. Then a chain of twelve practices wanted it - subject to a supplier assessment referencing NEN 7510. 😳
+🩺 PATIENT CHART: Logopedieplan, Enschede
 
-The questionnaire exposed serious gaps, including a staging project holding a copy of real patient data. Here's what NEN 7510 means for healthcare apps in the Netherlands: 🧠
+PRACTITIONER
+Annemiek Dekker, speech therapist and founder
 
-❌ Every therapist could see every patient, including colleagues' child patients
-❌ No MFA, thirty-day sessions and no record of who viewed notes
-❌ Children's exercise videos in a public storage bucket
-❌ An AI summary feature calling a US endpoint without a processing agreement
+PRODUCT
+Built with Lovable and Supabase. Speech therapists plan treatment, record session notes, share home exercises with patients and their parents, and write progress reports for referring doctors.
 
-✅ Real patient data deleted from staging and replaced with synthetic records
-✅ Caseload-based access control, mandatory MFA and an append-only access log
-✅ Videos in private storage with signed links
-✅ An EU AI endpoint with therapist review, Frankfurt hosting and NEN 7510 control mapping
+HISTORY
+Used by her own practice and two others. A regional chain of twelve practices wanted to adopt it, subject to a supplier assessment referencing NEN 7510.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we translate patient privacy into what it means in a database. 🛠️
+EXAMINATION (the assessment questionnaire)
+• Every therapist could see every patient, including children treated by colleagues
+• No MFA, and sessions lasting thirty days
+• No record of who viewed a patient's notes
+• Children's exercise videos in a public storage bucket
+• An AI summary feature calling a US endpoint without a processing agreement
+• Real patient data copied into the staging project to test reports
 
-Her result: €6,600, 17 business days. The chain accepted a one-year pilot, Logopedieplan now supports around 70 therapists, and the access log has twice answered parents' questions about who viewed their child's file. 🚀
+TREATMENT (LaunchStudio, 17 business days, €6,600)
+💊 Patient data deleted from staging and replaced with synthetic records
+💊 Access limited to each therapist's own caseload, with defined extra rights for practice managers
+💊 Mandatory MFA and shorter sessions
+💊 An append-only access log, plus a screen to answer patient access requests
+💊 Exercise videos in private storage with signed links
+💊 The AI summary on an EU endpoint, no training use, therapist review before saving
+💊 Hosting in Frankfurt with tested point-in-time recovery, and controls mapped to NEN 7510 themes
 
-👉 Building a healthcare app in the Netherlands? Here's what NEN 7510 requires: https://launchstudio.eu/en/blog/nen-7510-and-healthcare-apps-in-the-netherlands
+PROGNOSIS
+The chain accepted the documented compliance for a one-year pilot, with certification planned for year two. Around 70 therapists use it today. The access log has twice answered parents' questions about who viewed their child's file.
+
+"I knew how to treat patients and protect their privacy in a practice. I didn't know what that meant in a database until LaunchStudio showed me." - Annemiek Dekker
+
+https://launchstudio.eu/en/blog/nen-7510-and-healthcare-apps-in-the-netherlands
 
 #NEN7510 #HealthTech #GDPR #Supabase #AIFounder #LaunchStudio #Manifera

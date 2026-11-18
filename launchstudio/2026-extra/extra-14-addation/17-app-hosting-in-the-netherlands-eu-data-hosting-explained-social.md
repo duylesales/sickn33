@@ -1,21 +1,33 @@
-🚨 Evelien Kramer, a veterinary practice manager in Den Bosch, built Dierdossier with Bolt and Supabase: records, vaccination schedules and reminders for small vet clinics. A regional chain of fourteen clinics wanted to adopt it, with one condition in the contract: all data stored within the EU, documented. 😳
+🌍 Where does a vet clinic app actually live?
 
-She thought hosting was one setting. When she mapped her own app, it turned out to be seven - and five of them were in America: 🧠
+Database ............ 🇺🇸
+File uploads ........ 🇺🇸
+Error tracking ...... 🇺🇸 (and capturing owners' email addresses in error messages)
+Email provider ...... 🇺🇸
+Vercel functions .... 🇺🇸 (so every request crossed the Atlantic twice)
 
-❌ The Supabase database and file uploads in a US region
-❌ Error tracking in a US data region, capturing pet owners' emails in error messages
-❌ An email provider processing data in the US
-❌ Vercel functions in their default US region, crossing the Atlantic twice per request
+Evelien Kramer, a veterinary practice manager in Den Bosch, built Dierdossier with Bolt and Supabase: records and reminders for small veterinary clinics, with vaccination schedules, treatment histories and automatic reminders to pet owners. Four clinics used it. Then a regional chain of fourteen clinics wanted to adopt it, with one contract condition: all data stored in the EU, documented.
 
-✅ Database, storage and auth users migrated to a new Supabase project in Frankfurt
-✅ Error tracking moved to an EU data region, personal data scrubbed from errors
-✅ Email switched to EU processing, functions set to an EU region
-✅ A one-page data location overview for the chain's contract
+When Evelien mapped her own app, the flags above told the story.
 
-At **LaunchStudio**, backed by Manifera's 11+ years on AWS, Azure and Dutch infrastructure, we choose the simplest EU setup that meets your customer's contract. 🛠️
+The move (LaunchStudio, 12 business days, €4,100):
+✓ Database, storage and auth users migrated to a new Supabase project in Frankfurt
+✓ Error tracking moved to an EU data region, with personal data scrubbed from error messages
+✓ The email provider switched to an EU processing setup
+✓ Vercel functions set to an EU region
+✓ A one-page data location overview for the chain's contract
 
-💡 Her result: €4,100, twelve business days. The chain signed, bringing Dierdossier to eighteen clinics and around 21,000 pet owners - and pages loaded noticeably faster for Dutch users. 🚀
+AFTER
+Database ............ 🇪🇺
+File uploads ........ 🇪🇺
+Error tracking ...... 🇪🇺
+Email provider ...... 🇪🇺
+Vercel functions .... 🇪🇺
 
-👉 Customers asking "is it hosted in the Netherlands?" Here's what EU data hosting really requires: https://launchstudio.eu/en/blog/app-hosting-in-the-netherlands-eu-data-hosting-explained
+The clinic chain signed, taking Dierdossier to eighteen clinics and around 21,000 pet owners. Bonus: with functions and database closer to Dutch users, pages load noticeably faster.
+
+"I thought hosting was one setting. It was seven, and five of them were in America." - Evelien Kramer
+
+https://launchstudio.eu/en/blog/app-hosting-in-the-netherlands-eu-data-hosting-explained
 
 #EUHosting #GDPR #Supabase #Bolt #LaunchStudio #Manifera

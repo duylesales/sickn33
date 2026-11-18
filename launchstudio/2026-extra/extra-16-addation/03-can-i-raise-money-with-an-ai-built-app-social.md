@@ -1,21 +1,31 @@
-💶 Marco Dekker, a former transport planner, built Rittenbord in Lovable: ride planning, driver assignment and invoicing for small taxi and patient transport companies. He pitched angels with a polished demo. The feedback every time: impressive, but what stops someone else from building it, and does anyone actually use it? 🤔
+🎤 Pitch #1 vs Pitch #2, three months apart
 
-Behind the demo: a preview URL, shared logins, two pilots lost after one company's rides appeared in another's list, and a Supabase project in his personal account. Here's what changed between pitch one and pitch two: 🧠
+PITCH #1
+What Marco showed: a polished demo of Rittenbord, built with Lovable and Supabase. A planning tool for small taxi and patient transport companies that schedules rides, assigns drivers and handles invoicing to healthcare insurers' contracted parties.
+What angels said: "Impressive. But what stops someone else from building it? And does anyone use it?"
+What Marco didn't say:
+• Six pilots, but the app ran on a preview URL
+• Pilots used shared logins
+• Two pilot companies had stopped after one company's data appeared in another's ride list
+• The Supabase project sat in his personal account
+• An early freelancer's work had never been formally assigned
 
-❌ Data leaking between transport companies
-❌ Preview URL instead of a real product
-❌ Accounts and freelancer code not owned by the company
-❌ Traction argued with screenshots
+BETWEEN THE PITCHES (LaunchStudio, 10 business days, €3,600)
+✓ Production on Rittenbord's own domain
+✓ Row Level Security per transport company
+✓ Individual driver and planner accounts, with MFA for planners
+✓ EU hosting with backups and monitoring
+✓ Verified invoicing exports
+✓ Accounts moved to Marco's company, and an IP assignment signed by the freelancer
+✓ An architecture overview, a security overview and a known-issues list
+Marco re-engaged the two lost pilots and started measuring weekly active planners and rides per company.
 
-✅ Row Level Security per company, individual accounts, MFA for planners
-✅ Production on its own domain with EU hosting, backups and monitoring
-✅ Accounts moved to the company and an IP assignment signed
-✅ Architecture, security and known-issues docs for due diligence
+PITCH #2
+What Marco showed: eleven companies using Rittenbord weekly, around 9,000 rides scheduled a month, and four paying customers.
+What angels did: an angel syndicate invested. The technical review raised only minor points. Part of the round funded his first developer hire, not a rebuild.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of building and reviewing enterprise systems, we make AI-built products ready for investor scrutiny. 🛠️
+"Investors stopped asking whether I could build it once they saw that transport companies relied on it every day." - Marco Dekker
 
-His result: €3,600, ten business days. Three months later: 11 weekly active companies, ~9,000 rides a month, 4 paying customers, an angel round closed and a first developer hired instead of a rebuild. 🚀
-
-👉 What investors really check in an AI-built startup: https://launchstudio.eu/en/blog/can-i-raise-money-with-an-ai-built-app
+https://launchstudio.eu/en/blog/can-i-raise-money-with-an-ai-built-app
 
 #Fundraising #Lovable #Startups #DueDiligence #AIFounder #LaunchStudio #Manifera

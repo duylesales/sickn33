@@ -1,21 +1,28 @@
-🚨 Pauline Smeets runs a network of second-hand bookshops in Limburg and built Boekenspoor in Lovable: shops list their stock, readers search across all of them. With 38,000 books listed, search took several seconds and froze older phones. That was the problem she noticed. The one she didn't: every shop's purchase prices were visible to any visitor. 😳
+🧊 A bookshop search, above and below the waterline
 
-Search was slow, which she saw. It was also leaking private data, which she didn't. Here's why: 🧠
+ABOVE THE WATERLINE (what readers noticed)
+Search across 38,000 second-hand books took several seconds and froze older phones.
 
-❌ Search loaded every book record into the browser and filtered locally
-❌ Private fields - purchase prices and supplier notes - came along with every record
-❌ The books table policy returned all columns to everyone
-❌ No search index, no pagination, no tolerance for typos
+BELOW THE WATERLINE (what nobody noticed)
+Every search loaded every book record into the browser and filtered there, private fields included. The books table policy returned all columns to everyone. So every shop owner's purchase prices and supplier notes were sitting in the network responses of any visitor.
 
-✅ Public and private fields split into separate tables with distinct policies
-✅ Full-text search with the Dutch configuration across title, author and description
-✅ Trigram matching for author names, plus paginated results
-✅ Search moved into a database function that returns only public fields
+Pauline Smeets runs a network of second-hand bookshops in Limburg and built Boekenspoor in Lovable: shops list their stock, readers search across all shops, and shop owners have a private dashboard with purchase prices and supplier notes.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of building search for enterprise data systems, we move search into the database - inside the same access rules as everything else. 🛠️
+"Search was slow, which I noticed. It was also leaking every shop's purchase prices, which I didn't." - Pauline Smeets
 
-💡 Her result: €1,850, six business days. Search responses fell to well under half a second, private prices disappeared from public responses, and zero-result searches dropped sharply. 🚀
+What LaunchStudio changed (6 business days, €1,850):
+✓ Public and private fields split into separate tables, each with its own policies
+✓ A full-text search column with Dutch configuration, across title, author and description
+✓ Trigram matching for author names
+✓ Paginated results
+✓ Search moved into a database function that returns public fields only
 
-👉 Is your app's search filtering everything in the browser? Here's how to do it properly in Supabase: https://launchstudio.eu/en/blog/how-do-i-add-search-to-my-supabase-app
+ABOVE THE WATERLINE NOW
+Search responses well under half a second. Fewer searches with zero results, thanks to stemming and typo tolerance.
+
+BELOW THE WATERLINE NOW
+Private prices gone from public responses.
+
+https://launchstudio.eu/en/blog/how-do-i-add-search-to-my-supabase-app
 
 #Supabase #Postgres #Search #Lovable #LaunchStudio #Manifera

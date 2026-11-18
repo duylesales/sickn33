@@ -1,21 +1,25 @@
-🚨 Joost Berkhout's Inschrijfpunt handles registration and payment for 22 running and cycling event organisers. One Saturday morning in May his webhook handler was down for eleven minutes during a deploy - exactly when registration opened for his biggest event of the year. 😳
+On race day in September, seventeen runners arrived at the registration desk with payment confirmations, and no bib numbers. 🏃
 
-Seventeen people paid. The money arrived. His app never knew. The organiser found out on race day, when seventeen runners showed up with payment confirmations and no bib numbers. Here's why your database drifts away from Stripe: 🧠
+The story started months earlier, on a Saturday morning in May.
 
-❌ Webhooks treated as guaranteed - they're retried, then abandoned
-❌ No provider reference stored on payment rows
-❌ Handlers that process before recording the event, with no transaction around the writes
-❌ Nobody ever comparing provider, database and bank
+Joost Berkhout built Inschrijfpunt with Lovable: registration and payment handling for running events and cycling tours, used by 22 organisers charging entry fees of €12 to €45. His webhook handler worked. But that Saturday, during a deploy, it was down for eleven minutes. And that happened to be the morning registration opened for the biggest event of his year.
 
-✅ A monthly reconciliation query (and after every deploy) producing three difference lists
-✅ Payout records linked to their transactions, so every bank deposit explains itself
-✅ Events recorded before processing, wrapped in a transaction, idempotent on the event ID
-✅ An unhandled-events list and a documented replay procedure - no hand-edited rows
+Seventeen people paid in those eleven minutes. Their money reached the provider, and Joost's bank account. His application never heard about them. So they never appeared on the start list, until the organiser found out at the desk.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we keep your revenue figures, entitlements and bank statements in step. 🔄
+Afterwards, LaunchStudio made sure the app could never quietly miss a payment again (2 business days, €1,850):
+✓ The provider reference stored on every payment row
+✓ A reconciliation query producing three difference lists, run monthly and after every deploy
+✓ Payout records stored with their transactions, so bank deposits explain themselves
+✓ The webhook handler rewritten to record each event before processing, wrapped in a transaction, and idempotent on the event ID
+✓ A list of unhandled events on the admin page
+✓ A documented replay procedure
 
-His result: two business days and €1,850 later, the seventeen runners were reinstated through the normal code path instead of typed in by hand. Over the next year reconciliation caught four more small gaps within a month each - and the organiser renewed. 🚀
+That replay procedure was then used to recover the seventeen registrations through the normal code path, sending the confirmations and creating the start-list entries that had never existed. No typing them in by hand.
 
-👉 Reconciling Stripe with your own database: https://launchstudio.eu/en/blog/lovable-payments-reconciling-stripe-with-your-own-database
+Over the following year, reconciliation caught four more gaps, all small, all within a month. And the organiser renewed.
+
+"Eleven minutes of downtime on a Saturday morning, and I found out about it on a Sunday in September with seventeen people standing at a registration desk." - Joost Berkhout
+
+https://launchstudio.eu/en/blog/lovable-payments-reconciling-stripe-with-your-own-database
 
 #Stripe #Webhooks #Reconciliation #Lovable #LaunchStudio #Manifera

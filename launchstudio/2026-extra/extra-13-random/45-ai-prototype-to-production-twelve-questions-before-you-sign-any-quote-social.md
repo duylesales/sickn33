@@ -1,21 +1,35 @@
-🚨 Esther van Leeuwen runs a yoga studio in Zeist and built Yogarooster in Lovable: students buy passes, book classes, join waiting lists and get reminders. Two other studios wanted it. She'd already paid a freelancer €2,400 for "making it production ready" - and bookings still vanished and passes still weren't deducted. 😳
+🧘 QUOTE #1: €2,400, already paid
+"Making it production ready."
+After: bookings still vanished sometimes, and passes were sometimes not deducted.
 
-Before paying anyone else, she asked two providers twelve questions. The first quoted €4,000 "to finish the backend", couldn't say how payments would be confirmed, and wanted to host on its own servers. The review behind the second quote explained everything: pass balances were updated by the browser, Mollie payments confirmed by redirect, students could see each other's histories via the API, and "production" ran on the freelancer's personal Vercel account. Here's what to ask before signing any quote to take an AI prototype to production: 🧠
+QUOTE #2: €4,000
+"To finish the backend."
+Asked how payments would be confirmed: couldn't say.
+Hosting: on the provider's own servers.
 
-❌ A quote you can't evaluate
-❌ No answer on how payments are confirmed
-❌ Hosting and accounts in someone else's name
-❌ "Production ready" with no written scope
+QUOTE #3: a fixed price, with a written scope
+The code reviewed during the intro call.
 
-✅ Pass deduction moved into a database transaction tied to booking
-✅ Payments confirmed via verified webhooks
-✅ Student-level access enforced on the server
-✅ Hosting and every account transferred to Esther, with staging, monitoring and documentation
+Esther van Leeuwen runs a yoga studio in Zeist and built Yogarooster in Lovable: students buy class passes, book classes, join waiting lists and get reminders, and teachers see attendance. Two other studios wanted to use it. The first time, she'd signed a quote she couldn't evaluate. This time, she asked twelve questions she could evaluate the answers to.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we answer the questions in writing - with a fixed price and a scope you can check. ⚙️
+What the review behind quote #3 found, and why quote #1 hadn't worked:
+• The freelancer had added a login, but pass balances were updated by the browser, so closing the tab after booking left a class booked without a deduction
+• Mollie payments for passes were confirmed by redirect
+• Students could see other students' booking histories through the API
+• The "production" hosting was on the freelancer's personal Vercel account
 
-Her result: €2,100, eight business days. Yogarooster onboarded both studios, vanished bookings and missing deductions stopped entirely, and Esther now uses the twelve questions for every supplier she hires. 🚀
+What quote #3 delivered (LaunchStudio, 8 business days, €2,100):
+✓ Pass deduction inside a database transaction, tied to the booking
+✓ Payments confirmed by verified webhooks
+✓ Student-level access enforced
+✓ Hosting and every account transferred to Esther
+✓ Staging and monitoring
+✓ The changes documented
 
-👉 AI prototype to production: twelve questions before you sign any quote: https://launchstudio.eu/en/blog/ai-prototype-to-production-twelve-questions-before-you-sign-any-quote
+Yogarooster onboarded both new studios. Missing deductions and vanished bookings stopped entirely. And Esther now uses the twelve questions whenever she hires any supplier.
+
+"The first time, I signed a quote I couldn't evaluate. The second time, I asked questions I could evaluate the answers to. That made all the difference." - Esther van Leeuwen
+
+https://launchstudio.eu/en/blog/ai-prototype-to-production-twelve-questions-before-you-sign-any-quote
 
 #Outsourcing #FixedPrice #Lovable #Founders #LaunchStudio #Manifera

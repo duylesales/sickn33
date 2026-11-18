@@ -1,21 +1,36 @@
-🚨 Floor Dijkstra, a children's entertainer in Almere, built Kinderfeestje in Lovable: parents book themed kids' parties, pay a deposit and manage guest lists. Twenty-two local suppliers listed their services. Before spring season she hired a keen computer science graduate part-time to "make it production ready". Two months later, bookings started failing. 😳
+📋 THE JOB DESCRIPTION
+Part-time developer. "Make Kinderfeestje production ready before the spring season."
 
-He'd rebuilt the booking calendar (which had worked), added a new admin dashboard and upgraded half the dependencies. The original gaps were untouched: children's names, ages and allergies were readable by any logged-in user changing an ID, deposits were confirmed by browser redirect, the upgrades had broken password resets, and the new dashboard was protected only by a hidden link. Here's why productionizing an AI app takes experience: 🧠
+🛠️ WHAT GOT DONE IN TWO MONTHS
+✓ The booking calendar rebuilt (it had been working)
+✓ A new admin dashboard
+✓ Half the dependencies upgraded
 
-❌ Work on the visible parts, not the invisible gaps
-❌ A rebuild of something that already worked
-❌ Payment confirmation left in the browser
-❌ No senior to review any of it
+⚠️ WHAT WAS STILL THERE
+✗ Parents' guest lists, with children's names, ages and allergies, open to any logged-in user who changed an ID
+✗ Deposits confirmed by the browser redirect
+✗ Password resets broken by the dependency upgrades
+✗ The new admin dashboard protected only by a hidden link
 
-✅ The working calendar restored from version history
-✅ Guest-list access enforced in the database
-✅ Deposits confirmed via verified Mollie webhooks, password resets fixed
-✅ Server-side admin roles, tests, a deployment pipeline and documentation - so the graduate could keep building safely
+Floor Dijkstra, a children's entertainer in Almere, built Kinderfeestje in Lovable: parents book themed children's parties, with entertainers, bouncy castles and cake, pay a deposit and manage guest lists. Twenty-two local entertainers and suppliers listed their services. She hired a recent computer science graduate part-time to get it ready.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we do the one-off work that needs experience - then hand over a foundation your next hire can build on. ⚙️
+He worked hard, on the parts he knew how to do. Neither of them knew the job needed different skills, until bookings started failing.
 
-Her result: €2,200, eight business days. Kinderfeestje handled 640 bookings through spring and summer with no payment or data incidents, and the graduate shipped three new features on the hardened base. 🚀
+What LaunchStudio did (8 business days, €2,200):
+✓ The working calendar restored from version history
+✓ Access to guest lists enforced in the database
+✓ Deposits confirmed by verified Mollie webhooks
+✓ Password resets fixed
+✓ The admin dashboard secured with server-side roles
+✓ Tests and a deployment pipeline
+✓ Everything documented
 
-👉 Productionize an AI app: LaunchStudio vs hiring a junior developer: https://launchstudio.eu/en/blog/productionize-an-ai-app-launchstudio-vs-hiring-a-junior-developer
+Floor kept the graduate on, for feature work, now with CI tests and a README.
+
+The spring and summer season: 640 bookings, no payment or data incidents. And the graduate shipped three new features on the hardened foundation, including a supplier availability calendar the earlier rebuild had blocked.
+
+"He was a great developer. He just wasn't the right developer for the job I'd given him, and neither of us knew that until the bookings broke." - Floor Dijkstra
+
+https://launchstudio.eu/en/blog/productionize-an-ai-app-launchstudio-vs-hiring-a-junior-developer
 
 #Hiring #Startups #Lovable #SoftwareEngineering #LaunchStudio #Manifera

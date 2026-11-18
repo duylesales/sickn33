@@ -1,21 +1,31 @@
-🚨 Joyce van Dam, a wedding planner in Nijkerk, built Trouwplanner in Lovable: couples manage guest lists, send digital invitations, collect RSVPs with dietary needs, build seating plans and let guests contribute to a honeymoon fund. About 60 couples in season one. Two weeks before one wedding, a bride noticed her aunt's RSVP had switched to "not attending". 😳
+💌 You're invited (illustrative)
+RSVP: ✅ Attending
+Changed two weeks before the wedding to: ❌ Not attending
+Changed by: another guest, who edited the number in his own RSVP link out of curiosity
 
-A curious guest had changed the number in his own RSVP link and edited someone else's answer. Every guest could also see the full guest list with dietary notes - including one guest's medical condition. Honeymoon contributions were confirmed by browser redirect and landed in Joyce's own Stripe account, a batch of invitations from the default Lovable sender hit spam, and seating edits on two phones overwrote each other. Here's what event apps must get right with guests and payments: 🧠
+A wedding has one date. The app doesn't get a second try. 💍
 
-❌ Sequential RSVP links anyone can edit
-❌ Health notes visible to all guests
-❌ Gift money landing in the platform owner's account
-❌ Invitations in spam and seating plans that overwrite each other
+Joyce van Dam, a wedding planner in Nijkerk, built Trouwplanner in Lovable: couples manage guest lists, send digital invitations, collect RSVPs with dietary needs, build seating plans, and let guests contribute to a honeymoon fund. Around 60 couples used it in its first season. Then a bride noticed her aunt's RSVP had flipped to "not attending."
 
-✅ Per-guest random RSVP tokens that hosts can regenerate
-✅ Guest visibility limited to opted-in names of attending guests, dietary notes only for the couple and caterer export
-✅ Contributions via Stripe Connect paid directly to couples, with webhook confirmation and refunds
-✅ Authenticated, queued invitation emails, conflict detection on seating edits and automatic deletion of guest data three months after each wedding
+What else the review found:
+• Every guest could see the full guest list with dietary notes, including one guest's medical condition
+• Honeymoon fund contributions were confirmed by the browser redirect, and landed in Joyce's own Stripe account
+• Invitations went out from the default Lovable email, and a large batch was flagged as spam
+• Editing the seating plan on two phones at once overwrote changes
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we help you get it right the first time - because a wedding has only one date. ⚙️
+What LaunchStudio changed (8 business days, €2,100):
+✓ RSVP IDs replaced by random, per-guest tokens that can be regenerated
+✓ Guests see only the names of attending guests, and only if those guests opt in
+✓ Dietary notes visible only to the couple, and in the caterer export
+✓ Contributions through Stripe Connect, paid directly to couples, with webhook confirmation and refunds
+✓ Authenticated, queued invitation emails
+✓ Conflict detection on seating plan edits
+✓ Guest data deleted automatically three months after each wedding
 
-Her result: €2,100, eight business days. The next season's 140 weddings ran without RSVP tampering or payment mismatches, invitation delivery became near-complete, and Joyce now licenses Trouwplanner to two other planners. 🚀
+The next season: 140 weddings, with no RSVP tampering and no payment mismatches, and invitation deliverability close to complete. Joyce now licenses Trouwplanner to two other wedding planners.
 
-👉 Building an AI event planning app? AI app production problems with guests and payments: https://launchstudio.eu/en/blog/building-an-ai-event-planning-app-ai-app-production-problems-with-guests-and-payments
+"A wedding has one date. The app didn't get a second try, so it had to be right the first time." - Joyce van Dam
+
+https://launchstudio.eu/en/blog/building-an-ai-event-planning-app-ai-app-production-problems-with-guests-and-payments
 
 #EventTech #Weddings #StripeConnect #Lovable #LaunchStudio #Manifera

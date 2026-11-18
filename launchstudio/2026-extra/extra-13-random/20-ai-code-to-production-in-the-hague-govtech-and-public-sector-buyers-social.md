@@ -1,21 +1,35 @@
-🚨 Hugo Verbeek spent eleven years as a policy adviser before founding BuurtSignaal in The Hague: residents report broken streetlights, illegal dumping and unsafe crossings, and municipal teams triage and respond. Built in Windsurf, piloted with one city district - residents liked it, staff liked it more. Then procurement sent a 90-question security and privacy questionnaire. Hugo could answer about a third. 😳
+🏛️ A pilot proves residents want it. A contract needs proof the municipality can trust it.
 
-Staff roles were just "user" and "admin", with case-handler limits only in the interface. No audit log. Password logins instead of the municipality's identity provider. Resident photos with location data kept forever, US hosting, and keyboard traps in the resident form. Here's what moving AI code to production for public-sector buyers really involves: 🧠
+Hugo Verbeek spent eleven years as a policy adviser before founding BuurtSignaal in The Hague: residents report broken streetlights, illegal dumping or unsafe crossings, and municipal teams triage and respond. He built it in Windsurf with a Next.js frontend and Postgres, and ran a pilot in one city district. Residents liked it. District staff liked it more.
 
-❌ Two roles, partly enforced in the interface
-❌ No record of who viewed or changed resident data
-❌ Passwords instead of government SSO
-❌ Indefinite retention, US hosting and inaccessible forms
+Then came the formal contract, and procurement's 90-question security and privacy questionnaire. Hugo could answer about a third.
 
-✅ Four staff roles enforced in the database, plus an append-only audit log
-✅ SSO via the municipality's OpenID Connect provider, with MFA for administrators
-✅ Location metadata stripped from photos, agreed retention rules, EU hosting with tested backups
-✅ Accessibility fixes and a BIO-mapped security overview, processor list, recovery description, incident procedure and exit plan
+THE PROCUREMENT CHECKLIST
+☐ Staff roles enforced in the database (there were only "user" and "admin," with restrictions in the interface)
+☐ An audit log (none)
+☐ Staff login through the municipality's identity provider (passwords instead)
+☐ Retention rules for residents' reports, including photos with location data (kept forever)
+☐ EU hosting (a US region)
+☐ An accessible resident form (missing labels and keyboard traps)
+☐ Security documentation
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering - including work for TNO - we harden first, so the penetration test confirms the work instead of cataloguing basics. ⚙️
+TICKED OFF (LaunchStudio, Launch & Grow, 21 business days, €6,900, plus €49/month)
+☑ Four staff roles, enforced in the database
+☑ An append-only audit log for access to resident data
+☑ SSO via the municipality's OpenID Connect provider, with MFA for administrators
+☑ Location metadata removed from photos automatically
+☑ Retention rules agreed with the municipality
+☑ EU hosting, with tested backups
+☑ Accessibility fixes in the existing interface
+☑ A BIO-mapped security overview, processor list, recovery description, incident procedure and exit plan
 
-His result: €6,900, twenty-one business days. The independent pentest found two low-severity issues, fixed that week. BuurtSignaal signed a three-year contract, and two neighbouring municipalities have since piloted it with the same documentation. 🚀
+THEN, AN INDEPENDENT PENETRATION TEST
+Commissioned by the municipality. Two low-severity findings, fixed the same week.
 
-👉 AI code to production in The Hague: GovTech and public-sector buyers: https://launchstudio.eu/en/blog/ai-code-to-production-in-the-hague-govtech-and-public-sector-buyers
+BuurtSignaal signed a three-year contract, and two neighbouring municipalities have since piloted it, both accepting the existing documentation with minor additions.
+
+"The pilot proved residents wanted it. The contract depended on proving the municipality could trust it. Those were two different projects, and I'd only done the first one." - Hugo Verbeek
+
+https://launchstudio.eu/en/blog/ai-code-to-production-in-the-hague-govtech-and-public-sector-buyers
 
 #GovTech #TheHague #BIO #Accessibility #LaunchStudio #Manifera

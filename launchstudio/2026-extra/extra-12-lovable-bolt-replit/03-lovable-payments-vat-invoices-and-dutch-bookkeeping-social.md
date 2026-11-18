@@ -1,21 +1,29 @@
-🚨 Tijmen Verhagen's Keurmerkbeheer serves 140 businesses across the Netherlands, Belgium and Germany at €65/month. His app took payments - and issued no invoices. By the end of the first quarter he had made 61 by hand, with three duplicate numbers. 😳
+🖍️ THE ACCOUNTANT'S RED PEN: one quarter of a B2B SaaS
 
-He had also charged 21% Dutch BTW to nineteen German and Belgian businesses that should have been invoiced under reverse charge. His accountant's clean-up estimate exceeded the cost of fixing the software. Here's what Dutch bookkeeping needs: 🧠
+✗ 61 invoices made by hand in a word processor
+✗ Numbered by hand, with three duplicate numbers
+✗ 21% Dutch BTW charged to every customer, including nineteen German and Belgian businesses that had given their VAT numbers and should have been reverse-charged
+✗ An estimate to clean up the quarter: more than fixing the software would cost
 
-❌ No invoice sequence - numbers made by hand, with duplicates
-❌ Invoices rebuilt from live data instead of stored as they were issued
-❌ One VAT rate for every customer, regardless of country or business status
-❌ No VAT number validation and no location evidence captured at checkout
+Tijmen Verhagen sells Keurmerkbeheer, a Lovable-built tool that certification bodies use to manage audits of installation companies. 140 business customers across the Netherlands, Belgium and Germany, at €65 a month. The app took payments correctly. It just issued nothing. Customers who wanted an invoice emailed Tijmen, and he made one.
 
-✅ A dedicated, gap-free invoice sequence, separate from database IDs
-✅ Immutable invoice snapshots with company name, address, KvK and both VAT numbers
-✅ VAT determined by customer type and country, with reverse charge stated, and VAT numbers validated against the European service
-✅ Automatic PDF invoices, credit notes for corrections, and a quarterly export in the accountant's format
+What LaunchStudio built (6 business days, €3,100):
+✓ An invoice sequence separate from database IDs, starting at one and never skipping a number
+✓ Invoices stored as immutable snapshots, with company name, address, KvK, both VAT numbers and line detail
+✓ VAT determined by customer type and country, with reverse charge applied and stated on EU business invoices
+✓ VAT numbers validated against the European service, with the result and timestamp stored
+✓ Location evidence captured at checkout
+✓ A PDF issued automatically on payment, with a copy in the customer's account
+✓ Credit notes for the nineteen incorrect invoices, plus corrected replacements
+✓ A quarterly CSV export in his accountant's format
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we make your app produce what your accountant actually needs. 🧾
+🖍️ THE NEXT REVIEW
+✓ The quarter corrected with credit notes, not reconstructed by hand
+✓ The accountant's quarterly fee down by roughly €400
+✓ Nineteen business customers no longer paying VAT they were entitled not to pay (two had already noticed and asked)
 
-His result: six business days and €3,100 later, the quarter was corrected with credit notes instead of rebuilt by hand, the accountant's fee dropped by about €400 a quarter, and nineteen customers stopped paying VAT they didn't owe. 🚀
+"I thought invoicing was admin I could do myself until it became a compliance problem I could not. The counter starting at one and never skipping a number is the most boring feature I have ever paid for and the one I would buy first again." - Tijmen Verhagen
 
-👉 VAT, invoices and what Dutch bookkeeping needs: https://launchstudio.eu/en/blog/lovable-payments-vat-invoices-and-dutch-bookkeeping
+https://launchstudio.eu/en/blog/lovable-payments-vat-invoices-and-dutch-bookkeeping
 
 #VAT #Invoicing #Bookkeeping #Lovable #LaunchStudio #Manifera

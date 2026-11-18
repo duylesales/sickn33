@@ -1,21 +1,33 @@
-🚨 Iris Meijer's Schoonmaakplanner handles scheduling and invoicing for 44 commercial cleaning companies. Its Exact Online integration was generated in an afternoon and demoed perfectly. Then, at quarter end, accountants for nine customers found 312 duplicate sales invoices - and misbooked VAT in four administrations. Two customers threatened to cancel. 😳
+🩹 Triage: three bugs in one accounting integration
 
-Three hidden problems: concurrent token refreshes broke connections weekly, timeouts made retries book invoices twice, and VAT code "2" was hard-coded even though it means different things in different administrations. Here's how to connect Exact Online and Moneybird so bookkeepers trust it: 🧠
+BUG #1: Connections dropping
+Symptom: about once a week, a customer's Exact Online link broke and needed re-authorising.
+Cause: the nightly sync and a user sending an invoice sometimes refreshed the token at the same moment.
+Fix: token refresh serialised per organisation with an advisory lock, tokens encrypted at rest, and disconnections reported to the customer's administrator.
 
-❌ Token refresh racing between the nightly sync and user actions
-❌ Retries with no idempotency, so slow responses became duplicate invoices
-❌ One hard-coded VAT code for every customer's administration
-❌ No sync status - nobody could see what arrived and what didn't
+BUG #2: Invoices booked twice
+Symptom: duplicate sales invoices.
+Cause: when Exact answered slowly, the integration retried and created the invoice again.
+Fix: an outbox, the Exact ID stored on each invoice, and a lookup by invoice number before every retry.
 
-✅ Token refresh serialised per organisation, tokens encrypted, disconnections reported to the customer
-✅ An outbox storing Exact's ID on each invoice, with a lookup by invoice number before every retry
-✅ A mapping screen loading each administration's VAT codes, ledger accounts and journal, validated before activation
-✅ Rate-limited sync, actionable status on every invoice, post-booking locks and a weekly reconciliation report
+BUG #3: VAT on the wrong code
+Symptom: misbooked VAT amounts.
+Cause: every booking used VAT code "2". In most administrations that's 21%. In four, set up by different accountancy firms, it meant something else.
+Fix: a mapping screen loading each administration's VAT codes, revenue ledgers and sales journal via the API, validated before activation.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we build and repair accounting integrations for products whose customers live in Exact and Moneybird. ⚙️
+Iris Meijer built Schoonmaakplanner in Lovable: scheduling, time registration and invoicing for 44 commercial cleaning companies. The integration was generated in an afternoon and demoed well. At quarter end, accountants for nine customers found 312 duplicate invoices and misbooked VAT in their returns. Two customers said they'd cancel unless it was fixed. 🧽
 
-Her result: €4,600, four business days. Duplicates removed within the filing window, both at-risk customers stayed, and six months with zero duplicates or token disconnects. A Moneybird connector followed in three days - and six new customers chose the product for its accounting integration. 🚀
+Also in the treatment (LaunchStudio, 4 business days, €4,600):
+✓ Rate-limited processing per organisation
+✓ Sync status on every invoice, with errors that say what to do, and a sync overview per customer
+✓ Invoices locked after booking, with corrections as credit notes
+✓ A weekly reconciliation of missing, duplicated and differing bookings
+✓ A scripted list of the 312 duplicates with their Exact IDs, for the accountants to remove
 
-👉 Lovable integrations: connecting Exact Online and Moneybird: https://launchstudio.eu/en/blog/lovable-integrations-connecting-exact-online-and-moneybird
+The duplicates and VAT were corrected inside the filing window, and both unhappy customers stayed. Six months on: no duplicates, no token disconnections. With everything behind one connector interface, a Moneybird connector followed in three days, and six new customers the next quarter named the accounting integration as a reason for choosing the product.
+
+"It worked perfectly in the demo. Three months later nine accountants found three hundred and twelve invoices twice, and four administrations had our VAT on the wrong code." - Iris Meijer
+
+https://launchstudio.eu/en/blog/lovable-integrations-connecting-exact-online-and-moneybird
 
 #ExactOnline #Moneybird #Integrations #SaaS #LaunchStudio #Manifera

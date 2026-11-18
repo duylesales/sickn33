@@ -1,20 +1,24 @@
-🏭 Sietse Postma built ShiftHub - a shift-scheduling app for manufacturing employers around Drachten - in v0, piloting it with his own former employer. What he didn't know: a user's role was read directly from a value sent by the browser instead of verified against the database. Any regular employee could edit a request and grant themselves manager-level access to coworkers' shift and pay data. 😳
+📢 CONGRATULATIONS ON YOUR PROMOTION!
 
-If your AI-built app decides who's an "admin" based on what the browser says, that's not a role check - that's an honor system. 🧠
+You are now a manager in ShiftHub. You can view your coworkers' shift and pay data.
 
-❌ User role read from client-sent data instead of verified server-side
-❌ Any employee could modify a request to escalate to manager-level access
-❌ Payroll-adjacent shift data exposed to anyone who knew how to edit a form field
-❌ The gap was invisible from the founder's own point of view - the app "worked" fine
+How did you earn it? You edited one value in a request your browser sends.
 
-✅ Rebuilt authorization so every role check happens server-side against verified account data
-✅ Removed all reliance on anything the client sends
-✅ Added logging to flag any future privilege-escalation attempt
+(Nobody ever received this announcement. But before LaunchStudio's security review, anyone could have promoted themselves.)
 
-At **LaunchStudio**, this exact pattern - trusting client-sent data - is the single most common issue our 160+-project engineering team finds in founder prototypes. 🛡️
+Sietse Postma built ShiftHub in v0: a shift-scheduling app for manufacturing employers around Drachten, piloted at the request of his own former employer. Managers use it to view payroll-adjacent shift data for their teams.
 
-His result: ShiftHub now enforces role-based access entirely server-side, closing the escalation path before it reached any live manufacturing client. 🚀
+The security review found that a user's role, employee or manager, was read straight from a value sent by the browser. It was never verified against the database. So any regular employee could modify a request and grant themselves manager-level access.
 
-👉 Run a ten-minute self-check on your own app, then let us verify the rest: https://launchstudio.eu/en/blog/ai-security-issues-drachten
+How the self-promotion path was closed (4 business days, €740):
+✔ Every role check now happens server-side, against verified account data
+✔ Nothing the client sends is trusted for permissions
+✔ Logging flags any future attempt at privilege escalation
+
+The result: role-based access enforced entirely on the server, closed before it reached any live manufacturing client.
+
+"I had no idea someone could just edit a request and become a manager in my own app. LaunchStudio found it before I signed my first real employer client." - Sietse Postma
+
+In your app, who decides roles: the server or the browser? https://launchstudio.eu/en/blog/ai-security-issues-drachten
 
 #AINativeFounder #LaunchStudio #Manifera #AISecurityIssues #Drachten

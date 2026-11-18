@@ -1,21 +1,30 @@
-🚨 Olaf Rietberg's Buurtmelding lets residents of six smaller municipalities report problems in public space. A larger municipality's tender required accessibility conformance and a statement. His product was eliminated at the first assessment - before anyone saw a demo. 😳
+⌨️ You're a resident. A broken streetlight, a loose paving stone. You want to report it, and you don't use a mouse. (Illustrative walk-through, real failures.)
 
-Twelve failures: a report form you couldn't complete by keyboard, focus outlines switched off, placeholders instead of labels, grey text at 2.8:1 contrast, a map picker with no alternative, errors shown only as red borders. Here's what the European Accessibility Act means for an AI-built app: 🧠
+You press Tab. The focus outline is gone: one line in the stylesheet disabled it everywhere.
+You reach the category picker. Nothing happens. It's a div-based dropdown that only answers clicks.
+You find the fields. They have placeholder text, no labels, and the hint disappears as you type.
+The text is light grey, #999999 on white, 2.8:1 contrast.
+You're asked to pin the location on a map. There's no other way to enter it.
+You make a mistake. A border turns red, and nothing says why.
+Your screen reader jumps from h1 to h4 and you lose the page.
 
-❌ Div-based dropdowns that look like controls but ignore the keyboard
-❌ One stylesheet line removing focus everywhere
-❌ Low-contrast "elegant" greys and colour-only error messages
-❌ A broken heading structure screen readers can't navigate
+That was Buurtmelding, the reporting tool Olaf Rietberg built in Lovable and sold to six smaller municipalities. A larger municipality's tender required public sector accessibility conformance and an accessibility statement. Twelve failures, eliminated at the first assessment stage, before any demonstration. 🏛️
 
-✅ Custom components replaced with an accessible component library
-✅ Visible focus, proper labels, and contrast raised to 4.6:1
-✅ A postcode-and-address alternative to the map, plus text errors linked to each field
-✅ Keyboard, 200% zoom and screen-reader checks - and an honest accessibility statement with two named exceptions
+The same walk, after (LaunchStudio, 6 business days, €4,800):
+✓ The category picker and three other custom components replaced with an accessible component library
+✓ A visible focus style everywhere
+✓ A proper label on every field
+✓ Body text at 4.6:1 and interactive elements at 3:1, with the brand colour darkened slightly
+✓ A postcode and street address option next to the map
+✓ Errors written out, tied to their field and summarised at the top
+✓ Headings in order, image alternatives added, decorative images marked
+✓ Verified by keyboard, at 200% zoom and with a screen reader
+✓ An accessibility statement naming two remaining exceptions, with workarounds and target dates
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we use your product without a mouse - ten minutes, and usually decisive. ♿
+The product passed in the next tender round and was selected. The surprise: 38% of all reports now come through the address option, not the map, from residents who evidently find it easier.
 
-His result: six business days and €4,800 later, the product passed the next tender round and was selected. And the address alternative now accounts for 38% of all reports - residents simply found it easier. 🚀
+"I lost a tender before anyone saw the product, on criteria I did not know existed. And the fix that mattered most turned out to be a feature a third of my users prefer." - Olaf Rietberg
 
-👉 The European Accessibility Act and your AI-built app: https://launchstudio.eu/en/blog/the-european-accessibility-act-and-your-ai-built-app
+https://launchstudio.eu/en/blog/the-european-accessibility-act-and-your-ai-built-app
 
 #Accessibility #WCAG #GovTech #Lovable #LaunchStudio #Manifera

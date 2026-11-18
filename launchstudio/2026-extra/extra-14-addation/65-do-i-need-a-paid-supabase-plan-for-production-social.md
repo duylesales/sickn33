@@ -1,21 +1,27 @@
-🚨 Lotte Bijl built Rooster030 in Lovable for her cleaning company in Utrecht: cleaners see their weekly schedule, clock in at client addresses and report issues. During a quiet holiday period, nobody opened the app for over a week. On the first Monday back, it wouldn't load. 23 cleaners started the week without schedules and called her one by one. 😳
+🧾 THE COST OF "FREE"
 
-She'd saved a few euros a month and lost a whole Monday morning. Here's what was behind it: 🧠
+Saved: a few euros a month on the Supabase free plan
+Lost: one Monday morning
++ 23 cleaners starting the week without a schedule
++ 23 phone calls to the founder, one by one
++ no backups beyond what the free plan provided
 
-❌ A production app running on Supabase's free plan
-❌ The project paused for inactivity, with no quick way to restore it
-❌ No backups beyond what the free plan provided
-❌ No uptime monitoring - she found out from her cleaners
+Lotte Bijl built Rooster030 in Lovable for her cleaning company in Utrecht: cleaners see their weekly schedule, clock in at client addresses and report issues. During a quiet holiday period, nobody opened the app for over a week. Supabase paused the free project for inactivity.
 
-✅ The project moved to a paid Supabase plan - no more inactivity pausing
-✅ A separate staging project
-✅ Daily backups and point-in-time recovery enabled
-✅ Uptime monitoring with phone alerts, plus a clear overview of monthly costs
+On the first Monday back, the app wouldn't load. Lotte didn't know how to restore it quickly.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of operating client infrastructure, we recommend the smallest setup that is actually safe for your customers - and document every recurring cost. 🛠️
+THE NEW BILL (LaunchStudio, 3 business days, €900)
+✓ The project moved to a paid plan
+✓ A staging project
+✓ Daily backups and point-in-time recovery
+✓ Uptime monitoring with phone alerts
+✓ A clear overview of monthly costs, so Lotte can see exactly what she pays for
 
-💡 Her result: €900, three business days. The app hasn't been unavailable since, and the monthly infrastructure cost came to less than an hour of her billable cleaning work. 🚀
+The monthly infrastructure cost: less than one hour of Lotte's billable cleaning work.
+Unavailable since: never.
 
-👉 Still running your production app on a free plan? Here's when to upgrade and what it really costs: https://launchstudio.eu/en/blog/do-i-need-a-paid-supabase-plan-for-production
+"I saved a few euros a month and lost a whole Monday morning. That trade made no sense once I saw it written down." - Lotte Bijl
+
+https://launchstudio.eu/en/blog/do-i-need-a-paid-supabase-plan-for-production
 
 #Supabase #Lovable #SaaS #Backups #LaunchStudio #Manifera

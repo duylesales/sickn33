@@ -1,20 +1,31 @@
-🔍 Nadia Visser built Huisartsplanner in Lovable: a scheduling tool for GP assistants to manage call-back lists and appointment slots. A seed investor was interested and planned a technical review. Nadia couldn't read code, so she tested what it did. 🧪
+🧪 She couldn't read the code. So she tested what it did.
 
-The very first test failed: an assistant at one practice could open another practice's call-back list just by changing an ID in the URL. 😳 Here's what her behaviour tests and a quick look at GitHub revealed: 🧠
+Nadia Visser built Huisartsplanner with Lovable and Supabase: a scheduling tool for GP assistants to manage call-back lists and appointment slots. A seed investor was interested and planned a technical review. Before they looked, Nadia ran her own tests.
 
-❌ No access control between practices on several tables
-❌ "Saved!" messages while nothing was stored offline
-❌ A Supabase service role key in an early commit
-❌ No README, no tests, a 2,800-line component file
+TEST: The two-account test
+❌ An assistant at one practice opened another practice's call-back list by changing an ID in the URL.
 
-✅ Row Level Security per practice, with negative tests
-✅ Honest error handling with retries for unsaved changes
-✅ Key rotated and removed from git history
-✅ README, CI checks and project instructions for future Lovable sessions
+TEST: The error test
+❌ Saving a slot without a connection showed "saved." Nothing was stored.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of reviewing and maintaining codebases, we check AI-written code for what matters in production: security, correctness and maintainability. 🛠️
+TEST: A look around GitHub
+❌ No README, no tests, two date libraries, a 2,800-line component file, and a Supabase service role key in an early commit.
 
-Her result: €3,300, nine business days. The investor's technical adviser found only minor issues three weeks later, and the round closed. 🚀
+TEST: Ask the AI to explain its own access control
+❌ Lovable described policies that didn't exist on several tables.
+
+What LaunchStudio did next (9 business days, €3,300):
+✓ A structured review confirming and expanding the findings
+✓ Row Level Security per practice on all tables, with negative authorisation tests
+✓ Honest error handling, with retries for unsaved changes
+✓ The exposed key rotated and removed from history
+✓ One date library, the large component split, and a README for setup, testing and deployment
+✓ CI checks for types, tests, secrets and dependencies
+✓ Project instructions with the architecture and security rules for future Lovable sessions
+
+Three weeks later, the investor's technical adviser reviewed the repository. The report listed only minor findings, and the round closed. Nadia now reruns her six behaviour tests before every major release.
+
+"I couldn't read the code, but I could test what it did. That told me enough to know I needed help before anyone else found the problems." - Nadia Visser
 
 👉 Six tests any founder can run on their AI-written code: https://launchstudio.eu/en/blog/how-do-i-know-if-my-ai-written-code-is-good
 

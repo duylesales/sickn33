@@ -1,21 +1,27 @@
-🚨 Vera Slothouber's Materieelverhuur runs equipment rental for nine construction hire companies - around 1,400 machines. Everything lived in Replit's built-in key-value store. Then two things broke at once: the monthly utilisation report - every customer's most-used feature - started timing out, and a customer name change missed 60 records, so invoices showed two names for the same business. 😳
+🗄️ You may have written a database by accident if...
 
-She had been hand-maintaining lists of keys and updating names in hundreds of copies. Without noticing, she'd written a database - one with no constraints. Here's how to tell you've outgrown the built-in store: 🧠
+...you keep hand-maintained lists of keys so you can find things.
+...a report has to read every record ever created and do the maths in code.
+...changing one customer's name means updating it in every record that copied it.
+...your update script misses some of those copies.
 
-❌ Maintaining your own key lists just to find records
-❌ Reports that read every record ever created and count in code
-❌ Customer names copied into every rental instead of referenced
-❌ Nothing preventing orphaned references or duplicates
+All four were true of Materieelverhuur, the equipment rental administration Vera Slothouber built on Replit: machines, rental periods, customers and damage reports for nine construction hire companies, around 1,400 items. Everything lived as objects in the built-in key-value store.
 
-✅ Five entities modelled from the business; a Postgres schema with foreign keys and an organisation ID on every table
-✅ A migration script run six times against a copy - surfacing 140 orphaned rentals and 31 duplicate customers, each resolved by decision
-✅ Four days of dual-writing with daily comparison, which caught two write paths the migration had missed
-✅ Reads switched area by area, the old store kept for three weeks, backups set up with a tested restore
+Then two failures arrived together. The monthly utilisation report, every company's most-used feature, run on the first working day, started timing out. And a customer's name change missed 60 records, so for a month, invoices showed two different names for the same business. 🏗️
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we take Replit products to production - including the database migration, with zero downtime. ⚙️
+Swapping the accidental database for a real one (LaunchStudio, 3 business days, €3,800):
+✓ Five entities named: companies, items, customers, rentals, damage reports
+✓ A Postgres schema with an organisation ID on every table, foreign keys, and customer names referenced instead of copied
+✓ A migration script run six times against a copy before it ran clean. It surfaced 140 rentals pointing at deleted customers, 31 duplicate customers created by slight spelling differences, and 12 records missing a required date, each resolved by a decision, not a default
+✓ Constraints and indexes, including the composite index the utilisation report needs
+✓ Four days of dual writes with daily comparison, which found two write paths the migration had missed
+✓ Reads switched over area by area across two days, with the old store kept untouched for three weeks
+✓ Migrations committed, backups configured, and a restore performed and timed
 
-Her result: €3,800, three business days. The utilisation report went from timing out to 400 milliseconds, and the name-change problem became structurally impossible. 🚀
+The utilisation report went from timing out to 400 milliseconds. A name change can no longer go wrong, because each name now exists once. And the 31 duplicates had been invisible in the old store, causing months of invoicing confusion nobody had linked to a data problem.
 
-👉 Replit databases: when the built-in store is not enough: https://launchstudio.eu/en/blog/replit-databases-when-the-built-in-store-is-not-enough
+"I was keeping lists of keys so I could find things, and updating customer names in four hundred copies. I had written a database without noticing, and mine had no constraints." - Vera Slothouber
+
+https://launchstudio.eu/en/blog/replit-databases-when-the-built-in-store-is-not-enough
 
 #Replit #Postgres #Database #DataModelling #LaunchStudio #Manifera

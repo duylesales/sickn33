@@ -1,21 +1,40 @@
-🚨 Bram Hoekstra built Zaalkassa with Bolt and Supabase: ticketing and memberships for Dutch theatres and concert venues, running on Mollie. After a strong season, an adviser said to move to Adyen "because serious companies use it". Bram began planning a migration. 😳
+🔀 SHOULD YOU SWITCH PAYMENT PROVIDERS? A decision path from one ticketing SaaS
 
-A year of payment data told a more nuanced story. Most revenue came through iDEAL and SEPA, where provider costs differed little. The real issues were in the integration. Here's how to choose between Mollie and Adyen for a growing Dutch SaaS: 🧠
+START: "Serious companies use Adyen."
+That's what an adviser told Bram Hoekstra after a strong season. Bram built Zaalkassa with Bolt and Supabase: ticketing and memberships for Dutch theatres and concert venues, running on Mollie. He started planning a migration.
 
-❌ Webhooks not processed idempotently, causing duplicate tickets
-❌ Refunds for cancelled shows handled manually
-❌ Payouts not reconciling with accounting
-❌ A migration that would mean re-collecting around 2,600 membership mandates
+STEP 1: Where does your revenue come from?
+A year of payment data: mostly iDEAL, plus SEPA direct debit for memberships. Cost differences between providers there were small.
+➜ No strong reason to switch yet.
 
-✅ Staying with Mollie for now, with idempotent webhooks keyed on payment IDs
-✅ Automated refunds for cancelled performances
-✅ Daily reconciliation between Mollie settlements and records, plus accounting exports
-✅ A provider abstraction and concrete thresholds for when Adyen makes sense
+STEP 2: How big is your card volume?
+Growing, but still moderate.
+➜ Not yet.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we help you make the grown-up decision, not the impressive one. 🛠️
+STEP 3: What's actually hurting?
+• Webhooks not processed idempotently, causing occasional duplicate tickets
+• Refunds for cancelled shows handled by hand
+• Payouts that didn't reconcile automatically with accounting
+• Venues wanting one view of ticket sales and box office payments
+➜ None of these are fixed by changing providers.
 
-His result: €4,400, 11 business days. Duplicate tickets and manual refunds disappeared, venues got reconciled reports - and when card volumes grew, the data and abstraction were ready to evaluate Adyen properly. 🚀
+STEP 4: What would switching cost?
+Re-collecting around 2,600 membership mandates.
+➜ Expensive.
 
-👉 Mollie or Adyen for your SaaS? Here's how to decide: https://launchstudio.eu/en/blog/mollie-vs-adyen-for-a-growing-dutch-saas
+THE PATH TAKEN (LaunchStudio, 11 business days, €4,400)
+✓ Stay with Mollie for now
+✓ Idempotent webhook processing keyed on payment IDs
+✓ Automated refunds for cancelled performances
+✓ Daily reconciliation between Mollie settlements and Zaalkassa's records, plus accounting exports for venues
+✓ A provider abstraction around payment creation, refunds and webhooks, so a future switch stays contained
+✓ Concrete thresholds, based on card volume and international sales, for when an Adyen evaluation makes financial sense
+
+THE OUTCOME
+Duplicate tickets and manual refund work disappeared, and venues got reconciled reports. When international touring productions later pushed card volumes up, Bram had the data and the abstraction ready to evaluate Adyen properly.
+
+"Switching providers felt like growing up. Fixing how we used the provider we had turned out to be the grown-up decision." - Bram Hoekstra
+
+https://launchstudio.eu/en/blog/mollie-vs-adyen-for-a-growing-dutch-saas
 
 #Mollie #Adyen #Payments #EventTech #AIFounder #LaunchStudio #Manifera

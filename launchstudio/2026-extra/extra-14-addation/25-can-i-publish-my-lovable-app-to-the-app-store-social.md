@@ -1,21 +1,34 @@
-🚨 Lien Vermeulen coordinates a running club in Eindhoven and built Loopmaatje in Lovable: group runs, routes, check-ins and club challenges. Members kept asking for "the app", so she wrapped it with Capacitor herself and submitted it to Apple. It was rejected. Twice. 😳
+Apple, submission #1: ❌ Rejected. Guideline 4.2: this is essentially your website.
+Apple, submission #2: ❌ Rejected. Our reviewers couldn't log in.
+Apple, submission #3: ✅ Approved. 🏃
 
-She thought the hard part was wrapping the app. The hard part was making it something Apple considered an app. Here's what stood in the way: 🧠
+Lien Vermeulen coordinates a running club in Eindhoven and built Loopmaatje in Lovable: members join group runs, see routes, check in at the start and follow club challenges. Members kept asking for "the app," so Lien found a tutorial and wrapped her Lovable app with Capacitor herself.
 
-❌ Guideline 4.2: the app was essentially the website in a wrapper
-❌ Reviewers couldn't log in - sign-up needed a club invitation code
-❌ The Supabase service key bundled inside the app, extractable by anyone
-❌ No native features that made it worth installing
+Behind rejection #1: the wrapped app added nothing a phone browser couldn't do.
+Behind rejection #2: sign-up needed a club invitation code, and reviewers didn't have one.
+And something Apple didn't mention: the Supabase service key was bundled inside the app, where anyone could extract it.
 
-✅ Backend made production ready first: keys in edge functions, Row Level Security per club
-✅ Native push notifications for run changes and weather cancellations
-✅ Location-based check-in at the start point and offline route maps
-✅ A reviewer demo account and submission notes explaining the native features
+What LaunchStudio did before submission #3 (18 business days, €6,400):
 
-At **LaunchStudio**, backed by Manifera's 11+ years of building and publishing mobile apps, we take Lovable apps to phones - as a PWA or through Capacitor into the stores. 🛠️
+FIRST, A PRODUCTION BACKEND
+✓ Keys moved into edge functions
+✓ Row Level Security per club
+✓ Authentication with proper session handling
 
-💡 Her result: €6,400, eighteen business days. Approved on the next submission, installed by about 230 of the club's 310 members within three months - and she kept updating the interface in Lovable. 🚀
+THEN, A REAL PHONE APP
+✓ Push notifications for run changes and weather cancellations
+✓ Location-based check-in at the start point
+✓ Offline access to route maps
 
-👉 Want your Lovable app in the App Store? Capacitor vs PWA, and what Apple really checks: https://launchstudio.eu/en/blog/can-i-publish-my-lovable-app-to-the-app-store
+THEN, A SUBMISSION REVIEWERS COULD USE
+✓ A reviewer demo account
+✓ Notes explaining the native features
+✓ iOS and Android submissions
+
+Approved. Within three months, about 230 of the club's 310 members had installed it. And Lien still updates the interface in Lovable, which flows into the app with each release.
+
+"I thought the hard part was wrapping the app. The hard part was making it something Apple considered an app." - Lien Vermeulen
+
+https://launchstudio.eu/en/blog/can-i-publish-my-lovable-app-to-the-app-store
 
 #Lovable #Capacitor #PWA #AppStore #LaunchStudio #Manifera

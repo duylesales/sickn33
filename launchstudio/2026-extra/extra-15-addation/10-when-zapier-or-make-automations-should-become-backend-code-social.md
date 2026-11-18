@@ -1,21 +1,31 @@
-🚨 Noor El Amrani, a financial coach in Almere, built Geldcoach Academie in Lovable: video lessons, worksheets and monthly group calls. Payments ran through Mollie, and a chain of Make scenarios did the rest. At around 300 enrolments a month, students started paying - and not getting in. 😳
+🁢 The domino chain behind one course enrolment
 
-Twice the access scenario failed after an API change, and paid students couldn't log in for two days. Retried webhooks sent double invoices. Refunds took four tools. Here's when Zapier or Make automations should become backend code: 🧠
+Domino 1: A student pays through Mollie. A webhook fires.
+Domino 2: Make creates the student in a CRM.
+Domino 3: Another scenario grants course access in Supabase.
+Domino 4: A third generates and emails an invoice through the accounting tool.
+Domino 5: A fourth adds the student to the group call calendar.
 
-❌ Paid students locked out for two days
-❌ Duplicate invoices from retried Mollie webhooks
-❌ Manual refunds across four tools
-❌ Student data flowing through three platforms missing from the privacy policy
+When every domino falls in order, it's magic. Noor El Amrani, a financial coach in Almere, built Geldcoach Academie this way in Lovable: video lessons, worksheets and monthly group calls.
 
-✅ Four critical scenarios moved into Supabase edge functions
-✅ Verified Mollie webhooks, processed once per payment ID
-✅ Invoices with idempotency keys and an automatic refund flow with credit notes
-✅ Email and SMS alerts on failures, and an updated privacy policy
+At around 300 enrolments a month, dominoes started falling the wrong way:
+💥 A retried Mollie webhook sometimes sent two invoices
+💥 Twice, the access scenario broke after an API change, and students who had paid couldn't log in for two days
+💥 Refunds meant manual work in four tools
+💥 Make became one of the biggest monthly costs
+💥 Student names, emails and payment amounts passed through three platforms missing from the privacy policy
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we move the automations your revenue depends on into code that fails loudly, not silently. 🛠️
+What LaunchStudio did (10 business days, €3,300):
+• Documented all eleven scenarios and moved the four critical ones into Supabase edge functions
+• Verified Mollie webhooks, recorded by payment ID and processed once
+• Access, invoicing and calendar invites handled in one function, with retries and clear failure handling
+• Invoices created with idempotency keys, and a refund flow that removes access and creates credit notes
+• Alerts to Noor by email and SMS, convenience scenarios left in Make, and the privacy policy updated
 
-Her result: €3,300, 10 business days. No student double-invoiced or locked out since, Make costs down by about 70%, and refunds now take one button. 🚀
+Since then: no student double-invoiced or locked out after paying. Make costs down about 70%. Refunds are one button.
 
-👉 Running your business on Make or Zapier? Here's when to switch to backend code: https://launchstudio.eu/en/blog/when-zapier-or-make-automations-should-become-backend-code
+"Make let me start without a developer. It was never meant to be the place where my students' access depended on everything going right." - Noor El Amrani
+
+When should automations become backend code? https://launchstudio.eu/en/blog/when-zapier-or-make-automations-should-become-backend-code
 
 #Make #Zapier #Mollie #EdTech #AIFounder #LaunchStudio #Manifera

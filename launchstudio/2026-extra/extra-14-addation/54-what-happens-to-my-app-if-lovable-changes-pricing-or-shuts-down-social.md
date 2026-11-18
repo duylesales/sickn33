@@ -1,21 +1,27 @@
-🚨 Thomas Veldkamp built Huurcheck in Lovable: a tool for Dutch tenants to check whether their rent is reasonable and generate a letter to their landlord. It grew to several thousand users, and a legal services company wanted to buy it. Then the acquirer's technical review asked one question: "What happens if Lovable changes or disappears?" 😳
+Q&A: the question every acquirer of a Lovable app will ask 🤝
 
-His honest answer was uncomfortable. He had built a business on a tool - the buyer wanted to know he'd built it on something he owned. Here's what the review found: 🧠
+Q: What does the app do?
+A: Huurcheck, built by Thomas Veldkamp in Lovable, helps Dutch tenants check whether their rent is reasonable under rental rules and generates a letter to their landlord. Several thousand users. A legal services company wanted to buy it.
 
-❌ The app published on a Lovable domain, with his custom domain pointed at it
-❌ The backend running on Lovable Cloud
-❌ The GitHub repository on his personal account, months out of date because sync had been disconnected
-❌ Rent calculation rules living only inside generated components
+Q: "What happens if Lovable changes or disappears?"
+A, before: Uncomfortable. The app was published on a Lovable domain with a custom domain pointed at it. The backend ran on Lovable Cloud. The GitHub repository sat on Thomas's personal account, months out of date, because sync had been disconnected.
 
-✅ GitHub reconnected under a company organisation
-✅ The backend migrated to a company-owned Supabase project in Frankfurt
-✅ The app deployed from GitHub to Vercel on Thomas's own domain
-✅ Rent rules moved into tested database functions, plus an operating document for the acquirer
+Q: What changed?
+A: In 12 business days, for €4,400, LaunchStudio:
+• Reconnected GitHub, under a company organisation
+• Migrated the backend to a company-owned Supabase project in Frankfurt
+• Deployed the app from GitHub to Vercel, on Thomas's domain
+• Moved the rent calculation rules into database functions, with tests
+• Wrote an operating document for the acquirer
 
-At **LaunchStudio**, backed by Manifera's 11+ years of vendor transitions and platform migrations, we let you keep building fast in Lovable while you own the code, data, hosting and domain. 🛠️
+Q: "What happens if Lovable changes or disappears?"
+A, after: The app keeps running. Code, backend and deployment are all owned by the company, and documented.
 
-💡 His result: €4,400, twelve business days. The acquirer's follow-up review found no platform dependency issues, and the deal closed on the original terms. 🚀
+Q: And the deal?
+A: The acquirer's follow-up review found no platform dependency issues, and the deal closed on the original terms. During the transition, Thomas even kept editing the interface in Lovable.
 
-👉 What actually depends on Lovable in your app? Here are the five steps to independence: https://launchstudio.eu/en/blog/what-happens-to-my-app-if-lovable-changes-pricing-or-shuts-down
+"I had built a business on a tool. The buyer wanted to know I had built it on something I owned." - Thomas Veldkamp
+
+https://launchstudio.eu/en/blog/what-happens-to-my-app-if-lovable-changes-pricing-or-shuts-down
 
 #Lovable #VendorLockIn #Supabase #DueDiligence #LaunchStudio #Manifera

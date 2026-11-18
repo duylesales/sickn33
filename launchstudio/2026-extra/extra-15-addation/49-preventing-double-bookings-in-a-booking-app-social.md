@@ -1,21 +1,25 @@
-🚨 Eva Hendriks built Behandelagenda with Lovable and Supabase: online booking for wellness studios and massage practices, with iDEAL payment at booking. Studios loved it - until Saturdays, when two clients were booked with the same therapist at overlapping times, three or four times a weekend. 😳
+🧵 1/ Every Saturday, massage studios using Behandelagenda found two clients booked with the same therapist at overlapping times. Sometimes three or four times a weekend.
 
-Studios were apologising to clients every Saturday. Here's how to prevent double bookings in a booking app: 🧠
+2/ Eva Hendriks built Behandelagenda with Lovable and Supabase: online booking for wellness studios and massage practices, with treatments of different lengths, therapists with their own schedules, and iDEAL payment at booking. Studios liked it. Until Saturdays.
 
-❌ Availability checked in the browser before a direct insert
-❌ Overlaps missed because only start times were compared
-❌ Slots appearing free during a one-to-two-minute iDEAL payment
-❌ Double clicks creating two bookings, and duplicate slots around daylight saving
+3/ Bug one: availability was checked in the browser, then the booking inserted directly. And the check only compared start times. So a 60-minute booking at 10:00 and a 90-minute booking at 10:30 for the same therapist were both accepted.
 
-✅ An exclusion constraint on therapist and time range, with a buffer between treatments
-✅ Bookings only through a database function, direct inserts blocked by RLS
-✅ Ten-minute holds during payment, confirmed by the Mollie webhook
-✅ Client-generated IDs, time zone-aware slots with DST tests, and next available times on failure
+4/ Bug two: iDEAL payment takes one to two minutes. During that time, the slot looked free to everyone else.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we make the database refuse the second booking, so nobody has to apologise. 🛠️
+5/ Bug three: a double click on the pay button could create two bookings and two payments.
 
-Her result: €3,600, 10 business days. Around 7,800 bookings in three months with zero double bookings - and fifty simultaneous requests at one slot always produce exactly one booking. 🚀
+6/ Bug four: around the end of October, slots appeared twice. Daylight saving.
 
-👉 Building a booking app? Here's how to prevent double bookings: https://launchstudio.eu/en/blog/preventing-double-bookings-in-a-booking-app
+7/ The fix (LaunchStudio, 10 business days, €3,600): an exclusion constraint on therapist and time range, with a configurable buffer, so overlapping active bookings are impossible in the database itself.
+
+8/ Booking creation moved into a database function, with direct inserts blocked by RLS. Bookings are "held" for ten minutes during payment, confirmed by the Mollie webhook, and released by a scheduled job. Rare late payments are refunded automatically.
+
+9/ Client-generated IDs stop duplicate requests. Slots are generated in each studio's time zone, with daylight saving tests. Failed bookings show the next available times.
+
+10/ Three months later: around 7,800 bookings, zero double bookings. Fifty simultaneous requests at one slot consistently produce exactly one booking.
+
+11/ "My studios were apologising to clients every Saturday. Now the database simply refuses the second booking, and nobody has to apologise." - Eva Hendriks
+
+https://launchstudio.eu/en/blog/preventing-double-bookings-in-a-booking-app
 
 #BookingApp #Supabase #Postgres #Wellness #AIFounder #LaunchStudio #Manifera

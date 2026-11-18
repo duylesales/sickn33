@@ -1,21 +1,32 @@
-🚨 Rosa Kuipers, a business coach in Amersfoort, needed Coachkompas: a platform for coaches to manage clients, session notes, exercises and subscriptions. She built it twice - two months in Bubble, then three weeks in Lovable. Both worked for a demo. Then coaching associations, her biggest prospects, started asking about data location and technical ownership. 😳
+⚖️ DECISION MATRIX: Bubble or Lovable for a coaching platform?
 
-Both tools could build her app. Only one let her answer the questions her biggest customer asked. But the Lovable version wasn't ready: 🧠
+                                   Bubble    Lovable
+Works for a demo                     ✅         ✅
+Build time                         2 months   3 weeks
+Integrated hosting                   ✅         ➖
+Code ownership                       ➖         ✅
+Answers "where is our data?"         ➖         ✅ (after the work below)
+Answers "who owns the technology?"   ➖         ✅
 
-❌ Session notes readable between coaches
-❌ No subscriptions set up
-❌ No decision on EU hosting
-❌ Exercise uploads without private storage
+Rosa Kuipers, a business coach in Amersfoort, needed Coachkompas: coaches manage clients, session notes, exercises and monthly subscriptions. She built it twice, in Bubble and in Lovable. Both worked for a demo. What decided it was her plan to sell to coaching associations, who asked exactly those last two questions.
 
-✅ Row Level Security per coach and client
-✅ EU-hosted Supabase in Frankfurt
-✅ Stripe subscriptions with iDEAL
-✅ Encrypted storage for exercise uploads, plus staging and monitoring - and the Bubble version archived
+So: Lovable. But that version had its own gaps:
+• Session notes open between coaches
+• No subscriptions
+• No decision on EU hosting
 
-At **LaunchStudio**, backed by Manifera's 11+ years of building and migrating systems, we help founders weigh ownership, logic and long-term costs - then make the chosen stack production-ready. 🛠️
+What LaunchStudio did (12 business days, €4,500, plus €49/month managed hosting):
+✓ Row Level Security per coach and client
+✓ EU-hosted Supabase in Frankfurt
+✓ Stripe subscriptions with iDEAL
+✓ Encrypted storage for exercise uploads
+✓ Staging and monitoring
+The Bubble version went into the archive.
 
-💡 Her result: €4,500, twelve business days. Coachkompas launched with 30 coaches and signed a regional coaching association, which cited the documented EU hosting and code ownership in its approval. 🚀
+Coachkompas launched with 30 coaches and signed a partnership with a regional coaching association. Its approval named the documented EU hosting and code ownership.
 
-👉 Lovable or Bubble for your SaaS in 2026? Here's the practical side-by-side: https://launchstudio.eu/en/blog/lovable-vs-bubble-for-a-saas-in-2026
+"Both tools could build my app. Only one let me answer the questions my biggest customer asked." - Rosa Kuipers
+
+https://launchstudio.eu/en/blog/lovable-vs-bubble-for-a-saas-in-2026
 
 #Lovable #Bubble #NoCode #SaaS #LaunchStudio #Manifera

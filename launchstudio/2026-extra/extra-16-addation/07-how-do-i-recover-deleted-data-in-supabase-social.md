@@ -1,21 +1,43 @@
-💐 Thomas Brink built Bloemenabonnement with Cursor and Supabase: weekly fresh flowers for offices and homes in Utrecht. He asked an AI agent to add one small field, a delivery note. The agent decided to "restructure" the orders table and generated a migration that dropped and recreated it. Thomas ran it on production. 😱
+🔴 INCIDENT REPORT: the migration that dropped the orders table
 
-Around 14,000 past orders and that week's deliveries were gone. He had daily backups, but no point-in-time recovery. His first instinct: restore everything. That would also have wiped every new order, Mollie payment and subscription since that morning. Here's what happened instead: 🧠
+PRODUCT
+Bloemenabonnement, built by Thomas Brink with Cursor and Supabase. Weekly fresh flower subscriptions for offices and homes in Utrecht.
 
-❌ A destructive migration run straight against production
-❌ Cascading deletes that also removed every order line
-❌ No point-in-time recovery enabled
-❌ No staging and no review before migrations ran
+TRIGGER
+Thomas asked an agent to add a delivery note field. The agent decided to restructure the orders table and generated a migration that dropped and recreated it. Thomas ran it directly against production, on a Tuesday afternoon.
 
-✅ Yesterday's backup restored into a separate project, not over production
-✅ Orders and order lines exported and reinserted in a reviewed transaction
-✅ New orders rebuilt from Mollie payment records and webhook logs
-✅ PITR enabled, a migration pipeline with staging and destructive statements flagged
+IMPACT
+Around 14,000 past orders and the current week's deliveries, gone.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of operating and recovering production databases, we recover what was lost without rolling back what wasn't. 🛠️
+CONSTRAINTS
+• Daily backups on a paid plan, but no point-in-time recovery
+• The last backup from early that morning
+• A full restore would have erased new orders, Mollie payments recorded by webhooks and several new subscriptions since then
 
-His result: everything restored within 18 hours, and no customer missed a delivery. €2,300 including the safeguards. Dozens of migrations since, zero incidents. 🚀
+FIRST INSTINCT
+Restore everything, right now.
 
-👉 How to recover deleted data in Supabase safely, step by step: https://launchstudio.eu/en/blog/how-do-i-recover-deleted-data-in-supabase
+RESPONSE (LaunchStudio)
+1. No full restore. The latest daily backup restored into a separate project.
+2. The orders table, plus order lines deleted through a cascade, exported from it.
+3. Orders created after the backup reconstructed from Mollie payment records and webhook logs, stored in a separate table.
+4. Everything reinserted into production in a reviewed transaction, with counts checked per day and spot checks against delivery lists.
+5. The delivery note field added properly, with an additive migration.
+
+RECOVERY TIME
+Within 18 hours. By the next morning, all historical orders and that week's deliveries were back. No customer missed a delivery.
+
+PREVENTION (5 business days, €2,300 in total)
+• Point-in-time recovery enabled
+• Migrations through a reviewed pipeline with staging
+• Destructive statements flagged automatically
+• A documented, tested restore procedure
+
+FOLLOW-UP
+Dozens of migrations since, without incident.
+
+"The agent was trying to be helpful. I learned that the database needs a gate between a good idea and production." - Thomas Brink
+
+https://launchstudio.eu/en/blog/how-do-i-recover-deleted-data-in-supabase
 
 #Supabase #Cursor #Backups #DataRecovery #AIFounder #LaunchStudio #Manifera

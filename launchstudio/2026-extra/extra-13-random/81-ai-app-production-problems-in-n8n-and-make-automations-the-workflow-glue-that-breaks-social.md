@@ -1,21 +1,34 @@
-🚨 Sabine Kroes, co-owner of a painting company in Heerhugowaard with fourteen painters, built Schildersplanner in Lovable: customers request quotes, the office plans jobs and painters log hours from their phones. Behind it ran eleven n8n workflows - confirmations, invoices, a Google Sheet, payment reminders. Three other painting companies licensed it. Then one customer received three identical invoices, and another received none for a job finished six weeks earlier. 😳
+🧊 A painting company's planner: the iceberg
 
-The invoice workflow retried on timeouts without checking whether the invoice already existed. The reminder workflow was triggered from the browser through a public, unauthenticated webhook. Over 200 failed executions in two months notified nobody. Every workflow used Sabine's personal credentials, logs kept customer addresses forever on a US-hosted plan, and two licensees' data shared the same workflows. Here's where AI apps break in the n8n and Make glue: 🧠
+ABOVE THE WATERLINE (what everyone saw)
+Schildersplanner, built in Lovable by Sabine Kroes, co-owner of a painting company in Heerhugowaard with fourteen painters. Customers request quotes, the office plans jobs, painters log hours from their phones. It never broke. Three other painting companies were licensing it.
 
-❌ Retries that create duplicate invoices
-❌ Public webhook triggers called from the browser
-❌ Failed runs that alert nobody
-❌ Personal credentials and no separation between customers
+〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️
 
-✅ Invoice creation moved into the backend with idempotency keys and a record of issued invoices
-✅ All webhook triggers authenticated and called from the server, plus an error workflow alerting the office by email and Slack
-✅ Company service accounts per licensee, n8n on an EU-hosted instance with 14-day log retention
-✅ Workflows exported to Git with separate test copies - and missing and duplicate invoices reconciled
+BELOW THE WATERLINE (what nobody saw)
+Eleven n8n workflows doing the real work: confirmations, invoices in the accounting software, a Google Sheet the office depended on, and payment reminders. And underneath them:
+• An invoice workflow that retried on timeouts without checking whether the invoice already existed
+• A payment reminder workflow triggered from the browser, through a public webhook URL with no authentication
+• Over 200 failed executions in two months, and nobody notified
+• Every workflow running on Sabine's personal Google and accounting credentials, with full access
+• Execution logs keeping customer addresses and job notes forever, on a US-hosted cloud plan
+• Two licensees' data flowing through the same workflows, without separation
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we review the invisible part behind your app before your customers notice it. ⚙️
+It surfaced when one customer asked why she'd received three identical invoices, and another hadn't received one at all for a job finished six weeks earlier.
 
-Her result: €1,900, seven business days. Duplicate and missing invoices stopped, failures now reach the office within minutes, and Sabine has added two more licensees. 🚀
+WHAT LAUNCHSTUDIO BUILT UNDER WATER (7 business days, €1,900)
+⚓ Invoice creation moved into the app backend, with idempotency keys and a record of issued invoices
+⚓ Every webhook trigger authenticated, and called from the server
+⚓ An error workflow notifying the office by email and Slack
+⚓ Company service accounts per licensee, instead of personal credentials
+⚓ n8n on an EU-hosted instance, with 14-day log retention
+⚓ Workflows exported to Git, with separate test copies
+⚓ The missing and duplicate invoices reconciled
 
-👉 AI app production problems in n8n and Make automations: the workflow glue that breaks: https://launchstudio.eu/en/blog/ai-app-production-problems-in-n8n-and-make-automations-the-workflow-glue-that-breaks
+Duplicate and missing invoices stopped. Failed executions now reach the office within minutes. The four painting companies run on separated workflows, and Sabine has added two more licensees.
+
+"The app never broke. The invisible part behind it broke quietly, and our customers were the ones who noticed." - Sabine Kroes
+
+https://launchstudio.eu/en/blog/ai-app-production-problems-in-n8n-and-make-automations-the-workflow-glue-that-breaks
 
 #n8n #Make #Automation #Lovable #LaunchStudio #Manifera

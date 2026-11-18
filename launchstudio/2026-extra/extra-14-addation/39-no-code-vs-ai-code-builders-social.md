@@ -1,21 +1,37 @@
-🚨 Freek Wolters runs a business centre in Nieuwegein and built Vergaderhuur on a no-code platform four years ago: companies book meeting rooms, add catering and get invoices. It served him well - until he partnered with five other business centres. The next pricing tier would have tripled his monthly costs, and a potential buyer asked who owned the software. 😳
+💳 THE PRICING PAGE a growing business centre was looking at
 
-The no-code platform was perfect for one building. For six buildings and a possible sale, he needed something he actually owned. He rebuilt the interface in Lovable in six weeks - but underneath: 🧠
+CURRENT NO-CODE PLAN
+One business centre ✓
+Monthly cost: fine
 
-❌ Tables copied one-to-one from the old platform's structure
-❌ Booking conflicts checked only in the browser
-❌ Imported data with no access rules between business centres
-❌ No plan for moving users whose passwords couldn't be transferred
+NEXT NO-CODE TIER
+Six business centres ✓
+Monthly cost: about 3× the current plan
+Slow workflows: still included
+Who owns the software: not you
 
-✅ A redesigned Supabase schema for locations, rooms, bookings and companies
-✅ A database constraint that makes overlapping bookings impossible
-✅ Row Level Security per business centre and company, with four years of bookings and invoices migrated
-✅ Mollie for payments and invoices with BTW, plus a set-your-password email for users
+OWN STACK
+Six business centres ✓
+Monthly cost: roughly a quarter of that next tier
+Instant bookings ✓
+Code in a repository you own ✓
 
-At **LaunchStudio**, backed by Manifera's 11+ years of platform migrations, we redesign rather than copy - so the code you own is faster and easier to maintain. 🛠️
+Freek Wolters runs a business centre in Nieuwegein. Four years ago he built Vergaderhuur on a no-code platform: companies book meeting rooms by the hour, add catering and receive invoices. It served him well. Then he partnered with five other business centres, and the tier he'd need for the extra capacity and workflow runs would have tripled his costs. Some workflows already took several seconds. And a potential buyer asked who owned the software.
 
-💡 His result: €6,800, seventeen business days. Running costs ended up at roughly a quarter of the projected no-code tier, bookings felt instant, and the buyer's due diligence now covered code in a repository Freek owns. 🚀
+Freek rebuilt the interface in Lovable over six weeks, using his old app as a guide. It looked better, but the tables just copied the old platform's structure, booking conflicts were only checked in the browser, and imported data had no access rules.
 
-👉 No-code or AI code builder? Here's what changes when you own the code: https://launchstudio.eu/en/blog/no-code-vs-ai-code-builders
+What LaunchStudio built (17 business days, €6,800, plus €49/month managed hosting):
+✓ A Supabase schema with locations, rooms, bookings and companies
+✓ A database constraint that makes overlapping bookings impossible
+✓ Row Level Security per business centre and company
+✓ Four years of bookings and invoices migrated
+✓ Mollie for payments and invoices with BTW
+✓ A user migration with a set-your-password email
+
+Vergaderhuur switched over on a Sunday evening. And the buyer's due diligence now covers code Freek actually owns.
+
+"The no-code platform was perfect for one building. For six buildings and a possible sale, I needed something I actually owned." - Freek Wolters
+
+https://launchstudio.eu/en/blog/no-code-vs-ai-code-builders
 
 #NoCode #Lovable #Supabase #PropTech #LaunchStudio #Manifera

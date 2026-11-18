@@ -1,21 +1,33 @@
-🚨 Nienke Baaijens built Zorgcontract in Lovable - contract and rate administration between 34 care providers and health insurers. After two years alone she hired her first developer. The next six weeks were worse than working solo. 😳
+📉 Questions per day from a first hire
 
-He asked 15 to 30 questions a day - each answerable in a sentence, none written down anywhere. Three days just to get the product running. Two features rebuilt because nothing described how the codebase worked. Her own output: close to zero. Here's the minimum process to build after your first hire: 🧠
+Weeks 1-6    ██████████████████████████████  15 to 30
+A fortnight
+after the fix ███▌                           3 to 4
 
-❌ No README, no conventions file, nothing about the business or its customers
-❌ No agreement on which decisions were his - so a charting library and a table change appeared unannounced
-❌ Everything that mattered living only in the founder's head
-❌ Onboarding treated as an interruption rather than the work itself
+Nienke Baaijens built Zorgcontract in Lovable: contract and rate administration between care providers and health insurers, used by 34 providers. After two years alone, she hired her first developer. There was no documentation of any kind, because she'd never needed it. 🏥
 
-✅ A README written together with the developer, so the gaps were found by the person who had them
-✅ A conventions file from the existing code: one library per job, four rules never to break, the two reworked features as worked examples
-✅ A two-page document on the care sector, the customers and what matters to them
-✅ Branch-per-change with five-minute reviews, a shared priority list, and explicit decision boundaries
+What those first six weeks looked like:
+• Three days just to get the product running
+• Two features built in a way that didn't match the codebase, because nothing described how the codebase worked. Both reworked.
+• Two decisions she'd have made differently (adding a charting library, changing a table structure), because nobody had said which decisions were his
+• Her own output: close to zero
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we write exactly these documents when handing a product to a client team. ⚙️
+Every question could be answered in a sentence. None of those sentences were written down.
 
-Her result: €2,400, two business days. Questions dropped to three or four a day within a fortnight; by month three he was building whole features independently - and her own output was higher than when she worked alone. 🚀
+Writing them down (LaunchStudio, 2 business days, €2,400):
+✓ A README for setup and environments, written with the developer, so the gaps were found by the person who had them
+✓ A conventions file from the existing code: the chosen library for each job, plus four rules never to break, with the two reworked features as worked examples
+✓ A two-page document on the care sector: who the customers are, what they use the product for, what matters to them
+✓ A shared priority list
+✓ A branch per change, with five-minute reviews
+✓ A clear split of decisions: architecture, schema, dependencies and anything customer-facing agreed jointly
 
-👉 AI development: building a process after your first hire: https://launchstudio.eu/en/blog/ai-development-building-a-process-after-your-first-hire
+By month three the developer was building whole features on his own, and Nienke's output had recovered beyond where it was when she worked alone.
+
+The surprise: the business document, the one she'd thought unnecessary, cut the questions most. Most of them had been about what customers actually needed, not about code.
+
+"He asked me thirty questions a day for six weeks, and I could answer every one in a sentence. Not one of those sentences existed anywhere except in my head." - Nienke Baaijens
+
+https://launchstudio.eu/en/blog/ai-development-building-a-process-after-your-first-hire
 
 #Startups #FirstHire #Onboarding #AIDevelopment #LaunchStudio #Manifera

@@ -1,23 +1,37 @@
-📸 Tessa Vermeulen runs a SaaS for wedding photographers from Den Bosch, built with v0, Cursor and Supabase: photographers share galleries, contracts and invoices with couples. A local freelancer quoted €4,200 to make it production ready and add an organisation model for studios. It felt high, so she asked LaunchStudio for a second opinion, half expecting to hear the freelancer was too expensive. 🤔
+🤔 WHAT TESSA EXPECTED TO HEAR
+"That freelancer is too expensive. Let us do it instead."
 
-What we usually find in quotes: 🧠
+✅ WHAT SHE ACTUALLY HEARD
+"The quote is good. Accept it, and ask for two more items."
 
-❌ Missing scope: a few bugs fixed, but no policies, webhooks, staging, backups or monitoring
-❌ Unnecessary rebuilds in the supplier's favourite framework
-❌ Hosting moved into the supplier's account at a monthly fee
-❌ Vague promises like "secure and scalable" with nothing specific
+Tessa Vermeulen runs Galerieplek from Den Bosch, a SaaS for wedding photographers built with v0, Cursor and Supabase: photographers share galleries, contracts and invoices with couples. A local freelancer quoted €4,200 to make the app production ready and add an organisation model for photography studios. It felt high, so she asked LaunchStudio for a second opinion, at a fixed fee agreed in advance.
 
-What we found in Tessa's quote: ✅
+What the review found, comparing the quote with a short look at the app:
 
-✅ Specific scope: policies per studio and couple with tests, private galleries with signed links, Stripe webhooks with reconciliation
-✅ Staging, a pipeline, email authentication, backups with a restore test and monitoring
-✅ Accounts staying in Tessa's name, plus two weeks of support
-✅ Only two gaps: data export on deletion requests and project instructions for Cursor, both added by the freelancer for a small extra amount
+IN THE QUOTE, AND SPECIFIC
+✓ Policies per studio and per couple, with tests
+✓ Private gallery storage with signed links
+✓ Stripe webhooks with reconciliation
+✓ Staging and a pipeline
+✓ Email authentication
+✓ Backups with a restore test, and monitoring
+✓ The organisation model
+✓ Accounts staying in Tessa's name
+✓ Two weeks of support
 
-At **LaunchStudio**, backed by Manifera's 11+ years of writing and reviewing quotes, we give honest opinions, including when the best answer is to accept someone else's quote. 🛠️
+MISSING
+✗ An export of a couple's gallery and data when they ask for deletion
+✗ Project instructions for Cursor
 
-Her result: a written review in two business days, a successful project with the freelancer and, a year later, a Launch & Grow project with us for SSO. 🚀
+VERDICT
+A plausible price for the scope.
 
-👉 Second opinion on a developer quote for your AI app: https://launchstudio.eu/en/blog/second-opinion-on-a-developer-quote-for-your-ai-app
+The written review arrived in 2 business days. The freelancer added the two missing items for a small extra amount, Tessa signed, and the project went well.
+
+A year later, when she needed SSO for a large studio chain, she came back to LaunchStudio for a Launch & Grow project.
+
+"I expected them to tell me the freelancer was too expensive, so they could do it themselves. They told me the quote was good and what to add. That is why I called them back a year later." - Tessa Vermeulen
+
+https://launchstudio.eu/en/blog/second-opinion-on-a-developer-quote-for-your-ai-app
 
 #SecondOpinion #SoftwareQuote #v0 #Cursor #AIFounder #LaunchStudio #Manifera

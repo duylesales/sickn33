@@ -1,20 +1,27 @@
-🚨 Fleur Hermans built EuroDesk - a tool tracking cross-border EU grant programs for small businesses - using Bolt in three weeks, storing business data from users in the Netherlands, Belgium, and Germany. A prospective institutional partner then asked one question: where physically is data from Belgian and German users stored, and does your data processing agreement reflect that? She had no answer. 😳
+✈️ A three-country itinerary for one database
 
-Bolt built her a great tool. It didn't know she needed a data processing agreement to match. 🧠
+Fleur Hermans built EuroDesk in Bolt in about three weeks, in Maastricht, after working close to the city's EU-funding advisory sector. It helps small businesses track and apply for cross-border EU grant programs by pulling together eligibility rules from Dutch, Belgian and German programs.
 
-❌ Bolt had defaulted to a single-region database configuration with no documented data residency logic
-❌ No data processing agreement template existed at all
-❌ The gap was invisible in the product itself
-❌ It was disqualifying for a partnership that depended on cross-border trust
+That means EuroDesk stores business data from users in three jurisdictions. So a prospective institutional partner, evaluating it for a referral partnership, asked a fair question: where physically is the data of Belgian and German users stored, and does your data processing agreement reflect that?
 
-✅ Implement region-aware data handling that reflects each user's jurisdiction
-✅ Add audit logging for every eligibility calculation
-✅ Produce a data processing agreement that actually matches the technical setup
+The itinerary, as Bolt had set it up:
+🇳🇱 Dutch users → one region
+🇧🇪 Belgian users → the same single region
+🇩🇪 German users → the same single region
+📄 Data residency logic: none documented
+📄 Data processing agreement: no template at all
 
-At **LaunchStudio**, Manifera's engineers treat this handoff - AI's first draft, engineering's compliance layer - as standard practice for cross-border founders, the same rigor applied for clients like TNO. 🛡️
+None of it was visible in the product. All of it was disqualifying for the partnership.
 
-EuroDesk's result: it secured the institutional partnership after a follow-up review, with the data residency documentation cited as the deciding factor. 🚀
+The revised itinerary (LaunchStudio, 8 business days, €1,750):
+📍 Region-aware data handling that reflects each user's jurisdiction
+📍 Audit logging on every grant-eligibility calculation
+📍 A data processing agreement written to match the real technical setup
 
-👉 Serving customers across Dutch, Belgian, or German borders? Find out what your AI tool didn't flag: https://launchstudio.eu/en/blog/26-ai-and-software-engineering-maastricht
+Final destination: EuroDesk secured the partnership after a follow-up review, with the data residency documentation named as the deciding factor.
+
+"Bolt built me a great tool. It didn't know I needed a data processing agreement to match. That's a completely different kind of expertise." - Fleur Hermans
+
+Building for users across borders? Know where their data lands: https://launchstudio.eu/en/blog/26-ai-and-software-engineering-maastricht
 
 #AINativeFounder #LaunchStudio #Manifera #DataCompliance #Maastricht

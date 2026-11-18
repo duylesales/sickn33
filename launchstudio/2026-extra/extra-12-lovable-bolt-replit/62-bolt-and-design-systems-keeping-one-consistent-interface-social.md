@@ -1,21 +1,31 @@
-🚨 Sanne de Rooij's Stagebureau matches around 3,000 vocational students a year with host companies for 12 colleges. Before a wider rollout, a college's communications officer handed her a list of 34 interface inconsistencies. Her first reaction: "that's cosmetic". 😳
+EXPECTATION: "These 34 inconsistencies are cosmetic."
+REALITY: one of them was why students couldn't submit their forms. 🎨
 
-It wasn't. Hidden inside the inconsistency was a functional bug that two colleges had already complained about. Here's why AI-built interfaces drift - and the small system that stops it: 🧠
+Sanne de Rooij built Stagebureau with Bolt: internship placement administration for vocational colleges, used by 12 institutions to match around 3,000 students a year with host companies. Before a wider rollout, a college's communications officer reviewed the product and sent her a list of 34 inconsistencies.
 
-❌ Eleven different greys for text and seven button styles across nine screens
-❌ Spacing values from 3 to 37 pixels with no pattern - and two screens in a different typeface
-❌ Three input designs, each handling validation errors differently
-❌ One of them showing errors in colour only - so students couldn't tell why a form wouldn't submit
+The inventory behind the list:
+• Eleven different greys for text
+• Seven button styles across nine screens
+• Four card treatments
+• Spacing from 3 to 37 pixels, with no pattern
+• Two screens in a different typeface, from a session where the tool reached for something else
+• Three input designs, each handling validation errors its own way
 
-✅ Tokens defined: eight colours, one five-step grey scale, a four-multiple spacing scale, one radius, one shadow
-✅ An accessible component library adopted and styled with those tokens
-✅ All nine screens converted, error handling unified with text alongside colour
-✅ Tokens and components written into the repo's conventions file so AI sessions follow them
+That last one was the reality behind the expectation. One input design showed errors only in colour, with no text. That's an accessibility failure, and it's why two colleges had reported that students didn't understand why a form wouldn't submit.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we pair design consistency with accessibility - because they share the same fix. ⚙️
+From eleven greys to five steps (LaunchStudio, 2 business days, €2,600):
+✓ Tokens: eight colours including one five-step grey scale, a spacing scale in multiples of four, three heading sizes and one body size, one radius, one shadow
+✓ An accessible component library, styled with those tokens
+✓ Button, input, card, dialog, table, badge and empty state standardised
+✓ All nine screens converted, and the stray typeface removed
+✓ Errors shown with text alongside colour, which fixed the colleges' complaint
+✓ Every arbitrary colour and spacing value removed from the code, so only the defined ones are available
+✓ Tokens and the component list written into the repository's conventions file
 
-Her result: €2,600, two business days. The list of 34 shrank to two accepted items, new AI-generated screens now match instead of adding variants, and two more colleges signed within the quarter. 🚀
+The communications officer's list shrank to two remaining items, both accepted. Two more colleges signed within the quarter. And the change Sanne values most: new AI sessions now produce screens that match. Before, every feature added a variant. Now they don't.
 
-👉 Bolt and design systems: keeping one consistent interface: https://launchstudio.eu/en/blog/bolt-and-design-systems-keeping-one-consistent-interface
+"I thought it was cosmetic. Then I found out that one of my three input designs showed errors in colour only, and that was why students at two colleges could not work out what was wrong with their forms." - Sanne de Rooij
+
+https://launchstudio.eu/en/blog/bolt-and-design-systems-keeping-one-consistent-interface
 
 #DesignSystems #Bolt #UXDesign #Accessibility #LaunchStudio #Manifera

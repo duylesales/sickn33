@@ -1,21 +1,28 @@
-💳 Iris Bos built Thuisfit with Bolt and Supabase: home workout programmes, billed monthly by SEPA direct debit through Mollie and yearly by card for some users. At around 3,000 subscribers, she noticed something odd: revenue in Mollie didn't match active subscribers in her app. 🤔
+Imagine you're an annual subscriber to a home workout app. 🏋️
 
-Some users whose banks had reversed their payments still had full access, for months. Here's what the investigation found: 🧠
+A charge appears on your card statement under a company name you don't recognise. There's no reminder that your renewal was coming. You look for a cancel button in the app. There isn't one; you'd have to email. So you do what feels easiest: you dispute the charge with your bank.
 
-❌ Direct debit reversals never processed by the app
-❌ Refunds done by hand in Mollie, without touching access or invoices
-❌ Card disputes lost for lack of evidence, plus an old company name on statements
-❌ No way to cancel in the app, so some users disputed instead
+Now switch seats. You're Iris Bos.
 
-✅ Webhooks for refunds, reversals and chargebacks that update access automatically
-✅ Friendly emails with an iDEAL payment link and a grace period after reversals
-✅ Refunds via the Mollie API with idempotency and proper credit notes
-✅ Automatic dispute evidence, a fixed descriptor, renewal reminders and two-click cancellation
+Iris built Thuisfit with Bolt and Supabase: home workout programmes, billed monthly by SEPA direct debit through Mollie after a first iDEAL payment, and annually by card for some users. At around 3,000 subscribers, revenue in Mollie didn't match the active subscribers in her app. Here's why:
+• Direct debit reversals were never processed, so users whose banks reversed payments kept full access, some for months
+• Refunds were done by hand in the Mollie dashboard, without updating access or invoices
+• Card disputes were usually lost, because there was no evidence to send
+• Many disputes came from customers who didn't recognise the charge, since the descriptor showed an old company name
+• There was no in-app cancellation
 
-At **LaunchStudio**, backed by Manifera's 11+ years of building payment and billing systems, we make refunds, reversals and disputes flow through your app instead of your inbox. 🛠️
+What LaunchStudio built (10 business days, €4,200):
+✓ Webhooks for refunds, reversals and chargebacks that update subscription status and access automatically
+✓ After a reversal: a friendly email with an iDEAL payment link, and a grace period before access pauses
+✓ Refunds as an admin action through the Mollie API, idempotent, with credit notes and access adjusted
+✓ Automatic evidence for disputes: terms acceptance, login and workout history, receipts
+✓ An updated billing descriptor, and renewal reminders two weeks before annual renewals
+✓ Cancellation in the app, in two clicks
 
-Her result: €4,200, ten business days. Within two months revenue and subscriptions reconciled, recovered payments covered the project several times over and disputes dropped sharply. 🚀
+Within two months, revenue and active subscriptions reconciled. Recovered reversed payments paid for the project several times over. Card disputes dropped sharply, and Iris won most of the remaining ones with the automated evidence.
 
-👉 How to handle refunds and chargebacks in your SaaS: https://launchstudio.eu/en/blog/how-do-i-handle-refunds-and-chargebacks-in-my-saas
+"I was paying the price of being easy to dispute and hard to cancel. Fixing both turned out to be good for customers and for revenue." - Iris Bos
+
+https://launchstudio.eu/en/blog/how-do-i-handle-refunds-and-chargebacks-in-my-saas
 
 #SaaS #Payments #Mollie #Bolt #AIFounder #LaunchStudio #Manifera

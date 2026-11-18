@@ -1,21 +1,39 @@
-🚨 Tim Hoogland built Vrijwilligersrooster with Bolt and Supabase: festival organisers publish volunteer shifts, volunteers claim them for free tickets. A big summer festival near Nijmegen planned to open 4,000 shifts at exactly 10:00 on a Saturday - announced to around 9,000 volunteers. Tim had never seen more than about 40 people use the app at once. 😳
+🧪 LAB NOTES: Can a festival volunteer app survive 10:00 on a Saturday?
 
-A spike test on staging told the story: at around 600 concurrent users, the shift list took over 12 seconds and claims began to fail. Here's why you load-test an AI-built app before launch: 🧠
+SUBJECT
+Vrijwilligersrooster, built by Tim Hoogland with Bolt and Supabase. Festival organisers publish volunteer shifts, volunteers claim them, and free tickets are the reward.
 
-❌ Every user loading all 4,000 shifts with their claims
-❌ An RLS policy querying teams for every row, with no indexes
-❌ Claims checked in the browser, so two volunteers could take the last spot
-❌ Confirmation emails sent synchronously on each claim
+THE CHALLENGE
+A large summer festival near Nijmegen would open 4,000 shifts at exactly 10:00, announced to around 9,000 registered volunteers. The most simultaneous users Tim had ever seen: about 40.
 
-✅ The shift list paginated by day and team, with only needed columns
-✅ Composite indexes and an indexed membership lookup in the policy
-✅ Claims in a database function with row locking - overbooking impossible
-✅ Emails in a background queue, connection pooling, and a retest at 1,500 users under 800 ms
+SETUP
+A spike test on a staging copy, with synthetic data and 9,000 test accounts.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we find the breaking point before your customers do. 🛠️
+OBSERVATION AT ~600 CONCURRENT USERS
+• The shift list took over 12 seconds to load
+• Claims started failing
 
-His result: €4,300, 10 business days. On the day, around 5,200 volunteers opened the app in ten minutes, and all 4,000 shifts were claimed in 47 minutes - no overbooking, no downtime. 🚀
+DIAGNOSIS
+• Every user loaded all 4,000 shifts with their claims
+• The RLS policy on shifts queried the volunteer's teams for every single row
+• No index on the shift date and team columns
+• Claims checked in the browser, so two volunteers could take the last spot
+• A confirmation email sent synchronously with every claim
 
-👉 Expecting a traffic spike? Here's how to load-test your AI-built app: https://launchstudio.eu/en/blog/load-testing-an-ai-built-app-before-launch
+INTERVENTION (LaunchStudio, 10 business days, €4,300)
+• Shift list paginated by day and team, with only the needed columns
+• Composite indexes, and the policy rewritten around an indexed membership lookup
+• Claiming moved into a database function that locks the shift row and checks capacity in a transaction, so overbooking is impossible
+• Emails moved to a background queue, connection pooling configured
+
+RETEST
+1,500 concurrent users. 95th percentile under 800 milliseconds. Zero errors.
+
+FIELD RESULT
+On the day, around 5,200 volunteers opened the app in the first ten minutes. All 4,000 shifts were claimed within 47 minutes, with no overbooking and no downtime. The festival renewed and recommended the app to two other events.
+
+"I had tested my app with friends. The festival tested it with nine thousand volunteers. Doing the load test first meant the festival never found out how close it came." - Tim Hoogland
+
+https://launchstudio.eu/en/blog/load-testing-an-ai-built-app-before-launch
 
 #LoadTesting #Supabase #Performance #EventTech #AIFounder #LaunchStudio #Manifera

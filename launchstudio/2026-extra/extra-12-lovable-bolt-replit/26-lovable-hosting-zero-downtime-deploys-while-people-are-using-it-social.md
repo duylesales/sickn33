@@ -1,21 +1,30 @@
-🚨 Ferdi Aalbersberg's Routeplanning plans delivery routes for 24 regional bakeries and food distributors, whose drivers use the app from five in the morning. At 06:40 on a Wednesday he deployed a "trivial" change: renaming a column from adres to address. 😳
+🍳 RECIPE: how to rename a column while sixty drivers are on the road
 
-Every driver on the road was running the old version, which asked for a column that no longer existed. About 60 drivers across nine companies got errors - and the rollback failed too, because the old code needed the dropped column. Here's why correct code still breaks on deploy: 🧠
+First, how NOT to do it.
 
-❌ Renaming a column and updating the app in a single deployment
-❌ No awareness that browser tabs keep running yesterday's JavaScript
-❌ A rollback that couldn't work after a destructive schema change
-❌ Deploying during the customers' busiest window
+Ferdi Aalbersberg built Routeplanning in Lovable: delivery route planning for regional bakeries and food distributors, 24 companies, whose drivers use the app on their phones from five in the morning. A tidy-up renamed a column from adres to address, and updated the app in the same deployment. He deployed at 06:40 on a Wednesday, thinking it was trivial. 🥖
 
-✅ Expand-and-contract over three deployments: add, write both and backfill in batches of 2,000, switch reads, drop later
-✅ A rule: no deployment may remove or rename a column the running version still uses
-✅ Additive API changes only, with removed endpoints kept as no-ops for 30 days
-✅ A "new version available" prompt drivers accept at their next stop, a four-line checklist with timed rollback, and no deploys between 05:00 and 09:00
+Every driver already on the road had the app open, running the previous version, which asked for a column that no longer existed. Every route refresh failed. Most drivers didn't reload, because they were driving. They called dispatchers, who called Ferdi. Around 60 drivers across nine companies, for 25 minutes. And the revert didn't work either, because the old code needed the column he'd dropped. He restored it by hand at 07:20, reading the schema under a lot of pressure.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we make sure your next migration is reversible before you ship it. 🔄
+THE RIGHT RECIPE (LaunchStudio, 1 business day, €1,600)
 
-His result: one business day and €1,600 later - twelve months without a deployment incident, including two more schema changes of similar size. The version prompt revealed drivers had been running three-day-old builds without knowing. 🚀
+Day 1: Add address.
+Day 1: Write to both columns, and backfill in batches of 2,000 as a resumable job.
+Day 2: Switch reads to address.
+Day 8: Drop adres.
 
-👉 Zero-downtime deploys while people are using it: https://launchstudio.eu/en/blog/lovable-hosting-zero-downtime-deploys-while-people-are-using-it
+KITCHEN RULES
+✓ No deployment may remove or rename a column the currently running version still uses
+✓ API responses change additively only, with removed endpoints kept as no-ops for 30 days
+✓ The server returns a build ID, and the app shows a quiet "a new version is available" prompt, which drivers accept at their next stop
+✓ A four-line deployment checklist, including a timed rollback
+✓ No deployments between 05:00 and 09:00, the exact window his customers work in
+
+SERVES
+Twelve months without a deployment incident, including two more schema changes of a similar size. And the version prompt mattered as much as the migration discipline: before it, some drivers were running a three-day-old build without knowing.
+
+"It was a rename. I have never done anything faster or more carelessly, and sixty drivers were standing next to their vans at seven in the morning because of it." - Ferdi Aalbersberg
+
+https://launchstudio.eu/en/blog/lovable-hosting-zero-downtime-deploys-while-people-are-using-it
 
 #DevOps #Deployment #DatabaseMigrations #Lovable #LaunchStudio #Manifera

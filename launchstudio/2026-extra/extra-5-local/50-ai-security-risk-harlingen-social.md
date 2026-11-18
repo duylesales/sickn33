@@ -1,20 +1,28 @@
-🎟️ Wouter Zijlstra built EilandGo - a ferry ticket booking platform for tourists heading from Harlingen to the Wadden Islands - in Bolt, launching ahead of summer tourist season. Ticket numbers were simple, sequentially generated (1001, 1002, 1003...). Anyone could predict a valid, unused ticket number just by incrementing from a real one - meaning a fraudulent boarding pass could be generated without ever paying. 😳
+🎫 BOARDING PASS
+Harlingen ➜ Wadden Islands
+Ticket no. 10001
 
-Security isn't pass/fail. It's dozens of small decisions an AI tool made without asking - and predictable IDs are one of the most common. 🧠
+Ticket no. 10002
+Ticket no. 10003
+Ticket no. 10004...
 
-❌ Ticket numbers generated as simple incrementing values, not cryptographically random
-❌ Anyone could guess a valid, unused ticket number in seconds
-❌ No server-side check against the actual payment record at boarding
-❌ The risk looked harmless in every demo - it only mattered once real tickets and real money were involved
+See the problem?
 
-✅ Replaced sequential ticket IDs with cryptographically random, unpredictable identifiers
-✅ Added server-side verification against the actual payment record at the point of boarding
-✅ Closed the gap before the first full tourist season began
+Wouter Zijlstra built EilandGo in Bolt, ahead of the summer tourist season: ferry ticket booking and island travel planning for tourists heading from Harlingen to the Wadden Islands. Every confirmation included a QR code tied to a simple, sequentially generated ticket number.
 
-At **LaunchStudio**, this is exactly the kind of structured risk assessment Manifera's engineers - 160+ projects delivered for clients like Vodafone and TNO - run on founder prototypes. 🛡️
+During a pre-launch risk assessment, LaunchStudio's engineers spotted it. Take one real ticket number, count up, and you land on a valid, unused ticket. Someone could plausibly generate a fraudulent boarding pass without ever paying. That hurts EilandGo's revenue and undermines the ferry operator's boarding controls at the same time.
 
-His result: EilandGo now issues tickets that can't be predicted or forged, verified against real payment records at boarding. 🚀
+(The ticket numbers above are illustrative. The pattern was real.)
 
-👉 Check your own app's ticket, order, or booking IDs today - can you guess the next one? Explore LaunchStudio's approach: https://launchstudio.eu/en/blog/ai-security-risk-harlingen
+What changed before the first full season (4 business days, €830):
+⚓ Sequential numbers replaced with cryptographically random, unpredictable identifiers
+⚓ Server-side verification against the actual payment record at boarding
+⚓ Boarding validation that checks the payment, not just the QR code
+
+The result: EilandGo now issues tickets that can't be predicted or forged, verified against real payment records at the point of boarding.
+
+"I never thought about ticket numbers as a security risk. LaunchStudio explained exactly how someone could have exploited it, and fixed it before our busiest season started." - Wouter Zijlstra
+
+Are your IDs guessable? https://launchstudio.eu/en/blog/ai-security-risk-harlingen
 
 #AINativeFounder #LaunchStudio #Manifera #AISecurityRisk #Harlingen

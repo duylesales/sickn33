@@ -1,21 +1,30 @@
-🚨 Priya Ramnath's Webshopstart runs simple online shops for 180 small Dutch retailers. Her cookie banner, added by an AI session, looked completely normal. Then a visitor complained: analytics, an ad pixel and a chat widget all loaded and set cookies on arrival - before anyone clicked anything. 😳
+🍪 What the banner said vs. what the page did
 
-The banner recorded a choice and nothing acted on it. Worse, the same banner was in all 180 merchant shops, so every retailer had the same defect. Here's what cookie consent that would pass a Dutch audit looks like: 🧠
+THE BANNER SAID
+"We use cookies." Accept, or open preferences.
 
-❌ Tracking scripts in the page from the first load
-❌ Accept is one click; reject is buried in preferences
-❌ Six third parties nobody knew about - including a font service and an embedded map
-❌ No record of what each visitor actually agreed to
+THE PAGE DID
+Load analytics, an advertising pixel and a support chat widget on arrival, and set cookies, before anyone clicked anything. The banner recorded a preference. Nothing acted on it.
 
-✅ Non-essential scripts removed from the page and loaded only after consent
-✅ Equally prominent accept and reject on the first screen, nothing pre-ticked, three clear purposes
-✅ Consent recorded with timestamp and version, plus a footer link to change your mind
-✅ Click-to-load map, self-hosted fonts - rolled out to all 180 shops with a note to merchants
+It was a picture of a banner.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we check what loads before your banner - and often recommend going cookie-free instead. 🍪
+Priya Ramnath built Webshopstart in Lovable: a platform where 180 small Dutch retailers run simple online shops, plus her own marketing site for new merchants. An AI session added the consent banner, and it looked completely normal. Then a visitor examined the site, and complained.
 
-Her result: four business days and €2,800 later, about 41% of visitors now refuse analytics - "uncomfortable and honest". Pages load 700 ms faster, and two merchants said it was the first time anyone had explained they had obligations of their own. 🚀
+And it was worse than one site: the same banner was embedded in all 180 merchant shops. Every retailer on the platform had the same defect on their own storefront, and as merchants, they're responsible for their own visitors' data. 🛍️
 
-👉 Cookie consent that would pass a Dutch audit: https://launchstudio.eu/en/blog/cookie-consent-that-would-pass-a-dutch-audit
+Making the page do what the banner says (LaunchStudio, 4 business days, €2,800):
+✓ A full audit of what loads before consent, across the marketing site and the shop template: six third parties, including a font service and an embedded map nobody had noticed
+✓ Every non-essential script removed from the page, and loaded only after consent
+✓ The banner rebuilt: accept and reject equally prominent on the first screen, nothing pre-ticked, three granular purposes, and each cookie described with its duration and provider
+✓ Consent recorded with a timestamp and a version, so a change to the cookie set asks again
+✓ A permanent footer link to change the choice
+✓ The map replaced with a click-to-load placeholder, and fonts self-hosted
+✓ The corrected banner rolled out across all 180 shops, with a notice to merchants explaining what changed and why
+
+About 41% of visitors now refuse analytics, which Priya calls uncomfortable and honest. Pages load 700 milliseconds faster without the third-party font and map. Nine merchants replied to the notice, and two said it was the first time anyone had told them they had an obligation of their own.
+
+"My banner was a picture of a banner. It asked a question, stored the answer, and then loaded everything regardless of what the visitor had said." - Priya Ramnath
+
+https://launchstudio.eu/en/blog/cookie-consent-that-would-pass-a-dutch-audit
 
 #CookieConsent #GDPR #Privacy #Lovable #LaunchStudio #Manifera

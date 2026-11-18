@@ -1,21 +1,41 @@
-🚨 Marloes Teunissen's Horecarooster schedules around 3,800 staff across 140 locations for 27 hospitality groups. It had three roles: owner, admin, member. Location managers needed to approve hours - which only admins could do - so every manager became an admin. Then a finance director noticed one manager approving his own overtime. 😳
+🔐 Three roles, one workaround, and a problem nobody saw
 
-As admins, managers could also see every location's wages. The same week, a 34-location group declined to sign for exactly that reason. Here's how to build roles and permissions beyond "admin and user": 🧠
+THE OLD GRID
+                    edit schedules   approve hours   see all wages
+Owner               ✓                ✓               ✓
+Admin               ✓                ✓ (incl. own)   ✓ (every location)
+Member              ✗                ✗               ✗
 
-❌ One role field that couldn't express "only my location"
-❌ Managers promoted to admin just to approve hours
-❌ Hourly wages visible to anyone with the admin role
-❌ Nothing stopping people from approving their own hours
+Location managers needed the first two columns. Only Admin had them. So every location manager became an Admin, and got the third column too.
 
-✅ 24 permission codes defined from the checks already scattered through the code, bundled into six system roles
-✅ Location-scoped role assignments; row level security rewritten across 19 tables around one indexed has_permission helper
-✅ Wages moved to a separate table readable only with wages.read, and self-approval blocked in the database
-✅ Escalation rules, a role-change audit, and a 24×6 permission matrix generating 288 tests in CI
+Marloes Teunissen built Horecarooster in Lovable: staff scheduling and hour registration for 27 hospitality groups, 140 locations, around 3,800 staff. 🍷
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we build this when a product starts selling to multi-location organisations. ⚙️
+In one week:
+• A group's finance director saw overtime rising at one location while revenue didn't. The manager had been approving his own extra hours.
+• A 34-location group declined to sign, because managers would see wages across the whole group.
 
-Her result: €4,800, four business days. A historical review found three managers who had approved €4,100 of their own overtime. The 34-location group signed within the month, and a second group followed - 61 new locations. 🚀
+THE NEW GRID (excerpt; 24 permissions × 6 roles in full)
+                    hours.approve        wages.read
+Owner               ✓                    ✓
+Location manager    ✓ own location,      ✗
+                    never own hours
+Staff               ✗                    ✗
 
-👉 Lovable Supabase: roles and permissions beyond admin and user: https://launchstudio.eu/en/blog/lovable-supabase-roles-and-permissions-beyond-admin-and-user
+Building it (LaunchStudio, 4 business days, €4,800):
+✓ 24 permission codes taken from checks already scattered through the code
+✓ Six roles (Owner, Administrator, Location manager, Planner, Staff, Read-only), first reproducing existing behaviour
+✓ Role assignments with an optional location scope, backfilled from the old role column
+✓ Row level security on 19 tables rewritten around an indexed has_permission helper
+✓ Wages in a separate compensation table, readable only with wages.read
+✓ Approvals checking hours.approve for the location, and refusing anyone approving hours they submitted
+✓ No granting permissions you don't hold yourself
+✓ The matrix kept as data, generating 288 tests in CI
+✓ A role-change audit for each group's administrators
+
+A review of past approvals found three managers in two groups who'd approved their own overtime, €4,100 in total, which the groups recovered. The 34-location group signed within the month, and a similar-sized group followed: 61 locations added between them.
+
+"We made every location manager an admin because it was the only role that could approve hours. That also let them see everyone's wages and approve their own overtime." - Marloes Teunissen
+
+https://launchstudio.eu/en/blog/lovable-supabase-roles-and-permissions-beyond-admin-and-user
 
 #Supabase #AccessControl #SaaS #AppSecurity #LaunchStudio #Manifera

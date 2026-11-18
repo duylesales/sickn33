@@ -1,21 +1,40 @@
-🚨 Yara Ouali, owner of a small tailor-made travel agency in Leidschendam, built Reisdossier in Bolt: travellers enter passenger details, upload passport scans, review itineraries, pay instalments and chat with their adviser. About 1,100 travellers. Then a partner tour operator requested a privacy review - and found eleven third-party scripts on every page. 😳
+🎟️ GUEST LIST: who was in the room where travellers typed their passport numbers?
 
-Analytics, two ad pixels, a heatmap with session recording, a chat widget, a reviews widget, a font service, a map library and three scripts from tools Yara no longer used. The session recorder captured names, birth dates and passport numbers as travellers typed. Everything loaded before the cookie banner, card details went through the portal's own fields, and there was no Content Security Policy. Here's what third-party scripts mean for AI-generated code security: 🧠
+1. Analytics
+2. Advertising pixel #1
+3. Advertising pixel #2
+4. A heatmap tool, with session recording
+5. A chat widget
+6. A reviews widget
+7. A font service
+8. A map library
+9. A script from a tool no longer used
+10. Another one
+11. And another
 
-❌ Scripts nobody remembered adding, on every page
-❌ Session recording capturing passport numbers
-❌ Trackers firing before consent
-❌ Card details typed into the app's own forms
+Eleven guests on every page. Most of them, the host had forgotten inviting. ✈️
 
-✅ Six unused or unnecessary scripts removed, chat and reviews widgets limited to pages without personal forms
-✅ Privacy-friendly EU-hosted analytics, ad pixels only after consent and never on portal pages
-✅ Session recording removed from the portal and recorded sessions deleted with the vendor
-✅ Instalments moved to Mollie's hosted checkout, and a Content Security Policy deployed - report-only first, then enforced
+Yara Ouali owns a small travel agency in Leidschendam specialising in tailor-made trips, and built Reisdossier in Bolt: travellers fill in passenger details, upload passport scans, review itineraries, pay instalments, and chat with their travel adviser. About 1,100 travellers used it. Then a partner tour operator asked for a privacy review.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering and its cybersecurity roots, we make sure the code you didn't write stops being the weakest part of your app. ⚙️
+What the guests were up to:
+• The session-recording tool captured passenger names, birth dates and passport numbers as travellers typed them
+• Every script loaded before the cookie banner
+• The instalment form collected card details in the portal's own fields, before passing them to the payment provider
+• There was no Content Security Policy at all
 
-Her result: €1,500, six business days. The tour operator approved the portal, the passenger form loads twice as fast, and Yara now approves every new script against a one-page inventory. 🚀
+Checking the guest list (LaunchStudio, 6 business days, €1,500):
+✓ Six unused or unnecessary scripts removed
+✓ The chat and reviews widgets kept off pages with personal forms
+✓ Analytics moved to a privacy-friendly, EU-hosted option
+✓ Advertising pixels only after consent, and never on portal pages
+✓ Session recording removed from the portal, with recorded sessions deleted at the vendor
+✓ Instalments moved to Mollie's hosted checkout
+✓ A Content Security Policy, first in report-only mode, then enforced
 
-👉 AI generated code security: third-party scripts, widgets and your customers' data: https://launchstudio.eu/en/blog/ai-generated-code-security-third-party-scripts-widgets-and-your-customers-data
+The partner tour operator approved the portal. Load times on the passenger form halved. And Yara now approves every new script against a one-page inventory.
+
+"I had invited eleven companies into the room where my clients typed their passport numbers. Most of them I'd forgotten about." - Yara Ouali
+
+https://launchstudio.eu/en/blog/ai-generated-code-security-third-party-scripts-widgets-and-your-customers-data
 
 #ThirdPartyScripts #CSP #Privacy #Bolt #LaunchStudio #Manifera

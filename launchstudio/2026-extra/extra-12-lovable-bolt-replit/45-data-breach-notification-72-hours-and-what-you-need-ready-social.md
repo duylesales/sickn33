@@ -1,21 +1,43 @@
-🚨 Bart-Jan Roozen's Hulpvraag handles intake for municipal social support teams in 11 municipalities - about 9,000 cases a year. On a Saturday morning a case worker wrote: she'd received another municipality's weekly summary. A Friday deploy had broken recipient filtering, and the summary went to all 140 users. 😳
+⏰ The 72-hour clock, as it actually ran
 
-It held names, addresses and support needs for 612 cases - special category data about vulnerable people. His contracts required customer notification within 24 hours. Here's what you need ready before the 72-hour clock starts: 🧠
+FRIDAY
+A change goes live with a fault in a scheduled job's recipient filter.
 
-❌ Treating "it was just an email to the wrong people" as not a breach
-❌ Assembling contacts and wording while the incident is live
-❌ No logs to show what was actually accessed
-❌ Waiting for complete facts before telling anyone
+SATURDAY 09:40
+A case worker emails: her weekly summary contains another municipality's cases. The clock starts. 72 hours to the regulator; 24 to customers, under the processing agreements.
 
-✅ The job disabled within 15 minutes and logs preserved before rotation
-✅ Facts established by 11:30 from send logs - and all 11 municipalities notified by 13:00
-✅ A recall and deletion request to all 140 recipients (128 confirmed), legal advice, and a regulator notification on Sunday with an update later
-✅ Each municipality supported in deciding whether to inform residents, a regression test, and a written review
+09:55
+The job is disabled, and logs are preserved before rotation.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we prepare your first hour before you need it - contact list, templates, logging and a breach register. ⏱️
+11:30
+Facts from the send logs: 140 recipients, 11 municipalities, 612 cases described with names, addresses and short descriptions of social support needs. Every recipient an authorised professional under confidentiality obligations. No sign of onward distribution.
 
-His result: the regulator accepted the notification without further action, and all 11 municipalities stayed - two said the speed of the Saturday notice was why. The preparation done four months earlier is what made those first hours count. 🚀
+13:00
+All 11 municipal contacts notified with what's known and what isn't yet.
 
-👉 Data breach notification: 72 hours and what you need ready: https://launchstudio.eu/en/blog/data-breach-notification-72-hours-and-what-you-need-ready
+SATURDAY AFTERNOON
+Legal advice. A recall and deletion request goes to all 140 recipients.
+
+SUNDAY AFTERNOON
+The assessment: special category, identifiable data, so the risk isn't unlikely, even with professional recipients. The regulator is notified, well inside the window.
+
+MONDAY
+128 of 140 recipients have confirmed deletion.
+
+TUESDAY
+Review document done. The bug is fixed, with a test for per-recipient filtering.
+
+WEDNESDAY
+An update goes to the regulator. Each municipality is supported in deciding whether to inform residents; three do.
+
+This was Hulpvraag, the intake and referral tool Bart-Jan Roozen built in Lovable for municipal social support teams: 11 municipalities, around 9,000 cases a year. LaunchStudio ran the response (€3,400, 4 business days after a same-day start). 🏘️
+
+The outcome: the regulator accepted the notification and the remediation with no further action. All 11 municipalities stayed, and two said the speed and completeness of the Saturday notification was the reason.
+
+What made the first four hours count was work done four months earlier: a contact list, templates and logging.
+
+"I found out at twenty to ten on a Saturday. Without the contact list and the template I would have spent the first three hours working out who to tell and what to say, and those were the three hours that mattered." - Bart-Jan Roozen
+
+https://launchstudio.eu/en/blog/data-breach-notification-72-hours-and-what-you-need-ready
 
 #DataBreach #GDPR #IncidentResponse #Lovable #LaunchStudio #Manifera

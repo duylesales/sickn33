@@ -1,21 +1,32 @@
-🚨 Lieke Vos, a former event manager in Breda, built Vrijwilligersrooster in Lovable: shift planning for festivals and sports events. Then she read that "serious founders use Cursor". She cloned the project and spent three weeks in Cursor - mostly getting it to run locally, fixing environment variable errors and undoing changes she didn't understand. Meanwhile, two waiting event organisers signed with a competitor. 😳
+📓 Three weeks in Cursor, by a founder who doesn't code (yet)
 
-Cursor is a great tool for people who code. She spent three weeks proving she wasn't one yet. Here's what went wrong: 🧠
+WEEK 1
+Lieke Vos, a former event manager in Breda, has built Vrijwilligersrooster in Lovable: shift planning for festivals and sports events. She reads that "serious founders use Cursor," clones the project, and opens it in Cursor. Most of the week goes into getting the app to run locally.
 
-❌ Switching tools mid-project to "be more professional"
-❌ Weeks lost to Node versions, environment variables and package errors
-❌ Accepting AI-generated code changes she couldn't evaluate
-❌ Building time taken away from customers who were ready to buy
+WEEK 2
+Environment variable errors. More environment variable errors.
 
-✅ A clear split: Lovable for the interface, where Lieke was fast and confident
-✅ The Supabase backend secured with roles for organisers, team leads and volunteers
-✅ Shift-swap logic built as a database function, plus Mollie for event fees
-✅ Staging and deployment set up, so Lovable changes go through a safe process
+WEEK 3
+Undoing changes she doesn't understand. Meanwhile, two event organisers who were waiting for the product sign with a competitor.
 
-At **LaunchStudio**, backed by Manifera's 120+ engineers and 11+ years of delivery, we take Lovable and Cursor projects to production - and help founders use each tool for what it does best. 🛠️
+WEEK 4
+LaunchStudio suggests a different split: Lovable for the interface, where Lieke is fast and confident, and engineering for the backend.
 
-💡 Her result: €3,200, ten business days. Vrijwilligersrooster launched six weeks later with four events and about 900 volunteers, and Lieke now uses Cursor to read code alongside a part-time developer. 🚀
+WEEKS 5 TO 6 (10 business days, €3,200)
+✓ The Supabase backend secured, with roles for organisers, team leads and volunteers
+✓ Shift-swap logic as a database function
+✓ Mollie for event fees
+✓ Staging and deployment
+Lieke goes back to Lovable for the interface.
 
-👉 Lovable or Cursor - which one fits a non-technical founder? Here's the honest comparison: https://launchstudio.eu/en/blog/lovable-vs-cursor-for-non-technical-founders
+LAUNCH
+Six weeks later: four events, about 900 volunteers.
+
+TODAY
+Lieke still opens Cursor sometimes. To read code next to a part-time developer, not to build alone.
+
+"Cursor is a great tool for people who code. I spent three weeks proving I wasn't one yet." - Lieke Vos
+
+https://launchstudio.eu/en/blog/lovable-vs-cursor-for-non-technical-founders
 
 #Lovable #Cursor #NoCode #Founders #LaunchStudio #Manifera

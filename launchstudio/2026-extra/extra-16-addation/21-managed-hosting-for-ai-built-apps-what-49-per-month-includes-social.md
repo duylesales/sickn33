@@ -1,21 +1,31 @@
-🏢 Noor El Amrani runs a network of co-working spaces in Rotterdam and built Werkplek010 with Bolt and Supabase for desk bookings, meeting rooms and member billing. After launch she managed the app herself for six months. Then, one Monday morning, members couldn't log in. 😬
+📋 MONTHLY HEALTH NOTE: Werkplek010 (the kind Noor now gets every month)
 
-Three things had happened over the weekend, and nobody was watching: 🧠
+Uptime: no member-facing outage longer than a few minutes
+Usage: within limits, alerts set
+Backups: restore test passed
+Recommendations: two or three, in plain language
 
-❌ A provider changed a setting for email login links
-❌ A dependency update accepted through a prompt broke login on older phones
-❌ The database quietly hit its storage limit because of profile photos
-❌ No alerts, no update review, no backup checks
+Noor El Amrani runs a network of co-working spaces in Rotterdam and built Werkplek010 with Bolt and Supabase for desk bookings, meeting rooms and member billing. After the launch project, she managed it herself for six months. Then came one Monday morning when members couldn't log in, for three reasons at once:
+• A provider changed a setting for email login links over the weekend
+• A dependency update she'd accepted through a prompt broke the login page on older phones
+• The database had quietly hit its storage limit, filled up by uploaded profile photos
 
-✅ Login fixed, photos compressed and upload limits added
-✅ Uptime monitoring, error tracking and usage alerts routed to the support team
-✅ Weekly dependency updates released through staging
-✅ Monthly restore tests and a short monthly health note
+So she switched to Launch & Grow, at €49 a month, after a €650 stabilisation fix (onboarding: 3 business days):
+✓ The login problem fixed
+✓ Existing photos compressed and resized, with upload limits and usage alerts
+✓ Uptime monitoring and error tracking routed to the support team
+✓ Dependency updates reviewed weekly and released through staging
+✓ A monthly restore test of the backups
 
-At **LaunchStudio**, backed by Manifera's 11+ years of maintaining production systems for clients such as Vodafone and TNO, our €49 per month service within Launch & Grow keeps your app watched and updated, while it stays in your own accounts. 🛠️
+WHAT THE NOTES REPORTED OVER THE NEXT YEAR
+• A payment provider deprecation, caught two months before the deadline
+• A failing backup caused by a changed retention setting, found and fixed
+• An error spike after Noor added a feature with her AI tool, rolled back and fixed within an hour
 
-Her result: €49 per month after a €650 stabilisation fix. Over the next year it caught a payment provider deprecation, a failing backup and a bad AI-made release, with no member-facing outage longer than a few minutes. 🚀
+Twelve months, no member-facing outage longer than a few minutes. And several hours a month Noor no longer spends reading provider emails and testing updates.
 
-👉 Managed hosting for AI-built apps, what €49 per month includes: https://launchstudio.eu/en/blog/managed-hosting-for-ai-built-apps-what-49-per-month-includes
+"For less than the price of one meeting room booking per month, someone is watching the app I depend on. I stopped dreading Monday mornings." - Noor El Amrani
+
+https://launchstudio.eu/en/blog/managed-hosting-for-ai-built-apps-what-49-per-month-includes
 
 #ManagedHosting #Bolt #Supabase #Maintenance #AIFounder #LaunchStudio #Manifera

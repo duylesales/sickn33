@@ -1,23 +1,29 @@
-🦷 Ilse Jansen runs a scheduling SaaS for physiotherapy practices from Arnhem, built with Lovable and Supabase and already production ready after an earlier LaunchStudio project. Then dental practices asked for something similar, with different appointment types, reminders and integrations. Her first instinct: copy the Lovable project and its database. ✂️
+🗂️ A second product: what to share, and what to keep apart
 
-Copying everything usually leads to: 🧠
+Ilse Jansen runs Praktijkplanner from Arnhem, a scheduling SaaS for physiotherapy practices built with Lovable and Supabase and made production ready in an earlier Launch & Grow project. Then dental practices asked for something similar, with different appointment types, reminders and integrations.
 
-❌ Two diverging codebases to maintain
-❌ Patient data from different products mixed in one database
-❌ Shared secrets, so one leak affects both products
-❌ Revenue that cannot be reported per product
+Her first instinct: copy the Lovable project and its database.
 
-What LaunchStudio set up instead: ✅
+LaunchStudio suggested sorting instead.
 
-✅ Two apps in one repository, sharing a design system, components and authentication
-✅ A separate Supabase project per product, so patient data never mixes, with one login for practices using both
-✅ Separate Stripe products for clear revenue per app
-✅ The pipeline, monitoring, backups, tests and project instructions reused and extended, plus separate privacy documentation for the dental app
+SHARED, because it makes building easy
+✓ One repository, with two apps
+✓ A shared design system and components
+✓ The authentication setup, so practices using both products log in with one account
+✓ The pipeline, monitoring, backups, tests and project instructions, reused and extended
 
-At **LaunchStudio**, backed by Manifera's 11+ years of building product families and platforms for clients such as Vodafone and TNO, we help you reuse what works and separate what matters. 🛠️
+SEPARATE, because mixing makes mistakes expensive
+✓ A Supabase project per product, so patient data never mixes
+✓ Data access separate per product and per practice
+✓ Separate Stripe products, so revenue is reported separately
+✓ Its own privacy documentation and processing agreement annex for the dental app
 
-Her result: €3,400 within Launch Ready, eight business days, because most of the foundation already existed. The dental product launched with 12 practices in its first month, with no incidents. 🚀
+Because most of the foundation already existed, the project fit within Launch Ready (8 business days, €3,400). Ongoing care continued for both products.
 
-👉 Production readiness for a second product or spin-off: https://launchstudio.eu/en/blog/production-readiness-for-a-second-product-or-spin-off
+The dental product launched with 12 practices in its first month, with no incidents. Improvements to shared components now benefit both products. And Ilse can show investors two clearly separated product lines.
+
+"My first instinct was to copy everything. Instead, we shared the parts that make building easy and separated the parts that make mistakes expensive." - Ilse Jansen
+
+https://launchstudio.eu/en/blog/production-readiness-for-a-second-product-or-spin-off
 
 #SecondProduct #SpinOff #Lovable #SaaS #AIFounder #LaunchStudio #Manifera

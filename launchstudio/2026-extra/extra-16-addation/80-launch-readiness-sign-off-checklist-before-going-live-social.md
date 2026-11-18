@@ -1,21 +1,36 @@
-✅ Marieke Kroon runs a translation agency in Leiden and built Vertaalportaal with v0, Cursor and Supabase: clients upload documents, receive quotes, pay and download finished translations. She planned to announce it to 200 business clients on a Monday. On the Thursday before, she went through a launch sign-off checklist with LaunchStudio. 📋
+✅ THE SIGN-OFF CHECKLIST, the Thursday before a Monday launch
 
-Most items were done, with evidence collected during the project. Seven were not: 🧠
+Most items: ✅ done, with evidence collected during the project.
 
-❌ The domain was still registered to the web designer of her old website
-❌ Password reset links redirected to the preview domain
-❌ Nobody had ever made a live payment
-❌ DMARC missing, an undocumented restore, an outdated privacy policy and no support guide for her team
+Seven items: not done.
+🔴 The domain, still registered to the web designer of an old website
+🔴 Password reset links redirecting to the preview domain
+🔴 No live payment ever made
+🟠 DMARC missing
+🟠 The restore tested, but not documented
+🟠 The privacy policy describing an older version of the service
+🟠 No support guide for the two project managers
 
-✅ Three items marked blocking: domain, redirect and live payment, and the announcement moved to Wednesday
-✅ Domain transfer started immediately and the redirect fixed the same day
-✅ A small real payment made and refunded to prove the live flow
-✅ DMARC, restore documentation and a support guide finished before Wednesday, with the privacy policy accepted as a dated risk after adviser review
+Marieke Kroon runs a translation agency in Leiden and built Vertaalportaal with v0, Cursor and Supabase: clients upload documents for translation, get quotes, pay, and download the finished translations. The announcement to her 200 business clients was planned for Monday. On Thursday, she went through the sign-off checklist with LaunchStudio, who had worked on the project.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of releasing production systems for clients such as Vodafone and TNO, every project ends with evidence, not assumptions. 🛠️
+She decided three items were blocking (🔴):
+→ The domain transfer started immediately, and the announcement moved to Wednesday
+→ The redirect fixed the same day
+→ A small real payment made, and refunded
 
-Her result: part of a €2,700 Launch Ready project, two extra days. Around 70 clients uploaded documents in week one without a single technical issue. 🚀
+The rest (🟠) before Wednesday:
+→ DMARC configured
+→ The restore documentation written
+→ The support guide finished
+→ The privacy policy update accepted as a known risk, with a fix date one week later, after review by her adviser
 
-👉 The launch readiness sign-off checklist before going live: https://launchstudio.eu/en/blog/launch-readiness-sign-off-checklist-before-going-live
+All of this was part of a €2,700 Launch Ready project (9 business days in total). The cost of the checklist: two days on the launch date.
+
+WEDNESDAY
+The portal went live. In the first week, around 70 clients uploaded documents without a single technical issue, and the project managers used the support guide for the few questions that came in.
+
+"I almost launched with a domain I did not own and a password reset that sent clients to the wrong site. Two extra days with a checklist were the best investment of the whole project." - Marieke Kroon
+
+https://launchstudio.eu/en/blog/launch-readiness-sign-off-checklist-before-going-live
 
 #LaunchChecklist #GoLive #v0 #Cursor #AIFounder #LaunchStudio #Manifera

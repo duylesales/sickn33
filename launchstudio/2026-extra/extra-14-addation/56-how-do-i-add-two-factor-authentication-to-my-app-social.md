@@ -1,21 +1,33 @@
-🚨 Stefan Huisman built Loonvoorbereider with Cursor and Supabase: a payroll preparation tool for small hospitality businesses. A restaurant group with 14 locations wanted to sign. Then their security questionnaire asked: "Is multi-factor authentication enforced for all users with access to salary data?" The answer was no. 😳
+📋 SECURITY QUESTIONNAIRE, question 17 (illustrative number)
 
-One line in a questionnaire was worth more than any feature on his roadmap that month. Here's what the app was missing: 🧠
+"Is multi-factor authentication enforced for all users with access to salary data?"
+☐ Yes
+☑ No
 
-❌ Password login only, for everyone
-❌ Internal admin accounts that could see every customer's salary data - also without MFA
-❌ Password resets anyone could trigger with just an email address, with no rate limit
-❌ No way for business customers to require MFA for their own staff
+One line. One deal on hold. 🔐
 
-✅ TOTP enrolment and challenge screens with authenticator apps
-✅ aal2 enforced in RLS policies on salary tables - not just hidden pages
-✅ MFA required for all internal admins, with an organisation-wide requirement customers can switch on
-✅ Rate limits on password resets and a verified, logged recovery procedure
+Stefan Huisman built Loonvoorbereider with Cursor and Supabase: payroll preparation for small hospitality businesses, where owners enter hours and the tool prepares data for their payroll provider. A restaurant group with 14 locations wanted to sign. Then its security questionnaire got to that line.
 
-At **LaunchStudio**, backed by Manifera - whose founder Herre Roelevink built his career in cybersecurity at CFLW - we enforce MFA where it counts: on the server. 🛠️
+Behind the "No":
+• Password login only
+• Stefan's own admin accounts could see every customer's salary data, also without MFA
+• Password resets could be triggered by anyone who knew an email address, with no rate limit
 
-💡 His result: €2,050, six business days. The restaurant group signed after its security officer reviewed the change, 70% of users enabled MFA within three months, and three more customers turned on the organisation-wide requirement. 🚀
+Turning it into a "Yes" (LaunchStudio, 6 business days, €2,050):
+✓ TOTP enrolment and challenge screens
+✓ aal2 enforced in RLS policies on salary tables
+✓ MFA required for all of Stefan's internal admin accounts
+✓ An option for customers to require MFA for all their members
+✓ Rate limits on password resets
+✓ MFA resets logged, with a verified support procedure
 
-👉 Business customers asking for two-factor authentication? Here's how to add MFA to a Supabase app properly: https://launchstudio.eu/en/blog/how-do-i-add-two-factor-authentication-to-my-app
+"Is multi-factor authentication enforced for all users with access to salary data?"
+☑ Yes
+
+The restaurant group signed after its security officer reviewed the change. Within three months, 70% of all users had MFA on, and three other customers switched on the organisation-wide requirement.
+
+"One line in a questionnaire was worth more than any feature on my roadmap that month." - Stefan Huisman
+
+https://launchstudio.eu/en/blog/how-do-i-add-two-factor-authentication-to-my-app
 
 #MFA #2FA #Supabase #AppSecurity #LaunchStudio #Manifera

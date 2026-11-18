@@ -1,21 +1,30 @@
-🚨 Hidde Kwakernaak built Ritmeester with Bolt - stable management for six equestrian centres in Gelderland and Utrecht: horses, owners, stalls, feeding, vet appointments and invoicing. He asked the tool to add a database screen by screen. After three weeks: 19 tables. 😳
+🐴 Told by a horse (dramatized; the database problems are real)
 
-Horses lived in two tables, owner details in three with different values. No foreign keys, no row-level security. When the second centre started using it, their horses appeared in the first centre's stall list. Here's how to wire data into a Bolt prototype: 🧠
+Hello. I'm a horse at an equestrian centre in Gelderland. For a while, I existed twice.
 
-❌ Letting the tool derive the schema from whichever screen came first
-❌ 19 tables for a business with five real things in it
-❌ No RLS, no foreign keys, no constraints
-❌ Mock-data fallbacks quietly showing horses that didn't exist
+I lived in two tables. My owner's phone number lived in three, under different column names, and by then with different values. Nobody could say which one was right.
 
-✅ The business described first: five core entities plus invoicing, with tenancy, IDs and naming decided upfront
-✅ 19 tables consolidated to 8, with duplicate horses and owners reconciled by hand
-✅ RLS policies on every table tested with two centres, plus foreign keys (40 orphans found) and constraints
-✅ A realistic seed of 400 horses, mock fallbacks removed, migrations committed and types regenerated
+Nothing tied me to my stall, or my stall to my centre. There were no foreign keys and no row-level security. One table belonged to a feature abandoned in week one, and nobody had removed it.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we design your schema before anything is generated against it. 🗄️
+Then a second centre started using the system, and their horses appeared in our stall list.
 
-His result: three business days and €3,200 later, the cross-centre leak was closed structurally. Each new centre after that took a day to onboard instead of a week, because nothing needed reconciling. 🚀
+I live in Ritmeester, the stable and livery management tool Hidde Kwakernaak built with Bolt: horses, owners, stalls, feeding schedules, vet appointments and invoicing, for six centres in Gelderland and Utrecht. Every time he built a screen, he asked the tool to add a database for it. Three weeks later there were 19 tables. 🐎
 
-👉 Wiring data into a Bolt prototype: https://launchstudio.eu/en/blog/bolt-and-supabase-wiring-data-into-a-bolt-prototype
+How I became one horse again (LaunchStudio, 3 business days, €3,200):
+✓ The business described first: centres, horses, owners, stalls and appointments, plus invoicing
+✓ A schema built around those, with an organisation ID on every table, random primary keys, a readable horse reference people can quote, and consistent naming
+✓ 19 tables merged into 8, with duplicate horse and owner records combined after the three copies of contact details were reconciled by hand
+✓ Row-level security with policies on all eight, checked with accounts in two centres
+✓ Foreign keys, which turned up 40 orphaned records
+✓ Not-null, unique and check constraints
+✓ Seed data: 400 horses across four centres, unevenly spread, with missing optional fields and diacritics in names
+✓ Mock data fallbacks removed from four screens that had been quietly showing invented horses whenever a result came back empty
+✓ Migrations committed and types regenerated
+
+The cross-centre leak was closed by the structure itself, not patched. Hidde found the three days uncomfortable, since they produced no visible feature. But the next six centres onboarded in a day each, not the week the first two took, because nothing needed reconciling.
+
+"Nineteen tables for a business with five things in it. Each one was a reasonable answer to a screen I was building that afternoon, and together they were a product where a horse could exist twice with different owners." - Hidde Kwakernaak
+
+https://launchstudio.eu/en/blog/bolt-and-supabase-wiring-data-into-a-bolt-prototype
 
 #Bolt #Supabase #DatabaseDesign #Prototyping #LaunchStudio #Manifera

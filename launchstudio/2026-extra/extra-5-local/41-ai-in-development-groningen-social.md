@@ -1,20 +1,25 @@
-📚 Sander de Boer built StudyStack in Lovable over three weekends - then pushed a database schema change straight to production two days before exam period, while hundreds of Groningen students were actively signing up for study groups. It silently dropped a foreign key constraint and started corrupting sign-up lists in real time. 😬
+👻 A two-sentence horror story for founders:
 
-"AI in development" gets you a working prototype fast. It doesn't give you a safe way to change things once real users show up. 🧠
+Two days before exam period, with hundreds of students registering for study groups, a founder pushed one small database change straight to live. The sign-up lists began filling with duplicates in real time.
 
-❌ Schema changes pushed directly to the live environment, no staging in between
-❌ No automated checks to catch a risky change before it goes live
-❌ Duplicate group entries corrupting sign-ups during peak exam-week traffic
-❌ The AI tool that built the app had no reason to warn him - it never saw this failure mode
+The scary part: it really happened.
 
-✅ A proper staging environment separate from production
-✅ Automated checks that block risky schema changes before they ship
-✅ A cleaned-up database structure that holds under real concurrent load
+Sander de Boer built StudyStack in Groningen, almost entirely in Lovable, over three intense weekends. University and Hanze students use it to share course notes, exam timetables and study group sign-ups. It looked polished and worked well in demos.
 
-At **LaunchStudio**, we treat this as standard practice on every AI-built product - backed by Manifera's 11+ years of production engineering for clients like Vodafone and TNO. 🛡️
+What happened: a schema change went directly to the live environment and silently dropped a foreign key constraint. Duplicate group entries started corrupting the sign-up lists while students were using them.
 
-His result: zero downtime during the following exam period, with over 600 concurrent student sign-ups handled without a single data conflict. 🚀
+What made it scary: no staging environment, and no guardrail between "I made a change" and "everyone sees it."
 
-👉 Building fast with AI and about to push a schema change live? Get a free 15-minute review first: https://launchstudio.eu/en/blog/ai-in-development-groningen
+How LaunchStudio ended the nightmare (4 business days, €650):
+🕯️ A staging environment separate from production
+🕯️ Automated checks that block risky schema changes before they go live
+🕯️ A cleaned-up database structure
+🕯️ Sander's Lovable frontend left untouched
+
+The sequel: zero downtime during the next exam period, with 600+ concurrent student sign-ups and not a single data conflict.
+
+"I thought 'AI in development' meant I didn't need a real process. LaunchStudio showed me the process was the missing piece, not the code." - Sander de Boer
+
+Don't write your own horror story: https://launchstudio.eu/en/blog/ai-in-development-groningen
 
 #AINativeFounder #LaunchStudio #Manifera #AIinDevelopment #Groningen

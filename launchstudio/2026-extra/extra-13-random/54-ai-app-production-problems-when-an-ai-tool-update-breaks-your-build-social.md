@@ -1,21 +1,36 @@
-🚨 Lars Nieuwenhuis runs a sailing school on the IJsselmeer near Hoorn and built Zeilschool in Lovable: students book courses, pay via iDEAL, pick boat types and get weather-dependent confirmations. A smooth season, about 1,100 bookings. Then in early spring he asked Lovable to update some text on the course page. Two days later, a student called: her confirmation showed the wrong date. 😳
+⛵ WHAT WAS ASKED vs. WHAT CHANGED
 
-The same edit had regenerated a shared date helper with a different library that read dates in UTC - evening bookings shifted to the next day in confirmations and the instructor schedule. The lockfile wasn't committed, and a Supabase client update slipped in, logging students out mid-booking. Asking Lovable to revert produced a third variant with its own problems. Here's what to do when an AI tool update breaks your build: 🧠
+ASKED: "Update the text on the course overview page."
 
-❌ A copy change that silently rewrote shared code
-❌ Dates handled in UTC instead of local time
-❌ No lockfile - dependencies changing underneath you
-❌ "Revert" producing yet another new version
+CHANGED:
+✓ The text on the course overview page (looked perfect)
+✗ The shared date-formatting helper, regenerated with a different library that read dates in UTC
+✗ The Supabase client, updated along the way, changing how sessions refresh
+✗ (Nothing to stop it: no committed lockfile)
 
-✅ Last known good versions restored from the GitHub history Lovable had synced
-✅ Date handling fixed to Europe/Amsterdam explicitly
-✅ Lockfile and Node.js version committed and pinned, Dependabot behind a test gate
-✅ Tests for booking dates, login, payment and confirmations, a staging environment, and Lovable rules forbidding dependency or helper changes without explicit instruction
+Two days later, a student called. Her booking confirmation showed the wrong date.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we make sure a change that touches more than you asked for can't reach your customers. ⚙️
+Lars Nieuwenhuis runs a sailing school on the IJsselmeer near Hoorn and built Zeilschool in Lovable: students book courses, pay via iDEAL, choose boat types and get weather-dependent confirmations. A smooth season, about 1,100 bookings. Then that one copy change.
 
-His result: €1,450, five business days. About 1,500 summer bookings with no date or login regressions - and tests have since caught two Lovable edits before production. 🚀
+What it caused:
+• Bookings made in the evening shifted to the next day, in confirmations and in the instructor schedule
+• Some students logged out mid-booking
+• Asking Lovable to revert produced a third variant, with problems of its own
 
-👉 AI app production problems: when an AI tool update breaks your build: https://launchstudio.eu/en/blog/ai-app-production-problems-when-an-ai-tool-update-breaks-your-build
+What LaunchStudio did (5 business days, €1,450):
+✓ The last known good versions restored from the history Lovable had synced to GitHub
+✓ Date handling fixed, with the Europe/Amsterdam time zone set explicitly
+✓ The lockfile and Node.js version committed and pinned
+✓ Dependabot, with a test gate
+✓ Tests for booking dates, login, payment and confirmation emails
+✓ A staging environment
+✓ Project rules telling Lovable not to change dependencies or shared helpers without explicit instruction
+✓ Affected bookings corrected, and students notified
+
+The summer season: around 1,500 bookings, no date or login regressions. Two later Lovable edits were caught by the tests before production, one of them another unintended helper change.
+
+"I changed some words on a page and my app forgot what day it was. Now a change that touches more than I asked for can't reach my students." - Lars Nieuwenhuis
+
+https://launchstudio.eu/en/blog/ai-app-production-problems-when-an-ai-tool-update-breaks-your-build
 
 #Lovable #Regression #Testing #DevOps #LaunchStudio #Manifera

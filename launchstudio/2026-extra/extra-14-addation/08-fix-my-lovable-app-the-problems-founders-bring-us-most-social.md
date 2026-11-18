@@ -1,21 +1,32 @@
-🚨 Tim Verbeek runs a cargo bike rental shop in Delft and built Fietsdeel in Lovable. For two months it worked. Then every Friday afternoon, the staff dashboard went empty - while customers kept receiving booking confirmations. 😳
+🔍 CASE FILE: The Friday Vanishing
 
-Tim prompted Lovable a dozen times. Each "fix" changed the dashboard query, and twice Lovable suggested making the reservations policy public. The bug wasn't in the dashboard at all. Here's what was really going on: 🧠
+THE CLIENT
+Tim Verbeek, Delft. Runs a cargo bike rental shop, and built Fietsdeel in Lovable so customers can reserve bikes online and staff can manage pickups. Two good months.
 
-❌ A scheduled cleanup function archiving reservations using UTC instead of Dutch time
-❌ Next morning's bookings archived on Friday afternoons, before staff saw them
-❌ A reservations policy letting any customer list every booking, names and phone numbers included
-❌ No staging, so every prompt went straight to live
+THE MYSTERY
+Every Friday afternoon, the staff dashboard showed zero reservations. Customers kept getting confirmations.
 
-✅ Cleanup function fixed to use Europe/Amsterdam time and archive only past pickups
-✅ Archived reservations restored
-✅ RLS rewritten: customers see their own bookings, staff see all of them
-✅ A staging project for testing prompts safely - and the Lovable frontend left untouched
+THE WRONG LEADS
+Tim prompted Lovable a dozen times. Each attempt changed the dashboard query. Twice, Lovable suggested making the reservations policy public "to fix the visibility issue." Three weeks went by.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production work, we diagnose before we change anything, then fix only what's broken underneath. 🛠️
+THE CULPRIT
+Not the dashboard at all. A scheduled cleanup function Lovable had added weeks earlier, which archived reservations once their pickup date had passed, using UTC instead of Dutch time. On Friday afternoons, the next day's early reservations landed on the wrong side of midnight and were archived before staff ever saw them.
 
-💡 His result: €1,150, five business days. The Friday disappearances stopped that week, and Fietsdeel handled about 900 reservations over the spring season. 🚀
+AN ACCOMPLICE
+The reservations table had a policy letting any logged-in customer list every reservation, names and phone numbers included.
 
-👉 Lovable says "fixed", but nothing changed? Here are the eight problems founders bring us most: https://launchstudio.eu/en/blog/fix-my-lovable-app-the-problems-founders-bring-us-most
+THE RESOLUTION (LaunchStudio, 5 business days, €1,150)
+• The cleanup function switched to the Europe/Amsterdam time zone, archiving only past pickups
+• The archived reservations restored
+• RLS rewritten: customers see only their own bookings, staff see all of them
+• A staging project for testing prompts safely
+• The Lovable frontend left untouched
+
+CASE CLOSED
+The Friday vanishings stopped that same week. Over the spring season, Fietsdeel handled about 900 reservations. Tim still builds in Lovable, testing in staging first.
+
+"I spent three weeks asking Lovable to fix the dashboard. The bug wasn't in the dashboard at all." - Tim Verbeek
+
+https://launchstudio.eu/en/blog/fix-my-lovable-app-the-problems-founders-bring-us-most
 
 #Lovable #Supabase #NoCode #AIFounder #LaunchStudio #Manifera

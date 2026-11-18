@@ -1,21 +1,31 @@
-🚨 Joost Verbruggen, a dog walker in Tilburg, built Uitlaatmaatje in Bolt as an Expo app: owners book walks, walkers share live location and photos, and payments run through Stripe. He wanted it in both app stores before the summer holidays. Apple rejected it three times in five weeks. 😳
+🐕 Apple, rejection #1: our reviewers couldn't log in.
+Apple, rejection #2: there's no in-app account deletion.
+Apple, rejection #3: your privacy label leaves out location data, and crash analytics collected by an SDK.
+Google Play: your Data safety form has the same gap.
 
-First reviewers couldn't log in. Then there was no in-app account deletion. Then the privacy label omitted location data and crash analytics collected by an SDK Bolt had added - and Google flagged the Data safety form for the same reason. Meanwhile, a friend unpacked the Android build and found the Stripe secret key and the Google Maps key inside. Here's what passing App Store and Play Store review takes for an AI app: 🧠
+Three rejections in five weeks. Apple wasn't being difficult. It was reading the app more carefully than its founder had.
 
-❌ No demo account for reviewers
-❌ "Email us to delete your account"
-❌ Privacy labels that miss what SDKs collect
-❌ Secret keys inside the app binary
+Joost Verbruggen, a dog walker in Tilburg, built Uitlaatmaatje in Bolt as an Expo app: dog owners book walks, walkers share live location during the walk and upload photos, and payments run through Stripe. The web version worked for his own clients. He wanted both app stores before the summer holidays.
 
-✅ Both keys rotated, payments and map calls moved behind server-side functions
-✅ A backend deletion flow removing profiles, dog records, walk photos and location history - and cancelling Stripe customers
-✅ Versioned API routes so older builds keep working, plus a demo account with realistic walks
-✅ Every SDK's data collection documented for accurate declarations, clear permission purpose strings - and review notes explaining why Stripe fits real-world services
+And there was a fourth problem no reviewer mentioned: a friend unpacked the Android build and found the Stripe secret key and the Google Maps key inside it.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering and a decade of React Native and Flutter delivery, we prepare the parts of mobile launch that AI tools skip. ⚙️
+What LaunchStudio did before the next submission (14 business days, €3,900):
+✓ Both keys rotated, with payment creation and map calls moved behind server-side functions
+✓ A backend deletion flow that removes profiles, dog records, walk photos and location history, and cancels Stripe customers
+✓ Versioned API routes, so older builds keep working
+✓ A demo account seeded with realistic walks, for the reviewers
+✓ Every SDK's data collection documented, for accurate privacy declarations
+✓ Clear purpose strings for the location and camera permissions
+✓ Submission notes explaining why Stripe is correct here: walks are real-world services
 
-His result: €3,900, fourteen business days. Uitlaatmaatje passed review on both stores at the next submission and gained 640 dog owners and 38 walkers around Tilburg and Breda in three months. 🚀
+Apple: ✅ approved.
+Google Play: ✅ approved.
+Both at the next submission.
 
-👉 AI app to production on mobile: passing App Store and Play Store review: https://launchstudio.eu/en/blog/ai-app-to-production-on-mobile-passing-app-store-and-play-store-review
+In its first three months on mobile, Uitlaatmaatje gained 640 dog owners and 38 walkers around Tilburg and Breda.
+
+"I thought the rejections were Apple being difficult. They were Apple reading my app more carefully than I had." - Joost Verbruggen
+
+https://launchstudio.eu/en/blog/ai-app-to-production-on-mobile-passing-app-store-and-play-store-review
 
 #MobileApps #AppStore #ReactNative #Expo #LaunchStudio #Manifera

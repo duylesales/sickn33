@@ -1,21 +1,32 @@
-🔐 Joyce Vermeulen runs a bookkeeping office in Hoorn and built Klantmap with Lovable and Supabase: about 180 clients upload receipts and bank statements, and her team prepares their VAT returns. During onboarding, a new client who worked in IT asked: "How do you make sure other clients can't see my documents?" Joyce realised she didn't know. 😶
+Q: "How do you make sure other clients cannot see my documents?" 📂
 
-An exposure test through the API answered the question within minutes. Every client was one query away from every other client's files: 🧠
+That's what a new client, who works in IT, asked Joyce Vermeulen during onboarding. Joyce runs a small bookkeeping office in Hoorn and built Klantmap with Lovable and Supabase: around 180 clients upload receipts and bank statements, and her team prepares their quarterly VAT returns.
 
-❌ A policy letting any logged-in user list all documents
-❌ A public storage bucket with file paths based on client names
-❌ Users who could edit their own role column and promote themselves
-❌ A security definer function that never checked who was calling
+Joyce realised she didn't know.
 
-✅ An agreed access model: clients, assigned staff, owner
-✅ Policies rewritten for all eleven tables, separately per operation
-✅ A private bucket with per-client folders and signed URLs
-✅ Negative authorisation tests per role and project instructions for Lovable
+A, BEFORE (from an exposure test):
+• The documents table let any logged-in user read every row, so a client could list every other client's document names and metadata through the API
+• The upload bucket was public, with file paths based on client names
+• Users could update their own role column in profiles
+• A function that generated quarterly overviews ran as security definer, without checking who called it
 
-At **LaunchStudio**, backed by Manifera's 11+ years of securing enterprise systems, we test Row Level Security the way an attacker would and fix it at a fixed price, without touching your interface. 🛠️
+Q: So what's the access model?
+A: Agreed with Joyce first: clients see only their own documents and messages, staff see the clients assigned to them, and Joyce as owner sees everything.
 
-Her result: €1,850, five business days. The portal looks the same, and Joyce now answers security questionnaires with a one-page document and tests to back it up. 🚀
+Q: And how is it enforced?
+A, AFTER (LaunchStudio, 5 business days, €1,850):
+✓ Policies rewritten for all eleven tables, with separate rules per operation
+✓ Roles moved into a protected table
+✓ An explicit permission check in the overview function
+✓ A private bucket, with policies per client folder and signed URLs
+✓ Negative authorisation tests for every role
+✓ Frontend queries that relied on broad access adjusted
+✓ Project instructions documenting the patterns for future Lovable sessions
 
-👉 Supabase RLS fix service, at a fixed price: https://launchstudio.eu/en/blog/supabase-rls-fix-service-fixed-price
+The portal's interface didn't change at all. Joyce sent her IT-minded client a one-page description of the access rules, and later used the same document to answer a larger client's security questionnaire.
+
+"I could finally answer the question every client should be asking. And I could prove the answer with tests." - Joyce Vermeulen
+
+https://launchstudio.eu/en/blog/supabase-rls-fix-service-fixed-price
 
 #Supabase #RLS #Lovable #Security #AIFounder #LaunchStudio #Manifera

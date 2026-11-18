@@ -1,21 +1,32 @@
-⚽ Tim Groen runs a sports club management start-up in Apeldoorn and built Clubkas with Bolt and Supabase: amateur football clubs manage members, collect contributions through Mollie and plan volunteer shifts. After about forty prompts, it worked well for his own club. Then five other clubs wanted to join. 🙌
+MYTH: "Forty prompts in, a Bolt app needs a rebuild."
+FACT: Tim's app stayed the same. Only the parts he couldn't see were fixed. ⚽
 
-The review showed what forty prompts of history had left behind: 🧠
+Tim Groen runs a sports club management start-up in Apeldoorn and built Clubkas with Bolt and Supabase: amateur football clubs manage members, collect contributions through Mollie and plan volunteer shifts. After about forty iterations, it worked well for his own club. Five other clubs wanted to join.
 
-❌ Row Level Security disabled on three tables, so any member could read all addresses and phone numbers
-❌ Members marked as paid on the redirect page instead of by verified payments
-❌ Three versions of the member list component, two of them unused
-❌ The Supabase project in his brother's personal account, and emails failing on default settings
+MYTH: "If it works for my club, it's safe for six."
+FACT: Three tables had Row Level Security switched off after an error during development. Any logged-in member could read every member's address and phone number.
 
-✅ Policies rewritten for members, board members and admins, with tests
-✅ Verified Mollie webhooks and existing payments reconciled
-✅ Unused code removed and the Supabase project transferred to Tim's company
-✅ A custom email provider, own domain, backups, monitoring and project instructions for Bolt
+MYTH: "The payment page knows who paid."
+FACT: Members were marked as paid on the redirect page, not by Mollie.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of delivering software for clients such as Vodafone and TNO, we make Bolt apps production ready for €800 to €3,500, without changing the interface. 🛠️
+MYTH: "My project is mine."
+FACT: The Supabase project was linked to a personal account belonging to Tim's brother.
 
-His result: €1,950, five business days. Five new clubs and about 1,200 members onboarded within a month, and the tests later caught a policy change before it reached production. 🚀
+Also found: three versions of the member list component, two unused, and default Supabase emails that often failed.
 
-👉 The cost to make a Bolt app production ready: https://launchstudio.eu/en/blog/cost-to-make-a-bolt-app-production-ready
+What LaunchStudio did (5 business days, €1,950):
+✓ Policies rewritten for members, board members and administrators, with tests
+✓ Payments moved to verified Mollie webhooks, with existing payment records reconciled
+✓ Unused components removed
+✓ The Supabase project transferred to Tim's company
+✓ A custom email provider configured
+✓ Netlify with a custom domain, plus backups and monitoring
+✓ Project instructions, so Bolt keeps the policies in place
+
+Within a month, all five new clubs onboarded, around 1,200 members in total. Tim kept building in Bolt, and the tests caught one policy change from a later prompt before it reached production.
+
+"I expected to hear that I needed to rebuild everything. Instead the app stayed the same, and the parts I could not see were fixed." - Tim Groen
+
+https://launchstudio.eu/en/blog/cost-to-make-a-bolt-app-production-ready
 
 #Bolt #Supabase #Mollie #ProductionReady #AIFounder #LaunchStudio #Manifera

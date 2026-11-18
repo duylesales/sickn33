@@ -1,21 +1,36 @@
-🚨 Bas Oudshoorn manages a coworking space near Utrecht Centraal and built Werkplekwissel in Bolt: members of partner spaces across Utrecht book a desk at another location for a day and pay per booking. Four spaces joined the pilot; a fifth near the Science Park wanted in. Before expanding, he asked every question Utrecht founders ask first - and several answers were uncomfortable. 😳
+❓ The questions a Utrecht founder asked before expanding, and the answers he got
 
-Only card checkout, while members kept asking for iDEAL. Bookings marked "paid" when members returned from checkout - close the tab, no payment. Members of one space could browse the full directory of the others, phone numbers included. A US-region database, on a Bolt preview URL. Here's what Utrecht founders ask before taking an AI prototype to production: 🧠
+Bas Oudshoorn manages a coworking space near Utrecht Centraal and built Werkplekwissel in Bolt: members of partner coworking spaces across Utrecht book a desk at another location for a day, pay per booking, and see who else from their community is there. Four spaces joined the pilot. A fifth, near the Science Park, wanted in. Before expanding, Bas asked the questions.
 
-❌ No iDEAL for Dutch customers who expect it
-❌ Payment status trusted from the browser redirect
-❌ Member directories with phone numbers visible across spaces
-❌ A US-region database and no own domain
+Q: Can my members pay with iDEAL?
+A, before: No. Stripe card checkout only, and members kept asking for it.
+A, after: Yes. Mollie with iDEAL and cards.
 
-✅ Checkout moved to Mollie with iDEAL and cards, confirmed via verified webhooks
-✅ Directories limited to people checked in at the same place on the same day, with opt-in visibility
-✅ Database migrated to an EU region with backups and a tested restore
-✅ A processor list for the privacy notice, plus own domain, staging and monitoring
+Q: How do we know a booking is really paid?
+A, before: It was marked paid when the member came back from checkout. Close the tab, and the booking looked paid without being paid.
+A, after: Verified Mollie webhooks confirm every payment.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering - 25 minutes by train from Utrecht at Herengracht 420 - we give boring, specific answers to the questions that matter. ⚙️
+Q: Who can see our members' details?
+A, before: Members of one space could see the full directories of the others, phone numbers included.
+A, after: Only people checked in at the same location on the same day, and only if they opt in.
 
-His result: €2,300, ten business days. Werkplekwissel grew to seven Utrecht coworking spaces in three months, ~900 bookings a month, iDEAL at about 80% of payments - and zero unpaid bookings. 🚀
+Q: Where is the data stored?
+A, before: In a US region.
+A, after: An EU region, with backups and a tested restore.
 
-👉 AI prototype to production in Utrecht: what local founders ask first: https://launchstudio.eu/en/blog/ai-prototype-to-production-in-utrecht-what-local-founders-ask-first
+Q: What goes in my privacy notice?
+A: A processor list, drafted for Bas.
+
+Q: Is the app on my own domain?
+A, before: A Bolt preview URL.
+A, after: Bas's own domain, with staging and monitoring.
+
+Delivered in 10 business days, for €2,300.
+
+Within three months, Werkplekwissel expanded to seven Utrecht coworking spaces and about 900 bookings a month. iDEAL accounts for roughly 80% of payments, and unpaid bookings dropped to zero.
+
+"Every question I asked had a boring, specific answer. That's exactly what I wanted - boring is what you want from the part of your app that handles money." - Bas Oudshoorn
+
+https://launchstudio.eu/en/blog/ai-prototype-to-production-in-utrecht-what-local-founders-ask-first
 
 #Utrecht #iDEAL #Bolt #Startups #LaunchStudio #Manifera

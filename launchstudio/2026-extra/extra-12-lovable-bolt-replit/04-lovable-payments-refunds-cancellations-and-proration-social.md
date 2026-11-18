@@ -1,21 +1,34 @@
-🚨 Sander Kroese's Clubkas runs dues administration for 95 amateur sports clubs in Brabant and Limburg on €240 annual plans. Cancelling meant emailing Sander, who refunded in the Stripe dashboard and flipped a flag by hand. One club got refunded twice for the same period. 😳
+🚪 HOW TO CANCEL CLUBKAS (before)
 
-Nothing in his app knew a refund had happened - so nothing could stop him doing it twice. Here's what goes wrong when money goes back out: 🧠
+Step 1: Email Sander.
+Step 2: Sander cancels in the Stripe dashboard.
+Step 3: Sander refunds, if he feels it's fair.
+Step 4: Sander updates a flag in the database by hand.
+Step 5: Hope steps 1 to 4 happened in the right order.
 
-❌ Refunds in the provider dashboard that never reached the database - two clubs kept full access for months
-❌ No credit notes, so the accounting never reconciled
-❌ Cancellation by email, with no self-service and no retention rules
-❌ A chargeback lost: €240 plus a fee, with no evidence to contest it
+Sander Kroese built Clubkas in Lovable: subscription and dues administration for amateur sports clubs, on annual plans of €240, used by 95 clubs across Brabant and Limburg. With 95 customers, this was survivable. With the growth he wanted, it wasn't. And it was already going wrong:
+• Two clubs refunded in the dashboard kept full access for months, because nothing changed in the database
+• One club was refunded twice for the same unused period, in June and again in August, and neither refund produced a credit note
+• An April chargeback cost €240 plus a fee, with no evidence to contest it
 
-✅ Self-service cancellation at period end, with a 90-day retention window, data export and full reactivation
-✅ One admin action that refunds via the provider, updates payment and access records, and issues a numbered credit note
-✅ Proration shown before confirmation, receipts on every charge, and "CLUBKAS" on bank statements
-✅ Logged terms acceptance, sign-ins and usage - enough to contest a dispute
+Nothing in the app knew a refund had happened, so nothing could stop him doing it twice.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we build the whole billing lifecycle, not just the checkout. 🔄
+🚪 HOW TO CANCEL CLUBKAS (after, LaunchStudio, 4 business days, €2,600)
+Step 1: The club cancels itself, and access ends at the end of the period.
+Step 2: 90 days of retention, with a data export available and full restore on reactivation.
+That's it.
 
-His result: four business days and €2,600 later, cancellation emails stopped entirely, the year-end accounts reconciled without adjustment for the first time, and two of the next three chargebacks were successfully contested. 🚀
+And behind the scenes:
+✓ A pro-rata refund rule for annual plans, written into the terms, as one admin action that refunds through the provider, updates payment and entitlement records, and issues a numbered credit note
+✓ Proration for mid-year plan changes, with the amount shown before confirmation
+✓ Receipts emailed on every charge, renewals included
+✓ The statement descriptor changed from an abbreviation to "CLUBKAS"
+✓ Per-account logging of terms acceptance, sign-in history and usage, enough to contest a dispute
 
-👉 Refunds, cancellations and proration without drama: https://launchstudio.eu/en/blog/lovable-payments-refunds-cancellations-and-proration
+Cancellation emails to Sander stopped completely. The year-end accounts reconciled without adjustments for the first time. And of the next year's three chargebacks, two were contested successfully with the logged evidence.
+
+"The double refund was the moment I understood the problem. Nothing in my app knew a refund had happened, so nothing could stop me doing it twice." - Sander Kroese
+
+https://launchstudio.eu/en/blog/lovable-payments-refunds-cancellations-and-proration
 
 #Billing #Refunds #SaaS #Lovable #LaunchStudio #Manifera

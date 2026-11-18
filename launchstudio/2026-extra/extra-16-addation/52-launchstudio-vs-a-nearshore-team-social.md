@@ -1,21 +1,33 @@
-🥕 Roos van Dam runs a subscription platform for local farm boxes from Wageningen, built with Lovable and Supabase. After an angel investment, she signed a three-developer nearshore team to "professionalise the product". Two months in, they had proposed a rewrite, built a new design system and were waiting for a backlog she didn't know how to write. 😕
+📋 STATUS REPORT: month two with a three-person nearshore team
 
-Meanwhile, the real problems were still there: 🧠
+✓ Proposed: rewriting the app in a different framework
+✓ Built: a new design system
+⏸️ Waiting for: the founder to prioritise a backlog she didn't know how to write
+✗ Still happening: customers occasionally receiving the wrong box, because of a webhook bug
+✗ Not yet looked at: security, backups
 
-❌ Customers occasionally receiving the wrong box because of a webhook bug
-❌ Loose database policies between farms
-❌ Emails from the default provider and no staging
-❌ Backups nobody had tested
+Roos van Dam runs Boerenkist, a subscription platform for local farm boxes from Wageningen, built with Lovable and Supabase. After an angel investment, she signed with a nearshore team to "professionalise the product." Two months later, the report above was the reality.
 
-✅ The contract paused at the end of its minimum term
-✅ The original Lovable app reviewed: sound structure, typical gaps
-✅ Policies per farm, idempotent Mollie webhooks, email, staging and tested backups
-✅ A simple admin panel for farms and monitoring, while Roos kept building small features herself
+Roos paused the contract at the end of its minimum term and asked LaunchStudio to look at the original app. The review: sound in structure, with the typical gaps.
+• Loose database policies between farms
+• Mollie webhooks without idempotency
+• Emails from the default provider
+• No staging
+• Backups never tested
 
-At **LaunchStudio**, backed by Manifera's 11+ years of delivering both fixed-price projects and dedicated teams for clients such as Vodafone and TNO, we deliver defined outcomes now and can provide a team later when the roadmap needs one. 🛠️
+📋 STATUS REPORT: LaunchStudio, Launch & Grow (11 business days, €4,200, plus €49/month)
+✓ Policies tightened per farm
+✓ Webhooks fixed
+✓ Email on a proper provider
+✓ Staging
+✓ Backups, tested
+✓ A simple admin panel for farms
+✓ Monitoring
 
-Her result: €4,200 plus €49 per month, eleven business days. Wrong-box complaints stopped within a week, and the platform grew from 14 to 31 farms in six months. 🚀
+Wrong-box complaints stopped within a week of release. Roos kept building smaller features herself in Lovable, and over six months the platform grew from 14 to 31 farms. Later, she hired a technical lead, who now decides what to keep in-house and what to outsource, on a documented foundation.
 
-👉 LaunchStudio vs a nearshore team: https://launchstudio.eu/en/blog/launchstudio-vs-a-nearshore-team
+"I bought a team before I knew what I needed them to do. What I actually needed first was a fixed list of problems solved." - Roos van Dam
+
+https://launchstudio.eu/en/blog/launchstudio-vs-a-nearshore-team
 
 #Nearshore #Outsourcing #Lovable #Supabase #AIFounder #LaunchStudio #Manifera

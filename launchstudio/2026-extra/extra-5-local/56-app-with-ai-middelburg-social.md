@@ -1,20 +1,22 @@
-🏰 Anouk Vermeer built HeritageStay, a booking platform for historic guesthouses across Middelburg's old city center, using Bolt over about ten days - her demo at a local Zeeland founder meetup worked flawlessly. Two weeks before public launch, a review found any user could view any other guest's reservation just by changing a number in the URL. 😳
+The demo went perfectly. 🏛️
 
-A demo only ever tests the paths the founder walked through themselves. 🧠
+Anouk Vermeer stood up at a local Zeeland founder meetup and showed HeritageStay: a booking platform connecting travelers with historic guesthouses and canal-side apartments across Middelburg's old city center. She had built it in Bolt in about ten days. Search worked. Booking worked. Confirmation emails arrived. People nodded.
 
-❌ Booking database let any user view any other guest's name and stay dates
-❌ Payment processing hadn't moved past a Stripe test-mode configuration
-❌ No GDPR-compliant storage plan for an audience that's largely international tourists
-❌ "It looked done" and "it's safe to launch" turned out to be very different things
+Two weeks before her planned public launch, she sat down with LaunchStudio for a review.
 
-✅ Row-level security so guests only ever access their own bookings
-✅ Live, tested Stripe integration with proper refund handling
-✅ GDPR-compliant storage set up for guest personal data
+That's where the demo stopped being the whole story. The booking database let any user view any other guest's reservation, names and stay dates included, just by changing a number in the URL.
 
-At **LaunchStudio**, we take the app a founder already built with AI and add exactly what the demo never needed - backed by Manifera's engineering team operating from its Ho Chi Minh City hub. 🛡️
+There was more. Payments needed to move to a properly configured live Stripe integration, with refund handling that had actually been tested. And with so much of her audience made up of international tourists, guest data needed GDPR-compliant storage, something Anouk hadn't fully considered.
 
-Her result: HeritageStay launched on schedule with guest data properly isolated and payments running live, right before Middelburg's summer tourist season. 🚀
+So in 6 business days, for €1,600, LaunchStudio:
+• Added row-level security, so guests can only ever see their own bookings
+• Moved payments to a live, tested Stripe setup with refund handling
+• Set up GDPR-compliant storage for guest personal data
 
-👉 Demo looks done? Let's find out if it actually is: https://launchstudio.eu/en/blog/app-with-ai-middelburg
+HeritageStay launched on schedule, ahead of Middelburg's summer tourist season, with guest data isolated and payments running live.
+
+"The demo fooled me too, honestly. It looked done. It wasn't until someone actually tried to break it that I found out how far 'looks done' was from 'is safe to launch.'" - Anouk Vermeer
+
+Built an app with AI that demos beautifully? Let someone try to break it first: https://launchstudio.eu/en/blog/app-with-ai-middelburg
 
 #AINativeFounder #LaunchStudio #Manifera #AppWithAI #Middelburg

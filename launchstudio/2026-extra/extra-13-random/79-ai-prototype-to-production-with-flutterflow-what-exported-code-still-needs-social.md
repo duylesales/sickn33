@@ -1,21 +1,31 @@
-🚨 Thijmen de Lange, a gliding instructor near Lelystad, built Zweefvliegclub in FlutterFlow: members book flight slots and instructors, log flights, check aircraft availability and pay flight fees. Three clubs, about 520 members - and Thijmen wanted it in both app stores before the new season. 😳
+🎬 A beautiful film set, at a gliding club
 
-Firestore rules let any logged-in member read and write every collection - including others' medical certificate dates and payments - and mark their own flights as paid. A Mollie API key was baked into the app binary. The instructor-only "approve solo flight" screen was hidden, but the write behind it was open to all. AI-pasted custom code added an outdated package, there was no account deletion or crash reporting, and edits in FlutterFlow and exported code overwrote each other. Here's what exported FlutterFlow code still needs before production: 🧠
+On screen, Zweefvliegclub looked finished. Members book flight slots and instructors, log flights, check aircraft availability and pay flight fees. Three gliding clubs, about 520 members. Thijmen de Lange, a gliding instructor at a club near Lelystad, built it in FlutterFlow, and wanted it in both app stores before the new season.
 
-❌ Firestore rules that allow everything to everyone
-❌ A payment key inside the app
-❌ Role restrictions only in the interface
-❌ Two sources of truth for the code
+FlutterFlow made the app look finished. The rules behind it decided whether it actually was.
 
-✅ Firestore rules scoped to clubs, members and roles, with emulator tests
-✅ Payment creation and confirmation in Cloud Functions with Mollie webhooks, and instructor approvals enforced server-side
-✅ The problematic package replaced, in-app account deletion with backend clean-up, Crashlytics enabled
-✅ FlutterFlow as the single source of truth with exports committed to Git - and both store submissions prepared with staged rollout
+BEHIND THE SET
+🎭 Firestore rules let any logged-in member read and write every collection, including other members' medical certificate expiry dates and payment records, and mark their own flights as paid
+🎭 A Mollie API key, configured in a FlutterFlow API call, sitting in the app binary
+🎭 An instructor-only "approve solo flight" screen, hidden in the interface, with the underlying write open to everyone
+🎭 Custom code pasted from an AI chat, pulling in an outdated package with known issues
+🎭 No account deletion, and no crash reporting
+🎭 Designs edited both in FlutterFlow and in the exported code, overwriting each other
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering and a decade of Flutter delivery, we make sure the rules behind a finished-looking app are finished too. ⚙️
+BUILDING THE REAL THING (LaunchStudio, 11 business days, €3,300)
+🏗️ Firestore rules scoped to clubs, members and roles, with emulator tests
+🏗️ Payment creation and confirmation in Cloud Functions, with Mollie webhooks
+🏗️ Instructor approvals enforced on the server
+🏗️ The problematic package replaced
+🏗️ In-app account deletion, with backend clean-up
+🏗️ Crashlytics enabled
+🏗️ FlutterFlow as the single source of truth, with exports committed to Git
+🏗️ Both store submissions prepared, with a staged rollout
 
-His result: €3,300, eleven business days. Both apps were approved at first submission, a fourth club joined mid-season, and crash-free sessions stayed above 99.5%. 🚀
+Both apps were approved at first submission. The season started with all three clubs on the app, a fourth joined mid-season, and crash-free sessions stayed above 99.5%.
 
-👉 AI prototype to production with FlutterFlow: what exported code still needs: https://launchstudio.eu/en/blog/ai-prototype-to-production-with-flutterflow-what-exported-code-still-needs
+"FlutterFlow made the app look finished. The rules behind it decided whether it actually was." - Thijmen de Lange
+
+https://launchstudio.eu/en/blog/ai-prototype-to-production-with-flutterflow-what-exported-code-still-needs
 
 #FlutterFlow #Firebase #MobileApps #Flutter #LaunchStudio #Manifera

@@ -1,21 +1,37 @@
-🚨 Camille Lenaerts spent eight years at a Brussels environmental NGO, then built Dossierwatch with Cursor: organisations follow legislative files, get AI summaries of new amendments in English and French, map stakeholder positions and share internal notes. 22 NGOs and three trade associations subscribed. Then a trade association's IT lead asked: could NGOs campaigning against them see their stakeholder notes? 😳
+🇪🇺 Rivals under one roof: an NGO and a trade association, on the same platform
 
-The honest answer: it depended on the page. A search endpoint returned matching notes from every organisation. Private notes were sent to an AI model to "improve summaries" without clients knowing. Summaries weren't linked to amendment versions - one misattributed an amendment after an update. French accented terms weren't found, and the last plenary week crawled because summaries were generated on page load. Here's what taking a Brussels policy tool from AI prototype to production requires: 🧠
+THE PLATFORM
+Camille Lenaerts spent eight years at a Brussels-based environmental NGO, then built Dossierwatch with Cursor: organisations follow legislative files, get AI-generated summaries of new amendments in English and French, map stakeholder positions, and share internal notes. Twenty-two NGOs and three trade associations subscribed.
 
-❌ Client notes leaking through search
-❌ Private notes sent to an AI model without consent
-❌ Summaries not traceable to source versions
-❌ No multilingual search or peak-week capacity
+THE QUESTION
+During onboarding, a trade association's IT lead asked: could other subscribers, including NGOs campaigning against us, see our stakeholder notes?
 
-✅ Organisation-level separation with row level security and negative tests
-✅ Private notes sent to the model only if an organisation opts in
-✅ Every summary linked to source versions and regenerated when sources change, with AI labels and a review status
-✅ Accent-insensitive multilingual search, background generation and ingestion with monitoring, cached dossier pages - and a procurement-ready data description listing the AI provider as processor
+THE HONEST ANSWER
+It depended on the page.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we build every feature around one boundary: public data can be shared, client insight never. ⚙️
+WHAT EACH SIDE COULD ACTUALLY SEE
+🔓 The interface filtered by organisation, but a search endpoint returned matching notes from every organisation
+🔓 Private notes were sent to an AI model to "improve summaries," without clients knowing
 
-Her result: €3,700 over twelve business days, plus €49/month. The trade association signed, the next plenary week stayed fast, and Dossierwatch added eleven organisations - several citing the data description in procurement. 🚀
+AND WHAT ELSE WAS WRONG
+• Summaries weren't linked to the amendment versions they described, and one misattributed an amendment after a document was updated
+• French accented terms didn't show up in search
+• During the last plenary week, the site slowed to a crawl, because summaries were generated on page load
 
-👉 AI prototype to production in Brussels: EU policy startups and multilingual data: https://launchstudio.eu/en/blog/ai-prototype-to-production-in-brussels-eu-policy-startups-and-multilingual-data
+Clients who disagree for a living all needed to agree on one thing: the platform keeps their notes apart.
+
+What LaunchStudio built (Launch & Grow, 12 business days, €3,700, plus €49/month):
+✓ Organisation-level separation with Row Level Security and negative tests
+✓ Private notes sent to the model only if an organisation opts in
+✓ Every summary linked to its source document versions, regenerated when sources change, with AI labels and a review status
+✓ Accent-insensitive, multilingual search
+✓ Summary generation and ingestion moved to monitored background jobs, with public dossier pages cached
+✓ A procurement-ready security and data description, with the AI provider listed as a processor
+
+The trade association signed. The next plenary week passed with fast load times throughout. And Dossierwatch has added eleven organisations since, several of them citing the data description in procurement.
+
+"My clients disagree with each other for a living. The one thing they all needed to agree on was that the platform kept their notes apart." - Camille Lenaerts
+
+https://launchstudio.eu/en/blog/ai-prototype-to-production-in-brussels-eu-policy-startups-and-multilingual-data
 
 #Brussels #PolicyTech #EUAffairs #Multilingual #LaunchStudio #Manifera

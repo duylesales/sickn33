@@ -1,20 +1,29 @@
-🏁 Bram Wolters built RaceGrid, a scheduling and telemetry-sharing platform for support crews at the TT Circuit Assen weekend, in six intense days using Bolt - and three days before a trial rollout with two racing teams, a developer friend found that any logged-in user could open another team's telemetry feed just by editing the URL's team ID.
+6 days to build.
+3 days before the trial.
+1 developer friend doing a sanity check.
+1 URL parameter.
+0 row-level security.
+2 racing teams about to share one database. 🏁
 
-A working demo tells you nothing about whether the database is actually locked down. 🧠
+Bram Wolters built RaceGrid in Bolt in six intense days: a scheduling and telemetry-sharing platform for support crews at the TT Circuit Assen weekend. Team managers assign pit slots, share sensor data and message crew members in real time. It looked ready.
 
-❌ No row-level security on the Supabase tables at all - any team could see every other team's data
-❌ The Stripe secret key was sitting in the frontend bundle instead of a server function
-❌ Permission checks existed only in the UI, never re-verified on the backend
-❌ None of this broke the demo - it only would have broken in front of real users
+Three days before a trial rollout with two racing teams, Bram sent the link to a developer friend for a sanity check. The friend found that any logged-in user could open another team's telemetry feed just by editing the team ID in the URL. The Supabase tables had no row-level security at all.
 
-✅ Full database schema audit with row-level security scoped to team membership
-✅ Secret keys migrated out of the frontend into a server function
-✅ Backend permission checks added to every API route
+The numbers on the other side:
 
-At **LaunchStudio**, we run this exact security audit before any Bolt, Lovable, or Cursor prototype goes live - backed by Manifera's 11+ years of production engineering across 160+ delivered projects. 🛡️
+4 business days to fix
+€1,350 in total
+1 full database schema audit
+RLS policies scoped to team membership
+1 Stripe secret key moved out of the frontend bundle into a server function
+Backend permission checks on every API route that had only been checked in the UI
 
-Result: zero data-isolation incidents during the TT weekend trial, and RaceGrid signed a third team for the following season. 🚀
+And the scoreboard:
+0 data-isolation incidents during the TT weekend trial
+1 extra team signed for next season
 
-👉 Building on Bolt or Lovable and not sure what's hiding under the hood? Get a fixed-scope security audit: https://launchstudio.eu/en/blog/ai-security-vulnerabilities-assen
+"I built RaceGrid to be fast, not to be a security project. I had no idea the way Bolt structured my database meant every team could see every other team's data. LaunchStudio found it and fixed it in less time than it took me to build the feature in the first place." - Bram Wolters
+
+https://launchstudio.eu/en/blog/ai-security-vulnerabilities-assen
 
 #AINativeFounder #LaunchStudio #Manifera #AISecurityVulnerabilities #Assen

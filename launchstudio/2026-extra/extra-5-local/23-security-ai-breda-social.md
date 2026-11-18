@@ -1,20 +1,25 @@
-🚨 Elise van Dongen built TableTuned, a reservation and staff-scheduling tool for restaurants around Breda's Ginnekenmarkt, with Cursor - six restaurants were live within a month. Then a seventh restaurant's manager, just evaluating the tool, changed a reservation ID in the URL out of curiosity and pulled up another restaurant's full guest list, phone numbers included. 😳
+🍽️ TODAY'S MENU at TableTuned, Breda
 
-He reported it instead of exploiting it. The exposure had been live the entire month. 🧠
+STARTER
+A reservation and staff-scheduling tool for independent restaurants around Breda's Ginnekenmarkt district. Elise van Dongen built it in Cursor in about ten focused days. Six restaurants were using it within a month.
 
-❌ No row-level security policy on the reservations table at all - a default Supabase setup never locked down
-❌ Any restaurant could see any other restaurant's guests just by changing a URL
-❌ The public booking endpoint had no rate limiting
-❌ Stripe keys were sitting in client-side code
+MAIN COURSE (not on the menu)
+A seventh restaurant's manager, evaluating the tool, changed a reservation ID in the URL out of curiosity. Out came another restaurant's full guest list, phone numbers included.
+He reported it instead of exploiting it. But the exposure had been live for the entire month.
 
-✅ Implement proper tenant isolation on every reservation record
-✅ Add rate limiting to the public booking endpoint
-✅ Move payment keys out of the frontend into a secured backend function
+KITCHEN NOTES
+The reservations table ran on a default Supabase setup with no row-level security. Nobody had ever locked it down to restaurant-specific access.
 
-At **LaunchStudio**, Manifera's engineers - trusted by Vodafone, TNO, and CFLW Cyber Strategies for security-sensitive work - treat row-level security as a standard pre-launch audit item, not an afterthought. 🛡️
+THE CHEF'S CORRECTION (LaunchStudio, 5 business days, €1,300)
+• Proper tenant isolation for every restaurant
+• Rate limiting on the public booking endpoint
+• Stripe keys moved out of client-side code into a secured backend function
 
-TableTuned's result: it relaunched with verified tenant isolation, and Elise now leads sales conversations with her security audit instead of hoping the topic doesn't come up. 🚀
+DESSERT
+TableTuned relaunched with verified tenant isolation. Elise now leads her sales conversations with the security audit, instead of hoping the topic doesn't come up.
 
-👉 Handling booking or guest data with an AI-built app? Get the audit before a curious user finds the gap: https://launchstudio.eu/en/blog/23-security-ai-breda
+"The scariest part wasn't the bug. It was realizing I had no way of finding it myself. Now I know exactly what was fixed and why." - Elise van Dongen
+
+Serving guest data from an AI-built app? Check the kitchen first: https://launchstudio.eu/en/blog/23-security-ai-breda
 
 #AINativeFounder #LaunchStudio #Manifera #SecurityAudit #Breda

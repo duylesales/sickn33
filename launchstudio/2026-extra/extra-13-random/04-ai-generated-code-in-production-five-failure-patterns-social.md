@@ -1,21 +1,33 @@
-🚨 Burak Aydın runs a delivery-van leasing company in Zaandam and built FleetNote with Windsurf: drivers log mileage, fuel and damage photos; the office tracks maintenance across 38 vans. After four months, two vans had missed their scheduled service. 😳
+🤥 Five polite lies one fleet app told for four months
 
-Nothing had ever crashed. The logs, once someone looked, showed an app failing politely and telling nobody. Here are five failure patterns AI-generated code produces in production: 🧠
+LIE 1: "Saved."
+Photo uploads were wrapped in a silent catch. On weak mobile connections they failed, and drivers still saw "saved."
 
-❌ Silent catches: failed photo uploads still showed "saved"
-❌ No timeouts: a slow vehicle-data API froze the whole app
-❌ UTC time: Monday service reminders were generated Sunday night and filtered out
-❌ A retry loop that hammered the API into its rate limit
+LIE 2: "Just a moment..."
+The mileage sync called a vehicle-data API with no timeout. On that API's slow days, the whole app hung.
 
-✅ Reported errors and a visible retry prompt for drivers
-✅ Timeouts and a queue for the vehicle-data sync
-✅ Reminders recalculated in Europe/Amsterdam time
-✅ Retries capped with exponential backoff, plus Sentry and uptime alerts
+LIE 3: "No services due."
+The service reminder job worked out "due this week" in the server's UTC time. Reminders for Monday services were generated on Sunday night, and filtered out as already past.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we find the failures AI-written code hides - before your customers do. ⚙️
+LIE 4: "Retrying."
+A retry loop, added by the AI to "fix" an earlier error, kept triggering the vehicle API's rate limit, which explained the gaps in mileage data.
 
-His result: €2,200, eight business days. Every scheduled service on time the next quarter, failed uploads near zero, and the vehicle-data API bill down about 40% once the retry storm was gone. 🚀
+LIE 5: "Everything's fine."
+Nothing ever crashed. So nobody looked.
 
-👉 AI generated code in production: five failure patterns: https://launchstudio.eu/en/blog/ai-generated-code-in-production-five-failure-patterns
+Burak Aydın runs a small delivery-van leasing company in Zaandam and built FleetNote with Windsurf: drivers log mileage, fuel and damage photos from their phones, and the office tracks maintenance across 38 vans. After four months, Burak noticed two vans had missed their scheduled service. The logs, once someone read them, told the story above.
+
+The truth, restored (LaunchStudio, 8 business days, €2,200):
+✓ Silent catches replaced with reported errors, and a visible retry prompt for drivers
+✓ Timeouts, and a queue for the vehicle-data sync
+✓ Reminders calculated in the office's Europe/Amsterdam time zone
+✓ Retries capped, with exponential backoff
+✓ Sentry and uptime alerts to Burak and his office manager
+
+The next quarter: every scheduled service recorded on time, failed photo uploads close to zero because drivers could retry them, and the vehicle-data API bill down about 40% once the retry storm was gone.
+
+"Nothing ever crashed, which is why I trusted it. It turns out the app was failing politely and telling nobody." - Burak Aydın
+
+https://launchstudio.eu/en/blog/ai-generated-code-in-production-five-failure-patterns
 
 #AICoding #Windsurf #Reliability #DevOps #LaunchStudio #Manifera

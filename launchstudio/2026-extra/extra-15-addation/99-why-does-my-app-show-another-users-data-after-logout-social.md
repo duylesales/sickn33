@@ -1,21 +1,38 @@
-🚨 Daan Peters built Ledenloket with Lovable and Supabase: members of nine fitness studios check in on a shared tablet at reception, view their membership and book classes. Then a member complained: after logging in, she saw the previous member's name, membership and bookings for several seconds. 😳
+🧠 Five things an app forgot to forget
 
-Once, tapping quickly, she even booked a class on the previous member's account. The database was locked down. The leak was in everything the app remembered. Here's why apps show another user's data after logout: 🧠
+Daan Peters built Ledenloket with Lovable and Supabase: a check-in and account app for fitness studios. Members log in on a shared tablet at reception to check in, view their membership and book classes, and use the same app on their own phones. Nine studios.
 
-❌ Logout that only called Supabase's sign-out
-❌ React Query results cached under keys without a user ID
-❌ Profile and studio in local storage, and the member ID for bookings in a global store
-❌ A Cloudflare rule caching "today's classes" with a personalised "booked" flag
+Then a member complained. After she logged in on the tablet, she saw the previous member's name, membership type and upcoming bookings for several seconds. Once, after tapping quickly, she booked a class on the previous member's account.
 
-✅ CDN caching removed for authenticated routes, with private, no-store headers
-✅ One central logout clearing caches, stores, local storage and realtime, then reloading
-✅ Query keys including the member ID, and bookings using the member ID from the server session
-✅ Automatic kiosk logout after 60 seconds, and the incident documented as a GDPR breach
+The database was locked down properly. The problem was everything the app remembered after people left.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we clean up what your app remembers after people leave. 🛠️
+1. Cached query results
+React Query kept every result under keys without a user ID.
 
-The result: €1,700, 4 business days. Shared-device tests show no previous-member data, no further complaints came in, and the kiosk auto-logout became a feature studios recommend. 🚀
+2. Local storage
+The profile and selected studio stayed stored.
 
-👉 Does your app leak data between users on shared devices? Here's how to fix it: https://launchstudio.eu/en/blog/why-does-my-app-show-another-users-data-after-logout
+3. A global store
+It held the member ID used for bookings until the new profile loaded.
+
+4. The CDN
+A Cloudflare rule cached "today's classes," including a personalised "booked" flag, so members on their phones sometimes saw someone else's bookings marked as their own.
+
+5. The logout itself
+It only called Supabase's sign-out. Nothing else was cleared.
+
+Teaching the app to forget (LaunchStudio, 4 business days, €1,700):
+✓ No CDN caching on authenticated routes, and private, no-store headers on every personalised response
+✓ One central logout that clears the query cache, resets all stores, removes local storage keys, closes realtime channels and reloads the app
+✓ Query keys that include the member ID
+✓ Bookings that take the member ID from the server session, not from client state
+✓ Automatic logout on kiosk tablets after 60 seconds of inactivity
+✓ Help assessing the incident, documenting it as a data breach under the GDPR and informing the affected members
+
+Shared-device tests across every key screen now show no previous-member data. No further complaints, and studios now mention the automatic kiosk logout when they recommend Ledenloket.
+
+"My database was locked down properly. The leak was in everything my app remembered after people left." - Daan Peters
+
+https://launchstudio.eu/en/blog/why-does-my-app-show-another-users-data-after-logout
 
 #Privacy #SessionSecurity #GDPR #FitnessTech #AIFounder #LaunchStudio #Manifera

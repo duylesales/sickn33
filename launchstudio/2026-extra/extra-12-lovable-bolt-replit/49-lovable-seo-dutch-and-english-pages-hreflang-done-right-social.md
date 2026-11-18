@@ -1,21 +1,26 @@
-🚨 Sjoerd Waanders's Magazijnmaat sells warehouse and picking software to 48 wholesalers and distributors - all Dutch. He built the site in English first, added Dutch a year later, and served both at the same URLs, choosing by browser language. Nothing ranked. 😳
+🚪 Picture a shop with two doors, one Dutch and one English. A doorman stands outside. Anyone whose settings don't look Dutch gets walked to the English door, every time.
 
-Every crawler arriving with non-Dutch settings got redirected to English, so Google had never seen his Dutch pages. Meanwhile, the English pages targeted terms his Dutch buyers never searched. Here's how to do Dutch and English pages right: 🧠
+Search crawlers usually arrive with non-Dutch settings. So for a year, Google only ever met the English door.
 
-❌ Two languages on the same URLs, picked by browser detection
-❌ Automatic redirects that hid the Dutch pages from crawlers
-❌ Every Dutch canonical pointing at its English twin
-❌ English keywords translated instead of researched - when buyers search "magazijnsoftware"
+That was Magazijnmaat, the warehouse and picking software Sjoerd Waanders built in Lovable: 48 customers, every one of them Dutch. The site went up in English first, because that's what his tools produced, and the Dutch pages came a year later, at the same URLs, with browser detection and a redirect choosing the language.
 
-✅ Language-explicit /nl/ and /en/ URLs with permanent redirects
-✅ A visible switcher with a remembered choice instead of auto-redirects
-✅ Complete reciprocal hreflang with self-references and x-default, self-referencing canonicals, per-language metadata and sitemaps
-✅ Dutch pages rewritten around real Dutch search terms - and the English site cut to six pages
+The search console showed English pages indexed and the Dutch ones almost entirely absent. Behind the second door, every Dutch page's canonical link pointed at its English twin, actively removing it from the index. And the English pages were chasing terms his Dutch buyers never searched. 🏭
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we'll tell you whether your second language earns its keep - sometimes the answer is no. 🌍
+The renovation (LaunchStudio, 3 business days, €3,200):
+✓ Separate doors with their own addresses: /nl/ and /en/, with permanent redirects from the old shared URLs
+✓ The doorman dismissed: a visible language switcher, plus a dismissible notice that remembers the choice
+✓ Complete reciprocal hreflang, with self-references and an x-default
+✓ Canonicals corrected
+✓ Titles, descriptions and structured data per language
+✓ Dutch keyword research: customers searched "magazijnsoftware" and "orderpicken software" with meaningful volume, while the English terms he'd optimised for had essentially none in the Netherlands
+✓ Dutch pages rewritten around those terms, not translated from English
+✓ A sitemap per language
+✓ The English side cut from a full mirror to six pages for an international audience
 
-His result: three business days and €3,200 later, the Dutch pages were indexed within three weeks. Organic traffic rose from 90 to 740 visits a month in four months, with 11 organic trial signups in month four - up from zero. 🚀
+The Dutch pages were indexed within three weeks. Organic traffic went from 90 to 740 visits a month in four months, with 11 trial signups from organic search in month four, against zero before. Sjoerd says shrinking the English site was as valuable as the technical fixes, because it halved the work of keeping the Dutch pages good.
 
-👉 Dutch and English pages, hreflang done right: https://launchstudio.eu/en/blog/lovable-seo-dutch-and-english-pages-hreflang-done-right
+"Every crawler that arrived was sent to the English site, so Google had never seen my Dutch pages at all. I had been writing them for a year for nobody." - Sjoerd Waanders
+
+https://launchstudio.eu/en/blog/lovable-seo-dutch-and-english-pages-hreflang-done-right
 
 #SEO #hreflang #Multilingual #Lovable #LaunchStudio #Manifera

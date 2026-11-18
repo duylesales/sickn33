@@ -1,21 +1,39 @@
-💍 Merel Kuiper runs a wedding planning business in Zeist and built Trouwplanner with Bolt and Supabase: couples track budgets, suppliers and guest lists, planners manage several weddings at once. Ready to sell it to other planners, she asked a no-code agency for help. Their proposal: rebuild it on a visual platform, about ten weeks, a five-figure fee plus monthly platform costs. 🏗️
+🏗️ SURVEYOR'S REPORT: Trouwplanner, before a rebuild nobody needed
 
-Before signing, she asked for a second opinion. The interface and flows were solid. The gaps were underneath: 🧠
+PROPERTY
+A portal where couples track budgets, suppliers and guest lists, and planners manage several weddings at once. Built by Merel Kuiper, a wedding planner in Zeist, with Bolt and Supabase.
 
-❌ Guest lists with names and addresses readable by any logged-in user
-❌ Supplier contracts in a public bucket
-❌ No separation between different planners' weddings
-❌ Emails from the default provider and backups never tested
+PROPOSED WORK (by a no-code agency)
+Demolish and rebuild on a visual platform. About ten weeks, a five-figure fee, plus monthly platform costs.
 
-✅ Policies rewritten so couples see only their wedding and planners only theirs, with tests
-✅ Contracts moved to private storage
-✅ Email on Merel's own domain, tested backups, staging and monitoring
-✅ Project instructions so she could keep building in Bolt
+SECOND OPINION, before signing (LaunchStudio)
 
-At **LaunchStudio**, backed by Manifera's 11+ years of engineering for clients such as Vodafone and TNO, we keep the app you built, make it production ready and leave it in standard code you own. 🛠️
+ABOVE GROUND: sound
+The interface and flows were solid, and her couples liked them.
 
-Her result: €3,300, nine business days. She launched to three other planners and later built a seating plan feature herself in a weekend. 🚀
+FOUNDATION: needs work
+• Guest lists with names and addresses, readable by any logged-in user
+• Supplier contracts in a public bucket
+• No separation between different planners' weddings
+• Emails from the default provider
+• Backups never tested
 
-👉 LaunchStudio vs a no-code agency: https://launchstudio.eu/en/blog/launchstudio-vs-a-no-code-agency
+RECOMMENDATION
+Repair the foundation. Keep the house.
+
+REPAIRS (9 business days, €3,300)
+✓ Policies rewritten: couples see only their own wedding, planners only the weddings assigned to them, with tests
+✓ Contracts moved to private storage
+✓ Email configured on Merel's domain
+✓ Backups tested
+✓ Deployment with staging and monitoring
+✓ Project instructions for Bolt
+
+AFTER REPAIR
+Trouwplanner launched to three other planners nine business days later. Merel kept building in Bolt, and a few months later added a seating plan feature herself, in a weekend. She estimates the decision saved most of the rebuild fee and over two months.
+
+"I almost paid to rebuild something that already worked. What it needed was a foundation, not a new house." - Merel Kuiper
+
+https://launchstudio.eu/en/blog/launchstudio-vs-a-no-code-agency
 
 #NoCode #Bolt #Supabase #Startups #AIFounder #LaunchStudio #Manifera

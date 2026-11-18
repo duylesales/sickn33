@@ -1,21 +1,33 @@
-🚨 Tamara Brands runs an interior design studio in 's-Hertogenbosch and built Ontwerpdossier in Lovable. A freelance automation specialist connected Make to her app for invoices and Slack updates - and to get it working quickly, he pasted the Supabase service role key into Make. When his engagement ended, his account still had the key. 😳
+🔑 KEYRING CHECK: who holds the keys to your app?
 
-The automation worked beautifully. It just had the keys to everything, held by someone who no longer worked for her. Here's what else she found: 🧠
+Key: Supabase service role key (opens everything)
+Held by: a freelancer's Make account
+Freelancer still working for you: no
 
-❌ The service role key - which bypasses all security - inside an external Make account
-❌ Make scenarios reading full client records, including home addresses and budgets
-❌ Those private details posted to Slack channels shared with contractors
-❌ Automations running under a freelancer's account, not hers
+Tamara Brands runs an interior design studio in 's-Hertogenbosch and built Ontwerpdossier in Lovable: clients approve moodboards and quotes, and the studio tracks projects. A freelance automation specialist connected Make to create invoices in her accounting tool and post project updates to Slack. To get it working fast, he pasted the service role key into Make.
 
-✅ The key rotated immediately
-✅ The Make database connection replaced by outgoing webhooks for "quote approved" and "project completed", sending only the needed fields
-✅ An inbound endpoint with a scoped key for one form integration
-✅ Make moved into Tamara's own account, and the platforms added to her processor list
+His engagement ended. His Make account kept the key.
 
-At **LaunchStudio**, backed by Manifera's 160+ enterprise projects, many with integrations at their core, every integration gets its own credentials, limited scope and logging - never a master key. 🛠️
+And while checking, Tamara found more:
+• Make scenarios read full client records, home addresses and budgets included
+• Those details went to Slack channels shared with contractors
 
-💡 Her result: €1,350, four business days. The automations kept working, now under her control with only necessary data flowing out, and contractors no longer see clients' private details. 🚀
+Re-cutting the keys (LaunchStudio, 4 business days, €1,350):
+✓ The service role key rotated
+✓ The Make database connection replaced by outgoing webhooks for "quote approved" and "project completed," sending only the fields needed
+✓ An inbound endpoint with a scoped key for one form integration
+✓ Make moved into Tamara's own account
+✓ The automation platforms added to her processor list
 
-👉 Connecting Zapier or Make to your AI-built app? Here's how to do it without handing over the keys: https://launchstudio.eu/en/blog/how-do-i-connect-zapier-or-make-to-my-ai-built-app
+KEYRING CHECK, AFTER
+Master key: only on the server
+Scoped key: one form integration, in Tamara's own account
+Clients' private details in contractor Slack channels: none
+
+The automations kept running, now under Tamara's control, with only necessary data flowing out.
+
+"The automation worked beautifully. It just had the keys to everything, held by someone who no longer worked for me." - Tamara Brands
+
+https://launchstudio.eu/en/blog/how-do-i-connect-zapier-or-make-to-my-ai-built-app
 
 #Zapier #Make #Automation #Supabase #LaunchStudio #Manifera

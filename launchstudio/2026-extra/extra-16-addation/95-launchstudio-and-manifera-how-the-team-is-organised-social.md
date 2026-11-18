@@ -1,23 +1,30 @@
-🐾 Floris Brandsma runs a SaaS for veterinary practices from Leeuwarden, built with Cursor and Supabase: appointments, animal patient records and invoicing. Before committing to a €5,600 Launch & Grow project, he had one concern. He had never worked with a team abroad and wanted to know exactly who would have access to his practices' data. 🤔
+❓ The questions a founder asked before signing, and the answers
 
-Founders often worry that a remote team means: 🧠
+Floris Brandsma runs Dierenpraktijkplanner from Leeuwarden, a SaaS for veterinary practices built with Cursor and Supabase, handling appointments, animal patient records and invoicing. Before committing to a €5,600 Launch & Grow project, he had one concern: he'd never worked with a team abroad. So LaunchStudio set up a video call with the project contact in Amsterdam and the lead engineer in Ho Chi Minh City.
 
-❌ Being passed between people with nobody clearly responsible
-❌ Customer data copied freely outside the EU
-❌ Work stopping when one engineer is ill or on holiday
-❌ Time differences slowing everything down
+Q: Who will have access to my practices' data?
+A: Two named engineers.
 
-What Floris saw instead: ✅
+Q: When will they touch production?
+A: Only for the planned data migration. All other work happens on staging, with generated data.
 
-✅ A video call with the Amsterdam project contact and the lead engineer in Ho Chi Minh City before signing
-✅ Staging with generated data, production access only for one planned migration, two named engineers and a processing agreement with standard contractual clauses
-✅ Pull request reviews and documented findings, so a colleague took over smoothly when an engineer was unexpectedly away for a week
-✅ Morning updates covering the work done while he slept
+Q: How is the work checked?
+A: Through pull request reviews.
 
-At **LaunchStudio**, a service of Manifera with 11+ years, 160+ projects and 120+ engineers, we combine a personal front office at Herengracht 420 in Amsterdam with engineering depth in Ho Chi Minh City and a hub in Singapore. 🛠️
+Q: What protects the data legally?
+A: A processing agreement, with standard contractual clauses.
 
-His result: completed in fifteen business days despite a team change, and the time difference turned out to be an advantage. 🚀
+Q: What happens when someone goes on holiday?
+A: Documentation and reviews let a colleague take over.
 
-👉 LaunchStudio and Manifera: how the team is organised: https://launchstudio.eu/en/blog/launchstudio-and-manifera-how-the-team-is-organised
+That last answer got tested. During the project, one engineer was unexpectedly away for a week. A colleague picked up from the documented findings and the open pull requests, and the timeline didn't change.
+
+And the time difference? Floris got an update every morning, covering the work done while he slept.
+
+The project finished in 15 business days, with ongoing care at €49 a month afterwards. Floris later told another founder that the call with the lead engineer was what convinced him, and that the time difference turned out to be an advantage.
+
+"I wanted to see the person who would touch my practices' data before I signed. Meeting them, and understanding how the team covered for each other, made the decision easy." - Floris Brandsma
+
+https://launchstudio.eu/en/blog/launchstudio-and-manifera-how-the-team-is-organised
 
 #Manifera #RemoteTeam #Cursor #SaaS #AIFounder #LaunchStudio

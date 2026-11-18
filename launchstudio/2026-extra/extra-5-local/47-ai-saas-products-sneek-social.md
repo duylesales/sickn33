@@ -1,20 +1,29 @@
-⛵ Lisa Postma built SailSync - a booking and maintenance SaaS tool for marinas around Sneek - in Cursor, with a nightly payment reconciliation job meant to keep availability and charges in sync. The code looked correct and passed every manual test. What she didn't catch: the job was never actually registered with a scheduler in production. It simply never ran, and availability across three marinas drifted out of sync - leading to double bookings on a busy sailing weekend. 😳
+⛵ SAILSYNC: THE CAPTAIN'S LOG
 
-Confirming the code exists and confirming it actually runs in production are two different things. 🧠
+ENTRY: The build
+Lisa Postma builds SailSync in Cursor, a booking and maintenance scheduling SaaS for marinas around Sneek. It includes a nightly payment reconciliation job to keep marina availability and customer charges in sync. The code looks right. Every manual test passes.
 
-❌ A reconciliation job that existed in the codebase but was never registered with a task scheduler
-❌ No monitoring or alerting to flag that it silently never executed
-❌ Availability drifted out of sync across three marinas without anyone noticing
-❌ The problem only surfaced through double bookings during peak sailing season
+ENTRY: Every night after launch
+Reconciliation job written: yes.
+Reconciliation job registered with a task scheduler in production: no.
+Times it ran on its own: never.
 
-✅ Found and fixed the missing scheduler configuration
-✅ Deployed the reconciliation job properly, with monitoring and alerting attached
-✅ Added a manual override so staff can trigger reconciliation on demand
+ENTRY: The weeks that follow
+Availability across three marinas slowly drifts out of sync. Nobody notices. Nothing alerts.
 
-At **LaunchStudio**, testing the invisible parts of a SaaS product - jobs, webhooks, background processes - is a standard part of every production review our 160+-project engineering team runs. 🛡️
+ENTRY: A busy sailing weekend
+Double bookings.
 
-Her result: SailSync's reconciliation job now runs reliably every night across all connected marinas, with alerts firing immediately if it ever fails. 🚀
+ENTRY: LaunchStudio comes aboard (5 business days, €920)
+• The missing scheduler configuration found
+• The reconciliation job deployed properly, with monitoring and alerting attached
+• A manual override, so marina staff can trigger reconciliation on demand
 
-👉 Have a scheduled job or webhook you've only ever seen in the code, not confirmed in production? Get it checked: https://launchstudio.eu/en/blog/ai-saas-products-sneek
+ENTRY: Current position
+The job runs reliably every night across all connected marinas. If it ever fails to complete, an alert fires immediately.
+
+"The code was right. It just wasn't actually running. I never would have caught that without someone checking the infrastructure, not just the code." - Lisa Postma
+
+Check your own log: is your nightly job really running? https://launchstudio.eu/en/blog/ai-saas-products-sneek
 
 #AINativeFounder #LaunchStudio #Manifera #SaaSReliability #Sneek

@@ -1,21 +1,28 @@
-🚨 Jasper Mulder built Verlofzaken with Lovable and Supabase: a leave and absence tool for companies of 20 to 150 employees, with sign-up through Google Workspace. Two prospects paused their trial after their IT contacts flagged the sign-in screen. 😳
+Which sign-in screen would you trust? 🔐
 
-Google showed "continue to xptlqmvhrzke.supabase.co". One IT manager said it "looked exactly like a phishing test". And about a quarter of people who clicked "Sign in with Google" never finished. Here's why Google login shows a Supabase URL: 🧠
+A: "continue to xptlqmvhrzke.supabase.co"
+B: "Sign in to Verlofzaken", with the company logo
 
-❌ A consent screen still in testing mode with a default name
-❌ A privacy policy hosted as a Google Doc
-❌ Redirect URLs covering only preview and production, so staging sign-ins landed on the live app
-❌ Unbranded authentication emails
+Two IT contacts at prospective customers picked neither, and paused their trials. One wrote that screen A "looked exactly like a phishing test."
 
-✅ Privacy policy and terms on his own domain, verified in Search Console
-✅ A branded consent screen, approved by Google within four business days
-✅ A Supabase custom domain, auth.verlofzaken.nl, with the old callback kept for two weeks
-✅ Redirect URLs per environment and branded auth emails from the company domain
+Screen A was real. Jasper Mulder built Verlofzaken with Lovable and Supabase: leave and absence management for companies of 20 to 150 employees, where employees request time off and managers approve it. Sign-up ran through Google Workspace accounts. And analytics showed that about a quarter of people who clicked "Sign in with Google" never finished.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we make sure the first thing customers see is your brand, not a random address. 🛠️
+What sat behind screen A:
+• The consent screen still in testing mode, with a default name
+• A privacy policy that was a Google Doc link
+• Supabase redirect URLs covering only the preview domain and production, so staging sign-ins landed on the live app
 
-The result: €1,600, 7 business days including Google's review. Completed Google sign-ups rose from about 75% to 93%, and both paused prospects became customers. 🚀
+How screen B was built (LaunchStudio, 7 business days including Google's review, €1,600):
+✓ Privacy policy and terms moved to Jasper's own domain, and the domain verified in Search Console
+✓ The consent screen set up with the Verlofzaken name, logo and authorised domains, then submitted for branding verification, approved in four business days
+✓ A Supabase custom domain, auth.verlofzaken.nl, with DNS records and a new Google callback, while the old callback stayed active for two weeks
+✓ Redirect URLs set per environment
+✓ Authentication emails rebranded, sent from an address on the company domain
 
-👉 Does your Google sign-in look suspicious? Here's how to brand it: https://launchstudio.eu/en/blog/why-does-google-login-show-a-supabase-url
+Completed Google sign-ups rose from about 75% to 93% of attempts. Both paused prospects came back, and became customers after their IT contacts reviewed the new setup.
+
+"I lost deals because of one screen I'd never really looked at. Now the first thing customers see is my brand, not a random address." - Jasper Mulder
+
+https://launchstudio.eu/en/blog/why-does-google-login-show-a-supabase-url
 
 #GoogleLogin #OAuth #Supabase #B2BSaaS #AIFounder #LaunchStudio #Manifera

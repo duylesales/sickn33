@@ -1,21 +1,31 @@
-🚨 Mark Peeters built Clubbeheer with FlutterFlow and Firebase: a mobile app for amateur sports clubs. Chat and live match updates worked beautifully. Then club treasurers wanted fee overviews per team and season - which meant reading thousands of documents and stitching them together. Firebase costs spiked every time a report ran, and a permissive Security Rule let any member read every other member's payment status. 😳
+🧰 A toolbox with two tools in it
 
-Firebase was perfect for the live parts of his app. His treasurers needed a database that could add up numbers. Here's what broke: 🧠
+Firebase: great at live things. Chat. Match updates as they happen.
+PostgreSQL: great at adding things up. Fees per team. Totals per season.
 
-❌ Relational reporting forced onto a document database
-❌ Thousands of reads per report, and a monthly bill that spiked with them
-❌ Reports taking around a minute to load
-❌ A Security Rule exposing every member's payment status
+Mark Peeters had been using one tool for both jobs.
 
-✅ Security Rules fixed: members see their own payments, treasurers see their club's
-✅ Firebase kept for the app's real-time features
-✅ A nightly sync of financial data into Supabase PostgreSQL in Frankfurt
-✅ Treasurer reports as SQL views in a small web dashboard, plus monitoring
+He built Clubbeheer with FlutterFlow and Firebase: a mobile app for amateur sports clubs, covering members, teams, match schedules and fee payments. Chat and live match updates worked well. Reporting didn't. Treasurers wanted fee overviews per team and season, which meant reading thousands of documents and stitching them together inside the app. Firebase costs spiked every time a treasurer ran a report. And a permissive Security Rule let any member read every other member's payment status.
 
-At **LaunchStudio**, backed by Manifera's 11+ years with both relational and document databases, we pick backends by data shape, users' locations and team skills - not by whichever default the builder chose. 🛠️
+How LaunchStudio sorted the toolbox (12 business days, €4,300):
 
-💡 His result: €4,300, twelve business days. Firebase read costs dropped sharply, reports now load in seconds, and treasurers of 22 clubs use the dashboard at season end. 🚀
+FIRST, A FIX
+✓ Security Rules rewritten: members see only their own payments, treasurers see their club's
 
-👉 Supabase or Firebase for a European launch? Here's the practical comparison: https://launchstudio.eu/en/blog/supabase-vs-firebase-for-founders-launching-in-europe
+TOOL 1: Firebase, kept
+✓ For the mobile app's real-time features
+
+TOOL 2: Supabase PostgreSQL in Frankfurt, added
+✓ A nightly sync of financial data
+✓ Treasurer reports as SQL views
+✓ A small web dashboard
+✓ Monitoring
+
+THE RESULT
+Firebase read costs dropped sharply. Reports that took a minute now load in seconds. And treasurers of 22 clubs use the dashboard at season end.
+
+"Firebase was perfect for the live parts of my app. My treasurers needed a database that could add up numbers." - Mark Peeters
+
+https://launchstudio.eu/en/blog/supabase-vs-firebase-for-founders-launching-in-europe
 
 #Supabase #Firebase #PostgreSQL #GDPR #LaunchStudio #Manifera

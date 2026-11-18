@@ -1,20 +1,24 @@
-🐄 Tjeerd de Vries built MelkMeter - a SaaS platform tracking herd health and milk production for dairy farms near Leeuwarden - in Bolt, onboarding his first pilot farm within weeks. It worked great... until a second farm signed up and started seeing production figures that didn't match their own herd. 😳
+TL;DR: MelkMeter worked for one dairy farm. The second farm started seeing numbers that weren't theirs. Today it runs seven farms with fully isolated data. 🐄
 
-The app that works for customer one and a real platform that works for customer fifty are not the same thing. 🧠
+The long version:
 
-❌ Backend built around a single hardcoded farm identifier
-❌ Second farm's records were being written into fields the first farm's dashboard was still reading
-❌ Nothing revealed the missing isolation - there was only ever one customer to test with
-❌ The AI tool had no reason to build a wall between customers it had never seen fail
+Tjeerd de Vries built MelkMeter in Bolt: a SaaS platform for dairy farms near Leeuwarden to track herd health and milk production data. His first pilot farm was onboarded within weeks, and it worked well.
 
-✅ Database schema redesigned around properly tenant-scoped records
-✅ Every query rebuilt to filter explicitly by farm
-✅ Automated tests added simulating multiple farms using the platform at once
+Then a second farm signed up. Their dashboard showed production figures that didn't match their own herd.
 
-At **LaunchStudio**, this is exactly the multi-tenant architecture work Manifera brings from 11+ years building it for enterprise clients like Vodafone. 🛡️
+The cause: the AI-generated backend had been built around a single hardcoded farm identifier. Records from the second farm were being written into fields the first farm's dashboard was still reading.
 
-His result: MelkMeter now runs seven farms on the same platform with fully isolated data, verified under simulated concurrent load. 🚀
+It was never really a platform. It was a single-customer app that looked like one.
 
-👉 Only tested your SaaS product with one customer account so far? Get a platform-readiness estimate: https://launchstudio.eu/en/blog/ai-saas-platform-leeuwarden
+What LaunchStudio rebuilt (8 business days, €1,650):
+• A database schema designed around tenant-scoped records
+• Every query rewritten to filter explicitly by farm
+• Automated tests simulating multiple farms using the platform at the same time
+
+The result: seven farms on one platform with fully isolated data, verified under simulated concurrent load.
+
+"We thought we had a platform. We actually had a very good demo for one customer. LaunchStudio built the part that made it real." - Tjeerd de Vries
+
+TL;DR for you: test your AI SaaS platform with two customers before you sign the second one. https://launchstudio.eu/en/blog/ai-saas-platform-leeuwarden
 
 #AINativeFounder #LaunchStudio #Manifera #MultiTenant #Leeuwarden

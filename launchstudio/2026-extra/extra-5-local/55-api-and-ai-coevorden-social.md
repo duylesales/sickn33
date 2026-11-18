@@ -1,20 +1,27 @@
-🇩🇪 Niels Grunwald built GrensHandel, a cross-border ordering platform connecting Dutch retailers around Coevorden with German suppliers near Emlichheim, using Lovable - it worked great as a standalone tool, then fell apart the moment he tried connecting it to a German supplier's order-management system. 😳
+💘 DATING PROFILE: GrensHandel's API (before the fix)
 
-An API that only ever talked to its own frontend was never actually tested as an API. 🧠
+About me: a cross-border ordering platform connecting Dutch retailers around Coevorden with German suppliers near Emlichheim. Built in Lovable by Niels Grunwald, who moved fast on a limited technical background.
 
-❌ Inconsistent field names returned between endpoints
-❌ Authentication only worked through the browser session, not a token a partner system could use
-❌ Error responses leaked raw database messages, exposing internal table names
-❌ The integration stalled for six weeks before anyone realized the API itself was the problem
+Looking for: a German supplier's order-management system.
 
-✅ API layer restructured with consistent, documented endpoints
-✅ API-key based authentication built for the German partner's system to call directly
-✅ Clean, predictable error responses replacing raw database output
+Things you should know about me:
+• I call the same thing by different names, depending on which endpoint you ask
+• I only trust people who log in through a browser. Systems with a token? Not my type.
+• When something goes wrong, I overshare: my error messages reveal raw database messages, internal table names included
 
-At **LaunchStudio**, we harden AI-generated APIs into real integration contracts - the same standard Manifera applies building integration-heavy systems for enterprise clients from its Singapore hub. 🛡️
+Relationship status: it's complicated. Six weeks of trying to connect, and still stalled.
 
-His result: GrensHandel's ordering API now integrates directly with two German supplier systems, automating orders that used to require manual email confirmation. 🚀
+Niels assumed the German side just had an old system. It turned out his API had never been built to be called by anything except his own app.
 
-👉 Need your AI-built API to actually talk to a partner's system? Let's restructure it: https://launchstudio.eu/en/blog/api-and-ai-coevorden
+The makeover (LaunchStudio, 7 business days, €1,700):
+❤️ A restructured API layer with consistent, documented endpoints
+❤️ API-key authentication the German partner's system can use directly
+❤️ Clean, predictable error responses instead of raw database output
+
+Relationship status now: the integration that stalled for six weeks worked within days of the fix. GrensHandel's ordering API connects directly with two German supplier systems, automating orders that used to need manual email confirmation.
+
+"I didn't even know my API was the problem. I thought the German side just had an old system. Turned out my side was never actually built to be called by anything except my own app." - Niels Grunwald
+
+Is your API ready to meet other systems? https://launchstudio.eu/en/blog/api-and-ai-coevorden
 
 #AINativeFounder #LaunchStudio #Manifera #APIandAI #Coevorden

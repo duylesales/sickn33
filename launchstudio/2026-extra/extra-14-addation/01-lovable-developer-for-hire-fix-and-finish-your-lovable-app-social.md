@@ -1,21 +1,26 @@
-🚨 Lotte van Rijn, a former teacher in Groningen, built Bijlespunt in Lovable: parents book maths and language tutors, chat with them and pay per lesson. Twelve tutors, forty trial lessons booked. Then a parent emailed: she could read another family's messages with their tutor. 😳
+Attempt #1: "Lovable, fix it." ➜ Different messages on screen. Same leak underneath.
+Attempt #2: "Lovable, fix it." ➜ Different messages on screen. Same leak underneath.
+Attempt #3: "Lovable, fix it." ➜ You can guess. 🔁
 
-Lotte asked Lovable to fix it three times. Each fix changed what appeared on screen, but the query underneath still returned every conversation. Here's what a Lovable developer actually fixes: 🧠
+Lotte van Rijn, a former secondary school teacher in Groningen, built Bijlespunt in Lovable over five weeks of evenings: parents book maths and language tutors, chat with them and pay per lesson. Twelve tutors signed up, and about forty parents booked trial lessons.
 
-❌ Row Level Security that let every user read every chat
-❌ A Stripe secret key sitting in a frontend file
-❌ Double clicks that charged parents twice
-❌ No staging, so every prompt went straight to live
+Then a parent emailed. She could see messages between another family and their tutor.
 
-✅ RLS policies so users only read their own conversations
-✅ The Stripe key moved into a Supabase edge function
-✅ An idempotency key on bookings: one click, one charge
-✅ A staging project plus uptime and error alerts to Lotte's phone
+Each prompt changed which messages appeared on screen. None changed the query underneath, which still returned every conversation in the database. And along the way Lotte found two more surprises:
+• Her Stripe secret key in a frontend file
+• Double clicks on "book" charging parents twice
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we keep your Lovable frontend and fix only what's underneath. 🛠️
+Attempt #4, by LaunchStudio's engineers (11 business days, €2,600), with the Lovable frontend left untouched:
+✓ Row Level Security, so users only read conversations they belong to
+✓ The Stripe key moved into a Supabase edge function, and rotated
+✓ An idempotency key on bookings: one click, one charge
+✓ A staging project for testing Lovable changes before parents see them
+✓ Uptime and error alerts to Lotte's phone, and the incident documented for her records
 
-Her result: €2,600, eleven business days. Bijlespunt handled ~1,400 lessons the next term with zero data exposure reports - and Lotte kept building in Lovable. 🚀
+Bijlespunt reopened bookings eleven days after Lotte's first message. The following term: around 1,400 lessons, no data exposure reports. And Lotte is still building new features in Lovable, on top of a backend that now holds.
 
-👉 Need a Lovable developer who won't rebuild your app? Here's what to expect: https://launchstudio.eu/en/blog/lovable-developer-for-hire-fix-and-finish-your-lovable-app
+"I didn't need someone to rebuild my app. I needed someone who could look at what Lovable made and tell me exactly what was wrong underneath." - Lotte van Rijn
+
+https://launchstudio.eu/en/blog/lovable-developer-for-hire-fix-and-finish-your-lovable-app
 
 #Lovable #Supabase #EdTech #AIFounder #LaunchStudio #Manifera

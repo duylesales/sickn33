@@ -1,21 +1,29 @@
-🚨 Amira Haddad, a former sous-chef in The Hague, built Kostprijs with Replit Agent: recipe costing for restaurants, with margin per dish and alerts when supplier prices rise. Six restaurants started a free trial. Then the lunchtime complaints began: chefs logged out mid-edit, losing their changes. 😳
+👩‍🍳 THE CHEF'S PREP LIST for a recipe costing app that survives lunch service
 
-Clicking "Deploy" in Replit felt like the finish line. It wasn't. Here's what was hiding behind the button: 🧠
+Amira Haddad, a former sous-chef in The Hague, built Kostprijs with Replit Agent. Chefs enter ingredients and supplier prices, and the app calculates margin per dish and flags when a price increase makes a menu item unprofitable. Six restaurants started on a free trial.
 
-❌ Sessions stored in memory on an Autoscale deployment, so new instances didn't know the user
-❌ One database for testing and production - a test reset a client's supplier prices
-❌ Nightly price alerts started inside a web request, silently skipped on scale-down
-❌ No monitoring, so customers found the problems first
+Then the complaints came, at lunchtime, when traffic peaked: chefs logged out mid-edit, losing their changes.
 
-✅ Sessions moved into the database
-✅ Separate development and production databases and secrets
-✅ Nightly alerts moved to a Scheduled deployment
-✅ Per-restaurant access checks, tested backups, uptime and error alerts
+WHAT WAS WRONG IN THE KITCHEN
+🔥 An Autoscale deployment with sessions stored in memory. When Replit added an instance under load, requests landed on an instance that didn't know the user.
+🔥 Test scripts running against the same database the restaurants used. One test reset a client's supplier prices to sample values.
+🔥 A nightly price-alert email started from inside a web request, silently skipped whenever the instance scaled down
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we keep your Replit app editable in Replit and fix what the deploy button doesn't. 🛠️
+THE PREP LIST (LaunchStudio, 9 business days, €2,200)
+☐ ➜ ☑ Sessions stored in the database
+☐ ➜ ☑ Separate development and production databases
+☐ ➜ ☑ Nightly alerts moved into a Scheduled deployment
+☐ ➜ ☑ Server-side checks so each restaurant group sees only its own recipes
+☐ ➜ ☑ Nightly backups, with a tested restore
+☐ ➜ ☑ Uptime and error alerts
 
-💡 Her result: €2,200, nine business days. Lunchtime logouts stopped completely, and four of the six trial restaurants became paying customers within the month. 🚀
+Kostprijs stayed on Replit, on an Autoscale deployment that now behaves correctly under load.
 
-👉 Deploying a Replit Agent app for real customers? Read the decisions behind the button: https://launchstudio.eu/en/blog/replit-app-deployment-from-agent-build-to-production
+SERVICE REPORT
+Lunchtime logouts stopped completely. Four of the six trial restaurants converted to paid plans within the month. Amira still adds features with Replit Agent, against the development database.
+
+"Replit made it easy to build and easy to deploy. Nobody told me those were two different questions from making it reliable." - Amira Haddad
+
+https://launchstudio.eu/en/blog/replit-app-deployment-from-agent-build-to-production
 
 #Replit #ReplitAgent #AIFounder #SaaS #LaunchStudio #Manifera

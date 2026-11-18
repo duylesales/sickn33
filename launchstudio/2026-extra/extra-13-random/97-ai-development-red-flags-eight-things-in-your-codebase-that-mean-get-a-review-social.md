@@ -1,21 +1,33 @@
-🚨 Noortje Vermeer runs a clothing alteration and repair studio in Naarden and built Naaiwerk in Bolt: customers book a fitting, describe repairs with photos, receive a price, pay a deposit and get notified when garments are ready. About 500 customers. After reading about AI app security, she went through the red flags herself - without reading a line of code. She counted five. 😳
+🚩 RED FLAG COUNT: a clothing repair studio's app
 
-Changing a number in the order address showed another customer's photos and home address. The page source held a key starting with sk_. The admin page opened in a private browser window. She had never restored a backup. And she'd once learned about an outage from a customer's Instagram comment. The review confirmed all five - and found a sixth: deposits confirmed by browser redirect. Here are the red flags in your codebase that mean: get a review: 🧠
+🚩 1. Changing a number in the order address showed another customer's photos and address
+🚩 2. The page source contained a key beginning with sk_
+🚩 3. The admin page opened in a private browser window, without logging in
+🚩 4. A backup had never been restored
+🚩 5. She once learned about an outage from a customer's Instagram comment
 
-❌ Another customer's data one number away
-❌ A secret key visible in the page source
-❌ An admin page that opens without logging in
-❌ No tested backup and outages found by customers
+Five out of eight. Noortje couldn't read the code, but she could count the flags. And five was enough. 🧵
 
-✅ Customer-level access enforced in the database
-✅ The Mollie secret key rotated and payment creation moved server-side, admin area protected with roles
-✅ Deposit confirmation moved to webhooks
-✅ Backups with a tested restore, a staging environment and uptime and error alerts on Noortje's phone
+Noortje Vermeer runs a clothing alteration and repair studio in Naarden and built Naaiwerk in Bolt: customers book a fitting, describe repairs with photos, get a price and pay a deposit, and are notified when garments are ready. About 500 customers had used it. After reading about AI app security, she went through the red flags herself, and booked a review.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we help non-technical founders count the flags - and clear them. ⚙️
+LaunchStudio confirmed all five, and found a sixth:
+🚩 6. Deposits confirmed by the browser redirect
 
-Her result: €1,300, five business days. Noortje re-ran the checks herself and found none, Naaiwerk now handles about 120 bookings a month, and she repeats the checks after every major change. 🚀
+Taking the flags down (5 business days, €1,300):
+✓ Customer-level access enforced in the database
+✓ The Mollie secret key rotated, with payment creation moved server-side
+✓ The admin area protected with roles
+✓ Deposit confirmation moved to webhooks
+✓ Backups enabled, with a tested restore
+✓ A staging environment
+✓ Uptime and error alerts on Noortje's phone
 
-👉 AI development red flags: eight things in your codebase that mean get a review: https://launchstudio.eu/en/blog/ai-development-red-flags-eight-things-in-your-codebase-that-mean-get-a-review
+RED FLAG COUNT, after Noortje re-ran the checks herself: 0
+
+Naaiwerk now handles around 120 bookings a month, and Noortje repeats the checks after every major change.
+
+"I couldn't read the code, but I could count the flags. Five was enough to know I needed help." - Noortje Vermeer
+
+https://launchstudio.eu/en/blog/ai-development-red-flags-eight-things-in-your-codebase-that-mean-get-a-review
 
 #RedFlags #CodeReview #Bolt #SmallBusiness #LaunchStudio #Manifera

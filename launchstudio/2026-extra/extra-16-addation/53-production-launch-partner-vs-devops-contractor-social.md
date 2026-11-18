@@ -1,21 +1,36 @@
-🍽️ Martijn Koster runs a SaaS for event caterers from Den Bosch, built with Bolt and Supabase: caterers manage menus, quotes and staff schedules. Before launching with a national catering association, he hired a DevOps contractor for a week. The work was excellent: a GitHub pipeline, separate staging and production, uptime monitoring and structured logs. 👌
+📦 Picture a perfect conveyor belt. Smooth, fast, monitored, with a quality check at every station.
 
-Two weeks before launch, a pilot caterer filtered the quote list and saw another company's quotes. The review found the application had never been checked: 🧠
+Now picture it delivering boxes with the lids off.
 
-❌ Quotes and menus tables readable by any logged-in user
-❌ Staff phone numbers exposed through a view without policies
-❌ Mollie deposits marked as paid on the redirect page
-❌ Quote PDFs in a public bucket, and no email authentication
+That's what Martijn Koster had two weeks before launch.
 
-✅ Policies rewritten per caterer and role, with tests running in the contractor's pipeline
-✅ The view secured
-✅ Deposits moved to verified webhooks, with reconciliation
-✅ PDFs in private storage and email authentication added
+He runs Cateringklok from Den Bosch, built with Bolt and Supabase: event caterers manage menus, quotes and staff schedules. Ahead of a launch with a national catering association, he hired a DevOps contractor for a week, and the contractor did excellent work:
+✓ A GitHub pipeline with tests and previews
+✓ Separate Supabase projects for staging and production
+✓ Uptime monitoring
+✓ Structured logs
 
-At **LaunchStudio**, backed by Manifera's 11+ years of DevOps and application engineering for clients such as Vodafone and TNO, we cover the application and the delivery around it, and work alongside DevOps specialists when you need custom infrastructure. 🛠️
+The belt was perfect. Then a pilot caterer filtered the quote list a certain way, and saw quotes from another company.
 
-His result: €2,400, six business days. The association launched on schedule with about 60 caterers, and the pipeline now runs the access tests on every change. 🚀
+LaunchStudio's review looked inside the boxes:
+✗ Quotes and menus tables with policies letting any logged-in user read every row
+✗ Staff phone numbers exposed through a view without policies
+✗ Mollie deposits marked as paid on the redirect page
+✗ Quote PDFs in a public bucket
 
-👉 Production launch partner vs DevOps contractor: https://launchstudio.eu/en/blog/production-launch-partner-vs-devops-contractor
+The infrastructure was solid. The application had simply never been reviewed.
+
+Putting the lids on (LaunchStudio, 6 business days, €2,400):
+✓ Policies rewritten per caterer and role, with tests running in the contractor's pipeline
+✓ The view secured
+✓ Deposits confirmed by verified webhooks, with reconciliation
+✓ PDFs moved to private storage
+✓ Email authentication, which the infrastructure scope hadn't covered
+
+The association launched on schedule with around 60 caterers. And the contractor's pipeline now runs LaunchStudio's access tests on every change: both pieces of work, on one belt.
+
+"I hired the right person for the wrong problem. The pipeline was perfect, it just delivered an app where everyone could see everyone's quotes." - Martijn Koster
+
+https://launchstudio.eu/en/blog/production-launch-partner-vs-devops-contractor
 
 #DevOps #Security #Bolt #Supabase #AIFounder #LaunchStudio #Manifera

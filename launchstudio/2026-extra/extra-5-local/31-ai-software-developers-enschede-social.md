@@ -1,20 +1,28 @@
-🔓 Sanne Bruggeman built Kenniswijzer, a peer-tutoring marketplace for students across Enschede, in a two-week Lovable sprint. Clean UI, working booking flow, Stripe checkout - genuinely impressive demo. Then LaunchStudio's pre-launch review found the Supabase database had zero row-level security: any logged-in user could read every other user's booking history, phone number, and payment metadata just by inspecting the browser console.
+📝 REPORT CARD: Kenniswijzer, Enschede (pre-launch)
 
-A polished demo and a production-ready backend are not the same thing. 🧠
+Student: Sanne Bruggeman, University of Twente graduate
+Project: a peer-tutoring marketplace for students across Enschede's higher-ed institutions
+Built with: Lovable, in a two-week sprint
 
-❌ AI tools optimize for "it works when I test it," not "it survives someone who isn't the founder"
-❌ Supabase tables shipped with open read/write policies nobody double-checked
-❌ Any authenticated user could query another student's private booking data
-❌ The gap was invisible until someone opened the browser's network tab
+UI design ................. A
+Booking flow .............. A
+Stripe checkout ........... A
+Data access control ....... F
 
-✅ Rebuilt the authorization layer with RLS policies scoped to each user's own records
-✅ Added server-side validation on every write operation
-✅ Set up rate limiting on public API routes before the campus-wide launch
+TEACHER'S COMMENTS (LaunchStudio pre-launch review)
+The Supabase database had no row-level security policies at all. Any logged-in user could read every other user's booking history, phone number and payment metadata just by inspecting API calls in the browser console.
 
-At **LaunchStudio**, Manifera's 120+ engineers run the same review checklist on an Enschede prototype that they'd run on an enterprise codebase for clients like Vodafone and TNO. 🛡️
+RESIT WORK (6 business days, €1,100)
+✏️ Authorization rebuilt with RLS policies scoped to each user's own records
+✏️ Server-side validation on every write
+✏️ Rate limiting on the public API routes
+✏️ Frontend untouched: the app looks and feels exactly the same
 
-Kenniswijzer launched to 400 University of Twente students in week one with zero data exposure incidents - and Sanne didn't have to change a single line of her UI. 🚀
+FINAL RESULT
+Launch week: 400 University of Twente students, zero data exposure incidents. Next up: Saxion students across the city, on the same backend.
 
-👉 Building in Enschede? Get a launch-readiness review before day one: https://launchstudio.eu/en/blog/ai-software-developers-enschede
+"I thought 'it works' meant it was ready. LaunchStudio showed me the difference between a demo and a product - and fixed it without touching a single line of my UI." - Sanne Bruggeman
+
+Get your own report card before launch day: https://launchstudio.eu/en/blog/ai-software-developers-enschede
 
 #AINativeFounder #LaunchStudio #Manifera #Enschede #ProductionReady

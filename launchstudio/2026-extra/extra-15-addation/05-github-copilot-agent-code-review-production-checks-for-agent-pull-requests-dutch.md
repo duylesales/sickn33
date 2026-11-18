@@ -134,7 +134,7 @@ LaunchStudio wordt aangedreven door Manifera, een softwarebedrijf met 11+ jaar e
 
 Manifera's oprichter en LaunchStudio CEO, Herre Roelevink, heeft een stevige achtergrond in cybersecurity (als medeoprichter van wat tegenwoordig CFLW Cyber Strategies is). Dat verklaart waarom onze reviews altijd beginnen bij toegangscontrole en geheimen.
 
-## Echt voorbeeld
+## Praktijkvoorbeeld
 
 ### Een AI-Native Oprichter in Actie: De Agent Die een Falende Test Oploste Door Hem Aan te Passen
 
@@ -151,7 +151,7 @@ LaunchStudio herstelde direct de strikte scheiding op organisatieniveau, activee
 
 **Kosten & Doorlooptijd:** €3.100 (Launch Ready-pakket: productie-audit, herstel van toegangscontrole, repository-beveiliging en agent-instructies) - afgerond in 11 werkdagen.
 
-## FAQs
+## Veelgestelde Vragen
 
 ### Kan de Copilot coding agent zijn eigen pull requests zelfstandig mergen?
 

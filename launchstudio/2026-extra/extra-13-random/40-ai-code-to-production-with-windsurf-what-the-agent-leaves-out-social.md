@@ -1,21 +1,35 @@
-🚨 Arjen Wolters, a developer and horse owner in Assen, built Stallenlog with Windsurf over one long weekend: livery stables manage horses, feeding, farrier and vet appointments and monthly invoices. Within two months, 26 stables and about 700 owners used it. Then real owners received invoices for horses named "Test Horse 3". 😳
+🧾 INVOICE (illustrative, but real owners got ones like it)
 
-The agent's seed script had run against production - twice - because there was one Supabase project for everything. The Postmark key was in a committed config file. Routes checked for a session but not stable membership, so owners saw other stables' horses and vet notes. The schema had drifted from migrations, there were 214 direct dependencies (four vulnerable), and no error tracking. Here's what the agent leaves out when Windsurf code goes to production: 🧠
+To: a real horse owner in Drenthe
+For: monthly livery
+Horse: Test Horse 3
 
-❌ One environment for dev, test and real customers
-❌ A secret committed to the repository
-❌ "Logged in" treated as "authorised"
-❌ Schema drift, dependency sprawl and silent errors
+How? The agent's seed script, which created test horses and owners, had been run against production. Twice. 🐴
 
-✅ Separate dev, staging and production projects with separate keys - Postmark key rotated
-✅ Row level security scoped to stables and owners, with negative tests
-✅ A clean migration baseline and 61 unused or duplicate dependencies removed
-✅ Sentry, uptime checks, and CI that blocks merges on tests, secret scanning and dependency alerts - plus a Windsurf rules file
+Arjen Wolters, a software developer and horse owner in Assen, built Stallenlog with Windsurf over one long weekend: livery stables manage boarding horses, feeding schedules, farrier and vet appointments, and monthly invoices to owners. It spread fast among stables in Drenthe: 26 stables and about 700 horse owners within two months.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we add the guardrails an agent doesn't know it needs. ⚙️
+The agent built the app faster than Arjen could have. And nothing told it what not to do. A LaunchStudio review found the pattern:
+• One Supabase project for everything, so the seed script hit production
+• The Postmark API key in a committed config file
+• API routes that checked for a session, but not stable or owner membership, so owners could see other stables' horses and vet notes
+• A schema that had drifted away from the migration files after direct changes
+• 214 direct dependencies, four with known vulnerabilities
+• No error tracking
 
-His result: €2,500, nine business days. Arjen still builds almost entirely with Windsurf, now through CI-guarded pull requests - and Stallenlog grew to 58 stables with no further test-data leaks. 🚀
+What LaunchStudio added, so something now tells the agent "no" (9 business days, €2,500):
+✓ Separate development, staging and production projects, each with its own keys
+✓ The Postmark key rotated and moved
+✓ Row Level Security scoped to stables and owners, with negative tests
+✓ The schema reconciled into a clean migration baseline
+✓ 61 unused or duplicate dependencies removed, and vulnerable ones updated
+✓ Silent catches replaced with reported errors, plus Sentry and uptime checks
+✓ CI that blocks merges on tests, secret scanning and dependency alerts
+✓ A Windsurf rules file documenting the environments and the access model
 
-👉 AI code to production with Windsurf: what the agent leaves out: https://launchstudio.eu/en/blog/ai-code-to-production-with-windsurf-what-the-agent-leaves-out
+Stallenlog is still built almost entirely with Windsurf, now through pull requests guarded by CI. It grew to 58 stables in six months, with no more test-data leaks or cross-stable exposure.
+
+"The agent built the app faster than I could have. It also ran my seed script on production, because nothing told it not to. Now something does." - Arjen Wolters
+
+https://launchstudio.eu/en/blog/ai-code-to-production-with-windsurf-what-the-agent-leaves-out
 
 #Windsurf #AgenticCoding #Supabase #DevOps #LaunchStudio #Manifera

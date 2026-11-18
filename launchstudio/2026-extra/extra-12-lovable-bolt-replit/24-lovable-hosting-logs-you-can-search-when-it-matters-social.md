@@ -1,21 +1,33 @@
-🚨 Willemijn Stoffels's Prijsopgave produces about 1,100 quotations a month for 52 landscaping and paving firms. A landscaper in Alphen aan den Rijn reported that a €14,000 quotation vanished after he saved it. He rebuilt it, lost the job to a competitor - and said he was thinking of leaving. 😳
+💬 A support conversation with nothing to say (dramatized)
 
-She couldn't investigate. Logs were unstructured text, kept for 24 hours, and the report arrived four days later. Here's why most logs can't answer the question that matters: 🧠
+LANDSCAPER: I saved a €14,000 quotation. It's gone. I spent forty minutes on it.
+FOUNDER: I'm so sorry. Let me look.
+FOUNDER: (the logs are unstructured text, kept for 24 hours, and your report arrived four days later)
+LANDSCAPER: Did it save? Did it fail? Was it something I did?
+FOUNDER: ...I can't tell you.
+LANDSCAPER: I rebuilt it. A competitor quoted first. I'm thinking about leaving.
 
-❌ Print statements instead of structured log entries
-❌ No request ID - no way to find one customer's afternoon
-❌ 24-hour retention, shorter than the time it takes a customer to report a problem
-❌ Full form bodies logged, including customers' addresses
+Willemijn Stoffels built Prijsopgave in Lovable: quotation software for garden landscaping and paving companies, 52 firms, around 1,100 quotations a month. The landscaper was in Alphen aan den Rijn. And not being able to tell him anything was worse for the relationship than the defect itself.
 
-✅ Structured logs with event, severity, request ID, user and account on every entry
-✅ Request IDs carried through database calls, PDF generation and background jobs
-✅ Sensitive fields scrubbed by name, 30-day retention, and a two-year audit table for sign-ins, status changes and exports
-✅ Error tracking with release, user and request context - and a short reference code in every user-facing error
+What LaunchStudio built (2 business days, €2,000):
+✓ Structured logging everywhere: event, severity, timestamp, request ID, user and account on every entry
+✓ Request IDs carried into database operations, the PDF generation service and background jobs
+✓ Log levels, so production records errors, warnings and business events, not chatter
+✓ Fields scrubbed by name before sending, since the old setup logged full form bodies, customers' addresses included
+✓ 30-day log retention, plus sign-ins, permission changes, quotation status changes and exports in an audit table in her own database, kept for two years
+✓ Error tracking with release, user and request context
+✓ A short reference code on every user-facing error message
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we make sure you can investigate what happened last week. 🔎
+Three weeks later, the same failure happened again, and this time it was captured in full: a PDF generation timeout that told the browser "success" while the save was rolled back. Fixed in an afternoon.
 
-Her result: two business days and €2,000 later, an identical failure three weeks on was captured in full - a PDF timeout returning "success" while the save was rolled back - and fixed in an afternoon. The landscaper stayed, because he got a specific explanation and a reference number. 🚀
+The same conversation, now:
+LANDSCAPER: Something went wrong. The screen shows reference X7K2.
+FOUNDER: Found it. Here's exactly what happened, and it's fixed.
 
-👉 Logs you can search when it matters: https://launchstudio.eu/en/blog/lovable-hosting-logs-you-can-search-when-it-matters
+The landscaper stayed, mostly because he got a specific explanation and a reference number, not just an apology.
+
+"A customer lost forty minutes of work and I could not tell him anything. Not what went wrong, not whether it was his mistake or mine. That conversation was the expensive part, not the bug." - Willemijn Stoffels
+
+https://launchstudio.eu/en/blog/lovable-hosting-logs-you-can-search-when-it-matters
 
 #Logging #Observability #SaaS #Lovable #LaunchStudio #Manifera

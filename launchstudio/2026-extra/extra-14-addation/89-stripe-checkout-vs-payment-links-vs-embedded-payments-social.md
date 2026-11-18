@@ -1,21 +1,24 @@
-🚨 Sophie Mertens runs pottery workshops in Mechelen and built Kleiatelier in Lovable: people book a workshop, pay and get preparation emails. Lovable connected a Stripe Payment Link per workshop. Payments came in - but the app had no idea who had paid. Sophie matched payments to bookings by hand every evening, and twice a workshop was overbooked. 😳
+🧩 TONIGHT'S PUZZLE: match the payments to the bookings
 
-Payment Links got her paid. They just didn't tell her app who had paid for what. Here's what was missing: 🧠
+Stripe: €45 · €45 · €45 · €60 · €45
+Bookings: Anna · Bram · Chris · Dewi · Eva · Femke · Gijs
 
-❌ Payments not linked to bookings or user accounts
-❌ Unpaid reservations holding places indefinitely
-❌ No webhook confirming bookings after payment
-❌ Evenings spent reconciling Stripe and the booking list by hand
+Which five paid? And which two are holding places they never paid for? (Illustrative, but the puzzle was real.)
 
-✅ Stripe Checkout sessions created server-side per booking, with the booking ID in metadata
-✅ Bancontact and iDEAL enabled
-✅ A webhook that confirms the booking only after payment
-✅ Unpaid reservations released automatically after 30 minutes, plus preparation emails on confirmation
+Sophie Mertens solved a puzzle like this every evening. She runs pottery workshops in Mechelen and built Kleiatelier in Lovable: people book a workshop, pay and get preparation emails. Lovable connected one Stripe Payment Link per workshop. Payments came in. The app just had no idea who had paid. And twice, a workshop got overbooked, because unpaid reservations kept holding places.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of Stripe, Mollie and PayPal integrations, we pick the simplest Stripe option that fits your stage - with webhooks that keep your app in sync. 🛠️
+How LaunchStudio retired the puzzle (5 business days, €1,450):
+✓ Payment Links replaced with Stripe Checkout sessions created server-side for each booking
+✓ The booking ID stored in the session metadata
+✓ Bancontact and iDEAL enabled
+✓ A webhook that confirms a booking only after payment
+✓ Unpaid reservations released automatically after 30 minutes
+✓ Preparation emails sent on confirmation
 
-💡 Her result: €1,450, five business days. Manual matching stopped completely, overbooking disappeared, and a waiting list now offers released places to the next person automatically. 🚀
+No more evening matching. No more overbooking. And with places now released reliably, Sophie added a waiting list that offers each freed place to the next person automatically.
 
-👉 Stripe Checkout, Payment Links or embedded payments? Here's which fits your AI-built app at each stage: https://launchstudio.eu/en/blog/stripe-checkout-vs-payment-links-vs-embedded-payments
+"Payment Links got me paid. They just didn't tell my app who had paid for what." - Sophie Mertens
+
+https://launchstudio.eu/en/blog/stripe-checkout-vs-payment-links-vs-embedded-payments
 
 #Stripe #Payments #Bancontact #iDEAL #LaunchStudio #Manifera

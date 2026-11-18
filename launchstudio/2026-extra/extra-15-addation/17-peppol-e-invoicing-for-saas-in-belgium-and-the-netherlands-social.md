@@ -1,21 +1,33 @@
-🚨 Kevin Peeters, a founder living in Breda, built Praktijkfactuur with Lovable and Supabase: scheduling and billing for physiotherapists in Flanders and the southern Netherlands. About 140 practices used it, two thirds in Belgium. Then the Belgian e-invoicing mandate came into view. 😳
+⏳ Countdown to 1 January: the Belgian Peppol mandate
 
-Practices asked whether they could send Peppol invoices to the companies they billed. They couldn't. Here's what Peppol e-invoicing means for SaaS in Belgium and the Netherlands: 🧠
+AUTUMN 2025
+Kevin Peeters, a Flemish-Dutch founder living in Breda, runs Praktijkfactuur, built with Lovable and Supabase. Independent physiotherapists and small group practices in Flanders and the southern Netherlands use it to plan sessions and invoice clients, including companies that pay for employee treatments. About 140 practices, two thirds of them in Belgium.
 
-❌ Invoices generated as PDFs in the browser
-❌ Business VAT numbers as optional free-text fields
-❌ No credit notes
-❌ Totals off by one cent because money was stored as decimals
+Practices start asking: can we send Peppol invoices to the companies we bill?
 
-✅ An access point provider integrated via API
-✅ Invoices mapped to Peppol BIS Billing 3.0 with validation in Dutch
-✅ Required VAT and company numbers with a Peppol directory lookup
-✅ Integer cents, structured credit notes and delivery statuses via verified webhooks
+The honest answer: not yet.
+• Invoices were PDFs generated in the browser
+• Business recipients' VAT numbers were optional free-text fields
+• Credit notes weren't supported
+• Totals sometimes differed by one cent from the sum of the lines, because amounts were stored as decimals
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we make compliance deadlines a non-event for your users. 🛠️
+THE WORK (LaunchStudio, 15 business days, €5,800)
+→ An access point provider integrated through its API
+→ The invoice model mapped to Peppol BIS Billing 3.0, with validation and Dutch-language errors before sending
+→ Required VAT and company number fields, plus a Peppol directory lookup that shows whether a company can receive e-invoices
+→ Money migrated to integer cents, with consistent VAT rounding
+→ Structured credit notes
+→ Delivery and rejection statuses returned through verified, idempotent webhooks into a visible status column
+→ Sent UBL files stored for the retention period
 
-His result: €5,800, 15 business days. Peppol went live in mid-December, two weeks before the Belgian mandate. In Q1 2026, practices sent around 3,900 Peppol invoices with a rejection rate below 1%. 🚀
+MID-DECEMBER
+Peppol sending goes live, two weeks before the mandate applies.
 
-👉 Selling SaaS in Belgium? Here's how to get Peppol-ready: https://launchstudio.eu/en/blog/peppol-e-invoicing-for-saas-in-belgium-and-the-netherlands
+Q1 2026
+Around 3,900 Peppol invoices sent, with a rejection rate below 1%, almost all caused by recipients' incomplete registrations. Several Dutch practices began using it for corporate clients as well.
+
+"My users were physiotherapists, not accountants. They needed the invoices to just work on 1 January, and they did." - Kevin Peeters
+
+https://launchstudio.eu/en/blog/peppol-e-invoicing-for-saas-in-belgium-and-the-netherlands
 
 #Peppol #EInvoicing #Belgium #SaaS #AIFounder #LaunchStudio #Manifera

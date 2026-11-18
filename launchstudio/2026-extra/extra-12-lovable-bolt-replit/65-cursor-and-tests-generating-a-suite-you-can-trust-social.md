@@ -1,21 +1,36 @@
-🚨 Jeroen Wijnstra's Contributiebeheer collects around €2 million a year in membership fees for 63 associations and clubs. He had Cursor write his test suite: 412 tests, 91% coverage, all green. Then a direct debit run charged 140 members twice. 😳
+```
+$ npm test
+  412 passing (4m)
+  Coverage: 91%
+  ✓ All tests passed
+```
 
-The function behind it had eleven tests. All eleven passed - because they'd been generated from the code, and updated when the code changed, encoding the bug as the expected result. Here's how to build a test suite you can actually trust: 🧠
+Meanwhile, in production: a direct debit run charged 140 members twice. 💸
 
-❌ Tests that assert nothing that could fail: "renders", "returns a value", "mock was called"
-❌ Assertions derived from the implementation rather than the business rule
-❌ Coverage treated as the goal instead of verified behaviour
-❌ A four-minute suite that gave enough confidence to deploy a fee change on a Friday
+Jeroen Wijnstra built Contributiebeheer in Cursor: membership fee administration for 63 associations and clubs, collecting around €2 million a year in direct debits. He'd asked the assistant to write a test suite and accepted what it gave him.
 
-✅ 280 decorative tests deleted; 40 rewritten against the associations' actual rules
-✅ An authorisation test per endpoint - which found three of 31 with no check at all
-✅ Money tests for mid-year joining, leaving, rounding, zero and the maximum, with awkward amounts
-✅ A failing regression test written before the fix; 94 tests in 50 seconds, wired into deployment
+Then a change to fix an unrelated rounding issue touched the pro-rata discount for mid-year joiners. The discount began applying to the full annual amount, not the remaining months, and recent joiners got a second charge.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we build the proportionate suite that makes deploying stop being nerve-racking. ⚙️
+Eleven tests covered that function. All eleven passed. They had been generated from the implementation, asserted whatever the code produced at the time, and were updated automatically when the code changed. The bug became the expected result.
 
-His result: €3,300, three business days. The 140 duplicate charges were refunded, and the suite now catches what the 412 tests let through. 🚀
+```
+$ npm test   # after the review
+  94 passing (50s)
+```
 
-👉 Cursor and tests: generating a suite you can trust: https://launchstudio.eu/en/blog/cursor-and-tests-generating-a-suite-you-can-trust
+How 412 became 94 (LaunchStudio, 3 business days, €3,300):
+✓ 280 tests deleted for asserting nothing that could fail: renders without crashing, returns a value, mock was called
+✓ The other 132 checked for assertions derived from the code, not the intent, with 40 rewritten against business rules taken from the association agreements
+✓ An authorisation test per endpoint across all 31, which found three endpoints with no check at all
+✓ Money tests written from the rules, using awkward amounts: mid-year joining, leaving, rounding, zero, and the maximum contribution
+✓ An end-to-end test of the collection run
+✓ A test for the double charge, written before the fix and confirmed failing first
+✓ The suite wired into deployment
+
+The 140 duplicate charges were refunded and the associations informed. Jeroen's verdict on the old suite: it was actively harmful, because it gave him enough confidence to deploy a contribution calculation change on a Friday without checking it by hand.
+
+"Four hundred and twelve tests, ninety-one percent coverage, all green, and they were green because they had been written from the code rather than from what the code was supposed to do." - Jeroen Wijnstra
+
+https://launchstudio.eu/en/blog/cursor-and-tests-generating-a-suite-you-can-trust
 
 #Testing #Cursor #AICoding #SoftwareQuality #LaunchStudio #Manifera

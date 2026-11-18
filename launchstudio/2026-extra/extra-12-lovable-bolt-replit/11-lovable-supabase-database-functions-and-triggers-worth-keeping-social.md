@@ -1,21 +1,40 @@
-🚨 Marnix Oosterveld's Offerteroute manages quotations for 61 kitchen and bathroom installers - about 900 a month. Customers started receiving two copies of every quotation, some at three in the morning. Two replied to both, and one argued about a price that had changed between versions. 😳
+🔍 CASE FILE: The Quotation That Arrived Twice
 
-Nothing in his code sent a second email. A database trigger did - written by an AI session eight months earlier, in a chat he didn't remember. Here's what hides in an AI-built Supabase schema: 🧠
+THE CLIENT
+Marnix Oosterveld, Waalwijk. Runs Offerteroute, built with Lovable and extended over a year by AI sessions: quotation management for kitchen and bathroom installers. 61 companies, around 900 quotations a month.
 
-❌ Eleven triggers nobody could explain - two duplicating application logic
-❌ A trigger calling an external webhook inside a transaction, causing timeouts
-❌ Three triggers firing into tables that had been replaced
-❌ A security definer function returning any company's quotations to any logged-in user
+THE COMPLAINT
+Customers received two copies of every quotation, sometimes minutes apart, sometimes hours. Two customers replied to both, creating duplicate follow-ups, and one argument about a price that changed between versions.
 
-✅ Every function and trigger inventoried and described in one sentence
-✅ Email and webhook work moved into application code, where it can be retried and logged
-✅ The security definer function rewritten with an explicit membership check and fixed search path
-✅ Timestamp and counter triggers kept and covered by SQL tests - and the whole schema committed as a baseline migration
+THE CLUE
+Some duplicates arrived at three in the morning.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we find what your database does that your code never mentions. 🗄️
+THE SUSPECTS
+Suspect 1: the application, which sent a quotation email when one was marked sent.
+Suspect 2: a trigger on the quotations table, written eight months earlier, which fired on any update that changed the status column. Including the nightly job that updates expiry dates.
 
-His result: three business days and €2,700 later, the duplicate emails and intermittent timeouts stopped, and the exposed function was closed before anyone used it. Marnix now has a two-page document explaining what his database does on its own. 🚀
+Both were guilty.
 
-👉 Database functions and triggers worth keeping: https://launchstudio.eu/en/blog/lovable-supabase-database-functions-and-triggers-worth-keeping
+FURTHER INVESTIGATION: eleven triggers in total
+• 4 maintaining timestamps and counters, correctly
+• 2 duplicating application logic
+• 1 calling an external webhook inside a transaction, which caused three timeouts
+• 3 doing nothing, because their target tables had been replaced
+• 1 security definer function fetching quotations with no authorisation check, callable by any logged-in user against any company's data
+
+THE RESOLUTION (LaunchStudio, 3 business days, €2,700)
+✓ Every function and trigger inventoried and described
+✓ The email and webhook triggers removed, with the work moved into the application, where it can be retried and logged
+✓ Duplicate-logic pairs resolved, and three dead triggers dropped
+✓ The security definer function rewritten with an explicit membership check and a fixed search path
+✓ Timestamp and counter triggers kept, documented and covered by SQL tests
+✓ The whole schema dumped into a baseline migration and committed, instead of living only in the dashboard
+
+CASE CLOSED
+Duplicate emails stopped, the timeouts stopped with them, and the exposed function was closed before anyone used it. Marnix now has a two-page document describing what his database does without being asked.
+
+"Nothing in my code sent a second email. It took an afternoon to accept that the database was doing it by itself, because I had asked it to, in a chat I do not remember." - Marnix Oosterveld
+
+https://launchstudio.eu/en/blog/lovable-supabase-database-functions-and-triggers-worth-keeping
 
 #Supabase #PostgreSQL #DatabaseDesign #Lovable #LaunchStudio #Manifera

@@ -1,23 +1,40 @@
-💐 Mila Hoogland runs a SaaS for flower shops from Aalsmeer, built with Lovable and Supabase: about 45 florists manage orders, deliveries and weekly bouquet subscriptions paid through Mollie. A regional florist association wanted to recommend it to members at its spring meeting, three weeks away. Mila wanted the app production ready by then. 🌷
+💐 From first email to go-live: twelve working days
 
-How it unfolded: 🧠
+MONDAY, WEEK 1
+Mila Hoogland sends a one-page description using the template. She runs Bloemenroute from Aalsmeer, a SaaS for flower shops built with Lovable and Supabase: florists manage orders, deliveries and weekly bouquet subscriptions, paid through Mollie. About 45 shops use it, and a regional florist association wants to recommend it to members at its spring meeting, three weeks away. Her page lists the tools, account owners, roles for shop owners, staff and couriers, the Mollie subscriptions, the meeting date, and one worry: couriers might see more customer details than they need.
 
-❌ Couriers could see more customer details than they needed
-❌ Subscription renewals kept access after failed payments
-❌ Emails came from the default provider, and there was no staging
-❌ The domain was still with her former web designer
+TUESDAY
+Intro call. Read access given the same afternoon.
 
-From first email to go-live: ✅
+WEDNESDAY
+The fixed quote arrives: €2,900 within Launch Ready, with sixteen scope items, and a note to start the domain transfer from her former web designer right away.
 
-✅ Monday: a one-page description using the template. Tuesday: a 15-minute intro call and read access
-✅ Wednesday: a fixed quote of €2,900 within Launch Ready, with sixteen scope items and the domain transfer started at once
-✅ Next Monday: the project started, with fixes in priority order and updates every other day
-✅ Day eight: an hour on staging, a sign-off checklist with one dated accepted risk, a Thursday release and a Friday handover
+MONDAY, WEEK 2: PROJECT STARTS
+The review confirms the courier issue, and finds subscription renewals that keep access after failed payments, emails from the default provider, and no staging. Fixes follow in priority order, with updates every other day:
+✓ Courier access limited to the customer details they need
+✓ Role-based policies, with tests
+✓ Subscription webhooks
+✓ Email setup
+✓ Staging and monitoring
+✓ The ownership transfer
 
-At **LaunchStudio**, backed by Manifera's 11+ years and 160+ projects for clients such as Vodafone and TNO, the process is clear, the price is fixed and you keep building with your AI tool afterwards. 🛠️
+DAY 8
+Mila spends an hour checking staging.
 
-Her result: twelve working days from first email to go-live. Mila presented a production-ready app at the meeting, and twelve new shops signed up the following month. 🚀
+SIGN-OFF
+One accepted risk: an accessibility issue on a rarely used settings page, scheduled for the following month.
 
-👉 Start your production launch: from first call to go-live: https://launchstudio.eu/en/blog/start-your-production-launch-from-first-call-to-go-live
+THURSDAY
+Release.
+
+FRIDAY
+Handover call. Project time: 9 business days.
+
+THE SPRING MEETING
+Mila presents a production-ready app, with a one-page summary of how shops' and customers' data is protected. Twelve new shops sign up the following month.
+
+"I sent one page on a Monday and had a fixed price by Wednesday. Twelve working days later, the app I had built in evenings was something I could recommend to an entire association." - Mila Hoogland
+
+Start yours: https://launchstudio.eu/en/blog/start-your-production-launch-from-first-call-to-go-live
 
 #ProductionLaunch #GoLive #Lovable #Mollie #AIFounder #LaunchStudio #Manifera

@@ -1,21 +1,37 @@
-🚨 Ayoub Benali, a bookkeeper in Schiedam, built Nota Nu with Cursor: invoicing for freelancers, with quotes, reminders and a quarterly VAT overview. About 260 freelancers paid €9 a month. Then an accountant working with several of them noticed the quarterly VAT totals didn't match the invoices - off by a few cents to a few euros per client. 😳
+📒 QUARTERLY VAT RECONCILIATION (illustrative figures)
 
-Amounts were stored as floats. VAT was rounded per line on screen but per invoice in the overview. Invoice numbers were "count plus one", producing duplicates when two devices created invoices at once - and going backwards after a deletion. Sent invoices were fully editable, EU reverse charge wasn't handled, and deleting an account wiped invoices users were legally required to keep. Here's how to productionize an AI invoicing app: 🧠
+Sum of the quarter's invoices: VAT €1,302.47
+Quarterly overview in the app: VAT €1,302.44
+Difference: €0.03
 
-❌ Floating-point money
-❌ Mixed VAT rounding between screens and reports
-❌ Numbering that duplicates and goes backwards
-❌ Editable issued invoices and deletion that ignores the seven-year rule
+Across clients, a few cents to a few euros each. An accountant working with several Nota Nu users noticed. 🧾
 
-✅ Amounts migrated to integer cents with a verified conversion
-✅ Per-line VAT rounding everywhere
-✅ Transactional numbering per series, assigned at finalisation
-✅ Locked issued invoices with stored PDFs, credit notes, reverse-charge invoices and seven-year retention - plus a report of every historic discrepancy
+Ayoub Benali, a bookkeeper in Schiedam, built Nota Nu with Cursor: invoicing for freelancers, with quotes, invoices, payment reminders and a quarterly VAT overview. About 260 freelancers paid €9 a month.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we fix the arithmetic and the rules behind an invoice, not just its layout. ⚙️
+Where the cents went, and what else turned up:
+• Amounts stored as floats
+• VAT rounded per line on screen, but per invoice in the overview
+• Invoice numbers generated as "count plus one," producing duplicates for two users who invoiced from two devices at once, and going backwards after a deletion
+• Issued invoices still fully editable
+• No reverse-charge handling for EU clients
+• "Delete account" removing every invoice immediately, including ones users are legally required to keep
 
-His result: €2,700, nine business days. Quarterly VAT overviews now reconcile to the cent, Nota Nu grew to 610 subscribers the next year, and two accountancy firms began recommending it. 🚀
+Making it add up (LaunchStudio, 9 business days, €2,700):
+✓ Amounts migrated to integer cents, with a verified data conversion
+✓ Per-line VAT rounding, everywhere
+✓ Transactional numbering per series, assigned at finalisation
+✓ Issued invoices locked, with their PDFs stored
+✓ Credit notes and reverse-charge invoices
+✓ Account deletion that keeps invoices for seven years and removes other personal data
+✓ A report of every historic discrepancy, so users could correct past filings with their accountants
 
-👉 Productionize an AI app for invoicing: VAT, rounding and numbering: https://launchstudio.eu/en/blog/productionize-an-ai-app-for-invoicing-vat-rounding-and-numbering
+📒 QUARTERLY VAT RECONCILIATION, NOW
+Difference: €0.00
+
+Nota Nu grew to 610 subscribers over the next year, and two accountancy firms started recommending it to clients.
+
+"The app looked finished because invoices looked right. Accounting isn't about looking right; it's about adding up." - Ayoub Benali
+
+https://launchstudio.eu/en/blog/productionize-an-ai-app-for-invoicing-vat-rounding-and-numbering
 
 #Invoicing #VAT #Freelancers #Cursor #LaunchStudio #Manifera

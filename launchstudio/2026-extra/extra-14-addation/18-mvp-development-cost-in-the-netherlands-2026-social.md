@@ -1,21 +1,34 @@
-🚨 Thijs van Leeuwen, a construction project manager in Apeldoorn, wanted an app for property handovers: log defects with photos, assign them to subcontractors, track repairs. Two agencies quoted €48,000 and €61,000, with four to five months of development. 😳
+Three quotes for one snag list app. 🧾
 
-So he spent six weeks of evenings building Opleverpunt in Lovable. The flows were right - he'd done hundreds of handovers himself. But the production layer was missing: 🧠
+QUOTE A: Agency one
+€48,000, four to five months
 
-❌ Defect photos stored publicly
-❌ Subcontractors able to see every project
-❌ No roles, and slow on building sites with poor signal
-❌ Nothing deployed outside the Lovable preview
+QUOTE B: Agency two
+€61,000, four to five months
 
-✅ Roles for contractors, homeowners and subcontractors, with Row Level Security per project
-✅ Private photo storage with compressed uploads for weak connections
-✅ An offline queue for defect entries, plus email notifications for assigned repairs
-✅ Deployed on his own domain with an EU-hosted backend and monitoring
+QUOTE C: Build it yourself in Lovable, then LaunchStudio for production
+€5,700, plus €49/month managed hosting, live in seventeen business days
 
-At **LaunchStudio**, backed by Manifera's 11+ years and 120+ engineers, you build the product you understand best - we finish the parts AI tools leave open, at a fixed price. 🛠️
+Thijs van Leeuwen, a construction project manager in Apeldoorn, wanted an app for opleveringen: contractors and homeowners walk through a newly built house, log defects with photos, assign them to subcontractors and track repairs. After quotes A and B, he spent six weeks of evenings building Opleverpunt in Lovable himself. The flows were right, because he'd done hundreds of handovers.
 
-💡 His result: €5,700, seventeen business days - about 12% of the lowest agency quote. His first contractor client used it on 46 handovers in three months, logging about 1,300 defects. 🚀
+But underneath:
+• Photos stored publicly
+• Subcontractors could see every project
+• No roles
+• Slow on building sites with poor signal
+• Nothing deployed outside the preview
 
-👉 What does an MVP really cost in the Netherlands in 2026? Four routes compared: https://launchstudio.eu/en/blog/mvp-development-cost-in-the-netherlands-2026
+What quote C covered:
+✓ Roles for contractors, homeowners and subcontractors, with Row Level Security per project
+✓ Photos in private storage, with compressed uploads for weak connections
+✓ An offline queue for defect entries
+✓ Email notifications for assigned repairs
+✓ Deployment on Thijs's domain, with an EU-hosted backend and monitoring
+
+The result: Opleverpunt's first contractor client used it on 46 handovers in three months, logging about 1,300 defects. Thijs spent roughly 12% of the lower agency quote.
+
+"The agencies weren't wrong about the work. They were wrong about who had to do all of it." - Thijs van Leeuwen
+
+https://launchstudio.eu/en/blog/mvp-development-cost-in-the-netherlands-2026
 
 #MVP #StartupNL #Lovable #AIFounder #LaunchStudio #Manifera

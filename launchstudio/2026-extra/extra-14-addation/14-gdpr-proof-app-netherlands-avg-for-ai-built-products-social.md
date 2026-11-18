@@ -1,21 +1,31 @@
-🚨 Mark de Graaf, a coach in Arnhem, built Rustpunt with Lovable: a guided journaling app for people recovering from burnout, with an AI-generated weekly reflection. Two occupational health services wanted to offer it to employees. Both sent a privacy questionnaire. Mark couldn't answer most of it. 😳
+🗺️ Where does a burnout diary travel?
 
-The questions were simple. He just didn't know what his own app was doing with people's diaries. Here's what the AI had built without a word about the AVG: 🧠
+THE ORIGINAL ROUTE
+✍️ An employee writes a journal entry in Rustpunt
+➜ stored in a Supabase project in a US region
+➜ sent, in full, to an AI API for the weekly reflection, with no processor agreement and default data settings
+➜ the page URL, entry ID included, captured by analytics
+➜ after account deletion: the login removed, every entry left behind
+➜ described in a privacy statement that mentioned none of this
 
-❌ The Supabase project running in a US region
-❌ Every journal entry sent to an AI API - no processor agreement, default data settings
-❌ Analytics capturing full URLs, including entry IDs
-❌ Account deletion that removed the login but kept every journal entry
+Mark de Graaf, a coach in Arnhem, built Rustpunt with Lovable: a guided journaling app for people recovering from burnout, with daily prompts and an AI-generated weekly reflection. Two occupational health services wanted to offer it to employees, and both sent a privacy questionnaire. Mark couldn't answer most of it.
 
-✅ Database and storage migrated to Frankfurt
-✅ Minimal data sent to the AI provider, under a processor agreement with training excluded
-✅ Identifiers stripped from analytics, plus full account deletion and data export
-✅ A retention job for inactive accounts and a data map for his privacy consultant
+THE NEW ROUTE (LaunchStudio, 14 business days, €4,800)
+✍️ The journal entry
+➜ stored in Frankfurt, database and storage both
+➜ only what's needed sent to the AI provider, under a processor agreement with training excluded
+➜ identifiers stripped from analytics
+➜ full account deletion and data export, plus a "download my data" button
+➜ a retention job for inactive accounts
+➜ a data map for Mark's privacy consultant
 
-At **LaunchStudio**, backed by Manifera's 11+ years of building for Dutch organisations like TNO, we handle the technical half of an AVG-proof app - your privacy lawyer handles the wording. 🛠️
+The Lovable frontend stayed exactly the same, apart from that new button.
 
-💡 His result: €4,800, fourteen business days. Both occupational health services approved Rustpunt, about 420 employees used it within six months, and every later questionnaire took under an hour. 🚀
+ARRIVAL
+Both occupational health services approved Rustpunt. Within six months, around 420 employees were using it. And Mark now answers new questionnaires in under an hour, using the same documents.
 
-👉 Is your AI-built app ready for a Dutch privacy questionnaire? Here's what AVG-proof really means: https://launchstudio.eu/en/blog/gdpr-proof-app-netherlands-avg-for-ai-built-products
+"The questionnaire asked simple questions. I just had no idea what my own app was doing with people's diaries." - Mark de Graaf
+
+https://launchstudio.eu/en/blog/gdpr-proof-app-netherlands-avg-for-ai-built-products
 
 #GDPR #AVG #Privacy #Lovable #LaunchStudio #Manifera

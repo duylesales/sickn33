@@ -1,21 +1,39 @@
-🚨 Priya Ramdin, a former compliance officer in Amsterdam, built Dossiercheck with Lovable and Supabase: a tool that helps payment and e-money firms collect due diligence documents for audits. After a pilot with two fintechs, a mid-sized payment institution wanted it across its onboarding team. 😳
+📖 A DORA glossary, as one founder learned it from the supplier side
 
-Their vendor management team sent a DORA contract addendum, a 90-question assessment and a request for an exit strategy. Priya found gaps she hadn't considered. Here's what DORA means for SaaS suppliers to financial firms: 🧠
+Priya Ramdin, a former compliance officer at an Amsterdam payment institution, built Dossiercheck with Lovable and Supabase. It helps small payment and e-money firms collect customer due diligence documents, track expiry dates and prepare files for audits. After a pilot with two fintechs, a mid-sized payment institution wanted it for its whole onboarding team.
 
-❌ No way to export a customer's full dataset including documents
-❌ Admin actions not logged
-❌ A database never restored from backup
-❌ An AI feature calling a US endpoint, and no incident process or service level
+Then the paperwork arrived, and with it, new vocabulary.
 
-✅ MFA for staff and SAML single sign-on for customer users
-✅ An audit log covering logins, document access and exports
-✅ A self-service export, point-in-time recovery and a restore test
-✅ An EU AI endpoint with a no-training commitment, plus documented recovery objectives and an incident plan
+"Important function" (n.)
+How the payment institution's vendor team classified Dossiercheck. It came with a DORA contract addendum and a 90-question assessment.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we build the controls financial customers expect from their suppliers. 🛠️
+"Exit strategy" (n.)
+What happens if they leave you. Dossiercheck had no way to export a customer's full dataset, documents included.
 
-Her result: €6,800, 17 business days. The payment institution approved Dossiercheck after one round of follow-up questions, five weeks after the assessment arrived. 🚀
+"Audit trail" (n.)
+A record of who did what. Admin actions weren't logged.
 
-👉 Selling SaaS to banks or payment firms? Here's what DORA asks of you: https://launchstudio.eu/en/blog/dora-for-saas-suppliers-to-financial-firms
+"Recovery" (n.)
+Proven, not assumed. The database had never been restored from backup.
+
+"Third-country transfer" (n.)
+The AI feature that summarised documents called a US endpoint.
+
+"Incident process" (n.)
+There wasn't one written down, and no service level either.
+
+What LaunchStudio built (17 business days, €6,800):
+✓ Organisation-level RLS tests, MFA for staff, SAML SSO for customer users
+✓ An audit log for logins, document access and exports
+✓ Self-service export of every record and document in a documented format
+✓ Point-in-time recovery with a restore test
+✓ The AI feature on an EU endpoint, with a no-training commitment and an outage fallback
+✓ Help documenting recovery objectives, a sub-contractor register, service levels and an incident plan for the addendum
+
+Approved after one round of follow-ups, five weeks after the assessment arrived. The export and audit log became standard features.
+
+"I knew DORA from the bank side. I hadn't realised how much of it would land on me as a supplier until the addendum arrived." - Priya Ramdin
+
+https://launchstudio.eu/en/blog/dora-for-saas-suppliers-to-financial-firms
 
 #DORA #Fintech #Compliance #B2BSaaS #AIFounder #LaunchStudio #Manifera

@@ -1,20 +1,24 @@
-🔐 Thijs Kooiman built Handelspunt, a B2B marketplace connecting Zwolle-region wholesalers with independent retailers, using Bolt in three weeks. Everything worked in testing - until LaunchStudio's pre-launch review found the Stripe webhook wasn't verified against Stripe's signing secret. Anyone could have forged a "payment succeeded" event and marked an order paid without ever paying. 😳
+If I wanted to steal from Handelspunt before launch, I wouldn't have needed to hack anything. 🕵️
 
-AI writes fast code, not automatically secure code - and payment flows are where that gap gets expensive. 🧠
+Here's the marketplace through an attacker's eyes.
 
-❌ Checkout sessions were created correctly server-side, but webhook events went unverified
-❌ Anyone could forge a fake payment confirmation and get free inventory
-❌ Admin inventory routes had no role-based access control locking them down
-❌ None of this showed up in normal testing - only an adversarial review catches it
+Handelspunt is a B2B marketplace connecting Zwolle-region wholesalers with independent retailers. Thijs Kooiman built it in Bolt in three weeks. Sellers list inventory, buyers place orders, and payments run through a Stripe integration that Bolt scaffolded automatically. In testing, it worked beautifully.
 
-✅ Rebuilt the webhook verification layer against Stripe's signing secret
-✅ Added idempotency handling to block duplicate order processing
-✅ Locked admin inventory routes behind proper role-based access control
+The checkout itself was fine. Sessions were created server-side, correctly.
 
-At **LaunchStudio**, Manifera's 120+ engineers - the same team behind projects for Vodafone and cybersecurity firm CFLW - run this exact threat-modeling process on every AI-built checkout flow. 🛡️
+The weak spot was the message that comes back afterwards. When Stripe confirms a payment, it sends a webhook. Handelspunt never verified those webhooks against Stripe's signing secret. So anyone could forge a "payment succeeded" event and mark an order as paid without paying.
 
-Handelspunt processed its first 200 real transactions with zero fraudulent orders, and Thijs onboarded twelve wholesalers in his first month. 🚀
+No exploit kit. No stolen password. Just a message the server believed.
 
-👉 Processing payments in Zwolle? Verify your webhooks before you take real money: https://launchstudio.eu/en/blog/security-and-ai-zwolle
+LaunchStudio caught it in the pre-launch review and closed it (5 business days, €950):
+🔐 Webhook verification rebuilt
+🔐 Idempotency handling, so one order can't be processed twice
+🔐 Admin inventory routes locked behind role-based access control
+
+Then the real test: the first 200 real transactions. Fraudulent orders: zero. Twelve wholesalers from Zwolle's business district onboarded in the first month.
+
+"I had no idea anyone could fake a payment confirmation until LaunchStudio showed me. That single fix probably saved us from our first real fraud case." - Thijs Kooiman
+
+Think like an attacker before one does: https://launchstudio.eu/en/blog/security-and-ai-zwolle
 
 #AINativeFounder #LaunchStudio #Manifera #Zwolle #PaymentSecurity

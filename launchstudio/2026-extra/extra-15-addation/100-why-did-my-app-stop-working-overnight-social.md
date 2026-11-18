@@ -1,21 +1,33 @@
-🚨 Roos van Dam built Oppaskompas with Bolt and Supabase: about 2,800 families and 600 babysitters around Breda use it for bookings, messaging, Mollie payments and AI-assisted profile checks. One Monday morning, nothing worked. Roos hadn't changed anything in weeks. 😳
+🕯️ IN MEMORIAM: Oppaskompas, for about four hours one Monday morning
 
-A certificate warning, missing emails, failing AI checks and SMS reminders. Four separate expiries had converged. Here's why apps stop working overnight: 🧠
+Oppaskompas, built by Roos van Dam with Bolt and Supabase, helps parents in and around Breda find and book babysitters, with in-app messaging, Mollie payments and AI-assisted profile checks. About 2,800 families and 600 babysitters. One Monday morning, it stopped working: a certificate warning, no emails, and, once the warning was bypassed in testing, failing AI profile checks and SMS reminders.
 
-❌ An expired personal credit card: SMS account suspended, AI prepaid credit run out
-❌ SSL renewal blocked by a Cloudflare setting changed two months earlier
-❌ Renewal reminders going to a former freelancer's email address
-❌ An SMTP credential revoked after a password reset
+Roos hadn't changed anything in weeks.
 
-✅ Certificate validation fixed and renewed, service restored the same morning
-✅ Billing on a company card, SMS reactivated and AI credit topped up with alerts
-✅ SMTP replaced with an API key in server secrets
-✅ Accounts on company emails with 2FA and a second admin, DNS ownership transferred, an expiry register and monitoring
+CAUSES OF DEATH
+1. A personal credit card that had expired at the end of the previous month. The SMS provider suspended the account after failed payments, and the AI provider's prepaid credit ran out when auto-recharge failed.
+2. An SSL certificate that didn't renew, because a Cloudflare setting changed two months earlier blocked the validation request. The renewal reminders went to the email of a freelancer who had set up DNS.
+3. An SMTP credential revoked by the email service after a password reset, which Roos hadn't connected to the app.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we turn surprise outages into routine renewals. 🛠️
+None of it was in the code.
 
-The result: €1,500, 4 business days, with service restored on day one. The app was fully back within four hours, and in the next year the register flagged eleven renewals and two quota warnings ahead of time - with no unplanned outage since. 🚀
+THE RESURRECTION (LaunchStudio, service restored on day one)
+✓ Certificate validation fixed and the certificate renewed
+✓ Billing on every service moved to a company card
+✓ The SMS account reactivated, and AI credit topped up with alerts
+✓ The SMTP connection replaced with an API key in server secrets
+The app was fully available again within four hours.
 
-👉 Did your app break while nobody touched it? Here's the silent expiry checklist: https://launchstudio.eu/en/blog/why-did-my-app-stop-working-overnight
+THE AFTERLIFE (4 business days in total, €1,500)
+✓ Every account moved to company email addresses, with two-factor authentication and a second admin
+✓ DNS ownership transferred from the freelancer
+✓ An expiry register with calendar reminders
+✓ Monitoring for uptime, certificate expiry, failed emails and SMS, AI errors and low credit balances
+
+In the following year, the register and alerts flagged eleven renewals and two quota warnings ahead of time. No unplanned outage since.
+
+"Nothing in my code broke. My app died of a dead credit card, an old email address and a certificate nobody was watching." - Roos van Dam
+
+https://launchstudio.eu/en/blog/why-did-my-app-stop-working-overnight
 
 #Uptime #SSL #Monitoring #SaaSOps #AIFounder #LaunchStudio #Manifera

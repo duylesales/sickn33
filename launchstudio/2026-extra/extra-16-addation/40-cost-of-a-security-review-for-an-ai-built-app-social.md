@@ -1,21 +1,29 @@
-🏢 Bas Kramer runs a facility management SaaS from Amersfoort, built with Lovable and Supabase: property managers log maintenance requests, contractors update their status. Before a contract with a housing association, he ran the Supabase security advisor and a free external scanner. Both said green. ✅
+🚦 THREE SECURITY CHECKS ON ONE APP
 
-One afternoon of testing with real roles said something else: 🧠
+🟢 Supabase security advisor: no serious problems
+🟢 Free external scanner: no serious problems
+🔴 Testing with real roles: any contractor could read every maintenance request in the system
 
-❌ Every table had Row Level Security, but several policies let any logged-in user read every request
-❌ Contractors could change the status of other contractors' jobs through the API
-❌ Photo uploads in a public bucket
-❌ A service key inside an Edge Function callable without authentication
+Bas Kramer runs Meldpunt Vastgoed from Amersfoort, a facility management SaaS built with Lovable and Supabase: property managers log maintenance requests, and contractors update their status. Before a contract with a housing association, he ran the first two checks. Both green. The housing association still wanted proof of an independent review, and pentest prices made Bas hesitate.
 
-✅ Policies rewritten per role, with automated tests for every table
-✅ Contractor updates restricted to assigned jobs
-✅ Photos in private storage with signed links, the function secured and the key rotated
-✅ Rate limits, security headers and a tested backup restore, plus a shareable report
+Why the lights disagreed: every table had Row Level Security, which kept the advisor happy. But the policies themselves were the problem. LaunchStudio's test, with accounts for two property managers and two contractors, found:
+🔴 Several policies let any authenticated user read all maintenance requests, across all properties
+🔴 Contractors could change the status of other contractors' jobs by calling the API directly
+🔴 Photo uploads in a public bucket
+🔴 A service key used in an Edge Function that could be called without authentication
 
-At **LaunchStudio**, backed by Manifera's 11+ years of delivering software for security-conscious clients such as Vodafone and TNO, our reviews find and fix the issues scanners can't see. 🛠️
+Turning red to green (LaunchStudio, 6 business days, €2,200):
+✓ Policies rewritten for each role, with automated tests for every table
+✓ Contractor updates restricted to their assigned jobs
+✓ Photos in private storage, with signed links
+✓ The Edge Function secured, and the key rotated
+✓ Rate limits and security headers
+✓ A tested backup restore, and a report
 
-His result: €2,200, six business days. The housing association accepted the report, and a formal pentest a year later found only two low-severity issues. 🚀
+The housing association accepted the report for the first contract year, and asked for a formal pentest before renewal. When that pentest happened a year later, it found just two low-severity issues.
 
-👉 The cost of a security review for an AI-built app: https://launchstudio.eu/en/blog/cost-of-a-security-review-for-an-ai-built-app
+"Every automated check was green. One afternoon of testing with real roles showed that any contractor could read every request in the system." - Bas Kramer
+
+https://launchstudio.eu/en/blog/cost-of-a-security-review-for-an-ai-built-app
 
 #Security #Pentest #Supabase #Lovable #AIFounder #LaunchStudio #Manifera

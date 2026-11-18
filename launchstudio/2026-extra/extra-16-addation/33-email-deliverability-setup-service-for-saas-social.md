@@ -1,21 +1,35 @@
-📧 Daan Willems runs a project management SaaS for architecture firms from Delft, built with v0, Cursor and Supabase. Firms signed up, invited colleagues and then emailed support: nobody received the invitations. Password resets sometimes took an hour, and a large firm's IT department quarantined every message from the app. 📭
+📄 THE DNS ZONE (illustrative, but the pattern was real)
 
-He spent weeks debugging the invitation code. The code was fine. The setup wasn't: 🧠
+TXT  v=spf1 include:provider-one ~all
+TXT  v=spf1 include:provider-two ~all
 
-❌ Auth emails sent through Supabase's built-in development email service
-❌ Invitations from a second provider on an unverified domain
-❌ Two SPF records, so SPF failed for every sender, and no DKIM or DMARC
-❌ The newsletter sent from the main domain, mixing marketing with transactional mail
+Two SPF records. Which means SPF fails for every sender. ✉️
 
-✅ Postmark for transactional email on a dedicated subdomain, connected to Supabase Auth
-✅ The newsletter moved to a separate marketing subdomain with one-click unsubscribe
-✅ SPF merged within limits, DKIM for every sender and DMARC with reporting, then quarantine
-✅ Bounce and complaint webhooks, a suppression list and clean templates with plain text
+Daan Willems runs Bouwbord from Delft, a project management SaaS for architecture firms, built with v0, Cursor and Supabase. Firms signed up, invited their colleagues, and then emailed support: nobody got the invitations. Password resets sometimes took an hour. And one large firm's IT department quarantined every message the app sent.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of running production systems that send email for clients such as Vodafone and TNO, we make sure your app's emails reach the inbox. 🛠️
+Daan spent weeks debugging the invitation code. The code was fine. What the inventory found:
+• Authentication emails went through Supabase's built-in development email service
+• Invitations went through a second provider, from an unverified domain
+• The monthly newsletter went out from the main domain through a marketing tool
+• Two SPF records, no DKIM for the app's emails, and no DMARC
 
-His result: €1,450, four business days. Invitations and resets arrive within seconds, and missing-email tickets dropped to almost none. 🚀
+What LaunchStudio set up (4 business days, €1,450):
+✓ Postmark for transactional email, on a dedicated subdomain
+✓ Supabase Auth using it for sign-up, magic link and reset emails
+✓ The newsletter on a separate marketing subdomain, with one-click unsubscribe
+✓ SPF records merged into one, within the lookup limit
+✓ DKIM for every sender
+✓ DMARC published with monitoring and reporting, moved to quarantine after three weeks of reports
+✓ Bounce and complaint webhooks feeding a suppression list
+✓ Cleaned-up templates, with plain-text versions
 
-👉 Email deliverability setup service for SaaS: https://launchstudio.eu/en/blog/email-deliverability-setup-service-for-saas
+📄 THE DNS ZONE, NOW
+One SPF record. DKIM. DMARC.
+
+Invitations and resets arrive within seconds. The large firm's IT released the app's messages after checking the authentication. And tickets about missing emails went from several a week to almost none.
+
+"I spent weeks debugging the invitation code. The code was fine. The problem was two lines of DNS and an email service meant for testing." - Daan Willems
+
+https://launchstudio.eu/en/blog/email-deliverability-setup-service-for-saas
 
 #Email #Deliverability #DMARC #Supabase #AIFounder #LaunchStudio #Manifera

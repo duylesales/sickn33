@@ -1,21 +1,26 @@
-🚨 Henk Mol chairs an allotment association in Zwolle and built Tuinpad in Lovable: plots, waiting lists, work-day attendance and annual fees for 140 members. While tidying test data before the new season, he asked Lovable to "delete all plots from last year". The generated SQL deleted every plot - including all current assignments. 😳
+Two accidents. Same allotment app. Very different endings. 🌱
 
-He asked the AI to tidy up and it did exactly what he said. The problem was that nothing could undo it: 🧠
+ACCIDENT #1
+Henk Mol chairs an allotment association in Zwolle and built Tuinpad in Lovable: members manage plots, waiting lists, work-day attendance and annual fees. Tidying up test data before the new season, he asked Lovable to "delete all plots from last year."
+The generated SQL deleted every plot record, current assignments for 140 members included.
+Backup to restore: none. The project was on Supabase's free plan.
+Recovery: three weekends of rebuilding assignments from paper records and member emails.
 
-❌ The Supabase project on the free plan, with no backup to restore
-❌ No point-in-time recovery for mistakes made minutes ago
-❌ No copy of the data outside the project
-❌ Three weekends spent rebuilding assignments from paper records and member emails
+BETWEEN THE ACCIDENTS (LaunchStudio, 4 business days, €1,100)
+✓ A paid plan with daily backups
+✓ Point-in-time recovery
+✓ A nightly encrypted export to EU storage in a separate account
+✓ Backups of uploaded plot photos and fee receipts
+✓ A timed restore test, with Henk
+✓ Destructive actions moved behind an admin function with confirmation, instead of free-form prompts
 
-✅ Project moved to a paid plan with daily backups, plus point-in-time recovery
-✅ A nightly encrypted export to EU storage in a separate account
-✅ Uploaded plot photos and fee receipts backed up separately
-✅ A timed restore test - and destructive actions moved behind an admin function with confirmation
+ACCIDENT #2, six months later
+A volunteer accidentally overwrote the waiting list.
+Restored to five minutes before the mistake.
+Recovery time: under twenty minutes.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of operations where tested recovery is a contractual expectation, we make sure a mistake becomes an inconvenience, not a disaster. 🛠️
+"I asked the AI to tidy up and it did exactly what I said. The problem was that nothing could undo it." - Henk Mol
 
-💡 His result: €1,100, four business days. Six months later a volunteer accidentally overwrote the waiting list - it was restored to five minutes before the mistake in under twenty minutes. 🚀
-
-👉 How do you back up a Lovable app's database? Three layers and the restore test that proves it works: https://launchstudio.eu/en/blog/how-do-i-back-up-my-lovable-apps-database
+https://launchstudio.eu/en/blog/how-do-i-back-up-my-lovable-apps-database
 
 #Lovable #Supabase #Backups #DataProtection #LaunchStudio #Manifera

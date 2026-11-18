@@ -1,21 +1,27 @@
-🚨 Lieke Ottenhof's Sportschoolbeheer manages memberships for 54 independent gyms and studios - about 8,000 members. Memberships were activated by a payment webhook that never checked the signature. The provider's dashboard showed every delivery succeeding, so it looked fine. 😳
+🏋️ Imagine a gym where the front desk lets you in if you hand over a note saying "I've paid." No membership card. No check against the till. Just a note.
 
-The URL sat in a public repository for four days. Eleven weeks later, someone started posting fake "payment succeeded" messages to it - 23 memberships across nine gyms, worth €240–€580 a year each, some resold. Here's what an unverified webhook really is: 🧠
+That's how Sportschoolbeheer activated memberships.
 
-❌ A public URL that grants access when called - with no signature check
-❌ No timestamp check, so captured messages could be replayed forever
-❌ No record of processed events, so retries could double-grant
-❌ Membership granted on the message's word, without asking the provider
+Lieke Ottenhof built it in Lovable: membership and access management for independent gyms and fitness studios, 54 locations, around 8,000 members. Subscriptions were activated by a webhook from her payment provider. The handler read the JSON, found the customer and plan, and updated the membership. It never checked the signature. The AI session that wrote it hadn't been asked to, and the provider's dashboard showed every delivery succeeding.
 
-✅ Signature verification on the raw body with a timing-safe comparison - failures rejected and alerted
-✅ Messages older than five minutes refused, and every event ID recorded so replays and retries are harmless
-✅ Verify, record, acknowledge - with activation in a background job, only after confirming the payment with the provider's API
-✅ The 23 fake memberships found by cross-checking payments, plus a monthly reconciliation of memberships against real payments
+Then the webhook URL sat in a public repository for four days, in a config file a contractor committed and removed. Eleven weeks later, someone started posting crafted notes to it. Over a month: 23 memberships activated across nine locations, each worth €240 to €580 a year. Several were resold.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we check whether your webhook URL believes anyone who calls it. 🔏
+A gym owner noticed a member with active access and an empty payment history.
 
-Her result: two business days and €2,500 later, about €9,000 in annual membership value was recovered - and the reconciliation job has since caught two genuine failed-delivery gaps. Four lines of code now guard the entire revenue model. 🚀
+The front desk now checks every note (LaunchStudio, 2 business days, €2,500):
+✓ Signature verification on the raw request body, with a timing-safe comparison, and failures rejected, recorded and alerted
+✓ Messages older than five minutes rejected
+✓ An events table of every processed event ID, so replays and retries are harmless
+✓ The handler reduced to verify, record and acknowledge, with activation in a background job
+✓ Every claimed payment looked up at the provider before any membership is granted
+✓ Uninformative error responses
+✓ The 23 fraudulent memberships found by matching activations against real payments, deactivated, and the gyms notified
+✓ A monthly reconciliation of active memberships against actual payments
 
-👉 Webhooks you never verified: https://launchstudio.eu/en/blog/ai-app-security-webhooks-you-never-verified
+Roughly €9,000 of annual membership value recovered. The reconciliation has since caught two genuine discrepancies, caused by failed deliveries, not fraud. Lieke calls the signature check four lines of code guarding her whole revenue model.
+
+"The provider's dashboard said every delivery succeeded, so I believed the integration was fine. It was fine. It just also accepted messages from everybody else." - Lieke Ottenhof
+
+https://launchstudio.eu/en/blog/ai-app-security-webhooks-you-never-verified
 
 #Webhooks #AppSecurity #Payments #Lovable #LaunchStudio #Manifera

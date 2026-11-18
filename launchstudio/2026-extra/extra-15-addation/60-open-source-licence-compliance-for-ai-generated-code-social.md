@@ -1,21 +1,38 @@
-🚨 Nina Postma built Roosterwijzer with Cursor and Supabase: scheduling and workforce planning for childcare organisations. Two years in, she agreed terms for an investment - subject to technical due diligence. The reviewer asked for a licence inventory. Nina had none. 😳
+⏳ Two weeks before closing
 
-A scan of over 900 packages found a modified AGPL reporting server embedded in an agent-generated service that customers used through the app. The fund wanted a remediation plan before closing. Here's what open source licence compliance means for AI-generated code: 🧠
+THE DEAL
+Nina Postma built Roosterwijzer with Cursor and Supabase: scheduling and workforce planning for childcare organisations, with a Next.js frontend and a separate reporting service. Two years in, with steady revenue, she agreed terms with a sector-focused fund. Subject to technical due diligence.
 
-❌ A modified AGPL component in a customer-facing service
-❌ Two packages with no licence at all
-❌ No third-party notices in the frontend
-❌ A commercial font in PDF reports without a matching licence
+THE REQUEST
+The fund's reviewer asked for a licence inventory. Nina didn't have one.
 
-✅ The AGPL component replaced with a permissive charting library, reports rebuilt with the same layout
-✅ Unlicensed packages swapped for maintained alternatives, an openly licensed font
-✅ A notices page generated automatically at build time
-✅ Licence scanning and SBOM in CI, a dependency policy and licence rules for Cursor
+THE SCAN
+Over 900 packages. Most permissively licensed. But:
+• The reporting service, partly agent-generated, embedded a modified AGPL-licensed charting and reporting server that customers used through the app
+• Two smaller packages had no licence at all
+• The frontend shipped without third-party notices
+• A commercial font was embedded in PDF reports without a matching licence
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we make sure one embedded component can't change your funding terms. 🛠️
+THE RATING
+AGPL issue: high priority. The fund wanted a remediation plan before closing.
 
-Her result: €4,700, 12 business days. The AGPL finding closed within two weeks, the investment completed on the original terms, and the SBOM now goes into public-sector tenders. 🚀
+THE NEXT TWO WEEKS (LaunchStudio, 12 business days, €4,700)
+→ The modified AGPL component replaced with a permissively licensed charting library, with the affected reports rebuilt in the same layout
+→ The two unlicensed packages replaced with maintained alternatives
+→ The commercial font swapped for an openly licensed equivalent
+→ A third-party notices page generated automatically at build time
+→ Licence scanning and SBOM generation in CI, plus a written dependency policy
+→ Cursor's project instructions listing approved libraries and asking for licence checks on new dependencies
+→ The changes and AI tool settings documented for the reviewer
 
-👉 Do you know the licences in your AI-generated code? Here's how to check: https://launchstudio.eu/en/blog/open-source-licence-compliance-for-ai-generated-code
+CLOSING DAY
+The reviewer closed the AGPL finding within two weeks, and the investment completed on the original terms.
+
+AFTERWARDS
+Roosterwijzer now includes its SBOM in public-sector tenders, which childcare organisations' procurement teams increasingly ask for.
+
+"I had never opened a licence file in my life. One embedded component nearly changed the terms of our funding round." - Nina Postma
+
+https://launchstudio.eu/en/blog/open-source-licence-compliance-for-ai-generated-code
 
 #OpenSource #Licensing #DueDiligence #Cursor #AIFounder #LaunchStudio #Manifera

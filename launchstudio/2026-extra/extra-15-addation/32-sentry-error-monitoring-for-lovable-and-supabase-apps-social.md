@@ -1,21 +1,32 @@
-🚨 Kim Janssen built Declaratiedesk with Lovable and Supabase: employees photograph receipts, submit expense claims, managers approve. After launching with 18 companies, usage at several customers dropped sharply. Only one had complained: "it sometimes doesn't work". 😳
+📟 THE FIRST 48 HOURS OF A NEW ERROR DASHBOARD
 
-There was no error monitoring. Within 48 hours of adding Sentry, the dashboard showed exactly what was going wrong. Here's what error monitoring reveals in Lovable and Supabase apps: 🧠
+BEFORE HOUR 0
+Kim Janssen built Declaratiedesk with Lovable and Supabase: employees photograph receipts and submit expense claims, managers approve them. 18 companies after launch. Sign-ups kept coming, but usage at several customers dropped sharply. Only one customer complained: "it sometimes doesn't work." There was no error monitoring at all.
 
-❌ HEIC receipt photos from iPhones failing - while the UI showed "submitted"
-❌ Amounts with a Dutch decimal comma failing to parse
-❌ Monthly report generation timing out for larger companies
-❌ Errors swallowed and logged only to the browser console
+HOUR 0
+LaunchStudio adds Sentry to the frontend and edge functions, with source maps uploaded through a new GitHub deployment pipeline.
 
-✅ Sentry on frontend and edge functions with source maps via a GitHub pipeline
-✅ HEIC conversion, Dutch number parsing and reports moved to a background job
-✅ Error boundaries and clear user messages instead of silent failures
-✅ No PII collection, masked replays, scrubbed amounts and IBANs, plus alerts on key flows
+WITHIN 48 HOURS, THREE ISSUES SURFACE
+1. On iOS Safari, receipt photos in HEIC format failed to upload. The compression step didn't support HEIC. The error went to the console, while the interface showed a successful submission.
+2. Amounts typed with a comma as decimal separator, as Dutch users naturally do, broke claims.
+3. An edge function timed out generating monthly reports for larger companies.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we make sure you see failures before your customers quietly give up. 🛠️
+THE FOLLOWING DAYS (7 business days, €2,200)
+✓ HEIC conversion with a fallback
+✓ Number parsing fixed for Dutch input
+✓ Report generation moved to a background job
+✓ Error boundaries around the main areas, and clear messages instead of swallowed errors
+✓ Privacy settings: no PII collection, masked replays, amounts and IBANs scrubbed
+✓ Alerts for new issues and for any error in submission and approval flows
 
-Her result: €2,200, 7 business days. Failed submissions dropped to nearly zero within two weeks - after discovering that around 30% of iPhone submissions had silently failed since launch. 🚀
+TWO WEEKS LATER
+Failed submissions close to zero. Usage at the affected customers recovered. And one uncomfortable discovery: around 30% of iPhone submissions had silently failed since launch.
 
-👉 Running a Lovable app without monitoring? Here's how to set up Sentry: https://launchstudio.eu/en/blog/sentry-error-monitoring-for-lovable-and-supabase-apps
+EVERY MONDAY SINCE
+Kim opens the Sentry dashboard.
+
+"My customers weren't complaining. They were just quietly giving up. Sentry showed me in two days what I'd missed for two months." - Kim Janssen
+
+https://launchstudio.eu/en/blog/sentry-error-monitoring-for-lovable-and-supabase-apps
 
 #Sentry #ErrorMonitoring #Lovable #Supabase #AIFounder #LaunchStudio #Manifera

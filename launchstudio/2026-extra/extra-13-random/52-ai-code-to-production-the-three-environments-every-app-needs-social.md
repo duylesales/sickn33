@@ -1,21 +1,33 @@
-🚨 Jeroen Smits, a keen angler and IT support specialist in Roosendaal, built Visvergunning on Replit: anglers buy day and season permits for private waters in West Brabant and show a QR permit to wardens. About 2,800 anglers used it. Then, while testing a new feature, he generated test permits using real anglers' emails - and 340 of them received permits they hadn't paid for. 😳
+🎣 ONE ENVIRONMENT FOR EVERYTHING: what happened
 
-Everything ran in one Replit project. A test payment had already hit a real card in live Mollie mode. Owners' sales dashboards were full of test sales. And a migration run during development locked the permits table on a Saturday morning, so wardens couldn't verify QR codes. Here's why AI code needs three environments before production: 🧠
+Testing a new feature ➜ test permits created with real anglers' email addresses ➜ 340 anglers received permits for waters they hadn't paid for
+A test payment ➜ made with a real card, in live Mollie mode ➜ refunded by hand
+Developing a feature ➜ test sales ➜ showing up in water owners' sales dashboards
+Running a migration ➜ on a Saturday morning ➜ the permits table locked, and wardens couldn't verify QR codes
 
-❌ One place for building, testing and real customers
-❌ Test emails reaching real people
-❌ Live payment keys used during testing
-❌ Migrations "just to try it" on live data
+Jeroen Smits, a keen angler and IT support specialist in Roosendaal, built Visvergunning on Replit: anglers buy day and season permits for private fishing waters in West Brabant, show a QR permit to wardens, and water owners see their sales. About 2,800 anglers had bought permits. Everything ran in one Replit project. He thought he was testing. He was experimenting on his customers.
 
-✅ Separate development, staging and production databases
-✅ Mollie test mode in dev and staging; email captured in dev and restricted in staging
-✅ Per-environment secrets in Replit Deployments, plus startup validation of environment variables
-✅ Seed data for staging and a deployment process with migrations run outside peak fishing hours - test sales removed, mistaken permits cancelled with an apology
+THREE ENVIRONMENTS: what happens where now (LaunchStudio, 7 business days, €1,800)
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we make sure nothing you try in development can reach a real customer. ⚙️
+DEVELOPMENT
+Its own database · Mollie in test mode · every email captured, nothing sent
 
-His result: €1,800, seven business days. The next season sold around 4,500 permits with no test data reaching anglers or owners and no weekend outages - and Jeroen now experiments freely. 🚀
+STAGING
+Its own database, with seed data · Mollie in test mode · email only to Jeroen's own addresses
 
-👉 AI code to production: the three environments every app needs: https://launchstudio.eu/en/blog/ai-code-to-production-the-three-environments-every-app-needs
+PRODUCTION
+Real anglers · real payments · migrations run deliberately, outside peak fishing hours
+
+PLUS
+✓ Per-environment secrets in Replit Deployments
+✓ Startup validation of environment variables
+✓ Test sales removed from production reports
+✓ The mistaken permits cancelled, with an apology email
+
+The following season: around 4,500 permits sold, no test data reaching anglers or owners, and no weekend outages. Jeroen now builds freely in development, knowing nothing he does there can reach a real angler.
+
+"I thought I was testing. I was actually running experiments on my customers. Three environments meant I could finally experiment on myself." - Jeroen Smits
+
+https://launchstudio.eu/en/blog/ai-code-to-production-the-three-environments-every-app-needs
 
 #Replit #Staging #DevOps #Environments #LaunchStudio #Manifera

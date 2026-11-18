@@ -1,21 +1,29 @@
-🚨 Joost Vermeulen spent fifteen years in freight forwarding in Venlo. Over two months of evenings, Claude Code built him Vrachtbod: shippers post loads, small transport companies submit price quotes. Six shippers and twenty carriers joined the pilot. Then a carrier mentioned, helpfully, that he could see competing bids by changing a number in the URL. 😳
+💬 A founder, an agent and a bug (dramatized, but the facts are real)
 
-Joost asked Claude Code to fix it. The agent added a check to the bid detail page, but the API endpoint behind it, and two others, still returned any bid to any logged-in user. Here's what taking an agent-built app to production really involves: 🧠
+JOOST: A carrier says he can see competing bids by changing a number in the URL. Fix it.
+AGENT: Done. I've added a check to the bid detail page.
+JOOST: Great.
 
-❌ Endpoints returning any bid to any logged-in user
-❌ A Mollie API key in a committed seed script
-❌ Tests that mocked the database entirely
-❌ Production deploys run from Joost's laptop
+What nobody checked: the API endpoint behind that page, and two others, still returned any bid to any logged-in user.
 
-✅ Ownership checks on all eleven endpoints with business data, plus Row Level Security
+Joost Vermeulen spent fifteen years in freight forwarding in Venlo. He'd never written production code, but he was comfortable in a terminal, and over two months of evenings Claude Code built him Vrachtbod: a Next.js platform where shippers post loads and small transport companies submit price quotes. Six shippers and twenty carriers joined the pilot.
+
+When LaunchStudio reviewed the project, the list grew:
+• Bids exposed through three endpoints, not one
+• A Mollie API key in a committed seed script
+• Tests that mocked the database entirely
+• Production deploys run by hand from Joost's laptop
+
+The real fix (9 business days, €3,200):
+✅ Ownership checks on all eleven endpoints that return business data, plus Postgres Row Level Security as a second layer
 ✅ The leaked key rotated and the git history cleaned
 ✅ Negative authorisation tests for every role
-✅ An automated pipeline with staging, and a CLAUDE.md with security conventions
+✅ An automated pipeline with staging, and a CLAUDE.md with security conventions for future agent sessions
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we tell you which of your agent's decisions you can trust, and fix the ones you can't. 🛠️
+Next quarter: around 2,300 quotes, no access incidents. Twice, the new tests blocked a deploy that would have reopened bid visibility. Joost still ships features with Claude Code.
 
-His result: €3,200, 9 business days. Vrachtbod relaunched and handled around 2,300 quotes the next quarter with no access incidents - and the new tests twice blocked a deploy that would have reopened bid visibility. 🚀
+"Claude Code built more than I could have imagined. What I needed was someone to tell me which of its decisions I could trust." - Joost Vermeulen
 
-👉 Built your app with Claude Code? Here's how to get it production-ready: https://launchstudio.eu/en/blog/claude-code-app-to-production-launch-service-for-agent-built-apps
+Built your app with Claude Code? https://launchstudio.eu/en/blog/claude-code-app-to-production-launch-service-for-agent-built-apps
 
 #ClaudeCode #AIAgents #Logistics #AIFounder #LaunchStudio #Manifera

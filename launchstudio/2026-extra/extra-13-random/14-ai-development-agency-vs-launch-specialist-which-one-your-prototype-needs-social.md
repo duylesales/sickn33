@@ -1,21 +1,34 @@
-🚨 Nina Scholten, a producer at a documentary company in Hilversum, built Scriptbank in Lovable: a searchable library for scripts, interview transcripts and clearance documents, with project-based access for freelancers. Three production companies wanted to pay. A respected agency ran two workshops - and proposed €38,000 and four months to rebuild and redesign it. 😳
+🗂️ Sort the work: needed this month, or needed in two years?
 
-It was a good proposal, for a company she might be in two years. What actually blocked launch was narrower: removed freelancers could still open documents via saved links, files sat in a public bucket, there was no download audit trail, and the app ran on a preview URL with no backups. Here's how to tell whether your prototype needs an agency or a launch specialist: 🧠
+Nina Scholten, a producer at a small documentary company in Hilversum, built Scriptbank in Lovable: a searchable library where production teams store scripts, interview transcripts and clearance documents, with project-based access for freelance editors and researchers. Three production companies used it informally, and wanted to pay.
 
-❌ Paying for discovery and design you've already done with AI
-❌ Rebuilding the screens your users already validated
-❌ Months without revenue or feedback while version two is built
-❌ Missing the real blockers: access, file security, audit, hosting
+A well-regarded agency, after two discovery workshops, proposed €38,000 over four months. A thorough, professional proposal. For a company Nina might be in two years.
 
-✅ Project-scoped access enforced in the database, with immediate revocation
-✅ Files moved to private storage with signed, expiring links
-✅ A download audit log for clearance documents
-✅ EU hosting on her own domain with backups and monitoring, plus Stripe subscriptions
+NEEDED THIS MONTH (the launch blockers)
+🔴 Freelance editors removed from a project could still open its documents through saved links
+🔴 Uploaded files sat in a publicly accessible storage bucket
+🔴 No audit trail of who had downloaded clearance documents
+🔴 The app ran on a Lovable preview URL, with no backups
+🔴 No way for the three companies to pay
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we tell you honestly whether it's a launch job or an agency job - and Manifera's full-cycle teams are there when you truly need one. ⚙️
+NEEDED IN TWO YEARS (maybe)
+🕓 A rebuild on the agency's preferred framework
+🕓 A redesigned interface
+🕓 Roadmap features drafted in the workshops
 
-Her result: €3,400, twelve business days, original Lovable interface intact. Seven production companies signed within four months - and when a custom integration was needed a year later, she went to Manifera for that. 🚀
+What LaunchStudio did with the first list (Launch & Grow, 12 business days, €3,400, plus €49/month):
+✓ Project-scoped access enforced in the database, with immediate revocation
+✓ Files in private storage, with signed, expiring links
+✓ A download audit log
+✓ EU hosting on Nina's own domain, with backups and monitoring
+✓ Stripe subscriptions for the three companies
 
-👉 AI development agency vs launch specialist: which one your prototype needs: https://launchstudio.eu/en/blog/ai-development-agency-vs-launch-specialist-which-one-your-prototype-needs
+Scriptbank launched with its original Lovable interface and signed seven production companies within four months.
+
+And the second list? The following year, one company needed a custom integration with its editing software. Nina went to Manifera for that bigger piece of work, as an agency-style project, exactly when it was needed.
+
+"The agency proposal was good. It was just a proposal for a company I might be in two years, not the one I was that month." - Nina Scholten
+
+https://launchstudio.eu/en/blog/ai-development-agency-vs-launch-specialist-which-one-your-prototype-needs
 
 #Lovable #AIDevelopment #Startups #NoCode #LaunchStudio #Manifera

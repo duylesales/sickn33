@@ -1,21 +1,29 @@
-🚨 Joost Hermsen built Montagebon in Lovable: digital work orders for installation companies. After an audit, his Row Level Security was fixed, keys were moved server-side and payments ran through webhooks. One week later, a customer reported seeing another company's work orders. 😳
+🧮 A little Postgres logic
 
-The audit had fixed his app. One innocent prompt broke it again. Here's what happened: 🧠
+Policy A: technicians see work orders of their own company
+OR
+Policy B: all authenticated users can read all work orders
+= everyone sees everything
 
-❌ He asked Lovable to "make sure technicians can see work orders assigned by any planner"
-❌ Lovable added a new policy giving every logged-in user read access to the work orders table
-❌ Postgres combines permissive policies with OR - so that one policy overrode all the correct ones
-❌ No rules, no review of migrations and no test to catch it before customers did
+Permissive policies combine with OR. Add one generous policy, and it outranks every careful one. 🔓
 
-✅ The broad policy removed, and project rules added that forbid policy changes
-✅ Technician assignment logic moved into a database function, out of reach of regenerated components
-✅ A Playwright test checking cross-company visibility on every deployment
-✅ A GitHub notification for any change in supabase/migrations
+Joost Hermsen built Montagebon in Lovable: digital work orders for installation companies, where technicians record jobs, materials and customer signatures. After an audit, everything was fixed: Row Level Security, keys moved server-side, payments handled by webhooks.
 
-At **LaunchStudio**, backed by Manifera - whose founder Herre Roelevink comes from cybersecurity - we set up guardrails so you can keep prompting without undoing your security. 🛠️
+One week later, a customer reported seeing another company's work orders.
 
-💡 His result: €1,300, four business days. Joost kept building in Lovable; the automated test blocked one similar regression before deployment, and migration alerts flagged two more risky suggestions before he accepted them. 🚀
+Joost had asked Lovable to "make sure technicians can see work orders assigned by any planner." Lovable added Policy B, right next to the correct ones. One innocent prompt, and the audit was undone.
 
-👉 Worried the next prompt will undo your security fixes? Here are the five guardrails that make them last: https://launchstudio.eu/en/blog/how-do-i-stop-lovable-prompts-from-breaking-security
+The guardrails LaunchStudio added (4 business days, €1,300):
+✓ Policy B removed
+✓ Project rules forbidding policy changes through prompts
+✓ The technician assignment logic moved into a database function
+✓ A Playwright test that checks cross-company visibility on every deployment
+✓ A GitHub notification for any change in supabase/migrations
+
+Joost kept building in Lovable. In the following months, the automated test blocked one similar regression before it was deployed. And the migration notifications let him catch two more risky suggestions before accepting them.
+
+"The audit fixed my app. One innocent prompt broke it again. The guardrails are what made the fix last." - Joost Hermsen
+
+https://launchstudio.eu/en/blog/how-do-i-stop-lovable-prompts-from-breaking-security
 
 #Lovable #Supabase #RLS #AppSecurity #LaunchStudio #Manifera

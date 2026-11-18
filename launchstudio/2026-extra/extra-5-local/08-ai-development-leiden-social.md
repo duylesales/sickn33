@@ -1,20 +1,33 @@
-🧬 Tim Verhoeven, a recent Leiden University PhD grad, built LabLoop with v0 - a sample-tracking tool for university spinout labs. It piloted well with two teams. Then a pilot lab's data protection officer ran standard due diligence before wider adoption.
+LAB NOTES: LabLoop, Leiden 🧪
 
-Knowing the science and knowing what a DPO requires are two completely different bars. 🧠
+HYPOTHESIS
+If the app handles the workflow well, it's ready for wider use.
 
-❌ Sample records tied to identifiable research subjects had zero encryption at rest
-❌ There was no audit trail showing which lab members accessed or modified records
-❌ This was disqualifying for the lab's compliance requirements, full stop
-❌ v0 built a working data-entry interface - it never added the protections a DPO checks for
+SETUP
+Tim Verhoeven, a recent Leiden University PhD, builds LabLoop with v0. It's a sample-tracking tool for university spinout labs: experiment batches, storage conditions, chain-of-custody for biological samples. Two spinout teams near the Bio Science Park pilot it. The workflow holds up.
 
-✅ Implement field-level encryption for sensitive records, not just HTTPS
-✅ Build a full audit logging system showing who accessed what and when
-✅ Produce data processing documentation before institutional partners ask for it
+TEST
+One pilot lab's data protection officer runs standard due diligence before wider adoption.
 
-At **LaunchStudio**, Manifera's decade-plus of work for research-standard clients like TNO is exactly the rigor a biotech SaaS pilot needs to pass review. 🛡️
+OBSERVATIONS
+1. Sample records, some tied to identifiable research subjects, are not encrypted at rest.
+2. There is no audit trail of who accessed or changed a record.
+3. Verdict: disqualifying for the lab's compliance requirements.
 
-The data protection officer approved LabLoop for continued use across three additional labs after the fix. 🚀
+CONCLUSION
+Hypothesis rejected. "It works" and "it passes a DPO" are two separate experiments.
 
-👉 Building an AI development project with research data? Check your encryption before a DPO does: https://launchstudio.eu/en/blog/ai-development-leiden
+INTERVENTION (LaunchStudio, 7 business days, €1,950)
+• Field-level encryption for sensitive records
+• Full audit logging: who accessed what, and when
+• Data processing documentation
+
+FOLLOW-UP
+The DPO approved LabLoop for continued use across three additional labs.
+
+RESEARCHER'S NOTE
+"I knew the science. I genuinely didn't know that 'the app works' and 'the app meets a DPO's requirements' were two completely different bars to clear." - Tim Verhoeven
+
+Running research data through an AI-built tool? Peer-review your encryption before a DPO does: https://launchstudio.eu/en/blog/ai-development-leiden
 
 #AINativeFounder #LaunchStudio #Manifera #AIDevelopment #Leiden

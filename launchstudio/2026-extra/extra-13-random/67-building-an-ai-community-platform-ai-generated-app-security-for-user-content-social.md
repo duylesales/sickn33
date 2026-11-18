@@ -1,21 +1,31 @@
-🚨 Lieke Mertens, a knitwear designer in Zutphen, built Breiclub in Lovable: knitters share projects, ask questions in groups, message each other and buy patterns from independent designers. About 9,000 members across the Netherlands and Flanders in a year. And growth brought problems she had no tools for. 😳
+🧶 PATTERN: a community that holds its shape
 
-Spam accounts posted counterfeit-yarn links faster than she could delete them. A member harassed another by DM, and the only fix was deleting the harasser in the database - evidence included. Project photos carried the GPS location of members' homes. A post with a script tag briefly redirected one group, and anyone could read the private "designers only" group by changing its ID. Here's what AI-generated app security means for a community platform: 🧠
+Lieke Mertens, a knitwear designer in Zutphen, built Breiclub in Lovable: knitters share projects, ask questions in groups, message each other and buy patterns from independent designers. Within a year, about 9,000 members across the Netherlands and Flanders. She built a place for knitters, and forgot that a place for people is also a place for people who behave badly.
 
-❌ User content rendered without sanitisation
-❌ Photos uploaded with home locations in their metadata
-❌ No rate limits, reporting or moderation tools
-❌ Private groups protected only by the interface
+DROPPED STITCHES (what went wrong)
+• Spam accounts posted links to counterfeit yarn shops faster than Lieke could delete them
+• A member harassed another through private messages, and the only way to stop it was deleting the account in the database, which also deleted the evidence
+• Project photos carried GPS locations of members' homes
+• A post with a script tag briefly redirected visitors in one group
+• Anyone could read the private "designers only" group by changing its ID in the URL
 
-✅ All user content sanitised with a strict allow-list
-✅ Photo metadata stripped and upload limits added
-✅ Rate limits for new accounts and link posting, group membership and messages enforced in the database
-✅ Report buttons, a moderation queue, mute/suspend/ban with statements of reasons, member blocking, an audit log - and a public notice form for illegal content
+THE NEW PATTERN (LaunchStudio, 9 business days, €2,300)
+Row 1: Sanitise all user content with a strict allow-list
+Row 2: Strip photo metadata, and add upload limits
+Row 3: Rate-limit new accounts and link posting
+Row 4: Enforce group membership and messages in the database
+Row 5: Add report buttons and a moderation queue
+Row 6: Add mute, suspend and ban, each with a statement of reasons
+Row 7: Let members block each other
+Row 8: Keep an audit log
+Row 9: Add a public notice form for illegal content
+Cast off.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we protect members from outsiders - and from each other. ⚙️
+FINISHED PIECE
+Spam dropped by more than 90% within a week, mostly thanks to the rate limits and new-account rules. Lieke and two volunteer moderators now handle reports in about twenty minutes a day. And Breiclub passed 14,000 members the following winter.
 
-Her result: €2,300, nine business days. Spam dropped by more than 90% within a week, Lieke and two volunteer moderators now spend about twenty minutes a day on reports, and Breiclub passed 14,000 members the next winter. 🚀
+"I built a place for knitters and forgot that a place for people is also a place for people who behave badly." - Lieke Mertens
 
-👉 Building an AI community platform? AI generated app security for user content: https://launchstudio.eu/en/blog/building-an-ai-community-platform-ai-generated-app-security-for-user-content
+https://launchstudio.eu/en/blog/building-an-ai-community-platform-ai-generated-app-security-for-user-content
 
 #Community #ContentModeration #DSA #Lovable #LaunchStudio #Manifera

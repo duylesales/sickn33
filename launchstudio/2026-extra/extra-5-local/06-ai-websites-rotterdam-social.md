@@ -1,20 +1,23 @@
-🍪 Ruben Visser built CargoLane, a freight-matching platform for Rotterdam port truckers and shippers, in Bolt and had a functional marketplace live within two weeks. Then a shipping company's compliance officer, evaluating CargoLane as a vendor, flagged that the cookie banner never actually blocked tracking scripts before consent.
+3 myths about AI-built websites, debunked by one compliance officer in Rotterdam 🚢
 
-An AI website builder gives you a polished site. It doesn't give you a compliant one. 🧠
+MYTH 1: "My site has a cookie banner, so I'm covered."
+FACT: Ruben Visser's CargoLane had one too. It appeared, it had Accept and Reject buttons, it disappeared when clicked. The tracking scripts fired anyway, before anyone clicked anything.
 
-❌ The cookie banner displayed but did nothing to actually block tracking scripts pre-consent
-❌ There was no data processing agreement available for business customers
-❌ The gap surfaced during a client's own vendor compliance review, not before
-❌ B2B buyers in logistics notice these gaps fast - and they say something
+MYTH 2: "Compliance is a big-company problem."
+FACT: CargoLane is a freight-matching platform for independent truckers and shippers around the port, built in Bolt and live in two weeks. The first shipping company that evaluated it as a vendor asked for a data processing agreement. There wasn't one.
 
-✅ Implement consent management that genuinely blocks non-essential scripts pre-consent
-✅ Add the missing security headers (Content-Security-Policy, X-Frame-Options)
-✅ Produce accurate privacy documentation and a standard DPA template for business clients
+MYTH 3: "If something's wrong, I'll notice."
+FACT: Ruben didn't. A client's compliance officer did, during onboarding. In Rotterdam's B2B logistics world, buyers check compliance for a living.
 
-At **LaunchStudio**, Manifera's compliance work for clients like CFLW Cyber Strategies shapes the same rigor we apply to a Bolt-built B2B site. 🛡️
+What LaunchStudio fixed in 6 business days (€1,600):
+• Consent management that actually blocks non-essential scripts until consent is given
+• The missing security headers
+• Accurate privacy documentation and a standard DPA template for business clients
 
-CargoLane passed the shipping company's vendor review on the second submission and has since used the same documentation to close two more enterprise logistics clients. 🚀
+The result: CargoLane passed the vendor review on the second submission, then used the same documents to close two more enterprise logistics clients.
 
-👉 Launching an AI website for B2B clients? Run a compliance pass before procurement does: https://launchstudio.eu/en/blog/ai-websites-rotterdam
+"I built a website. I didn't realize I'd also need to prove, in writing, exactly what it does with data - until a client asked for it." - Ruben Visser
+
+Selling to B2B buyers with an AI website? Run the compliance pass before procurement does: https://launchstudio.eu/en/blog/ai-websites-rotterdam
 
 #AINativeFounder #LaunchStudio #Manifera #AIWebsites #Rotterdam

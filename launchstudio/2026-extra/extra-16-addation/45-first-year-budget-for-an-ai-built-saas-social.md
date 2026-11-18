@@ -1,21 +1,34 @@
-📊 Lieke Postma runs a scheduling SaaS for physiotherapy practices from Leeuwarden, built with Lovable and Supabase. Before launching, she made a first-year budget. Version one had three lines: Lovable, Supabase and a domain. About €600. Then she talked to her accountant and to LaunchStudio. 🧾
+📊 A FIRST-YEAR BUDGET, VERSION 1
+Lovable
+Supabase
+A domain
+Total: about €600
 
-Her real budget needed far more than three lines: 🧠
+📊 VERSION 2, after a talk with her accountant and a LaunchStudio intro call
+AI tools
+Hosting, with a planned upgrade to a paid Supabase plan for backups
+Email
+Monitoring
+Launch Ready project: €2,300
+Ongoing care: €49/month from month four
+Legal templates, reviewed by a lawyer
+Accounting
+Marketing: two regional physiotherapy events
+Contingency: 20%
+Total: around €11,500, plus Mollie fees modelled as a share of revenue
 
-❌ No hosting upgrade planned for backups and growth
-❌ No production readiness, legal templates or accountant
-❌ No marketing budget for physiotherapy events
-❌ No contingency for the costs nobody sees coming
+Lieke Postma runs Fysioplanner, a scheduling SaaS for physiotherapy practices from Leeuwarden, built with Lovable and Supabase. Her first budget had three lines. The real one had about twenty, and every single one showed up during the year.
 
-✅ A Launch Ready project of €2,300 and €49 per month ongoing care from month four
-✅ A planned Supabase upgrade, email, monitoring, legal templates and accounting
-✅ Mollie fees modelled as a share of revenue, and a 20% contingency
-✅ The contingency later covering an Apple developer account and extra AI usage, with limits added per practice
+WHAT HAPPENED IN THE YEAR
+• Month five: hosting upgraded, as planned
+• The contingency covered two surprises: an Apple developer account when a practice asked for a mobile app link, and extra AI usage after she added appointment summaries, which led to limits per practice
+• The Launch Ready project (6 business days) covered security, production setup, email, backups and monitoring
 
-At **LaunchStudio**, backed by Manifera's 11+ years of delivering software for clients such as Vodafone and TNO, fixed prices and €49 per month make the technical part of your first-year budget predictable. 🛠️
+YEAR-END REPORT
+34 paying practices. Spending within about 5% of budget. And because technical costs were fixed or capped, Lieke moved the unused marketing reserve into a third event, which brought in eight more practices.
 
-Her result: a total of about €11,500, and 34 paying practices by year end, with spending within about 5% of budget. The unused marketing reserve funded a third event that brought eight more practices. 🚀
+"My first budget was three lines long. The real one had twenty lines, and every one of them showed up during the year. Planning for them meant none of them were a crisis." - Lieke Postma
 
-👉 A first-year budget for an AI-built SaaS: https://launchstudio.eu/en/blog/first-year-budget-for-an-ai-built-saas
+https://launchstudio.eu/en/blog/first-year-budget-for-an-ai-built-saas
 
 #StartupBudget #SaaS #Lovable #Supabase #AIFounder #LaunchStudio #Manifera

@@ -1,21 +1,29 @@
-🚨 Bart Engelen's Leveranciersportaal handles supplier qualification for 14 procurement teams. A regional utility with 2,000 employees wanted to buy - if sign-in went through their Entra ID, enforced, with leavers losing access automatically. He enabled Supabase SAML, let organisations paste their own IdP metadata, and linked users to existing accounts by email. 😳
+🧭 The path a pre-launch review found, in plain words
 
-A review a week before go-live found that any trial account could register its own test identity provider, assert any customer's email address - and be linked straight into that person's account. Here's what SSO for an enterprise customer actually requires: 🧠
+START: any organisation, a free trial included, could register its own identity provider.
+GAP 1: nothing limited which email domains that provider could claim.
+GAP 2: incoming users were linked to existing accounts by email address alone.
+END: a trial account could claim the address of any user at any customer, and be linked straight into their account.
 
-❌ No domain verification, so any connection could assert any email domain
-❌ Account linking by email, unconditionally
-❌ 30-day sessions, so a disabled Entra user kept access for up to a month
-❌ No monitoring of SAML certificate expiry
+And a second path, slower but real: sessions lasted thirty days, so an employee disabled in the customer's directory could keep access for up to a month.
 
-✅ DNS TXT domain verification; every connection limited to verified domains, free email providers refused
-✅ Linking only for verified domains, with password sign-in disabled on enforced domains
-✅ Just-in-time provisioning at the Member role, Entra groups mapped to roles, enforcement in the API with one logged break-glass owner
-✅ 10-hour SSO sessions, SCIM deprovisioning, certificate expiry alerts and a configuration guide for the customer's IT team
+Bart Engelen built Leveranciersportaal in Lovable: supplier qualification and certificate management for 14 procurement teams. A regional utility with around 2,000 employees wanted to buy, on one condition: sign-in through their Entra ID, enforced, with leavers losing access automatically. Bart enabled Supabase SAML, added a screen for pasting identity provider metadata, and linked by email so trial users kept their data. The review came a week before go-live. ⚡
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we implement SSO when a product's first enterprise deal depends on it. ⚙️
+Closing both paths (LaunchStudio, 5 business days, €5,600):
+✓ Domain verification through DNS TXT records, with each connection limited to the organisation's verified domains, and free email providers refused
+✓ Account linking only on verified domains, with password sign-in turned off for linked accounts on enforced domains
+✓ The metadata screen restricted to verified organisations on the enterprise plan
+✓ Just-in-time provisioning at Member, with three Entra groups mapped to roles and re-checked at every sign-in
+✓ Enforcement in the API as well as the sign-in page, plus one logged break-glass owner at the utility
+✓ SSO sessions cut to ten hours
+✓ SCIM directory sync through a dedicated identity layer, so deactivated employees lose access within minutes
+✓ Certificate expiry stored, with an alert at sixty days
+✓ A configuration guide for the utility's IT department
 
-His result: €5,600, five business days. Logs confirmed nobody had exploited the gap. The utility signed at €38,000 a year - and eleven months later the expiry alert fired, so the certificate rotated without a single locked-out user. 🚀
+Logs confirmed no other organisation had registered an SSO connection before the fix. The utility signed for €38,000 a year, and its IT team configured the connection in an afternoon. Eleven months later the expiry alert fired, and the certificate was rotated without a single locked-out user.
 
-👉 AI app security: SSO when an enterprise customer asks: https://launchstudio.eu/en/blog/ai-app-security-sso-when-an-enterprise-customer-asks
+"I had built SSO that let any trial account sign in as anyone at any customer, as long as it typed their email address into its own test identity provider. The review found it a week before the utility went live." - Bart Engelen
+
+https://launchstudio.eu/en/blog/ai-app-security-sso-when-an-enterprise-customer-asks
 
 #SSO #EnterpriseSaaS #AppSecurity #Supabase #LaunchStudio #Manifera

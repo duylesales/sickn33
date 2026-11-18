@@ -64,7 +64,7 @@ LaunchStudio's engineers audited the full database schema, added row-level secur
 
 **Result:** Zero data-isolation incidents during the TT weekend trial, and RaceGrid signed a third team for the following season.
 
-> *"I builtRaceGrid to be fast, not to be a security project. I had no idea the way Bolt structured my database meant every team could see every other team's data. LaunchStudio found it and fixed it in less time than it took me to build the feature in the first place."*
+> *"I built RaceGrid to be fast, not to be a security project. I had no idea the way Bolt structured my database meant every team could see every other team's data. LaunchStudio found it and fixed it in less time than it took me to build the feature in the first place."*
 > - **Bram Wolters, Founder, RaceGrid (Assen)**
 
 **Cost & Timeline:** €1,350 (security audit, RLS implementation, key migration) - completed in 4 business days.

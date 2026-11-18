@@ -1,20 +1,27 @@
-👗 Iris Bakker built StyleCrate, a curated fashion subscription box with Cursor, and converted her first 60 waitlist signups into paying subscribers within two weeks. Then billing broke: no handling for failed charges, expired cards, or paused subscriptions - and several customers got charged twice from a retry loop with no idempotency check. 😳
+What the AI planned for vs. what customers actually did 💳
 
-AI software development nails the application layer. The billing lifecycle is a separate problem entirely. 🧠
+PLANNED: A customer signs up, takes the style quiz, and gets charged every month.
+ACTUAL: Payments failed. Cards expired. Customers paused. All within the first billing cycle.
 
-❌ Subscription logic only handled the "happy path" of a successful monthly charge
-❌ A retry loop with no idempotency check double-charged multiple customers
-❌ Iris had no way to see which subscriptions were actually in good standing
-❌ None of this showed up in her own testing - only in the first real billing cycle
+PLANNED: When a charge fails, the system retries.
+ACTUAL: The retry loop had no idempotency check. Several customers were charged twice.
 
-✅ Rebuild billing logic around Stripe's actual subscription lifecycle events
-✅ Add idempotency keys to prevent duplicate charges
-✅ Build a simple internal dashboard to see subscription status at a glance
+PLANNED: The founder knows who's subscribed.
+ACTUAL: There was no way to see which subscriptions were in good standing.
 
-At **LaunchStudio**, we take AI-generated output and build the production layer around it - the same standard Manifera applies for enterprise clients like Vodafone and TNO. 🛡️
+This was StyleCrate, a curated fashion subscription box from Arnhem founder Iris Bakker, part of the city's ArtEZ-adjacent creative scene. She built it in Cursor. Sign-ups, preference quizzes and box customization all worked beautifully, and her first 60 waitlist signups became paying subscribers within two weeks.
 
-Her result: StyleCrate processed its next three billing cycles with zero duplicate charges and now manages 180+ active subscribers. 🚀
+The happy path was perfect. Billing doesn't live on the happy path.
 
-👉 Billing logic feeling shakier than the demo suggested? Send us your prototype link for free advice: https://launchstudio.eu/en/blog/ai-software-development-arnhem
+What LaunchStudio rebuilt (8 business days, €1,400):
+→ Billing logic driven by Stripe's subscription lifecycle events
+→ Idempotency keys, so a retry can never charge twice
+→ A simple internal dashboard showing subscription status at a glance
+
+The next three billing cycles: zero duplicate charges. Today: 180+ active subscribers.
+
+"Cursor built me a subscription flow that looked complete. It had never seen what happens when a real customer's card expires mid-cycle." - Iris Bakker
+
+Running subscriptions on AI-generated code? Test the unhappy path: https://launchstudio.eu/en/blog/ai-software-development-arnhem
 
 #AINativeFounder #LaunchStudio #Manifera #StripeBilling #Arnhem

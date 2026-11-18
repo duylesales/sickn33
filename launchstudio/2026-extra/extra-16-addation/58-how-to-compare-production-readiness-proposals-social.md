@@ -1,21 +1,29 @@
-🪑 Mirjam Hoekman runs a marketplace for second-hand office furniture from Zaandam, built with Bolt and Supabase: companies list furniture, buyers pay deposits through Mollie. She received three proposals to make it production ready. All three said "production ready". Each meant something different. 🤔
+📖 production ready (adj.), three definitions from three proposals
 
-She compared them on five elements: definition, assessment method, approach per area, proof and deliverables. 🧠
+DEFINITION 1
+"A full security audit and optimisation."
+In practice: specific only about security headers and a dependency update. Payments, storage, staging and ownership not mentioned. Testing meant "a thorough check."
 
-❌ Proposal one: specific only about headers and a dependency update, with "testing" meaning "a thorough check"
-❌ Proposal two: a backend migration that couldn't name the problems requiring it
-❌ Payments, storage, staging and ownership missing from at least one proposal
-❌ No acceptance criteria in two of the three
+DEFINITION 2
+"Migrate to a different backend, with a new admin system."
+In practice: many areas covered, but no explanation of which current problems actually required a migration.
 
-✅ A clear definition: sellers and buyers only see their own listings and orders, verified by tests
-✅ Deposits confirmed by idempotent webhooks, with reconciliation
-✅ Staging, migrations, backups with a restore test and monitoring
-✅ An account inventory and summary report she could share
+DEFINITION 3 (LaunchStudio)
+"Sellers and buyers only see their own listings and orders, verified by tests. Deposits confirmed by idempotent webhooks, with reconciliation. Listing photos with company information moved to the right storage settings. Staging, migrations, backups with a restore test, monitoring, and an inventory of every account."
+In practice: a definition of done, an assessment method, and specific work per area.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of writing and reviewing technical proposals for clients such as Vodafone and TNO, our proposals define production ready for your app and list what you keep at the end. 🛠️
+Mirjam Hoekman runs Kantoorkringloop from Zaandam, a marketplace for second-hand office furniture built with Bolt and Supabase, where companies list furniture and buyers pay deposits through Mollie. All three proposals said "production ready." Only one could say what that meant for her marketplace, and how she'd know it was true.
 
-Her result: €2,700, seven business days. The review found buyers could see sellers' internal notes and some deposits recorded twice. The marketplace then launched in three new cities. 🚀
+She chose definition 3, at €2,700 (7 business days). The assessment found:
+• Buyers could see sellers' internal notes through a broad policy
+• Some deposits had been recorded twice after Mollie retries
 
-👉 How to compare production readiness proposals: https://launchstudio.eu/en/blog/how-to-compare-production-readiness-proposals
+Both fixed, along with everything in the definition.
+
+The marketplace launched in three new cities. Mirjam used the summary report to answer a corporate seller's procurement questions, and the same comparison matrix to evaluate a later proposal for a logistics integration.
+
+"Each proposal said 'production ready'. Only one could tell me what that meant for my marketplace, and how I would know it was true." - Mirjam Hoekman
+
+https://launchstudio.eu/en/blog/how-to-compare-production-readiness-proposals
 
 #ProductionReady #Proposals #Bolt #Supabase #AIFounder #LaunchStudio #Manifera

@@ -1,21 +1,38 @@
-🚨 Kees Verbruggen built Clubkas with Bolt and Supabase: amateur sports clubs in Noord-Brabant manage memberships, collect contributions and sell event tickets. All payments went through Kees's own Mollie account, and he transferred each club's money monthly. 😳
+⚽ AGENDA: Clubkas general meeting
 
-With 34 clubs, it became untenable. Transfers took a full day and occasionally went to the wrong club. His accountant raised concerns about holding others' funds. Here's how Mollie Connect works for Dutch marketplaces: 🧠
+1. Opening
+Kees Verbruggen built Clubkas with Bolt and Supabase: amateur sports clubs in Noord-Brabant use it to manage memberships, collect contributions and sell event tickets. 34 clubs and growing.
 
-❌ All clubs' money in one founder account
-❌ Manual monthly transfers, sometimes to the wrong club
-❌ iDEAL redirects treated as proof of payment
-❌ The Mollie API key in a frontend environment file
+2. Treasurer's report
+All club payments ran through Kees's own Mollie account. Each month he transferred every club's money, keeping a small fee.
 
-✅ Mollie Connect via OAuth, with encrypted tokens and visible onboarding status
-✅ Payments on each club's account with an application fee for Clubkas
-✅ SEPA direct debit with mandates from a first iDEAL payment
-✅ Webhooks verified with the right club's credentials, platform refunds, key rotation and daily reconciliation
+3. Points raised by members
+• Club treasurers want payments in their own accounts
+• Kees's accountant has concerns about holding funds for others
+• Monthly transfers take a full day, and occasionally go to the wrong club
+• Refunds for cancelled events are calculated by hand
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we let Mollie hold the money, so you can focus on the platform. 🛠️
+4. Technical points
+• The redirect after iDEAL was treated as proof of payment, so some failed payments were recorded as paid
+• The Mollie API key sat in a frontend environment file
 
-His result: €6,200, 15 business days. Clubs receive their money directly, payment status errors stopped, and around 4,200 contributions were collected via SEPA in the first season. 🚀
+5. Proposal (LaunchStudio, 15 business days, €6,200)
+• Mollie Connect: each club connects its own Mollie account through OAuth, tokens encrypted and stored server-side, onboarding status visible to club admins
+• Payments created on each club's account, with an application fee for Clubkas
+• Membership contributions via SEPA direct debit, with mandates from a first iDEAL payment
+• A webhook handler that fetches payment status with the right club's credentials, idempotently
+• Event cancellations refunded through the platform, with clear fee rules
+• The exposed key rotated, and daily reconciliation between Mollie and Clubkas
 
-👉 Running a Dutch marketplace? Here's how Mollie Connect works: https://launchstudio.eu/en/blog/mollie-connect-for-dutch-marketplaces
+6. Vote
+Carried.
+
+7. Any other business
+First season on the new setup: around 4,200 membership contributions collected via SEPA, failed collections handled automatically, payment status errors gone, and no more transfer day for Kees.
+
+8. Closing words
+"My clubs trusted me with their money, which was exactly the problem. Now Mollie holds it and I just make the platform work." - Kees Verbruggen
+
+https://launchstudio.eu/en/blog/mollie-connect-for-dutch-marketplaces
 
 #Mollie #MollieConnect #SEPA #SportsTech #AIFounder #LaunchStudio #Manifera

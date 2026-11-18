@@ -1,21 +1,32 @@
-🚨 Jolanda Smeets, who runs a small accountancy practice in Venray, built Aangiftebox in Lovable: clients get a checklist for their tax return, upload documents from their phones, answer questions and approve the final return. Four more North Limburg firms joined - about 2,100 households. Then a client noticed she could open another household's annual income statement by changing a number in the download URL. 😳
+📦 For years, clients brought their tax documents to the accountant in a shoebox.
 
-Documents - with BSNs on nearly every page - sat in a public bucket. Mobile uploads failed and clients re-sent photos, creating duplicates. On the busiest April evening the portal froze for an hour. Staff at all five firms could see all clients, approvals were a checkbox that could be re-ticked after edits, and nothing was ever deleted. Here's what taking an accountancy portal from AI prototype to production requires: 🧠
+The shoebox had its limits. But it was only ever opened by the accountant. Nobody else's papers ended up inside it. And it didn't go unresponsive on the busiest evening of April.
 
-❌ Tax documents with BSNs at public URLs
-❌ Uploads that fail on mobile data
-❌ Every firm's staff seeing every client
-❌ Approvals not tied to a fixed document
+Jolanda Smeets, who runs a small accountancy practice in Venray, built Aangiftebox in Lovable to replace the shoebox: clients get a checklist of documents for their tax return, upload them from their phones, answer a few questions and approve the final return. She offered it to four other small firms in North Limburg, about 2,100 households in total.
 
-✅ Private storage with signed links and malware scanning, plus resumable uploads with duplicate detection
-✅ Firm, team and client separation with row level security, and MFA for staff and as a client default
-✅ Approvals recorded against a frozen PDF with server timestamps, and retention rules per document type
-✅ Connection pooling and background processing, load-tested at three times the April peak - with the exposure assessed and reported on advice
+The first April, the digital shoebox did worse than the cardboard one:
+• Uploads failed for clients on mobile data, and many resent their photos, creating duplicates
+• On the busiest evening, the portal froze for an hour
+• A client could open another household's annual income statement by changing a number in the download URL
+• Documents, with BSNs on nearly every page, sat in a public storage bucket
+• Staff at all five firms could see all clients
+• Approvals were a checkbox that could be ticked again after edits
+• Nothing was ever deleted
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we make your portal at least as careful as the shoebox your clients used to bring. ⚙️
+A shoebox worth trusting (LaunchStudio, Launch & Grow, 12 business days, €3,400, plus €49/month):
+✓ Private storage with signed links, and malware scanning
+✓ Resumable uploads, with duplicate detection
+✓ Firm, team and client separation with Row Level Security
+✓ MFA for staff, and as a default for clients
+✓ Approvals recorded against a frozen PDF, with server timestamps
+✓ Retention rules per document type
+✓ Connection pooling and background processing, then a load test at three times the April peak
+✓ The exposed documents assessed with Jolanda, who notified the affected household and the regulator, on advice
 
-Her result: €3,400 over twelve business days, plus €49/month. The next tax season ran without outages or cross-client access, and Aangiftebox added six more firms. 🚀
+The next tax season ran without outages, mobile uploads completed reliably, and cross-client access became impossible. Aangiftebox added six more firms, several naming its security description in their decision.
 
-👉 AI prototype to production for accountancy firms: client documents at year-end: https://launchstudio.eu/en/blog/ai-prototype-to-production-for-accountancy-firms-client-documents-at-year-end
+"My clients hand me their whole financial life once a year. The portal had to be at least as careful as the shoebox - and it wasn't." - Jolanda Smeets
+
+https://launchstudio.eu/en/blog/ai-prototype-to-production-for-accountancy-firms-client-documents-at-year-end
 
 #Accountancy #TaxSeason #DataProtection #Lovable #LaunchStudio #Manifera

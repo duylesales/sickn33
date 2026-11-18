@@ -1,21 +1,26 @@
-🚨 Ruben Dekker runs cheese-farm tours around Alkmaar and built Kaasroute in Bolt: tourists book, pay and get a QR ticket; partner farms see upcoming visitors. In its second summer, a guest who worked in IT emailed him politely. She'd changed the booking number in her ticket URL - and seen another family's names, phone number and hotel. 😳
+🕵️ A guest's first five minutes with a cheese farm tour app (minute marks dramatized)
 
-She'd also noticed that /admin loaded every booking of the season. The admin link wasn't shown anywhere in the app, so Ruben assumed nobody would find it. Here's what an attacker tries in the first ten minutes against an AI-built app: 🧠
+MINUTE 1: She opens her ticket. The URL ends in a booking number.
+MINUTE 2: She changes the number. Another family's booking appears: names, phone number, hotel.
+MINUTE 3: She types /admin after the domain. A page loads listing every booking of the season.
+MINUTE 5: She emails the founder. Politely.
 
-❌ Minute 1: keys in the page source (a payment API key was there)
-❌ Minute 3: predictable addresses like /admin with no server-side role check
-❌ Minute 5: change a number in the URL and read someone else's record
-❌ Minute 7: login forms with no rate limit and revealing error messages
+Ruben Dekker organises tours of traditional cheese farms around Alkmaar and built Kaasroute in Bolt: tourists book a tour, pay online and get a digital ticket with a QR code, and partner farms see upcoming visitors. In its second summer, Kaasroute handled a few thousand bookings, many from international visitors. The admin link wasn't shown anywhere in the app. Ruben assumed nobody would look.
 
-✅ Admin area and its API locked behind server-side role checks on day one
-✅ Ownership checks on tickets, with unguessable codes instead of sequential numbers
-✅ The payment key rotated and moved server-side; login rate-limited with uniform errors
-✅ Partner portal restricted per farm, logs reviewed, and breach-notification assessment done
+The guest, who worked in IT, looked in her first five minutes. And Ruben was lucky it was her.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering - and a founder with a cybersecurity background - we close the doors in the same order attackers try them. ⚙️
+What LaunchStudio did, starting the same day (4 business days, €1,100):
+✓ Day one: the admin area and its API locked behind server-side role checks
+✓ Day one: ownership checks, so a ticket is visible only to its booker, with unguessable ticket codes instead of sequential numbers
+✓ A payment API key found in the page source, rotated and moved server-side
+✓ Rate limiting and uniform error messages on login
+✓ The farm partners' portal limited to each farm's own visitors
+✓ Logs checked for signs of earlier access, and help assessing whether a data breach notification was needed
 
-His result: €1,100, four business days. No evidence of wider access, the season finished safely, the guest got a free tour for two - and the site now has a "report a security issue" address. 🚀
+No evidence of wider access turned up in the logs. Kaasroute finished the season with the fixes in place. Ruben sent the guest a free tour for two, and added a "report a security issue" address to the site's footer.
 
-👉 AI-generated app security: what an attacker tries first: https://launchstudio.eu/en/blog/ai-generated-app-security-what-an-attacker-tries-first
+"I assumed nobody would look. Somebody looked in her first five minutes, and I'm lucky it was her." - Ruben Dekker
+
+https://launchstudio.eu/en/blog/ai-generated-app-security-what-an-attacker-tries-first
 
 #AppSecurity #Bolt #OWASP #Startups #LaunchStudio #Manifera

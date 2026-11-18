@@ -1,21 +1,39 @@
-🚨 Mark Wouters built Loonstrookportaal with Bolt and Supabase: accounting firms share payslips with their clients' employees. On a Saturday morning, an employee emailed: changing a number in the download link showed a colleague's payslip - then one from a different company. 😳
+⏱️ The 72-hour clock, as it ran for one small SaaS
 
-Mark's first instinct was to patch the link and say nothing. Instead, he called LaunchStudio. Here's what the first 72 hours of a GDPR data breach look like for a small SaaS: 🧠
+SATURDAY MORNING
+An email arrives. An employee of a bakery chain changed a number in a download link on Loonstrookportaal and saw a colleague's payslip. Then a payslip from a different company.
 
-❌ Payslips served through predictable URLs from a public bucket for seven months
-❌ No storage access logs to prove what was or wasn't opened
-❌ Over 9,000 payslips from 41 accounting firms potentially exposed
-❌ No incident procedure or notification templates
+Mark Wouters built Loonstrookportaal with Bolt and Supabase: a portal where small accounting firms share payslips and annual statements with their clients' employees.
 
-✅ Storage made private within the hour, links revoked and logs preserved
-✅ All 41 firms notified the same afternoon, with a technical summary for their AP notifications
-✅ Signed links expiring after five minutes and RLS rebuilt per firm and employee
-✅ Access logging, negative authorisation tests and a written incident procedure
+THE FIRST INSTINCT
+Patch the link and say nothing. Instead, Mark called LaunchStudio.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we help you contain, notify and fix - fast and honestly. 🛠️
+WITHIN THE HOUR
+• Document storage made private
+• All existing download links revoked
+• Storage and API logs preserved
 
-His result: €4,200, containment within hours and full remediation in 8 business days. All 41 firms met their 72-hour deadline, and 39 stayed - several citing the speed and honesty of the notification. 🚀
+THE ANALYSIS
+Documents had been served from a public bucket through predictable URLs for seven months. Storage access logs had never been enabled, so nobody could prove which documents had or hadn't been opened. Over 9,000 payslips from 41 accounting firms were potentially exposed.
 
-👉 Had a data breach in your SaaS? Here's what to do in the first 72 hours: https://launchstudio.eu/en/blog/gdpr-data-breach-response-the-72-hours-for-a-small-saas
+THE SAME AFTERNOON
+As a processor, Mark notified all 41 firms: a factual message, a list of affected documents per firm, a contact number. LaunchStudio provided a technical summary for the firms' own notifications to the Autoriteit Persoonsgegevens.
+
+THE FOLLOWING DAYS (full remediation in 8 business days, €4,200)
+• Private storage with signed links that expire after five minutes
+• Row Level Security rebuilt per firm and per employee
+• Access logging on storage and database
+• Negative authorisation tests on every document route
+• A written incident procedure with customer notification templates
+
+72 HOURS
+All 41 firms met their deadline with the information provided.
+
+AFTERWARDS
+Two firms left. 39 stayed, several naming the speed and honesty of the notification as the reason. No further exposure since.
+
+"Patching the link quietly would have felt easier for a day. Telling my customers within hours is the only reason I still have a business." - Mark Wouters
+
+https://launchstudio.eu/en/blog/gdpr-data-breach-response-the-72-hours-for-a-small-saas
 
 #DataBreach #GDPR #AVG #IncidentResponse #AIFounder #LaunchStudio #Manifera

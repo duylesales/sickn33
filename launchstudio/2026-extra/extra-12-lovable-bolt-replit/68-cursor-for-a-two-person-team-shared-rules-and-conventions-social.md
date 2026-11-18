@@ -1,21 +1,31 @@
-🚨 Steven Doornekamp and his co-founder built Zorgdeclaratie in Cursor - declaration handling between 52 allied health practices and insurers. They split the work by feature and built in parallel for four months. No rules file, no review. Then, at the end of December, 60 declarations went out with the wrong period and two insurers rejected them. 😳
+👥 One repository. Two products in it.
 
-The cause: each half calculated week numbers with a different date library - and they disagreed. One repository, two products inside it. Here's how a two-person team keeps AI editors building one codebase: 🧠
+                     FOUNDER A's HALF        FOUNDER B's HALF
+Area                 declarations and        practice admin and
+                     insurer integration     reporting
+Date library         one                     a different one
+Forms                one approach            another approach
+Validation           one library             a second library
+Errors               thrown                  returned as values
+Table names          plural                  singular
+Can the other
+founder work here?   no                      no
 
-❌ Two date libraries, two form approaches, two validation libraries in one repo
-❌ Errors thrown in one half and returned as values in the other
-❌ Plural table names on one side, singular on the other
-❌ Neither founder able to work in the other's half - a week of illness stopped half the product
+Steven Doornekamp and his co-founder built Zorgdeclaratie together in Cursor: declaration handling between allied health practices and insurers, used by 52 practices. They split the work and ran in parallel for four months, with no rules file and no review. A week of illness stopped half the product. 🏥
 
-✅ A rules file written together in an afternoon, from the actual code: one library per job, five never-broken rules
-✅ The losing libraries removed; date handling unified with a test from the insurer specification
-✅ Every change through a pull request with a five-minute diff review by the other person
-✅ One shared vocabulary - declaration, practice, insurer, period - replacing three sets of synonyms
+What forced the issue: a declaration period calculated with one date library in one half and the other library in the other half. At the end of December, the two disagreed about week numbers. 60 declarations went out with the wrong period, and two insurers rejected them.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we write this rules file when we hand a project to a client team - it's what keeps the work consistent after we leave. ⚙️
+One product again (LaunchStudio, 3 business days, €3,100):
+✓ A rules file written together in an afternoon, from the code: one library per job (dates, forms, validation, errors), naming conventions, patterns, and five rules never to break
+✓ The losing libraries removed and converted in shared areas, with the rest marked as exceptions to converge over time
+✓ Date handling unified, and the week-number bug fixed with a test written from the insurer specification
+✓ Pull requests with a five-minute diff review by the other founder
+✓ One vocabulary (declaration, practice, insurer, period), replacing three sets of synonyms
 
-Their result: €3,100, three business days. The 60 declarations were resubmitted - and when his co-founder was away for two weeks, the product kept moving. 🚀
+The 60 declarations were resubmitted. The bigger change, in Steven's view: both of them now work in either half. He found that out when his co-founder was away for two weeks and the product kept moving.
 
-👉 Cursor for a two-person team: shared rules and conventions: https://launchstudio.eu/en/blog/cursor-for-a-two-person-team-shared-rules-and-conventions
+"We had one repository and two products in it. Neither of us could work in the other's half, and a date library disagreement at the end of December got sixty declarations rejected." - Steven Doornekamp
+
+https://launchstudio.eu/en/blog/cursor-for-a-two-person-team-shared-rules-and-conventions
 
 #Cursor #SmallTeams #CodeReview #AICoding #LaunchStudio #Manifera

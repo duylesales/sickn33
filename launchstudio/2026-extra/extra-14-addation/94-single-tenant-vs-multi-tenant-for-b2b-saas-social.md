@@ -1,21 +1,23 @@
-🚨 Victor Hamers built Inspectieloket in Bolt and Supabase: an inspection and compliance tool for property maintenance companies, multi-tenant, with 25 customers. Then a national housing corporation wanted to sign - but required a dedicated database in an EU region of its choice, with its own backup schedule. His first instinct: copy the whole project by hand. 😳
+🖨️ A photocopy, or a second print from the same file?
 
-He almost created a second product by copying the first. One codebase deployed twice was the answer. Here's what copying would have caused: 🧠
+Make a photocopy, and you have two documents that start drifting apart the moment someone edits one of them. Print twice from the same file, and every edit shows up on both.
 
-❌ Two codebases drifting apart with every change
-❌ Migrations run by hand on separate databases
-❌ The dedicated customer falling behind on features and fixes
-❌ An enterprise deal priced without the real cost of running a second instance
+Victor Hamers almost made a photocopy.
 
-✅ The multi-tenant setup hardened first, with organisation-based RLS and automated isolation tests
-✅ A dedicated Supabase project for the housing corporation, deployed from the same codebase
-✅ A GitHub Actions workflow applying migrations and edge functions to both projects in sequence
-✅ Enterprise pricing that covers the extra instance, plus documentation
+He built Inspectieloket in Bolt and Supabase: an inspection and compliance tool for property maintenance companies. Multi-tenant, 25 customers. Then a national housing corporation wanted to sign, on one condition: a dedicated database, in an EU region of its choosing, with its own backup schedule.
 
-At **LaunchStudio**, backed by Manifera's 11+ years building both multi-tenant and dedicated B2B systems, we keep multi-tenant as the default and automate dedicated instances only when a contract truly requires one. 🛠️
+Victor's first instinct was to copy the project by hand. That would have meant a second product, and every feature built twice.
 
-💡 His result: €5,200, fourteen business days. The housing corporation signed at an enterprise price, and every feature released since has reached both environments on the same day. 🚀
+The "same file, printed twice" approach (LaunchStudio, 14 business days, €5,200):
+✓ First, the multi-tenant setup hardened, with organisation-based RLS and automated isolation tests
+✓ Then, a dedicated Supabase project for the housing corporation, deployed from the same codebase
+✓ A GitHub Actions workflow that applies migrations and edge functions to the shared project and the dedicated one in sequence, so both stay identical
+✓ Documentation for both environments
 
-👉 Single-tenant or multi-tenant for your B2B SaaS? Here's how to decide: https://launchstudio.eu/en/blog/single-tenant-vs-multi-tenant-for-b2b-saas
+The housing corporation signed at an enterprise price that covered the extra instance. Every feature released since has reached both environments on the same day.
+
+"I almost created a second product by copying the first. One codebase deployed twice was the answer." - Victor Hamers
+
+https://launchstudio.eu/en/blog/single-tenant-vs-multi-tenant-for-b2b-saas
 
 #SaaS #MultiTenant #Supabase #B2B #LaunchStudio #Manifera

@@ -1,21 +1,34 @@
-🔨 Daniël Peeters runs a platform in Eindhoven built with Lovable and Supabase that connects homeowners with local contractors for small renovation jobs. Homeowners post jobs, contractors quote, homeowners pay a deposit through the platform. With 120 contractors, he wanted to expand to three more regions, and his payment partner asked for documentation before enabling live payouts. 💶
+👀 WHO SEES WHAT? A renovation marketplace, before and after
 
-The assessment found a marketplace that connected people a little too well: 🧠
+BEFORE
+Any contractor ➜ every competitor's quotes
+Any contractor ➜ homeowners' phone numbers and addresses on job listings, before any quote was accepted
+Anyone who changed an ID ➜ other people's messages
+Daniël ➜ payouts, tracked by hand in a spreadsheet
+Nobody ➜ a way to report a fake profile or an abusive message
 
-❌ Any contractor could see all competitors' quotes
-❌ Homeowners' phone numbers and addresses visible before any quote was accepted
-❌ Messages readable by changing an ID in the address, and deposits recorded twice on webhook retries
-❌ Payouts tracked in a spreadsheet, and no way to report a fake profile or abusive message
+AFTER (LaunchStudio, Launch & Grow, 17 business days, €6,700, plus €49/month)
+A contractor ➜ only their own quotes
+A homeowner's contact details ➜ only after accepting a quote
+Messages ➜ only the participants
+Daniël ➜ automatic payouts, visible to contractors in the app
+Everyone ➜ a report button
 
-✅ Contractors see only their own quotes, contact details appear only after acceptance and messages are limited to participants, all with tests
-✅ The partner's marketplace product with connected accounts, idempotent webhooks, fees, refunds and automatic payouts
-✅ Daily reconciliation and consistent contractor onboarding, as his lawyer advised
-✅ Reporting buttons, a moderation queue with decision records, rate limits and an admin panel
+Daniël Peeters runs Klusmaatje in Eindhoven, built with Lovable and Supabase: homeowners post small renovation jobs, contractors send quotes, and the homeowner pays a deposit through the platform, which keeps a fee. With 120 contractors and growing demand, Daniël wanted three more regions. His payment partner asked for documentation before enabling live payouts.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of building platforms with payments and multiple user types for clients such as Vodafone and TNO, we separate both sides of your marketplace and make the money reconcile. 🛠️
+Also wrong before: deposits recorded twice when webhooks retried, and contractors' trade details collected inconsistently.
 
-His result: €6,700, seventeen business days. Live payouts enabled two weeks later, and launch in three new regions. 🚀
+What LaunchStudio built:
+✓ The access rules above, enforced by Row Level Security, with tests on both sides of the marketplace
+✓ Payments on the partner's marketplace product: connected accounts, idempotent webhooks, platform fees, refunds and automatic payouts, plus daily reconciliation
+✓ Consistent contractor onboarding for trade information, as Daniël's lawyer advised
+✓ Reporting buttons, a moderation queue with decision records, and rate limits on new accounts
+✓ An admin panel for support, and documentation for the payment partner
 
-👉 Production launch for marketplace apps: https://launchstudio.eu/en/blog/production-launch-for-marketplace-apps
+Live payouts were enabled two weeks after the partner received the documentation. Daniël launched in three new regions, and contractors stopped asking when they'd be paid.
+
+"My marketplace connected homeowners and contractors very well. Too well: everyone could see everyone. Now each side sees exactly what it should, and the money follows the rules." - Daniël Peeters
+
+https://launchstudio.eu/en/blog/production-launch-for-marketplace-apps
 
 #Marketplace #StripeConnect #DSA #Lovable #AIFounder #LaunchStudio #Manifera

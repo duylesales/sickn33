@@ -1,20 +1,27 @@
-⚙️ Tessa van Dijk picked Cursor to build DocuTrack, a document-approval workflow tool for logistics and office-services firms in Nieuwegein. She liked the control it gave her - but wired authentication using a pattern that only checked user roles in the frontend React components. A beta user found the admin dashboard just by typing the URL directly. No server-side check stopped them. 😳
+Unpopular opinion: there is no "best" AI code tool for launching a real product.
 
-The right AI code tool still leaves you the wrong question to answer alone. 🧠
+Tessa van Dijk picked a good one. She chose Cursor to build DocuTrack, a document-approval workflow for logistics and office-services firms around Nieuwegein, because it gave her speed and control over her codebase.
 
-❌ Role checks lived only in the frontend, never verified on the server
-❌ A beta tester reached the admin approval dashboard with zero authorization
-❌ Cursor executes your architecture decisions faster - it doesn't stop you from making the same mistakes a less experienced developer would
-❌ Roughly 80% of AI-built projects never reach production, and tool choice rarely explains why - the infrastructure gap does
+It also carried out her architecture decisions as fast as she made them. One of them was an auth pattern Cursor suggested that checked user roles only in the frontend React components.
 
-✅ Implement server-side role verification through session-tied middleware
-✅ Rebuild API routes to reject unauthorized requests before they touch any data
-✅ Add automated tests covering every user role in the workflow
+A beta user, testing with a colleague's login out of curiosity, typed the admin dashboard URL straight into the browser. It opened. Nothing on the server asked whether they were allowed in.
 
-At **LaunchStudio**, we work with output from Lovable, Bolt, Cursor, and v0 alike - closing the exact gaps each tool tends to leave behind. 🛡️
+🧪 Try this on your own app tonight. It takes 2 minutes:
+1. Log in as your lowest-permission user
+2. Paste in the URL of an admin page
+3. If it loads, your role checks live in the UI, not on the server
 
-Her result: DocuTrack passed a follow-up security review from its first paying logistics client and is now used by four Nieuwegein-area firms. 🚀
+What LaunchStudio changed for DocuTrack (5 business days, €1,000):
+→ Server-side role verification through session-tied middleware
+→ API routes that reject unauthorized requests before they touch any data
+→ Automated tests covering all three user roles
 
-👉 Mid-build and want to know what your stack's production gap costs to close? See our process: https://launchstudio.eu/en/blog/ai-code-tool-nieuwegein
+DocuTrack passed a follow-up security review from its first paying logistics client and now runs at four Nieuwegein-area firms.
+
+"Cursor gave me speed and control, but it doesn't know what a secure authorization pattern looks like unless I do." - Tessa van Dijk
+
+Lovable, Bolt, Cursor or v0: the tool matters less than what you check afterwards.
+
+👉 https://launchstudio.eu/en/blog/ai-code-tool-nieuwegein
 
 #AINativeFounder #LaunchStudio #Manifera #AICodeTool #Nieuwegein

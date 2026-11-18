@@ -1,20 +1,17 @@
-⚠️ Niels Bakker, a former test engineer at a Helmond automotive supplier, built TestTrack - a scheduling tool for vehicle testing slots - using Lovable in two weeks. Three facilities signed on to pilot it. Then a facility manager reported a test slot double-booked, with zero warning to either party until they physically showed up at the same bay. 😳
+🧵 1/ Two teams arrived at the same vehicle test bay in Helmond, for the same slot. Both had a booking. Neither had seen a warning.
 
-The UI blocked double-booking. The server never did. 🧠
+2/ The app was TestTrack, a scheduling and results-logging tool for vehicle testing slots. Niels Bakker, a former test engineer at a Helmond automotive supplier, built it in Lovable in two weeks.
 
-❌ No database-level constraint preventing overlapping reservations
-❌ Lovable had only enforced the rule on the client side
-❌ A slow request or a race condition between two simultaneous bookings could still create a conflict
-❌ Nobody saw it coming because it never failed in the demo
+3/ Three testing facilities in the region signed on to pilot it within a month. In the second week of the pilot, a facility manager reported the double booking.
 
-✅ Add a database constraint making overlapping bookings impossible at the data layer
-✅ Add a proper conflict-resolution message on the frontend
-✅ Treat physical-world scheduling stakes as a specific pre-launch check, not an afterthought
+4/ The cause: Lovable had built the UI to prevent double bookings on the client side. Nothing enforced it on the server. A slow network request, or two users booking at the same moment, could still create a conflict.
 
-At **LaunchStudio**, we bring Manifera's production engineering discipline to exactly this kind of silent client-side-only enforcement gap. 🛡️
+5/ The fix (LaunchStudio, 4 business days, €950): a database constraint that makes overlapping bookings impossible at the data layer, a clear conflict message on the frontend, and monitoring.
 
-TestTrack's result: it has run without a single booking conflict since the fix, and Niels added a fourth facility the following month, citing reliability as the deciding factor. 🚀
+6/ Since then: not a single booking conflict. The following month Niels added a fourth facility, which named reliability as the deciding factor.
 
-👉 Building a scheduling or booking tool with real-world consequences? Check the fine print before it costs you a client: https://launchstudio.eu/en/blog/25-build-app-with-ai-helmond
+7/ "The bug only happened once, but once was enough to lose a facility's trust if we hadn't fixed it fast. LaunchStudio understood the physical stakes, not just the code." - Niels Bakker
+
+8/ If your app books something physical, the rule has to live on the server. Full story: https://launchstudio.eu/en/blog/25-build-app-with-ai-helmond
 
 #AINativeFounder #LaunchStudio #Manifera #ProductionReady #Helmond

@@ -1,20 +1,32 @@
-🚀 Daan Smit built SensorForge - an IoT fleet-monitoring dashboard - entirely in Cursor, working nights after his day job. It worked well for his first pilot customers. Then a routine update went wrong: he pushed straight to production, no staging test, and a database migration took the dashboard offline for six hours.
+🔴 INCIDENT REPORT: SensorForge
+Severity: High | Downtime: 6 hours | Status: Resolved
 
-Being a strong solo coder and running production infrastructure are two completely different disciplines. 🧠
+SUMMARY
+A routine update took SensorForge offline. SensorForge is an IoT fleet-monitoring dashboard that Delft founder Daan Smit built entirely in Cursor for engineering teams running distributed sensor networks.
 
-❌ No CI/CD pipeline - every deploy was a manual process run straight from a laptop
-❌ No staging environment, so the change was tested against production or not at all
-❌ The outage hit during a pilot customer's active monitoring window - the worst possible time
-❌ No rollback process, so Daan had to manually reconstruct the database from partial logs
+TIMELINE
+1. Daan pushes a change straight to production. No staging test.
+2. A database migration runs incorrectly.
+3. The dashboard goes dark during a pilot customer's active monitoring window.
+4. There is no rollback. Daan rebuilds the previous database state by hand from partial logs.
 
-✅ Build a proper CI/CD pipeline with automated testing before code reaches production
-✅ Add a staging environment that mirrors production for every migration
-✅ Add a one-command rollback process so a bad deploy is reversible in seconds
+ROOT CAUSE
+Not the code. The process. Every deploy went from a laptop straight to production, with nothing in between.
 
-At **LaunchStudio**, Manifera's 120+ engineers bring 11+ years of production deployment experience to exactly this kind of solo-founder infrastructure gap. 🛡️
+CONTRIBUTING FACTOR
+Writing good code and running production infrastructure are different skills. Daan had the first one.
 
-LaunchStudio eliminated manual production deploys entirely, and SensorForge hasn't had an unplanned outage since. 🚀
+REMEDIATION (LaunchStudio, 8 business days, €2,100)
+✔ CI/CD pipeline with automated tests
+✔ Staging environment that mirrors production
+✔ One-command rollback
 
-👉 Building AI products solo? Fix your deploy pipeline before it costs you a customer: https://launchstudio.eu/en/blog/build-ai-delft
+OUTCOME
+Manual production deploys eliminated entirely.
+
+FOUNDER STATEMENT
+"I could write the code. I had no idea how exposed I was every single time I hit deploy, until it actually cost a customer six hours of downtime." - Daan Smit
+
+Building AI products solo? Set up the pipeline before you have to write your own incident report: https://launchstudio.eu/en/blog/build-ai-delft
 
 #AINativeFounder #LaunchStudio #Manifera #BuildAI #Delft

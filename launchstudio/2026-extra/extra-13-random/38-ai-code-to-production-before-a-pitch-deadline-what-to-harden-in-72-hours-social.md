@@ -1,21 +1,34 @@
-🚨 Max Kuipers, a former chef in Amsterdam, built Groentegilde in Bolt: households subscribe to weekly veg boxes from farms around Amsterdam, pick pickup points and skip weeks. He was selected for an accelerator demo day - with investors who, the organisers warned, "like to sign up live". He had 72 hours. 😳
+⏳ T-minus 72 hours to demo day
 
-The triage found the Mollie live key in the frontend bundle, home addresses of his 60 pilot households readable by any logged-in user, an admin page for farm order lists with no authentication, and the app running on a Bolt preview URL that changed every time he edited anything. Here's what to harden when AI code goes to production before a pitch deadline: 🧠
+T-72: THE SITUATION
+Max Kuipers, a former chef in Amsterdam, built Groentegilde in Bolt: community-supported agriculture, where households subscribe to weekly vegetable boxes from farms around Amsterdam, pick a pickup point and skip weeks. He was selected for an accelerator's demo day, with an investor panel that, the organisers said, "likes to sign up live."
 
-❌ A live payment key in the browser
-❌ Real customers' addresses exposed to anyone with an account
-❌ An admin page open to the internet
-❌ A demo on a URL that could change mid-pitch
+T-72: THE TRIAGE
+🔴 The Mollie live API key in the frontend bundle
+🔴 The home addresses of 60 pilot households readable by any logged-in user
+🔴 An admin page for farm order lists, reachable without logging in
+🔴 The app on a Bolt preview URL that changed every time Max edited anything
 
-✅ The Mollie key rotated and payment creation moved server-side, with test mode and a visible banner for the demo
-✅ Household-level access on subscriptions and addresses
-✅ The admin page locked behind server-side roles
-✅ A separate demo database with fictional households, his own domain with SSL and an uptime check - and a code freeze 18 hours before the pitch
+T-72 TO T-18: THE SPRINT (LaunchStudio, €1,900)
+✓ The Mollie key rotated, and payment creation moved server-side
+✓ The demo on Mollie test mode, with a visible banner
+✓ Household-level access on subscriptions and addresses
+✓ The admin page behind server-side roles
+✓ A separate demo database, with fictional households
+✓ The demo on Max's own domain, with SSL and an uptime check
+✓ Prepared answers to likely technical questions
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we make your app safe for exactly the people who'll click it on demo day - then finish the job properly. ⚙️
+T-18: CODE FREEZE
+Max stopped trying to make it perfect, and made it safe for exactly the people who'd click it on Thursday.
 
-His result: €1,900, three days. Three panel members signed up live without incident, Max answered the data-protection question specifically, and Groentegilde got a pre-seed offer. Full hardening followed two weeks later. 🚀
+T-0: THE PITCH
+Three panel members signed up live. No incidents. One asked how customer data was protected, and Max answered specifically.
 
-👉 AI code to production before a pitch deadline: what to harden in 72 hours: https://launchstudio.eu/en/blog/ai-code-to-production-before-a-pitch-deadline-what-to-harden-in-72-hours
+T+14 DAYS
+A pre-seed offer from one investor. And the full production hardening, with webhooks, EU migration, staging and tests, done as a separate project in the two weeks after demo day.
+
+"I stopped trying to make it perfect and made it safe for exactly the people who'd click it on Thursday. That was the right amount of ambition for three days." - Max Kuipers
+
+https://launchstudio.eu/en/blog/ai-code-to-production-before-a-pitch-deadline-what-to-harden-in-72-hours
 
 #DemoDay #Pitch #Startups #Bolt #LaunchStudio #Manifera

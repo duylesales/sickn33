@@ -1,21 +1,40 @@
-🚨 Nienke Brandts's Cursusplein lists courses from 210 training providers. Her page speed score on a laptop was 88, so she considered performance solved. Field data from real visitors said otherwise: 5.8 s LCP, 410 ms INP, 0.34 layout shift - and 70% of visitors were on phones. 😳
+📝 REPORT CARD: Cursusplein, a course marketplace with 210 providers
 
-Her mobile booking conversion was a third of desktop. She'd assumed that was behaviour. It was speed. Here's how to fix Core Web Vitals in an AI-built frontend: 🧠
+Laptop page speed score .......... 88 (the grade the founder trusted)
 
-❌ Public pages assembled by JavaScript after a 780 KB bundle downloaded
-❌ The hero image lazy-loaded - delaying the very element LCP measures
-❌ 3.8 MB listing pages full of full-size thumbnails
-❌ Third-party fonts, a chat widget everywhere, and banners inserted after render
+Field data, 75th percentile, real visitors:
+LCP (largest element visible) .... 5.8 s ❌
+INP (response to taps) ........... 410 ms ❌
+CLS (layout shift) ............... 0.34 ❌
 
-✅ Listing and detail pages statically generated - LCP from 5.8 s to 2.1 s on that change alone
-✅ Hero loaded eagerly with dimensions, thumbnails resized to modern formats (340 KB per page)
-✅ JavaScript split by route - three unneeded libraries removed, bundle down to 190 KB - and fonts self-hosted
-✅ Chat widget only in the booking flow, space reserved for late elements, and everything checked on a four-year-old Android phone
+Visitors on phones ............... roughly 70%
+Mobile booking conversion ........ a third of desktop
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we measure what your real visitors experience - not what a laptop test says. 📱
+Teacher's comment: "Assumed to be a behaviour difference. It was performance."
 
-Her result: two business days and €2,900 later, field LCP is 1.9 s, INP 140 ms and CLS 0.02. Mobile booking conversion rose from 1.1% to 2.9% - about €4,100 a month in extra commission. 🚀
+Nienke Brandts built Cursusplein in Lovable, where learners search, compare and book training courses. Her customers weren't on laptops. They were on phones, on trains. 🚆
 
-👉 Core Web Vitals in an AI-built frontend: https://launchstudio.eu/en/blog/lovable-seo-core-web-vitals-in-an-ai-built-frontend
+The tutoring (LaunchStudio, 2 business days, €2,900):
+✓ Listing and detail pages statically generated with server-rendered HTML, which alone moved LCP from 5.8 to 2.1 s
+✓ The listing hero image given explicit dimensions and taken out of lazy loading, which had been delaying the largest element on purpose
+✓ Thumbnails in modern formats at display size: a listing page from 3.8 MB to 340 KB
+✓ JavaScript split by route, with three libraries removed from the public bundle (a date library, a charting library used on one admin screen, and a component library used for two buttons): 780 KB to 190 KB
+✓ Two fonts self-hosted, one preloaded, with a fallback stack, replacing a third-party import
+✓ The chat widget kept only in the booking flow
+✓ Space reserved for the provider logo and availability banner, which had caused most of the shift
+✓ Everything tested on a four-year-old Android phone on a throttled connection
+
+THE NEW REPORT CARD
+LCP .............................. 1.9 s ✅
+INP .............................. 140 ms ✅
+CLS .............................. 0.02 ✅
+Mobile booking conversion ........ 1.1% ➜ 2.9% over two months
+Worth ............................ roughly €4,100 a month in commission
+
+Rankings improved modestly. The conversion change was the one that mattered.
+
+"My score on a laptop was 88 and I thought I was finished. My actual customers were on phones on trains, and for them the site took six seconds and then moved while they were tapping." - Nienke Brandts
+
+https://launchstudio.eu/en/blog/lovable-seo-core-web-vitals-in-an-ai-built-frontend
 
 #CoreWebVitals #WebPerformance #SEO #Lovable #LaunchStudio #Manifera

@@ -1,21 +1,28 @@
-🚨 Jelle Terpstra organises small concerts in Nijmegen and built Zaalvol in v0: ticket sales, door check-ins and payouts for venues under 300 seats. Venue owners wanted to start immediately. Then you looked closer: every number in the dashboard came from placeholder arrays. 😳
+🎬 Walk onto a film set and the street looks real. Shopfronts, signs, lit windows. Open a door and there's nothing behind it but scaffolding.
 
-v0 makes interfaces look real. What it leaves open is everything underneath. Here's what Zaalvol was missing: 🧠
+Jelle Terpstra's ticketing dashboard was a beautiful film set.
 
-❌ No real schema - sold tickets never reached the guest list
-❌ A hand-made Stripe Payment Link with no connection back to the app
-❌ Mapbox and Stripe secret keys inside client components
-❌ Door scanning that froze the queue on weak venue wifi
+He organises small concerts in Nijmegen and built Zaalvol in v0: ticketing and guest lists for venues with under 300 seats, with sales per show, check-ins at the door and a payout overview. Venue owners he showed it to wanted to start right away.
 
-✅ A Supabase schema in Frankfurt for venues, shows, ticket types and orders
-✅ Supabase Auth with venue-owner and door-staff roles
-✅ Stripe Checkout with a signed webhook that creates tickets on payment
-✅ Secrets moved to server actions and offline-tolerant scanning with background sync
+Behind the doors:
+🎭 Every number in the dashboard came from placeholder arrays
+🎭 The checkout button opened a Stripe payment link Jelle had made by hand, with no connection back to the app, so sold tickets never reached the guest list
+🎭 A Mapbox key and a Stripe secret key sat in client components
+🎭 Two server actions that changed venue settings had no authorisation check at all
+🎭 Door check-in only worked on strong wifi, because every scan waited for a full page reload
 
-At **LaunchStudio**, powered by Manifera's 11+ years of web engineering, we keep every v0 component and build the app underneath it. 🧩
+Building the real street behind the set (LaunchStudio, 15 business days, €5,900, plus €49/month managed hosting), keeping every v0 component:
+🏗️ A schema for venues, shows, ticket types and orders, in Supabase in Frankfurt
+🏗️ Supabase Auth with venue-owner and door-staff roles
+🏗️ Authentication, validation and authorisation on every server action
+🏗️ Stripe Checkout plus a signed webhook that creates tickets on payment
+🏗️ All secrets moved server-side
+🏗️ Optimistic door scanning with background sync, so a weak connection no longer holds up the queue
 
-His result: €5,900, fifteen business days. Zaalvol sold ~2,300 tickets across 41 shows in its first two months, with door check-ins under two seconds per scan. 🚀
+Zaalvol launched with three venues fifteen business days after the first call. First two months: about 2,300 tickets across 41 shows, with guests checked in at under two seconds per scan.
 
-👉 What your v0 UI still needs before real customers arrive: https://launchstudio.eu/en/blog/v0-app-to-production-backend-auth-and-deployment
+"v0 made it look real. LaunchStudio made it actually be real - same screens, completely different app underneath." - Jelle Terpstra
+
+https://launchstudio.eu/en/blog/v0-app-to-production-backend-auth-and-deployment
 
 #v0 #Vercel #NextJS #Ticketing #LaunchStudio #Manifera

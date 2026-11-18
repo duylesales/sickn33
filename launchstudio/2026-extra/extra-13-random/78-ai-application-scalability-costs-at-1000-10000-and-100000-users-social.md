@@ -1,21 +1,35 @@
-🚨 Mees van Rijn, a former office manager in Amsterdam, built Lunchlijst on Replit: companies let employees order lunch from local caterers, with one monthly invoice per company. In a year it grew from 1,200 to about 14,000 users across 90 companies. Revenue grew roughly tenfold. Infrastructure costs grew about twenty-five-fold - to €2,300 a month. 😳
+1,200 ➜ 14,000 users in a year.
+~10× revenue.
+~25× infrastructure costs.
+€2,300 a month.
+5 habits in the code.
+€520 a month after fixing them. 🥪
 
-The cost review traced it to five habits: the menu page polled every five seconds for every open tab; caterer photos were served at full camera resolution; an AI "lunch suggestion" called a language model on every page load; the order-history query had no index and forced a bigger database tier; and logs captured every request body, menus included. Here's what AI application scalability really costs at 1,000, 10,000 and 100,000 users: 🧠
+Mees van Rijn, a former office manager in Amsterdam, built Lunchlijst on Replit: companies let employees order lunch from local caterers, with one invoice per company per month. 90 companies, about 14,000 users. Every new company made the business a little less profitable, and Mees thought that was just what scaling felt like.
 
-❌ Polling from every open tab
-❌ Full-resolution images on every page
-❌ An LLM call on every page load
-❌ Missing indexes and bloated logs
+The five habits, found in LaunchStudio's cost review:
+1 menu page polling for updates every five seconds, in every open tab
+1 photo library of caterers' pictures, served at full camera resolution
+1 AI "lunch suggestion," calling a language model on every page load
+1 order history query with no index, forcing a much bigger database tier
+1 logging setup capturing every request body, menus included, into the monitoring service
 
-✅ Polling replaced by filtered real-time updates
-✅ Images resized and cached through a CDN
-✅ AI suggestions on demand, cached daily per company
-✅ Indexes and pagination, trimmed logging, monthly invoicing in background jobs - and a cost-per-active-user dashboard
+The fixes (Launch & Grow, 12 business days, €3,600, plus €49/month):
+✓ Polling replaced by filtered real-time updates
+✓ Images resized and cached via a CDN
+✓ AI suggestions on demand, with daily caching per company
+✓ Indexes and pagination
+✓ Logging trimmed to what's actually needed
+✓ Monthly invoicing moved to background jobs
+✓ A dashboard showing cost per active user
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we make sure each new customer makes you more profitable, not less. ⚙️
+The new numbers:
+€520 a month, while users kept growing
+~80% lower cost per active user
+20,000+ users, with infrastructure well under 5% of revenue
 
-His result: €3,600 over twelve business days, plus €49/month. Monthly infrastructure fell to about €520 while users kept growing, cost per active user dropped ~80%, and Lunchlijst passed 20,000 users with infrastructure under 5% of revenue. 🚀
+"Every new company made us a little less profitable, and I thought that was just what scaling felt like. It was five fixable habits in the code." - Mees van Rijn
 
-👉 AI application scalability costs at 1,000, 10,000 and 100,000 users: https://launchstudio.eu/en/blog/ai-application-scalability-costs-at-1000-10000-and-100000-users
+https://launchstudio.eu/en/blog/ai-application-scalability-costs-at-1000-10000-and-100000-users
 
 #Scalability #CloudCosts #Replit #SaaS #LaunchStudio #Manifera

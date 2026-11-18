@@ -1,21 +1,29 @@
-🚨 Ravi Sewdien, a former management consultant in Rijswijk, built Samenvattr with Cursor: SaaS that transcribes meeting recordings and turns them into summaries and action lists with OpenAI, with a free tier of three meetings a month. 1,200 sign-ups in two months, 140 paying. Then the second month's OpenAI invoice arrived: €3,400 - more than four times revenue. 😳
+🚰 The AI feature was the product. It was also an open tap.
 
-The free-tier limit existed only in the interface; the API had no quota, and a handful of accounts - one clearly scripted - uploaded dozens of long recordings a day. Long meetings were summarised in one synchronous call that timed out while still being billed. A dev-time retry loop retried failures instantly, up to ten times. And malformed JSON regularly broke the action-list screen. Here's how to productionize AI application features: 🧠
+Month two:
+OpenAI invoice: €3,400. More than four times revenue.
 
-❌ Quotas in the interface, not on the server
-❌ Synchronous calls that time out but still cost money
-❌ Tight retry loops multiplying the bill
-❌ Unvalidated model output breaking the UI
+Ravi Sewdien, a former management consultant in Rijswijk, built Samenvattr with Cursor: a SaaS that transcribes meeting recordings and produces summaries and action lists with OpenAI's API, with a free tier of three meetings a month. About 1,200 users signed up in two months.
 
-✅ A background queue with chunked transcription and summarisation
-✅ Server-side quotas per plan and rate limits per user and IP
-✅ Capped exponential backoff, a smaller model for routine summaries, the larger one for paid "detailed" ones
-✅ Schema-validated outputs, budget alerts, a per-user cost dashboard - and an updated privacy notice and DPA
+Where the water was running:
+💧 The free-tier limit existed only in the interface. The API endpoint had no quota, and a handful of accounts uploaded dozens of long recordings a day, one clearly scripted.
+💧 Long meetings went through one synchronous call that often exceeded the hosting time limit. Users saw an error, and the provider still charged for the tokens.
+💧 A retry loop from development retried failed calls immediately, up to ten times.
+💧 Summaries sometimes came back as malformed JSON, breaking the action-list screen.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we treat every model call as slow, sometimes unavailable, billed per use and unpredictable - and design for all four. ⚙️
+Turning off the tap (LaunchStudio, 9 business days, €2,600):
+✓ Processing moved to a background queue, with chunked transcription and summarisation
+✓ Server-side quotas per plan, and rate limits per user and IP
+✓ Capped exponential backoff instead of the retry loop
+✓ A smaller model for routine summaries, the larger one only for paid "detailed" summaries
+✓ Outputs validated against a schema, with a retry on failure
+✓ Budget alerts and a per-user cost dashboard
+✓ The privacy notice and the processing agreement with the provider updated
 
-His result: €2,600, nine business days. Model costs fell to about 18% of revenue while usage grew, timeouts disappeared, and Samenvattr reached 420 paying customers within six months. 🚀
+Model costs fell to about 18% of revenue while usage kept growing. Timeout errors disappeared, and the action-list screen hasn't broken on malformed output since. Within six months, Samenvattr reached 420 paying customers.
 
-👉 Productionize AI application features: LLM costs, timeouts and fallbacks: https://launchstudio.eu/en/blog/productionize-ai-application-features-llm-costs-timeouts-and-fallbacks
+"The AI feature was the product. It was also a tap anyone could leave running on my credit card." - Ravi Sewdien
+
+https://launchstudio.eu/en/blog/productionize-ai-application-features-llm-costs-timeouts-and-fallbacks
 
 #LLM #OpenAI #AISaaS #CostControl #LaunchStudio #Manifera

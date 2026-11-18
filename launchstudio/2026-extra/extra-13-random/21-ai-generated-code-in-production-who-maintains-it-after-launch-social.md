@@ -1,21 +1,32 @@
-🚨 Charlotte Meijer, a former language teacher in Amstelveen, built PraatMaat with Cursor and a freelance developer: a platform matching adult learners with Dutch conversation tutors. By autumn, 380 learners and 45 tutors were active. In February the freelancer took a job abroad. Two weeks later, password resets broke. 😳
+🚌 What's your app's bus factor?
 
-She asked Cursor to fix it. The fix worked - and silently removed an access check on tutors' progress notes. The Mollie API key sat in the freelancer's personal account, the domain renewal was on his credit card, and there were no docs, no tests and no record of what had changed. Here's who really maintains AI-generated code after launch: 🧠
+The bus factor: how many people would need to leave before nobody knows how your app works.
 
-❌ Critical accounts owned by someone who has left
-❌ AI "fixes" that break security without anyone noticing
-❌ No tests to catch regressions
-❌ No documentation for the next developer
+For PraatMaat, the answer was one. And in February, that one person took a full-time job abroad. 🗣️
 
-✅ Repository, hosting, database, Mollie and domain moved to company accounts with 2FA - and the key rotated
-✅ The access check restored and password resets repaired properly
-✅ Tests for signup, login, reset, booking and payment
-✅ A README, a maintenance log, updated dependencies and a managed plan for hosting, monitoring and security updates
+Charlotte Meijer, a former language teacher in Amstelveen, built PraatMaat with Cursor and the help of a freelance developer: a platform that matches adult learners with Dutch conversation tutors, with scheduling, video-call links, subscriptions and progress notes. By autumn: 380 learners and 45 tutors.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we make sure your app has an owner after launch - not just a builder before it. ⚙️
+What left with the freelancer:
+• The Mollie API key, in his personal account
+• The domain's auto-renewal, tied to his credit card
+• Every bit of knowledge about the code: no documentation, no tests, no record of what had changed or why
 
-Her result: €2,000, eight business days, then €49/month. PraatMaat has run fourteen months without an unplanned outage, the tests blocked three Cursor regressions, and a new part-time developer onboarded in two days. 🚀
+Two weeks later, a Supabase SDK update Charlotte applied through Cursor broke password resets. She asked Cursor to fix it. The fix worked, and, it later turned out, removed an access check on tutors' progress notes.
 
-👉 AI generated code in production: who maintains it after launch?: https://launchstudio.eu/en/blog/ai-generated-code-in-production-who-maintains-it-after-launch
+Raising the bus factor (LaunchStudio, 8 business days, €2,000):
+✓ Repository, hosting, database, Mollie and domain moved to Charlotte's company accounts, with two-factor authentication
+✓ The Mollie key rotated
+✓ The access check on progress notes restored
+✓ Password resets repaired properly
+✓ Tests for signup, login, reset, booking and payment
+✓ A README and a maintenance log
+✓ Outdated dependencies with known vulnerabilities updated
+Then Charlotte moved to the Launch & Grow managed plan, at €49 a month, for hosting, monitoring, backups and security updates.
+
+Fourteen months since: no unplanned outages. The tests have blocked three regressions from Cursor edits. And when Charlotte hired a part-time developer the following year, onboarding took two days instead of weeks.
+
+"I owned the code in theory. In practice, the only person who understood it had just moved to Berlin." - Charlotte Meijer
+
+https://launchstudio.eu/en/blog/ai-generated-code-in-production-who-maintains-it-after-launch
 
 #Maintenance #Cursor #SaaS #EdTech #LaunchStudio #Manifera

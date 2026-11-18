@@ -1,21 +1,31 @@
-🚨 Xander Lubbers's Bezorgdienst handles delivery planning and proof of delivery for 19 couriers and meal suppliers - about 40,000 deliveries a month. In four years, nothing had ever been deleted: 1.6 million records with names, addresses, phone numbers, notes and signatures, plus 900 GB of photos. 😳
+📦 Four years of deliveries. Nothing ever deleted. A short Q&A on how one founder finally chose.
 
-Then, in one month: an access request that took two days across three systems, and a courier invoking their deletion clause - which he couldn't meet for one company without touching everyone. Here's how to decide how long you keep what: 🧠
+Q: What was in there?
+A: Every delivery since launch: recipient names, addresses, phone numbers, delivery notes and a signature image. About 1.6 million records and 900 GB of signature and photo files.
 
-❌ "Keep everything" by default, because deletion was never built
-❌ No retention period for any category of data
-❌ Deletion that only thinks about database rows
-❌ Backups kept indefinitely
+Q: Why change now?
+A: Two things in one month. A recipient's access request took two days of searching across three systems. And a courier company left and invoked its deletion clause, which couldn't be met without touching everyone else's data.
 
-✅ Retention per category with reasons: deliveries 24 months (adjustable per customer), signatures and photos 12, finance 7 years, logs 60 days
-✅ Anonymisation that keeps date, postcode area, category and duration - so route analytics survive
-✅ A weekly batched job with dry-run mode, legal-hold exclusion, run records and an alert if it stops
-✅ Deletion covering storage, thumbnails, search index and old exports, 60-day backups, per-customer deletion certificates and a fast access-request tool
+Q: Whose product?
+A: Bezorgdienst, which Xander Lubbers built in Lovable: delivery planning and proof of delivery for 19 regional couriers and meal suppliers, around 40,000 deliveries a month. 🚚
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we help you hold less data - a smaller problem in every direction. 🗑️
+Q: So how long is "long enough"?
+A: Decided per category, with reasons written down. Delivery records and proof of delivery: 24 months by default, longer within limits if a courier asks. Signatures and photos: 12 months. Financial records: seven years. Support mail: 18 months. Technical logs: 60 days.
 
-His result: five business days and €3,700 later, the first run anonymised 1.1 million records and removed 640 GB of files (€190/month saved). Access requests now take four minutes instead of two days - and customers' analytics were untouched. 🚀
+Q: Doesn't deleting break the route analytics customers love?
+A: No. Old delivery records are anonymised: date, postcode area, category and duration stay, while names, full addresses, phones and notes go.
 
-👉 Data retention: deciding how long you keep what: https://launchstudio.eu/en/blog/data-retention-deciding-how-long-you-keep-what
+Q: How is it enforced?
+A: A weekly batched job, with dry runs for the first three, legal hold exclusion, a record of every run, and an alert if it doesn't run. Deletion reaches object storage, thumbnails, the search index and old exports too. Backups went from indefinite to 60 days.
+
+Q: And the leaving customer, and the access request?
+A: Per-company deletion with a certificate, and a tool that assembles a recipient's records in minutes.
+
+Q: Result?
+A: 1.1 million records anonymised and 640 GB removed on the first run, €190 a month off storage, a certificate inside the contract window, and an access request down from two days to four minutes. Analytics unaffected. Cost: €3,700, 5 business days with LaunchStudio.
+
+"I kept everything because deleting felt risky. It turned out that holding four years of people's home addresses and signatures was the risk, and I had chosen it by never making a choice." - Xander Lubbers
+
+https://launchstudio.eu/en/blog/data-retention-deciding-how-long-you-keep-what
 
 #DataRetention #GDPR #Privacy #Lovable #LaunchStudio #Manifera

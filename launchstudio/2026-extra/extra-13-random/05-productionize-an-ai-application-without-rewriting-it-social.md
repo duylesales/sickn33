@@ -1,21 +1,31 @@
-🚨 Lotte Brouwer runs two bike repair workshops in Zwolle and built Fietsdepot in Lovable: customers book a repair slot, pay a €15 booking fee and get updates. An agency quoted €32,000 and four months to "rebuild it on a proper stack" - including a redesign she didn't want. 😳
+BEFORE ➜ AFTER: a bike repair booking app, with every screen kept 🚲
 
-The real problems were elsewhere: customers could read other customers' repair notes by changing an ID in the URL, fees were marked paid when the browser returned from Mollie, and the database sat in a US region with untested backups. Here's how to productionize an AI app without rewriting it: 🧠
+Lotte Brouwer runs two bike repair workshops in Zwolle and built Fietsdepot in Lovable: customers book a repair slot, describe the problem, pay a €15 booking fee and get updates when the bike is ready. An agency had quoted €32,000 and four months to "rebuild it on a proper stack," including a redesign she didn't want.
 
-❌ No row level security - repair notes visible across customers
-❌ Payment status trusted from the browser redirect
-❌ A US-region database with no tested backups
-❌ Status emails from a shared domain, landing in spam a third of the time
+BEFORE: Changing an ID in the URL showed other customers' repair notes.
+AFTER: Row Level Security on every table.
 
-✅ Row level security on every table
-✅ Payments confirmed by verified Mollie webhooks
-✅ Database migrated to an EU region with daily backups and a tested restore
-✅ A proper sending domain with SPF, DKIM and DMARC - and not one screen redesigned
+BEFORE: The booking fee was marked paid when the browser came back from Mollie. Close the tab at the wrong moment, and you got a paid booking with no payment.
+AFTER: Payment confirmed by verified Mollie webhooks.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we fix what's underneath and keep the app you built. ⚙️
+BEFORE: The Supabase project ran in a US region, with no tested backups.
+AFTER: An EU region, daily backups and a tested restore.
 
-Her result: €2,600, eleven business days. 1,340 bookings in three months, booking-fee mismatches from one a day to zero, and "your bike is ready" emails out of spam - customers stopped phoning to ask. 🚀
+BEFORE: "Your bike is ready" emails came from a shared sending domain and landed in spam about a third of the time.
+AFTER: Its own sending domain, with SPF, DKIM and DMARC.
 
-👉 Productionize an AI application without rewriting it: https://launchstudio.eu/en/blog/productionize-an-ai-application-without-rewriting-it
+BEFORE: No staging, no monitoring, no own domain.
+AFTER: Lotte's own domain, staging and monitoring.
+
+BEFORE: The screens Lotte was proudest of.
+AFTER: The same screens. Redesigned: 0.
+
+The work: 11 business days, €2,600.
+
+First three months: 1,340 bookings. Booking-fee mismatches went from roughly one a day to zero. And emails stopped landing in spam, which Lotte noticed mostly because customers stopped phoning to ask.
+
+"The agency wanted to rebuild the part I was proudest of. LaunchStudio fixed the parts I didn't even know existed." - Lotte Brouwer
+
+https://launchstudio.eu/en/blog/productionize-an-ai-application-without-rewriting-it
 
 #Lovable #Supabase #NoCode #Startups #LaunchStudio #Manifera

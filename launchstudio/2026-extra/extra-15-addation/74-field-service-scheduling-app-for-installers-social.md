@@ -1,21 +1,31 @@
-🚨 Niels Hermans, co-owner of a heat pump installation company in Brabant with 22 technicians, built Warmteplanner with Bolt and Supabase to replace the whiteboard and WhatsApp groups. The planning board worked well in the office. In the field, it didn't. 😳
+🔧 WORK ORDER: Warmteplanner
 
-Invoices regularly missed extra piping, valves and brackets - costing thousands of euros a month. And the works council objected to continuous GPS tracking. Here's what a field service scheduling app for installers needs: 🧠
+CUSTOMER
+A heat pump installation company in Brabant with 22 technicians. Co-owner Niels Hermans built Warmteplanner with Bolt and Supabase to replace the whiteboard and the WhatsApp groups.
 
-❌ Work orders that needed a connection in attics and basements
-❌ Materials used on site never recorded
-❌ Uncertified technicians assigned to refrigerant jobs
-❌ No arrival windows for customers, and continuous GPS tracking
+REPORTED FAULTS
+In the office, the planning board worked well. In the field:
+1. Work orders needed a connection, so technicians in attics and basements wrote notes on paper and entered them later, or never
+2. Materials used on site weren't recorded, so invoices kept missing extra piping, valves and brackets: thousands of euros a month, by Niels's estimate
+3. Technicians without the required refrigerant certification were sometimes assigned to jobs that needed it
+4. Customers often weren't home, because nobody told them an arrival window
+5. Continuous GPS tracking of every technician's phone, which the works council objected to once it found out
 
-✅ An offline-capable PWA with checklists, photos, serial numbers, measurements and signatures
-✅ Materials planned from quotes and confirmed on site, feeding invoices
-✅ Certifications with expiry dates enforced in assignment, plus customer on-the-way messages
-✅ Location shared only during jobs, with a DPIA and works council agreement
+WORK CARRIED OUT (LaunchStudio, 18 business days, €7,100)
+1. An offline-capable PWA work order: checklists per installation type, photos, serial numbers, commissioning measurements and customer signatures, syncing automatically
+2. Materials planned from quotes and confirmed on site, feeding invoices directly
+3. Certifications with expiry dates per technician, enforced when assigning jobs
+4. Confirmations, reminders and on-the-way messages with arrival windows for customers
+5. Location shared only during an active job or on the way, with clear information for employees, a DPIA and the works council's agreement
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we stop your team from quietly giving away the parts. 🛠️
+PLUS
+Invoice exports to the accounting software, with the documentation homeowners need for subsidy applications.
 
-His result: €7,100, 18 business days. Missed materials dropped sharply in the first month, missed appointments fell by more than half, and two other installers now pilot Warmteplanner. 🚀
+SIGN-OFF
+Missed materials dropped sharply in the first month, recovering significant revenue. Missed appointments fell by more than half. The works council approved the new location approach, and two other installers are piloting Warmteplanner.
 
-👉 Building a field service app? Here's what installers really need: https://launchstudio.eu/en/blog/field-service-scheduling-app-for-installers
+"We were installing heat pumps faster than ever and quietly giving away the parts. The app paid for itself in the first month of correct invoices." - Niels Hermans
+
+https://launchstudio.eu/en/blog/field-service-scheduling-app-for-installers
 
 #FieldService #HeatPumps #PWA #Installers #AIFounder #LaunchStudio #Manifera

@@ -1,21 +1,29 @@
-☕ Vera Hofman runs a small coffee roastery in Deventer and built Bonenpost with Bolt and Supabase: about 900 subscribers get freshly roasted beans every two or four weeks, paid through Mollie. Then the complaints formed a pattern. Some customers charged twice in one week, skipped deliveries arriving anyway, and failed debits silently stopping deliveries. Cancelling? Only by email. 📬
+☕ A coffee subscription's delivery calendar (before)
 
-The assessment explained it all: 🧠
+CYCLE 1: Charge and order created. Busy day, the function times out. It starts again from the beginning. Some customers charged twice.
+CYCLE 2: A customer skips this delivery. Too late: the fulfilment export already went out by hand. Coffee arrives anyway.
+CYCLE 3: A SEPA debit fails. Nothing happens. Deliveries just stop, without a word to the customer.
+CYCLE 4, spring: The clocks change. The schedule shifts by an hour, and one cycle runs twice.
+WEEKS LATER: A reversal. Never recorded.
+ANY CYCLE: Want to cancel? Email us.
 
-❌ One scheduled function creating charge and order, rerunning from the start after timeouts
-❌ The spring clock change shifting the schedule and running one cycle twice
-❌ Skips after the fulfilment export ignored, and failed SEPA debits and later reversals never handled
-❌ Orders exported as a spreadsheet and uploaded by hand each cycle
+Vera Hofman runs a small coffee roastery in Deventer and built Bonenpost with Bolt and Supabase: freshly roasted beans every two or four weeks, paid through Mollie. With around 900 subscribers, the complaints followed the calendar. Every bug in a subscription comes back every cycle.
 
-✅ Idempotency keys per subscription and cycle, with orders created only from verified webhooks
-✅ Cycle dates stored with time zone information and tested across clock changes
-✅ A clear cut-off two days before roasting, a dunning flow with retries and payment update links, and reversals updating status
-✅ Orders sent to the fulfilment partner's API after the cut-off, plus online cancellation with confirmation
+What LaunchStudio changed (8 business days, €3,200):
+✓ Idempotency keys per subscription and per cycle on every charge
+✓ Orders generated only from confirmed payments, via verified webhooks
+✓ Cycle dates stored with time zone information, tested across clock changes
+✓ A clear cut-off two days before roasting, shown in the customer portal
+✓ A dunning flow for failed debits: retries, emails and a payment update link
+✓ Reversals updating subscription status
+✓ Orders sent to the fulfilment partner through its API after the cut-off, with confirmations and tracking updates
+✓ Online cancellation on the account page, with a confirmation email, as Vera's adviser recommended
 
-At **LaunchStudio**, backed by Manifera's 11+ years of building payment, scheduling and integration systems for clients such as Vodafone and TNO, we make every cycle produce one payment and one order. 🛠️
+THE CALENDAR NOW
+Double charges: stopped entirely. Failed payments: a large share recovered within two months by the dunning flow. Support emails about unwanted deliveries: down sharply.
 
-Her result: €3,200, eight business days. Double charges stopped, and the dunning flow recovered a large share of failed payments within two months. 🚀
+"Every bug in a subscription happens again every two weeks. Fixing them once fixed them for every future cycle." - Vera Hofman
 
-👉 Production launch for subscription e-commerce: https://launchstudio.eu/en/blog/production-launch-for-subscription-ecommerce
+https://launchstudio.eu/en/blog/production-launch-for-subscription-ecommerce
 
 #Subscriptions #Ecommerce #Mollie #Bolt #AIFounder #LaunchStudio #Manifera

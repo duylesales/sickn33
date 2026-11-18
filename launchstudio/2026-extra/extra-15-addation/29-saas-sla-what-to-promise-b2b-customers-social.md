@@ -1,21 +1,34 @@
-🚨 Erik de Boer built Roosterbaas with Lovable and Supabase: staff scheduling for supermarkets. A regional chain with 38 stores wanted it - and sent an SLA demanding 99.99% uptime, one-hour response around the clock and an uncapped 5% penalty per hour of downtime. 😳
+🤝 At the negotiating table: a 38-store supermarket chain vs. a solo SaaS founder
 
-His setup couldn't support that. One bad deployment during the pilot had already taken the app offline for 90 minutes on a Monday morning, when store managers publish schedules. Here's what to promise B2B customers in a SaaS SLA: 🧠
+Erik de Boer built Roosterbaas with Lovable and Supabase: staff scheduling for supermarkets and retail chains in the Netherlands. A regional chain with 38 stores wanted to replace its old planning software and sent its SLA.
 
-❌ A Supabase plan without an SLA
-❌ Deployments straight from Lovable to production
-❌ No external monitoring and backups never restored
-❌ Support on Erik's personal phone
+THEIR OPENING OFFER
+• 99.99% availability
+• One-hour response, around the clock
+• A penalty of 5% of the annual fee for every hour of downtime, with no cap
 
-✅ Critical providers upgraded to plans with published SLAs
-✅ Staging, GitHub deployments with tests, and releases outside store peaks
-✅ Minute-by-minute monitoring from two locations, alerts and a public status page
-✅ A restore test achieving recovery within two hours, and measured availability for the counter-proposal
+WHAT ERIK COULD ACTUALLY STAND BEHIND
+Not that. Roosterbaas ran on a Supabase plan without an SLA. Deploys went straight from Lovable to production. No external monitoring. Backups never restored. Support was Erik's personal phone. During the pilot, one bad deployment took the app down for 90 minutes on a Monday morning, exactly when store managers publish weekly schedules.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we help you promise what you can keep - and prove it. 🛠️
+PREPARING THE COUNTER-OFFER (LaunchStudio, 11 business days, €4,100)
+• Critical providers upgraded to plans with published SLAs
+• Staging, plus GitHub deployments with automated tests, scheduled outside store peaks
+• External monitoring of sign-in and schedule loading from two locations every minute
+• Error alerts to Erik and a backup contact, and a public status page
+• Point-in-time recovery with a documented restore test, recovering within two hours
+• Actual availability measured over previous months, as input for Erik and his lawyer
 
-His result: €4,100, 11 business days. The chain accepted 99.9% with credits capped at 30% of the monthly fee. In year one, Roosterbaas achieved 99.97% measured availability, with no credits paid. 🚀
+THE AGREEMENT
+• 99.9% monthly availability for core functions
+• Critical response within one hour, 06:00 to 22:00
+• Service credits capped at 30% of the monthly fee
+• A termination right after three consecutive months below target
 
-👉 Negotiating your first SLA? Here's what to promise B2B customers: https://launchstudio.eu/en/blog/saas-sla-what-to-promise-b2b-customers
+YEAR ONE
+99.97% measured availability. Credits paid: zero.
+
+"Their first draft would have bankrupted me with one bad Monday. The final SLA was something I could keep, and they trusted it more because I could explain it." - Erik de Boer
+
+https://launchstudio.eu/en/blog/saas-sla-what-to-promise-b2b-customers
 
 #SLA #B2BSaaS #Uptime #Retail #AIFounder #LaunchStudio #Manifera

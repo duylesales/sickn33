@@ -191,7 +191,7 @@ Als u nog kiest, de korte versie: Mollie past bij bedrijven die zich op Nederlan
 
 Een volledige Mollie-integratie met webhooks, statussen, terugbetalingen en testen is een gangbare klus voor LaunchStudio, meestal onderdeel van een vaste offerte tussen €1.200 en €3.500. LaunchStudio brengt de engineering van Manifera op enterpriseniveau naar de economie van oprichters: Manifera bouwt al 11+ jaar betaalintegraties met Stripe, Mollie en PayPal, vanuit het Amsterdamse kantoor aan de Herengracht 420 en het ontwikkelcentrum in Ho Chi Minh City. Zie [de technologieën van Manifera](https://www.manifera.com/about-us/manifera-technologies/) voor de bredere stack, en [de API-documentatie van Mollie](https://docs.mollie.com/) voor de volledige referentie.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een AI-Native Oprichter in Actie: De Sportclubapp Die Onbetaalde Contributie als Betaald Markeerde
 

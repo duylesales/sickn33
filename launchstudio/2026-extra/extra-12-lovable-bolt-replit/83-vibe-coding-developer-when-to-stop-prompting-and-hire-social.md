@@ -1,21 +1,33 @@
-🚨 Wouter Klumpenaar's Lidmaatschapbeheer runs membership administration for seven professional associations - around 9,000 members. Every renewal period, a handful of members were charged twice. He spent five months and about forty AI sessions on it. Every fix seemed to work - until the next renewal. 😳
+🕵️ THE CASE OF THE DOUBLE CHARGE
 
-An experienced reader found the cause in ninety minutes: the renewal job could be triggered by two paths in different parts of the codebase, and no single conversation had ever seen both. Here's when to stop prompting and bring someone in: 🧠
+The crime: a few members charged twice for their annual fee. About eight a year, always during renewals, never reproducible.
 
-❌ The same bug surviving forty sessions over five months
-❌ Money moving through the product with no idempotency on charges
-❌ Logic duplicated across two paths - and the same pattern elsewhere, sending duplicate welcome emails
-❌ Four endpoints with no authorisation check that nobody had noticed
+The victim's business: Lidmaatschapbeheer, membership administration Wouter Klumpenaar built in Lovable for seven professional associations, around 9,000 members.
 
-✅ The renewal job made idempotent on member and period, with a test proving a second run charges nothing
-✅ Both invocation paths consolidated into one queued job
-✅ A reconciliation query that found 31 historical double charges over three years - all refunded
-✅ Authorisation tested across 22 endpoints, four gaps fixed, and a handover so Wouter can maintain it all
+The investigation so far: forty AI sessions over five months. Each found a fix. Each fix seemed to work. Each renewal period brought the same complaints.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we take on the work where mistakes are expensive - while the product stays yours to keep building. ⚙️
+Enter an experienced reader. Time to solve: ninety minutes.
 
-His result: €3,400, three business days. The double charges stopped, €2,840 was refunded proactively - and two associations said that refund is why they renewed. 🚀
+THE SUSPECTS
+Suspect A: the scheduled renewal run.
+Suspect B: a manual administrator action.
+Both triggered the same renewal job. Neither job had idempotency.
 
-👉 Vibe coding developer: when to stop prompting and hire: https://launchstudio.eu/en/blog/vibe-coding-developer-when-to-stop-prompting-and-hire
+THE SOLUTION
+Both suspects did it. When both ran in the same window for the same member, two charges went out. No session had ever seen both, because they lived in different parts of the codebase and each conversation was only ever shown one. 🔍
+
+CLOSING THE CASE (LaunchStudio, 3 business days, €3,400)
+✓ The renewal job made idempotent on member and period, with a test proving a second call charges nothing
+✓ Both paths now enqueue the same job, not duplicate logic
+✓ A review for the same pattern elsewhere, which found two more, one sending duplicate welcome emails nobody had reported
+✓ A reconciliation of charges against periods: 31 historical double charges across three years, all refunded
+✓ Authorisation tested across 22 endpoints: four had no check, now fixed
+✓ A handover so Wouter can maintain it
+
+The double charges stopped. The 31 old ones came to €2,840 in refunds, and two associations said the proactive refund was why they renewed. Wouter's own note is about the five months, not the money.
+
+"Forty sessions across five months on a bug that took someone ninety minutes, because it was in two files and no conversation ever saw both of them at once." - Wouter Klumpenaar
+
+https://launchstudio.eu/en/blog/vibe-coding-developer-when-to-stop-prompting-and-hire
 
 #VibeCoding #Lovable #NoCode #Startups #LaunchStudio #Manifera

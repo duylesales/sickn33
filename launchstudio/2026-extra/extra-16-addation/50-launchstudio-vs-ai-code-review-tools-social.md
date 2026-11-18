@@ -1,21 +1,33 @@
-🎨 Kim Hoogendoorn runs a client portal for interior designers from Amsterdam, built with Claude Code and Supabase: designers share mood boards, quotes and invoices with clients. Kim had an AI pull request reviewer, Dependabot and secret scanning, and checked the Supabase advisor monthly. Every pull request got thoughtful comments. No critical warnings. She felt confident. ✅
+👁️ What the tools saw, and what they never saw
 
-Then a larger studio asked for a security review before onboarding 40 clients. Role-based testing found what no tool had flagged: 🧠
+WHAT THE TOOLS SAW
+✓ Every pull request, with thoughtful comments from an AI reviewer
+✓ Dependencies, through Dependabot
+✓ Secrets, through secret scanning
+✓ Monthly Supabase advisor checks: no critical warnings
 
-❌ An invoices policy, created months ago in the dashboard, letting any logged-in user read all rows
-❌ Quote PDFs in a public bucket
-❌ Password reset redirects accepting any URL
-❌ Backups that had never been restored
+WHAT THE TOOLS NEVER SAW
+✗ An invoices table policy letting any logged-in user read every row, created months earlier in the dashboard and never part of a pull request
+✗ Quote PDFs in a public bucket
+✗ Password reset redirects that accepted any URL
+✗ Backups that had never been restored
 
-✅ Policies rewritten per designer and client
-✅ Access tests running in the pipeline on every change
-✅ Files in private storage, restricted redirects and a tested restore
-✅ Her existing tools kept in place, now backed by tests that encode the access rules
+Kim Hoogendoorn runs Moodportaal from Amsterdam, a client portal for interior designers built with Claude Code and Supabase: designers share mood boards, quotes and invoices with clients. With all those tools in place, Kim felt confident. Then a larger design studio asked for a security review before onboarding 40 clients.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of combining automated tooling with human review for clients such as Vodafone and TNO, we close the gaps tools can't see and leave tests that protect your rules. 🛠️
+LaunchStudio's role-based testing found the second list (5 business days, €2,000). Then:
+✓ Policies rewritten per designer and client
+✓ Access tests that run in the pipeline
+✓ Files moved to private storage
+✓ Redirects restricted
+✓ A tested restore
+✓ The setup documented
 
-Her result: €2,000, five business days. The studio onboarded its 40 clients, and two months later an AI-generated change that would have broadened the policy failed the access test. 🚀
+Kim's existing tools all stayed. They just got company: tests that encode the access rules themselves.
 
-👉 LaunchStudio vs AI code review tools: https://launchstudio.eu/en/blog/launchstudio-vs-ai-code-review-tools
+The design studio onboarded its 40 clients after reading the summary report. Two months later, an AI-generated change that would have widened the invoice policy failed the access test before it could be merged.
+
+"My tools reviewed every line I changed. Nobody had reviewed the lines I never changed, or the settings that were not in the code at all." - Kim Hoogendoorn
+
+https://launchstudio.eu/en/blog/launchstudio-vs-ai-code-review-tools
 
 #CodeReview #Security #ClaudeCode #Supabase #AIFounder #LaunchStudio #Manifera

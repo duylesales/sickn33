@@ -1,21 +1,27 @@
-🚨 Pim Veenstra built Leverancierskluis in Lovable and Supabase: a supplier onboarding and document portal for mid-sized manufacturers. After his seed round, an investor told him to "move to AWS to be enterprise-ready". A cloud consultancy quoted three months of migration plus a monthly operations retainer. 😳
+🔎 DECODER: what "enterprise-ready" actually meant
 
-"Move to AWS" sounded like the grown-up answer. His customers' questions had grown-up answers on the stack he already had. Here's what the questionnaires actually asked for: 🧠
+The investor said: "Move to AWS to be enterprise-ready."
+The consultancy said: "Three months, plus a monthly operations retainer."
+The customers' questionnaires said: EU data location. Encryption. Access logging. Backups. MFA. An SLA.
 
-❌ Proof of EU data location
-❌ Access logging and encryption
-❌ Tested backups, MFA and an SLA
-❌ Large CAD file uploads that would get expensive in Supabase Storage
+Pim Veenstra built Leverancierskluis in Lovable and Supabase: a supplier onboarding and document portal for mid-sized manufacturers. After a seed round, an investor recommended the AWS move. Before signing up for three months of migration, Pim asked LaunchStudio to decode what his actual customers were asking for.
 
-✅ Vercel and Supabase kept in Frankfurt
-✅ Access logging, MFA, tested backups and monitoring added
-✅ Only large file storage moved to an EU S3 bucket with signed uploads
-✅ Security documentation answering every questionnaire item
+The answer: almost all of it was achievable on the stack he already had. One real constraint showed up. A customer needed large CAD file uploads. Supabase Storage could handle them, but at a cost that would grow quickly.
 
-At **LaunchStudio**, backed by Manifera - which builds on managed platforms, AWS and Azure for clients - we start from requirements, not slogans, and change infrastructure only when real needs demand it. 🛠️
+What LaunchStudio did (12 business days, €4,600):
+✓ Vercel and Supabase in Frankfurt, kept
+✓ Access logging added
+✓ MFA added
+✓ Backups, tested
+✓ Monitoring
+✓ Only large file storage moved, to an EU S3 bucket with signed uploads
+✓ Security documentation answering every questionnaire item
 
-💡 His result: €4,600, twelve business days. Two manufacturers signed within the quarter, the three-month migration was avoided, and infrastructure costs stayed well below the consultancy's retainer alone. 🚀
+DECODED RESULT
+Two manufacturing customers signed within the quarter. No three-month migration. A small team still focused on features. And infrastructure costs well below the consultancy's retainer alone.
 
-👉 Vercel and Supabase or AWS for an early-stage SaaS? Here's when each one makes sense: https://launchstudio.eu/en/blog/vercel-and-supabase-vs-aws-for-an-early-saas
+"'Move to AWS' sounded like the grown-up answer. My customers' questions had grown-up answers on the stack I already had." - Pim Veenstra
+
+https://launchstudio.eu/en/blog/vercel-and-supabase-vs-aws-for-an-early-saas
 
 #Vercel #Supabase #AWS #SaaS #LaunchStudio #Manifera

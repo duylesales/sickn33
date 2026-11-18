@@ -1,20 +1,25 @@
-🚨 Thijs Verhoeven, a technical solo founder, built CivicDesk - a citizen-request tracking tool for small municipalities - using v0 over three weeks. During a pilot with a Noord-Brabant gemeente, two staff members updated the same request at the same time, and one status change silently overwrote the other with zero warning and zero audit trail. 😳
+BEFORE ➜ AFTER: CivicDesk, Den Bosch 🏛️
 
-For government-adjacent software, unexplained data loss like that is disqualifying. 🧠
+Thijs Verhoeven is a developer. He built CivicDesk, a citizen-request tracking tool for small municipalities, with v0 in about three weeks, and he could read every line of the generated backend. What he hadn't stress-tested: two staff members updating the same request at the same moment.
 
-❌ No optimistic locking on concurrent writes to the same record
-❌ No audit log tracking who changed what field, or when
-❌ v0's generated schema had no database-level constraints preventing this
-❌ He could read every line of the code - but couldn't see what it hadn't accounted for
+During a pilot with a small Noord-Brabant gemeente, exactly that happened.
 
-✅ Implement optimistic locking on the request records
-✅ Add a proper audit log with timestamp and user ID on every field change
-✅ Add the database-level constraints the generated schema had omitted
+BEFORE: Two people edit one citizen request at once, and nothing notices.
+AFTER: Optimistic locking catches the conflict.
 
-At **LaunchStudio**, Manifera's engineers bring 160+ delivered projects and clients like Vodafone and TNO to exactly this kind of architecture review - the silent decisions an AI tool makes but never flags. 🛡️
+BEFORE: One staff member's status update silently overwrites the other's.
+AFTER: Database-level constraints that v0's generated schema had left out.
 
-CivicDesk's result: it passed its next municipal procurement review, with the audit trail specifically cited as meeting their record-keeping requirement. 🚀
+BEFORE: No record of which change was lost.
+AFTER: An audit log of every field change, with timestamp and user ID.
 
-👉 Technical founder relying on code you can read but haven't stress-tested? Get a second pass: https://launchstudio.eu/en/blog/24-software-ai-den-bosch
+BEFORE: Unexplained data loss, which disqualifies government-adjacent software.
+AFTER: CivicDesk passed its next municipal procurement review, with the audit trail named as meeting the record-keeping requirement.
+
+Time: 7 business days. Cost: €1,600.
+
+"I could read the code v0 gave me. What I couldn't see was what it hadn't accounted for. That's a different skill, and LaunchStudio had it." - Thijs Verhoeven
+
+Building software for a gemeente with AI? Plan for two people clicking Save at once: https://launchstudio.eu/en/blog/24-software-ai-den-bosch
 
 #AINativeFounder #LaunchStudio #Manifera #SoftwareArchitecture #DenBosch

@@ -1,21 +1,32 @@
-🚨 Jana Peeters, a ceramicist in Antwerp's Zurenborg, built Atelierboek in Lovable: a booking platform for pottery workshops. Six Antwerp studios signed up, then four in Amsterdam and Utrecht. Participants booked in Dutch, French and English. Then studio owners discovered they could see other studios' participants by changing an ID in the admin URL. 😳
+🇧🇪 🇳🇱 One ceramics booking platform, two sides of the border
 
-Checkout offered only cards, so Dutch studios lost bookings to customers expecting iDEAL. Bancontact confirmed via the browser redirect, so people who closed their banking app were marked unpaid and moved to the waiting list. Reminder emails inserted names unescaped, the database and email were US-hosted, and the privacy notice was English-only. Here's what cross-border AI apps must get right: 🧠
+Jana Peeters, a ceramicist with a studio in Antwerp's Zurenborg neighbourhood, built Atelierboek in Lovable: pottery and ceramics studios sell class spots, manage waiting lists and send reminders. Six Antwerp studios signed up, then four in Amsterdam and Utrecht through word of mouth. Participants booked in Dutch, French and English.
 
-❌ Card-only checkout for Belgian and Dutch customers
-❌ Payments confirmed by the browser, not the provider
-❌ Studio separation only in the interface
-❌ US hosting and a single-language privacy notice
+As bookings grew, each side of the border had its own problems.
 
-✅ Mollie with Bancontact, iDEAL and cards, confirmed through verified webhooks - past mismatches reconciled
-✅ Studio-level data separation enforced in the database
-✅ Escaped email templates and validation that still accepts accented names
-✅ EU-hosted database and email, plus a processor list for privacy notices in Dutch, French and English
+🇳🇱 THE DUTCH SIDE
+• Checkout offered cards only, and Dutch studios lost bookings to customers who expected iDEAL
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering and its Amsterdam office, we treat both sides of the border as first-class markets. ⚙️
+🇧🇪 THE BELGIAN SIDE
+• Bancontact, added in a hurry at one studio's request, confirmed payments via the browser redirect. Participants who closed their banking app before returning showed as unpaid, and got moved to the waiting list.
 
-Her result: €1,850, eight business days. Atelierboek grew to 23 studios across Belgium and the Netherlands in six months, payment mismatches disappeared, and two Dutch studios in a municipal cultural programme signed after receiving the processor list. 🚀
+🌍 BOTH SIDES
+• Studio owners could see other studios' participants by changing a studio ID in the admin URL
+• Reminder emails inserted participants' names unescaped
+• Database and email provider both US-based
+• A privacy notice in English only
 
-👉 AI generated app security for Antwerp founders selling across the border: https://launchstudio.eu/en/blog/ai-generated-app-security-for-antwerp-founders-selling-across-the-border
+What LaunchStudio did (8 business days, €1,850):
+✓ Checkout on Mollie with Bancontact, iDEAL and cards, confirmed by verified webhooks, and past mismatches reconciled
+✓ Studio-level data separation enforced in the database
+✓ All user content escaped in email templates, with tighter validation that still supports accented names
+✓ The database migrated, and email moved to EU-hosted providers
+✓ A processor list, which Jana used to publish privacy notices in Dutch, French and English
+
+Within six months, Atelierboek grew to 23 studios across Belgium and the Netherlands. Payment mismatches disappeared. And two Dutch studios attached to a municipal cultural programme signed after receiving the processor list.
+
+"I thought selling to the Netherlands was just adding iDEAL. It was also about showing two sets of customers that I took their data as seriously as their money." - Jana Peeters
+
+https://launchstudio.eu/en/blog/ai-generated-app-security-for-antwerp-founders-selling-across-the-border
 
 #Antwerp #Benelux #iDEAL #Bancontact #LaunchStudio #Manifera

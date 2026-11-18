@@ -1,21 +1,28 @@
-🚨 Coen Bleeker's Factuurstroom handles invoicing for 380 freelancers and small agencies. Invoices lived at a URL ending in a sequential number. A user mistyped his own invoice number - and landed on somebody else's: client name and address, amounts, and the freelancer's bank details. 😳
+🧪 Try this on your own app. It takes thirty seconds.
 
-He tried three more before writing to Coen. Every endpoint required a login. None checked ownership. Here's the bug AI-generated code writes most often: 🧠
+1. Log in and open one of your own records, say an invoice.
+2. Look at the end of the URL. Is it a number?
+3. Change it by one.
 
-❌ 31 of 47 endpoints with an identifier and no ownership check
-❌ Nested records fetched by ID without validating the parent invoice
-❌ Row-level security enabled on only four of fourteen tables
-❌ Sequential invoice IDs in URLs, inviting enumeration
+If someone else's record opens, you have the bug AI code writes most often.
 
-✅ Every query scoped to the session's account, via a shared data-access helper that makes the safe way the default
-✅ Nested identifiers validated against their parent record
-✅ RLS policies on all 14 tables, and random IDs in URLs - with the readable invoice number kept for display
-✅ An automated test that signs in as a second organisation, requests every ID, and fails the build on any data
+One freelancer found it in Factuurstroom by accident: he mistyped his own invoice number and landed on somebody else's. He tried three more, then wrote to the founder. By then, he'd seen four invoices from three different businesses: client names and addresses, line items, amounts, and the freelancers' own bank details. 🧾
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we open your records from another account - ten minutes, and the test that matters most. 🔍
+Coen Bleeker built Factuurstroom in Lovable: invoicing and payment follow-up for freelancers and small agencies, 380 users across the Netherlands. Invoices sat at URLs ending in a sequential number. Every endpoint checked for a valid session. None checked ownership. He'd spent a week on two-factor authentication, and left the front door of every record open.
 
-His result: two business days and €3,800 later, log review found 61 cross-account requests in fourteen months; the affected businesses and the Dutch Data Protection Authority were notified. The automated test has since caught two new faulty endpoints before deployment. 🚀
+What LaunchStudio changed (2 business days, €3,800):
+✓ An inventory of 47 endpoints taking IDs: 31 had no ownership check
+✓ All 31 fixed by scoping queries to the session's account, with a shared data-access helper so the scoped fetch is the default
+✓ Nested records fixed too, like invoice lines and payments fetched by ID without validating the parent invoice
+✓ Row Level Security on all 14 tables (it had been on 4)
+✓ Random IDs in URLs, with the readable invoice number kept as a separate display field
+✓ An automated test that logs in as a second organisation, requests every known ID, and fails the build if any data comes back
+✓ Access logs reviewed to measure the exposure
 
-👉 IDOR, the bug AI code writes most often: https://launchstudio.eu/en/blog/ai-app-security-idor-the-bug-ai-code-writes-most-often
+The logs showed 61 cross-account requests over fourteen months: 54 from the four users who'd stumbled on it and stopped, and 7 from one account over one evening. Coen notified the affected businesses and the Autoriteit Persoonsgegevens. The automated test has since failed twice on new endpoints, both before deployment.
+
+"Anyone who could log in could read every invoice in the system by typing a different number. I had spent a week on two-factor authentication and left the front door of every record open." - Coen Bleeker
+
+https://launchstudio.eu/en/blog/ai-app-security-idor-the-bug-ai-code-writes-most-often
 
 #AppSecurity #IDOR #AccessControl #Lovable #LaunchStudio #Manifera

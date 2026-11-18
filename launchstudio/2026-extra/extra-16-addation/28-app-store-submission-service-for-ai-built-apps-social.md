@@ -1,21 +1,31 @@
-📱 Iris Kok runs a network of physiotherapy practices in Alkmaar and built Oefenmaatje with Cursor and Expo: patients follow exercise programmes with videos and log their progress. Then she tried to get it into the stores. Three iOS rejections in a row, and a Google Play closed test she hadn't planned for. 🧱
+Apple, rejection #1: users can't delete their accounts. ❌
+Apple, rejection #2: your privacy details say no data is linked to users, but an analytics SDK collects device identifiers. ❌
+Apple, rejection #3: our reviewer can't log in. ❌
+Google Play: your personal account needs a closed test first. ⏸️
 
-Each rejection had a clear cause: 🧠
+Iris Kok runs a network of physiotherapy practices in Alkmaar and built Oefenmaatje with Cursor and Expo: patients follow exercise programmes with videos and log their progress. Each rejection felt like a wall.
 
-❌ Users couldn't delete their accounts in the app
-❌ Privacy details said no data was linked to users, but an analytics SDK collected device identifiers
-❌ The reviewer couldn't log in, because accounts needed a practice invitation
-❌ A personal Google Play account with testing requirements she didn't know about
+It turned out to be a checklist. 📱
 
-✅ In-app account deletion plus a web-based deletion request page
-✅ An SDK audit, an unused advertising library removed and accurate privacy and data safety forms
-✅ A demo practice and patient account, with reviewer notes explaining the invitation model
-✅ An organisation account, clear permission texts and builds with Expo Application Services
+Behind rejection #3: accounts required an invitation from a practice, and the reviewer didn't have one.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of publishing mobile apps for clients such as Vodafone and TNO, we prepare, submit and handle rejections at a fixed price, in your own developer accounts. 🛠️
+Working through the checklist (LaunchStudio, 6 business days, €2,250, plus store review time):
+✓ In-app account deletion, plus a web-based request page
+✓ An SDK audit, removing an unused advertising library
+✓ Apple's privacy details and Google's data safety form, filled in accurately
+✓ A demo practice and patient account, with reviewer notes explaining the invitation model
+✓ Camera and notification permission texts rewritten to explain their purpose
+✓ The Google Play account converted to an organisation account for her company, with test tracks configured
+✓ Builds through Expo Application Services, with signing credentials stored safely
 
-Her result: €2,250, six business days. Approved on both stores within a week of resubmission, and six updates since without a rejection. 🚀
+Apple: ✅ Approved.
+Google Play: ✅ Approved.
+Both within a week of resubmission.
 
-👉 App Store submission service for AI-built apps: https://launchstudio.eu/en/blog/app-store-submission-service-for-ai-built-apps
+Since then, Iris has released six updates with the documented process, without a single rejection.
+
+"Each rejection felt like a wall. It turned out to be a checklist, and someone who knew the checklist got us through in a week." - Iris Kok
+
+https://launchstudio.eu/en/blog/app-store-submission-service-for-ai-built-apps
 
 #AppStore #GooglePlay #Expo #MobileApp #AIFounder #LaunchStudio #Manifera

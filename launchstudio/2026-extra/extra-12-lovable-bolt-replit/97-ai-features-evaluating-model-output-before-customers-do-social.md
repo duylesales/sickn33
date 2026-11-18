@@ -1,21 +1,31 @@
-🚨 Linda Smits's Intakeverslag drafts AI summaries of intake conversations for neighbourhood social care teams in 19 municipalities. To cut costs, the model was switched to a cheaper version with a one-line change - and in the same release, an AI assistant "tidied" the prompt, removing the paragraph telling it to always include risk and safety statements. 😳
+📋 CHANGELOG, one release (illustrative wording; the changes are real)
 
-Three weeks later, a team lead spotted a summary that left out a child's statement about violence at home. Others had the same gap - and two mentioned a sibling who didn't exist. Nothing had errored. Here's how to evaluate AI output before your customers do: 🧠
+• Switched to a newer, cheaper model. One-line configuration change. Cost savings.
+• Tidied the summarisation code. Prompt shortened.
 
-❌ A model swap and a prompt edit shipped with no quality check at all
-❌ No definition of what a "good" summary must contain
-❌ No check that names in the output actually appear in the input
-❌ Social workers under time pressure trusting the draft
+What the changelog didn't say: the shortened prompt had lost a paragraph telling the model to always include every statement about risk or safety.
 
-✅ An evaluation set of 120 anonymised conversations, annotated with the risk statements that must appear
-✅ Deterministic checks plus a validated model-graded check per risk statement - gating every prompt or model change in CI, with models pinned
-✅ Structured output with a required risk_indicators field, each backed by a quote from the transcript
-✅ Production validation blocking invented names, explicit risk confirmation, edit tracking and privacy-conscious 30-day logging
+Nothing errored.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we set this up for AI features customers have started to rely on. ⚙️
+Linda Smits built Intakeverslag in Lovable: AI summaries of intake conversations for neighbourhood social care teams in 19 municipalities. A social worker records or uploads the conversation, the product drafts a structured summary, and the worker edits and confirms it. 🤝
 
-Her result: €5,200, five business days. Missing risk statements dropped from 14% to under 2%, invented names went to zero, the gate later rejected two regressing models - and heavy edits by social workers fell by about a third. 🚀
+Three weeks after the release, a team lead noticed a summary had left out a child's statement about violence at home, clearly present in the recording. A review found the same pattern in other summaries, plus two that mentioned a sibling who didn't exist. Social workers had been editing, but under time pressure, and trusting the draft.
 
-👉 AI features: evaluating model output before customers do: https://launchstudio.eu/en/blog/ai-features-evaluating-model-output-before-customers-do
+The next entries in the changelog (LaunchStudio, 5 business days, €5,200):
+• Added an evaluation set of 120 anonymised intake conversations, built with two team leads, annotated with the risk statements that must appear and the people who exist
+• Added deterministic checks for schema, length, language, and names not in the transcript
+• Added a model-graded check per required risk statement, validated against the annotations first
+• Added a CI gate running the evaluation on any change to prompts, models or the pipeline. Model versions pinned
+• Added structured output with a required risk_indicators field, each with a supporting quote from the transcript
+• Restored the prompt paragraph, documented with the reason it exists
+• Production now blocks summaries with names not in the transcript
+• Risk indicators highlighted for the social worker to confirm explicitly
+• Edit tracking per summary; logs kept 30 days with redaction, documented for privacy officers
+
+Measured on the evaluation set: the cheaper model with the short prompt missed at least one risk statement in 14% of conversations. The restored prompt with structured output, on the original model, brought that below 2%. The gate has since rejected two candidate models that regressed. Invented names in production: zero. Heavily edited summaries fell by about a third.
+
+"We changed one line to save money and a tidy-up removed one paragraph. Nothing errored. The summaries just started leaving out the things that mattered most." - Linda Smits
+
+https://launchstudio.eu/en/blog/ai-features-evaluating-model-output-before-customers-do
 
 #AI #LLM #AIQuality #ResponsibleAI #LaunchStudio #Manifera

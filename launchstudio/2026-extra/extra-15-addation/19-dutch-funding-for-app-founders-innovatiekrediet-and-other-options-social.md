@@ -1,21 +1,34 @@
-🚨 Gerrit Mulder, an agronomist from Drachten, built Graslandwijzer with Bolt and Supabase: an app that helps dairy farmers plan grazing and fertilisation from soil samples, weather and satellite data. A pilot with eight farms looked promising. He planned to apply for early-phase financing. 😳
+🎯 The pitch deck an assessor would have seen, and the one they did see
 
-An adviser was blunt: assessors would see a concept, not a product. And the app had crashed during a demo for a cooperative. Here's what Dutch funders want to see from app founders: 🧠
+SLIDE 1: THE IDEA
+Gerrit Mulder, a dairy farmer's son and agronomist from Drachten, built Graslandwijzer with Bolt and Supabase. It helps dairy farmers plan grazing and fertilisation from soil samples, weather data and satellite imagery. A pilot with eight farms looked promising.
 
-❌ A prototype on a preview URL
-❌ One shared login per farm
-❌ Every farm's data visible to anyone logged in
-❌ Weather and satellite API errors that crashed the demo
+SLIDE 2: THE PLAN
+Apply for early-phase financing and approach the northern regional development company.
 
-✅ A fixed quote for getting to production
-✅ Individual accounts with roles for farmers and advisers
-✅ Row Level Security isolating each farm's data, EU hosting and backups
-✅ API error handling and documented architecture for the application
+SLIDE 3: WHAT AN ADVISER SAW FIRST
+• The prototype ran on a preview URL
+• Farmers shared one login per farm
+• Every farm's data was visible to anyone logged in
+• The app crashed during a demo for a cooperative
+• No clear cost estimate for getting to production
+Verdict: assessors would see a concept, not a product. The technical risk section would be hard to write honestly.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we turn your prototype into a product assessors can take seriously. 🛠️
+SLIDE 4: THE FIX (LaunchStudio, fixed quote, 13 business days, €3,400)
+• Individual accounts with roles for farmers and advisers
+• Row Level Security isolating each farm's data
+• EU hosting with backups and monitoring, on Gerrit's own domain
+• Error handling for the weather and satellite APIs behind the demo crash
+• Architecture and data flows documented for the technical section
 
-His result: €3,400, 13 business days. Graslandwijzer went live for 23 farms within three weeks, the early-phase financing was approved the next quarter, followed by a convertible loan from the regional development company. 🚀
+SLIDE 5: TRACTION
+Live for 23 farms within three weeks.
 
-👉 Looking for Dutch funding for your app? Here are the options: https://launchstudio.eu/en/blog/dutch-funding-for-app-founders-innovatiekrediet-and-other-options
+SLIDE 6: THE OUTCOME
+An application with real usage figures, a documented architecture and a fixed production cost. Early-phase financing approved the following quarter, then a convertible loan from the regional development company alongside two agricultural angel investors.
+
+"Assessors didn't want to see a demo. They wanted to see farmers using it every week, and a product that wouldn't fall over when more joined." - Gerrit Mulder
+
+https://launchstudio.eu/en/blog/dutch-funding-for-app-founders-innovatiekrediet-and-other-options
 
 #Innovatiekrediet #StartupFunding #AgriTech #DutchStartups #AIFounder #LaunchStudio #Manifera

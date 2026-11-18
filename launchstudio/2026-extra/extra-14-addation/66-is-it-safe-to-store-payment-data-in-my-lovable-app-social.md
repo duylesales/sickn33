@@ -1,21 +1,29 @@
-🚨 Dennis Groot organises regional board game conventions and built Spelbeurs in Bolt for tickets and tournament tables. He asked Bolt for "faster checkout for returning visitors". Bolt built a form that saved card numbers, expiry dates and CVC codes in a saved_cards table. A developer friend found it while fixing an unrelated bug: 312 cards. 😳
+🚫 Three things your app should never store:
 
-He asked for faster checkout. He got a database full of card numbers that should never have existed. Here's how bad it was: 🧠
+1. Card numbers
+2. Expiry dates
+3. CVC codes
 
-❌ Full card numbers and CVC codes stored in his own database
-❌ Card details sent from his app to the payment API on every purchase
-❌ The service key in the frontend, so anyone could have read the table despite RLS
-❌ Payment fields showing up in logs
+One ticket shop had a table with all three. 312 cards in it. 🃏
 
-✅ The custom form and table removed, and stored card data securely deleted
-✅ All keys rotated
-✅ The provider's hosted checkout, with saved payment methods held by the provider itself
-✅ Verified webhooks connected and payment fields scrubbed from logs
+Dennis Groot organises regional board game conventions and built Spelbeurs in Bolt: visitors buy tickets and book tables for tournaments. He asked Bolt for "faster checkout for returning visitors." Bolt generated a form that saved card numbers, expiry dates and CVC codes in a saved_cards table, then sent them to the payment provider's API on every purchase.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of Stripe, Mollie and PayPal integrations, "never touch card data" is a fixed rule - references only, never card numbers. 🛠️
+A developer friend spotted the table while helping with an unrelated bug. Row Level Security was enabled. But the service key was in the frontend, so anyone could have read the table anyway.
 
-💡 His result: €1,700, four business days. Returning visitors still get one-click checkout through the provider's saved payment methods, and the app no longer stores any card data at all. 🚀
+What LaunchStudio did (4 business days, €1,700):
+✓ The custom form and the table removed
+✓ The stored data securely deleted
+✓ Every key rotated
+✓ A switch to the provider's hosted checkout, with saved payment methods handled by the provider itself
+✓ Verified webhooks connected
+✓ Payment fields scrubbed from logs
 
-👉 Is your AI-built app storing payment data it shouldn't? Here's what you may and may not keep: https://launchstudio.eu/en/blog/is-it-safe-to-store-payment-data-in-my-lovable-app
+Dennis informed his payment provider and sought advice on notifying customers.
+
+Returning visitors still get one-click checkout, through the provider's saved payment methods. And Dennis's app now stores no card data at all.
+
+"I asked for faster checkout. I got a database full of card numbers that should never have existed." - Dennis Groot
+
+https://launchstudio.eu/en/blog/is-it-safe-to-store-payment-data-in-my-lovable-app
 
 #PCIDSS #Payments #Stripe #AppSecurity #LaunchStudio #Manifera

@@ -1,21 +1,31 @@
-🚨 Kim Verheul rents out small electric boats in Vlaardingen and built Bootje in Lovable as "just an MVP": customers pick a boat and a slot, pay a deposit and receive a digital code for the boat lock. She planned to test it for one summer. Within three weeks, about 400 bookings came in. Then a boat was taken out by someone who hadn't booked it - using a lock code from another customer's booking. 😳
+🏷️ LABEL: "Just an MVP. Just a test."
 
-Every booking - name, phone number and lock code - was readable by any logged-in user through the API. Deposits were confirmed by the browser redirect, so some customers got codes without paying. The Mollie key sat in the frontend, there were no backups, and the database was in a US region. Here's what the "it's just an MVP" label hides: 🧠
+What the label protected: nobody.
 
-❌ Lock codes readable by every user
-❌ Codes issued before payment was confirmed
-❌ A payment key in the browser
-❌ No backups and data outside the EU
+Kim Verheul rents out small electric boats in Vlaardingen and built Bootje in Lovable as "just an MVP": customers pick a boat and a time slot, pay a deposit, and get a digital key code for the boat lock. The plan was to test it for one summer before investing more. Within three weeks, around 400 bookings had come in.
 
-✅ Booking and lock-code access limited to the booker - and only valid during the booked slot
-✅ Deposits confirmed by Mollie webhooks before any code is issued
-✅ Key rotation, EU migration with backups and a tested restore
-✅ Account consolidation and alerts - with the feature set kept exactly as small as before
+"Just a test" had very real consequences:
+• Every booking, with the customer's name, phone number and the boat's lock code, was readable by any logged-in user through the API
+• Deposits were confirmed by the browser redirect, so some customers got lock codes without paying
+• The Mollie key was in the frontend
+• There were no backups, and the database sat in a US region
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we keep your MVP small - but never its safety. ⚙️
+Then a boat was taken out by someone who hadn't booked it, using a lock code from another customer's booking. That's when Kim realised the MVP label hadn't protected anyone.
 
-Her result: €2,200, eight business days. Bootje finished the summer with about 1,900 bookings and no further unauthorised boat use, and expanded to a second marina the next spring - with the same minimal features. 🚀
+The minimum safe standard (LaunchStudio, 8 business days, €2,200):
+✓ Booking and lock-code access limited to the booker, and codes valid only during the booked slot
+✓ Deposits confirmed by Mollie webhooks before any code is issued
+✓ The key rotated
+✓ EU migration, with backups and a tested restore
+✓ Accounts consolidated, and alerts set up
+✓ The feature set? Exactly as small as before
 
-👉 AI app production problems hidden behind "it's just an MVP": https://launchstudio.eu/en/blog/ai-app-production-problems-hidden-behind-its-just-an-mvp
+Bootje finished the summer with about 1,900 bookings, and no more unauthorised boat use. The next spring, Kim expanded to a second marina, with the same minimal features.
+
+The new label: "Small MVP. Safe for real customers."
+
+"I kept the MVP small, which was right. I also kept the safety small, which wasn't." - Kim Verheul
+
+https://launchstudio.eu/en/blog/ai-app-production-problems-hidden-behind-its-just-an-mvp
 
 #MVP #StartupLaunch #Lovable #Rentals #LaunchStudio #Manifera

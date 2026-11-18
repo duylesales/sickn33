@@ -1,21 +1,28 @@
-🚨 Samira El Amrani spent eight years running warehouse operations in the Rotterdam port area, then built DockSlot in Lovable: carriers book unloading slots, gate staff check trucks in on a tablet, planners watch a live board of every dock. Three warehouses in the Waalhaven and Maasvlakte used it. Then a carrier disputed a demurrage charge - and nobody could say who had moved their slot. 😳
+🚛 MORNING SHIFT REPORT: three warehouses in the Rotterdam port area
 
-On busy mornings everything piled up: two or three double bookings a week, a live board polling the database every two seconds from every screen, gate check-ins vanishing when tablets lost Wi-Fi near the steel doors, and a shipper's TMS integration dragging the app down whenever it slowed. Here's what operational logistics software needs before production: 🧠
+⚠️ Dock bookings: two or three double bookings a week. Trucks waiting at occupied docks.
+⚠️ Live board: polling the database every two seconds from every open screen. The whole app slows at peak.
+⚠️ Gate tablets: Wi-Fi lost near the steel doors. Check-ins entered there disappear.
+⚠️ Shipper integration: a large shipper's TMS calls in synchronously. When it slows down, so does everything.
+⚠️ Disputes: a carrier challenges a demurrage charge. No record of who moved their slot.
 
-❌ Availability checked and booking saved in two separate steps
-❌ Polling from every open screen at the 05:30 peak
-❌ Check-ins lost when the signal drops
-❌ Synchronous integrations and no audit trail
+Samira El Amrani spent eight years as a warehouse operations manager in the Rotterdam port area before building DockSlot in Lovable: carriers book unloading slots, gate staff check trucks in on a tablet, and planners see a live board of every dock. Three warehouses in the Waalhaven and Maasvlakte areas use it, with about 60 planners and gate staff and several hundred carrier accounts.
 
-✅ A database exclusion constraint that makes overlapping dock bookings impossible
-✅ Filtered real-time subscriptions scoped to each user's warehouse
-✅ Offline queuing for gate check-ins with clear pending indicators
-✅ The TMS integration behind a queue with retries and idempotency, plus an append-only audit log
+In a warehouse, "usually correct" means wrong.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we make AI-built tools as reliable as the people using them - and keep the Lovable interface intact. ⚙️
+The next shift report (LaunchStudio, Launch & Grow, 18 business days, €5,600, plus €49/month):
+✅ Dock bookings: a database exclusion constraint makes overlapping bookings impossible
+✅ Live board: filtered real-time subscriptions, scoped to each user's warehouse
+✅ Gate tablets: offline queuing for check-ins, with clear pending indicators
+✅ Shipper integration: behind a message queue, with retries and idempotency
+✅ Disputes: an append-only audit log for bookings and check-ins
+✅ Monitoring, alerting and a documented incident process, supporting a 99.5% availability commitment in Samira's contracts
+✅ The Lovable interface: preserved throughout
 
-Her result: €5,600, eighteen business days. Double bookings dropped to zero, morning-peak database load fell by roughly 70%, and DockSlot signed two more warehouses - one required the audit log and a 99.5% availability commitment to sign. 🚀
+Double bookings dropped to zero. Database load at the morning peak fell by roughly 70%. And DockSlot signed two more warehouses, one of which required the audit log and the availability commitment as a contract condition.
 
-👉 Productionize an AI app in Rotterdam: logistics and real-time data: https://launchstudio.eu/en/blog/productionize-an-ai-app-in-rotterdam-logistics-and-real-time-data
+"In a warehouse, 'usually correct' is the same as wrong. The fixes weren't glamorous, but they made the software as reliable as the people using it." - Samira El Amrani
+
+https://launchstudio.eu/en/blog/productionize-an-ai-app-in-rotterdam-logistics-and-real-time-data
 
 #Logistics #Rotterdam #SupplyChain #Lovable #LaunchStudio #Manifera

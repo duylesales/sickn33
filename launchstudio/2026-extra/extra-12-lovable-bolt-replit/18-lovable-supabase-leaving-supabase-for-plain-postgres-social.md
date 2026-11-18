@@ -1,21 +1,32 @@
-🚨 Gerlof Tichelaar's Zorgdossier manages care plans for 26 small-scale residential care providers - about 1,400 residents. Then a regional healthcare group offered a contract for nine locations, worth more than his existing revenue. Their procurement required a specific region, certification and contract terms his Supabase plan didn't offer. 😳
+🎭 DRESS REHEARSAL, then opening night
 
-He asked Supabase first - the step most founders skip. Part of it was solvable; the region and certification weren't, in time. Here's what leaving Supabase actually involves: 🧠
+THE PRODUCTION
+Gerlof Tichelaar built Zorgdossier in Lovable: care plan administration for small-scale residential care providers, 26 organisations, around 1,400 residents. A regional healthcare group offered a contract for nine locations, worth more than his entire existing revenue. Its procurement required personal data processed on infrastructure under a specific agreement, with a named certification, in a specific region.
 
-❌ "It's expensive", "it's slow", "lock-in" - usually not real reasons to leave
-❌ Assuming the database is the hard part (it isn't - it's standard Postgres)
-❌ Underestimating auth: every session ends and every RLS policy needs rewriting
-❌ Skipping the rehearsal and guessing how long the cutover will take
+THE CASTING CALL
+He asked Supabase first, the step most founders skip. Part of the requirement could be met on different terms. The region and certification couldn't, on his timeline. So: a migration, not because Supabase wasn't good enough, but because a procurement department needed a specific answer.
 
-✅ A full rehearsal on a copy - which found two missing extensions and timed the cutover at 40 minutes, not two hours
-✅ Password hashes imported so no carer had to reset anything, and 31 RLS policies rewritten
-✅ 94,000 documents copied during a two-week dual-read period, with old links redirected
-✅ Realtime replaced with polling where it wasn't clinically needed, and a restore tested before retiring the old project
+THE DRESS REHEARSAL (on a copy)
+• Found two extensions in use that the target didn't enable by default
+• Measured the real cutover at 40 minutes, not the two hours assumed
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we'll also tell you not to migrate - which is the more common answer. 🧭
+THE PRODUCTION WORK (LaunchStudio, 16 business days across three weeks, €11,800)
+✓ The database migrated to managed Postgres in the required region, with row counts and constraints verified against the source
+✓ Authentication moved with password hashes imported, so no carer had to reset anything
+✓ 31 Row Level Security policies rewritten against the new identity claim, and social login restored for the two organisations using it
+✓ 94,000 documents copied, with two weeks of dual reads, and old links redirected instead of broken
+✓ Realtime replaced with polling on the two screens using it, after confirming live updates weren't clinically necessary
+✓ Backups configured, with a restore performed and timed
+✓ The old project retired after a month, with a verified archive
 
-His result: sixteen business days and €11,800 later, the contract was signed. The 40-minute cutover happened at six on a Sunday morning, and nobody noticed. Infrastructure went from €85 to €310 a month - the least interesting number in the project. 🚀
+OPENING NIGHT
+Six o'clock on a Sunday morning. The 40-minute cutover. Nobody noticed.
 
-👉 Leaving Supabase for plain Postgres: https://launchstudio.eu/en/blog/lovable-supabase-leaving-supabase-for-plain-postgres
+THE REVIEWS
+The contract was signed. Monthly infrastructure went from €85 to €310, which Gerlof calls the least interesting number in the project. The rehearsal is the part he recommends.
+
+"I did not migrate because Supabase was not good enough. I migrated because a procurement department needed a specific answer, and that is the only reason I would do it again." - Gerlof Tichelaar
+
+https://launchstudio.eu/en/blog/lovable-supabase-leaving-supabase-for-plain-postgres
 
 #Supabase #PostgreSQL #Migration #HealthTech #LaunchStudio #Manifera

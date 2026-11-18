@@ -1,21 +1,38 @@
-🚨 Tijmen Boersma runs a commercial cleaning company in Almelo and built Poetsplan with Cursor: planners assign cleaners to office buildings, and clients see completed rounds and building access notes - including alarm codes. 22 cleaning companies in Twente used it. Then a security-minded client guessed his way into a test account in one afternoon with a simple script. 😳
+🧮 The math of a six-digit login code
 
-Tijmen had asked Cursor for "passwordless login with a code by email". He got a six-digit code, valid for 24 hours, with unlimited attempts. The separate reset flow built its link from the request's host header, tokens were stored in plain text, a reset didn't end other sessions, and the login form told non-customers "unknown email". Here's how to get password resets and magic links right in an AI-built app: 🧠
+1,000,000 possible codes
+× valid for 24 hours
+× no limit on attempts
++ one simple script
+= into a test account within an afternoon
 
-❌ Six-digit codes with unlimited guesses
-❌ Reset links built from the request host
-❌ Tokens stored in plain text and never invalidated
-❌ Sessions that survive a password change
+That's what a security-minded client of Poetsplan found. 🧹
 
-✅ Custom login and reset replaced by Supabase Auth's built-in flows
-✅ Ten-minute expiry, single-use hashed tokens and a confirmation step that survives email scanners
-✅ Rate limits per email and IP with lockouts, and reset URLs fixed to a configured base URL
-✅ All sessions revoked on password change with a notification email, unified messages, an authenticated sending domain - and alarm codes limited to planners
+Tijmen Boersma runs a commercial cleaning company in Almelo and built Poetsplan with Cursor: a scheduling SaaS where planners assign cleaners to office buildings, and clients see completed rounds and building access notes, alarm codes included. Twenty-two cleaning companies in Twente used it. Tijmen had asked Cursor for "passwordless login with a code by email." He got convenience, and a lock with six digits and unlimited guesses.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering and its cybersecurity roots, we check the second door into every account - not just the front one. ⚙️
+The review found more in the reset flow:
+• Reset links built from the request's host header
+• Tokens stored in plain text
+• A password reset that didn't end other sessions
+• A login form that said "unknown email" for non-customers
 
-His result: €1,150, four business days. The client's follow-up test found no way in, Poetsplan passed that client's supplier security check, and it has since grown to 35 cleaning companies. 🚀
+The new math (LaunchStudio, 4 business days, €1,150):
 
-👉 AI generated app security: password resets and magic links done right: https://launchstudio.eu/en/blog/ai-generated-app-security-password-resets-and-magic-links-done-right
+Supabase Auth's built-in flows, instead of custom code
+× 10-minute expiry
+× single-use, hashed tokens, with a confirmation step that survives email scanners
+× rate limits per email and per IP, with attempt lockouts
++ reset URLs from a configured base URL
++ every session revoked on a password change, with a notification email
++ unified error messages
++ sending from an authenticated domain
++ alarm codes restricted to the planner role
+= no way in
+
+The client's follow-up test found exactly that, and Poetsplan passed that client's supplier security check. It has since grown to 35 cleaning companies.
+
+"I asked for convenience and got a lock with six digits and unlimited guesses. The fix was mostly using what my auth provider already did properly." - Tijmen Boersma
+
+https://launchstudio.eu/en/blog/ai-generated-app-security-password-resets-and-magic-links-done-right
 
 #Authentication #AppSecurity #Supabase #Cursor #LaunchStudio #Manifera

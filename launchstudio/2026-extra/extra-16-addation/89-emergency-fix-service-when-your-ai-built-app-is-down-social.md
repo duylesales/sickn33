@@ -1,23 +1,36 @@
-🚨 Dennis Vos runs a SaaS for car repair garages from Zoetermeer, built with Lovable and Supabase and used by around 70 garages for appointments and invoices. On Sunday evening he asked his AI tool to "add a column for the mechanic's name" and accepted several follow-up suggestions. On Monday morning, garages saw empty schedules. Four more prompts made it worse. At 08:40 he called LaunchStudio. ☎️
+🕗 A MONDAY MORNING, clock by clock
 
-The diagnosis showed: 🧠
+SUNDAY EVENING
+Dennis Vos asks his AI tool to "add a column for the mechanic's name." Errors appear. He accepts several follow-up suggestions.
 
-❌ A Sunday suggestion had replaced the appointments policy with one referencing the new column incorrectly, so every query returned nothing
-❌ A later prompt renamed a column the invoice function depended on
-❌ No staging, so every change went straight to garages
-❌ No tests to catch the broken policy before release
+MONDAY MORNING
+Around 70 garages use Garageplanner, Dennis's SaaS for car repair garages in Zoetermeer, built with Lovable and Supabase, for appointments and invoices. They open it and see empty schedules. Dennis tries four more prompts. Each one makes it worse.
 
-How it was stabilised: ✅
+08:40
+Dennis contacts LaunchStudio. After a short call, he invites the team to Supabase and the GitHub repository.
 
-✅ A fixed price of €950 agreed before any change
-✅ Policy restored from migration history and the column rename reverted
-✅ Deployment rolled back to Saturday's version, with schedules and invoices confirmed by two garages by 10:15
-✅ The mechanic column re-added properly that afternoon through a migration on new staging, plus an incident report with recommendations
+THE DIAGNOSIS
+One Sunday suggestion had replaced the appointments table's policy with one that referenced the new column incorrectly, so every query returned nothing. A later prompt had renamed a column the invoice function depended on. Price for stabilisation, agreed upfront: €950.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of operating production systems for clients such as Vodafone and TNO, we stabilise first, explain clearly and help prevent the next incident. 🛠️
+10:15
+✓ The policy restored from the migration history
+✓ The column rename reverted
+✓ The deployment rolled back to Saturday's version
+✓ Two garages confirm that schedules and invoices work again
 
-His result: about ninety minutes of downtime, an honest apology and no garage cancelled. A follow-up Launch Ready project added tests that have since caught a similar prompt mistake. 🚀
+MONDAY AFTERNOON
+The mechanic column is added properly, through a migration, on a new staging environment.
 
-👉 Emergency fix service when your AI-built app is down: https://launchstudio.eu/en/blog/emergency-fix-service-when-your-ai-built-app-is-down
+TWO WEEKS LATER
+The incident report recommended staging, access tests and project instructions for Lovable. Dennis implemented them in a €2,200 Launch Ready project.
+
+SINCE THEN
+A similar prompt mistake was caught by the tests on staging.
+
+Total time garages went without schedules: about ninety minutes. Dennis sent a short apology and explanation. No garage cancelled.
+
+"Every prompt I tried made it worse. The fix was to stop, roll back and look at what had actually changed. I needed someone calm to do that with me." - Dennis Vos
+
+https://launchstudio.eu/en/blog/emergency-fix-service-when-your-ai-built-app-is-down
 
 #AppDown #IncidentResponse #Lovable #Supabase #AIFounder #LaunchStudio #Manifera

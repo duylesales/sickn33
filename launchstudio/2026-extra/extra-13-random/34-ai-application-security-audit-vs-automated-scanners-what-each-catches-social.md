@@ -1,21 +1,29 @@
-🚨 Niels Brandsma, a backend developer in Hoofddorp, built SlotPark with Cursor: companies near Schiphol share unused parking spaces with each other's employees. Security-conscious, he ran Dependabot, Semgrep, gitleaks and a weekly OWASP ZAP scan. All green. Twelve companies, 400 employees. Then a prospective airline-services customer required an independent review before signing. 😳
+🚦 FOUR SCANNERS AND ONE REVIEW
 
-The review found nothing the scanners had missed in their own categories - and four things they couldn't see. Any employee could view and cancel other companies' bookings by changing an ID. The company-admin API checked that you were an admin, but not of which company. RLS was on with a policy allowing reads by any authenticated user. And invoice amounts came from prices the client sent. Here's what scanners catch - and what only a security audit finds: 🧠
+🟢 Dependabot: all clear
+🟢 Semgrep: all clear
+🟢 gitleaks: all clear
+🟢 Weekly OWASP ZAP scan: all clear
+🔴 Independent review: four access-control issues
 
-❌ Broken access control by changing an ID
-❌ Admin checks without a tenant check
-❌ RLS that exists but allows everything
-❌ Prices trusted from the client
+Niels Brandsma, a backend developer in Hoofddorp, built SlotPark with Cursor: companies near Schiphol share unused parking spaces with each other's employees through a booking app, with monthly invoicing. Being security-conscious, he ran all four scanners. Twelve companies and about 400 employees used it. Then a prospective customer, an airline services company, required an independent review before signing.
 
-✅ Ownership and tenant checks fixed on the server
-✅ RLS policies rewritten to scope by company and user
-✅ Price calculation moved to the server
-✅ 27 automated authorisation tests for every role and tenant boundary, in the same CI pipeline as the scanners
+The review found nothing the scanners had missed in their own categories. They were right about everything they could see. It found four things they couldn't:
+🔴 Any employee could view and cancel other companies' bookings by changing a booking ID
+🔴 The company-admin API checked that a user was an admin, but not of which company, so any company admin could edit another company's spaces and pricing
+🔴 Row Level Security was on for bookings, with a policy allowing reads by any authenticated user
+🔴 Invoice amounts were calculated from prices the client sent during booking
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we use tools as instruments - and human judgement for what they can't know: who should own which data. ⚙️
+Turning red to green (LaunchStudio, 5 business days, €1,250):
+✓ Ownership and tenant checks fixed
+✓ RLS policies rewritten to scope by company and user
+✓ Price calculation moved to the server
+✓ 27 automated authorisation tests for every role and tenant boundary, added to the same CI pipeline as the scanners
 
-His result: €1,250, five business days. The airline-services company signed after the review and re-test report, and over the next year the authorisation tests caught two regressions the still-green scanners missed. 🚀
+The airline services company signed after receiving the review and re-test report. And in the year that followed, the authorisation tests caught two regressions while the scanners, as before, stayed green.
 
-👉 AI application security audit vs automated scanners: what each catches: https://launchstudio.eu/en/blog/ai-application-security-audit-vs-automated-scanners-what-each-catches
+"I had four tools telling me I was fine. They were right about everything they could see. The problems were all in what they couldn't." - Niels Brandsma
+
+https://launchstudio.eu/en/blog/ai-application-security-audit-vs-automated-scanners-what-each-catches
 
 #AppSecurity #SAST #DevSecOps #Cursor #LaunchStudio #Manifera

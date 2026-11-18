@@ -1,21 +1,27 @@
-🎻 Joris Smits runs a network of music teachers in Maastricht and built Lesrooster with Cursor and Supabase: students book lessons with independent teachers and pay per package through Mollie. After a Launch Ready project, the release was planned for a Tuesday morning, one week before a regional newspaper article about the platform. 📰
+🎵 THE 48-HOUR LOG: launch of Lesrooster, Maastricht
 
-In the 48 hours after release, three issues appeared: 🧠
+BEFORE HOUR 0
+Joris Smits runs a network of music teachers and built Lesrooster with Cursor and Supabase: students book lessons with independent teachers and pay per package through Mollie. A Launch Ready project is done. Launch is set for a Tuesday morning, one week before a regional newspaper article about the platform.
 
-❌ Confirmation emails delayed at one large Dutch email provider, because the new domain had little reputation
-❌ A teacher's calendar showing the wrong week on an older tablet browser
-❌ A Mollie payment with one bank returning a status the app didn't handle, leaving a booking pending
-❌ All three invisible on staging, because production adds real domains, devices and banks
+WITHIN THE FIRST THREE HOURS
+Monitoring shows confirmation emails to one large Dutch email provider arriving late. The new sending domain has little reputation yet. LaunchStudio adjusts the sending configuration and warms the domain up gradually. By the afternoon, the delays are gone.
 
-✅ Sending configuration adjusted and the domain warmed up, delays gone by the afternoon
-✅ A time zone fix released the same day
-✅ The webhook handler updated and the pending booking corrected
-✅ A closing summary with causes, fixes and two recommendations for later
+LATER ON DAY ONE
+A teacher reports that the calendar shows the wrong week on her tablet. The cause: a time zone setting in an older browser. A fix goes out the same day.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of releasing and supporting production systems for clients such as Vodafone and TNO, every Launch Ready project includes 48 hours of active post-launch support. 🛠️
+DAY TWO
+A Mollie payment from one specific bank returns a status the app doesn't handle yet. One booking stays pending. The webhook handler is updated, and the booking corrected.
 
-His result: €2,200, six business days. When the article appeared, around 300 new students signed up in two days without a single technical issue reaching support. 🚀
+HOUR 48
+Joris receives a short summary: three issues, their causes, their fixes, and two recommendations for later.
 
-👉 What 48 hours of post-launch support covers: https://launchstudio.eu/en/blog/what-48-hours-of-post-launch-support-covers
+Cost of the window: included in the €2,200 Launch Ready package. No extra charge.
+
+ONE WEEK LATER
+The newspaper article runs. Around 300 new students sign up in two days. Technical issues reaching support: none. Joris later chose ad-hoc support, knowing the launch had been stabilised.
+
+"Three small problems in two days, all fixed before most of my teachers noticed. By the time the article came out, the app was boring in the best possible way." - Joris Smits
+
+https://launchstudio.eu/en/blog/what-48-hours-of-post-launch-support-covers
 
 #LaunchDay #Support #Cursor #Supabase #AIFounder #LaunchStudio #Manifera

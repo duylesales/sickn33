@@ -1,21 +1,29 @@
-🚨 Laura Schouten runs a dog walking business in Hilversum with six walkers. She built Uitlaatrooster in Lovable: owners book walks, walkers check in with a photo, owners pay monthly. Two freelancers quoted €9,000 and €14,500 - both wanting to "clean up" the frontend first. 😳
+💰 Guess the price: what does it cost to make a dog walking app production-ready?
 
-She tried LaunchStudio's price calculator instead: €2,350-€4,150 before talking to anyone. On the call, the real gaps showed up: 🧠
+A) €14,500 (freelancer one, "clean up the frontend first")
+B) €9,000 (freelancer two, also "clean up the frontend first")
+C) €2,350 to €4,150 (LaunchStudio's calculator)
+D) €2,650 (the final fixed quote)
 
-❌ Check-in photos stored publicly
-❌ Walkers able to see every owner's home address
-❌ No working monthly payments
-❌ The app still living on a Lovable preview
+Answer: D. And it landed inside range C.
 
-✅ Owner and walker roles with Row Level Security - walkers only see addresses for their own walks
-✅ Photos in private storage, shared via signed links with the dog's owner only
-✅ Mollie set up for monthly iDEAL payments
-✅ Deployed on her own domain with monitoring - and the Lovable frontend untouched
+Laura Schouten runs a dog walking business in Hilversum with six walkers. She built Uitlaatrooster in Lovable: owners book walks, walkers see their routes and check in with a photo, and owners pay monthly. Both freelancers wanted to start by "cleaning up" the frontend.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of estimating across 160+ projects, we give you a fixed price after a 15-minute call - and keep the screens you already built. 🛠️
+The calculator placed it as an internal-tool-sized app with payments, user accounts and security. On the call, two things came up that needed fixing anyway:
+• Photo check-ins stored publicly
+• Walkers able to see every owner's address
 
-💡 Her result: €2,650, nine business days - inside the calculator range. Within two months all 85 regular customers moved from WhatsApp and bank transfers to the app, and her Sunday evenings were free again. 🚀
+What the €2,650 covered (9 business days):
+✓ Owner and walker roles with Row Level Security, so walkers only see addresses for walks assigned to them
+✓ Photos in private storage, with signed links shared only with the dog's owner
+✓ Mollie for monthly iDEAL payments
+✓ Deployment on Laura's domain, with monitoring
+✓ The Lovable frontend, exactly as it was
 
-👉 What does it really cost to make a Lovable app production ready? Here's the full breakdown: https://launchstudio.eu/en/blog/how-much-does-it-cost-to-make-a-lovable-app-production-ready
+Within two months, all 85 regular customers had moved from WhatsApp bookings and bank transfers to the app. Laura no longer spends Sunday evenings on scheduling.
+
+"I expected a five-figure quote. The calculator told me the real range before I talked to anyone, and the final price landed inside it." - Laura Schouten
+
+https://launchstudio.eu/en/blog/how-much-does-it-cost-to-make-a-lovable-app-production-ready
 
 #Lovable #Pricing #iDEAL #AIFounder #LaunchStudio #Manifera

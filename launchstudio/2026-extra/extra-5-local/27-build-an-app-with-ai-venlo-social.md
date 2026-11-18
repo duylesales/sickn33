@@ -1,20 +1,21 @@
-🚨 Stijn Gerrits built GrensVracht - a booking and documentation tool for freight carriers moving goods between the Netherlands and Germany - using Cursor in three weeks. Dutch carriers loved it. The first German carrier hit a wall almost immediately: the invoicing module assumed Dutch VAT rules throughout, with no logic for intra-EU cross-border freight VAT treatment. 😳
+📰 BREAKING FROM VENLO: Cross-border freight tool gets cross-border tax wrong
 
-Their accountant flagged the invoices as non-compliant in the first billing cycle. 🧠
+VENLO - A booking and documentation tool built specifically for freight between the Netherlands and Germany failed its first German customer within a single billing cycle, on exactly the cross-border rules it was built for.
 
-❌ Cursor built the invoicing module assuming Dutch VAT rules across the board
-❌ No reverse-charge VAT treatment for qualifying cross-border freight transactions
-❌ No country-aware address validation
-❌ Only iDEAL as a payment option, with no SEPA direct debit for German customers
+The tool, GrensVracht, was built in Cursor in about three weeks by Stijn Gerrits, who previously worked in cross-border freight coordination. It handles shipment booking, customs documentation checklists and invoicing. Carriers on the Dutch side loved it.
 
-✅ Rebuild the invoicing logic to correctly apply reverse-charge VAT for cross-border freight
-✅ Add country-aware address validation
-✅ Add SEPA direct debit alongside the existing iDEAL integration
+WHAT HAPPENED
+The first German carrier's accountant flagged GrensVracht's invoices as non-compliant. Cursor had built the invoicing module on Dutch VAT rules throughout, with no logic for intra-EU cross-border freight, which follows different VAT rules than domestic transactions.
 
-At **LaunchStudio**, Manifera's 160+ delivered projects give our engineers regular exposure to exactly this kind of multi-jurisdiction compliance gap that AI tools don't catch. 🛡️
+THE RESPONSE
+LaunchStudio engineers rebuilt the invoicing logic to apply reverse-charge VAT correctly to qualifying cross-border freight, added country-aware address validation, and added SEPA direct debit next to the existing iDEAL option. The work took 7 business days and cost €1,400.
 
-GrensVracht's result: its German carrier segment grew from one to seven customers over the following two months, with compliant invoicing cited directly by two of them as a condition of signing. 🚀
+LATEST
+GrensVracht's German carrier segment has since grown from one customer to seven in two months. Two of them named compliant invoicing as a condition of signing.
 
-👉 Serving customers on both sides of a border? Get your invoicing logic checked before it costs you a signature: https://launchstudio.eu/en/blog/27-build-an-app-with-ai-venlo
+FOUNDER COMMENT
+"I built GrensVracht for exactly this cross-border problem, and my own invoicing still got the cross-border tax rules wrong. LaunchStudio caught what I couldn't see from the inside." - Stijn Gerrits
+
+More on this story: https://launchstudio.eu/en/blog/27-build-an-app-with-ai-venlo
 
 #AINativeFounder #LaunchStudio #Manifera #CrossBorderVAT #Venlo

@@ -1,21 +1,25 @@
-🚨 Kim Verhoef built Inwerkplein in Bolt: an onboarding portal for international employees joining Dutch companies - BSN registration steps, housing tips, company policies. She prompted everything in Dutch, then asked Bolt to "add English". The toggle translated about 70% of the interface. Errors, emails, PDFs and company-entered content stayed Dutch. 😳
+"Welcome to your onboarding! Je BSN-afspraak is bevestigd. Please check your email voor de details."
 
-Her app was for people who didn't speak Dutch yet. Half of it only spoke Dutch. Here's what the quick translation missed: 🧠
+(Illustrative. But that's roughly what new international hires experienced.) 🌍
 
-❌ Error and validation messages, still only in Dutch
-❌ Transactional and auth emails in one language
-❌ PDFs and company policies entered by admins left untranslated
-❌ No language preference stored, and no hreflang on public pages
+Kim Verhoef built Inwerkplein in Bolt: an onboarding portal for international employees joining Dutch companies, covering BSN registration steps, housing tips and company policies. She had prompted everything in Dutch, then asked Bolt to "add English." The result was a toggle that translated about 70% of the interface. Error messages, emails, PDFs and admin-entered content stayed Dutch.
 
-✅ All strings extracted into Dutch and English translation files
-✅ Language preference per user, with an organisation default
-✅ Localised dates and numbers, multilingual transactional and auth emails, and translation fields with fallback for company content
-✅ /nl/ and /en/ marketing pages with hreflang
+For an app whose core users didn't speak Dutch yet, that meant confusion.
 
-At **LaunchStudio**, backed by Manifera's multilingual work for clients across Europe and Asia, we treat language as infrastructure - set up once, properly. 🛠️
+What LaunchStudio did (8 business days, €2,800):
+✓ Every string extracted into Dutch and English translation files
+✓ A language preference per user, with an organisation default
+✓ Dates and numbers localised
+✓ Transactional and auth emails in both languages
+✓ Translation fields for company-entered policies, with a fallback
+✓ /nl/ and /en/ marketing pages with hreflang
 
-💡 Her result: €2,800, eight business days. International users got the whole experience in English, HR staff kept working in Dutch, and Kim added German for a new client in just two days using the same structure. 🚀
+"Welcome to your onboarding! Your BSN appointment is confirmed. Please check your email for the details."
 
-👉 Need Dutch and English versions of your AI-built app? Here's how to do i18n right: https://launchstudio.eu/en/blog/dutch-and-english-versions-of-your-ai-built-app
+International users now get the whole experience in English. Dutch HR staff keep working in Dutch. And when a client with many German employees asked for German, Kim added it in two days, on the same structure.
+
+"My app was for people who didn't speak Dutch yet. Half of it only spoke Dutch." - Kim Verhoef
+
+https://launchstudio.eu/en/blog/dutch-and-english-versions-of-your-ai-built-app
 
 #i18n #Localisation #SaaS #Bolt #LaunchStudio #Manifera

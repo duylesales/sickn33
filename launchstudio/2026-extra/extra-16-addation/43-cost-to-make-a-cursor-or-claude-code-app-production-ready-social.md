@@ -1,21 +1,33 @@
-🍽️ Floor Bakker runs a hospitality recruitment SaaS from Utrecht, built over eight months with Cursor and later Claude Code on Next.js, Supabase and Stripe. About 300 businesses and 4,000 workers used it. But bugs were increasing, and Floor had become afraid to touch certain files. 😰
+🚪 One house, three front doors
 
-The review showed how eight months of sessions had drifted: 🧠
+Door 1: Supabase Auth, for workers.
+Door 2: a custom session system for businesses, written during one debugging session.
+Door 3: an old magic-link route nobody used anymore, still unlocked.
 
-❌ Three ways to log in: Supabase Auth, a custom session system and an old magic-link route
-❌ API routes checking login but not whether a shift belonged to the user's business
-❌ Two Stripe keys in a committed script, and 140 dependencies with about 30 unused
-❌ No tests, and deployments from Floor's laptop
+Floor Bakker had built a product she was scared of. 🏨
 
-✅ Authentication consolidated on Supabase Auth, the old route removed and ownership checks on every API route
-✅ Keys rotated, moved to environment variables and repository history cleaned
-✅ Unused dependencies removed, and tests for login, cross-business access, applications and Stripe webhooks
-✅ A GitHub pipeline to Vercel with migrations, plus project rules for both Cursor and Claude Code
+She runs Shiftwerk, a recruitment SaaS for hospitality from Utrecht, built over eight months with Cursor and later Claude Code, using Next.js, Supabase and Stripe. Restaurants post shifts, workers apply. Around 300 businesses and 4,000 workers. But bugs were increasing, and there were files Floor didn't dare to touch.
 
-At **LaunchStudio**, backed by Manifera's 11+ years of maintaining large codebases for clients such as Vodafone and TNO, we consolidate AI-generated code instead of rewriting it. 🛠️
+Behind the doors, the review found more:
+• API routes that checked whether you were logged in, but not whether the shift belonged to your business
+• Two Stripe keys in a committed script
+• 140 dependencies, around 30 of them unused
+• No tests
+• Deployments from Floor's laptop
 
-Her result: €3,400, nine business days. Fewer bug reports, builds about a third faster and tests that blocked two access-breaking changes. 🚀
+What LaunchStudio did (9 business days, €3,400):
+✓ One front door: everything on Supabase Auth, with business accounts migrated and the old route removed
+✓ Ownership checks on every API route, through one shared helper
+✓ Keys rotated, moved to environment variables, and the repository history cleaned
+✓ Unused dependencies removed, the rest updated
+✓ Tests for login, access between businesses, applications and Stripe webhooks
+✓ A GitHub pipeline deploying previews and production on Vercel, with database migrations
+✓ Project rules for both Cursor and Claude Code
 
-👉 The cost to make a Cursor or Claude Code app production ready: https://launchstudio.eu/en/blog/cost-to-make-a-cursor-or-claude-code-app-production-ready
+In the next two months, bug reports dropped noticeably and build times fell by around a third. Floor went back to building every week, and the tests blocked two changes that would have broken access between businesses.
+
+"I had built a product I was scared of. Now I have a codebase with rules, and my AI assistant follows them better than I did." - Floor Bakker
+
+https://launchstudio.eu/en/blog/cost-to-make-a-cursor-or-claude-code-app-production-ready
 
 #Cursor #ClaudeCode #NextJS #Supabase #AIFounder #LaunchStudio #Manifera

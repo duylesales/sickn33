@@ -38,6 +38,16 @@ That operations-first mindset is also, in a way, exactly the right instinct misa
 4. **Error handling.** AI-generated code tends to handle the happy path well and fail silently - or with an unhelpful crash - everywhere else.
 5. **Monitoring.** Without alerting in place, founders typically learn about outages from an angry customer email, not from a dashboard.
 
+## The Five Gaps at a Glance
+
+| Gap | What goes wrong in production | First thing to check |
+| --- | --- | --- |
+| Backups | A bad migration or deleted table wipes data with no way back | Is there an automated backup, and have you ever restored from it? |
+| Secrets management | Keys leak through a public repository or the browser bundle | Search the code and repository history for API keys and passwords |
+| Concurrency | Two users editing the same record overwrite each other | Test the busiest screen with several people at once |
+| Error handling | Failures happen silently and data ends up half-saved | Trigger a failure on purpose and see what the user and the logs show |
+| Monitoring | You hear about outages from customers, not from alerts | Who gets notified, and how fast, when the app goes down? |
+
 None of these require rebuilding what's already been built. They require a layer of engineering discipline applied on top of it - which is precisely the work LaunchStudio does. In practice, that work is often less about writing new features and more about asking the questions an AI coding tool never asks: what happens if this migration fails halfway through, who gets notified if the database runs out of storage, and what's the actual recovery time if the worst-case scenario on this list happens on a Friday night. LaunchStudio is powered by Manifera, whose engineers operate out of a development hub in Ho Chi Minh City on Pho Quang Street, working alongside the Amsterdam team to review and harden AI-generated codebases for founders across Noord-Holland and beyond, without touching the frontend a founder has already validated with users.
 
 For a look at how this kind of production hardening has worked for other companies, Manifera's [portfolio](https://www.manifera.com/portfolio/) documents 160+ delivered projects across industries. And if you're trying to figure out where your own Zaanstad-built prototype currently stands, [LaunchStudio's homepage](https://launchstudio.eu/en/) walks through the full path from prototype to launch.
@@ -45,6 +55,28 @@ For a look at how this kind of production hardening has worked for other compani
 ## Getting from "It Runs" to "It's Live"
 
 The practical guide, boiled down: treat your AI-coded MVP as a strong first draft of the product, not the final infrastructure. Get a second set of eyes - ideally engineers who read AI-generated code for a living - on the database schema, the auth flow, and the deployment pipeline before you put real customer data or real payments through it. This is a one-time investment, not an ongoing dependency; most founders need it once, at the transition point between demo and launch.
+
+The order matters as much as the work itself. Fix anything that can lose or expose customer data first - backups, secrets and access rules - because those mistakes cannot be undone after launch. Error handling and monitoring come next, since they decide how quickly you notice and recover from problems. Performance tuning and nice-to-have improvements can wait until real usage shows where the bottlenecks actually are, rather than where you guess they might be.
+
+## A One-Week Production Checklist for Your AI-Coded MVP
+
+If you want to close the most dangerous gaps yourself before talking to anyone, a focused week is usually enough to know where you stand.
+
+**Day 1: Backups.** Find out whether your database is backed up at all, how often, and how long backups are kept. Then do the step almost everyone skips: restore a backup into a separate test database and confirm the data is really there. A backup you have never restored is a hope, not a plan.
+
+**Day 2: Secrets.** Search your code and your repository history for API keys, database passwords and payment keys. Anything that has ever been committed to a public repository should be treated as leaked and rotated, even if you deleted it later.
+
+**Day 3: Access.** Create two ordinary test accounts and check whether one can see or change the other's data by editing a URL or replaying a request. This is the gap with the highest cost if it reaches real customers.
+
+**Day 4: Failure.** Switch off a dependency, such as the email service or a payment test key, and watch what the app does. Does the user see a clear message, or does the screen freeze while half the data is saved?
+
+**Day 5: Monitoring.** Set up at least an uptime check and error alerts that reach your phone, so the next outage reaches you before it reaches a customer.
+
+Write down what you found each day. Even if you hand the fixes to someone else, that list turns a vague worry into a scoped piece of work with a clear price.
+
+## What Production Hardening Costs
+
+For most Zaanstad founders the work falls into one of two fixed-price packages. **Launch Ready** (€800-€3,500) covers a security and production review, the fixes for the gaps on this list, deployment and 48 hours of support after launch. **Launch & Grow** (€2,500-€7,500 plus €49 per month) adds payments, managed hosting, backups, monitoring and ongoing priority support. A single fix like Femke's backup setup below sits at the lower end; an app with payments, several user roles and integrations sits higher. The [price calculator](https://launchstudio.eu/en/#calculator) gives a first indication before a short call turns it into a fixed quote.
 
 ## Choosing a Hosting Provider That Won't Surprise You Later
 

@@ -1,21 +1,34 @@
-🚨 Erik Boersma runs a painting company in Hengelo and built Verfofferte in Bolt: painters measure rooms on a tablet, the app calculates paint, hours and price, and customers accept a PDF quote online. Then he raised his prices - and customers who reopened an already-accepted quote suddenly saw the new prices. One invoice didn't match the quote the customer had signed. 😳
+📄 Two versions of the same quote
 
-The customer signed one price and received another. Both came from his app, and both were "correct" when they were generated. Here's why: 🧠
+VERSION A: the day the customer signed
+Price: based on that day's price table
+Status: accepted
 
-❌ PDFs regenerated from current price tables every time someone clicked download
-❌ Invoice numbers from a counter in the browser - two invoices shared a number
-❌ Accepted quotes and issued invoices never frozen as records
-❌ Every PDF stored in a public bucket
+VERSION B: the same quote, reopened after a price increase
+Price: based on the new price table
+Status: still says accepted
 
-✅ Accepted quotes and issued invoices frozen as immutable records
-✅ PDF generation moved to an edge function that renders each document once
-✅ Invoice numbers assigned by a database sequence
-✅ Documents moved to private storage with signed links, plus credit notes for corrections
+Both came from the same app. Both were "correct" when they were generated. 🎨
 
-At **LaunchStudio**, backed by Manifera's 11+ years of document and billing systems, we treat invoices as records, not views - numbered in the database and corrected only by credit notes. 🛠️
+Erik Boersma runs a painting company in Hengelo with five painters and built Verfofferte in Bolt: painters measure rooms on a tablet, the app calculates paint, hours and price, generates a PDF quote, and customers accept online. Invoices followed from accepted quotes.
 
-💡 His result: €2,150, seven business days. Disputes about changing prices stopped, the duplicate invoice was fixed with a credit note, and his accountant accepted the new invoice series without remarks. 🚀
+After a price increase, the cracks showed:
+• PDFs were regenerated from current price tables every time they were opened
+• One invoice showed a different total from the quote the customer had signed, which led to a dispute
+• Invoice numbers came from a client-side counter, and two invoices shared a number
+• Every PDF sat in a public bucket
 
-👉 Generating invoices and quotes in your AI-built app? Here's how to make them immutable, private and compliant: https://launchstudio.eu/en/blog/how-do-i-generate-pdf-invoices-in-my-ai-built-app
+What LaunchStudio changed (7 business days, €2,150):
+✓ Accepted quotes and issued invoices frozen as immutable records
+✓ PDF generation moved into an edge function that renders each document once
+✓ Invoice numbers from a database sequence
+✓ Documents in private storage with signed links
+✓ Credit notes for corrections
+
+Now there's only ever one version. Disputes about changing prices stopped, the duplicate invoice was fixed with a credit note, and Erik's accountant accepted the new invoice series without remarks.
+
+"The customer signed one price and received another. Both came from my app, and both were 'correct' at the moment they were generated." - Erik Boersma
+
+https://launchstudio.eu/en/blog/how-do-i-generate-pdf-invoices-in-my-ai-built-app
 
 #Invoicing #Bolt #Supabase #BTW #LaunchStudio #Manifera

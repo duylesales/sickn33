@@ -1,20 +1,32 @@
-🚧 Ruben Alting built GrensFlow - a customs and shipment-tracking SaaS tool for Winschoten border-region businesses - in Cursor, shipping new features every week his customers asked for. By his fourth signed customer, a support ticket revealed the real problem: one customer could see another customer's shipment records just by changing a number in the browser URL. 😳
+💬 A conversation with GrensFlow's API, before the fix (dramatized)
 
-Feature velocity gets you signed customers. Foundation quality is what keeps them. 🧠
+CUSTOMER: Show me shipment 1042.
+API: Are you logged in?
+CUSTOMER: Yes.
+API: Here you go.
+CUSTOMER: Now show me shipment 1043.
+API: Are you logged in?
+CUSTOMER: Still yes.
+API: Here you go.
+CUSTOMER: ...That one isn't mine.
+API: I never asked.
 
-❌ The AI-generated API route checked if a user was logged in, but never checked if the data actually belonged to them
-❌ No multi-tenant isolation - one customer's records were reachable by anyone who tweaked a URL
-❌ The gap only surfaced through a customer complaint, not through testing
-❌ Every new feature shipped was adding more surface area to the same unfixed risk
+Ruben Alting built GrensFlow in Cursor: a SaaS tool for small businesses in Winschoten and the border region to manage customs paperwork and shipment tracking for trade with Germany. He iterated fast, adding every feature his first customers requested.
 
-✅ Rebuilt the authorization layer across every single API endpoint
-✅ Added properly tenant-scoped database queries so accounts stay walled off
-✅ Put automated regression tests in place to catch this class of bug before it ships again
+By his fourth signed customer, a support ticket revealed the problem: one customer could see another customer's shipment records just by changing a number in the URL. The AI-generated route checked one thing, whether you were logged in. It never checked the second: whether the shipment was yours.
 
-At **LaunchStudio**, this is exactly the review Manifera's team - 160+ projects delivered for clients like Vodafone - runs for SaaS founders scaling past their first few customers. 🛡️
+The same conversation, after LaunchStudio (7 business days, €1,450):
 
-His result: all customer data is now strictly isolated per account, verified through automated tests on every future deployment. 🚀
+CUSTOMER: Show me shipment 1043.
+API: Logged in? Yes. Belongs to your account? No. Request denied.
 
-👉 Adding features fast but never checked tenant isolation? Get your foundation scoped honestly: https://launchstudio.eu/en/blog/ai-in-saas-winschoten
+What changed under the hood:
+• Authorization rebuilt across every API endpoint
+• Tenant-scoped database queries
+• Automated tests that catch this class of bug on every future deployment
+
+"I was adding features every week and never once thought to check if customers could see each other's data. LaunchStudio found it before it became a real problem." - Ruben Alting
+
+Does your API ask the second question? https://launchstudio.eu/en/blog/ai-in-saas-winschoten
 
 #AINativeFounder #LaunchStudio #Manifera #SaaSFoundation #Winschoten
