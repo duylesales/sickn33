@@ -466,13 +466,13 @@ def markdown_to_clean_html(content, site="manifera"):
                 in_article_case = False
             continue
 
-        # Check for Real example / Echt voorbeeld section (LaunchStudio styled card)
-        is_case_match = re.match(r"^##\s+(Real example|Echt voorbeeld)", p, re.IGNORECASE)
+        # Check for Real example / Echt voorbeeld / Praktijkvoorbeeld section (LaunchStudio styled card)
+        is_case_match = re.match(r"^##\s+(Real example|Echt voorbeeld|Praktijkvoorbeeld)", p, re.IGNORECASE)
         if is_case_match:
             if in_article_case:
                 html_parts.append("</div>")
             case_type = is_case_match.group(1).strip()
-            case_label = "Echt voorbeeld" if "echt" in case_type.lower() else "Real example"
+            case_label = "Real example" if "real" in case_type.lower() else "Echt voorbeeld"
             html_parts.append(f'<div class="article-case">\n<div class="case-label">{case_label}</div>')
             in_article_case = True
             continue
@@ -786,7 +786,7 @@ def upload_post(article_path, image_path=None, media_id=None, post_id=None, site
 
     # Handle Polylang language assignment on LaunchStudio
     if site == "launchstudio" and final_id:
-        target_lang = "nl" if "-dutch" in article_path.lower() else "en"
+        target_lang = "nl" if article_path.lower().endswith(("-dutch.md", "-nl.md")) or "/dutch/" in article_path.lower() else "en"
         try:
             call_mcp(endpoint, token, "wp_add_post_terms", {
                 "post_id": final_id,
