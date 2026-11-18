@@ -5,6 +5,21 @@
 ### Tháng 11
 #### Ngày 18
 
+- **Đăng tải bài viết song ngữ EN & NL (Bài 05 - Cụm Extra 15) lên website LaunchStudio kèm Geotagging & Metadata (`upload_to_wordpress.py`)**:
+  - **Bài viết EN**: [`launchstudio/2026-extra/extra-15-addation/05-github-copilot-agent-code-review-production-checks-for-agent-pull-requests.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-15-addation/05-github-copilot-agent-code-review-production-checks-for-agent-pull-requests.md)
+  - **Bài viết NL**: [`launchstudio/2026-extra/extra-15-addation/05-github-copilot-agent-code-review-production-checks-for-agent-pull-requests-dutch.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-15-addation/05-github-copilot-agent-code-review-production-checks-for-agent-pull-requests-dutch.md)
+  - **Tiêu đề EN**: *GitHub Copilot Agent Code Review: Production Checks for Agent Pull Requests*
+  - **Tiêu đề NL**: *GitHub Copilot Agent Code Review: Productiechecks voor Agent Pull Requests*
+  - **Slug EN / NL**: `github-copilot-agent-code-review-production-checks-for-agent-pull-requests` / `github-copilot-agent-code-review-production-checks-for-agent-pull-requests-2`
+  - **Thao tác kỹ thuật**:
+    - **Geotagging & Metadata cho ảnh**: Cấu hình tọa độ GPS trụ sở Amsterdam (`Latitude: 52.366841`, `Longitude: 4.887593` - Herengracht 420, 1017 BZ Amsterdam) cùng từ khóa bài viết trực tiếp vào file ảnh [`05-github-copilot-agent-code-review-production-checks-for-agent-pull-requests_pic.png`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-15-addation/05-github-copilot-agent-code-review-production-checks-for-agent-pull-requests_pic.png) trước khi tải lên (Attachment ID: `2131`), đồng thời tự động nhúng thông tin vị trí và từ khóa vào Caption và Description trên WordPress Media Library.
+    - **Đăng tải bản EN (Post ID: 2132)**: Tự động gán ngôn ngữ `en`, danh mục (Categories: `34` - *Security*, `4` - *Technical*), trích xuất từ khóa vào WordPress Tags (`github copilot agent code review`, `review ai pull requests`, `copilot coding agent production`, `ai code review service`), định dạng khối case study với CSS `.article-case`, và cấu trúc 5 câu hỏi FAQs accordion semantic HTML5 `<details><summary>`.
+    - **Đồng bộ bản NL (Post ID: 2133)**: Chuẩn hóa tiêu đề `## Echt voorbeeld` để khớp định dạng case study `.article-case`, kế thừa media banner ID `2131`, gán danh mục (Categories: `45` - *Beveiliging*, `41` - *Technisch*), từ khóa tiếng Hà Lan, và xuất bản bài viết chính thức.
+    - **Polylang Translation Group**: Xác nhận liên kết đa ngôn ngữ Polylang 2 chiều với thẻ `<link rel="alternate" hreflang="nl/en">` kết nối giữa bài viết 2132 (EN) và 2133 (NL).
+  - **Trạng thái**: Đã xuất bản chính thức cả 2 ngôn ngữ:
+    - EN: [https://launchstudio.eu/en/github-copilot-agent-code-review-production-checks-for-agent-pull-requests/](https://launchstudio.eu/en/github-copilot-agent-code-review-production-checks-for-agent-pull-requests/) (Post ID: `2132`)
+    - NL: [https://launchstudio.eu/github-copilot-agent-code-review-production-checks-for-agent-pull-requests-2/](https://launchstudio.eu/github-copilot-agent-code-review-production-checks-for-agent-pull-requests-2/) (Post ID: `2133`)
+
 - **Đăng tải bài viết song ngữ EN & NL (Bài 04 - Cụm Extra 15) lên website LaunchStudio kèm Geotagging & Metadata (`upload_to_wordpress.py`)**:
   - **Bài viết EN**: [`launchstudio/2026-extra/extra-15-addation/04-bolt-cloud-or-your-own-backend-taking-a-bolt-app-to-production.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-15-addation/04-bolt-cloud-or-your-own-backend-taking-a-bolt-app-to-production.md)
   - **Bài viết NL**: [`launchstudio/2026-extra/extra-15-addation/04-bolt-cloud-or-your-own-backend-taking-a-bolt-app-to-production-dutch.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-15-addation/04-bolt-cloud-or-your-own-backend-taking-a-bolt-app-to-production-dutch.md)
