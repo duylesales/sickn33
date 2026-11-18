@@ -3,6 +3,50 @@
 ## 2026
 
 ### Tháng 11
+#### Ngày 18
+
+- **Đăng tải bài viết song ngữ EN & NL (Bài 12 - Cụm Extra 14) lên website LaunchStudio kèm Geotagging & Metadata (`upload_to_wordpress.py`)**:
+  - **Bài viết EN**: [`launchstudio/2026-extra/extra-14-addation/12-mollie-integration-for-ai-built-apps-step-by-step.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-14-addation/12-mollie-integration-for-ai-built-apps-step-by-step.md)
+  - **Bài viết NL**: [`launchstudio/2026-extra/extra-14-addation/12-mollie-integration-for-ai-built-apps-step-by-step-dutch.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-14-addation/12-mollie-integration-for-ai-built-apps-step-by-step-dutch.md)
+  - **Tiêu đề EN**: *Mollie Integration for AI-Built Apps: A Step-by-Step Guide*
+  - **Tiêu đề NL**: *Mollie-Integratie voor AI-Gebouwde Apps: Een Stapsgewijze Gids*
+  - **Slug EN / NL**: `mollie-integration-for-ai-built-apps-step-by-step` / `mollie-integration-for-ai-built-apps-step-by-step-2`
+  - **Thao tác kỹ thuật**:
+    - **Geotagging & Metadata cho ảnh**: Cấu hình tọa độ GPS trụ sở Amsterdam (`Latitude: 52.366841`, `Longitude: 4.887593` - Herengracht 420, 1017 BZ Amsterdam) và từ khóa bài viết trực tiếp vào file ảnh [`12-mollie-integration-for-ai-built-apps-step-by-step_pic.png`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-14-addation/12-mollie-integration-for-ai-built-apps-step-by-step_pic.png) trước khi tải lên (Attachment ID: `2103`).
+    - **Đăng tải bản EN (Post ID: 2104)**: Tự động gán ngôn ngữ `en`, danh mục (Categories: `2` - *Payment*, `4` - *Technical*), trích xuất từ khóa vào WordPress Tags (`mollie integration ai app`, `mollie lovable`, `mollie webhook`, `mollie supabase edge function`), định dạng khối case study với CSS `.article-case`, và cấu trúc 5 câu hỏi FAQs accordion semantic HTML5 `<details><summary>`.
+    - **Đồng bộ bản NL (Post ID: 2105)**: Chuẩn hóa tiêu đề `## Echt voorbeeld` để khớp định dạng case study `.article-case`, kế thừa media banner ID `2103`, gán danh mục (Categories: `51` - *Betaling*, `41` - *Technisch*), từ khóa tiếng Hà Lan, và xuất bản bài viết chính thức.
+    - **Polylang Translation Group**: Xác nhận liên kết đa ngôn ngữ nhóm `1161` (`pll_6afd4ff179b50`) kết nối hai chiều giữa bài viết 2104 (EN) và 2105 (NL).
+  - **Trạng thái**: Đã xuất bản chính thức cả 2 ngôn ngữ:
+    - EN: [https://launchstudio.eu/en/mollie-integration-for-ai-built-apps-step-by-step/](https://launchstudio.eu/en/mollie-integration-for-ai-built-apps-step-by-step/) (Post ID: `2104`)
+    - NL: [https://launchstudio.eu/mollie-integration-for-ai-built-apps-step-by-step-2/](https://launchstudio.eu/mollie-integration-for-ai-built-apps-step-by-step-2/) (Post ID: `2105`)
+
+- **Đăng tải bài viết tiếng Hà Lan (NL) & Đồng bộ đa ngôn ngữ Polylang lên website LaunchStudio (`upload_to_wordpress.py`)**:
+  - **Bài viết**: [`launchstudio/2026-extra/extra-5-local/04-bolt-ai-alkmaar-dutch.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-5-local/04-bolt-ai-alkmaar-dutch.md)
+  - **Tiêu đề**: *Bolt AI in Alkmaar: Wat một lokale SaaS-oprichter op de harde manier leerde*
+  - **Slug**: `bolt-ai-alkmaar-2`
+  - **Thao tác kỹ thuật**:
+    - Nâng cấp `upload_to_wordpress.py`: mở rộng hỗ trợ nhận diện khóa frontmatter tiếng Hà Lan (`Titel:`, `Trefwoorden:`, `Beschrijving:`) và tiêu đề mục FAQ tiếng Hà Lan (`Veelgestelde vragen`).
+    - Cập nhật toàn bộ nội dung HTML tiếng Hà Lan vào Post ID: `2096` do người dùng vừa khởi tạo nháp liên kết với bản EN (`2095`).
+    - Tự động gán ngôn ngữ Polylang `nl` (`taxonomy: language`, `term: nl`) và kế thừa featured media ID: `2094`, danh mục (Categories: `45` - *Beveiliging*, `71` - *Klantverhaal*, `41` - *Technisch*), thẻ (Tags: `907` - *AI App Security*, `116` - *Bolt*, `955` - *Bolt.new*).
+    - Cấu hình siêu dữ liệu chuẩn Yoast SEO: Focus Keyword (`bolt ai`) và Meta Description tiếng Hà Lan.
+    - Cấu trúc 5 câu hỏi FAQs accordion semantic HTML5 `<details><summary>` và xuất bản chính thức (Status: `publish`).
+    - Xác minh liên kết chéo hai chiều (Polylang Translation Group ID: `1128` - `pll_6afd45b5c7a39`) giữa bản EN (2095) và NL (2096).
+  - **Trạng thái**: Đã xuất bản chính thức bản NL tại [https://launchstudio.eu/bolt-ai-alkmaar-2/](https://launchstudio.eu/bolt-ai-alkmaar-2/) (Post ID: `2096`).
+
+- **Đăng tải bài viết & banner tiếng Anh (EN) lên website LaunchStudio qua Easy MCP AI (`upload_to_wordpress.py`)**:
+  - **Bài viết**: [`launchstudio/2026-extra/extra-5-local/04-bolt-ai-alkmaar.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-5-local/04-bolt-ai-alkmaar.md)
+  - **Tiêu đề**: *Bolt AI in Alkmaar: What a Local SaaS Founder Learned the Hard Way*
+  - **Slug**: `bolt-ai-alkmaar`
+  - **Thao tác kỹ thuật**:
+    - Commit và push ảnh banner siêu thực [`04-bolt-ai-alkmaar_pic.png`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-5-local/04-bolt-ai-alkmaar_pic.png) lên remote GitHub để phục vụ đường dẫn raw GitHub URL.
+    - Sửa lỗi ký tự en dash `–` thành `-` có dấu cách tại dòng chi phí giá cố định trong FAQ và JSON-LD.
+    - Tải ảnh banner lên WordPress Media Library qua `wp_upload_media_from_url` (Attachment ID: `2094`).
+    - Tạo và xuất bản bài viết EN (Post ID: `2095`, Status: `publish`) kèm ảnh đại diện, danh mục (Categories: `4` - *Technical*, `34` - *Security*, `69` - *Customer story*), thẻ (Tags: `107` - *Bolt*, `946` - *Bolt.new*, `870` - *AI App Security*).
+    - Tự động gán ngôn ngữ Polylang `en` (`taxonomy: language`, `term: en`, ID: `9`).
+    - Cấu hình siêu dữ liệu chuẩn Yoast SEO: Focus Keyword (`bolt ai`) và Meta Description.
+    - Định dạng làm sạch HTML thân bài, hỗ trợ khối mã code, định dạng danh sách số `<ol><li>`, và cấu trúc 5 câu hỏi FAQs dạng accordion semantic HTML5 `<details><summary>`.
+  - **Trạng thái**: Đã xuất bản chính thức bản EN tại [https://launchstudio.eu/en/bolt-ai-alkmaar/](https://launchstudio.eu/en/bolt-ai-alkmaar/) (Post ID: `2095`). Sẵn sàng để người dùng liên kết với bản tiếng Hà Lan (NL) và đặt tiêu đề lưu nháp.
+
 #### Ngày 17
 
 - **Tạo tiếp ảnh banner siêu thực sát thực tế (photorealistic documentary style, không có cảm giác AI) cho cụm [`launchstudio/2026-extra/extra-1-from vibe coding to production/`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-1-from%20vibe%20coding%20to%20production/) từ bài 17 đến 30 (tổng cộng 14 ảnh)**:
