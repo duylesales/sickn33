@@ -19,8 +19,8 @@
     - **Polylang Translation Group**: Xác nhận liên kết đa ngôn ngữ Polylang 2 chiều giữa Post `1499` và Post `1502` (Term ID `842` - `pll_6ad096a267199`) với đầy đủ thẻ `<link rel="alternate" hreflang="nl/en">`.
     - **Cập nhật Content Inventory**: Đánh dấu `✅` hoàn thành cho Bài 04 trong [`launchstudio/extra_content_inventory.md`](file:///Users/duyle/sickn33/launchstudio/extra_content_inventory.md).
   - **Trạng thái xuất bản**:
-    - EN: [https://launchstudio.eu/en/supabase-security-the-key-that-must-never-reach-a-browser/](https://launchstudio.eu/en/supabase-security-the-key-that-must-never-reach-a-browser/) (Post ID: `1499`)
-    - NL: [https://launchstudio.eu/supabase-beveiliging-de-sleutel-die-nooit-een-browser-mag-bereiken/](https://launchstudio.eu/supabase-beveiliging-de-sleutel-die-nooit-een-browser-mag-bereiken/) (Post ID: `1502`)
+    - EN: [https://launchstudio.eu/en/supabase-security-the-key-that-must-never-reach-a-browser/](https://launchstudio.eu/en/supabase-security-the-key-that-must-never-reach-a-browser/) (Post ID: `1499`, Ngày xuất bản gốc giữ nguyên: `15/10/2026`)
+    - NL: [https://launchstudio.eu/supabase-beveiliging-de-sleutel-die-nooit-een-browser-mag-bereiken/](https://launchstudio.eu/supabase-beveiliging-de-sleutel-die-nooit-een-browser-mag-bereiken/) (Post ID: `1502`, Ngày xuất bản gốc giữ nguyên: `15/10/2026`)
 
 - **Đăng tải bài viết song ngữ EN & NL (Bài 14 - Cụm Extra 14) lên website LaunchStudio kèm Pre-Flight Duplicate Check, Geotagging & Metadata (`upload_to_wordpress.py`)**:
   - **Bài viết EN**: [`launchstudio/2026-extra/extra-14-addation/14-gdpr-proof-app-netherlands-avg-for-ai-built-products.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-14-addation/14-gdpr-proof-app-netherlands-avg-for-ai-built-products.md)
