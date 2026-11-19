@@ -121,11 +121,11 @@ Omdat de serverlogs legitieme serveraanroepen niet konden onderscheiden van moge
 > *"Het waren drie regels code die ik om middernacht typte om een rode foutmelding weg te krijgen. Ze stonden zeven maanden lang in productie, en deelden volledige beheerdersrechten uit aan iedereen die mijn dashboard opende."*
 > - **Thomas de Wit, Oprichter, Factuurly (Utrecht)**
 
-**Kosten & Doorlooptijd:** €1.900 (beveiligingssanering: sleutelrotatie, herbouw Edge Function, opstellen policies en CI-check) - voltooid in 5 werkdagen.
+**Kosten & Doorlooptijd:** €1.900 [beveiligingssanering: sleutelrotatie, herbouw Edge Function, opstellen policies en CI-check] - voltooid in 5 werkdagen.
 
 ---
 
-## Veelgestelde vragen
+## FAQs
 
 ### Hoe houd ik de twee Supabase-sleutels uit elkaar?
 

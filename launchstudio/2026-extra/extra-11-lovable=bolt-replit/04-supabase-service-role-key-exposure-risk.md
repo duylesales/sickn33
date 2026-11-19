@@ -121,9 +121,9 @@ Because access logs could not distinguish legitimate server calls from potential
 > *"It was three lines of code I wrote at midnight to make a red error go away. It sat in production for seven months handing out admin access to everyone who loaded my dashboard."*
 > - **Thomas de Wit, Founder, Factuurly (Utrecht)**
 
-**Cost & Timeline:** €1,900 (security remediation: key rotation, Edge Function rebuild, policy authoring and CI check) - completed in 5 business days.
+**Cost & Timeline:** €1,900 [security remediation: key rotation, Edge Function rebuild, policy authoring and CI check] - completed in 5 business days.
 
-## Frequently Asked Questions
+## FAQs
 
 ### How do I tell the two Supabase keys apart?
 
