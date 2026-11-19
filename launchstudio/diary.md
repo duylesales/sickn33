@@ -5,6 +5,10 @@
 ### Tháng 11
 #### Ngày 19
 
+- **Xoá bài viết song ngữ Bài 27 (Post ID 2146 & 2147) khỏi hệ thống LaunchStudio theo yêu cầu**:
+  - Đã xoá vĩnh viễn (force delete) Post ID `2146` (bản EN) và Post ID `2147` (bản NL).
+  - Khôi phục trạng thái chưa xuất bản của Bài 27 trong `extra_content_inventory.md`.
+
 - **Đăng tải bài viết song ngữ EN & NL (Bài 27 - Cụm Extra 14) lên website LaunchStudio kèm Pre-Flight Duplicate Check, Geotagging & Metadata (`upload_to_wordpress.py`)**:
   - **Bài viết EN**: [`launchstudio/2026-extra/extra-14-addation/27-is-my-lovable-app-secure.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-14-addation/27-is-my-lovable-app-secure.md)
   - **Bài viết NL**: [`launchstudio/2026-extra/extra-14-addation/27-is-my-lovable-app-secure-dutch.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-14-addation/27-is-my-lovable-app-secure-dutch.md)
