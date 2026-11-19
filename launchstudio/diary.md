@@ -5,6 +5,23 @@
 ### Tháng 11
 #### Ngày 19
 
+- **Đăng tải bài viết song ngữ EN & NL (Bài 27 - Cụm Extra 14) lên website LaunchStudio kèm Pre-Flight Duplicate Check, Geotagging & Metadata (`upload_to_wordpress.py`)**:
+  - **Bài viết EN**: [`launchstudio/2026-extra/extra-14-addation/27-is-my-lovable-app-secure.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-14-addation/27-is-my-lovable-app-secure.md)
+  - **Bài viết NL**: [`launchstudio/2026-extra/extra-14-addation/27-is-my-lovable-app-secure-dutch.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-14-addation/27-is-my-lovable-app-secure-dutch.md)
+  - **Tiêu đề EN**: *Is My Lovable App Secure? How to Find Out in 30 Minutes*
+  - **Tiêu đề NL**: *Is Mijn Lovable-App Veilig? Zo Weet U Het in 30 Minuten*
+  - **Slug EN / NL**: `is-my-lovable-app-secure` / `is-my-lovable-app-secure-2`
+  - **Thao tác kỹ thuật**:
+    - **Pre-Flight Duplicate Check**: Quét đối soát tự động trước khi xuất bản qua `--check-only`, xác nhận không có bài viết trùng lặp trên website LaunchStudio.
+    - **Geotagging & Metadata cho ảnh**: Cấu hình tọa độ GPS trụ sở Amsterdam (`Latitude: 52.366841`, `Longitude: 4.887593` - Herengracht 420, 1017 BZ Amsterdam) cùng từ khóa bài viết trực tiếp vào file ảnh [`27-is-my-lovable-app-secure_pic.png`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-14-addation/27-is-my-lovable-app-secure_pic.png) trước khi tải lên (Attachment ID: `2145`), tự động nhúng thông tin vị trí và từ khóa vào Caption và Description trên WordPress Media Library.
+    - **Đăng tải bản EN (Post ID: 2146)**: Tự động gán ngôn ngữ `en`, danh mục (Categories: `34` - *Security*, `4` - *Technical*), trích xuất từ khóa vào WordPress Tags (`is my lovable app secure`, `lovable security`, `lovable app vulnerabilities`, `lovable security check`, `LaunchStudio`, `Manifera`), định dạng khối case study với CSS `.article-case`, và cấu trúc 5 câu hỏi FAQs accordion semantic HTML5 `<details><summary>`.
+    - **Đồng bộ bản NL (Post ID: 2147)**: Chuẩn hóa tiêu đề `## Echt voorbeeld` để khớp định dạng case study `.article-case`, kế thừa media banner ID `2145`, gán danh mục (Categories: `45` - *Beveiliging*, `41` - *Technisch*), từ khóa tiếng Hà Lan, và xuất bản bài viết chính thức.
+    - **Polylang Translation Group**: Xác nhận liên kết đa ngôn ngữ Polylang 2 chiều giữa bài viết 2146 (EN) và 2147 (NL).
+  - **Trạng thái**: Đã xuất bản bản nháp/bài viết chính thức:
+    - EN: [https://launchstudio.eu/en/is-my-lovable-app-secure/](https://launchstudio.eu/en/is-my-lovable-app-secure/) (Post ID: `2146`)
+    - NL: [https://launchstudio.eu/is-my-lovable-app-secure-2/](https://launchstudio.eu/is-my-lovable-app-secure-2/) (Post ID: `2147`)
+    - Featured Media: Attachment ID `2145` (Geotagged Amsterdam: `52.366841, 4.887593`)
+
 - **Đăng tải bài viết song ngữ EN & NL (Bài 19 - Cụm Extra 14) lên website LaunchStudio kèm Pre-Flight Duplicate Check, Geotagging & Metadata (`upload_to_wordpress.py`)**:
   - **Bài viết EN**: [`launchstudio/2026-extra/extra-14-addation/19-app-development-cost-2026-three-year-total-cost-compared.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-14-addation/19-app-development-cost-2026-three-year-total-cost-compared.md)
   - **Bài viết NL**: [`launchstudio/2026-extra/extra-14-addation/19-app-development-cost-2026-three-year-total-cost-compared-dutch.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-14-addation/19-app-development-cost-2026-three-year-total-cost-compared-dutch.md)
