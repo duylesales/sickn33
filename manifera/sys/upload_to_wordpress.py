@@ -728,15 +728,40 @@ def upload_post(article_path, image_path=None, media_id=None, post_id=None, site
     if not post_id or check_only:
         print(f"[*] Running pre-flight duplicate check on {site} for slug: '{slug}'...")
         try:
-            search_query = title[:40].replace(":", "").replace('"', '').strip()
-            dup_res = call_mcp(endpoint, token, "wp_list_posts", {
-                "status": "any",
-                "search": search_query,
-                "per_page": 10
-            }, site_key=site)
-            existing_posts = dup_res.get("posts", [])
-
             clean_slug = slug.strip().lower()
+            existing_posts = []
+            seen_ids = set()
+
+            # 1. Direct query by exact slug and common suffix variants (-2, -3)
+            slug_candidates = [clean_slug, f"{clean_slug}-2", f"{clean_slug}-3"]
+            try:
+                slug_res = call_mcp(endpoint, token, "wp_list_posts", {
+                    "status": "any",
+                    "slug": slug_candidates,
+                    "per_page": 10
+                }, site_key=site)
+                for p in slug_res.get("posts", []):
+                    if p.get("id") not in seen_ids:
+                        seen_ids.add(p.get("id"))
+                        existing_posts.append(p)
+            except Exception as se:
+                print(f"[*] Note: slug query check: {se}")
+
+            # 2. Broader search by title
+            search_query = title[:50].replace(":", "").replace('"', '').strip()
+            try:
+                dup_res = call_mcp(endpoint, token, "wp_list_posts", {
+                    "status": "any",
+                    "search": search_query,
+                    "per_page": 20
+                }, site_key=site)
+                for p in dup_res.get("posts", []):
+                    if p.get("id") not in seen_ids:
+                        seen_ids.add(p.get("id"))
+                        existing_posts.append(p)
+            except Exception as te:
+                print(f"[*] Note: search query check: {te}")
+
             matching_posts = []
             for ep in existing_posts:
                 ep_slug = ep.get("slug", "").strip().lower()
