@@ -3,6 +3,24 @@
 ## 2026
 
 ### Tháng 11
+#### Ngày 19
+
+- **Đăng tải bài viết song ngữ EN & NL (Bài 19 - Cụm Extra 14) lên website LaunchStudio kèm Pre-Flight Duplicate Check, Geotagging & Metadata (`upload_to_wordpress.py`)**:
+  - **Bài viết EN**: [`launchstudio/2026-extra/extra-14-addation/19-app-development-cost-2026-three-year-total-cost-compared.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-14-addation/19-app-development-cost-2026-three-year-total-cost-compared.md)
+  - **Bài viết NL**: [`launchstudio/2026-extra/extra-14-addation/19-app-development-cost-2026-three-year-total-cost-compared-dutch.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-14-addation/19-app-development-cost-2026-three-year-total-cost-compared-dutch.md)
+  - **Tiêu đề EN**: *App Development Cost in 2026: The Three-Year Total Compared*
+  - **Tiêu đề NL**: *Kosten van App-Ontwikkeling in 2026: Het Totaal over Drie Jaar Vergeleken*
+  - **Slug EN / NL**: `app-development-cost-2026-three-year-total-cost-compared` / `app-development-cost-2026-three-year-total-cost-compared-2`
+  - **Thao tác kỹ thuật**:
+    - **Pre-Flight Duplicate Check**: Quét đối soát tự động trước khi xuất bản, xác nhận không có bài viết trùng lặp trên hệ thống web.
+    - **Geotagging & Metadata cho ảnh**: Cấu hình tọa độ GPS trụ sở Amsterdam (`Latitude: 52.366841`, `Longitude: 4.887593` - Herengracht 420, 1017 BZ Amsterdam) cùng từ khóa bài viết trực tiếp vào file ảnh [`19-app-development-cost-2026-three-year-total-cost-compared_pic.png`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-14-addation/19-app-development-cost-2026-three-year-total-cost-compared_pic.png) trước khi tải lên (Attachment ID: `2138`), đồng thời tự động nhúng thông tin vị trí và từ khóa vào Caption và Description trên WordPress Media Library.
+    - **Đăng tải bản EN (Post ID: 2139)**: Tự động gán ngôn ngữ `en`, danh mục (Categories: `26` - *Strategy*, `28` - *Comparison*), trích xuất từ khóa vào WordPress Tags (`app development cost 2026`, `app laten ontwikkelen kosten`, `cost to build an app`, `app total cost of ownership`), định dạng khối case study với CSS `.article-case`, và cấu trúc 5 câu hỏi FAQs accordion semantic HTML5 `<details><summary>`.
+    - **Đồng bộ bản NL (Post ID: 2140)**: Chuẩn hóa tiêu đề `## Echt voorbeeld` để khớp định dạng case study `.article-case`, kế thừa media banner ID `2138`, gán danh mục (Categories: `43` - *Strategie*, `59` - *Vergelijking*), từ khóa tiếng Hà Lan, và xuất bản bài viết chính thức.
+    - **Polylang Translation Group**: Xác nhận liên kết đa ngôn ngữ Polylang 2 chiều với thẻ `<link rel="alternate" hreflang="nl/en">` kết nối giữa bài viết 2139 (EN) và 2140 (NL).
+  - **Trạng thái**: Đã xuất bản chính thức cả 2 ngôn ngữ:
+    - EN: [https://launchstudio.eu/en/app-development-cost-2026-three-year-total-cost-compared/](https://launchstudio.eu/en/app-development-cost-2026-three-year-total-cost-compared/) (Post ID: `2139`)
+    - NL: [https://launchstudio.eu/app-development-cost-2026-three-year-total-cost-compared-2/](https://launchstudio.eu/app-development-cost-2026-three-year-total-cost-compared-2/) (Post ID: `2140`)
+
 #### Ngày 18
 
 - **Đăng tải bài viết song ngữ EN & NL (Bài 05 - Cụm Extra 15) lên website LaunchStudio kèm Geotagging & Metadata (`upload_to_wordpress.py`)**:
