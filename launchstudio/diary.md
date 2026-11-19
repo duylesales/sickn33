@@ -5,6 +5,22 @@
 ### Tháng 11
 #### Ngày 19
 
+- **Đăng tải bài viết song ngữ EN & NL (Bài 14 - Cụm Extra 14) lên website LaunchStudio kèm Pre-Flight Duplicate Check, Geotagging & Metadata (`upload_to_wordpress.py`)**:
+  - **Bài viết EN**: [`launchstudio/2026-extra/extra-14-addation/14-gdpr-proof-app-netherlands-avg-for-ai-built-products.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-14-addation/14-gdpr-proof-app-netherlands-avg-for-ai-built-products.md)
+  - **Bài viết NL**: [`launchstudio/2026-extra/extra-14-addation/14-gdpr-proof-app-netherlands-avg-for-ai-built-products-dutch.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-14-addation/14-gdpr-proof-app-netherlands-avg-for-ai-built-products-dutch.md)
+  - **Tiêu đề EN**: *Building a GDPR-Proof App in the Netherlands: AVG for AI-Built Products*
+  - **Tiêu đề NL**: *Een AVG-Proof App Bouwen in Nederland: De AVG voor AI-Gebouwde Producten*
+  - **Slug Full Title EN / NL**: `building-a-gdpr-proof-app-in-the-netherlands-avg-for-ai-built-products` / `een-avg-proof-app-bouwen-in-nederland-de-avg-voor-ai-gebouwde-producten` (Nguyên vẹn tiêu đề, không cắt bớt, không hậu tố `-2`).
+  - **Thao tác kỹ thuật**:
+    - **Pre-Flight Duplicate Check**: Kiểm tra tự động trên website `launchstudio.eu`, xác nhận không trùng lặp trước khi khởi tạo bài viết.
+    - **Geotagging & Metadata**: Nhúng tọa độ trụ sở Amsterdam (`Latitude: 52.366841`, `Longitude: 4.887593` - Herengracht 420, 1017 BZ Amsterdam) và từ khóa vào EXIF/PNG của ảnh đại diện [`14-gdpr-proof-app-netherlands-avg-for-ai-built-products_pic.png`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-14-addation/14-gdpr-proof-app-netherlands-avg-for-ai-built-products_pic.png) trước khi upload (Attachment ID: `2160`). Đồng thời cập nhật Caption và Description trên Media Library.
+    - **Đăng tải bản EN (Post ID: 2161)**: Trạng thái `publish`, danh mục `[34, 4]` (*Security*, *Technical*), banner ID `2160`, gán ngôn ngữ Polylang `en`, định dạng case study `.article-case` (`## Real example`), và 5 câu hỏi FAQs accordion semantic HTML5 `<details><summary>` kèm heading chuẩn `<h3>FAQs</h3>`.
+    - **Đồng bộ bản NL (Post ID: 2162)**: Trạng thái `publish`, danh mục `[45, 41]` (*Beveiliging*, *Technisch*), kế thừa banner ID `2160`, gán ngôn ngữ Polylang `nl`, định dạng case study `.article-case` (`## Echt voorbeeld`), và 5 câu hỏi FAQs accordion semantic HTML5.
+    - **Cập nhật Content Inventory**: Đánh dấu `✅` hoàn thành cho Bài 14 trong [`launchstudio/extra_content_inventory.md`](file:///Users/duyle/sickn33/launchstudio/extra_content_inventory.md).
+  - **Trạng thái xuất bản**:
+    - EN: [https://launchstudio.eu/en/building-a-gdpr-proof-app-in-the-netherlands-avg-for-ai-built-products/](https://launchstudio.eu/en/building-a-gdpr-proof-app-in-the-netherlands-avg-for-ai-built-products/) (Post ID: `2161`)
+    - NL: [https://launchstudio.eu/een-avg-proof-app-bouwen-in-nederland-de-avg-voor-ai-gebouwde-producten/](https://launchstudio.eu/een-avg-proof-app-bouwen-in-nederland-de-avg-voor-ai-gebouwde-producten/) (Post ID: `2162`)
+
 - **Đăng tải lại bài viết song ngữ EN & NL (Bài 27 - Cụm Extra 14) theo quy chuẩn mới: Slug = Full Title (Post ID: 2155 & 2156)**:
   - **Bài viết EN**: [`launchstudio/2026-extra/extra-14-addation/27-is-my-lovable-app-secure.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-14-addation/27-is-my-lovable-app-secure.md)
   - **Bài viết NL**: [`launchstudio/2026-extra/extra-14-addation/27-is-my-lovable-app-secure-dutch.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-14-addation/27-is-my-lovable-app-secure-dutch.md)
