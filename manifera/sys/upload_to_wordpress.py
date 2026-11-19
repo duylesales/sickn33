@@ -204,6 +204,11 @@ def refresh_oauth_token(site_key="manifera"):
     import subprocess
     cmd = [
         "curl", "-s", "-X", "POST",
+        "--resolve", "launchstudio.eu:443:136.243.57.57",
+        "--resolve", "www.launchstudio.eu:443:136.243.57.57",
+        "--resolve", "www.manifera.com:443:136.243.57.57",
+        "--resolve", "manifera.com:443:136.243.57.57",
+        "--max-time", "30",
         token_url,
         "-H", "Content-Type: application/json",
         "-d", json.dumps(req_data)
@@ -233,6 +238,11 @@ def call_mcp(endpoint, token, tool_name, arguments, site_key="manifera"):
     cmd = [
         "curl", "-s",
         "-w", "\n%{http_code}",
+        "--resolve", "launchstudio.eu:443:136.243.57.57",
+        "--resolve", "www.launchstudio.eu:443:136.243.57.57",
+        "--resolve", "www.manifera.com:443:136.243.57.57",
+        "--resolve", "manifera.com:443:136.243.57.57",
+        "--max-time", "60",
         endpoint,
         "-H", f"Authorization: Bearer {token}",
         "-H", "Content-Type: application/json",

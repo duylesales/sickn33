@@ -170,7 +170,7 @@ LaunchStudio migreerde de database en opslag naar Frankfurt, beperkte wat naar d
 
 **Kosten & Doorlooptijd:** €4.800 (migratie naar de EU, configuratie van de AI-verwerker, verwijdering en export, bewaartermijnen, opschonen van analytics en documentatie) - afgerond in 14 werkdagen.
 
-## Veelgestelde Vragen
+## FAQs
 
 ### Wat is het verschil tussen de GDPR en de AVG?
 

@@ -170,7 +170,7 @@ LaunchStudio migrated the database and storage to Frankfurt, minimised what was 
 
 **Cost & Timeline:** €4,800 (EU migration, AI processor configuration, deletion and export, retention, analytics clean-up and documentation) - completed in 14 business days.
 
-## Frequently Asked Questions
+## FAQs
 
 ### What is the difference between GDPR and AVG?
 
