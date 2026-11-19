@@ -5,6 +5,21 @@
 ### Tháng 11
 #### Ngày 19
 
+- **Đăng tải lại bài viết song ngữ EN & NL (Bài 27 - Cụm Extra 14) theo quy chuẩn mới: Slug = Full Title (Post ID: 2155 & 2156)**:
+  - **Bài viết EN**: [`launchstudio/2026-extra/extra-14-addation/27-is-my-lovable-app-secure.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-14-addation/27-is-my-lovable-app-secure.md)
+  - **Bài viết NL**: [`launchstudio/2026-extra/extra-14-addation/27-is-my-lovable-app-secure-dutch.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-14-addation/27-is-my-lovable-app-secure-dutch.md)
+  - **Tiêu đề EN**: *Is My Lovable App Secure? How to Find Out in 30 Minutes*
+  - **Tiêu đề NL**: *Is Mijn Lovable-App Veilig? Zo Weet U Het in 30 Minuten*
+  - **Slug Full Title EN / NL**: `is-my-lovable-app-secure-how-to-find-out-in-30-minutes` / `is-mijn-lovable-app-veilig-zo-weet-u-het-in-30-minuten` (100% nguyên vẹn tiêu đề, không cắt bớt, không hậu tố `-2`).
+  - **Thao tác kỹ thuật**:
+    - **Pre-Flight Duplicate Check**: Đối soát tự động trước khi đăng, xác nhận slug sạch sẽ trên hệ thống.
+    - **Tối ưu URL Slug chuẩn SEO**: Áp dụng quy tắc mới `slug = full title không cắt bớt`, loại bỏ triệt để tình trạng WordPress auto-append `-2`.
+    - **Đăng tải bản EN (Post ID: 2155)**: Trạng thái `publish`, danh mục `[34, 4]` (*Security*, *Technical*), banner ID `2145` (geotagged Amsterdam), 5 FAQs accordion semantic HTML5 `<details><summary>`.
+    - **Đồng bộ bản NL (Post ID: 2156)**: Trạng thái `publish`, danh mục `[45, 41]` (*Beveiliging*, *Technisch*), kế thừa banner ID `2145`, định dạng case study `.article-case` (`## Echt voorbeeld`).
+  - **Trạng thái xuất bản**:
+    - EN: [https://launchstudio.eu/en/is-my-lovable-app-secure-how-to-find-out-in-30-minutes/](https://launchstudio.eu/en/is-my-lovable-app-secure-how-to-find-out-in-30-minutes/) (Post ID: `2155`)
+    - NL: [https://launchstudio.eu/is-mijn-lovable-app-veilig-zo-weet-u-het-in-30-minuten/](https://launchstudio.eu/is-mijn-lovable-app-veilig-zo-weet-u-het-in-30-minuten/) (Post ID: `2156`)
+
 - **Xoá bài viết song ngữ Bài 27 (Post ID 2146 & 2147) khỏi hệ thống LaunchStudio theo yêu cầu**:
   - Đã xoá vĩnh viễn (force delete) Post ID `2146` (bản EN) và Post ID `2147` (bản NL).
   - Khôi phục trạng thái chưa xuất bản của Bài 27 trong `extra_content_inventory.md`.
