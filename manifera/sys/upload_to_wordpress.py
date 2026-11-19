@@ -688,10 +688,21 @@ def upload_post(article_path, image_path=None, media_id=None, post_id=None, site
 
     meta, content_md = parse_markdown_article(md_text)
     title = meta.get("title") or meta.get("Title") or meta.get("Titel") or os.path.basename(article_path).replace(".md", "")
-    slug = meta.get("slug") or meta.get("Slug") or os.path.basename(article_path).replace("-dutch.md", "").replace(".md", "").split("-", 1)[-1]
     raw_keywords = meta.get("keywords") or meta.get("Keywords") or meta.get("Trefwoorden") or ""
     focus_kw = raw_keywords.split(",")[0].strip() if raw_keywords else ""
     metadesc = meta.get("description") or meta.get("Description") or meta.get("Beschrijving") or ""
+    is_dutch = article_path.lower().endswith(("-dutch.md", "-nl.md")) or "/dutch/" in article_path.lower()
+    
+    if meta.get("slug") or meta.get("Slug"):
+        slug = meta.get("slug") or meta.get("Slug")
+    elif is_dutch:
+        import re as re_mod, unicodedata
+        source_text = focus_kw if focus_kw else title
+        norm = unicodedata.normalize("NFKD", source_text).encode("ascii", "ignore").decode("ascii")
+        norm = re_mod.sub(r"[^\w\s-]", "", norm).strip().lower()
+        slug = re_mod.sub(r"[-\s]+", "-", norm)
+    else:
+        slug = os.path.basename(article_path).replace(".md", "").split("-", 1)[-1].strip()
 
     print(f"[*] Title: {title}")
     print(f"[*] Slug: {slug}")
