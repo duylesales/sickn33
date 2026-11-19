@@ -162,7 +162,7 @@ De [audit van AI-gegenereerde code](https://launchstudio.eu/nl/blog/ai-generated
 
 De homepage van LaunchStudio noemt onderzoek waaruit blijkt dat 45% van de AI-gegenereerde code beveiligingskwetsbaarheden bevat. Dat is geen reden om te stoppen met Lovable; het is een reden om te controleren. LaunchStudio brengt de engineering van Manifera op enterpriseniveau naar de economie van oprichters, en Manifera's oprichter Herre Roelevink komt uit de cybersecurity: hij was medeoprichter van CyberDevOps, nu CFLW Cyber Strategies, dat samen met TNO een Dark Web Monitor ontwikkelde. Door die achtergrond is beveiliging het eerste waar LaunchStudio in elk Lovable-project naar kijkt. Lees meer op [de over-ons-pagina van Manifera](https://www.manifera.com/about-us/), en zie de [OWASP Top 10](https://owasp.org/www-project-top-ten/) voor de meest voorkomende risico's voor webapplicaties.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een AI-Native Oprichter in Actie: Het Boekhoudportaal Dat Zakte voor Test Twee
 
@@ -179,7 +179,7 @@ LaunchStudio herschreef de RLS-policies zodat klanten alleen toegang hadden tot 
 
 **Kosten & Doorlooptijd:** €2.400 (Launch Ready-pakket: herschreven RLS, privéopslag, edge function, vervanging van sleutels en auditlog) - afgerond in 7 werkdagen.
 
-## Veelgestelde Vragen
+## FAQs
 
 ### Is Lovable zelf veilig?
 

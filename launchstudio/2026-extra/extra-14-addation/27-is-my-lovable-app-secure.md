@@ -179,7 +179,7 @@ LaunchStudio rewrote the RLS policies so clients could only access their own doc
 
 **Cost & Timeline:** €2,400 (Launch Ready package: RLS rewrite, private storage, edge function, key rotation and audit log) - completed in 7 business days.
 
-## Frequently Asked Questions
+## FAQs
 
 ### Is Lovable itself secure?
 
