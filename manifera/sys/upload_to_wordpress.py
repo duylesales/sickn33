@@ -679,7 +679,7 @@ def markdown_to_clean_html(content, site="manifera"):
     final_html = "\n\n".join(html_parts)
     return final_html
 
-def upload_post(article_path, image_path=None, media_id=None, post_id=None, site="manifera", status="draft", categories=None, tags=None):
+def upload_post(article_path, image_path=None, media_id=None, post_id=None, site="manifera", status="draft", categories=None, tags=None, force=False, check_only=False):
     token, endpoint = get_auth_token(site)
     print(f"[*] Connecting to {site} ({endpoint})...")
 
@@ -696,6 +696,61 @@ def upload_post(article_path, image_path=None, media_id=None, post_id=None, site
     print(f"[*] Title: {title}")
     print(f"[*] Slug: {slug}")
     print(f"[*] Focus Keyword: {focus_kw}")
+
+    # Mandatory Pre-flight duplicate check against live WordPress site
+    if not post_id or check_only:
+        print(f"[*] Running pre-flight duplicate check on {site} for slug: '{slug}'...")
+        try:
+            search_query = title[:40].replace(":", "").replace('"', '').strip()
+            dup_res = call_mcp(endpoint, token, "wp_list_posts", {
+                "status": "any",
+                "search": search_query,
+                "per_page": 10
+            }, site_key=site)
+            existing_posts = dup_res.get("posts", [])
+
+            clean_slug = slug.strip().lower()
+            matching_posts = []
+            for ep in existing_posts:
+                ep_slug = ep.get("slug", "").strip().lower()
+                ep_title = ep.get("title", "").strip().lower()
+                if (ep_slug == clean_slug or 
+                    ep_slug == f"{clean_slug}-2" or 
+                    ep_slug == f"{clean_slug}-3" or 
+                    ep_title == title.strip().lower() or
+                    (len(clean_slug) > 10 and clean_slug in ep_slug)):
+                    matching_posts.append(ep)
+
+            if matching_posts:
+                print("\n" + "=" * 65)
+                print(f"[!] ATTENTION: {len(matching_posts)} EXISTING/SIMILAR POST(S) DETECTED ON {site.upper()}!")
+                for idx, ep in enumerate(matching_posts, 1):
+                    print(f"    Match #{idx}:")
+                    print(f"      Post ID:  {ep.get('id')}")
+                    print(f"      Title:    {ep.get('title')}")
+                    print(f"      Slug:     {ep.get('slug')}")
+                    print(f"      Status:   {ep.get('status')}")
+                    print(f"      Link:     {ep.get('link')}")
+                print("=" * 65 + "\n")
+
+                if check_only:
+                    print("[*] Pre-flight check completed (--check-only). No posts were modified.")
+                    return matching_posts
+
+                if not force:
+                    raise RuntimeError(
+                        f"Aborting upload to prevent duplicate: Found existing post(s) with matching slug/title on {site}. "
+                        f"To update existing post, use: --post-id <ID>. To force create a new post anyway, pass: --force"
+                    )
+            else:
+                print(f"[+] Pre-flight check clean: No duplicate post found on {site}.")
+                if check_only:
+                    print("[*] Pre-flight check completed (--check-only). Ready to upload.")
+                    return []
+        except Exception as e:
+            if "Aborting upload" in str(e):
+                raise
+            print(f"[!] Warning: Pre-flight check query encountered error (continuing): {e}")
 
     clean_html = markdown_to_clean_html(content_md, site=site)
 
@@ -829,6 +884,8 @@ if __name__ == "__main__":
     parser.add_argument("--status", default="draft", help="Post status (default: draft)")
     parser.add_argument("--categories", help="Comma-separated category IDs (e.g. 12,25)")
     parser.add_argument("--tags", help="Comma-separated tag IDs (e.g. 99,2595)")
+    parser.add_argument("--force", action="store_true", help="Force creating new post even if duplicate/similar post exists")
+    parser.add_argument("--check-only", action="store_true", help="Only check if a matching post exists on site without uploading")
 
     args = parser.parse_args()
     upload_post(
@@ -839,5 +896,7 @@ if __name__ == "__main__":
         site=args.site,
         status=args.status,
         categories=args.categories,
-        tags=args.tags
+        tags=args.tags,
+        force=args.force,
+        check_only=args.check_only
     )
