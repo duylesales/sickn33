@@ -22,7 +22,7 @@ Content Format: Diagnostic Guide
 
 In 2023, AI coding assistants were a novelty. By 2026, they are a baseline requirement for competitive engineering teams. A developer writing boilerplate code manually in a text editor today is akin to an accountant calculating payroll with an abacus. 
 
-However, the promises of "10x productivity" marketed by AI tool vendors have collided with the reality of enterprise software development. While AI tools (like GitHub Copilot, Cursor, and Claude Engineer) drastically reduce typing time, typing is only a fraction of software engineering. As we discussed in our guide on [how AI is transforming workflows](34-how-ai-is-transforming-software-development-workflows.md), the real bottleneck is often architectural context and testing.
+However, the promises of "10x productivity" marketed by AI tool vendors have collided with the reality of enterprise software development. While AI tools (like GitHub Copilot, Cursor, and Claude Code) drastically reduce typing time, typing is only a fraction of software engineering. As we discussed in our guide on [how AI is transforming workflows](34-how-ai-is-transforming-software-development-workflows.md), the real bottleneck is often architectural context and testing.
 
 This guide provides a pragmatic, metric-driven comparison of AI-assisted development versus traditional coding, and how CTOs should measure the actual ROI of these tools.
 

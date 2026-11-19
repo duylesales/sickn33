@@ -5,6 +5,23 @@
 ### Tháng 11
 #### Ngày 19
 
+- **Nâng cấp và đồng bộ bài viết song ngữ EN & NL (Bài 04 - Cụm Extra 11) lên website LaunchStudio kèm Pre-Flight Duplicate Check, Geotagging & Metadata (`upload_to_wordpress.py`)**:
+  - **Bài viết EN**: [`launchstudio/2026-extra/extra-11-lovable=bolt-replit/04-supabase-service-role-key-exposure-risk.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-11-lovable=bolt-replit/04-supabase-service-role-key-exposure-risk.md)
+  - **Bài viết NL**: [`launchstudio/2026-extra/extra-11-lovable=bolt-replit/04-supabase-service-role-key-exposure-risk-dutch.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-11-lovable=bolt-replit/04-supabase-service-role-key-exposure-risk-dutch.md)
+  - **Tiêu đề EN**: *Supabase Security: The Key That Must Never Reach a Browser*
+  - **Tiêu đề NL**: *Supabase Beveiliging: De Sleutel Die Nooit Een Browser Mag Bereiken*
+  - **Slug Full Title EN / NL**: `supabase-security-the-key-that-must-never-reach-a-browser` / `supabase-beveiliging-de-sleutel-die-nooit-een-browser-mag-bereiken`
+  - **Thao tác kỹ thuật**:
+    - **Pre-Flight Duplicate Check**: Phát hiện bài viết đã tồn tại trên hệ thống từ trước (Post ID `1499` - EN và Post ID `1502` - NL). Đã tự động dọn dẹp bản nháp tạm và tiến hành cập nhật trực tiếp nội dung chuẩn hóa mới nhất theo quy chuẩn 2026.
+    - **Geotagging & Metadata**: Tải lên banner mới đã được nhúng metadata GPS trụ sở Amsterdam (`52.366841`, `4.887593`), focus keywords và mô tả chi tiết vào EXIF/PNG (Attachment ID: `2172`).
+    - **Cập nhật bản EN (Post ID: 1499)**: Trạng thái `publish`, danh mục `[34, 4]` (*Security*, *Technical*), banner ID `2172`, gán ngôn ngữ Polylang `en`, định dạng case study `.article-case` (`## Real example`), và 5 câu hỏi FAQs accordion semantic HTML5 `<details><summary>` kèm heading chuẩn `<h3>FAQs</h3>`.
+    - **Cập nhật bản NL (Post ID: 1502)**: Trạng thái `publish`, danh mục `[45, 41]` (*Beveiliging*, *Technisch*), kế thừa banner ID `2172`, gán ngôn ngữ Polylang `nl`, định dạng case study `.article-case` (`## Echt voorbeeld`), và 5 câu hỏi FAQs accordion semantic HTML5.
+    - **Polylang Translation Group**: Xác nhận liên kết đa ngôn ngữ Polylang 2 chiều giữa Post `1499` và Post `1502` (Term ID `842` - `pll_6ad096a267199`) với đầy đủ thẻ `<link rel="alternate" hreflang="nl/en">`.
+    - **Cập nhật Content Inventory**: Đánh dấu `✅` hoàn thành cho Bài 04 trong [`launchstudio/extra_content_inventory.md`](file:///Users/duyle/sickn33/launchstudio/extra_content_inventory.md).
+  - **Trạng thái xuất bản**:
+    - EN: [https://launchstudio.eu/en/supabase-security-the-key-that-must-never-reach-a-browser/](https://launchstudio.eu/en/supabase-security-the-key-that-must-never-reach-a-browser/) (Post ID: `1499`)
+    - NL: [https://launchstudio.eu/supabase-beveiliging-de-sleutel-die-nooit-een-browser-mag-bereiken/](https://launchstudio.eu/supabase-beveiliging-de-sleutel-die-nooit-een-browser-mag-bereiken/) (Post ID: `1502`)
+
 - **Đăng tải bài viết song ngữ EN & NL (Bài 14 - Cụm Extra 14) lên website LaunchStudio kèm Pre-Flight Duplicate Check, Geotagging & Metadata (`upload_to_wordpress.py`)**:
   - **Bài viết EN**: [`launchstudio/2026-extra/extra-14-addation/14-gdpr-proof-app-netherlands-avg-for-ai-built-products.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-14-addation/14-gdpr-proof-app-netherlands-avg-for-ai-built-products.md)
   - **Bài viết NL**: [`launchstudio/2026-extra/extra-14-addation/14-gdpr-proof-app-netherlands-avg-for-ai-built-products-dutch.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-14-addation/14-gdpr-proof-app-netherlands-avg-for-ai-built-products-dutch.md)
