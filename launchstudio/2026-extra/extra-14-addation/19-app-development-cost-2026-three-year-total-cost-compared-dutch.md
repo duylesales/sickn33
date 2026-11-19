@@ -150,7 +150,7 @@ Investeerders maken zelden bezwaar tegen een bepaalde route. Ze zoeken naar bewi
 
 LaunchStudio wordt aangedreven door Manifera, een softwareontwikkelbedrijf met 11+ jaar ervaring en 160+ projecten, met engineering in Ho Chi Minh City, een hub in Singapore en klantcontact in Amsterdam. Die breedte, van lanceringen met vaste prijs tot volledige teams, is de reden dat de vergelijking hierboven eerlijk kan zijn over waar elke route wint. Voor bredere context over de economie van softwareonderhoud wordt het [onderzoek van de Standish Group](https://www.standishgroup.com/) naar projectresultaten vaak aangehaald.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een AI-Native Oprichter in Actie: De Weddingplanner Die Verder Rekende dan de Lanceringsdag
 
@@ -167,7 +167,7 @@ LaunchStudio voegde rollen toe voor bruidsparen, planners en leveranciers met Ro
 
 **Kosten & Doorlooptijd:** €5.300 (Launch & Grow-pakket: rollen, Stripe met Bancontact en iDEAL, e-mail en hosting) - afgerond in 14 werkdagen, plus €49 per maand voor beheerde hosting.
 
-## Veelgestelde Vragen
+## FAQs
 
 ### Wat kost het om in 2026 een app te laten ontwikkelen?
 

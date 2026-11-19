@@ -167,7 +167,7 @@ LaunchStudio added roles for couples, planners and suppliers with Row Level Secu
 
 **Cost & Timeline:** €5,300 (Launch & Grow package: roles, Stripe with Bancontact and iDEAL, email and hosting) - completed in 14 business days, plus €49/month managed hosting.
 
-## Frequently Asked Questions
+## FAQs
 
 ### How much does it cost to develop an app in 2026?
 
