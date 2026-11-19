@@ -65,3 +65,8 @@ To avoid Web Application Firewall (WAF/Wordfence/ModSecurity) `403 Forbidden` er
 - **Media Upload Protocol:** Always upload featured images via `wp_upload_media_from_url` using the public raw GitHub repository URL (`https://raw.githubusercontent.com/...`) after git push, avoiding base64 encoding/decoding overhead.
 - **Table Styling:** Always wrap tables in `<div style="overflow-x: hidden; max-width: 100%; margin-bottom: 20px;">` with `<table style="width: 100%; table-layout: fixed; border-collapse: collapse; border: 2px solid #1a1a1a; font-family: inherit; word-wrap: break-word;">` and `#f8f9fa` header background.
 - **Automated Upload Tooling:** Use the standardized script `manifera/sys/upload_to_wordpress.py` for automated one-click drafting and publishing with built-in WAF sanitization and Yoast SEO integration.
+- **Polylang Translation Linking Prompt (LaunchStudio - Mandatory):** After uploading both language versions (EN and NL) of an article to LaunchStudio, ALWAYS provide the user with the direct WordPress Admin edit link for the English post (`https://launchstudio.eu/wp-admin/post.php?post=<EN_POST_ID>&action=edit`) and clear instructions to connect the Dutch translation:
+  1. Open the post edit URL: `https://launchstudio.eu/wp-admin/post.php?post=<EN_POST_ID>&action=edit`
+  2. In the right sidebar under **Languages (Taal)** -> **Translations (Vertalingen)**, find the Dutch (**Nederlands**) row.
+  3. Specify the exact title keyword or Post ID to search and select: e.g., `<NL_TITLE>` (Post ID `<NL_POST_ID>`).
+  4. Click **Update (Bijwerken)** to save and complete the bidirectional Polylang translation link.
