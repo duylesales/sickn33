@@ -5,6 +5,22 @@
 ### Tháng 11
 #### Ngày 19
 
+- **Đăng tải bài viết song ngữ EN & NL (Bài 05 - Cụm Extra 11) lên website LaunchStudio kèm Pre-Flight Duplicate Check, Geotagging & Metadata (`upload_to_wordpress.py`)**:
+  - **Bài viết EN**: [`launchstudio/2026-extra/extra-11-lovable=bolt-replit/05-lovable-security-holes-found-in-review.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-11-lovable=bolt-replit/05-lovable-security-holes-found-in-review.md)
+  - **Bài viết NL**: [`launchstudio/2026-extra/extra-11-lovable=bolt-replit/05-lovable-security-holes-found-in-review-dutch.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-11-lovable=bolt-replit/05-lovable-security-holes-found-in-review-dutch.md)
+  - **Tiêu đề EN**: *Lovable Security: Five Holes We Find in AI-Built Apps*
+  - **Tiêu đề NL**: *Lovable Beveiliging: Vijf Lekken Die We Vinden in AI-Gebouwde Apps*
+  - **Slug Full Title EN / NL**: `lovable-security-five-holes-we-find-in-ai-built-apps` / `lovable-beveiliging-vijf-lekken-die-we-vinden-in-ai-gebouwde-apps`
+  - **Thao tác kỹ thuật**:
+    - **Pre-Flight Duplicate Check**: Kiểm tra tự động trên website `launchstudio.eu`, xác nhận không có bài viết trùng lặp trước khi khởi tạo.
+    - **Geotagging & Metadata**: Tải lên banner mới đã được nhúng metadata GPS trụ sở Amsterdam (`52.366841`, `4.887593`), focus keywords và mô tả chi tiết vào EXIF/PNG (Attachment ID: `2175`).
+    - **Đăng tải bản EN (Post ID: 2174)**: Trạng thái `publish`, danh mục `[34, 4]` (*Security*, *Technical*), banner ID `2175`, gán ngôn ngữ Polylang `en`, định dạng case study `.article-case` (`## Real example`), và 5 câu hỏi FAQs accordion semantic HTML5 `<details><summary>` kèm heading chuẩn `<h3>FAQs</h3>`.
+    - **Đồng bộ bản NL (Post ID: 2177)**: Trạng thái `publish`, danh mục `[45, 41]` (*Beveiliging*, *Technisch*), kế thừa banner ID `2175`, gán ngôn ngữ Polylang `nl`, định dạng case study `.article-case` (`## Echt voorbeeld`), và 5 câu hỏi FAQs accordion semantic HTML5.
+    - **Cập nhật Content Inventory**: Đánh dấu `✅` hoàn thành cho Bài 05 trong [`launchstudio/extra_content_inventory.md`](file:///Users/duyle/sickn33/launchstudio/extra_content_inventory.md).
+  - **Trạng thái xuất bản**:
+    - EN: [https://launchstudio.eu/en/lovable-security-five-holes-we-find-in-ai-built-apps/](https://launchstudio.eu/en/lovable-security-five-holes-we-find-in-ai-built-apps/) (Post ID: `2174`)
+    - NL: [https://launchstudio.eu/lovable-beveiliging-vijf-lekken-die-we-vinden-in-ai-gebouwde-apps/](https://launchstudio.eu/lovable-beveiliging-vijf-lekken-die-we-vinden-in-ai-gebouwde-apps/) (Post ID: `2177`)
+
 - **Nâng cấp và đồng bộ bài viết song ngữ EN & NL (Bài 04 - Cụm Extra 11) lên website LaunchStudio kèm Pre-Flight Duplicate Check, Geotagging & Metadata (`upload_to_wordpress.py`)**:
   - **Bài viết EN**: [`launchstudio/2026-extra/extra-11-lovable=bolt-replit/04-supabase-service-role-key-exposure-risk.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-11-lovable=bolt-replit/04-supabase-service-role-key-exposure-risk.md)
   - **Bài viết NL**: [`launchstudio/2026-extra/extra-11-lovable=bolt-replit/04-supabase-service-role-key-exposure-risk-dutch.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-11-lovable=bolt-replit/04-supabase-service-role-key-exposure-risk-dutch.md)
