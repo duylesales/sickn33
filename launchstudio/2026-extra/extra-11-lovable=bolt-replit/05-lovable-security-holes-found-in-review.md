@@ -124,9 +124,9 @@ Seven business days of work: ownership checks enforced at the database level for
 > *"We had been sending insurers links to photos of their customers' cars that anyone with a browser could have found. Nothing had gone wrong yet. That was luck, not design."*
 > - **Ilse Kramer, Founder, ScheldeScan (Dordrecht)**
 
-**Cost & Timeline:** €3,200 (Launch Ready Package: access control, upload hardening, rate limiting) - completed in 7 business days.
+**Cost & Timeline:** €3,200 [Launch Ready Package: access control, upload hardening, rate limiting] - completed in 7 business days.
 
-## Frequently Asked Questions
+## FAQs
 
 ### If nothing has gone wrong yet, is my app actually at risk?
 

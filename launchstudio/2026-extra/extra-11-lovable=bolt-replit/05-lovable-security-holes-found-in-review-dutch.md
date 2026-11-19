@@ -124,11 +124,11 @@ De herstelwerkzaamheden namen zeven werkdagen in beslag: eigendomscontroles afge
 > *"We stuurden verzekeraars links naar foto's van auto's van hun klanten die iedereen met een browser had kunnen vinden. Er was nog niets misgegaan, maar dat was puur geluk, geen beveiliging."*
 > - **Ilse Kramer, Oprichter, ScheldeScan (Dordrecht)**
 
-**Kosten & Doorlooptijd:** €3.200 (Launch Ready-pakket: toegangsbeveiliging, veilige uploads, rate limiting) - voltooid in 7 werkdagen.
+**Kosten & Doorlooptijd:** €3.200 [Launch Ready-pakket: toegangsbeveiliging, veilige uploads, rate limiting] - voltooid in 7 werkdagen.
 
 ---
 
-## Veelgestelde vragen
+## FAQs
 
 ### Als er tot nu toe niets is misgegaan, loopt mijn app dan echt gevaar?
 
