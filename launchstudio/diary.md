@@ -3,6 +3,24 @@
 ## 2026
 
 ### Tháng 11
+#### Ngày 20
+
+- **Đăng tải bài viết song ngữ EN & NL (Bài 33 - Cụm Extra 14) lên website LaunchStudio kèm Pre-Flight Duplicate Check, Geotagging & Metadata (`upload_to_wordpress.py`)**:
+  - **Bài viết EN**: [`launchstudio/2026-extra/extra-14-addation/33-who-can-help-me-launch-my-ai-built-app-in-europe.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-14-addation/33-who-can-help-me-launch-my-ai-built-app-in-europe.md)
+  - **Bài viết NL**: [`launchstudio/2026-extra/extra-14-addation/33-who-can-help-me-launch-my-ai-built-app-in-europe-dutch.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-14-addation/33-who-can-help-me-launch-my-ai-built-app-in-europe-dutch.md)
+  - **Tiêu đề EN**: *Who Can Help Me Launch My AI-Built App in Europe?*
+  - **Tiêu đề NL**: *Wie Kan Mij Helpen Mijn AI-Gebouwde App in Europa te Lanceren?*
+  - **Slug Full Title EN / NL**: `who-can-help-me-launch-my-ai-built-app-in-europe` / `wie-kan-mij-helpen-mijn-ai-gebouwde-app-in-europa-te-lanceren`
+  - **Thao tác kỹ thuật**:
+    - **Pre-Flight Duplicate Check**: Kiểm tra tự động trên website `launchstudio.eu`, xác nhận không có bài viết trùng lặp trước khi khởi tạo.
+    - **Geotagging & Metadata**: Tải lên banner mới đã được nhúng metadata GPS trụ sở Amsterdam (`52.366841`, `4.887593`), focus keywords và mô tả chi tiết vào EXIF/PNG (Attachment ID: `2180`).
+    - **Đăng tải bản EN (Post ID: 2181)**: Trạng thái `publish`, danh mục `[26, 28]` (*Strategy*, *Comparison*), banner ID `2180`, gán ngôn ngữ Polylang `en`, định dạng case study `.article-case` (`## Real example`), và 5 câu hỏi FAQs accordion semantic HTML5 `<details><summary>` kèm heading chuẩn `<h3>FAQs</h3>`.
+    - **Đồng bộ bản NL (Post ID: 2182)**: Trạng thái `publish`, danh mục `[43, 59]` (*Strategie*, *Vergelijking*), kế thừa banner ID `2180`, gán ngôn ngữ Polylang `nl`, định dạng case study `.article-case` (`## Echt voorbeeld`), và 5 câu hỏi FAQs accordion semantic HTML5.
+    - **Cập nhật Content Inventory**: Đánh dấu `✅` hoàn thành cho Bài 33 trong [`launchstudio/extra_content_inventory.md`](file:///Users/duyle/sickn33/launchstudio/extra_content_inventory.md).
+  - **Trạng thái xuất bản**:
+    - EN: [https://launchstudio.eu/en/who-can-help-me-launch-my-ai-built-app-in-europe/](https://launchstudio.eu/en/who-can-help-me-launch-my-ai-built-app-in-europe/) (Post ID: `2181`)
+    - NL: [https://launchstudio.eu/wie-kan-mij-helpen-mijn-ai-gebouwde-app-in-europa-te-lanceren/](https://launchstudio.eu/wie-kan-mij-helpen-mijn-ai-gebouwde-app-in-europa-te-lanceren/) (Post ID: `2182`)
+
 #### Ngày 19
 
 - **Đăng tải bài viết song ngữ EN & NL (Bài 05 - Cụm Extra 11) lên website LaunchStudio kèm Pre-Flight Duplicate Check, Geotagging & Metadata (`upload_to_wordpress.py`)**:

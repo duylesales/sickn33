@@ -915,6 +915,11 @@ def upload_post(article_path, image_path=None, media_id=None, post_id=None, site
                 "append": False
             }, site_key=site)
             print(f"[+] Assigned Polylang language '{target_lang}' (append=False) to post ID {final_id}")
+            if categories:
+                cat_ids = [int(c.strip()) for c in str(categories).split(",") if c.strip().isdigit()]
+                if cat_ids:
+                    call_mcp(endpoint, token, "wp_update_post", {"post_id": final_id, "categories": cat_ids}, site_key=site)
+                    print(f"[+] Re-assigned explicit categories {cat_ids} after language assignment to post ID {final_id}")
         except Exception as e:
             print(f"[!] Warning: Could not assign language term: {e}")
 
