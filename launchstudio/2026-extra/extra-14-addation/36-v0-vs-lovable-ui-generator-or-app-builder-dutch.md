@@ -149,7 +149,7 @@ Niet-technische oprichter die een product achter een login bouwt: begin met Lova
 
 LaunchStudio brengt v0- en Lovable-apps naar productie tegen vaste prijzen tussen €800 en €7.500, met behoud van uw interface. LaunchStudio brengt de engineering van Manifera op enterpriseniveau naar de economie van oprichters: Manifera bouwt al 11+ jaar React- en Next.js-applicaties, met klantwerk dat wordt gecoördineerd vanuit de Herengracht 420 in Amsterdam. Zie [de ontwikkeling van webapplicaties door Manifera](https://www.manifera.com/services/web-app-develop/). Voor details over het framework legt de officiële [documentatie van Next.js](https://nextjs.org/docs) server rendering en server actions uit.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een AI-Native Oprichter in Actie: De Architectenstudio Die Beide Nodig Had
 
@@ -166,7 +166,7 @@ LaunchStudio raadde aan beide te houden: de Next.js-site uit v0 voor openbare pa
 
 **Kosten & Doorlooptijd:** €4.600 (uitgebreid Launch Ready-pakket: gedeelde Supabase, RLS, privéopslag, goedkeuringen, meldingen, configuratie van Vercel en gestructureerde data) - afgerond in 13 werkdagen.
 
-## Veelgestelde Vragen
+## FAQs
 
 ### Is v0 beter dan Lovable om een SaaS te bouwen?
 

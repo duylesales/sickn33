@@ -166,7 +166,7 @@ LaunchStudio recommended keeping both: the v0 Next.js site for public pages on t
 
 **Cost & Timeline:** €4,600 (Launch Ready package extended: shared Supabase, RLS, private storage, approvals, notifications, Vercel configuration and structured data) - completed in 13 business days.
 
-## Frequently Asked Questions
+## FAQs
 
 ### Is v0 better than Lovable for building a SaaS?
 
