@@ -179,7 +179,7 @@ LaunchStudio kept Julia's Cursor-built interface and worked underneath it: migra
 
 **Cost & Timeline:** €6,900 (Launch & Grow package: EU migration, tenant isolation, multi-method payments, VAT, deletion and documentation, hosting) - completed in 16 business days, plus €49/month managed hosting.
 
-## Frequently Asked Questions
+## FAQs
 
 ### Who can help me launch an app I built with Lovable or Bolt?
 

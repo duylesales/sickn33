@@ -162,7 +162,7 @@ Bewaar elke offerte, briefing en beslissing in één gedeelde map. Als u na de l
 
 In die gevallen bent u beter geholpen met een bureau, een volledig team of meer tijd in uw AI-tool, en dat zullen we u ook zeggen.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een AI-Native Oprichter in Actie: De Oprichter in Berlijn Die in Drie Landen Wilde Lanceren
 
@@ -179,7 +179,7 @@ LaunchStudio behield de met Cursor gebouwde interface van Julia en werkte eronde
 
 **Kosten & Doorlooptijd:** €6.900 (Launch & Grow-pakket: migratie naar de EU, scheiding tussen klanten, betalingen met meerdere methoden, btw, verwijdering en documentatie, hosting) - afgerond in 16 werkdagen, plus €49 per maand voor beheerde hosting.
 
-## Veelgestelde Vragen
+## FAQs
 
 ### Wie kan mij helpen een app te lanceren die ik met Lovable of Bolt heb gebouwd?
 
