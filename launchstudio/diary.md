@@ -5,6 +5,73 @@
 ### Tháng 11
 #### Ngày 23
 
+- **Đăng tải bài viết song ngữ EN & NL (Bài 05 - Cụm Extra 5 Local) lên website LaunchStudio kèm Pre-Flight Duplicate Check, Geotagging & Metadata (`upload_to_wordpress.py`)**:
+  - **Bài viết EN**: [`launchstudio/2026-extra/extra-5-local/05-ai-for-coding-hilversum.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-5-local/05-ai-for-coding-hilversum.md)
+  - **Bài viết NL**: [`launchstudio/2026-extra/extra-5-local/05-ai-for-coding-hilversum-dutch.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-5-local/05-ai-for-coding-hilversum-dutch.md)
+  - **Tiêu đề EN**: *AI for Coding in Hilversum: What Media-Sector Founders Are Building (and Missing)*
+  - **Tiêu đề NL**: *AI voor coding in Hilversum: Wat mediasector-oprichters bouwen (en missen)*
+  - **Slug Full Title EN / NL**: `ai-for-coding-in-hilversum-what-media-sector-founders-are-building-and-missing` / `ai-voor-coding-in-hilversum-wat-mediasector-oprichters-bouwen-en-missen`
+  - **Thao tác kỹ thuật**:
+    - **Pre-Flight Duplicate Check**: Kiểm tra tự động trên website `launchstudio.eu`, xác nhận không có bài viết trùng lặp trước khi khởi tạo.
+    - **Geotagging & Metadata**: Tải lên banner đã được nhúng metadata GPS Hilversum (`52.2292 N, 5.1669 E`), focus keywords và mô tả chi tiết vào EXIF/PNG (Attachment ID: `2214`).
+    - **Đăng tải bản EN (Post ID: 2215)**: Trạng thái `publish`, danh mục `[4, 34]` (*Technical*, *Security*), banner ID `2214`, gán ngôn ngữ Polylang `en`, định dạng case study `.article-case` (`## Real example`), và 5 câu hỏi FAQs accordion semantic HTML5 `<details><summary>` kèm heading chuẩn `<h3>FAQs</h3>`.
+    - **Đồng bộ bản NL (Post ID: 2216)**: Trạng thái `publish`, danh mục `[41, 45]` (*Technisch*, *Beveiliging*), kế thừa banner ID `2214`, gán ngôn ngữ Polylang `nl`, định dạng case study `.article-case` (`## Echt voorbeeld`), và 5 câu hỏi FAQs accordion semantic HTML5.
+    - **Cập nhật Content Inventory**: Đánh dấu `✅` hoàn thành cho Bài 05 trong [`launchstudio/extra_content_inventory.md`](file:///Users/duyle/sickn33/launchstudio/extra_content_inventory.md).
+  - **Trạng thái xuất bản**:
+    - EN: [https://launchstudio.eu/en/ai-for-coding-in-hilversum-what-media-sector-founders-are-building-and-missing/](https://launchstudio.eu/en/ai-for-coding-in-hilversum-what-media-sector-founders-are-building-and-missing/) (Post ID: `2215`)
+    - NL: [https://launchstudio.eu/ai-voor-coding-in-hilversum-wat-mediasector-oprichters-bouwen-en-missen/](https://launchstudio.eu/ai-voor-coding-in-hilversum-wat-mediasector-oprichters-bouwen-en-missen/) (Post ID: `2216`)
+
+- **Tạo loạt ảnh minh họa siêu thực phong cách phóng sự tài liệu (Documentary Realism) cho Cụm Extra 5 Local (Bài 17 - 18)**:
+  - **Mục tiêu & Quy chuẩn**: Tuân thủ nghiêm ngặt quy định cấm phần cứng/USB/tủ rack/dây cáp/máy móc; loại bỏ hoàn toàn các lỗi AI (hologram, màn hình lơ lửng, bàn làm việc laptop); luân phiên tương phản góc máy và không gian giữa các bài viết kế tiếp.
+  - **Bài 17** (*Arnhem* - [`17-ai-software-development-arnhem.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-5-local/17-ai-software-development-arnhem.md)):
+    - **File ảnh**: [`17-ai-software-development-arnhem_pic.png`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-5-local/17-ai-software-development-arnhem_pic.png)
+    - **Góc chụp**: Góc nhìn ngôi thứ nhất đang bước đi (*First-person POV / Walking Perspective*) tiến vào studio phần mềm hiện đại tại Arnhem; sàn bê tông sáng bóng, vách kính cách âm bên phải có hai lập trình viên đang thảo luận sôi nổi, phía trước là cửa kính công nghiệp chạm trần mở ra rặng cây ven sông xanh mát dưới nắng sớm.
+    - **Geotagging**: Arnhem (`51.9851 N, 5.8987 E`).
+  - **Bài 18** (*Apeldoorn* - [`18-develop-ai-software-apeldoorn.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-5-local/18-develop-ai-software-apeldoorn.md)):
+    - **File ảnh**: [`18-develop-ai-software-apeldoorn_pic.png`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-5-local/18-develop-ai-software-apeldoorn_pic.png)
+    - **Góc chụp**: Góc nhìn qua vai (*Over-the-shoulder action*) kiến trúc sư phần mềm kỳ cựu cùng founder trẻ thảo luận rà soát tái cấu trúc mã nguồn trước màn hình phẳng mờ hiển thị các khối màu cấu trúc diffs out-of-focus; bàn làm việc gỗ tần bì và tách gốm bên khung cửa sổ nhìn ra công viên Apeldoorn.
+    - **Geotagging**: Apeldoorn (`52.2112 N, 5.9699 E`).
+  - **Kỹ thuật**: Tỷ lệ 16:9 (`1024x576`), định dạng PNG, đầy đủ GPS EXIF & PNG metadata text chunks.
+
+- **Tạo loạt ảnh minh họa siêu thực phong cách phóng sự tài liệu (Documentary Realism) cho Cụm Extra 5 Local (Bài 12 - 16)**:
+  - **Mục tiêu & Quy chuẩn**: Tuân thủ nghiêm ngặt quy định cấm phần cứng/USB/tủ rack/dây cáp/máy móc; loại bỏ hoàn toàn các lỗi AI (hologram, màn hình lơ lửng, bàn làm việc laptop); luân phiên tương phản góc máy và không gian giữa các bài viết kế tiếp.
+  - **Bài 12** (*Amersfoort* - [`12-ai-secure-amersfoort.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-5-local/12-ai-secure-amersfoort.md)):
+    - **File ảnh**: [`12-ai-secure-amersfoort_pic.png`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-5-local/12-ai-secure-amersfoort_pic.png)
+    - **Góc chụp**: Nhìn qua vai (*Over-the-shoulder action*) chuyên gia tư vấn bảo mật và founder trao đổi quy trình bảo mật phần mềm trước màn hình phẳng hiển thị các khối luồng trừu tượng out-of-focus; ánh sáng tự nhiên rọi qua cửa sổ thép nhìn ra phố kênh gạch Amersfoort.
+    - **Geotagging**: Amersfoort (`52.1561 N, 5.3878 E`).
+  - **Bài 13** (*Nieuwegein* - [`13-ai-code-tool-nieuwegein.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-5-local/13-ai-code-tool-nieuwegein.md)):
+    - **File ảnh**: [`13-ai-code-tool-nieuwegein_pic.png`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-5-local/13-ai-code-tool-nieuwegein_pic.png)
+    - **Góc chụp**: Góc rộng kiến trúc (*Architectural Wide-Angle*) sâu sắc bên trong studio phần mềm không gian mở tại Nieuwegein; trần dầm gỗ sồi cao vút, tường kính hai tầng nhìn ra sân vườn và 4 thành viên thảo luận bản vẽ kiến trúc hệ thống bằng giấy tại bàn hội nghị gỗ tần bì.
+    - **Geotagging**: Nieuwegein (`52.0292 N, 5.0805 E`).
+  - **Bài 14** (*Veenendaal* - [`14-ai-database-veenendaal.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-5-local/14-ai-database-veenendaal.md)):
+    - **File ảnh**: [`14-ai-database-veenendaal_pic.png`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-5-local/14-ai-database-veenendaal_pic.png)
+    - **Góc chụp**: Cận cảnh xúc giác (*Candid / Tactile Close-Up*) đôi bàn tay kỹ sư database trên bàn phím cơ màu tối mờ cạnh tách matcha gốm thủ công; hậu cảnh bokeh mờ hiển thị trừu tượng mối quan hệ schema dữ liệu.
+    - **Geotagging**: Veenendaal (`52.0256 N, 5.5556 E`).
+  - **Bài 15** (*Zeist* - [`15-ai-native-zeist.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-5-local/15-ai-native-zeist.md)):
+    - **File ảnh**: [`15-ai-native-zeist_pic.png`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-5-local/15-ai-native-zeist_pic.png)
+    - **Góc chụp**: Không gian phòng chiến lược thư giãn (*Non-Desk Lounge / Discussion*) founder và cố vấn kỹ thuật ngồi trên ghế da Scandinavian trò chuyện, cửa kính chạm trần nhìn ra rừng thông Zeist tràn ngập nắng chiều.
+    - **Geotagging**: Zeist (`52.0917 N, 5.2333 E`).
+  - **Bài 16** (*Nijmegen* - [`16-ai-works-nijmegen.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-5-local/16-ai-works-nijmegen.md)):
+    - **File ảnh**: [`16-ai-works-nijmegen_pic.png`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-5-local/16-ai-works-nijmegen_pic.png)
+    - **Góc chụp**: Góc ngước từ dưới lên (*Low-Angle Upward / Mezzanine*) bên trong xưởng công nghiệp gạch đỏ cổ tại Nijmegen; nhìn lên lối đi mezzanine thép đen nơi 2 lập trình viên đứng thảo luận tài liệu wireframe bằng giấy dưới vòm cửa sổ kho lớn.
+    - **Geotagging**: Nijmegen (`51.8426 N, 5.8596 E`).
+  - **Kỹ thuật**: Tỷ lệ 16:9 (`1024x576`), định dạng PNG, đầy đủ GPS EXIF & PNG metadata text chunks.
+
+- **Tạo ảnh minh họa siêu thực phong cách phóng sự tài liệu (Documentary Realism) cho bài viết Bài 09 - Cụm Extra 5 Local (Delft)**:
+  - **Bài viết**: [`launchstudio/2026-extra/extra-5-local/09-build-ai-delft.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-5-local/09-build-ai-delft.md)
+  - **File ảnh**: [`launchstudio/2026-extra/extra-5-local/09-build-ai-delft_pic.png`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-5-local/09-build-ai-delft_pic.png)
+  - **Bố cục & Phong cách ảnh**: Góc rộng kiến trúc (*Architectural Wide-Angle*) sâu sắc bên trong studio phần mềm và vườn ươm công nghệ hiện đại tại Delft, Hà Lan. Không gian trần cao tràn ngập ánh sáng tự nhiên với dầm gỗ sồi sáng màu, sàn vi xi măng nhẵn bóng và cửa kính công nghiệp hai tầng nhìn ra khoảng sân gạch Hà Lan xanh mát; ở trung cảnh, nhà sáng lập kỹ thuật trẻ người Hà Lan cùng kiến trúc sư phần mềm đứng thảo luận sơ đồ kiến trúc triển khai hệ thống tại bàn đứng gỗ sồi; cây xanh nội thất monstera/ficus và tấm tiêu âm nỉ xám hiện đại.
+  - **Tuân thủ quy chuẩn mới**: Tuyệt đối KHÔNG có phần cứng, KHÔNG USB, KHÔNG tủ rack server, KHÔNG dây cáp, KHÔNG máy móc hay thiết bị đo đạc; không có màn hình hiển thị text giả hay hologram phi thực tế; không góc chụp laptop nằm trên bàn làm việc.
+  - **Quy chuẩn kỹ thuật**: Tỷ lệ 16:9 (`1024x576`), định dạng PNG.
+  - **Geotagging & Metadata**: Nhúng tọa độ GPS Delft (`52.0116 N, 4.3571 E`), Tiêu đề, Từ khóa và Mô tả vào EXIF & PNG metadata text chunks.
+
+- **Tạo ảnh minh họa siêu thực phong cách phóng sự tài liệu (Documentary Realism) cho bài viết Bài 06 - Cụm Extra 5 Local (Rotterdam)**:
+  - **Bài viết**: [`launchstudio/2026-extra/extra-5-local/06-ai-websites-rotterdam.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-5-local/06-ai-websites-rotterdam.md)
+  - **File ảnh**: [`launchstudio/2026-extra/extra-5-local/06-ai-websites-rotterdam_pic.png`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-5-local/06-ai-websites-rotterdam_pic.png)
+  - **Bố cục & Phong cách ảnh**: Góc nhìn qua vai (Over-the-shoulder) chân thực bên trong trung tâm viễn thông và tuân thủ mạng tại Rotterdam, Hà Lan. Kỹ sư kiểm toán hạ tầng cầm thiết bị đo đạc chẩn đoán cầm tay kết nối cáp bọc kim loại chịu lực vào tủ rack server mạng màu đen mờ, các chùm cáp Ethernet xanh đậm/xám được bố trí gọn gàng với đèn LED trạng thái xanh lục/hổ phách chân thực; nền mờ ánh sáng tự nhiên từ cửa sổ khung thép công nghiệp rọi vào cột bê tông kiến trúc và sàn bê tông đánh bóng.
+  - **Quy chuẩn kỹ thuật**: Tỷ lệ 16:9 (`1024x576`), định dạng PNG, loại bỏ hoàn toàn các yếu tố đồ họa AI/hologram phi thực tế và bàn làm việc laptop.
+  - **Geotagging & Metadata**: Nhúng tọa độ GPS Rotterdam (`51.9244 N, 4.4777 E`), Tiêu đề, Từ khóa và Mô tả vào EXIF & PNG metadata text chunks.
+
 - **Đăng tải bài viết song ngữ EN & NL (Bài 29 - Cụm Extra 14) lên website LaunchStudio kèm Pre-Flight Duplicate Check, Geotagging & Metadata (`upload_to_wordpress.py`)**:
   - **Bài viết EN**: [`launchstudio/2026-extra/extra-14-addation/29-how-to-add-roles-and-an-admin-panel-to-a-lovable-app.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-14-addation/29-how-to-add-roles-and-an-admin-panel-to-a-lovable-app.md)
   - **Bài viết NL**: [`launchstudio/2026-extra/extra-14-addation/29-how-to-add-roles-and-an-admin-panel-to-a-lovable-app-dutch.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-14-addation/29-how-to-add-roles-and-an-admin-panel-to-a-lovable-app-dutch.md)
