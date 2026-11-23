@@ -212,7 +212,7 @@ Engineers moved `plan` and `role` into a `memberships` table writable only throu
 
 **Cost & Timeline:** €2,100 (RLS audit plus fixes, storage migration and indexes) - completed in 7 business days.
 
-## Frequently Asked Questions
+## FAQs
 
 ### What is a Supabase RLS audit?
 

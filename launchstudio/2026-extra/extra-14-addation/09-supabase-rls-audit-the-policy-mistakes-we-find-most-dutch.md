@@ -195,7 +195,7 @@ Policies beschermen tabellen, maar data kan de database ook verlaten via views e
 
 LaunchStudio biedt een Supabase RLS-audit als opdracht met vaste prijs vanaf €800, met schriftelijke bevindingen in drie tot vijf werkdagen, of een gecombineerde audit met oplossingen. Het werk wordt uitgevoerd door engineers van Manifera, gecoördineerd vanuit Amsterdam en Singapore en geleverd vanuit het ontwikkelcentrum van Manifera aan de Pho Quang Street in Ho Chi Minh City. LaunchStudio wordt ondersteund door Manifera, vertrouwd door Vodafone, TNO en CFLW, en dezelfde beveiligingsgewoonten gelden voor een Supabase-project met tien tabellen als voor een enterprisedatabase. Voor de bredere dienst, zie onze pagina over [een Supabase developer inhuren](https://launchstudio.eu/nl/blog/supabase-developer-for-hire-production-setup-and-rls), en voor de achtergrond van Manifera de [over-ons-pagina](https://www.manifera.com/about-us/).
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een AI-Native Oprichter in Actie: De Coworkingleden Die Zichzelf Konden Upgraden
 
@@ -212,7 +212,7 @@ Engineers verplaatsten `plan` en `role` naar een tabel `memberships` die alleen 
 
 **Kosten & Doorlooptijd:** €2.100 (RLS-audit plus oplossingen, migratie van opslag en indexen) - afgerond in 7 werkdagen.
 
-## Veelgestelde Vragen
+## FAQs
 
 ### Wat is een Supabase RLS-audit?
 
