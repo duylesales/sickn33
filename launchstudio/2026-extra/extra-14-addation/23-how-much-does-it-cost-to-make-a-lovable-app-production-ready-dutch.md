@@ -185,7 +185,7 @@ Twee redenen. Ten eerste bestaat de frontend al, en die behouden we. Ten tweede 
 
 Voor een onafhankelijke kijk op wat productierijpheid inhoudt, noemt de [productiechecklist van Supabase](https://supabase.com/docs/guides/deployment/going-into-prod) veel van dezelfde punten.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een AI-Native Oprichter in Actie: De Uitlaatplanner Die Minder Kostte dan Verwacht
 
@@ -202,7 +202,7 @@ Engineers voegden rollen voor eigenaren en uitlaters toe met Row Level Security,
 
 **Kosten & Doorlooptijd:** €2.650 (Launch Ready-pakket met betalingen: rollen, privéopslag, Mollie en deployment) - afgerond in 9 werkdagen.
 
-## Veelgestelde Vragen
+## FAQs
 
 ### Wat is de goedkoopste manier om een Lovable-app productierijp te maken?
 

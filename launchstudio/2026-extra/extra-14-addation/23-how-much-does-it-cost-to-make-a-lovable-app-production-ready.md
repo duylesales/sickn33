@@ -202,7 +202,7 @@ Engineers added owner and walker roles with Row Level Security, so walkers only 
 
 **Cost & Timeline:** €2,650 (Launch Ready package with payments: roles, private storage, Mollie and deployment) - completed in 9 business days.
 
-## Frequently Asked Questions
+## FAQs
 
 ### What is the cheapest way to make a Lovable app production ready?
 
