@@ -91,10 +91,10 @@ The Stack Overflow data above describes a genuine paradox that every engineering
 
 | Task Category | Risk of "Almost Right" Output | Recommended Governance |
 |---|---|---|
-| **Boilerplate generation (CRUD, standard components)** | Highest - low ambiguity, easy to test | Test-first contract; automated CI gate; spot-check review |
+| **Boilerplate generation (CRUD, standard components)** | Low - low ambiguity, easy to test | Test-first contract; automated CI gate; spot-check review |
 | **Refactoring existing code** | Medium - correctness is checkable, intent can drift | Full test suite must pass; human reviews diff for intent drift, not just syntax |
-| **Business logic implementation** | Low - this is exactly where "almost right, but not quite" causes damage | Mandatory human-authored acceptance tests before AI writes a line; senior review required before merge |
-| **Security-sensitive code (auth, payments, PII handling)** | Lowest - a plausible-looking flaw here is the most expensive kind | AI-assisted, human-authored; SAST + manual security review; never auto-merged |
+| **Business logic implementation** | High - this is exactly where "almost right, but not quite" causes damage | Mandatory human-authored acceptance tests before AI writes a line; senior review required before merge |
+| **Security-sensitive code (auth, payments, PII handling)** | Highest - a plausible-looking flaw here is the most expensive kind | AI-assisted, human-authored; SAST + manual security review; never auto-merged |
 | **Architecture and system boundaries** | Not applicable - this is explicitly a human-only decision layer | AI has no merge authority here at all; it implements within boundaries a human already defined |
 
 **The operating principle:** the less checkable an AI's output is by an automated test, and the more expensive a subtle mistake would be, the closer that task moves toward the bottom of this table - and the more human judgment has to sit between generation and production. Teams that apply this gradient deliberately capture the velocity of the 84% adoption number without inheriting the risk implied by the 46% distrust number.
