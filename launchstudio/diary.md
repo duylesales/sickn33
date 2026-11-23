@@ -5,6 +5,22 @@
 ### Tháng 11
 #### Ngày 23
 
+- **Đăng tải bài viết song ngữ EN & NL (Bài 09 - Cụm Extra 14) lên website LaunchStudio kèm Pre-Flight Duplicate Check, Geotagging & Metadata (`upload_to_wordpress.py`)**:
+  - **Bài viết EN**: [`launchstudio/2026-extra/extra-14-addation/09-supabase-rls-audit-the-policy-mistakes-we-find-most.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-14-addation/09-supabase-rls-audit-the-policy-mistakes-we-find-most.md)
+  - **Bài viết NL**: [`launchstudio/2026-extra/extra-14-addation/09-supabase-rls-audit-the-policy-mistakes-we-find-most-dutch.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-14-addation/09-supabase-rls-audit-the-policy-mistakes-we-find-most-dutch.md)
+  - **Tiêu đề EN**: *Supabase RLS Audit: The Policy Mistakes We Find Most*
+  - **Tiêu đề NL**: *Supabase RLS-Audit: De Fouten in Policies Die We het Vaakst Vinden*
+  - **Slug Full Title EN / NL**: `supabase-rls-audit-the-policy-mistakes-we-find-most` / `supabase-rls-audit-de-fouten-in-policies-die-we-het-vaakst-vinden`
+  - **Thao tác kỹ thuật**:
+    - **Pre-Flight Duplicate Check**: Kiểm tra tự động trên website `launchstudio.eu`, xác nhận không có bài viết trùng lặp trước khi khởi tạo.
+    - **Geotagging & Metadata**: Tải lên banner đã được nhúng metadata GPS trụ sở Amsterdam (`52.366841`, `4.887593`), focus keywords và mô tả chi tiết vào EXIF/PNG (Attachment ID: `2198`).
+    - **Đăng tải bản EN (Post ID: 2199)**: Trạng thái `publish`, danh mục `[34, 4]` (*Security*, *Technical*), banner ID `2198`, gán ngôn ngữ Polylang `en`, định dạng case study `.article-case` (`## Real example`), và 5 câu hỏi FAQs accordion semantic HTML5 `<details><summary>` kèm heading chuẩn `<h3>FAQs</h3>`.
+    - **Đồng bộ bản NL (Post ID: 2200)**: Trạng thái `publish`, danh mục `[45, 41]` (*Beveiliging*, *Technisch*), kế thừa banner ID `2198`, gán ngôn ngữ Polylang `nl`, định dạng case study `.article-case` (`## Echt voorbeeld`), và 5 câu hỏi FAQs accordion semantic HTML5.
+    - **Cập nhật Content Inventory**: Đánh dấu `✅` hoàn thành cho Bài 09 trong [`launchstudio/extra_content_inventory.md`](file:///Users/duyle/sickn33/launchstudio/extra_content_inventory.md).
+  - **Trạng thái xuất bản**:
+    - EN: [https://launchstudio.eu/en/supabase-rls-audit-the-policy-mistakes-we-find-most/](https://launchstudio.eu/en/supabase-rls-audit-the-policy-mistakes-we-find-most/) (Post ID: `2199`)
+    - NL: [https://launchstudio.eu/supabase-rls-audit-de-fouten-in-policies-die-we-het-vaakst-vinden/](https://launchstudio.eu/supabase-rls-audit-de-fouten-in-policies-die-we-het-vaakst-vinden/) (Post ID: `2200`)
+
 - **Đăng tải bài viết song ngữ EN & NL (Bài 32 - Cụm Extra 12) lên website LaunchStudio kèm Pre-Flight Duplicate Check, Geotagging & Metadata (`upload_to_wordpress.py`)**:
   - **Bài viết EN**: [`launchstudio/2026-extra/extra-12-lovable-bolt-replit/32-ai-app-security-webhooks-you-never-verified.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-12-lovable-bolt-replit/32-ai-app-security-webhooks-you-never-verified.md)
   - **Bài viết NL**: [`launchstudio/2026-extra/extra-12-lovable-bolt-replit/32-ai-app-security-webhooks-you-never-verified-dutch.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-12-lovable-bolt-replit/32-ai-app-security-webhooks-you-never-verified-dutch.md)
