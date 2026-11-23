@@ -5,6 +5,22 @@
 ### Tháng 11
 #### Ngày 23
 
+- **Đăng tải bài viết song ngữ EN & NL (Bài 23 - Cụm Extra 14 Addation) lên website LaunchStudio kèm Pre-Flight Duplicate Check, Geotagging & Metadata (`upload_to_wordpress.py`)**:
+  - **Bài viết EN**: [`launchstudio/2026-extra/extra-14-addation/23-how-much-does-it-cost-to-make-a-lovable-app-production-ready.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-14-addation/23-how-much-does-it-cost-to-make-a-lovable-app-production-ready.md)
+  - **Bài viết NL**: [`launchstudio/2026-extra/extra-14-addation/23-how-much-does-it-cost-to-make-a-lovable-app-production-ready-dutch.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-14-addation/23-how-much-does-it-cost-to-make-a-lovable-app-production-ready-dutch.md)
+  - **Tiêu đề EN**: *How Much Does It Cost to Make a Lovable App Production Ready?*
+  - **Tiêu đề NL**: *Wat Kost het om een Lovable-App Productierijp te Maken?*
+  - **Slug Full Title EN / NL**: `how-much-does-it-cost-to-make-a-lovable-app-production-ready` / `wat-kost-het-om-een-lovable-app-productierijp-te-maken`
+  - **Thao tác kỹ thuật**:
+    - **Pre-Flight Duplicate Check**: Kiểm tra tự động trên website `launchstudio.eu`, xác nhận không có bài viết trùng lặp trước khi khởi tạo.
+    - **Geotagging & Metadata**: Tải lên banner đã được nhúng metadata GPS trụ sở Amsterdam (`52.366841`, `4.887593`), focus keywords và mô tả chi tiết vào EXIF/PNG (Attachment ID: `2225`).
+    - **Đăng tải bản EN (Post ID: 2226)**: Trạng thái `publish`, danh mục `[26, 4]` (*Strategy*, *Technical*), banner ID `2225`, gán ngôn ngữ Polylang `en`, định dạng case study `.article-case` (`## Real example`), và 5 câu hỏi FAQs accordion semantic HTML5 `<details><summary>` kèm heading chuẩn `<h3>FAQs</h3>`.
+    - **Đồng bộ bản NL (Post ID: 2227)**: Trạng thái `publish`, danh mục `[43, 41]` (*Strategie*, *Technisch*), kế thừa banner ID `2225`, gán ngôn ngữ Polylang `nl`, định dạng case study `.article-case` (`## Echt voorbeeld`), và 5 câu hỏi FAQs accordion semantic HTML5.
+    - **Cập nhật Content Inventory**: Đánh dấu `✅` hoàn thành cho Bài 23 (extra-14-addation) trong [`launchstudio/extra_content_inventory.md`](file:///Users/duyle/sickn33/launchstudio/extra_content_inventory.md).
+  - **Trạng thái xuất bản**:
+    - EN: [https://launchstudio.eu/how-much-does-it-cost-to-make-a-lovable-app-production-ready/](https://launchstudio.eu/how-much-does-it-cost-to-make-a-lovable-app-production-ready/) (Post ID: `2226`)
+    - NL: [https://launchstudio.eu/wat-kost-het-om-een-lovable-app-productierijp-te-maken/](https://launchstudio.eu/wat-kost-het-om-een-lovable-app-productierijp-te-maken/) (Post ID: `2227`)
+
 - **Đăng tải bài viết song ngữ EN & NL (Bài 33 - Tháng 8/2026) lên website LaunchStudio kèm Pre-Flight Duplicate Check, Geotagging & Metadata (`upload_to_wordpress.py`)**:
   - **Bài viết EN**: [`launchstudio/2026/august-2026/33-building-ai-lead-magnet-actually-converts.md`](file:///Users/duyle/sickn33/launchstudio/2026/august-2026/33-building-ai-lead-magnet-actually-converts.md)
   - **Bài viết NL**: [`launchstudio/2026/august-2026/33-building-ai-lead-magnet-actually-converts_dutch.md`](file:///Users/duyle/sickn33/launchstudio/2026/august-2026/33-building-ai-lead-magnet-actually-converts_dutch.md)
