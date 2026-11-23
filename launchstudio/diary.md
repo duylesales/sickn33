@@ -3,6 +3,25 @@
 ## 2026
 
 ### Tháng 11
+#### Ngày 23
+
+- **Khởi tạo và tối ưu bộ ảnh siêu thực phong cách phóng sự tài liệu (Documentary Realism) cho Cụm Extra 12 (Bài 28 - 36)**:
+  - **Mục tiêu**: Loại bỏ hoàn toàn các yếu tố đồ họa AI/hologram phi thực tế (màn hình hiển thị lơ lửng, hologram, ghép ảnh nhân tạo, laptop trên bàn làm việc).
+  - **Quy tắc tương phản bố cục (Adjacent Style & Angle Contrast)**: Luân phiên nghiêm ngặt các góc máy và môi trường giữa các bài viết kế tiếp:
+    - **Bài 28** (*Malware Scanning*): Cận cảnh cực đại (Macro) bàn tay đeo găng ESD kết nối thiết bị write-blocker phần cứng tại phòng lab Delft.
+    - **Bài 29** (*Session Tokens*): Góc nhìn qua vai (Over-the-shoulder) kỹ sư cắm cáp quang patch panel tại hành lang máy chủ Amsterdam.
+    - **Bài 30** (*Password Reset*): Góc rộng kiến trúc (Architectural Wide) trung tâm an ninh danh tính Utrecht với cột bê tông và ánh sáng tự nhiên.
+    - **Bài 31** (*IDOR Vulnerability*): Góc nhìn ngôi thứ nhất (First-person POV) bước dọc hành lang vault máy chủ Haarlem với đầu đọc thẻ từ.
+    - **Bài 32** (*Webhooks Verification*): Góc ngước từ dưới lên (Low-angle Upward) trung tâm viễn thông Rotterdam nhìn lên cầu mezzanine kính.
+    - **Bài 33** (*Dependency Updates*): Góc nhìn qua vai (Over-the-shoulder) kỹ sư DevOps kết nối loopback quang vào rack test tại Eindhoven.
+    - **Bài 34** (*Secret Rotation*): Cận cảnh cực đại (Macro) khóa bảo mật phần cứng titan vân tay cắm vào module HSM tại Amsterdam.
+    - **Bài 35** (*Penetration Testing*): Góc rộng kiến trúc (Architectural Wide) phòng điều hành red-team The Hague nhìn ra kênh đào.
+    - **Bài 36** (*Immutable Backups*): Môi trường vault chuyên dụng (Cold-vault Corridor) hành lang lưu trữ băng từ Groningen đóng cửa bảo vệ.
+  - **Xử lý kỹ thuật**:
+    - Chuẩn hóa tỷ lệ khung hình 16:9 (`1024x576`), định dạng PNG.
+    - Nhúng metadata Geotagging GPS trụ sở Amsterdam (`52.366841`, `4.887593`) kèm Title, Keywords và Description vào EXIF & PNG text chunks.
+    - Lưu file đồng bộ vào thư mục `launchstudio/2026-extra/extra-12-lovable-bolt-replit/`.
+
 #### Ngày 20
 
 - **Đăng tải bài viết song ngữ EN & NL (Bài 36 - Cụm Extra 14) lên website LaunchStudio kèm Pre-Flight Duplicate Check, Geotagging & Metadata (`upload_to_wordpress.py`)**:
