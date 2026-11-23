@@ -5,6 +5,22 @@
 ### Tháng 11
 #### Ngày 23
 
+- **Đăng tải bài viết song ngữ EN & NL (Bài 29 - Cụm Extra 14) lên website LaunchStudio kèm Pre-Flight Duplicate Check, Geotagging & Metadata (`upload_to_wordpress.py`)**:
+  - **Bài viết EN**: [`launchstudio/2026-extra/extra-14-addation/29-how-to-add-roles-and-an-admin-panel-to-a-lovable-app.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-14-addation/29-how-to-add-roles-and-an-admin-panel-to-a-lovable-app.md)
+  - **Bài viết NL**: [`launchstudio/2026-extra/extra-14-addation/29-how-to-add-roles-and-an-admin-panel-to-a-lovable-app-dutch.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-14-addation/29-how-to-add-roles-and-an-admin-panel-to-a-lovable-app-dutch.md)
+  - **Tiêu đề EN**: *How to Add Authentication Roles and an Admin Panel to a Lovable App*
+  - **Tiêu đề NL**: *Gebruikersrollen en een Beheerpaneel Toevoegen aan een Lovable-App*
+  - **Slug Full Title EN / NL**: `how-to-add-authentication-roles-and-an-admin-panel-to-a-lovable-app` / `gebruikersrollen-en-een-beheerpaneel-toevoegen-aan-een-lovable-app`
+  - **Thao tác kỹ thuật**:
+    - **Pre-Flight Duplicate Check**: Kiểm tra tự động trên website `launchstudio.eu`, xác nhận không có bài viết trùng lặp trước khi khởi tạo.
+    - **Geotagging & Metadata**: Tải lên banner đã được nhúng metadata GPS trụ sở Amsterdam (`52.366841`, `4.887593`), focus keywords và mô tả chi tiết vào EXIF/PNG (Attachment ID: `2208`).
+    - **Đăng tải bản EN (Post ID: 2209)**: Trạng thái `publish`, danh mục `[4, 34]` (*Technical*, *Security*), banner ID `2208`, gán ngôn ngữ Polylang `en`, định dạng case study `.article-case` (`## Real example`), và 5 câu hỏi FAQs accordion semantic HTML5 `<details><summary>` kèm heading chuẩn `<h3>FAQs</h3>`.
+    - **Đồng bộ bản NL (Post ID: 2210)**: Trạng thái `publish`, danh mục `[41, 45]` (*Technisch*, *Beveiliging*), kế thừa banner ID `2208`, gán ngôn ngữ Polylang `nl`, định dạng case study `.article-case` (`## Echt voorbeeld`), và 5 câu hỏi FAQs accordion semantic HTML5.
+    - **Cập nhật Content Inventory**: Đánh dấu `✅` hoàn thành cho Bài 29 trong [`launchstudio/extra_content_inventory.md`](file:///Users/duyle/sickn33/launchstudio/extra_content_inventory.md).
+  - **Trạng thái xuất bản**:
+    - EN: [https://launchstudio.eu/en/how-to-add-authentication-roles-and-an-admin-panel-to-a-lovable-app/](https://launchstudio.eu/en/how-to-add-authentication-roles-and-an-admin-panel-to-a-lovable-app/) (Post ID: `2209`)
+    - NL: [https://launchstudio.eu/gebruikersrollen-en-een-beheerpaneel-toevoegen-aan-een-lovable-app/](https://launchstudio.eu/gebruikersrollen-en-een-beheerpaneel-toevoegen-aan-een-lovable-app/) (Post ID: `2210`)
+
 - **Đăng tải bài viết song ngữ EN & NL (Bài 15 - Cụm Extra 14) lên website LaunchStudio kèm Pre-Flight Duplicate Check, Geotagging & Metadata (`upload_to_wordpress.py`)**:
   - **Bài viết EN**: [`launchstudio/2026-extra/extra-14-addation/15-gdpr-checklist-for-saas-founders-in-the-netherlands.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-14-addation/15-gdpr-checklist-for-saas-founders-in-the-netherlands.md)
   - **Bài viết NL**: [`launchstudio/2026-extra/extra-14-addation/15-gdpr-checklist-for-saas-founders-in-the-netherlands-dutch.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-14-addation/15-gdpr-checklist-for-saas-founders-in-the-netherlands-dutch.md)
