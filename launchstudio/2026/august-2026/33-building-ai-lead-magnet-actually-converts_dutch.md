@@ -177,7 +177,7 @@ Hij schakelde **LaunchStudio (door Manifera)** in. Het team integreerde Cloudfla
 
 ---
 
-## Veelgestelde Vragen
+## FAQs
 
 ### Waarom werken traditionele PDF E-books niet meer als lead magnet?
 

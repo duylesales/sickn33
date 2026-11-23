@@ -157,7 +157,7 @@ He worked with **LaunchStudio (by Manifera, founded in 2014)** to integrate Clou
 
 ---
 
-## Frequently Asked Questions
+## FAQs
 
 ### Why are PDF Ebooks failing as lead magnets?
 
