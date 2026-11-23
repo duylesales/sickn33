@@ -191,7 +191,7 @@ B2B-producten hebben meestal rollen per organisatie nodig: een tabel `membership
 
 Rollen en een beheerpaneel horen bij de meest voorkomende toevoegingen van LaunchStudio aan Lovable-apps, meestal binnen een Launch Ready-opdracht van €1.200-€3.500. Achter LaunchStudio staat het team van Manifera met 120+ ervaren engineers, die in 11+ jaar rolgebaseerde systemen hebben gebouwd voor enterpriseklanten, gecoördineerd vanuit Amsterdam en geleverd vanuit Ho Chi Minh City. Zie [de ontwikkeling van webapplicaties door Manifera](https://www.manifera.com/services/web-app-develop/) voor de enterprisekant, en de [gids van Supabase over custom claims en RBAC](https://supabase.com/docs/guides/database/postgres/custom-claims-and-role-based-access-control-rbac) voor een alternatieve aanpak met JWT-claims. Als u ook de rest van uw app wilt controleren, probeer dan onze [zelftest voor de beveiliging van Lovable](https://launchstudio.eu/nl/blog/is-my-lovable-app-secure).
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een AI-Native Oprichter in Actie: Het Vrijwilligersplatform Waar Iedereen Coördinator Kon Worden
 
@@ -208,7 +208,7 @@ LaunchStudio maakte een tabel `user_roles` zonder schrijfpolicies, migreerde de 
 
 **Kosten & Doorlooptijd:** €1.750 (Launch Ready-pakket: rollentabel, migratie, herschreven RLS, edge functions voor beheer en auditlog) - afgerond in 6 werkdagen.
 
-## Veelgestelde Vragen
+## FAQs
 
 ### Kan ik de beheerpagina niet gewoon verbergen voor gebruikers die geen admin zijn?
 

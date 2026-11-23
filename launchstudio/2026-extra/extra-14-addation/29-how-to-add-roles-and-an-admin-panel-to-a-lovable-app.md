@@ -208,7 +208,7 @@ LaunchStudio created a `user_roles` table with no write policies, migrated exist
 
 **Cost & Timeline:** €1,750 (Launch Ready package: roles table, migration, RLS rewrite, admin edge functions and audit log) - completed in 6 business days.
 
-## Frequently Asked Questions
+## FAQs
 
 ### Can I just hide the admin page from non-admin users?
 
