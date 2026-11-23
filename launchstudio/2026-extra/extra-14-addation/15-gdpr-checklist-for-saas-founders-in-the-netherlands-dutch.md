@@ -171,7 +171,7 @@ LaunchStudio dekt deel 3 en de technische input voor deel 2 en 4: scheiding tuss
 
 LaunchStudio wordt aangedreven door Manifera, waarvan het engineeringteam van 120+ mensen werkt vanuit Ho Chi Minh City met klantkantoren in Amsterdam en Singapore, en tot de klanten behoren Nederlandse organisaties zoals TNO en Statler BI. De [aanpak voor offshore-ontwikkeling van Manifera](https://www.manifera.com/services/offshore-software-development/) is gebouwd rond Nederlandse contracten en gegevensverwerking in de EU. Voor officiële sjablonen en richtlijnen is de [Autoriteit Persoonsgegevens](https://www.autoriteitpersoonsgegevens.nl/) de gezaghebbende bron.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een AI-Native Oprichter in Actie: De Recruitment-SaaS Die Vastliep bij Inkoop
 
@@ -188,7 +188,7 @@ LaunchStudio verplaatste de scheiding tussen klanten naar Row Level Security met
 
 **Kosten & Doorlooptijd:** €4.200 (scheiding tussen klanten, privéopslag, auditlogging, verwijdering op organisatieniveau, inrichting van de AI-verwerker en documentatie) - afgerond in 13 werkdagen.
 
-## Veelgestelde Vragen
+## FAQs
 
 ### Ben ik als SaaS-oprichter verwerkingsverantwoordelijke of verwerker?
 

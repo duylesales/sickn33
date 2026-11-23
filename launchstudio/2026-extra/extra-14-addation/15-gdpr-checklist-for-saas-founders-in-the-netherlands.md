@@ -188,7 +188,7 @@ LaunchStudio moved tenant isolation into Row Level Security with organisation me
 
 **Cost & Timeline:** €4,200 (tenant isolation, private storage, audit logging, organisation deletion, AI processor setup and documentation) - completed in 13 business days.
 
-## Frequently Asked Questions
+## FAQs
 
 ### Am I a controller or a processor as a SaaS founder?
 
