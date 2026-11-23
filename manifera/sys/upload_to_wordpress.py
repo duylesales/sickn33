@@ -906,7 +906,7 @@ def upload_post(article_path, image_path=None, media_id=None, post_id=None, site
 
     # Handle Polylang language assignment on LaunchStudio
     if site == "launchstudio" and final_id:
-        target_lang = "nl" if article_path.lower().endswith(("-dutch.md", "-nl.md")) or "/dutch/" in article_path.lower() else "en"
+        target_lang = "nl" if article_path.lower().endswith(("-dutch.md", "-nl.md", "_dutch.md", "_nl.md")) or "/dutch/" in article_path.lower() else "en"
         try:
             call_mcp(endpoint, token, "wp_add_post_terms", {
                 "post_id": final_id,
