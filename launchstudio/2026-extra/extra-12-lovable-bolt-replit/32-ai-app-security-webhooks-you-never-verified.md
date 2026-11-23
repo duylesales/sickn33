@@ -131,7 +131,7 @@ Two business days: signature verification added using the raw request body and a
 
 **Cost & Timeline:** €2,500 (signature and timestamp verification, event deduplication, handler restructuring with background processing, provider state confirmation, fraudulent membership identification and remediation, monthly reconciliation) - completed in 2 business days.
 
-## Frequently Asked Questions
+## FAQs
 
 ### Why must webhook signatures use the raw body?
 

@@ -131,7 +131,7 @@ Twee werkdagen: verificatie van handtekeningen toegevoegd met de ruwe verzoekinh
 
 **Kosten & Doorlooptijd:** €2.500 (verificatie van handtekeningen en tijdstempels, ontdubbeling van events, herstructurering van de handler met verwerking op de achtergrond, bevestiging van de stand bij de provider, identificatie en herstel van frauduleuze lidmaatschappen, maandelijkse afstemming) - afgerond in 2 werkdagen.
 
-## Veelgestelde vragen
+## FAQs
 
 ### Waarom moeten webhookhandtekeningen de ruwe inhoud gebruiken?
 
