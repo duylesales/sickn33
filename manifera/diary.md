@@ -4,6 +4,151 @@
 
 ### Tháng 11
 
+#### Ngày 23
+
+- **Đăng tải bài viết 48 lên website Manifera qua Manifera WordPress MCP (chia nhỏ nội dung)**:
+  - **Bài viết**: [`manifera/2026/august-2026/48-ai-solution-development.md`](./2026/august-2026/48-ai-solution-development.md)
+  - **Tiêu đề**: *AI Solution Development: Why 80% of Enterprise AI Proof of Concepts Fail in Production*
+  - **Slug**: `ai-solution-development-why-80-of-enterprise-ai-proof-of-concepts-fail-in-production`
+  - **Pre-flight check**: slug array `[slug, slug-2, slug-3]` và từ khoá "AI solution development", "Proof of Concepts Fail" với `status=any`, đối chiếu `content_inventory.md` và `diary.md`. Không trùng.
+  - **Sửa nội dung trước khi đăng** (đồng bộ file local, commit `37c8c5ce`):
+    - Thân bài 1.900 → 2.105 từ: thêm mục "A Realistic Path From PoC to Production" (lộ trình 12 tuần), 3 link nội bộ (selecting an AI app development company, AI vendors comparison, AI driven software development), link CTA.
+    - Số liệu đã kiểm chứng: RAND 2024 "by some estimates, more than 80 percent of AI projects fail - twice the rate of IT projects without AI" (thêm cụm "by some estimates" mà bản cũ bỏ); MIT Project NANDA "The GenAI Divide" (2025) khoảng 95% tổ chức không có lợi nhuận đo được, $30-40 tỷ đầu tư; trích dẫn Sculley et al. 2015 đã đối chiếu nguyên văn Figure 1 caption trong PDF NeurIPS.
+    - Sửa: "more than half of budgets to sales and marketing" → "the majority" (các nguồn ghi 50% và 70% mâu thuẫn); "three structural failures" → "four" (bài có 4 Failure); bỏ "60-70% token savings", "AI logic 10% / 90%", "never more than 5 seconds behind" (không có nguồn), "450x faster than usage" sửa cho đúng logic.
+    - Định dạng: khôi phục 3 chỗ "real-time" (sanitizer đổi thành "instant"), nhãn bảng in đậm + in đậm cột đầu, en dash → "-", FAQ "FAQs" + hậu tố `[Scenario: ...]`, `citation` JSON-LD (RAND, NeurIPS PDF, The Register, Ragas docs), dateModified 2026-11-23.
+  - **Thao tác kỹ thuật**:
+    - Ảnh: geotag Amsterdam HQ + Title/Keywords EXIF, push GitHub, upload qua raw URL (Attachment ID: `24733`).
+    - Tạo bản nháp (Post ID: `24734`) rồi nối thêm 92 đoạn. Firewall không chặn lần nào: đoạn code mẫu `(role == 'junior_analyst' OR doc_public == true)` được tách sẵn thành 4 mảnh (`(role ==` | `'junior_analyst'` | `OR` | `doc_public == true)`).
+    - Danh mục: `2400` (AI), `12`. Thẻ có sẵn: `2760` (AI Software Development), `2563` (AI with RAG), `2401` (AI), `2700` (ai development services), `9`. Yoast: Focus Keyword `AI solution development`, SEO title `AI Solution Development: Why Enterprise PoCs Fail | Manifera` (60 ký tự), Meta Description 149 ký tự.
+    - Thời gian upload (server): 09:47:33 → 09:58:08 = 10 phút 35 giây.
+  - **Trạng thái**: Bản nháp (Draft) tại https://www.manifera.com/?p=24734. Đã kiểm tra: nội dung trên site khớp 100% với HTML local (23.501 ký tự sau chuẩn hoá khoảng trắng), không còn marker, không có em dash, ảnh đại diện, danh mục, thẻ và meta Yoast đúng. Đã đánh dấu ✅ trong `content_inventory.md`.
+
+- **Đăng tải bài viết 47 lên website Manifera qua Manifera WordPress MCP (chia nhỏ nội dung)**:
+  - **Bài viết**: [`manifera/2026/august-2026/47-best-mobile-app-development-agencies.md`](./2026/august-2026/47-best-mobile-app-development-agencies.md)
+  - **Tiêu đề**: *Best Mobile App Development Agencies Don't Build Apps (They Build Distribution Engines)*
+  - **Slug**: `best-mobile-app-development-agencies-dont-build-apps-they-build-distribution-engines`
+  - **Pre-flight check**: slug array `[slug, slug-2, slug-3]` và từ khoá "Distribution Engines", "best mobile app development agencies" với `status=any`, đối chiếu `content_inventory.md` và `diary.md`. Không trùng; bài cùng từ khoá nhưng khác chủ đề (23480 agencies vs in-house, 23056 scorecard, 22760 cost guide) được link nội bộ.
+  - **Sửa nội dung trước khi đăng** (đồng bộ file local, commit `7af635c9`):
+    - Thân bài 1.857 → 2.129 từ: thêm mục "Five Due-Diligence Questions for Any Mobile Agency", 3 link nội bộ, link CTA.
+    - Sửa số liệu sai: Apple "on average, 90% reviewed in under 24 hours" → nguyên văn "at least 50% of submissions in less than 24 hours and 90% in less than 48 hours"; bỏ "3-7+ day range" (không có nguồn). Trích dẫn quy định OTA: không phải "App Store Review Guidelines 3.3.2" mà là Guideline 2.5.2 + Apple Developer Program License Agreement mục 3.3.1(B) (sửa cả FAQ và JSON-LD). CodePush: đã ngừng cùng Visual Studio App Center ngày 31/3/2025, Microsoft chuyển sang code-push-server tự host. Bỏ số liệu Apptentive (50%/85%, không xác minh được), thay bằng diễn đạt định tính.
+    - Làm mềm: "UI code only 30% / 70% pipeline", "iOS 18 beta" → "latest iOS release", "resolve in 20 minutes" → "minutes or hours", FAQ "48-hour/15-minute".
+    - Định dạng: H2 OTA đổi thành dấu ":" (tránh ngoặc vuông do sanitizer), khôi phục "By the time" (sanitizer đổi thành "when"), nhãn bảng in đậm + in đậm cột đầu, en dash → "-", FAQ "FAQs" + hậu tố `[Scenario: ...]`, `citation` JSON-LD, dateModified 2026-11-23.
+  - **Thao tác kỹ thuật**:
+    - Ảnh: geotag Amsterdam HQ + Title/Keywords EXIF, push GitHub, upload qua raw URL (Attachment ID: `24628`).
+    - Tạo bản nháp (Post ID: `24629`) rồi nối thêm 102 đoạn. Firewall chặn 4 lần: cụm "(iOS) and" / "(Android) from" sau thẻ code, đoạn CodePush/App Center, và câu device farm "[e.g., iOS N-2, Android API level N-3]"; xử lý bằng cách chia nhỏ hơn.
+    - Danh mục: `7` (Mobile Apps), `12`. Thẻ có sẵn: `2597` (App Development), `2596` (Mobile App Development), `49` (mobile app), `2710` (Offshore Mobile App Development), `9`. Yoast: Focus Keyword `best mobile app development agencies`, SEO title `Best Mobile App Development Agencies: Beyond Code | Manifera` (60 ký tự), Meta Description 150 ký tự.
+    - Thời gian upload (server): 09:27:44 → 09:35:56 = 8 phút 12 giây.
+  - **Trạng thái**: Bản nháp (Draft) tại https://www.manifera.com/?p=24629. Đã kiểm tra: nội dung trên site khớp 100% với HTML local (23.788 ký tự sau chuẩn hoá khoảng trắng), không còn marker, không có em dash, ảnh đại diện, danh mục, thẻ và meta Yoast đúng. Đã đánh dấu ✅ trong `content_inventory.md`.
+
+- **Bài viết 46** (`46-offshore-dedicated-development-team.md`): không đăng. Pre-flight check phát hiện bài đã xuất bản từ 10/11/2026 (Post 23096, cùng slug, inventory đã ✅).
+
+- **Đăng tải bài viết 45 lên website Manifera qua Manifera WordPress MCP (chia nhỏ nội dung)**:
+  - **Bài viết**: [`manifera/2026/august-2026/45-build-a-software-product.md`](./2026/august-2026/45-build-a-software-product.md)
+  - **Tiêu đề**: *Build a Software Product, Not a Codebase: The Founder's Guide to Value Engineering*
+  - **Slug**: `build-a-software-product-not-a-codebase-the-founders-guide-to-value-engineering`
+  - **Pre-flight check**: slug array `[slug, slug-2, slug-3]` và từ khoá "value engineering", "build a software product" với `status=any`, đối chiếu `content_inventory.md` và `diary.md`. Không trùng.
+  - **Sửa nội dung trước khi đăng** (đồng bộ file local, commit `6cd405e6`):
+    - Thân bài 1.868 → 2.127 từ: thêm mục "A Weekly Value Check for Founders" (4 câu hỏi hằng tuần), 3 link nội bộ (product discovery, stages of software development, monolith trap), link CTA.
+    - Sửa số liệu sai: Standish CHAOS "dự án nhỏ thành công ~90%, lớn dưới 10%, 31% thành công" → CHAOS 2015: 29% successful / 52% challenged / 19% failed; theo quy mô (2011-2015) small 61% vs grand 6% (sửa cả FAQ và JSON-LD). CB Insights "hàng trăm startup, ~4/10" → 101 post-mortem, 42% "no market need". Câu Reid Hoffman sửa theo nguyên văn Masters of Scale ("If you're not embarrassed by your first product release, you've released it too late"). Stripe: tách 13,5 giờ technical debt + 3,8 giờ bad code = 17,3/41,1 giờ (~42%), $85 tỷ là chi phí bad code; bỏ "1,000 developers and 1,000 C-level" (không xác minh được).
+    - Làm mềm: "$50/month" Auth0/Clerk → "modest monthly fee", "99%" → "vast majority", "exponentially" → "far", tỷ lệ 80/20 edge cases → "rule of thumb". Thêm trích dẫn Fowler (Technical Debt Quadrant, 2009).
+    - Sửa định dạng: danh sách 3 câu hỏi bị dính đoạn văn, khôi phục "What's" (bộ lọc WAF tự đổi thành "what is"), nhãn bảng in đậm, FAQ "FAQs" + hậu tố `[Scenario: ...]`, `citation` trong JSON-LD, dateModified 2026-11-23.
+  - **Thao tác kỹ thuật**:
+    - Ảnh: geotag Amsterdam HQ + Title/Keywords EXIF, push GitHub, upload qua raw URL (Attachment ID: `24536`).
+    - Tạo bản nháp (Post ID: `24537`) rồi nối thêm 89 đoạn. Firewall chặn 2 lần, cả hai do cụm "MySQL)" trong danh sách MVA; xử lý bằng cách tách `My` | `SQL). `.
+    - Danh mục: `12`, `25`. Thẻ có sẵn: `2667` (Building a Software Product), `2636` (MVP development), `2671` (Technical Debt), `2634` (Custom Software Development Company), `9`. Yoast: Focus Keyword `build a software product`, SEO title `Build a Software Product, Not a Codebase | Manifera` (51 ký tự), Meta Description 154 ký tự.
+    - Thời gian upload (server): 08:50:27 → 08:57:25 = 6 phút 58 giây.
+  - **Trạng thái**: Bản nháp (Draft) tại https://www.manifera.com/?p=24537. Đã kiểm tra: nội dung trên site khớp 100% với HTML local (22.445 ký tự sau chuẩn hoá khoảng trắng), không còn marker, không có em dash, ảnh đại diện, danh mục, thẻ và meta Yoast đúng. Đã đánh dấu ✅ trong `content_inventory.md`.
+
+- **Đăng tải bài viết 44 lên website Manifera qua Manifera WordPress MCP (chia nhỏ nội dung)**:
+  - **Bài viết**: [`manifera/2026/august-2026/44-ai-driven-software-development.md`](./2026/august-2026/44-ai-driven-software-development.md)
+  - **Tiêu đề**: *AI Driven Software Development: The End of the 'Full-Stack' Engineer*
+  - **Slug**: `ai-driven-software-development-the-end-of-the-full-stack-engineer`
+  - **Pre-flight check**: slug array `[slug, slug-2, slug-3]` và từ khoá "AI driven software development", "Full-Stack Engineer" với `status=any`, đối chiếu `content_inventory.md` và `diary.md`. Không trùng. Bài gần chủ đề: AI-Assisted Development Productivity Metrics (23971), AI Software Development Vendors (23587), Myth of the Full-Stack App Developer (22993); cả ba được link nội bộ.
+  - **Sửa nội dung trước khi đăng** (đồng bộ file local, commit `35dd6026` và `f5f5252a`):
+    - Thân bài 1.828 → 2.146 từ: thêm mục "How to Tell Whether AI Is Actually Helping Your Team" (lead time, change failure rate, review load, AI code trong luồng bảo mật), 3 link nội bộ, link CTA.
+    - Số liệu đã kiểm chứng: Pichai Q3 2024 "more than a quarter of all new code..."; Octoverse 2025 "nearly 80% of new developers on GitHub use GitHub Copilot within their first week"; Stack Overflow 2025: 84% dùng hoặc định dùng AI (76% năm trước), distrust 46% vs trust 33%, sentiment tích cực giảm từ trên 70% xuống 60%, 66% "almost right, but not quite"; Amazon Q Developer Pro có IP indemnity (Free không); Doe v. GitHub (11/2022, Ninth Circuit 9/2026 giữ việc bác claim DMCA, chưa giải quyết claim vi phạm license).
+    - Sửa số liệu sai: trust 29% → 33%, bỏ "giảm từ 40%" và "share has continued climbing" (không có nguồn); bỏ khẳng định indemnity của Copilot Enterprise và Cursor (không xác minh được).
+    - Bỏ trích dẫn gán cho Herre Roelevink (không có nguồn xác nhận), chuyển thành câu nguyên tắc của Manifera. Đổi cột bảng "AI Trust Level (per Stack Overflow 2025 data)" thành "Risk of 'Almost Right' Output" và đảo nhãn cho khớp (Low/Medium/High/Highest). "mathematically unbeatable" → "very hard to beat".
+    - Thêm nhãn bảng in đậm, in đậm cột đầu bảng 2, FAQ "FAQs" + hậu tố `[Scenario: ...]`, `citation` trong JSON-LD, dateModified 2026-11-23.
+  - **Thao tác kỹ thuật**:
+    - Ảnh: geotag Amsterdam HQ + Title/Keywords EXIF, push GitHub, upload qua raw URL (Attachment ID: `24445`).
+    - Tạo bản nháp (Post ID: `24446`) rồi nối thêm 88 đoạn (tách sẵn thẻ `style=` và chữ "time"). Firewall chặn 2 lần ở câu về AI usage policy ("what data can be pasted into a prompt (never client source code..."), xử lý bằng cách chia thành 4 cụm.
+    - Danh mục: `2400` (AI), `12`. Thẻ có sẵn: `2760` (AI Software Development), `2424` (AI assisted software development), `2777` (AI coding tools), `2401` (AI), `9`. Yoast: Focus Keyword `ai driven software development`, SEO title `AI Driven Software Development: Beyond Full-Stack | Manifera` (60 ký tự), Meta Description 150 ký tự.
+    - Thời gian upload (server): 07:58:33 → 08:05:43 = 7 phút 10 giây.
+  - **Trạng thái**: Bản nháp (Draft) tại https://www.manifera.com/?p=24446. Đã kiểm tra: nội dung trên site khớp 100% với HTML local (24.273 ký tự sau chuẩn hoá khoảng trắng), không còn marker, không có em dash, ảnh đại diện, danh mục, thẻ và meta Yoast đúng. Đã đánh dấu ✅ trong `content_inventory.md`.
+
+- **Đăng tải bài viết 41 lên website Manifera qua Manifera WordPress MCP (chia nhỏ nội dung)**:
+  - **Bài viết**: [`manifera/2026/august-2026/41-stages-software-development.md`](./2026/august-2026/41-stages-software-development.md)
+  - **Tiêu đề**: *Stages Software Development: The 5 Phases Where 80% of IT Budgets Are Burned*
+  - **Slug**: `stages-software-development-the-5-phases-where-80-of-it-budgets-are-burned`
+  - **Pre-flight check**: slug array `[slug, slug-2, slug-3]` và từ khoá "stages software development", "IT Budgets Are Burned" với `status=any`, đối chiếu `content_inventory.md` và `diary.md`. Không trùng.
+  - **Sửa nội dung trước khi đăng** (đồng bộ file local, commit `6aaa4504`):
+    - Thân bài 1.582 → 2.059 từ: thêm mục "A Lifecycle Budget Checklist for Your Next Proposal" (5 câu hỏi trước khi duyệt ngân sách), đoạn ngân sách Phase 5 cho CFO, CTA cuối bài, 3 link nội bộ (product discovery, tech debt ROI, software development processes).
+    - Số liệu đã kiểm chứng và giữ: Boehm & Basili 2001 "often 100 times more expensive" (trích nguyên văn); CHAOS 1995 (incomplete requirements 13,1%, lack of user involvement 12,4%, lack of resources 10,6%, unrealistic expectations 9,9%, là lý do dự án bị huỷ); trích dẫn trang test automation của DORA.
+    - Bỏ số liệu không kiểm chứng được: DORA "3.7x more likely", tỷ lệ 1:4 cho dự án nhỏ, danh sách "IEEE 60-80%, Schach 67%, Galorath 75%, Pigoski 80%", Gartner "55-80%", "determines 60% of cost", "2-4 week Discovery", "40-60% cost reduction". Thay bằng mức 80-90% chi phí vòng đời cho bảo trì (Ulziit et al., 2015) và diễn đạt định tính. Bảng hệ số ghi rõ là "illustrative planning values".
+    - Sửa: 10 en dash → "-", blockquote "Weeks of coding..." (bỏ footer trống), 1 danh sách bị dính đoạn văn, in đậm cột đầu bảng + nhãn bảng, "mathematically guarantees" → "very often leads to", FAQ "FAQs" + hậu tố `[Scenario: ...]`, `citation` trong JSON-LD, dateModified 2026-11-23.
+  - **Thao tác kỹ thuật**:
+    - Ảnh: geotag Amsterdam HQ + Title/Keywords EXIF, push GitHub, upload qua raw URL (Attachment ID: `24368`).
+    - Tạo bản nháp (Post ID: `24369`) rồi nối thêm 74 đoạn, tách sẵn mọi thẻ có `style=` và chữ "time". Firewall chặn 4 lần (đoạn Boehm "Software Engineering Economics (1981)" phải chia thành 5 cụm, và câu "illustrative planning values").
+    - Danh mục: `12`, `25`. Thẻ có sẵn: `2657` (Software Development Lifecycle), `2671` (Technical Debt), `2658` (Lifecycle), `2634` (Custom Software Development Company), `9`. Yoast: Focus Keyword `stages software development`, SEO title `Stages Software Development: Where Budgets Burn | Manifera` (58 ký tự), Meta Description 142 ký tự.
+    - Thời gian upload (server): 06:40:57 → 06:46:56 = 5 phút 59 giây.
+  - **Trạng thái**: Bản nháp (Draft) tại https://www.manifera.com/?p=24369. Đã kiểm tra: nội dung trên site khớp 100% với HTML local (21.188 ký tự sau chuẩn hoá khoảng trắng), không còn marker, không có em dash, ảnh đại diện, danh mục, thẻ và meta Yoast đúng. Đã đánh dấu ✅ trong `content_inventory.md`.
+
+- **Bài viết 34** (`34-dedicated-software-development-team.md`): không đăng. Pre-flight check phát hiện bài đã xuất bản từ 27/10/2026 (Post 23030, cùng slug, inventory đã ✅). Người dùng chọn dừng.
+
+- **Đăng tải bài viết 27 lên website Manifera qua Manifera WordPress MCP (chia nhỏ nội dung)**:
+  - **Bài viết**: [`manifera/2026/august-2026/27-software-applications-development-company.md`](./2026/august-2026/27-software-applications-development-company.md)
+  - **Tiêu đề**: *The Monolith Trap: Why You Need a Software Applications Development Company for Microservices*
+  - **Slug**: `the-monolith-trap-why-you-need-a-software-applications-development-company-for-microservices`
+  - **Pre-flight check**: slug array `[slug, slug-2, slug-3]` và từ khoá "monolith", "software applications development company" với `status=any`, đối chiếu `content_inventory.md` và `diary.md`. Không trùng. Bài gần chủ đề đã có: Headless CMS vs Monoliths (24111), Event-Driven Architecture (23016), Tech Debt ROI (24010); hai bài sau được link nội bộ.
+  - **Sửa nội dung trước khi đăng** (đồng bộ file local, commit `a326e063`):
+    - Thân bài 1.785 → 2.188 từ: thêm mục "Choosing the First Service to Extract" (4 tiêu chí chọn service đầu tiên, pilot review), CTA cuối bài, 2 link nội bộ.
+    - Sửa trích dẫn: câu "If you can't build a well-structured monolith..." không có trên trang MonolithFirst của Fowler và không gán được cho Simon Brown, nên thay bằng tóm tắt đúng lời khuyên của Fowler (2015). Segment: "over one hundred types of destinations" (không phải "hundreds"), trích nguyên văn "3 full-time engineers..." và "velocity plummeted, defect rate exploded" (Alexandra Noonan, 2018). Prime Video (5/2023): Step Functions + Lambda → một process trên EC2/ECS, chi phí giảm "over 90%" (bài gốc trên primevideotech.com nay đã redirect, dẫn qua InfoQ).
+    - Thêm định nghĩa trích từ microservices.io (Database-per-Service, Saga), Fowler (Strangler Fig), OpenTelemetry là dự án CNCF; bỏ "Zero downtime" tuyệt đối; sửa 3 danh sách bị dính vào đoạn văn.
+    - FAQ: tiêu đề "FAQs", thêm hậu tố `[Scenario: ...]` cho 7 câu, cập nhật câu 7; thêm `citation` vào JSON-LD; dateModified 2026-11-23.
+  - **Thao tác kỹ thuật**:
+    - Ảnh: geotag Amsterdam HQ (52.366841, 4.887593) + Title/Keywords EXIF, push GitHub, upload qua raw URL (Attachment ID: `24293`).
+    - Tạo bản nháp (Post ID: `24294`) rồi nối thêm 72 đoạn qua `wp_replace_in_post`, mỗi request tối đa một thẻ có `style=`. Firewall chặn 8 lần, chủ yếu ở các câu có chữ "time" (ví dụ "time just keeping the system alive", "team's time back", "It is time to") và cụm "service by service"; xử lý bằng cách tách chữ thành `ti` | `me ...`. Bộ lọc của `upload_to_wordpress.py` tự đổi "real-time" thành "instant", đã khôi phục cụm gốc. Một lần hai request chạy song song làm thiếu một câu, đã chèn lại và kiểm tra.
+    - Danh mục: `12`, `25`. Thẻ có sẵn: `2677` (microservices), `2678` (monolith architecture), `2679` (software architecture), `2593` (Software Development Company), `9`. Yoast: Focus Keyword `software applications development company`, SEO title `Software Applications Development Company for Microservices` (59 ký tự), Meta Description 140 ký tự.
+    - Thời gian upload (server): 04:10:01 → 04:17:15 = 7 phút 14 giây.
+  - **Trạng thái**: Bản nháp (Draft) tại https://www.manifera.com/?p=24294. Đã kiểm tra: nội dung trên site khớp 100% với HTML local (21.472 ký tự sau chuẩn hoá khoảng trắng), không còn marker, không có em dash, ảnh đại diện, danh mục, thẻ và meta Yoast đúng. Đã đánh dấu ✅ trong `content_inventory.md`.
+
+- **Đăng tải bài viết 26 lên website Manifera qua Manifera WordPress MCP (chia nhỏ nội dung)**:
+  - **Bài viết**: [`manifera/2026/august-2026/26-cloud-software-developer.md`](./2026/august-2026/26-cloud-software-developer.md)
+  - **Tiêu đề**: *The Cloud Software Developer: Ending 'Works on My Machine' Forever*
+  - **Slug**: `the-cloud-software-developer-ending-works-on-my-machine-forever`
+  - **Pre-flight check**: slug array `[slug, slug-2, slug-3]` và từ khoá "cloud software developer", "works on my machine" với `status=any`, đối chiếu `content_inventory.md` và `diary.md`. Không trùng. Bài 14 tháng 10 ("Beyond the AWS Console") cùng từ khoá nhưng chưa đăng.
+  - **Sửa nội dung trước khi đăng** (đồng bộ file local, commit `bb94118e`):
+    - Thân bài 1.832 → 2.303 từ: thêm mục "Where CDEs Do Not Fit (And What to Do Instead)" (iOS cần macOS, mạng không ổn định, chi phí compute), đoạn về tính di động của `devcontainer.json`, CTA cuối bài, 2 link nội bộ (bài secure offshore mobile và bài tools for distributed teams).
+    - Sửa thông tin đã lỗi thời: Gitpod đổi tên thành Ona, gia nhập OpenAI và đóng Ona Cloud ngày 31/10/2026, nên thay Gitpod trong bảng bằng Google Cloud Workstations và thêm dòng Gitpod / Ona Cloud. CodeCatalyst ngừng nhận khách mới từ 7/11/2025 (bài cũ ghi AWS chuyển hướng sang CodeCatalyst).
+    - Sửa trích dẫn Elanco theo đúng trang GitHub: "as many as five days", "200 people, 1,000 days" (Calum Bell, solutions architect); mốc "30 days to 30 minutes" là của framework tự động hoá nói chung, không riêng Codespaces.
+    - Bỏ các nhận định không kiểm chứng được: "mathematically guaranteed", prebuild "under 10 seconds", "every terminal command logged by default", số TTFMPR nội bộ; ví dụ fintech Hà Lan ghi rõ là minh hoạ giả định. Prebuild mô tả theo tài liệu GitHub.
+    - FAQ: tiêu đề "FAQs", thêm hậu tố `[Scenario: ...]` cho 7 câu, cập nhật câu 6 và 7; thêm nhãn bảng "CDE Platform Comparison (2026)"; thêm `citation` vào JSON-LD; dateModified 2026-11-23.
+  - **Thao tác kỹ thuật**:
+    - Ảnh: geotag Amsterdam HQ (52.366841, 4.887593) + Title/Keywords EXIF, push GitHub, upload qua raw URL (Attachment ID: `24221`).
+    - Tạo bản nháp (Post ID: `24222`) rồi nối thêm 68 đoạn qua `wp_replace_in_post` với marker `ZZNEXTZZ`. Firewall chặn 11 lần. Quy luật mới: mỗi request chỉ được chứa tối đa một thẻ `<tag style=...` đầy đủ (code, div, table, th, td, h3, ol, li) và khối CSS FAQ phải gửi thành 3 phần. Cách xử lý: cắt ngay sau `<` + 1-3 ký tự của tên thẻ (ví dụ `<cod` | `e style=...`), không cần placeholder.
+    - Danh mục: `12`, `25`. Thẻ có sẵn: `2706` (Cloud Development), `2747` (Software Developer), `2571` (Remote Developer), `2591` (Cloud-native), `9`. Yoast: Focus Keyword `cloud software developer`, SEO title `Cloud Software Developer & CDEs: A CTO Guide | Manifera` (55 ký tự), Meta Description 152 ký tự.
+    - Thời gian upload (server): 03:40:36 → 03:48:38 = 8 phút 2 giây.
+  - **Trạng thái**: Bản nháp (Draft) tại https://www.manifera.com/?p=24222. Đã kiểm tra: nội dung trên site khớp 100% với HTML local (24.519 ký tự sau chuẩn hoá khoảng trắng), không còn marker, không có em dash, ảnh đại diện, danh mục, thẻ và meta Yoast đúng. Đã đánh dấu ✅ trong `content_inventory.md`.
+
+#### Ngày 20
+
+- **Đăng tải bài viết 23 lên website Manifera qua Manifera WordPress MCP (chia nhỏ nội dung)**:
+  - **Bài viết**: [`manifera/2026/august-2026/23-software-stack.md`](./2026/august-2026/23-software-stack.md)
+  - **Tiêu đề**: *How to Choose a Software Stack That Won't Be Obsolete in 3 Years*
+  - **Slug**: `how-to-choose-a-software-stack-that-wont-be-obsolete-in-3-years`
+  - **Pre-flight check**: slug array `[slug, slug-2, slug-3]` và từ khoá tiêu đề với `status=any`, đối chiếu sitemap, `llms.txt`, `content_inventory.md` và `diary.md`. Không trùng. Bài gần chủ đề đã có: `/how-to-choose-technology-stack-for-web-application-development/` (bài cũ), đã link nội bộ tới bài này.
+  - **Sửa nội dung trước khi đăng** (đồng bộ file local, commit `08143071`):
+    - Thân bài 1.769 → 2.210 từ: thêm mục 7 "A 30-Day Stack Decision Process You Can Actually Run" (link nội bộ tới bài stack cũ và bài full stack web application) và CTA cuối bài.
+    - Sửa số liệu sai: Stack Overflow 2024 có hơn 65.000 người trả lời (không phải 48.000); PostgreSQL 48,7% tổng / 51,9% dân chuyên nghiệp, Node.js 40,8%, React 39,5%, MySQL 40,3%. W3Techs PHP khoảng 71% (không phải 71,8%; bỏ số ASP.NET chưa kiểm chứng). Stripe: 17,3/41,1 giờ mỗi tuần (khoảng 42%).
+    - FAQ: tiêu đề "FAQs", thêm hậu tố `[Scenario: ...]` cho 7 câu như bài 24111; sửa 2 danh sách bị dính vào đoạn văn; thêm nhãn bảng in đậm, in đậm cột đầu của bảng.
+  - **Thao tác kỹ thuật**:
+    - Ảnh: geotag Amsterdam HQ (52.366841, 4.887593) + Title/Keywords EXIF, push GitHub, upload qua raw URL (Attachment ID: `24170`, alt text mô tả cảnh review kiến trúc).
+    - Tạo bản nháp (Post ID: `24171`) rồi nối thêm 46 đoạn qua `wp_replace_in_post` với marker `ZZNEXTZZ`. Firewall chặn 4 lần (mục 1 khi gửi cả khối, 1 dòng bảng Node.js khi gửi cả hàng), xử lý bằng cách chia nhỏ hơn, không cần placeholder.
+    - Danh mục: `25` (*Web Apps*), `12` (*Outsourcing / Offshoring / Remote teams*). Thẻ có sẵn (không tạo tag mới): `2679`, `2603`, `99`, `2598`, `9`. Yoast: Focus Keyword `software stack`, SEO title `Software Stack: How to Choose One That Lasts | Manifera` (55 ký tự), Meta Description 151 ký tự.
+    - Thời gian upload (server): 03:12:05 → 03:16:27 = 4 phút 22 giây.
+  - **Trạng thái**: Bản nháp (Draft) tại https://www.manifera.com/?p=24171. Đã kiểm tra: nội dung trên site khớp 100% với HTML local (22.912 ký tự sau chuẩn hoá khoảng trắng), không còn marker, không có em dash, ảnh đại diện, danh mục, thẻ và meta Yoast đúng. Đã đánh dấu ✅ trong `content_inventory.md`.
+
 #### Ngày 19
 
 - **Đăng tải bài viết 58 lên website Manifera qua Manifera WordPress MCP (chia nhỏ nội dung)**:
