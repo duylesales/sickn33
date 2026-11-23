@@ -5,6 +5,22 @@
 ### Tháng 11
 #### Ngày 23
 
+- **Đăng tải bài viết song ngữ EN & NL (Bài 15 - Cụm Extra 14) lên website LaunchStudio kèm Pre-Flight Duplicate Check, Geotagging & Metadata (`upload_to_wordpress.py`)**:
+  - **Bài viết EN**: [`launchstudio/2026-extra/extra-14-addation/15-gdpr-checklist-for-saas-founders-in-the-netherlands.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-14-addation/15-gdpr-checklist-for-saas-founders-in-the-netherlands.md)
+  - **Bài viết NL**: [`launchstudio/2026-extra/extra-14-addation/15-gdpr-checklist-for-saas-founders-in-the-netherlands-dutch.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-14-addation/15-gdpr-checklist-for-saas-founders-in-the-netherlands-dutch.md)
+  - **Tiêu đề EN**: *GDPR Checklist for SaaS Founders in the Netherlands*
+  - **Tiêu đề NL**: *AVG-Checklist voor SaaS-Oprichters in Nederland*
+  - **Slug Full Title EN / NL**: `gdpr-checklist-for-saas-founders-in-the-netherlands` / `avg-checklist-voor-saas-oprichters-in-nederland`
+  - **Thao tác kỹ thuật**:
+    - **Pre-Flight Duplicate Check**: Kiểm tra tự động trên website `launchstudio.eu`, xác nhận không có bài viết trùng lặp trước khi khởi tạo.
+    - **Geotagging & Metadata**: Tải lên banner đã được nhúng metadata GPS trụ sở Amsterdam (`52.366841`, `4.887593`), focus keywords và mô tả chi tiết vào EXIF/PNG (Attachment ID: `2203`).
+    - **Đăng tải bản EN (Post ID: 2204)**: Trạng thái `publish`, danh mục `[26, 34]` (*Strategy*, *Security*), banner ID `2203`, gán ngôn ngữ Polylang `en`, định dạng case study `.article-case` (`## Real example`), và 5 câu hỏi FAQs accordion semantic HTML5 `<details><summary>` kèm heading chuẩn `<h3>FAQs</h3>`.
+    - **Đồng bộ bản NL (Post ID: 2205)**: Trạng thái `publish`, danh mục `[43, 45]` (*Strategie*, *Beveiliging*), kế thừa banner ID `2203`, gán ngôn ngữ Polylang `nl`, định dạng case study `.article-case` (`## Echt voorbeeld`), và 5 câu hỏi FAQs accordion semantic HTML5.
+    - **Cập nhật Content Inventory**: Đánh dấu `✅` hoàn thành cho Bài 15 trong [`launchstudio/extra_content_inventory.md`](file:///Users/duyle/sickn33/launchstudio/extra_content_inventory.md).
+  - **Trạng thái xuất bản**:
+    - EN: [https://launchstudio.eu/en/gdpr-checklist-for-saas-founders-in-the-netherlands/](https://launchstudio.eu/en/gdpr-checklist-for-saas-founders-in-the-netherlands/) (Post ID: `2204`)
+    - NL: [https://launchstudio.eu/avg-checklist-voor-saas-oprichters-in-nederland/](https://launchstudio.eu/avg-checklist-voor-saas-oprichters-in-nederland/) (Post ID: `2205`)
+
 - **Đăng tải bài viết song ngữ EN & NL (Bài 09 - Cụm Extra 14) lên website LaunchStudio kèm Pre-Flight Duplicate Check, Geotagging & Metadata (`upload_to_wordpress.py`)**:
   - **Bài viết EN**: [`launchstudio/2026-extra/extra-14-addation/09-supabase-rls-audit-the-policy-mistakes-we-find-most.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-14-addation/09-supabase-rls-audit-the-policy-mistakes-we-find-most.md)
   - **Bài viết NL**: [`launchstudio/2026-extra/extra-14-addation/09-supabase-rls-audit-the-policy-mistakes-we-find-most-dutch.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-14-addation/09-supabase-rls-audit-the-policy-mistakes-we-find-most-dutch.md)
