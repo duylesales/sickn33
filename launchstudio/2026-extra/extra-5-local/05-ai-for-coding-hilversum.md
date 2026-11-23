@@ -85,7 +85,7 @@ What Lotte hadn't realized was that the storage bucket holding uploaded footage 
 
 ---
 
-## Frequently Asked Questions
+## FAQs
 
 ### Why does media content specifically need extra security compared to a typical SaaS app?
 Unpublished, embargoed, or rights-restricted media has real financial and contractual consequences if it leaks, unlike most SaaS data. Storage and access control need to be deliberately configured, not left at default settings.

@@ -85,7 +85,7 @@ Wat Lotte zich niet had gerealiseerd, was dat de opslagbucket met het geüploade
 
 ---
 
-## Veelgestelde vragen
+## FAQs
 
 ### Waarom heeft mediacontent specifiek extra beveiliging nodig vergeleken met een typische SaaS-app?
 Niet-gepubliceerde, geëmbargeerde of auteursrechtelijk beschermde media heeft reële financiële en contractuele consequenties als het lekt, anders dan de meeste SaaS-data. Opslag en toegangscontrole moeten bewust worden geconfigureerd en niet op standaardinstellingen worden gelaten.
