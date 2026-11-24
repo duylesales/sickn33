@@ -5,6 +5,22 @@
 ### Tháng 11
 #### Ngày 24
 
+- **Đăng tải bài viết song ngữ EN & NL (Bài 12 - Cụm Extra 15 Addation) lên website LaunchStudio kèm Pre-Flight Duplicate Check, Geotagging & Metadata (`upload_to_wordpress.py`)**:
+  - **Bài viết EN**: [`launchstudio/2026-extra/extra-15-addation/12-dora-for-saas-suppliers-to-financial-firms.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-15-addation/12-dora-for-saas-suppliers-to-financial-firms.md)
+  - **Bài viết NL**: [`launchstudio/2026-extra/extra-15-addation/12-dora-for-saas-suppliers-to-financial-firms-dutch.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-15-addation/12-dora-for-saas-suppliers-to-financial-firms-dutch.md)
+  - **Tiêu đề EN**: *DORA for SaaS Suppliers to Financial Firms*
+  - **Tiêu đề NL**: *DORA voor SaaS-leveranciers aan Financiële Instellingen*
+  - **Slug Full Title EN / NL**: `dora-for-saas-suppliers-to-financial-firms` / `dora-voor-saas-leveranciers-aan-financiele-instellingen`
+  - **Thao tác kỹ thuật**:
+    - **Pre-Flight Duplicate Check**: Kiểm tra tự động trên website `launchstudio.eu`, xác nhận không có bài viết trùng lặp trước khi khởi tạo.
+    - **Geotagging & Metadata**: Tải lên banner đã được nhúng metadata GPS trụ sở Amsterdam (`52.366841`, `4.887593`), focus keywords và mô tả chi tiết vào EXIF/PNG (Attachment ID: `2242`).
+    - **Đăng tải bản EN (Post ID: 2243)**: Trạng thái `publish`, danh mục `[34, 4]` (*Security*, *Technical*), banner ID `2242`, gán ngôn ngữ Polylang `en`, định dạng case study `.article-case` (`## Real example`), và 5 câu hỏi FAQs accordion semantic HTML5 `<details><summary>` kèm heading chuẩn `<h3>FAQs</h3>`.
+    - **Đồng bộ bản NL (Post ID: 2244)**: Trạng thái `publish`, danh mục `[45, 41]` (*Beveiliging*, *Technisch*), kế thừa banner ID `2242`, gán ngôn ngữ Polylang `nl`, định dạng case study `.article-case` (`## Echt voorbeeld`), và 5 câu hỏi FAQs accordion semantic HTML5.
+    - **Cập nhật Content Inventory**: Đánh dấu `✅` hoàn thành cho Bài 12 (extra-15-addation) trong [`launchstudio/extra_content_inventory.md`](file:///Users/duyle/sickn33/launchstudio/extra_content_inventory.md).
+  - **Trạng thái xuất bản**:
+    - EN: [https://launchstudio.eu/en/dora-for-saas-suppliers-to-financial-firms/](https://launchstudio.eu/en/dora-for-saas-suppliers-to-financial-firms/) (Post ID: `2243`)
+    - NL: [https://launchstudio.eu/dora-voor-saas-leveranciers-aan-financiele-instellingen/](https://launchstudio.eu/dora-voor-saas-leveranciers-aan-financiele-instellingen/) (Post ID: `2244`)
+
 - **Đăng tải bài viết song ngữ EN & NL (Bài 10 - Cụm Extra 15 Addation) lên website LaunchStudio kèm Pre-Flight Duplicate Check, Geotagging & Metadata (`upload_to_wordpress.py`)**:
   - **Bài viết EN**: [`launchstudio/2026-extra/extra-15-addation/10-when-zapier-or-make-automations-should-become-backend-code.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-15-addation/10-when-zapier-or-make-automations-should-become-backend-code.md)
   - **Bài viết NL**: [`launchstudio/2026-extra/extra-15-addation/10-when-zapier-or-make-automations-should-become-backend-code-dutch.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-15-addation/10-when-zapier-or-make-automations-should-become-backend-code-dutch.md)

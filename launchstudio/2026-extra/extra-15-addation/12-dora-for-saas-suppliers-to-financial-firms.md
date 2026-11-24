@@ -176,7 +176,7 @@ LaunchStudio added organisation-level Row Level Security tests, MFA for staff an
 
 **Cost & Timeline:** €6,800 (Launch & Grow package: SSO and MFA, audit logging, data export, backup and restore testing, EU AI endpoint and documentation support) - completed in 17 business days.
 
-## Frequently Asked Questions
+## FAQs
 
 ### Does DORA apply to my SaaS startup?
 

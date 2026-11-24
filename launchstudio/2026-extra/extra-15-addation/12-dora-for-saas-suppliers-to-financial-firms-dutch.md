@@ -178,7 +178,7 @@ LaunchStudio implementeerde strikte tenant-isolatie via PostgreSQL Row Level Sec
 
 **Kosten & Doorlooptijd:** €6.800 (Launch & Grow-pakket: SAML SSO en MFA, audit-logging, complete data-exportfunctie, back-up- en herstelvalidatie, Europees AI-endpoint en compliance-documentatie) - afgerond in 17 werkdagen.
 
-## Veelgestelde Vragen
+## FAQs
 
 ### Is DORA direct van toepassing op mijn SaaS-startup?
 
