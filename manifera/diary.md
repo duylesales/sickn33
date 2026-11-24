@@ -4,6 +4,26 @@
 
 ### Tháng 11
 
+#### Ngày 24
+
+- **Đăng tải bài viết 46 lên website Manifera qua Manifera WordPress MCP (chia nhỏ nội dung)**:
+  - **Bài viết**: [`manifera/2026/july-2026/46-offshore-vs-nearshore-vs-onshore-cost-risk-analysis.md`](./2026/july-2026/46-offshore-vs-nearshore-vs-onshore-cost-risk-analysis.md)
+  - **Tiêu đề**: *Offshore vs. Nearshore vs. Onshore: A Data-Driven Cost and Risk Analysis*
+  - **Slug**: `offshore-vs-nearshore-vs-onshore-a-data-driven-cost-and-risk-analysis`
+  - **Pre-flight check**: slug array `[slug, slug-2, slug-3]` và từ khoá "nearshore", "onshore" với `status=any`, đối chiếu `content_inventory.md` và `diary.md`. Không trùng. Bài 22653 "Nearshore vs. Offshore vs. Onshore: A Decision Framework for 2026" cùng chủ đề nhưng khác nội dung, được link nội bộ.
+  - **Sửa nội dung trước khi đăng** (đồng bộ file local, commit `da74fc88`):
+    - Thân bài 2.042 → 2.264 từ.
+    - Accelerance: bỏ các dải giá không có nguồn ($35-70 Đông Âu, $100-160 Mỹ/Tây Âu, $15-30 châu Á), thay bằng khảo sát 11/2025 (60 đối tác): senior châu Âu US$64-76/giờ, châu Á US$31-41/giờ, giảm 4,4% và gần 8% so với năm trước (sửa cả FAQ và JSON-LD).
+    - Ravio: "Hà Lan 1 năm 10 tháng, ngắn nhất châu Âu" là sai (đó là Pháp, 675 ngày); thay bằng median tenure tech châu Âu ~2 năm 2 tháng, engineering gần 3 năm. Bỏ "tăng 22%" và trích dẫn TopDev (không xác minh được).
+    - Pháp lý: Điều 39 Luật SHTT Việt Nam thực ra trao quyền tài sản cho bên giao việc/ký hợp đồng "trừ khi có thoả thuận khác" → viết lại theo hướng chuỗi chuyển nhượng bằng văn bản. Hà Lan: nhân viên theo Điều 7 Auteurswet, freelancer cần văn bản chuyển nhượng (Điều 2). Decree 13/2023 → Luật BVDLCN 91/2025/QH15 (hiệu lực 1/1/2026) + Nghị định 356/2025. UK: EU gia hạn adequacy đến 27/12/2031. Brussels I → Brussels I bis.
+    - TCE tính lại: nearshore 1.39x/€127.512, offshore 1.79x/€100.100; ghi rõ hệ số là giả định nội bộ; bỏ "2.5x" (không nguồn), thêm điểm hoà vốn ~2.3x; hybrid "~1.2x" → "~1.5x" theo mô hình.
+    - Link: 03 → post 22395, 42 → post 22728, bỏ link bài 41 (chưa đăng), CTA `/services/dedicated-development-teams/` (404) → `/services/offshore-software-development/`. FAQ "FAQs" + hậu tố `[Scenario: ...]`, sửa FAQ follow-the-sun theo giờ thực tế (VN UTC+7). dateModified 2026-11-24.
+  - **Thao tác kỹ thuật**:
+    - Ảnh: geotag Amsterdam HQ + Title/Keywords EXIF, push GitHub, upload qua raw URL (Attachment ID: `24829`).
+    - Tạo bản nháp (Post ID: `24830`) rồi nối thêm ~45 đoạn. **Firewall mới chặn mọi thuộc tính `style="..."` và cả thẻ `<style>`** → bảng và danh sách chuyển sang class (`mf-table-wrap`, `mf-table`, `mf-list`), FAQ giữ class `faq-accordion`; CSS chưa có trên site. Ngoài ra bị chặn 2 câu ở mục Hybrid Model (xử lý bằng chia nhỏ).
+    - Danh mục: `12`. Thẻ có sẵn: `2663` (Nearshore vs. Offshore vs. Onshore), `113` (offshore development), `2590` (Hybrid offshore), `2540` (Software Outsourcing), `9`. Yoast: Focus Keyword `offshore vs nearshore vs onshore`, SEO title `Offshore vs Nearshore vs Onshore: Cost & Risk | Manifera` (56 ký tự), Meta Description 150 ký tự.
+  - **Trạng thái**: Bản nháp (Draft) tại https://www.manifera.com/?p=24830. Đã kiểm tra: nội dung trên site khớp 100% với HTML local (SHA-256 `4f7ff660…`, 24.576 byte), không còn marker/placeholder, không có em dash, ảnh đại diện, danh mục, thẻ và meta Yoast đúng. **Còn thiếu CSS** cho bảng/FAQ (cần thêm vào Additional CSS). Đã đánh dấu ✅ trong `content_inventory.md`.
+
 #### Ngày 23
 
 - **Đăng tải bài viết 48 lên website Manifera qua Manifera WordPress MCP (chia nhỏ nội dung)**:
