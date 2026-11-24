@@ -5,6 +5,22 @@
 ### Tháng 11
 #### Ngày 24
 
+- **Đăng tải bài viết song ngữ EN & NL (Bài 09 - Cụm Extra 15 Addation) lên website LaunchStudio kèm Pre-Flight Duplicate Check, Geotagging & Metadata (`upload_to_wordpress.py`)**:
+  - **Bài viết EN**: [`launchstudio/2026-extra/extra-15-addation/09-building-a-shopify-app-with-ai-tools-review-billing-and-launch.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-15-addation/09-building-a-shopify-app-with-ai-tools-review-billing-and-launch.md)
+  - **Bài viết NL**: [`launchstudio/2026-extra/extra-15-addation/09-building-a-shopify-app-with-ai-tools-review-billing-and-launch-dutch.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-15-addation/09-building-a-shopify-app-with-ai-tools-review-billing-and-launch-dutch.md)
+  - **Tiêu đề EN**: *Building a Shopify App With AI Tools: Review, Billing and Launch*
+  - **Tiêu đề NL**: *Een Shopify-app Bouwen met AI-Tools: Review, Facturatie en Lancering*
+  - **Slug Full Title EN / NL**: `building-a-shopify-app-with-ai-tools-review-billing-and-launch` / `een-shopify-app-bouwen-met-ai-tools-review-facturatie-en-lancering`
+  - **Thao tác kỹ thuật**:
+    - **Pre-Flight Duplicate Check**: Kiểm tra tự động trên website `launchstudio.eu`, xác nhận không có bài viết trùng lặp trước khi khởi tạo.
+    - **Geotagging & Metadata**: Tải lên banner đã được nhúng metadata GPS trụ sở Amsterdam (`52.366841`, `4.887593`), focus keywords và mô tả chi tiết vào EXIF/PNG (Attachment ID: `2233`).
+    - **Đăng tải bản EN (Post ID: 2234)**: Trạng thái `publish`, danh mục `[2, 4]` (*Payment*, *Technical*), banner ID `2233`, gán ngôn ngữ Polylang `en`, định dạng case study `.article-case` (`## Real example`), và 5 câu hỏi FAQs accordion semantic HTML5 `<details><summary>` kèm heading chuẩn `<h3>FAQs</h3>`.
+    - **Đồng bộ bản NL (Post ID: 2235)**: Trạng thái `publish`, danh mục `[51, 41]` (*Betaling*, *Technisch*), kế thừa banner ID `2233`, gán ngôn ngữ Polylang `nl`, định dạng case study `.article-case` (`## Echt voorbeeld`), và 5 câu hỏi FAQs accordion semantic HTML5.
+    - **Cập nhật Content Inventory**: Đánh dấu `✅` hoàn thành cho Bài 09 (extra-15-addation) trong [`launchstudio/extra_content_inventory.md`](file:///Users/duyle/sickn33/launchstudio/extra_content_inventory.md).
+  - **Trạng thái xuất bản**:
+    - EN: [https://launchstudio.eu/en/building-a-shopify-app-with-ai-tools-review-billing-and-launch/](https://launchstudio.eu/en/building-a-shopify-app-with-ai-tools-review-billing-and-launch/) (Post ID: `2234`)
+    - NL: [https://launchstudio.eu/een-shopify-app-bouwen-met-ai-tools-review-facturatie-en-lancering/](https://launchstudio.eu/een-shopify-app-bouwen-met-ai-tools-review-facturatie-en-lancering/) (Post ID: `2235`)
+
 - **Tạo tiếp 10 ảnh banner siêu thực (photorealistic documentary style, không nhìn như AI, tuân thủ nghiêm ngặt quy tắc góc máy tương phản liền kề và cấm phần cứng/billboard) cho cụm [`launchstudio/2026-extra/extra-15-addation/`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-15-addation/)**:
   - **Tiến độ cụm**: Hoàn thành thêm 10 ảnh banner cho các bài 07, 09, 11, 13, 14, 15, 16, 17, 18, 19. Nâng tổng số bài có banner chuẩn của cụm `extra-15-addation` lên **19/100 bài** (hoàn tất liền mạch từ bài 01 đến 19).
   - **Quy chuẩn mỹ thuật & góc máy tương phản luân phiên**:
