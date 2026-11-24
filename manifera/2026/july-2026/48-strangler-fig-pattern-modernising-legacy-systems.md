@@ -33,7 +33,7 @@ In 2026, enterprise architecture relies on a much safer approach for legacy mode
 
 Named by Martin Fowler in 2004, after the strangler figs he saw in the rainforests of Queensland, Australia, the pattern takes its name from a tree which seeds in the upper branches of a host tree and gradually grows its roots down to the ground. Over time, the fig tree completely envelops and replaces the host tree.
 
-In software architecture, this pattern involves creating a new system around the edges of the old system (the legacy monolith). You gradually intercept calls to the old system, redirecting them to the new system piece by piece. Eventually, the old system is "strangled" out of existence and can be safely decommissioned.
+In software architecture, this pattern involves creating a new system around the edges of the old system - the legacy monolith. You gradually intercept calls to the old system, redirecting them to the new system piece by piece. Eventually, the old system is "strangled" out of existence and can be safely decommissioned.
 
 ### Big Bang vs. Strangler Fig
 
@@ -60,7 +60,7 @@ Do not start by rewriting the most complex part of the system (e.g., the core bi
 Good first candidates for strangulation:
 - High-traffic, read-heavy operations (e.g., product catalog search)
 - Ancillary services (e.g., PDF generation, email notifications)
-- A highly isolated micro-domain (e.g., User Profile updates)
+- A highly isolated small domain, such as User Profile updates
 
 ### Step 3: Build, Redirect, and Verify
 Build the new microservice for the chosen domain using your modern stack (e.g., Node.js/TypeScript or Go). 
