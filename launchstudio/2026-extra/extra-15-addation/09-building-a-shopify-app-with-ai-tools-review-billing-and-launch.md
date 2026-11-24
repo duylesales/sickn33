@@ -174,7 +174,7 @@ LaunchStudio moved Bundelbaas onto Shopify's official template, carrying the bun
 
 **Cost & Timeline:** €4,700 (Launch & Grow package: template migration, webhook and compliance fixes, Billing API, EU hosting and monitoring) - completed in 14 business days.
 
-## Frequently Asked Questions
+## FAQs
 
 ### Can I use Stripe to charge merchants for my Shopify app?
 

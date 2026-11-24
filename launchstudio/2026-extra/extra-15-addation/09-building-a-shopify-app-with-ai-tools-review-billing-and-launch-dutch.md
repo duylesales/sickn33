@@ -173,7 +173,7 @@ LaunchStudio migreerde Bundelbaas naar Shopify's officiële app-template, waarbi
 
 **Kosten & Doorlooptijd:** €4.700 (Launch & Grow-pakket: migratie naar officieel template, webhook- en privacy-compliance, Billing API-koppeling, Europese hosting en monitoring) - afgerond in 14 werkdagen.
 
-## Veelgestelde Vragen
+## FAQs
 
 ### Mag ik Stripe gebruiken om winkeliers te laten betalen voor mijn Shopify-app?
 

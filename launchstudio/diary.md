@@ -3,6 +3,26 @@
 ## 2026
 
 ### Tháng 11
+#### Ngày 24
+
+- **Tạo tiếp 10 ảnh banner siêu thực (photorealistic documentary style, không nhìn như AI, tuân thủ nghiêm ngặt quy tắc góc máy tương phản liền kề và cấm phần cứng/billboard) cho cụm [`launchstudio/2026-extra/extra-15-addation/`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-15-addation/)**:
+  - **Tiến độ cụm**: Hoàn thành thêm 10 ảnh banner cho các bài 07, 09, 11, 13, 14, 15, 16, 17, 18, 19. Nâng tổng số bài có banner chuẩn của cụm `extra-15-addation` lên **19/100 bài** (hoàn tất liền mạch từ bài 01 đến 19).
+  - **Quy chuẩn mỹ thuật & góc máy tương phản luân phiên**:
+    - **07 (07-webflow-or-framer-site-with-an-ai-built-app-domains-auth-and-seo)**: *Over-the-Shoulder / Human in Active Collaboration* - Nữ kỹ sư frontend ngồi bên đồng nghiệp tại bàn gỗ tần bì trong studio bên bờ kênh Amsterdam ngập nắng, theo dõi sơ đồ định tuyến DNS và bố cục web app trên màn hình rộng.
+    - **09 (09-building-a-shopify-app-with-ai-tools-review-billing-and-launch)**: *Architectural Wide-Angle* - Góc rộng xưởng thiết kế trần dầm gỗ cổ tại Rotterdam nhìn ra bến cảng, nhóm kỹ sư trao đổi dashboard e-commerce trên laptop.
+    - **11 (11-nis2-for-saas-startups-does-it-apply-to-you)**: *High-Angle Mezzanine View* - Góc cao tầng lửng nhìn xuống phòng họp kính hiện đại tại Utrecht có sàn gỗ xương cá và cây xanh, thảo luận lộ trình tuân thủ chỉ thị an ninh mạng NIS2.
+    - **13 (13-iso-27001-for-early-stage-saas-when-to-start)**: *Tactile Macro / Close-Up* - Cận cảnh bàn tay gõ phím cơ bên tách espresso và tài liệu bảo mật ISO 27001 tại The Hague.
+    - **14 (14-pentest-for-an-ai-built-app-when-you-need-one-and-what-it-costs)**: *First-Person Walking POV* - Góc nhìn thứ nhất bước qua vách kính studio Eindhoven, quan sát chuyên viên bảo mật rà soát lỗ hổng pentest trên màn hình dọc.
+    - **15 (15-european-accessibility-act-for-saas-and-webshops)**: *Non-Desk / Lounge Environment* - Không gian lounge studio Amsterdam nhìn ra vườn kênh, hai kỹ sư ngồi sofa kiểm thử giao diện tiếp cận EAA/WCAG trên máy tính bảng dưới nắng chiều.
+    - **16 (16-wcag-accessibility-fixes-for-ai-built-apps)**: *Over-the-Shoulder / Human in Active Collaboration* - Nam kỹ sư frontend ngồi bên đồng nghiệp tại Amsterdam cùng rà soát cây DOM tiếp cận của React / Shadcn UI dưới ánh sáng tự nhiên.
+    - **17 (17-peppol-e-invoicing-for-saas-in-belgium-and-the-netherlands)**: *Architectural Wide-Angle* - Góc rộng xưởng kênh cổ Utrecht với trần dầm gỗ tối màu và cửa sổ lớn, hai lập trình viên theo dõi hàng đợi hoá đơn điện tử mạng Peppol.
+    - **18 (18-wbso-for-software-startups-claiming-the-dutch-rd-tax-credit)**: *High-Angle Mezzanine View* - Góc cao tầng lửng tại Delft nhìn xuống phòng mở có cây ô liu, trao đổi hồ sơ kỹ thuật giảm trừ thuế R&D WBSO Hà Lan.
+    - **19 (19-dutch-funding-for-app-founders-innovatiekrediet-and-other-options)**: *Non-Desk / Lounge Environment* - Không gian lounge hiện đại tại Rotterdam nhìn ra cầu cảng, hai nhà sáng lập thảo luận các mốc vốn tài trợ khởi nghiệp Hà Lan.
+  - **Xử lý kỹ thuật**:
+    - Chuyển đổi và chuẩn hoá kích thước `1024x576` PNG.
+    - Geotagging toạ độ trụ sở Amsterdam (`52.366841`, `4.887593`) và nhúng Title, Description, Keywords vào EXIF/PNG metadata theo chuẩn.
+  - **Ghi chú hạn mức**: Model ảnh chạm ngưỡng 429 (`RESOURCE_EXHAUSTED` trên `gemini-3.1-flash-image`), sẽ reset hạn mức sau ~4h50m (khoảng 21:25 tối nay giờ VN). Các bài tiếp theo (20-100) sẽ tiếp tục sau khi quota reset.
+
 #### Ngày 23
 
 - **Đăng tải bài viết song ngữ EN & NL (Bài 23 - Cụm Extra 14 Addation) lên website LaunchStudio kèm Pre-Flight Duplicate Check, Geotagging & Metadata (`upload_to_wordpress.py`)**:
