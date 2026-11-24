@@ -159,7 +159,7 @@ LaunchStudio documented all eleven scenarios and moved the four critical ones in
 
 **Cost & Timeline:** €3,300 (Launch Ready package: automation inventory, backend workflows for payments and access, refund flow, alerts and privacy update) - completed in 10 business days.
 
-## Frequently Asked Questions
+## FAQs
 
 ### Should I stop using Zapier or Make entirely?
 

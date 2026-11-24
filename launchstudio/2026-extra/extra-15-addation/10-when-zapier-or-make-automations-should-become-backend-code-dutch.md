@@ -159,7 +159,7 @@ LaunchStudio bracht alle elf scenario's gedetailleerd in kaart en migreerde de v
 
 **Kosten & Doorlooptijd:** €3.300 (Launch Ready-pakket: inventarisatie scenario's, backend-architectuur voor betalingen en toegang, automatische creditering, storingsmonitoring en AVG-update) - afgerond in 10 werkdagen.
 
-## Veelgestelde Vragen
+## FAQs
 
 ### Moet ik nu direct volledig stoppen met Zapier of Make?
 
