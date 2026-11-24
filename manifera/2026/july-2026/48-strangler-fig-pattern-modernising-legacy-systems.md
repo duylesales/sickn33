@@ -119,7 +119,7 @@ The pattern is not universal. Before you commit budget, answer five questions ho
 2. **Can you find at least one seam?** If every screen touches every table, start by mapping dependencies before you write new code. A system with no extractable domain is a refactoring project before it is a migration.
 3. **Is the legacy system stable enough to keep running?** You will run it for months, sometimes years. If it cannot survive that long, you have a stabilisation problem to solve first.
 4. **Do you have the observability to compare old and new?** Without logging and tracing on both sides, shadow routing and the Strangulation Scorecard are guesswork.
-5. **Is there an executive sponsor for the full journey?** Incremental programs lose momentum without one, as the next section shows.
+5. **Is there an executive sponsor for the full journey?** Incremental programs lose momentum without one, as the Perpetual Strangler section above shows.
 
 If you answer "no" to the first two questions, the work starts with architecture discovery, not with new microservices. Our [legacy system modernization playbook](https://www.manifera.com/legacy-system-modernization-the-6-phase-migration-playbook-that-prevents-catastrophe/) walks through that assessment phase in detail.
 
