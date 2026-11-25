@@ -5,6 +5,22 @@
 ### Tháng 11
 #### Ngày 25
 
+- **Đăng tải bài viết song ngữ EN & NL (Bài 14 - Cụm Extra 15 Addation) lên website LaunchStudio kèm Pre-Flight Duplicate Check, Geotagging & Metadata (`upload_to_wordpress.py`)**:
+  - **Bài viết EN**: [`launchstudio/2026-extra/extra-15-addation/14-pentest-for-an-ai-built-app-when-you-need-one-and-what-it-costs.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-15-addation/14-pentest-for-an-ai-built-app-when-you-need-one-and-what-it-costs.md)
+  - **Bài viết NL**: [`launchstudio/2026-extra/extra-15-addation/14-pentest-for-an-ai-built-app-when-you-need-one-and-what-it-costs-dutch.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-15-addation/14-pentest-for-an-ai-built-app-when-you-need-one-and-what-it-costs-dutch.md)
+  - **Tiêu đề EN**: *Pentest for an AI-Built App: When You Need One and What It Costs*
+  - **Tiêu đề NL**: *Pentest voor een door AI Gebouwde App: Wanneer Heeft U Er Een Nodig en Wat Kost Het?*
+  - **Slug Full Title EN / NL**: `pentest-for-an-ai-built-app-when-you-need-one-and-what-it-costs` / `pentest-voor-een-door-ai-gebouwde-app-wanneer-heeft-u-er-een-nodig-en-wat-kost-het`
+  - **Thao tác kỹ thuật**:
+    - **Pre-Flight Duplicate Check**: Kiểm tra tự động trên website `launchstudio.eu`, xác nhận không có bài viết trùng lặp trước khi khởi tạo.
+    - **Geotagging & Metadata**: Tải lên banner đã được nhúng metadata GPS trụ sở Amsterdam (`52.366841`, `4.887593`), focus keywords và mô tả chi tiết vào EXIF/PNG (Attachment ID: `2247`).
+    - **Đăng tải bản EN (Post ID: 2248)**: Trạng thái `publish`, danh mục `[34, 4]` (*Security*, *Technical*), banner ID `2247`, gán ngôn ngữ Polylang `en`, định dạng case study `.article-case` (`## Real example`), và 5 câu hỏi FAQs accordion semantic HTML5 `<details><summary>` kèm heading chuẩn `<h3>FAQs</h3>`.
+    - **Đồng bộ bản NL (Post ID: 2249)**: Trạng thái `publish`, danh mục `[45, 41]` (*Beveiliging*, *Technisch*), kế thừa banner ID `2247`, gán ngôn ngữ Polylang `nl`, định dạng case study `.article-case` (`## Echt voorbeeld`), và 5 câu hỏi FAQs accordion semantic HTML5.
+    - **Cập nhật Content Inventory**: Đánh dấu `✅` hoàn thành cho Bài 14 (extra-15-addation) trong [`launchstudio/extra_content_inventory.md`](file:///Users/duyle/sickn33/launchstudio/extra_content_inventory.md).
+  - **Trạng thái xuất bản**:
+    - EN: [https://launchstudio.eu/pentest-for-an-ai-built-app-when-you-need-one-and-what-it-costs/](https://launchstudio.eu/pentest-for-an-ai-built-app-when-you-need-one-and-what-it-costs/) (Post ID: `2248`)
+    - NL: [https://launchstudio.eu/pentest-voor-een-door-ai-gebouwde-app-wanneer-heeft-u-er-een-nodig-en-wat-kost-het/](https://launchstudio.eu/pentest-voor-een-door-ai-gebouwde-app-wanneer-heeft-u-er-een-nodig-en-wat-kost-het/) (Post ID: `2249`)
+
 - **Tạo và chuẩn hoá hình ảnh siêu thực 16:9 cụm `extra-15-addation` (từ Bài 20 đến 28) kèm đổi mới Layout & Phá vỡ khuôn mẫu "2 người đứng nói chuyện"**:
   - **Danh sách ảnh đã hoàn thành & Geotag**:
     - **20 (`20-technical-due-diligence-data-room-for-ai-built-startups`)**: *Over-the-Shoulder / Human Collaboration* - Chuyên viên thẩm định kỹ thuật cùng founder rà soát cây thư mục kiến trúc tại suite điều hành Amsterdam nhìn ra kênh đào.
