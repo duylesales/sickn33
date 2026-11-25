@@ -149,7 +149,7 @@ Ons **Launch Ready**-pakket (€800 - €3.500) omvat database-hardening via Row
 
 LaunchStudio wordt aangedreven door Manifera, een softwareontwikkelingsbedrijf met 11+ jaar ervaring, meer dan 160 opgeleverde projecten en ruim 120 senior engineers. Oprichters ontmoeten ons team aan de Herengracht 420 in Amsterdam; de software-engineering gebeurt vanuit Manifera's ontwikkelingscentrum aan Pho Quang Street in Ho Chi Minh City, ondersteund door onze vestiging aan Tras Street in Singapore. Manifera's CEO Herre Roelevink is een actief ondernemer in het Nederlandse zakelijke netwerk en adviseert regelmatig oprichters over het overbruggen van de kloof tussen prototype en investeerbare onderneming.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een AI-Native Oprichter in Actie: De Landbouw-app Die een Live Product Nodig Had voor de Leningaanvraag
 
@@ -166,7 +166,7 @@ LaunchStudio gaf Gerrit een vaste prijsopgave en bracht Graslandwijzer binnen tw
 
 **Kosten & Doorlooptijd:** €3.400 (Launch Ready-pakket: accounts en rolbeheer, RLS-beveiliging per boerderij, Europese hosting, API-foutafhandeling, custom domeindeployment en technische architectuurdocumentatie) - afgerond in 13 werkdagen.
 
-## Veelgestelde Vragen
+## FAQs
 
 ### Wat is het concrete verschil tussen het Innovatiekrediet en de Vroegefasefinanciering?
 

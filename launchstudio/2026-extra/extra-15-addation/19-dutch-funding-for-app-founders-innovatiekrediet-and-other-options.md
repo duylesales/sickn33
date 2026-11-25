@@ -164,7 +164,7 @@ LaunchStudio gave Gerrit a fixed quote and then took Graslandwijzer to productio
 
 **Cost & Timeline:** €3,400 (Launch Ready package: accounts and roles, RLS per farm, EU hosting, API error handling, deployment and architecture documentation) - completed in 13 business days.
 
-## Frequently Asked Questions
+## FAQs
 
 ### What is the difference between Innovatiekrediet and Vroegefasefinanciering?
 
