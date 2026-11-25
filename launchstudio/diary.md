@@ -5,6 +5,22 @@
 ### Tháng 11
 #### Ngày 25
 
+- **Đăng tải bài viết song ngữ EN & NL (Bài 19 - Cụm Extra 15 Addation) lên website LaunchStudio kèm Pre-Flight Duplicate Check, Geotagging & Metadata (`upload_to_wordpress.py`)**:
+  - **Bài viết EN**: [`launchstudio/2026-extra/extra-15-addation/19-dutch-funding-for-app-founders-innovatiekrediet-and-other-options.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-15-addation/19-dutch-funding-for-app-founders-innovatiekrediet-and-other-options.md)
+  - **Bài viết NL**: [`launchstudio/2026-extra/extra-15-addation/19-dutch-funding-for-app-founders-innovatiekrediet-and-other-options-dutch.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-15-addation/19-dutch-funding-for-app-founders-innovatiekrediet-and-other-options-dutch.md)
+  - **Tiêu đề EN**: *Dutch Funding for App Founders: Innovatiekrediet and Other Options*
+  - **Tiêu đề NL**: *Nederlandse Financiering voor App-Oprichters: Innovatiekrediet en Andere Opties*
+  - **Slug Full Title EN / NL**: `dutch-funding-for-app-founders-innovatiekrediet-and-other-options` / `nederlandse-financiering-voor-app-oprichters-innovatiekrediet-en-andere-opties`
+  - **Thao tác kỹ thuật**:
+    - **Pre-Flight Duplicate Check**: Kiểm tra tự động trên website `launchstudio.eu`, xác nhận không có bài viết trùng lặp trước khi khởi tạo.
+    - **Geotagging & Metadata**: Tải lên banner đã được nhúng metadata GPS trụ sở Amsterdam (`52.366841`, `4.887593`), focus keywords và mô tả chi tiết vào EXIF/PNG (Attachment ID: `2263`).
+    - **Đăng tải bản EN (Post ID: 2264)**: Trạng thái `publish`, danh mục `[26, 4]` (*Strategy*, *Technical*), banner ID `2263`, gán ngôn ngữ Polylang `en`, định dạng case study `.article-case` (`## Real example`), và 5 câu hỏi FAQs accordion semantic HTML5 `<details><summary>` kèm heading chuẩn `<h3>FAQs</h3>`.
+    - **Đồng bộ bản NL (Post ID: 2265)**: Trạng thái `publish`, danh mục `[43, 41]` (*Strategie*, *Technisch*), kế thừa banner ID `2263`, gán ngôn ngữ Polylang `nl`, định dạng case study `.article-case` (`## Echt voorbeeld`), và 5 câu hỏi FAQs accordion semantic HTML5.
+    - **Cập nhật Content Inventory**: Đánh dấu `✅` hoàn thành cho Bài 19 (extra-15-addation) trong [`launchstudio/extra_content_inventory.md`](file:///Users/duyle/sickn33/launchstudio/extra_content_inventory.md).
+  - **Trạng thái xuất bản**:
+    - EN: [https://launchstudio.eu/dutch-funding-for-app-founders-innovatiekrediet-and-other-options/](https://launchstudio.eu/dutch-funding-for-app-founders-innovatiekrediet-and-other-options/) (Post ID: `2264`)
+    - NL: [https://launchstudio.eu/nederlandse-financiering-voor-app-oprichters-innovatiekrediet-en-andere-opties/](https://launchstudio.eu/nederlandse-financiering-voor-app-oprichters-innovatiekrediet-en-andere-opties/) (Post ID: `2265`)
+
 - **Đăng tải bài viết song ngữ EN & NL (Bài 16 - Cụm Extra 15 Addation) lên website LaunchStudio kèm Pre-Flight Duplicate Check, Geotagging & Metadata (`upload_to_wordpress.py`)**:
   - **Bài viết EN**: [`launchstudio/2026-extra/extra-15-addation/16-wcag-accessibility-fixes-for-ai-built-apps.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-15-addation/16-wcag-accessibility-fixes-for-ai-built-apps.md)
   - **Bài viết NL**: [`launchstudio/2026-extra/extra-15-addation/16-wcag-accessibility-fixes-for-ai-built-apps-dutch.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-15-addation/16-wcag-accessibility-fixes-for-ai-built-apps-dutch.md)
