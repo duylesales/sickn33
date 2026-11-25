@@ -3,6 +3,24 @@
 ## 2026
 
 ### Tháng 11
+#### Ngày 25
+
+- **Tạo và chuẩn hoá hình ảnh siêu thực 16:9 cụm `extra-15-addation` (từ Bài 20 đến 28) kèm đổi mới Layout & Phá vỡ khuôn mẫu "2 người đứng nói chuyện"**:
+  - **Danh sách ảnh đã hoàn thành & Geotag**:
+    - **20 (`20-technical-due-diligence-data-room-for-ai-built-startups`)**: *Over-the-Shoulder / Human Collaboration* - Chuyên viên thẩm định kỹ thuật cùng founder rà soát cây thư mục kiến trúc tại suite điều hành Amsterdam nhìn ra kênh đào.
+    - **21 (`21-nen-7510-and-healthcare-apps-in-the-netherlands`)**: *Architectural Wide-Angle* - Góc rộng xưởng công nghệ y tế Utrecht với trần cao dầm gỗ, ánh sáng khuếch tán tự nhiên và vách kính mờ.
+    - **22 (`22-kvk-api-integration-verify-business-customers-in-your-saas`)**: *Eye-Level Lounge Discussion (Làm lại v2)* - 2 kỹ sư thảo luận tài liệu tích hợp API KVK bên cửa sổ bến cảng Rotterdam nhìn ra cầu Erasmus; loại bỏ hoàn toàn thanh lan can chắn tiền cảnh của bản v1.
+    - **23 (`23-cookieless-analytics-for-eu-saas-plausible-vs-ga4`)**: *First-Person Walking Perspective* - Góc nhìn thứ nhất bước đi dọc hành lang vách kính nhìn vào phòng lab của 2 kỹ sư đang thảo luận luồng telemetry.
+    - **24 (`24-selling-saas-to-dutch-municipalities-bio-and-security-requirements`)**: *Candid Tactile Close-Up (Đổi mới layout)* - Cận cảnh đôi bàn tay cầm bút mực ghi chú lên bản ma trận tiêu chuẩn bảo mật BIO/GIBIT trên bàn gỗ sồi mộc mạc và tách espresso gốm tại The Hague; hoàn toàn không có người đứng nói chuyện.
+    - **25 (`25-records-of-processing-for-small-saas-gdpr-article-30`)**: *Solitary Deep Focus* - Nữ chuyên viên dữ liệu ngồi một mình tĩnh lặng bên bệ cửa sổ gỗ sồi trong thư viện studio ngập nắng sáng Amsterdam, cuốn sổ tay lưu trữ dữ liệu đặt trên nệm.
+    - **26 (`26-dpia-for-an-ai-feature-when-you-need-one`)**: *Architectural Wide-Angle & Multi-Distributed Presence* - Đại cảnh không gian xưởng công nghệ Eindhoven trần thép đen và giếng trời kính; 3 nhân vật phân bổ độc lập ở các cao độ khác nhau (người ngồi booth âm học, người bước qua cầu lửng, người đứng nhìn cửa sổ xa).
+    - **27 (`27-gdpr-data-breach-response-the-72-hours-for-a-small-saas`)**: *First-Person POV & Sunrise Incident Readiness* - Góc nhìn thứ nhất từ tầng cao nhìn ra bình minh vàng óng trên kênh đào Amsterdam, bàn tay cầm tách cà phê bốc khói cạnh cuốn playbook xử lý sự cố 72 giờ.
+    - **28 (`28-us-ai-apis-and-eu-data-transfers-what-founders-need-to-know`)**: *In-Transit / Architectural Campus Walkway* - Hành lang kính và khung gỗ kết nối 2 toà nhà công nghệ tại Utrecht nhìn ra sân vườn cây bạch dương; một kiến trúc sư sải bước độc hành với tập hồ sơ da.
+  - **Xử lý kỹ thuật**:
+    - Chuẩn hoá kích thước `1024x576` PNG (16:9).
+    - Geotagging toạ độ trụ sở Amsterdam (`52.366841`, `4.887593`) và nhúng Title, Description, Keywords vào EXIF/PNG metadata theo chuẩn.
+  - **Ghi chú hạn mức**: Model ảnh chạm ngưỡng 429 (`RESOURCE_EXHAUSTED` trên `gemini-3.1-flash-image` khi tạo bài 29), sẽ tự động reset hạn mức sau ~4h40m (khoảng 14:10 chiều nay). Các bài tiếp theo (29-99) sẽ tiếp tục sau khi quota reset.
+
 #### Ngày 24
 
 - **Đăng tải bài viết song ngữ EN & NL (Bài 12 - Cụm Extra 15 Addation) lên website LaunchStudio kèm Pre-Flight Duplicate Check, Geotagging & Metadata (`upload_to_wordpress.py`)**:
