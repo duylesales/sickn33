@@ -5,6 +5,22 @@
 ### Tháng 11
 #### Ngày 25
 
+- **Đăng tải bài viết song ngữ EN & NL (Bài 16 - Cụm Extra 15 Addation) lên website LaunchStudio kèm Pre-Flight Duplicate Check, Geotagging & Metadata (`upload_to_wordpress.py`)**:
+  - **Bài viết EN**: [`launchstudio/2026-extra/extra-15-addation/16-wcag-accessibility-fixes-for-ai-built-apps.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-15-addation/16-wcag-accessibility-fixes-for-ai-built-apps.md)
+  - **Bài viết NL**: [`launchstudio/2026-extra/extra-15-addation/16-wcag-accessibility-fixes-for-ai-built-apps-dutch.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-15-addation/16-wcag-accessibility-fixes-for-ai-built-apps-dutch.md)
+  - **Tiêu đề EN**: *WCAG Accessibility Fixes for AI-Built Apps*
+  - **Tiêu đề NL**: *WCAG-toegankelijkheidsreparaties voor door AI Gebouwde Apps*
+  - **Slug Full Title EN / NL**: `wcag-accessibility-fixes-for-ai-built-apps` / `wcag-toegankelijkheidsreparaties-voor-door-ai-gebouwde-apps`
+  - **Thao tác kỹ thuật**:
+    - **Pre-Flight Duplicate Check**: Kiểm tra tự động trên website `launchstudio.eu`, xác nhận không có bài viết trùng lặp trước khi khởi tạo.
+    - **Geotagging & Metadata**: Tải lên banner đã được nhúng metadata GPS trụ sở Amsterdam (`52.366841`, `4.887593`), focus keywords và mô tả chi tiết vào EXIF/PNG (Attachment ID: `2258`).
+    - **Đăng tải bản EN (Post ID: 2259)**: Trạng thái `publish`, danh mục `[4, 26]` (*Technical*, *Strategy*), banner ID `2258`, gán ngôn ngữ Polylang `en`, định dạng case study `.article-case` (`## Real example`), và 5 câu hỏi FAQs accordion semantic HTML5 `<details><summary>` kèm heading chuẩn `<h3>FAQs</h3>`.
+    - **Đồng bộ bản NL (Post ID: 2260)**: Trạng thái `publish`, danh mục `[41, 43]` (*Technisch*, *Strategie*), kế thừa banner ID `2258`, gán ngôn ngữ Polylang `nl`, định dạng case study `.article-case` (`## Echt voorbeeld`), và 5 câu hỏi FAQs accordion semantic HTML5.
+    - **Cập nhật Content Inventory**: Đánh dấu `✅` hoàn thành cho Bài 16 (extra-15-addation) trong [`launchstudio/extra_content_inventory.md`](file:///Users/duyle/sickn33/launchstudio/extra_content_inventory.md).
+  - **Trạng thái xuất bản**:
+    - EN: [https://launchstudio.eu/wcag-accessibility-fixes-for-ai-built-apps/](https://launchstudio.eu/wcag-accessibility-fixes-for-ai-built-apps/) (Post ID: `2259`)
+    - NL: [https://launchstudio.eu/wcag-toegankelijkheidsreparaties-voor-door-ai-gebouwde-apps/](https://launchstudio.eu/wcag-toegankelijkheidsreparaties-voor-door-ai-gebouwde-apps/) (Post ID: `2260`)
+
 - **Đăng tải bài viết song ngữ EN & NL (Bài 15 - Cụm Extra 15 Addation) lên website LaunchStudio kèm Pre-Flight Duplicate Check, Geotagging & Metadata (`upload_to_wordpress.py`)**:
   - **Bài viết EN**: [`launchstudio/2026-extra/extra-15-addation/15-european-accessibility-act-for-saas-and-webshops.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-15-addation/15-european-accessibility-act-for-saas-and-webshops.md)
   - **Bài viết NL**: [`launchstudio/2026-extra/extra-15-addation/15-european-accessibility-act-for-saas-and-webshops-dutch.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-15-addation/15-european-accessibility-act-for-saas-and-webshops-dutch.md)
