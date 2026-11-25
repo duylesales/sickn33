@@ -6,6 +6,61 @@
 
 #### Ngày 25
 
+- **Đăng tải bài viết 52 (tháng 7) lên website Manifera qua Manifera WordPress MCP (chia nhỏ nội dung)**:
+  - **Bài viết**: [`manifera/2026/july-2026/52-saas-multi-tenant-architecture-database-isolation.md`](./2026/july-2026/52-saas-multi-tenant-architecture-database-isolation.md)
+  - **Tiêu đề**: *Building a SaaS Multi-Tenant Architecture: Database Isolation Strategies*
+  - **Slug**: `building-a-saas-multi-tenant-architecture-database-isolation-strategies`
+  - **Pre-flight check**: tìm "multi-tenant", "Noisy Neighbor" và slug với `status=any`, đối chiếu `content_inventory.md`. Không trùng.
+  - **Sửa nội dung trước khi đăng** (commit `4daf4780`):
+    - Thân bài 1.861 → 2.297 từ: thêm mục "Getting Row-Level Security Right: Four Implementation Pitfalls" (kết nối bằng role owner bỏ qua RLS, rò rỉ tenant context qua PgBouncer → dùng `SET LOCAL`, thiếu `WITH CHECK`, `TRUNCATE` không chịu RLS) + test cross-tenant trong CI.
+    - Kiểm chứng nguồn: tài liệu PostgreSQL (trích dẫn nguyên văn "all normal access... row security policy", default-deny, superuser/`BYPASSRLS`/table owner bỏ qua RLS, `FORCE ROW LEVEL SECURITY`); Microsoft Learn (RLS có từ SQL Server 2016, filter/block predicates); whitepaper AWS *SaaS Tenant Isolation Strategies* (PDF, có đủ Silo, Pool, Bridge, Tier-based isolation).
+    - Bổ sung lưu ý quan trọng bị thiếu: câu "query không có WHERE vẫn bị lọc" chỉ đúng khi ứng dụng không kết nối bằng owner/superuser.
+    - Sửa: bỏ khẳng định "Germany, Switzerland, Gulf regulators require data residency outright" (không có căn cứ), thay bằng GDPR Chapter V (chuyển dữ liệu ra ngoài EEA cần adequacy decision hoặc SCCs). Làm mềm "severe metadata degradation after a few thousand schemas", "billion-dollar public SaaS", "100,000+ tenants seamlessly"; ghi rõ ví dụ chi phí là minh hoạ; "Security Predicates" → "security policies with filter and block predicates".
+    - Link: 2 link `.md` local → URL thật (44 → 22732 healthcare-software-development, 48 → 24894 strangler-fig). dateModified 2026-08-05 (trước datePublished) → 2026-11-25, thêm `citation` JSON-LD (4 nguồn), nhãn bảng "Isolation Decision Matrix", FAQ "FAQs" + `[Scenario: ...]`, bỏ en dash.
+  - **Thao tác kỹ thuật**:
+    - Ảnh: geotag Amsterdam HQ + Title/Keywords EXIF, push GitHub, upload qua raw URL (Attachment ID: `25247`).
+    - Tạo bản nháp (Post ID: `25248`) với nội dung chỉ có marker, rồi nối thêm khoảng 145 đoạn (tách thêm các từ khoá SQL như `WHERE`, `SET`, `ALTER`, `TRUNCATE`, `INSERT`, `DELETE` trong thẻ code). Firewall chặn 3 lần: "share the same physical database engine... (a logical namespace)", "or a Bridge model (one database per tenant)" ở FAQ NoSQL, và câu "Watch for three hidden leaks..." ở FAQ data residency; xử lý bằng cách chia nhỏ.
+    - Danh mục: `12`, `25`. Thẻ có sẵn: `2625` (SaaS Architecture), `2624` (B2B SaaS Architecture), `2626` (SaaS), `2679` (software architecture), `9`. Yoast: Focus Keyword `multi-tenant architecture`, SEO title `Multi-Tenant Architecture: Database Isolation | Manifera` (56 ký tự), Meta Description 150 ký tự.
+    - Thời gian upload (server): 07:37:05 → 07:50:25, tổng **13 phút 20 giây**.
+  - **Trạng thái**: Bản nháp (Draft) tại https://www.manifera.com/?p=25248. Đã kiểm tra: nội dung trên site khớp 100% với HTML local (31.317 ký tự sau chuẩn hoá khoảng trắng), không còn marker, không có em dash, ảnh đại diện, danh mục, thẻ và meta Yoast đúng. Đã đánh dấu ✅ trong `content_inventory.md`.
+
+- **Đăng tải bài viết 51 (tháng 7) lên website Manifera qua Manifera WordPress MCP (chia nhỏ nội dung)**:
+  - **Bài viết**: [`manifera/2026/july-2026/51-qa-automation-roi-shift-left-testing.md`](./2026/july-2026/51-qa-automation-roi-shift-left-testing.md)
+  - **Tiêu đề**: *Quality Assurance Automation: The ROI of Shift-Left Testing*
+  - **Slug**: `quality-assurance-automation-the-roi-of-shift-left-testing`
+  - **Pre-flight check**: tìm "shift-left", "QA automation" và slug với `status=any`, đối chiếu `content_inventory.md`. Không trùng (3 bài liên quan đã có: 22919, 22573, 22338 là chủ đề khác).
+  - **Sửa nội dung trước khi đăng** (commit `c457e21a`):
+    - Thân bài 1.271 → 2.309 từ: thêm bảng NIST, bảng "Year-1 Comparison: Manual vs. Automated Regression Testing", mục "Proving the ROI to the Board: Metrics That Matter" (4 chỉ số DORA + escaped defect rate) và "A 90-Day Shift-Left Rollout Plan".
+    - Thay heuristic "IBM Systems Sciences Institute" (€100/€600/€1.500/€10.000+, dữ liệu gốc chưa từng công bố) bằng bảng 5-1 của báo cáo NIST 2002 (1X/5X/10X/15X/30X, ghi rõ là ví dụ) và số liệu NIST đã kiểm chứng trong PDF: thiệt hại $59.5 tỷ/năm, có thể giảm $22.2 tỷ. Câu "caught at the €600 stage, not €10,000" → "€500 stage, not €3,000-plus".
+    - Số liệu kiểm chứng nguyên văn: Google Testing Blog 2015 (tỷ lệ 70/20/10 là "a good first guess"), Google Testing Blog 2016 (1,5% lượt chạy test bị flaky, gần 16% test có flakiness), Google Testing Blog 2020 (coverage 60% acceptable / 75% commendable / 90% exemplary), DORA (4 chỉ số).
+    - Làm mềm: "80% coverage is the industry standard", "Playwright/Cypress undisputed leaders", Selenium "too slow and brittle", "test against the mock 99%". Thêm ghi chú giả định cho phép tính ROI (payback dưới 3 tháng, khoản tiết kiệm chỉ có khi giờ QA được chuyển sang việc khác).
+    - Link: 3 link `.md` local → URL thật (39 → 22756 true-cost-of-downtime, 38 → 22724 technical-due-diligence; 41 Agile at Scale chưa có trên site nên đổi sang bài 22919 software-development-processes). Link `/services/dedicated-development-teams/` trả 404 → đổi sang `/services/offshore-software-development/`. Thêm link nội bộ tới bài Tech Debt ROI (24010).
+    - Định dạng: FAQ "FAQs" + hậu tố `[Scenario: ...]`, "What's going on?" → "What is going on?", `citation` JSON-LD (5 nguồn), dateModified 2026-11-25.
+  - **Thao tác kỹ thuật**:
+    - Ảnh: geotag Amsterdam HQ + Title/Keywords EXIF, push GitHub, upload qua raw URL (Attachment ID: `25123`).
+    - Tạo bản nháp (Post ID: `25124`) với nội dung chỉ có marker, rồi nối thêm 119 đoạn. Firewall chặn 3 lần: "...Software Testing</em> (2002)", đoạn cuối CSS FAQ kèm `</style>`, và câu "(built and maintained by Microsoft)"; xử lý bằng cách chia nhỏ.
+    - Danh mục: `12`, `25`. Thẻ có sẵn: `2669` (Software Quality), `2628` (Automation), `2573` (DevOps), `2627` (DevOps Automation), `9`. Yoast: Focus Keyword `QA automation`, SEO title `QA Automation ROI: Shift-Left Testing | Manifera` (48 ký tự), Meta Description 153 ký tự.
+    - Thời gian upload (server): 07:20:57 → 07:31:20, tổng **10 phút 23 giây**.
+  - **Trạng thái**: Bản nháp (Draft) tại https://www.manifera.com/?p=25124. Đã kiểm tra: nội dung trên site khớp 100% với HTML local (25.762 ký tự sau chuẩn hoá khoảng trắng), không còn marker, không có em dash, ảnh đại diện, danh mục, thẻ và meta Yoast đúng. Đã đánh dấu ✅ trong `content_inventory.md`.
+
+- **Đăng tải bài viết 49 (tháng 7) lên website Manifera qua Manifera WordPress MCP (chia nhỏ nội dung)**:
+  - **Bài viết**: [`manifera/2026/july-2026/49-serverless-vs-kubernetes-cloud-architecture-b2b-saas.md`](./2026/july-2026/49-serverless-vs-kubernetes-cloud-architecture-b2b-saas.md)
+  - **Tiêu đề**: *Serverless vs. Kubernetes: Which Cloud Architecture Wins for B2B SaaS?*
+  - **Slug**: `serverless-vs-kubernetes-which-cloud-architecture-wins-for-b2b-saas`
+  - **Pre-flight check**: slug array `[slug, slug-2, slug-3]` và từ khoá "Kubernetes" với `status=any`, đối chiếu `content_inventory.md` và `diary.md`. Không trùng.
+  - **Sửa nội dung trước khi đăng** (commit `ba37b51a`):
+    - Thân bài 1.859 → 2.050 từ: thêm mục "A 30-Day Architecture Decision Checklist" và link nội bộ tới bài Monolith Trap (24294).
+    - Sửa 2 link nội bộ đang trỏ tới file `.md` local (`37-cloud-migration...md`, `36-performance...md`) thành URL thật trên manifera.com.
+    - Số liệu đã kiểm chứng: CNCF Annual Cloud Native Survey 2025 (công bố 20/1/2026): 82% người dùng container chạy Kubernetes trong production, tăng từ 66% năm 2023. Datadog State of Serverless: sửa "65-70%+" thành nguyên văn "hơn 70% khách hàng AWS, khoảng 60% Google Cloud, gần một nửa Azure" (Datadog tính cả Fargate và các dịch vụ managed compute tương tự); bỏ câu "Lambda well ahead in mindshare" (không có nguồn).
+    - Làm mềm: "95%/5%" và "70%/30%" thời gian dev, "80% of B2B SaaS", cold start "2-4 giây" → "vài giây" (thêm Lambda SnapStart), "cloud providers have continually lowered prices" → thêm ví dụ phí IPv4 công khai của AWS năm 2024; đồng bộ FAQ và JSON-LD.
+    - Định dạng: nhãn bảng "Workload-Fit Decision Matrix" + in đậm cột đầu, sửa 2 danh sách bị dính đoạn văn, FAQ "FAQs" + hậu tố `[Scenario: ...]`, khôi phục 2 chỗ "real-time" (sanitizer đổi thành "instant"), `citation` JSON-LD, dateModified 2026-11-25.
+  - **Thao tác kỹ thuật**:
+    - Ảnh: geotag Amsterdam HQ + Title/Keywords EXIF, push GitHub, upload qua raw URL (Attachment ID: `25002`).
+    - Tạo bản nháp (Post ID: `25003`) với nội dung chỉ có marker (request tạo kèm đoạn mở đầu bị chặn), rồi nối thêm 117 đoạn. Firewall chặn 5 lần: cụm "Azure Functions] or <strong>Kubernetes</strong> (K8s)" ở đoạn mở đầu và câu "[video encoding, massive data ETL jobs], you should not use Lambda" ở FAQ 3; xử lý bằng cách chia nhỏ.
+    - Danh mục: `12`, `25`. Thẻ có sẵn (không có thẻ serverless): `2706` (Cloud Development), `2591` (Cloud-native), `2683` (cloud strategy), `2679` (software architecture), `9`. Yoast: Focus Keyword `serverless vs kubernetes`, SEO title `Serverless vs Kubernetes for B2B SaaS | Manifera` (49 ký tự), Meta Description 154 ký tự.
+    - Thời gian upload (server): 03:55:44 → 04:01:56 (6 phút 12 giây), gián đoạn phiên làm việc, rồi 07:07:14 → 07:13:41 (6 phút 27 giây). Tổng thời gian upload thực tế khoảng 12 phút 39 giây.
+  - **Trạng thái**: Bản nháp (Draft) tại https://www.manifera.com/?p=25003. Đã kiểm tra: nội dung trên site khớp 100% với HTML local (25.873 ký tự sau chuẩn hoá khoảng trắng), không còn marker, không có em dash, ảnh đại diện, danh mục, thẻ và meta Yoast đúng. Đã đánh dấu ✅ trong `content_inventory.md`.
+
 - **Đăng lại đầy đủ bài viết 48 (tháng 7) lên website Manifera qua Manifera WordPress MCP (chia nhỏ nội dung)**:
   - **Bài viết**: [`manifera/2026/july-2026/48-strangler-fig-pattern-modernising-legacy-systems.md`](./2026/july-2026/48-strangler-fig-pattern-modernising-legacy-systems.md)
   - **Tiêu đề**: *The Strangler Fig Pattern: Modernising Legacy Systems Without Downtime*
