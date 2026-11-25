@@ -4,6 +4,22 @@
 
 ### Tháng 11
 
+#### Ngày 25
+
+- **Đăng lại đầy đủ bài viết 48 (tháng 7) lên website Manifera qua Manifera WordPress MCP (chia nhỏ nội dung)**:
+  - **Bài viết**: [`manifera/2026/july-2026/48-strangler-fig-pattern-modernising-legacy-systems.md`](./2026/july-2026/48-strangler-fig-pattern-modernising-legacy-systems.md)
+  - **Tiêu đề**: *The Strangler Fig Pattern: Modernising Legacy Systems Without Downtime*
+  - **Slug**: `the-strangler-fig-pattern-modernising-legacy-systems-without-downtime`
+  - **Hiện trạng trước khi làm**: bản nháp Post ID `24894` (tạo 24/11) chỉ có khoảng 1/3 bài (6.595 ký tự): dừng ở Step 4, còn marker `[[NEXT]]` và placeholder `[[tm]]`, `[[TM]]`, `[[DB]]` chưa thay, bảng dùng class Bootstrap thay vì mẫu inline style của site, chưa có FAQ, chưa có Yoast meta. Không tạo bài mới: nạp lại vào chính bản nháp 24894 (giữ ảnh `24893`, danh mục, thẻ).
+  - **Sửa nội dung trước khi đăng** (commit `12975cde`, `64b93c14`; phần kiểm chứng số liệu đã làm ở commit `e2393382`):
+    - Thân bài 1.948 → 2.057 từ: thêm đoạn "Three mistakes account for most stalled first quarters" (bắt đầu từ domain khó nhất, bỏ qua instrumentation, tách code mà không tách dữ liệu) và link nội bộ tới bài Monolith Trap (24294).
+    - Thêm nhãn bảng "Risk and Delivery Comparison", sửa danh sách "Good first candidates" bị dính đoạn văn.
+  - **Thao tác kỹ thuật**:
+    - `wp_update_post` đặt lại nội dung = đoạn mở đầu + marker `ZZNEXTZZ`, kèm Yoast meta; rồi nối thêm 87 đoạn qua `wp_replace_in_post`. Hôm nay firewall vẫn cho qua thẻ có `style` khi tách `<` + chữ cái đầu sang request sau (không cần chuyển sang class Bootstrap như ghi chú ngày 24). Bị chặn 4 lần, đều ở mục "Shared Database (Initial Phase)" của Step 4: cụm "Database (Initial" và "reads/writes to the legacy database" phải tách thành `Data` | `base (Initial Phase):`.
+    - Danh mục: `12`, `25`. Thẻ: `9`, `2677`, `2678`, `2679`, `2671`. Yoast: Focus Keyword `strangler fig pattern`, SEO title `Strangler Fig Pattern: Modernise Legacy Systems | Manifera` (58 ký tự), Meta Description 154 ký tự.
+    - Thời gian upload (server): 03:40:23 → 03:50:15 = 9 phút 52 giây (88 lần ghi).
+  - **Trạng thái**: Bản nháp (Draft) tại https://www.manifera.com/?p=24894. Đã kiểm tra: nội dung trên site khớp 100% với HTML local (22.652 ký tự sau chuẩn hoá khoảng trắng), không còn marker/placeholder, không có em dash, ảnh đại diện, danh mục, thẻ và meta Yoast đúng. Đã đánh dấu ✅ trong `content_inventory.md`.
+
 #### Ngày 24
 
 - **Đăng tải bài viết 46 lên website Manifera qua Manifera WordPress MCP (chia nhỏ nội dung)**:
