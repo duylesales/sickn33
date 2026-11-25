@@ -188,7 +188,7 @@ LaunchStudio's **Launch Ready**-pakket (€800 - €3.500) omvat een grondige to
 
 LaunchStudio wordt ondersteund door Manifera, een softwareontwikkelingsbedrijf met 11+ jaar ervaring, meer dan 160 opgeleverde projecten en ruim 120 senior engineers. Oprichters ontmoeten ons team aan de Herengracht 420 in Amsterdam; onze gespecialiseerde engineers werken vanuit ons softwarecentrum aan Pho Quang Street in Ho Chi Minh City, ondersteund door onze vestiging aan Tras Street in Singapore.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een AI-Native Oprichter in Actie: Het Gemeentelijke Vergunningloket Dat Zakte voor de Toegankelijkheidstoets
 
@@ -205,7 +205,7 @@ LaunchStudio verving de uploadzone door een robuust semantisch patroon van een v
 
 **Kosten & Doorlooptijd:** €3.200 (Launch Ready-pakket: volledige WCAG-remediatie van alle flows, aanpassing van design tokens, inrichting CI/CD-pijplijncontroles en begeleiding van de hertest) - afgerond in 11 werkdagen.
 
-## Veelgestelde Vragen
+## FAQs
 
 ### Zijn applicaties gebouwd met Lovable of v0 standaard digitaal toegankelijk?
 

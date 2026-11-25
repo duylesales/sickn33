@@ -205,7 +205,7 @@ LaunchStudio replaced the upload area with an accessible file input and button p
 
 **Cost & Timeline:** €3,200 (Launch Ready package: accessibility remediation of all journeys, design token changes, pipeline checks and retest support) - completed in 11 business days.
 
-## Frequently Asked Questions
+## FAQs
 
 ### Are apps built with Lovable or v0 accessible by default?
 
