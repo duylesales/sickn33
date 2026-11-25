@@ -60,6 +60,7 @@ Initially, this proxy does exactly nothing but pass 100% of traffic straight thr
 Do not start by rewriting the most complex part of the system (e.g., the core billing engine). Look for a "seam" in the architecture - a distinct, reasonably isolated domain that is currently causing pain. 
 
 Good first candidates for strangulation:
+
 - High-traffic, read-heavy operations (e.g., product catalog search)
 - Ancillary services (e.g., PDF generation, email notifications)
 - A highly isolated small domain, such as User Profile updates
