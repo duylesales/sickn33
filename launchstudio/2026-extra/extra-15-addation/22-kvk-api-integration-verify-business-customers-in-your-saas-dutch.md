@@ -166,7 +166,7 @@ Een KVK- en VIES-koppeling in een door AI gebouwde SaaS - inclusief beveiligde e
 
 LaunchStudio wordt aangedreven door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring, 160+ succesvol opgeleverde projecten en 120+ software-engineers. Het team heeft ruime ervaring met het koppelen van officiële overheidsregisters en externe API's voor Nederlandse en internationale opdrachtgevers. Oprichters ontmoeten het team aan de Herengracht 420 in Amsterdam; de engineering vindt plaats vanuit het ontwikkelcentrum aan Pho Quang Street in Ho Chi Minhstad, met een hub aan Tras Street in Singapore.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een AI-Native Oprichter in Actie: Het Groothandelsplatform Met 400 Valse Bakkerijen
 
@@ -183,7 +183,7 @@ LaunchStudio integreerde een geautomatiseerde bedrijfszoekfunctie in de aanmeldf
 
 **Kosten & Doorlooptijd:** €2.700 (Launch Ready-pakket: integratie van KVK en VIES, verificatieflow, review-wachtrij, rate limiting en opschoning van bestaande data) - afgerond in 8 werkdagen.
 
-## Veelgestelde Vragen
+## FAQs
 
 ### Is het gebruik van de KVK API gratis?
 

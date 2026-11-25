@@ -183,7 +183,7 @@ LaunchStudio added a company search in the sign-up flow backed by a Supabase edg
 
 **Cost & Timeline:** €2,700 (Launch Ready package: KVK and VIES integration, verification flow, review queue, rate limiting and data cleanup) - completed in 8 business days.
 
-## Frequently Asked Questions
+## FAQs
 
 ### Is the KVK API free to use?
 
