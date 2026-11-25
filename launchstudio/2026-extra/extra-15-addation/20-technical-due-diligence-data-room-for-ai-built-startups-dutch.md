@@ -176,7 +176,7 @@ LaunchStudio wordt aangedreven door Manifera, een softwareontwikkelingsbedrijf m
 
 Voor een breder overzicht van investeerdersverwachtingen, lees ons artikel over [of u geld kunt ophalen met een door AI gebouwde app](https://launchstudio.eu/nl/blog/can-i-raise-money-with-an-ai-built-app).
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een AI-Native Oprichter in Actie: De HR-Analysetool Waarvan de Koper 140 Vragen Stuurde
 
@@ -193,7 +193,7 @@ LaunchStudio voerde scans uit op secrets, dependencies en licenties, roteerde de
 
 **Kosten & Doorlooptijd:** €5.400 (Launch & Grow-pakket: scans en secret-rotatie, afronding van RLS, accountoverdrachten, testen van back-ups, documentatieset en proefreview) - afgerond in 12 werkdagen.
 
-## Veelgestelde Vragen
+## FAQs
 
 ### Wanneer moet ik beginnen met de voorbereiding op technische due diligence?
 

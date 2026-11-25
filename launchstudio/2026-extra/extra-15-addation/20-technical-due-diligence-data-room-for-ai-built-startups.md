@@ -193,7 +193,7 @@ LaunchStudio ran secret, dependency and licence scans, rotated the exposed keys 
 
 **Cost & Timeline:** €5,400 (Launch & Grow package: scans and secret rotation, RLS completion, account transfers, backup testing, documentation set and mock review) - completed in 12 business days.
 
-## Frequently Asked Questions
+## FAQs
 
 ### When should I prepare for technical due diligence?
 
