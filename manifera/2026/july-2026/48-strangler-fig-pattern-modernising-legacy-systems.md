@@ -37,6 +37,8 @@ In software architecture, this pattern involves creating a new system around the
 
 ### Big Bang vs. Strangler Fig
 
+**Risk and Delivery Comparison:**
+
 | Factor | Big Bang Rewrite | Strangler Fig Pattern |
 |--------|------------------|-----------------------|
 | **Risk of Failure** | Extremely High (All or Nothing) | Low (Incremental validation) |
@@ -88,6 +90,12 @@ A well-run Strangler program shows results quickly. A realistic first quarter lo
 - **Weeks 9-12 - Second seam and first scorecard:** Start the next domain and publish the first Strangulation Scorecard - described in the governance section below - to the executive sponsor.
 
 By day 90 you should have one domain fully served by the new system, a rollback you have actually tested, and a traffic metric the sponsor reviews every month. If you do not, the cause is usually the choice of seam, not the team.
+
+Three mistakes account for most stalled first quarters:
+
+- **Starting with the hardest domain.** Teams pick the module that hurts most, which is usually the most entangled one, and spend the quarter untangling dependencies instead of delivering anything.
+- **Skipping instrumentation.** Without logs and traces on the legacy side, nobody can prove the new service behaves the same, so every cutover becomes a debate instead of a decision.
+- **Splitting the code but not the data.** A new service that still writes straight into the legacy tables is a monolith in disguise. Our article on [the monolith trap](https://www.manifera.com/the-monolith-trap-why-you-need-a-software-applications-development-company-for-microservices/) explains why the data layer decides whether a migration really succeeds.
 
 ## Managing the Transitional Architecture
 
