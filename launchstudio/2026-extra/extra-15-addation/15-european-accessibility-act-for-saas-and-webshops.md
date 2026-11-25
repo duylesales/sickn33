@@ -167,7 +167,7 @@ LaunchStudio rebuilt the slot picker as an accessible radio group with full keyb
 
 **Cost & Timeline:** €2,900 (Launch Ready package: accessibility audit, component fixes, contrast and focus corrections, pipeline checks and accessibility statement) - completed in 9 business days.
 
-## Frequently Asked Questions
+## FAQs
 
 ### Does the European Accessibility Act apply to my webshop?
 

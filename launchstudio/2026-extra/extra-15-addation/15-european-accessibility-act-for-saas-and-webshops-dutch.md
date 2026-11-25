@@ -147,7 +147,7 @@ Toegankelijkheidsaanpassingen voor een met AI gebouwde webshop of SaaS concentre
 
 LaunchStudio wordt aangedreven door Manifera, een softwarebedrijf met 11+ jaar ervaring, 160+ gerealiseerde softwareprojecten en een team van ruim 120 senior engineers. We ontwikkelden grootschalige consumentenplatformen en webportalen waarbij digitale toegankelijkheid een formeel acceptatiecriterium vormde. Oprichters ontmoeten ons team aan de Herengracht 420 in Amsterdam; onze gespecialiseerde frontend-engineers werken vanuit Manifera's ontwikkelingscentrum aan Pho Quang Street in Ho Chi Minh City, ondersteund door onze vestiging aan Tras Street in Singapore.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een AI-Native Oprichter in Actie: De Boerenboodschappenshop Waar Schermlezers Vastliepen bij het Afrekenen
 
@@ -164,7 +164,7 @@ LaunchStudio herbouwde de tijdslotkiezer als een volledig toegankelijke radiogro
 
 **Kosten & Doorlooptijd:** €2.900 (Launch Ready-pakket: toegankelijkheidsaudit, componentherstel, contrast- en focusoptimalisatie, CI/CD-controles en opstellen toegankelijkheidsverklaring) - afgerond in 9 werkdagen.
 
-## Veelgestelde Vragen
+## FAQs
 
 ### Is de European Accessibility Act van toepassing op mijn webshop?
 
