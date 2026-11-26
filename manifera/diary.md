@@ -6,6 +6,23 @@
 
 #### Ngày 26
 
+- **Đăng tải bài viết 41 (tháng 7) lên website Manifera qua Manifera WordPress MCP (chia nhỏ nội dung)**:
+  - **Bài viết**: [`manifera/2026/july-2026/41-agile-at-scale-running-multiple-scrum-teams-without-chaos.md`](./2026/july-2026/41-agile-at-scale-running-multiple-scrum-teams-without-chaos.md)
+  - **Tiêu đề**: *Agile at Scale: Running Multiple Scrum Teams Without Chaos*
+  - **Slug**: `agile-at-scale-running-multiple-scrum-teams-without-chaos`
+  - **Pre-flight check**: tìm "Agile at Scale" và slug với `status=any`, đối chiếu `content_inventory.md`. Không trùng.
+  - **Sửa nội dung trước khi đăng** (commit `c157a237`):
+    - Kiểm chứng Digital.ai 18th State of Agile Report (2025): 74% hybrid/homegrown khớp nguồn; SAFe 44% khớp, nhưng "up from 26% in the prior year's edition" mâu thuẫn giữa các nguồn (Scrum.org: giảm từ đỉnh 53%) nên bỏ phần xu hướng, ghi "most-cited named framework at 44%, well below its 53% peak". Bỏ trích dẫn "fading" cho LeSS/Scrum@Scale (không có nguồn), sửa cả 2 câu FAQ tương ứng. Thêm quy mô khảo sát (khoảng 350 người, chủ yếu agile coach/consultant ở doanh nghiệp lớn).
+    - Team Topologies (4 loại team), SAFe (ART 5-12 team, PI 8-12 tuần), LeSS (tối đa 8 team) đúng với nguồn gốc.
+    - Link `/services/dedicated-development-teams/` (404) → `/services/offshore-software-development/`. "real-time matching algorithm" → "low-latency matching algorithm" (bộ chuyển WAF đổi thành "instant", chọn từ sát nghĩa hơn, sửa cả .md). dateModified 2026-08-05 (trước datePublished) → 2026-11-26.
+  - **Thao tác kỹ thuật**:
+    - Ảnh: geotag Amsterdam HQ + Title/Keywords EXIF, push GitHub, upload qua raw URL (Attachment ID: `25483`), alt text mô tả bảng kanban trên vách kính.
+    - HTML: bộ chuyển Bootstrap, gộp `<ol>` bị tách, escape `<`/`>` trong bảng Metrics thành `&lt;`/`&gt;`.
+    - Tạo bản nháp (Post ID: `25484`) với đoạn mở đầu + marker, rồi nối thêm khoảng 45 đoạn. Firewall chỉ chặn 1 lần: câu "part-time expert" ở mục Complicated-subsystem teams (chia nhỏ). Đoạn văn + mở `<table>`/`<thead>` gửi tách riêng ngay từ đầu.
+    - Danh mục: `12`, `25`. Thẻ có sẵn: `46` (Agile), `47` (agile software development), `48` (Scrum Methodology), `2644` (distributed teams), `2535` (Development Team), `9`; thẻ mới `2795` (Agile at Scale). Yoast: Focus Keyword `agile at scale`, SEO title `Agile at Scale: Running Multiple Scrum Teams | Manifera` (55 ký tự), Meta Description 141 ký tự.
+    - Thời gian upload (server): 04:53:01 → 04:57:00, tổng **3 phút 59 giây**.
+  - **Trạng thái**: Bản nháp (Draft) tại https://www.manifera.com/?p=25484. Đã kiểm tra: nội dung trên site khớp 100% với HTML local (SHA-256 `ff7fe20a…`, 21.978 byte), không còn marker, không có em dash, ảnh đại diện, danh mục, thẻ và meta Yoast đúng. Đã đánh dấu ✅ trong `content_inventory.md`.
+
 - **Đăng tải bài viết 33 (tháng 7) lên website Manifera qua Manifera WordPress MCP (chia nhỏ nội dung)**:
   - **Bài viết**: [`manifera/2026/july-2026/33-gdpr-compliance-software-development-practical-guide.md`](./2026/july-2026/33-gdpr-compliance-software-development-practical-guide.md)
   - **Tiêu đề**: *GDPR Compliance in Software Development: A Developer’s Practical Guide*
