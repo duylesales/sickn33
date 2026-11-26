@@ -170,9 +170,9 @@ LaunchStudio integrated an access point provider through its API, mapped Praktij
 > *"My users were physiotherapists, not accountants. They needed the invoices to just work on 1 January, and they did."*
 > - **Kevin Peeters, Founder, Praktijkfactuur (Breda)**
 
-**Cost & Timeline:** €5,800 (Launch & Grow package: access point integration, BIS Billing mapping and validation, money migration, credit notes and status webhooks) - completed in 15 business days.
+**Cost & Timeline:** €5,800 [Launch & Grow package: access point integration, BIS Billing mapping and validation, money migration, credit notes and status webhooks] - completed in 15 business days.
 
-## Frequently Asked Questions
+## FAQs
 
 ### Is Peppol e-invoicing mandatory in the Netherlands?
 

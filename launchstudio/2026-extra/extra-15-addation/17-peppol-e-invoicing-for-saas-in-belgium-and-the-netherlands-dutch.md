@@ -163,9 +163,9 @@ LaunchStudio koppelde Praktijkfactuur via de REST API aan een gecertificeerde ac
 > *"Mijn gebruikers zijn fysiotherapeuten, geen fiscalisten. Zij hadden simpelweg de garantie nodig dat hun facturatie op 1 januari feilloos doordraaide, en dat is exact wat we hebben gerealiseerd."*
 > - **Kevin Peeters, Oprichter, Praktijkfactuur (Breda)**
 
-**Kosten & Doorlooptijd:** €5.800 (Launch & Grow-pakket: integratie access point API, BIS Billing 3.0-vertaling, valutaschoning, creditnota-functionaliteit en webhook-statusverwerking) - afgerond in 15 werkdagen.
+**Kosten & Doorlooptijd:** €5.800 [Launch & Grow-pakket: integratie access point API, BIS Billing 3.0-vertaling, valutaschoning, creditnota-functionaliteit en webhook-statusverwerking] - afgerond in 15 werkdagen.
 
-## Veelgestelde Vragen
+## FAQs
 
 ### Is Peppol e-facturatie verplicht in Nederland?
 
