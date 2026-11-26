@@ -3,6 +3,18 @@
 ## 2026
 
 ### Tháng 11
+#### Ngày 26
+
+- **Tái tạo hình ảnh siêu thực (Hyper-Realistic Editorial Documentary) cho Bài 24 (Cụm Extra 15 Addation) kèm Geotagging & Metadata**:
+  - **Bài viết**: [`launchstudio/2026-extra/extra-15-addation/24-selling-saas-to-dutch-municipalities-bio-and-security-requirements.md`](file:///Users/mac/Library/Mobile%20Documents/com~apple~CloudDocs/sickn33/launchstudio/2026-extra/extra-15-addation/24-selling-saas-to-dutch-municipalities-bio-and-security-requirements.md)
+  - **Hình ảnh**: [`launchstudio/2026-extra/extra-15-addation/24-selling-saas-to-dutch-municipalities-bio-and-security-requirements_pic.png`](file:///Users/mac/Library/Mobile%20Documents/com~apple~CloudDocs/sickn33/launchstudio/2026-extra/extra-15-addation/24-selling-saas-to-dutch-municipalities-bio-and-security-requirements_pic.png)
+  - **Thao tác & Tiêu chuẩn**:
+    - Tạo ảnh tư liệu chân thực chuẩn 35mm (phong cách Magnum Photos): Chuyên gia tư vấn an ninh mạng và nhà sáng lập tại văn phòng công nghệ The Hague bên cửa sổ lớn, thảo luận về kiến trúc bảo mật BIO trước màn hình cong hiển thị giao diện dark-mode trừu tượng (node tree bảo mật).
+    - Tuân thủ nghiêm ngặt quy định: Loại bỏ hoàn toàn bảng biểu giấy in, chữ viết tay, văn bản đọc được, bảng trắng, thiết bị phần cứng rời / USB dongle / server rack.
+    - Chuyển đổi và chuẩn hóa kích thước `1024x576` PNG qua `sips`.
+    - Geotagging tự động: Nhúng tọa độ GPS trụ sở Amsterdam (`52.366841`, `4.887593`), Tiêu đề, Mô tả và Keywords vào EXIF/PNG metadata qua `geotag_image_file`.
+  - **Thông báo hạn ngạch**: Khi tiếp tục tạo ảnh cho bài 25, hệ thống gặp lỗi 429 Too Many Requests (`RESOURCE_EXHAUSTED` trên model `gemini-3.1-flash-image`, quota reset sau 95h). Tiến trình dừng ngay lập tức theo quy định, bảo toàn chất lượng và không dùng các giải pháp thay thế kém chất lượng (như pollinations).
+
 #### Ngày 25
 
 - **Đăng tải bài viết song ngữ EN & NL (Bài 22 - Cụm Extra 15 Addation) lên website LaunchStudio kèm Pre-Flight Duplicate Check, Geotagging & Metadata (`upload_to_wordpress.py`)**:
