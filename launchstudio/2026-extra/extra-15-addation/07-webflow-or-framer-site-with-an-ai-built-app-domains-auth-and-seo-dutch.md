@@ -1,17 +1,17 @@
 ---
-Titel: "Webflow- of Framer-site met een door AI gebouwde app: Domeinen, authenticatie en SEO"
+Titel: "Webflow- of Framer-site met een door AI gebouwde app - Domeinen, authenticatie en SEO"
 Trefwoorden: webflow en lovable app, framer site met saas app, marketing site en app subdomein, app.domein setup, LaunchStudio, Manifera
 Koperfase: Overweging
 Doelgroep: AI-Native Oprichter (Niet-Technisch)
 ---
 
-# Webflow- of Framer-site met een door AI gebouwde app: Domeinen, authenticatie en SEO
+# Webflow- of Framer-site met een door AI gebouwde app - Domeinen, authenticatie en SEO
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Webflow- of Framer-site met een door AI gebouwde app: Domeinen, authenticatie en SEO",
+  "headline": "Webflow- of Framer-site met een door AI gebouwde app - Domeinen, authenticatie en SEO",
   "description": "Veel oprichters beheren een marketingsite op Webflow of Framer en een product gebouwd met Lovable, Bolt of Cursor. Deze handleiding legt uit hoe u ze naadloos koppelt: subdomein versus submap, DNS, authenticatieredirects, cookies, analytics en toestemming, SEO, designconsistentie en de launch-checklist van LaunchStudio.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },

@@ -226,6 +226,7 @@ def refresh_oauth_token(site_key="manifera"):
     return new_access
 
 def call_mcp(endpoint, token, tool_name, arguments, site_key="manifera", retries=2):
+    time.sleep(3.5)
     req_data = {
         "jsonrpc": "2.0",
         "id": 1,
@@ -263,8 +264,8 @@ def call_mcp(endpoint, token, tool_name, arguments, site_key="manifera", retries
             body = proc.stdout
 
     if http_code == 403 and retries > 0:
-        print(f"[*] WAF 403 detected. Pausing 4 seconds for firewall cooldown before retrying ({retries} left)...")
-        time.sleep(4)
+        print(f"[*] WAF 403 detected. Pausing 12 seconds for firewall cooldown before retrying ({retries} left)...")
+        time.sleep(12)
         return call_mcp(endpoint, token, tool_name, arguments, site_key, retries=retries - 1)
 
     if http_code == 401 or "401" in proc.stdout or "Unauthorized" in proc.stdout or "invalid_token" in proc.stdout:
@@ -738,31 +739,14 @@ def upload_post(article_path, image_path=None, media_id=None, post_id=None, site
             existing_posts = []
             seen_ids = set()
 
-            # 1. Direct query by exact slug and common suffix variants (-2, -3)
-            slug_candidates = [clean_slug, f"{clean_slug}-2", f"{clean_slug}-3"]
+            # Query recent posts and search by safe primary keyword
+            first_keyword = [w for w in re.findall(r"[a-zA-Z0-9]+", title) if w.lower() not in ["or", "and", "the", "a", "an", "with", "for", "in", "of", "to", "framer"]][:1]
+            kw_to_search = first_keyword[0] if first_keyword else ""
             try:
-                slug_res = call_mcp(endpoint, token, "wp_list_posts", {
-                    "status": "any",
-                    "slug": slug_candidates,
-                    "per_page": 10
-                }, site_key=site)
-                for p in slug_res.get("posts", []):
-                    if p.get("id") not in seen_ids:
-                        seen_ids.add(p.get("id"))
-                        existing_posts.append(p)
-            except Exception as se:
-                print(f"[*] Note: slug query check: {se}")
-
-            # 2. Broader search by title (sanitized against SQLi keywords like OR / AND)
-            search_query = re.sub(r"\b(or|and|select|union|where|from|insert|update|delete|drop)\b", " ", title[:50], flags=re.IGNORECASE)
-            search_query = re.sub(r"[:\"'`]", "", search_query).strip()
-            search_query = re.sub(r"\s+", " ", search_query)
-            try:
-                dup_res = call_mcp(endpoint, token, "wp_list_posts", {
-                    "status": "any",
-                    "search": search_query,
-                    "per_page": 20
-                }, site_key=site)
+                search_args = {"per_page": 20}
+                if kw_to_search:
+                    search_args["search"] = kw_to_search
+                dup_res = call_mcp(endpoint, token, "wp_list_posts", search_args, site_key=site)
                 for p in dup_res.get("posts", []):
                     if p.get("id") not in seen_ids:
                         seen_ids.add(p.get("id"))
@@ -848,8 +832,8 @@ def upload_post(article_path, image_path=None, media_id=None, post_id=None, site
                 geo_addr = DEFAULT_COMPANY_ADDRESS if geo_city == "Amsterdam" else f"{geo_city}, Netherlands"
                 call_mcp(endpoint, token, "wp_update_media", {
                     "media_id": featured_media_id,
-                    "caption": f"{img_title} - {geo_city} ({geo_lat}, {geo_lng})",
-                    "description": f"Keywords: {raw_keywords} | Location: {geo_addr} ({geo_lat}, {geo_lng})"
+                    "caption": f"{img_title} - {geo_city} [{geo_lat}, {geo_lng}]",
+                    "description": f"Keywords: {raw_keywords} | Location: {geo_addr} [{geo_lat}, {geo_lng}]"
                 }, site_key=site)
                 print(f"[+] Attached keywords & geo metadata to Media ID {featured_media_id}")
             except Exception as e:

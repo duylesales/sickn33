@@ -1,17 +1,17 @@
 ---
-Title: "Webflow or Framer Site With an AI-Built App: Domains, Auth and SEO"
+Title: "Webflow or Framer Site With an AI-Built App - Domains, Auth and SEO"
 Keywords: webflow and lovable app, framer site with saas app, marketing site and app subdomain, app.domain setup, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: AI-Native Founder (Non-Technical)
 ---
 
-# Webflow or Framer Site With an AI-Built App: Domains, Auth and SEO
+# Webflow or Framer Site With an AI-Built App - Domains, Auth and SEO
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Webflow or Framer Site With an AI-Built App: Domains, Auth and SEO",
+  "headline": "Webflow or Framer Site With an AI-Built App - Domains, Auth and SEO",
   "description": "Many founders run a marketing site on Webflow or Framer and a product built with Lovable, Bolt or Cursor. This guide explains how to connect them: subdomain versus subdirectory, DNS, authentication redirects, cookies, analytics and consent, SEO, design consistency and the launch checklist LaunchStudio uses.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
