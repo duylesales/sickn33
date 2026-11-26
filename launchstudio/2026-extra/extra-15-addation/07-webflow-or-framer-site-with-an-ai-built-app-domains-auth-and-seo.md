@@ -160,7 +160,7 @@ LaunchStudio moved the app to `app.verlofwijzer.nl` on Vercel with the DNS recor
 
 **Cost & Timeline:** €1,650 (Launch Ready package: domain and DNS setup, authentication configuration, SEO and analytics alignment, design tokens) - completed in 5 business days.
 
-## Frequently Asked Questions
+## FAQs
 
 ### Should my app be on a subdomain or a subdirectory?
 

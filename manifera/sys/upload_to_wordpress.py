@@ -12,6 +12,7 @@ import os
 import sys
 import re
 import json
+import time
 import html
 import argparse
 import urllib.request
@@ -224,7 +225,7 @@ def refresh_oauth_token(site_key="manifera"):
     print("[+] OAuth token successfully refreshed!")
     return new_access
 
-def call_mcp(endpoint, token, tool_name, arguments, site_key="manifera"):
+def call_mcp(endpoint, token, tool_name, arguments, site_key="manifera", retries=2):
     req_data = {
         "jsonrpc": "2.0",
         "id": 1,
@@ -246,9 +247,9 @@ def call_mcp(endpoint, token, tool_name, arguments, site_key="manifera"):
         endpoint,
         "-H", f"Authorization: Bearer {token}",
         "-H", "Content-Type: application/json",
-        "--data-binary", "@-"
+        "-d", json.dumps(req_data)
     ]
-    proc = subprocess.run(cmd, input=json.dumps(req_data), capture_output=True, text=True)
+    proc = subprocess.run(cmd, capture_output=True, text=True)
     if proc.returncode != 0:
         raise RuntimeError(f"Curl failed with code {proc.returncode}: {proc.stderr}")
 
@@ -261,10 +262,15 @@ def call_mcp(endpoint, token, tool_name, arguments, site_key="manifera"):
         except ValueError:
             body = proc.stdout
 
+    if http_code == 403 and retries > 0:
+        print(f"[*] WAF 403 detected. Pausing 4 seconds for firewall cooldown before retrying ({retries} left)...")
+        time.sleep(4)
+        return call_mcp(endpoint, token, tool_name, arguments, site_key, retries=retries - 1)
+
     if http_code == 401 or "401" in proc.stdout or "Unauthorized" in proc.stdout or "invalid_token" in proc.stdout:
         print("[!] Token expired (401). Refreshing token and retrying...")
         new_token = refresh_oauth_token(site_key)
-        return call_mcp(endpoint, new_token, tool_name, arguments, site_key)
+        return call_mcp(endpoint, new_token, tool_name, arguments, site_key, retries=retries)
 
     try:
         res = json.loads(body)
@@ -747,8 +753,10 @@ def upload_post(article_path, image_path=None, media_id=None, post_id=None, site
             except Exception as se:
                 print(f"[*] Note: slug query check: {se}")
 
-            # 2. Broader search by title
-            search_query = title[:50].replace(":", "").replace('"', '').strip()
+            # 2. Broader search by title (sanitized against SQLi keywords like OR / AND)
+            search_query = re.sub(r"\b(or|and|select|union|where|from|insert|update|delete|drop)\b", " ", title[:50], flags=re.IGNORECASE)
+            search_query = re.sub(r"[:\"'`]", "", search_query).strip()
+            search_query = re.sub(r"\s+", " ", search_query)
             try:
                 dup_res = call_mcp(endpoint, token, "wp_list_posts", {
                     "status": "any",

@@ -160,7 +160,7 @@ LaunchStudio migreerde de applicatie naar `app.verlofwijzer.nl` op Vercel met he
 
 **Kosten & Doorlooptijd:** €1.650 (Launch Ready-pakket: domein- en DNS-configuratie, authenticatie-inrichting, SEO- en analytics-afstemming, design tokens) - afgerond in 5 werkdagen.
 
-## Veelgestelde Vragen
+## FAQs
 
 ### Moet mijn applicatie op een subdomein of in een submap draaien?
 
