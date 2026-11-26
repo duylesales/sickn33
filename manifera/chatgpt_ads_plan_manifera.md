@@ -1,6 +1,6 @@
 # ChatGPT Ads Plan: Manifera (€400 test)
 
-> **Prepared:** 25 Nov 2026 · **Revised:** 25 Nov 2026 (total budget set to €400) · **Market:** Netherlands, Belgium, Germany · **Language:** English (manifera.com is English-only)
+> **Prepared:** 25 Nov 2026 · **Revised:** 25 Nov 2026 (total budget set to €400) · **Revised:** 26 Nov 2026 (AG3 AI-powered SaaS product engineering teams added) · **Market:** Netherlands, Belgium, Germany · **Language:** English (manifera.com is English-only)
 > **Internal inputs:** [`paid_ads_plan.md`](./paid_ads_plan.md) (deal value, KPI targets, UTM convention, GA4 events), [`google_ads_keywords_manifera.md`](./google_ads_keywords_manifera.md), [`google_ads_rsa_copy_manifera.md`](./google_ads_rsa_copy_manifera.md), [`manifera_info.md`](./manifera_info.md), [`seo-geo-audit-manifera-com-2026-11-19.md`](./seo-geo-audit-manifera-com-2026-11-19.md), and the LaunchStudio test plan [`../launchstudio/chatgpt_ads_plan_launchstudio.md`](../launchstudio/chatgpt_ads_plan_launchstudio.md).
 > **External inputs:** third-party reports on ChatGPT Ads (sources in §15). OpenAI publishes few official numbers. Anything marked ⚠️ must be checked inside Ads Manager before launch.
 
@@ -13,7 +13,7 @@
 | Why test it | Manifera's Google Search market is thin (genuine vendor-selection demand ≈ 900-1,200 searches/month globally, < 150 in NL). ChatGPT is where buyers now ask "which company should build this?" A small, tracked test shows whether that conversation can be bought |
 | What €400 can prove | Not a full channel verdict. It answers three questions: (1) do our ads get delivered to this audience at all, (2) at what CPC and CTR, (3) do the clicks behave like buyers (engaged sessions, at least one real lead)? |
 | Channel | ChatGPT Ads, self-serve via **ads.openai.com** (open in Europe since 31 Aug 2026) |
-| Structure | **1 campaign, 2 ad groups** (vendor selection, dedicated team). More ad groups would split ≈ 75 clicks too thin to learn anything |
+| Structure | **1 campaign, 3 ad groups** (vendor selection, dedicated team, AI-powered SaaS product engineering). AG3 gets ≈ 20-25 clicks, so its result is directional only. A 4th ad group would split ≈ 90 clicks too thin to learn anything |
 | Budget | **€400 total.** €15/day, the platform minimum per campaign on EUR billing ⚠️, for **26 days** = €390 + €10 buffer |
 | Test window | **7 Jan → 1 Feb 2027.** January avoids the Dutch holiday dip and lands when companies open new-year budgets. Setup and tracking tests run before Christmas |
 | Where the money comes from | Google Search is expected to underspend its Tier 1 allocation (`paid_ads_plan.md` §13). Take the €400 from that surplus |
@@ -55,8 +55,9 @@
 |---|---|---|---|
 | **A. Founder / CEO of an SME or scale-up** (main target in this test) | 10-200 employees, NL/BE/DE, has a product to build or extend, no large in-house team | "Which software development company in the Netherlands can build our platform?" | Good: often on Free or Go |
 | **B. CTO / Head of Engineering** | 50-1,000 employees, hiring is too slow, needs extra capacity | "Offshore vs nearshore dedicated team: which is safer for a Dutch company?" | Limited: many use paid plans |
+| **C. Founder / Product lead of a SaaS company** (AG3) | 5-200 employees, building a new SaaS product or adding AI features (LLM, copilots, automation) to an existing one, small or no in-house team | "Which company can build our AI-powered SaaS product?" | Medium: early-stage founders often on Free or Go; AI-savvy product leads often on paid plans |
 
-Persona C (IT Director, legacy and cloud migration) is left out of this test because the budget cannot cover a third ad group. It returns in the scaled plan (§11).
+Persona D (IT Director, legacy and cloud migration) is left out of this test because the budget cannot cover a fourth ad group. It returns in the scaled plan (§11).
 
 **Not our audience:** freelancers looking for work, students, job seekers, people wanting a free app or a template, one-off micro jobs.
 
@@ -116,9 +117,11 @@ Everything here costs €0 and should be finished before Christmas, so the €40
 |---|---|---|
 | `/services/custom-software-development/` | Live | AG1 |
 | `/services/offshore-software-development/` | Live | AG2 |
-| `/contact-us/` | Live | Where the form is; linked from both pages |
+| `/services/web-app-develop/` | Live, but no SaaS or AI wording on the page ⚠️ | AG3 (closest match; SaaS products are web apps) |
+| `/contact-us/` | Live | Where the form is; linked from all three pages |
 
-- [ ] Both landing pages show the contact CTA in the first mobile screen
+- [ ] All three landing pages show the contact CTA in the first mobile screen
+- [ ] AG3: manifera.com has no SaaS or AI service page (`/services/ai-development/` is not published). ChatGPT uses the landing page to decide placement, so either (a) add a short "AI-powered SaaS products" section to `/services/web-app-develop/`, or (b) publish `/services/saas-product-engineering/` before 19 Dec. If neither is ready, launch AG3 on `/services/web-app-develop/` as it is and note it in the change log
 - [ ] Fix the homepage H1 and empty H1s (audit F1, F2) before launch: ChatGPT also reads the landing page to decide placement
 
 ---
@@ -129,14 +132,15 @@ Everything here costs €0 and should be finished before Christmas, so the €40
 
 | Ad group | Context hints (from Google keywords + typical prompts) | Landing page | Start bid | Target share |
 |---|---|---|---|---:|
-| **AG1 Vendor selection** | custom software development company, software development company netherlands, software development partner europe, bespoke software development services, "which company can build our platform", "how to choose a software development company", "build vs outsource software" | `/services/custom-software-development/` | €4.50 | 60% |
-| **AG2 Dedicated / offshore team** | dedicated software development team, offshore development team, hire offshore developers, staff augmentation, software development vietnam, "offshore vs nearshore for a Dutch company", "how much does a development team cost" | `/services/offshore-software-development/` | €4.50 | 40% |
+| **AG1 Vendor selection** | custom software development company, software development company netherlands, software development partner europe, bespoke software development services, "which company can build our platform", "how to choose a software development company", "build vs outsource software" | `/services/custom-software-development/` | €4.50 | 45% |
+| **AG2 Dedicated / offshore team** | dedicated software development team, offshore development team, hire offshore developers, staff augmentation, software development vietnam, "offshore vs nearshore for a Dutch company", "how much does a development team cost" | `/services/offshore-software-development/` | €4.50 | 30% |
+| **AG3 AI-powered SaaS product engineering** | saas development company, saas product development, ai saas development, ai-powered saas, product engineering team, saas product engineering services, llm integration for saas, "which company can build our AI SaaS product", "how to build an AI-powered SaaS", "outsource SaaS development in Europe", "team to add AI features to our SaaS" | `/services/web-app-develop/` (§4) | €4.50 | 25% |
 
-**Exclusions** (where Ads Manager allows; otherwise filter through copy): jobs, salary, vacancy, freelance, internship, course, tutorial, free, template, "learn to code".
+**Exclusions** (where Ads Manager allows; otherwise filter through copy): jobs, salary, vacancy, freelance, internship, course, tutorial, free, template, "learn to code". AG3 also: "best ai tools", "chatgpt prompts", no-code, "ai side hustle", "build an app with ai myself".
 
-**Copy qualifier:** every ad mentions "team", "company" or "your platform", so job seekers and hobbyists filter themselves out.
+**Copy qualifier:** every ad mentions "team", "company", "your platform" or "your SaaS", so job seekers and hobbyists filter themselves out. AI topics draw many developers and hobbyists, so AG3 copy always pairs "AI" with "SaaS product" or "team".
 
-If one ad group takes more than 75% of spend for 3 days in a row, lower its bid by €0.50.
+If one ad group takes more than 60% of spend for 3 days in a row, lower its bid by €0.50.
 
 ---
 
@@ -152,6 +156,9 @@ Titles ≤ 30 characters, bodies ≤ 100 characters (checked). Image: square 120
 | AG2-A | A dedicated dev team for you | Your own engineers, managed from Amsterdam. Scale up without hiring delays. |
 | AG2-B | Offshore team, EU management | Engineering capacity in Vietnam, governance in Amsterdam. Talk to our team. |
 | AG2-C | Can't hire developers fast? | Add a dedicated team to your roadmap. We reply within one working day. |
+| AG3-A | Building an AI SaaS product? | A dedicated engineering team for your AI-powered SaaS, managed from Amsterdam. Talk to our team. |
+| AG3-B | SaaS team, EU management | Product engineers in Vietnam, governance in Amsterdam. Add AI features to your SaaS. |
+| AG3-C | AI prototype to real product? | From AI prototype to a SaaS platform your customers use. 160 apps built since 2014. |
 
 **Creative rules**
 - Match the question the user is asking; name the problem in the title
@@ -230,6 +237,7 @@ With ≈ 60-110 clicks, lead numbers will be small. The test is judged first on 
 **Reading the forecast honestly:**
 - The base case gives **about 2 leads and an expected 0.7 qualified leads, roughly a 50% chance of at least one**. A result of zero leads is possible even if the channel works, simply because ~90 clicks is a small sample
 - That is why the decision in §11 also uses delivery, CTR and engaged sessions, not leads alone
+- Split by ad group (base case, 45/30/25%): AG1 ≈ 40 clicks, AG2 ≈ 27, AG3 ≈ 22. Per ad group, only delivery and CTR can be compared; leads are judged at campaign level
 - One deal (≈ €60,000 first-year value) returns about 150× the €400, so a single qualified lead that converts would justify the scaled plan
 
 ---
@@ -246,7 +254,7 @@ With ≈ 60-110 clicks, lead numbers will be small. The test is judged first on 
 
 | Result after €400 | Decision |
 |---|---|
-| ≥ 1 qualified lead **and** CTR ≥ 0.6% | **Scale:** move to the 12-week plan at ≈ €25/day (≈ €750/month), add AG3 cost/models, AG4 cloud migration and AG5 AI to production, build `/get-a-team-proposal/` |
+| ≥ 1 qualified lead **and** CTR ≥ 0.6% | **Scale:** move to the 12-week plan at ≈ €25/day (≈ €750/month), add AG4 cost/models and AG5 cloud migration (AI to production is now covered by AG3), build `/get-a-team-proposal/`. If AG3 had the best CTR, give it its own SaaS/AI landing page and ≥ 35% of the budget |
 | 0 qualified leads, but CTR ≥ 0.6% **and** engaged sessions ≥ 50% | **Extend once:** another €400 (26 days at €15/day) on the better ad group only. The clicks look like buyers; the sample was too small |
 | CTR < 0.3% **or** < 100 impressions/day | **Stop:** the audience is not reachable through ChatGPT ads yet. Put the next €400 into Clutch or LinkedIn ABM (`paid_ads_plan.md` §5-6) and re-test in 6 months |
 | Engaged sessions < 30% | **Stop:** clicks are curiosity, not buying intent |
@@ -295,6 +303,8 @@ With ≈ 60-110 clicks, lead numbers will be small. The test is judged first on 
 | Broken tracking on Contact Form 7 | Medium | Fire on `wpcf7mailsent`; send a test lead before Christmas; count leads by hand as backup |
 | Account limited to home-country targeting | Medium | Decide the legal entity before signup (§4) |
 | Unverified claims slipping into ads | Medium | Only the claims listed in §3; management sign-off for anything else |
+| AG3: AI questions attract developers, students and tool seekers, not buyers | High | Hints built around "SaaS product", "company" and "team"; AG3 exclusions (§5); at the 20 Jan checkpoint pause AG3 if its CTR or engaged sessions are below half of AG1's |
+| AG3: no SaaS or AI page on manifera.com, so placement and conversion are weaker | Medium | Add a SaaS/AI section or page before 19 Dec (§4); otherwise read AG3 results as a lower bound |
 
 ---
 

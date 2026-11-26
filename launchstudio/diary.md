@@ -5,6 +5,20 @@
 ### Tháng 11
 #### Ngày 26
 
+- **Đăng tải bài viết song ngữ EN & NL (Bài 07 - Cụm Extra 15 Addation) lên website LaunchStudio kèm Pre-Flight Duplicate Check, Geotagging & Metadata (`upload_to_wordpress.py`)**:
+  - **Bài viết EN**: [`launchstudio/2026-extra/extra-15-addation/07-webflow-or-framer-site-with-an-ai-built-app-domains-auth-and-seo.md`](file:///Users/mac/Library/Mobile%20Documents/com~apple~CloudDocs/sickn33/launchstudio/2026-extra/extra-15-addation/07-webflow-or-framer-site-with-an-ai-built-app-domains-auth-and-seo.md)
+  - **Bài viết NL**: [`launchstudio/2026-extra/extra-15-addation/07-webflow-or-framer-site-with-an-ai-built-app-domains-auth-and-seo-dutch.md`](file:///Users/mac/Library/Mobile%20Documents/com~apple~CloudDocs/sickn33/launchstudio/2026-extra/extra-15-addation/07-webflow-or-framer-site-with-an-ai-built-app-domains-auth-and-seo-dutch.md)
+  - **Tiêu đề EN**: *Webflow or Framer Site With an AI-Built App - Domains, Auth and SEO*
+  - **Tiêu đề NL**: *Webflow- of Framer-site met een door AI gebouwde app - Domeinen, authenticatie en SEO*
+  - **Slug Full Title EN / NL**: `webflow-or-framer-site-with-an-ai-built-app-domains-auth-and-seo` / `webflow-of-framer-site-met-een-door-ai-gebouwde-app-domeinen-authenticatie-en-seo`
+  - **Thao tác kỹ thuật**:
+    - **Geotagging & Media Upload**: Tải lên banner đã được nhúng metadata GPS trụ sở Amsterdam (`52.366841`, `4.887593`), focus keywords và mô tả chi tiết vào EXIF/PNG (Attachment ID: `2281`).
+    - **Đăng tải bản EN (Post ID: 2285)**: Trạng thái `publish`, danh mục `[4, 26]` (*Technical*, *Strategy*), banner ID `2281`, gán ngôn ngữ Polylang `en`, định dạng case study `.article-case` (`## Real example`), và 5 câu hỏi FAQs accordion semantic HTML5 `<details><summary>` kèm heading chuẩn `<h3>FAQs</h3>`. Clean slug không bị đuôi `-2`.
+    - **Chuẩn bị bản NL**: Xuất file HTML chuẩn WAF sạch tại [`launchstudio/2026-extra/extra-15-addation/07-webflow-or-framer-site-with-an-ai-built-app-domains-auth-and-seo-dutch.html`](file:///Users/mac/Library/Mobile%20Documents/com~apple~CloudDocs/sickn33/launchstudio/2026-extra/extra-15-addation/07-webflow-or-framer-site-with-an-ai-built-app-domains-auth-and-seo-dutch.html), danh mục `[41, 43]` (*Technisch*, *Strategie*), kế thừa banner ID `2281`, ngôn ngữ `nl`.
+    - **Cập nhật Content Inventory**: Đánh dấu `✅` hoàn thành cho Bài 07 (extra-15-addation) trong [`launchstudio/extra_content_inventory.md`](file:///Users/mac/Library/Mobile%20Documents/com~apple~CloudDocs/sickn33/launchstudio/extra_content_inventory.md).
+  - **Trạng thái xuất bản**:
+    - EN: [https://launchstudio.eu/en/webflow-or-framer-site-with-an-ai-built-app-domains-auth-and-seo/](https://launchstudio.eu/en/webflow-or-framer-site-with-an-ai-built-app-domains-auth-and-seo/) (Post ID: `2285`)
+
 - **Tái tạo hình ảnh siêu thực (Hyper-Realistic Editorial Documentary) cho Bài 24 (Cụm Extra 15 Addation) kèm Geotagging & Metadata**:
   - **Bài viết**: [`launchstudio/2026-extra/extra-15-addation/24-selling-saas-to-dutch-municipalities-bio-and-security-requirements.md`](file:///Users/mac/Library/Mobile%20Documents/com~apple~CloudDocs/sickn33/launchstudio/2026-extra/extra-15-addation/24-selling-saas-to-dutch-municipalities-bio-and-security-requirements.md)
   - **Hình ảnh**: [`launchstudio/2026-extra/extra-15-addation/24-selling-saas-to-dutch-municipalities-bio-and-security-requirements_pic.png`](file:///Users/mac/Library/Mobile%20Documents/com~apple~CloudDocs/sickn33/launchstudio/2026-extra/extra-15-addation/24-selling-saas-to-dutch-municipalities-bio-and-security-requirements_pic.png)

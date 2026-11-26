@@ -1,0 +1,338 @@
+<p>Er is een duidelijke standaard ontstaan onder oprichters die met behulp van AI bouwen: de marketingsite draait in Webflow of Framer, waar ontwerpen, bewerken en publiceren uiterst eenvoudig zijn, terwijl het eigenlijke product draait in een applicatie gegenereerd met Lovable, Bolt, v0 of Cursor. Die splitsing is volkomen logisch. Marketingpagina's veranderen wekelijks en hebben baat bij visuele paginabouwers; de applicatie vereist een stabiele backend en hoort niet aangeraakt te worden telkens wanneer een tussenkop wordt herschreven.</p>
+
+<p>Het pijnpunt zit in de naad ertussen. Bezoekers klikken op de marketingsite op "Aanmelden" en belanden op een inlogpagina met een ander lettertype, een vreemde URL en soms zelfs een beveiligingswaarschuwing. Analytics toont dat de bezoeker de site verlaat om nooit meer terug te keren. Google indexeert de lege inlogpagina van de applicatie in plaats van de prijzenpagina. E-mails voor wachtwoordherstel verwijzen naar een verlopen preview-URL.</p>
+
+<p>Geen van deze problemen is technisch onoverkomelijk. Ze worden simpelweg snel over het hoofd gezien omdat ze zich precies in het niemandsland tussen twee platforms bevinden. Deze handleiding legt uit hoe u een Webflow- of Framer-site vakkundig koppelt aan een door AI gebouwde applicatie.</p>
+
+<h2>Belangrijkste Punten</h2>
+
+<ul style="margin-bottom: 20px; padding-left: 25px; line-height: 1.7;">
+  <li style="margin-bottom: 8px;"><strong>Gebruik een subdomein voor de applicatie</strong> (<code style="background-color: #f1f1f1; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; color: #c7254e;">app.uwdomein.nl</code>) en behoud het hoofddomein voor marketing. Dit is voor vrijwel alle oprichters de eenvoudigste en meest betrouwbare opzet.</li>
+  <li style="margin-bottom: 8px;"><strong>Configureer authenticatie voor het definitieve domein:</strong> toegestane redirect-URL's, e-maillinks en OAuth-instellingen moeten rechtstreeks naar het app-subdomein verwijzen, niet naar een tijdelijke preview-URL.</li>
+  <li style="margin-bottom: 8px;"><strong>Houd de applicatie buiten de zoekresultaten</strong> wanneer deze geen openbare content bevat, en zorg dat de marketingpagina's de volledige SEO-waarde dragen.</li>
+  <li style="margin-bottom: 8px;"><strong>Volg het gebruikerstraject over beide omgevingen</strong> met één uniforme analytics-inrichting en een cookiebanner die de AVG / GDPR op beide niveaus respecteert.</li>
+  <li style="margin-bottom: 8px;"><strong>Zorg voor designconsistentie</strong> zodat de overgang van marketingsite naar product voelt als één samenhangend bedrijf in plaats van twee losse werelden.</li>
+</ul>
+
+<h2>Subdomein of Submap?</h2>
+
+<p>De eerste strategische beslissing is de locatie van de applicatie. Er zijn twee opties.</p>
+
+<div style="overflow-x: hidden; max-width: 100%; margin-bottom: 20px;">
+  <table style="width: 100%; table-layout: fixed; border-collapse: collapse; border: 2px solid #1a1a1a; font-family: inherit; word-wrap: break-word;">
+    <thead style="background-color: #f8f9fa;">
+      <tr>
+        <th style="width: 25%; border: 1px solid #eaeaea; border-bottom: 2px solid #1a1a1a; padding: 15px 10px; text-align: left; font-size: 1.1em;">Optie</th>
+        <th style="width: 25%; border: 1px solid #eaeaea; border-bottom: 2px solid #1a1a1a; padding: 15px 10px; text-align: left; font-size: 1.1em;">Voorbeeld</th>
+        <th style="width: 25%; border: 1px solid #eaeaea; border-bottom: 2px solid #1a1a1a; padding: 15px 10px; text-align: left; font-size: 1.1em;">Hoe het werkt</th>
+        <th style="width: 25%; border: 1px solid #eaeaea; border-bottom: 2px solid #1a1a1a; padding: 15px 10px; text-align: left; font-size: 1.1em;">Meest geschikt voor</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="border: 1px solid #eaeaea; padding: 12px 10px;">Subdomein</td>
+        <td style="border: 1px solid #eaeaea; padding: 12px 10px;"><code style="background-color: #f1f1f1; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; color: #c7254e;">app.uwdomein.nl</code></td>
+        <td style="border: 1px solid #eaeaea; padding: 12px 10px;">DNS-record wijst het subdomein direct naar de app-host</td>
+        <td style="border: 1px solid #eaeaea; padding: 12px 10px;">Vrijwel elke oprichter</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #eaeaea; padding: 12px 10px;">Submap</td>
+        <td style="border: 1px solid #eaeaea; padding: 12px 10px;"><code style="background-color: #f1f1f1; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; color: #c7254e;">uwdomein.nl/app</code></td>
+        <td style="border: 1px solid #eaeaea; padding: 12px 10px;">Een reverse proxy routeert specifieke paden naar verschillende servers</td>
+        <td style="border: 1px solid #eaeaea; padding: 12px 10px;">Specifieke SEO-strategieën, grotere enterprise-teams</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p><strong>Subdomeinen zijn aanzienlijk eenvoudiger.</strong> Webflow of Framer host <code style="background-color: #f1f1f1; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; color: #c7254e;">uwdomein.nl</code> en <code style="background-color: #f1f1f1; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; color: #c7254e;">www</code>, terwijl uw app-host, zoals Vercel, Netlify of Lovable hosting, <code style="background-color: #f1f1f1; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; color: #c7254e;">app.uwdomein.nl</code> afhandelt. Elk platform beheert zelfstandig zijn eigen SSL-certificaat. Er is geen complexe proxy vereist en beide platforms kunnen onafhankelijk van elkaar worden gedeployd.</p>
+
+<p><strong>Submappen introduceren flinke complexiteit.</strong> Om de applicatie te serveren op <code style="background-color: #f1f1f1; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; color: #c7254e;">/app</code> is een reverse proxy nodig, bijvoorbeeld via Cloudflare of een eigen server, die bepaalde paden naar de marketinghost stuurt en andere naar de app-host. Die proxy moet caching, response-headers en certificaten foutloos afhandelen. Sommige oprichters kiezen hiervoor omdat ze hopen dat openbare content of documentatie direct meelift op de zoekautoriteit van het hoofddomein, maar voor een besloten applicatie achter een login levert dit nauwelijks voordeel op.</p>
+
+<p>Ons advies voor de meeste oprichters: marketing op het hoofddomein, de applicatie op <code style="background-color: #f1f1f1; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; color: #c7254e;">app.</code>, en documentatie of een kennisbank eventueel op <code style="background-color: #f1f1f1; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; color: #c7254e;">help.</code> of <code style="background-color: #f1f1f1; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; color: #c7254e;">docs.</code>.</p>
+
+<h2>DNS-inrichting Zonder Verstoringen</h2>
+
+<p>DNS-wijzigingen vormen vaak het punt waar een lancering misgaat, meestal doordat records in alle haast worden aangepast. Een standaard opzet ziet er als volgt uit:</p>
+
+<div style="overflow-x: hidden; max-width: 100%; margin-bottom: 20px;">
+  <table style="width: 100%; table-layout: fixed; border-collapse: collapse; border: 2px solid #1a1a1a; font-family: inherit; word-wrap: break-word;">
+    <thead style="background-color: #f8f9fa;">
+      <tr>
+        <th style="width: 25%; border: 1px solid #eaeaea; border-bottom: 2px solid #1a1a1a; padding: 15px 10px; text-align: left; font-size: 1.1em;">Record</th>
+        <th style="width: 25%; border: 1px solid #eaeaea; border-bottom: 2px solid #1a1a1a; padding: 15px 10px; text-align: left; font-size: 1.1em;">Naam</th>
+        <th style="width: 25%; border: 1px solid #eaeaea; border-bottom: 2px solid #1a1a1a; padding: 15px 10px; text-align: left; font-size: 1.1em;">Wijst naar</th>
+        <th style="width: 25%; border: 1px solid #eaeaea; border-bottom: 2px solid #1a1a1a; padding: 15px 10px; text-align: left; font-size: 1.1em;">Doel</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="border: 1px solid #eaeaea; padding: 12px 10px;">A of CNAME</td>
+        <td style="border: 1px solid #eaeaea; padding: 12px 10px;"><code style="background-color: #f1f1f1; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; color: #c7254e;">@</code> en <code style="background-color: #f1f1f1; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; color: #c7254e;">www</code></td>
+        <td style="border: 1px solid #eaeaea; padding: 12px 10px;">Webflow of Framer, conform hun instructies</td>
+        <td style="border: 1px solid #eaeaea; padding: 12px 10px;">Marketingsite</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #eaeaea; padding: 12px 10px;">CNAME</td>
+        <td style="border: 1px solid #eaeaea; padding: 12px 10px;"><code style="background-color: #f1f1f1; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; color: #c7254e;">app</code></td>
+        <td style="border: 1px solid #eaeaea; padding: 12px 10px;">Uw app-host (bijv. Vercel)</td>
+        <td style="border: 1px solid #eaeaea; padding: 12px 10px;">Productomgeving</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #eaeaea; padding: 12px 10px;">MX</td>
+        <td style="border: 1px solid #eaeaea; padding: 12px 10px;"><code style="background-color: #f1f1f1; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; color: #c7254e;">@</code></td>
+        <td style="border: 1px solid #eaeaea; padding: 12px 10px;">Uw zakelijke e-mailprovider (bijv. Google Workspace)</td>
+        <td style="border: 1px solid #eaeaea; padding: 12px 10px;">Bedrijfse-mail</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #eaeaea; padding: 12px 10px;">TXT</td>
+        <td style="border: 1px solid #eaeaea; padding: 12px 10px;"><code style="background-color: #f1f1f1; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; color: #c7254e;">@</code></td>
+        <td style="border: 1px solid #eaeaea; padding: 12px 10px;">SPF-record</td>
+        <td style="border: 1px solid #eaeaea; padding: 12px 10px;">Autorisatie van e-mailverzenders</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #eaeaea; padding: 12px 10px;">TXT of CNAME</td>
+        <td style="border: 1px solid #eaeaea; padding: 12px 10px;">Provider-specifiek</td>
+        <td style="border: 1px solid #eaeaea; padding: 12px 10px;">DKIM-sleutels</td>
+        <td style="border: 1px solid #eaeaea; padding: 12px 10px;">Cryptografische ondertekening van e-mail</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #eaeaea; padding: 12px 10px;">TXT</td>
+        <td style="border: 1px solid #eaeaea; padding: 12px 10px;"><code style="background-color: #f1f1f1; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; color: #c7254e;">_dmarc</code></td>
+        <td style="border: 1px solid #eaeaea; padding: 12px 10px;">DMARC-beleid</td>
+        <td style="border: 1px solid #eaeaea; padding: 12px 10px;">Bescherming tegen spoofing en phishing</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>Twee praktische vuistregels voorkomen problemen. Ten eerste: <strong>verwijder nooit MX- of e-mail-TXT-records tijdens het aanpassen van websiterecords</strong>; oprichters leggen hiermee geregeld per ongeluk hun eigen zakelijke mailverkeer plat. Ten tweede: <strong>voeg het app-record toe ruim voor de officiële aankondiging</strong>, wacht tot het SSL-certificaat actief is en test het subdomein over HTTPS op zowel mobiele 4G/5G-netwerken als kantoor-wifi. Webflow en Framer documenteren hun vereiste records tot in detail; volg die exact op in plaats van instellingen over te nemen uit verouderde handleidingen.</p>
+
+<h2>Authenticatie op het Echte Domein</h2>
+
+<p>Door AI gegenereerde apps beginnen hun bestaan vrijwel altijd op een preview-URL, en de authenticatie-instellingen zijn daarop afgestemd. Vóór de lancering moet elke configuratie die het app-adres kent, worden bijgewerkt.</p>
+
+<p><strong>Toegestane redirect-URL's.</strong> Supabase Auth, Firebase Authentication, Clerk en vergelijkbare diensten sturen gebruikers na inloggen uitsluitend door naar URL's op een goedgekeurde whitelist. Voeg <code style="background-color: #f1f1f1; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; color: #c7254e;">https://app.uwdomein.nl</code> toe en verwijder verouderde preview-URL's. Een ontbrekende vermelding leidt tot oneindige inloglussen; een achtergebleven wildcard kan ernstig worden misbruikt.</p>
+
+<p><strong>Site-URL voor e-mailnotificaties.</strong> Bevestigingsmails, magic links en resets voor wachtwoorden maken gebruik van een geconfigureerde basis-URL. Als deze nog naar de preview-omgeving wijst, stuurt elke service-mail uw gebruikers naar een doodlopend spoor.</p>
+
+<p><strong>OAuth-providers (Social Login).</strong> Google, Microsoft, GitHub en Apple hanteren strikte lijsten met geautoriseerde JavaScript-origins en redirect-URI's. Werk deze bij, en pas direct de applicatienaam en het logo aan op het toestemmingsscherm, zodat gebruikers direct vertrouwen hebben in wat ze zien.</p>
+
+<p><strong>Knoppen vanaf de marketingsite.</strong> Knoppen zoals "Inloggen" en "Start gratis proefperiode" in Webflow of Framer moeten exact verwijzen naar de juiste app-routes, zoals <code style="background-color: #f1f1f1; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; color: #c7254e;">https://app.uwdomein.nl/login</code> en <code style="background-color: #f1f1f1; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; color: #c7254e;">https://app.uwdomein.nl/signup</code>. Indien u abonnement- of campagne-ID's meestuurt via URL-parameters, moet de applicatie deze netjes uitlezen.</p>
+
+<h2>Cookies en Sessiebeheer Tussen Subdomeinen</h2>
+
+<p>Standaard wordt een cookie ingesteld door <code style="background-color: #f1f1f1; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; color: #c7254e;">app.uwdomein.nl</code> uitsluitend teruggestuurd naar dat specifieke subdomein. Voor authenticatie is dat precies wat u wenst: de marketingsite heeft geen toegang nodig tot de actieve gebruikerssessie, en die scheiding verkleint het risico aanzienlijk als een marketingscript ooit gecompromitteerd raakt.</p>
+
+<p>Sommige oprichters willen dat de marketingsite weet of een bezoeker al is ingelogd, om bijvoorbeeld "Naar dashboard" te tonen in plaats van "Aanmelden". De veilige methode hiervoor is een apart, niet-gevoelig cookie met bereik op het hoofddomein, zoals <code style="background-color: #f1f1f1; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; color: #c7254e;">logged_in=true</code>. Dit cookie wordt gezet door de app en door de marketingsite uitsluitend gebruikt om knopteksten dynamisch aan te passen. Deel nooit het daadwerkelijke JWT- of sessietoken met het marketingdomein. De officiële documentatie van MDN over HTTP-cookies legt de werking van de attributen <code style="background-color: #f1f1f1; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; color: #c7254e;">Domain</code>, <code style="background-color: #f1f1f1; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; color: #c7254e;">Secure</code>, <code style="background-color: #f1f1f1; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; color: #c7254e;">HttpOnly</code> en <code style="background-color: #f1f1f1; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; color: #c7254e;">SameSite</code> uitstekend uit.</p>
+
+<h2>SEO: Laat de Marketingsite het Zware Werk Doen</h2>
+
+<p>Zoekmachines horen uw marketingpagina's, blogartikelen en documentatie te indexeren, niet uw inlogschermen of afgeschermde dashboards.</p>
+
+<ul style="margin-bottom: 20px; padding-left: 25px; line-height: 1.7;">
+  <li style="margin-bottom: 8px;"><strong>Markeer app-routes met <code style="background-color: #f1f1f1; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; color: #c7254e;">noindex</code></strong> wanneer ze geen openbare meerwaarde bieden, via de robots-metatag zoals beschreven in Google Search Central. Inlog-, registratie-, dashboard- en instellingenpagina's horen zelden thuis in zoekmachineresultaten.</li>
+  <li style="margin-bottom: 8px;"><strong>Blokkeer de app niet volledig in <code style="background-color: #f1f1f1; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; color: #c7254e;">robots.txt</code> als er wel openbare profielen zijn</strong>, zoals gedeelde openbare rapportages of directory-pagina's die u wél wilt laten indexeren. Render die specifieke pagina's server-side zodat crawlers volledige HTML ontvangen.</li>
+  <li style="margin-bottom: 8px;"><strong>Stel canonieke URL's (canonical tags) in op de marketingsite</strong> zodat <code style="background-color: #f1f1f1; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; color: #c7254e;">www</code> en non-<code style="background-color: #f1f1f1; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; color: #c7254e;">www</code> versies elkaar niet beconcurreren, en dwing één primaire variant af via redirects.</li>
+  <li style="margin-bottom: 8px;"><strong>Behoud gestructureerde data op de marketingsite</strong>: schema-markup voor organisaties, softwareapplicaties, FAQ's en artikelen helpt zowel Google als AI-antwoordmachines (GEO) te begrijpen wat uw dienst inhoudt.</li>
+  <li style="margin-bottom: 8px;"><strong>Dien de sitemap van de marketingsite in</strong> via Google Search Console, en voeg het app-subdomein toe als een afzonderlijke property om eventuele indexatieproblemen tijdig te signaleren.</li>
+</ul>
+
+<p>Veel door AI gebouwde applicaties zijn Single Page Applications (SPA's) die pas in de browser content renderen. Achter een login is dat uitstekend, maar voor publieke pagina's die afhankelijk zijn van client-side rendering levert dat indexeringsrisico's op. Onze handleiding over <a href="https://launchstudio.eu/nl/blog/can-google-index-my-lovable-app">of Google een Lovable-app kan indexeren</a> behandelt de technische opties.</p>
+
+<h2>Analytics en Toestemming Over Beide Omgevingen</h2>
+
+<p>Om uw conversietrechter betrouwbaar te meten, moet u het volledige traject kunnen volgen: van het eerste bezoek op de marketingsite tot en met de accountaanmaak en de eerste actie in de applicatie.</p>
+
+<ul style="margin-bottom: 20px; padding-left: 25px; line-height: 1.7;">
+  <li style="margin-bottom: 8px;"><strong>Eén overkoepelende analytics-property</strong> voor beide domeinen, waarbij het app-subdomein is opgenomen in de cross-domain- of same-site-configuratie van uw analysetool.</li>
+  <li style="margin-bottom: 8px;"><strong>Campagneparameters (UTM-tags) behouden</strong> wanneer bezoekers van de marketingsite doorklikken naar het registratieformulier, zodat u exact weet welke advertenties of LinkedIn-berichten betalende klanten opleveren.</li>
+  <li style="margin-bottom: 8px;"><strong>Een registratie-event in de app</strong> en bij voorkeur een activatie-event zodra een nieuwe gebruiker zijn eerste waardevolle handeling succesvol afrondt.</li>
+  <li style="margin-bottom: 8px;"><strong>Een uniforme cookiebanner op beide sites</strong> die niet-essentiële tracking pas laadt na expliciete toestemming, volledig conform de AVG / GDPR en de Telecommunicatiewet. De toestemmingskeuze hoort bewaard te worden over subdomeinen heen, zodat een bezoeker niet twee keer dezelfde vraag krijgt.</li>
+</ul>
+
+<p>Indien u de juridische complexiteit van cookiebanners wilt vermijden voor standaard bezoekersstatistieken, zijn privacyvriendelijke cookieless tools een bewezen alternatief; ons artikel over <a href="https://launchstudio.eu/nl/blog/cookieless-analytics-for-eu-saas-plausible-vs-ga4">cookieless analytics voor Europese SaaS-bedrijven</a> vergelijkt de mogelijkheden.</p>
+
+<h2>Designconsistentie</h2>
+
+<p>Zodra een bezoeker van een strakke Webflow-landingspagina overstapt naar een applicatie met andere typografie, afwijkende merkkleuren en vreemde knopstijlen, daalt het vertrouwen merkbaar. Beide werelden op één lijn houden is vooral een kwestie van discipline:</p>
+
+<ul style="margin-bottom: 20px; padding-left: 25px; line-height: 1.7;">
+  <li style="margin-bottom: 8px;"><strong>Gedeelde design tokens.</strong> Leg kleuren, lettertypefamilies, corpsgroottes, border-radii en marges één keer vast en pas ze in beide systemen toe. Veel AI-bouwers kunnen via een gerichte prompt of Tailwind-configuratie direct dezelfde stijlen overnemen.</li>
+  <li style="margin-bottom: 8px;"><strong>Hetzelfde logo, favicon en paginatitelformaat.</strong></li>
+  <li style="margin-bottom: 8px;"><strong>Consistente terminologie in de navigatie.</strong> Als de marketingsite spreekt over "Werkruimtes", moet de applicatie niet plotseling "Projecten" tonen.</li>
+  <li style="margin-bottom: 8px;"><strong>Identieke juridische links.</strong> Uw privacyverklaring en algemene voorwaarden moeten vanuit beide omgevingen bereikbaar zijn en naar exact dezelfde pagina's verwijzen.</li>
+</ul>
+
+<h2>De Launch-Checklist</h2>
+
+<div style="overflow-x: hidden; max-width: 100%; margin-bottom: 20px;">
+  <table style="width: 100%; table-layout: fixed; border-collapse: collapse; border: 2px solid #1a1a1a; font-family: inherit; word-wrap: break-word;">
+    <thead style="background-color: #f8f9fa;">
+      <tr>
+        <th style="width: 50%; border: 1px solid #eaeaea; border-bottom: 2px solid #1a1a1a; padding: 15px 10px; text-align: left; font-size: 1.1em;">Onderdeel</th>
+        <th style="width: 50%; border: 1px solid #eaeaea; border-bottom: 2px solid #1a1a1a; padding: 15px 10px; text-align: left; font-size: 1.1em;">Controle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="border: 1px solid #eaeaea; padding: 12px 10px;">DNS</td>
+        <td style="border: 1px solid #eaeaea; padding: 12px 10px;">Marketingsite op hoofddomein en <code style="background-color: #f1f1f1; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; color: #c7254e;">www</code>, app op <code style="background-color: #f1f1f1; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; color: #c7254e;">app.</code>, e-mailrecords intact, HTTPS gevalideerd op beide</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #eaeaea; padding: 12px 10px;">Authenticatie</td>
+        <td style="border: 1px solid #eaeaea; padding: 12px 10px;">Redirect-URL's, site-URL, OAuth-origins en e-mailsjablonen ingesteld op het app-subdomein</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #eaeaea; padding: 12px 10px;">Links</td>
+        <td style="border: 1px solid #eaeaea; padding: 12px 10px;">Marketingknoppen linken naar de juiste app-routes, URL-parameters worden correct doorgegeven</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #eaeaea; padding: 12px 10px;">Cookies</td>
+        <td style="border: 1px solid #eaeaea; padding: 12px 10px;">Sessiecookies strikt beperkt tot het app-subdomein, optionele statusvlag op het hoofddomein</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #eaeaea; padding: 12px 10px;">SEO</td>
+        <td style="border: 1px solid #eaeaea; padding: 12px 10px;">App-routes voorzien van <code style="background-color: #f1f1f1; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; color: #c7254e;">noindex</code> waar passend, marketing-sitemap ingediend, canoniek domein vastgelegd</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #eaeaea; padding: 12px 10px;">Analytics</td>
+        <td style="border: 1px solid #eaeaea; padding: 12px 10px;">Eén geïntegreerde property, registratie- en activatie-events actief, campagnegegevens bewaard</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #eaeaea; padding: 12px 10px;">Toestemming</td>
+        <td style="border: 1px solid #eaeaea; padding: 12px 10px;">Cookiebanner actief op beide sites, toestemmingsstatus gedeeld over subdomeinen</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #eaeaea; padding: 12px 10px;">Design</td>
+        <td style="border: 1px solid #eaeaea; padding: 12px 10px;">Gedeelde tokens, identiek logo, passend favicon en consistente terminologie</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #eaeaea; padding: 12px 10px;">E-mail</td>
+        <td style="border: 1px solid #eaeaea; padding: 12px 10px;">Afzenderdomein volledig geauthenticeerd via SPF, DKIM en DMARC</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h2>Wat Het Kost</h2>
+
+<p>Het koppelen van een marketingsite aan een door AI gebouwde applicatie vormt doorgaans onderdeel van een bredere productielancering. LaunchStudio's <strong>Launch Ready</strong>-pakket (€800 - €3.500) omvat deployment naar uw eigen domein, volledige authenticatieconfiguratie, beveiligingsreparaties en 48 uur intensieve launch-begeleiding. <strong>Launch & Grow</strong> (€2.500 - €7.500 plus €49 per maand) breidt dit uit met betalingskoppelingen, beheerde hosting, geautomatiseerde back-ups, transactionele e-mail met geauthenticeerde verzending en prioriteitsondersteuning. U ontvangt een vaste prijsopgave na een kort intakegesprek van 15 minuten. De <a href="https://launchstudio.eu/nl/#calculator">prijscalculator</a> geeft u direct een eerste indicatie.</p>
+
+<h2>Het Team Achter LaunchStudio</h2>
+
+<p>LaunchStudio wordt ondersteund door Manifera, een softwareontwikkelingsbedrijf met 11+ jaar ervaring, meer dan 160 opgeleverde projecten en een team van ruim 120 senior engineers. Oprichters ontmoeten ons team aan de Herengracht 420 in Amsterdam; onze engineers werken vanuit Manifera's ontwikkelingscentrum aan Pho Quang Street in Ho Chi Minh City, met een regionale hub aan Tras Street in Singapore. Manifera integreert al jarenlang complexe bedrijfswebsites en klantportalen voor enterprise-opdrachtgevers, en precies diezelfde technische nauwkeurigheid passen we toe op de koppeling tussen uw Webflow-site en Lovable-app.</p>
+
+<div class="article-case">
+<div class="case-label">Echt voorbeeld</div>
+
+<h3>Een AI-Native Oprichter in Actie: De Aanmeldknop Die Naar een Preview-URL Verwees</h3>
+
+<p>Charlotte Verbeek, voormalig HR-adviseur in Utrecht, lanceerde Verlofwijzer: een overzichtelijke verlofplanningstool voor mkb-bedrijven. Haar Framer-marketingsite zag er uitstekend uit en behaalde hoge posities in Google op relevante Nederlandse HR-zoektermen. Het product zelf was gebouwd in Lovable en draaide op een tijdelijke preview-URL, direct gekoppeld aan de knop "Probeer gratis" op haar Framer-site.</p>
+
+<p>Haar analytics toonde een verontrustend patroon: maandelijks klikten honderden geïnteresseerden op de aanmeldknop, maar er werden slechts enkele tientallen accounts daadwerkelijk aangemaakt. Toen Charlotte het proces zelf testte op haar smartphone, ontdekte ze dat de verificatiemails linkten naar een oud, inactief preview-adres. Google Social Login toonde een onbekende systeemnaam met een beveiligingswaarschuwing, en haar inlogpagina stond in de zoekresultaten hoger dan haar prijzenpagina. Daarnaast stopte de analytics-meting direct bij de klik op de knop, en week de visuele stijl van de applicatie sterk af van haar Framer-site.</p>
+
+<p>LaunchStudio migreerde de applicatie naar <code style="background-color: #f1f1f1; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; color: #c7254e;">app.verlofwijzer.nl</code> op Vercel met het bijbehorende DNS-record naast de bestaande Framer-records, waarbij alle zakelijke e-mailinstellingen volledig onaangetast bleven. De redirect-URL's en site-URL in Supabase Auth werden bijgewerkt, oude preview-adressen werden verwijderd en het Google OAuth-toestemmingsscherm werd voorzien van het officiële merk en logo. Alle interne app-routes kregen een <code style="background-color: #f1f1f1; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; color: #c7254e;">noindex</code>-tag, analytics werd geïntegreerd over beide domeinen met gerichte registratie- en activatie-events, en de cookietoestemming werd gedeeld over de subdomeinen. Tot slot werd de Lovable-app gestyled met de design tokens van de Framer-site.</p>
+
+<p><strong>Resultaat:</strong> In de eerste volle maand na de oplevering steeg het percentage aanmelders dat een bevestigd account werd van circa 11% naar 46%. De inlogpagina verdween binnen enkele weken uit de zoekmachineresultaten, en Charlotte kon via haar dashboard exact herleiden welke LinkedIn-berichten daadwerkelijk betalende klanten opleverden.</p>
+
+<blockquote>
+  <p><em>"Elke afzonderlijke tool werkte op zichzelf prima. Het lek zat precies in de ruimte tussen de systemen, en dat had ik zelf nooit kunnen ontdekken."</em></p>
+  <ul>
+    <li><strong>Charlotte Verbeek, Oprichter, Verlofwijzer (Utrecht)</strong></li>
+  </ul>
+</blockquote>
+
+<p><strong>Kosten & Doorlooptijd:</strong> €1.650 (Launch Ready-pakket: domein- en DNS-configuratie, authenticatie-inrichting, SEO- en analytics-afstemming, design tokens) - afgerond in 5 werkdagen.</p>
+</div>
+
+<style>
+  /* Modern FAQ Accordion */
+  .faq-accordion {
+    max-width: 100%;
+    margin: 20px auto;
+    font-family: inherit;
+  }
+  .faq-accordion details {
+    border-bottom: 1px solid #eaeaea;
+    padding: 15px 0;
+  }
+  .faq-accordion summary {
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    outline: none;
+  }
+  .faq-accordion summary::-webkit-details-marker {
+    display: none;
+  }
+  .faq-accordion summary h3 {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #1a1a1a;
+    padding-right: 20px;
+  }
+  .faq-accordion summary::after {
+    content: "+";
+    font-size: 1.5em;
+    color: #0073aa;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+  }
+  .faq-accordion details[open] summary::after {
+    content: "−";
+  }
+  .faq-accordion .faq-answer {
+    padding-top: 15px;
+    color: #444;
+    line-height: 1.6;
+    font-size: 1em;
+  }
+  .faq-accordion .faq-answer p {
+    margin: 0;
+  }
+</style>
+
+<h3>FAQs</h3>
+
+<div class="faq-accordion">
+
+  <details>
+    <summary><h3 style="margin: 0; font-size: 1.2em; font-weight: 600; color: #1a1a1a;">Moet mijn applicatie op een subdomein of in een submap draaien?</h3></summary>
+    <div class="faq-answer">
+      <p>Voor vrijwel alle oprichters is een subdomein zoals <code style="background-color: #f1f1f1; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; color: #c7254e;">app.uwdomein.nl</code> veruit de beste keuze. Het is veel eenvoudiger in te richten, elk platform beheert automatisch zijn eigen SSL-certificaat en beide omgevingen kunnen volledig onafhankelijk van elkaar worden gedeployd. Een submap vereist een complexe reverse proxy en levert alleen bij uitzonderlijke SEO-strategieën voordeel op.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary><h3 style="margin: 0; font-size: 1.2em; font-weight: 600; color: #1a1a1a;">Schaadt het de SEO van mijn marketingsite als de app op een subdomein staat?</h3></summary>
+    <div class="faq-answer">
+      <p>Nee, zolang uw marketingsite alle openbare content bevat. Afgeschermde app-pagina's achter een login hebben voor zoekmachines sowieso geen waarde. Houd landingspagina's, blogs en documentatie op de marketingsite en geef besloten app-routes een <code style="background-color: #f1f1f1; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; color: #c7254e;">noindex</code>-tag mee.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary><h3 style="margin: 0; font-size: 1.2em; font-weight: 600; color: #1a1a1a;">Kan mijn Webflow- of Framer-site zien of een bezoeker al is ingelogd?</h3></summary>
+    <div class="faq-answer">
+      <p>Ja, op een veilige manier via een apart, niet-gevoelig cookie op het hoofddomein (zoals <code style="background-color: #f1f1f1; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; color: #c7254e;">logged_in=true</code>) dat door de applicatie wordt geplaatst. De marketingsite leest dit cookie uitsluitend uit om bijvoorbeeld een knop aan te passen van "Aanmelden" naar "Naar Dashboard". Het daadwerkelijke beveiligde sessietoken blijft uitsluitend bewaard op het app-subdomein.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary><h3 style="margin: 0; font-size: 1.2em; font-weight: 600; color: #1a1a1a;">Hoe helpt Manifera's ervaring bij deze integratie?</h3></summary>
+    <div class="faq-answer">
+      <p>Manifera bouwt en koppelt al meer dan 11 jaar enterprise-websites, klantenportalen en complexe identiteitssystemen. LaunchStudio past exact diezelfde degelijke engineeringpraktijken toe op DNS, authenticatie, cookie-isolatie en tracking - precies de kwetsbare koppelvlakken waar oprichters bij lanceringen anders gebruikers en conversie verliezen.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary><h3 style="margin: 0; font-size: 1.2em; font-weight: 600; color: #1a1a1a;">Verbetert deze opzet de vindbaarheid in AI-zoekmachines?</h3></summary>
+    <div class="faq-answer">
+      <p>Zeker. Een snelle, goed gestructureerde marketingsite met zuivere JSON-LD schema-markup, één eenduidig primair domein en geen storende afgeschermde inlogpagina's in de zoekindex stelt zoekmachines en AI-antwoordmodellen (zoals Perplexity en ChatGPT Search) in staat uw product helder te begrijpen en nauwkeurig te citeren.</p>
+    </div>
+  </details>
+
+</div>
