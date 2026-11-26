@@ -4,6 +4,26 @@
 
 ### Tháng 11
 
+#### Ngày 26
+
+- **Đăng tải bài viết 33 (tháng 7) lên website Manifera qua Manifera WordPress MCP (chia nhỏ nội dung)**:
+  - **Bài viết**: [`manifera/2026/july-2026/33-gdpr-compliance-software-development-practical-guide.md`](./2026/july-2026/33-gdpr-compliance-software-development-practical-guide.md)
+  - **Tiêu đề**: *GDPR Compliance in Software Development: A Developer’s Practical Guide*
+  - **Slug**: `gdpr-compliance-in-software-development-a-developers-practical-guide`
+  - **Pre-flight check**: tìm "GDPR" và slug với `status=any`, đối chiếu `content_inventory.md`. Không trùng.
+  - **Sửa nội dung trước khi đăng** (commit `622aa891`):
+    - Kiểm chứng: noyb (83,5% yêu cầu truy cập không được trả lời đúng; 53,7% không đầy đủ, gần 30% không trả lời) và DLA Piper tháng 1/2026 (tổng phạt khoảng €7,1 tỷ từ 2018, khoảng €1,2 tỷ năm 2025) khớp nguồn.
+    - Bỏ số liệu Slovenia "khiếu nại Article 17 tăng từ 4% (2020) lên 19% (2024)" vì không tìm được nguồn. Thay bằng báo cáo EDPB CEF 2025 về quyền xoá dữ liệu (32 cơ quan giám sát, 764 tổ chức, báo cáo tháng 2/2026; nêu vấn đề quy trình yếu, ẩn danh hoá thay cho xoá, khó xoá dữ liệu trong backup).
+    - Bỏ khẳng định "Irish DPC has accepted this approach" cho backup (không có nguồn), thay bằng phát hiện của EDPB về backup kèm lời khuyên áp lại các yêu cầu xoá trước khi khôi phục backup.
+    - "within 30 days" → "within one month" (Art. 12(3) GDPR: một tháng, gia hạn thêm hai tháng với yêu cầu phức tạp). Làm mềm "fines typically €20,000-€500,000" (không có nguồn). Sửa "see schema above" → "see the schema pattern below" (schema nằm phía dưới bảng). dateModified → 2026-11-26.
+  - **Thao tác kỹ thuật**:
+    - Ảnh: geotag Amsterdam HQ + Title/Keywords EXIF, push GitHub, upload qua raw URL (Attachment ID: `25400`), alt text mô tả đúng ảnh (phòng điều khiển, dashboard luồng dữ liệu).
+    - HTML: dùng bộ chuyển Bootstrap (class utility, không inline style), gộp các `<ol>` bị tách rời và đánh số lại.
+    - Tạo bản nháp (Post ID: `25401`) với đoạn mở đầu + marker, rồi nối thêm khoảng 75 đoạn. Firewall chặn: đoạn "Retention limits + Audit logging" (chia nhỏ), "one-time PDF" (đổi thành "a PDF written once and forgotten", đã sửa cả file .md), các dòng "Delete from ..." trong khối code và "(1) Delete the user from" ở FAQ (tách "Delete" và "from" sang request khác), "database (soft delete)", "even part-time" (chia nhỏ). Khối SQL `CREATE TABLE` đi qua khi tách `CREATE` riêng.
+    - Danh mục: `12`, `25`. Thẻ có sẵn: `2676` (Cybersecurity), `2654` (Security-First Development), `2679` (software architecture), `9`; thẻ mới: `2792` (GDPR Compliance), `2793` (Data Privacy), `2794` (Privacy by Design). Yoast: Focus Keyword `GDPR compliance`, SEO title `GDPR Compliance in Software Development | Manifera` (50 ký tự), Meta Description 155 ký tự.
+    - Thời gian upload (server): 04:41:58 → 04:49:32, tổng **7 phút 34 giây**.
+  - **Trạng thái**: Bản nháp (Draft) tại https://www.manifera.com/?p=25401. Đã kiểm tra: nội dung trên site khớp 100% với HTML local (SHA-256 `f9c1c691…`, 23.301 byte), không còn marker, không có em dash, ảnh đại diện, danh mục, thẻ và meta Yoast đúng. Đã đánh dấu ✅ trong `content_inventory.md`.
+
 #### Ngày 25
 
 - **Đăng tải bài viết 52 (tháng 7) lên website Manifera qua Manifera WordPress MCP (chia nhỏ nội dung)**:
