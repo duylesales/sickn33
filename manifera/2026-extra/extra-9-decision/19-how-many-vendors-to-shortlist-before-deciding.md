@@ -26,7 +26,7 @@ This article is about the specific, practical number of vendors a founder should
 
 ## Why More Options Feel Safer but Perform Worse
 
-The instinct toward a large shortlist comes from a reasonable place - nobody wants to regret not having considered an obviously better vendor who simply never made the list. But research on decision-making under choice overload, well documented across consumer and business contexts alike, shows a consistent pattern: as the number of options being seriously compared increases past a fairly low threshold, decision quality does not keep improving - it degrades, and decision-maker confidence in the final choice actually drops even when the eventual pick is objectively reasonable. A founder juggling eight vendor conversations in parallel is not doing eight thorough evaluations; they are doing eight shallow ones, because there are simply not enough hours in a founder's week - already stretched across product, fundraising, and hiring - to run deep diligence on that many parallel tracks.
+The instinct toward a large shortlist comes from a reasonable place - nobody wants to regret not having considered an obviously better vendor who simply never made the list. But research on choice overload, starting with Iyengar and Lepper's well-known 2000 study, suggests that past a fairly low number of options, more choice does not keep improving the outcome - it can lower satisfaction and confidence in the final pick, even when that pick is objectively reasonable. Later meta-analyses show the effect is not universal; it is strongest when the options are complex, hard to compare side by side, and the decision-maker is unsure what they value most, which describes a stack of software vendor proposals rather well. A founder juggling eight vendor conversations in parallel is not doing eight thorough evaluations; they are doing eight shallow ones, because there are simply not enough hours in a founder's week - already stretched across product, fundraising, and hiring - to run deep diligence on that many parallel tracks.
 
 The deeper cost is specific to software vendor evaluation: the diligence steps that actually reveal vendor quality - a real reference call with a long-tenured client, a live technical Q&A with named engineers, a careful read of contract terms - each take real, non-compressible time. Running these properly for eight vendors is not eight times the work of running them for one; it is closer to eight times the work plus the coordination overhead of juggling eight parallel conversations, each moving at a different pace, each requiring you to remember which specific detail came from which proposal when it's time to compare.
 
@@ -38,29 +38,35 @@ Narrow to three to five vendors for the proposal and initial-call stage, where y
 
 Narrow further to two to three finalists for deep diligence - reference calls, technical Q&A with named engineers, and potentially a paid pilot project. This stage is the most time-intensive per vendor and the one decision fatigue threatens most directly, which is exactly why the field needs to be small enough that each finalist gets genuinely thorough attention rather than a rushed final check before signature.
 
-## Why Fewer Than Three Is Also a Risk
+## Why Too Few Finalists Is Also a Risk
 
 The opposite mistake - evaluating only one or two vendors seriously - carries its own risk, and founders under time pressure sometimes drift into it after a first strong impression, effectively skipping the shortlist stage in favor of a single deep dive that feels efficient but lacks a real comparison baseline. Without at least two genuine finalists carried through deep diligence, you have no comparison point to calibrate against - you cannot tell whether a vendor's pricing, team seniority mix, or communication style is actually strong, or merely the only data point you have. A single vendor evaluated in isolation, however impressive, is being judged against your expectations rather than against a real market comparison, which is a meaningfully weaker basis for a decision involving a significant, multi-month financial and operational commitment.
 
-Three finalists is close to the practical floor for a decision of this size, because it gives you enough comparison points to identify outliers in either direction - a proposal that's unusually cheap for a suspicious reason, or one whose team quality clearly stands out - without requiring the deep-diligence workload of a fourth or fifth parallel track that likely will not change the eventual decision anyway.
+Two finalists is the minimum for a real comparison, and three is usually the sweet spot for a decision of this size, because three gives you enough comparison points to identify outliers in either direction - a proposal that's unusually cheap for a suspicious reason, or one whose team quality clearly stands out - without requiring the deep-diligence workload of a fourth or fifth parallel track that likely will not change the eventual decision anyway.
 
 ## Matching Shortlist Size to Project Stakes
 
 Not every software vendor decision warrants the same shortlist depth. A smaller, lower-stakes engagement - a scoped, several-week project with a clearly defined deliverable and modest budget - can reasonably be decided from a shortlist of two to three vendors carried through a lighter diligence process, since the cost of a suboptimal choice is proportionally smaller and more easily corrected. A larger, longer-term commitment - a dedicated team engagement expected to run a year or more, representing a meaningful fraction of your remaining runway - justifies the full three-stage funnel down to two or three finalists receiving genuinely deep diligence, because the cost of getting this specific decision wrong compounds over a much longer and more expensive relationship.
 
-This is also where a structured scorecard becomes useful alongside shortlist discipline - even a well-sized shortlist benefits from documented, weighted scoring rather than an unstructured gut comparison between finalists, since a small number of well-evaluated options still needs a clear, defensible way to differentiate between them at the final decision point.
+This is also where a structured scorecard becomes useful alongside shortlist discipline (our [six-step way to vet a software partner](https://www.manifera.com/evaluate-custom-software-development-company/) covers what to test at the deep diligence stage) - even a well-sized shortlist benefits from documented, weighted scoring rather than an unstructured gut comparison between finalists, since a small number of well-evaluated options still needs a clear, defensible way to differentiate between them at the final decision point.
 
 ## What to Do If You're Already Overcommitted to Too Many Vendors
 
 If you find yourself mid-search already juggling six or seven active vendor conversations, the right move is not powering through all of them - it is deliberately cutting the field before diligence quality degrades further. Go back through your initial notes and proposals with a simple, honest filter: which two or three vendors would you be genuinely disappointed to lose from consideration, independent of how far along the conversation with them currently is. Politely close out the rest now, before investing further diligence hours across a field too wide to evaluate properly, rather than continuing to spread thinning attention across all of them until decision fatigue forces a rushed choice near your actual deadline.
 
-Manifera works with founders at exactly this stage of the search - a shortlist narrowed to two or three serious finalists needing genuinely deep diligence rather than another proposal to add to an already-overloaded comparison. You can review our approach to transparent evaluation, including named engineers and verifiable references from 120+ served clients, through our [way of working](https://www.manifera.com/about-us/our-way-of-working/), and see the range of engagements in our [portfolio](https://www.manifera.com/portfolio/).
+If Manifera is on your shortlist, we are glad to be evaluated this way - as one of two or three serious finalists getting genuinely deep diligence rather than another proposal added to an already-overloaded comparison. Our [way of working](https://www.manifera.com/about-us/our-way-of-working/) describes the process from first contact to delivery, including the option of starting with a pilot project, and our [portfolio](https://www.manifera.com/portfolio/) shows a range of the work we have delivered for 120 clients since 2014.
+
+## Time-Budgeting the Funnel: What Each Stage Actually Costs You in Hours
+
+Put real hours against the three-stage funnel before committing to it, because founders consistently underestimate this. Sourcing eight to twelve vendors - initial research, outreach, and a light portfolio screen - realistically costs 4-6 hours spread across a week. The proposal stage with three to five vendors is where time compounds fast: budget 2-3 hours per vendor for a scoping call plus proposal review, or 8-15 hours total, typically across two weeks once you account for scheduling friction across different time zones and calendars.
+
+Deep diligence on two to three finalists is the heaviest stage per vendor - budget 4-6 hours each for reference calls (30-45 minutes per reference, typically two to three references), a technical Q&A session with named engineers, and scorecard documentation, or 8-18 hours total. Across the full funnel, a disciplined founder should expect to invest roughly 20-40 hours of genuine evaluation time over four to six weeks for a significant, multi-month engagement decision. If your actual search is running past six weeks with no finalist emerging, that is usually a shortlist-sizing problem, not a market-thinness problem - the fix is narrowing the field, not extending the search timeline further.
 
 ## The Right Number, in Summary
 
 Eight to twelve for initial sourcing, three to five for proposals and first calls, two to three for deep diligence and final decision - a shortlist that narrows deliberately at each stage rather than staying wide throughout produces a better decision than either extreme: not so wide that no single evaluation gets the attention it deserves, and not so narrow that you lack a genuine comparison baseline for a decision that will shape your company's delivery capacity for a long stretch ahead.
 
-Request a proposal built around the specific scope of your project, sized to slot cleanly into a disciplined two-to-three-finalist shortlist rather than adding noise to an already-overloaded comparison.
+[Request a proposal](https://www.manifera.com/contact-us/) built around the specific scope of your project, sized to slot cleanly into a disciplined two-to-three-finalist shortlist rather than adding noise to an already-overloaded comparison.
 
 <script type="application/ld+json">
 {
@@ -73,12 +79,6 @@ Request a proposal built around the specific scope of your project, sized to slo
   ]
 }
 </script>
-
-## Time-Budgeting the Funnel: What Each Stage Actually Costs You in Hours
-
-Put real hours against the three-stage funnel before committing to it, because founders consistently underestimate this. Sourcing eight to twelve vendors - initial research, outreach, and a light portfolio screen - realistically costs 4-6 hours spread across a week. The proposal stage with three to five vendors is where time compounds fast: budget 2-3 hours per vendor for a scoping call plus proposal review, or 8-15 hours total, typically across two weeks once you account for scheduling friction across different time zones and calendars.
-
-Deep diligence on two to three finalists is the heaviest stage per vendor - budget 4-6 hours each for reference calls (30-45 minutes per reference, typically two to three references), a technical Q&A session with named engineers, and scorecard documentation, or 8-18 hours total. Across the full funnel, a disciplined founder should expect to invest roughly 20-40 hours of genuine evaluation time over four to six weeks for a significant, multi-month engagement decision. If your actual search is running past six weeks with no finalist emerging, that is usually a shortlist-sizing problem, not a market-thinness problem - the fix is narrowing the field, not extending the search timeline further.
 
 ## Frequently Asked Questions
 
