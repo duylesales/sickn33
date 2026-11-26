@@ -6,6 +6,24 @@
 
 #### Ngày 26
 
+- **Đăng tải bài viết 19 (extra-9-decision) lên website Manifera qua Manifera WordPress MCP (chia nhỏ nội dung)**:
+  - **Bài viết**: [`manifera/2026-extra/extra-9-decision/19-how-many-vendors-to-shortlist-before-deciding.md`](./2026-extra/extra-9-decision/19-how-many-vendors-to-shortlist-before-deciding.md)
+  - **Tiêu đề**: *How Many Vendors Should You Shortlist Before Deciding*
+  - **Slug**: `how-many-vendors-should-you-shortlist-before-deciding`
+  - **Pre-flight check**: tìm "shortlist", "scorecard" và slug với `status=any`. Không trùng.
+  - **Sửa nội dung trước khi đăng** (commit `0c601c97`):
+    - "Research on choice overload... shows a consistent pattern" → nêu đúng nguồn: nghiên cứu Iyengar & Lepper (2000), và các meta-analysis sau này cho thấy hiệu ứng không phổ quát, mạnh nhất khi lựa chọn phức tạp, khó so sánh và người chọn chưa rõ ưu tiên (đúng với hồ sơ báo giá vendor).
+    - Sửa mâu thuẫn "at least two finalists" vs "three is the practical floor": đổi tiêu đề mục thành "Why Too Few Finalists Is Also a Risk", ghi rõ 2 là tối thiểu, 3 là con số hợp lý nhất.
+    - Bỏ "named engineers and verifiable references from 120+ served clients" (không có trên site), thay bằng thông tin đã kiểm chứng: quy trình trên trang Our Way of Working, có thể bắt đầu bằng pilot project, 120 khách hàng từ 2014.
+    - Chuyển mục "Time-Budgeting the Funnel" lên trước phần tóm tắt (trước đây nằm sau CTA). Thêm internal link tới post 23934 (*A Six-Step Way to Vet a Software Partner*) và link `/contact-us/` cho CTA. Kiểm tra 4 link nội bộ đều trả về 200. Phép cộng giờ (4-6 + 8-15 + 8-18 = 20-39) khớp với "roughly 20-40 hours".
+  - **Thao tác kỹ thuật**:
+    - Ảnh: geotag Amsterdam HQ + Title/Keywords EXIF, push GitHub, upload qua raw URL (Attachment ID: `25569`), alt text mô tả founder và cố vấn xem phễu shortlist trên tablet.
+    - HTML: cùng bộ chuyển của bài 18 (Bootstrap, FAQ accordion `[Scenario: ...]`).
+    - Tạo bản nháp (Post ID: `25570`) với đoạn mở đầu + marker, rồi nối thêm khoảng 40 đoạn. Firewall chặn 7 lần, hầu hết ở các cụm có "time": "when it’s time to compare" + `</p><h2>`, "under time pressure sometimes drift", "where time compounds fast", "evaluation time spread across" (FAQ), "under time pressure often misses" (FAQ). Tất cả đi qua khi chia nhỏ, giữ nguyên câu chữ.
+    - Danh mục: `12`. Thẻ có sẵn: `2741` (Vendor Strategy), `2740` (Software Vendors), `9`; thẻ mới `2797` (Vendor Selection), `2798` (Vendor Shortlist). Yoast: Focus Keyword `vendor shortlist`, SEO title `How Many Vendors to Shortlist Before Deciding | Manifera` (56 ký tự), Meta Description 155 ký tự.
+    - Thời gian upload (giờ site): 11:24:44 → 11:30:19, tổng **5 phút 35 giây**.
+  - **Trạng thái**: Bản nháp (Draft) tại https://www.manifera.com/?p=25570. Đã kiểm tra: nội dung trên site khớp 100% với HTML local (SHA-256 `ab64b398…`, 16.140 byte), không còn marker, không có em dash. Đã đánh dấu ✅ trong `extra-content_inventory.md`.
+
 - **Đăng tải bài viết 18 (extra-9-decision) lên website Manifera qua Manifera WordPress MCP (chia nhỏ nội dung)**:
   - **Bài viết**: [`manifera/2026-extra/extra-9-decision/18-fixed-team-vs-flexible-bench-comparing-vendor-staffing-models.md`](./2026-extra/extra-9-decision/18-fixed-team-vs-flexible-bench-comparing-vendor-staffing-models.md)
   - **Tiêu đề**: *Fixed Team vs. Flexible Bench: Comparing Vendor Staffing Models*
