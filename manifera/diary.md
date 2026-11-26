@@ -6,6 +6,24 @@
 
 #### Ngày 26
 
+- **Đăng tải bài viết 18 (extra-9-decision) lên website Manifera qua Manifera WordPress MCP (chia nhỏ nội dung)**:
+  - **Bài viết**: [`manifera/2026-extra/extra-9-decision/18-fixed-team-vs-flexible-bench-comparing-vendor-staffing-models.md`](./2026-extra/extra-9-decision/18-fixed-team-vs-flexible-bench-comparing-vendor-staffing-models.md)
+  - **Tiêu đề**: *Fixed Team vs. Flexible Bench: Comparing Vendor Staffing Models*
+  - **Slug**: `fixed-team-vs-flexible-bench-comparing-vendor-staffing-models`
+  - **Pre-flight check**: tìm "flexible bench", "staffing model" và slug với `status=any`. Không trùng (bài gần nhất là 22712 *Staff Augmentation vs. Dedicated Teams vs. Project-Based Delivery*, góc khác, đã dùng làm internal link).
+  - **Sửa nội dung trước khi đăng** (commit `ebf20d72`):
+    - Bỏ "In a comparison of mid-market engagements, dedicated-team structures showed measurably lower rework rates" (nghiên cứu không có nguồn), viết lại thành nhận định chung.
+    - Bỏ khẳng định "This is how Manifera structures many of its larger enterprise engagements" và "hybrid structure applied across live engagements in our portfolio" (không có trên site). Thay bằng thông tin đã kiểm chứng trên manifera.com: dedicated team bắt đầu từ 1 kỹ sư, có thể gồm PM/Scrum Master và QA, các mô hình hợp tác có thể điều chỉnh. Thêm internal link tới bài 22712.
+    - Chuyển mục "Pricing the Two Models" lên trước phần kết luận (trước đây nằm sau CTA). Làm mềm "commonly erases a 10-15% hourly rate advantage entirely" (phép tính 4 lần luân chuyển × 1-2 tuần không đủ xoá 10-15% với team lớn) thành "can eat into... on a small team it can erase it".
+    - CTA: "160+ delivered projects" → "more than 160 apps delivered since 2014" (đúng số liệu site), gắn link `/contact-us/`. Kiểm tra 5 link nội bộ đều trả về 200.
+  - **Thao tác kỹ thuật**:
+    - Ảnh: geotag Amsterdam HQ + Title/Keywords EXIF, push GitHub, upload qua raw URL (Attachment ID: `25535`), alt text mô tả CTO bên bảng Dedicated Core Pod vs Flexible Specialist Bench.
+    - HTML: bộ chuyển mới (Bootstrap, FAQ accordion `[Scenario: ...]` như post 25484, dấu nháy cong ’).
+    - Tạo bản nháp (Post ID: `25536`) với đoạn mở đầu + marker, rồi nối thêm 28 đoạn (khoảng 300-750 ký tự). Firewall chặn 1 lần: đoạn "Watch for two specific pricing structures... billing 100% of allocated capacity" (chia thành 5 mẩu nhỏ, giữ nguyên câu chữ).
+    - Danh mục: `12`. Thẻ có sẵn: `2609` (Dedicated Development Team), `2640` (Dedicated Teams), `2741` (Vendor Strategy), `2740` (Software Vendors), `9`; thẻ mới `2796` (Staffing Models). Yoast: Focus Keyword `dedicated team vs flexible bench`, SEO title `Dedicated Team vs Flexible Bench: Staffing Models | Manifera` (60 ký tự), Meta Description 145 ký tự.
+    - Thời gian upload (giờ site): 11:14:44 → 11:18:14, tổng **3 phút 30 giây**.
+  - **Trạng thái**: Bản nháp (Draft) tại https://www.manifera.com/?p=25536. Đã kiểm tra: nội dung trên site khớp 100% với HTML local (SHA-256 `eeebfcc9…`, 17.231 byte), không còn marker, không có em dash. Đã đánh dấu ✅ trong `extra-content_inventory.md`.
+
 - **Đăng tải bài viết 41 (tháng 7) lên website Manifera qua Manifera WordPress MCP (chia nhỏ nội dung)**:
   - **Bài viết**: [`manifera/2026/july-2026/41-agile-at-scale-running-multiple-scrum-teams-without-chaos.md`](./2026/july-2026/41-agile-at-scale-running-multiple-scrum-teams-without-chaos.md)
   - **Tiêu đề**: *Agile at Scale: Running Multiple Scrum Teams Without Chaos*
