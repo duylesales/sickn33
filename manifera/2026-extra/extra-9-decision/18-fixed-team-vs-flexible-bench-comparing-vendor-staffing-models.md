@@ -26,7 +26,7 @@ Neither staffing model is universally superior - each is built to optimize for a
 
 ## What a Fixed, Dedicated Team Actually Provides
 
-A dedicated team model assigns a specific, named set of engineers to your project exclusively, for the duration of the engagement, functioning as an extension of your own team rather than a rotating resource pool. The core value proposition is continuity: the same engineers who understood your architecture decisions in month one are still there in month eight, carrying institutional knowledge that never has to be re-transferred to a new face. In a comparison of mid-market engagements, dedicated-team structures showed measurably lower rework rates on iterative feature work - teams working from accumulated context made fewer mistakes rooted in misunderstanding prior decisions than teams reassembled or partially rotated between phases.
+A dedicated team model assigns a specific, named set of engineers to your project exclusively, for the duration of the engagement, functioning as an extension of your own team rather than a rotating resource pool. The core value proposition is continuity: the same engineers who understood your architecture decisions in month one are still there in month eight, carrying institutional knowledge that never has to be re-transferred to a new face. On iterative feature work this usually shows up as less rework: a team working from accumulated context makes fewer mistakes rooted in misunderstanding prior decisions than a team that is reassembled or partially rotated between phases.
 
 This model suits projects with a long, continuous roadmap and evolving requirements best - exactly the profile where institutional context compounds in value over time. It also tends to produce stronger working relationships between your internal product owner and the vendor's engineers, since the same individuals are present in every sprint planning and retrospective, building the kind of working rapport that a rotating cast cannot replicate no matter how skilled any individual substitute might be.
 
@@ -50,7 +50,7 @@ A useful way to frame this for your own evaluation: estimate how many total engi
 
 The two models are not mutually exclusive, and the strongest structures for many mid-to-large engagements combine them deliberately. A dedicated core team - typically three to six engineers who own the primary architecture and carry continuous context - handles the sustained, predictable portion of the roadmap, while a flexible bench supplements that core for specific, time-boxed needs: a security audit sprint, a specialized integration, or a temporary capacity spike ahead of a launch deadline.
 
-This is how Manifera structures many of its larger enterprise engagements specifically, because it captures the continuity benefit where it matters most - on the core team carrying long-term architectural context - while preserving elastic capacity for the genuinely variable slice of work that a purely fixed team would either be oversized or undersized for at different points in the roadmap. You can see this hybrid structure applied across live engagements in our [portfolio](https://www.manifera.com/portfolio/), and review how team composition adapts over an engagement's lifecycle in our [dedicated development team](https://www.manifera.com/services/offshore-software-development/) service and our [way of working](https://www.manifera.com/about-us/our-way-of-working/).
+The appeal is that it captures the continuity benefit where it matters most - on the core team carrying long-term architectural context - while preserving elastic capacity for the genuinely variable slice of work that a purely fixed team would either be oversized or undersized for at different points in the roadmap. At Manifera, a [dedicated development team](https://www.manifera.com/services/offshore-software-development/) can start with a single engineer and grow, can include a project manager or Scrum Master and QA, and the engagement models described in our [way of working](https://www.manifera.com/about-us/our-way-of-working/) are a starting point we adjust to the project rather than a fixed menu. You can browse delivered work in our [portfolio](https://www.manifera.com/portfolio/), and for a wider comparison that also covers staff augmentation and project-based delivery, see [Staff Augmentation vs. Dedicated Teams vs. Project-Based Delivery](https://www.manifera.com/staff-augmentation-vs-dedicated-teams-vs-project-based-delivery/).
 
 ## Questions to Ask Any Vendor About Their Staffing Model
 
@@ -58,11 +58,17 @@ Regardless of which model a vendor proposes, a CTO should ask several specific q
 
 The answers to these questions frequently reveal that a vendor's marketed staffing model and their actual operational practice diverge - a "dedicated team" vendor with quietly high internal rotation, or a "flexible bench" vendor who, in practice, keeps the same engineers on a project far longer than the model's name implies because that is what actually produces good outcomes for their clients. Trust the operational answer over the marketing label every time.
 
+## Pricing the Two Models: Where the Rate Card Hides the Real Comparison
+
+A flexible bench's headline hourly rate almost always looks lower than a dedicated team's blended rate - that comparison alone is misleading. Price both models on cost per shipped, accepted story point over a realistic engagement length, not cost per hour billed. A bench model's lower rate is partly absorbed by the one-to-two-week productivity dip that accompanies every rotation, plus the hours your own people spend re-explaining context. Run the math across even four rotations in a nine-month project and that ramp cost can eat into a 10-15% hourly rate advantage, and on a small team, where each rotation touches a large share of total capacity, it can erase it entirely.
+
+Watch for two specific pricing structures that predict which model a vendor actually delivers under whatever label they use: a dedicated team contract billing 100% of allocated capacity regardless of actual utilization signals genuine exclusivity, while a bench model billing strictly metered hours against tasks completed signals real elasticity. A vendor quoting "dedicated team" pricing but structuring the contract around metered, task-based hours is likely running a bench model with a dedicated-sounding label - ask directly how utilization is billed, since the billing structure itself is a more reliable tell than the marketing name on the proposal.
+
 ## Choosing the Right Model for Your Roadmap
 
 The decision comes down to a fairly narrow question: how much does your project depend on accumulated institutional context versus genuinely variable, hard-to-predict skill needs? A long-running product roadmap with evolving but broadly continuous requirements favors a dedicated team, where the compounding value of institutional knowledge outweighs the flexibility cost. A short, well-defined project, or one with genuinely unpredictable and varied skill demands sprint to sprint, may be better served by a flexible bench, or by the hybrid structure most CTOs ultimately land on once they have run the actual math rather than choosing based on which model sounds more appealing in the abstract.
 
-Talk to our Amsterdam team about which staffing structure - dedicated, flexible, or a hybrid core-plus-overflow model - actually fits your roadmap's real volatility, backed by the operational data from 160+ delivered projects rather than a generic staffing pitch.
+[Talk to our Amsterdam team](https://www.manifera.com/contact-us/) about which staffing structure - dedicated, flexible, or a hybrid core-plus-overflow model - actually fits your roadmap's real volatility, backed by experience from more than 160 apps delivered since 2014 rather than a generic staffing pitch.
 
 <script type="application/ld+json">
 {
@@ -90,12 +96,6 @@ Talk to our Amsterdam team about which staffing structure - dedicated, flexible,
   ]
 }
 </script>
-
-## Pricing the Two Models: Where the Rate Card Hides the Real Comparison
-
-A flexible bench's headline hourly rate almost always looks lower than a dedicated team's blended rate - that comparison alone is misleading. Price both models on cost per shipped, accepted story point over a realistic engagement length, not cost per hour billed. A bench model's lower rate frequently gets absorbed by the one-to-two-week productivity dip that accompanies every rotation; run the math across even four rotations in a nine-month project and the aggregate ramp cost commonly erases a 10-15% hourly rate advantage entirely.
-
-Watch for two specific pricing structures that predict which model a vendor actually delivers under whatever label they use: a dedicated team contract billing 100% of allocated capacity regardless of actual utilization signals genuine exclusivity, while a bench model billing strictly metered hours against tasks completed signals real elasticity. A vendor quoting "dedicated team" pricing but structuring the contract around metered, task-based hours is likely running a bench model with a dedicated-sounding label - ask directly how utilization is billed, since the billing structure itself is a more reliable tell than the marketing name on the proposal.
 
 ## Frequently Asked Questions
 
