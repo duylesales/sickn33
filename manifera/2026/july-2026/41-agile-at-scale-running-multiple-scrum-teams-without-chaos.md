@@ -17,7 +17,7 @@ Content Format: Operational Playbook
   "author": {"@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com"},
   "publisher": {"@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com"},
   "datePublished": "2026-08-10",
-  "dateModified": "2026-08-05"
+  "dateModified": "2026-11-26"
 }
 </script>
 
@@ -37,7 +37,7 @@ The way you organise your teams determines the majority of your coordination ove
 
 3. **Enabling teams** - temporary teams that help other teams adopt new capabilities: introducing a new testing framework, migrating to a new cloud provider, or establishing security best practices. They work with a team for 2-4 sprints, transfer knowledge, and move on.
 
-4. **Complicated-subsystem teams** - the type most scaling guides forget, and the one whose absence causes the most avoidable coordination pain. Small teams of specialists own a genuinely hard, deep-expertise component - a pricing engine, a real-time matching algorithm, a video-encoding pipeline - so no stream-aligned team has to carry that knowledge itself. Skipping it is what forces every stream-aligned team to keep a "part-time expert" on call, which is really just a disguised, unmanaged dependency.
+4. **Complicated-subsystem teams** - the type most scaling guides forget, and the one whose absence causes the most avoidable coordination pain. Small teams of specialists own a genuinely hard, deep-expertise component - a pricing engine, a low-latency matching algorithm, a video-encoding pipeline - so no stream-aligned team has to carry that knowledge itself. Skipping it is what forces every stream-aligned team to keep a "part-time expert" on call, which is really just a disguised, unmanaged dependency.
 
 **The critical principle: minimise cross-team dependencies.** If Team A cannot ship their feature without Team B making a change first, you have a dependency that slows both teams. Redesign your team boundaries so that 80% of features can be delivered by a single team without waiting for another team.
 
@@ -52,7 +52,7 @@ Team Topologies tells you how to shape teams; it does not tell you which named c
 | **Scrum@Scale** | Jeff Sutherland | "Scale-free architecture" - minimum viable bureaucracy that grows organically with team count | Orgs scaling incrementally, avoiding a big-bang rollout | Medium - modular, adopted piece by piece |
 | **Team Topologies** | Matthew Skelton & Manuel Pais | Structural layer: four team types plus interaction modes, not a ceremony framework | Any org, as the foundation underneath whichever (or no) ceremony framework it picks | None alone - usually paired with lightweight Scrum-of-Scrums |
 
-**What the adoption data shows.** Digital.ai's 18th State of Agile Report (2025) found SAFe adoption at 44% among organisations naming a specific scaling framework - up from 26% in the prior year's edition - while describing LeSS and Scrum@Scale as comparatively "fading." The more telling number: 74% of organisations now describe their approach as hybrid or homegrown rather than a textbook rollout of any single framework (treat this as directional, not precise - self-reported surveys have real sampling limits). That matches what we see in practice, and it reinforces the pragmatic path this article already recommends: team topologies for structure, Scrum of Scrums and shared sprint cadences for coordination, and a named ceremony-heavy framework only once problems appear that lighter mechanisms genuinely cannot solve.
+**What the adoption data shows.** Digital.ai's 18th State of Agile Report (2025) found SAFe still the most-cited named scaling framework, at 44% - well below its 53% peak a few years earlier - with Scrum@Scale and the other named frameworks further behind. The more telling number: 74% of organisations now describe their approach as hybrid or homegrown rather than a textbook rollout of any single framework (treat this as directional, not precise - the 2025 edition surveyed roughly 350 respondents, mostly agile coaches and consultants at large enterprises). That matches what we see in practice, and it reinforces the pragmatic path this article already recommends: team topologies for structure, Scrum of Scrums and shared sprint cadences for coordination, and a named ceremony-heavy framework only once problems appear that lighter mechanisms genuinely cannot solve.
 
 ## Coordination Mechanisms That Actually Work
 
@@ -116,7 +116,7 @@ A practical trigger: once a single team's backlog spans more than two distinct b
 
 Distributed agile adds complexity because ceremonies cannot always happen synchronously. At Manifera, our teams in Amsterdam and Ho Chi Minh City maintain agile velocity through structured async practices and strategic overlap hours.
 
-Our [dedicated development teams](https://www.manifera.com/services/dedicated-development-teams/) operate as fully integrated Scrum teams with local Scrum Masters in Vietnam and Product Owners in the Netherlands, maintaining the cadence that keeps multi-team projects on track.
+Our [dedicated development teams](https://www.manifera.com/services/offshore-software-development/) operate as fully integrated Scrum teams with local Scrum Masters in Vietnam and Product Owners in the Netherlands, maintaining the cadence that keeps multi-team projects on track.
 
 Scale your engineering team effectively - [manifera.com/contact-us](https://www.manifera.com/contact-us/).
 
@@ -150,7 +150,7 @@ Use the seed-and-split method: identify a natural fault line in the codebase or 
 
 ### What is the difference between LeSS and Scrum@Scale, and is either better than SAFe for a mid-size company? (Scenario: VP Engineering at a 60-person organisation comparing named scaling frameworks before a board presentation)
 
-Both scale Scrum's original simplicity outward rather than adding SAFe's layered governance on top of it. LeSS (Craig Larman and Bas Vodde) is built around de-scaling: one Product Backlog, one Product Owner, one Definition of Done, and one shared Sprint across up to eight teams. Scrum@Scale (Jeff Sutherland) uses a "scale-free architecture" - a minimum viable bureaucracy meant to grow organically with team count rather than require a big-bang rollout. Neither carries SAFe's Program Increment planning or Release Train Engineer roles, making both lighter starting points for a 60-person organisation. Digital.ai's State of Agile research has tracked both as comparatively "fading" relative to SAFe's rebound and rising hybrid adoption - in practice, most mid-size organisations borrow ideas from all three rather than certifying into one wholesale, which is a defensible answer for a board as long as it is a deliberate choice.
+Both scale Scrum's original simplicity outward rather than adding SAFe's layered governance on top of it. LeSS (Craig Larman and Bas Vodde) is built around de-scaling: one Product Backlog, one Product Owner, one Definition of Done, and one shared Sprint across up to eight teams. Scrum@Scale (Jeff Sutherland) uses a "scale-free architecture" - a minimum viable bureaucracy meant to grow organically with team count rather than require a big-bang rollout. Neither carries SAFe's Program Increment planning or Release Train Engineer roles, making both lighter starting points for a 60-person organisation. In Digital.ai's 2025 State of Agile survey, SAFe remained the most-cited named framework while 74% of respondents described a hybrid or homegrown approach - in practice, most mid-size organisations borrow ideas from all three rather than certifying into one wholesale, which is a defensible answer for a board as long as it is a deliberate choice.
 
 <script type="application/ld+json">
 {
@@ -210,7 +210,7 @@ Both scale Scrum's original simplicity outward rather than adding SAFe's layered
       "name": "What is the difference between LeSS and Scrum@Scale, and is either better than SAFe for a mid-size company?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "LeSS (Craig Larman and Bas Vodde) de-scales Scrum: one Product Backlog, one Product Owner, one Definition of Done, one shared Sprint across up to eight teams. Scrum@Scale (Jeff Sutherland) uses a 'scale-free architecture' that grows organically without a big-bang rollout. Both are lighter than SAFe's Program Increment planning and Release Train Engineer roles. Digital.ai's State of Agile research tracks both as fading relative to SAFe's rebound and rising hybrid adoption; most mid-size organisations borrow from all three rather than certifying into one."
+        "text": "LeSS (Craig Larman and Bas Vodde) de-scales Scrum: one Product Backlog, one Product Owner, one Definition of Done, one shared Sprint across up to eight teams. Scrum@Scale (Jeff Sutherland) uses a 'scale-free architecture' that grows organically without a big-bang rollout. Both are lighter than SAFe's Program Increment planning and Release Train Engineer roles. In Digital.ai's 2025 State of Agile survey, 74% of respondents described a hybrid or homegrown approach; most mid-size organisations borrow from all three rather than certifying into one."
       }
     }
   ]
