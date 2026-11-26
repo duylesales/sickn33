@@ -5,6 +5,22 @@
 ### Tháng 11
 #### Ngày 26
 
+- **Đăng tải bài viết song ngữ EN & NL (Bài 23 - Cụm Extra 15 Addation) lên website LaunchStudio kèm Pre-Flight Duplicate Check, Geotagging & Metadata**:
+  - **Bài viết EN**: [`launchstudio/2026-extra/extra-15-addation/23-cookieless-analytics-for-eu-saas-plausible-vs-ga4.md`](file:///Users/mac/Library/Mobile%20Documents/com~apple~CloudDocs/sickn33/launchstudio/2026-extra/extra-15-addation/23-cookieless-analytics-for-eu-saas-plausible-vs-ga4.md)
+  - **Bài viết NL**: [`launchstudio/2026-extra/extra-15-addation/23-cookieless-analytics-for-eu-saas-plausible-vs-ga4-dutch.md`](file:///Users/mac/Library/Mobile%20Documents/com~apple~CloudDocs/sickn33/launchstudio/2026-extra/extra-15-addation/23-cookieless-analytics-for-eu-saas-plausible-vs-ga4-dutch.md)
+  - **Tiêu đề EN**: *Cookieless Analytics for EU SaaS: Plausible vs GA4*
+  - **Tiêu đề NL**: *Cookieloze Analytics voor EU-SaaS: Plausible vs GA4*
+  - **Slug Full Title EN / NL**: `cookieless-analytics-for-eu-saas-plausible-vs-ga4` / `cookieloze-analytics-voor-eu-saas-plausible-vs-ga4`
+  - **Thao tác kỹ thuật**:
+    - **Pre-Flight Duplicate Check**: Kiểm tra trên `launchstudio.eu` (`wp_list_posts` với `status="any"`), xác nhận chưa có bài trùng lặp.
+    - **Geotagging & Media Upload**: Tải lên banner đã nhúng GPS trụ sở Amsterdam (`52.366841`, `4.887593`), Title, Description và Keywords vào EXIF/PNG (Attachment ID: `2295`).
+    - **Đăng tải bản EN (Post ID: 2296)**: Trạng thái `publish`, danh mục `[4, 26]` (*Technical*, *Strategy*), banner ID `2295`, gán ngôn ngữ Polylang `en`, card case study `.article-case`, 5 câu hỏi FAQs accordion `<details><summary>` với heading chuẩn `<h3>FAQs</h3>`.
+    - **Đăng tải bản NL (Post ID: 2297)**: Trạng thái `publish`, danh mục `[41, 43]` (*Technisch*, *Strategie*), banner ID `2295`, gán ngôn ngữ Polylang `nl`, card case study `.article-case`, 5 câu hỏi FAQs accordion `<details><summary>` với heading chuẩn `<h3>FAQs</h3>` (đã sửa lỗi chính tả `Verzamざelde` -> `Verzamelde`).
+    - **Cập nhật Content Inventory**: Đánh dấu `✅` hoàn thành cho Bài 23 (extra-15-addation) trong [`launchstudio/extra_content_inventory.md`](file:///Users/mac/Library/Mobile%20Documents/com~apple~CloudDocs/sickn33/launchstudio/extra_content_inventory.md).
+  - **Trạng thái xuất bản**:
+    - EN: [https://launchstudio.eu/en/cookieless-analytics-for-eu-saas-plausible-vs-ga4/](https://launchstudio.eu/en/cookieless-analytics-for-eu-saas-plausible-vs-ga4/) (Post ID: `2296`)
+    - NL: [https://launchstudio.eu/cookieloze-analytics-voor-eu-saas-plausible-vs-ga4/](https://launchstudio.eu/cookieloze-analytics-voor-eu-saas-plausible-vs-ga4/) (Post ID: `2297`)
+
 - **Đăng tải bài viết song ngữ EN & NL (Bài 17 - Cụm Extra 15 Addation) lên website LaunchStudio kèm Pre-Flight Duplicate Check, Geotagging & Metadata**:
   - **Bài viết EN**: [`launchstudio/2026-extra/extra-15-addation/17-peppol-e-invoicing-for-saas-in-belgium-and-the-netherlands.md`](file:///Users/mac/Library/Mobile%20Documents/com~apple~CloudDocs/sickn33/launchstudio/2026-extra/extra-15-addation/17-peppol-e-invoicing-for-saas-in-belgium-and-the-netherlands.md)
   - **Bài viết NL**: [`launchstudio/2026-extra/extra-15-addation/17-peppol-e-invoicing-for-saas-in-belgium-and-the-netherlands-dutch.md`](file:///Users/mac/Library/Mobile%20Documents/com~apple~CloudDocs/sickn33/launchstudio/2026-extra/extra-15-addation/17-peppol-e-invoicing-for-saas-in-belgium-and-the-netherlands-dutch.md)

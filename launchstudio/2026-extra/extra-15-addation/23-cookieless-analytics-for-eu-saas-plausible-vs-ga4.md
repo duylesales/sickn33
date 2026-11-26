@@ -178,9 +178,9 @@ LaunchStudio removed the hard-coded Google Analytics snippet and installed Plaus
 > *"I thought analytics meant pasting a Google snippet. Doing it properly gave me better data and a reply I could send to that parent with confidence."*
 > - **Laura Hermans, Founder, Studiemaatje (Leiden)**
 
-**Cost & Timeline:** €1,750 (Launch Ready package: analytics redesign, funnel events, consent management, Consent Mode setup and privacy policy inputs) - completed in 6 business days.
+**Cost & Timeline:** €1,750 [Launch Ready package: analytics redesign, funnel events, consent management, Consent Mode setup and privacy policy inputs] - completed in 6 business days.
 
-## Frequently Asked Questions
+## FAQs
 
 ### Do I need a cookie banner if I use Plausible?
 

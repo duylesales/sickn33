@@ -165,7 +165,7 @@ LaunchStudio wordt ondersteund door Manifera, een softwarebedrijf met meer dan 1
 
 ## Praktijkvoorbeeld
 
-### Een AI-Native Oprichter in Actie: Het Studieplatform Dat Data Verzamざelde Zonder Toestemming
+### Een AI-Native Oprichter in Actie: Het Studieplatform Dat Data Verzamelde Zonder Toestemming
 
 Laura Hermans bouwde Studiemaatje in Lovable: een platform waar middelbare scholieren online studiebegeleiding en examentraining boeken, met een marketingwebsite gebouwd in Framer. Ze had Lovable gevraagd om "Google Analytics toe te voegen", installeerde een gratis cookiebanner van een template op haar Framer-site en zette Google Ads in om leerlingen te werven.
 
@@ -178,9 +178,9 @@ LaunchStudio saneerde de hard-coded scripts en installeerde Plausible op zowel d
 > *"Ik dacht dat websitestatistieken gewoon neerkwamen op het plakken van een Google-scriptje. Door het professioneel in te richten kreeg ik veel betere data en een antwoord dat ik met een gerust hart naar die bezorgde ouder kon sturen."*
 > - **Laura Hermans, Oprichter, Studiemaatje (Leiden)**
 
-**Kosten & Doorlooptijd:** €1.750 (Launch Ready-pakket: herinrichting van analytics, funnel-events, cookiebanner met Consent Mode en input voor de privacyverklaring) - afgerond in 6 werkdagen.
+**Kosten & Doorlooptijd:** €1.750 [Launch Ready-pakket: herinrichting van analytics, funnel-events, cookiebanner met Consent Mode en input voor de privacyverklaring] - afgerond in 6 werkdagen.
 
-## Veelgestelde Vragen
+## FAQs
 
 ### Heb ik een cookiebanner nodig als ik alleen Plausible gebruik?
 
