@@ -5,6 +5,22 @@
 ### Tháng 11
 #### Ngày 27
 
+- **Đăng tải bài viết song ngữ EN & NL (Bài 17 - Cụm Extra 5 Local) lên website LaunchStudio kèm Pre-Flight Duplicate Check, Geotagging & Metadata (`upload_to_wordpress.py`)**:
+  - **Bài viết EN**: [`launchstudio/2026-extra/extra-5-local/17-ai-software-development-arnhem.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-5-local/17-ai-software-development-arnhem.md)
+  - **Bài viết NL**: [`launchstudio/2026-extra/extra-5-local/17-ai-software-development-arnhem-dutch.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-5-local/17-ai-software-development-arnhem-dutch.md)
+  - **Tiêu đề EN**: *AI Software Development in Arnhem: Where the Real Work Starts After the Demo*
+  - **Tiêu đề NL**: *AI-softwareontwikkeling in Arnhem: Waar het echte werk begint na de demo*
+  - **Slug Full Title EN / NL**: `ai-software-development-in-arnhem-where-the-real-work-starts-after-the-demo` / `ai-softwareontwikkeling-in-arnhem-waar-het-echte-werk-begint-na-de-demo`
+  - **Thao tác kỹ thuật**:
+    - **Pre-Flight Duplicate Check**: Kiểm tra tự động trên website `launchstudio.eu`, xác nhận không có bài viết trùng lặp trước khi khởi tạo.
+    - **Geotagging & Metadata**: Tải lên banner đã được nhúng metadata GPS Arnhem (`51.9851`, `5.8987`), focus keywords và mô tả chi tiết vào EXIF/PNG (Attachment ID: `2323`).
+    - **Đăng tải bản EN (Post ID: 2324)**: Trạng thái `publish`, danh mục `[4, 26]` (*Technical*, *Strategy*), banner ID `2323`, gán ngôn ngữ Polylang `en`, định dạng case study `.article-case` (`## Real example`), và 5 câu hỏi FAQs accordion semantic HTML5 `<details><summary>` kèm heading chuẩn `<h3>FAQs</h3>`.
+    - **Đồng bộ bản NL (Post ID: 2325)**: Trạng thái `publish`, danh mục `[41, 43]` (*Technisch*, *Strategie*), kế thừa banner ID `2323`, gán ngôn ngữ Polylang `nl`, cập nhật metadata GPS Arnhem, định dạng case study `.article-case` (`## Echt voorbeeld`), và 5 câu hỏi FAQs accordion semantic HTML5.
+    - **Cập nhật Content Inventory**: Đánh dấu `✅` hoàn thành cho Bài 17 (Extra 5 Local) trong [`launchstudio/extra_content_inventory.md`](file:///Users/duyle/sickn33/launchstudio/extra_content_inventory.md).
+  - **Trạng thái xuất bản**:
+    - EN: [https://launchstudio.eu/ai-software-development-in-arnhem-where-the-real-work-starts-after-the-demo/](https://launchstudio.eu/ai-software-development-in-arnhem-where-the-real-work-starts-after-the-demo/) (Post ID: `2324`)
+    - NL: [https://launchstudio.eu/ai-softwareontwikkeling-in-arnhem-waar-het-echte-werk-begint-na-de-demo/](https://launchstudio.eu/ai-softwareontwikkeling-in-arnhem-waar-het-echte-werk-begint-na-de-demo/) (Post ID: `2325`)
+
 - **Đăng tải bài viết song ngữ EN & NL (Bài 18 - Cụm Extra 5 Local) lên website LaunchStudio kèm Pre-Flight Duplicate Check, Geotagging & Metadata (`upload_to_wordpress.py`)**:
   - **Bài viết EN**: [`launchstudio/2026-extra/extra-5-local/18-develop-ai-software-apeldoorn.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-5-local/18-develop-ai-software-apeldoorn.md)
   - **Bài viết NL**: [`launchstudio/2026-extra/extra-5-local/18-develop-ai-software-apeldoorn-dutch.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-5-local/18-develop-ai-software-apeldoorn-dutch.md)
