@@ -5,6 +5,22 @@
 ### Tháng 11
 #### Ngày 27
 
+- **Đăng tải bài viết song ngữ EN & NL (Bài 18 - Cụm Extra 5 Local) lên website LaunchStudio kèm Pre-Flight Duplicate Check, Geotagging & Metadata (`upload_to_wordpress.py`)**:
+  - **Bài viết EN**: [`launchstudio/2026-extra/extra-5-local/18-develop-ai-software-apeldoorn.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-5-local/18-develop-ai-software-apeldoorn.md)
+  - **Bài viết NL**: [`launchstudio/2026-extra/extra-5-local/18-develop-ai-software-apeldoorn-dutch.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-5-local/18-develop-ai-software-apeldoorn-dutch.md)
+  - **Tiêu đề EN**: *How to Develop AI Software in Apeldoorn Without Rebuilding From Scratch*
+  - **Tiêu đề NL**: *AI-software ontwikkelen in Apeldoorn zonder vanaf nul te herstructureren*
+  - **Slug Full Title EN / NL**: `how-to-develop-ai-software-in-apeldoorn-without-rebuilding-from-scratch` / `ai-software-ontwikkelen-in-apeldoorn-zonder-vanaf-nul-te-herstructureren`
+  - **Thao tác kỹ thuật**:
+    - **Pre-Flight Duplicate Check**: Kiểm tra tự động trên website `launchstudio.eu`, xác nhận không có bài viết trùng lặp trước khi khởi tạo.
+    - **Geotagging & Metadata**: Tải lên banner đã được nhúng metadata GPS Apeldoorn (`52.2112`, `5.9699`), focus keywords và mô tả chi tiết vào EXIF/PNG (Attachment ID: `2318`).
+    - **Đăng tải bản EN (Post ID: 2319)**: Trạng thái `publish`, danh mục `[4, 26]` (*Technical*, *Strategy*), banner ID `2318`, gán ngôn ngữ Polylang `en`, định dạng case study `.article-case` (`## Real example`), và 5 câu hỏi FAQs accordion semantic HTML5 `<details><summary>` kèm heading chuẩn `<h3>FAQs</h3>`.
+    - **Đồng bộ bản NL (Post ID: 2320)**: Trạng thái `publish`, danh mục `[41, 43]` (*Technisch*, *Strategie*), kế thừa banner ID `2318`, gán ngôn ngữ Polylang `nl`, cập nhật metadata GPS Apeldoorn, định dạng case study `.article-case`, và 5 câu hỏi FAQs accordion semantic HTML5.
+    - **Cập nhật Content Inventory**: Đánh dấu `✅` hoàn thành cho Bài 18 (Extra 5 Local) trong [`launchstudio/extra_content_inventory.md`](file:///Users/duyle/sickn33/launchstudio/extra_content_inventory.md).
+  - **Trạng thái xuất bản**:
+    - EN: [https://launchstudio.eu/how-to-develop-ai-software-in-apeldoorn-without-rebuilding-from-scratch/](https://launchstudio.eu/how-to-develop-ai-software-in-apeldoorn-without-rebuilding-from-scratch/) (Post ID: `2319`)
+    - NL: [https://launchstudio.eu/ai-software-ontwikkelen-in-apeldoorn-zonder-vanaf-nul-te-herstructureren/](https://launchstudio.eu/ai-software-ontwikkelen-in-apeldoorn-zonder-vanaf-nul-te-herstructureren/) (Post ID: `2320`)
+
 - **Đăng tải bài viết song ngữ EN & NL (Bài 32 - Cụm Extra 15 Addation) lên website LaunchStudio kèm Pre-Flight Duplicate Check, Geotagging & Metadata (`upload_to_wordpress.py`)**:
   - **Bài viết EN**: [`launchstudio/2026-extra/extra-15-addation/32-sentry-error-monitoring-for-lovable-and-supabase-apps.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-15-addation/32-sentry-error-monitoring-for-lovable-and-supabase-apps.md)
   - **Bài viết NL**: [`launchstudio/2026-extra/extra-15-addation/32-sentry-error-monitoring-for-lovable-and-supabase-apps-dutch.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-15-addation/32-sentry-error-monitoring-for-lovable-and-supabase-apps-dutch.md)
