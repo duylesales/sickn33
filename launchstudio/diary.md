@@ -5,6 +5,22 @@
 ### Tháng 11
 #### Ngày 27
 
+- **Đăng tải bài viết song ngữ EN & NL (Bài 41 - Tháng 8/2026) lên website LaunchStudio kèm Pre-Flight Duplicate Check, Geotagging & Metadata (`upload_to_wordpress.py`)**:
+  - **Bài viết EN**: [`launchstudio/2026/august-2026/41-gdpr-ai-navigating-regulatory-minefield.md`](file:///Users/duyle/sickn33/launchstudio/2026/august-2026/41-gdpr-ai-navigating-regulatory-minefield.md)
+  - **Bài viết NL**: [`launchstudio/2026/august-2026/41-gdpr-ai-navigating-regulatory-minefield_dutch.md`](file:///Users/duyle/sickn33/launchstudio/2026/august-2026/41-gdpr-ai-navigating-regulatory-minefield_dutch.md)
+  - **Tiêu đề EN**: *GDPR Compliance and AI Data Security: A Practical Guide for European SaaS Founders*
+  - **Tiêu đề NL**: *AVG Naleving en AI Databeveiliging: Een Praktische Gids voor Europese SaaS Oprichters*
+  - **Slug Full Title EN / NL**: `gdpr-compliance-and-ai-data-security-a-practical-guide-for-european-saas-founders` / `avg-naleving-en-ai-databeveiliging-een-praktische-gids-voor-europese-saas-oprichters`
+  - **Thao tác kỹ thuật**:
+    - **Pre-Flight Duplicate Check**: Kiểm tra tự động trên website `launchstudio.eu`, xác nhận không có bài viết trùng lặp trước khi khởi tạo.
+    - **Geotagging & Metadata**: Tải lên banner đã được nhúng metadata GPS trụ sở Amsterdam (`52.366841`, `4.887593`), focus keywords và mô tả chi tiết vào EXIF/PNG (Attachment ID: `2304`).
+    - **Đăng tải bản EN (Post ID: 2305)**: Trạng thái `publish`, danh mục `[34, 4]` (*Security*, *Technical*), banner ID `2304`, gán ngôn ngữ Polylang `en`, định dạng case study `.article-case` (`## Real example`), và 5 câu hỏi FAQs accordion semantic HTML5 `<details><summary>` kèm heading chuẩn `<h3>FAQs</h3>`.
+    - **Đồng bộ bản NL (Post ID: 2306)**: Trạng thái `publish`, danh mục `[45, 41]` (*Beveiliging*, *Technisch*), kế thừa banner ID `2304`, gán ngôn ngữ Polylang `nl`, định dạng case study `.article-case` (`## Echt voorbeeld`), và 5 câu hỏi FAQs accordion semantic HTML5.
+    - **Cập nhật Content Inventory**: Đánh dấu `✅` hoàn thành cho Bài 41 (August 2026) trong [`launchstudio/content_inventory.md`](file:///Users/duyle/sickn33/launchstudio/content_inventory.md).
+  - **Trạng thái xuất bản**:
+    - EN: [https://launchstudio.eu/gdpr-compliance-and-ai-data-security-a-practical-guide-for-european-saas-founders/](https://launchstudio.eu/gdpr-compliance-and-ai-data-security-a-practical-guide-for-european-saas-founders/) (Post ID: `2305`)
+    - NL: [https://launchstudio.eu/avg-naleving-en-ai-databeveiliging-een-praktische-gids-voor-europese-saas-oprichters/](https://launchstudio.eu/avg-naleving-en-ai-databeveiliging-een-praktische-gids-voor-europese-saas-oprichters/) (Post ID: `2306`)
+
 - **Đăng tải bài viết song ngữ EN & NL (Bài 25 - Tháng 8/2026) lên website LaunchStudio kèm Pre-Flight Duplicate Check, Geotagging & Metadata (`upload_to_wordpress.py`)**:
   - **Bài viết EN**: [`launchstudio/2026/august-2026/25-upselling-ai-features-existing-saas-customers.md`](file:///Users/duyle/sickn33/launchstudio/2026/august-2026/25-upselling-ai-features-existing-saas-customers.md)
   - **Bài viết NL**: [`launchstudio/2026/august-2026/25-upselling-ai-features-existing-saas-customers_dutch.md`](file:///Users/duyle/sickn33/launchstudio/2026/august-2026/25-upselling-ai-features-existing-saas-customers_dutch.md)
