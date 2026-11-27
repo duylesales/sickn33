@@ -6,6 +6,25 @@
 
 #### Ngày 27
 
+- **Đăng tải bài viết 02 (tháng 9/2026) lên website Manifera qua upload_to_wordpress.py**:
+  - **Bài viết**: [`manifera/2026/september-2026/02-software-development-manager.md`](./2026/september-2026/02-software-development-manager.md)
+  - **Tiêu đề**: *The Software Development Manager: Why Offshore Teams Fail Without Dutch Governance*
+  - **Slug**: `the-software-development-manager-why-offshore-teams-fail-without-dutch-governance`
+  - **Pre-flight check**: Kiểm tra slug và tiêu đề với `status=any`. Không trùng lặp trên manifera.com.
+  - **Chuẩn hóa nội dung**:
+    - Tiêu đề FAQ: Chuẩn hóa `## Frequently Asked Questions` -> `## FAQs`.
+    - Số lượng FAQ: Chuẩn hóa đúng 5 FAQs theo quy định hệ thống.
+    - Thẻ tình huống FAQ: Chuẩn hóa `[Scenario: ...]` theo quy định hệ thống.
+    - Đảm bảo 0 em dash `—` và 0 en dash `–`.
+  - **Thao tác kỹ thuật**:
+    - Ảnh đại diện: Geotag tọa độ HQ Amsterdam (`52.366841, 4.887593`) kèm Title và Keywords vào metadata EXIF của `02-software-development-manager_pic.jpg`.
+    - Upload media qua GitHub Raw URL: Attachment ID `25639`.
+    - Tự động bổ sung thông tin vị trí và từ khóa vào Caption / Description của media.
+    - Tạo bài viết: Post ID `25640`, trạng thái Bản nháp (Draft), tự động gắn tags từ keywords.
+    - Yoast SEO: Focus Keyword `software development manager`, Meta Description được đồng bộ đầy đủ.
+    - Post Meta: Tọa độ địa lý Amsterdam (`geo_latitude: 52.366841`, `geo_longitude: 4.887593`, `geo_city: Amsterdam`, `geo_address: Herengracht 420, 1017 BZ Amsterdam, Netherlands`).
+  - **Trạng thái**: Bản nháp (Draft) tại https://www.manifera.com/?p=25640. Đã đánh dấu ✅ ở cột "Đã Post lên" trong `manifera/content_inventory.md`.
+
 - **Đăng tải bài viết 01 (tháng 9/2026) lên website Manifera qua upload_to_wordpress.py**:
   - **Bài viết**: [`manifera/2026/september-2026/01-development-in-cloud.md`](./2026/september-2026/01-development-in-cloud.md)
   - **Tiêu đề**: *Development in Cloud: Escaping the "Lift and Shift" Architectural Trap*
