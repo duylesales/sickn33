@@ -6,6 +6,24 @@
 
 #### Ngày 27
 
+- **Đăng tải bài viết 01 (tháng 9/2026) lên website Manifera qua upload_to_wordpress.py**:
+  - **Bài viết**: [`manifera/2026/september-2026/01-development-in-cloud.md`](./2026/september-2026/01-development-in-cloud.md)
+  - **Tiêu đề**: *Development in Cloud: Escaping the "Lift and Shift" Architectural Trap*
+  - **Slug**: `development-in-cloud-escaping-the-lift-and-shift-architectural-trap`
+  - **Pre-flight check**: Kiểm tra slug và tiêu đề với `status=any`. Không trùng lặp trên manifera.com.
+  - **Chuẩn hóa nội dung**:
+    - Tiêu đề FAQ: Chuẩn hóa `## Frequently Asked Questions` -> `## FAQs`.
+    - Thẻ tình huống FAQ: Chuẩn hóa `[Scenario: ...]` theo quy định hệ thống.
+    - Sửa en dash trong bảng chi phí (`€9,000–€11,000` -> `€9,000-€11,000`, `€3,500–€4,800` -> `€3,500-€4,800`), đảm bảo 0 em dash `—` và 0 en dash `–`.
+  - **Thao tác kỹ thuật**:
+    - Ảnh đại diện: Geotag tọa độ HQ Amsterdam (`52.366841, 4.887593`) kèm Title và Keywords vào metadata EXIF của `01-development-in-cloud_pic.jpg`.
+    - Upload media qua GitHub Raw URL: Attachment ID `25637`.
+    - Tự động bổ sung thông tin vị trí và từ khóa vào Caption / Description của media.
+    - Tạo bài viết: Post ID `25638`, trạng thái Bản nháp (Draft), danh mục `12` (Outsourcing) và `25` (Web Apps), tự động gắn tags từ keywords.
+    - Yoast SEO: Focus Keyword `development in cloud`, Meta Description được đồng bộ đầy đủ.
+    - Post Meta: Tọa độ địa lý Amsterdam (`geo_latitude: 52.366841`, `geo_longitude: 4.887593`, `geo_city: Amsterdam`, `geo_address: Herengracht 420, 1017 BZ Amsterdam, Netherlands`).
+  - **Trạng thái**: Bản nháp (Draft) tại https://www.manifera.com/?p=25638. Đã đánh dấu ✅ trước tiêu đề và cột trạng thái trong `manifera/content_inventory.md`.
+
 - **Đăng tải bài viết 59 (tháng 8/2026) lên website Manifera qua upload_to_wordpress.py**:
   - **Bài viết**: [`manifera/2026/august-2026/59-saas-app-development.md`](./2026/august-2026/59-saas-app-development.md)
   - **Tiêu đề**: *SaaS App Development: The Architecture of Multi-Tenant Security*
