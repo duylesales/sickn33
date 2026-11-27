@@ -208,7 +208,7 @@ Engineers implementeerden automatische HEIC-naar-JPEG-conversie met een fallback
 
 **Kosten & Doorlooptijd:** €2.200 (Launch Ready-pakket: Sentry-inrichting met source maps en privacy-scrubbing, GitHub CI/CD-pijplijn, error boundaries en het oplossen van drie kritieke productiefouten) - afgerond in 7 werkdagen.
 
-## Veelgestelde Vragen
+## FAQs
 
 ### Heb ik error monitoring nodig als Supabase al over logs beschikt?
 

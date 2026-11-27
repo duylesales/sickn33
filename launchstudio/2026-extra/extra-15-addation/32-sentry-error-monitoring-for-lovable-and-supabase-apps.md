@@ -228,7 +228,7 @@ Engineers added HEIC conversion with a fallback, fixed number parsing for Dutch 
 
 **Cost & Timeline:** €2,200 (Launch Ready package: Sentry setup with source maps and privacy settings, deployment pipeline, error boundaries and fixes for three critical bugs) - completed in 7 business days.
 
-## Frequently Asked Questions
+## FAQs
 
 ### Do I need error monitoring if Supabase already has logs?
 
