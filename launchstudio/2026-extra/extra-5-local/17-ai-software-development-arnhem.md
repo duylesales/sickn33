@@ -72,7 +72,7 @@ The trouble started with billing. StyleCrate's subscription logic, generated to 
 
 ---
 
-## Frequently Asked Questions
+## FAQs
 
 ### What's included in "AI software development" versus what LaunchStudio adds?
 AI software development typically covers the application interface and basic logic generated from prompts. LaunchStudio adds the production layer: security, database architecture, payment reliability, and hosting that the AI tool doesn't fully handle on its own.

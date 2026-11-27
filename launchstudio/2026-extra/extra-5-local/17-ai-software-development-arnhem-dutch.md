@@ -72,7 +72,7 @@ De problemen begonnen bij de facturering. De abonnementslogica van StyleCrate, g
 
 ---
 
-## Veelgestelde vragen
+## FAQs
 
 ### Wat is inbegrepen in "AI-softwareontwikkeling" versus wat LaunchStudio toevoegt?
 AI-softwareontwikkeling omvat doorgaans de applicatie-interface en basislogica gegenereerd uit prompts. LaunchStudio voegt de productielaag toe: beveiliging, database-architectuur, betrouwbaarheid van betalingen en hosting die de AI-tool zelfstandig niet volledig afhandelt.
