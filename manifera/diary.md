@@ -6,6 +6,96 @@
 
 #### Ngày 27
 
+- **Đăng tải bài viết 40 (tháng 10/2026) lên website Manifera qua upload_to_wordpress.py**:
+  - **Bài viết**: [`manifera/2026/october-2026/40-mobile-app-developers-near-me.md`](./manifera/2026/october-2026/40-mobile-app-developers-near-me.md)
+  - **Tiêu đề**: **
+  - **Slug**: ``
+  - **Pre-flight check**: Kiểm tra slug và tiêu đề với `status=any`. Không trùng lặp trên manifera.com.
+  - **Chuẩn hóa nội dung**:
+    - Tiêu đề FAQ: Chuẩn hóa `## FAQs`.
+    - Số lượng FAQ: Chuẩn hóa đúng 5 FAQs theo quy định hệ thống.
+    - Thẻ tình huống FAQ: Chuẩn hóa `[Scenario: ...]` theo quy định hệ thống.
+    - Đảm bảo 0 em dash `—` và 0 en dash `–`.
+  - **Thao tác kỹ thuật**:
+    - Ảnh đại diện: Geotag tọa độ HQ Amsterdam (`52.366841, 4.887593`) kèm Title và Keywords vào metadata EXIF.
+    - Upload media qua GitHub Raw URL: Attachment ID ``.
+    - Tạo bài viết: Post ID `25840`, trạng thái Bản nháp (Draft), tự động gắn tags từ keywords.
+    - Yoast SEO: Focus Keyword ``, Meta Description được đồng bộ đầy đủ.
+    - Post Meta: Tọa độ địa lý Amsterdam (`geo_latitude: 52.366841`, `geo_longitude: 4.887593`, `geo_city: Amsterdam`, `geo_address: Herengracht 420, 1017 BZ Amsterdam, Netherlands`).
+  - **Trạng thái**: Bản nháp (Draft) tại https://www.manifera.com/?p=25840. Đã đánh dấu ✅ ở cột "Đã Post lên" trong `manifera/content_inventory.md`.
+
+- **Đăng tải bài viết 39 (tháng 10/2026) lên website Manifera qua upload_to_wordpress.py**:
+  - **Bài viết**: [`manifera/2026/october-2026/39-mobile-app-developer-singapore.md`](./manifera/2026/october-2026/39-mobile-app-developer-singapore.md)
+  - **Tiêu đề**: **
+  - **Slug**: ``
+  - **Pre-flight check**: Kiểm tra slug và tiêu đề với `status=any`. Không trùng lặp trên manifera.com.
+  - **Chuẩn hóa nội dung**:
+    - Tiêu đề FAQ: Chuẩn hóa `## FAQs`.
+    - Số lượng FAQ: Chuẩn hóa đúng 5 FAQs theo quy định hệ thống.
+    - Thẻ tình huống FAQ: Chuẩn hóa `[Scenario: ...]` theo quy định hệ thống.
+    - Đảm bảo 0 em dash `—` và 0 en dash `–`.
+  - **Thao tác kỹ thuật**:
+    - Ảnh đại diện: Geotag tọa độ HQ Amsterdam (`52.366841, 4.887593`) kèm Title và Keywords vào metadata EXIF.
+    - Upload media qua GitHub Raw URL: Attachment ID ``.
+    - Tạo bài viết: Post ID `25838`, trạng thái Bản nháp (Draft), tự động gắn tags từ keywords.
+    - Yoast SEO: Focus Keyword ``, Meta Description được đồng bộ đầy đủ.
+    - Post Meta: Tọa độ địa lý Amsterdam (`geo_latitude: 52.366841`, `geo_longitude: 4.887593`, `geo_city: Amsterdam`, `geo_address: Herengracht 420, 1017 BZ Amsterdam, Netherlands`).
+  - **Trạng thái**: Bản nháp (Draft) tại https://www.manifera.com/?p=25838. Đã đánh dấu ✅ ở cột "Đã Post lên" trong `manifera/content_inventory.md`.
+
+- **Đăng tải bài viết 38 (tháng 10/2026) lên website Manifera qua upload_to_wordpress.py**:
+  - **Bài viết**: [`manifera/2026/october-2026/38-mobile-app-developer-services.md`](./manifera/2026/october-2026/38-mobile-app-developer-services.md)
+  - **Tiêu đề**: **
+  - **Slug**: ``
+  - **Pre-flight check**: Kiểm tra slug và tiêu đề với `status=any`. Không trùng lặp trên manifera.com.
+  - **Chuẩn hóa nội dung**:
+    - Tiêu đề FAQ: Chuẩn hóa `## FAQs`.
+    - Số lượng FAQ: Chuẩn hóa đúng 5 FAQs theo quy định hệ thống.
+    - Thẻ tình huống FAQ: Chuẩn hóa `[Scenario: ...]` theo quy định hệ thống.
+    - Đảm bảo 0 em dash `—` và 0 en dash `–`.
+  - **Thao tác kỹ thuật**:
+    - Ảnh đại diện: Geotag tọa độ HQ Amsterdam (`52.366841, 4.887593`) kèm Title và Keywords vào metadata EXIF.
+    - Upload media qua GitHub Raw URL: Attachment ID ``.
+    - Tạo bài viết: Post ID `25836`, trạng thái Bản nháp (Draft), tự động gắn tags từ keywords.
+    - Yoast SEO: Focus Keyword ``, Meta Description được đồng bộ đầy đủ.
+    - Post Meta: Tọa độ địa lý Amsterdam (`geo_latitude: 52.366841`, `geo_longitude: 4.887593`, `geo_city: Amsterdam`, `geo_address: Herengracht 420, 1017 BZ Amsterdam, Netherlands`).
+  - **Trạng thái**: Bản nháp (Draft) tại https://www.manifera.com/?p=25836. Đã đánh dấu ✅ ở cột "Đã Post lên" trong `manifera/content_inventory.md`.
+
+- **Đăng tải bài viết 37 (tháng 10/2026) lên website Manifera qua upload_to_wordpress.py**:
+  - **Bài viết**: [`manifera/2026/october-2026/37-mobile-app-cost.md`](./manifera/2026/october-2026/37-mobile-app-cost.md)
+  - **Tiêu đề**: **
+  - **Slug**: ``
+  - **Pre-flight check**: Kiểm tra slug và tiêu đề với `status=any`. Không trùng lặp trên manifera.com.
+  - **Chuẩn hóa nội dung**:
+    - Tiêu đề FAQ: Chuẩn hóa `## FAQs`.
+    - Số lượng FAQ: Chuẩn hóa đúng 5 FAQs theo quy định hệ thống.
+    - Thẻ tình huống FAQ: Chuẩn hóa `[Scenario: ...]` theo quy định hệ thống.
+    - Đảm bảo 0 em dash `—` và 0 en dash `–`.
+  - **Thao tác kỹ thuật**:
+    - Ảnh đại diện: Geotag tọa độ HQ Amsterdam (`52.366841, 4.887593`) kèm Title và Keywords vào metadata EXIF.
+    - Upload media qua GitHub Raw URL: Attachment ID ``.
+    - Tạo bài viết: Post ID `25834`, trạng thái Bản nháp (Draft), tự động gắn tags từ keywords.
+    - Yoast SEO: Focus Keyword ``, Meta Description được đồng bộ đầy đủ.
+    - Post Meta: Tọa độ địa lý Amsterdam (`geo_latitude: 52.366841`, `geo_longitude: 4.887593`, `geo_city: Amsterdam`, `geo_address: Herengracht 420, 1017 BZ Amsterdam, Netherlands`).
+  - **Trạng thái**: Bản nháp (Draft) tại https://www.manifera.com/?p=25834. Đã đánh dấu ✅ ở cột "Đã Post lên" trong `manifera/content_inventory.md`.
+
+- **Đăng tải bài viết 36 (tháng 10/2026) lên website Manifera qua upload_to_wordpress.py**:
+  - **Bài viết**: [`manifera/2026/october-2026/36-mobile-app-and-web-development-company-omnichannel-unification.md`](./manifera/2026/october-2026/36-mobile-app-and-web-development-company-omnichannel-unification.md)
+  - **Tiêu đề**: **
+  - **Slug**: ``
+  - **Pre-flight check**: Kiểm tra slug và tiêu đề với `status=any`. Không trùng lặp trên manifera.com.
+  - **Chuẩn hóa nội dung**:
+    - Tiêu đề FAQ: Chuẩn hóa `## FAQs`.
+    - Số lượng FAQ: Chuẩn hóa đúng 5 FAQs theo quy định hệ thống.
+    - Thẻ tình huống FAQ: Chuẩn hóa `[Scenario: ...]` theo quy định hệ thống.
+    - Đảm bảo 0 em dash `—` và 0 en dash `–`.
+  - **Thao tác kỹ thuật**:
+    - Ảnh đại diện: Geotag tọa độ HQ Amsterdam (`52.366841, 4.887593`) kèm Title và Keywords vào metadata EXIF.
+    - Upload media qua GitHub Raw URL: Attachment ID ``.
+    - Tạo bài viết: Post ID `25832`, trạng thái Bản nháp (Draft), tự động gắn tags từ keywords.
+    - Yoast SEO: Focus Keyword ``, Meta Description được đồng bộ đầy đủ.
+    - Post Meta: Tọa độ địa lý Amsterdam (`geo_latitude: 52.366841`, `geo_longitude: 4.887593`, `geo_city: Amsterdam`, `geo_address: Herengracht 420, 1017 BZ Amsterdam, Netherlands`).
+  - **Trạng thái**: Bản nháp (Draft) tại https://www.manifera.com/?p=25832. Đã đánh dấu ✅ ở cột "Đã Post lên" trong `manifera/content_inventory.md`.
+
 - **Đăng tải bài viết 35 (tháng 10/2026) lên website Manifera qua upload_to_wordpress.py**:
   - **Bài viết**: [`manifera/2026/october-2026/35-leading-mobile-app-development-company.md`](./manifera/2026/october-2026/35-leading-mobile-app-development-company.md)
   - **Tiêu đề**: **
