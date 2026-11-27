@@ -113,27 +113,27 @@ Stop paying risk premiums for fixed-price illusions. Contact our Amsterdam team 
 
 ---
 
-## Frequently Asked Questions
+## FAQs
 
-### (Scenario: CFO demanding budget predictability) If we don't have a fixed-price contract, how do we prevent the budget from spiraling out of control?
+### [Scenario: CFO demanding budget predictability] If we don't have a fixed-price contract, how do we prevent the budget from spiraling out of control?
 By fixing the team size and the timeline. If you budget €20,000/month for 6 months, your maximum exposure is €120,000. The budget cannot spiral. What happens is the team builds the most critical features first. If you reach month 6 and the budget is gone, you still have a robust, working core product, rather than a half-finished disaster caused by a vendor who ran out of money on a fixed-price bid.
 
-### (Scenario: Procurement Director evaluating vendor quotes) Why do vendors pad fixed-price quotes by 40%?
+### [Scenario: Procurement Director evaluating vendor quotes] Why do vendors pad fixed-price quotes by 40%?
 In a fixed-price contract, the vendor takes 100% of the financial risk. If they estimate 1,000 hours but it takes 1,500 hours, they lose money. To prevent bankruptcy, they must add a massive 'risk premium' (usually 30-50%) to their internal estimate before giving you the quote. You are paying for their financial insurance.
 
-### (Scenario: CTO frustrated with vendor inflexibility) Why does a fixed-price contract destroy Agile methodologies?
+### [Scenario: CTO frustrated with vendor inflexibility] Why does a fixed-price contract destroy Agile methodologies?
 Agile is based on the idea that you will learn new things from users during development and must pivot the product (change the scope). A fixed-price contract is legally bound to the initial, ignorant scope. When you try to pivot, the vendor must defend their profit margin by saying 'No' or charging exorbitant Change Request fees, which kills the Agile process.
 
-### (Scenario: Product Manager trying to change requirements) How does the Dedicated Pod model handle changing requirements?
+### [Scenario: Product Manager trying to change requirements] How does the Dedicated Pod model handle changing requirements?
 Perfectly. Because you are paying a flat monthly rate for the team's capacity (their time), the vendor doesn't care if they spend that time building Feature A or Feature B. If you want to scrap three features and build a totally new one, you just rearrange the Jira backlog. There are zero penalties or Change Request negotiations.
 
-### (Scenario: Founder comparing offshore pricing) How does Manifera's pricing structure work for the Hybrid Offshore model?
+### [Scenario: Founder comparing offshore pricing] How does Manifera's pricing structure work for the Hybrid Offshore model?
 We use the Dedicated Pod model. We build a team (e.g., 1 Dutch Architect, 3 Vietnamese Engineers, 1 QA). We calculate a blended, flat monthly rate for that team. You know exactly what your monthly burn rate will be. The Dutch Architect ensures the team executes at high velocity, maximizing the value you get for that monthly spend.
 
-### (Scenario: CFO worried about accountability without a fixed feature list) What stops a Dedicated Pod from underperforming if there's no fixed deliverable list?
+### [Scenario: CFO worried about accountability without a fixed feature list] What stops a Dedicated Pod from underperforming if there's no fixed deliverable list?
 Four mechanisms: velocity benchmarking against an industry baseline for that team composition, weekly working demos instead of monthly status reports, a 30-day termination-for-convenience clause so the vendor's incentive resets every month, and an independent third-party code audit at the 90-day mark to catch hidden technical debt. These replace the illusory accountability of a fixed-price contract with an ongoing, harder-to-hide monthly accountability rhythm.
 
-### (Scenario: Procurement comparing quotes from multiple vendors) How do we compare software development cost quotes from different vendors when they're structured completely differently?
+### [Scenario: Procurement comparing quotes from multiple vendors] How do we compare software development cost quotes from different vendors when they're structured completely differently?
 Do not compare bottom-line totals. Ask every vendor to re-itemize their quote against seven fixed cost categories: engineering capacity by seniority, QA/testing capacity, delivery/product management overhead, architecture oversight, infrastructure/DevOps setup, a post-launch support reserve, and - for any Fixed-Price bid - the risk padding as a disclosed, separate line rather than something buried in the base number. A vendor who cannot or will not itemize against these categories is asking you to trust a number you have no way to audit, which is exactly the dynamic that lets a 40% risk premium go unnoticed inside a single lump-sum total.
 
 <script type="application/ld+json">
