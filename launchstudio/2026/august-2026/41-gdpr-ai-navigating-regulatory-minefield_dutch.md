@@ -144,7 +144,7 @@ Hij schakelde **LaunchStudio (door Manifera)** in. Het engineeringteam implement
 
 ---
 
-## Veelgestelde Vragen
+## FAQs
 
 ### Waarom botst AI fundamenteel met de AVG/GDPR?
 

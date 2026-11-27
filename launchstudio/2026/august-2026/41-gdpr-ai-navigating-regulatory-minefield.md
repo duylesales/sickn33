@@ -120,7 +120,7 @@ He reached out to **LaunchStudio (by Manifera)**. The team implemented automated
 
 ---
 
-## Frequently Asked Questions
+## FAQs
 
 ### Why is AI fundamentally opposed to GDPR?
 
