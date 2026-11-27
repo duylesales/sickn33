@@ -109,27 +109,27 @@ Stop paying for Story Points. Start paying for business outcomes. Contact our Am
 
 ---
 
-## Frequently Asked Questions
+## FAQs
 
-### (Scenario: CEO analyzing engineering ROI) What is the difference between an 'Output' and an 'Outcome' in software development?
+### [Scenario: CEO analyzing engineering ROI] What is the difference between an 'Output' and an 'Outcome' in software development?
 Output is a measure of effort: how many lines of code were written, how many Story Points were completed, or how many features were shipped. Outcome is a measure of value: did user retention increase, did churn decrease, did revenue go up? A team can have massive Output (building 10 features) but negative Outcome (nobody uses them, and they clutter the UI).
 
-### (Scenario: Product Manager trying to change team culture) Why is it dangerous to measure an engineering team's success by Story Points?
+### [Scenario: Product Manager trying to change team culture] Why is it dangerous to measure an engineering team's success by Story Points?
 Because it incentivizes the team to act like an assembly line. If they are rewarded for closing tickets quickly, they will stop asking "Is this feature actually useful?" They will build exactly what is asked, as fast as possible, even if the feature is structurally flawed or provides zero value to the end user. It creates a 'Feature Factory'.
 
-### (Scenario: VP Engineering auditing offshore agencies) How can I tell if an offshore agency is a 'Feature Factory'?
+### [Scenario: VP Engineering auditing offshore agencies] How can I tell if an offshore agency is a 'Feature Factory'?
 Look at how they define 'Done'. If they say a task is done when the code passes QA and is pushed to production, they are a Feature Factory. A true engineering partner considers a task 'Done' only when telemetry (analytics) proves that the feature actually solved the user's problem in production.
 
-### (Scenario: Founder struggling with product bloat) What should we do if a feature we shipped is rarely used by customers?
+### [Scenario: Founder struggling with product bloat] What should we do if a feature we shipped is rarely used by customers?
 Delete it. Unused features are not neutral; they are liabilities. They clutter the user interface, confuse new users, and force the engineering team to maintain that code forever, slowing down future development. A mature product team actively monitors feature usage and ruthlessly deletes code that does not justify its maintenance cost.
 
-### (Scenario: IT Director evaluating Manifera's Hybrid Model) How does Manifera prevent the offshore team from just being 'Order Takers'?
+### [Scenario: IT Director evaluating Manifera's Hybrid Model] How does Manifera prevent the offshore team from just being 'Order Takers'?
 Our Dutch Tech Leads act as the strategic bridge. They interrogate your requirements to understand the underlying business problem (the 'Why'). They empower the Vietnamese engineering pod to propose simpler, more efficient technical solutions to solve that problem, rather than just blindly typing code to fulfill a literal requirement list.
 
-### (Scenario: CFO negotiating a vendor contract) Can the way we pay our engineering vendor actually cause Feature Factory behavior?
+### [Scenario: CFO negotiating a vendor contract] Can the way we pay our engineering vendor actually cause Feature Factory behavior?
 Yes, and it is often the root cause. Time & Materials billing pays the vendor for hours regardless of business impact, giving them no incentive to push back on low-value features. Fixed Bid contracts lock in a feature list from Day 1, punishing the team for adapting to what user data reveals mid-project. A hybrid structure - a fixed-price Discovery phase to define problems and success metrics, followed by a rolling capacity retainer with quarterly re-prioritization based on telemetry - aligns the commercial incentive with actual outcomes.
 
-### (Scenario: Product Manager unsure what to measure instead of Story Points) If Story Points are a bad metric, what should we track instead?
+### [Scenario: Product Manager unsure what to measure instead of Story Points] If Story Points are a bad metric, what should we track instead?
 No single metric replaces Story Points - you need three layers together. Delivery health metrics (the DORA framework: deployment frequency, lead time for changes, change failure rate, recovery time) tell you if the engineering process itself is fast and stable. Outcome metrics (activation, retention, conversion, revenue per feature) tell you if what got built actually solved the user's problem. Output metrics like Story Points are useful only as a rough internal diagnostic, never as the definition of success - a team can post excellent DORA numbers while still building the wrong product, which is why outcome metrics have to sit above both.
 
 <script type="application/ld+json">
