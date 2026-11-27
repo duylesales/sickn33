@@ -46,7 +46,7 @@ True [mobile app development](https://www.manifera.com/services/mobile-app-devel
 
 A classic symptom of an "app maker" is their complete inability to architect the middleware. 
 
-They will design a stunning React Native or Flutter frontend, and then demand that your internal enterprise team provide them with perfectly formatted REST APIs. But enterprise backend systems (like legacy mainframes, complex SAP instances, or scattered microservices) rarely expose clean, mobile-optimized data.
+They will design a stunning React Native or Flutter frontend, and then demand that your internal enterprise team provide them with perfectly formatted REST APIs. But enterprise backend systems [like legacy mainframes, complex SAP instances, or scattered microservices] rarely expose clean, mobile-optimized data.
 
 The "app maker" refuses to build the BFF (Backend-for-Frontend) layer. They dump the burden of data aggregation, payload optimization, and caching entirely onto your internal engineering team. You hired a vendor to solve a problem, but their architectural limitations just created a massive new bottleneck for your backend developers.
 
@@ -95,7 +95,7 @@ None of that shows up on the app maker's original quote. The illustrative compar
 | Secrets management | Hardcoded in client, or absent | Server-side vault, injected at build time |
 | Incident response after a leaked key | Emergency remediation, legal review, customer notification | Not applicable - secret never left the server |
 | Internal engineering hours absorbed post-launch | High (team builds the missing middleware) | Low (middleware delivered as part of the build) |
-| Long-term breach exposure | Elevated (client-side secrets, no BFF shielding) | Reduced (server-mediated, audited data flows) |
+| Long-term breach exposure | Elevated [client-side secrets, no BFF shielding] | Reduced [server-mediated, audited data flows] |
 
 The pattern is consistent: the up-front discount from an app maker is real, but it is a *deferral*, not a saving. The cost resurfaces later - either as an internal engineering rebuild or, in the worst case, as a security incident with the financial profile IBM describes above.
 
@@ -118,7 +118,6 @@ Ready to stop "making apps" and start engineering systems? [Contact us](https://
 ---
 
 ## FAQs
-
 ### 1. (Scenario: Procurement Manager) Why is an "app maker" usually cheaper on the initial quote?
 Because they are only quoting you for the frontend UI. They are entirely ignoring the costs of backend optimization, security audits, CI/CD pipeline setup, and local data synchronization. You might save 30% on the initial quote, but your internal team will end up absorbing 200% of the hidden architectural costs when they have to build the middleware to support the app maker's fragile frontend.
 
@@ -133,9 +132,6 @@ Not under the Hybrid Hub model. You sign the contract with our European headquar
 
 ### 5. (Scenario: CEO reviewing vendors) We just need an MVP right now. Shouldn't we just use a cheap app maker and rewrite it later?
 The "rewrite it later" strategy is the most expensive path in software engineering. A poorly architected MVP will not just have bad code; it will have a corrupted data model. When you try to scale, you will realize you cannot easily migrate the data. An elite engineering firm can build an MVP just as quickly as an app maker, but they will build it on a foundation (like proper cloud architecture) that allows you to scale, rather than forcing you to throw the code away.
-
-### 6. (Scenario: Finance/Procurement Lead) How do we actually quantify the risk before choosing between an app maker and an engineering firm?
-Look at how each vendor handles secrets and how they measure their own delivery process - both are leading indicators. IBM's 2025 *Cost of a Data Breach Report* found that breaches beginning with compromised credentials cost an average of $4.67 million and take roughly 246 days to detect, and flags under-secured APIs as a disproportionately common entry point. If a vendor cannot describe where your API keys and secrets live at runtime, or cannot tell you their deployment frequency and change failure rate, you are pricing a UI project, not a production system.
 
 <script type="application/ld+json">
 {
@@ -180,14 +176,6 @@ Look at how each vendor handles secrets and how they measure their own delivery 
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "The \"rewrite it later\" strategy is the most expensive path in software engineering. A poorly architected MVP will not just have bad code; it will have a corrupted data model. When you try to scale, you will realize you cannot easily migrate the data. An elite engineering firm can build an MVP just as quickly as an app maker, but they will build it on a foundation (like proper cloud architecture) that allows you to scale, rather than forcing you to throw the code away."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "(Scenario: Finance/Procurement Lead) How do we actually quantify the risk before choosing between an app maker and an engineering firm?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Look at how each vendor handles secrets and how they measure their own delivery process - both are leading indicators. IBM's 2025 Cost of a Data Breach Report found that breaches beginning with compromised credentials cost an average of $4.67 million and take roughly 246 days to detect, and flags under-secured APIs as a disproportionately common entry point. If a vendor cannot describe where your API keys and secrets live at runtime, or cannot tell you their deployment frequency and change failure rate, you are pricing a UI project, not a production system."
       }
     }
   ]

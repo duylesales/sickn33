@@ -62,7 +62,7 @@ The foundational rule of enterprise outsourcing is that the vendor never owns th
 
 John Kindervag, the former Forrester analyst who created the Zero Trust security model in 2010, distilled the entire philosophy into four words that now underpin enterprise security architecture worldwide: "Never trust, always verify." Applied to outsourcing, this means the offshore Pod is never granted implicit trust simply because they are a long-term vendor. Every access request, every merge, and every credential is independently verified against the principle of least privilege, every single time - regardless of how many years the relationship has run.
 
-When you procure an elite Autonomous Pod, your internal IT department provisions the Git repository (e.g., Enterprise GitHub or GitLab) within *your* private cloud environment. You grant the offshore developers restricted, Role-Based Access Control (RBAC) to that specific repository. 
+When you procure an elite Autonomous Pod, your internal IT department provisions the Git repository [e.g., Enterprise GitHub or GitLab] within *your* private cloud environment. You grant the offshore developers restricted, Role-Based Access Control (RBAC) to that specific repository. 
 
 Furthermore, you implement branch protection rules. The offshore developer can write code on a feature branch, but they physically cannot merge that code into the `main` production branch without a mandatory cryptographic approval (Pull Request review) from your internal Tech Lead. You hold the absolute keys to the code. If the contract ends, you simply revoke their IAM (Identity and Access Management) tokens in one click.
 
@@ -95,7 +95,6 @@ Stop worrying about IP theft. Start scaling securely. Learn more about [Setting 
 ---
 
 ## FAQs
-
 ### 1. (Scenario: CISO reviewing vendor compliance) How do you prevent your offshore developers from accessing our live production user data?
 By mathematically separating environments. Our developers in Vietnam are only granted access to the Development and Staging environments. These environments must be populated strictly with anonymized, synthetic data (mock data). We never request, nor do we want, access to your production database containing real PII. When a release is ready, your internal DevOps team handles the final deployment to production, ensuring a complete "air gap" between our developers and your live customer data.
 
@@ -110,9 +109,6 @@ This is a real, industry-wide exposure, not a theoretical one. Cyberhaven's anal
 
 ### 5. (Scenario: IT Procurement) How long does the "handover" process take if we eventually want to bring all development back in-house?
 Because we enforce the rule that your enterprise owns the Git repository from Day 1, the technical handover is instantaneous. There is no code to "transfer" because it is already on your servers. The operational handover simply involves your internal team taking over the Scrum ceremonies. Because we mandate strict, asynchronous documentation in Confluence, your internal team can usually absorb the entire project architecture within a two-week transition sprint.
-
-### 6. (Scenario: CISO conducting vendor audit) What evidence can we actually demand to prove the Zero Trust and Clean Room controls are real, not just marketing language?
-Ask for the audit trail, not the policy document. A genuine Zero Trust setup produces a continuous, queryable log: every RBAC grant, every Pull Request approval, every IAM token issuance and revocation, timestamped and attributable to a named individual. We provide enterprise clients with direct, read-only access to these logs inside your own GitHub/GitLab audit log and our SIEM dashboard - you should never have to take a vendor's word for it. If a prospective vendor cannot produce a live, per-developer access log on request, their "Zero Trust" claim is a slide, not an architecture.
 
 <script type="application/ld+json">
 {
@@ -157,14 +153,6 @@ Ask for the audit trail, not the policy document. A genuine Zero Trust setup pro
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Because we enforce the rule that your enterprise owns the Git repository from Day 1, the technical handover is instantaneous. There is no code to \"transfer\" because it is already on your servers. The operational handover simply involves your internal team taking over the Scrum ceremonies. Because we mandate strict, asynchronous documentation in Confluence, your internal team can usually absorb the entire project architecture within a two-week transition sprint."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "(Scenario: CISO conducting vendor audit) What evidence can we actually demand to prove the Zero Trust and Clean Room controls are real, not just marketing language?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Ask for the audit trail, not the policy document. A genuine Zero Trust setup produces a continuous, queryable log: every RBAC grant, every Pull Request approval, every IAM token issuance and revocation, timestamped and attributable to a named individual. We provide enterprise clients with direct, read-only access to these logs inside your own GitHub/GitLab audit log and our SIEM dashboard - you should never have to take a vendor's word for it. If a prospective vendor cannot produce a live, per-developer access log on request, their \"Zero Trust\" claim is a slide, not an architecture."
       }
     }
   ]

@@ -32,7 +32,7 @@ Singapore is undeniably the technological epicenter of Southeast Asia. It houses
 
 However, this hyper-concentration of global tech giants has created a massive, unintended consequence for local enterprises: the "Singapore Paradox." While Singapore boasts world-class infrastructure and capital, the local talent pool has been entirely vacuumed up by multi-billion dollar tech monopolies. 
 
-If a mid-sized enterprise or a well-funded startup tries to hire a Senior **mobile app developer in Singapore**, they are thrust into an unwinnable bidding war against FAANG (Facebook, Amazon, Apple, Netflix, Google). This deep dive explores how elite Singaporean CTOs are navigating this paradox, abandoning the pursuit of local coders and adopting the highly effective "Hybrid Hub" architecture.
+If a mid-sized enterprise or a well-funded startup tries to hire a Senior **mobile app developer in Singapore**, they are thrust into an unwinnable bidding war against FAANG [Facebook, Amazon, Apple, Netflix, Google]. This deep dive explores how elite Singaporean CTOs are navigating this paradox, abandoning the pursuit of local coders and adopting the highly effective "Hybrid Hub" architecture.
 
 ## The Talent Vacuum in the Lion City
 
@@ -60,7 +60,7 @@ To bypass the talent vacuum, elite Singaporean CTOs have stopped trying to build
 
 The Hybrid Hub model acknowledges that certain roles *must* remain in Singapore, while execution *must* move offshore.
 
-*   **Singapore (The Strategy Hub):** The CTO, the Chief Product Officer, and the Lead Enterprise Architect remain in Singapore. They interface with local investors, secure local compliance (e.g., MAS regulations for fintech), and define the high-level business logic.
+*   **Singapore (The Strategy Hub):** The CTO, the Chief Product Officer, and the Lead Enterprise Architect remain in Singapore. They interface with local investors, secure local compliance [e.g., MAS regulations for fintech], and define the high-level business logic.
 *   **Vietnam (The Execution Hub):** The actual software engineering - the Senior Mobile Developers, the QA Automation Engineers, and the DevOps pipeline managers - are located in Ho Chi Minh City as an "Autonomous Pod."
 
 **The ROI:** You retain absolute architectural control in Singapore, but you execute the code at 40% of the cost, utilizing a highly educated, mathematically rigorous Vietnamese talent pool that has not been hyper-inflated by Silicon Valley monopolies.
@@ -81,7 +81,7 @@ While Singaporean engineers frequently jump ship for marginal salary increases, 
 
 ### 4. Structuring the Offshore Arrangement to Satisfy MAS
 
-For Singaporean fintechs and financial institutions, the Hybrid Hub cannot simply be a handshake agreement with a Vietnamese vendor. The Monetary Authority of Singapore's *Guidelines on Outsourcing* (issued 2016, revised 2018) require regulated institutions to formally assess whether an arrangement qualifies as a "material" outsourcing relationship - broadly, one where a service provider's failure could materially affect the business, its customers, or its ability to manage risk and comply with the law. Mobile engineering for a core banking or payments app almost always clears that bar.
+For Singaporean fintechs and financial institutions, the Hybrid Hub cannot simply be a handshake agreement with a Vietnamese vendor. The Monetary Authority of Singapore's *Guidelines on Outsourcing* [issued 2016, revised 2018] require regulated institutions to formally assess whether an arrangement qualifies as a "material" outsourcing relationship - broadly, one where a service provider's failure could materially affect the business, its customers, or its ability to manage risk and comply with the law. Mobile engineering for a core banking or payments app almost always clears that bar.
 
 In practice, this means the outsourcing contract itself has to do real work: it must document each party's roles and responsibilities in a formal Service Level Agreement, establish MAS's right to access records and conduct audits, define a business continuity plan for the offshore provider, and set out a clear exit strategy if the arrangement needs to be unwound. This is precisely why the Strategy/Execution split matters structurally, not just operationally - the Singapore-based architect and compliance owner can sign and be accountable for that SLA, while the offshore pod executes within its boundaries. A vendor who cannot produce a MAS-aligned outsourcing contract on request is not a vendor a regulated Singaporean enterprise can legally use, regardless of how good their code is.
 
@@ -93,7 +93,7 @@ The following is an illustrative model, not a specific client's numbers, but it 
 |---|---|---|
 | Average fully-loaded cost per senior engineer | ~SGD $180,000+/year | ~40-60% lower per the Vietnam/Singapore salary differential |
 | Team of 5 engineers, annual payroll | €600,000+ | Roughly €240,000-€360,000 for equivalent execution capacity |
-| Recruitment cost (agency fees, time-to-hire) | High - competing directly against FAANG hiring budgets | Lower - sourced through an established offshore delivery partner |
+| Recruitment cost [agency fees, time-to-hire] | High - competing directly against FAANG hiring budgets | Lower - sourced through an established offshore delivery partner |
 | Attrition risk | High - "stepping stone" turnover documented across the sector | Low - Vietnamese engineering talent skews toward longer tenure with a stable partner |
 | Re-onboarding cost per departure | Full ramp-up cycle (typically 2-3 months to re-reach prior velocity) | Minimal - Autonomous Pod structure preserves institutional knowledge even if an individual rotates out |
 
@@ -110,7 +110,6 @@ Our Dutch Architects sit alongside your Singapore leadership to define the strat
 ---
 
 ## FAQs
-
 ### 1. (Scenario: CTO planning team structure) If the development team is in Vietnam, who manages the daily Agile sprints?
 An elite vendor does not just provide coders; they provide a "Scrum Master" embedded within the Vietnamese Autonomous Pod. The Singaporean CTO acts as the "Product Owner," defining the backlog and the business priorities. The Vietnamese Scrum Master handles the daily execution, sprint velocity tracking, and blocker resolution, allowing the Singaporean CTO to focus on strategy rather than micro-managing developers.
 
@@ -125,9 +124,6 @@ While salaries in Vietnam are rising due to high demand for elite talent, the ma
 
 ### 5. (Scenario: Lead Architect) Are Vietnamese developers experienced in modern, cross-platform architectures like Flutter and React Native?
 Vietnam is one of the fastest-adopting markets for modern frameworks globally. Because the local startup ecosystem is highly aggressive, Vietnamese engineers have rapidly mastered frameworks that allow for rapid iteration and high performance. You will find a much deeper pool of Senior Flutter and React Native architects in Ho Chi Minh City than you will in Singapore.
-
-### 6. (Scenario: Compliance Officer) What does our outsourcing contract actually need to include to satisfy MAS?
-At minimum, it must document each party's roles and responsibilities in a formal Service Level Agreement, give MAS the right to access records and conduct audits of the arrangement, define the offshore provider's business continuity plan, and set out a clear exit strategy should the arrangement need to be unwound. This is a formal requirement under MAS's *Guidelines on Outsourcing*, not a best-practice suggestion - a vendor who cannot produce this documentation on request cannot legally support a regulated Singaporean financial institution.
 
 <script type="application/ld+json">
 {
@@ -172,14 +168,6 @@ At minimum, it must document each party's roles and responsibilities in a formal
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Vietnam is one of the fastest-adopting markets for modern frameworks globally. Because the local startup ecosystem is highly aggressive, Vietnamese engineers have rapidly mastered frameworks that allow for rapid iteration and high performance. You will find a much deeper pool of Senior Flutter and React Native architects in Ho Chi Minh City than you will in Singapore."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "(Scenario: Compliance Officer) What does our outsourcing contract actually need to include to satisfy MAS?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "At minimum, it must document each party's roles and responsibilities in a formal Service Level Agreement, give MAS the right to access records and conduct audits of the arrangement, define the offshore provider's business continuity plan, and set out a clear exit strategy should the arrangement need to be unwound. This is a formal requirement under MAS's Guidelines on Outsourcing, not a best-practice suggestion - a vendor who cannot produce this documentation on request cannot legally support a regulated Singaporean financial institution."
       }
     }
   ]

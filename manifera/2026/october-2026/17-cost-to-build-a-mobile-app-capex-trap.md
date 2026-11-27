@@ -60,7 +60,7 @@ When elite [custom software development companies](https://www.manifera.com/serv
 
 ### 1. DevSecOps and Penetration Testing
 
-A cheap app is a liability. If it handles sensitive data (e.g., FinTech or Healthcare), you cannot deploy it without security guarantees.
+A cheap app is a liability. If it handles sensitive data [e.g., FinTech or Healthcare], you cannot deploy it without security guarantees.
 
 Elite vendors include DevSecOps in their upfront cost. They implement Static Application Security Testing (SAST) tools like SonarQube or Checkmarx directly into the Git repository. Furthermore, they architect a Backend-For-Frontend (BFF) proxy to ensure no API keys or database credentials are ever hardcoded into the mobile binary (which can be easily reverse-engineered). 
 
@@ -98,25 +98,25 @@ The worked example below walks through exactly how the CapEx-vs-OpEx gap compoun
 
 ## A Worked Example: The 24-Month Cloud Bill of Cheap vs. Elite Architecture
 
-Numbers make the CapEx Trap concrete. Consider a realistic (hypothetical, illustrative) B2C mobile app - a booking or marketplace app, the kind of product category where user growth is lumpy and infrastructure costs scale non-linearly with usage.
+Numbers make the CapEx Trap concrete. Consider a realistic [hypothetical, illustrative] B2C mobile app - a booking or marketplace app, the kind of product category where user growth is lumpy and infrastructure costs scale non-linearly with usage.
 
-### Month 1-3: Launch (5,000 active users)
+### Month 1-3: Launch [5,000 active users]
 
 At launch, the difference between the two architectures is nearly invisible. Both apps function. Both pass a casual QA pass. This is exactly why the CapEx Trap is so easy to fall into - the cheap app looks identical to the elite app in a demo.
 
-*   **Cheap Vendor (unoptimized REST, no caching layer, no CDN):** ~€400/month in AWS costs (RDS instance, EC2 compute, S3 storage, minimal egress).
-*   **Elite Vendor (GraphQL, Redis caching, CloudFront CDN):** ~€550/month - slightly *higher* at this stage, because the caching and CDN infrastructure has fixed baseline costs that a 5,000-user app has not yet grown into.
+*   **Cheap Vendor [unoptimized REST, no caching layer, no CDN]:** ~€400/month in AWS costs [RDS instance, EC2 compute, S3 storage, minimal egress].
+*   **Elite Vendor [GraphQL, Redis caching, CloudFront CDN]:** ~€550/month - slightly *higher* at this stage, because the caching and CDN infrastructure has fixed baseline costs that a 5,000-user app has not yet grown into.
 
 A CFO looking only at this snapshot would conclude the elite vendor's architecture was a wasted investment. This is the trap.
 
-### Month 4-9: Growth (50,000 active users)
+### Month 4-9: Growth [50,000 active users]
 
 This is where the two architectures diverge sharply, because the cheap app's REST endpoints pull full, unoptimized JSON payloads on every screen load, and every user session hits the primary database directly with no caching layer to absorb repeat reads.
 
 *   **Cheap Vendor:** AWS bill climbs to approximately €8,000-€10,000/month. RDS is now under sustained load and needs a costly instance upgrade. Egress fees spike because large payloads are served to every user on every screen transition, including data that has not changed since their last session.
 *   **Elite Vendor:** AWS bill rises only modestly, to approximately €900-€1,200/month. Redis absorbs an estimated 80% of what would otherwise be repeat database hits, GraphQL's field-level querying means the mobile client only pulls the exact fields it renders, and CloudFront serves static and semi-static assets without touching origin servers at all.
 
-### Month 10-24: Scale (150,000+ active users)
+### Month 10-24: Scale [150,000+ active users]
 
 *   **Cheap Vendor:** The unoptimized architecture does not scale linearly - it scales worse than linearly, because database contention and payload bloat compound. Realistic monthly AWS spend reaches €18,000-€25,000, and at this point the engineering team is typically forced into an emergency re-architecture project (a "rewrite in flight") costing an additional €40,000-€70,000 in emergency contracting fees, on top of the ballooning monthly cloud bill.
 *   **Elite Vendor:** Monthly AWS spend scales to approximately €2,000-€2,800 - costs rise with usage, but sub-linearly, because the caching and CDN layers absorb a growing share of total traffic rather than a fixed share.
@@ -126,9 +126,8 @@ This is where the two architectures diverge sharply, because the cheap app's RES
 Summed across the full window, the cheap-vendor path costs roughly €140,000-€190,000 in cumulative cloud spend plus emergency re-architecture fees - against roughly €25,000-€35,000 for the elite-architecture path, on top of the original €70,000 CapEx delta between the two vendor quotes. The "savings" from choosing the cheaper vendor are not merely erased; they invert into a substantially larger total cost, and that is before accounting for the lost revenue and reputational damage of a booking app that times out under its own Black Friday traffic spike.
 
 ## FAQs
-
 ### 1. (Scenario: CFO comparing quotes) If Vendor A is €40k and Vendor B is €100k, isn't it smarter to start with Vendor A and use the remaining €60k to fix bugs later?
-This is the "Rewrite Trap." You cannot incrementally fix a fundamentally flawed architecture (a "Big Ball of Mud"). The €60,000 you saved will be entirely consumed by developers attempting to untangle spaghetti code. Eventually, the technical debt will become so severe that you will have to throw the €40k app in the trash and pay Vendor B €100k to rewrite it from scratch. 
+This is the "Rewrite Trap." You cannot incrementally fix a fundamentally flawed architecture (a "Big Ball of Mud"). The €60,000 you saved will be entirely consumed by developers attempting to untangle spaghetti code. Eventually, the technical debt will become so severe that you will have to throw the €40k app in the trash and pay Vendor B €100k to rewrite it from scratch.
 
 ### 2. (Scenario: CTO planning roadmap) How much should we budget for monthly maintenance after the app launches?
 A professional rule of thumb is to budget 20-30% of the initial (architecturally sound) CapEx for annual maintenance. If the app cost €100,000 to build correctly, expect to spend €20,000 to €30,000 annually. This covers cloud hosting, OS updates (when Apple/Google release new mandatory SDKs), third-party library patching, and CI/CD runner costs.
@@ -141,9 +140,6 @@ No. While it allows you to maintain a single codebase (saving roughly 30-40% on 
 
 ### 5. (Scenario: CISO) What is the most expensive security mistake made in mobile app development?
 Lack of a Backend-For-Frontend (BFF) proxy. Amateurs often connect the mobile app directly to the primary database (like Firebase) or hardcode third-party API keys directly into the app. When these keys are inevitably reverse-engineered by malicious actors, the enterprise faces massive data breaches, ransomware attacks, and crippling GDPR fines. Elite architecture demands a secure middleware layer.
-
-### 6. (Scenario: CFO sanity-checking a vendor) How do we verify a vendor's OpEx and FinOps claims before signing, rather than taking their word for it?
-Ask for the architecture diagram, not just the invoice. A vendor claiming FinOps discipline should be able to show you, concretely, where caching sits in the request path (Redis or equivalent), how the API layer minimizes payload size (GraphQL field selection or a comparable REST versioning strategy), and which assets are served from a CDN versus origin servers. Ask for a real (anonymized) AWS Cost Explorer or billing dashboard screenshot from a comparable prior project at a comparable user scale. A vendor who can produce this in the sales process has actually operated FinOps discipline before; a vendor who can only describe it in the abstract has not.
 
 <script type="application/ld+json">
 {
@@ -188,14 +184,6 @@ Ask for the architecture diagram, not just the invoice. A vendor claiming FinOps
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Lack of a Backend-For-Frontend (BFF) proxy. Amateurs often connect the mobile app directly to the primary database (like Firebase) or hardcode third-party API keys directly into the app. When these keys are inevitably reverse-engineered by malicious actors, the enterprise faces massive data breaches, ransomware attacks, and crippling GDPR fines. Elite architecture demands a secure middleware layer."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "(Scenario: CFO sanity-checking a vendor) How do we verify a vendor's OpEx and FinOps claims before signing, rather than taking their word for it?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Ask for the architecture diagram, not just the invoice. A vendor claiming FinOps discipline should be able to show you, concretely, where caching sits in the request path (Redis or equivalent), how the API layer minimizes payload size (GraphQL field selection or a comparable REST versioning strategy), and which assets are served from a CDN versus origin servers. Ask for a real (anonymized) AWS Cost Explorer or billing dashboard screenshot from a comparable prior project at a comparable user scale. A vendor who can produce this in the sales process has actually operated FinOps discipline before; a vendor who can only describe it in the abstract has not."
       }
     }
   ]

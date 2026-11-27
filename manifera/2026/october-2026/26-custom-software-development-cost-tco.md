@@ -88,10 +88,10 @@ Instead of running the application on expensive, always-on EC2 instances, they a
 
 Put concrete numbers next to the two vendors from the opening scenario, and the "cheaper" quote stops looking cheap. Assume both vendors are asked to build the same mid-sized enterprise platform, and the enterprise tracks costs honestly for five years:
 
-| Cost Line | Vendor A (Low CapEx) | Vendor B (Elite, Higher CapEx) |
+| Cost Line | Vendor A (Low CapEx) | Vendor B [Elite, Higher CapEx] |
 |---|---|---|
 | Initial build (Year 0) | €200,000 | €300,000 |
-| Cloud hosting (avg/month, always-on VMs vs. serverless) | €5,000 | €900 |
+| Cloud hosting [avg/month, always-on VMs vs. serverless] | €5,000 | €900 |
 | Annual emergency bug-fix budget | €90,000 | €12,000 |
 | Feature velocity tax (adding features to a tangled monolith vs. modular codebase) | +180% time per feature | Baseline |
 | 5-year cloud hosting total | €300,000 | €54,000 |
@@ -111,7 +111,6 @@ Ask any vendor for their five-year TCO projection before you ask for their CapEx
 ---
 
 ## FAQs
-
 ### 1. (Scenario: CFO auditing costs) How do we accurately calculate the TCO of a software project before we start?
 You must demand a TCO projection from the vendor that includes four pillars: 1) Initial Build Cost (CapEx), 2) Monthly Cloud Hosting Estimates (OpEx), 3) Annual Maintenance & Support Estimates (OpEx), and 4) Third-Party Licensing Fees (e.g., Stripe, Twilio). If a vendor refuses to estimate the monthly cloud hosting costs, they do not understand the architecture they are proposing.
 
@@ -126,12 +125,6 @@ This is almost always a trap. This is the classic "Razor and Blades" business mo
 
 ### 5. (Scenario: Lead Architect) Does moving to a Serverless architecture (like AWS Lambda) always reduce costs?
 No. Serverless is incredibly cheap for variable, "spiky" traffic workloads. However, if you have a component that runs continuously at 100% CPU utilization 24/7 (like a video rendering engine), running that on Serverless will actually be *more* expensive than running it on a dedicated VM or container. This is why you need an elite Solutions Architect to map the FinOps strategy before writing code.
-
-### 6. (Scenario: CFO benchmarking against industry data) Is our IT budget overrun unusual, or does this happen to everyone?
-It is more common than most CFOs realize. A joint McKinsey and University of Oxford study of over 5,400 IT projects found that large IT projects run 45% over budget and 7% over schedule on average, while delivering 56% less value than predicted. The root cause in the majority of these cases is not poor project management alone - it is software architected without a TCO discipline from day one, so the "hidden" OpEx surfaces mid-project instead of being priced in upfront.
-
-### 7. (Scenario: VP Engineering reviewing the AWS bill) How do we know if we are wasting money on cloud infrastructure?
-Assume you are, and measure it. Flexera's 2026 State of the Cloud Report found that organizations waste an estimated 29% of their cloud spend on average - a number that rose for the first time in five years as AI workloads added cost complexity. Run a FinOps audit: right-size or eliminate always-on VMs that sit idle outside business hours, migrate spiky workloads to serverless, and set budget alerts tied to actual usage rather than static monthly caps.
 
 <script type="application/ld+json">
 {
@@ -176,22 +169,6 @@ Assume you are, and measure it. Flexera's 2026 State of the Cloud Report found t
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "No. Serverless is incredibly cheap for variable, \"spiky\" traffic workloads. However, if you have a component that runs continuously at 100% CPU utilization 24/7 (like a video rendering engine), running that on Serverless will actually be *more* expensive than running it on a dedicated VM or container. This is why you need an elite Solutions Architect to map the FinOps strategy before writing code."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "(Scenario: CFO benchmarking against industry data) Is our IT budget overrun unusual, or does this happen to everyone?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It is more common than most CFOs realize. A joint McKinsey and University of Oxford study of over 5,400 IT projects found that large IT projects run 45% over budget and 7% over schedule on average, while delivering 56% less value than predicted. The root cause in the majority of these cases is not poor project management alone - it is software architected without a TCO discipline from day one, so the \"hidden\" OpEx surfaces mid-project instead of being priced in upfront."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "(Scenario: VP Engineering reviewing the AWS bill) How do we know if we are wasting money on cloud infrastructure?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Assume you are, and measure it. Flexera's 2026 State of the Cloud Report found that organizations waste an estimated 29% of their cloud spend on average - a number that rose for the first time in five years as AI workloads added cost complexity. Run a FinOps audit: right-size or eliminate always-on VMs that sit idle outside business hours, migrate spiky workloads to serverless, and set budget alerts tied to actual usage rather than static monthly caps."
       }
     }
   ]

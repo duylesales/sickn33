@@ -88,14 +88,14 @@ As Steve McConnell puts it in *Software Estimation: Demystifying the Black Art*,
 
 McConnell's most cited contribution to the industry is the "Cone of Uncertainty" - a model, built from decades of aggregated project data, showing how far off software estimates typically are at each stage of a project. At the initial concept stage, before requirements are gathered, McConnell's research shows an estimate can be off by a factor of 4x on the high end or 0.25x on the low end. In plain terms: if a vendor tells you a project will cost €250,000 during the RFP stage, the honest range, backed by decades of estimation research, is somewhere between €62,500 and €1,000,000.
 
-That is not a vendor being incompetent. It is the mathematical reality of estimating a creative, research-heavy discipline before the requirements exist. The uncertainty narrows as the project proceeds - by the time detailed requirements are defined, the range tightens to roughly 0.8x–1.25x - but a Fixed-Bid contract asks the vendor to commit to a single number at the *widest* point of the cone, then legally punishes them (or you) for the inevitable gap between guess and reality.
+That is not a vendor being incompetent. It is the mathematical reality of estimating a creative, research-heavy discipline before the requirements exist. The uncertainty narrows as the project proceeds - by the time detailed requirements are defined, the range tightens to roughly 0.8x - 1.25x - but a Fixed-Bid contract asks the vendor to commit to a single number at the *widest* point of the cone, then legally punishes them (or you) for the inevitable gap between guess and reality.
 
 | Project Stage | Typical Estimate Range (Cone of Uncertainty) | What a Fixed-Bid Contract Does |
 |---|---|---|
-| Initial concept / RFP | 0.25x – 4x | Locks in a number here |
-| Approved product definition | 0.5x – 2x | Still too early to fix scope |
-| Requirements complete | 0.8x – 1.25x | Reasonable estimate confidence begins |
-| Detailed design complete | 0.9x – 1.15x | The only point a fixed number is defensible |
+| Initial concept / RFP | 0.25x  -  4x | Locks in a number here |
+| Approved product definition | 0.5x  -  2x | Still too early to fix scope |
+| Requirements complete | 0.8x  -  1.25x | Reasonable estimate confidence begins |
+| Detailed design complete | 0.9x  -  1.15x | The only point a fixed number is defensible |
 
 Elite vendors do not eliminate this uncertainty - nobody can. They manage it, by re-forecasting every Sprint using empirical velocity data instead of a single frozen guess made in the widest part of the cone.
 
@@ -126,7 +126,6 @@ Together, these four clauses give a CFO everything the Fixed-Bid model promised 
 ---
 
 ## FAQs
-
 ### 1. (Scenario: CFO demanding predictability) How do I get budget approval from my Board if the final cost isn't fixed?
 You use "Agile Budgeting." Instead of approving a single €500,000 block, the Board approves a monthly "Burn Rate" for a dedicated engineering team, capped at a certain number of months. You frame the investment not as buying a static product, but as funding a high-velocity product team. If the team builds enough value after 4 months to launch the MVP, you can stop the funding entirely, keeping the remaining budget.
 

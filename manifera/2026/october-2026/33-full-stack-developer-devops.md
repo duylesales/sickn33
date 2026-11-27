@@ -103,8 +103,8 @@ The "hire cheaper, traditional developers" argument sounds fiscally responsible 
 
 **The Siloed Model** (to ship and safely operate one feature stream):
 *   1x Frontend/Backend Developer - the person who writes the code, but cannot deploy or debug it in production.
-*   1x DevOps Engineer (shared across multiple teams, typically at a fraction of a headcount, but budgeted as roughly 0.5 FTE for this stream) - handles the deployment pipeline and infrastructure.
-*   1x QA Engineer (also shared, roughly 0.3 FTE for this stream) - manually verifies the release before it ships.
+*   1x DevOps Engineer [shared across multiple teams, typically at a fraction of a headcount, but budgeted as roughly 0.5 FTE for this stream] - handles the deployment pipeline and infrastructure.
+*   1x QA Engineer [also shared, roughly 0.3 FTE for this stream] - manually verifies the release before it ships.
 *   Coordination overhead - a Project Manager or Scrum Master spends a material share of their time simply keeping these three roles synchronized, resolving the "it's not my code, it's the infrastructure" disputes that inevitably surface.
 
 Even using conservative, blended Western European salary bands, that stream is fully burdened at roughly 1.8 FTE of direct engineering cost, plus a meaningful tax in coordination time and, critically, in *calendar time*: every deployment waits for three different people's availability to align.
@@ -123,7 +123,6 @@ At Manifera, our [offshore and hybrid development teams](https://www.manifera.co
 ---
 
 ## FAQs
-
 ### 1. (Scenario: HR Director hiring) It seems impossible to find one person who is an expert in React, Node, Terraform, and AWS. Are these "Unicorns" real?
 They are rare, but they are real. However, they are usually "T-Shaped." They might be a deep expert in Backend (Node.js) and intermediate in Frontend (React) and Infrastructure (Terraform). You are not looking for someone who is 100% perfect at everything; you are looking for an engineer who is competent across the entire stack so they do not have to rely on other teams to deploy their work.
 
@@ -131,16 +130,13 @@ They are rare, but they are real. However, they are usually "T-Shaped." They mig
 This is the transition to "Platform Engineering." Your dedicated DevOps team stops deploying applications for the developers. Instead, they build the underlying automated platforms, security guardrails, and self-service portals that the developers use. The DevOps team builds the "paved road," and the full-stack developers drive their applications on it autonomously.
 
 ### 3. (Scenario: CTO managing tech debt) Our traditional full-stack developers are afraid of touching AWS. How do we transition them?
-Start small by forcing them to learn Docker. Containerization is the bridge between code and infrastructure. Once a developer understands how to package their app in a Docker container, the transition to understanding how that container runs on AWS (e.g., ECS or Kubernetes) is much less intimidating. 
+Start small by forcing them to learn Docker. Containerization is the bridge between code and infrastructure. Once a developer understands how to package their app in a Docker container, the transition to understanding how that container runs on AWS (e.g., ECS or Kubernetes) is much less intimidating.
 
 ### 4. (Scenario: CEO auditing costs) Paying a premium for these modern "Cloud Engineers" seems expensive. Why not hire cheaper, traditional full-stack devs?
 Because the "cheap" developers will cost you a fortune in organizational friction. If you hire a traditional full-stack dev, you also have to hire a DevOps engineer to deploy their code, and a QA engineer to test it, and a Project Manager to coordinate the three of them. Hiring one elite Cloud Engineer who can autonomously design, write, test, and deploy a feature is mathematically cheaper and infinitely faster.
 
 ### 5. (Scenario: Lead Architect) Is Serverless (AWS Lambda) the main driver behind this shift?
 Yes. Serverless architectures physically blur the line between code and infrastructure. When you write an AWS Lambda function, you are literally defining the infrastructure scale and execution environment within your application configuration. You cannot effectively write Serverless applications without deeply understanding cloud architecture.
-
-### 6. (Scenario: CTO evaluating vendor maturity) How do we know if a vendor actually owns production, or just deploys and walks away?
-Ask them who gets paged when their code breaks in production, and what they use to diagnose it. A mature team will describe Service Level Objectives with defined error budgets, distributed tracing (e.g., OpenTelemetry) that follows a single request across every microservice it touches, and an on-call rotation where the engineer who wrote the feature is the one who fixes it at 3 a.m. If the vendor cannot answer this without mentioning a separate operations team, they have not actually adopted "you build it, you run it" - they have just automated the deployment step.
 
 <script type="application/ld+json">
 {
@@ -185,14 +181,6 @@ Ask them who gets paged when their code breaks in production, and what they use 
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Yes. Serverless architectures physically blur the line between code and infrastructure. When you write an AWS Lambda function, you are literally defining the infrastructure scale and execution environment within your application configuration. You cannot effectively write Serverless applications without deeply understanding cloud architecture."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "(Scenario: CTO evaluating vendor maturity) How do we know if a vendor actually owns production, or just deploys and walks away?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Ask them who gets paged when their code breaks in production, and what they use to diagnose it. A mature team will describe Service Level Objectives with defined error budgets, distributed tracing (e.g., OpenTelemetry) that follows a single request across every microservice it touches, and an on-call rotation where the engineer who wrote the feature is the one who fixes it at 3 a.m. If the vendor cannot answer this without mentioning a separate operations team, they have not actually adopted \"you build it, you run it\" - they have just automated the deployment step."
       }
     }
   ]

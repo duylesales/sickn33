@@ -72,7 +72,7 @@ Return to the 100MB video-caching scenario from earlier and put real numbers aga
 
 Suppose the enterprise spent a typical quarter acquiring 50,000 new app users. Business of Apps' 2025 research on app user acquisition pegs the average blended customer acquisition cost (CAC) at roughly **$29 per user** - meaning that quarter's user-acquisition spend was approximately **$1.45 million**. If the flawed local-caching feature ships and roughly 40% of new users delete the app within a week (as described above), that's 20,000 users lost, representing **~$580,000** in acquisition spend that produced zero retained users - not a development cost, but a marketing budget set on fire by an engineering decision nobody was willing to question.
 
-Now price the alternative. A Definition-of-Ready review that flags the 100MB local-download request and proposes an HLS streaming middleware instead costs, at most, a few hours of Tech Lead and Product Owner time - call it **$400–$600** in blended labor, plus perhaps a two-day delay to that one ticket while the alternative is scoped. The asymmetry is not close: roughly $500 of intentional friction against roughly $580,000 of unforced marketing loss. A vendor culture that cannot absorb the $500 conversation is not saving you money by saying "Yes" faster - it is trading a small, visible cost today for a much larger, invisible one next quarter.
+Now price the alternative. A Definition-of-Ready review that flags the 100MB local-download request and proposes an HLS streaming middleware instead costs, at most, a few hours of Tech Lead and Product Owner time - call it **$400 - $600** in blended labor, plus perhaps a two-day delay to that one ticket while the alternative is scoped. The asymmetry is not close: roughly $500 of intentional friction against roughly $580,000 of unforced marketing loss. A vendor culture that cannot absorb the $500 conversation is not saving you money by saying "Yes" faster - it is trading a small, visible cost today for a much larger, invisible one next quarter.
 
 ## Executing with the Hybrid Hub
 
@@ -87,7 +87,6 @@ Stop hiring order takers. Start partnering with engineering peers. [Contact our 
 ---
 
 ## FAQs
-
 ### 1. (Scenario: IT Manager) If the vendor pushes back on our requirements, doesn't that slow down the development process?
 In a single sprint, pushing back might delay a specific ticket by two days while the architecture is clarified. However, building the *wrong* feature because the vendor didn't push back will cost you three months of rewrite time. The slight friction introduced by rigorous technical pushback prevents massive, catastrophic delays later in the product lifecycle. Slowing down to get the architecture right is the fastest way to deploy enterprise software.
 
@@ -102,9 +101,6 @@ We execute a "Strangler Fig" rescue operation - the incremental modernization pa
 
 ### 5. (Scenario: CEO evaluating partnerships) Why is this "pushback" culture critical for our company's ultimate valuation?
 Because technical debt destroys Enterprise Value (EV). McKinsey's CIO research on technical debt found that organizations typically estimate accumulated tech debt at **20% to 40%** of their entire technology estate's value before depreciation - and that figure is precisely what a buyer's technical due diligence team is trained to find and price into an offer. If you are preparing for a Series B funding round or an acquisition, the acquiring firm will conduct a technical due diligence audit. If they find a fragile codebase built by "Yes" vendors who bypassed security and scalability protocols, they will drastically reduce your valuation, demand a remediation holdback, or walk away from the deal entirely. A firm that pushes back ensures your codebase passes Tier-1 enterprise due diligence, protecting your company's valuation.
-
-### 6. (Scenario: IT Manager sourcing vendors) How do we actually spot a "Yes" vendor during the RFP process, before we've signed anything?
-Ask every finalist to describe, in detail, a specific instance where they told a client "No" - and watch how concrete the answer is. A genuine engineering firm will describe the exact technical tradeoff, the alternative they proposed, and how the disagreement was resolved. A "Yes" vendor will either dodge the question or offer a vague, diplomatic non-answer about "always finding a way." You can also test it directly during the proposal stage: include one deliberately over-scoped or architecturally risky requirement in your RFP, such as the 100MB local-video-download example above, and see whether any vendor flags it before quoting a price to build it.
 
 <script type="application/ld+json">
 {
@@ -149,14 +145,6 @@ Ask every finalist to describe, in detail, a specific instance where they told a
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Because technical debt destroys Enterprise Value (EV). McKinsey's CIO research on technical debt found that organizations typically estimate accumulated tech debt at 20% to 40% of their entire technology estate's value before depreciation - and that figure is precisely what a buyer's technical due diligence team is trained to find and price into an offer. If you are preparing for a Series B funding round or an acquisition, the acquiring firm will conduct a technical due diligence audit. If they find a fragile codebase built by \"Yes\" vendors who bypassed security and scalability protocols, they will drastically reduce your valuation, demand a remediation holdback, or walk away from the deal entirely. A firm that pushes back ensures your codebase passes Tier-1 enterprise due diligence, protecting your company's valuation."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "(Scenario: IT Manager sourcing vendors) How do we actually spot a \"Yes\" vendor during the RFP process, before we've signed anything?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Ask every finalist to describe, in detail, a specific instance where they told a client \"No\" - and watch how concrete the answer is. A genuine engineering firm will describe the exact technical tradeoff, the alternative they proposed, and how the disagreement was resolved. A \"Yes\" vendor will either dodge the question or offer a vague, diplomatic non-answer about \"always finding a way.\" You can also test it directly during the proposal stage: include one deliberately over-scoped or architecturally risky requirement in your RFP, such as the 100MB local-video-download example above, and see whether any vendor flags it before quoting a price to build it."
       }
     }
   ]

@@ -51,7 +51,7 @@ They build complex, highly idiosyncratic architectures that only they understand
 
 ### The Agitate: The Attrition Extortion
 
-In the current tech ecosystem, highly skilled local mobile developers (in cities like Amsterdam, London, or New York) possess immense leverage. 
+In the current tech ecosystem, highly skilled local mobile developers [in cities like Amsterdam, London, or New York] possess immense leverage. 
 
 Because your enterprise architecture is locked inside the head of a single "rockstar," they can essentially dictate terms. They can demand exorbitant salary increases, refuse to mentor junior engineers, or threaten to leave for a competitor mid-sprint. You are held hostage by your own hiring strategy. Furthermore, when they eventually do leave, replacing their undocumented domain knowledge takes months, completely destroying your product roadmap.
 
@@ -83,7 +83,7 @@ Because elite offshore firms operate across time zones, they mandate absolute as
 
 A lone "10x Developer" reports velocity anecdotally - "I shipped three features this sprint" - with no instrumentation to prove whether that pace is sustainable or whether it is quietly accumulating debt that will collapse the roadmap in Q3. An elite CTO does not accept anecdotes; they demand the four DORA (DevOps Research and Assessment) metrics that Google's State of DevOps research has proven correlate directly with organizational performance: deployment frequency, lead time for changes, change failure rate, and mean time to recovery (MTTR).
 
-A structured mobile application development firm instruments these metrics into the CI/CD pipeline from day one. Our Pods target elite-tier benchmarks, as defined by Google Cloud's own DORA research: on-demand production deployments (multiple times per day, not per quarter), a lead time for changes under one day from commit to release, a change failure rate between 0% and 15%, and an MTTR under one hour when an incident does occur. Every one of these numbers is visible on a live dashboard your CTO can audit at any time - no self-reported story points, no vague "it's basically done" updates in a standup.
+A structured mobile application development firm instruments these metrics into the CI/CD pipeline from day one. Our Pods target elite-tier benchmarks, as defined by Google Cloud's own DORA research: on-demand production deployments [multiple times per day, not per quarter], a lead time for changes under one day from commit to release, a change failure rate between 0% and 15%, and an MTTR under one hour when an incident does occur. Every one of these numbers is visible on a live dashboard your CTO can audit at any time - no self-reported story points, no vague "it's basically done" updates in a standup.
 
 This is the structural difference between hiring an individual and procuring a system. A rockstar developer's velocity lives inside their head and evaporates the moment they resign. A Pod's velocity lives inside the pipeline, is reproducible by any engineer rotated onto the project, and only improves as the codebase matures - the opposite trajectory of hero-coded architectures that decay under their own complexity.
 
@@ -92,17 +92,17 @@ This is the structural difference between hiring an individual and procuring a s
 Numbers make the SPOF argument concrete faster than any anecdote. Consider a mid-market SaaS company that needs a mobile engineering function for its iOS and Android apps over a 3-year horizon, and is weighing one path against the other. The figures below are illustrative, built from typical Western European senior mobile engineer compensation and typical offshore Pod pricing - not a specific client's invoice - but the *shape* of the comparison holds across most enterprise mobile builds.
 
 **Path A: Hire one senior "rockstar" mobile developer in Amsterdam.**
-- Year 1 fully-loaded cost (salary + employer social costs + benefits): roughly €110,000–€130,000.
-- Recruitment cost to find and close a genuine senior candidate in a tight Dutch tech market: typically 15–25% of first-year salary in agency fees, or months of internal recruiter time.
-- Bus-factor: 1. If this person is out for six weeks (illness, resignation, burnout), feature delivery on the mobile app stops or slows to whatever the CTO can personally cover.
+- Year 1 fully-loaded cost (salary + employer social costs + benefits): roughly €110,000 - €130,000.
+- Recruitment cost to find and close a genuine senior candidate in a tight Dutch tech market: typically 15 - 25% of first-year salary in agency fees, or months of internal recruiter time.
+- Bus-factor: 1. If this person is out for six weeks [illness, resignation, burnout], feature delivery on the mobile app stops or slows to whatever the CTO can personally cover.
 - Documentation and knowledge transfer: usually minimal, because a single senior IC under sprint pressure rarely has slack to write it - and there is no peer to review it against.
-- Replacement cost if they resign in Year 2: 3–9 months to rehire and re-ramp a replacement to full productivity on an undocumented codebase, during which roadmap slips are absorbed directly by the business.
+- Replacement cost if they resign in Year 2: 3 - 9 months to rehire and re-ramp a replacement to full productivity on an undocumented codebase, during which roadmap slips are absorbed directly by the business.
 
-**Path B: Procure a 4-person Autonomous Pod (Lead Architect, 2 Mobile Developers, QA Automation Engineer).**
-- Fully-loaded Pod cost is typically 1.3–1.8x the cost of the single rockstar hire - more people, but at offshore Vietnamese engineering rates rather than Amsterdam salaries.
+**Path B: Procure a 4-person Autonomous Pod [Lead Architect, 2 Mobile Developers, QA Automation Engineer].**
+- Fully-loaded Pod cost is typically 1.3 - 1.8x the cost of the single rockstar hire - more people, but at offshore Vietnamese engineering rates rather than Amsterdam salaries.
 - Bus-factor: effectively the whole Pod, not one individual. Losing one Pod member costs a few weeks of onboarding a replacement inside a structure that already documents everything; it does not cost the project.
 - Documentation is mandatory, not optional, because the Pod is explicitly built to onboard rotated members without re-explaining the architecture from scratch.
-- Deployment velocity is measured (DORA metrics, as above), not estimated - so the CTO can see, in real time, whether the investment is producing shipped features or accumulating risk.
+- Deployment velocity is measured [DORA metrics, as above], not estimated - so the CTO can see, in real time, whether the investment is producing shipped features or accumulating risk.
 
 The rockstar looks cheaper on the Year 1 invoice. The Pod looks cheaper the moment you price in the probability-weighted cost of a single point of failure walking out the door mid-roadmap - which, given the attrition dynamics described above, is not a remote tail risk in competitive local markets like Amsterdam, London, or New York. This is the calculation an elite CTO runs before signing either contract.
 
@@ -119,7 +119,6 @@ Stop hunting for unicorns. Start scaling with systems. [Contact our architects](
 ---
 
 ## FAQs
-
 ### 1. (Scenario: Startup Founder) Isn't a 10x developer cheaper than hiring an entire Pod from a firm?
 In the first 3 months, yes. Over 3 years, absolutely not. A solo developer might build the initial MVP quickly, but without QA automation or documentation, the code rapidly accumulates technical debt. By Year 2, the solo developer spends 80% of their time fixing bugs instead of building features. A Pod costs more initially, but their automated CI/CD pipelines and rigorous QA ensure that velocity *increases* over time, yielding a vastly superior multi-year ROI.
 
@@ -134,9 +133,6 @@ Control is maintained through "API-Driven Contracts" and strict Code Governance.
 
 ### 5. (Scenario: CEO assessing location strategy) Why is Vietnam specifically better for this Pod model than hiring locally in Europe?
 Vietnam boasts one of the most rapidly maturing, highly technical engineering ecosystems in the world, focused heavily on Cloud-Native and cross-platform development - Kearney's 2023 Global Services Location Index ranked Vietnam 7th globally out of 78 countries evaluated, ahead of most European outsourcing destinations. Crucially, the culture heavily values long-term employment stability and team cohesion, resulting in extremely low attrition rates compared to European or North American hubs. You gain Tier-1 architectural talent that stays on your project for years, building unparalleled domain knowledge.
-
-### 6. (Scenario: CFO evaluating vendor reporting) How do we know the Pod is actually delivering, rather than just reporting busy work?
-We instrument DORA metrics - deployment frequency, lead time for changes, change failure rate, and mean time to recovery - directly into the CI/CD pipeline and expose them on a live dashboard. Rather than trusting self-reported story points or a Slack message that says "it's basically done," your CTO can audit real, reproducible engineering performance at any time, benchmarked against the same elite-performer thresholds identified in Google's State of DevOps research.
 
 <script type="application/ld+json">
 {
@@ -181,14 +177,6 @@ We instrument DORA metrics - deployment frequency, lead time for changes, change
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Vietnam boasts one of the most rapidly maturing, highly technical engineering ecosystems in the world, focused heavily on Cloud-Native and cross-platform development - Kearney's 2023 Global Services Location Index ranked Vietnam 7th globally out of 78 countries evaluated, ahead of most European outsourcing destinations. Crucially, the culture heavily values long-term employment stability and team cohesion, resulting in extremely low attrition rates compared to European or North American hubs. You gain Tier-1 architectural talent that stays on your project for years, building unparalleled domain knowledge."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "(Scenario: CFO evaluating vendor reporting) How do we know the Pod is actually delivering, rather than just reporting busy work?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We instrument DORA metrics - deployment frequency, lead time for changes, change failure rate, and mean time to recovery - directly into the CI/CD pipeline and expose them on a live dashboard. Rather than trusting self-reported story points or a Slack message that says \"it's basically done,\" your CTO can audit real, reproducible engineering performance at any time, benchmarked against the same elite-performer thresholds identified in Google's State of DevOps research."
       }
     }
   ]

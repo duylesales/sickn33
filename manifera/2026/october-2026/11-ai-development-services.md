@@ -63,7 +63,7 @@ When procuring [custom software development services](https://www.manifera.com/s
 Professional AI development services do not dump unstructured data into prompts. They engineer sophisticated RAG pipelines.
 
 *   **ETL & Chunking:** The vendor builds an Extract, Transform, Load (ETL) pipeline to clean your proprietary data and slice it into overlapping semantic chunks.
-*   **Vector Orchestration:** These chunks are passed through an embedding model and stored in an isolated, high-performance Vector Database (e.g., Pinecone, Qdrant).
+*   **Vector Orchestration:** These chunks are passed through an embedding model and stored in an isolated, high-performance Vector Database [e.g., Pinecone, Qdrant].
 *   **Precision Injection:** At query time, the system performs a vector similarity search, retrieving *only* the top 3 most relevant paragraphs. It injects a highly constrained, 500-token context into the LLM. 
 
 This architecture slashes API costs by 90% and mathematically forces the LLM to ground its answers in your proprietary truth.
@@ -72,7 +72,7 @@ This architecture slashes API costs by 90% and mathematically forces the LLM to 
 
 Stochastic models (LLMs) cannot be trusted with security. Elite vendors build deterministic middleware - an API Gateway that acts as a firewall between your data and the LLM.
 
-Before a prompt leaves your private cloud, the middleware executes a local, deterministic redaction engine (such as Microsoft Presidio). It strips out all PII, replacing it with synthetic tokens (e.g., `[USER_SSN_REDACTED]`). The LLM processes the safe prompt, and the middleware re-injects the PII into the final response before displaying it to the user. Total data sovereignty is maintained.
+Before a prompt leaves your private cloud, the middleware executes a local, deterministic redaction engine (such as Microsoft Presidio). It strips out all PII, replacing it with synthetic tokens [e.g., `[USER_SSN_REDACTED]`]. The LLM processes the safe prompt, and the middleware re-injects the PII into the final response before displaying it to the user. Total data sovereignty is maintained.
 
 ### 3. MLOps and Continuous Evaluation (Evals)
 
@@ -101,7 +101,7 @@ Elite AI development services implement a **Tiered Approval Gateway** that sits 
 *   **Tier 2 (Confirm-Before-Execute):** Medium-risk, reversible-with-effort actions - updating a customer's shipping address, applying a discount code. The system executes the action but requires the end user to click "Confirm" before it commits.
 *   **Tier 3 (Human-in-the-Loop Approval):** High-risk, hard-to-reverse actions - issuing a refund above €500, deleting a record, modifying billing terms. The LLM's proposed action is queued for a human operator to explicitly approve or reject before the underlying API is ever called.
 
-This tiering is enforced in deterministic code, never left to the LLM's judgment about "how risky" its own action is. The gateway also enforces hard rate limits per tool (e.g., "no more than 3 refund actions per session") to contain the blast radius of a single runaway agent loop.
+This tiering is enforced in deterministic code, never left to the LLM's judgment about "how risky" its own action is. The gateway also enforces hard rate limits per tool [e.g., "no more than 3 refund actions per session"] to contain the blast radius of a single runaway agent loop.
 
 ### Why This Matters for Procurement
 
@@ -122,7 +122,6 @@ At Manifera, our elite [offshore AI development teams](https://www.manifera.com)
 ---
 
 ## FAQs
-
 ### 1. (Scenario: CTO evaluating vendors) What is the difference between a "Wrapper" and a "RAG Pipeline"?
 A wrapper takes user input and blindly forwards it to an LLM API alongside a hardcoded block of context, resulting in high costs and hallucinations. A RAG pipeline uses an ETL process, an embedding model, and a Vector Database to dynamically search and retrieve only the mathematically relevant snippets of data required to answer the specific question, reducing token usage and grounding the AI.
 
@@ -137,9 +136,6 @@ Semantic caching (using tools like Redis or GPTCache) is vital for cost control.
 
 ### 5. (Scenario: CFO) Why do robust AI development services cost more upfront than hiring a freelancer?
 A freelancer will build a direct API connection in one week - cheap upfront, but financially ruinous at scale due to unoptimized token usage and security breaches. Elite services require building the invisible infrastructure: ETL pipelines, Vector Databases, and MLOps evaluation frameworks. This upfront investment slashes your recurring API egress costs and prevents catastrophic legal liability.
-
-### 6. (Scenario: CISO) How do we stop an AI agent from taking a harmful or irreversible action on its own?
-You implement a Tiered Approval Gateway between the LLM and your internal APIs. Low-risk actions execute autonomously, medium-risk actions require the end user to confirm before committing, and high-risk or hard-to-reverse actions (like refunds or record deletion) are queued for explicit human approval. This tiering is enforced in deterministic code, not left to the LLM's own judgment about the riskiness of its actions.
 
 <script type="application/ld+json">
 {
@@ -184,14 +180,6 @@ You implement a Tiered Approval Gateway between the LLM and your internal APIs. 
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "A freelancer will build a direct API connection in one week - cheap upfront, but financially ruinous at scale due to unoptimized token usage and security breaches. Elite services require building the invisible infrastructure: ETL pipelines, Vector Databases, and MLOps evaluation frameworks. This upfront investment slashes your recurring API egress costs and prevents catastrophic legal liability."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "(Scenario: CISO) How do we stop an AI agent from taking a harmful or irreversible action on its own?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You implement a Tiered Approval Gateway between the LLM and your internal APIs. Low-risk actions execute autonomously, medium-risk actions require the end user to confirm before committing, and high-risk or hard-to-reverse actions (like refunds or record deletion) are queued for explicit human approval. This tiering is enforced in deterministic code, not left to the LLM's own judgment about the riskiness of its actions."
       }
     }
   ]

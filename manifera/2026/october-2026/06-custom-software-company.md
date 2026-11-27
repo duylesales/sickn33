@@ -30,7 +30,7 @@ Content Format: CTO-Level Deep Dive
 
 Hiring a **custom software company** is rarely a failure of code. It is almost always a failure of contracts and architecture. 
 
-When a Chief Technology Officer (CTO) or CEO evaluates an external engineering partner, they meticulously review the vendor's tech stack (React, Node.js, Python) and their hourly rates. However, they frequently ignore the legal and architectural mechanisms that dictate *who actually controls the software* once it is built.
+When a Chief Technology Officer (CTO) or CEO evaluates an external engineering partner, they meticulously review the vendor's tech stack [React, Node.js, Python] and their hourly rates. However, they frequently ignore the legal and architectural mechanisms that dictate *who actually controls the software* once it is built.
 
 If you sign a standard vendor contract without enforcing strict architectural boundaries and Intellectual Property (IP) clauses, you are not buying software. You are renting it. 
 
@@ -67,7 +67,7 @@ Your Master Services Agreement (MSA) must include a "Work for Hire" clause stati
 You must enforce architectural portability so that any senior developer can take over the codebase within a two-week sprint.
 
 Mandate the following in your Statement of Work (SOW):
-*   **Open-Source Foundations:** The application must be built using mainstream, open-source frameworks (e.g., React, Vue, Spring Boot, Django). Zero proprietary vendor engines allowed.
+*   **Open-Source Foundations:** The application must be built using mainstream, open-source frameworks [e.g., React, Vue, Spring Boot, Django]. Zero proprietary vendor engines allowed.
 *   **Containerization:** The application must be delivered as Docker containers. If the vendor's code cannot run locally via `docker-compose up`, the code is rejected.
 *   **Decoupled State:** Business logic must not be embedded in database triggers or stored procedures.
 
@@ -75,7 +75,7 @@ Mandate the following in your Statement of Work (SOW):
 
 The code does not exist if it is not in your repository.
 
-Elite engineering partners operate with total transparency. They write code directly into your company's GitLab or GitHub repository. They configure the CI/CD pipeline (e.g., GitHub Actions) so that you control the deployment keys. 
+Elite engineering partners operate with total transparency. They write code directly into your company's GitLab or GitHub repository. They configure the CI/CD pipeline [e.g., GitHub Actions] so that you control the deployment keys. 
 
 > "Most companies view handing intellectual property to an outsourcer as delivering the castle keys to marauders."
 > - Eric Walden and James C. Wetherbe, "Give a Little, Get a Little," *Harvard Business Review*, September 2005
@@ -116,7 +116,7 @@ The scenario below illustrates why these clauses matter in euros, not just in pr
 
 ## A Worked Scenario: What a Weak MSA Actually Costs
 
-Contract language feels abstract until it intersects with a real incident. Consider a realistic (hypothetical, illustrative) scenario that plays out with some regularity across the custom software industry: a Series B SaaS company signs a $180,000/year contract with a boutique development vendor to build a customer-facing analytics platform. The vendor's standard MSA caps total liability at "fees paid in the preceding 12 months" and contains no Direct Indemnification Carve-Out.
+Contract language feels abstract until it intersects with a real incident. Consider a realistic [hypothetical, illustrative] scenario that plays out with some regularity across the custom software industry: a Series B SaaS company signs a $180,000/year contract with a boutique development vendor to build a customer-facing analytics platform. The vendor's standard MSA caps total liability at "fees paid in the preceding 12 months" and contains no Direct Indemnification Carve-Out.
 
 **Month 14:** A developer on the vendor's team, working under deadline pressure, hardcodes a database connection string with elevated privileges directly into a client-side JavaScript bundle rather than routing it through an environment variable and a backend proxy. The mistake ships to production and sits undetected for five months.
 
@@ -135,7 +135,6 @@ Under the vendor's standard MSA, their contractual liability is capped at the $1
 This is the mechanism by which a liability clause negotiated (or not negotiated) months before any code is written determines who is financially exposed when - not if - an engineering mistake eventually occurs. No vendor is immune to human error; the only question a CTO controls in advance is who pays for it.
 
 ## FAQs
-
 ### 1. (Scenario: CEO reviewing contracts) What is a "Work for Hire" clause, and why is it critical?
 A "Work for Hire" (or equivalent IP assignment) clause legally dictates that the custom software company is acting as your employee/agent for the duration of the project. Therefore, the copyright and intellectual property of the software vest immediately and entirely with your company, preventing the vendor from reselling your proprietary algorithms to a competitor.
 
@@ -150,9 +149,6 @@ The vendor must never use production data in their local or staging environments
 
 ### 5. (Scenario: VP Engineering) What happens if the vendor goes bankrupt halfway through the project?
 If you followed the defensive framework, you lose nothing but time. Because the vendor was pushing code daily to your GitHub repository, and because the infrastructure was provisioned in your AWS account using Terraform, you possess the entire current state of the application. You simply revoke their IAM access and hire a new team to pick up exactly where they left off.
-
-### 6. (Scenario: CFO or General Counsel) What insurance coverage should we require the vendor to carry?
-Require a Certificate of Insurance naming your company as an additional insured, with a minimum of €1,000,000 in Professional Indemnity/Errors & Omissions coverage and €2,000,000 in Cyber Liability coverage. Also insist on a Direct Indemnification Carve-Out in the MSA so that IP infringement, data breaches, and confidentiality violations are excluded from the standard "fees paid" liability cap, since that cap otherwise leaves you financially exposed for damages far exceeding the contract value.
 
 <script type="application/ld+json">
 {
@@ -197,14 +193,6 @@ Require a Certificate of Insurance naming your company as an additional insured,
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "If you followed the defensive framework, you lose nothing but time. Because the vendor was pushing code daily to your GitHub repository, and because the infrastructure was provisioned in your AWS account using Terraform, you possess the entire current state of the application. You simply revoke their IAM access and hire a new team to pick up exactly where they left off."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "(Scenario: CFO or General Counsel) What insurance coverage should we require the vendor to carry?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Require a Certificate of Insurance naming your company as an additional insured, with a minimum of €1,000,000 in Professional Indemnity/Errors & Omissions coverage and €2,000,000 in Cyber Liability coverage. Also insist on a Direct Indemnification Carve-Out in the MSA so that IP infringement, data breaches, and confidentiality violations are excluded from the standard \"fees paid\" liability cap, since that cap otherwise leaves you financially exposed for damages far exceeding the contract value."
       }
     }
   ]

@@ -75,7 +75,7 @@ Elite agencies integrate tools like SonarQube directly into their Git workflow. 
 
 You cannot simulate reality on a laptop emulator. 
 
-Elite development services write automated UI tests using frameworks like Appium (cross-platform), Espresso (Android), or XCUITest (iOS). The CI/CD pipeline (e.g., Bitrise) takes these scripts and runs them against a Cloud Device Farm (like AWS Device Farm or Firebase Test Lab). 
+Elite development services write automated UI tests using frameworks like Appium (cross-platform), Espresso (Android), or XCUITest (iOS). The CI/CD pipeline [e.g., Bitrise] takes these scripts and runs them against a Cloud Device Farm (like AWS Device Farm or Firebase Test Lab). 
 
 *   **The ROI:** Every night at 2:00 AM, the pipeline automatically installs the app on 50 *physical* devices - ranging from the newest iPhone 15 Pro Max to a 5-year-old Samsung Galaxy running Android 10. The robots tap through the entire app, simulating bad network conditions and low battery states. You wake up to a deterministic report, knowing exactly which device crashed and why. 
 
@@ -83,7 +83,7 @@ Elite development services write automated UI tests using frameworks like Appium
 
 Mobile apps rarely crash because the UI is flawed; they crash because the backend API unexpectedly changed its JSON payload.
 
-Elite mobile teams mandate Contract Testing (e.g., using Pact). The mobile app and the backend server agree on a strict mathematical "Contract" of what the data must look like. Every time the backend team tries to deploy an update, the automated pipeline verifies it against the mobile contract. If the backend team accidentally renames a variable from `user_id` to `userId`, the pipeline fails, preventing the backend from deploying the breaking change.
+Elite mobile teams mandate Contract Testing [e.g., using Pact]. The mobile app and the backend server agree on a strict mathematical "Contract" of what the data must look like. Every time the backend team tries to deploy an update, the automated pipeline verifies it against the mobile contract. If the backend team accidentally renames a variable from `user_id` to `userId`, the pipeline fails, preventing the backend from deploying the breaking change.
 
 *   **The ROI:** You eliminate the "blame game" between the mobile team and the backend team. Integration bugs are caught in milliseconds.
 
@@ -97,12 +97,12 @@ In a 2015 post on the Google Testing Blog titled "Just Say No to More End-to-End
 
 Consider a mid-sized enterprise mobile app with roughly 4,000 automated tests, structured the way an amateur vendor typically inverts the pyramid versus how an elite vendor builds it:
 
-*   **Inverted pyramid (amateur):** Heavy reliance on UI automation because it "looks like" real user behavior - say 500 unit tests, 500 integration tests, and 3,000 slow, flaky Appium/Espresso UI tests. A full CI run against a device farm can easily take 45-90 minutes, and a single flaky UI test (failing 1 time in 20 due to a network timing issue, not an actual bug) is enough to block every developer's merge queue for the day.
-*   **Correctly-weighted pyramid (elite):** Roughly 3,000 unit tests, 800 integration tests, and only 200 targeted end-to-end tests covering the critical user journeys (login, checkout, core workflow). The full unit and integration suite runs in under 5 minutes on every commit; the smaller, curated end-to-end suite runs against the physical device farm on a nightly schedule rather than blocking every Pull Request.
+*   **Inverted pyramid (amateur):** Heavy reliance on UI automation because it "looks like" real user behavior - say 500 unit tests, 500 integration tests, and 3,000 slow, flaky Appium/Espresso UI tests. A full CI run against a device farm can easily take 45-90 minutes, and a single flaky UI test [failing 1 time in 20 due to a network timing issue, not an actual bug] is enough to block every developer's merge queue for the day.
+*   **Correctly-weighted pyramid (elite):** Roughly 3,000 unit tests, 800 integration tests, and only 200 targeted end-to-end tests covering the critical user journeys [login, checkout, core workflow]. The full unit and integration suite runs in under 5 minutes on every commit; the smaller, curated end-to-end suite runs against the physical device farm on a nightly schedule rather than blocking every Pull Request.
 
 The second team ships faster not because they wrote fewer tests, but because they invested automation effort where the economics actually pay off - this is precisely the "continuous testing" capability DORA's State of DevOps research associates with elite delivery performance: on-demand deployment, lead times measured in hours rather than weeks, and change failure rates that stay low even as deployment frequency climbs.
 
-Flakiness compounds this problem at UI-test scale. Google's own engineering research (published on the Google Testing Blog, "Where Do Our Flaky Tests Come From?") found that roughly 16% of their tests exhibited flaky behavior at some point, and that flaky tests were responsible for around 84% of the pass-to-fail transitions its engineers had to investigate. Every one of those investigations costs a real engineer real time chasing a bug that does not exist. This is precisely why elite vendors keep the UI-automation layer of the pyramid deliberately thin: it is the layer most prone to flakiness, and the layer where debugging a false failure is most expensive.
+Flakiness compounds this problem at UI-test scale. Google's own engineering research [published on the Google Testing Blog, "Where Do Our Flaky Tests Come From?"] found that roughly 16% of their tests exhibited flaky behavior at some point, and that flaky tests were responsible for around 84% of the pass-to-fail transitions its engineers had to investigate. Every one of those investigations costs a real engineer real time chasing a bug that does not exist. This is precisely why elite vendors keep the UI-automation layer of the pyramid deliberately thin: it is the layer most prone to flakiness, and the layer where debugging a false failure is most expensive.
 
 ## Procuring Continuous Deployment
 
@@ -113,7 +113,6 @@ At Manifera, our elite [offshore mobile development teams](https://www.manifera.
 ---
 
 ## FAQs
-
 ### 1. (Scenario: QA Director) Does automated testing completely replace human testers?
 Not 100%, but it replaces all *regression* testing. Human testers should never be used to verify that "the login button still works." Humans should only be used for Exploratory Testing - creatively trying to break the app in ways the developers didn't anticipate - and UX (User Experience) audits to ensure animations feel smooth. The robots handle the repetitive math; the humans handle the subjective experience.
 
@@ -128,9 +127,6 @@ This is a classic trap that breaks amateur automation pipelines. Elite teams nev
 
 ### 5. (Scenario: CEO) If the vendor writes the tests, how do we know the tests are actually good?
 You audit the "Code Coverage" report and employ Mutation Testing. Code Coverage ensures that at least 80% of the lines of code were executed during the automated test. Mutation Testing is even stricter: a tool intentionally injects a bug into the vendor's code and runs the test suite. If the test suite *passes* (failing to catch the injected bug), you know the vendor is writing fake "dummy tests" just to hit their coverage quota.
-
-### 6. (Scenario: QA Director) Our automated UI tests keep failing randomly even when nothing is broken. Is this normal?
-This is called a "flaky test," and it is one of the most common failure modes in mobile automation - Google's own engineering research found that roughly 16% of their tests exhibited flaky behavior at some point, and flaky tests accounted for the large majority of the pass-to-fail transitions their engineers had to investigate. It usually stems from UI tests that depend on network timing, animation duration, or device state instead of waiting for a deterministic signal. Elite teams treat a flaky test as a bug in the test itself, quarantine it immediately so it stops blocking the pipeline, and fix or delete it within days - rather than letting engineers develop the habit of ignoring "red" builds, which is how real regressions start slipping through unnoticed.
 
 <script type="application/ld+json">
 {
@@ -175,14 +171,6 @@ This is called a "flaky test," and it is one of the most common failure modes in
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "You audit the \"Code Coverage\" report and employ Mutation Testing. Code Coverage ensures that at least 80% of the lines of code were executed during the automated test. Mutation Testing is even stricter: a tool intentionally injects a bug into the vendor's code and runs the test suite. If the test suite *passes* (failing to catch the injected bug), you know the vendor is writing fake \"dummy tests\" just to hit their coverage quota."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "(Scenario: QA Director) Our automated UI tests keep failing randomly even when nothing is broken. Is this normal?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "This is called a \"flaky test,\" and it is one of the most common failure modes in mobile automation - Google's own engineering research found that roughly 16% of their tests exhibited flaky behavior at some point, and flaky tests accounted for the large majority of the pass-to-fail transitions their engineers had to investigate. It usually stems from UI tests that depend on network timing, animation duration, or device state instead of waiting for a deterministic signal. Elite teams treat a flaky test as a bug in the test itself, quarantine it immediately so it stops blocking the pipeline, and fix or delete it within days - rather than letting engineers develop the habit of ignoring \"red\" builds, which is how real regressions start slipping through unnoticed."
       }
     }
   ]

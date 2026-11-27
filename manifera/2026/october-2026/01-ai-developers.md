@@ -40,7 +40,7 @@ This article bypasses the hype. We deconstruct the precise architectural mechani
 
 ### The Pain: State vs. Stochasticity
 
-Traditional enterprise architecture is deterministic. A REST API receives a defined payload, queries a relational database (PostgreSQL, SQL Server), and returns a predictable JSON response. 
+Traditional enterprise architecture is deterministic. A REST API receives a defined payload, queries a relational database [PostgreSQL, SQL Server], and returns a predictable JSON response. 
 
 AI models are stochastic. An LLM API receives a prompt and returns an output based on probabilistic token prediction. When you force AI developers to bolt stochastic systems directly onto your core monolithic application, you introduce catastrophic failure vectors. A minor hallucination in an AI module can corrupt mission-critical transactional data. A sudden latency spike from a third-party AI provider (like OpenAI or Anthropic) can exhaust your connection pools and cascade into a system-wide outage.
 
@@ -64,13 +64,13 @@ This Gateway acts as a reverse proxy. It handles:
 - **Provider Agnosticism:** Allowing you to hot-swap between GPT-4, Claude 3.5, or a self-hosted Llama 3 model without refactoring your core application.
 
 > "The probabilistic nature of sampling is the source of both the magic and the frustration of generative AI."  
-> - Chip Huyen, *AI Engineering: Building Applications with Foundation Models* (O'Reilly, 2025)
+> - Chip Huyen, *AI Engineering: Building Applications with Foundation Models* [O'Reilly, 2025]
 
 Huyen's point is the architectural crux: the same sampling behavior that lets an LLM write a creative product description is the reason it cannot be trusted with the same guarantees as a SQL query. Gateway-pattern isolation is simply the engineering response to that fact - you cannot eliminate the probabilism, so you contain it.
 
 ### 2. Event-Driven Asynchronous Processing
 
-AI processing must be asynchronous. Instead of blocking HTTP requests, the backend should publish an event to a message broker (Kafka, RabbitMQ, or AWS SQS). 
+AI processing must be asynchronous. Instead of blocking HTTP requests, the backend should publish an event to a message broker [Kafka, RabbitMQ, or AWS SQS]. 
 
 A dedicated AI worker service consumes this event, processes the LLM request, and updates the database or notifies the client via WebSockets. This architecture ensures that even if the AI processing layer fails or experiences severe latency, your core application remains fully responsive.
 
@@ -99,18 +99,18 @@ RAG is highly cost-effective, perfectly auditable (you know exactly which docume
 
 Numbers make the architectural argument concrete. Consider a mid-sized SaaS product adding an AI-powered support assistant that handles roughly 50,000 user queries per month, using a commercial frontier model priced at a blended rate of approximately $6 per million tokens (a realistic blended input/output rate for a GPT-4-class model in 2026), with an average exchange consuming 1,500 tokens once system prompt and context are included.
 
-**Naive implementation (synchronous, no caching):**
+**Naive implementation [synchronous, no caching]:**
 - 50,000 queries × 1,500 tokens = 75,000,000 tokens/month
 - 75M tokens ÷ 1,000,000 × $6 = **$450/month in raw API spend**
 - No caching means every rephrased version of the same question (a large share of support volume in practice) triggers a full-priced API call
 - No queue means a provider latency spike or rate-limit event blocks application threads directly, which is an availability risk, not just a cost risk
 
 **Gateway-pattern implementation (semantic caching + async queue):**
-- Support queries have high semantic overlap - many users ask structurally identical questions in different words. Independent write-ups on production semantic-caching deployments (see Percona's and NeuralTrust's 2026 engineering analyses) report cost reductions in the 40–80% range once a vector-based cache layer is introduced ahead of the LLM call.
+- Support queries have high semantic overlap - many users ask structurally identical questions in different words. Independent write-ups on production semantic-caching deployments (see Percona's and NeuralTrust's 2026 engineering analyses) report cost reductions in the 40 - 80% range once a vector-based cache layer is introduced ahead of the LLM call.
 - Applying a conservative 50% cache-hit assumption to this workload cuts effective API spend from $450 to roughly **$225/month** - before any model right-sizing or prompt-length optimization.
 - Because requests are queued and processed asynchronously, a provider outage degrades response *time*, not application *availability*. The blast radius is contained to the AI worker service.
 
-This is a modest, single-feature example. The gap compounds dramatically once you move from a single chatbot into agentic workflows - multi-step processes where the model calls tools, re-reads context, and loops. Gartner's 2026 analysis of agentic AI workloads found that agentic tasks consume **5 to 30 times more tokens** than a single chatbot exchange, because tool-calling loops re-send accumulated context on every step. A support assistant that becomes an "agent" that looks up order history, checks a knowledge base, and drafts a refund recommendation is not a linear cost increase over the chatbot - it is a 5x–30x one, unless the Gateway pattern's caching and context-trimming logic is in place *before* that expansion happens. Companies that skip the Gateway pattern and only discover this multiplier after their agentic feature ships are the ones whose CFOs ask why the AI budget grew 10x in a single quarter.
+This is a modest, single-feature example. The gap compounds dramatically once you move from a single chatbot into agentic workflows - multi-step processes where the model calls tools, re-reads context, and loops. Gartner's 2026 analysis of agentic AI workloads found that agentic tasks consume **5 to 30 times more tokens** than a single chatbot exchange, because tool-calling loops re-send accumulated context on every step. A support assistant that becomes an "agent" that looks up order history, checks a knowledge base, and drafts a refund recommendation is not a linear cost increase over the chatbot - it is a 5x - 30x one, unless the Gateway pattern's caching and context-trimming logic is in place *before* that expansion happens. Companies that skip the Gateway pattern and only discover this multiplier after their agentic feature ships are the ones whose CFOs ask why the AI budget grew 10x in a single quarter.
 
 ## The Role of Elite AI Developers
 
@@ -134,7 +134,6 @@ For Manifera's Amsterdam-based Dutch Architects working alongside Vietnam-based 
 ---
 
 ## FAQs
-
 ### 1. (Scenario: CTO Evaluating TCO) Why are our LLM API costs scaling exponentially despite low user adoption?
 This typically indicates a lack of semantic caching. Without a caching layer (like Redis coupled with a Vector DB), your application sends redundant prompts to the LLM provider for questions that have already been answered. Every redundant call consumes tokens and drives up your Total Cost of Ownership.
 

@@ -91,13 +91,13 @@ Ready to audit true engineering capabilities? [Contact us](https://www.manifera.
 
 ## A Worked Example: Scoring Two Vendor Websites Side by Side
 
-To make the audit framework concrete, here is how it plays out when a VP Engineering scores two hypothetical vendor homepages against the same six-point rubric, each point scored 0-2 (0 = absent, 1 = mentioned, 2 = demonstrated with specifics).
+To make the audit framework concrete, here is how it plays out when a VP Engineering scores two hypothetical vendor homepages against the same six-point rubric, each point scored 0-2 [0 = absent, 1 = mentioned, 2 = demonstrated with specifics].
 
 | Audit Criterion | "Studio Aesthetic" Agency | "Engineering-First" Vendor |
 |---|---|---|
 | Case study includes infrastructure diagrams | 0 - screenshots only | 2 - AWS architecture diagram, load-tested numbers |
-| Named performance metric (latency, uptime) | 0 - "improved user engagement" | 2 - "cut P95 API latency from 900ms to 210ms" |
-| Explicit CI/CD / IaC mention | 1 - buzzword in a bullet list | 2 - pipeline stages named (SAST, DAST, staged rollout) |
+| Named performance metric [latency, uptime] | 0 - "improved user engagement" | 2 - "cut P95 API latency from 900ms to 210ms" |
+| Explicit CI/CD / IaC mention | 1 - buzzword in a bullet list | 2 - pipeline stages named [SAST, DAST, staged rollout] |
 | Security certification stated (ISO 27001/SOC 2) | 0 - not mentioned | 2 - certification linked with audit date |
 | Team structure beyond "full-stack developers" | 0 - generic team photo | 2 - named roles: Tech Lead, SDET, DevSecOps engineer |
 | Logo wall backed by a verifiable technical reference | 0 - logos with no context | 1 - logos with named project type (no reference yet) |
@@ -108,7 +108,6 @@ A score in the 0-4 range is not disqualifying on its own - some genuinely strong
 ---
 
 ## FAQs
-
 ### 1. (Scenario: CMO focused on branding) If the agency's website looks outdated, doesn't that mean they build ugly apps?
 Not necessarily. Many of the most elite, hardcore backend engineering firms in the world have incredibly simple, utilitarian websites. Their focus is on processing millions of transactions, not chasing the latest CSS design trends. While a modern website is nice, for a mission-critical app, you should value an agency's AWS certification over their website's color palette.
 
@@ -123,9 +122,6 @@ Yes. It is the "Jack-of-all-Trades" red flag. An elite vendor will have strong, 
 
 ### 5. (Scenario: CEO reviewing portfolios) Why are you dismissing UI/UX? Isn't a beautiful design critical for our mobile app's success?
 UI/UX is absolutely critical for the *product's* success, but it should not be the primary metric for hiring the *engineering* team. The ideal enterprise setup separates design from execution. You use a specialized UI/UX design firm (or your internal team) to create the pixel-perfect Figma files. You then hire an elite engineering vendor to execute that design flawlessly in code.
-
-### 6. (Scenario: Procurement Director building a shortlist) How many vendor websites should we actually audit before starting discovery calls?
-Apply the rubric to a shortlist of 4-6 vendors before booking a single call. Score each site quickly against the six criteria in the audit framework above - infrastructure detail, named performance metrics, CI/CD and IaC mentions, stated security certifications, real team structure, and verifiable (not just decorative) logos. Since independent research already accounts for the large majority of a typical B2B buying journey, doing this scoring pass up front means your actual discovery calls can focus on the 2-3 vendors who already cleared the bar, rather than spending early calls re-discovering information a well-built site should have disclosed already.
 
 <script type="application/ld+json">
 {
@@ -170,14 +166,6 @@ Apply the rubric to a shortlist of 4-6 vendors before booking a single call. Sco
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "UI/UX is absolutely critical for the *product's* success, but it should not be the primary metric for hiring the *engineering* team. The ideal enterprise setup separates design from execution. You use a specialized UI/UX design firm (or your internal team) to create the pixel-perfect Figma files. You then hire an elite engineering vendor to execute that design flawlessly in code."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "(Scenario: Procurement Director building a shortlist) How many vendor websites should we actually audit before starting discovery calls?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Apply the rubric to a shortlist of 4-6 vendors before booking a single call. Score each site quickly against the six criteria in the audit framework above - infrastructure detail, named performance metrics, CI/CD and IaC mentions, stated security certifications, real team structure, and verifiable (not just decorative) logos. Since independent research already accounts for the large majority of a typical B2B buying journey, doing this scoring pass up front means your actual discovery calls can focus on the 2-3 vendors who already cleared the bar, rather than spending early calls re-discovering information a well-built site should have disclosed already."
       }
     }
   ]

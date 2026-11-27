@@ -104,7 +104,7 @@ Consider a mid-sized Toronto fintech building a native iOS and Android trading a
 
 | Cost Line | Hybrid Hub Allocation |
 |---|---|
-| Toronto-based Product Manager & UX lead (local strategy, PIPEDA compliance) | ~$70,000 CAD |
+| Toronto-based Product Manager & UX lead [local strategy, PIPEDA compliance] | ~$70,000 CAD |
 | Vietnam-based Autonomous Pod (Senior Tech Lead + 4 engineers) | ~$220,000 CAD |
 | Dedicated QA Automation engineer | ~$35,000 CAD |
 | Dedicated SecOps engineer | ~$35,000 CAD |
@@ -116,7 +116,6 @@ Under Route A, roughly 20-25% of the budget effectively goes toward Toronto's wa
 ---
 
 ## FAQs
-
 ### 1. (Scenario: CEO concerned about IP) If we build the app in Vietnam, are we protected under Canadian law?
 Yes. When you engage in a Hybrid Hub model, you do not sign contracts with foreign entities directly. You sign a contract with a vendor's local or European holding company. That contract explicitly protects your Intellectual Property (IP) and enforces Non-Disclosure Agreements (NDAs) under strict Western legal jurisdictions, providing you with total legal safety while the execution happens offshore.
 
@@ -131,9 +130,6 @@ Due to the massive talent drain and the strength of the USD/CAD, local Canadian 
 
 ### 5. (Scenario: Lead Architect evaluating technology) Can an offshore team handle complex, Cloud-Native architectures (like AWS Serverless) or do they just write basic frontend code?
 Elite offshore hubs are deeply integrated into modern Cloud-Native paradigms. In fact, because the Southeast Asian market is highly competitive and rapidly adopting new technologies, you will often find a higher density of experts in advanced architectures (like AWS Lambda, DynamoDB, and GraphQL) in Vietnam than in smaller local Canadian markets.
-
-### 6. (Scenario: CFO comparing vendors) Why not just hire a nearshore team in Latin America instead of going all the way to Vietnam?
-Nearshore Latin American markets are a reasonable option for timezone-sensitive, highly synchronous work, but they do not solve the core economic problem. Because Latin American tech hubs (Mexico City, São Paulo, Bogotá) are themselves experiencing rising demand from US employers, their rate cards have climbed substantially and their senior talent faces the same northbound pull as Canada's. Vietnam's talent pool is larger, its cost structure remains materially lower, and its asynchronous-by-default culture is purpose-built for the documentation-first workflow a Hybrid Hub requires - you are not paying a "proximity premium" for a timezone overlap you often do not need.
 
 <script type="application/ld+json">
 {
@@ -178,14 +174,6 @@ Nearshore Latin American markets are a reasonable option for timezone-sensitive,
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Elite offshore hubs are deeply integrated into modern Cloud-Native paradigms. In fact, because the Southeast Asian market is highly competitive and rapidly adopting new technologies, you will often find a higher density of experts in advanced architectures (like AWS Lambda, DynamoDB, and GraphQL) in Vietnam than in smaller local Canadian markets."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "(Scenario: CFO comparing vendors) Why not just hire a nearshore team in Latin America instead of going all the way to Vietnam?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Nearshore Latin American markets are a reasonable option for timezone-sensitive, highly synchronous work, but they do not solve the core economic problem. Because Latin American tech hubs (Mexico City, São Paulo, Bogotá) are themselves experiencing rising demand from US employers, their rate cards have climbed substantially and their senior talent faces the same northbound pull as Canada's. Vietnam's talent pool is larger, its cost structure remains materially lower, and its asynchronous-by-default culture is purpose-built for the documentation-first workflow a Hybrid Hub requires - you are not paying a \"proximity premium\" for a timezone overlap you often do not need."
       }
     }
   ]

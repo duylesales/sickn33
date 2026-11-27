@@ -56,7 +56,7 @@ An elite vendor does not sell keystrokes; they sell commercial viability. True m
 
 Elite mobile development begins in the cloud, not on the phone. 
 
-Before a single line of frontend code is written, the vendor deploys a Solutions Architect. The Architect maps out a highly scalable, Serverless backend (e.g., AWS API Gateway and Lambda) designed to decouple the mobile client from the heavy database. 
+Before a single line of frontend code is written, the vendor deploys a Solutions Architect. The Architect maps out a highly scalable, Serverless backend [e.g., AWS API Gateway and Lambda] designed to decouple the mobile client from the heavy database. 
 *   **The ROI:** This ensures that when your app goes viral, the cloud infrastructure automatically scales horizontally to handle the traffic spike without crashing, while implementing rigorous FinOps to ensure you are only paying for the exact compute milliseconds you consume.
 
 Amazon CTO Werner Vogels put the underlying design philosophy bluntly at AWS re:Invent: "Everything fails, all the time." A Solutions Architect designs the backend assuming the database will fail, the third-party payment API will time out, and the mobile network will drop mid-request - and builds retries, queues, and graceful degradation around that assumption from day one. A commodity coder builds for the happy path and discovers the failure modes in production, in front of your customers.
@@ -86,7 +86,7 @@ A logistics client needs an app for warehouse staff to scan inventory barcodes. 
 
 An elite mobile app developer service designs for disconnection as the default state, not the exception:
 
-*   **Local-First Persistence:** Every scan writes immediately to an on-device database (SQLite, Realm, or WatermelonDB), so the UI never waits on a network round-trip to feel responsive.
+*   **Local-First Persistence:** Every scan writes immediately to an on-device database [SQLite, Realm, or WatermelonDB], so the UI never waits on a network round-trip to feel responsive.
 *   **A Sync Queue:** Writes are appended to a durable local queue. A background sync engine drains the queue to the server the instant connectivity returns, with exponential backoff retries if it fails again.
 *   **Conflict Resolution Strategy:** This is the step commodity coders skip entirely. If two warehouse staff scan and edit the same inventory record while both are offline, whose edit wins when both devices reconnect? Elite teams choose a deliberate strategy up front - Last-Write-Wins with a server timestamp for simple cases, or vector clocks/CRDTs (Conflict-free Replicated Data Types) for collaborative data where both edits need to be merged rather than one discarded.
 
@@ -123,7 +123,6 @@ Our Dutch Architects scope every engagement against the App Store Review Guideli
 ---
 
 ## FAQs
-
 ### 1. (Scenario: CPO evaluating vendors) If a vendor offers a lower hourly rate but doesn't include "Cloud Architecture" services, aren't they still cheaper overall?
 No, they are exponentially more expensive. The "cheap" vendor will write code that requires a €5,000/month AWS server to run because it is horribly unoptimized. An elite vendor will charge a higher hourly rate but architect a Serverless backend that costs €200/month to run. Over three years, the "cheap" vendor costs you €172,000 more in wasted cloud hosting alone.
 
@@ -138,9 +137,6 @@ Yes. Knowing *what* the app should do (Product Requirements) is entirely differe
 
 ### 5. (Scenario: CEO assessing long-term strategy) What happens after the app is launched? Do these "elite services" disappear?
 Elite developer services seamlessly transition from "Build Phase" to "Run Phase." The vendor implements a robust Service Level Agreement (SLA) that includes proactive OS compliance updates, continuous third-party API monitoring, and ongoing FinOps reviews to ensure the cloud infrastructure remains highly optimized as your user base grows.
-
-### 6. (Scenario: Operations Director) Our field teams work in areas with poor connectivity. How should the app handle that?
-The app must be designed offline-first, not online-only. Every action should write instantly to a local on-device database and queue for background sync rather than blocking on a live API call. Just as importantly, the vendor must define an explicit conflict-resolution strategy - such as Last-Write-Wins with server timestamps, or CRDTs for collaborative records - so that when two offline edits to the same record reconnect, the system resolves them predictably instead of silently losing data.
 
 <script type="application/ld+json">
 {
@@ -185,14 +181,6 @@ The app must be designed offline-first, not online-only. Every action should wri
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Elite developer services seamlessly transition from \"Build Phase\" to \"Run Phase.\" The vendor implements a robust Service Level Agreement (SLA) that includes proactive OS compliance updates, continuous third-party API monitoring, and ongoing FinOps reviews to ensure the cloud infrastructure remains highly optimized as your user base grows."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "(Scenario: Operations Director) Our field teams work in areas with poor connectivity. How should the app handle that?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The app must be designed offline-first, not online-only. Every action should write instantly to a local on-device database and queue for background sync rather than blocking on a live API call. Just as importantly, the vendor must define an explicit conflict-resolution strategy - such as Last-Write-Wins with server timestamps, or CRDTs for collaborative records - so that when two offline edits to the same record reconnect, the system resolves them predictably instead of silently losing data."
       }
     }
   ]

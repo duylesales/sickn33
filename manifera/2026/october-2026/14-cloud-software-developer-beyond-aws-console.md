@@ -143,7 +143,6 @@ This is why mature enterprises rely on elite [custom software development servic
 ---
 
 ## FAQs
-
 ### 1. (Scenario: CTO evaluating tech stacks) Should our cloud developer use Terraform, AWS CDK, or Pulumi?
 The specific tool matters less than the paradigm: Infrastructure as Code (IaC). Terraform remains the industry standard because it is cloud-agnostic (allowing multi-cloud deployments across AWS, Azure, and GCP). AWS CDK is excellent for TypeScript/Python shops that want to write infrastructure in their native application language. The only wrong choice is using the web console.
 
@@ -158,9 +157,6 @@ No. Serverless (Lambda) is exceptional for bursty, unpredictable workloads and m
 
 ### 5. (Scenario: CEO) Why should we outsource cloud engineering if the cloud is our core infrastructure?
 Because cloud architecture is highly cyclical. You need a Master Cloud Architect for three months to design the initial Terraform modules, set up the Kubernetes clusters, and establish the CI/CD pipelines. Once the foundation is built, the daily maintenance can be handled by standard developers. Outsourcing allows you to elastically rent that Master Architect exactly when you need them, without paying a €200,000 annual salary for part-time utilization.
-
-### 6. (Scenario: VP Engineering) How do we decide how much to invest in disaster recovery for a given system?
-You classify each system by business criticality and assign it an RTO (Recovery Time Objective) and RPO (Recovery Point Objective) before choosing an architecture. A low-priority internal tool can use a low-cost Pilot Light DR pattern with a 30-60 minute recovery time, while a revenue-critical payments system justifies a Multi-Region Active-Active architecture with near-zero RTO. The tier should match the actual cost of downtime, not a one-size-fits-all standard.
 
 <script type="application/ld+json">
 {
@@ -205,14 +201,6 @@ You classify each system by business criticality and assign it an RTO (Recovery 
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Because cloud architecture is highly cyclical. You need a Master Cloud Architect for three months to design the initial Terraform modules, set up the Kubernetes clusters, and establish the CI/CD pipelines. Once the foundation is built, the daily maintenance can be handled by standard developers. Outsourcing allows you to elastically rent that Master Architect exactly when you need them, without paying a €200,000 annual salary for part-time utilization."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "(Scenario: VP Engineering) How do we decide how much to invest in disaster recovery for a given system?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You classify each system by business criticality and assign it an RTO (Recovery Time Objective) and RPO (Recovery Point Objective) before choosing an architecture. A low-priority internal tool can use a low-cost Pilot Light DR pattern with a 30-60 minute recovery time, while a revenue-critical payments system justifies a Multi-Region Active-Active architecture with near-zero RTO. The tier should match the actual cost of downtime, not a one-size-fits-all standard."
       }
     }
   ]

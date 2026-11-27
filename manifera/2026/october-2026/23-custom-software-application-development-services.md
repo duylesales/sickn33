@@ -68,7 +68,7 @@ All user traffic hits the Gateway first. The Gateway is instructed to simply pas
 
 The engineering team then selects *one* small, non-critical piece of functionality - for example, the "Email Notification Service." 
 
-They rewrite this single feature as a modern, serverless microservice (e.g., using AWS Lambda or Go). Once it is fully tested, they go to the API Gateway and change a single line of configuration. They tell the Gateway: "If the request is an Email Notification, send it to the new Microservice. Send everything else to the old Monolith."
+They rewrite this single feature as a modern, serverless microservice [e.g., using AWS Lambda or Go]. Once it is fully tested, they go to the API Gateway and change a single line of configuration. They tell the Gateway: "If the request is an Email Notification, send it to the new Microservice. Send everything else to the old Monolith."
 
 *   **The ROI:** You have just modernized a piece of your software and deployed it to production in 3 weeks, not 2 years. If the new microservice fails, the team simply flips the switch on the Gateway back to the old monolith. The risk of business interruption is zero.
 
@@ -94,10 +94,10 @@ CTOs rarely get a rewrite budget approved on architectural elegance alone. They 
 
 ### Path A: Lift-and-Shift to AWS VMs
 
-| Year | Cloud Hosting (VMs, 24/7) | Legacy Maintenance Team | Total |
+| Year | Cloud Hosting [VMs, 24/7] | Legacy Maintenance Team | Total |
 |---|---|---|---|
-| Year 1 | €95,000 (over-provisioned, always-on) | €220,000 | €315,000 |
-| Year 2 | €110,000 (traffic growth, no elasticity) | €230,000 | €340,000 |
+| Year 1 | €95,000 [over-provisioned, always-on] | €220,000 | €315,000 |
+| Year 2 | €110,000 [traffic growth, no elasticity] | €230,000 | €340,000 |
 | Year 3 | €125,000 | €240,000 | €365,000 |
 | **3-Year Total** | | | **€1,020,000** |
 
@@ -122,11 +122,11 @@ Not every vendor who says "we do Strangler Fig migrations" actually knows how to
 
 **1. "Show me the API Gateway configuration plan before you show me a single microservice."** If a vendor jumps straight to writing new services without first establishing the routing layer that lets you fall back instantly, they are not doing a Strangler Fig migration - they are doing a partial rewrite with extra risk and none of the safety net.
 
-**2. "What is your Anti-Corruption Layer strategy for the legacy database?"** A vendor who cannot answer this in specific, technical terms (event sourcing, change-data-capture, a translation service layer) has not actually migrated a legacy database before. They will find out the hard way, on your project, at your expense.
+**2. "What is your Anti-Corruption Layer strategy for the legacy database?"** A vendor who cannot answer this in specific, technical terms [event sourcing, change-data-capture, a translation service layer] has not actually migrated a legacy database before. They will find out the hard way, on your project, at your expense.
 
 **3. "What's the rollback time if a newly sliced microservice fails in production?"** The honest answer should be measured in minutes - a configuration change at the Gateway, not a redeploy. If the answer involves "we'd need to schedule a maintenance window," the safety guarantee of the pattern has been quietly abandoned.
 
-**4. "How do you decide slice order?"** Elite teams slice by business risk and technical coupling - low-risk, loosely-coupled functionality (notifications, reporting) first, and high-risk, tightly-coupled core logic (payments, authentication) only once the team has proven the pattern works on your specific codebase. A vendor with no clear sequencing logic is guessing.
+**4. "How do you decide slice order?"** Elite teams slice by business risk and technical coupling - low-risk, loosely-coupled functionality [notifications, reporting] first, and high-risk, tightly-coupled core logic [payments, authentication] only once the team has proven the pattern works on your specific codebase. A vendor with no clear sequencing logic is guessing.
 
 **5. "What happens to institutional knowledge trapped in the legacy code?"** Fifteen-year-old systems accumulate undocumented business rules that only exist as code. A serious vendor will budget time for legacy code archaeology - interviews with long-tenured staff, automated static analysis of the old codebase - before touching a slice that depends on rules nobody remembers writing down.
 
@@ -137,7 +137,6 @@ A vendor who can answer all six with specifics, not platitudes, has actually run
 ---
 
 ## FAQs
-
 ### 1. (Scenario: CTO managing risk) Why is the "Big Bang" rewrite considered so dangerous?
 Because it assumes you can perfectly map 10 years of undocumented business logic into a new system. In a legacy system, bugs often become "features" that employees rely on. A Big Bang rewrite often fixes these "bugs," inadvertently breaking the actual workflow of the employees. The Strangler Fig pattern allows you to test these workflows in small, isolated chunks, catching logic errors immediately.
 
@@ -148,7 +147,7 @@ Initially, CapEx (Capital Expenditure) is higher for a rewrite. However, Lift-an
 This is the hardest part of the migration. You cannot simply point the new microservice at the old database schema. Elite teams implement the "Anti-Corruption Layer" (ACL) pattern. The ACL acts as a translator, taking modern, clean data requests from the microservice and translating them into the ugly, legacy format the old database requires, ensuring the new code remains pristine and uncontaminated by legacy schemas.
 
 ### 4. (Scenario: VP Engineering) We are migrating a legacy .NET Framework app to .NET Core. Is that considered Lift-and-Shift?
-If you are just changing the framework version but keeping the monolithic architecture exactly the same, yes, it is effectively a Lift-and-Shift (often called "Lift and Reshape"). While you gain some performance benefits from .NET Core, you do not gain the scalability, fault isolation, or deployment velocity of a true microservices or modular monolith architecture. 
+If you are just changing the framework version but keeping the monolithic architecture exactly the same, yes, it is effectively a Lift-and-Shift (often called "Lift and Reshape"). While you gain some performance benefits from .NET Core, you do not gain the scalability, fault isolation, or deployment velocity of a true microservices or modular monolith architecture.
 
 ### 5. (Scenario: CEO) How long does a Strangler Fig migration take?
 It depends on the size of the monolith, but typically 12 to 24 months. However, unlike a Big Bang rewrite where you wait 24 months to see *any* value, the Strangler Fig delivers ROI constantly. You might deploy the first modernized microservice in Week 4, immediately improving performance for that specific feature. You are delivering continuous value while systematically paying down technical debt.

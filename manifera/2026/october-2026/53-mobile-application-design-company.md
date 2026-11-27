@@ -62,13 +62,13 @@ An engineering-led firm understands that enterprise APIs are often slow.
 
 Instead of designing screens that require five concurrent, slow API calls, the Lead Architect will work with the designers to implement "Optimistic UI" patterns and skeleton loaders. Furthermore, the firm will architect a Backend-for-Frontend (BFF) layer - using Node.js or Go - to aggregate those five API calls on a high-speed server, delivering a single, optimized JSON payload to the mobile device. The design succeeds because the engineering team built the invisible infrastructure to support it.
 
-**A worked example.** Take a realistic enterprise "dashboard" screen: order history, loyalty balance, shipment status, personalized recommendations, and account alerts. A design-first agency's junior developer wires the screen directly to five legacy REST endpoints, each averaging 180–250 KB of largely unused fields and 300–600ms of latency on a typical 4G connection. Fired sequentially to stay within the device's connection-pool limits, that's a 1.5–3 second wait before the screen can render - on a poor connection, well past the point most users have already abandoned the screen. An engineering-led firm instead puts a BFF in front of those five services: the server-side layer fans the calls out in parallel (server-to-server links are fast and don't share the phone's radio), strips every field the screen doesn't render, and returns one payload typically under 20 KB. The mobile app makes one call instead of five, the perceived load time drops to a few hundred milliseconds, and the battery cost of five separate radio wake-ups disappears. The Figma file for that dashboard looks identical either way - the difference is entirely in the invisible infrastructure a design-first agency never budgets for.
+**A worked example.** Take a realistic enterprise "dashboard" screen: order history, loyalty balance, shipment status, personalized recommendations, and account alerts. A design-first agency's junior developer wires the screen directly to five legacy REST endpoints, each averaging 180 - 250 KB of largely unused fields and 300 - 600ms of latency on a typical 4G connection. Fired sequentially to stay within the device's connection-pool limits, that's a 1.5 - 3 second wait before the screen can render - on a poor connection, well past the point most users have already abandoned the screen. An engineering-led firm instead puts a BFF in front of those five services: the server-side layer fans the calls out in parallel (server-to-server links are fast and don't share the phone's radio), strips every field the screen doesn't render, and returns one payload typically under 20 KB. The mobile app makes one call instead of five, the perceived load time drops to a few hundred milliseconds, and the battery cost of five separate radio wake-ups disappears. The Figma file for that dashboard looks identical either way - the difference is entirely in the invisible infrastructure a design-first agency never budgets for.
 
 ### 2. State-Driven UI Development
 
-Design-first agencies often write "spaghetti code" to manage complex UI states (loading, error, empty, success). 
+Design-first agencies often write "spaghetti code" to manage complex UI states [loading, error, empty, success]. 
 
-Elite engineering firms utilize strict state management paradigms (like Redux, MobX, or BLoC in Flutter). They design the application mathematically around these states, ensuring that no matter what the user clicks or how the network drops, the application handles the exception gracefully without crashing. This requires senior engineering talent, not just junior UI coders.
+Elite engineering firms utilize strict state management paradigms [like Redux, MobX, or BLoC in Flutter]. They design the application mathematically around these states, ensuring that no matter what the user clicks or how the network drops, the application handles the exception gracefully without crashing. This requires senior engineering talent, not just junior UI coders.
 
 ## The Compliance Blind Spot: Why Design-First Agencies Miss Accessibility Law
 
@@ -96,7 +96,6 @@ Stop buying impossible prototypes. Start building engineered systems. [Contact o
 ---
 
 ## FAQs
-
 ### 1. (Scenario: CMO focused on branding) Does "Engineering-Led Design" mean our app will look boring and utilitarian?
 Absolutely not. It means the beautiful design will actually function in the real world. We still employ elite UI/UX designers to craft stunning, brand-aligned interfaces. The difference is that our designers work side-by-side with Lead Cloud Architects. We ensure that every micro-animation and data transition designed in Figma is computationally possible and highly performant when running on a user's actual device.
 
@@ -111,9 +110,6 @@ Crashes in complex flows are almost always caused by poor state management. If t
 
 ### 5. (Scenario: IT Manager) Why is the Hybrid Hub model superior to just hiring a local design agency in Europe?
 A local design agency in Europe will charge a premium for their Creative Directors, but they will likely outsource the actual coding to cheap, unmanaged freelancers to maintain their margins. The Hybrid Hub model flips this. You get the strict legal compliance and strategic oversight of a European entity (Manifera in Amsterdam), combined with a dedicated, hyper-retained "Autonomous Pod" of elite engineers in Vietnam. You get absolute transparency, zero hidden freelancers, and massive architectural throughput.
-
-### 6. (Scenario: Compliance Officer) Is our mobile app legally required to meet accessibility standards, and how do you handle that during design?
-Yes - if your enterprise serves EU consumers, the European Accessibility Act (in force since 28 June 2025) legally requires WCAG 2.1 Level AA conformance today, via the EN 301 549 v3.2.1 standard, with a revised EN 301 549 v4.1.1 expected to formally adopt the stricter WCAG 2.2 Level AA around October 2026. We do not treat this as a post-launch retrofit. Our engineers build semantic roles and labels into shared components from the first sprint, target WCAG 2.2 criteria now so clients don't face a second retrofit next year, run automated `axe-core` and Accessibility Scanner audits inside the CI/CD pipeline on every pull request, and manually verify VoiceOver and TalkBack behavior before each release, so your app is legally defensible in every EU market from day one.
 
 <script type="application/ld+json">
 {
@@ -158,14 +154,6 @@ Yes - if your enterprise serves EU consumers, the European Accessibility Act (in
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "A local design agency in Europe will charge a premium for their Creative Directors, but they will likely outsource the actual coding to cheap, unmanaged freelancers to maintain their margins. The Hybrid Hub model flips this. You get the strict legal compliance and strategic oversight of a European entity (Manifera in Amsterdam), combined with a dedicated, hyper-retained \"Autonomous Pod\" of elite engineers in Vietnam. You get absolute transparency, zero hidden freelancers, and massive architectural throughput."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "(Scenario: Compliance Officer) Is our mobile app legally required to meet accessibility standards, and how do you handle that during design?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes - if your enterprise serves EU consumers, the European Accessibility Act (in force since 28 June 2025) legally requires WCAG 2.1 Level AA conformance today, via the EN 301 549 v3.2.1 standard, with a revised EN 301 549 v4.1.1 expected to formally adopt the stricter WCAG 2.2 Level AA around October 2026. We do not treat this as a post-launch retrofit. Our engineers build semantic roles and labels into shared components from the first sprint, target WCAG 2.2 criteria now so clients don't face a second retrofit next year, run automated axe-core and Accessibility Scanner audits inside the CI/CD pipeline on every pull request, and manually verify VoiceOver and TalkBack behavior before each release, so your app is legally defensible in every EU market from day one."
       }
     }
   ]

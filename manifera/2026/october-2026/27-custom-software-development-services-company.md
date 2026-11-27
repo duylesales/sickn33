@@ -13,7 +13,7 @@ Content Format: CTO-Level Deep Dive
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Security as Code: Evaluating a Custom Software Development Services Company",
-  "description": "Enterprise security cannot be an afterthought. A CISO's guide to evaluating custom software agencies that embed DevSecOps (SAST, DAST, SCA) into the CI/CD pipeline.",
+  "description": "Enterprise security cannot be an afterthought. A CISO's guide to evaluating custom software agencies that embed DevSecOps [SAST, DAST, SCA] into the CI/CD pipeline.",
   "author": {
     "@type": "Organization",
     "name": "Manifera",
@@ -40,7 +40,7 @@ Elite engineering agencies do not test for security at the end of a project. The
 
 ### The Pain: The Supply Chain Vulnerability
 
-Modern custom software is rarely written from scratch. Developers rely heavily on open-source libraries (NPM, PyPI, Maven) to speed up development. 
+Modern custom software is rarely written from scratch. Developers rely heavily on open-source libraries [NPM, PyPI, Maven] to speed up development. 
 
 Amateur agencies pull these third-party libraries into your enterprise application without auditing them. If a hacker manages to inject a malicious script into a popular open-source library, your amateur vendor will unknowingly install that malware directly into your production environment. Because the agency only does "manual security reviews" at the end of the project, the malware sits undetected in your system, quietly exfiltrating customer data. 
 
@@ -106,10 +106,10 @@ To make the abstract concrete, walk through what actually happens, gate by gate,
 2.  **T+12 seconds - SAST gate.** The static analyzer scans the new code the developer wrote. No hardcoded secrets, no obvious injection flaws. This gate passes.
 3.  **T+40 seconds - SCA gate.** The dependency scanner cross-references the new library's declared version against the CVE database and finds a known critical deserialization vulnerability disclosed six weeks earlier, already scored 9.8 on the CVSS scale. The pipeline halts the merge automatically and posts the CVE ID and a suggested patched version directly as a PR comment.
 4.  **T+2 minutes - Developer response.** The developer bumps the dependency to the patched version referenced in the bot's comment and pushes again.
-5.  **T+52 seconds - Full re-scan.** SAST, SCA, and the IaC scan (nothing changed here, since no infrastructure was touched) all pass. DAST runs against a staging deployment and finds no exploitable behavior.
+5.  **T+52 seconds - Full re-scan.** SAST, SCA, and the IaC scan [nothing changed here, since no infrastructure was touched] all pass. DAST runs against a staging deployment and finds no exploitable behavior.
 6.  **T+6 minutes - Merge approved.** A human reviewer glances at the diff for business logic correctness - not security, because the robots already handled that - and approves.
 
-Total time cost to the business: six minutes and a Slack notification. Compare that to the alternative universe where this same vulnerable library ships to production undetected, is discovered by a penetration tester (or worse, an attacker) eight months later, and triggers an incident response, forensic investigation, customer notification process, and possibly a regulatory filing. IBM's 2025 Cost of a Data Breach Report puts the global average cost of a single breach at USD 4.44 million, with a mean time to identify and contain of 241 days - the gap between a six-minute pipeline gate and a 241-day incident is the entire business case for DevSecOps.
+Total time cost to the business: six minutes and a Slack notification. Compare that to the alternative universe where this same vulnerable library ships to production undetected, is discovered by a penetration tester [or worse, an attacker] eight months later, and triggers an incident response, forensic investigation, customer notification process, and possibly a regulatory filing. IBM's 2025 Cost of a Data Breach Report puts the global average cost of a single breach at USD 4.44 million, with a mean time to identify and contain of 241 days - the gap between a six-minute pipeline gate and a 241-day incident is the entire business case for DevSecOps.
 
 ## Procuring Mathematical Security
 
@@ -122,7 +122,6 @@ Ask any prospective vendor to walk you through exactly what happens, gate by gat
 ---
 
 ## FAQs
-
 ### 1. (Scenario: CISO evaluating vendors) If the vendor uses SAST and DAST, do we still need to hire an external firm for an annual Penetration Test?
 Yes. Automated DevSecOps tools are phenomenal at catching known vulnerabilities, misconfigurations, and common injection attacks (the "known knowns"). However, a human Penetration Tester is required to find complex, multi-step business logic flaws (the "unknown unknowns"). DevSecOps eliminates the low-hanging fruit so your highly paid Pen Testers can focus on advanced, creative attack vectors.
 
@@ -137,15 +136,6 @@ Yes, the CapEx (initial setup) is higher because the vendor must architect the p
 
 ### 5. (Scenario: Lead Architect) What happens when an automated SCA tool flags a vulnerability in a third-party library that doesn't have a patch yet (a Zero-Day)?
 The DevSecOps pipeline immediately blocks any new deployments of that application. The engineering team then implements a temporary "Virtual Patch" at the Web Application Firewall (WAF) layer (e.g., AWS WAF or Cloudflare) to block the specific attack signature. Once the open-source community releases a patch for the library, the SCA tool detects it, updates the dependency, and unlocks the deployment pipeline.
-
-### 6. (Scenario: Cloud Security Architect) Our vendor already runs SAST, SCA, and DAST. Do we still need separate IaC scanning?
-Yes. SAST, SCA, and DAST protect the application code and its running behavior, but none of them inspect the Terraform or CloudFormation templates that provision the cloud environment surrounding that application. A perfectly secure application deployed into a publicly exposed S3 bucket or an over-permissioned IAM role is still a breach waiting to happen. IaC scanning tools like Checkov or tfsec close that specific gap by validating the infrastructure definition itself before it is ever provisioned.
-
-### 7. (Scenario: CFO justifying the DevSecOps line item) How do we quantify the ROI of a security pipeline that, ideally, never gets used?
-By pricing the alternative. IBM's 2025 Cost of a Data Breach Report puts the global average cost of a single data breach at USD 4.44 million, with organizations taking a mean of 241 days to identify and contain one. A DevSecOps pipeline that blocks a vulnerable dependency in under a minute is not a cost center; it is the cheapest insurance policy against a seven-figure incident that an enterprise can buy.
-
-### 8. (Scenario: CISO reviewing supply-chain risk) How big is the actual threat from malicious open-source packages, versus vulnerable-but-legitimate ones?
-Both matter, and the malicious category is growing fast. Sonatype's 2026 State of the Software Supply Chain report found more than 454,600 new malicious open-source packages published in a single year, pushing the cumulative total past 1.2 million - a 75% year-over-year increase, with researchers describing a shift toward sustained, sometimes state-sponsored campaigns rather than isolated incidents. SCA tooling that only checks for known CVEs in legitimate libraries misses this category entirely; you also need a scanner or registry policy that flags packages by behavior and provenance, not just version number.
 
 <script type="application/ld+json">
 {
@@ -190,30 +180,6 @@ Both matter, and the malicious category is growing fast. Sonatype's 2026 State o
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "The DevSecOps pipeline immediately blocks any new deployments of that application. The engineering team then implements a temporary \"Virtual Patch\" at the Web Application Firewall (WAF) layer (e.g., AWS WAF or Cloudflare) to block the specific attack signature. Once the open-source community releases a patch for the library, the SCA tool detects it, updates the dependency, and unlocks the deployment pipeline."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "(Scenario: Cloud Security Architect) Our vendor already runs SAST, SCA, and DAST. Do we still need separate IaC scanning?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. SAST, SCA, and DAST protect the application code and its running behavior, but none of them inspect the Terraform or CloudFormation templates that provision the cloud environment surrounding that application. A perfectly secure application deployed into a publicly exposed S3 bucket or an over-permissioned IAM role is still a breach waiting to happen. IaC scanning tools like Checkov or tfsec close that specific gap by validating the infrastructure definition itself before it is ever provisioned."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "(Scenario: CFO justifying the DevSecOps line item) How do we quantify the ROI of a security pipeline that, ideally, never gets used?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "By pricing the alternative. IBM's 2025 Cost of a Data Breach Report puts the global average cost of a single data breach at USD 4.44 million, with organizations taking a mean of 241 days to identify and contain one. A DevSecOps pipeline that blocks a vulnerable dependency in under a minute is not a cost center; it is the cheapest insurance policy against a seven-figure incident that an enterprise can buy."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "(Scenario: CISO reviewing supply-chain risk) How big is the actual threat from malicious open-source packages, versus vulnerable-but-legitimate ones?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Both matter, and the malicious category is growing fast. Sonatype's 2026 State of the Software Supply Chain report found more than 454,600 new malicious open-source packages published in a single year, pushing the cumulative total past 1.2 million - a 75% year-over-year increase, with researchers describing a shift toward sustained, sometimes state-sponsored campaigns rather than isolated incidents. SCA tooling that only checks for known CVEs in legitimate libraries misses this category entirely; you also need a scanner or registry policy that flags packages by behavior and provenance, not just version number."
       }
     }
   ]

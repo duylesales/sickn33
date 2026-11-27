@@ -50,7 +50,7 @@ Ward Cunningham, the software engineer who coined the term at OOPSLA in 1992, de
 
 > "Shipping first-time code is like going into debt. A little debt speeds development so long as it is paid back promptly with refactoring. The danger occurs when the debt is not repaid. Every minute spent on code that is not quite right for the programming task of the moment counts as interest on that debt."
 
-An $80,000 quote that skips CI/CD, automated testing, and monitoring is not a discount. It is the software equivalent of an interest-only loan: the principal (the missing automation) never gets paid down, and the "interest" (40 hours of manual testing per release, forever) compounds every single month the app stays in production.
+An $80,000 quote that skips CI/CD, automated testing, and monitoring is not a discount. It is the software equivalent of an interest-only loan: the principal (the missing automation) never gets paid down, and the "interest" [40 hours of manual testing per release, forever] compounds every single month the app stays in production.
 
 ### The Agitate: The Compliance and Security Tax
 
@@ -76,7 +76,7 @@ By spending an extra 40 hours upfront to write automated test scripts (using App
 
 To eliminate the risk of "change request extortion," elite enterprises move away from fixed-scope, hourly-billing contracts. Instead, they procure Autonomous Pods.
 
-Under this model, the CFO approves a flat, predictable monthly retainer for a dedicated, cross-functional engineering team (e.g., 2 Mobile Developers, 1 Tech Lead, 1 QA Automation Engineer, 1 Scrum Master). The enterprise gains total financial predictability. There are no surprise invoices. The Pod operates at a fixed velocity, and your internal Product Owner simply prioritizes the backlog. You are buying guaranteed engineering throughput, not a speculative list of features.
+Under this model, the CFO approves a flat, predictable monthly retainer for a dedicated, cross-functional engineering team [e.g., 2 Mobile Developers, 1 Tech Lead, 1 QA Automation Engineer, 1 Scrum Master]. The enterprise gains total financial predictability. There are no surprise invoices. The Pod operates at a fixed velocity, and your internal Product Owner simply prioritizes the backlog. You are buying guaranteed engineering throughput, not a speculative list of features.
 
 ## The National-Scale Version of This Problem
 
@@ -91,10 +91,10 @@ To make the CFO's decision concrete, here is an illustrative (not an actual clie
 | Cost Line | Agency A ($80K quote) | Engineering Firm B ($120K quote) |
 |---|---|---|
 | Initial build | $80,000 | $120,000 |
-| CI/CD + automated QA setup | $0 upfront (built later, under pressure) | Included in initial quote |
-| Manual regression testing (24 months, ~2 releases/month) | ~$60,000–$96,000 in billable hours | Near $0 (automated) |
-| Post-launch security remediation (hardcoded keys, compliance gaps) | $30,000–$60,000 (internal engineering time at $150/hr) | Near $0 (built compliant from day 1) |
-| **Estimated 24-month TCO** | **~$170,000–$236,000** | **~$120,000–$135,000** |
+| CI/CD + automated QA setup | $0 upfront [built later, under pressure] | Included in initial quote |
+| Manual regression testing [24 months, ~2 releases/month] | ~$60,000 - $96,000 in billable hours | Near $0 (automated) |
+| Post-launch security remediation [hardcoded keys, compliance gaps] | $30,000 - $60,000 (internal engineering time at $150/hr) | Near $0 (built compliant from day 1) |
+| **Estimated 24-month TCO** | **~$170,000 - $236,000** | **~$120,000 - $135,000** |
 
 The numbers in the table are illustrative, not a guaranteed outcome for any specific project - but the direction is not: every line item that Agency A omits from its Day 1 quote is a cost that does not disappear, it relocates to your OpEx line eighteen months later, exactly as the McKinsey and CISQ data above would predict at portfolio scale.
 
@@ -104,14 +104,13 @@ At Manifera, we believe that transparency is the ultimate financial strategy. As
 
 Through our Hybrid Hub model, we offer the strategic security and strict legal jurisdiction of our headquarters in **Amsterdam, Netherlands**, combined with the highly efficient cost structures of our engineering centers in **Ho Chi Minh City, Vietnam** and our hub in **Singapore**. Because you are leveraging Tier-1 architectural talent in Southeast Asia, your CapEx yields vastly more engineering output than procuring locally in Europe, while our strict European management ensures zero compliance risks.
 
-For a CFO, this structure resolves the tension at the heart of every mobile app RFP: the cheapest developer and the cheapest TCO are almost never the same line item. A Western European agency quoting local rates has to compress scope (automation, testing, security) to hit a competitive Day 1 number. A Hybrid Hub firm can price in the full DevSecOps stack from the start precisely because its blended engineering cost is lower, without asking the CFO to gamble on which corners got cut.
+For a CFO, this structure resolves the tension at the heart of every mobile app RFP: the cheapest developer and the cheapest TCO are almost never the same line item. A Western European agency quoting local rates has to compress scope [automation, testing, security] to hit a competitive Day 1 number. A Hybrid Hub firm can price in the full DevSecOps stack from the start precisely because its blended engineering cost is lower, without asking the CFO to gamble on which corners got cut.
 
 Stop buying initial quotes. Start procuring predictable TCO. Learn more about [Setting up your offshore team](https://www.manifera.com/about-us/setting-up-your-offshore-team/) and secure your engineering budget today.
 
 ---
 
 ## FAQs
-
 ### 1. (Scenario: CEO reviewing budgets) Why is it impossible to get a 100% accurate, fixed-price quote for a complex enterprise mobile app?
 Because enterprise software is not a physical building; it is a living system. A fixed-price quote assumes that the business requirements will not change a single time over a 6-month development cycle. In reality, markets change, user feedback alters priorities, and legacy APIs behave unexpectedly. Vendors who promise a strict fixed price for a complex app always protect their margins by writing low-quality code or refusing to adapt to your changing business needs.
 

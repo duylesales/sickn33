@@ -92,14 +92,14 @@ McKinsey surveyed CIOs at financial-services and technology companies with reven
 
 Numbers make this concrete faster than adjectives do. The following is an illustrative model - not a specific client engagement - built from the maintenance ratios described above, showing how the same €220,000 initial build budget compounds very differently over three years depending on the architecture decisions made in month one.
 
-**Scenario A: The "Fixed Price" Native Silo.** Two separate codebases (Swift for iOS, Kotlin for Android), an always-on relational database sized for peak load, and no dedicated FinOps practice.
+**Scenario A: The "Fixed Price" Native Silo.** Two separate codebases [Swift for iOS, Kotlin for Android], an always-on relational database sized for peak load, and no dedicated FinOps practice.
 
 **Scenario B: The Hybrid, Serverless Build.** A single Flutter codebase, a Serverless backend that scales compute to zero during idle periods, and a Redis cache in front of the database.
 
 | Cost Category (annual) | Scenario A: Native Silo | Scenario B: Hybrid/Serverless |
 |---|---|---|
 | Initial build (Year 0) | €220,000 | €220,000 |
-| OS compliance "tax" (18% vs. 9%, per the ratios above) | €39,600/yr | €19,800/yr |
+| OS compliance "tax" [18% vs. 9%, per the ratios above] | €39,600/yr | €19,800/yr |
 | Cloud hosting, Year 1 → Year 3 (unoptimized vs. FinOps-managed) | €48,000 → €120,000 | €8,400 → €36,000 |
 | Third-party API maintenance | ~€8,500/yr | ~€6,500/yr |
 | **3-year operating cost total** | **≈€409,000** | **≈€145,000** |
@@ -118,7 +118,6 @@ The Amsterdam-based Dutch Architects who scope every Manifera engagement are tra
 ---
 
 ## FAQs
-
 ### 1. (Scenario: CFO budgeting) As a rule of thumb, how much should we budget annually for mobile app maintenance?
 The industry standard is 15% to 20% of the initial build cost per year. If it costs €200,000 to build "V1," you must budget €30,000 to €40,000 annually for cloud hosting, OS compliance patches, security audits, and minor bug fixes. This does *not* include the cost of adding new major features.
 
@@ -133,10 +132,6 @@ Implement rigorous FinOps and Cache strategies. Do not query the heavy, expensiv
 
 ### 5. (Scenario: Procurement Manager) Should we sign an SLA (Service Level Agreement) for maintenance with the agency that builds the app?
 Absolutely. Never sign a development contract that does not include a post-launch SLA. The SLA should guarantee a dedicated block of hours per month for dependency updates, OS compliance, and emergency bug fixes. The agency that writes the original code is the only team that can maintain it cost-effectively; handing complex code to a new agency for maintenance incurs a massive "knowledge transfer" cost.
-
-### 6. (Scenario: CFO reviewing the cloud bill) How much of our cloud spend is actually being wasted?
-
-More than you likely assume. Flexera's 2026 State of the Cloud Report, based on a survey of 753 cloud decision-makers, found that wasted infrastructure and platform spend rose to 29% in 2026 - the first increase in five years. Left unmanaged, idle compute, orphaned storage, and over-provisioned databases typically account for close to a third of a mobile app's monthly AWS or Azure bill. A dedicated FinOps review every quarter is one of the highest-ROI maintenance activities a CFO can mandate.
 
 <script type="application/ld+json">
 {
@@ -181,14 +176,6 @@ More than you likely assume. Flexera's 2026 State of the Cloud Report, based on 
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Absolutely. Never sign a development contract that does not include a post-launch SLA. The SLA should guarantee a dedicated block of hours per month for dependency updates, OS compliance, and emergency bug fixes. The agency that writes the original code is the only team that can maintain it cost-effectively; handing complex code to a new agency for maintenance incurs a massive \"knowledge transfer\" cost."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "(Scenario: CFO reviewing the cloud bill) How much of our cloud spend is actually being wasted?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "More than you likely assume. Flexera's 2026 State of the Cloud Report, based on a survey of 753 cloud decision-makers, found that wasted infrastructure and platform spend rose to 29% in 2026 - the first increase in five years. Left unmanaged, idle compute, orphaned storage, and over-provisioned databases typically account for close to a third of a mobile app's monthly AWS or Azure bill. A dedicated FinOps review every quarter is one of the highest-ROI maintenance activities a CFO can mandate."
       }
     }
   ]

@@ -62,11 +62,11 @@ Use this three-part matrix to audit their capabilities:
 
 ### 1. Audit Their CI/CD Transparency
 
-The best mobile app company will grant you read-access to the repository *before* the contract is signed (often by showing an anonymized, boilerplate architecture repository).
+The best mobile app company will grant you read-access to the repository *before* the contract is signed [often by showing an anonymized, boilerplate architecture repository].
 
 **The Question to Ask:** *"Walk me through your exact CI/CD pipeline for a mobile application from commit to App Store."*
 
-**The Red Flag Answer:** "Our senior developer builds the app locally on XCode/Android Studio and uploads it to TestFlight." (This guarantees human error, inconsistent builds, and zero automated testing).
+**The Red Flag Answer:** "Our senior developer builds the app locally on XCode/Android Studio and uploads it to TestFlight." [This guarantees human error, inconsistent builds, and zero automated testing].
 
 **The Green Flag Answer:** "We use Fastlane and GitHub Actions. When a developer creates a Pull Request, the CI pipeline automatically runs SonarQube for static analysis, executes the unit tests, and spins up Firebase Test Lab to run UI tests on 10 different physical devices. If the tests pass, Fastlane automatically increments the build number, signs the application with your enterprise certificates, and deploys it to TestFlight/Google Play Console."
 
@@ -76,7 +76,7 @@ Amateur vendors only care about features (Functional Requirements). Elite vendor
 
 **The Question to Ask:** *"How do you handle a user submitting a heavy payload (like a video upload) while on a fluctuating 3G network?"*
 
-**The Red Flag Answer:** "We show a loading spinner and tell the user to wait until the API returns a 200 OK." (If the connection drops, the user loses their data and abandons the app).
+**The Red Flag Answer:** "We show a loading spinner and tell the user to wait until the API returns a 200 OK." [If the connection drops, the user loses their data and abandons the app].
 
 **The Green Flag Answer:** "We implement an Offline-First, background sync architecture. The UI writes the payload to a local persistent database (like SQLite/Realm) and instantly returns control to the user. A background worker (like Android WorkManager or iOS BackgroundTasks) takes over, monitors network state, and chunks the video upload. If the network drops, the worker pauses and resumes automatically when connectivity is restored. The user experience is never blocked."
 
@@ -100,14 +100,14 @@ The scorecard below turns the three-part matrix above into a repeatable procurem
 
 ## Turning the Matrix Into a Scorecard: A Worked Evaluation
 
-Abstract criteria are easy to nod along to in an RFP review and easy to forget by the time three vendors have submitted glossy proposals. A numeric scorecard forces the comparison back onto engineering substance. Below is a realistic (hypothetical, illustrative) example of how a scorecard plays out across three shortlisted vendors evaluated for the same mid-sized fintech mobile app.
+Abstract criteria are easy to nod along to in an RFP review and easy to forget by the time three vendors have submitted glossy proposals. A numeric scorecard forces the comparison back onto engineering substance. Below is a realistic [hypothetical, illustrative] example of how a scorecard plays out across three shortlisted vendors evaluated for the same mid-sized fintech mobile app.
 
-**The scoring protocol:** each of the three pillars (CI/CD Transparency, NFR Handling, IP/Infrastructure Control) is scored 1-5 based on the vendor's answers to the exact interrogation questions above, then weighted according to what actually predicts delivery risk. A vendor cannot buy its way to a passing score with a good UI portfolio, because the portfolio never appears in the rubric.
+**The scoring protocol:** each of the three pillars [CI/CD Transparency, NFR Handling, IP/Infrastructure Control] is scored 1-5 based on the vendor's answers to the exact interrogation questions above, then weighted according to what actually predicts delivery risk. A vendor cannot buy its way to a passing score with a good UI portfolio, because the portfolio never appears in the rubric.
 
 | Criterion | Weight | Vendor A ("Portfolio Agency") | Vendor B ("Cut-Rate Freelance Network") | Vendor C (Elite Hybrid Partner) |
 |---|---|---|---|---|
 | CI/CD Transparency | 35% | 2/5 - manual TestFlight uploads, no static analysis | 1/5 - no CI/CD pipeline exists | 5/5 - Fastlane + GitHub Actions + Firebase Test Lab |
-| NFR Handling (offline, security, scale) | 35% | 2/5 - could not describe an offline-first pattern | 1/5 - treats NFRs as "not in scope for MVP" | 5/5 - detailed BFF and background-sync architecture |
+| NFR Handling [offline, security, scale] | 35% | 2/5 - could not describe an offline-first pattern | 1/5 - treats NFRs as "not in scope for MVP" | 5/5 - detailed BFF and background-sync architecture |
 | IP / Infrastructure Control | 30% | 3/5 - will push to client repo, but retains "proprietary boilerplate" | 2/5 - code lives on vendor's personal GitHub accounts | 5/5 - Work for Hire MSA, client-owned repo from day one |
 | **Weighted total** | | **2.3 / 5** | **1.3 / 5** | **5.0 / 5** |
 
@@ -126,12 +126,11 @@ According to the 2024 DORA report, elite-performing teams deploy code on demand 
 Translate this into your vendor scorecard directly: ask any shortlisted "best mobile app company" candidate to state their typical lead time for changes and change failure rate on a comparable prior mobile engagement. A vendor who cannot answer with real numbers, only adjectives like "fast" and "reliable," has almost certainly never measured their own delivery pipeline - which means they cannot improve it, and neither will you once they are building your app.
 
 ## FAQs
-
 ### 1. (Scenario: CEO evaluating vendors) Why shouldn't we just pick the agency with the best UI portfolio?
 Because the UI is the easiest part of the application to build. The hardest part - the part that causes apps to fail, leak data, or get rejected by Apple - is the invisible architecture (state management, API decoupling, memory profiling). A beautiful UI layered over spaghetti code will result in a 1-star App Store rating and massive financial losses.
 
 ### 2. (Scenario: CTO managing remote teams) How do we know the vendor is actually writing tests?
-You do not trust; you verify via the CI/CD pipeline. You mandate in the contract that the vendor must maintain a minimum of 80% automated test coverage. You enforce this by configuring the GitHub branch protection rules to automatically block any code merge that causes the overall test coverage metric to drop. 
+You do not trust; you verify via the CI/CD pipeline. You mandate in the contract that the vendor must maintain a minimum of 80% automated test coverage. You enforce this by configuring the GitHub branch protection rules to automatically block any code merge that causes the overall test coverage metric to drop.
 
 ### 3. (Scenario: VP Engineering) Should the vendor choose the tech stack (Native vs. Cross-Platform)?
 The vendor should *recommend* the stack based on a rigorous analysis of your Non-Functional Requirements (NFRs). If a vendor pushes Flutter for an app that requires complex, low-level Bluetooth communication, they are prioritizing their own development speed over your application's performance. The final decision must always rest with your internal architecture team.

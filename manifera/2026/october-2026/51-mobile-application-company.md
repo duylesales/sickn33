@@ -83,11 +83,11 @@ Ask to see the org chart for your specific project. An elite vendor will deploy 
 
 To move past the abstract debate, consider an illustrative (not a real client) example: a Series B logistics SaaS company deciding how to staff a driver-facing mobile app with route optimization, camera-based proof-of-delivery, and offline map caching.
 
-**Path A - Two Native teams.** The company staffs a Swift team and a Kotlin team, each building the same business logic independently - route calculation, offline sync, POD capture - twice. Every product change (a new delivery status, a new validation rule) requires two separate implementations, two separate QA passes, and two release trains that can drift out of sync if one platform ships a fix the other doesn't get for a sprint.
+**Path A - Two Native teams.** The company staffs a Swift team and a Kotlin team, each building the same business logic independently - route calculation, offline sync, POD capture - twice. Every product change [a new delivery status, a new validation rule] requires two separate implementations, two separate QA passes, and two release trains that can drift out of sync if one platform ships a fix the other doesn't get for a sprint.
 
 **Path B - One cross-platform team, one architecture.** A Flutter or React Native team implements the business logic once. The same offline-sync module, the same POD validation rules, and the same route-optimization client code ship to both platforms simultaneously. QA automation (per the test pyramid above) covers shared logic once instead of twice, and a single release train means iOS and Android drivers are never running meaningfully different app behavior.
 
-Path B is not "the cheap option" - it is the mathematically lower-risk option for a B2B app with no platform-specific hardware dependency (no ARKit-only AR feature, no deep GPU shader work). The 9.4%-versus-8.4% split in the Stack Overflow data above simply confirms that this is now the default choice most professional teams are making, not a shortcut a vendor is selling you.
+Path B is not "the cheap option" - it is the mathematically lower-risk option for a B2B app with no platform-specific hardware dependency [no ARKit-only AR feature, no deep GPU shader work]. The 9.4%-versus-8.4% split in the Stack Overflow data above simply confirms that this is now the default choice most professional teams are making, not a shortcut a vendor is selling you.
 
 ## The Hybrid Hub Execution
 
@@ -100,7 +100,6 @@ Stop debating frameworks and start engineering systems. [Contact us](https://www
 ---
 
 ## FAQs
-
 ### 1. (Scenario: CEO evaluating quotes) Why did a Native app agency quote me three times higher than a Flutter agency for the same feature set?
 Because building Native requires staffing two entirely separate engineering teams (one for iOS Swift, one for Android Kotlin). They literally have to build the exact same business logic twice. A Flutter or React Native team writes the core business logic once and shares it across both platforms. The massive price difference reflects the sheer volume of redundant labor required by the Native approach.
 
@@ -115,9 +114,6 @@ Without automation, every time a developer adds a new feature, a human QA tester
 
 ### 5. (Scenario: CTO planning for the future) If we hire an offshore engineering pod in Vietnam to build the app, can our internal EU team eventually take it over?
 Absolutely. Because we enforce the Hybrid Hub model, all intellectual property is legally secured via our Dutch headquarters. More importantly, we enforce strict, asynchronous documentation (in English) and rigorous CI/CD pipelines. When you are ready to bring the project in-house, the codebase is pristine, documented, and automated, allowing your internal team to assume control over a single weekend.
-
-### 6. (Scenario: CEO comparing vendor pitches) Is it a red flag if a vendor insists Native is the only "real" option for our app?
-It depends entirely on what they point to as the reason. If they cite a specific technical requirement - deep ARKit/ARCore integration, custom GPU shader work, or hardware SDKs with no cross-platform bindings - that's a legitimate, defensible answer. If they cite "premium feel" or "app store approval odds" with no specifics, that's a sales script, not an architecture decision. Per the 2024 Stack Overflow Developer Survey, Flutter (9.4%) and React Native (8.4%) are both mainstream, production-proven choices used by hundreds of thousands of professional developers - treat any blanket claim that cross-platform is inherently inferior as a signal to ask harder technical questions, not as settled fact.
 
 <script type="application/ld+json">
 {
@@ -162,14 +158,6 @@ It depends entirely on what they point to as the reason. If they cite a specific
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Absolutely. Because we enforce the Hybrid Hub model, all intellectual property is legally secured via our Dutch headquarters. More importantly, we enforce strict, asynchronous documentation (in English) and rigorous CI/CD pipelines. When you are ready to bring the project in-house, the codebase is pristine, documented, and automated, allowing your internal team to assume control over a single weekend."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "(Scenario: CEO comparing vendor pitches) Is it a red flag if a vendor insists Native is the only \"real\" option for our app?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It depends entirely on what they point to as the reason. If they cite a specific technical requirement - deep ARKit/ARCore integration, custom GPU shader work, or hardware SDKs with no cross-platform bindings - that's a legitimate, defensible answer. If they cite \"premium feel\" or \"app store approval odds\" with no specifics, that's a sales script, not an architecture decision. Per the 2024 Stack Overflow Developer Survey, Flutter (9.4%) and React Native (8.4%) are both mainstream, production-proven choices used by hundreds of thousands of professional developers - treat any blanket claim that cross-platform is inherently inferior as a signal to ask harder technical questions, not as settled fact."
       }
     }
   ]

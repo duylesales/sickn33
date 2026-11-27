@@ -60,7 +60,7 @@ An Autonomous Pod is a self-contained, cross-functional engineering team. It doe
 - **QA Automation Engineer:** Writes the scripts that automate testing in the CI/CD pipeline.
 - **Senior/Mid-Level Developers:** Execute the code.
 
-Under this model, your internal VP of Engineering only interfaces with the Pod's Tech Lead and Scrum Master. Your internal team defines the "What" (the product requirements and API contracts), and the Pod entirely owns the "How" (the execution, the architecture, and the testing). You eliminate the Management Tax completely.
+Under this model, your internal VP of Engineering only interfaces with the Pod's Tech Lead and Scrum Master. Your internal team defines the "What" (the product requirements and API contracts), and the Pod entirely owns the "How" [the execution, the architecture, and the testing]. You eliminate the Management Tax completely.
 
 ### 2. Built-In Retention and Shared Memory
 
@@ -105,7 +105,6 @@ Stop buying resumes. Start procuring velocity. The distinction is not semantic -
 ---
 
 ## FAQs
-
 ### 1. (Scenario: IT Procurement) Is an Autonomous Pod more expensive than Staff Augmentation?
 On a strict hourly comparison of a single developer, yes. However, when you factor in the "Management Tax" (the cost of your internal $150k/year architect spending 15 hours a week managing the offshore team), the Pod model is significantly cheaper. Furthermore, because the Pod includes QA Automation and a Tech Lead, their velocity and code quality are exponentially higher, resulting in a massively superior Total Cost of Ownership (TCO) over a 12-month period.
 

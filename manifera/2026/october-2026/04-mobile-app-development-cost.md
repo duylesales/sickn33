@@ -62,7 +62,7 @@ A mature engineering partner - like a specialized [custom software development c
 
 If your mobile application integrates any machine learning or AI models, the cost complexity multiplies. You are no longer just deploying a React Native or Swift binary. You are managing MLOps (Machine Learning Operations).
 
-Professional teams build automated CI/CD pipelines (via GitHub Actions, Bitrise, or Fastlane) to ensure that code merges trigger automated unit testing, UI testing on physical device farms, and automated deployment to staging environments. 
+Professional teams build automated CI/CD pipelines [via GitHub Actions, Bitrise, or Fastlane] to ensure that code merges trigger automated unit testing, UI testing on physical device farms, and automated deployment to staging environments. 
 
 **The TCO reality:** Building this pipeline costs an extra €10,000 to €20,000 upfront. However, it reduces the QA cycle from 3 days to 3 hours for every subsequent release. Over three years, this automated infrastructure saves hundreds of thousands of euros in manual testing labor and prevents costly rollbacks of buggy production releases.
 
@@ -70,7 +70,7 @@ Professional teams build automated CI/CD pipelines (via GitHub Actions, Bitrise,
 
 Amateur developers request the entire `User` object from the backend API just to display a profile picture on the home screen. This wastes bandwidth, drains the user's battery, and drives up your AWS egress costs.
 
-Elite mobile architects utilize GraphQL or strict REST API contract definitions (using Swagger/OpenAPI) to ensure the mobile client requests *only* the specific fields it needs. They implement robust local state management (Redux, Zustand, or native CoreData) to cache data locally. 
+Elite mobile architects utilize GraphQL or strict REST API contract definitions (using Swagger/OpenAPI) to ensure the mobile client requests *only* the specific fields it needs. They implement robust local state management [Redux, Zustand, or native CoreData] to cache data locally. 
 
 **The TCO reality:** Optimizing payload size and minimizing network requests drastically reduces your cloud egress billing and ensures the app remains highly performant even on 3G networks.
 
@@ -78,7 +78,7 @@ Elite mobile architects utilize GraphQL or strict REST API contract definitions 
 
 The debate between Native (Swift/Kotlin) and Cross-Platform (React Native/Flutter) is entirely a TCO conversation. 
 
-Cross-platform development offers a lower initial cost (roughly 30-40% cheaper upfront because of the shared codebase). However, if your application relies heavily on device hardware (BLE, complex camera APIs, or heavy background processing), the ongoing cost to maintain custom native bridges for iOS and Android will eventually exceed the cost of building two separate native apps.
+Cross-platform development offers a lower initial cost (roughly 30-40% cheaper upfront because of the shared codebase). However, if your application relies heavily on device hardware [BLE, complex camera APIs, or heavy background processing], the ongoing cost to maintain custom native bridges for iOS and Android will eventually exceed the cost of building two separate native apps.
 
 > "Shipping first time code is like going into debt. A little debt speeds development so long as it is paid back promptly with a rewrite... The danger occurs when the debt is not repaid."
 > - Ward Cunningham, inventor of the technical debt metaphor, OOPSLA 1992
@@ -109,7 +109,7 @@ Numbers make the "cheap MVP illusion" concrete. Consider a mid-market e-commerce
 
 **The €50,000 architected bid:** Includes a CI/CD pipeline (Bitrise/Fastlane), Redis caching at the API Gateway, GraphQL payload optimization, and the ATT-fallback, DPA, and Accessibility Act work described above, itemized rather than hidden inside a generic "post-launch support" line.
 
-Run both forward three years using realistic Amsterdam engineering rates. Glassdoor's 2026 Amsterdam salary data puts a senior mobile or software developer's average fully loaded compensation in the €75,000–€88,000 range annually - call it roughly €40–€45 per productive engineering hour once benefits and overhead are included. Under the low-cost path, the absence of caching forces an early RDS over-provisioning response (the €500-to-€5,000-a-month scenario described above), and the coupled state management means every subsequent feature requires disproportionate rework - the "spaghetti code" pattern described in the FAQ below, where a large share of each sprint goes to regression-proofing a fragile codebase instead of shipping. Conservatively, that pattern alone consumes an incremental 300–400 engineering hours per year beyond what the architected path requires, which at Amsterdam rates is €12,000–€18,000 of pure re-work cost annually, before counting the elevated cloud bill or the eventual full data-layer rewrite this article describes.
+Run both forward three years using realistic Amsterdam engineering rates. Glassdoor's 2026 Amsterdam salary data puts a senior mobile or software developer's average fully loaded compensation in the €75,000 - €88,000 range annually - call it roughly €40 - €45 per productive engineering hour once benefits and overhead are included. Under the low-cost path, the absence of caching forces an early RDS over-provisioning response [the €500-to-€5,000-a-month scenario described above], and the coupled state management means every subsequent feature requires disproportionate rework - the "spaghetti code" pattern described in the FAQ below, where a large share of each sprint goes to regression-proofing a fragile codebase instead of shipping. Conservatively, that pattern alone consumes an incremental 300 - 400 engineering hours per year beyond what the architected path requires, which at Amsterdam rates is €12,000 - €18,000 of pure re-work cost annually, before counting the elevated cloud bill or the eventual full data-layer rewrite this article describes.
 
 Compounded over three years, the €20,000 that separated the two initial bids is typically recovered - and then reversed - within 18 to 24 months. This is the arithmetic a CFO should ask a CTO to walk through before approving the lower quote, not after the first RDS invoice triples.
 
@@ -122,7 +122,6 @@ At Manifera, our [offshore development teams](https://www.manifera.com) integrat
 ---
 
 ## FAQs
-
 ### 1. (Scenario: CFO reviewing budgets) What is the average maintenance cost of a mobile app per year?
 Industry standard dictates that annual maintenance will cost approximately 15% to 20% of the initial development cost. However, if the app was built with poor architecture, lacking automated tests and CI/CD pipelines, that figure can easily jump to 40% or 50% as your team constantly fights regressions and technical debt.
 
@@ -137,9 +136,6 @@ Only if the MVP is a throwaway prototype used strictly to secure funding. If you
 
 ### 5. (Scenario: Lead Architect) Does using cross-platform frameworks like React Native actually reduce long-term TCO?
 It depends entirely on the app's Non-Functional Requirements (NFRs). For standard B2B SaaS interfaces or e-commerce apps, React Native significantly reduces TCO by centralizing business logic. However, for apps requiring deep OS integrations (AR, complex audio/video editing, heavy Bluetooth), React Native increases TCO because your team will spend hundreds of hours maintaining custom native bridges.
-
-### 6. (Scenario: Compliance Officer) What compliance costs are typically missing from a mobile app development cost quote?
-Vendors frequently omit privacy engineering (App Tracking Transparency fallback logic, GDPR Data Processing Agreements for every third-party SDK, and the mandatory Privacy Nutrition Label/Data Safety disclosures), EU Accessibility Act remediation (WCAG 2.1 AA support for screen readers and dynamic text), and the recurring per-MAU billing of third-party SDKs once the app scales past a free tier. These are not optional extras; they are legal and platform requirements that should be itemized in the original estimate rather than discovered after launch.
 
 <script type="application/ld+json">
 {
@@ -184,14 +180,6 @@ Vendors frequently omit privacy engineering (App Tracking Transparency fallback 
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "It depends entirely on the app's Non-Functional Requirements (NFRs). For standard B2B SaaS interfaces or e-commerce apps, React Native significantly reduces TCO by centralizing business logic. However, for apps requiring deep OS integrations (AR, complex audio/video editing, heavy Bluetooth), React Native increases TCO because your team will spend hundreds of hours maintaining custom native bridges."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "(Scenario: Compliance Officer) What compliance costs are typically missing from a mobile app development cost quote?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Vendors frequently omit privacy engineering (App Tracking Transparency fallback logic, GDPR Data Processing Agreements for every third-party SDK, and the mandatory Privacy Nutrition Label/Data Safety disclosures), EU Accessibility Act remediation (WCAG 2.1 AA support for screen readers and dynamic text), and the recurring per-MAU billing of third-party SDKs once the app scales past a free tier. These are not optional extras; they are legal and platform requirements that should be itemized in the original estimate rather than discovered after launch."
       }
     }
   ]

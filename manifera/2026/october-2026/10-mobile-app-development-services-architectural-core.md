@@ -62,9 +62,9 @@ Professional [custom software development companies](https://www.manifera.com/se
 
 An enterprise mobile application must be treated as a distributed system. The mobile device is a node that frequently disconnects from the central network.
 
-Elite mobile services mandate an **Offline-First Architecture**. This requires utilizing robust local databases (like Realm or SQLite) and an immutable state management pattern (such as BLoC in Flutter, Redux in React Native, or MVI in native Kotlin/Swift). 
+Elite mobile services mandate an **Offline-First Architecture**. This requires utilizing robust local databases (like Realm or SQLite) and an immutable state management pattern [such as BLoC in Flutter, Redux in React Native, or MVI in native Kotlin/Swift]. 
 
-When a user executes an action while offline (e.g., submitting an inspection report), the state management layer writes the action to a local persistent queue. When network connectivity is restored, a background worker automatically syncs the queue with the backend, resolving data conflicts seamlessly. The UI never blocks, and the user never loses data.
+When a user executes an action while offline [e.g., submitting an inspection report], the state management layer writes the action to a local persistent queue. When network connectivity is restored, a background worker automatically syncs the queue with the backend, resolving data conflicts seamlessly. The UI never blocks, and the user never loses data.
 
 ### 2. Clean Architecture and Dependency Injection
 
@@ -98,7 +98,7 @@ A mature mobile engagement wires up three distinct observability layers before t
 
 *   **Crash & ANR Reporting:** Tools like Firebase Crashlytics or Sentry capture every fatal crash and Android "Application Not Responding" (ANR) event, symbolicated back to the exact line of source code, grouped by device model and OS version so the team can see whether a bug is universal or isolated to, say, Samsung devices running Android 12.
 *   **Real User Monitoring (RUM):** Beyond crashes, RUM tracks non-fatal performance signals - cold start time, frame drop rate, API latency as experienced by the actual client, not the server. A backend endpoint that responds in 200ms server-side can still feel like a 4-second wait to a user on a degraded cellular connection; only client-side RUM surfaces that gap.
-*   **Session Replay & Breadcrumbs:** For reproducing elusive bugs, the app logs a breadcrumb trail of the user's last 20-30 actions (screen views, taps, network calls) leading up to a crash. This turns a vague support ticket like "the app froze" into an exact, reproducible sequence of steps.
+*   **Session Replay & Breadcrumbs:** For reproducing elusive bugs, the app logs a breadcrumb trail of the user's last 20-30 actions [screen views, taps, network calls] leading up to a crash. This turns a vague support ticket like "the app froze" into an exact, reproducible sequence of steps.
 
 ### The Operational Discipline: The Crash-Free Sessions SLA
 
@@ -108,9 +108,9 @@ Elite mobile teams do not just install these tools; they operationalize them. A 
 
 Consider two vendors shipping the same critical release - a checkout flow rewrite - to an app with 500,000 monthly active users.
 
-**Vendor A releases to 100% immediately.** This is still the default behavior on both app stores unless the team deliberately configures a phased rollout, and amateur vendors rarely bother. A regression that only manifests on a specific OS version or device class (a null-pointer crash on Android 12, say) is now live for the entire user base simultaneously. By the time crash reports accumulate, alert thresholds fire, and the team ships a hotfix through app store review, tens of thousands of users have already hit the bug - and a meaningful share of them will not open the app again.
+**Vendor A releases to 100% immediately.** This is still the default behavior on both app stores unless the team deliberately configures a phased rollout, and amateur vendors rarely bother. A regression that only manifests on a specific OS version or device class [a null-pointer crash on Android 12, say] is now live for the entire user base simultaneously. By the time crash reports accumulate, alert thresholds fire, and the team ships a hotfix through app store review, tens of thousands of users have already hit the bug - and a meaningful share of them will not open the app again.
 
-**Vendor B uses the platforms' own staged rollout mechanisms.** On Google Play Console, this typically means an initial rollout of 5–10% of the user base, held for at least 24 hours while crash-free session rate and ANR (Application Not Responding) rate are monitored, before manually expanding to 20%, 50%, and then 100%. Apple's App Store phased release follows an even more conservative, automatic seven-day schedule: 1% of eligible users on day one, 2% on day two, 5% on day three, 10% on day four, 20% on day five, 50% on day six, and 100% only on day seven - with the ability to pause the rollout entirely for up to 30 days the moment a metric misbehaves.
+**Vendor B uses the platforms' own staged rollout mechanisms.** On Google Play Console, this typically means an initial rollout of 5 - 10% of the user base, held for at least 24 hours while crash-free session rate and ANR (Application Not Responding) rate are monitored, before manually expanding to 20%, 50%, and then 100%. Apple's App Store phased release follows an even more conservative, automatic seven-day schedule: 1% of eligible users on day one, 2% on day two, 5% on day three, 10% on day four, 20% on day five, 50% on day six, and 100% only on day seven - with the ability to pause the rollout entirely for up to 30 days the moment a metric misbehaves.
 
 Under Vendor B's process, the same Android 12 regression is caught at 5-10% exposure, not 100%. The release is paused, the fix is shipped, and the staged rollout resumes - all before the majority of the user base ever installs the broken build. The engineering cost of configuring staged rollouts is close to zero; it is a checkbox in App Store Connect and Play Console, not custom infrastructure. The cost of *not* using it is measured in support tickets, one-star reviews, and users who uninstall before the fix ever reaches them. This is precisely the kind of "invisible" operational discipline that separates a vendor selling screens from a vendor selling a production-grade release process.
 
@@ -123,7 +123,6 @@ At Manifera, our elite [offshore mobile development teams](https://www.manifera.
 ---
 
 ## FAQs
-
 ### 1. (Scenario: CTO choosing frameworks) Does the choice between Native (Swift/Kotlin) and Cross-Platform (Flutter/React Native) affect these architectural requirements?
 No. While Native provides closer access to hardware NFRs (Non-Functional Requirements) like heavy Bluetooth (BLE) rendering or ARKit, the architectural principles remain identical. You still need Clean Architecture, strict state management (like BLoC for Flutter), and automated CI/CD regardless of the framework you choose.
 
@@ -138,9 +137,6 @@ Freelancers rarely build automated test suites or set up Bitrise/GitHub Actions 
 
 ### 5. (Scenario: Lead Architect) What is the biggest security risk in mobile app development?
 Hardcoded secrets. Amateur developers frequently hardcode API keys, AWS credentials, or encryption salts directly into the mobile source code. Reverse-engineering an `.apk` or `.ipa` is trivial, meaning attackers can instantly extract those keys. Professional services utilize secure keystores, backend-driven API proxying, and code obfuscation (like ProGuard) to secure the binary.
-
-### 6. (Scenario: VP Engineering) How do we know if a mobile release is failing after it's already live?
-You track Crash-Free Sessions on a live dashboard fed by tools like Firebase Crashlytics or Sentry, combined with Real User Monitoring for non-fatal performance issues. A production-grade pipeline pairs this with staged rollouts: a new release is exposed to only 5-10% of users first, and if the crash-free rate drops below your SLA threshold, the rollout is automatically halted before it reaches the full user base.
 
 <script type="application/ld+json">
 {
@@ -185,14 +181,6 @@ You track Crash-Free Sessions on a live dashboard fed by tools like Firebase Cra
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Hardcoded secrets. Amateur developers frequently hardcode API keys, AWS credentials, or encryption salts directly into the mobile source code. Reverse-engineering an `.apk` or `.ipa` is trivial, meaning attackers can instantly extract those keys. Professional services utilize secure keystores, backend-driven API proxying, and code obfuscation (like ProGuard) to secure the binary."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "(Scenario: VP Engineering) How do we know if a mobile release is failing after it's already live?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You track Crash-Free Sessions on a live dashboard fed by tools like Firebase Crashlytics or Sentry, combined with Real User Monitoring for non-fatal performance issues. A production-grade pipeline pairs this with staged rollouts: a new release is exposed to only 5-10% of users first, and if the crash-free rate drops below your SLA threshold, the rollout is automatically halted before it reaches the full user base."
       }
     }
   ]

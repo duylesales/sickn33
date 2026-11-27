@@ -56,7 +56,7 @@ When you evaluate a premium [custom software development company](https://www.ma
 
 ### 1. Vertical Slicing and Feature Modules
 
-Elite mobile engineers do not group code by technical function (e.g., putting all UI files in one folder and all database files in another). They slice the application vertically by *Business Feature*.
+Elite mobile engineers do not group code by technical function [e.g., putting all UI files in one folder and all database files in another]. They slice the application vertically by *Business Feature*.
 
 If your app has a "Payments" feature and a "Chat" feature, an elite vendor will build these as completely isolated, independent modules. The "Chat" module is not allowed to directly access the "Payments" module's database. 
 
@@ -77,7 +77,7 @@ They use the Dependency Inversion Principle. The UI layer knows *nothing* about 
 
 In a monolith, state (like whether a user is logged in or out) is stored in global variables, leading to unpredictable bugs (race conditions) when multiple threads try to update it simultaneously.
 
-Elite vendors implement strict, unidirectional state management architectures (like BLoC in Flutter, TCA in Swift, or MVI in Kotlin). State is strictly immutable and can only be modified through rigidly defined "Events."
+Elite vendors implement strict, unidirectional state management architectures [like BLoC in Flutter, TCA in Swift, or MVI in Kotlin]. State is strictly immutable and can only be modified through rigidly defined "Events."
 
 *   **The ROI:** If a bug occurs in production, it is 100% reproducible. The development team can look at the exact sequence of Events that led to the crash, drastically reducing the time required to debug and deploy a hotfix.
 
@@ -125,12 +125,11 @@ At Manifera, our elite [offshore and hybrid development teams](https://www.manif
 ---
 
 ## FAQs
-
 ### 1. (Scenario: CTO planning a rewrite) How do we transition from a monolith to a modular architecture without stopping new feature development?
 You use the "Strangler Fig Pattern." You do not stop development for a 6-month rewrite. Instead, every time you build a *new* feature, you build it as an isolated module using Clean Architecture. Then, piece by piece, you extract older features from the monolith into their own modules. Over time, the monolith "strangles" away without pausing your product roadmap.
 
 ### 2. (Scenario: VP Engineering) Doesn't building all these isolated modules and interfaces slow down the initial development speed?
-Yes. Implementing Clean Architecture and DDD requires roughly 20-30% more upfront engineering time compared to building a "Big Ball of Mud." However, this upfront investment pays off exponentially after month 6. While a monolith's development velocity slows to a crawl as technical debt mounts, a modular app maintains a flat, rapid velocity indefinitely. 
+Yes. Implementing Clean Architecture and DDD requires roughly 20-30% more upfront engineering time compared to building a "Big Ball of Mud." However, this upfront investment pays off exponentially after month 6. While a monolith's development velocity slows to a crawl as technical debt mounts, a modular app maintains a flat, rapid velocity indefinitely.
 
 ### 3. (Scenario: Lead Architect) If feature modules are completely isolated, how do they communicate with each other?
 They communicate through strictly defined contracts or an "Event Bus" (like deep linking or dependency injection interfaces). For example, if the "Chat" module needs to trigger a payment, it doesn't call the "Payment" code directly. It fires an event to a central coordinator (a Router or DI container), which then safely passes the request to the Payment module.
@@ -140,9 +139,6 @@ Only if they operate at a CTO-level. Cheap offshore agencies (body shops) only k
 
 ### 5. (Scenario: CISO) Does a modular architecture improve the security of the mobile app?
 Significantly. In a monolithic app, any compromised third-party library has access to the entire application's memory space. In a strictly modular app, you can enforce the Principle of Least Privilege at the module level. A third-party analytics SDK installed in the "Marketing" module cannot physically access the memory heap of the "Payments" module, dramatically reducing the blast radius of a vulnerability.
-
-### 6. (Scenario: Lead Architect) How do we stop the modular architecture from decaying back into a monolith over time?
-You enforce the module boundaries mechanically, not just through code review. Elite vendors use build-system-level separation (separate Gradle modules on Android, separate Swift Packages on iOS with strict access control) combined with automated CI checks, like ArchUnit or dependency-graph linters, that fail the Pull Request the instant a developer creates a forbidden cross-module import. This turns the architecture diagram into a compile-time guarantee instead of a policy that quietly erodes under deadline pressure.
 
 <script type="application/ld+json">
 {
@@ -187,14 +183,6 @@ You enforce the module boundaries mechanically, not just through code review. El
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Significantly. In a monolithic app, any compromised third-party library has access to the entire application's memory space. In a strictly modular app, you can enforce the Principle of Least Privilege at the module level. A third-party analytics SDK installed in the \"Marketing\" module cannot physically access the memory heap of the \"Payments\" module, dramatically reducing the blast radius of a vulnerability."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "(Scenario: Lead Architect) How do we stop the modular architecture from decaying back into a monolith over time?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You enforce the module boundaries mechanically, not just through code review. Elite vendors use build-system-level separation (separate Gradle modules on Android, separate Swift Packages on iOS with strict access control) combined with automated CI checks, like ArchUnit or dependency-graph linters, that fail the Pull Request the instant a developer creates a forbidden cross-module import. This turns the architecture diagram into a compile-time guarantee instead of a policy that quietly erodes under deadline pressure."
       }
     }
   ]

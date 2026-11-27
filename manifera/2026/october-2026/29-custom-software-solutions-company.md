@@ -82,7 +82,7 @@ Consider a mid-sized B2B SaaS enterprise planning a new customer-facing analytic
 
 **The Code Factory path:** No Discovery phase. All 12 features are built to spec over 20 weeks at a blended rate of €65/hour for a 4-person team, roughly €416,000. The product launches. Usage analytics six months later show the pattern the Standish Group's Jim Johnson first documented at the XP2002 conference in a widely cited (if methodologically narrow) study of internal enterprise applications: a large share of built features are used rarely or never. Even a conservative reading of that pattern applied here means several of the 12 features, representing a meaningful fraction of the 20-week build, generated close to zero usage. That is a direct, sunk cost with no return.
 
-**The Product Partner path:** A 3-week Discovery phase (roughly €15,000 at the same blended rate) runs Figma prototypes past 15 real target users before a single backend line is written. Discovery eliminates 4 of the 12 proposed features outright - users could not find them, did not understand them, or explicitly said they would not use them - and resequences two more into a later phase. The build shrinks to 8 features across 14 weeks, roughly €291,000, including the Discovery cost.
+**The Product Partner path:** A 3-week Discovery phase [roughly €15,000 at the same blended rate] runs Figma prototypes past 15 real target users before a single backend line is written. Discovery eliminates 4 of the 12 proposed features outright - users could not find them, did not understand them, or explicitly said they would not use them - and resequences two more into a later phase. The build shrinks to 8 features across 14 weeks, roughly €291,000, including the Discovery cost.
 
 The Product Partner path costs €125,000 less in direct build spend and ships five weeks earlier, while carrying materially lower risk of shipping features nobody uses. The €15,000 Discovery investment is not overhead against the build; it is what makes the build smaller, faster, and more likely to be used.
 
@@ -115,7 +115,6 @@ This is also where Dutch and Vietnamese working styles complement each other str
 ---
 
 ## FAQs
-
 ### 1. (Scenario: CEO protecting timelines) We know exactly what we want. Why should we waste 3 weeks and thousands of Euros on a "Product Discovery" phase?
 Because your certainty is an illusion until it is validated by the end-user. Data shows that in software development, 64% of features built are "rarely or never used." If you skip Product Discovery, you are mathematically guaranteeing that you will spend months paying engineers to build code that your users will ignore. Spending €10,000 on Discovery to save €100,000 on wasted engineering is the ultimate ROI.
 

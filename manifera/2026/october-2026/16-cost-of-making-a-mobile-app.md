@@ -60,7 +60,7 @@ To accurately project the cost of making a mobile app, elite CTOs and CFOs use a
 
 Enterprise software is not "uploaded"; it is continuously integrated.
 
-You must budget for the engineering hours required to build and maintain a robust CI/CD pipeline (using GitHub Actions, Bitrise, or Fastlane). This pipeline must automatically run Static Application Security Testing (SAST), execute UI tests on physical device farms (e.g., Firebase Test Lab), and orchestrate Over-The-Air (OTA) updates. 
+You must budget for the engineering hours required to build and maintain a robust CI/CD pipeline [using GitHub Actions, Bitrise, or Fastlane]. This pipeline must automatically run Static Application Security Testing (SAST), execute UI tests on physical device farms [e.g., Firebase Test Lab], and orchestrate Over-The-Air (OTA) updates. 
 
 *   **The Hidden Cost:** Building the pipeline takes time, and maintaining the cloud runners (the servers that execute the automated tests) costs monthly subscription fees. However, this upfront cost eliminates the catastrophic expense of deploying a critical bug to production that halts revenue.
 
@@ -76,7 +76,7 @@ If your application requires Offline-First capabilities - allowing field workers
 
 Security is not a plugin you install at the end; it is a continuous operational expense.
 
-To deploy an enterprise app, you must budget for annual third-party Penetration Testing (approx. €10,000 - €25,000 per audit). Furthermore, your backend architecture requires Data Loss Prevention (DLP) middleware to ensure PII (Personally Identifiable Information) is encrypted at rest and in transit. 
+To deploy an enterprise app, you must budget for annual third-party Penetration Testing [approx. €10,000 - €25,000 per audit]. Furthermore, your backend architecture requires Data Loss Prevention (DLP) middleware to ensure PII (Personally Identifiable Information) is encrypted at rest and in transit. 
 
 If you hire a cheap agency that hardcodes API keys into the mobile binary, a hacker will extract them, breach your database, and the ensuing GDPR fines (up to 4% of global revenue) will become the ultimate "cost" of the app.
 
@@ -111,13 +111,13 @@ When Path A's technical debt catches up with the business - the CFO sees the ris
 > "Adding manpower to a late software project makes it later."
 > - Frederick P. Brooks Jr., *The Mythical Man-Month: Essays on Software Engineering* (1975)
 
-Brooks's Law holds because new engineers cannot be productive on day one. They must first understand the existing (undocumented, untested) codebase before they can safely touch it, and the engineers who already understand it lose time training the new hires instead of shipping. On a codebase with no automated tests and no architectural boundaries - the exact profile of a cheap fixed-bid build - this ramp-up tax is dramatically worse, because there is no test suite to tell a new engineer whether their change broke something three screens away. This is precisely why the "rewrite trap" described in the FAQ below is so common: at some point, adding people to the existing codebase stops being cheaper than starting over, and the business has now paid for the application twice.
+Brooks's Law holds because new engineers cannot be productive on day one. They must first understand the existing [undocumented, untested] codebase before they can safely touch it, and the engineers who already understand it lose time training the new hires instead of shipping. On a codebase with no automated tests and no architectural boundaries - the exact profile of a cheap fixed-bid build - this ramp-up tax is dramatically worse, because there is no test suite to tell a new engineer whether their change broke something three screens away. This is precisely why the "rewrite trap" described in the FAQ below is so common: at some point, adding people to the existing codebase stops being cheaper than starting over, and the business has now paid for the application twice.
 
 ## Team Composition and the Hybrid Model's Effect on TCO
 
-One of the least-discussed levers in the TCO equation is *who* builds the software, not just *how*. A fully local European team commands premium day rates for every role - including the roles (QA automation, DevOps, security review) that are necessary but do not need to sit in the same building as the product owner.
+One of the least-discussed levers in the TCO equation is *who* builds the software, not just *how*. A fully local European team commands premium day rates for every role - including the roles [QA automation, DevOps, security review] that are necessary but do not need to sit in the same building as the product owner.
 
-Manifera's Hybrid Model splits this deliberately: Dutch Architects based in Amsterdam own the requirements translation, the architectural decisions, and the client relationship, while a dedicated Vietnamese engineering pod executes the implementation, testing, and CI/CD maintenance under that architectural guidance. The effect on the TCO Matrix is structural rather than cosmetic - the expensive, judgment-heavy work (architecture, security review, stakeholder communication) is concentrated where it adds the most value, while the labor-intensive, execution-heavy work (writing and testing code against a well-defined architecture) is delivered at a materially lower blended rate. This is not "outsourcing to cut corners" - the automated test suite, the CI/CD pipeline, and the Clean Architecture separation described throughout this TCO matrix are non-negotiable regardless of where the engineers sit. It is why an architecturally sound build from a hybrid team can land closer to Path B's €75,000 than a fully local agency's equivalent quote, without inheriting Path A's hidden OpEx.
+Manifera's Hybrid Model splits this deliberately: Dutch Architects based in Amsterdam own the requirements translation, the architectural decisions, and the client relationship, while a dedicated Vietnamese engineering pod executes the implementation, testing, and CI/CD maintenance under that architectural guidance. The effect on the TCO Matrix is structural rather than cosmetic - the expensive, judgment-heavy work [architecture, security review, stakeholder communication] is concentrated where it adds the most value, while the labor-intensive, execution-heavy work (writing and testing code against a well-defined architecture) is delivered at a materially lower blended rate. This is not "outsourcing to cut corners" - the automated test suite, the CI/CD pipeline, and the Clean Architecture separation described throughout this TCO matrix are non-negotiable regardless of where the engineers sit. It is why an architecturally sound build from a hybrid team can land closer to Path B's €75,000 than a fully local agency's equivalent quote, without inheriting Path A's hidden OpEx.
 
 ## Investing in Operational Resilience
 
@@ -128,7 +128,6 @@ At Manifera, our elite [custom software development teams](https://www.manifera.
 ---
 
 ## FAQs
-
 ### 1. (Scenario: CFO evaluating budgets) What is a realistic ratio of initial development cost (CapEx) to annual maintenance cost (OpEx)?
 As a standard benchmark, budget 20% to 30% of the initial development cost for annual maintenance. If the MVP costs €100,000 to build architecturally sound, expect to spend €20,000 to €30,000 annually on OS updates, third-party library patching, server costs, and maintaining the CI/CD pipelines.
 

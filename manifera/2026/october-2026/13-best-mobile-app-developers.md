@@ -52,8 +52,8 @@ Junior developers frequently create strong reference cycles (especially in iOS/S
 
 John Carmack, discussing the memory constraints he hit porting *RAGE* to iOS, described exactly this failure mode from the platform's perspective:
 
-> "iOS does not have a swapfile, so if you use too much dynamic memory, the OS gives you a warning or two, then kills your process. The bane of iOS developers is that 'too much' is not defined, and in fact varies based on what other apps (Safari, Mail, iPod, etc.) that are in memory have done."
-> - John Carmack, id Software co-founder, on the *RAGE* iOS/Android developer diary (Bethesda Blog, 2011)
+> "iOS does not have a swapfile, so if you use too much dynamic memory, the OS gives you a warning or two, then kills your process. The bane of iOS developers is that 'too much' is not defined, and in fact varies based on what other apps [Safari, Mail, iPod, etc.] that are in memory have done."
+> - John Carmack, id Software co-founder, on the *RAGE* iOS/Android developer diary [Bethesda Blog, 2011]
 
 This is precisely why "it worked on my simulator" is meaningless in a mobile interview. The simulator has your laptop's 16GB or 32GB of unified memory behind it. The user's three-year-old mid-range Android phone does not, and the OS will not warn you politely before it terminates your process - it will simply do it.
 
@@ -65,7 +65,7 @@ To identify the best mobile app developers - or to audit the talent density of a
 
 **Ask:** *"Our app needs to upload a 500MB video to our servers. The user taps 'Upload' and then immediately minimizes the app to open WhatsApp. How do you engineer this to ensure the upload succeeds without draining the battery?"*
 
-**The Red Flag Answer:** "I just use a standard async HTTP request and run it in a background thread." (When the app is minimized, the OS will kill that thread within 30 seconds to save battery, and the upload will fail).
+**The Red Flag Answer:** "I just use a standard async HTTP request and run it in a background thread." [When the app is minimized, the OS will kill that thread within 30 seconds to save battery, and the upload will fail].
 
 **The Green Flag Answer:** "We cannot rely on standard threads for background execution. We must use the OS-level background task schedulers - `WorkManager` in Android or `BGTaskScheduler` in iOS. We instruct the OS to execute this heavy payload *only* when the device is connected to Wi-Fi and plugged into a charger. Furthermore, we must implement chunking and resumable uploads. If the user loses connection at 90%, the worker must pause and resume the remaining 10% later, rather than restarting the 500MB upload and destroying the user's data plan."
 
@@ -81,7 +81,7 @@ To identify the best mobile app developers - or to audit the talent density of a
 
 **Ask:** *"If we use Flutter or React Native, how do we handle heavy cryptographic hashing that must be performed locally on the device?"*
 
-**The Red Flag Answer:** "I will just write a JavaScript/Dart function to do the hashing." (This will saturate the single JavaScript/Dart thread, dropping the frame rate to 10fps and causing massive UI jank).
+**The Red Flag Answer:** "I will just write a JavaScript/Dart function to do the hashing." [This will saturate the single JavaScript/Dart thread, dropping the frame rate to 10fps and causing massive UI jank].
 
 **The Green Flag Answer:** "Heavy computational tasks cannot run on the UI thread, and in cross-platform environments, running them on the bridge is a bottleneck. We must use an `Isolate` (in Flutter) to spin up a separate memory heap for the computation, completely freeing the main thread. Alternatively, for maximum performance, we write the cryptographic logic natively in C++ or Kotlin/Swift and communicate with the cross-platform layer via Method Channels/JNI, ensuring the UI remains at a flawless 60fps."
 
@@ -128,7 +128,6 @@ By utilizing a hybrid team extension model, you inherit developers who have alre
 ---
 
 ## FAQs
-
 ### 1. (Scenario: Hiring Manager) Should we hire developers who only know Native (Swift/Kotlin) or Cross-Platform (Flutter/React Native)?
 The *best* developers are platform-agnostic engineers. A developer who understands the fundamental concepts of memory heaps, garbage collection, and thread scheduling in Native Android (Kotlin) will easily become a top-tier Flutter developer because they understand the underlying hardware constraints that the framework is abstracting away.
 

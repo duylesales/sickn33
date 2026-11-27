@@ -63,7 +63,7 @@ An elite [custom software development company](https://www.manifera.com/services
 Enterprise software development rarely happens in a vacuum. It almost always involves interacting with a legacy mainframe or a bloated 15-year-old monolith. 
 
 Amateur vendors suggest a "Big Bang Rewrite." Joel Spolsky called this "the single worst strategic mistake that any software company can make" back in 2000, and the pattern of failure has not changed since: a feature freeze on the old system, a timeline that doubles and then doubles again, and competitors gaining ground while your team rebuilds functionality the business already had. Elite engineering partners utilize the **Strangler Fig Pattern** instead. 
-Instead of rewriting the monolith at once, they deploy an API Gateway in front of it. They meticulously extract specific domains (e.g., the `Inventory` module), rewrite them as isolated, scalable services, and route traffic to the new service while the rest of the monolith continues functioning. This provides continuous value delivery while systematically strangling the legacy code to death with zero operational risk.
+Instead of rewriting the monolith at once, they deploy an API Gateway in front of it. They meticulously extract specific domains [e.g., the `Inventory` module], rewrite them as isolated, scalable services, and route traffic to the new service while the rest of the monolith continues functioning. This provides continuous value delivery while systematically strangling the legacy code to death with zero operational risk.
 
 ### 2. CI/CD and Zero-Downtime Deployments
 
@@ -77,7 +77,7 @@ Modern custom software development services must include the setup and handover 
 
 A vendor's code is not "done" when it passes QA. It is done when it survives in production under heavy load.
 
-Elite services integrate absolute observability. They do not just write application logs; they implement Distributed Tracing (via OpenTelemetry) and Application Performance Monitoring (APM) tools like Datadog. They can track a single user request as it traverses the API gateway, hits three different microservices, and queries the database. If latency breaches the agreed-upon SLA (e.g., 99th percentile response time must be under 200ms), automated alerts trigger immediately.
+Elite services integrate absolute observability. They do not just write application logs; they implement Distributed Tracing (via OpenTelemetry) and Application Performance Monitoring (APM) tools like Datadog. They can track a single user request as it traverses the API gateway, hits three different microservices, and queries the database. If latency breaches the agreed-upon SLA [e.g., 99th percentile response time must be under 200ms], automated alerts trigger immediately.
 
 > "Everything fails, all the time."
 > *- Werner Vogels, CTO of Amazon Web Services, in "A Second Conversation with Werner Vogels," ACM Queue*
@@ -99,7 +99,7 @@ Elite custom software development services do not describe disaster recovery in 
 
 A backup that has never been restored is a theory, not a safeguard. Elite engineering partners run scheduled "Game Days" - deliberate, controlled exercises where the team simulates a production database loss and restores the system from backup in a staging environment, timing the entire process against the contracted RTO. If the restore takes six hours but the SLA promises one, the gap is discovered in a controlled drill, not during an actual customer-facing outage.
 
-For enterprises operating in regulated industries, the SOW should also specify backup retention periods (often 30, 90, or 365 days depending on compliance requirements), geographic redundancy (backups stored in a separate cloud region from production), and encryption-at-rest for all backup data. Demand to see the results of the vendor's last disaster recovery drill before signing - a vendor who cannot produce one has never actually tested whether their promises survive contact with reality.
+For enterprises operating in regulated industries, the SOW should also specify backup retention periods [often 30, 90, or 365 days depending on compliance requirements], geographic redundancy (backups stored in a separate cloud region from production), and encryption-at-rest for all backup data. Demand to see the results of the vendor's last disaster recovery drill before signing - a vendor who cannot produce one has never actually tested whether their promises survive contact with reality.
 
 ## A Worked Example: What Feature-Factory Debt Actually Costs
 
@@ -109,7 +109,7 @@ Numbers make the abstraction concrete. Consider a mid-market SaaS company runnin
 
 **Path B - the elite engineering partner.** Higher day-rate, but the SOW includes CI/CD, canary deployments, and automated rollback from day one. According to the DORA (DevOps Research and Assessment) 2024 *State of DevOps Report*, elite-performing engineering organizations deploy on demand, recover from a failed deployment roughly 2,293 times faster than low performers, and hold a change failure rate around 5%. Applied to the same incident, an elite pipeline detects the canary's error-rate spike within minutes and auto-rolls-back before 5% of traffic is ever affected - turning a potential $500K+ incident into a non-event that shows up as a single line in a Slack channel.
 
-The day-rate premium for Path B is typically 15–30% higher than Path A. The expected-value math is not close: one avoided incident pays for the premium many times over, and that is before counting the compounding cost of the architectural debt Path A leaves behind for the next three years of feature work.
+The day-rate premium for Path B is typically 15 - 30% higher than Path A. The expected-value math is not close: one avoided incident pays for the premium many times over, and that is before counting the compounding cost of the architectural debt Path A leaves behind for the next three years of feature work.
 
 ## Buying Outcomes, Not Code
 
@@ -120,7 +120,6 @@ At Manifera, our offshore and hybrid engineering teams provide true enterprise s
 ---
 
 ## FAQs
-
 ### 1. (Scenario: CTO managing legacy systems) Why is the "Big Bang Rewrite" so dangerous?
 A Big Bang Rewrite assumes you can freeze new feature development on the legacy system for 18-24 months while you rebuild it perfectly. Business reality never allows this. Requirements change, the legacy system continues to mutate, and by the time the "new" system is finished, it is already obsolete. The Strangler Fig pattern mitigates this risk through incremental, domain-by-domain extraction.
 
@@ -135,9 +134,6 @@ The "Time to Restore Service" (MTTR) and "Deployment Frequency." Ask the vendor:
 
 ### 5. (Scenario: Product Manager) How do we prevent the vendor from building a feature that crashes the database?
 Isolate read operations from write operations using the CQRS (Command Query Responsibility Segregation) pattern. For heavy reporting or analytics dashboards, the vendor must route queries to a read-only database replica or a dedicated data warehouse, ensuring that complex `SELECT` queries never impact the primary transactional database used by your customers.
-
-### 6. (Scenario: CISO/Risk Officer) What should our disaster recovery clause actually require from the vendor?
-Demand contractually defined Recovery Point Objective (RPO) and Recovery Time Objective (RTO) numbers, not vague language like "we take backups." A mature vendor commits to a specific RPO (e.g., 15 minutes of maximum data loss) and RTO (e.g., 1 hour to full restoration), and can produce evidence of a recent "Game Day" drill where they actually restored production from backup and timed it against those numbers. If they cannot show you a completed drill, their disaster recovery plan is unverified.
 
 <script type="application/ld+json">
 {
@@ -182,14 +178,6 @@ Demand contractually defined Recovery Point Objective (RPO) and Recovery Time Ob
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Isolate read operations from write operations using the CQRS (Command Query Responsibility Segregation) pattern. For heavy reporting or analytics dashboards, the vendor must route queries to a read-only database replica or a dedicated data warehouse, ensuring that complex `SELECT` queries never impact the primary transactional database used by your customers."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "(Scenario: CISO/Risk Officer) What should our disaster recovery clause actually require from the vendor?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Demand contractually defined Recovery Point Objective (RPO) and Recovery Time Objective (RTO) numbers, not vague language like \"we take backups.\" A mature vendor commits to a specific RPO (e.g., 15 minutes of maximum data loss) and RTO (e.g., 1 hour to full restoration), and can produce evidence of a recent \"Game Day\" drill where they actually restored production from backup and timed it against those numbers. If they cannot show you a completed drill, their disaster recovery plan is unverified."
       }
     }
   ]

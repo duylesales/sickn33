@@ -75,7 +75,7 @@ This Architect acts as a peer to your internal CTO. If your company requests a f
 
 In Staff Augmentation, you pay for hours. In Managed Services, you pay for velocity and quality.
 
-Elite [custom software development services](https://www.manifera.com/services/custom-software-development/) are governed by strict SLAs. The contract mandates specific performance metrics: high Sprint Velocity (measured in Story Points), low bug defect rates (measured in QA pass rates), and strict code coverage minimums (e.g., 85% automated test coverage). The vendor is financially accountable for the output, fundamentally shifting the delivery risk away from your enterprise.
+Elite [custom software development services](https://www.manifera.com/services/custom-software-development/) are governed by strict SLAs. The contract mandates specific performance metrics: high Sprint Velocity (measured in Story Points), low bug defect rates (measured in QA pass rates), and strict code coverage minimums [e.g., 85% automated test coverage]. The vendor is financially accountable for the output, fundamentally shifting the delivery risk away from your enterprise.
 
 This shift mirrors a broader change in why enterprises outsource at all. Deloitte's 2024 Global Outsourcing Survey found that skilled talent and organizational agility have joined cost reduction as leading drivers behind outsourcing decisions, rather than cost alone. Enterprises are no longer buying developer-hours at a discount; they are buying access to delivery capability and specialized skill they cannot hire and retain internally at the speed the market demands. That framing only makes sense under a Managed Service model - Staff Augmentation still prices and delivers on the old, hours-based logic.
 
@@ -87,7 +87,7 @@ A detail enterprise buyers frequently overlook during procurement is what happen
 
 In many Staff Augmentation arrangements, and even in poorly structured Managed Service deals, the vendor builds the application inside its own private GitHub or GitLab organization "for convenience." This arrangement quietly makes the vendor the de facto custodian of your intellectual property. If a payment dispute arises or the relationship ends abruptly, the enterprise can find itself locked out of its own source code, CI/CD pipelines, and infrastructure definitions overnight.
 
-Elite Managed Service providers eliminate this risk structurally, not contractually. The repository is provisioned inside the client's own GitHub or GitLab organization from Sprint Zero, with the vendor's engineers added as outside collaborators rather than owners. Cloud accounts (AWS, Azure, GCP) are created under the client's own billing entity, with the vendor granted scoped IAM roles rather than root access. By the end of Sprint 1, 100% of the infrastructure-as-code, pipeline definitions, and secrets management configuration must already reside in client-owned repositories, never the vendor's.
+Elite Managed Service providers eliminate this risk structurally, not contractually. The repository is provisioned inside the client's own GitHub or GitLab organization from Sprint Zero, with the vendor's engineers added as outside collaborators rather than owners. Cloud accounts [AWS, Azure, GCP] are created under the client's own billing entity, with the vendor granted scoped IAM roles rather than root access. By the end of Sprint 1, 100% of the infrastructure-as-code, pipeline definitions, and secrets management configuration must already reside in client-owned repositories, never the vendor's.
 
 ### The 90-Day Transition Clause
 
@@ -104,7 +104,6 @@ Before signing with any vendor, ask them to show you their internal management-t
 ---
 
 ## FAQs
-
 ### 1. (Scenario: VP Engineering auditing capacity) When *is* Staff Augmentation the right choice?
 Staff Augmentation is highly effective in one specific scenario: when you have a hyper-mature, perfectly oiled internal Agile machine, and you suddenly need a highly specific, temporary skill. For example, if you have a massive internal team but suddenly need one senior Rust developer for three months to optimize a single microservice, Staff Augmentation is the correct, cost-effective choice.
 
@@ -119,15 +118,6 @@ This is why you demand a "Transparent Agile Dashboard." Elite vendors give you r
 
 ### 5. (Scenario: HR Director) What happens if a developer on the Managed Service team quits? Does the project stall?
 In Staff Augmentation, if your rented developer quits, your project stops until the vendor recruits a new one, and then *you* have to spend three weeks training the replacement. In a Managed Service model, "Knowledge Retention" is the vendor's contractual responsibility. Elite agencies maintain internal "Shadow Developers" who know your project architecture. If a developer leaves, the vendor swaps in the shadow developer seamlessly, ensuring zero disruption to your Sprint velocity.
-
-### 6. (Scenario: General Counsel) What contractual protections ensure we retain full ownership of our code and infrastructure if we terminate the vendor?
-Insist on two things in the Master Services Agreement: repository and cloud account ownership residing under your own organization from day one (never the vendor's), and a mandatory 60-to-90-day transition clause requiring weekly knowledge-transfer sessions, updated documentation, and full credential rotation into your own vault before the final invoice is paid. Structural ownership plus a contractual exit ramp means offboarding is a guaranteed process, not a favor the vendor may or may not grant.
-
-### 7. (Scenario: CTO citing Brooks's Law) Is it ever true that "adding more developers" makes a project slower, not faster?
-Yes, and it is one of the oldest documented findings in software engineering. Fred Brooks, in *The Mythical Man-Month* (1975), formalized this as "adding manpower to a late software project makes it later," because new team members need ramp-up time and every additional person multiplies the number of communication paths on the team. Staff Augmentation makes this worse, not better, because the rented developers are added without the coordination structure (shared Tech Lead, unified sprint process) that a Managed Service squad brings by default.
-
-### 8. (Scenario: Procurement Lead) Why are companies moving away from outsourcing purely to cut costs?
-Because the calculus has shifted. Deloitte's 2024 Global Outsourcing Survey found that skilled talent and organizational agility have joined cost reduction as leading drivers of outsourcing decisions. Enterprises increasingly outsource to access specialized delivery capability they cannot hire fast enough internally, not just to find a cheaper hourly rate - which is precisely the value proposition a Managed Service model is built around, and Staff Augmentation is not.
 
 <script type="application/ld+json">
 {
@@ -172,30 +162,6 @@ Because the calculus has shifted. Deloitte's 2024 Global Outsourcing Survey foun
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "In Staff Augmentation, if your rented developer quits, your project stops until the vendor recruits a new one, and then *you* have to spend three weeks training the replacement. In a Managed Service model, \"Knowledge Retention\" is the vendor's contractual responsibility. Elite agencies maintain internal \"Shadow Developers\" who know your project architecture. If a developer leaves, the vendor swaps in the shadow developer seamlessly, ensuring zero disruption to your Sprint velocity."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "(Scenario: General Counsel) What contractual protections ensure we retain full ownership of our code and infrastructure if we terminate the vendor?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Insist on two things in the Master Services Agreement: repository and cloud account ownership residing under your own organization from day one (never the vendor's), and a mandatory 60-to-90-day transition clause requiring weekly knowledge-transfer sessions, updated documentation, and full credential rotation into your own vault before the final invoice is paid. Structural ownership plus a contractual exit ramp means offboarding is a guaranteed process, not a favor the vendor may or may not grant."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "(Scenario: CTO citing Brooks's Law) Is it ever true that \"adding more developers\" makes a project slower, not faster?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, and it is one of the oldest documented findings in software engineering. Fred Brooks, in The Mythical Man-Month (1975), formalized this as \"adding manpower to a late software project makes it later,\" because new team members need ramp-up time and every additional person multiplies the number of communication paths on the team. Staff Augmentation makes this worse, not better, because the rented developers are added without the coordination structure (shared Tech Lead, unified sprint process) that a Managed Service squad brings by default."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "(Scenario: Procurement Lead) Why are companies moving away from outsourcing purely to cut costs?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Because the calculus has shifted. Deloitte's 2024 Global Outsourcing Survey found that skilled talent and organizational agility have joined cost reduction as leading drivers of outsourcing decisions. Enterprises increasingly outsource to access specialized delivery capability they cannot hire fast enough internally, not just to find a cheaper hourly rate - which is precisely the value proposition a Managed Service model is built around, and Staff Augmentation is not."
       }
     }
   ]

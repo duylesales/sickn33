@@ -34,7 +34,7 @@ For a CTO or VP of Engineering, this poses a massive hiring risk. If you hire a 
 
 This deep dive deconstructs the anatomy of an elite AI software developer. We outline the strict technical parameters you must probe during the interview process to separate the amateurs from the engineers who can actually build scalable, SOC2-compliant AI infrastructure.
 
-The stakes of getting this hire wrong are larger than most technical leaders assume. MIT's Project NANDA studied 300 public AI deployments plus interviews and surveys of over 200 executives and leaders for its 2025 report, *"The GenAI Divide: State of AI in Business,"* and found that 95% of enterprise generative AI pilots were failing to deliver a measurable financial return, despite an estimated $30–40 billion in enterprise GenAI spending. The researchers were explicit that the cause was rarely model quality - it was what they called a "learning gap": poor integration into real workflows, and organizations relying on generalist talent to do specialist data-engineering work. That is precisely the Wrapper Developer failure mode described below, at enterprise scale.
+The stakes of getting this hire wrong are larger than most technical leaders assume. MIT's Project NANDA studied 300 public AI deployments plus interviews and surveys of over 200 executives and leaders for its 2025 report, *"The GenAI Divide: State of AI in Business,"* and found that 95% of enterprise generative AI pilots were failing to deliver a measurable financial return, despite an estimated $30 - 40 billion in enterprise GenAI spending. The researchers were explicit that the cause was rarely model quality - it was what they called a "learning gap": poor integration into real workflows, and organizations relying on generalist talent to do specialist data-engineering work. That is precisely the Wrapper Developer failure mode described below, at enterprise scale.
 
 ## The Illusion of AI Competence
 
@@ -63,7 +63,7 @@ To identify an elite candidate (or to evaluate the talent pool of an [offshore d
 **Do not ask:** "How do you write a good prompt?"
 **Instead, ask:** *"Walk me through the data pipeline you would build to allow an LLM to accurately answer questions based on our 100,000-page PDF knowledge base."*
 
-**The Red Flag Answer:** "I would use LangChain to load the PDFs and send them to OpenAI." (LangChain is excellent for prototyping, but relying on it blindly without understanding the underlying mechanics demonstrates junior-level comprehension).
+**The Red Flag Answer:** "I would use LangChain to load the PDFs and send them to OpenAI." [LangChain is excellent for prototyping, but relying on it blindly without understanding the underlying mechanics demonstrates junior-level comprehension].
 
 **The Green Flag Answer:** "First, we implement an ETL pipeline to parse the PDFs and clean the text. We chunk the text using a semantic chunking strategy (overlapping chunks to preserve context). We pass those chunks through an embedding model (like `text-embedding-3-large`) and store the resulting vectors in a dedicated Vector Database like Pinecone or Milvus. At query time, we embed the user's question, perform an Approximate Nearest Neighbor (ANN) search in the vector database to retrieve the top 5 most relevant chunks, and inject *only* those chunks into the LLM's context window as ground truth."
 
@@ -79,7 +79,7 @@ To identify an elite candidate (or to evaluate the talent pool of an [offshore d
 
 **Ask:** *"How do you prevent a malicious user from tricking our customer support AI into offering a 99% discount?"*
 
-**The Green Flag Answer:** "You cannot prevent prompt injection purely through system prompts. You must implement a multi-layered defense. First, we use a cheap, fast classifier model (or deterministic regex) before the main LLM to analyze the user's input for malicious intent. Second, we strictly define the output schema (e.g., using OpenAI's Structured Outputs or JSON mode). Third, the LLM is isolated from the transactional database; it can only propose an action, which must then be validated by a deterministic, hard-coded business logic layer before any discount is actually applied."
+**The Green Flag Answer:** "You cannot prevent prompt injection purely through system prompts. You must implement a multi-layered defense. First, we use a cheap, fast classifier model (or deterministic regex) before the main LLM to analyze the user's input for malicious intent. Second, we strictly define the output schema [e.g., using OpenAI's Structured Outputs or JSON mode]. Third, the LLM is isolated from the transactional database; it can only propose an action, which must then be validated by a deterministic, hard-coded business logic layer before any discount is actually applied."
 
 This is not a theoretical concern. Prompt injection has held the #1 spot - LLM01 - on the OWASP Top 10 for LLM Applications for two consecutive editions, ahead of data poisoning, supply chain vulnerabilities, and excessive agency. Simon Willison, the researcher who coined the term "prompt injection" in 2022, has been blunt about the state of the art:
 
@@ -115,7 +115,6 @@ That gap is the whole hiring problem in miniature. Adoption is not the bottlenec
 ---
 
 ## FAQs
-
 ### 1. (Scenario: Hiring Manager) Is a background in Data Science required to be an AI software developer?
 Not necessarily. Data Scientists focus on training and fine-tuning core models (adjusting weights and biases). An AI Software Developer (or AI Engineer) focuses on *applied* AI - taking existing foundation models (like GPT-4 or Llama 3) and integrating them into software products using data pipelines, APIs, and Vector Databases. Software engineering fundamentals are often more critical here than advanced calculus.
 

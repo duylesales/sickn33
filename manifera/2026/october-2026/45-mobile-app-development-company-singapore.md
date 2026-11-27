@@ -42,7 +42,7 @@ A software development agency is ultimately just a conduit for human capital. In
 
 If a local Singaporean agency wishes to retain a Senior iOS Developer, they must pay a base salary exceeding SGD $180,000. Even mid-level engineers with three to five years of experience command between SGD $105,000 and $158,000 annually in Singapore's market. When you add the massive overhead of commercial real estate in the CBD (Central Business District) and corporate taxes, the agency's blended hourly rate to the client becomes astronomical. You are not paying that premium because the agency's code is mathematically superior; you are paying a massive "FAANG Tax" simply because the agency is located in the same city as global monopolies.
 
-The Infocomm Media Development Authority (IMDA), Singapore's own government tech regulator, confirms the scale of the squeeze: the resident tech workforce grew only 2.7% in a single year (from 208,300 in 2023 to 214,000 in 2024), while median tech wages climbed to S$7,950 a month, well over 60% above the overall resident median wage of S$4,860. Singapore's Ministry of Manpower separately reported roughly 164 job vacancies for every 100 jobseekers in the broader labour market in 2024. A local agency is not inflating its rates arbitrarily; it is bidding for a shrinking, already fully-employed pool of specialists against every other CBD tenant with a hiring budget.
+The Infocomm Media Development Authority (IMDA), Singapore's own government tech regulator, confirms the scale of the squeeze: the resident tech workforce grew only 2.7% in a single year [from 208,300 in 2023 to 214,000 in 2024], while median tech wages climbed to S$7,950 a month, well over 60% above the overall resident median wage of S$4,860. Singapore's Ministry of Manpower separately reported roughly 164 job vacancies for every 100 jobseekers in the broader labour market in 2024. A local agency is not inflating its rates arbitrarily; it is bidding for a shrinking, already fully-employed pool of specialists against every other CBD tenant with a hiring budget.
 
 ### The Agitate: The "Bait and Switch" Compromise
 
@@ -95,13 +95,13 @@ To make the "FAANG Tax" concrete, consider a mid-market Singaporean enterprise b
 | Commercial real estate & corporate tax pass-through | ~S$70,000 |
 | Sales/account management markup | ~S$35,000 |
 | Dedicated QA automation & SecOps | Frequently descoped |
-| **Realistic team composition** | 1 Technical Director (part-time, pitching other clients) + 2 mid-level developers |
+| **Realistic team composition** | 1 Technical Director [part-time, pitching other clients] + 2 mid-level developers |
 
 **Route B: The Manifera Hybrid Hub**
 
 | Cost Line | Hybrid Hub Allocation |
 |---|---|
-| Singapore-based Account Director & Lead Enterprise Architect (MAS compliance, governance) | ~S$60,000 |
+| Singapore-based Account Director & Lead Enterprise Architect [MAS compliance, governance] | ~S$60,000 |
 | Vietnam-based Autonomous Pod (Senior Tech Lead + 4 engineers) | ~S$270,000 |
 | Dedicated QA Automation engineer | ~S$45,000 |
 | Dedicated SecOps engineer (ISO 27001-aligned) | ~S$45,000 |
@@ -113,7 +113,6 @@ The same S$500,000 stretches roughly twice as far in headcount and specializatio
 ---
 
 ## FAQs
-
 ### 1. (Scenario: CEO concerned about security) We are dealing with highly sensitive financial data in Singapore. How can we ensure security if the execution team is in Vietnam?
 Security is a function of architecture, not geography. Elite Hybrid Hub vendors are ISO 27001 certified. Your Singaporean Architect designs a "Zero Trust" security perimeter. The Vietnamese Autonomous Pod operates via encrypted, secure VPNs directly into your Singapore-based cloud infrastructure (e.g., AWS ap-southeast-1). No sensitive production data ever resides on physical laptops in Vietnam. The offshore team simply writes the code that processes the data locally in Singapore.
 
@@ -126,11 +125,8 @@ You do not offshore the User Experience; you offshore the code. Your Product Man
 ### 4. (Scenario: Procurement Manager) What is the exact financial advantage of the Hybrid Hub model over a purely local Singaporean agency?
 A standard local agency in Singapore will often charge blended rates exceeding SGD $150 to $200 per hour to cover their CBD overhead and inflated salaries. An elite Autonomous Pod in Vietnam typically operates at a 40% to 50% reduction in cost. More importantly, this reduction does not come with a quality drop; you are actually procuring highly specialized Senior Architects rather than the junior generalists often provided by local agencies.
 
-### 5. (Scenario: Lead Architect) We use a very specific, modern tech stack (e.g., Go microservices with GraphQL). Will we find this expertise offshore?
+### 5. (Scenario: Lead Architect) We use a very specific, modern tech stack [e.g., Go microservices with GraphQL]. Will we find this expertise offshore?
 Absolutely. Vietnam is one of the fastest-adopting tech hubs globally for modern architectures. Because the local startup ecosystem is incredibly aggressive, Vietnamese engineers quickly master high-performance frameworks. You will find a much deeper, more accessible pool of Senior Go, GraphQL, and Serverless experts in Ho Chi Minh City than you will in the highly constrained Singaporean market.
-
-### 6. (Scenario: CFO comparing regional options) Why Vietnam specifically, and not a local Singapore-based offshore desk in Malaysia or the Philippines?
-Malaysia and the Philippines are viable options for certain workloads, particularly voice-based support functions, but Vietnam has pulled ahead specifically for engineering-heavy mobile and cloud work. Vietnam's government has made STEM education and digital-economy investment an explicit national priority, its ICT workforce has scaled into the low millions, and its perfect one-hour timezone offset from Singapore is unmatched by Manila (also close, but with a smaller enterprise-grade engineering bench) or Kuala Lumpur (competing directly with Singapore for the same regional salary band). The combination of scale, cost structure, and timezone parity is why Vietnam has become the default execution hub for Singapore-anchored Hybrid Hub vendors.
 
 <script type="application/ld+json">
 {
@@ -175,14 +171,6 @@ Malaysia and the Philippines are viable options for certain workloads, particula
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Absolutely. Vietnam is one of the fastest-adopting tech hubs globally for modern architectures. Because the local startup ecosystem is incredibly aggressive, Vietnamese engineers quickly master high-performance frameworks. You will find a much deeper, more accessible pool of Senior Go, GraphQL, and Serverless experts in Ho Chi Minh City than you will in the highly constrained Singaporean market."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "(Scenario: CFO comparing regional options) Why Vietnam specifically, and not a local Singapore-based offshore desk in Malaysia or the Philippines?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Malaysia and the Philippines are viable options for certain workloads, particularly voice-based support functions, but Vietnam has pulled ahead specifically for engineering-heavy mobile and cloud work. Vietnam's government has made STEM education and digital-economy investment an explicit national priority, its ICT workforce has scaled into the low millions, and its perfect one-hour timezone offset from Singapore is unmatched by Manila (also close, but with a smaller enterprise-grade engineering bench) or Kuala Lumpur (competing directly with Singapore for the same regional salary band). The combination of scale, cost structure, and timezone parity is why Vietnam has become the default execution hub for Singapore-anchored Hybrid Hub vendors."
       }
     }
   ]

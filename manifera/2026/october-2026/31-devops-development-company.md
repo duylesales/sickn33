@@ -40,7 +40,7 @@ True DevOps is not about *where* the code lives; it is about *how* the infrastru
 
 ### The Pain: The "Pet Server" Fragility
 
-Amateur agencies treat cloud servers as "Pets." They give the server a name (e.g., `prod-db-server-01`), they log into it manually to install updates, and they carefully nurture it. 
+Amateur agencies treat cloud servers as "Pets." They give the server a name [e.g., `prod-db-server-01`], they log into it manually to install updates, and they carefully nurture it. 
 
 The problem with a Pet Server is that if it gets sick, your business dies. If an AWS data center in Frankfurt experiences a localized power outage, `prod-db-server-01` shuts down. Because the amateur agency manually configured that server three years ago, no one remembers exactly how to rebuild it. Your enterprise goes completely offline for 14 hours while a panicked IT team tries to guess the correct firewall configurations to restore service.
 
@@ -61,7 +61,7 @@ Elite DevOps engineering is built on three pillars of automated resilience.
 
 ### 1. High Availability (HA) across Availability Zones
 
-An elite DevOps agency never deploys an enterprise application to a single server. They deploy it across multiple, geographically isolated "Availability Zones" (e.g., AWS `eu-central-1a` and `eu-central-1b`).
+An elite DevOps agency never deploys an enterprise application to a single server. They deploy it across multiple, geographically isolated "Availability Zones" [e.g., AWS `eu-central-1a` and `eu-central-1b`].
 
 They place a Load Balancer in front of the application. If a physical fire destroys the data center running Zone A, the Load Balancer instantly detects the failure and mathematically reroutes 100% of the customer traffic to the identical servers running in Zone B. 
 
@@ -93,10 +93,10 @@ An amateur agency provisions your infrastructure with Terraform, which is good p
 
 A true DevOps development company treats every credential - database passwords, third-party API keys, TLS certificates, signing keys - as a managed, rotating asset, never a static value pasted into a config file:
 
-*   **Centralized Secrets Vaults:** Credentials live in a dedicated secrets manager (HashiCorp Vault, AWS Secrets Manager, or Azure Key Vault), never in environment files, Terraform state, or source code. Applications retrieve secrets at runtime via short-lived tokens, not hardcoded strings.
-*   **Automatic Rotation:** Database credentials and API keys rotate automatically on a schedule (e.g., every 30-90 days) without requiring a manual deployment, so a leaked credential from six months ago is already worthless.
+*   **Centralized Secrets Vaults:** Credentials live in a dedicated secrets manager [HashiCorp Vault, AWS Secrets Manager, or Azure Key Vault], never in environment files, Terraform state, or source code. Applications retrieve secrets at runtime via short-lived tokens, not hardcoded strings.
+*   **Automatic Rotation:** Database credentials and API keys rotate automatically on a schedule [e.g., every 30-90 days] without requiring a manual deployment, so a leaked credential from six months ago is already worthless.
 *   **Least-Privilege Scoping:** Every service gets its own narrowly scoped credential rather than one shared "god" API key. If one microservice is compromised, the blast radius is limited to exactly what that service could access - not your entire cloud account.
-*   **Encrypted State and Remote Backends:** Terraform state is stored in an encrypted remote backend (e.g., an S3 bucket with server-side encryption and strict IAM policies) with state-locking to prevent concurrent corruption, never on a developer's local laptop.
+*   **Encrypted State and Remote Backends:** Terraform state is stored in an encrypted remote backend [e.g., an S3 bucket with server-side encryption and strict IAM policies] with state-locking to prevent concurrent corruption, never on a developer's local laptop.
 
 A CTO can validate this in one question during vendor due diligence: "Where does the production database password live right now, and who or what can read it?" If the honest answer involves a `.env` file, a Slack message, or a shared spreadsheet, the "DevOps company" has not actually implemented DevOps security fundamentals - regardless of how impressive their Kubernetes dashboard looks.
 
@@ -111,7 +111,7 @@ Compare that to the cost of the resilience layer itself. A realistic mid-market 
 *   **Single-zone "Pet Server" setup:** One production application server plus one database server, no failover. Monthly cloud bill: roughly €2,800. Annual cost: **€33,600**.
 *   **Multi-zone HA architecture:** Duplicate application and database tiers across two Availability Zones, a Load Balancer, automated health checks, and Terraform-managed infrastructure. Monthly cloud bill: roughly €4,300 - an increase of about €1,500/month, or **€18,000/year**.
 
-Now run the outage math. ITIC's own data shows that even a conservative, non-enterprise-tier hourly downtime cost of €25,000–€50,000 is common for a mid-sized SaaS or e-commerce business. A single 4-hour outage on the single-zone setup - the kind caused by one Availability Zone losing power - costs €100,000–€200,000 in direct losses before you count customer churn or contractual penalties. The €18,000/year HA premium pays for itself the first time it prevents a single afternoon-long incident, and most enterprises experience more than one such event per year.
+Now run the outage math. ITIC's own data shows that even a conservative, non-enterprise-tier hourly downtime cost of €25,000 - €50,000 is common for a mid-sized SaaS or e-commerce business. A single 4-hour outage on the single-zone setup - the kind caused by one Availability Zone losing power - costs €100,000 - €200,000 in direct losses before you count customer churn or contractual penalties. The €18,000/year HA premium pays for itself the first time it prevents a single afternoon-long incident, and most enterprises experience more than one such event per year.
 
 This is also why the DORA (DevOps Research and Assessment) team's long-running *State of DevOps Report* - now published by Google Cloud - is relevant to a procurement conversation, not just an engineering one. In the 2024 report, elite-performing teams maintained a change failure rate around 5%, compared to roughly 40% for low performers, while deploying far more frequently and recovering from incidents in under an hour. The report's core finding has held for a decade: speed and stability are not a trade-off. Teams with mature automated infrastructure - the HA, IaC, and Chaos Engineering practices described above - ship more often *and* break less often than teams still hand-configuring Pet Servers.
 
@@ -124,7 +124,6 @@ At Manifera, our elite [offshore and hybrid development teams](https://www.manif
 ---
 
 ## FAQs
-
 ### 1. (Scenario: CTO planning SLAs) What does "99.99% uptime" actually mean in terms of allowed downtime?
 Uptime is measured in "Nines." 99% uptime allows for 3.65 days of downtime per year (unacceptable for an enterprise). 99.9% ("Three Nines") allows for 8.7 hours of downtime per year. 99.99% ("Four Nines") - the elite standard - allows for only 52.6 minutes of downtime per year. Achieving Four Nines requires automated failover; human intervention is mathematically too slow to hit this target.
 
@@ -135,13 +134,10 @@ No. Any vendor promising 100% uptime is lying to you. Physical hardware eventual
 It does increase the CapEx (initial setup) and slightly increases the OpEx (you are running duplicate infrastructure). However, you must calculate the cost of downtime. If a 4-hour outage costs your enterprise €200,000 in lost revenue and reputational damage, spending an extra €1,500 a month on redundant AWS infrastructure is the highest-ROI insurance policy you can buy.
 
 ### 4. (Scenario: Lead Architect) We have a monolithic application. Can a DevOps company make it Highly Available?
-It is extremely difficult. Monoliths are usually "Stateful," meaning they store user session data directly on the server's local hard drive. If the Load Balancer moves a user from Server A to Server B, the user is suddenly logged out. A true DevOps company will first execute a "Stateless Refactor" - moving session data to a centralized Redis cache - before implementing HA. 
+It is extremely difficult. Monoliths are usually "Stateful," meaning they store user session data directly on the server's local hard drive. If the Load Balancer moves a user from Server A to Server B, the user is suddenly logged out. A true DevOps company will first execute a "Stateless Refactor" - moving session data to a centralized Redis cache - before implementing HA.
 
 ### 5. (Scenario: CEO) Can't we just use AWS's default settings and get High Availability?
 No. AWS operates on the "Shared Responsibility Model." AWS guarantees that their physical data centers are secure and running. However, the architecture *inside* the cloud is 100% your responsibility. If you deploy a single database in a single zone and it crashes, AWS will not fix it for you. You must hire elite DevOps engineers to architect the resilience layer on top of the AWS primitives.
-
-### 6. (Scenario: CISO) How do we know the vendor isn't storing our database passwords insecurely?
-Ask exactly where the production credentials live and who can read them. Elite DevOps companies store secrets in a dedicated vault (HashiCorp Vault, AWS Secrets Manager, or Azure Key Vault), rotate them automatically on a schedule, scope each service to its own least-privilege credential, and store Terraform state in an encrypted remote backend rather than plaintext. If the answer involves a `.env` file, a shared spreadsheet, or a Terraform state file sitting in an unencrypted S3 bucket, the vendor has a serious, unaddressed security gap.
 
 <script type="application/ld+json">
 {
@@ -186,14 +182,6 @@ Ask exactly where the production credentials live and who can read them. Elite D
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "No. AWS operates on the \"Shared Responsibility Model.\" AWS guarantees that their physical data centers are secure and running. However, the architecture *inside* the cloud is 100% your responsibility. If you deploy a single database in a single zone and it crashes, AWS will not fix it for you. You must hire elite DevOps engineers to architect the resilience layer on top of the AWS primitives."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "(Scenario: CISO) How do we know the vendor isn't storing our database passwords insecurely?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Ask exactly where the production credentials live and who can read them. Elite DevOps companies store secrets in a dedicated vault (HashiCorp Vault, AWS Secrets Manager, or Azure Key Vault), rotate them automatically on a schedule, scope each service to its own least-privilege credential, and store Terraform state in an encrypted remote backend rather than plaintext. If the answer involves a .env file, a shared spreadsheet, or a Terraform state file sitting in an unencrypted S3 bucket, the vendor has a serious, unaddressed security gap."
       }
     }
   ]

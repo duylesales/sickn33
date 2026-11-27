@@ -95,7 +95,7 @@ An elite custom software developer treats concurrency control as a deliberate ar
 
 *   **Pessimistic Locking:** The database row is locked (`SELECT ... FOR UPDATE`) the moment the first request reads it, forcing the second request to wait its turn. Correct for high-contention, low-frequency operations like inventory decrements or seat reservations.
 *   **Optimistic Locking:** Instead of locking anything, every row carries a `version` integer. The update query includes `WHERE version = 5`, and if another process already changed the row (making the version 6), the write fails and the application safely retries. This scales far better for high-throughput systems where most writes do not actually collide.
-*   **Compare-And-Swap (CAS) Operations:** At the lowest level, elite engineers use atomic CPU-level instructions (available in Redis's `INCR`, or language primitives like Java's `AtomicInteger`) to guarantee that a read-modify-write sequence cannot be interrupted by another thread, eliminating the race condition mathematically rather than defensively.
+*   **Compare-And-Swap (CAS) Operations:** At the lowest level, elite engineers use atomic CPU-level instructions [available in Redis's `INCR`, or language primitives like Java's `AtomicInteger`] to guarantee that a read-modify-write sequence cannot be interrupted by another thread, eliminating the race condition mathematically rather than defensively.
 
 A senior technical interview should always include one concurrency scenario. If a candidate cannot explain the difference between optimistic and pessimistic locking, or describe what a deadlock is and how to prevent one (consistent lock ordering), they have not yet operated at production scale with real concurrent traffic - regardless of how many years are on their CV.
 
@@ -121,27 +121,20 @@ This is the pattern behind the Stripe statistic: the debt is invisible at ship t
 ---
 
 ## FAQs
-
 ### 1. (Scenario: VP Engineering hiring) Should we force candidates to do "LeetCode" algorithm tests during interviews?
 Yes, but with caveats. Purely theoretical LeetCode puzzles can sometimes filter out good practical developers. The best approach is a "Practical Algorithmic Interview." Give the candidate a piece of real-world code (like a slow database query or a heavily nested JSON parser) and ask them to optimize its Big O time complexity. You want to see if they naturally reach for a Hash Map or a more efficient search tree.
 
 ### 2. (Scenario: CTO managing tech debt) Our app is incredibly slow. Do we need better developers or better servers?
-Never buy a bigger server to fix bad code. Adding more RAM or CPU to a server (Vertical Scaling) is incredibly expensive and only delays the inevitable. If your application has an $O(N^2)$ algorithmic bottleneck, it will eventually overwhelm any server you buy. You need elite developers to rewrite the algorithm to $O(N \log N)$ or $O(1)$. 
+Never buy a bigger server to fix bad code. Adding more RAM or CPU to a server (Vertical Scaling) is incredibly expensive and only delays the inevitable. If your application has an $O(N^2)$ algorithmic bottleneck, it will eventually overwhelm any server you buy. You need elite developers to rewrite the algorithm to $O(N \log N)$ or $O(1)$.
 
 ### 3. (Scenario: HR Director) Why is it so hard to find developers who understand these deep computer science concepts?
-Because the industry has been flooded with "bootcamp" graduates. Bootcamps teach individuals how to build a React application in 12 weeks. They teach the syntax of coding, but they skip the 4 years of Computer Science fundamentals (Operating Systems, Compilers, Data Structures) required to understand *how* the computer actually executes the code. 
+Because the industry has been flooded with "bootcamp" graduates. Bootcamps teach individuals how to build a React application in 12 weeks. They teach the syntax of coding, but they skip the 4 years of Computer Science fundamentals (Operating Systems, Compilers, Data Structures) required to understand *how* the computer actually executes the code.
 
 ### 4. (Scenario: Lead Architect) What is the most critical concept a developer must understand for microservices?
 "Distributed Systems Fallacies." An amateur developer assumes the network is reliable, latency is zero, and bandwidth is infinite. An elite software engineer knows these are all false. Therefore, they build microservices using Circuit Breakers, Retry Policies with Exponential Backoff, and Idempotency keys to guarantee the system survives when network packets inevitably drop.
 
 ### 5. (Scenario: CEO) Does an "Elite Software Engineer" cost significantly more than a standard coder?
 Yes, their hourly rate is typically 30-50% higher. However, their Total Cost of Ownership (TCO) is massively lower. One elite engineer can architect a data pipeline in three days that runs flawlessly for five years. Three amateur coders will spend a month building a fragile pipeline that crashes every weekend, costing you 10x more in emergency support and lost revenue over a year.
-
-### 6. (Scenario: CTO investigating a double-charge bug) Our system oversold inventory during a flash sale. What went wrong?
-This is a classic race condition: two concurrent requests both read the same stock count before either one wrote the update back, so both purchases were approved against a single unit of inventory. The fix is not "add more testing," it is a concurrency control strategy - either pessimistic locking (`SELECT ... FOR UPDATE`) to serialize access during high-contention checkouts, or optimistic locking with a row version number so a colliding second write fails safely and retries. An elite engineer designs this in from day one rather than patching it after the incident.
-
-### 7. (Scenario: CFO) How much is bad code actually costing us in lost engineering capacity?
-More than most finance leaders assume. Stripe's *Developer Coefficient* report found that developers spend an average of 42% of their working week on maintenance and bad code rather than new feature work, with technical debt alone consuming roughly a third of engineering capacity. If you employ ten engineers at a fully loaded cost of €100K each, that is upwards of €1.3M a year of payroll spent servicing decisions that a more rigorous initial build would have avoided.
 
 <script type="application/ld+json">
 {
@@ -186,22 +179,6 @@ More than most finance leaders assume. Stripe's *Developer Coefficient* report f
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Yes, their hourly rate is typically 30-50% higher. However, their Total Cost of Ownership (TCO) is massively lower. One elite engineer can architect a data pipeline in three days that runs flawlessly for five years. Three amateur coders will spend a month building a fragile pipeline that crashes every weekend, costing you 10x more in emergency support and lost revenue over a year."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "(Scenario: CTO investigating a double-charge bug) Our system oversold inventory during a flash sale. What went wrong?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "This is a classic race condition: two concurrent requests both read the same stock count before either one wrote the update back, so both purchases were approved against a single unit of inventory. The fix is not \"add more testing,\" it is a concurrency control strategy - either pessimistic locking (SELECT ... FOR UPDATE) to serialize access during high-contention checkouts, or optimistic locking with a row version number so a colliding second write fails safely and retries. An elite engineer designs this in from day one rather than patching it after the incident."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "(Scenario: CFO) How much is bad code actually costing us in lost engineering capacity?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "More than most finance leaders assume. Stripe's Developer Coefficient report found that developers spend an average of 42% of their working week on maintenance and bad code rather than new feature work, with technical debt alone consuming roughly a third of engineering capacity. If you employ ten engineers at a fully loaded cost of €100K each, that is upwards of €1.3M a year of payroll spent servicing decisions that a more rigorous initial build would have avoided."
       }
     }
   ]

@@ -58,7 +58,7 @@ To separate elite engineering partners from amateur coding shops, you must evalu
 
 ### 1. Infrastructure as Code (IaC) Maturity
 
-Amateur firms click through the AWS console to provision servers. Elite custom software development firms use Infrastructure as Code (Terraform, AWS CDK, or Pulumi).
+Amateur firms click through the AWS console to provision servers. Elite custom software development firms use Infrastructure as Code [Terraform, AWS CDK, or Pulumi].
 
 **Why it matters:** IaC ensures that your staging environment is a bit-for-bit identical replica of your production environment. It eliminates the "it works on my machine" paradox. Furthermore, it serves as executable documentation. If a vendor cannot provide you with the Terraform scripts used to provision your infrastructure, they are holding your deployment pipeline hostage.
 
@@ -79,7 +79,7 @@ A green flag response: *"The push triggers a GitHub Actions pipeline. It runs st
 
 Many vendors will eagerly pitch "Microservices" because it sounds modern. For a new MVP, a distributed microservices architecture is often a catastrophic error. It introduces network latency, complex distributed tracing, and massive DevOps overhead.
 
-A mature [custom software development company](https://www.manifera.com/services/custom-software-development/) will advocate for a **Modular Monolith**. They will build a single deployable unit, but with strict logical boundaries between domains (e.g., separating the `Users` module from the `Payments` module via interfaces, not HTTP calls). This keeps deployment simple while maintaining the architectural cleanliness required to extract microservices later when traffic actually justifies it.
+A mature [custom software development company](https://www.manifera.com/services/custom-software-development/) will advocate for a **Modular Monolith**. They will build a single deployable unit, but with strict logical boundaries between domains [e.g., separating the `Users` module from the `Payments` module via interfaces, not HTTP calls]. This keeps deployment simple while maintaining the architectural cleanliness required to extract microservices later when traffic actually justifies it.
 
 ## The Vendor Comparison Checklist
 
@@ -98,7 +98,7 @@ Architecture is not just about how a system is built; it is about how quickly a 
 
 **Ask for their on-call runbook, not just their on-call schedule.** Any vendor can tell you "we have 24/7 coverage." Few can produce an actual runbook: a document that specifies who gets paged first, what the escalation path looks like after 15 minutes of silence, and which dashboards the on-call engineer opens first when a PagerDuty alert fires. If the firm cannot produce this artifact during due diligence, it does not exist in practice, and your first production incident will become a live fire drill with no script.
 
-**Interrogate their Mean Time to Recovery (MTTR), not just their uptime claims.** Uptime percentages are easy to fabricate retroactively. MTTR is harder to fake because it requires an incident log. A mature engineering partner should be able to tell you, with a straight face, that their median MTTR for a Severity-1 incident is under 30 minutes, backed by a rollback strategy (feature flags, blue-green traffic shifting, or automated canary analysis) rather than a developer manually SSHing into a server to "see what's wrong."
+**Interrogate their Mean Time to Recovery (MTTR), not just their uptime claims.** Uptime percentages are easy to fabricate retroactively. MTTR is harder to fake because it requires an incident log. A mature engineering partner should be able to tell you, with a straight face, that their median MTTR for a Severity-1 incident is under 30 minutes, backed by a rollback strategy [feature flags, blue-green traffic shifting, or automated canary analysis] rather than a developer manually SSHing into a server to "see what's wrong."
 
 **Demand evidence of blameless postmortems.** After a major incident, does the firm produce a written postmortem within 48 hours that documents the timeline, root cause, and concrete follow-up actions with owners and due dates? Or does the incident simply get discussed verbally in a stand-up and forgotten? Firms that skip written postmortems repeat the same class of outage every few months, because nothing forces the systemic fix.
 
@@ -109,21 +109,21 @@ A quick scorecard for this dimension:
 | **Escalation Path** | "Someone will see the Slack message eventually." | Documented on-call rotation with PagerDuty/Opsgenie escalation tiers. |
 | **Recovery Mechanism** | Manual server access to diagnose and patch live. | Automated rollback via feature flags or blue-green traffic shift. |
 | **Postmortem Culture** | Verbal discussion, no written record. | Blameless written postmortem within 48 hours, with tracked action items. |
-| **SLA Definition** | Vague promise of "fast response." | Contractual MTTR targets per severity tier (e.g., Sev-1 under 30 minutes). |
+| **SLA Definition** | Vague promise of "fast response." | Contractual MTTR targets per severity tier [e.g., Sev-1 under 30 minutes]. |
 
 When you request references from a custom software development firm, do not just ask "were you happy with the delivery?" Ask the reference client to describe their worst production incident with that vendor, and how it was resolved. The answer tells you more about architectural maturity than any slide deck ever will.
 
-The scale of the gap between amateur and elite delivery is well documented, not anecdotal. Google Cloud's DORA (DevOps Research and Assessment) team, drawing on its long-running annual survey of software delivery performance, found in its 2025 benchmarks that elite-performing teams deploy to production roughly 973 times more frequently than low-performing teams, and recover from incidents approximately 6,570 times faster. Those are not typos. They are the compounding effect of exactly the practices this article describes: automated pipelines instead of manual gatekeeping, feature-flag rollback instead of SSH-and-pray, and a change failure rate under 15% instead of the 45–60% range DORA associates with low performers. A vendor's DORA tier is not an abstract engineering metric - it is a direct predictor of how many nights your team will spend firefighting after handover.
+The scale of the gap between amateur and elite delivery is well documented, not anecdotal. Google Cloud's DORA (DevOps Research and Assessment) team, drawing on its long-running annual survey of software delivery performance, found in its 2025 benchmarks that elite-performing teams deploy to production roughly 973 times more frequently than low-performing teams, and recover from incidents approximately 6,570 times faster. Those are not typos. They are the compounding effect of exactly the practices this article describes: automated pipelines instead of manual gatekeeping, feature-flag rollback instead of SSH-and-pray, and a change failure rate under 15% instead of the 45 - 60% range DORA associates with low performers. A vendor's DORA tier is not an abstract engineering metric - it is a direct predictor of how many nights your team will spend firefighting after handover.
 
 ## A Worked Example: The 3-Year TCO Gap Between the Cheap Bid and the Architected Partner
 
 Procurement teams frequently select a vendor based on the initial Statement of Work price, without modeling what happens after go-live. Consider two firms bidding on the same mid-complexity B2B SaaS platform, both quoting a comparable 6-month build timeline.
 
-**Firm A (amateur, low bid):** €180,000 for the initial build. No IaC, no automated test suite, manual deployments, a single shared staging database. The lower price reflects the absence of the engineering discipline described above - it is genuinely cheaper to build without tests, without Terraform, and without a CI/CD pipeline.
+**Firm A [amateur, low bid]:** €180,000 for the initial build. No IaC, no automated test suite, manual deployments, a single shared staging database. The lower price reflects the absence of the engineering discipline described above - it is genuinely cheaper to build without tests, without Terraform, and without a CI/CD pipeline.
 
-**Firm B (architected, higher bid):** €240,000 for the initial build. Includes Terraform-managed infrastructure, a CI/CD pipeline with automated test gates, and a modular monolith with clean domain boundaries. The €60,000 premium buys the scaffolding that Firm A skipped.
+**Firm B [architected, higher bid]:** €240,000 for the initial build. Includes Terraform-managed infrastructure, a CI/CD pipeline with automated test gates, and a modular monolith with clean domain boundaries. The €60,000 premium buys the scaffolding that Firm A skipped.
 
-The gap does not stay at €60,000. Using Stripe's 42%-of-time-on-maintenance figure as a directional baseline, and assuming a fully loaded in-house engineer costs a Dutch mid-market company roughly €90,000–€110,000 per year, a two-developer internal team inheriting Firm A's codebase can expect to lose the equivalent of nearly one full engineer's annual capacity to unpicking technical debt and re-fixing avoidable defects in year one alone - before a single new feature ships. Firm B's modular monolith, automated test suite, and documented IaC bring that maintenance overhead down toward the 10–20% range typical of well-architected systems, freeing the same two developers to spend the bulk of their time on the actual product roadmap.
+The gap does not stay at €60,000. Using Stripe's 42%-of-time-on-maintenance figure as a directional baseline, and assuming a fully loaded in-house engineer costs a Dutch mid-market company roughly €90,000 - €110,000 per year, a two-developer internal team inheriting Firm A's codebase can expect to lose the equivalent of nearly one full engineer's annual capacity to unpicking technical debt and re-fixing avoidable defects in year one alone - before a single new feature ships. Firm B's modular monolith, automated test suite, and documented IaC bring that maintenance overhead down toward the 10 - 20% range typical of well-architected systems, freeing the same two developers to spend the bulk of their time on the actual product roadmap.
 
 Run that gap forward three years, and the "cheaper" €180,000 build is very often the more expensive decision, once you account for lost engineering capacity, the eventual cost of an emergency rewrite, and the incident-response overhead described above. This is the arithmetic procurement teams should be modeling before they sign, not after the first Severity-1 incident.
 
@@ -136,7 +136,6 @@ At Manifera, we treat software architecture as the primary determinant of long-t
 ---
 
 ## FAQs
-
 ### 1. (Scenario: VP Engineering) How do we ensure the vendor's code meets our internal quality standards?
 Mandate automated static analysis (e.g., SonarQube) as a build-breaking step in the CI pipeline. Define strict thresholds for code coverage (e.g., 80% minimum), cyclomatic complexity, and security vulnerabilities. If the code fails the automated checks, it cannot be merged. This removes subjective arguments about code quality.
 
@@ -151,9 +150,6 @@ Building a robust CI/CD pipeline and implementing Infrastructure as Code takes t
 
 ### 5. (Scenario: Product Manager) How does architectural quality impact my product roadmap?
 Poor architecture creates a "velocity death spiral." Every new feature breaks an existing feature, forcing developers to spend all their time fixing bugs rather than building value. Clean architecture, with modular boundaries and automated testing, ensures that feature delivery remains fast and predictable, even in year three of the project.
-
-### 6. (Scenario: Director of Engineering) What should we ask about a vendor's incident response process before signing a contract?
-Ask for their actual on-call runbook and their historical Mean Time to Recovery (MTTR) for Severity-1 incidents, not just an uptime percentage. Elite firms can produce documented escalation paths, automated rollback mechanisms like feature flags or blue-green traffic shifting, and written blameless postmortems delivered within 48 hours of any major outage. If a vendor cannot produce these artifacts during due diligence, assume they do not exist in practice.
 
 <script type="application/ld+json">
 {
@@ -198,14 +194,6 @@ Ask for their actual on-call runbook and their historical Mean Time to Recovery 
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Poor architecture creates a \"velocity death spiral.\" Every new feature breaks an existing feature, forcing developers to spend all their time fixing bugs rather than building value. Clean architecture, with modular boundaries and automated testing, ensures that feature delivery remains fast and predictable, even in year three of the project."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "(Scenario: Director of Engineering) What should we ask about a vendor's incident response process before signing a contract?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Ask for their actual on-call runbook and their historical Mean Time to Recovery (MTTR) for Severity-1 incidents, not just an uptime percentage. Elite firms can produce documented escalation paths, automated rollback mechanisms like feature flags or blue-green traffic shifting, and written blameless postmortems delivered within 48 hours of any major outage. If a vendor cannot produce these artifacts during due diligence, assume they do not exist in practice."
       }
     }
   ]
