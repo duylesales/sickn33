@@ -6,6 +6,24 @@
 
 #### Ngày 27
 
+- **Đăng tải bài viết 58 (tháng 8/2026) lên website Manifera qua upload_to_wordpress.py**:
+  - **Bài viết**: [`manifera/2026/august-2026/58-software-development-cost.md`](./2026/august-2026/58-software-development-cost.md)
+  - **Tiêu đề**: *Software Development Cost: Why You Must Never Accept a 'Fixed-Price' Agile Quote*
+  - **Slug**: `software-development-cost-why-you-must-never-accept-a-fixed-price-agile-quote`
+  - **Pre-flight check**: Kiểm tra slug và tiêu đề với `status=any`. Không trùng lặp trên manifera.com.
+  - **Chuẩn hóa nội dung**:
+    - Tiêu đề FAQ: Chuẩn hóa `## Frequently Asked Questions` -> `## FAQs`.
+    - Thẻ tình huống FAQ: Chuẩn hóa `[Scenario: ...]` theo quy định hệ thống.
+    - Đảm bảo 0 em dash `—` và 0 en dash `–`.
+  - **Thao tác kỹ thuật**:
+    - Ảnh đại diện: Geotag tọa độ HQ Amsterdam (`52.366841, 4.887593`) kèm Title và Keywords vào metadata EXIF của `58-software-development-cost_pic.jpg`.
+    - Upload media qua GitHub Raw URL: Attachment ID `25633`.
+    - Tự động bổ sung thông tin vị trí và từ khóa vào Caption / Description của media.
+    - Tạo bài viết: Post ID `25634`, trạng thái Bản nháp (Draft), danh mục `12` (Outsourcing) và `25` (Web Apps), tự động gắn tags từ keywords.
+    - Yoast SEO: Focus Keyword `software development cost`, Meta Description được đồng bộ đầy đủ.
+    - Post Meta: Tọa độ địa lý Amsterdam (`geo_latitude: 52.366841`, `geo_longitude: 4.887593`, `geo_city: Amsterdam`, `geo_address: Herengracht 420, 1017 BZ Amsterdam, Netherlands`).
+  - **Trạng thái**: Bản nháp (Draft) tại https://www.manifera.com/?p=25634. Đã đánh dấu ✅ trước tiêu đề và cột trạng thái trong `manifera/content_inventory.md`.
+
 - **Đăng tải bài viết 57 (tháng 8/2026) lên website Manifera qua upload_to_wordpress.py**:
   - **Bài viết**: [`manifera/2026/august-2026/57-bespoke-application-development.md`](./2026/august-2026/57-bespoke-application-development.md)
   - **Tiêu đề**: *Bespoke Application Development: Escaping the 'Feature Factory' Mindset*
