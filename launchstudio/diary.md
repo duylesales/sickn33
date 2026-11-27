@@ -5,6 +5,22 @@
 ### Tháng 11
 #### Ngày 27
 
+- **Đăng tải bài viết song ngữ EN & NL (Bài 32 - Cụm Extra 15 Addation) lên website LaunchStudio kèm Pre-Flight Duplicate Check, Geotagging & Metadata (`upload_to_wordpress.py`)**:
+  - **Bài viết EN**: [`launchstudio/2026-extra/extra-15-addation/32-sentry-error-monitoring-for-lovable-and-supabase-apps.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-15-addation/32-sentry-error-monitoring-for-lovable-and-supabase-apps.md)
+  - **Bài viết NL**: [`launchstudio/2026-extra/extra-15-addation/32-sentry-error-monitoring-for-lovable-and-supabase-apps-dutch.md`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-15-addation/32-sentry-error-monitoring-for-lovable-and-supabase-apps-dutch.md)
+  - **Tiêu đề EN**: *Sentry Error Monitoring for Lovable and Supabase Apps*
+  - **Tiêu đề NL**: *Sentry Foutmonitoring voor Lovable- en Supabase-Apps*
+  - **Slug Full Title EN / NL**: `sentry-error-monitoring-for-lovable-and-supabase-apps` / `sentry-foutmonitoring-voor-lovable-en-supabase-apps`
+  - **Thao tác kỹ thuật**:
+    - **Pre-Flight Duplicate Check**: Kiểm tra tự động trên website `launchstudio.eu`, xác nhận không có bài viết trùng lặp trước khi khởi tạo.
+    - **Geotagging & Metadata**: Tải lên banner đã được nhúng metadata GPS trụ sở Amsterdam (`52.366841`, `4.887593`), focus keywords và mô tả chi tiết vào EXIF/PNG (Attachment ID: `2313`).
+    - **Đăng tải bản EN (Post ID: 2314)**: Trạng thái `publish`, danh mục `[4, 26]` (*Technical*, *Strategy*), banner ID `2313`, gán ngôn ngữ Polylang `en`, định dạng case study `.article-case` (`## Real example`), và 5 câu hỏi FAQs accordion semantic HTML5 `<details><summary>` kèm heading chuẩn `<h3>FAQs</h3>`.
+    - **Đồng bộ bản NL (Post ID: 2315)**: Trạng thái `publish`, danh mục `[41, 43]` (*Technisch*, *Strategie*), kế thừa banner ID `2313`, gán ngôn ngữ Polylang `nl`, định dạng case study `.article-case` (`## Praktijkvoorbeeld`), và 5 câu hỏi FAQs accordion semantic HTML5.
+    - **Cập nhật Content Inventory**: Đánh dấu `✅` hoàn thành cho Bài 32 (Extra 15 Addation) trong [`launchstudio/extra_content_inventory.md`](file:///Users/duyle/sickn33/launchstudio/extra_content_inventory.md).
+  - **Trạng thái xuất bản**:
+    - EN: [https://launchstudio.eu/sentry-error-monitoring-for-lovable-and-supabase-apps/](https://launchstudio.eu/sentry-error-monitoring-for-lovable-and-supabase-apps/) (Post ID: `2314`)
+    - NL: [https://launchstudio.eu/sentry-foutmonitoring-voor-lovable-en-supabase-apps/](https://launchstudio.eu/sentry-foutmonitoring-voor-lovable-en-supabase-apps/) (Post ID: `2315`)
+
 - **Đăng tải bài viết song ngữ EN & NL (Bài 41 - Tháng 8/2026) lên website LaunchStudio kèm Pre-Flight Duplicate Check, Geotagging & Metadata (`upload_to_wordpress.py`)**:
   - **Bài viết EN**: [`launchstudio/2026/august-2026/41-gdpr-ai-navigating-regulatory-minefield.md`](file:///Users/duyle/sickn33/launchstudio/2026/august-2026/41-gdpr-ai-navigating-regulatory-minefield.md)
   - **Bài viết NL**: [`launchstudio/2026/august-2026/41-gdpr-ai-navigating-regulatory-minefield_dutch.md`](file:///Users/duyle/sickn33/launchstudio/2026/august-2026/41-gdpr-ai-navigating-regulatory-minefield_dutch.md)
