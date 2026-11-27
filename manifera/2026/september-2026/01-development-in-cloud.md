@@ -99,7 +99,7 @@ To make the abstract math concrete, consider a representative (illustrative, not
 | Compute | One always-on 32-vCPU EC2 instance sized for peak load, running 24/7 | Auto-scaling container group (2-10 tasks) sized for actual demand curve |
 | Database | Self-managed PostgreSQL on a second EC2 instance, manual backups | Amazon RDS Multi-AZ, automated backups and patching |
 | Document Generation | Runs on the same monolith instance, competing for CPU with user traffic | Extracted to AWS Lambda, billed per invocation |
-| Estimated Monthly Compute + DB Spend | €9,000–€11,000 (paying for peak capacity around the clock) | €3,500–€4,800 (paying for actual utilization plus managed-service premium) |
+| Estimated Monthly Compute + DB Spend | €9,000-€11,000 (paying for peak capacity around the clock) | €3,500-€4,800 (paying for actual utilization plus managed-service premium) |
 | Engineering Time on Infrastructure | 15-20% of one senior engineer's time on patching, backups, capacity planning | Under 5%, reallocated to product work |
 
 The point of this table is not that every workload saves 60% by re-architecting - savings vary widely by traffic shape. The point is that the gap between the two columns is *structural*, not a matter of shopping for a better hosting deal. An offshore agency that only migrates code, without touching the architecture, leaves you permanently in the left column no matter which cloud provider you choose.
@@ -118,24 +118,24 @@ If your AWS bill is out of control, you do not have a traffic problem. You have 
 
 ---
 
-## Frequently Asked Questions
+## FAQs
 
-### (Scenario: CFO reviewing an escalating AWS bill) Why did our hosting costs triple after we moved our legacy application to the cloud?
+### [Scenario: CFO reviewing an escalating AWS bill] Why did our hosting costs triple after we moved our legacy application to the cloud?
 Because your agency performed a "Lift and Shift" migration. They took your static, monolithic application and put it on a massive virtual server in the cloud. Cloud providers charge a premium for static, 24/7 capacity. To save money in the cloud, your architecture must be "elastic" - capable of automatically scaling down to zero when traffic is low.
 
-### (Scenario: VP Engineering planning a cloud migration) What is the difference between Cloud-Hosted and Cloud-Native?
+### [Scenario: VP Engineering planning a cloud migration] What is the difference between Cloud-Hosted and Cloud-Native?
 Cloud-Hosted means taking an application built for a traditional server and running it on a cloud virtual machine. Cloud-Native means the application is specifically architected to leverage cloud capabilities: it uses microservices, consumes managed databases (DBaaS), utilizes Serverless functions for asynchronous tasks, and scales horizontally via container orchestration (Kubernetes).
 
-### (Scenario: CTO evaluating database strategy) Why shouldn't our engineers just install and manage our own PostgreSQL database on an EC2 instance?
+### [Scenario: CTO evaluating database strategy] Why shouldn't our engineers just install and manage our own PostgreSQL database on an EC2 instance?
 Because it is a massive waste of highly paid engineering time, and it introduces catastrophic risk. Your engineers should be building features that generate revenue. By using a Managed Service like Amazon RDS, the cloud provider handles security patching, automated daily backups, and instant failover to secondary servers automatically. 
 
-### (Scenario: Lead Developer designing a heavy background task) How does Serverless (AWS Lambda) solve the problem of unpredictable CPU spikes?
+### [Scenario: Lead Developer designing a heavy background task] How does Serverless (AWS Lambda) solve the problem of unpredictable CPU spikes?
 In a traditional setup, you must rent a massive server 24/7 just to handle a CPU spike that might only happen for 5 minutes a day. With Serverless (Lambda), the server literally does not exist until the task is triggered. The code executes, the task finishes, and the server disappears. You are billed purely for the milliseconds of compute time, resulting in massive financial savings.
 
-### (Scenario: IT Procurement Manager evaluating vendors) How does Manifera ensure our cloud migration doesn't become a "Lift and Shift" disaster?
+### [Scenario: IT Procurement Manager evaluating vendors] How does Manifera ensure our cloud migration doesn't become a "Lift and Shift" disaster?
 Through our Hybrid Offshore model. Before a single line of code is moved, our Dutch Cloud Architects audit your legacy application. We design a "strangler fig" migration plan, identifying which modules should be refactored into microservices and which should utilize Managed Services. Our Vietnamese pods then execute this refactoring, ensuring you receive a highly optimized, cost-effective Cloud-Native architecture.
 
-### (Scenario: Finance team surprised by a data transfer line item) Why is our AWS bill full of unexplained "data transfer" or "egress" charges even though our compute costs look normal?
+### [Scenario: Finance team surprised by a data transfer line item] Why is our AWS bill full of unexplained "data transfer" or "egress" charges even though our compute costs look normal?
 Because cloud providers charge for data leaving their network, not just for compute. If your architecture streams images, videos, or API responses directly from application servers, replicates data across regions for routine requests, or returns bloated, uncompressed payloads, egress fees can rival your compute bill. The fix is architectural: offload static assets to a CDN, keep tightly coupled services in the same region, and enforce compression and lean API contracts.
 
 <script type="application/ld+json">
