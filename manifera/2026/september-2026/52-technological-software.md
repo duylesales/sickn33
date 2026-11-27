@@ -40,7 +40,7 @@ The company spent €2 Million and 18 months on a modernization project that las
 In [custom software development](https://www.manifera.com/services/custom-software-development/), attempting to rewrite a massive legacy application from scratch and deploying it all at once (The Big Bang) is mathematically impossible to execute flawlessly. 
 
 Why? Because legacy **technological software** is not just code; it is an archaeological record of your business. 
-Over 15 years, hundreds of developers added tiny, hyper-specific business rules to the code (e.g., *"If the customer lives in Germany and joined before 2012, apply a 2% discount"*). These rules are rarely documented anywhere except in the raw code itself. 
+Over 15 years, hundreds of developers added tiny, hyper-specific business rules to the code [e.g., *"If the customer lives in Germany and joined before 2012, apply a 2% discount"*]. These rules are rarely documented anywhere except in the raw code itself. 
 
 When a new team attempts a Big Bang rewrite, they look at the modern requirements document. They inevitably miss the undocumented historical rules. When they turn off the old system, all of those hidden rules are destroyed, and the business process breaks.
 
@@ -58,7 +58,7 @@ Named after a vine that slowly wraps around a dying tree until it replaces it, t
 You do not turn off the old Java system. Instead, you deploy an API Gateway in front of it. All user traffic goes through the Gateway, which simply routes everything to the old system. The business continues operating exactly as normal.
 
 ### Step 2: The Micro-Extraction
-You select the smallest, lowest-risk feature (e.g., "Updating a User's Profile Picture"). You build a brand new, modern microservice (in Node.js) specifically for that one feature. 
+You select the smallest, lowest-risk feature [e.g., "Updating a User's Profile Picture"]. You build a brand new, modern microservice (in Node.js) specifically for that one feature. 
 
 ### Step 3: The Route Swap
 You update the API Gateway. Now, when a user updates their picture, the Gateway routes them to the *new* Node.js code. If they do literally anything else, they are routed to the *old* Java code. 
@@ -87,7 +87,7 @@ The new microservices subscribe to this event stream and maintain their *own* lo
 
 ### Why Reconciliation Jobs Are Non-Negotiable
 
-Event streams can occasionally drop or duplicate a message during network blips. Elite teams never trust CDC blindly - they run a nightly reconciliation job that diffs a sample of records between the legacy source of truth and the new service's local copy, alerting an engineer if drift exceeds a defined threshold (e.g., 0.01%). This catches silent data drift months before it would otherwise surface as a customer-facing billing discrepancy.
+Event streams can occasionally drop or duplicate a message during network blips. Elite teams never trust CDC blindly - they run a nightly reconciliation job that diffs a sample of records between the legacy source of truth and the new service's local copy, alerting an engineer if drift exceeds a defined threshold [e.g., 0.01%]. This catches silent data drift months before it would otherwise surface as a customer-facing billing discrepancy.
 
 ## The Math: Why Enterprises Still Choose Strangler Fig Despite the Extra Overhead
 
@@ -111,25 +111,21 @@ Stop gambling with your core business engine. Contact our Amsterdam team to exec
 
 ---
 
-## Frequently Asked Questions
-
-### (Scenario: CIO planning a modernization project) Why do 'Big Bang' software rewrites almost always fail in production?
+## FAQs
+### [Scenario: CIO planning a modernization project] Why do 'Big Bang' software rewrites almost always fail in production?
 Because legacy software contains decades of undocumented 'business logic' - tiny, hyper-specific rules written into the code by developers who left the company years ago. A new team attempting a Big Bang rewrite will inevitably miss these hidden rules. When they turn the new system on, those critical business processes simply break.
 
-### (Scenario: VP Engineering mitigating migration risk) What is the 'Strangler Fig Pattern' and how does it prevent downtime?
+### [Scenario: VP Engineering mitigating migration risk] What is the 'Strangler Fig Pattern' and how does it prevent downtime?
 It is a strategy to modernize software incrementally. You place a 'Gateway' in front of the old app. You rewrite one small feature at a time, routing traffic for that specific feature to the new code, while the rest of the app continues using the old code. You slowly 'strangle' the old app until it is fully replaced, ensuring zero downtime.
 
-### (Scenario: Lead Architect designing a transition) What is the role of an 'API Gateway' in legacy modernization?
+### [Scenario: Lead Architect designing a transition] What is the role of an 'API Gateway' in legacy modernization?
 An API Gateway acts as a traffic director. When a user requests a web page, the Gateway looks at the request. If it's a feature that hasn't been rewritten yet, it sends the user to the old legacy server. If it's a feature that has been modernized, it sends the user to the new cloud servers. It makes the complex migration invisible to the user.
 
-### (Scenario: CTO frustrated by slow progress) Why is the Strangler Fig pattern seemingly slower than a Big Bang rewrite?
+### [Scenario: CTO frustrated by slow progress] Why is the Strangler Fig pattern seemingly slower than a Big Bang rewrite?
 It appears slower initially because you have to maintain two systems simultaneously (the old and the new) and build the integration layer between them. However, it is mathematically faster in the long run because you completely avoid the catastrophic 6-month 'recovery phase' that occurs when a Big Bang rewrite inevitably crashes on launch day.
 
-### (Scenario: Procurement Officer evaluating Manifera) How does Manifera safely modernize massive legacy enterprise applications?
+### [Scenario: Procurement Officer evaluating Manifera] How does Manifera safely modernize massive legacy enterprise applications?
 We actively refuse Big Bang rewrites. Our Dutch Architects act as the migration generals, designing the API Gateways and the Strangler Fig extraction sequence. Our offshore Vietnamese pods execute the incremental rewrites. This guarantees that your enterprise continues generating revenue without interruption while we systematically replace your technical debt.
-
-### (Scenario: CIO worried about data integrity mid-migration) How do you keep data consistent when both the old and new systems need the same records?
-You use Change Data Capture (CDC) rather than a shared database. A tool like Debezium tails the legacy database's transaction log and streams every change as an event. New microservices subscribe to this stream and maintain their own local copy of the data, so the legacy system stays untouched while nightly reconciliation jobs catch and alert on any drift.
 
 <script type="application/ld+json">
 {
@@ -174,14 +170,6 @@ You use Change Data Capture (CDC) rather than a shared database. A tool like Deb
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our Dutch Architects design the API Gateway architecture and define the strict Strangler Fig migration plan. Our Vietnamese pods then execute the incremental feature replacement, ensuring your business experiences zero downtime while migrating off legacy code."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do you keep data consistent when both the old and new systems need the same records?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "By using Change Data Capture instead of a shared database. A tool like Debezium streams every legacy database change as an event, and new microservices maintain their own local copy from that stream, while nightly reconciliation jobs detect and alert on any data drift."
       }
     }
   ]

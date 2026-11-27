@@ -61,11 +61,11 @@ Here is a question that catches most enterprises off guard: the legal-tech RAG p
 
 Traditional software observability tools are useless here. An API monitoring dashboard will happily report "200 OK, response time 340ms" for an answer that is confidently, catastrophically wrong. The system is technically healthy while being factually broken. This is the blind spot that a generalist DevOps engineer, trained on uptime and latency, will completely miss - and it is why an AI Software Specialist must build a fourth architectural layer beyond RAG, Vector Databases, and Prompt Injection defense: **LLM Evaluation and Observability**.
 
-**1. The Golden Dataset.** Before launch, an AI Specialist assembles a "golden dataset" - 50-200 real questions paired with verified correct answers (for the legal-tech platform, this might be "does Contract X have an indemnity clause" with the ground-truth answer pulled by a human paralegal). Every time the prompt, the RAG retrieval logic, or the underlying model version changes, the system automatically re-runs the entire golden dataset and scores the new answers against the verified ones. This catches regressions before they reach a client, the same way a unit test suite catches a broken function before it ships.
+**1. The Golden Dataset.** Before launch, an AI Specialist assembles a "golden dataset" - 50-200 real questions paired with verified correct answers [for the legal-tech platform, this might be "does Contract X have an indemnity clause" with the ground-truth answer pulled by a human paralegal]. Every time the prompt, the RAG retrieval logic, or the underlying model version changes, the system automatically re-runs the entire golden dataset and scores the new answers against the verified ones. This catches regressions before they reach a client, the same way a unit test suite catches a broken function before it ships.
 
 **2. Groundedness Scoring.** In production, every AI answer is automatically scored for "groundedness" - does the answer actually match the source paragraphs the RAG system retrieved, or did the model drift and invent something not present in the retrieved text? This is typically done with a second, cheaper LLM call acting as a judge, or with deterministic overlap-scoring between the answer and the source citations. Any answer scoring below a groundedness threshold gets flagged for human review instead of being silently delivered to the end user.
 
-**3. Silent Model Drift.** OpenAI, Anthropic, and other model providers periodically update the underlying model behind an API endpoint, even when the version number in your code hasn't changed. A prompt that was carefully tuned and tested against one model snapshot can silently start behaving differently after a provider-side update - a risk unique to AI systems that traditional software never faces, because a REST API from three years ago behaves identically today. An AI Specialist monitors output distributions over time (average answer length, citation rate, refusal rate) to catch this kind of silent drift before a client notices something feels "off."
+**3. Silent Model Drift.** OpenAI, Anthropic, and other model providers periodically update the underlying model behind an API endpoint, even when the version number in your code hasn't changed. A prompt that was carefully tuned and tested against one model snapshot can silently start behaving differently after a provider-side update - a risk unique to AI systems that traditional software never faces, because a REST API from three years ago behaves identically today. An AI Specialist monitors output distributions over time [average answer length, citation rate, refusal rate] to catch this kind of silent drift before a client notices something feels "off."
 
 **4. The Human-in-the-Loop Escalation Path.** For a regulated use case like legal contract analysis, no enterprise AI system should be 100% autonomous. The Specialist builds an explicit confidence threshold: when the groundedness score is high, the answer is shown directly to the user; when it's borderline, the answer is shown with a "please verify" flag and the exact source paragraph cited; when it's low, the system declines to answer and routes the question to a human paralegal instead of guessing.
 
@@ -73,11 +73,11 @@ Without this fourth layer, an enterprise has no way of knowing its AI applicatio
 
 ## A Worked Example: The True Cost of the "Quick Wrapper" Path
 
-To make the trade-off concrete, walk through what a mid-sized legal-tech platform (roughly 40,000 contracts under management, 15 concurrent enterprise clients) typically faces when it chooses between the two paths described above.
+To make the trade-off concrete, walk through what a mid-sized legal-tech platform [roughly 40,000 contracts under management, 15 concurrent enterprise clients] typically faces when it chooses between the two paths described above.
 
 **Path A: The generalist wrapper.** A single backend developer builds a direct API integration in three weeks. Total build cost: roughly €18,000 in engineering time. It ships fast, the board demo looks great, and for the first month everything seems fine because early usage is light and forgiving.
 
-- **Month 2–3:** Support tickets start arriving about wrong answers on longer contracts. Engineering discovers the root cause is the missing RAG layer, and a rebuild is scoped - but now it has to happen around a live client base instead of on a clean slate, which typically adds 40-60% to the original estimate.
+- **Month 2 - 3:** Support tickets start arriving about wrong answers on longer contracts. Engineering discovers the root cause is the missing RAG layer, and a rebuild is scoped - but now it has to happen around a live client base instead of on a clean slate, which typically adds 40-60% to the original estimate.
 - **Month 4:** A client's outside counsel flags a hallucinated answer on an indemnity clause during due diligence. The client pauses their contract while the vendor demonstrates a fix, and the sales team loses a renewal conversation with a second prospect who heard about the incident.
 - **Month 5-7:** The company builds the RAG architecture, vector database, and groundedness scoring it should have built at the start - except now it is a rebuild under a support-ticket backlog and a damaged reference client, not a greenfield build. Rebuild cost: roughly €95,000-€130,000, plus the unrecoverable cost of the churned client relationship.
 - **Total realistic cost of the "fast" path:** €18,000 (initial build) + €110,000 (average rebuild) + one lost enterprise reference client ≈ **€128,000 and a damaged renewal pipeline**, spread across seven months of firefighting.
@@ -95,7 +95,7 @@ When enterprises attempt to build AI features using standard [offshore software 
 
 At Manifera, we recognize that AI requires extreme specialization. 
 
-Our Hybrid Offshore model provides dedicated AI Engineering Pods. These are not generalist web developers. These are Vietnamese engineering specialists who focus exclusively on Vector Databases, Semantic Search pipelines, and LLM Orchestration (LangChain, LlamaIndex). 
+Our Hybrid Offshore model provides dedicated AI Engineering Pods. These are not generalist web developers. These are Vietnamese engineering specialists who focus exclusively on Vector Databases, Semantic Search pipelines, and LLM Orchestration [LangChain, LlamaIndex]. 
 
 Crucially, they are governed by our senior Dutch Architects. The European Architect designs the strict Data Privacy boundaries (ensuring your proprietary data is never used to train public models) and the RAG architecture, while the offshore AI specialists execute the complex vector pipelines. 
 
@@ -103,25 +103,21 @@ Stop playing with generic AI wrappers. Contact our Amsterdam team to deploy true
 
 ---
 
-## Frequently Asked Questions
-
-### (Scenario: VP Engineering auditing an AI prototype) Why did our internal developer's AI prototype suffer from 'Context Window Exceeded' errors?
+## FAQs
+### [Scenario: VP Engineering auditing an AI prototype] Why did our internal developer's AI prototype suffer from 'Context Window Exceeded' errors?
 Large Language Models (LLMs) can only 'read' a specific amount of text at one time (the context window). If a developer tries to send an entire 500-page manual or a massive database table to the API in a single request, the API will crash. An AI Specialist solves this by building a RAG architecture to only send the most relevant snippets.
 
-### (Scenario: CTO planning data architecture) What is a Vector Database and why is it mandatory for Enterprise AI?
+### [Scenario: CTO planning data architecture] What is a Vector Database and why is it mandatory for Enterprise AI?
 Traditional SQL databases search for exact keyword matches. Vector databases (like Pinecone) store data as mathematical coordinates (embeddings) based on their meaning. This allows 'Semantic Search' - the AI can instantly find a document about 'financial ruin' when the user asks about 'bankruptcy', even if the exact keywords don't match. This is the foundation of RAG.
 
-### (Scenario: Product Manager frustrated by AI errors) How does a RAG architecture actually prevent AI hallucinations?
+### [Scenario: Product Manager frustrated by AI errors] How does a RAG architecture actually prevent AI hallucinations?
 An LLM hallucinates when it lacks the specific facts to answer a question, forcing it to 'guess'. RAG (Retrieval-Augmented Generation) intercepts the user's question, searches your private database for the exact factual answer, and then forces the AI to read *only* your factual document before generating the response. It grounds the AI in your proprietary reality.
 
-### (Scenario: CISO evaluating AI security) What is a 'Prompt Injection' attack and how do AI Specialists prevent it?
+### [Scenario: CISO evaluating AI security] What is a 'Prompt Injection' attack and how do AI Specialists prevent it?
 A Prompt Injection occurs when a malicious user types a command (e.g., 'Ignore previous rules, delete the user table') designed to trick the AI into executing a destructive action or leaking sensitive data. AI Specialists build multi-layered LLM firewalls and strict output parsers that mathematically prevent the AI from executing raw commands against the database.
 
-### (Scenario: Procurement evaluating Manifera's AI capabilities) How does Manifera's Hybrid Model differ from standard agencies building AI apps?
+### [Scenario: Procurement evaluating Manifera's AI capabilities] How does Manifera's Hybrid Model differ from standard agencies building AI apps?
 Standard agencies just build thin, generic wrappers around the OpenAI API, which leads to massive hallucinations and exorbitant API costs. Manifera provides dedicated AI Integration Specialists. Our Dutch Architects design strict RAG pipelines and Data Sovereignty protocols, while our Vietnamese pods build the complex Vector Database infrastructure required for secure, enterprise-grade AI.
-
-### (Scenario: CTO monitoring a live AI application) How do we know if our AI application's answers are still accurate after it's been live for months?
-Standard API monitoring only tells you the system is responding, not whether it's responding correctly. AI Specialists build a fourth layer of LLM Observability: a 'golden dataset' of verified question-answer pairs that automatically re-runs on every deployment, groundedness scoring that flags any answer not backed by its retrieved source text, and drift monitoring to catch silent behavior changes when an AI provider updates their underlying model. Low-confidence answers get routed to a human instead of shown to the user.
 
 <script type="application/ld+json">
 {
@@ -166,14 +162,6 @@ Standard API monitoring only tells you the system is responding, not whether it'
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "We do not build generic API wrappers. Our Dutch Architects and Vietnamese AI Specialists build deep RAG architectures, Vector Database pipelines, and strict data privacy boundaries to deliver secure, non-hallucinating enterprise AI."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do we know if our AI application's answers are still accurate after it's been live for months?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Standard API monitoring only confirms the system is responding, not whether it's responding correctly. AI Specialists build a fourth layer of LLM Observability: a golden dataset of verified question-answer pairs that automatically re-runs on every deployment, groundedness scoring that flags any answer not backed by its retrieved source text, and drift monitoring to catch silent behavior changes when an AI provider updates their underlying model. Low-confidence answers get routed to a human instead of shown to the user."
       }
     }
   ]

@@ -39,7 +39,7 @@ In [custom software development](https://www.manifera.com/services/custom-softwa
 These are the vulnerabilities cataloged by the OWASP Top 10. 
 
 ### 1. Broken Access Control
-If a junior developer builds an API endpoint to retrieve a user's invoice (e.g., `api/invoice/100`), but fails to write the logic that verifies if the person requesting the invoice is actually the owner of the invoice, a hacker can simply change the URL to `api/invoice/101` and steal the next user's financial data. AWS cannot detect this. It just looks like normal web traffic.
+If a junior developer builds an API endpoint to retrieve a user's invoice [e.g., `api/invoice/100`], but fails to write the logic that verifies if the person requesting the invoice is actually the owner of the invoice, a hacker can simply change the URL to `api/invoice/101` and steal the next user's financial data. AWS cannot detect this. It just looks like normal web traffic.
 
 ### 2. SQL Injection
 If an agency uses outdated database query methods instead of modern ORMs (Object-Relational Mappers), a hacker can type malicious SQL code into the login box on the frontend. The application will execute that code directly against the database, dumping all user passwords. Azure's network firewalls will not block this; the application willingly executed the command.
@@ -47,7 +47,7 @@ If an agency uses outdated database query methods instead of modern ORMs (Object
 ### 3. Insecure Design (The Business Logic Flaw)
 If an e-commerce checkout flow is designed so that the final price is calculated on the frontend (in the browser) rather than enforced strictly on the backend server, a malicious user can intercept the network request, change the price of a €1,000 laptop to €1, and complete the purchase. No cloud provider can protect against fundamentally flawed business logic.
 
-This is not a fringe interpretation - it is the exact division of labor AWS itself publishes. AWS's own Shared Responsibility Model documentation draws the line explicitly between what it calls "security **of** the cloud" (AWS's job: the hardware, the network, the physical facilities) and "security **in** the cloud" (the customer's job: the application code, the data, the access configuration, the identity management). Azure and Google Cloud publish near-identical models. If an agency cannot articulate which side of that line their own deliverable sits on, they do not understand what they are being paid to secure - and Verizon's 2025 Data Breach Investigations Report, which analyzed over 22,000 real-world security incidents, found that credential abuse and exploitation of application-layer vulnerabilities remain among the leading initial attack vectors into breached organizations. Neither of those failure modes is something a cloud provider's infrastructure security can stop.
+This is not a fringe interpretation - it is the exact division of labor AWS itself publishes. AWS's own Shared Responsibility Model documentation draws the line explicitly between what it calls "security **of** the cloud" [AWS's job: the hardware, the network, the physical facilities] and "security **in** the cloud" [the customer's job: the application code, the data, the access configuration, the identity management]. Azure and Google Cloud publish near-identical models. If an agency cannot articulate which side of that line their own deliverable sits on, they do not understand what they are being paid to secure - and Verizon's 2025 Data Breach Investigations Report, which analyzed over 22,000 real-world security incidents, found that credential abuse and exploitation of application-layer vulnerabilities remain among the leading initial attack vectors into breached organizations. Neither of those failure modes is something a cloud provider's infrastructure security can stop.
 
 ## Securing the Application Lifecycle
 
@@ -55,7 +55,7 @@ To build a secure **custom application**, the security must be embedded into the
 
 1. **Static Application Security Testing (SAST):** The CI/CD pipeline must automatically scan every Pull Request for known OWASP vulnerabilities (like un-parameterized SQL queries). If a flaw is detected, the pipeline mathematically rejects the code.
 2. **Strict Code Reviews:** A senior Tech Lead must manually review the business logic (which automated tools often miss) to ensure Broken Access Control cannot occur.
-3. **Dependency Scanning:** Modern apps rely heavily on third-party open-source libraries. If one of those libraries is compromised (e.g., the Log4j vulnerability), the application is compromised. CI/CD pipelines must automatically scan and alert on outdated dependencies.
+3. **Dependency Scanning:** Modern apps rely heavily on third-party open-source libraries. If one of those libraries is compromised [e.g., the Log4j vulnerability], the application is compromised. CI/CD pipelines must automatically scan and alert on outdated dependencies.
 
 ## The Secrets Management Gap
 
@@ -67,7 +67,7 @@ Beyond the OWASP Top 10, CISOs auditing a custom application should ask one more
 3. **Credentials That Never Expire:** Static secrets (a database password set once at project launch and never changed) mean that if a credential is ever compromised, whether through an ex-employee's laptop or a leaked backup, the attacker has permanent, undetected access until someone manually notices and rotates it, which in most breaches, takes months.
 
 ### The Fix: Secrets Managers, Not Config Files
-Elite engineering teams never let a secret exist as plaintext in a repository, a config file, or a chat message. Instead, they use a dedicated secrets manager (AWS Secrets Manager, HashiCorp Vault, or Google Secret Manager) that injects credentials into the application at runtime, logs every access, and supports automated rotation on a schedule (for example, forcing a database password to rotate every 90 days without any human involvement). Pull Requests are scanned by automated secret-detection tools (like Gitleaks or TruffleHog) that block a merge outright the moment a credential pattern is detected in a diff, closing the exact gap that turns a single careless commit into a company-wide breach.
+Elite engineering teams never let a secret exist as plaintext in a repository, a config file, or a chat message. Instead, they use a dedicated secrets manager [AWS Secrets Manager, HashiCorp Vault, or Google Secret Manager] that injects credentials into the application at runtime, logs every access, and supports automated rotation on a schedule [for example, forcing a database password to rotate every 90 days without any human involvement]. Pull Requests are scanned by automated secret-detection tools (like Gitleaks or TruffleHog) that block a merge outright the moment a credential pattern is detected in a diff, closing the exact gap that turns a single careless commit into a company-wide breach.
 
 ## What a Broken Access Control Breach Actually Costs
 
@@ -97,25 +97,21 @@ Stop exposing your enterprise to application-layer attacks. Contact our Amsterda
 
 ---
 
-## Frequently Asked Questions
-
-### (Scenario: CISO auditing an offshore agency) Why is it dangerous when an agency claims an application is secure 'because it is hosted on AWS'?
+## FAQs
+### [Scenario: CISO auditing an offshore agency] Why is it dangerous when an agency claims an application is secure 'because it is hosted on AWS'?
 This demonstrates ignorance of the Cloud 'Shared Responsibility Model.' Cloud providers (AWS, Azure) secure the physical infrastructure and the network. They do *not* secure the Application Layer (Layer 7). If an agency writes code with a SQL Injection vulnerability, deploying it on highly secure AWS infrastructure will not prevent a hacker from stealing the data.
 
-### (Scenario: VP Engineering addressing data leaks) What is 'Broken Access Control' and why does it cause so many breaches?
+### [Scenario: VP Engineering addressing data leaks] What is 'Broken Access Control' and why does it cause so many breaches?
 Broken Access Control occurs when an application correctly authenticates a user (they are logged in), but fails to verify their authorization for a specific resource. For example, a user logs in, but the application allows them to access `user_id=5` when they are actually `user_id=4`. The code fails to check ownership, allowing lateral data theft.
 
-### (Scenario: Lead Architect designing CI/CD) How can we automatically prevent OWASP vulnerabilities from being deployed?
+### [Scenario: Lead Architect designing CI/CD] How can we automatically prevent OWASP vulnerabilities from being deployed?
 You must implement 'Shift-Left Security' by integrating SAST (Static Application Security Testing) tools into your CI/CD pipeline. These tools automatically scan the raw code in every Pull Request. If a developer accidentally writes an un-parameterized SQL query (a massive security risk), the pipeline will automatically block the deployment.
 
-### (Scenario: CTO reviewing e-commerce architecture) What is an 'Insecure Design' or Business Logic flaw?
+### [Scenario: CTO reviewing e-commerce architecture] What is an 'Insecure Design' or Business Logic flaw?
 Unlike a technical bug (like a memory leak), a business logic flaw is an architectural error. For example, trusting the frontend browser to calculate the final price of an item. A hacker can intercept the browser's request and change the price to $0. Security must always be strictly enforced on the backend server, never the frontend.
 
-### (Scenario: CISO auditing credential hygiene) Why are hardcoded API keys and passwords such a common cause of breaches?
+### [Scenario: CISO auditing credential hygiene] Why are hardcoded API keys and passwords such a common cause of breaches?
 Developers often hardcode a database password or API key directly into source code "temporarily," then push that code to a Git repository. Automated bots continuously scan public and leaked repositories for exposed credential patterns and can drain cloud resources within minutes of a leak. Because static secrets rarely expire, a single careless commit can grant an attacker permanent, undetected access until someone manually rotates the credential, often months later.
-
-### (Scenario: Procurement Officer evaluating Manifera) How does Manifera's Hybrid Model ensure custom applications are secure?
-Standard offshore agencies use junior developers who lack security training. Manifera's Hybrid Model places a senior Dutch Architect as the gatekeeper. The Dutch Architect builds the automated security pipelines (SAST, Dependency Scanning) and manually reviews the business logic of our Vietnamese pods, ensuring strict European security compliance (GDPR, OWASP) before any code is merged.
 
 <script type="application/ld+json">
 {
@@ -160,14 +156,6 @@ Standard offshore agencies use junior developers who lack security training. Man
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Developers sometimes hardcode credentials directly into source code that gets pushed to a Git repository. Bots continuously scan for exposed keys and can drain resources within minutes. Because static secrets rarely expire, one careless commit can grant permanent, undetected access until the credential is manually rotated, often months later."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How does Manifera's Hybrid Model ensure custom applications are secure?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Our Dutch Architects enforce Shift-Left Security. They mandate automated SAST scanning in the CI/CD pipeline and perform manual architectural reviews on our Vietnamese offshore pods, ensuring every line of code meets strict European security standards."
       }
     }
   ]

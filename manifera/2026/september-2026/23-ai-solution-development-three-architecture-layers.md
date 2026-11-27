@@ -13,7 +13,7 @@ Content Format: Technical Framework & Strategy
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "AI Solution Development: Navigating the Three Layers of Architecture",
-  "description": "An Enterprise Architect's guide to AI solution development. Explains the three layers of AI architecture (Wrappers, RAG/Fine-Tuning, and Foundation Models) and why enterprises should avoid building foundational models.",
+  "description": "An Enterprise Architect's guide to AI solution development. Explains the three layers of AI architecture [Wrappers, RAG/Fine-Tuning, and Foundation Models] and why enterprises should avoid building foundational models.",
   "author": {"@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com"},
   "publisher": {"@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com"},
   "datePublished": "2026-09-23"
@@ -34,7 +34,7 @@ When navigating **ai solution development**, technical leaders must understand t
 
 ## The Three Layers of AI Architecture
 
-### Layer 1: The API Wrapper (High Risk, Low Value)
+### Layer 1: The API Wrapper [High Risk, Low Value]
 This is what 90% of "AI Agencies" build. They take a standard web application (React/Node), accept user input, and send that input directly to the OpenAI API. 
 - **The Problem:** It has zero understanding of your proprietary data. Worse, if you send a legal contract through a wrapper, you are sending highly sensitive corporate data to a public third-party server, creating a massive GDPR compliance violation. 
 - **The Verdict:** Never use this for enterprise data.
@@ -54,7 +54,7 @@ This involves renting 10,000 NVIDIA GPUs and training a neural network from abso
 
 CDOs approving a Layer 2 budget deserve to know what they're actually paying for, since "RAG pipeline" can sound like a black box next to the very concrete-sounding "€2.5 million Foundation Model" pitch. A realistic, illustrative breakdown of a 6-week, €50,000 legal-document RAG engagement looks roughly like this:
 
-- **Document ingestion and chunking pipeline (roughly 20% of budget):** Engineering the ETL process that takes raw legal contracts (often inconsistent PDFs, scanned documents, and Word files) and splits them into clean, semantically coherent chunks small enough for accurate retrieval but large enough to preserve legal context. This step is unglamorous and is where most amateur RAG implementations fail silently.
+- **Document ingestion and chunking pipeline (roughly 20% of budget):** Engineering the ETL process that takes raw legal contracts [often inconsistent PDFs, scanned documents, and Word files] and splits them into clean, semantically coherent chunks small enough for accurate retrieval but large enough to preserve legal context. This step is unglamorous and is where most amateur RAG implementations fail silently.
 - **Vector database setup and embedding strategy (roughly 15% of budget):** Choosing and configuring the vector store, selecting an embedding model appropriate for legal language, and tuning the similarity-search parameters so the system retrieves the *correct* clause, not just a superficially similar one.
 - **Retrieval and orchestration logic (roughly 25% of budget):** The code that takes a lawyer's question, queries the vector database, assembles the retrieved context, and constructs the prompt sent to the LLM, including guardrails that force the model to cite its source paragraph rather than paraphrase from memory.
 - **Fine-tuning pass, if needed (roughly 15% of budget):** Training the open-source model on a few thousand examples of the firm's own contract tone and formatting conventions, run on rented GPU time measured in hours, not the months required for foundation model training.
@@ -97,31 +97,27 @@ At Manifera, we operate exclusively in Layer 2.
 
 Our Dutch AI Architects are pragmatic. We do not let our clients burn capital on unnecessary Foundation Models. We design secure, highly optimized RAG pipelines and Fine-Tuned open-source deployments. 
 
-Our Vietnamese engineering pods build the Data Engineering pipelines (ETL, Vector Databases, Local PII Masking) required to make these systems work flawlessly within your private cloud. We deliver the intelligence of AI with the security of an on-premise vault.
+Our Vietnamese engineering pods build the Data Engineering pipelines [ETL, Vector Databases, Local PII Masking] required to make these systems work flawlessly within your private cloud. We deliver the intelligence of AI with the security of an on-premise vault.
 
 Stop letting agencies over-engineer your AI strategy. Contact our Amsterdam team for a pragmatic AI architecture audit.
 
 ---
 
-## Frequently Asked Questions
-
-### (Scenario: CDO evaluating AI proposals) Why shouldn't an enterprise build its own Foundation Model from scratch?
+## FAQs
+### [Scenario: CDO evaluating AI proposals] Why shouldn't an enterprise build its own Foundation Model from scratch?
 Building a Foundation Model (like GPT-4) requires massive datasets, thousands of expensive GPUs, and PhD-level scientists, costing millions of euros. Furthermore, the technology moves so fast that your custom model will be obsolete the moment a major tech company releases their next open-source model. It is an unjustifiable ROI for a non-AI company.
 
-### (Scenario: CTO choosing an AI integration method) What is the difference between Fine-Tuning and RAG (Retrieval-Augmented Generation)?
-Fine-Tuning changes the 'behavior' and 'tone' of an AI model by retraining its neural weights on a dataset of examples. RAG changes the 'knowledge' of the AI. RAG does not alter the model itself; instead, it intercepts the user's question, searches a private database for the correct facts, and forces the AI to read those facts before answering. 
+### [Scenario: CTO choosing an AI integration method] What is the difference between Fine-Tuning and RAG (Retrieval-Augmented Generation)?
+Fine-Tuning changes the 'behavior' and 'tone' of an AI model by retraining its neural weights on a dataset of examples. RAG changes the 'knowledge' of the AI. RAG does not alter the model itself; instead, it intercepts the user's question, searches a private database for the correct facts, and forces the AI to read those facts before answering.
 
-### (Scenario: VP Engineering concerned about accuracy) Which method is better for stopping AI Hallucinations?
+### [Scenario: VP Engineering concerned about accuracy] Which method is better for stopping AI Hallucinations?
 RAG is vastly superior for stopping hallucinations. If you Fine-Tune a model on facts, it might still 'forget' or hallucinate details because neural networks are probabilistic. With RAG, the AI is mathematically grounded; it acts as a reading comprehension engine, strictly summarizing the exact text retrieved from your secure database.
 
-### (Scenario: CISO auditing an AI project) How does Layer 2 AI development (RAG/Fine-Tuning) improve data security?
+### [Scenario: CISO auditing an AI project] How does Layer 2 AI development (RAG/Fine-Tuning) improve data security?
 In Layer 1 (API Wrappers), you send your raw data to a public cloud provider. In Layer 2, you can take a highly capable open-source model (like Llama 3), Fine-Tune it, and host it on your own private AWS or Azure servers. Your sensitive corporate data and your Vector Database never leave your secure corporate firewall.
 
-### (Scenario: IT Procurement evaluating Manifera) How does Manifera execute Layer 2 AI projects?
+### [Scenario: IT Procurement evaluating Manifera] How does Manifera execute Layer 2 AI projects?
 Our Dutch AI Architects design the data topology. We define the ETL pipelines required to clean your proprietary data, set up the Vector Databases, and implement the RAG orchestration (using frameworks like LangChain). Our Vietnamese offshore pods then write the code to execute this secure architecture, delivering a highly accurate, private AI solution.
-
-### (Scenario: Enterprise Architect maintaining a production RAG pipeline) What is Model Drift and how do you protect an AI system from it?
-Model Drift occurs when an LLM provider silently updates the model behind an API endpoint, subtly changing tone, format, or accuracy without any code change on your side. It is protected against with an Evaluation Harness: a version-controlled suite of golden test cases with expected answers and retrieval assertions that automatically re-runs whenever the underlying model, prompt template, or Vector Database content changes, catching quality regressions before real users see them.
 
 <script type="application/ld+json">
 {
@@ -166,14 +162,6 @@ Model Drift occurs when an LLM provider silently updates the model behind an API
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our Dutch Architects design the secure RAG pipelines and Vector Database infrastructure. Our Vietnamese engineering pods execute the code, ensuring you get highly accurate AI solutions without ever exposing your data to public LLM providers."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is Model Drift and how do you protect an AI system from it?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Model Drift is when an LLM provider silently updates the model behind an API endpoint, changing output tone, format, or accuracy without any code change on your end. It is mitigated with an Evaluation Harness, a version-controlled suite of golden test cases that automatically re-runs whenever the model, prompt, or Vector Database content changes, catching regressions before production."
       }
     }
   ]

@@ -35,7 +35,7 @@ If you use AI tools to replace human engineering headcount, you will not save mo
 To understand the impact of **AI tools for software development**, you must understand the difference between writing code and designing architecture.
 
 ### The Junior Developer Problem
-When a junior offshore developer uses GitHub Copilot, the AI is remarkably good at generating standard, boilerplate code (e.g., writing a function to sort an array, or creating a basic React component). The junior developer accepts the AI suggestion because it "looks right" and passes the immediate unit test.
+When a junior offshore developer uses GitHub Copilot, the AI is remarkably good at generating standard, boilerplate code [e.g., writing a function to sort an array, or creating a basic React component]. The junior developer accepts the AI suggestion because it "looks right" and passes the immediate unit test.
 
 However, the AI has no macro-level understanding of the enterprise architecture. 
 - It does not know that the caching strategy it just suggested violates the company's GDPR compliance rules.
@@ -67,7 +67,7 @@ Large language models used for code generation were trained on enormous volumes 
 
 This is not a theoretical concern reserved for legal departments. It is precisely the kind of finding that surfaces during the dependency and license-risk check of a technical due diligence audit (the same audit process described elsewhere on this site for M&A and funding events). A company preparing for acquisition or a later funding round can have its valuation directly impacted if an auditor's scan flags copyleft-licensed code fragments buried inside AI-generated commits from eighteen months earlier, with no clear record of where they came from.
 
-The mitigation is a specific, auditable practice, not a vague promise: run all AI-generated code through automated license-scanning tools (such as FOSSA, Black Duck, or the open-source `licensee` gem) as a mandatory CI/CD pipeline step, exactly like a security scan. Modern AI coding tools, including GitHub Copilot's enterprise tier, also offer a built-in "public code matching" filter that blocks suggestions matching known public repositories above a similarity threshold - but this filter must be explicitly enabled, and many low-cost offshore agencies never turn it on because it occasionally slows down or blocks a helpful suggestion.
+The mitigation is a specific, auditable practice, not a vague promise: run all AI-generated code through automated license-scanning tools [such as FOSSA, Black Duck, or the open-source `licensee` gem] as a mandatory CI/CD pipeline step, exactly like a security scan. Modern AI coding tools, including GitHub Copilot's enterprise tier, also offer a built-in "public code matching" filter that blocks suggestions matching known public repositories above a similarity threshold - but this filter must be explicitly enabled, and many low-cost offshore agencies never turn it on because it occasionally slows down or blocks a helpful suggestion.
 
 A disciplined engineering organization treats "where did this code come from" as seriously as "does this code work." Every AI-assisted Pull Request should carry the same provenance scrutiny as a security scan, because an unreviewed license contamination issue doesn't just create technical debt - it creates a legal liability that can resurface at the worst possible moment: during due diligence, right before your company's valuation is finalized.
 
@@ -81,7 +81,7 @@ That volume is precisely what makes the "Code Reviewer" shift described above no
 
 For two consecutive years, DORA - the Google-sponsored research team behind the annual *Accelerate State of DevOps Report*, the same body that established industry-standard delivery metrics like deployment frequency and lead time - has published a finding that directly undercuts the "40% faster, therefore cut headcount" math described above. In DORA's 2024 report, increased AI adoption correlated with a 1.5% decrease in software delivery throughput and a 7.2% reduction in delivery stability, even though 75% of the individual developers surveyed said the tools made *them* personally more productive. DORA's researchers attribute the paradox to batch size, not bad code: AI makes it trivially easy to generate more code per pull request, and DORA's multi-year dataset has consistently shown that larger changesets are harder to review and more likely to introduce regressions, regardless of who or what authored them.
 
-Independent code-quality research backs this up at the commit level. GitClear, a code analytics firm that tracked 211 million lines of changed code across the industry from 2020 through 2024, found that "code churn" - the share of lines rewritten or reverted within two weeks of being authored, a proxy for code nobody thought through carefully the first time - rose from a pre-AI baseline of roughly 3.3% to 5.7% in 2024, on pace to reach 7.1% in 2025: more than double in under three years. Over the same window, the share of copy-pasted code climbed from 8.3% to 12.3% of all changed lines, while the share of code that was properly refactored (what GitClear calls "moved," as opposed to duplicated) fell from 24.1% to just 9.5%, and instances of duplicated code blocks increased eightfold. Put simply: the aggregate data across hundreds of real codebases shows teams writing more code that resembles other code, refactoring it less, and rewriting it sooner - the measurable signature of "technical debt at lightspeed," not just an anecdote from one skeptical Tech Lead.
+Independent code-quality research backs this up at the commit level. GitClear, a code analytics firm that tracked 211 million lines of changed code across the industry from 2020 through 2024, found that "code churn" - the share of lines rewritten or reverted within two weeks of being authored, a proxy for code nobody thought through carefully the first time - rose from a pre-AI baseline of roughly 3.3% to 5.7% in 2024, on pace to reach 7.1% in 2025: more than double in under three years. Over the same window, the share of copy-pasted code climbed from 8.3% to 12.3% of all changed lines, while the share of code that was properly refactored [what GitClear calls "moved," as opposed to duplicated] fell from 24.1% to just 9.5%, and instances of duplicated code blocks increased eightfold. Put simply: the aggregate data across hundreds of real codebases shows teams writing more code that resembles other code, refactoring it less, and rewriting it sooner - the measurable signature of "technical debt at lightspeed," not just an anecdote from one skeptical Tech Lead.
 
 Developers feel the trust gap too. Stack Overflow's 2025 Developer Survey found that while professional AI tool adoption climbed to 84%, trust in the accuracy of that output fell sharply in the same period: 46% of developers said they actively distrust AI-generated code's accuracy, up from 31% only a year earlier, and 45% said debugging AI-generated code actually takes them longer than writing the equivalent code themselves would have.
 
@@ -101,28 +101,21 @@ If you want high-velocity engineering governed by strict European standards, con
 
 ---
 
-## Frequently Asked Questions
-
-### (Scenario: CEO evaluating engineering budgets) If AI makes developers 40% faster, why can't we reduce the size of our offshore team?
+## FAQs
+### [Scenario: CEO evaluating engineering budgets] If AI makes developers 40% faster, why can't we reduce the size of our offshore team?
 Because AI speeds up 'typing', not 'thinking'. The AI generates code quickly, but that code often contains subtle architectural or security flaws. The team now needs that extra 40% of time to rigorously review, test, and integrate the massive volume of AI-generated code into the complex enterprise system. Reducing headcount leads to unreviewed, dangerous code entering production.
 
-### (Scenario: CTO planning tool adoption) What is the main danger of junior developers using GitHub Copilot?
+### [Scenario: CTO planning tool adoption] What is the main danger of junior developers using GitHub Copilot?
 Junior developers often lack the deep architectural knowledge to spot when the AI is confidently wrong. The AI might suggest a database query that works perfectly on a local machine with 10 rows of data, but causes a catastrophic server crash in production with 10 million rows. Junior developers may blindly accept the suggestion because it 'looks right'.
 
-### (Scenario: VP Engineering restructuring roles) How does the daily job of a software engineer change with AI tools?
+### [Scenario: VP Engineering restructuring roles] How does the daily job of a software engineer change with AI tools?
 The role shifts from 'Code Writer' to 'Code Reviewer/Architect'. Because the AI writes the basic boilerplate syntax instantly, the engineer must spend their cognitive energy evaluating the security, scalability, and business-logic accuracy of the generated code. It requires a higher level of analytical thinking than traditional typing.
 
-### (Scenario: QA Director worried about code quality) Does using AI code generators increase technical debt?
+### [Scenario: QA Director worried about code quality] Does using AI code generators increase technical debt?
 If ungoverned, yes, it increases technical debt at lightspeed. AI tends to favor verbose, repetitive code patterns rather than clean, abstracted architecture. If Tech Leads do not ruthlessly review and refactor the AI output, the codebase will quickly bloat into an unmaintainable, fragile mess.
 
-### (Scenario: IT Procurement evaluating Manifera) How does Manifera's Hybrid Model manage the risks of AI-generated code?
+### [Scenario: IT Procurement evaluating Manifera] How does Manifera's Hybrid Model manage the risks of AI-generated code?
 Our Dutch Tech Leads act as the absolute firewall. While our Vietnamese pods use AI tools to increase basic coding velocity, the Dutch Tech Lead manually reviews every Pull Request against strict European architectural and security standards. We enforce a 'Zero Trust' policy on AI output, ensuring you get the speed of AI without the technical debt.
-
-### (Scenario: CEO preparing for acquisition or funding due diligence) Can AI-generated code create legal liability through license contamination?
-Yes. AI coding models were trained on public repositories, some licensed under copyleft terms like the GPL that require derivative works to also be open-sourced. In rare cases, AI tools have reproduced training data nearly verbatim, meaning copyleft-licensed code fragments can end up embedded in your proprietary product without anyone noticing, until a due diligence audit flags it and impacts your valuation. The fix is running all AI-generated code through automated license-scanning tools like FOSSA or Black Duck as a mandatory CI/CD step.
-
-### (Scenario: Engineering leadership questioning the ROI case) Is the risk of ungoverned AI slowing teams down actually backed by data, or is it just a theoretical concern?
-It's backed by hard data, not just theory. DORA's 2024 Accelerate State of DevOps Report found that, for the second year running, increased AI adoption correlated with a 1.5% decrease in software delivery throughput and a 7.2% reduction in delivery stability, driven by larger, harder-to-review changesets. Separately, GitClear's analysis of 211 million lines of code found that code churn (code rewritten within two weeks of being authored) roughly doubled between 2021 and 2024, while properly refactored code fell from 24.1% to 9.5% of all changes. This is exactly why governance has to scale alongside AI adoption, not lag behind it.
 
 <script type="application/ld+json">
 {
@@ -167,22 +160,6 @@ It's backed by hard data, not just theory. DORA's 2024 Accelerate State of DevOp
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "While our Vietnamese pods use AI to increase velocity, our Dutch Tech Leads manually review every Pull Request. We enforce a 'Zero Trust' policy on AI output, ensuring it meets strict European architectural and security standards."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can AI-generated code create legal liability through license contamination?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. AI models were trained on public code, some under copyleft licenses like the GPL requiring derivative works to also be open-sourced. AI tools can occasionally reproduce training data nearly verbatim, embedding copyleft code into a proprietary product unnoticed until a due diligence audit flags it. The fix is running AI-generated code through automated license-scanning tools like FOSSA or Black Duck as a mandatory pipeline step."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is the risk of ungoverned AI slowing teams down actually backed by data, or is it just a theoretical concern?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It is backed by data. DORA's 2024 State of DevOps Report found that increased AI adoption correlated with a 1.5% decrease in software delivery throughput and a 7.2% reduction in delivery stability, for the second year in a row. GitClear's analysis of 211 million lines of code found that code churn roughly doubled between 2021 and 2024, while properly refactored code fell from 24.1% to 9.5% of all changes. Governance must scale alongside AI adoption, not lag behind it."
       }
     }
   ]

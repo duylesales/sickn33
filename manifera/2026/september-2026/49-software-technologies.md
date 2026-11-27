@@ -40,9 +40,9 @@ Junior developers love this. They suffer from "Shiny Object Syndrome" and consta
 Enterprise Architects hate this. They understand that every time you switch technologies, you incur massive Technical Debt. 
 
 ### The Cost of the "Trendy" Framework
-When you adopt a trendy new framework (instead of a boring, battle-tested one), you suffer three immediate architectural penalties:
+When you adopt a trendy new framework [instead of a boring, battle-tested one], you suffer three immediate architectural penalties:
 1.  **The Stack Overflow Void:** When a developer encounters a bizarre bug in React, they Google it and instantly find 100 solutions. When they encounter a bug in a brand-new framework, they find nothing. They must spend three days reading the raw source code of the framework just to fix a minor UI glitch.
-2.  **The Dependency Collapse:** Modern UIs rely on third-party libraries (e.g., date pickers, data grids). If you use a fringe framework, those libraries don't exist yet. Your team has to manually build complex components from scratch, destroying your engineering velocity.
+2.  **The Dependency Collapse:** Modern UIs rely on third-party libraries [e.g., date pickers, data grids]. If you use a fringe framework, those libraries don't exist yet. Your team has to manually build complex components from scratch, destroying your engineering velocity.
 3.  **The Talent Trap:** If your developers build the app in an obscure framework and then quit, you cannot replace them. You have a "Bus Factor" of zero.
 
 > *"The nice thing about boringness (so constrained) is that the capabilities of these things are well understood. But more importantly, their failure modes are well understood."* - **Dan McKinley**, "Choose Boring Technology" (mcfunley.com)
@@ -61,7 +61,7 @@ The lesson generalizes beyond AngularJS. Frameworks that looked like safe enterp
 
 Elite engineering organizations survive the rapid half-life of frontend technologies by structurally separating the frontend from the backend. 
 
-In legacy systems, the backend (e.g., PHP or Ruby) was deeply tangled with the HTML frontend. If you wanted to change the UI, you had to rewrite the backend. 
+In legacy systems, the backend [e.g., PHP or Ruby] was deeply tangled with the HTML frontend. If you wanted to change the UI, you had to rewrite the backend. 
 
 Today, Architects use an **API-First Decoupled Architecture**. 
 The backend (Node.js/PostgreSQL) is built as a pure, headless API. It only spits out raw JSON data. It has absolutely no idea what the frontend looks like. 
@@ -93,7 +93,7 @@ Put concrete numbers on the two paths and the case for the Strangler Fig approac
 - Risk: a single six-month, high-stakes cutover is also a single point of failure. If the rewrite runs long (common with big-bang rewrites), the freeze extends and the opportunity cost compounds.
 
 **Path B - the Strangler Fig migration.** The team allocates roughly 30% of its capacity to migrating screens, in priority order, while the remaining 70% keeps shipping the normal roadmap.
-- Engineering cost: because old and new frontends coexist, total engineering hours spent on the migration itself typically run 15-25% higher than a pure rewrite (routing shell, dual maintenance windows, regression testing across two stacks). At the upper end, that is roughly €504,000 × 1.25 ≈ **€630,000** spread across 14-18 months instead of 6.
+- Engineering cost: because old and new frontends coexist, total engineering hours spent on the migration itself typically run 15-25% higher than a pure rewrite [routing shell, dual maintenance windows, regression testing across two stacks]. At the upper end, that is roughly €504,000 × 1.25 ≈ **€630,000** spread across 14-18 months instead of 6.
 - Opportunity cost: effectively zero - 70% of the roadmap ships on schedule every sprint throughout the migration.
 - Risk: spread across dozens of small cutovers instead of one big one, so a bad migration of a single low-traffic screen never threatens the whole business.
 
@@ -113,25 +113,21 @@ Stop funding disposable architecture. Contact our Amsterdam team to build your p
 
 ---
 
-## Frequently Asked Questions
-
-### (Scenario: VP Engineering planning a rewrite) What is the 'Half-Life' of a JavaScript framework?
+## FAQs
+### [Scenario: VP Engineering planning a rewrite] What is the 'Half-Life' of a JavaScript framework?
 The 'Half-Life' refers to how quickly a frontend technology goes from being 'the new industry standard' to 'legacy code that no one wants to maintain.' While backend databases (SQL) last decades, frontend JavaScript frameworks often become obsolete within 3 to 5 years, forcing companies into expensive UI rewrites.
 
-### (Scenario: CTO reviewing tech stack proposals) Why is it dangerous to let junior developers choose the software technologies?
+### [Scenario: CTO reviewing tech stack proposals] Why is it dangerous to let junior developers choose the software technologies?
 Junior developers often suffer from 'Shiny Object Syndrome.' They optimize the tech stack for their own entertainment, choosing brand new, experimental frameworks so they can learn them. This leaves the company with an untested, fragile architecture that lacks third-party libraries and has a massive 'Bus Factor' risk if the developer quits.
 
-### (Scenario: Lead Developer designing APIs) What is an 'API-First Decoupled Architecture'?
-It is an architectural pattern where the backend server and the frontend UI are completely separated. The backend only outputs raw JSON data (the API). The frontend consumes that data to draw the screen. Because they are decoupled, you can completely rewrite the frontend UI in a new framework 5 years from now without ever touching the backend code. 
+### [Scenario: Lead Developer designing APIs] What is an 'API-First Decoupled Architecture'?
+It is an architectural pattern where the backend server and the frontend UI are completely separated. The backend only outputs raw JSON data (the API). The frontend consumes that data to draw the screen. Because they are decoupled, you can completely rewrite the frontend UI in a new framework 5 years from now without ever touching the backend code.
 
-### (Scenario: Founder worried about hiring) What is the 'Stack Overflow Void' in new technologies?
+### [Scenario: Founder worried about hiring] What is the 'Stack Overflow Void' in new technologies?
 When developers use a proven technology like React, every possible bug has already been solved and documented online (on Stack Overflow). When they use a brand new framework, there is no online documentation. When a bug occurs, your developers will waste days trying to solve it from scratch, paralyzing your engineering velocity.
 
-### (Scenario: Procurement evaluating Manifera) How does Manifera prevent the offshore team from choosing bad technologies?
+### [Scenario: Procurement evaluating Manifera] How does Manifera prevent the offshore team from choosing bad technologies?
 Our Vietnamese offshore developers do not choose the tech stack. Our dedicated Dutch Architects in Amsterdam dictate the technologies before the project begins. We mandate universally standardized, battle-tested tools (React, Node.js) and enforce strict API decoupling, guaranteeing that the codebase we deliver will be highly maintainable for the next decade.
-
-### (Scenario: CTO who cannot afford a six-month feature freeze) Is there a way to escape a dying framework without stopping all feature development?
-Yes, the Strangler Fig Pattern. Instead of a big-bang rewrite, you freeze new development in the old framework, add a thin routing layer that decides per screen whether to serve the legacy page or the new one, and migrate screens one at a time against the same JSON API - starting with the highest-value pages. Old and new frontends run side by side until the last screen is cut over, so every sprint ships new features and reduces technical debt simultaneously instead of freezing the roadmap for months.
 
 <script type="application/ld+json">
 {
@@ -176,14 +172,6 @@ Yes, the Strangler Fig Pattern. Instead of a big-bang rewrite, you freeze new de
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our Dutch Architects have absolute veto power over the Tech Stack. We strictly enforce the use of standardized, boring, enterprise-grade technologies (React, Node.js, PostgreSQL) to guarantee that your architecture is instantly maintainable by any developer in the world."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is there a way to escape a dying framework without stopping all feature development?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, the Strangler Fig Pattern. You freeze new development in the old framework, add a routing layer that serves either the legacy or new page per screen, and migrate screens one at a time against the same JSON API, starting with the highest-value pages. Old and new frontends coexist in production until the last screen is cut over, so feature work and debt reduction happen in the same sprint instead of a separate feature-frozen rewrite."
       }
     }
   ]

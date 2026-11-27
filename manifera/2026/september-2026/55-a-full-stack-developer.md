@@ -68,7 +68,7 @@ Most founders panic when they realize their Full Stack MVP has hit its ceiling. 
 
 At Manifera, when we inherit a Full Stack codebase, we run a four-step diagnostic before writing a single new line of code:
 
-1.  **The Incident Audit.** We pull the last 90 days of production incidents (crashes, timeouts, P1 tickets) and map each one to a file or module. In almost every Full Stack codebase we've inherited, roughly 20% of the files (typically the database access layer and the state management logic) are responsible for 80% of the incidents. This tells us exactly where the specialists need to focus first.
+1.  **The Incident Audit.** We pull the last 90 days of production incidents [crashes, timeouts, P1 tickets] and map each one to a file or module. In almost every Full Stack codebase we've inherited, roughly 20% of the files (typically the database access layer and the state management logic) are responsible for 80% of the incidents. This tells us exactly where the specialists need to focus first.
 2.  **The Ownership Boundary.** We introduce a `CODEOWNERS` file that draws a hard line between `/api` and `/client` directories. From day one of the migration, no engineer commits across that boundary without a second specialist's review. This alone stops the "shared mess" problem from getting worse while the deeper fix is underway.
 3.  **The Strangler Fig Pattern.** Rather than rewriting the monolith in one pass, we build new features and refactored modules alongside the old code, then gradually reroute traffic to the new, specialist-built modules until the legacy Full Stack code is "strangled" out entirely. The application never goes offline, and the founder never has to explain a 6-month feature freeze to their board.
 4.  **The Contract Freeze.** Once the API Contract (the JSON schema of what the backend promises the frontend) is defined, it is version-locked. Backend Specialists can now optimize database queries and Frontend Specialists can rebuild the UI in parallel, because neither side can silently break the other's assumptions.
@@ -83,9 +83,9 @@ Numbers make the trap concrete. Consider a hypothetical but representative Seed-
 
 **Phase 2: The diagnostic (weeks 7-8).** Rather than committing to a rewrite, a specialist-led Incident Audit (see the Migration Playbook above) run by a two-person Backend/Frontend pod over two weeks typically costs a fraction of what a rewrite decision would commit the company to, and it produces a prioritized list of the roughly 20% of files causing 80% of the incidents.
 
-**Phase 3: The Strangler Fig migration (weeks 9-20).** A specialist pod (two Backend, two Frontend, one Dutch Architect at partial oversight) executes the migration over roughly 10-12 weeks. Priced at a blended Hybrid Model rate, this phase typically runs to a small fraction of what a comparable Western-agency full rewrite of the same scope would cost when billed at Western specialist day rates over 6+ months - before even counting the cost of the feature freeze itself, measured in lost roadmap momentum and competitive exposure.
+**Phase 3: The Strangler Fig migration (weeks 9-20).** A specialist pod [two Backend, two Frontend, one Dutch Architect at partial oversight] executes the migration over roughly 10-12 weeks. Priced at a blended Hybrid Model rate, this phase typically runs to a small fraction of what a comparable Western-agency full rewrite of the same scope would cost when billed at Western specialist day rates over 6+ months - before even counting the cost of the feature freeze itself, measured in lost roadmap momentum and competitive exposure.
 
-**The comparison that matters:** the specialist-led migration costs a fraction of a full rewrite and, critically, never stops the product roadmap. The founder who avoided specialists to save money on the initial build ends up paying for two teams in sequence: the generalists who built it, and the specialists who have to fix it. These figures are illustrative, not a quote for your specific codebase - actual cost depends on codebase size, incident severity, and team maturity - but the shape of the curve (diagnose cheap, migrate for a fraction of a rewrite, never freeze the roadmap) holds consistently across the Full Stack codebases we're asked to untangle.
+**The comparison that matters:** the specialist-led migration costs a fraction of a full rewrite and, critically, never stops the product roadmap. The founder who avoided specialists to save money on the initial build ends up paying for two teams in sequence: the generalists who built it, and the specialists who have to fix it. These figures are illustrative, not a quote for your specific codebase - actual cost depends on codebase size, incident severity, and team maturity - but the shape of the curve [diagnose cheap, migrate for a fraction of a rewrite, never freeze the roadmap] holds consistently across the Full Stack codebases we're asked to untangle.
 
 ## Specialized Pods with Manifera
 
@@ -101,28 +101,21 @@ You get the mathematical rigor of an enterprise-grade backend, combined with the
 
 ---
 
-## Frequently Asked Questions
-
-### (Scenario: Founder hiring their first team) Why is it dangerous to rely exclusively on 'Full Stack' developers as my company scales?
+## FAQs
+### [Scenario: Founder hiring their first team] Why is it dangerous to rely exclusively on 'Full Stack' developers as my company scales?
 Full Stack developers are generalists. They are great for building early prototypes. But as you scale, you will encounter highly complex problems (like database deadlocks or browser memory leaks) that require deep, microscopic expertise to solve. A generalist knows 'how' to build a feature, but a specialist knows 'why' it crashes at scale.
 
-### (Scenario: VP Engineering structuring teams) What does a true Backend Specialist do that a Full Stack developer cannot?
+### [Scenario: VP Engineering structuring teams] What does a true Backend Specialist do that a Full Stack developer cannot?
 A Backend Specialist understands the physics of distributed systems. While a Full Stack developer can write a basic database query, a Backend Specialist understands asynchronous message queues, horizontal database sharding, and caching invalidation strategies required to serve millions of users without crashing.
 
-### (Scenario: CTO diagnosing a slow app) What does a true Frontend Specialist do that a Full Stack developer cannot?
+### [Scenario: CTO diagnosing a slow app] What does a true Frontend Specialist do that a Full Stack developer cannot?
 A Frontend Specialist understands the physics of the browser. They do not just draw UI elements; they optimize the Virtual DOM rendering lifecycle, prevent unnecessary re-renders, manage complex client-side state, and ensure the app hits a perfect 60 Frames Per Second (FPS) on low-end mobile devices.
 
-### (Scenario: Lead Architect designing workflows) How do Backend and Frontend specialists work together without slowing each other down?
+### [Scenario: Lead Architect designing workflows] How do Backend and Frontend specialists work together without slowing each other down?
 They use an 'API-First Decoupled Architecture.' Before anyone writes code, the Lead Architect mathematically defines the 'API Contract' (the exact JSON format the backend will send to the frontend). Once agreed upon, the two teams work completely independently, maximizing velocity without blocking each other.
 
-### (Scenario: Procurement evaluating Manifera) How does Manifera structure their offshore development pods?
+### [Scenario: Procurement evaluating Manifera] How does Manifera structure their offshore development pods?
 We do not staff projects with cheap 'Full Stack' generalists. Our Vietnamese engineering pods are composed of dedicated Backend and Frontend Specialists. Crucially, they are governed by our elite Dutch Architects who design the system and enforce the strict API contracts between the two domains, ensuring enterprise-grade quality at offshore prices.
-
-### (Scenario: CTO planning the transition) Do we need to rewrite our entire application to move away from a Full Stack team?
-No. A full rewrite typically freezes feature development for 6-12 months, which is rarely acceptable to a board or customers. We instead run a structured migration: an incident audit to find the highest-risk 20% of the codebase, a CODEOWNERS boundary between backend and frontend directories, and a Strangler Fig approach that reroutes traffic to specialist-built modules gradually. Most mid-sized applications complete this in 8-12 weeks without a feature freeze.
-
-### (Scenario: CFO evaluating the migration budget) How much does fixing a Full Stack scaling failure typically cost compared to a full rewrite?
-In our experience, a specialist-led diagnostic-and-migration path (an incident audit plus a Strangler Fig migration) costs a fraction of what a full Western-agency rewrite of the same scope would cost, because it reuses the parts of the codebase that already work and runs in 8-12 weeks instead of 6+ months. The bigger cost is usually not the specialists' invoice, but the engineering hours a Full Stack team loses firefighting production incidents before the migration even starts - industry research (Stripe's Developer Coefficient report) puts average time lost to technical debt and bad code at 42% of a developer's working week, and that figure tends to spike, not dip, right after a scaling event.
 
 <script type="application/ld+json">
 {
@@ -167,22 +160,6 @@ In our experience, a specialist-led diagnostic-and-migration path (an incident a
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "We deploy specialized pods. You get dedicated Vietnamese Backend and Frontend experts, not mediocre generalists. Furthermore, these specialists are strictly governed by our Dutch Architects, ensuring flawless integration and enterprise-grade scale."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do we need to rewrite our entire application to move away from a Full Stack team?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. A full rewrite typically freezes feature development for 6-12 months. We instead run a structured migration: an incident audit to find the highest-risk 20% of the codebase, a CODEOWNERS boundary between backend and frontend directories, and a Strangler Fig approach that reroutes traffic to specialist-built modules gradually, usually completed in 8-12 weeks without a feature freeze."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How much does fixing a Full Stack scaling failure typically cost compared to a full rewrite?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A specialist-led diagnostic-and-migration path costs a fraction of a full Western-agency rewrite of the same scope, because it reuses working code and runs in 8-12 weeks instead of 6+ months. The larger hidden cost is usually the engineering hours a Full Stack team loses firefighting incidents before the migration starts; Stripe's Developer Coefficient report found developers globally lose an average of 42% of their working week to technical debt and bad code, a figure that spikes after a scaling event."
       }
     }
   ]

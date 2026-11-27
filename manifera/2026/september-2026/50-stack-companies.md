@@ -64,7 +64,7 @@ The uptime math is worth running explicitly, because "97% instead of 99.9%" soun
 
 Elite engineering teams do not blindly buy every API available, nor do they build everything from scratch. They execute a highly pragmatic, defensive "Build vs. Buy" strategy based on the concept of **Core vs. Context**.
 
-*   **Context (Buy via API):** If a feature is standard and provides zero competitive advantage (like sending a password reset email or processing a credit card), you **buy** the best API (SendGrid, Stripe). 
+*   **Context (Buy via API):** If a feature is standard and provides zero competitive advantage (like sending a password reset email or processing a credit card), you **buy** the best API [SendGrid, Stripe]. 
 *   **Core (Build Custom):** If a feature is the primary reason customers pay you (like a proprietary data visualization engine or a unique AI matching algorithm), you **build** it yourself using custom engineering. You must own the IP and control the uptime of your core value proposition.
 
 ### The Facade Pattern (Defensive Integration)
@@ -94,8 +94,8 @@ Webhooks break a core assumption most developers carry over from synchronous API
 Elite engineering teams never process a webhook payload directly inside the HTTP handler. Instead, they implement a three-step defensive pipeline:
 
 1.  **Verify and Deduplicate.** Every incoming webhook is checked against a stored table of event IDs already processed. If the event ID exists, the handler returns `200 OK` immediately and discards the duplicate - no business logic runs twice.
-2.  **Queue, Don't Process.** The handler's only job is to verify the vendor's cryptographic signature, write the raw payload to a durable queue (e.g., SQS, RabbitMQ), and return a `200` within milliseconds. A separate worker processes the queue asynchronously, so a slow downstream dependency never causes the vendor to time out and retry.
-3.  **Dead-Letter for Failures.** If a queued event fails processing three times (a bug, a downstream outage), it is routed to a dead-letter queue rather than silently dropped or retried forever. An engineer is alerted and can manually replay the event once the root cause is fixed.
+2.  **Queue, Don't Process.** The handler's only job is to verify the vendor's cryptographic signature, write the raw payload to a durable queue [e.g., SQS, RabbitMQ], and return a `200` within milliseconds. A separate worker processes the queue asynchronously, so a slow downstream dependency never causes the vendor to time out and retry.
+3.  **Dead-Letter for Failures.** If a queued event fails processing three times [a bug, a downstream outage], it is routed to a dead-letter queue rather than silently dropped or retried forever. An engineer is alerted and can manually replay the event once the root cause is fixed.
 
 Without this pipeline, a "stack companies" architecture doesn't just risk downtime from an outage - it risks silent data corruption that isn't discovered until a customer complains about being billed twice, which is far more damaging to trust than an outage ever is.
 
@@ -114,25 +114,21 @@ Stop building fragile API webs. Contact our Amsterdam team for pragmatic, defens
 
 ---
 
-## Frequently Asked Questions
-
-### (Scenario: CTO planning a tech stack) What is the 'Best-of-Breed API Fallacy'?
+## FAQs
+### [Scenario: CTO planning a tech stack] What is the 'Best-of-Breed API Fallacy'?
 It is the false belief that you can build a stable, scalable enterprise application by simply stitching together 25 different third-party micro-SaaS APIs (the 'Stack Companies' model). While fast to build, it creates a highly fragile architecture where a failure in any single third-party API causes your entire application to crash.
 
-### (Scenario: VP Engineering experiencing downtime) What is the 'Cascading Uptime Illusion'?
+### [Scenario: VP Engineering experiencing downtime] What is the 'Cascading Uptime Illusion'?
 If your app relies on 10 different third-party APIs to load a dashboard, your uptime is not 99.9%. It is the combined probability of all 10 APIs being online simultaneously. Because micro-outages are common, relying on a massive web of synchronous APIs mathematically guarantees that your application will suffer frequent downtime.
 
-### (Scenario: Founder worried about SaaS costs) What is the 'Core vs. Context' framework for Build vs. Buy?
+### [Scenario: Founder worried about SaaS costs] What is the 'Core vs. Context' framework for Build vs. Buy?
 'Core' features are the proprietary intellectual property that makes your startup unique (e.g., a specific AI algorithm). You must BUILD these from scratch. 'Context' features are commodities (e.g., sending emails, processing payments). You should BUY these via reliable third-party APIs to save time.
 
-### (Scenario: Lead Architect designing an integration) How does the 'Facade Pattern' prevent Vendor Lock-In?
+### [Scenario: Lead Architect designing an integration] How does the 'Facade Pattern' prevent Vendor Lock-In?
 If you hard-code a vendor's API (like Auth0) directly into 50 different files in your codebase, you are trapped. If Auth0 triples their price, it takes months to rewrite the code. The Facade Pattern means you build a single central 'wrapper' for the API. The rest of your app talks to the wrapper. If you need to switch vendors, you only rewrite the wrapper file, saving months of work.
 
-### (Scenario: IT Procurement evaluating Manifera) How does Manifera prevent offshore developers from building a fragile 'Frankenstein' architecture?
+### [Scenario: IT Procurement evaluating Manifera] How does Manifera prevent offshore developers from building a fragile 'Frankenstein' architecture?
 Our Dutch Architects act as a governance firewall. They evaluate every third-party API before integration. They strictly mandate the use of the Facade Pattern, forcing the offshore Vietnamese developers to defensively isolate third-party vendors. This guarantees that the codebase you receive is highly stable and immune to vendor lock-in.
-
-### (Scenario: Backend Engineer handling third-party events) Why do webhooks from providers like Stripe or Twilio need idempotency keys?
-Webhooks are not guaranteed to arrive exactly once or in order. A slow response can cause the vendor to retry, delivering the same event twice. Without an idempotency check against a stored event ID, your system can double-process a payment or duplicate a shipment. Idempotency keys let your handler safely discard duplicates before any business logic runs.
 
 <script type="application/ld+json">
 {
@@ -177,14 +173,6 @@ Webhooks are not guaranteed to arrive exactly once or in order. A slow response 
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our Dutch Architects strictly govern API integrations. They enforce the Facade Pattern during code reviews, ensuring our Vietnamese developers never deeply embed third-party vendors into your core business logic, securing your architectural independence."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why do webhooks from providers like Stripe or Twilio need idempotency keys?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Webhooks are not guaranteed to arrive exactly once or in order. A slow response can cause the vendor to retry, delivering the same event twice. Without an idempotency check against a stored event ID, your system can double-process a payment or duplicate a shipment. Idempotency keys let your handler safely discard duplicates before any business logic runs."
       }
     }
   ]

@@ -40,8 +40,8 @@ Building a beautiful **developer website** with smooth animations requires a tal
 
 Building an enterprise logistics platform requires a completely different cognitive skill set: 
 - Designing a highly concurrent, normalized PostgreSQL database schema.
-- Implementing robust CI/CD pipelines (GitHub Actions, Terraform).
-- Architecting asynchronous message queues (Kafka, RabbitMQ) to prevent API timeouts.
+- Implementing robust CI/CD pipelines [GitHub Actions, Terraform].
+- Architecting asynchronous message queues [Kafka, RabbitMQ] to prevent API timeouts.
 - Securing the infrastructure against OWASP Top 10 vulnerabilities.
 
 An agency can easily hire one brilliant freelance frontend designer to build their marketing website, while their actual engineering staff consists entirely of junior developers who have no idea how to design a scalable database.
@@ -55,7 +55,7 @@ Elite CTOs and Procurement Directors do not look at an agency's website. They lo
 ### 1. The Git Commit History Audit
 Ask the agency to walk you through a sanitized Git commit history from a recent project. 
 - **Amateur Agencies:** You will see massive, monolithic commits named "Fixed stuff" or "Update 3" with 2,000 lines of code changed at once. This indicates chaotic development, zero CI/CD discipline, and a lack of peer review.
-- **Elite Agencies:** You will see small, atomic commits with clear, descriptive messages (e.g., `fix(auth): resolve JWT expiration bug in user controller`). This proves a highly disciplined, European-standard engineering culture.
+- **Elite Agencies:** You will see small, atomic commits with clear, descriptive messages [e.g., `fix(auth]: resolve JWT expiration bug in user controller`). This proves a highly disciplined, European-standard engineering culture.
 
 ### 2. The Pull Request (PR) Review Audit
 Ask to see a sanitized Pull Request.
@@ -73,7 +73,7 @@ Git history, PR reviews, and IaC tell you how an agency writes code before it sh
 
 ### Ask: "How do you find out that something is broken?"
 - **Amateur Agencies:** They find out from an angry email from your Head of Operations, or worse, from a customer complaint on social media. Their systems have no structured logging, no error tracking, and no alerting. The first they hear of a database timeout is when a client reports the app is "frozen."
-- **Elite Agencies:** They find out from an automated alert, often before the client notices anything at all. Structured logging (JSON logs shipped to a centralized platform), error tracking (Sentry or equivalent), and APM (Application Performance Monitoring, e.g., Datadog or New Relic) are wired into the codebase from the first sprint, not bolted on after the first outage.
+- **Elite Agencies:** They find out from an automated alert, often before the client notices anything at all. Structured logging (JSON logs shipped to a centralized platform), error tracking (Sentry or equivalent), and APM [Application Performance Monitoring, e.g., Datadog or New Relic] are wired into the codebase from the first sprint, not bolted on after the first outage.
 
 ### Ask: "Walk me through your last production incident."
 This is the single most revealing question in a procurement interview, because it cannot be faked with a portfolio slide.
@@ -106,28 +106,21 @@ Stop buying marketing assets when you need enterprise architecture. Contact our 
 
 ---
 
-## Frequently Asked Questions
-
-### (Scenario: IT Procurement evaluating vendors) Why is an agency's website a poor indicator of their ability to build enterprise software?
+## FAQs
+### [Scenario: IT Procurement evaluating vendors] Why is an agency's website a poor indicator of their ability to build enterprise software?
 An agency's website is a frontend marketing asset that proves they have a good UI designer. However, enterprise software relies heavily on backend Systems Engineering (database normalization, secure API architecture, asynchronous processing). A beautiful frontend website tells you absolutely nothing about the agency's ability to build secure, scalable backend infrastructure.
 
-### (Scenario: CTO conducting an agency interview) What should I look for in an agency's Git commit history?
+### [Scenario: CTO conducting an agency interview] What should I look for in an agency's Git commit history?
 You should look for discipline. Amateur agencies have chaotic commit histories (e.g., massive commits labeled 'updates' made at 3:00 AM). Elite agencies have small, atomic commits with standardized messages (e.g., `feat(payment): add Stripe webhook handler`). This proves they follow a structured, professional software development lifecycle.
 
-### (Scenario: VP Engineering auditing code quality) Why is it important to ask to see an agency's Pull Request (PR) reviews?
+### [Scenario: VP Engineering auditing code quality] Why is it important to ask to see an agency's Pull Request (PR) reviews?
 The PR review is the ultimate proof of architectural governance. If PRs are merged without comments, the agency is a 'Feature Factory' where no one checks the code. If PRs contain rigorous technical debate and the Tech Lead forces developers to fix architectural flaws before merging, you know the agency enforces strict quality control.
 
-### (Scenario: Procurement Officer assessing risk) How can I tell if an agency understands cloud architecture and DevOps?
+### [Scenario: Procurement Officer assessing risk] How can I tell if an agency understands cloud architecture and DevOps?
 Ask them how they provision a staging environment. If they say they manually configure it in the AWS console, they are amateurs who will introduce human error. If they say they use Infrastructure as Code (IaC) like Terraform to automatically and reproducibly deploy environments, they possess enterprise-grade DevOps maturity.
 
-### (Scenario: Founder comparing Manifera to standard agencies) How does Manifera prove its engineering competence before a contract is signed?
+### [Scenario: Founder comparing Manifera to standard agencies] How does Manifera prove its engineering competence before a contract is signed?
 We do not rely on flashy portfolios. Our Dutch Architects will directly demonstrate our engineering standards. We will explain our strict CI/CD pipeline gatekeepers, our TDD (Test-Driven Development) requirements, and how our Dutch Tech Leads ruthlessly govern the code produced by our Vietnamese pods. We prove our competence at the architectural level.
-
-### (Scenario: Procurement Director evaluating production support) How do I know if an agency will actually notice and fix a production outage quickly?
-Ask them how they find out something is broken, and ask them to walk you through their last real production incident. Amateur agencies find out from an angry client email and then SSH into a server to manually restart it. Elite agencies have structured logging, error tracking, and APM tooling that pages an on-call engineer automatically, and they can quote you a real Mean Time To Recovery (MTTR) from actual incident data, not a sales deck.
-
-### (Scenario: CTO wants a hard number instead of a sales pitch) What specific metrics should I ask an agency to quote, instead of accepting words like 'fast' or 'reliable'?
-Ask for their DORA metrics: Deployment Frequency, Lead Time for Changes, Change Failure Rate, and Mean Time to Recovery (MTTR), measured on a real recent project. According to Google Cloud's DORA State of DevOps Report, elite performers deploy on demand with a lead time under a day and a change failure rate near 5%, while low performers can take one to six months to ship a single change. An agency that tracks and can quote these four numbers manages its own delivery risk. An agency that cannot is not measuring its own performance.
 
 <script type="application/ld+json">
 {
@@ -172,22 +165,6 @@ Ask for their DORA metrics: Deployment Frequency, Lead Time for Changes, Change 
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our Dutch Architects demonstrate our architectural governance. We walk you through our CI/CD pipelines, our automated security scanning (SAST), and how our Dutch Tech Leads rigorously review every line of code produced by our Vietnamese pods."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I know if an agency will actually notice and fix a production outage quickly?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Ask how they find out something is broken and to walk you through their last incident. Elite agencies have structured logging, error tracking, and APM tooling that pages an on-call engineer automatically, and can quote a real Mean Time To Recovery from actual data."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What specific metrics should I ask an agency to quote, instead of accepting words like 'fast' or 'reliable'?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Ask for their DORA metrics: Deployment Frequency, Lead Time for Changes, Change Failure Rate, and Mean Time to Recovery (MTTR) on a real recent project. Per Google Cloud's DORA State of DevOps Report, elite performers deploy on demand with a lead time under a day and a change failure rate near 5%, while low performers can take one to six months to ship a single change. An agency that cannot quote these numbers is not measuring its own delivery performance."
       }
     }
   ]

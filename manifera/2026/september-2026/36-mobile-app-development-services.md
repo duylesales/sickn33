@@ -55,7 +55,7 @@ Elite engineering teams default to React Native for **mobile app development ser
 
 ### Pricing the Decision: A Worked Comparison
 
-Return to the logistics driver-tracking app from the opening scenario. The True Native quote was €120,000 (€60,000 per platform) for the initial build, plus separate ongoing maintenance retainers for two codebases. A React Native build of the same application - a GPS-tracking, form-submission, and dashboard app with no exotic hardware requirements beyond background location (handled, as described below, by a small native module) - typically runs €65,000-€80,000 for the initial build across both platforms combined, because the business logic, UI, and API integration are written once, not twice.
+Return to the logistics driver-tracking app from the opening scenario. The True Native quote was €120,000 [€60,000 per platform] for the initial build, plus separate ongoing maintenance retainers for two codebases. A React Native build of the same application - a GPS-tracking, form-submission, and dashboard app with no exotic hardware requirements beyond background location [handled, as described below, by a small native module] - typically runs €65,000-€80,000 for the initial build across both platforms combined, because the business logic, UI, and API integration are written once, not twice.
 
 The gap widens after launch. Fixing the GPS bug from the opening scenario costs one developer, one afternoon, deployed simultaneously to both platforms in a React Native codebase. In the True Native world, it costs two developers, two review cycles, and - because the iOS and Android teams fixed it a week apart - a period where half the company's drivers are running degraded logic and nobody escalated it, because "the app basically works." Multiply a modest ongoing feature and bug-fix cadence across a 3-year maintenance horizon, and the True Native path typically costs 1.6-2x the total cost of ownership of the equivalent React Native build, purely from maintaining two codebases instead of one - before counting the operational cost of feature disparity between platforms.
 
@@ -71,9 +71,9 @@ This is not a failure of React Native. It is how the framework is designed to wo
 2. **Background location tracking.** Our logistics driver-tracking example is the textbook case: keeping GPS active while the app is backgrounded or the phone is locked requires direct calls to iOS's `CLLocationManager` background modes and Android's foreground service APIs. A generic JS location library will silently stop tracking the moment the driver locks their phone - a bug that only surfaces in production.
 3. **Native payment SDKs.** Apple Pay, iDEAL (critical for a Dutch-market client), and certain card-present payment terminals ship native-only SDKs that require a bridge rather than a pure JS integration.
 4. **Bluetooth Low Energy (BLE) hardware pairing.** Warehouse scanners, medical devices, and IoT sensors often need low-level BLE protocol handling that generic cross-platform libraries only partially support.
-5. **Camera-based document or ID scanning.** High-accuracy OCR and ID-verification SDKs (for KYC-regulated fintech apps, for instance) are usually distributed as native iOS/Android libraries first.
+5. **Camera-based document or ID scanning.** High-accuracy OCR and ID-verification SDKs [for KYC-regulated fintech apps, for instance] are usually distributed as native iOS/Android libraries first.
 
-The modern React Native architecture (JSI and Turbo Modules, the successor to the old asynchronous "bridge") makes this integration meaningfully faster than it was five years ago - native calls are now synchronous and far lower-latency, which matters for something like a camera scan that needs to feel instant.
+The modern React Native architecture [JSI and Turbo Modules, the successor to the old asynchronous "bridge"] makes this integration meaningfully faster than it was five years ago - native calls are now synchronous and far lower-latency, which matters for something like a camera scan that needs to feel instant.
 
 This architectural shift matters to the CTO's original ROI decision, not just to engineers. The old bridge architecture serialized every message between JavaScript and native code into JSON, crossed an asynchronous queue, and deserialized it on the other side - workable for occasional calls, but a genuine bottleneck for anything chatty, like a camera preview updating dozens of times a second. JSI (the JavaScript Interface) lets JavaScript hold a direct reference to native C++ objects and call their methods synchronously, no serialization required. Turbo Modules build on JSI to load native modules lazily, on demand, rather than initializing every module at app startup. The practical result is that a growing share of what used to require "dropping down to True Native for performance reasons" five years ago no longer does - narrowing, year over year, the list of applications in the "extreme hardware performance" category from the top of this article.
 
@@ -95,25 +95,21 @@ Stop paying to build the same app twice. Contact our Amsterdam team to build a h
 
 ---
 
-## Frequently Asked Questions
-
-### (Scenario: CTO choosing a tech stack) What is the difference between Native (Swift/Kotlin) and Cross-Platform (React Native) development?
+## FAQs
+### [Scenario: CTO choosing a tech stack] What is the difference between Native (Swift/Kotlin) and Cross-Platform (React Native) development?
 Native development requires writing two completely different codebases (Swift for iOS, Kotlin for Android) by two different teams. Cross-Platform development (like React Native) allows a single team to write the core logic once in JavaScript/TypeScript, which the framework then translates into native code for both platforms simultaneously.
 
-### (Scenario: VP Engineering auditing performance) Does React Native feel slow or 'clunky' compared to a True Native app?
+### [Scenario: VP Engineering auditing performance] Does React Native feel slow or 'clunky' compared to a True Native app?
 No. In the early days of mobile web wrappers (like Cordova/PhoneGap), apps felt slow because they were just websites running in a hidden browser. React Native is different; it actually renders true native iOS and Android UI components. For 95% of standard B2B and e-commerce apps, the user cannot tell the difference between React Native and True Native.
 
-### (Scenario: Lead Architect designing a 3D application) When is it absolutely mandatory to use True Native development?
+### [Scenario: Lead Architect designing a 3D application] When is it absolutely mandatory to use True Native development?
 You must use True Native (Swift/Kotlin/C++) if your application requires extreme hardware performance. This includes high-end 3D gaming, complex Augmented Reality (AR), intensive on-device video rendering, or hyper-specific low-level hardware integrations (like custom Bluetooth IoT protocols). For these, React Native introduces too much latency.
 
-### (Scenario: Product Manager fighting App Store delays) What is an 'Over-the-Air' (OTA) update in React Native?
+### [Scenario: Product Manager fighting App Store delays] What is an 'Over-the-Air' (OTA) update in React Native?
 In a Native app, fixing a simple typo requires compiling a new version and submitting it to Apple for review (which can take days). Because React Native is powered by JavaScript, you can push UI and business logic updates 'Over-the-Air' directly to the user's phone in seconds, completely bypassing the App Store review process for minor fixes.
 
-### (Scenario: Procurement Officer evaluating Manifera) Why does Manifera push clients toward React Native instead of Native development?
+### [Scenario: Procurement Officer evaluating Manifera] Why does Manifera push clients toward React Native instead of Native development?
 Standard agencies push Native to double their billable hours (charging you for an iOS team and an Android team). Manifera's Dutch Architects enforce React Native for standard enterprise apps to optimize your ROI. It halves your development costs, ensures feature parity across platforms, and drastically reduces your long-term DevOps maintenance.
-
-### (Scenario: CTO negotiating project scope) What happens if my React Native app needs a feature that requires native code, like Face ID or a payment SDK?
-This is normal and expected - even the best React Native apps run a small native module bridge (usually 5-10% of the codebase) for hardware-specific features like biometric authentication, background GPS tracking, native payment SDKs (Apple Pay, iDEAL), or Bluetooth hardware pairing. The risk isn't needing a native module; it's hiring a team that doesn't scope it upfront. Manifera's Dutch Tech Leads audit hardware dependencies in week one and budget the extra 3-10 days per module into the original quote, so there are no surprise change orders mid-project.
 
 <script type="application/ld+json">
 {
@@ -158,14 +154,6 @@ This is normal and expected - even the best React Native apps run a small native
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "We optimize for your capital efficiency. Building two native apps means paying for the same business logic twice. Our Dutch Architects mandate React Native for standard enterprise apps to unify your codebase and minimize long-term technical debt."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What happens if my React Native app needs a feature that requires native code, like Face ID or a payment SDK?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "This is normal: even the best React Native apps use a small native module bridge, usually 5-10% of the codebase, for hardware-specific features like biometric authentication, background GPS, native payment SDKs, or Bluetooth pairing. Manifera's Dutch Tech Leads audit these hardware dependencies in week one and budget them into the original quote, avoiding mid-project surprise change orders."
       }
     }
   ]

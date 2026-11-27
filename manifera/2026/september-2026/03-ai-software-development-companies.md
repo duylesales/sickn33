@@ -13,7 +13,7 @@ Content Format: Technical Audit & Security Framework
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "AI Software Development Companies: Exposing the 'OpenAI Wrapper' Illusion",
-  "description": "A technical audit guide for CIOs evaluating AI software development companies. Explains the difference between a fragile 'OpenAI Wrapper' and true enterprise AI infrastructure (RAG pipelines, PII masking, and data governance).",
+  "description": "A technical audit guide for CIOs evaluating AI software development companies. Explains the difference between a fragile 'OpenAI Wrapper' and true enterprise AI infrastructure [RAG pipelines, PII masking, and data governance].",
   "author": {"@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com"},
   "publisher": {"@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com"},
   "datePublished": "2026-09-03"
@@ -39,7 +39,7 @@ If you are outsourcing [custom software development](https://www.manifera.com/se
 Amateur **AI software development companies** optimize for the fastest possible demo. Their architectural depth extends exactly one layer deep:
 
 1. **User Input:** The user types a question into a React frontend.
-2. **Basic Prompt Injection:** The Node.js backend pastes the question into a hardcoded prompt (e.g., *"You are a helpful HR assistant. Answer this: [User Question]"*).
+2. **Basic Prompt Injection:** The Node.js backend pastes the question into a hardcoded prompt [e.g., *"You are a helpful HR assistant. Answer this: [User Question]"*].
 3. **External API Call:** The prompt is sent to `api.openai.com`.
 4. **Output:** The response is displayed to the user.
 
@@ -59,7 +59,7 @@ To prevent hallucinations, the LLM must be grounded in your proprietary data. We
 - We then send *only those specific paragraphs* to the LLM, instructing it to format the answer strictly based on the provided evidence.
 
 ### 2. PII Masking and Data Governance (The Security Layer)
-Before any text is sent to an external LLM provider, it must pass through a redaction layer. Our architecture uses Natural Language Processing (NLP) models *running locally on your servers* to detect and mask PII (e.g., replacing "John Doe earns €60,000" with `[PERSON_1] earns [CURRENCY_1]`). The external LLM processes the masked data, and our system unmasks it before showing it to the user. Your sensitive data never leaves your infrastructure.
+Before any text is sent to an external LLM provider, it must pass through a redaction layer. Our architecture uses Natural Language Processing (NLP) models *running locally on your servers* to detect and mask PII [e.g., replacing "John Doe earns €60,000" with `[PERSON_1] earns [CURRENCY_1]`]. The external LLM processes the masked data, and our system unmasks it before showing it to the user. Your sensitive data never leaves your infrastructure.
 
 ### 3. Model Agnosticism (The Cost Control Layer)
 We do not hardcode your application to OpenAI. We use orchestration frameworks (like LangChain or LlamaIndex) to create an abstraction layer. If an open-source model (like Meta's Llama 3) becomes cheaper and faster for a specific task, our Dutch Architects can instantly route queries to the open-source model hosted on your private AWS servers, cutting your API costs by 80%.
@@ -76,9 +76,9 @@ A defensible architecture treats prompt injection as a first-class threat model,
 
 **1. Privilege Separation.** The LLM should never hold the same credentials as the human operator. An AI assistant that can *read* HR records for the purpose of answering questions should not, at the infrastructure level, hold write or export permissions - so even a successful injection has nowhere to escalate to.
 
-**2. Instruction/Data Boundary Enforcement.** Retrieved content (RAG results, uploaded files, scraped web pages) must be architecturally tagged as untrusted data, not concatenated directly into the same prompt context as trusted system instructions. Structured prompting (e.g., clearly delimited XML-style blocks) and output-side validation reduce - though do not eliminate - the LLM's tendency to treat embedded text as commands.
+**2. Instruction/Data Boundary Enforcement.** Retrieved content [RAG results, uploaded files, scraped web pages] must be architecturally tagged as untrusted data, not concatenated directly into the same prompt context as trusted system instructions. Structured prompting [e.g., clearly delimited XML-style blocks] and output-side validation reduce - though do not eliminate - the LLM's tendency to treat embedded text as commands.
 
-**3. Action Gating for Agentic Systems.** Any AI system that can *take actions* (send an email, call an API, modify a database) rather than merely answer a question must route those actions through a deterministic, non-LLM authorization check. The LLM proposes an action; a separate rules engine approves or denies it before execution. This single architectural decision is the difference between an AI feature and an AI liability.
+**3. Action Gating for Agentic Systems.** Any AI system that can *take actions* [send an email, call an API, modify a database] rather than merely answer a question must route those actions through a deterministic, non-LLM authorization check. The LLM proposes an action; a separate rules engine approves or denies it before execution. This single architectural decision is the difference between an AI feature and an AI liability.
 
 **4. Adversarial Testing (Red Teaming).** Before any agentic AI feature ships, it should be red-teamed with known injection payloads embedded in realistic documents, exactly the way a penetration test probes for SQL injection before a web app ships.
 
@@ -110,25 +110,21 @@ If you are evaluating AI agencies and want to avoid a compliance disaster, conta
 
 ---
 
-## Frequently Asked Questions
-
-### (Scenario: CIO evaluating an AI vendor proposal) What exactly is an "OpenAI Wrapper" and why is it dangerous?
+## FAQs
+### [Scenario: CIO evaluating an AI vendor proposal] What exactly is an "OpenAI Wrapper" and why is it dangerous?
 An OpenAI Wrapper is an application that has no internal intelligence; it simply takes user input and passes it directly to OpenAI's API. It is dangerous for enterprises because it often sends raw, sensitive corporate data (PII, trade secrets) directly to public third-party servers without any data masking, leading to severe compliance breaches (like GDPR violations).
 
-### (Scenario: Product Manager frustrated with AI inaccuracies) Why does our new AI feature confidently provide incorrect answers?
+### [Scenario: Product Manager frustrated with AI inaccuracies] Why does our new AI feature confidently provide incorrect answers?
 This is called an AI Hallucination. If you just send a question to an LLM without providing context, the LLM will guess the answer based on public internet data. To fix this, your agency must build a RAG (Retrieval-Augmented Generation) pipeline, which searches your proprietary company documents first and forces the LLM to base its answer strictly on your exact data.
 
-### (Scenario: CISO auditing a new AI implementation) How can we use cloud LLMs (like OpenAI or Anthropic) without leaking PII?
+### [Scenario: CISO auditing a new AI implementation] How can we use cloud LLMs (like OpenAI or Anthropic) without leaking PII?
 You must mandate a PII Masking Layer. Before a prompt leaves your secure server, a local, lightweight NLP model scans the text and replaces sensitive data (names, social security numbers, salaries) with generic tokens (e.g., `[PERSON_A]`). The cloud LLM processes the safe, tokenized text, and your server replaces the tokens with the real data before showing the user.
 
-### (Scenario: VP Engineering planning long-term strategy) What does it mean to build a "Model Agnostic" AI architecture?
+### [Scenario: VP Engineering planning long-term strategy] What does it mean to build a "Model Agnostic" AI architecture?
 It means your application's logic is not hardcoded to a single provider (like OpenAI). By using an abstraction layer, you can seamlessly switch the backend engine to Anthropic, Google Gemini, or a private open-source model (like Llama 3) with a single configuration change. This protects you from vendor lock-in and unexpected API price hikes.
 
-### (Scenario: IT Director evaluating offshore talent) How does Manifera ensure offshore developers don't build insecure AI wrappers?
+### [Scenario: IT Director evaluating offshore talent] How does Manifera ensure offshore developers don't build insecure AI wrappers?
 Through our Hybrid Offshore governance. Our Dutch Architects design the secure RAG pipelines, enforce the PII masking logic, and set up the Vector Databases. The Vietnamese engineering pods execute within this strict architectural framework. We do not allow 'API-key-in-a-textbox' development for our enterprise clients.
-
-### (Scenario: CISO assessing risk in an AI assistant that can take actions) What is "prompt injection" and how is it different from the PII leakage risk we already discussed?
-Prompt injection is a separate attack class from PII leakage. It occurs when malicious instructions are hidden inside content the AI reads - like an uploaded document or a support ticket - tricking the AI into obeying an attacker instead of your team. The mitigation is architectural: separate the AI's read permissions from its write permissions, treat all retrieved content as untrusted data rather than instructions, and route any AI-proposed action through a non-LLM authorization check before it executes.
 
 <script type="application/ld+json">
 {
@@ -173,14 +169,6 @@ Prompt injection is a separate attack class from PII leakage. It occurs when mal
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our Dutch Architects design the secure AI infrastructure - RAG pipelines, Vector Databases, and strict PII masking layers. Our Vietnamese pods execute within this strict European governance, ensuring enterprise-grade security."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is prompt injection and how is it different from PII leakage risk?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Prompt injection occurs when malicious instructions are hidden inside content the AI reads, tricking it into obeying an attacker. Mitigations include separating the AI's read and write permissions, treating retrieved content as untrusted data, and routing AI-proposed actions through a non-LLM authorization check before execution."
       }
     }
   ]

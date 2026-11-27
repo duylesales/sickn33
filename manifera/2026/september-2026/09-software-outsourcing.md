@@ -39,7 +39,7 @@ Standard [offshore software development](https://www.manifera.com/services/offsh
 
 They use your simple expense portal as a paid training ground. 
 
-This is not just an anecdotal complaint from frustrated CTOs - it has been formally studied. Researchers Jonas Fritzsch, Marvin Wyrich, Justus Bogner, and Stefan Wagner surveyed 591 software professionals (130 in hiring roles, 558 in technical roles) for their 2021 paper *"Résumé-Driven Development: A Definition and Empirical Characterization,"* presented at the 43rd International Conference on Software Engineering (ICSE-SEIS). They found that 60% of hiring professionals admitted that technology trends actively shape the job offerings and project proposals they write, and 82% of technical professionals believed that working with trending, hyped technologies makes them more marketable to future employers - regardless of whether that technology was the right fit for the project at hand. In other words, the incentive to over-engineer isn't a rare rogue-agency problem; it's a documented, majority-level pattern across the industry's hiring and staffing dynamics. Complexity is a liability, not an asset, when it's chosen for the builder's resume instead of the client's balance sheet.
+This is not just an anecdotal complaint from frustrated CTOs - it has been formally studied. Researchers Jonas Fritzsch, Marvin Wyrich, Justus Bogner, and Stefan Wagner surveyed 591 software professionals [130 in hiring roles, 558 in technical roles] for their 2021 paper *"Résumé-Driven Development: A Definition and Empirical Characterization,"* presented at the 43rd International Conference on Software Engineering (ICSE-SEIS). They found that 60% of hiring professionals admitted that technology trends actively shape the job offerings and project proposals they write, and 82% of technical professionals believed that working with trending, hyped technologies makes them more marketable to future employers - regardless of whether that technology was the right fit for the project at hand. In other words, the incentive to over-engineer isn't a rare rogue-agency problem; it's a documented, majority-level pattern across the industry's hiring and staffing dynamics. Complexity is a liability, not an asset, when it's chosen for the builder's resume instead of the client's balance sheet.
 
 ## How to Audit an Agency's Architectural Intent
 
@@ -72,13 +72,13 @@ This matters directly for the RDD problem. When cost was the only lens, an agenc
 
 Let's return to the logistics company's 50-employee expense portal and put actual numbers against the two architectural paths, because "over-engineering" sounds abstract until you see it on an invoice.
 
-**Path A: The Resume-Driven Kubernetes Build.** A managed Kubernetes cluster (e.g., AWS EKS) carries a control plane fee of roughly $73/month before a single node is provisioned. Add two to three worker nodes to run Kafka, Redis, and the GraphQL layer redundantly, and infrastructure alone runs $600-$900/month even at near-zero traffic, because Kubernetes is designed to keep services warm and redundant, not idle. Then add the human cost: someone has to patch the cluster, rotate secrets, manage Helm charts, and debug pod networking issues. For a team without a dedicated Site Reliability Engineer, that typically means 4-6 hours per week of a senior developer's time, at agency rates often billed at $40-$80/hour. Over three years, that's roughly $25,000-$45,000 in infrastructure and another $25,000-$70,000+ in ongoing "keeping the lights on" labor, before a single new feature is built.
+**Path A: The Resume-Driven Kubernetes Build.** A managed Kubernetes cluster [e.g., AWS EKS] carries a control plane fee of roughly $73/month before a single node is provisioned. Add two to three worker nodes to run Kafka, Redis, and the GraphQL layer redundantly, and infrastructure alone runs $600-$900/month even at near-zero traffic, because Kubernetes is designed to keep services warm and redundant, not idle. Then add the human cost: someone has to patch the cluster, rotate secrets, manage Helm charts, and debug pod networking issues. For a team without a dedicated Site Reliability Engineer, that typically means 4-6 hours per week of a senior developer's time, at agency rates often billed at $40-$80/hour. Over three years, that's roughly $25,000-$45,000 in infrastructure and another $25,000-$70,000+ in ongoing "keeping the lights on" labor, before a single new feature is built.
 
 **Path B: The Modular Monolith on a PaaS.** The same expense portal, built as a single well-structured Node.js or Laravel application with PostgreSQL, deploys comfortably on a managed platform like Render, Railway, or a small Heroku-equivalent dyno for $25-$75/month. There is no cluster to patch, no service mesh to debug, and no distributed tracing system to configure. Maintenance drops to roughly 30-60 minutes a month for routine updates. Over three years, total infrastructure and maintenance cost typically lands under $5,000 - a fraction of Path A, for functionally identical business value delivered to the same 50 employees.
 
-**The audit mechanism: Architecture Decision Records (ADRs).** The way a CTO enforces this discipline contractually is by requiring the agency to produce an Architecture Decision Record for every major technology choice before development starts. An ADR is a short, mandatory document that states: the business requirement, the options considered, the specific technology chosen, and - critically - the quantified reason it was chosen over the simpler alternative. If an agency cannot produce a one-paragraph ADR justifying Kubernetes over a PaaS with a real number (expected concurrent users, required uptime SLA, data volume), the decision was made for resume value, not business value. Making ADRs a contractual deliverable, reviewed before the first sprint, is the single most effective procurement safeguard against Resume-Driven Development.
+**The audit mechanism: Architecture Decision Records (ADRs).** The way a CTO enforces this discipline contractually is by requiring the agency to produce an Architecture Decision Record for every major technology choice before development starts. An ADR is a short, mandatory document that states: the business requirement, the options considered, the specific technology chosen, and - critically - the quantified reason it was chosen over the simpler alternative. If an agency cannot produce a one-paragraph ADR justifying Kubernetes over a PaaS with a real number [expected concurrent users, required uptime SLA, data volume], the decision was made for resume value, not business value. Making ADRs a contractual deliverable, reviewed before the first sprint, is the single most effective procurement safeguard against Resume-Driven Development.
 
-This isn't a theoretical exercise reserved for enterprise procurement teams. Even a small startup can insert a single clause into a statement of work: "Any technology choice beyond the agreed baseline stack requires a written ADR, approved by the client's technical advisor, before implementation begins." That one sentence shifts the burden of proof from the client (who often lacks the technical depth to challenge a confident sales engineer) onto the agency (who now has to defend every architectural flourish in writing, to someone accountable for the invoice). In our experience, agencies that genuinely practice architectural restraint welcome this clause without hesitation. Agencies practicing Resume-Driven Development quietly try to negotiate it out of the contract - which is itself a useful signal during vendor selection.
+This isn't a theoretical exercise reserved for enterprise procurement teams. Even a small startup can insert a single clause into a statement of work: "Any technology choice beyond the agreed baseline stack requires a written ADR, approved by the client's technical advisor, before implementation begins." That one sentence shifts the burden of proof from the client (who often lacks the technical depth to challenge a confident sales engineer) onto the agency [who now has to defend every architectural flourish in writing, to someone accountable for the invoice]. In our experience, agencies that genuinely practice architectural restraint welcome this clause without hesitation. Agencies practicing Resume-Driven Development quietly try to negotiate it out of the contract - which is itself a useful signal during vendor selection.
 
 The ADR format itself isn't a Manifera invention; it comes from Michael Nygard's widely-adopted 2011 essay *"Documenting Architecture Decisions,"* written while he was at Cognitect. Nygard's insight was that the hardest thing to reconstruct on a long-lived codebase isn't what was built, but *why* - the context and trade-offs that justified a technology choice at the time it was made. Seven years after Nygard's original post, Thoughtworks moved ADRs into the "Adopt" ring of its widely-read Technology Radar, signaling that the practice had graduated from a niche blogging idea to a mainstream engineering discipline. When Manifera requires an ADR for every non-baseline technology choice, we are applying a well-established industry practice, not inventing new procurement bureaucracy.
 
@@ -96,25 +96,21 @@ Stop paying offshore agencies to train their staff on your complex infrastructur
 
 ---
 
-## Frequently Asked Questions
-
-### (Scenario: CTO reviewing an offshore proposal) What exactly is 'Resume-Driven Development' (RDD)?
+## FAQs
+### [Scenario: CTO reviewing an offshore proposal] What exactly is 'Resume-Driven Development' (RDD)?
 RDD is a toxic engineering anti-pattern where developers choose overly complex, trendy technologies (like Kubernetes or Kafka) for a project simply because they want experience with those tools to pad their resumes, regardless of whether the tools are appropriate for the actual business problem.
 
-### (Scenario: Startup Founder evaluating tech stacks) Why is it dangerous to start a new project with a Microservices architecture?
+### [Scenario: Startup Founder evaluating tech stacks] Why is it dangerous to start a new project with a Microservices architecture?
 Microservices add massive operational complexity (network latency, distributed tracing, complex deployments). They are designed to solve the problem of having hundreds of engineers stepping on each other's code. For a startup or a small team, building a well-structured Monolith is vastly faster, cheaper, and easier to maintain. Complexity must be earned as you scale.
 
-### (Scenario: IT Procurement evaluating agency quotes) How can I tell if an agency is over-engineering my project?
+### [Scenario: IT Procurement evaluating agency quotes] How can I tell if an agency is over-engineering my project?
 Ask them to justify the complexity. If they propose Kubernetes, ask: 'Our app will have 100 concurrent users. Why can't we just deploy this on a standard PaaS like Heroku or a basic AWS EC2 instance?' If they cannot provide a mathematical, business-driven justification for the complex infrastructure, they are over-engineering.
 
-### (Scenario: Lead Developer fighting tech debt) Why do offshore agencies frequently engage in Resume-Driven Development?
+### [Scenario: Lead Developer fighting tech debt] Why do offshore agencies frequently engage in Resume-Driven Development?
 Standard offshore agencies want to market their developers as 'Senior Full-Stack Cloud Architects' so they can charge higher hourly rates. They often use your low-risk projects as paid training grounds for their staff to learn these complex tools on your budget, leaving you with an unmaintainable codebase.
 
-### (Scenario: VP Engineering evaluating Manifera) How does Manifera's Hybrid Model prevent Resume-Driven Development?
+### [Scenario: VP Engineering evaluating Manifera] How does Manifera's Hybrid Model prevent Resume-Driven Development?
 Our Dutch Architects act as your proxy. They design the architectural blueprint based strictly on European pragmatism and Total Cost of Ownership (TCO). Our Vietnamese engineering pods execute this blueprint. Because the Dutch Architect dictates the tech stack, the offshore pod cannot arbitrarily inject unnecessary complexity into your codebase.
-
-### (Scenario: CTO drafting a procurement contract) What is an Architecture Decision Record and why should I require one before signing?
-An Architecture Decision Record (ADR) is a short mandatory document stating the business requirement, the alternatives considered, and the quantified reason a specific technology was chosen over a simpler option. Requiring an ADR for every major technology choice before development starts forces an agency to justify complexity with real numbers (expected users, uptime SLA, data volume) rather than resume value, making it one of the most effective contractual safeguards against Resume-Driven Development.
 
 <script type="application/ld+json">
 {
@@ -159,14 +155,6 @@ An Architecture Decision Record (ADR) is a short mandatory document stating the 
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our Dutch Architects define the technical blueprint based on pragmatic Total Cost of Ownership (TCO). They act as a firewall, preventing the Vietnamese engineering pods from injecting unnecessary, hype-driven complexity into your architecture."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is an Architecture Decision Record and why should I require one before signing?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "An Architecture Decision Record (ADR) is a short document stating the business requirement, alternatives considered, and the quantified reason a specific technology was chosen over a simpler option. Requiring an ADR for every major technology choice forces an agency to justify complexity with real numbers instead of resume value, making it an effective contractual safeguard against over-engineering."
       }
     }
   ]

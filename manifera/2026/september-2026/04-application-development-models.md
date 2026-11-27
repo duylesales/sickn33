@@ -60,7 +60,7 @@ Here is how the architecture of Shape Up solves the Agile treadmill:
 In Scrum, Product Managers write detailed tickets and hand them to engineers to estimate. 
 In Shape Up, senior leaders (Product and Architecture) spend weeks "shaping" a pitch. They define the boundaries of the problem, sketch rough UI constraints, and identify technical rabbit holes. Crucially, they do *not* write exact wireframes or specify database schemas. They define the "What" and leave the "How" to the engineers.
 
-### 2. The 6-Week Cycle (Fixed Time, Variable Scope)
+### 2. The 6-Week Cycle [Fixed Time, Variable Scope]
 Instead of arbitrary two-week sprints, the engineering pod is given a full 6 weeks to execute the shaped pitch. 
 - **Fixed Time:** The deadline is absolute (6 weeks). 
 - **Variable Scope:** The engineers have total autonomy to cut non-essential features (scope hammering) to meet the deadline. 
@@ -83,7 +83,7 @@ For a Manifera Hybrid Offshore pod, this governance layer is what makes Shape Up
 
 ## A Worked Comparison: Rework Cost Under Each Model
 
-To make the trade-off concrete, consider a representative (illustrative, not client-specific) scenario: a B2B SaaS team of six engineers building a permissions and access-control overhaul - a feature that, almost by definition, touches the data model in ways that are hard to fully scope in advance.
+To make the trade-off concrete, consider a representative [illustrative, not client-specific] scenario: a B2B SaaS team of six engineers building a permissions and access-control overhaul - a feature that, almost by definition, touches the data model in ways that are hard to fully scope in advance.
 
 | Cost Driver | Scrum (2-Week Sprints) | Shape Up (6-Week Cycle) |
 |---|---|---|
@@ -109,25 +109,21 @@ Stop punishing your engineers with two-week sprints. Contact our Amsterdam team 
 
 ---
 
-## Frequently Asked Questions
-
-### (Scenario: VP Engineering experiencing team burnout) Why do two-week Agile sprints often lead to technical debt?
+## FAQs
+### [Scenario: VP Engineering experiencing team burnout] Why do two-week Agile sprints often lead to technical debt?
 Because building complex software requires discovery. If an engineer encounters an unexpected architectural problem on Thursday of a two-week sprint, they do not have time to solve it properly. They are incentivized by the Scrum process to write a "hack" just to close the ticket by Friday, permanently degrading the codebase.
 
-### (Scenario: Product Manager comparing methodologies) What is the core difference between Agile Scrum and 'Shape Up'?
+### [Scenario: Product Manager comparing methodologies] What is the core difference between Agile Scrum and 'Shape Up'?
 Scrum uses 2-week sprints with fixed scope (tickets) and variable time (if it's not done, it rolls over). Shape Up uses 6-week cycles with fixed time (the deadline is absolute) and variable scope. In Shape Up, engineers are given a shaped problem and have the autonomy to cut minor features (scope hammering) to deliver the core value within the 6 weeks.
 
-### (Scenario: CEO reviewing resource allocation) What is the purpose of the 2-week "Cooldown" in Shape Up?
+### [Scenario: CEO reviewing resource allocation] What is the purpose of the 2-week "Cooldown" in Shape Up?
 The Cooldown prevents the 'Feature Factory' treadmill. After a 6-week cycle of deep focus, engineers need a 2-week break from product roadmaps. They use this time to squash minor bugs, refactor messy code, and explore new technical solutions. It drastically reduces burnout and improves long-term codebase health.
 
-### (Scenario: IT Director evaluating offshore agencies) Can a standard offshore agency operate using the Shape Up methodology?
+### [Scenario: IT Director evaluating offshore agencies] Can a standard offshore agency operate using the Shape Up methodology?
 Usually, no. Shape Up requires engineers to have extreme autonomy and deep Domain Knowledge so they can independently decide which minor features to cut to meet the deadline. Standard offshore agencies are 'Order Takers' who require literal, exact instructions. Shape Up requires 'Product Engineers'.
 
-### (Scenario: CTO planning a process transition) How does Manifera adapt Shape Up for the Hybrid Offshore model?
+### [Scenario: CTO planning a process transition] How does Manifera adapt Shape Up for the Hybrid Offshore model?
 Our Dutch Tech Leads partner with your Product Managers to 'shape' the pitches, ensuring European business logic is captured. They then empower the Vietnamese engineering pod to execute the 6-week cycle. The Dutch Tech Lead provides the necessary architectural guardrails so the offshore team can make safe, autonomous scope cuts.
-
-### (Scenario: Product Manager confused about how pitches actually get chosen and stopped) How does Shape Up decide which pitches get built, and what stops a failing project from dragging on forever?
-Pitches compete at a recurring "Betting Table," where each carries a pre-set appetite (usually one 6-week cycle). A pitch not bet on isn't deferred to a backlog - it is discarded and must be re-shaped from scratch if it still matters later. If a bet is not converging by the cycle's midpoint, the "Circuit Breaker" rule kicks in automatically: the project doesn't roll over by default, it must compete again at the next Betting Table, preventing sunk-cost thinking from keeping failing initiatives alive.
 
 <script type="application/ld+json">
 {
@@ -172,14 +168,6 @@ Pitches compete at a recurring "Betting Table," where each carries a pre-set app
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our Dutch Tech Leads 'shape' the pitches to capture European business intent, then empower our Vietnamese pods to execute the 6-week cycle. The Dutch Tech Lead provides architectural guardrails, allowing the offshore team to act autonomously."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How does Shape Up decide which pitches get built, and what stops a failing project from dragging on forever?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Pitches compete at a Betting Table with a pre-set time appetite. A pitch not bet on is discarded, not deferred to a backlog. If a bet is not converging by the cycle's midpoint, the Circuit Breaker rule prevents it from rolling over automatically, forcing it to compete again rather than dragging on due to sunk-cost thinking."
       }
     }
   ]

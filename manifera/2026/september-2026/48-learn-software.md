@@ -59,9 +59,9 @@ The second artifact is the **blameless postmortem**. When a production incident 
 
 Engineering organizations that skip both artifacts don't just lose the documentation - they lose the compounding effect. Every new hire re-learns the same lessons the hard way, and every departing senior engineer takes years of undocumented judgment out the door with them.
 
-This is also why pairing a junior developer with an Architect for Pull Request review is so much more valuable than sending that developer to another training course. A well-written PR review comment ("this query will do a full table scan once we pass 100,000 rows - here's why, and here's the index that fixes it") is a live, project-specific ADR in miniature, delivered at the exact moment the developer is most receptive to the lesson: right after they wrote the code themselves.
+This is also why pairing a junior developer with an Architect for Pull Request review is so much more valuable than sending that developer to another training course. A well-written PR review comment ["this query will do a full table scan once we pass 100,000 rows - here's why, and here's the index that fixes it"] is a live, project-specific ADR in miniature, delivered at the exact moment the developer is most receptive to the lesson: right after they wrote the code themselves.
 
-The blameless postmortem itself is not a Manifera invention - the practice was formalized and popularized by Google's Site Reliability Engineering team, whose widely-read *Site Reliability Engineering* book (O'Reilly, freely published online at sre.google) devotes a full chapter to postmortem culture. Google's engineers borrowed the "blameless" framing directly from the healthcare and aviation industries, where investigating a failure by assuming everyone involved acted with the information they had - rather than assigning blame - consistently produces better root-cause analysis and fewer repeat incidents. The same logic applies to a 30-person startup's engineering team as it does to Google's infrastructure: the goal of the postmortem is a fixed system, not a fired developer.
+The blameless postmortem itself is not a Manifera invention - the practice was formalized and popularized by Google's Site Reliability Engineering team, whose widely-read *Site Reliability Engineering* book [O'Reilly, freely published online at sre.google] devotes a full chapter to postmortem culture. Google's engineers borrowed the "blameless" framing directly from the healthcare and aviation industries, where investigating a failure by assuming everyone involved acted with the information they had - rather than assigning blame - consistently produces better root-cause analysis and fewer repeat incidents. The same logic applies to a 30-person startup's engineering team as it does to Google's infrastructure: the goal of the postmortem is a fixed system, not a fired developer.
 
 ## What Skipping Architecture Education Costs, in Numbers
 
@@ -97,25 +97,21 @@ We deliver the financial leverage of offshore execution, guaranteed by the uncom
 
 ---
 
-## Frequently Asked Questions
-
-### (Scenario: Founder hiring a team) What is the difference between learning coding syntax and learning Software Architecture?
+## FAQs
+### [Scenario: Founder hiring a team] What is the difference between learning coding syntax and learning Software Architecture?
 Syntax is the vocabulary of a programming language (how to write a loop or query a database). It takes 12 weeks to learn. Software Architecture (System Design) is the physics of how multiple servers, databases, and message queues interact to survive massive user traffic without crashing. It takes 10 years of enterprise experience to master.
 
-### (Scenario: CTO auditing an MVP) Why do apps built by junior developers work perfectly in testing but crash in production?
-Because junior developers optimize for the 'Happy Path' and lack architectural foresight. They write a database query that works perfectly for 5 test users. They do not realize that the exact same query, when run by 10,000 concurrent users, requires exponentially more CPU power and will instantly lock the database. 
+### [Scenario: CTO auditing an MVP] Why do apps built by junior developers work perfectly in testing but crash in production?
+Because junior developers optimize for the 'Happy Path' and lack architectural foresight. They write a database query that works perfectly for 5 test users. They do not realize that the exact same query, when run by 10,000 concurrent users, requires exponentially more CPU power and will instantly lock the database.
 
-### (Scenario: VP Engineering planning team structure) Can I scale a product with a team composed entirely of mid-level developers?
-No. If a team lacks a Senior Architect, they will make fundamental System Design errors. They will build a 'Spaghetti Monolith', tightly coupling features together and failing to implement caching or asynchronous queues. Eventually, adding a simple feature will take weeks because the codebase is so fragile. 
+### [Scenario: VP Engineering planning team structure] Can I scale a product with a team composed entirely of mid-level developers?
+No. If a team lacks a Senior Architect, they will make fundamental System Design errors. They will build a 'Spaghetti Monolith', tightly coupling features together and failing to implement caching or asynchronous queues. Eventually, adding a simple feature will take weeks because the codebase is so fragile.
 
-### (Scenario: Lead Architect mentoring juniors) What is 'Time Complexity' (Big O Notation) and why does it matter?
+### [Scenario: Lead Architect mentoring juniors] What is 'Time Complexity' (Big O Notation) and why does it matter?
 Time Complexity is a mathematical calculation of how much an algorithm slows down as the amount of data increases. A junior developer writes an algorithm that takes 1 second for 100 users, but 100 seconds for 10,000 users ($O(N^2)$). A Senior Architect designs an algorithm that stays perfectly fast regardless of user count ($O(1)$).
 
-### (Scenario: Procurement evaluating Manifera) How does Manifera's Hybrid Model protect me from bad System Design?
+### [Scenario: Procurement evaluating Manifera] How does Manifera's Hybrid Model protect me from bad System Design?
 We never let offshore developers operate in a vacuum. Every Vietnamese engineering pod is governed by a dedicated Dutch Tech Lead. The European Architect designs the robust System Architecture, enforces CI/CD testing, and manually reviews the offshore code, ensuring your application scales flawlessly.
-
-### (Scenario: CEO wondering how junior developers ever become architects) If you can't teach System Design in a bootcamp, how does anyone actually learn it?
-Through a structured feedback loop, not a course. Two artifacts drive it: Architecture Decision Records (ADRs), which document the reasoning and tradeoffs behind major technical decisions before they're built, and blameless postmortems, which document the root cause and architectural fix after every production incident. Developers who work inside a team that maintains both absorb years of hard-won judgment in months, because the reasoning is written down instead of living only in a senior engineer's head.
 
 <script type="application/ld+json">
 {
@@ -160,14 +156,6 @@ Through a structured feedback loop, not a course. Two artifacts drive it: Archit
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "We pair highly efficient offshore developers with elite Dutch Architects. The European Architect performs all the complex System Design (caching, queues) and rigorously reviews the offshore code, guaranteeing your system scales flawlessly."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "If you can't teach System Design in a bootcamp, how does anyone actually learn it?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Through a structured feedback loop built on two artifacts: Architecture Decision Records, which document the reasoning behind major technical decisions before they're built, and blameless postmortems, which document the root cause and fix after every production incident. Teams that maintain both let developers absorb years of architectural judgment in months instead of relying on tribal knowledge in a senior engineer's head."
       }
     }
   ]

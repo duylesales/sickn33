@@ -30,17 +30,17 @@ It doesn't.
 
 As a software system scales in complexity, forcing generalists to do specialist work leads to mediocre code across the entire stack.
 
-The "T-shaped" framing itself comes from outside software entirely. IDEO CEO Tim Brown, describing how his design firm hires, put it this way: *"They have a principal skill that describes the vertical leg of the T - they're mechanical engineers or industrial designers. But they are so empathetic that they can branch out into other skills, such as anthropology, and do them as well."* The concept traces back further still, to a 1980s McKinsey hiring framework later popularized by a 1991 talk on engineers by David Guest. The lesson generalizes cleanly to engineering teams: the horizontal bar (broad, working fluency across the stack) lets a specialist communicate and collaborate; the vertical bar (deep, elite mastery in one domain) is what actually produces defensible, production-grade work. A resume that claims "Full Stack" without a vertical bar is, in Brown's framing, not T-shaped - it's flat.
+The "T-shaped" framing itself comes from outside software entirely. IDEO CEO Tim Brown, describing how his design firm hires, put it this way: *"They have a principal skill that describes the vertical leg of the T - they're mechanical engineers or industrial designers. But they are so empathetic that they can branch out into other skills, such as anthropology, and do them as well."* The concept traces back further still, to a 1980s McKinsey hiring framework later popularized by a 1991 talk on engineers by David Guest. The lesson generalizes cleanly to engineering teams: the horizontal bar [broad, working fluency across the stack] lets a specialist communicate and collaborate; the vertical bar [deep, elite mastery in one domain] is what actually produces defensible, production-grade work. A resume that claims "Full Stack" without a vertical bar is, in Brown's framing, not T-shaped - it's flat.
 
 ## The Deep Complexity of the Modern Stack
 
 Ten years ago, being "Full Stack" meant knowing jQuery and PHP. Today, the complexity of both the frontend and the backend has exploded.
 
 ### The Frontend is Now a Distributed System
-Modern frontend development is no longer just HTML and CSS. A Senior Frontend Engineer must understand complex state management (Redux, Zustand), browser rendering performance (Core Web Vitals), optimistic UI updates, complex caching strategies, and accessibility (WCAG compliance). 
+Modern frontend development is no longer just HTML and CSS. A Senior Frontend Engineer must understand complex state management [Redux, Zustand], browser rendering performance (Core Web Vitals), optimistic UI updates, complex caching strategies, and accessibility (WCAG compliance). 
 
 ### The Backend is Now Cloud Infrastructure
-Modern backend development is no longer just writing simple CRUD endpoints. A Senior Backend Engineer must understand distributed microservices, message queues (Kafka, RabbitMQ), database normalization, index optimization for millions of rows, and rigorous cloud security (IAM roles, VPCs).
+Modern backend development is no longer just writing simple CRUD endpoints. A Senior Backend Engineer must understand distributed microservices, message queues [Kafka, RabbitMQ], database normalization, index optimization for millions of rows, and rigorous cloud security [IAM roles, VPCs].
 
 It is cognitively impossible for one human being to maintain elite, enterprise-level mastery of both domains simultaneously. 
 
@@ -63,11 +63,11 @@ In this model, the Frontend Specialist and Backend Specialist must collaborate t
 
 ## The Interview Litmus Test: Exposing a False 'Full Stack' Claim
 
-If your organization insists on hiring full stack developers despite the risks outlined above, there is a concrete way to separate genuine T-shaped talent from a resume built on shallow tutorial-following. Most technical interviews fail to catch this because they ask generic questions ("explain REST APIs," "what is a JOIN") that a well-prepared generalist can memorize without ever having solved a real production problem.
+If your organization insists on hiring full stack developers despite the risks outlined above, there is a concrete way to separate genuine T-shaped talent from a resume built on shallow tutorial-following. Most technical interviews fail to catch this because they ask generic questions ["explain REST APIs," "what is a JOIN"] that a well-prepared generalist can memorize without ever having solved a real production problem.
 
 Instead, use a two-part litmus test that forces the candidate to reveal their actual depth versus their claimed breadth.
 
-**Part 1: The "Break the Rendering" Question.** Ask the candidate to explain, in specific technical detail, what happens in the browser when a list of 10,000 rows is rendered without virtualization, and how they would fix it. A genuine frontend specialist will immediately discuss the DOM node count, reflow and repaint costs, and name specific solutions (react-window, react-virtualized, or windowing techniques). A shallow generalist will give a vague answer like "we'd add pagination" without explaining the underlying rendering mechanics.
+**Part 1: The "Break the Rendering" Question.** Ask the candidate to explain, in specific technical detail, what happens in the browser when a list of 10,000 rows is rendered without virtualization, and how they would fix it. A genuine frontend specialist will immediately discuss the DOM node count, reflow and repaint costs, and name specific solutions [react-window, react-virtualized, or windowing techniques]. A shallow generalist will give a vague answer like "we'd add pagination" without explaining the underlying rendering mechanics.
 
 **Part 2: The "Explain the Slow Query" Question.** Give the candidate a simple SQL query against a table with 5 million rows that is running slowly, and ask them to diagnose it using `EXPLAIN ANALYZE`. A genuine backend specialist will talk about missing indexes, sequential scans versus index scans, and query planning. A shallow generalist will suggest something generic like "add caching" without being able to read the query execution plan at all.
 
@@ -87,7 +87,7 @@ Consider a concrete, illustrative comparison for a mid-market B2B SaaS company s
 
 **Team A: Three full-stack generalists.** Each generalist owns a vertical slice of the feature end-to-end: schema, API, and UI. On paper this looks efficient - no handoffs, no waiting on another specialist. In practice, each generalist spends real time context-switching between SQL query planning and CSS layout debugging within the same day, and none of the three has the depth to catch a missing database index or a memory-leaking React effect before it reaches code review. Bugs caught in production, rather than in review, is the typical failure mode; the team ships fast initially, then slows sharply once the schema gets complex enough that generalist-level database knowledge is no longer sufficient.
 
-**Team B: A T-shaped pod of the same headcount** - one backend specialist, one frontend specialist, one QA automation engineer. The backend specialist designs the schema and indexes correctly the first time, because it's the one thing they do all day, every day. The frontend specialist builds a UI that stays responsive under real data volume, because rendering performance is their entire professional identity. The two collaborate through a well-defined API contract, and the QA engineer's automated suite catches the seams between their work before a human reviewer has to. The pod ships slightly slower in the first two weeks (more coordination overhead, more explicit API-contract discussion) but the defect rate on the same feature - measured in production incidents per release - is consistently lower once the codebase passes a few thousand lines, because deep expertise is doing the work generalist "good enough" knowledge cannot.
+**Team B: A T-shaped pod of the same headcount** - one backend specialist, one frontend specialist, one QA automation engineer. The backend specialist designs the schema and indexes correctly the first time, because it's the one thing they do all day, every day. The frontend specialist builds a UI that stays responsive under real data volume, because rendering performance is their entire professional identity. The two collaborate through a well-defined API contract, and the QA engineer's automated suite catches the seams between their work before a human reviewer has to. The pod ships slightly slower in the first two weeks [more coordination overhead, more explicit API-contract discussion] but the defect rate on the same feature - measured in production incidents per release - is consistently lower once the codebase passes a few thousand lines, because deep expertise is doing the work generalist "good enough" knowledge cannot.
 
 The trade-off is not speed versus quality in the abstract; it's front-loaded coordination cost versus back-loaded rework cost. For a six-week MVP, Team A wins outright. For a production system expected to carry real transaction volume for years, Team B's discipline compounds in the company's favor every single release after the first month.
 
@@ -105,25 +105,21 @@ Stop scaling your team with generalists. Contact our Amsterdam team to build a s
 
 ---
 
-## Frequently Asked Questions
-
-### (Scenario: CTO planning hiring budget) Why are 'Full Stack' developers highly effective for MVPs but dangerous for Enterprise SaaS?
+## FAQs
+### [Scenario: CTO planning hiring budget] Why are 'Full Stack' developers highly effective for MVPs but dangerous for Enterprise SaaS?
 During an MVP, speed is more important than scalable architecture. A Full Stack developer can build the entire app without waiting on other team members. However, in Enterprise SaaS, the codebase is highly complex and traffic is massive. A generalist usually lacks the deep, specialized knowledge required to optimize a complex PostgreSQL database or architect a highly performant React frontend under scale.
 
-### (Scenario: VP Engineering restructuring teams) What is a 'T-Shaped' developer?
+### [Scenario: VP Engineering restructuring teams] What is a 'T-Shaped' developer?
 A T-Shaped developer has a broad, working knowledge of the entire software ecosystem (the horizontal bar), so they can communicate effectively with other disciplines. However, they possess deep, elite mastery in one specific area, like backend architecture or frontend state management (the vertical bar). Enterprise teams require T-Shaped specialists, not generalists.
 
-### (Scenario: HR Director writing job descriptions) Why is it difficult to find a true Enterprise Full Stack Developer today?
+### [Scenario: HR Director writing job descriptions] Why is it difficult to find a true Enterprise Full Stack Developer today?
 Because the cognitive load has exploded. Ten years ago, the frontend was simple HTML/CSS. Today, modern React applications are essentially distributed systems running in the browser, requiring deep expertise in state management and rendering performance. Simultaneously, backend engineering now requires deep cloud architecture and DevOps knowledge. Mastering both is nearly impossible for one person.
 
-### (Scenario: Founder comparing offshore agencies) Why do cheap offshore agencies label all their developers as 'Full Stack'?
+### [Scenario: Founder comparing offshore agencies] Why do cheap offshore agencies label all their developers as 'Full Stack'?
 It is a business strategy, not a technical reality. Labeling a developer 'Full Stack' makes them a 'wildcard' resource. The agency can easily assign them to a React project on Monday and a Node.js project on Wednesday to maximize billing utilization. It benefits the agency's profit margins, but it guarantees the client receives mediocre, generalist code.
 
-### (Scenario: IT Procurement evaluating Manifera) How does Manifera structure its offshore engineering teams to avoid the Full Stack trap?
+### [Scenario: IT Procurement evaluating Manifera] How does Manifera structure its offshore engineering teams to avoid the Full Stack trap?
 We build cross-functional 'Pods' composed of T-Shaped specialists. Instead of 3 generalists, we provide 1 Senior Frontend Specialist, 1 Senior Backend Specialist, and a QA Automation Engineer, all orchestrated by a Dutch Tech Lead. This ensures elite code quality on both ends of the stack, united by strict architectural governance.
-
-### (Scenario: HR Director screening technical candidates) How can I test whether a 'Full Stack' candidate actually has deep specialist skills?
-Use a two-part litmus test: ask them to diagnose a rendering performance problem with a 10,000-row unvirtualized list, then ask them to read an `EXPLAIN ANALYZE` output for a slow SQL query. A genuine T-shaped specialist will answer their strong side in specific technical depth and honestly admit a working-level understanding on the other. A shallow generalist will bluff both with vague buzzwords instead of concrete mechanics.
 
 <script type="application/ld+json">
 {
@@ -168,14 +164,6 @@ Use a two-part litmus test: ask them to diagnose a rendering performance problem
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "We deploy specialized cross-functional Pods. A typical pod has a dedicated Frontend Specialist, a Backend Specialist, and a QA Engineer, all governed by a Dutch Tech Lead. This ensures elite quality across the entire stack without compromise."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How can I test whether a 'Full Stack' candidate actually has deep specialist skills?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Use a two-part litmus test: ask them to diagnose a rendering performance issue with a large unvirtualized list, then ask them to interpret an EXPLAIN ANALYZE output for a slow query. Genuine specialists answer their strength with technical depth and admit gaps honestly, while shallow generalists bluff both with vague buzzwords."
       }
     }
   ]

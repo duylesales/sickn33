@@ -70,7 +70,7 @@ In a true Agile CI/CD environment, a developer finishes a Jira ticket on a Tuesd
 
 Here is the trap that keeps Water-Scrum-Fall alive for years inside large enterprises: the metrics being reported upward are lying. Every Friday, the Scrum Master presents a "velocity chart" showing the team completed 47 story points, up from 42 last sprint. The VP of Engineering sees an upward-trending graph and concludes the software development model is working. Meanwhile, the actual business value - working software in front of a real customer - is still taking six months to ship.
 
-Story points measure how busy developers are. They do not measure how fast the organization delivers value. This is why the industry (via Google's DevOps Research and Assessment team, or "DORA") converged on four metrics that measure the health of a software development model directly, regardless of what methodology label is stapled to it:
+Story points measure how busy developers are. They do not measure how fast the organization delivers value. This is why the industry [via Google's DevOps Research and Assessment team, or "DORA"] converged on four metrics that measure the health of a software development model directly, regardless of what methodology label is stapled to it:
 
 1. **Deployment Frequency.** How often does the organization successfully release to production? Elite teams deploy on-demand, multiple times per day. A Water-Scrum-Fall organization deploys once a quarter, no matter how many Sprints happened in between.
 2. **Lead Time for Changes.** How long does it take from a code commit to that code running in production? Elite teams measure this in hours. Water-Scrum-Fall organizations measure it in months, because the code has to clear manual QA, a security board, and a change-advisory-board (CAB) meeting first.
@@ -88,7 +88,7 @@ Put a number on the gap between "code is finished" and "code is earning revenue.
 - **Water-Scrum-Fall pace:** The feature is coded in a 2-week sprint, then queues for 2 weeks of manual QA, 4 weeks of security board review, and roughly 12 weeks waiting for the next scheduled quarterly deployment window - about 20 weeks (5 months) from "done" to "live." That is nearly €200,000 in delayed or foregone revenue protection, sitting idle in a staging environment for no engineering reason.
 - **CI/CD pace:** The same feature, built by a pod with automated testing and SAST scanning wired into the pipeline, deploys within days of the sprint ending once it passes the automated gate. The revenue protection starts accruing almost immediately, and the €200,000 gap simply does not exist.
 
-Multiply that pattern across even a modest annual roadmap of 10–15 features, and the "process improvement" argument for CI/CD stops being a developer-experience nicety and becomes one of the highest-ROI line items available to a VP Engineering - routinely worth more than the original consultancy invoice for the "Agile Transformation" that failed to move the deployment bottleneck at all.
+Multiply that pattern across even a modest annual roadmap of 10 - 15 features, and the "process improvement" argument for CI/CD stops being a developer-experience nicety and becomes one of the highest-ROI line items available to a VP Engineering - routinely worth more than the original consultancy invoice for the "Agile Transformation" that failed to move the deployment bottleneck at all.
 
 ## Phase 3: The Manifera Pod Methodology
 
@@ -104,28 +104,21 @@ We deliver true engineering velocity, governed by European architectural rigor. 
 
 ---
 
-## Frequently Asked Questions
-
-### (Scenario: VP Engineering auditing agile velocity) What is the 'Water-Scrum-Fall' anti-pattern?
+## FAQs
+### [Scenario: VP Engineering auditing agile velocity] What is the 'Water-Scrum-Fall' anti-pattern?
 It is a broken software development model where an enterprise attempts to be 'Agile' by having developers work in 2-week Sprints (Scrum), but restricts them with months of upfront requirements gathering (Water) and months of manual QA and deployment delays at the end (Fall). It creates the illusion of speed but delivers software at a slow, Waterfall pace.
 
-### (Scenario: Product Manager frustrated by deployment delays) Why does code sit in a 'staging environment' for months in legacy enterprises?
+### [Scenario: Product Manager frustrated by deployment delays] Why does code sit in a 'staging environment' for months in legacy enterprises?
 Because the enterprise has separated Development, QA, and Operations into isolated silos. When developers finish code, they must wait for QA to manually test it, then wait for Security to manually audit it, then wait for IT to manually schedule a server deployment. These human bottlenecks paralyze the deployment process.
 
-### (Scenario: CTO planning a DevOps transformation) How does CI/CD (Continuous Integration/Continuous Deployment) fix the Water-Scrum-Fall problem?
+### [Scenario: CTO planning a DevOps transformation] How does CI/CD (Continuous Integration/Continuous Deployment) fix the Water-Scrum-Fall problem?
 CI/CD solves the problem through mathematical automation. Instead of humans doing manual QA and manual deployments, the CI/CD pipeline automatically runs thousands of automated tests and security scans in minutes. If the tests pass, the pipeline automatically deploys the code to production, shrinking the deployment phase from months to minutes.
 
-### (Scenario: CEO reviewing Agile consultancy costs) Can an enterprise become Agile just by hiring Scrum Masters and running Sprints?
+### [Scenario: CEO reviewing Agile consultancy costs] Can an enterprise become Agile just by hiring Scrum Masters and running Sprints?
 No. Agile is fundamentally a technical capability, not just a project management methodology. If you do not invest in the underlying DevOps architecture (automated testing, cloud-native deployments, CI/CD pipelines), your Sprints will just result in a massive backlog of undeployed, untested code. True Agile requires architectural automation.
 
-### (Scenario: IT Procurement evaluating Manifera) How does Manifera ensure their offshore pods deliver true Agile velocity?
+### [Scenario: IT Procurement evaluating Manifera] How does Manifera ensure their offshore pods deliver true Agile velocity?
 We deploy self-contained DevOps pods. Our Dutch Architects build automated CI/CD pipelines before development begins. We do not rely on manual QA handoffs. Our Vietnamese developers write automated tests alongside their code, ensuring that every feature they finish in a sprint can be immediately and safely deployed to production without bureaucratic delays.
-
-### (Scenario: VP Engineering reporting to the board) If our sprint velocity chart looks great, why should we still worry about our software development model?
-Sprint velocity (story points completed) measures how busy developers are, not how fast the business receives value. An organization can report a rising velocity chart every week while still taking six months to actually deploy anything, because the bottleneck sits outside the sprint entirely, in manual QA, security review, or change-approval boards. Instead, track the four DORA metrics: Deployment Frequency, Lead Time for Changes, Change Failure Rate, and Mean Time to Restore. These measure the health of your actual delivery pipeline and cannot be gamed by sprint ceremonies.
-
-### (Scenario: Risk & Compliance officer defending the Change Advisory Board) Doesn't removing the Change Advisory Board (CAB) make releases riskier?
-The research says the opposite. DORA's 2019 Accelerate State of DevOps Report specifically tested whether requiring external CAB or senior-manager approval before every release improves safety, and found that organizations with this heavyweight approval step had worse software delivery performance overall, with no measurable reduction in change failure rate compared to teams using lightweight peer review embedded in the pull-request process. CABs tend to make releases larger and less frequent, which increases risk rather than reducing it.
 
 <script type="application/ld+json">
 {
@@ -170,22 +163,6 @@ The research says the opposite. DORA's 2019 Accelerate State of DevOps Report sp
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our Dutch Architects enforce strict DevOps automation. We build the CI/CD pipelines upfront, ensuring our Vietnamese developers can write, test, and deploy code automatically without waiting for siloed QA or IT handoffs, guaranteeing true deployment velocity."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "If our sprint velocity chart looks great, why should we still worry about our software development model?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Sprint velocity measures developer busyness, not delivered business value. Track the four DORA metrics instead: Deployment Frequency, Lead Time for Changes, Change Failure Rate, and Mean Time to Restore. These reveal the true health of your delivery pipeline, since they cannot be inflated by sprint ceremonies alone."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Doesn't removing the Change Advisory Board (CAB) make releases riskier?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. DORA's 2019 Accelerate State of DevOps Report found that requiring external CAB or senior-manager approval before every release correlates with worse software delivery performance and shows no measurable reduction in change failure rate versus lightweight peer review embedded in the pull-request process. CABs tend to produce larger, less frequent releases, which increases risk instead of reducing it."
       }
     }
   ]

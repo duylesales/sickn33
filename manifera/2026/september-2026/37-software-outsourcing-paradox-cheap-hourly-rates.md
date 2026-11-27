@@ -72,7 +72,7 @@ This is not an abstract metaphor. McKinsey & Company's research on enterprise te
 
 The true devastation of the Software Outsourcing Paradox occurs in the OpEx (Operational Expenditure) phase, specifically through the mechanics of Technical Debt.
 
-In finance, borrowing money allows you to move fast today, but you must pay interest on that debt tomorrow. In **software outsourcing**, cutting corners (ignoring automated testing, skipping database normalization) allows the offshore agency to launch the MVP fast today, but creates Technical Debt.
+In finance, borrowing money allows you to move fast today, but you must pay interest on that debt tomorrow. In **software outsourcing**, cutting corners [ignoring automated testing, skipping database normalization] allows the offshore agency to launch the MVP fast today, but creates Technical Debt.
 
 The "Interest" on Technical Debt is paid in developer time. 
 
@@ -125,14 +125,14 @@ Let us return to the CFO's original calculation, adjusting it for Total Cost of 
 - Cloud Inefficiency Penalty (Unoptimized DB): €3,000/month x 36 = €108,000
 - Technical Debt Interest (Slowed velocity over 3 years): €150,000
 - Emergency Rework / Downtime Recovery: €80,000
-- **3-Year TCO: €413,000** (For a fragile, crashing system).
+- **3-Year TCO: €413,000** [For a fragile, crashing system].
 
 **Manifera (The Hybrid Offshore Pod):**
 - Initial CapEx: €137,500
 - Cloud Efficiency (Optimized Architecture): €500/month x 36 = €18,000
-- Technical Debt Interest (Zero, due to strict Dutch governance): €0
-- Emergency Rework (Zero, due to CI/CD and TDD): €0
-- **3-Year TCO: €155,500** (For a scalable, highly secure enterprise asset).
+- Technical Debt Interest [Zero, due to strict Dutch governance]: €0
+- Emergency Rework [Zero, due to CI/CD and TDD]: €0
+- **3-Year TCO: €155,500** [For a scalable, highly secure enterprise asset].
 
 By paying a slightly higher initial hourly rate for European Architectural Governance, the enterprise mathematically saves €257,500 over a three-year period, while securing 100% ownership of a flawless architectural asset. 
 
@@ -140,25 +140,21 @@ Stop funding the creation of technical debt. If you want to scale your enterpris
 
 ---
 
-## Frequently Asked Questions
-
-### (Scenario: CFO evaluating outsourcing proposals) Why is it a financial mistake to choose the software agency with the absolute lowest hourly rate?
+## FAQs
+### [Scenario: CFO evaluating outsourcing proposals] Why is it a financial mistake to choose the software agency with the absolute lowest hourly rate?
 Because the hourly rate only dictates the initial Capital Expenditure (CapEx). Agencies with extremely low rates achieve those margins by eliminating Senior Architects and Quality Assurance (QA). They staff your project exclusively with junior developers who write fragile, unscalable 'spaghetti code.' This mathematically guarantees massive Operational Expenditure (OpEx) later, as you will spend hundreds of thousands of euros on cloud bills, emergency bug fixes, and technical debt interest.
 
-### (Scenario: VP Engineering auditing an offshore codebase) What exactly is 'Technical Debt Interest' and how is it paid?
+### [Scenario: VP Engineering auditing an offshore codebase] What exactly is 'Technical Debt Interest' and how is it paid?
 Technical Debt occurs when developers cut architectural corners to write code faster today. The 'Interest' on this debt is paid in developer time tomorrow. If a codebase is messy and undocumented, adding a simple 2-day feature takes 10 days because the developer must navigate the fragile code without breaking it. You pay the developer for 10 days of labor. The extra 8 days of salary is pure Technical Debt Interest, yielding zero business value.
 
-### (Scenario: Lead Architect designing a vendor integration strategy) Why is a 'Pull Request Dictatorship' necessary when outsourcing software development?
+### [Scenario: Lead Architect designing a vendor integration strategy] Why is a 'Pull Request Dictatorship' necessary when outsourcing software development?
 In standard offshore models, developers can merge their own code into the main branch, allowing insecure and unoptimized code to infect the production environment instantly. A 'Pull Request Dictatorship' means that an offshore developer is mathematically blocked from merging code. A senior, trusted Architect (e.g., a Dutch Tech Lead at Manifera) must manually review, test, and approve every line of code before it is allowed into the enterprise codebase, acting as an architectural firewall.
 
-### (Scenario: CISO concerned about offshore data security) How does the Hybrid Offshore model improve application security compared to a standard offshore agency?
+### [Scenario: CISO concerned about offshore data security] How does the Hybrid Offshore model improve application security compared to a standard offshore agency?
 Standard offshore teams lack training in the OWASP Top 10 application security risks. They often deploy code with severe vulnerabilities (like Broken Access Control or SQL Injections). In a Hybrid Model, the European Architect embeds 'Shift-Left Security' into the automated CI/CD pipeline. Every commit from the offshore team is automatically scanned for vulnerabilities (SAST) and manually reviewed by the European Architect, ensuring strict GDPR and enterprise security compliance before deployment.
 
-### (Scenario: CEO comparing Manifera to traditional agencies) How does Manifera's Hybrid Model deliver a lower Total Cost of Ownership (TCO)?
+### [Scenario: CEO comparing Manifera to traditional agencies] How does Manifera's Hybrid Model deliver a lower Total Cost of Ownership (TCO)?
 While our blended hourly rate is slightly higher than a bottom-tier offshore agency, our 3-year TCO is vastly lower. Because our Dutch Architects strictly govern the Vietnamese engineering pods, we deliver highly optimized database schemas that minimize your AWS cloud bills. We enforce automated testing and CI/CD pipelines, eliminating the massive 'technical debt interest' payments that usually paralyze scaling businesses. You get an enterprise-grade asset that costs significantly less to operate over its lifetime.
-
-### (Scenario: CFO asking whether technical debt is a real, measurable line item) Is 'technical debt' just a developer excuse, or can it actually be measured in euros?
-It is measurable, and independent research confirms the scale. McKinsey & Company's analysis of enterprise technology estates found that CIOs estimate tech debt amounts to 20 to 40 percent of the value of their entire technology estate, and that roughly 30 percent of surveyed CIOs report more than 20 percent of their new-product development budget is being diverted to resolving tech debt instead. When a CFO asks why the engineering roadmap is moving slower than promised, technical debt accrued by ungoverned offshore code is very often the unbudgeted answer.
 
 <script type="application/ld+json">
 {
@@ -203,14 +199,6 @@ It is measurable, and independent research confirms the scale. McKinsey & Compan
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "By applying strict Dutch architectural governance to highly efficient Vietnamese engineering pods, we build software correctly the first time. We eliminate technical debt, minimize AWS cloud compute costs through optimized databases, and drastically reduce the expensive emergency maintenance that plagues cheap offshore projects."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is 'technical debt' just a developer excuse, or can it actually be measured in euros?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It is measurable. McKinsey & Company's research on enterprise technology estates found that CIOs estimate tech debt amounts to 20 to 40 percent of the value of their entire technology estate, and that roughly 30 percent of surveyed CIOs report more than 20 percent of their new-product development budget is diverted to resolving tech debt instead. It is a real, budget-line-item cost, not a developer excuse."
       }
     }
   ]

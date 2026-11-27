@@ -38,7 +38,7 @@ You cannot rescue a failing **software project** by throwing more developers int
 
 Before a project can be rescued, executive leadership must identify exactly *why* it failed. In [custom software development](https://www.manifera.com/services/custom-software-development/), projects do not fail overnight. They fail slowly, through a compounding series of architectural compromises known as Technical Debt. 
 
-This CEO's HealthTech nightmare is far from an outlier. The Standish Group's CHAOS Report, which has tracked IT project outcomes since the early 1990s, is the most widely cited longitudinal study of software delivery performance in the industry. Its most recent published data (covering the 2020–2024 cycle) found that only 31 percent of software projects were rated fully "successful" (delivered on time, on budget, with the agreed scope), while 50 percent were "challenged" - meaning late, over budget, or delivered with reduced functionality - and 19 percent failed outright and were cancelled before completion. Put differently, for every project like this one that reaches a boardroom in crisis, there are roughly two more quietly limping toward a diminished, budget-blown finish line without anyone calling it a failure out loud.
+This CEO's HealthTech nightmare is far from an outlier. The Standish Group's CHAOS Report, which has tracked IT project outcomes since the early 1990s, is the most widely cited longitudinal study of software delivery performance in the industry. Its most recent published data (covering the 2020 - 2024 cycle) found that only 31 percent of software projects were rated fully "successful" [delivered on time, on budget, with the agreed scope], while 50 percent were "challenged" - meaning late, over budget, or delivered with reduced functionality - and 19 percent failed outright and were cancelled before completion. Put differently, for every project like this one that reaches a boardroom in crisis, there are roughly two more quietly limping toward a diminished, budget-blown finish line without anyone calling it a failure out loud.
 
 If your offshore agency is exhibiting the following three symptoms, your project is in cardiac arrest:
 
@@ -71,15 +71,15 @@ This strategy allows the business to launch the MVP immediately (using the fragi
 
 ### A Worked Rescue Timeline
 
-Return to the HealthTech telemedicine platform from the opening scenario. €180,000 has already been spent over nine months (the original €150,000 contract plus the panicked €30,000 top-up), and the product still does not work. What does a Strangler Fig rescue actually look like on a calendar, instead of a Gantt chart colored entirely red?
+Return to the HealthTech telemedicine platform from the opening scenario. €180,000 has already been spent over nine months [the original €150,000 contract plus the panicked €30,000 top-up], and the product still does not work. What does a Strangler Fig rescue actually look like on a calendar, instead of a Gantt chart colored entirely red?
 
-- **Weeks 1–2 - Forensic Audit and Freeze:** A senior architect audits the existing codebase, maps every feature to its dependencies, and identifies which modules are salvageable versus structurally unsound. All new feature work stops. No cost yet beyond the audit itself, typically a fixed-fee engagement rather than open-ended hours.
-- **Weeks 3–4 - The Gateway:** An API Gateway is deployed in front of the legacy system. Every existing request still routes to the old (fragile) code, so the product experience does not change for existing users. This is infrastructure work, not feature work, and is the highest-leverage two weeks of the entire rescue.
-- **Months 2–3 - Strangle the Highest-Risk Feature First:** In this case, the login and session-management system that was "randomly deleting user sessions." A small, dedicated pod rebuilds it as an isolated, fully tested microservice, and the Gateway is updated to route authentication traffic to the new code. This is usually the single most stabilizing change in the entire rescue, because session and auth failures tend to cascade into every other reported bug.
-- **Months 3–6 - Incremental Replacement:** Remaining features (appointment scheduling, video call orchestration, billing) are rebuilt one at a time, each shipped independently, each covered by automated tests before the Gateway routes traffic to it. The product stays live and revenue-generating throughout.
+- **Weeks 1 - 2 - Forensic Audit and Freeze:** A senior architect audits the existing codebase, maps every feature to its dependencies, and identifies which modules are salvageable versus structurally unsound. All new feature work stops. No cost yet beyond the audit itself, typically a fixed-fee engagement rather than open-ended hours.
+- **Weeks 3 - 4 - The Gateway:** An API Gateway is deployed in front of the legacy system. Every existing request still routes to the old (fragile) code, so the product experience does not change for existing users. This is infrastructure work, not feature work, and is the highest-leverage two weeks of the entire rescue.
+- **Months 2 - 3 - Strangle the Highest-Risk Feature First:** In this case, the login and session-management system that was "randomly deleting user sessions." A small, dedicated pod rebuilds it as an isolated, fully tested microservice, and the Gateway is updated to route authentication traffic to the new code. This is usually the single most stabilizing change in the entire rescue, because session and auth failures tend to cascade into every other reported bug.
+- **Months 3 - 6 - Incremental Replacement:** Remaining features [appointment scheduling, video call orchestration, billing] are rebuilt one at a time, each shipped independently, each covered by automated tests before the Gateway routes traffic to it. The product stays live and revenue-generating throughout.
 - **Month 6 - Legacy Decommission:** Once the Gateway routes 100 percent of traffic to the new, governed codebase, the original monolith is retired.
 
-A rescue of this scope typically runs €70,000–€110,000 depending on the number of features being strangled - a fraction of the €413,000+ in compounding losses a second "Big Bang Rewrite" attempt would likely produce, and delivered without the six-to-twelve-month blackout in market presence that a full rewrite demands.
+A rescue of this scope typically runs €70,000 - €110,000 depending on the number of features being strangled - a fraction of the €413,000+ in compounding losses a second "Big Bang Rewrite" attempt would likely produce, and delivered without the six-to-twelve-month blackout in market presence that a full rewrite demands.
 
 ## Phase 3: The Governance Intervention
 
@@ -97,25 +97,21 @@ Stop throwing money at failing agencies. Contact our Amsterdam team to execute a
 
 ---
 
-## Frequently Asked Questions
-
-### (Scenario: CEO panicking over a late project) What is Brooks's Law and why is it dangerous to add more developers to a late project?
+## FAQs
+### [Scenario: CEO panicking over a late project] What is Brooks's Law and why is it dangerous to add more developers to a late project?
 Brooks's Law states that 'adding manpower to a late software project makes it later.' When you add new developers, the senior developers must stop writing code to train the new people. Furthermore, the new developers do not understand the fragile architecture, so they accidentally break existing code, slowing the project down exponentially.
 
-### (Scenario: CTO auditing an offshore agency) What is the 'Bug Hydra' and what does it tell you about the codebase?
+### [Scenario: CTO auditing an offshore agency] What is the 'Bug Hydra' and what does it tell you about the codebase?
 The 'Bug Hydra' is when fixing one bug causes two new bugs to appear in seemingly unrelated parts of the app. It indicates that the codebase is a 'Monolith' with deep, dangerous coupling between features, and that the agency has failed to write automated Unit Tests to protect the system from regression errors.
 
-### (Scenario: VP Engineering debating a rewrite) Why is a 'Big Bang Rewrite' considered business suicide for a startup?
+### [Scenario: VP Engineering debating a rewrite] Why is a 'Big Bang Rewrite' considered business suicide for a startup?
 A Big Bang Rewrite involves throwing away all the old code and starting from scratch. It means the company will go 6 to 12 months without launching any new features or generating revenue. In a competitive market, freezing your product for a year guarantees that your competitors will capture your entire market share.
 
-### (Scenario: Lead Architect designing a rescue plan) What is the 'Strangler Fig Pattern' and how does it save failing projects?
+### [Scenario: Lead Architect designing a rescue plan] What is the 'Strangler Fig Pattern' and how does it save failing projects?
 It is a migration strategy where you place an API Gateway in front of the failing app. You then build new, clean microservices (e.g., a new Login service) and route traffic to the new service while leaving the rest of the old app intact. You incrementally replace the old app piece-by-piece, ensuring zero downtime and continuous feature delivery.
 
-### (Scenario: Founder bringing a failing project to Manifera) How does Manifera rescue a project that was destroyed by another offshore agency?
+### [Scenario: Founder bringing a failing project to Manifera] How does Manifera rescue a project that was destroyed by another offshore agency?
 We do not perform a Big Bang Rewrite, and we do not throw ungoverned developers at the problem. Our Dutch Architects perform a forensic code audit, establish automated CI/CD guardrails, and design a Strangler Fig migration plan. Our Vietnamese pods then systematically replace your fragile code with secure, enterprise-grade architecture while keeping the product live.
-
-### (Scenario: Board member asking whether this project's failure is unusual) How common is it for software projects to actually fail or fall badly short?
-More common than most boardrooms assume. The Standish Group's CHAOS Report, the longest-running study of IT project outcomes, found that in its most recent published data only 31 percent of software projects were rated fully successful, 50 percent were "challenged" (late, over budget, or reduced in scope), and 19 percent failed outright and were cancelled. A stalled or over-budget project is a statistically ordinary event, not a uniquely embarrassing one, and the response that matters is a structural rescue plan, not a panic hire.
 
 <script type="application/ld+json">
 {
@@ -160,14 +156,6 @@ More common than most boardrooms assume. The Standish Group's CHAOS Report, the 
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our Dutch Architects take governance control of the failing codebase. We stop the bleeding by enforcing CI/CD pipelines, and use our Vietnamese pods to execute a Strangler Fig migration, replacing the fragile code incrementally while keeping your business operational."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How common is it for software projects to actually fail or fall badly short?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It is statistically common. The Standish Group's CHAOS Report found that only 31 percent of software projects are rated fully successful, 50 percent are 'challenged' (late, over budget, or reduced scope), and 19 percent fail outright. A struggling project is an ordinary event that calls for a structural rescue plan, not a reason for panic."
       }
     }
   ]

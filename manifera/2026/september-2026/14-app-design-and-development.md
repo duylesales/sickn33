@@ -66,7 +66,7 @@ Instead of drawing bespoke UI elements from scratch, the Designer is required to
 Ask a UI/UX designer for a dashboard screen and they will, almost without exception, design one version of it: the version where the API responds instantly, the data is complete, and the user has full permissions. This is the "Happy Path," and it is the only path most Figma files ever show.
 
 Real software has to render at least five other states for every single screen:
-1. **Loading:** What does the screen look like for the 200 milliseconds (or 3 seconds, on a bad connection) before data arrives? A blank white screen? A skeleton loader?
+1. **Loading:** What does the screen look like for the 200 milliseconds [or 3 seconds, on a bad connection] before data arrives? A blank white screen? A skeleton loader?
 2. **Empty:** What does a brand-new user with zero data see? An empty table with no explanation looks like a bug.
 3. **Error:** What renders when the API call fails? A generic "Something went wrong" or a specific, actionable message?
 4. **Partial Data:** What happens when three of five expected fields return null because a downstream service timed out?
@@ -121,25 +121,21 @@ Stop designing fantasies your backend can't support. Contact our Amsterdam team 
 
 ---
 
-## Frequently Asked Questions
-
-### (Scenario: Startup Founder kicking off a project) Why shouldn't I hire a UI/UX designer to build the entire prototype before talking to developers?
+## FAQs
+### [Scenario: Startup Founder kicking off a project] Why shouldn't I hire a UI/UX designer to build the entire prototype before talking to developers?
 Because UI designers in Figma do not see the backend complexity of their designs. A feature that takes a designer 30 seconds to draw (like a 'Live Activity Feed') might require 3 weeks of complex backend engineering (WebSockets, Redis caching) to actually build. You end up with a prototype that is financially impossible to develop within your budget.
 
-### (Scenario: Product Manager bridging design and engineering) What is 'Architecture-Led Design'?
+### [Scenario: Product Manager bridging design and engineering] What is 'Architecture-Led Design'?
 Architecture-Led Design is a process where the Lead Software Architect defines the data structures, API limitations, and budget constraints *before* the designer starts drawing screens. The designer must operate within these structural boundaries, ensuring every screen they design is technically feasible and cost-effective to build.
 
-### (Scenario: CTO reviewing a massive Figma file) Why does 'Global Search' or 'Advanced Filtering' cause so many engineering problems?
+### [Scenario: CTO reviewing a massive Figma file] Why does 'Global Search' or 'Advanced Filtering' cause so many engineering problems?
 In a design file, a search bar is just a rectangle. In a database, simple search is easy, but 'Global Search' (searching across users, invoices, and messages simultaneously with typos allowed) requires setting up specialized infrastructure like Elasticsearch. It introduces massive DevOps complexity that the designer was completely unaware of.
 
-### (Scenario: Lead Frontend Developer frustrated with custom designs) How do Component Libraries (like Tailwind UI) bridge the gap between design and code?
+### [Scenario: Lead Frontend Developer frustrated with custom designs] How do Component Libraries (like Tailwind UI) bridge the gap between design and code?
 If a designer draws a completely custom dropdown menu, the frontend developer must write hundreds of lines of custom CSS and JavaScript to make it work. If the designer uses a standardized Component Library in Figma, the developer can simply import the exact corresponding pre-built code component, reducing frontend development time by up to 80%.
 
-### (Scenario: VP Engineering evaluating Manifera) How does Manifera handle client-provided Figma designs?
+### [Scenario: VP Engineering evaluating Manifera] How does Manifera handle client-provided Figma designs?
 Our Dutch Architects perform a strict Architectural Audit on your designs before our offshore pods write any code. We will flag any UI elements that require disproportionately expensive backend infrastructure. We work with your Product team to adjust the UX to fit the pragmatic reality of the database, saving you massive amounts of budget.
-
-### (Scenario: Product Manager reviewing a Figma prototype) Why did our 50-screen prototype turn into 200+ screens once development started?
-Because a Figma prototype almost always shows only the "Happy Path": the version of each screen where data loads instantly and everything works. Real screens also need Loading, Empty, Error, Partial-Data, and Permission-Denied states, and if the designer never draws them, engineers invent them ad hoc during the sprint. A single 50-screen prototype can require 200+ actual UI states once every screen's non-happy-path variations are accounted for. A State Matrix, mapped before development starts, prevents this scope explosion.
 
 <script type="application/ld+json">
 {
@@ -184,14 +180,6 @@ Because a Figma prototype almost always shows only the "Happy Path": the version
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our Dutch Architects audit your Figma files before our Vietnamese pods start coding. We flag any UI widgets that require disproportionately expensive backend architecture and propose pragmatic UX adjustments to keep your project on budget."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why did our 50-screen prototype turn into 200+ screens once development started?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Figma prototypes usually show only the Happy Path. Real screens also need Loading, Empty, Error, Partial-Data, and Permission-Denied states, which engineers invent ad hoc if a State Matrix isn't defined before development begins."
       }
     }
   ]

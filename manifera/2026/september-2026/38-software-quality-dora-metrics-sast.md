@@ -78,7 +78,7 @@ The financial stakes of skipping this step are not theoretical. IBM's 2025 *Cost
 
 Metrics are abstract until you apply them to an actual pull request. Consider two implementations of the same feature: a shipment-status webhook handler that receives an event, validates it, updates a database record, and triggers a notification.
 
-**Codebase A (ungoverned offshore delivery, no CI/CD gates):**
+**Codebase A [ungoverned offshore delivery, no CI/CD gates]:**
 The entire handler is written as a single 140-line function. It contains 9 nested `if/else` branches to handle different event types, giving it a Cyclomatic Complexity score of roughly 14 - already above the commonly used threshold of 10 for a single function. The database update uses string-concatenated SQL rather than a parameterized query, which a SAST scanner would flag instantly as an OWASP Top 10 injection risk, except no SAST scanner is running. There are no unit tests, because there is no CI pipeline requiring them. The Project Manager reports the feature as "done" because it works during a manual click-through demo.
 
 **Codebase B (Dutch-Architect-governed pod):**
@@ -109,25 +109,21 @@ Stop paying for subjective software quality. Contact our Amsterdam team to deplo
 
 ---
 
-## Frequently Asked Questions
-
-### (Scenario: CTO auditing an offshore agency) Why is it a red flag if an agency says they ensure quality primarily through 'Manual QA testing'?
+## FAQs
+### [Scenario: CTO auditing an offshore agency] Why is it a red flag if an agency says they ensure quality primarily through 'Manual QA testing'?
 Manual QA testing relies on humans clicking through an application to find bugs. It is a massive red flag because it is slow, prone to human error, and completely blind to backend architectural flaws (like un-indexed database queries or memory leaks). Elite engineering teams rely on automated testing (Unit, Integration, and E2E tests) within a CI/CD pipeline, using manual QA only for exploratory edge cases.
 
-### (Scenario: VP Engineering implementing performance tracking) What are the DORA metrics and why are they important?
+### [Scenario: VP Engineering implementing performance tracking] What are the DORA metrics and why are they important?
 The DORA (DevOps Research and Assessment) metrics are four standardized measurements of an engineering team's performance: Deployment Frequency, Lead Time for Changes, Mean Time to Recovery (MTTR), and Change Failure Rate. They are important because they strip away subjective opinions about 'velocity' and provide a hard mathematical proof of whether a team's software delivery lifecycle is elite, average, or broken.
 
-### (Scenario: Lead Developer reviewing codebase health) What is 'Cyclomatic Complexity' and how does it prevent spaghetti code?
+### [Scenario: Lead Developer reviewing codebase health] What is 'Cyclomatic Complexity' and how does it prevent spaghetti code?
 Cyclomatic Complexity mathematically calculates how many different logical paths (e.g., if/else statements, loops) exist inside a single function. A high score means the function is massive, confusing, and practically impossible to test thoroughly (spaghetti code). By configuring CI/CD tools like SonarQube to automatically block any code with a score over 10, you force developers to write small, clean, highly maintainable functions.
 
-### (Scenario: CISO evaluating application security) What is the difference between Manual Security Audits and SAST integration?
+### [Scenario: CISO evaluating application security] What is the difference between Manual Security Audits and SAST integration?
 A Manual Security Audit happens *after* the application is built; a security team spends weeks trying to hack the app, often finding flaws too late to fix cheaply. SAST (Static Application Security Testing) happens *during* development. SAST tools are integrated into the CI/CD pipeline and automatically scan every single line of code in real-time. If a developer accidentally writes a vulnerability (like an exposed API key or SQL injection), the SAST tool instantly blocks the deployment.
 
-### (Scenario: IT Procurement reviewing Manifera) How does Manifera's Hybrid Model guarantee high software quality from an offshore team?
+### [Scenario: IT Procurement reviewing Manifera] How does Manifera's Hybrid Model guarantee high software quality from an offshore team?
 We do not rely on subjective 'trust.' Our Dutch Tech Leads build an automated, mathematical 'Enforcement Pipeline' for our Vietnamese engineering pods. We integrate automated Unit Testing, Cyclomatic Complexity blockers (SonarQube), and SAST security scanning directly into the Git repository. Our offshore developers are physically blocked from merging insecure or unscalable code, guaranteeing European-grade enterprise quality.
-
-### (Scenario: CFO questioning the ROI of investing in SAST tooling) Is automated security scanning really worth the extra cost, or is it optional overhead?
-It is not optional overhead; it is materially cheaper than the alternative. IBM's 2025 *Cost of a Data Breach Report* put the global average cost of a data breach at USD 4.44 million, with organizations taking a mean of 241 days to even identify and contain one. A SAST tool that blocks a single un-parameterized SQL query at the pull-request stage costs a fraction of a cent in CI compute time. Skipping that gate to save a few hours of setup is one of the most lopsided risk trades in enterprise software delivery.
 
 <script type="application/ld+json">
 {
@@ -172,14 +168,6 @@ It is not optional overhead; it is materially cheaper than the alternative. IBM'
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our Dutch Architects construct an automated 'Enforcement Pipeline' (CI/CD, SonarQube, SAST) for our Vietnamese pods. The offshore developers are mathematically blocked from merging unoptimized or insecure code, ensuring uncompromising European quality."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is automated security scanning really worth the extra cost, or is it optional overhead?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It is not optional. IBM's 2025 Cost of a Data Breach Report found the global average cost of a data breach is USD 4.44 million, with a mean of 241 days to identify and contain one. A SAST scan that blocks a vulnerable query at the pull-request stage costs a fraction of a cent in CI compute time by comparison."
       }
     }
   ]

@@ -36,7 +36,7 @@ The CEO learns a brutal financial lesson: **In software engineering, there is no
 
 ## The Architectural Fallacy of the MVP
 
-The term MVP was popularized by Eric Ries in *The Lean Startup*. The concept was intended to mean testing a business hypothesis with the minimum possible effort (e.g., a landing page or a spreadsheet). 
+The term MVP was popularized by Eric Ries in *The Lean Startup*. The concept was intended to mean testing a business hypothesis with the minimum possible effort [e.g., a landing page or a spreadsheet]. 
 
 However, in the context of [custom software development](https://www.manifera.com/services/custom-software-development/), the definition has been corrupted. Agencies use "MVP" as an excuse to deliver structurally dangerous, unscalable code, arguing that "speed to market" justifies the complete abandonment of architectural principles.
 
@@ -59,7 +59,7 @@ An MVP is often deployed manually via FTP or by SSHing directly into a server.
 An MVA requires automated Continuous Integration and Continuous Deployment (CI/CD). Even if the MVA only has three features, those three features are wrapped in automated tests (TDD) and deployed via GitHub Actions. When the Series A funding arrives, the team can scale immediately without building infrastructure from scratch.
 
 ### 3. Decoupled Business Logic
-An MVP typically weaves business rules directly into the UI components (e.g., placing tax calculation logic inside a React button). 
+An MVP typically weaves business rules directly into the UI components [e.g., placing tax calculation logic inside a React button]. 
 An MVA enforces separation of concerns. The tax calculation logic is isolated in a core backend service. It takes 10% longer to build initially, but it prevents the entire application from having to be rewritten when you eventually launch a mobile app.
 
 ## The Technical Due Diligence Audit: What Series A Investors Actually Check
@@ -87,7 +87,7 @@ The startups that pass this audit cleanly are, without exception, the ones that 
 Founders rarely believe the "you'll have to rewrite it" warning until they see the arithmetic. Here is a realistic, numbers-based comparison of the two paths a Series-A-track SaaS startup can take. The figures below are illustrative, built from typical European outsourcing day rates and typical timelines Manifera sees in this segment - not a claim about any specific client.
 
 **Path A: Pure MVP, rewrite after funding.**
-A founder pays a low-cost agency roughly €35,000 to build a six-week MVP: no automated tests, a denormalized MongoDB schema, manual FTP deploys. The MVP succeeds and raises a €2M seed round. Investors' technical due diligence (see above) flags the codebase as "not investment-grade" and makes 20% of the round conditional on a remediation plan. The team now has to: (1) freeze new features for a quarter, (2) hire a senior architect to redesign the data model, (3) migrate live production data without downtime, and (4) rebuild the test suite from zero. At typical blended European/offshore hybrid rates (~€55-70/hour for the rebuild team), a full-stack rewrite of a moderately complex SaaS product (12-16 core entities, payment integration, multi-tenant auth) runs €90,000-€140,000 and takes 4-6 months - on top of the original €35,000. Total: roughly €125,000-€175,000 and 5-7 months of near-zero net-new feature velocity, precisely when competitors are shipping.
+A founder pays a low-cost agency roughly €35,000 to build a six-week MVP: no automated tests, a denormalized MongoDB schema, manual FTP deploys. The MVP succeeds and raises a €2M seed round. Investors' technical due diligence (see above) flags the codebase as "not investment-grade" and makes 20% of the round conditional on a remediation plan. The team now has to: (1) freeze new features for a quarter, (2) hire a senior architect to redesign the data model, (3) migrate live production data without downtime, and (4) rebuild the test suite from zero. At typical blended European/offshore hybrid rates (~€55-70/hour for the rebuild team), a full-stack rewrite of a moderately complex SaaS product [12-16 core entities, payment integration, multi-tenant auth] runs €90,000-€140,000 and takes 4-6 months - on top of the original €35,000. Total: roughly €125,000-€175,000 and 5-7 months of near-zero net-new feature velocity, precisely when competitors are shipping.
 
 **Path B: Minimum Viable Architecture from day one.**
 The same feature scope, built by a team that keeps the schema normalized, wires up CI/CD from week one, and isolates business logic from the UI, typically costs €48,000-€55,000 - 35-55% more than the throwaway MVP, spread over roughly eight to ten weeks instead of six. There is no rewrite phase. The Series A due diligence audit passes without a remediation clause. The team keeps shipping features straight through the raise.
@@ -108,25 +108,21 @@ Stop paying for code you have to rewrite. Contact our Amsterdam team to design a
 
 ---
 
-## Frequently Asked Questions
-
-### (Scenario: Startup CEO planning budget) Why is 'throwaway code' a myth in an MVP?
+## FAQs
+### [Scenario: Startup CEO planning budget] Why is 'throwaway code' a myth in an MVP?
 Because when an MVP succeeds, businesses never actually throw the code away. The market demands immediate new features, and the pressure from investors forces the team to keep building on top of the fragile MVP foundation. The 'temporary' hack becomes permanent technical debt, eventually paralyzing engineering velocity.
 
-### (Scenario: CTO choosing a tech stack) What is the difference between an MVP and an MVA (Minimum Viable Architecture)?
+### [Scenario: CTO choosing a tech stack] What is the difference between an MVP and an MVA (Minimum Viable Architecture)?
 An MVP minimizes *everything* (features and architecture) to prioritize speed, often resulting in unscalable code. An MVA minimizes *features* (scope) but refuses to compromise on the structural foundation (database schema, CI/CD, security). An MVA is built to survive scaling from Day 1.
 
-### (Scenario: VP Engineering auditing offshore proposals) Why do cheap offshore agencies push for unscalable MVPs?
+### [Scenario: VP Engineering auditing offshore proposals] Why do cheap offshore agencies push for unscalable MVPs?
 Because it makes their proposals look highly attractive (low cost, fast delivery). They cut corners on database design and automated testing to hit aggressive deadlines. They know that when the code eventually breaks under scale, you will have to pay them exorbitant hourly rates to rewrite the entire application.
 
-### (Scenario: Lead Architect designing the data layer) Why shouldn't we use a schema-less NoSQL database for an MVP just to be fast?
+### [Scenario: Lead Architect designing the data layer] Why shouldn't we use a schema-less NoSQL database for an MVP just to be fast?
 Schema-less databases (like MongoDB) are fast to set up, but they push data integrity logic into the application code. As your business rules evolve, maintaining data consistency becomes a nightmare. For B2B SaaS, investing three extra days in a normalized Relational Database (PostgreSQL) prevents months of painful data migration later.
 
-### (Scenario: Founder evaluating Manifera) How does Manifera balance speed-to-market with architectural integrity?
+### [Scenario: Founder evaluating Manifera] How does Manifera balance speed-to-market with architectural integrity?
 Through our Hybrid Offshore model. Our Dutch Architects work with you to aggressively cut unnecessary features (ensuring speed-to-market). Then, they define a strict MVA blueprint. Our Vietnamese pods execute that blueprint, ensuring the limited features are built on a highly scalable, secure, and automated foundation.
-
-### (Scenario: Founder preparing for a funding round) What does Series A technical due diligence actually check in an MVP's codebase?
-Investors typically send an auditor to spend two to five days checking five things: automated test coverage (ideally 60-70%+ on core logic), security posture against the OWASP Top 10, "key-person risk" (whether architecture knowledge is documented, not trapped in one contractor's head), database performance under a simulated 10x-100x load test, and dependency/license risk. MVPs built as pure throwaway code routinely fail multiple checks, which can delay, discount, or add rewrite conditions to your funding.
 
 <script type="application/ld+json">
 {
@@ -171,14 +167,6 @@ Investors typically send an auditor to spend two to five days checking five thin
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our Dutch Architects help you aggressively cut non-essential features for speed. Our Vietnamese pods then build the remaining features on a strict, European-governed architectural foundation, ensuring you launch fast without sacrificing scale."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What does Series A technical due diligence actually check in an MVP's codebase?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Auditors typically spend two to five days checking automated test coverage, security posture against the OWASP Top 10, key-person risk in undocumented architecture, database performance under simulated 10x-100x load, and dependency or license risk. MVPs built as pure throwaway code often fail these checks, which can delay or discount a funding round."
       }
     }
   ]

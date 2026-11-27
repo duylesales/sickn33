@@ -39,7 +39,7 @@ In [custom software development](https://www.manifera.com/services/custom-softwa
 
 If you design a flawed database schema on Day 1, changing it on Day 500 requires a terrifying, multi-week data migration that risks destroying the entire company. 
 
-Elite software architects prevent this by mathematically enforcing Database Normalization (specifically, the Third Normal Form, or 3NF). 
+Elite software architects prevent this by mathematically enforcing Database Normalization [specifically, the Third Normal Form, or 3NF]. 
 
 ### The Law of the Third Normal Form (3NF)
 Normalization is the process of organizing data in a database to reduce redundancy and improve data integrity. 
@@ -103,25 +103,21 @@ Stop paying developers to corrupt your data. Contact our Amsterdam team for ente
 
 ---
 
-## Frequently Asked Questions
-
-### (Scenario: VP Engineering auditing a legacy system) What is a 'Flat' Database Schema and why is it an architectural red flag?
+## FAQs
+### [Scenario: VP Engineering auditing a legacy system] What is a 'Flat' Database Schema and why is it an architectural red flag?
 A flat schema is when a developer puts all related data into a single, massive table (like putting Customer Info, Product Info, and Order Info in one row). It is a red flag because it creates massive data duplication. If a customer places 10 orders, their name is saved 10 times, bloating the database and making updates incredibly dangerous and slow.
 
-### (Scenario: CTO planning system scale) What is 'Database Normalization' (3NF)?
-Normalization is the mathematical process of organizing a relational database (like PostgreSQL) to eliminate data redundancy. The Third Normal Form (3NF) ensures that every piece of non-key data (like an email address) is stored in exactly one place. Orders and Products link to that one place via Foreign Keys. 
+### [Scenario: CTO planning system scale] What is 'Database Normalization' (3NF)?
+Normalization is the mathematical process of organizing a relational database (like PostgreSQL) to eliminate data redundancy. The Third Normal Form (3NF) ensures that every piece of non-key data (like an email address) is stored in exactly one place. Orders and Products link to that one place via Foreign Keys.
 
-### (Scenario: Lead Developer fixing a bug) What is a 'Data Anomaly' and how does poor architecture cause it?
+### [Scenario: Lead Developer fixing a bug] What is a 'Data Anomaly' and how does poor architecture cause it?
 A Data Anomaly occurs when a system holds conflicting truths. If a user changes their password, and the system uses a flat schema where the password is saved in 5 different places, a glitch might update only 4 places. Now the system doesn't know which password is real. Normalization (saving it in only one place) mathematically prevents this.
 
-### (Scenario: CEO wondering why AWS bills are so high) How does bad Information Architecture increase cloud costs?
+### [Scenario: CEO wondering why AWS bills are so high] How does bad Information Architecture increase cloud costs?
 If your database is completely denormalized (flat), you are storing massive amounts of duplicated string data (text). This requires significantly more hard drive space. Worse, searching through massive, un-indexed text columns requires huge amounts of CPU power. A highly normalized database uses fast Integer IDs, slashing your AWS compute and storage costs.
 
-### (Scenario: Procurement Officer evaluating Manifera) How does Manifera prevent offshore developers from designing bad databases?
+### [Scenario: Procurement Officer evaluating Manifera] How does Manifera prevent offshore developers from designing bad databases?
 By completely removing database design from their responsibilities. In our Hybrid Model, our senior Dutch Architects design the entire PostgreSQL/MySQL schema, enforce 3NF normalization, and build the initial migrations. Our Vietnamese developers execute the code on top of that schema, guaranteeing a flawless, enterprise-grade data foundation.
-
-### (Scenario: CTO worried about breaking production) How do you change a database schema that is already live without causing an outage?
-You use the Expand-Contract Pattern instead of a single destructive migration. You first add the new columns alongside the old ones (Expand), backfill historical data, deploy application code that writes to both and then reads only from the new columns, and only drop the old columns (Contract) once every service has confirmed it no longer depends on them. This lets old and new application instances run safely side by side during a rolling deployment.
 
 <script type="application/ld+json">
 {
@@ -166,14 +162,6 @@ You use the Expand-Contract Pattern instead of a single destructive migration. Y
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our Dutch Architects design the database schemas, not our offshore pods. The European Architect enforces strict 3NF normalization and indexing before any code is written, ensuring your startup is built on an infinitely scalable data foundation."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do you change a database schema that is already live without causing an outage?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You use the Expand-Contract Pattern: add new columns alongside the old ones, backfill historical data, deploy application code that writes to both and then reads only from the new columns, and drop the old columns only once every service confirms it no longer depends on them. This keeps old and new application instances safely compatible during a rolling deployment."
       }
     }
   ]

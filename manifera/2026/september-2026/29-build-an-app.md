@@ -100,25 +100,21 @@ Stop trying to build everything on day one. Contact our Amsterdam team to build 
 
 ---
 
-## Frequently Asked Questions
-
-### (Scenario: Founder planning seed capital) Why shouldn't I spend most of my startup budget on building the MVP?
+## FAQs
+### [Scenario: Founder planning seed capital] Why shouldn't I spend most of my startup budget on building the MVP?
 Because building the MVP is only 10% of the journey. Once the app launches, you need significant capital for Customer Acquisition (marketing/sales), DevOps maintenance (server costs, security updates), and feature iteration (re-writing the app based on real user feedback). If you spend 90% of your budget on version 1.0, you will go bankrupt before you can adapt to the market.
 
-### (Scenario: CEO shocked by post-launch costs) Why does an app cost money to maintain if we aren't adding new features?
+### [Scenario: CEO shocked by post-launch costs] Why does an app cost money to maintain if we aren't adding new features?
 Software decays. The third-party APIs you connect to (like Stripe or Google Maps) constantly update and deprecate old versions. Cloud servers require security patching. Browsers and mobile OS versions update, breaking your UI. Ongoing DevOps maintenance is required simply to keep the application functioning at the exact same level it was on launch day.
 
-### (Scenario: Product Manager defining an MVP) How do I know which features to cut from the MVP?
+### [Scenario: Product Manager defining an MVP] How do I know which features to cut from the MVP?
 Cut anything that does not directly prove your core business hypothesis. If your core value is 'AI-powered invoicing,' build that. Cut the 'Dark Mode' UI, cut the complex 'User Referral Dashboard', and cut the 'Custom PDF Export' feature. Your goal is to launch the absolute minimum feature set required to get a user to pay you.
 
-### (Scenario: Investor evaluating a founder's plan) What is the difference between an agency 'building an app' and 'building a business'?
-An agency building an app just translates your Jira tickets into code and cashes your check, indifferent to your market success. An agency helping you build a business will push back on your feature requests, force you to conserve your capital, and architect the software so it can be cheaply iterated upon after launch. 
+### [Scenario: Investor evaluating a founder's plan] What is the difference between an agency 'building an app' and 'building a business'?
+An agency building an app just translates your Jira tickets into code and cashes your check, indifferent to your market success. An agency helping you build a business will push back on your feature requests, force you to conserve your capital, and architect the software so it can be cheaply iterated upon after launch.
 
-### (Scenario: Founder unsure if the idea is worth building) How can I validate demand before paying for an MVP?
+### [Scenario: Founder unsure if the idea is worth building] How can I validate demand before paying for an MVP?
 Run a 'Smoke Test' before writing any code. Build a landing page with a real payment or waitlist button to see if strangers will act, or manually deliver the service by hand to your first customers (a 'Concierge MVP') to prove they will pay for the outcome. If people won't pre-pay or engage with a manual version, they won't pay for the automated app either, and you've saved tens of thousands of euros in engineering spend.
-
-### (Scenario: Founder choosing between agencies) How does Manifera help startups survive the post-launch phase?
-Our Dutch Architects act as technical co-founders. We actively refuse to let you over-engineer version 1.0. We build a lean, highly scalable MVP using our offshore pods, ensuring you retain the capital needed for marketing and post-launch iteration. We optimize your AWS architecture to minimize your monthly cloud bills, keeping your 'burn rate' as low as possible.
 
 <script type="application/ld+json">
 {
@@ -163,14 +159,6 @@ Our Dutch Architects act as technical co-founders. We actively refuse to let you
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Run a Smoke Test before writing code: a landing page with a real payment or waitlist button, or a Concierge MVP where you manually deliver the service to prove customers will pay for the outcome. If people won't engage with a manual version, they won't pay for the automated app, saving significant engineering spend."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How does Manifera help startups survive the post-launch phase?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Our Dutch Architects prevent you from over-engineering your MVP. We deliver a lean, scalable version 1.0, ensuring you keep enough capital in reserve for marketing and iteration, while optimizing your cloud architecture to minimize monthly operational burn."
       }
     }
   ]

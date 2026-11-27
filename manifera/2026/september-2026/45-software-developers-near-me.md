@@ -33,12 +33,12 @@ The CEO has fallen victim to the Geographical Talent Illusion. They assumed that
 
 ## The Mathematics of the Local Talent Shortage
 
-In [custom software development](https://www.manifera.com/services/custom-software-development/), the talent market is entirely asymmetrical. The demand for elite software engineers vastly outstrips the supply in Tier-1 cities (London, Amsterdam, Berlin, New York). 
+In [custom software development](https://www.manifera.com/services/custom-software-development/), the talent market is entirely asymmetrical. The demand for elite software engineers vastly outstrips the supply in Tier-1 cities [London, Amsterdam, Berlin, New York]. 
 
 If a CTO insists on hiring locally, they face three brutal mathematical constraints:
 
 ### 1. The Big Tech Monopoly
-Startups are not competing against other startups for talent; they are competing against Big Tech. Companies with infinite capital (Google, Meta, Uber) artificially inflate local salaries to hoard talent. A Series A startup simply does not have the burn rate to match a €150,000 salary for a mid-level React developer. 
+Startups are not competing against other startups for talent; they are competing against Big Tech. Companies with infinite capital [Google, Meta, Uber] artificially inflate local salaries to hoard talent. A Series A startup simply does not have the burn rate to match a €150,000 salary for a mid-level React developer. 
 
 ### 2. The Time-to-Hire Bottleneck
 Even if you have the budget, local hiring is agonizingly slow. The average Time-to-Hire for a Senior Backend Engineer in Amsterdam or London is currently 3 to 5 months. If you need 10 developers, it will take you over a year to staff the team. In the software industry, waiting a year to build a feature means your competitor will beat you to market.
@@ -60,7 +60,7 @@ Three specific risks compound the Bus Factor problem:
 2. **Ambiguous IP assignment.** Marketplace contracts are frequently governed by the platform's own boilerplate terms rather than a proper Intellectual Property assignment clause reviewed by counsel. Founders raising a Series B routinely discover during due diligence that a freelancer never formally assigned code ownership to the company - a finding that can delay or derail a funding round.
 3. **Zero continuity planning.** A managed engineering pod has a Tech Lead who can reassign work if an engineer leaves. A freelancer has no backup; when they disappear, so does the only person who understands why a critical function was written the way it was.
 
-Freelancer marketplaces solve the speed problem for a single, isolated task (a landing page, a one-off script). They do not solve the scaling problem, because scaling requires a *team* with shared standards, redundancy, and governance - precisely what a single contractor, however talented, cannot provide alone.
+Freelancer marketplaces solve the speed problem for a single, isolated task [a landing page, a one-off script]. They do not solve the scaling problem, because scaling requires a *team* with shared standards, redundancy, and governance - precisely what a single contractor, however talented, cannot provide alone.
 
 ## A Worked Example: The Real Cost of the Local-Only Search
 
@@ -98,25 +98,21 @@ Stop losing bidding wars for local talent. Contact our Amsterdam team to instant
 
 ---
 
-## Frequently Asked Questions
-
-### (Scenario: CEO reviewing a hiring plan) Why is it so difficult for a funded startup to hire local senior developers?
+## FAQs
+### [Scenario: CEO reviewing a hiring plan] Why is it so difficult for a funded startup to hire local senior developers?
 Because startups are forced to compete against massive Big Tech monopolies (like Google or Adyen) that hoard local talent by offering artificially inflated salaries, massive equity packages, and sign-on bonuses. A Series A startup mathematically cannot sustain the burn rate required to win these bidding wars.
 
-### (Scenario: VP Engineering planning a product roadmap) What is the 'Time-to-Hire' bottleneck and how does it kill startups?
+### [Scenario: VP Engineering planning a product roadmap] What is the 'Time-to-Hire' bottleneck and how does it kill startups?
 The average time to recruit, interview, and hire a Senior Developer in a Tier-1 city (London, Amsterdam) is 3 to 5 months. If your product roadmap requires 10 new developers to hit a deadline in 6 months, local hiring guarantees you will miss that deadline. You need a model that can deploy an entire team in weeks.
 
-### (Scenario: CTO debating offshore vs. local) What is 'Geographical Talent Arbitrage'?
+### [Scenario: CTO debating offshore vs. local] What is 'Geographical Talent Arbitrage'?
 It is the strategic separation of where your software is governed versus where it is executed. Instead of paying €130,000 for a local developer to write standard React code, you pay an elite offshore developer a fraction of that cost to write the code, while keeping a smaller local budget for a Senior Architect to govern them.
 
-### (Scenario: Founder worried about offshore quality) Does hiring offshore developers mean I am sacrificing software quality?
+### [Scenario: Founder worried about offshore quality] Does hiring offshore developers mean I am sacrificing software quality?
 Yes, if you buy *ungoverned* offshore developers. A standard cheap agency will deliver massive technical debt. No, if you use a Hybrid Offshore Model. In a Hybrid model, the offshore developers are strictly governed by a local (European or US) Architect who mathematically blocks bad code via CI/CD pipelines and manual Pull Request reviews.
 
-### (Scenario: IT Procurement evaluating Manifera) How does Manifera's Hybrid Model solve the local talent shortage for European companies?
+### [Scenario: IT Procurement evaluating Manifera] How does Manifera's Hybrid Model solve the local talent shortage for European companies?
 We provide the perfect balance. We maintain elite Dutch Architects in Amsterdam to handle your System Design and project governance (solving the quality and communication problem). We then execute the code using our highly trained Vietnamese engineering pods (solving the velocity, scalability, and budget problem). You get local quality with offshore scale.
-
-### (Scenario: Founder tempted by Upwork or Toptal) Why not just hire individual freelancers instead of a governed offshore team?
-Because a single freelancer creates a Bus Factor of 1: if they quit, go silent, or get poached, the project halts and no one else understands the codebase. Freelancer marketplace contracts also frequently leave Intellectual Property assignment ambiguous, which can surface as a red flag during Series B due diligence. A managed pod replaces a single point of failure with a team, shared standards, and a Tech Lead who can reassign work instantly.
 
 <script type="application/ld+json">
 {
@@ -161,14 +157,6 @@ Because a single freelancer creates a Bus Factor of 1: if they quit, go silent, 
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "We provide elite Dutch Architects in Amsterdam for strict architectural governance, and massive Vietnamese engineering pods for high-velocity execution. You bypass the local hiring bottleneck instantly without sacrificing an ounce of European software quality."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why not just hire individual freelancers instead of a governed offshore team?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A single freelancer creates a Bus Factor of 1: if they quit, go silent, or get poached, the project halts and no one else understands the codebase. Freelancer marketplace contracts also frequently leave Intellectual Property assignment ambiguous, a common red flag in Series B due diligence. A managed pod replaces that single point of failure with a team, shared standards, and a Tech Lead who can reassign work instantly."
       }
     }
   ]

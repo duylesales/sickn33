@@ -43,15 +43,15 @@ In Data-Centric AI development, you assume the model (the code) is already good 
 
 If the CEO asks about Q3 revenue and the AI lies, a Data-Centric team does not touch the codebase. They immediately look at the Vector Database. They realize the PDF containing the Q3 revenue report was poorly formatted, so the data extraction pipeline chunked the text incorrectly, feeding the AI a broken sentence. 
 
-The team fixes the ETL (Extract, Transform, Load) data pipeline, re-ingests the clean PDF, and the AI instantly answers correctly. 
+The team fixes the ETL [Extract, Transform, Load] data pipeline, re-ingests the clean PDF, and the AI instantly answers correctly. 
 
-This is not a fringe opinion invented by agencies trying to sell Data Engineering services. It is the position of one of the field's most credentialed researchers. Andrew Ng - co-founder of Google Brain and Coursera, former Chief Scientist at Baidu - has spent the past several years publicly campaigning for exactly this shift. As he put it in an interview with IEEE Spectrum: "In many industries where giant data sets simply don't exist, I think the focus has to shift from big data to good data." His argument is that once a model architecture is good enough (which, for most business applications, today's foundation models already are), the highest-leverage work left is systematically improving the data the model learns from and retrieves against - not endlessly re-tuning the model itself.
+This is not a fringe opinion invented by agencies trying to sell Data Engineering services. It is the position of one of the field's most credentialed researchers. Andrew Ng - co-founder of Google Brain and Coursera, former Chief Scientist at Baidu - has spent the past several years publicly campaigning for exactly this shift. As he put it in an interview with IEEE Spectrum: "In many industries where giant data sets simply don't exist, I think the focus has to shift from big data to good data." His argument is that once a model architecture is good enough [which, for most business applications, today's foundation models already are], the highest-leverage work left is systematically improving the data the model learns from and retrieves against - not endlessly re-tuning the model itself.
 
 ## Adapting Your Development Model for AI
 
 To succeed in AI, you must adapt your Agile sprints to incorporate MLOps (Machine Learning Operations) and Data Engineering. 
 
-1. **The 'Data Quality' Sprint Ticket:** In traditional Agile, tickets are for features (e.g., "Build Login Screen"). In AI development, you must create tickets exclusively for Data Quality (e.g., "Improve OCR extraction accuracy for Table structures in PDFs"). 
+1. **The 'Data Quality' Sprint Ticket:** In traditional Agile, tickets are for features [e.g., "Build Login Screen"]. In AI development, you must create tickets exclusively for Data Quality [e.g., "Improve OCR extraction accuracy for Table structures in PDFs"]. 
 2. **The Shift in Team Composition:** You cannot build AI with just Frontend and Backend developers. Your team topology must include Data Engineers whose sole job is to curate, clean, and structure the data before it ever touches the AI.
 3. **Continuous Evaluation (CE):** Standard CI/CD (Continuous Integration) tests code logic. AI requires Continuous Evaluation. You must build automated testing suites that ask the AI 500 benchmark questions every time the data pipeline changes, mathematically scoring the AI's accuracy to ensure you haven't introduced "drift."
 
@@ -79,17 +79,17 @@ To make the difference between Model-Centric and Data-Centric sprint planning co
 
 **Model-Centric team, Sprint N:**
 - Day 1: Triage assigns the ticket to a backend developer.
-- Days 2–4: The developer rewrites the system prompt three times, adding instructions like "always double-check financial figures before answering." The behavior does not reliably improve, because the underlying retrieved context is still wrong.
-- Days 5–7: The team debates swapping the underlying LLM provider, hypothesizing that a "smarter" model will reason its way around bad context.
+- Days 2 - 4: The developer rewrites the system prompt three times, adding instructions like "always double-check financial figures before answering." The behavior does not reliably improve, because the underlying retrieved context is still wrong.
+- Days 5 - 7: The team debates swapping the underlying LLM provider, hypothesizing that a "smarter" model will reason its way around bad context.
 - Day 8: The new model is wired in. The hallucination rate drops slightly by chance, but nobody can say why, and no regression test exists to confirm it going forward.
 - End of sprint: The root cause (a malformed PDF chunk) is still sitting in the vector database, waiting to cause the next incident.
 
 **Data-Centric team, Sprint N:**
 - Day 1: Triage pulls the exact retrieved context that was fed to the model for that query, using logging already built into the RAG pipeline.
 - Day 2: The team confirms the Q3 PDF was chunked mid-table, splitting a revenue figure from its label during ingestion.
-- Days 3–4: A data engineer fixes the PDF parsing logic for tabular content, re-ingests the document, and adds this exact scenario as a new entry in the golden evaluation dataset.
+- Days 3 - 4: A data engineer fixes the PDF parsing logic for tabular content, re-ingests the document, and adds this exact scenario as a new entry in the golden evaluation dataset.
 - Day 5: Continuous Evaluation re-runs the full benchmark suite against the fixed pipeline; the score improves and no other document type regresses.
-- Days 6–8: The team spends the remaining sprint capacity auditing other PDFs in the corpus for the same table-chunking failure mode, preventing three additional latent bugs before they reach a client.
+- Days 6 - 8: The team spends the remaining sprint capacity auditing other PDFs in the corpus for the same table-chunking failure mode, preventing three additional latent bugs before they reach a client.
 - End of sprint: The root cause is fixed, documented, versioned, and permanently covered by a regression test.
 
 Both teams "did AI work" for a full sprint. Only one of them reduced the probability of the bug recurring.
@@ -108,25 +108,21 @@ Stop iterating on code when your data is broken. Contact our Amsterdam team to d
 
 ---
 
-## Frequently Asked Questions
-
-### (Scenario: VP Engineering auditing a failing AI project) Why does standard Agile methodology struggle when building AI applications?
+## FAQs
+### [Scenario: VP Engineering auditing a failing AI project] Why does standard Agile methodology struggle when building AI applications?
 Standard Agile focuses on iterating on code to fix logical bugs. In AI, the logic is derived probabilistically from data, not explicitly written in code. If an AI hallucinates, iterating on the application code (or the UI) accomplishes nothing. The team must shift their focus to iterating on the data pipeline, which traditional Agile processes are not structured to prioritize.
 
-### (Scenario: CTO transitioning to AI development) What is the difference between 'Model-Centric' and 'Data-Centric' AI development?
+### [Scenario: CTO transitioning to AI development] What is the difference between 'Model-Centric' and 'Data-Centric' AI development?
 A Model-Centric approach tries to improve AI accuracy by tweaking the model itself (changing algorithms, writing massive prompts, or swapping LLM providers). A Data-Centric approach accepts that the model is already highly capable, and focuses entirely on systematically improving the quality, structure, and cleanliness of the data being fed into the model.
 
-### (Scenario: Lead Developer fighting AI hallucinations) If our AI gives the wrong answer, what should our first step be?
+### [Scenario: Lead Developer fighting AI hallucinations] If our AI gives the wrong answer, what should our first step be?
 Do not change the code or the prompt. Your first step is to check the Vector Database. Look at the exact chunk of text that the RAG pipeline retrieved and fed to the AI. 99% of the time, you will find that the retrieved data was messy, incomplete, or incorrectly formatted during the initial ingestion phase. You must fix the data pipeline.
 
-### (Scenario: QA Manager adapting to AI) How do you test an AI application if you can't use standard Unit Tests?
+### [Scenario: QA Manager adapting to AI] How do you test an AI application if you can't use standard Unit Tests?
 Standard Unit Tests check if 'A + B = C'. AI is probabilistic, meaning the exact wording of the answer changes every time. You must implement Continuous Evaluation (CE). This involves writing automated scripts that ask the AI hundreds of benchmark questions and using a secondary 'Judge LLM' to evaluate if the AI's answers are factually accurate, regardless of the specific phrasing used.
 
-### (Scenario: Engineering Lead reconstructing a past incident) Why do we need to version our datasets, not just our code?
+### [Scenario: Engineering Lead reconstructing a past incident] Why do we need to version our datasets, not just our code?
 Because in AI systems, the data is as much a driver of behavior as the code is. If you change a dataset (re-chunk a PDF, re-embed a document) without versioning it, you lose the ability to trace which specific data snapshot produced a given AI behavior, to roll back a regression safely, or to prove to auditors exactly what data the model relied on at a given point in time. Tools like DVC or lakeFS apply Git-style version control to data so every change is tracked and reversible.
-
-### (Scenario: Procurement evaluating Manifera) How does Manifera's development process differ when building AI vs. Web Apps?
-When building web apps, we focus heavily on code architecture and frontend component rendering. When building AI, our Dutch Architects shift the focus entirely to Data Engineering and MLOps. We prioritize building robust ETL (Extract, Transform, Load) pipelines to clean your proprietary data, ensuring the foundation of the AI's knowledge is mathematically sound before we ever build the UI.
 
 <script type="application/ld+json">
 {
@@ -171,14 +167,6 @@ When building web apps, we focus heavily on code architecture and frontend compo
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "In AI systems, data drives behavior as much as code does. Without dataset versioning (using tools like DVC or lakeFS), you cannot trace which data snapshot caused a regression, roll back safely, or prove to auditors what data the model relied on at a given time."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How does Manifera's development process differ when building AI vs. Web Apps?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "For AI, our Dutch Architects enforce a Data-Centric MLOps process. We prioritize Data Engineering - building rigorous ETL pipelines to clean your proprietary data - because we know clean data is the only cure for AI hallucinations."
       }
     }
   ]

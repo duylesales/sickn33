@@ -34,7 +34,7 @@ The marketing director learned a brutal lesson: You can outsource the building o
 
 ## The Data Sovereignty Crisis of App Builders
 
-In [custom software development](https://www.manifera.com/services/custom-software-development/), compliance is enforced through architecture. When a CISO designs a custom application (e.g., using React Native), they ensure the application is hosted on European AWS servers (Data Sovereignty) and that every database query is meticulously logged (Auditability).
+In [custom software development](https://www.manifera.com/services/custom-software-development/), compliance is enforced through architecture. When a CISO designs a custom application [e.g., using React Native], they ensure the application is hosted on European AWS servers (Data Sovereignty) and that every database query is meticulously logged (Auditability).
 
 When a business uses consumer-grade **mobile app creator software**, they forfeit architectural control to a third-party vendor. This creates three fatal compliance blindspots:
 
@@ -49,7 +49,7 @@ SOC2 and ISO 27001 compliance require strict audit trails. You must be able to p
 
 ### Pricing the Two Paths Before the Audit, Not After
 
-Run the numbers the CISO in the opening scenario wishes they had run before the marketing director signed up for the app builder. A dedicated, Single-Tenant custom mobile backend (Node.js/PostgreSQL, deployed into the company's own AWS or Azure environment, with SIEM logging built in from day one) for a claims-photo submission app of this size typically runs €70,000-€110,000 to build, plus modest ongoing hosting and maintenance costs the company already budgets for elsewhere in its cloud estate.
+Run the numbers the CISO in the opening scenario wishes they had run before the marketing director signed up for the app builder. A dedicated, Single-Tenant custom mobile backend [Node.js/PostgreSQL, deployed into the company's own AWS or Azure environment, with SIEM logging built in from day one] for a claims-photo submission app of this size typically runs €70,000-€110,000 to build, plus modest ongoing hosting and maintenance costs the company already budgets for elsewhere in its cloud estate.
 
 Compare that to the cost the insurance company actually paid: an app pulled from the App Store on zero notice, a compliance team scrambling to document a breach that had already happened, outside counsel engaged to manage the regulatory response, and exposure to a GDPR fine under a regime that, per DLA Piper's data, issued roughly €1.2 billion in penalties across Europe in 2025 alone. A single serious fine in a regulated sector like insurance can easily exceed the entire cost of building the compliant app from scratch, before counting the reputational cost of a public App Store removal. Compliance architecture is not an expensive alternative to a cheap app builder; measured against the realistic cost of the failure mode it prevents, it is usually the cheaper option.
 
@@ -95,25 +95,21 @@ Stop trusting your compliance to a drag-and-drop tool. Contact our Amsterdam tea
 
 ---
 
-## Frequently Asked Questions
-
-### (Scenario: CISO auditing a marketing tool) Why do generic app builders often fail GDPR compliance out of the box?
+## FAQs
+### [Scenario: CISO auditing a marketing tool] Why do generic app builders often fail GDPR compliance out of the box?
 Many global app builders route their traffic and store database backups in US-based data centers by default. GDPR heavily restricts the transfer of EU citizen data to non-EU servers. If the platform does not explicitly guarantee EU data sovereignty (Data Locality) in their Enterprise SLA, using them for European customers is a direct GDPR violation.
 
-### (Scenario: CTO planning backend architecture) What is the difference between Multi-Tenant and Single-Tenant databases regarding security?
+### [Scenario: CTO planning backend architecture] What is the difference between Multi-Tenant and Single-Tenant databases regarding security?
 In a Multi-Tenant database (used by most cheap app builders), your data sits in the exact same table as a competitor's data, separated only by a 'Company_ID' column. If the vendor writes a bug, data can leak between companies. Single-Tenant architecture (often required for strict compliance) gives you a physically separated, dedicated database that no other company shares.
 
-### (Scenario: Compliance Officer preparing for SOC2) Why is the 'Black Box' nature of Low-Code platforms an issue for auditors?
+### [Scenario: Compliance Officer preparing for SOC2] Why is the 'Black Box' nature of Low-Code platforms an issue for auditors?
 SOC2 compliance requires you to prove strict access controls and provide detailed logs of every database interaction. Because Low-Code platforms abstract the backend to make building easy, they hide these deep infrastructure logs. You cannot prove to an auditor who accessed the raw database at 2:00 AM, resulting in an immediate audit failure.
 
-### (Scenario: IT Director evaluating risk) If a vendor says their platform is 'SOC2 Certified', doesn't that mean my app is compliant?
-No. This is a common misconception. The vendor's *internal company operations* might be SOC2 certified, meaning they securely manage their own servers. But that does not mean the specific application *you* build on top of their platform automatically meets your industry's compliance standards regarding how you handle user consent, data retention, or PII masking. 
+### [Scenario: IT Director evaluating risk] If a vendor says their platform is 'SOC2 Certified', doesn't that mean my app is compliant?
+No. This is a common misconception. The vendor's *internal company operations* might be SOC2 certified, meaning they securely manage their own servers. But that does not mean the specific application *you* build on top of their platform automatically meets your industry's compliance standards regarding how you handle user consent, data retention, or PII masking.
 
-### (Scenario: Procurement evaluating Manifera) How does Manifera ensure the mobile apps they build pass strict European compliance audits?
+### [Scenario: Procurement evaluating Manifera] How does Manifera ensure the mobile apps they build pass strict European compliance audits?
 We do not use proprietary 'Black Box' SaaS backends. Our Dutch Architects design custom architectures (e.g., Node.js and PostgreSQL) that are deployed directly into your own private AWS or Azure environment. Because you own the infrastructure, we can implement deep SIEM logging, Single-Tenant isolation, and strict EU data locality, ensuring you easily pass GDPR and SOC2 audits.
-
-### (Scenario: Marketing Director filling out an App Store privacy label) Why did our app get flagged when we didn't add any tracking SDKs ourselves?
-Most mobile app creator platforms bundle their own analytics, crash-reporting, and push-notification SDKs into every app built on their system, without giving you full visibility into what those SDKs collect. When you submit Apple's App Privacy label or Google Play's Data Safety section, you unknowingly declare inaccurate information, which can trigger App Store removal and count as a GDPR transparency violation during an audit.
 
 <script type="application/ld+json">
 {
@@ -158,14 +154,6 @@ Most mobile app creator platforms bundle their own analytics, crash-reporting, a
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our Dutch Architects design custom applications that deploy directly into your private AWS/Azure cloud. We implement deep SIEM logging and enforce EU data locality, giving your CISO total transparency and guaranteed GDPR/SOC2 compliance."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why did our app get flagged when we didn't add any tracking SDKs ourselves?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Mobile app creator platforms typically bundle their own analytics, crash-reporting, and push-notification SDKs into every app they build, often without disclosing exactly what those SDKs collect. This causes inaccurate App Store privacy labels, which can trigger app removal and count as a GDPR transparency violation during a compliance audit."
       }
     }
   ]

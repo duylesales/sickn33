@@ -46,7 +46,7 @@ The Product Engineer would immediately reply, *"Then we shouldn't build an expor
 The Product Engineer just saved the company three weeks of salary and delivered a vastly superior user experience. They did this because they possess *Business Context*. 
 
 ### 2. Metric-Driven Architecture
-A standard developer cares about technical metrics (e.g., *"Is the API response time under 50ms?"*). A Product Engineer cares about technical metrics *and* business metrics (e.g., *"Did the new checkout flow increase conversion rates by 5%?"*). 
+A standard developer cares about technical metrics [e.g., *"Is the API response time under 50ms?"*]. A Product Engineer cares about technical metrics *and* business metrics [e.g., *"Did the new checkout flow increase conversion rates by 5%?"*]. 
 
 Because a Product Engineer cares about business metrics, they architect systems differently. They build A/B testing infrastructure on Day 1. They instrument feature-flagging so they can safely roll out a new feature to only 10% of users to measure its financial impact before exposing it to the entire database. 
 
@@ -95,28 +95,21 @@ We do not just give you hands to type code. We give you a team of engineers deep
 
 ---
 
-## Frequently Asked Questions
-
-### (Scenario: VP Engineering auditing team culture) What is the fundamental difference between a 'Software Developer' and a 'Product Engineer'?
+## FAQs
+### [Scenario: VP Engineering auditing team culture] What is the fundamental difference between a 'Software Developer' and a 'Product Engineer'?
 A Software Developer views their job as translating written requirements into code; they optimize for technical correctness. A Product Engineer views their job as solving user problems; they optimize for business metrics. A developer asks 'How do I build this?' A Product Engineer asks 'Why are we building this?'
 
-### (Scenario: Product Manager frustrated by useless features) Why do developers build features perfectly even when the feature is a bad idea?
-Because companies treat developers like assembly-line workers. If you lock developers out of business strategy meetings and only communicate with them via Jira tickets, they lose all 'Business Context.' They will blindly execute the ticket to the letter, assuming the Product Manager has already validated the idea. 
+### [Scenario: Product Manager frustrated by useless features] Why do developers build features perfectly even when the feature is a bad idea?
+Because companies treat developers like assembly-line workers. If you lock developers out of business strategy meetings and only communicate with them via Jira tickets, they lose all 'Business Context.' They will blindly execute the ticket to the letter, assuming the Product Manager has already validated the idea.
 
-### (Scenario: Founder trying to speed up development) How does a Product Engineer actually save the company time and money?
+### [Scenario: Founder trying to speed up development] How does a Product Engineer actually save the company time and money?
 By pushing back. A Product Engineer understands the underlying user pain point. If a PM asks for a complex 3-week feature, the Product Engineer might realize they can solve the exact same pain point using an open-source library in 2 days. They save massive amounts of capital through pragmatic pushback.
 
-### (Scenario: CTO planning system architecture) What architectural tools do Product Engineers insist on having?
+### [Scenario: CTO planning system architecture] What architectural tools do Product Engineers insist on having?
 Product Engineers demand architecture that allows them to measure business impact. They will insist on building Feature Flags (to turn features on/off instantly without deploying), A/B testing frameworks (to measure which UI converts better), and deep telemetry (to track exactly where users drop off).
 
-### (Scenario: Procurement evaluating Manifera) How does Manifera ensure their offshore team operates like Product Engineers rather than blind order-takers?
+### [Scenario: Procurement evaluating Manifera] How does Manifera ensure their offshore team operates like Product Engineers rather than blind order-takers?
 It starts with our European governance. Our Dutch Tech Leads deeply integrate with your business goals. They ensure the Vietnamese pods understand the *'Why'* behind every feature. We train our offshore developers to challenge requirements and propose pragmatic technical alternatives, ensuring you get high-ROI engineering, not just blind typing.
-
-### (Scenario: VP Engineering redesigning the hiring process) How do I interview for a Product Engineer instead of just a coder?
-Standard algorithm puzzles only test syntax under pressure, not judgment. Instead, give the candidate a deliberately underspecified feature ticket and score the first five minutes: does the candidate immediately sketch a database schema, or do they ask what problem the user is actually trying to solve? Then introduce a fake tight deadline and see if they negotiate scope, and ask them to name the metric that would prove the feature worked. Candidates who default to technical completion instead of business outcomes are mercenaries, not Product Engineers.
-
-### (Scenario: CFO quantifying the waste) How much does hiring mercenary developers instead of Product Engineers actually cost?
-It shows up directly on the P&L. A feature built to the letter of a ticket without challenging the underlying assumption can easily cost 6-8x more than a simpler alternative that solves the same user problem, because the wrong solution takes weeks while the right one often takes days. Research presented by the Standish Group's Jim Johnson found roughly 64% of shipped enterprise features are 'rarely' or 'never' used by customers, a figure that should be read directionally rather than precisely, but the pattern matches what most engineering leaders see when developers are never asked to challenge a bad requirement.
 
 <script type="application/ld+json">
 {
@@ -161,22 +154,6 @@ It shows up directly on the P&L. A feature built to the letter of a ticket witho
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our Dutch Architects bridge the business context gap. We train our Vietnamese pods to understand your product metrics, not just your code. We encourage our offshore teams to push back on bad requirements and propose high-ROI technical alternatives."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I interview for a Product Engineer instead of just a coder?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Give the candidate a deliberately underspecified feature ticket and watch the first five minutes: a mercenary sketches a database schema immediately, while a Product Engineer asks what problem the user is actually trying to solve. Then introduce a fake tight deadline and ask them to name the success metric. Candidates who describe only technical completion instead of a measurable business outcome are mercenaries, not Product Engineers."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How much does hiring mercenary developers instead of Product Engineers actually cost?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It shows up directly on the P&L. A feature built to the letter of a ticket without challenging the assumption behind it can cost 6-8x more than a simpler alternative solving the same user problem. Standish Group research presented by Jim Johnson found roughly 64% of shipped enterprise features are 'rarely' or 'never' used, a figure worth reading directionally, but it matches what most engineering leaders see when developers are never asked to challenge a bad requirement."
       }
     }
   ]

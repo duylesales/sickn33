@@ -63,7 +63,7 @@ If they do not spot the architectural flaw, do not hire them.
 
 It's worth putting a number on the difference between the two agencies from the opening scenario, because "it takes two days longer to build" sounds like a cost, when in most cases it is actually the discount.
 
-**Agency A's synchronous PDF export**, priced at face value, looks cheaper: say 6 developer-hours at a blended offshore rate, delivered in a day. But once it ships and a handful of enterprise customers with large transaction histories click "Export," the real invoice starts arriving. A full production outage on a B2B SaaS platform commonly costs the business in three ways at once: the direct incident-response hours (an on-call engineer paged at 2 a.m., a war room, a postmortem - typically 8-20 engineering hours fully loaded), the customer-facing damage (support tickets, at least one uncomfortable call with an enterprise account, and in a worst case a contractual SLA credit), and the opportunity cost of the fix itself, because the async queue Agency B would have built from the start now has to be built anyway, under pressure, after the trust has already been dented.
+**Agency A's synchronous PDF export**, priced at face value, looks cheaper: say 6 developer-hours at a blended offshore rate, delivered in a day. But once it ships and a handful of enterprise customers with large transaction histories click "Export," the real invoice starts arriving. A full production outage on a B2B SaaS platform commonly costs the business in three ways at once: the direct incident-response hours [an on-call engineer paged at 2 a.m., a war room, a postmortem - typically 8-20 engineering hours fully loaded], the customer-facing damage [support tickets, at least one uncomfortable call with an enterprise account, and in a worst case a contractual SLA credit], and the opportunity cost of the fix itself, because the async queue Agency B would have built from the start now has to be built anyway, under pressure, after the trust has already been dented.
 
 **Agency B's asynchronous PDF export** costs roughly 2 extra developer-days upfront - call it 16 additional hours at the same blended rate. That is the entire premium. There is no outage to firefight, no SLA credit to negotiate, and no rebuild six weeks later. On a straight hourly comparison, Agency B looks like the more expensive option by a small margin on day one. Measured over the following quarter, once you include the realistic probability of an outage under real transaction volumes, Agency B is very often the cheaper vendor, not the pricier one - the "two days longer" was never overhead, it was insurance priced into the estimate instead of paid for later at a markup.
 
@@ -103,25 +103,21 @@ Stop hiring order-takers. Contact our Amsterdam team to partner with true Produc
 
 ---
 
-## Frequently Asked Questions
-
-### (Scenario: Founder frustrated with offshore quality) Why do cheap offshore agencies always deliver exactly what I ask for, even when it breaks the system?
+## FAQs
+### [Scenario: Founder frustrated with offshore quality] Why do cheap offshore agencies always deliver exactly what I ask for, even when it breaks the system?
 Standard offshore agencies operate on a strict 'Order-Taker' culture. They believe the client is always right, even regarding deeply technical architectural decisions. They lack the Domain Knowledge and the technical courage to warn you that your requested feature will crash the database. They optimize for closing tickets, not for protecting your architecture.
 
-### (Scenario: CTO defining team roles) What is the difference between a Developer and a Product Engineer?
+### [Scenario: CTO defining team roles] What is the difference between a Developer and a Product Engineer?
 A Developer views their job as translating a Jira ticket into syntax (code). A Product Engineer views their job as solving a business problem securely and scalably. A Product Engineer will interrogate the requirement, identify edge cases, and often propose a simpler, safer technical alternative to the original request.
 
-### (Scenario: IT Procurement evaluating proposals) How can I test an agency during procurement to see if they are Order-Takers?
+### [Scenario: IT Procurement evaluating proposals] How can I test an agency during procurement to see if they are Order-Takers?
 Give them a deliberately flawed architectural requirement (e.g., 'We want to process massive images synchronously on the main web server'). If they just quote you a price and a timeline, they are order-takers. If they immediately push back and explain why that will crash the server and propose an asynchronous background queue instead, they are true architects.
 
-### (Scenario: VP Engineering auditing offshore communication) Why is the 'Yes' culture so dangerous in software development?
+### [Scenario: VP Engineering auditing offshore communication] Why is the 'Yes' culture so dangerous in software development?
 Because software architecture is incredibly complex. If a Product Manager asks for a feature that inadvertently requires an un-indexed database scan of 10 million rows, a 'Yes' culture will blindly execute it, bringing the entire production system down. You need engineers who have the mandate to say 'No' and propose a safer technical path.
 
-### (Scenario: CEO evaluating Manifera) How does Manifera's Hybrid Model solve the 'Order-Taker' problem?
+### [Scenario: CEO evaluating Manifera] How does Manifera's Hybrid Model solve the 'Order-Taker' problem?
 Our Dutch Architects act as your proxy and your shield. Because they sit in Europe and understand enterprise architecture, they possess the technical authority to push back on risky requirements. They refine the 'What' into a safe 'How', and then govern our Vietnamese pods to execute it flawlessly, ensuring you get proactive engineering, not blind obedience.
-
-### (Scenario: Founder negotiating a Statement of Work) What contract red flags reveal that an agency is an Order-Taker before you even see their code?
-Three things to check before signing. First, an aggressive Change Request fee schedule attached to a cheap fixed-price quote, which financially rewards the agency for interpreting your tickets narrowly. Second, a Statement of Work that prescribes exact technical implementation instead of business outcomes, which signals the agency never had the mandate to push back on your architecture. Third, vague or absent source code escrow language, which can mean parts of your 'custom' build are actually shared boilerplate the agency reuses across clients.
 
 <script type="application/ld+json">
 {
@@ -166,14 +162,6 @@ Three things to check before signing. First, an aggressive Change Request fee sc
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our Dutch Architects intercept your requirements before they reach the offshore pod. They possess the enterprise experience to push back on risky ideas, translating your business goals into strictly governed, scalable technical blueprints."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What contract red flags reveal that an agency is an Order-Taker before you even see their code?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Watch for a punitive Change Request fee schedule attached to a cheap fixed quote, a Statement of Work that dictates exact technology instead of business outcomes, and vague source code escrow terms that could mean your 'custom' build reuses shared boilerplate across other clients."
       }
     }
   ]

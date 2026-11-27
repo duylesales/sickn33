@@ -50,7 +50,7 @@ An Architect knows that a transactional database (PostgreSQL) should not be used
 An Architect knows that a user cannot wait 60 seconds for a report to generate over a live HTTP connection (it will timeout). They will design an asynchronous architecture using a message queue (like RabbitMQ or Kafka). When the user clicks the button, the Architect's system puts a "Report Job" in a queue, immediately returns a message saying "We will email you when it is ready," and a separate background worker crunches the data without affecting the main server.
 
 ### 3. The CAP Theorem
-An Architect understands the fundamental laws of distributed systems, such as the CAP Theorem (Consistency, Availability, Partition tolerance). They know that in the event of a network failure, they must choose between showing the user slightly outdated data (Availability) or throwing an error screen (Consistency), and they will design the fallback mechanisms accordingly. 
+An Architect understands the fundamental laws of distributed systems, such as the CAP Theorem [Consistency, Availability, Partition tolerance]. They know that in the event of a network failure, they must choose between showing the user slightly outdated data (Availability) or throwing an error screen (Consistency), and they will design the fallback mechanisms accordingly. 
 
 Software architect Ralph Johnson - co-author of the seminal *Design Patterns* book - put it in a way that has become the standard reference point in the industry: *"Architecture is about the important stuff. Whatever that is."* Martin Fowler later expanded on the line in his own writing on the role, noting that what counts as "important" is precisely the set of decisions that are hard to change once the system is live - the database schema, the service boundaries, the failure modes. A developer's decisions are mostly reversible with a code change. An Architect's decisions are the ones the founder in our opening story discovered *after* they were already load-bearing.
 
@@ -84,7 +84,7 @@ You get the financial leverage of an offshore developer, strictly protected by t
 
 ## What Skipping Architecture Actually Costs: A Worked Example
 
-Let's put numbers on the founder's story instead of leaving it as an anecdote. Imagine a SaaS platform with 2,000 paying users at $79/month (roughly $158,000 in monthly recurring revenue), built by three mid-level offshore developers with no architectural governance.
+Let's put numbers on the founder's story instead of leaving it as an anecdote. Imagine a SaaS platform with 2,000 paying users at $79/month [roughly $158,000 in monthly recurring revenue], built by three mid-level offshore developers with no architectural governance.
 
 **The unarchitected path.** The Reporting Dashboard ships in month five. It crashes the app for 45 minutes during business hours - call it a 3% daily-revenue-equivalent hit plus, more importantly, the erosion of trust: support tickets spike, and two enterprise prospects mid-trial see the outage and stall their decision. The founder now needs a fix. Because nobody designed for scale from the start, "fixing" the reporting feature isn't a two-day patch - it means introducing a queue system, a caching layer, and a read replica *after* the schema and application code were already built around synchronous assumptions. Retrofitting an asynchronous architecture into a codebase that wasn't designed for it typically takes 3-5x longer than building it correctly the first time, because every downstream feature that touches that data path has to be re-tested. A realistic retrofit for a team of this size runs 3-4 developer-weeks, plus the Dutch-Architect-equivalent oversight the founder should have paid for in month one, plus the reputational cost of the outage itself - which doesn't show up on an invoice but shows up in churn and stalled deals.
 
@@ -102,25 +102,21 @@ Stop buying code that crashes. Contact our Amsterdam team to deploy an architect
 
 ---
 
-## Frequently Asked Questions
-
-### (Scenario: CEO understanding team roles) What is the fundamental difference between a Software Developer and a Software Architect?
+## FAQs
+### [Scenario: CEO understanding team roles] What is the fundamental difference between a Software Developer and a Software Architect?
 A Software Developer translates specific business requirements into functional code (syntax). A Software Architect designs the overall structure of the system (System Design), dictating how the database scales, how servers communicate, and how security is enforced. A developer focuses on the 'how'; an architect focuses on the 'why' and the 'what if.'
 
-### (Scenario: VP Engineering diagnosing a server crash) Why did the server crash when the developer wrote a correct database query?
+### [Scenario: VP Engineering diagnosing a server crash] Why did the server crash when the developer wrote a correct database query?
 Because the developer lacked architectural foresight. Writing a SQL query that searches 5 million rows is 'correct' syntax, but it requires massive CPU power. If it is run synchronously on the main application server, it starves the server of resources, causing the app to crash for all other users. An Architect would have used asynchronous queues or caching to prevent this.
 
-### (Scenario: CTO planning system scale) What is an 'Asynchronous Queue' and why is it necessary for enterprise software?
+### [Scenario: CTO planning system scale] What is an 'Asynchronous Queue' and why is it necessary for enterprise software?
 An Asynchronous Queue (like RabbitMQ or AWS SQS) acts as a waiting room for heavy tasks. If an app needs to process a massive video file, an Architect routes that task to a Queue rather than processing it immediately. A separate background server pulls from the Queue at its own pace. This ensures the main web server remains instantly responsive to user clicks, preventing timeouts.
 
-### (Scenario: Lead Developer studying system design) What is the CAP Theorem and why do Architects care about it?
+### [Scenario: Lead Developer studying system design] What is the CAP Theorem and why do Architects care about it?
 The CAP Theorem is a principle of distributed systems stating that you can only guarantee two out of three properties simultaneously: Consistency (all users see the exact same data), Availability (the system always responds), and Partition Tolerance (the system survives network drops). Architects must use this theorem to design how a system behaves when a server inevitably goes offline.
 
-### (Scenario: Founder hiring Manifera) How does Manifera's Hybrid Model protect startups from architectural failure?
+### [Scenario: Founder hiring Manifera] How does Manifera's Hybrid Model protect startups from architectural failure?
 We do not sell ungoverned coders. Every Vietnamese engineering pod is led by a Dutch Architect. The Architect performs the System Design, defines the database schemas, and builds the CI/CD pipelines. The offshore developers execute this blueprint but are mathematically blocked from merging code until the Dutch Architect approves the structural integrity of the Pull Request.
-
-### (Scenario: Non-technical founder vetting an agency) How can I verify my offshore team actually has an architect, and it's not just a job title?
-Ask for three concrete artifacts. First, the Architecture Decision Record (ADR) written before a major feature was built - a one-page document showing what options were considered and why one was chosen. Second, a plain-English answer to "what breaks at 10x our current user load," which a real architect can answer instantly. Third, the Pull Request review history: substantive comments questioning data flow and scaling, not just quick "LGTM" approvals. If an agency can't produce these, no architectural thinking happened before the code was written.
 
 <script type="application/ld+json">
 {
@@ -165,14 +161,6 @@ Ask for three concrete artifacts. First, the Architecture Decision Record (ADR) 
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "We pair elite Vietnamese developers with dedicated Dutch Architects. The European Architect handles all System Design, database normalization, and PR governance. You get the speed of offshore developers strictly protected by enterprise-grade architectural physics."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How can I verify my offshore team actually has an architect, and it's not just a job title?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Ask for three artifacts: the Architecture Decision Record written before a major feature, a plain-English answer to what breaks at 10x current user load, and the Pull Request review history showing substantive comments rather than quick approvals. If an agency cannot produce these, no real architectural thinking occurred before the code was written."
       }
     }
   ]

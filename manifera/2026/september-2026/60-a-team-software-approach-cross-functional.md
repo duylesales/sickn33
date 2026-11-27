@@ -59,7 +59,7 @@ Saying "we do blameless post-mortems" is easy. Actually running one well require
 1.  **The Timeline (Facts Only).** The document opens with a minute-by-minute timeline built entirely from logs, monitoring dashboards, and Slack timestamps: "14:02 - deploy triggered. 14:04 - error rate spikes to 12%. 14:09 - on-call engineer paged." No opinions or blame, only verifiable facts with timestamps.
 2.  **The Impact Statement.** A single paragraph quantifying the damage in business terms: how many customers were affected, how many minutes of downtime, estimated revenue impact. This keeps the conversation grounded in severity rather than emotion.
 3.  **The Five Whys.** The team asks "why" five times in sequence to get past the surface-level cause. "Why did the database crash? Because a destructive query ran. Why did it run? Because a developer typo'd a WHERE clause. Why didn't the typo get caught? Because there is no staging-environment safeguard against unscoped DELETE statements. Why not? Because no one had prioritized building it." By the fifth "why," the root cause is almost always a missing system safeguard, not a human failing.
-4.  **Action Items With Named Owners and Dates.** Every post-mortem ends with a table of concrete engineering tasks (e.g., "Add a pre-commit hook blocking unscoped DELETE statements"), each assigned to a specific person with a specific deadline. A post-mortem that ends only in "we'll be more careful" has failed; the only acceptable output is a system change.
+4.  **Action Items With Named Owners and Dates.** Every post-mortem ends with a table of concrete engineering tasks [e.g., "Add a pre-commit hook blocking unscoped DELETE statements"], each assigned to a specific person with a specific deadline. A post-mortem that ends only in "we'll be more careful" has failed; the only acceptable output is a system change.
 5.  **The Follow-Up Audit.** Two weeks later, someone (often the Dutch Architect on a Manifera pod) checks whether the action items were actually shipped. Post-mortems that generate action items which never get built are worse than useless, because they create a false sense that the risk has been addressed.
 
 This structure is what separates a genuine blameless culture from a team that simply stopped firing people but never fixed the underlying system.
@@ -96,25 +96,21 @@ Stop managing developers through fear. Contact our Amsterdam team to deploy a fe
 
 ---
 
-## Frequently Asked Questions
-
-### (Scenario: CTO dealing with a server crash) What is a 'Blameless Post-Mortem'?
+## FAQs
+### [Scenario: CTO dealing with a server crash] What is a 'Blameless Post-Mortem'?
 It is an incident review meeting held after a catastrophic bug. The fundamental rule is that no human being can be blamed. The team assumes the human acted with good intent, and instead blames the 'System' - asking why the automated CI/CD pipeline failed to catch the human error before it reached production.
 
-### (Scenario: VP Engineering auditing team culture) Why does firing a developer for a mistake destroy engineering velocity?
+### [Scenario: VP Engineering auditing team culture] Why does firing a developer for a mistake destroy engineering velocity?
 Because it destroys Psychological Safety. If developers know they will be fired for a mistake, they become paralyzed by fear. They will slow down, over-analyze every line of code, and refuse to deploy updates frequently. To move fast, developers must know that the system's automated guardrails will protect them.
 
-### (Scenario: Lead Developer mentoring juniors) What is 'Collective Code Ownership'?
+### [Scenario: Lead Developer mentoring juniors] What is 'Collective Code Ownership'?
 It is the philosophy that no single developer 'owns' a specific file or feature. All code belongs to the team. Because every piece of code must be reviewed and approved by peers before deployment, any bug that makes it to production is the collective fault of the team and the testing pipeline, not the individual who typed it.
 
-### (Scenario: Founder worried about offshore quality) How do you prevent a junior offshore developer from breaking the production database?
+### [Scenario: Founder worried about offshore quality] How do you prevent a junior offshore developer from breaking the production database?
 You do not prevent it by yelling at them. You prevent it through System Design. An Architect configures the CI/CD pipeline and IAM (Identity and Access Management) roles so that it is mathematically impossible for a junior developer's credentials to execute a destructive command against the production database. You fix the system, not the human.
 
-### (Scenario: Procurement evaluating Manifera) How does Manifera's culture differ from a standard offshore agency?
+### [Scenario: Procurement evaluating Manifera] How does Manifera's culture differ from a standard offshore agency?
 Standard agencies operate in a culture of blame and liability, which makes them incredibly slow and bureaucratic. Manifera operates on European DevOps principles. Our Dutch Architects build robust CI/CD guardrails, creating a culture of Psychological Safety where our Vietnamese developers can write code at maximum velocity without fear of breaking production.
-
-### (Scenario: VP Engineering setting up incident processes) What actually needs to be in a Blameless Post-Mortem document for it to work?
-Saying 'we're blameless' isn't enough; the document itself must be structured to prevent blame from creeping back in. It needs a fact-only timeline built from logs and timestamps, a business-impact statement, a 'Five Whys' analysis that traces the incident back to a missing system safeguard rather than a human failing, and action items with named owners and deadlines. A follow-up audit two weeks later confirms the action items actually shipped, since unfixed action items are worse than useless.
 
 <script type="application/ld+json">
 {
@@ -159,14 +155,6 @@ Saying 'we're blameless' isn't enough; the document itself must be structured to
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "We operate on Psychological Safety and Collective Ownership. Our Dutch Architects build the CI/CD guardrails so our Vietnamese developers can code with absolute velocity, knowing the system will safely catch any errors before deployment."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What actually needs to be in a Blameless Post-Mortem document for it to work?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It needs a fact-only timeline built from logs and timestamps, a business-impact statement, a 'Five Whys' analysis tracing the incident to a missing system safeguard rather than a human failing, and action items with named owners and deadlines, followed by a two-week audit confirming the action items actually shipped."
       }
     }
   ]

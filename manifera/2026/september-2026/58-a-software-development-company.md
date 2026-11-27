@@ -32,7 +32,7 @@ Three months into the project, the startup's CEO realizes they need to change th
 Agency B replies, *"That is a Change Request. It is not in the original 50-page specification document. We will charge you an extra €20,000 to make that change, and it will delay the project by a month."*
 
 The startup refuses to pay. The agency continues building the outdated, useless checkout flow. 
-By month four, the agency is losing money on the project. To protect their profit margin, the agency secretly cuts corners. They stop writing automated tests. They copy-paste spaghetti code. They deliver the project on time and exactly on budget (€100,000). 
+By month four, the agency is losing money on the project. To protect their profit margin, the agency secretly cuts corners. They stop writing automated tests. They copy-paste spaghetti code. They deliver the project on time and exactly on budget [€100,000]. 
 
 The application goes live, and it immediately crashes. The startup has to spend €150,000 hiring a new team just to fix the broken code. 
 
@@ -72,7 +72,7 @@ The answer is that reputable T&M engagements are never "trust us, we're working.
 
 *   **Velocity tracking across Sprints.** Every pod estimates its work in story points before a Sprint begins. If the team consistently claims 40 points of "effort" but only ships 15 points of working, demoed software, the mismatch is visible within two weeks, not two quarters.
 *   **The Demo-or-it-Didn't-Happen rule.** At the end of every Sprint, the team must demonstrate functioning software to the client, live. Code that "is basically done" but cannot be demoed does not count as delivered. This single rule eliminates the most common form of T&M padding: claiming partial credit for unfinished work.
-*   **A capped "Definition of Ready."** Before a Sprint starts, every ticket is reviewed against a checklist (clear acceptance criteria, no unresolved dependencies, a named owner). This prevents an agency from billing hours for a team that is "working" while actually blocked or confused about scope.
+*   **A capped "Definition of Ready."** Before a Sprint starts, every ticket is reviewed against a checklist [clear acceptance criteria, no unresolved dependencies, a named owner]. This prevents an agency from billing hours for a team that is "working" while actually blocked or confused about scope.
 *   **Independent seniority audits.** A T&M rate should be tied to a named, vetted engineer at a specific seniority level, not an anonymous pool. If a client is billed for a "Senior Backend Engineer" rate, they should be able to verify that person's track record, not just receive an invoice with a generic job title.
 
 These four mechanisms turn Time & Materials from a leap of faith into a governed, transparent system where a CFO can see exactly what €1 of engineering spend produced, every two weeks, without ever needing to trust anyone's word for it.
@@ -103,28 +103,21 @@ We align our financial incentives perfectly with the long-term architectural qua
 
 ---
 
-## Frequently Asked Questions
-
-### (Scenario: CFO evaluating vendor contracts) Why do Fixed-Price software contracts often result in poor-quality code (Technical Debt)?
+## FAQs
+### [Scenario: CFO evaluating vendor contracts] Why do Fixed-Price software contracts often result in poor-quality code (Technical Debt)?
 Because software development is highly unpredictable. If an agency underestimates a Fixed-Price project, they start losing money. To protect their profit margin, they secretly cut corners - they stop writing automated tests, they ignore database normalization, and they write messy 'spaghetti' code just to finish the project and get paid.
 
-### (Scenario: CEO frustrated by agency fees) What is a 'Change Request' and how is it used in Fixed-Price contracts?
+### [Scenario: CEO frustrated by agency fees] What is a 'Change Request' and how is it used in Fixed-Price contracts?
 In a Fixed-Price contract, the agency agrees to build *only* what is in the initial specification document. If you realize halfway through the project that users need a slightly different feature, the agency will weaponize the contract and charge you an exorbitant 'Change Request' fee to make the alteration, holding your product hostage.
 
-### (Scenario: VP Engineering planning an Agile build) How does a Time & Materials (T&M) contract actually work?
+### [Scenario: VP Engineering planning an Agile build] How does a Time & Materials (T&M) contract actually work?
 In T&M, you pay for the dedicated time of the engineering team (e.g., a monthly rate for a pod of 4 developers). You own their capacity. Because they are not bound by a fixed scope, you can change your mind every single day about what features they should build, allowing for true Agile product evolution.
 
-### (Scenario: Founder worried about blank-check budgets) If I use Time & Materials, how do I prevent the budget from spiraling out of control?
+### [Scenario: Founder worried about blank-check budgets] If I use Time & Materials, how do I prevent the budget from spiraling out of control?
 T&M is governed by Agile 'Sprints' (usually 2 weeks long). At the end of every 2 weeks, the team must deliver working, demonstrable software. You see exactly what you paid for. If the software is 'good enough' for market, or if you want to pause, you simply stop funding future Sprints. You retain total financial control.
 
-### (Scenario: Procurement evaluating Manifera) Why does Manifera refuse to sign Fixed-Price contracts for complex software projects?
+### [Scenario: Procurement evaluating Manifera] Why does Manifera refuse to sign Fixed-Price contracts for complex software projects?
 Because we refuse to compromise on European enterprise architecture. A Fixed-Price contract eventually forces an agency to choose between losing money or delivering bad code. By operating on T&M, our Dutch Architects and Vietnamese pods have the financial alignment to prioritize perfect System Design, automated testing, and true product agility.
-
-### (Scenario: CFO worried about being overbilled) What stops a Time & Materials agency from padding hours or working slowly?
-Reputable T&M engagements are governed by specific, measurable mechanisms, not trust alone. These include Sprint-level velocity tracking (so claimed effort can be compared to shipped, demoed software), a strict 'Demo-or-it-Didn't-Happen' rule that blocks partial credit for unfinished work, a 'Definition of Ready' checklist before any Sprint starts, and independent seniority audits tying each billed rate to a named, verifiable engineer. Together these make padded or slow work visible within two weeks, not two quarters.
-
-### (Scenario: CFO comparing real-world data) Is the 'Fixed-Price is safer' assumption actually supported by data on IT project outcomes?
-No. McKinsey and the University of Oxford's BT Centre for Major Programme Management studied more than 5,400 large IT projects and found that, on average, they ran 45% over budget, 7% over schedule, and delivered 56% less value than originally promised. Those figures describe large enterprise programs, not small agency contracts, but they reflect the same underlying mechanism: a plan frozen before the work starts collides with reality discovered during the work, and Fixed-Price contracts hide that collision until delivery rather than absorbing it as the project goes.
 
 <script type="application/ld+json">
 {
@@ -169,22 +162,6 @@ No. McKinsey and the University of Oxford's BT Centre for Major Programme Manage
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "We operate with European integrity. We will not put ourselves in a contractual position where we are financially incentivized to cut corners. T&M aligns our incentives with yours: delivering flawless, highly adaptable enterprise architecture."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What stops a Time & Materials agency from padding hours or working slowly?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Reputable T&M engagements rely on measurable governance, not trust: Sprint-level velocity tracking comparing claimed effort to shipped software, a 'Demo-or-it-Didn't-Happen' rule that blocks partial credit for unfinished work, a 'Definition of Ready' checklist before each Sprint, and independent seniority audits tying billed rates to a named, verifiable engineer."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is the 'Fixed-Price is safer' assumption actually supported by data on IT project outcomes?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. McKinsey and the University of Oxford's BT Centre for Major Programme Management studied more than 5,400 large IT projects and found they ran 45% over budget, 7% over schedule, and delivered 56% less value than promised, on average. These figures cover large enterprise programs rather than small agency contracts, but they reflect the same mechanism: a frozen upfront plan colliding with reality discovered mid-project."
       }
     }
   ]

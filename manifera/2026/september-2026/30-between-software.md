@@ -61,7 +61,7 @@ You cannot trust humans to remember the contract. You must enforce it mathematic
 In the CI/CD pipeline, you implement Contract Testing (using tools like Pact). If the junior developer tries to change `user_id` to a string, the CI/CD pipeline tests their new code against the agreed API Contract. The test fails instantly, mathematically blocking the developer from deploying the code and preventing the production crash.
 
 ### 3. Strict API Versioning (v1 vs v2)
-If a team *must* change the contract (e.g., they really need to switch to UUIDs), they are not allowed to overwrite the existing API. They must create `/api/v2/user`. The Billing team continues to safely consume `/api/v1/user` until they have the budget and time to upgrade their system to V2.
+If a team *must* change the contract [e.g., they really need to switch to UUIDs], they are not allowed to overwrite the existing API. They must create `/api/v2/user`. The Billing team continues to safely consume `/api/v1/user` until they have the budget and time to upgrade their system to V2.
 
 ## The Retry Storm: When the Network Between Software Lies
 
@@ -77,13 +77,13 @@ This is not a bug in either service. Both services behaved exactly as written. T
 
 Elite engineering teams solve this with **idempotency keys**. Before the Billing Service calls the Payment Gateway, it generates a unique identifier for that specific transaction attempt (a UUID) and attaches it as a header on the request. The Payment Gateway keeps a short-lived deduplication table of every idempotency key it has already processed. 
 
-If the Billing Service's retry logic fires the same request again - because it genuinely believes the first attempt failed - the Payment Gateway recognizes the idempotency key, sees it already charged that card for that transaction, and simply returns the original success response without charging the card a second time. The retry becomes mathematically safe. This is the same mechanism Stripe and most modern payment APIs expose publicly, and it is a pattern every internal microservice that mutates state (charges, emails, inventory, shipping labels) needs to implement, not just external payment providers.
+If the Billing Service's retry logic fires the same request again - because it genuinely believes the first attempt failed - the Payment Gateway recognizes the idempotency key, sees it already charged that card for that transaction, and simply returns the original success response without charging the card a second time. The retry becomes mathematically safe. This is the same mechanism Stripe and most modern payment APIs expose publicly, and it is a pattern every internal microservice that mutates state [charges, emails, inventory, shipping labels] needs to implement, not just external payment providers.
 
 ### Circuit Breakers: Stopping the Bleeding
 
 Idempotency keys make individual retries safe. They do not stop a struggling downstream service from being hammered by thousands of retries at once, which is exactly how a slow service becomes a dead service. For that, architects add a **Circuit Breaker** in front of the call between services. 
 
-The Circuit Breaker watches the failure rate of calls to, say, the Payment Gateway. If failures spike past a threshold (e.g., 50% of calls failing in a 10-second window), the circuit "trips" to open: for the next cooldown period, the Billing Service stops calling the Payment Gateway entirely and immediately returns a controlled fallback response instead. This gives the struggling service room to recover instead of being buried under an avalanche of retries, and it turns a cascading, company-wide outage into a contained, single-service degradation.
+The Circuit Breaker watches the failure rate of calls to, say, the Payment Gateway. If failures spike past a threshold [e.g., 50% of calls failing in a 10-second window], the circuit "trips" to open: for the next cooldown period, the Billing Service stops calling the Payment Gateway entirely and immediately returns a controlled fallback response instead. This gives the struggling service room to recover instead of being buried under an avalanche of retries, and it turns a cascading, company-wide outage into a contained, single-service degradation.
 
 Contract Testing, idempotency keys, and circuit breakers are three different answers to the same underlying question: what happens in the space between software systems when either the *data* or the *network* cannot be trusted. An enterprise architecture that only solves one of these problems still has a live landmine waiting in the other.
 
@@ -99,12 +99,12 @@ The accepted architectural answer is the **Saga pattern**: instead of one atomic
 1. Order Service reserves inventory → defines "release inventory reservation" as its compensation.
 2. Payment Service charges the card → defines "issue refund" as its compensation.
 3. Shipping Service tries to schedule a courier and fails (no couriers available in the delivery window).
-4. A Saga orchestrator (or, in a choreography-based design, an event listener in each service) detects the failure and fires the compensating transactions in reverse order: refund the card, then release the inventory reservation.
+4. A Saga orchestrator [or, in a choreography-based design, an event listener in each service] detects the failure and fires the compensating transactions in reverse order: refund the card, then release the inventory reservation.
 
 The customer sees a clean "we couldn't complete your order, and you have not been charged" message, instead of a silently charged card and an order that never ships. Nothing was ever atomic across all four services - but the system was designed from the start to expect partial failure and unwind cleanly from it, which is the same design philosophy behind idempotency keys and circuit breakers, applied one level up at the business-workflow layer instead of the single-request layer.
 
 ### Choreography vs. Orchestration
-Architects implement Sagas one of two ways. **Orchestration** uses a central coordinator service that explicitly calls each step and triggers compensations on failure - easier to reason about and debug, but it creates a new central component that must itself be highly available. **Choreography** has each service listen for events and react independently (Payment Service listens for "InventoryReserved," Shipping Service listens for "PaymentCharged," and so on) - more resilient to any single component failing, but significantly harder to trace when something goes wrong, because the workflow logic is scattered across every service instead of living in one place. Most elite architecture teams default to orchestration for any workflow with financial or compliance consequences, specifically because auditability matters more than the marginal resilience gain of choreography.
+Architects implement Sagas one of two ways. **Orchestration** uses a central coordinator service that explicitly calls each step and triggers compensations on failure - easier to reason about and debug, but it creates a new central component that must itself be highly available. **Choreography** has each service listen for events and react independently [Payment Service listens for "InventoryReserved," Shipping Service listens for "PaymentCharged," and so on] - more resilient to any single component failing, but significantly harder to trace when something goes wrong, because the workflow logic is scattered across every service instead of living in one place. Most elite architecture teams default to orchestration for any workflow with financial or compliance consequences, specifically because auditability matters more than the marginal resilience gain of choreography.
 
 ## The Manifera Governance Model
 
@@ -120,28 +120,21 @@ We deliver the speed of microservices with the stability of a monolith. Contact 
 
 ---
 
-## Frequently Asked Questions
-
-### (Scenario: CTO diagnosing microservice failures) Why do microservice architectures crash so frequently when individual services seem fine?
+## FAQs
+### [Scenario: CTO diagnosing microservice failures] Why do microservice architectures crash so frequently when individual services seem fine?
 In a microservice architecture, the highest risk is not inside the code, but in the space 'between software' systems. If Service A changes the format of the data it sends (e.g., changing a date format from US to EU), and Service B isn't expecting the change, Service B will crash. The failure is an integration failure, not an internal code failure.
 
-### (Scenario: VP Engineering planning team structure) What is an 'API Contract' and why is it necessary?
+### [Scenario: VP Engineering planning team structure] What is an 'API Contract' and why is it necessary?
 An API Contract is a strictly defined, machine-readable document (like an OpenAPI schema) that states exactly what data format one microservice promises to send to another. It acts as a binding mathematical agreement between two development teams, ensuring neither team can unexpectedly change the data format and crash the other's system.
 
-### (Scenario: Lead Developer designing CI/CD) How does Contract Testing (like Pact) prevent production outages?
+### [Scenario: Lead Developer designing CI/CD] How does Contract Testing (like Pact) prevent production outages?
 Contract Testing is an automated check in your CI/CD pipeline. Before a developer's code is deployed to production, the pipeline verifies if their new code violates the established API Contract. If they accidentally changed an Integer to a String in the API output, the CI/CD pipeline instantly blocks the deployment, preventing the crash.
 
-### (Scenario: Architect migrating a database) If we MUST change the API data structure, how do we do it safely without breaking other teams' code?
+### [Scenario: Architect migrating a database] If we MUST change the API data structure, how do we do it safely without breaking other teams' code?
 You must use API Versioning. You never overwrite the existing endpoint (e.g., `/api/v1/user`). Instead, you build a brand new endpoint (e.g., `/api/v2/user`) with the new data structure. Other teams continue to safely use V1 until they are ready to upgrade to V2. This is the only way to safely evolve a distributed system.
 
-### (Scenario: Procurement Officer managing multiple vendors) How does Manifera prevent integration chaos when building distributed systems?
+### [Scenario: Procurement Officer managing multiple vendors] How does Manifera prevent integration chaos when building distributed systems?
 Our Dutch Architects act as the centralized authority. Before our Vietnamese pods write any code, the Dutch Architect defines the strict API Contracts and embeds Contract Testing into the automated CI/CD pipeline. Our offshore teams can move incredibly fast, but they are mathematically blocked from deploying any code that breaks the integration layer.
-
-### (Scenario: Engineering Lead debugging a double-charge incident) A customer was billed twice even though our API contract was never broken. What happened?
-This is a network reliability failure, not a data contract failure. When a call between two services times out, the calling service cannot tell if the request failed or simply lost its response on the way back. Naive retry logic assumes failure and tries again, causing a duplicate charge. The fix is an Idempotency Key: a unique ID attached to each transaction attempt that lets the receiving service recognize and safely ignore duplicate retries.
-
-### (Scenario: Architect designing a multi-step checkout flow) How do we handle a transaction that spans multiple microservices, like an order that involves inventory, payment, and shipping?
-You cannot wrap multiple microservices in a single database transaction, because each service owns its own database. The standard pattern is a Saga: a sequence of local transactions where every step that changes state also defines a compensating transaction to undo it if a later step fails. If the shipping step fails after payment already succeeded, the Saga fires compensations in reverse order - refund the card, release the inventory reservation - so the customer ends up in a clean, consistent state instead of a charged card with no order.
 
 <script type="application/ld+json">
 {
@@ -186,22 +179,6 @@ You cannot wrap multiple microservices in a single database transaction, because
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our Dutch Architects define the API Contracts and build automated Contract Testing into the CI/CD pipelines. This ensures our offshore Vietnamese pods can develop rapidly while being mathematically prevented from breaking the integration layer."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "A customer was billed twice even though our API contract was never broken. What happened?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "This is a network reliability failure, not a data contract failure. When a call between services times out, the caller cannot tell if the request failed or the response was simply lost. Naive retry logic assumes failure and retries, causing duplicate charges. The fix is an Idempotency Key attached to each transaction attempt, letting the receiving service safely ignore duplicate retries."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do we handle a transaction that spans multiple microservices, like an order that involves inventory, payment, and shipping?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Use the Saga pattern: a sequence of local transactions where every state-changing step defines a compensating transaction to undo it if a later step fails. If shipping fails after payment succeeded, the Saga fires compensations in reverse order (refund the card, release the inventory) so the customer ends up consistent instead of charged with no order fulfilled."
       }
     }
   ]

@@ -60,7 +60,7 @@ While Unit Tests are necessary for isolated logic, elite teams heavily prioritiz
 
 ### 2. Mutation Testing (Testing the Tests)
 If a developer writes a terrible Unit Test that always passes regardless of whether the code is broken, Code Coverage tools will still count it as a "success." 
-To combat this, Architects use **Mutation Testing**. A Mutation Testing tool intentionally injects malicious bugs into the application code (e.g., changing a `+` to a `-`) and then runs the developer's Unit Tests. If the developer's tests *still pass* despite the injected bug, the Mutation tool flags the test as useless. It mathematically proves the quality of the tests themselves. 
+To combat this, Architects use **Mutation Testing**. A Mutation Testing tool intentionally injects malicious bugs into the application code [e.g., changing a `+` to a `-`] and then runs the developer's Unit Tests. If the developer's tests *still pass* despite the injected bug, the Mutation tool flags the test as useless. It mathematically proves the quality of the tests themselves. 
 
 ## This Is Not Hypothetical: The Knight Capital Precedent
 
@@ -78,8 +78,8 @@ Flaky tests are more corrosive to engineering culture than missing tests, becaus
 
 ### The Three Root Causes of Flakiness
 
-1.  **Race Conditions in Async Code.** A test asserts a result immediately after triggering an asynchronous operation (an API call, a queued job) without properly waiting for it to complete. It passes on a fast CI runner and fails on a slow one.
-2.  **Shared State Between Tests.** Two tests both write to the same database row or global variable. Run in isolation, both pass. Run in parallel (as elite CI/CD pipelines do, to save time), the order of execution determines whether either passes.
+1.  **Race Conditions in Async Code.** A test asserts a result immediately after triggering an asynchronous operation [an API call, a queued job] without properly waiting for it to complete. It passes on a fast CI runner and fails on a slow one.
+2.  **Shared State Between Tests.** Two tests both write to the same database row or global variable. Run in isolation, both pass. Run in parallel [as elite CI/CD pipelines do, to save time], the order of execution determines whether either passes.
 3.  **Time and Environment Dependencies.** A test hard-codes an assumption like "this always runs before midnight UTC" or depends on network latency to a real external sandbox. It passes for months, then fails the one week the calendar or the network disagrees.
 
 ### The Governance Fix: Quarantine, Don't Ignore
@@ -90,7 +90,7 @@ Elite teams never let engineers "just re-run" a failing test as standard practic
 
 Engineering leaders resist Dockerized integration testing and mutation testing for a predictable reason: they are slower to build and slower to run than a wall of mocked unit tests, and slower feels expensive. Running the numbers on a representative mid-sized SaaS team makes the actual trade-off explicit.
 
-**Building the integration testing infrastructure.** For a team with a moderately complex backend (a handful of services, one primary relational database, one message queue), standing up a proper Dockerized integration test suite - test containers, seed data management, a CI pipeline stage that runs it on every Pull Request - typically takes one senior engineer 3-4 weeks of focused work, plus ongoing maintenance of roughly 5-10% of one engineer's time thereafter. At a fully loaded cost of €8,000-9,000 per engineer per month, that is a one-time investment in the range of €6,000-9,000, plus perhaps €800-900 per month in upkeep.
+**Building the integration testing infrastructure.** For a team with a moderately complex backend [a handful of services, one primary relational database, one message queue], standing up a proper Dockerized integration test suite - test containers, seed data management, a CI pipeline stage that runs it on every Pull Request - typically takes one senior engineer 3-4 weeks of focused work, plus ongoing maintenance of roughly 5-10% of one engineer's time thereafter. At a fully loaded cost of €8,000-9,000 per engineer per month, that is a one-time investment in the range of €6,000-9,000, plus perhaps €800-900 per month in upkeep.
 
 **Running it.** Integration tests are slower than unit tests - a suite that might run in 90 seconds as pure mocked unit tests can take 6-10 minutes against real Dockerized infrastructure. Spread across a team shipping 20-30 Pull Requests a week, that is a real but modest tax on CI compute and developer wait time, usually well under €500 a month in additional CI runner costs.
 
@@ -108,25 +108,21 @@ We deliver software that doesn't just pass tests in a fake, mocked environment; 
 
 ---
 
-## Frequently Asked Questions
-
-### (Scenario: VP Engineering auditing QA processes) What is the 'Code Coverage Fallacy'?
+## FAQs
+### [Scenario: VP Engineering auditing QA processes] What is the 'Code Coverage Fallacy'?
 It is the false belief that having 100% of your code covered by Unit Tests guarantees high software quality. In reality, developers can write superficial, low-quality tests just to hit the metric. These tests often 'mock' (fake) complex interactions, meaning the tests pass in the lab but the code fails catastrophically in production.
 
-### (Scenario: Lead Developer mentoring juniors) Why is 'Mocking' the database dangerous when writing tests?
+### [Scenario: Lead Developer mentoring juniors] Why is 'Mocking' the database dangerous when writing tests?
 Mocking replaces a real, strict database (like PostgreSQL) with a fake, simulated response in the testing environment. If you write an invalid SQL query, a real database will throw an error. A mocked database will just blindly return 'Success.' The test passes, you deploy the code, and the real production database crashes instantly.
 
-### (Scenario: CTO planning CI/CD pipelines) What is the difference between a Unit Test and an Integration Test?
+### [Scenario: CTO planning CI/CD pipelines] What is the difference between a Unit Test and an Integration Test?
 A Unit Test isolates a single function and tests it in a vacuum (often mocking dependencies). An Integration Test actually connects multiple real systems together (e.g., spinning up a real Dockerized database and sending a real HTTP request). Integration Tests catch the most common enterprise bugs: failures in how different systems communicate.
 
-### (Scenario: Architect reviewing test quality) What is 'Mutation Testing' and how does it prove software quality?
+### [Scenario: Architect reviewing test quality] What is 'Mutation Testing' and how does it prove software quality?
 Mutation Testing is the process of 'testing the tests.' The testing framework intentionally injects bugs (mutations) into your source code. If your Unit Tests do not fail when a bug is introduced, it mathematically proves your tests are useless. It prevents developers from writing superficial tests that pass no matter what.
 
-### (Scenario: Procurement evaluating Manifera) How does Manifera prevent offshore developers from writing fake, superficial tests?
+### [Scenario: Procurement evaluating Manifera] How does Manifera prevent offshore developers from writing fake, superficial tests?
 Our Dutch Tech Leads dictate the testing architecture. We do not optimize for vanity Code Coverage percentages. We build CI/CD pipelines that mandate true Integration Testing using Dockerized databases. Our Vietnamese pods must prove their code works mathematically against real infrastructure before the Dutch Architect will approve the Pull Request.
-
-### (Scenario: Engineering Lead losing trust in CI/CD) What is a 'flaky test' and why is it dangerous?
-A flaky test passes or fails inconsistently against the exact same, unchanged code, usually due to race conditions, shared test state, or timing assumptions. It is dangerous because it trains developers to ignore red pipeline results, meaning a real, catastrophic bug can eventually hide unnoticed among a wall of tests everyone has learned to dismiss as 'probably flaky.'
 
 <script type="application/ld+json">
 {
@@ -171,14 +167,6 @@ A flaky test passes or fails inconsistently against the exact same, unchanged co
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our Dutch Architects enforce automated Integration Testing in the CI/CD pipeline. Our offshore Vietnamese developers cannot merge code unless it successfully passes tests against real, Dockerized databases, ensuring uncompromising enterprise structural integrity."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is a 'flaky test' and why is it dangerous?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A flaky test passes or fails inconsistently against identical code, typically caused by race conditions, shared state, or timing assumptions. It is dangerous because it erodes trust in the CI/CD pipeline, training developers to ignore failures and allowing real bugs to hide undetected."
       }
     }
   ]

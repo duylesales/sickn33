@@ -95,9 +95,9 @@ Project size compounds the risk sharply. The CHAOS data consistently shows small
 
 ### The Governance Cost Equation
 
-Put concrete numbers on it. A typical five-developer offshore dedicated team, at blended Southeast Asian market rates, runs roughly €12,000–€18,000 per month. Adding a part-time senior Architect or Tech Lead - someone spending 10-15 hours a week on branching strategy, schema design, and Pull Request review rather than writing code full-time - typically adds another €3,000–€4,500 per month to that bill, depending on seniority and location. That governance layer looks, on a spreadsheet, like a 20-25% cost increase with no visible feature output of its own.
+Put concrete numbers on it. A typical five-developer offshore dedicated team, at blended Southeast Asian market rates, runs roughly €12,000 - €18,000 per month. Adding a part-time senior Architect or Tech Lead - someone spending 10-15 hours a week on branching strategy, schema design, and Pull Request review rather than writing code full-time - typically adds another €3,000 - €4,500 per month to that bill, depending on seniority and location. That governance layer looks, on a spreadsheet, like a 20-25% cost increase with no visible feature output of its own.
 
-Now price the alternative. In the opening scenario, the ungoverned team's three months of work had to be substantially rewritten: a monolithic database re-architected, a missing test suite built from scratch, and a security review conducted under pressure before the next funding round's due diligence. Even conservatively, that is three months of the original team's fully-loaded cost (€36,000–€54,000) plus a comparable rewrite effort, plus the opportunity cost of a product roadmap frozen for a quarter while the fix happens. The governance layer that looked like a 20-25% tax on the monthly invoice would, in hindsight, have cost roughly a tenth of what the failure cost. Governance is not an overhead line item to be trimmed; it is the insurance premium that determines whether the other 80-90% of the budget produces a working system or a write-off.
+Now price the alternative. In the opening scenario, the ungoverned team's three months of work had to be substantially rewritten: a monolithic database re-architected, a missing test suite built from scratch, and a security review conducted under pressure before the next funding round's due diligence. Even conservatively, that is three months of the original team's fully-loaded cost [€36,000 - €54,000] plus a comparable rewrite effort, plus the opportunity cost of a product roadmap frozen for a quarter while the fix happens. The governance layer that looked like a 20-25% tax on the monthly invoice would, in hindsight, have cost roughly a tenth of what the failure cost. Governance is not an overhead line item to be trimmed; it is the insurance premium that determines whether the other 80-90% of the budget produces a working system or a write-off.
 
 ## The Manifera Hybrid Model
 
@@ -113,25 +113,21 @@ Stop buying raw capacity. Contact our Amsterdam team to deploy a highly governed
 
 ---
 
-## Frequently Asked Questions
-
-### (Scenario: CTO planning an offshore expansion) Why do dedicated development teams often fail to deliver high-quality architecture?
+## FAQs
+### [Scenario: CTO planning an offshore expansion] Why do dedicated development teams often fail to deliver high-quality architecture?
 Because standard agencies sell you 'developers', not 'architects'. Developers are trained to write code quickly to close tickets. If you do not provide a senior Tech Lead to design the database schemas and enforce strict coding standards, the offshore developers will make fundamental architectural mistakes, resulting in massive technical debt.
 
-### (Scenario: VP Engineering auditing an offshore vendor) What is the 'Governance Illusion' in software outsourcing?
+### [Scenario: VP Engineering auditing an offshore vendor] What is the 'Governance Illusion' in software outsourcing?
 It is the false belief that you can treat an offshore team of mid-level developers exactly like an internal team of senior engineers. You assume they will self-organize, self-correct, and architect the system safely. In reality, without a dedicated senior Architect governing them, they will build fragile, unscalable systems.
 
-### (Scenario: Lead Developer reviewing PRs) Why is it critical that offshore developers cannot merge their own code?
+### [Scenario: Lead Developer reviewing PRs] Why is it critical that offshore developers cannot merge their own code?
 It is the only way to enforce quality control. If offshore developers can merge their own code, they will bypass complex security checks to finish their tickets faster. A senior Tech Lead must operate a 'Pull Request Dictatorship', manually reviewing and rejecting any offshore code that violates enterprise standards before it reaches the main codebase.
 
-### (Scenario: Founder trying to save budget) Can't I just hire a dedicated team and manage them myself?
+### [Scenario: Founder trying to save budget] Can't I just hire a dedicated team and manage them myself?
 Only if you have 20 hours a week to spare for pure technical governance. If you are the CEO or CTO, your time should be spent on product strategy and business growth. If you spend your days reviewing offshore database schemas and debugging their deployment pipelines, you are wasting your most valuable asset: your time.
 
-### (Scenario: Procurement Officer evaluating Manifera) How does Manifera's Hybrid Model solve the governance problem?
+### [Scenario: Procurement Officer evaluating Manifera] How does Manifera's Hybrid Model solve the governance problem?
 We do not sell ungoverned teams. Every Vietnamese engineering pod we deploy is strictly governed by a Dutch Architect. The Dutch Architect designs the system, enforces the CI/CD security pipelines, and manually reviews the offshore code. This guarantees that you receive European-standard architecture at an offshore financial advantage.
-
-### (Scenario: CTO reviewing monthly vendor reports) What should I actually track to know if my dedicated team is performing well?
-Do not rely on Sprint Velocity; it is self-reported and easily inflated by a team estimating its own tickets generously. Instead, request Defect Escape Rate (bugs caught in production instead of QA), PR Cycle Time, Code Churn Rate, and the DORA pair of Deployment Frequency and Change Failure Rate. These are measured by your systems, not by the team, so they cannot be gamed.
 
 <script type="application/ld+json">
 {
@@ -176,14 +172,6 @@ Do not rely on Sprint Velocity; it is self-reported and easily inflated by a tea
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Every Vietnamese pod is governed by a dedicated Dutch Architect. The Architect designs the system, builds the CI/CD guardrails, and manually reviews the offshore code, guaranteeing European quality."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What should I actually track to know if my dedicated team is performing well?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Avoid Sprint Velocity, which is self-reported and easily inflated. Track Defect Escape Rate, PR Cycle Time, Code Churn Rate, and the DORA metrics of Deployment Frequency and Change Failure Rate. These are measured by your systems and tools, not self-reported by the team, so they cannot be gamed."
       }
     }
   ]

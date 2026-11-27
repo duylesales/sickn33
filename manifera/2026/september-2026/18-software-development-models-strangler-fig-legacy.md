@@ -53,14 +53,14 @@ Instead of rewriting the whole app, the Architect places an API Gateway (or a ro
 
 ### 2. Decoupling the First Microservice (The Roots)
 The engineering team identifies one specific, isolated piece of functionality - for example, the "Email Notification Service." 
-The team builds a brand-new, modern Microservice (e.g., in Node.js) that *only* handles email notifications. They rigorously test it. 
+The team builds a brand-new, modern Microservice [e.g., in Node.js] that *only* handles email notifications. They rigorously test it. 
 
 ### 3. Routing the Traffic (The Strangulation)
-The Architect updates the API Gateway. Now, when a user triggers an email, the Gateway intercepts that specific request and routes it to the *new* Node.js microservice. All other traffic (billing, logistics) still goes to the old PHP monolith. 
+The Architect updates the API Gateway. Now, when a user triggers an email, the Gateway intercepts that specific request and routes it to the *new* Node.js microservice. All other traffic [billing, logistics] still goes to the old PHP monolith. 
 
 The new microservice is now live in production. If it fails, the Architect simply updates the Gateway to route traffic back to the old PHP code in milliseconds. The risk is practically zero.
 
-Over the next 18 months, the team continues this process, slowly carving out services one by one (Billing, then User Auth, then Logistics) until the legacy monolith is completely bypassed and can be safely deleted.
+Over the next 18 months, the team continues this process, slowly carving out services one by one [Billing, then User Auth, then Logistics] until the legacy monolith is completely bypassed and can be safely deleted.
 
 ## The Database Strangulation Problem: Migrating Shared State
 
@@ -69,14 +69,14 @@ The three steps above make the Strangler Fig pattern sound clean at the applicat
 The legacy PHP monolith and the new microservices frequently need to read and write the *same* underlying data during the transition period, which can last 18 months or more. If you get this wrong, you end up with two versions of the truth: a customer's address updated in the new microservice, but the old monolith's report still shows the stale record, because the two systems don't share state.
 
 ### 1. Dual Writes Are a Trap
-The naive fix is a "dual write": the application writes to both the old monolith's database and the new microservice's database simultaneously. This is fragile. If the second write fails after the first one succeeds (a dropped network packet, a timeout), the two databases silently diverge, and nobody notices until finance flags a discrepancy during reconciliation weeks later.
+The naive fix is a "dual write": the application writes to both the old monolith's database and the new microservice's database simultaneously. This is fragile. If the second write fails after the first one succeeds [a dropped network packet, a timeout], the two databases silently diverge, and nobody notices until finance flags a discrepancy during reconciliation weeks later.
 
 ### 2. Change Data Capture (CDC) as the Real Solution
 Mature engineering teams solve this with Change Data Capture instead. A tool like Debezium reads the legacy monolith's database transaction log directly (not through application code) and streams every insert, update, and delete as an event onto a message bus like Kafka. The new microservice subscribes to that event stream and keeps its own database synchronized in near-real time, without the legacy application ever needing to know the new service exists. This decouples the migration timeline from the legacy codebase's fragility: you are reading the database's transaction log, not touching the 15-year-old PHP code at all.
 
 ### 3. The Cutover Checklist for the Database Layer
 Before an Architect redirects the API Gateway to route a domain's traffic to the new microservice, they must verify three things:
-- **Reconciliation parity:** An automated job compares row counts and checksums between the old and new database for that domain, run continuously for at least one full business cycle (for example, a full monthly billing run) with zero discrepancies.
+- **Reconciliation parity:** An automated job compares row counts and checksums between the old and new database for that domain, run continuously for at least one full business cycle [for example, a full monthly billing run] with zero discrepancies.
 - **Rollback direction is proven, not assumed:** The team has tested, not just documented, reversing the CDC pipeline, so that if the new microservice needs to be rolled back, data written to the new database during the cutover window can flow back into the legacy system without loss.
 - **A designated data owner signs off:** A single named engineer, not a committee, is accountable for confirming the domain's data is safe to cut over, removing the ambiguity that causes most legacy migrations to stall in "almost done" for months.
 
@@ -95,12 +95,12 @@ Returning to the opening scenario, here is an illustrative comparison of what th
 **Big Bang Rewrite**
 - 12-month fixed-price contract, offshore team working in isolation from the production system: initial quote roughly €800,000-1,000,000.
 - Month 12: launch date slips, as it does in the large majority of large rewrites, commonly by 6 months or more.
-- Month 18: the new system finally launches, immediately fails under real production load, and undocumented business rules buried in the old PHP code (tax exceptions, regional shipping overrides, a decade of one-off customer accommodations) are discovered missing, one angry support ticket at a time.
+- Month 18: the new system finally launches, immediately fails under real production load, and undocumented business rules buried in the old PHP code [tax exceptions, regional shipping overrides, a decade of one-off customer accommodations] are discovered missing, one angry support ticket at a time.
 - Outcome: rollback to the legacy system, the original contract value largely sunk, and the organization now more wary of modernization than before it started, often delaying the next attempt by a year or more.
 
 **Strangler Fig migration**
-- Same overall scope, decomposed into 6-10 domains (Email Notifications, Billing, User Auth, Logistics, Reporting, and so on), each migrated independently behind an API Gateway.
-- First microservice (typically the lowest-risk, highest-value domain) ships to production within 4-8 weeks, not 18 months, giving the CTO a real, working proof point early.
+- Same overall scope, decomposed into 6-10 domains [Email Notifications, Billing, User Auth, Logistics, Reporting, and so on], each migrated independently behind an API Gateway.
+- First microservice [typically the lowest-risk, highest-value domain] ships to production within 4-8 weeks, not 18 months, giving the CTO a real, working proof point early.
 - Total engineering spend over 18-24 months lands in a broadly comparable range to the Big Bang quote, but spread across working increments instead of a single bet, with a functioning legacy system as the fallback at every single stage.
 - Outcome: by month 18, most or all domains have been migrated, each one validated independently in production, and if any single domain's microservice underperforms, the API Gateway routes traffic back to the legacy code path in milliseconds instead of triggering a company-wide rollback.
 
@@ -120,25 +120,21 @@ Stop rewriting software from scratch. Contact our Amsterdam team to modernize yo
 
 ---
 
-## Frequently Asked Questions
-
-### (Scenario: CTO proposing a legacy rewrite) What is a 'Big Bang Rewrite' and why is it so dangerous?
+## FAQs
+### [Scenario: CTO proposing a legacy rewrite] What is a 'Big Bang Rewrite' and why is it so dangerous?
 A Big Bang Rewrite is an attempt to build a completely new version of a legacy application from scratch and then instantly switch all users to the new system on launch day. It is dangerous because it requires the new team to perfectly replicate years of undocumented, complex business logic. The new system almost always lacks critical edge-case features and crashes upon launch.
 
-### (Scenario: VP Engineering planning a modernization strategy) What is the 'Strangler Fig' architectural pattern?
+### [Scenario: VP Engineering planning a modernization strategy] What is the 'Strangler Fig' architectural pattern?
 Instead of replacing a legacy system all at once, the Strangler Fig pattern involves placing an API Gateway in front of the old system. You then gradually build modern microservices piece by piece (e.g., replacing just the Billing module). The Gateway routes 'Billing' traffic to the new service, while keeping the rest of the traffic on the old system. You slowly 'strangle' the old monolith until it is completely replaced.
 
-### (Scenario: Lead Developer worried about downtime risk) How does the Strangler Fig pattern reduce deployment risk?
+### [Scenario: Lead Developer worried about downtime risk] How does the Strangler Fig pattern reduce deployment risk?
 Because the migration is incremental. If you deploy a new modern 'Billing' microservice and it fails in production, you simply configure the API Gateway to instantly route traffic back to the legacy monolith's billing code. The downtime is measured in seconds, not days, making the modernization process incredibly safe.
 
-### (Scenario: IT Director managing budget constraints) Does the Strangler Fig approach cost more than a complete rewrite?
+### [Scenario: IT Director managing budget constraints] Does the Strangler Fig approach cost more than a complete rewrite?
 In theory, the initial setup of an API Gateway takes slight effort, but in reality, it is vastly cheaper. Big Bang Rewrites usually run 100% over budget because of unexpected complexities discovered at the end of the project. The Strangler Fig approach delivers modern, usable features into production within weeks, providing immediate ROI and predictable, incremental costs.
 
-### (Scenario: Procurement Officer evaluating Manifera) How does Manifera execute legacy modernization projects?
+### [Scenario: Procurement Officer evaluating Manifera] How does Manifera execute legacy modernization projects?
 Our Dutch Architects perform an initial audit of your legacy system to define the API boundaries and identify which isolated module to modernize first (the lowest risk, highest value module). Our Vietnamese engineering pods then build that specific microservice and integrate it via an API Gateway. We repeat this governed process until your entire system is modernized safely.
-
-### (Scenario: Lead Architect designing the migration) How do you handle a shared database when using the Strangler Fig pattern?
-The hardest part of a Strangler Fig migration is rarely the API layer, it's the database. Naive 'dual writes' to both the old and new database are fragile and can silently diverge. Mature teams use Change Data Capture (CDC) tools like Debezium to stream every change from the legacy database's transaction log into the new microservice's database in near-real time, keeping both systems synchronized without ever touching the legacy application code.
 
 <script type="application/ld+json">
 {
@@ -183,14 +179,6 @@ The hardest part of a Strangler Fig migration is rarely the API layer, it's the 
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our Dutch Architects audit your legacy monolith, define API boundaries, and plan a safe Strangler Fig migration. Our Vietnamese pods then rebuild the system piece-by-piece (e.g., migrating just the Billing module first) under strict architectural governance."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do you handle a shared database when using the Strangler Fig pattern?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The database, not the API layer, is the hardest part of a Strangler Fig migration. Instead of fragile 'dual writes', mature teams use Change Data Capture (CDC) tools like Debezium to stream changes from the legacy database's transaction log into the new microservice's database in near-real time, keeping both systems synchronized safely."
       }
     }
   ]

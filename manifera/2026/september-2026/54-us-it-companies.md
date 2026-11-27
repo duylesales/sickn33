@@ -53,7 +53,7 @@ None of this is a secret buried in the fine print, either - it is visible in the
 
 There is a fourth mechanism domestic **US IT companies** use that a CFO rarely sees coming, because it is hidden inside the contract structure itself rather than the rate card: the deliberately vague fixed-price proposal.
 
-To win the deal against competitors, the agency's sales team quotes an attractive fixed price - say, $180,000 for the MVP - based on a Statement of Work that is intentionally written in broad, ambiguous language ("a user dashboard," "basic reporting," "standard admin functionality"). The CFO signs, relieved to have budget certainty.
+To win the deal against competitors, the agency's sales team quotes an attractive fixed price - say, $180,000 for the MVP - based on a Statement of Work that is intentionally written in broad, ambiguous language ["a user dashboard," "basic reporting," "standard admin functionality"]. The CFO signs, relieved to have budget certainty.
 
 Three months in, the CEO asks for something the agency insists was never actually included: exporting the report to a PDF, or a password-reset flow, or mobile responsiveness. The agency is technically correct - the ambiguous SOW never explicitly promised it - and issues a **Change Order**: additional scope, billed not at the original blended rate, but at a premium "expedite" rate of $300-$400/hour, because it now sits outside the fixed-price boundary and must be scheduled as "extra" work.
 
@@ -75,7 +75,7 @@ In a study conducted with the University of Oxford's BT Centre for Major Program
 
 Return to the New York CEO from the opening of this article: a $640,000 quote for a four-month MVP built by a four-person pod at a $250/hour blended rate. Most CFOs budget to that number. The realistic, all-in number - once the McKinsey/Oxford research on IT project overruns cited above is applied - looks very different, and the gap between the two is not a worst-case scenario. It is the statistical average.
 
-| | Domestic Agency (As Quoted) | Domestic Agency (Realistic, Industry-Average Outcome) | Manifera Hybrid Model |
+| | Domestic Agency (As Quoted) | Domestic Agency [Realistic, Industry-Average Outcome] | Manifera Hybrid Model |
 |---|---|---|---|
 | Blended rate | $250/hour | $250/hour base, $300-$400/hour on change-order scope | $70-$90/hour |
 | Quoted contract value | $640,000 | $640,000 | ~$640,000 equivalent scope |
@@ -83,7 +83,7 @@ Return to the New York CEO from the opening of this article: a $640,000 quote fo
 | Timeline | 4 months quoted | ~4.3 months (McKinsey/Oxford's documented 7% average time overrun) | 4 months, capped T&M |
 | Governance model | Vague fixed-price SOW | Vague fixed-price SOW plus change orders | Time & Materials, capped ceiling, itemized backlog |
 
-The realistic domestic figure is not a hypothetical worst case invented for this article - it is the average outcome McKinsey and Oxford's BT Centre documented across more than 5,400 large IT projects. And the scope-creep dynamic that produces it is itself independently measured. PMI's Pulse of the Profession research has repeatedly found that a majority of projects experience scope creep: 52% of projects experienced scope creep or uncontrolled changes in PMI's 2018 study (up from 43% five years earlier), with the same research cycle finding that 43% of projects finished over budget, 48% finished late, and organizations wasted an average of 9.9% of every dollar invested due to poor project performance. Separately, the Standish Group's long-running CHAOS Report - which tracks large samples of IT projects across the industry - has consistently found that only around 31% of projects are outright successful (delivered on time, on budget, with the promised scope), roughly 50% are "challenged" (delivered late, over budget, or with reduced scope), and about 19% fail outright. The success rate is not evenly distributed by project size either: small projects succeed close to 90% of the time, while large, complex projects - the kind a Series A startup's core platform usually is - succeed less than 10% of the time under the same measurement.
+The realistic domestic figure is not a hypothetical worst case invented for this article - it is the average outcome McKinsey and Oxford's BT Centre documented across more than 5,400 large IT projects. And the scope-creep dynamic that produces it is itself independently measured. PMI's Pulse of the Profession research has repeatedly found that a majority of projects experience scope creep: 52% of projects experienced scope creep or uncontrolled changes in PMI's 2018 study (up from 43% five years earlier), with the same research cycle finding that 43% of projects finished over budget, 48% finished late, and organizations wasted an average of 9.9% of every dollar invested due to poor project performance. Separately, the Standish Group's long-running CHAOS Report - which tracks large samples of IT projects across the industry - has consistently found that only around 31% of projects are outright successful [delivered on time, on budget, with the promised scope], roughly 50% are "challenged" [delivered late, over budget, or with reduced scope], and about 19% fail outright. The success rate is not evenly distributed by project size either: small projects succeed close to 90% of the time, while large, complex projects - the kind a Series A startup's core platform usually is - succeed less than 10% of the time under the same measurement.
 
 None of this is an argument that domestic agencies are dishonest. It is an argument that the entire pricing and scoping structure of the traditional agency model is built around an ambiguous initial number that both sides know, statistically, is unlikely to hold. A Time & Materials structure with a capped ceiling and a transparently itemized backlog does not eliminate the underlying complexity of software projects - nothing does - but it removes the financial incentive to under-scope the initial quote, because there is no premium change-order tier waiting on the other side of the ambiguity to recover margin.
 
@@ -105,25 +105,21 @@ You cut your development budget by 60%, allowing you to survive your Series A ru
 
 ---
 
-## Frequently Asked Questions
-
-### (Scenario: CFO auditing vendor proposals) Why do domestic US and Western European IT companies charge $200-$250 per hour?
+## FAQs
+### [Scenario: CFO auditing vendor proposals] Why do domestic US and Western European IT companies charge $200-$250 per hour?
 The rate is driven by geographic overhead, not coding quality. They must pay massive local salaries, expensive office leases, and support a heavy layer of non-technical middle management (Account Managers, Scrum Masters). To maintain a profit margin on top of that massive overhead, they are mathematically forced to charge exorbitant hourly rates.
 
-### (Scenario: CEO debating local vs. offshore) What is the 'Middle Management Tax' in domestic agencies?
+### [Scenario: CEO debating local vs. offshore] What is the 'Middle Management Tax' in domestic agencies?
 When you hire a domestic agency, only a fraction of your invoice goes to the developers actually writing code. The rest of your money pays for a layer of 'project managers' and 'delivery leads' whose primary job is simply to relay your messages to the developers. You are paying premium rates for communication middlemen.
 
-### (Scenario: VP Engineering discovering bad code) Is it true that premium domestic agencies offshore the code anyway?
+### [Scenario: VP Engineering discovering bad code] Is it true that premium domestic agencies offshore the code anyway?
 Yes, it is a highly common practice known as 'White Labeling.' A US agency will charge you $250/hour for 'local quality', but then quietly subcontract the actual development work to a cheap, ungoverned team overseas for $40/hour. They act as an expensive proxy, pocketing the massive margin while delivering offshore-quality code.
 
-### (Scenario: Founder worried about offshore communication) How does Manifera provide local quality without the massive domestic price tag?
+### [Scenario: Founder worried about offshore communication] How does Manifera provide local quality without the massive domestic price tag?
 We use a Hybrid Model. We do not use middlemen. Your direct point of contact is a Senior Dutch Architect based in Europe. They handle all complex communication and System Design. The code is then executed by our elite Vietnamese developers. You get flawless Western architectural governance combined with the financial leverage of offshore execution.
 
-### (Scenario: IT Procurement evaluating Manifera) How much budget can a startup actually save by using Manifera's Hybrid offshore model instead of a US agency?
+### [Scenario: IT Procurement evaluating Manifera] How much budget can a startup actually save by using Manifera's Hybrid offshore model instead of a US agency?
 By eliminating the Middle Management Tax and leveraging the geographic cost arbitrage of Vietnam for the execution layer, companies typically reduce their development burn rate by 50% to 60% compared to domestic US or Western European agencies, allowing them to stretch their runway and build twice as many features.
-
-### (Scenario: CFO building the board deck) Is a 45% average project overrun really typical, or is that a worst-case number picked to make the point?
-It is the documented industry average, not a worst case. McKinsey & Company, working with Oxford University's BT Centre for Major Programme Management, analyzed more than 5,400 large IT projects and found they run 45% over budget and 7% over time on average. PMI's Pulse of the Profession research separately found that 52% of projects experience scope creep, and the Standish Group's CHAOS Report has consistently found only around 31% of IT projects succeed outright, with large, complex projects succeeding less than 10% of the time. A vague fixed-price SOW is the mechanism that turns this industry-wide pattern into your specific change-order invoice.
 
 <script type="application/ld+json">
 {
@@ -168,14 +164,6 @@ It is the documented industry average, not a worst case. McKinsey & Company, wor
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Because we eliminate domestic bloat and leverage Asian execution velocity under European governance, startups typically reduce their development costs by 50% to 60%, allowing them to survive their runway without sacrificing architectural integrity."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is a 45% average project overrun really typical, or is that a worst-case number picked to make the point?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It is the documented industry average. McKinsey & Company, working with Oxford University's BT Centre for Major Programme Management, analyzed more than 5,400 large IT projects and found they run 45% over budget and 7% over time on average. PMI's Pulse of the Profession research found that 52% of projects experience scope creep, and the Standish Group's CHAOS Report has consistently found only around 31% of IT projects succeed outright, with large, complex projects succeeding less than 10% of the time. A vague fixed-price SOW is the mechanism that turns this industry-wide pattern into a specific change-order invoice."
       }
     }
   ]

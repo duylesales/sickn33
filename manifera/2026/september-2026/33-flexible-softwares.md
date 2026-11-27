@@ -36,7 +36,7 @@ The team fell into the Over-Engineering Trap. In their quest to build **flexible
 
 In [custom software development](https://www.manifera.com/services/custom-software-development/), flexibility is not free. 
 
-Every time you add a layer of abstraction (like an interface, a generic factory, or a plugin system) to make the code more "flexible," you exponentially increase the cognitive load required to read and maintain that code. 
+Every time you add a layer of abstraction [like an interface, a generic factory, or a plugin system] to make the code more "flexible," you exponentially increase the cognitive load required to read and maintain that code. 
 
 When developers optimize for hypothetical future requirements rather than solving the concrete problem in front of them, they create "Premature Abstraction." 
 
@@ -69,7 +69,7 @@ Consider notification delivery. A SaaS product first needs to email users when a
 
 ### Feature Flags: Buying Real Flexibility Without Premature Architecture
 
-There is one category of "flexible software" that is not an anti-pattern: runtime configuration, most commonly implemented as **feature flags** (via tools like LaunchDarkly, Unleash, or a simple database-backed toggle table). 
+There is one category of "flexible software" that is not an anti-pattern: runtime configuration, most commonly implemented as **feature flags** [via tools like LaunchDarkly, Unleash, or a simple database-backed toggle table]. 
 
 The distinction matters because feature flags buy flexibility in behavior, not flexibility in architecture. Instead of building a generic plugin engine so the invoice export "could theoretically support any format," a team ships the hard-coded PDF exporter behind a flag like `export_format_enabled`. If the business wants to pilot CSV export with three enterprise customers before committing to it company-wide, the flag lets them toggle the new hard-coded CSV function on for just those three accounts, in production, with zero deployment and zero architectural abstraction. If the pilot fails, the team deletes the flag and the CSV function in ten minutes. If it succeeds, they have three real customers' worth of evidence - again satisfying the Rule of Three - before deciding whether a shared export abstraction is even worth building.
 
@@ -101,25 +101,21 @@ Stop paying for over-engineered code. Contact our Amsterdam team for pragmatic e
 
 ---
 
-## Frequently Asked Questions
-
-### (Scenario: VP Engineering auditing code complexity) What is the 'Over-Engineering Trap' in software development?
+## FAQs
+### [Scenario: VP Engineering auditing code complexity] What is the 'Over-Engineering Trap' in software development?
 It occurs when developers design highly complex, abstracted systems (like universal generic engines) to accommodate hypothetical future requirements that the business hasn't actually asked for. This bloats the codebase, makes it unreadable to junior developers, and drastically slows down future development velocity.
 
-### (Scenario: Lead Developer mentoring juniors) What does YAGNI mean and why is it important?
+### [Scenario: Lead Developer mentoring juniors] What does YAGNI mean and why is it important?
 YAGNI stands for 'You Aren't Gonna Need It.' It is a core tenet of extreme programming. It dictates that developers should never write code for a feature they *anticipate* needing in the future. They must only solve the exact, concrete problem in front of them today. This keeps the codebase brutally simple and maintainable.
 
-### (Scenario: CTO reviewing a massive Pull Request) Why is 'Premature Abstraction' considered an architectural anti-pattern?
-Abstraction (like using interfaces or generic factories) is useful, but it inherently increases the cognitive difficulty of reading the code. If you introduce abstraction before you actually have multiple concrete use-cases that require it, you are forcing the team to navigate complex code for no immediate benefit. 
+### [Scenario: CTO reviewing a massive Pull Request] Why is 'Premature Abstraction' considered an architectural anti-pattern?
+Abstraction (like using interfaces or generic factories) is useful, but it inherently increases the cognitive difficulty of reading the code. If you introduce abstraction before you actually have multiple concrete use-cases that require it, you are forcing the team to navigate complex code for no immediate benefit.
 
-### (Scenario: Product Manager frustrated by slow delivery) Does the YAGNI principle mean we have to rewrite code later?
+### [Scenario: Product Manager frustrated by slow delivery] Does the YAGNI principle mean we have to rewrite code later?
 Yes, and that is a good thing. If you write simple, hard-coded logic today, it is very fast to deliver. If the business requirements change a year from now, that simple code is incredibly easy to delete and rewrite (refactor). If you built a massive 'flexible' generic engine, it is terrifying to change because no one understands how it works anymore.
 
-### (Scenario: Procurement evaluating Manifera) How does Manifera prevent offshore developers from over-engineering the code?
+### [Scenario: Procurement evaluating Manifera] How does Manifera prevent offshore developers from over-engineering the code?
 Through our Dutch Tech Leads. During the Pull Request (PR) review process, our European architects enforce YAGNI. They will literally reject code from our Vietnamese pods if it is too 'clever' or overly abstracted. We mandate boring, simple, highly readable code, ensuring your application remains maintainable and your billable hours are never wasted on hypothetical features.
-
-### (Scenario: Lead Architect deciding whether to abstract) How do I know when it's actually the right time to build a flexible abstraction instead of hard-coded code?
-Use the Rule of Three. Write the first requirement as simple, hard-coded logic. When a second, similar requirement appears, resist generalizing and write it as a second simple solution. Only on the third real, concrete occurrence do you have enough evidence to extract a genuine shared abstraction, because by then you can see exactly what varies and what doesn't, instead of guessing.
 
 <script type="application/ld+json">
 {
@@ -164,14 +160,6 @@ Use the Rule of Three. Write the first requirement as simple, hard-coded logic. 
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our Dutch Architects act as the gatekeepers. They enforce YAGNI during Pull Request reviews, rejecting any offshore code that is overly 'clever' or hypothetical. We guarantee simple, boring, highly maintainable enterprise code."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I know when it's actually the right time to build a flexible abstraction instead of hard-coded code?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Use the Rule of Three. Write the first requirement as simple, hard-coded logic. When a second, similar requirement appears, write it as a second simple solution instead of generalizing. Only on the third real, concrete occurrence do you have enough evidence to extract a genuine shared abstraction."
       }
     }
   ]

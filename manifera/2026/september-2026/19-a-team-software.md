@@ -104,25 +104,21 @@ Stop rewarding heroes and start rewarding resilient systems. Contact our Amsterd
 
 ---
 
-## Frequently Asked Questions
-
-### (Scenario: CTO auditing team structure) What is the 'Hero Developer' anti-pattern?
+## FAQs
+### [Scenario: CTO auditing team structure] What is the 'Hero Developer' anti-pattern?
 The Hero Developer anti-pattern occurs when a team relies on a single, brilliant engineer to solve all critical problems and ship all complex features. While they seem highly productive, they create a massive bottleneck because they hoard knowledge, write overly complex code that no one else can maintain, and become a single point of failure for the company.
 
-### (Scenario: VP Engineering assessing risk) What does 'Bus Factor' mean in software engineering?
+### [Scenario: VP Engineering assessing risk] What does 'Bus Factor' mean in software engineering?
 The Bus Factor is a morbid but essential risk metric: 'How many key team members would have to be hit by a bus (or suddenly quit) before the project completely fails?' If only one person understands your database architecture, your Bus Factor is 1, which is a catastrophic risk for any enterprise software. The goal is to increase the Bus Factor by distributing knowledge.
 
-### (Scenario: SDM trying to improve code quality) Why should a team reject 'clever' code during a Pull Request?
+### [Scenario: SDM trying to improve code quality] Why should a team reject 'clever' code during a Pull Request?
 'Clever' code is highly optimized, unreadable code written by a single engineer trying to show off. While it might run slightly faster, it is impossible for junior developers to debug. Elite teams prioritize 'readable' code over 'clever' code. If a PR contains code that the rest of the team cannot instantly understand, it must be rejected and simplified.
 
-### (Scenario: CEO reviewing offshore agency performance) Why do standard offshore agencies often rely on Hero Developers?
+### [Scenario: CEO reviewing offshore agency performance] Why do standard offshore agencies often rely on Hero Developers?
 It is a cheap way to operate. The agency will assign one highly paid senior developer to do 90% of the complex architectural work, and surround them with cheap junior developers who just handle basic UI tasks. If that senior developer is pulled off your project to work for a higher-paying client, your development velocity collapses instantly.
 
-### (Scenario: IT Procurement evaluating Manifera) How does Manifera ensure knowledge is distributed across the offshore team?
+### [Scenario: IT Procurement evaluating Manifera] How does Manifera ensure knowledge is distributed across the offshore team?
 Through our Hybrid Pod structure and Dutch architectural governance. Our Dutch Tech Leads enforce mandatory code reviews across the entire Vietnamese pod. No code is merged unless multiple engineers understand it. We use standardized, 'boring' enterprise tech stacks (React, Node, standard SQL) to ensure any new engineer can onboard quickly and safely.
-
-### (Scenario: CTO wanting to measure current risk before restructuring) How can I calculate my company's actual Bus Factor without hiring a consultant?
-Run a git blame audit on your ten most business-critical files. For each file, check what percentage of the commit history belongs to a single author. If one engineer owns more than 60% of the commits on a critical file like your payment processor or authentication middleware, your effective Bus Factor for that file is 1, no matter how large your team is. Cross-reference this with your incident postmortems to see who actually resolves production issues, and audit your CODEOWNERS file for critical paths that list only one owner.
 
 <script type="application/ld+json">
 {
@@ -167,14 +163,6 @@ Run a git blame audit on your ten most business-critical files. For each file, c
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our Dutch Tech Leads enforce rigorous Pull Request reviews where multiple engineers must approve the logic before it merges. We mandate cross-training within our Vietnamese pods to guarantee a high Bus Factor and eliminate single points of failure."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How can I calculate my company's actual Bus Factor without hiring a consultant?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Run a git blame audit on your most critical files and check what percentage of commits belong to a single author. If one engineer owns more than 60% of a critical file's history, your Bus Factor for that file is 1. Cross-check this against your incident postmortems and your CODEOWNERS file to confirm where the hidden risk is concentrated."
       }
     }
   ]

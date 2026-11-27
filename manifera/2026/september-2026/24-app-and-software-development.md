@@ -49,7 +49,7 @@ Elite engineering teams mandate a Unified Architecture. The core business logic 
 To solve this without duplicating business logic, elite architects use the **Backend for Frontend (BFF)** pattern.
 
 ### How the BFF Pattern Works
-1. **The Core Microservices:** The company maintains one central, highly secure set of microservices (e.g., the User Service, the Billing Service). These contain 100% of the business logic.
+1. **The Core Microservices:** The company maintains one central, highly secure set of microservices [e.g., the User Service, the Billing Service]. These contain 100% of the business logic.
 2. **The Web BFF:** The web engineering team builds a lightweight API Gateway (the Web BFF). This gateway simply calls the Core Microservices, formats the massive data payloads perfectly for a desktop browser, and sends it to the React frontend.
 3. **The Mobile BFF:** The mobile engineering team builds a separate lightweight API Gateway (the Mobile BFF). This gateway calls the *exact same* Core Microservices. However, it strips out all the heavy data (like high-res images or unnecessary text) and formats the payload perfectly for a low-bandwidth mobile device.
 
@@ -92,25 +92,21 @@ Stop paying for duplicate code. Contact our Amsterdam team for a unified archite
 
 ---
 
-## Frequently Asked Questions
-
-### (Scenario: CTO auditing backend complexity) Why do mobile development agencies often build separate backends?
+## FAQs
+### [Scenario: CTO auditing backend complexity] Why do mobile development agencies often build separate backends?
 Because mobile devices have different constraints than desktop browsers (slower networks, smaller screens, lower battery life). A standard web API often sends massive JSON payloads containing data the mobile app doesn't need, which slows down the phone. Instead of modifying the web API, isolated mobile agencies take the lazy route and build a separate, optimized mobile backend, duplicating the business logic.
 
-### (Scenario: VP Engineering planning a mobile launch) What is the 'Backend for Frontend' (BFF) architectural pattern?
+### [Scenario: VP Engineering planning a mobile launch] What is the 'Backend for Frontend' (BFF) architectural pattern?
 The BFF pattern involves creating a lightweight, dedicated API gateway for each specific user interface (one BFF for Web, one BFF for Mobile). These BFFs do not contain core business logic. They simply act as translators - they call the single Core API, format the data specifically for their respective UI, and return it. This keeps the core logic unified while optimizing performance for each device.
 
-### (Scenario: Lead Developer fighting data inconsistency) Why is duplicating business logic a financial disaster?
+### [Scenario: Lead Developer fighting data inconsistency] Why is duplicating business logic a financial disaster?
 Because it violates the DRY (Don't Repeat Yourself) principle at a massive scale. If you have tax calculation logic in a Web backend and a Mobile backend, you have to write the code twice, test it twice, and fix bugs twice. Inevitably, the two codebases will drift apart, and mobile users will start experiencing different business rules than web users, causing catastrophic data corruption.
 
-### (Scenario: Product Manager planning roadmap costs) Does a Unified Architecture slow down mobile development?
+### [Scenario: Product Manager planning roadmap costs] Does a Unified Architecture slow down mobile development?
 Initially, designing a proper Core API and a Mobile BFF requires slightly more architectural planning than just letting the mobile team build a rogue database. However, over a 12-month roadmap, it drastically *accelerates* development. When you want to add a new feature, you only build the backend logic once, instantly making it available to both the web and mobile teams.
 
-### (Scenario: Procurement Officer evaluating Manifera) How does Manifera ensure web and mobile teams do not build siloed architectures?
+### [Scenario: Procurement Officer evaluating Manifera] How does Manifera ensure web and mobile teams do not build siloed architectures?
 Through centralized Dutch architectural governance. We do not allow our web and mobile engineering pods to operate in isolation. A single Dutch Tech Lead oversees the entire product ecosystem, ensuring that all frontend teams (React and React Native) consume data from a unified Core API, preventing any duplication of business logic.
-
-### (Scenario: Lead Architect preventing production incidents) How do you stop a Core API change from silently breaking the Mobile or Web BFF?
-Through Consumer-Driven Contract Testing, using a framework like Pact. Each BFF team publishes a machine-readable contract stating exactly which fields and types it depends on from the Core API. This contract runs as an automated test inside the Core API's own CI/CD pipeline, so a Pull Request that would break a BFF's contract fails the build automatically, before it ever reaches production, instead of being discovered through a mobile app crash.
 
 <script type="application/ld+json">
 {
@@ -155,14 +151,6 @@ Through Consumer-Driven Contract Testing, using a framework like Pact. Each BFF 
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "A single Dutch Architect governs both the web and mobile pods. They enforce a Unified Architecture, ensuring all teams consume from a single Core API and utilizing BFF patterns where necessary to prevent any duplication of effort."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do you stop a Core API change from silently breaking the Mobile or Web BFF?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Through Consumer-Driven Contract Testing (using a framework like Pact). Each BFF publishes a contract of the fields and types it depends on from the Core API, and this contract runs as an automated test in the Core API's CI/CD pipeline, failing any Pull Request that would break a dependent BFF before it reaches production."
       }
     }
   ]

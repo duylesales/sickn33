@@ -64,11 +64,11 @@ Where the CEO in our opening story went wrong isn't in believing the 10x variati
 
 ## Measuring the Risk: The "Bus Factor" Audit
 
-Most CTOs never realize they are dangerously dependent on a single hero until that person quits. The good news is that this risk is not abstract or unmeasurable. It has a name in engineering circles, the "Bus Factor," defined as the minimum number of team members who would need to disappear (get hit by a bus, in the grim original phrasing) before the project grinds to a halt because no one left understands it.
+Most CTOs never realize they are dangerously dependent on a single hero until that person quits. The good news is that this risk is not abstract or unmeasurable. It has a name in engineering circles, the "Bus Factor," defined as the minimum number of team members who would need to disappear [get hit by a bus, in the grim original phrasing] before the project grinds to a halt because no one left understands it.
 
 A Bus Factor of 1 means a single resignation can freeze the company. Enterprise-grade teams treat a Bus Factor below 3 as an active incident, not a footnote. Here is how a Lead Architect actually measures it, rather than just guessing:
 
-*   **Git blame concentration.** Run a git history analysis on every core module. If one author's commits account for more than 60% of the lines in a critical file (the payment engine, the auth layer, the core data model), that module has a Bus Factor of 1, regardless of how the org chart looks on paper.
+*   **Git blame concentration.** Run a git history analysis on every core module. If one author's commits account for more than 60% of the lines in a critical file [the payment engine, the auth layer, the core data model], that module has a Bus Factor of 1, regardless of how the org chart looks on paper.
 *   **The Reviewer Diversity Check.** Look at who approves Pull Requests for that module over the last quarter. If the same one or two names approve every single PR, no one else has been forced to actually understand the code deeply enough to catch a mistake in it.
 *   **The Cold-Read Test.** Periodically, assign a developer who did NOT write a given module to fix a real, minor bug in it with zero help from the original author. Time how long it takes. If it takes days instead of hours, the documentation and code clarity are insufficient, and the Bus Factor is effectively still 1 even if multiple people have technically "touched" the file.
 *   **Onboarding as a forcing function.** The single fastest way to raise a Bus Factor is to require every new hire's first two weeks to include fixing a real bug in the historically single-owner modules, with the original author only allowed to answer questions, not write the fix themselves.
@@ -99,25 +99,21 @@ We ensure that the code you receive is perfectly standardized and permanently ma
 
 ---
 
-## Frequently Asked Questions
-
-### (Scenario: CEO hunting for talent) What is the '10x Developer' myth?
+## FAQs
+### [Scenario: CEO hunting for talent] What is the '10x Developer' myth?
 It is the Silicon Valley belief that a single genius programmer can output ten times the work of a normal developer. While such people exist, hiring them is usually a trap. They achieve that speed by skipping tests, ignoring documentation, and writing highly complex code that no one else can read, ultimately destroying the team's ability to maintain the app.
 
-### (Scenario: VP Engineering dealing with a difficult employee) What is the 'Brilliant Jerk' and how do they destroy team velocity?
+### [Scenario: VP Engineering dealing with a difficult employee] What is the 'Brilliant Jerk' and how do they destroy team velocity?
 A 'Brilliant Jerk' is a highly talented developer who refuses to collaborate. They refuse to review other people's code, they belittle junior developers, and they demand special treatment. Even if they write a lot of code, their toxicity destroys the morale and productivity of the rest of the team, resulting in a net negative output for the company.
 
-### (Scenario: Lead Architect reviewing code) Why is 'Clever Code' considered dangerous in enterprise software?
+### [Scenario: Lead Architect reviewing code] Why is 'Clever Code' considered dangerous in enterprise software?
 'Clever' code uses highly condensed, obscure programming tricks to write an algorithm in one line instead of ten lines. It looks cool, but it is impossible to read. Enterprise software favors 'Boring' code - verbose, perfectly clear code that any junior developer can instantly read, understand, and fix at 2:00 AM during a server outage.
 
-### (Scenario: CTO planning for scale) If I don't hire 10x Developers, how do I achieve high engineering velocity?
-You achieve velocity through Standardization (a 10x Culture). You implement automated CI/CD testing, strict code formatting rules (Linting), and mandatory peer reviews. When every file in the codebase looks like it was written by the exact same person, any developer can instantly jump into any feature without a learning curve. 
+### [Scenario: CTO planning for scale] If I don't hire 10x Developers, how do I achieve high engineering velocity?
+You achieve velocity through Standardization (a 10x Culture). You implement automated CI/CD testing, strict code formatting rules (Linting), and mandatory peer reviews. When every file in the codebase looks like it was written by the exact same person, any developer can instantly jump into any feature without a learning curve.
 
-### (Scenario: Procurement evaluating Manifera) How does Manifera prevent 'Hero Programming' in their offshore pods?
+### [Scenario: Procurement evaluating Manifera] How does Manifera prevent 'Hero Programming' in their offshore pods?
 Our Dutch Architects act as the ultimate governance firewall. We strictly ban lone-wolf development. Our Vietnamese pods operate under rigid European architectural standards. The Dutch Architect will mathematically reject any Pull Request that lacks automated tests or uses unreadable 'clever' syntax, ensuring your codebase remains highly standardized and infinitely scalable.
-
-### (Scenario: CTO auditing hero-dependency risk) What is the 'Bus Factor' and how do I measure it in my own codebase?
-The Bus Factor is the minimum number of people who would need to leave before a project grinds to a halt because no one else understands it. You measure it by checking git blame concentration on critical modules (one author owning over 60% of a file is a red flag), reviewer diversity on Pull Requests, and running a 'Cold-Read Test' where a developer who didn't write a module has to fix a real bug in it unaided. A Bus Factor below 3 on any core module should be treated as an active risk, not a footnote.
 
 <script type="application/ld+json">
 {
@@ -162,14 +158,6 @@ The Bus Factor is the minimum number of people who would need to leave before a 
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our Dutch Architects strictly govern the Vietnamese pods. We do not allow undocumented, untested code to be merged, regardless of how fast it was written. We mandate standardized, readable enterprise code, guaranteeing long-term architectural stability."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the 'Bus Factor' and how do I measure it in my own codebase?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The Bus Factor is the minimum number of people who would need to leave before a project stalls because no one else understands the code. Measure it via git blame concentration on critical files, reviewer diversity on Pull Requests, and a Cold-Read Test where an uninvolved developer fixes a real bug unaided. A Bus Factor below 3 on any core module should be treated as an active risk."
       }
     }
   ]

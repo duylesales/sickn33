@@ -46,7 +46,7 @@ To build a scalable, secure **AI development team**, you must hire for the under
 
 ### 1. The Data Engineer (The Foundation)
 AI models are useless without clean, structured data. If you want an LLM to answer questions about your proprietary HR policies, you cannot just send it a 5,000-page unstructured PDF. 
-The Data Engineer builds the ETL (Extract, Transform, Load) pipelines. They clean the PDFs, chunk the text into mathematically logical segments, and load them into a Vector Database (like Pinecone). Without the Data Engineer, the AI has nothing to think about.
+The Data Engineer builds the ETL [Extract, Transform, Load] pipelines. They clean the PDFs, chunk the text into mathematically logical segments, and load them into a Vector Database (like Pinecone). Without the Data Engineer, the AI has nothing to think about.
 
 ### 2. The MLOps Engineer (The Pipeline)
 Standard DevOps is not sufficient for AI. Machine Learning Operations (MLOps) is the discipline of deploying and monitoring AI models in production.
@@ -56,7 +56,7 @@ The MLOps engineer ensures that when you switch from OpenAI's GPT-4 to an open-s
 LLMs execute natural language as code, making them highly vulnerable to Prompt Injection and SSRF attacks. 
 The Security Architect ensures that Local PII Masking models run *before* data is sent to the cloud. They build "Validator LLMs" that act as firewalls, aggressively scanning user input to block malicious hacking attempts before they reach the core business logic.
 
-This is not a hypothetical risk. The OWASP Top 10 for LLM Applications, updated for its 2025 edition, ranks Prompt Injection as the number one risk facing LLM-powered applications for the second consecutive edition, ahead of sensitive information disclosure, supply-chain attacks, and excessive agent permissions. OWASP's own analysis notes that because LLMs process instructions and untrusted data through the same input channel, an attacker can craft content that the model interprets as a new command rather than as text to summarize or analyze, and the model has no reliable way to tell the difference on its own. A Security Architect who understands this failure mode designs around it at the system level (least-privilege tool access, input/output filtering, human approval gates on high-risk actions); a Prompt Engineer can only ask the model nicely not to fall for it.
+This is not a hypothetical risk. The OWASP Top 10 for LLM Applications, updated for its 2025 edition, ranks Prompt Injection as the number one risk facing LLM-powered applications for the second consecutive edition, ahead of sensitive information disclosure, supply-chain attacks, and excessive agent permissions. OWASP's own analysis notes that because LLMs process instructions and untrusted data through the same input channel, an attacker can craft content that the model interprets as a new command rather than as text to summarize or analyze, and the model has no reliable way to tell the difference on its own. A Security Architect who understands this failure mode designs around it at the system level [least-privilege tool access, input/output filtering, human approval gates on high-risk actions]; a Prompt Engineer can only ask the model nicely not to fall for it.
 
 ## The Missing Role: AI FinOps and Model Routing
 
@@ -92,7 +92,7 @@ Look closely at that list. Three of the four causes are not "AI problems" in the
 To make this concrete, here is an illustrative comparison of what a 12-month enterprise RAG build tends to look like under each staffing model. These are realistic planning estimates, not figures from a specific client engagement, and actual numbers will vary with data complexity and use case.
 
 **Path A: The Prompt Engineer Team**
-- 3x Prompt Engineers (junior/mid-level, no pipeline experience): roughly €300,000-350,000/year fully loaded
+- 3x Prompt Engineers [junior/mid-level, no pipeline experience]: roughly €300,000-350,000/year fully loaded
 - No Data Engineer on the team: source documents stay unstructured, and retrieval accuracy typically plateaus in the 60-65% range
 - No MLOps function: model drift goes undetected until end users notice degraded answers
 - No FinOps function: every request routes to the flagship model, and token spend grows without a ceiling
@@ -120,25 +120,21 @@ Stop paying for magic words. Contact our Amsterdam team to deploy an enterprise-
 
 ---
 
-## Frequently Asked Questions
-
-### (Scenario: VP Engineering planning hiring budget) Why is it a mistake to hire a 'Prompt Engineer' for our new AI project?
+## FAQs
+### [Scenario: VP Engineering planning hiring budget] Why is it a mistake to hire a 'Prompt Engineer' for our new AI project?
 Because writing prompts is only 5% of the work. If a candidate only knows how to write text instructions but cannot write the Python/Node.js code to connect to a Vector Database, build an ETL data pipeline, or secure the API endpoints, they cannot actually build a functioning, secure enterprise software application.
 
-### (Scenario: CTO diagnosing AI inaccuracies) Our AI is hallucinating frequently. Will a better Prompt Engineer fix this?
+### [Scenario: CTO diagnosing AI inaccuracies] Our AI is hallucinating frequently. Will a better Prompt Engineer fix this?
 No. If an LLM is hallucinating (inventing facts), no amount of clever wording in a prompt will permanently fix it. Hallucinations are solved through Architecture, specifically a RAG (Retrieval-Augmented Generation) pipeline. You need a Data Engineer to structure your proprietary data so the LLM is forced to read the correct facts before answering.
 
-### (Scenario: HR Director writing job descriptions) What is MLOps and why do we need it instead of standard DevOps?
+### [Scenario: HR Director writing job descriptions] What is MLOps and why do we need it instead of standard DevOps?
 MLOps (Machine Learning Operations) is a specialized branch of DevOps. While standard DevOps focuses on deploying code, MLOps focuses on deploying *models and data*. MLOps engineers handle the unique challenges of AI, such as monitoring 'model drift' (degradation of AI quality over time), managing Vector Database latency, and swapping out LLM providers to optimize costs.
 
-### (Scenario: CISO auditing the new AI team) What is the role of a Security Architect in an AI Development Team?
-Standard web security is insufficient for AI. LLMs are vulnerable to Prompt Injection, where a user tricks the AI into executing malicious commands or leaking data. The Security Architect builds 'Validator LLMs' (AI firewalls that screen input) and implements strict PII masking so sensitive data is redacted before being sent to public AI APIs. 
+### [Scenario: CISO auditing the new AI team] What is the role of a Security Architect in an AI Development Team?
+Standard web security is insufficient for AI. LLMs are vulnerable to Prompt Injection, where a user tricks the AI into executing malicious commands or leaking data. The Security Architect builds 'Validator LLMs' (AI firewalls that screen input) and implements strict PII masking so sensitive data is redacted before being sent to public AI APIs.
 
-### (Scenario: IT Procurement evaluating Manifera) How does Manifera staff its offshore AI pods?
+### [Scenario: IT Procurement evaluating Manifera] How does Manifera staff its offshore AI pods?
 We do not use generalist web developers for AI projects. Our Hybrid AI Pods consist of specialized Data Engineers (to handle the Vector Databases and RAG pipelines) and Backend Specialists, all governed by a Dutch AI Architect. The Dutch Architect ensures strict European data privacy compliance and architectural security before any code is written.
-
-### (Scenario: CFO reviewing the monthly AI infrastructure bill) Our LLM API costs tripled after launch with no warning. How do we control this?
-Runaway LLM costs are almost always a model-routing failure, not a usage-growth problem. If every request, no matter how simple, is sent to the most expensive frontier model, you are overpaying by 10-20x per token for tasks a cheaper model could handle. The fix is an AI FinOps function: a lightweight router model that sends simple requests to a cheap model and reserves the expensive model for complex reasoning, combined with semantic caching to avoid re-paying for repeated questions and hard token budgets on retrieval size.
 
 <script type="application/ld+json">
 {
@@ -183,14 +179,6 @@ Runaway LLM costs are almost always a model-routing failure, not a usage-growth 
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "We deploy specialized AI Pods composed of Data Engineers and Backend Specialists, all governed by a Dutch AI Architect. We focus on building secure, scalable RAG pipelines and MLOps infrastructure, not just writing API wrappers."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Our LLM API costs tripled after launch with no warning. How do we control this?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Uncontrolled costs are usually a model-routing failure. A cheap router model should send simple requests to a low-cost model and reserve the expensive frontier model for complex reasoning, paired with semantic caching and hard token budgets on retrieval size."
       }
     }
   ]
