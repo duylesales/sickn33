@@ -74,7 +74,7 @@ Before committing, he brought RouteWise to LaunchStudio for an audit. Our review
 
 ---
 
-## Frequently Asked Questions
+## FAQs
 
 ### Do I need to rebuild my AI-generated app from scratch to make it production ready?
 In most cases, no. A proper audit typically finds a specific, fixable set of gaps in database security, authentication, payments, or hosting - not a reason to discard a working frontend.
@@ -86,7 +86,7 @@ Start with an audit that separates real technical issues from vague discomfort a
 Apeldoorn's practical, services-oriented business culture in Gelderland - shaped partly by its insurance sector history - tends to favor targeted fixes over expensive rebuilds, which fits well with how LaunchStudio works, though we serve founders nationwide.
 
 ### How is LaunchStudio different from a traditional development agency quote?
-LaunchStudio works at fixed scope and fixed pricing between €800 and €7,500, typically delivered in 1–3 weeks, focused specifically on closing production gaps rather than open-ended rebuilds - roughly 20% of what a traditional agency charges.
+LaunchStudio works at fixed scope and fixed pricing between €800 and €7,500, typically delivered in 1-3 weeks, focused specifically on closing production gaps rather than open-ended rebuilds - roughly 20% of what a traditional agency charges.
 
 ### Who actually does the engineering work behind LaunchStudio?
 Manifera, LaunchStudio's parent company, brings 120+ engineers and 11+ years of production experience to every engagement, the same team that has delivered 160+ projects for enterprise clients like Vodafone and TNO.
@@ -99,7 +99,7 @@ Manifera, LaunchStudio's parent company, brings 120+ engineers and 11+ years of 
     { "@type": "Question", "name": "Do I need to rebuild my AI-generated app from scratch to make it production ready?", "acceptedAnswer": { "@type": "Answer", "text": "In most cases, no. A proper audit typically finds a specific, fixable set of gaps in database security, authentication, payments, or hosting - not a reason to discard a working frontend." } },
     { "@type": "Question", "name": "What's the first step to develop AI software into something launch-ready?", "acceptedAnswer": { "@type": "Answer", "text": "Start with an audit that separates real technical issues from vague discomfort about the codebase, to establish exactly what needs fixing before committing to any larger decision." } },
     { "@type": "Question", "name": "Is Apeldoorn a typical location for LaunchStudio's technical clients?", "acceptedAnswer": { "@type": "Answer", "text": "Apeldoorn's practical, services-oriented business culture in Gelderland tends to favor targeted fixes over expensive rebuilds, which fits well with how LaunchStudio works, though it serves founders nationwide." } },
-    { "@type": "Question", "name": "How is LaunchStudio different from a traditional development agency quote?", "acceptedAnswer": { "@type": "Answer", "text": "LaunchStudio works at fixed scope and fixed pricing between €800 and €7,500, typically delivered in 1–3 weeks, roughly 20% of what a traditional agency charges." } },
+    { "@type": "Question", "name": "How is LaunchStudio different from a traditional development agency quote?", "acceptedAnswer": { "@type": "Answer", "text": "LaunchStudio works at fixed scope and fixed pricing between €800 and €7,500, typically delivered in 1-3 weeks, roughly 20% of what a traditional agency charges." } },
     { "@type": "Question", "name": "Who actually does the engineering work behind LaunchStudio?", "acceptedAnswer": { "@type": "Answer", "text": "Manifera, LaunchStudio's parent company, brings 120+ engineers and 11+ years of production experience, the same team that has delivered 160+ projects for enterprise clients like Vodafone and TNO." } }
   ]
 }
