@@ -114,7 +114,7 @@ She reached out to **LaunchStudio (by Manifera)**. The team refactored the Strip
 
 ---
 
-## Frequently Asked Questions
+## FAQs
 
 ### Should I give AI features away for free to existing users?
 

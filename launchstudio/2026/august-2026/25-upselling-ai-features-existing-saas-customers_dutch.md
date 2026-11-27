@@ -139,7 +139,7 @@ Zij schakelde **LaunchStudio (door Manifera)** in. Het engineeringteam herstruct
 
 ---
 
-## Veelgestelde Vragen
+## FAQs
 
 ### Moet ik AI-functionaliteiten gratis aanbieden aan bestaande klanten?
 
