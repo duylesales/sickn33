@@ -225,7 +225,7 @@ def refresh_oauth_token(site_key="manifera"):
     print("[+] OAuth token successfully refreshed!")
     return new_access
 
-def call_mcp(endpoint, token, tool_name, arguments, site_key="manifera", retries=2):
+def call_mcp(endpoint, token, tool_name, arguments, site_key="manifera", retries=2, token_refreshed=False):
     time.sleep(3.5)
     req_data = {
         "jsonrpc": "2.0",
@@ -266,12 +266,15 @@ def call_mcp(endpoint, token, tool_name, arguments, site_key="manifera", retries
     if http_code == 403 and retries > 0:
         print(f"[*] WAF 403 detected. Pausing 12 seconds for firewall cooldown before retrying ({retries} left)...")
         time.sleep(12)
-        return call_mcp(endpoint, token, tool_name, arguments, site_key, retries=retries - 1)
+        return call_mcp(endpoint, token, tool_name, arguments, site_key, retries=retries - 1, token_refreshed=token_refreshed)
 
-    if http_code == 401 or "401" in proc.stdout or "Unauthorized" in proc.stdout or "invalid_token" in proc.stdout:
-        print("[!] Token expired (401). Refreshing token and retrying...")
-        new_token = refresh_oauth_token(site_key)
-        return call_mcp(endpoint, new_token, tool_name, arguments, site_key, retries=retries)
+    if http_code == 401 or "Unauthorized" in body or "invalid_token" in body:
+        if not token_refreshed:
+            print("[!] Token expired (401). Refreshing token and retrying...")
+            new_token = refresh_oauth_token(site_key)
+            return call_mcp(endpoint, new_token, tool_name, arguments, site_key, retries=retries, token_refreshed=True)
+        else:
+            raise RuntimeError(f"Authentication failed even after token refresh (HTTP {http_code}): {body[:300]}")
 
     try:
         res = json.loads(body)
@@ -281,9 +284,12 @@ def call_mcp(endpoint, token, tool_name, arguments, site_key="manifera", retries
     if "error" in res:
         err = res["error"]
         if isinstance(err, dict) and err.get("code") in [401, -32001]:
-            print("[!] Token error. Refreshing token and retrying...")
-            new_token = refresh_oauth_token(site_key)
-            return call_mcp(endpoint, new_token, tool_name, arguments, site_key)
+            if not token_refreshed:
+                print("[!] Token error. Refreshing token and retrying...")
+                new_token = refresh_oauth_token(site_key)
+                return call_mcp(endpoint, new_token, tool_name, arguments, site_key, retries=retries, token_refreshed=True)
+            else:
+                raise RuntimeError(f"MCP Token error after refresh: {err}")
         raise RuntimeError(f"MCP Error: {res['error']}")
 
     content_items = res.get("result", {}).get("content", [])

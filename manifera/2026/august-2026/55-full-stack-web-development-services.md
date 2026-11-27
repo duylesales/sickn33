@@ -112,27 +112,27 @@ The pattern in this table is the same one Brooks described and the CHAOS Report 
 
 ---
 
-## Frequently Asked Questions
+## FAQs
 
-### (Scenario: VP Engineering under deadline pressure) Why can't a Senior Developer just read the Jira ticket and build the feature?
+### [Scenario: VP Engineering under deadline pressure] Why can't a Senior Developer just read the Jira ticket and build the feature?
 Because Jira tickets describe the "What," not the "Why." A ticket might say "Add a discount field to the invoice." A Senior Developer knows how to write the code for that. But without Domain Knowledge, they won't know that applying a discount before calculating EU VAT violates your specific accounting rules. Domain knowledge prevents structurally dangerous code.
 
-### (Scenario: CTO frustrated with offshore PR quality) Why do offshore developers keep submitting Pull Requests that break existing features?
+### [Scenario: CTO frustrated with offshore PR quality] Why do offshore developers keep submitting Pull Requests that break existing features?
 Because they are operating as "Drop-In" developers without a Domain Knowledge Sandbox. They are treating your complex enterprise application like a standard tutorial project. They do not understand how the modules interact. This is why onboarding must force them to map the architecture before they are allowed to touch the core logic.
 
-### (Scenario: Founder comparing agency timelines) If Manifera takes 30 days to onboard, aren't you slower than freelancers who start coding on Day 1?
+### [Scenario: Founder comparing agency timelines] If Manifera takes 30 days to onboard, aren't you slower than freelancers who start coding on Day 1?
 We are slower in Month 1, but exponentially faster in Month 6. A freelancer who starts coding on Day 1 without understanding your architecture will create fragile, bug-ridden code. By Month 6, they will be spending 80% of their time fixing the bugs they created. Manifera invests 30 days in architectural onboarding so that in Month 6, our pods are shipping robust features at maximum velocity.
 
-### (Scenario: Tech Lead overwhelmed by managing an offshore team) How does the 'Week 1 Architecture Diagram' exercise help me?
+### [Scenario: Tech Lead overwhelmed by managing an offshore team] How does the 'Week 1 Architecture Diagram' exercise help me?
 Instead of you spending 10 hours writing documentation that no one will read, the offshore team proves their understanding by reverse-engineering an architecture diagram from your codebase. When they present it to you, you instantly see where their mental model is flawed. It forces active learning rather than passive reading, and saves you massive amounts of time.
 
-### (Scenario: Procurement evaluating vendor onboarding) How does Manifera's Hybrid Offshore model improve the onboarding process?
+### [Scenario: Procurement evaluating vendor onboarding] How does Manifera's Hybrid Offshore model improve the onboarding process?
 In a standard offshore model, your internal Tech Lead must manage the entire onboarding process. In Manifera's Hybrid model, our Dutch Architects manage the onboarding of the Vietnamese pod. The Dutch Architect translates your European business requirements into the technical constraints the pod must follow, acting as a protective buffer for your internal team.
 
-### (Scenario: VP Engineering worried about remote coordination) How does Manifera keep an onshore Tech Lead and an offshore pod aligned across a 6-hour time difference?
+### [Scenario: VP Engineering worried about remote coordination] How does Manifera keep an onshore Tech Lead and an offshore pod aligned across a 6-hour time difference?
 We enforce a structured "Golden Hour" overlap window, typically 14:00-17:00 CET (19:00-22:00 ICT), reserved exclusively for architectural decisions and blocking questions, plus a Daily Handoff Log the pod writes before logging off, covering Blockers, Decisions Made, and Questions for Tomorrow. This lets the Dutch Tech Lead review and respond first thing each morning, so the time zone gap extends the working day instead of stalling it.
 
-### (Scenario: Procurement building an RFP scorecard) What specific questions should we ask a full stack web development services vendor before signing a contract?
+### [Scenario: Procurement building an RFP scorecard] What specific questions should we ask a full stack web development services vendor before signing a contract?
 Ask them to name a concrete artifact and owner for each stage of onboarding: Who verifies a new developer understands your architecture before they touch production code, and how (a document review, or a presented diagram)? What is the fixed overlap window between your team and theirs, in writing? Who has veto authority when a Pull Request violates a business rule the developer didn't know about? If the vendor cannot answer with specifics - a named role, a fixed time window, a defined gate - they are likely operating on the "Drop-In" model, which Deloitte's 2024 Global Outsourcing Survey ties directly to the governance immaturity behind most outsourcing dissatisfaction.
 
 <script type="application/ld+json">
