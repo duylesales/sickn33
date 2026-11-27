@@ -95,7 +95,7 @@ Procurement teams frequently treat security certifications as a single checkbox 
 | Credential | What It Actually Verifies | What It Does NOT Verify | Who Issues It |
 |---|---|---|---|
 | **ISO/IEC 27001** | The vendor organization has a functioning Information Security Management System (ISMS) - documented policies, risk assessment processes, and continual-improvement practices, audited in two stages by an accredited certification body. | Whether any specific application's code is free of vulnerabilities like IDOR. This is an organizational process certification, not a code audit. | Accredited third-party certification bodies |
-| **SOC 2 Type II** | Whether the vendor's security controls (access management, change management, monitoring) actually operated effectively over a 6–12 month observation window. Dominant standard in North America. | Application-level security architecture. Two vendors can both hold SOC 2 and differ enormously in how well they implement server-side authorization. | Licensed CPA firms (US-based attestation framework) |
+| **SOC 2 Type II** | Whether the vendor's security controls (access management, change management, monitoring) actually operated effectively over a 6-12 month observation window. Dominant standard in North America. | Application-level security architecture. Two vendors can both hold SOC 2 and differ enormously in how well they implement server-side authorization. | Licensed CPA firms (US-based attestation framework) |
 | **OWASP ASVS** | A detailed, code-level checklist for verifying specific application security controls - including the exact server-side authorization checks that prevent IDOR. This is the credential that speaks directly to the "Security by Obscurity" failures described above. | Organizational security culture or long-term operational maturity - ASVS is scoped to the application, not the company. | Not a formal certifying body - verification is typically self-attested or performed by a third-party security firm against the published standard |
 
 **The practical implication for your RFP:** ISO 27001 and SOC 2 tell you whether the *organization* runs disciplined security processes. Neither one, by itself, tells you whether the specific application your Vietnamese or Dutch engineering pod is building actually enforces server-side RBAC on every endpoint. If a vendor offers only an ISO 27001 or SOC 2 certificate as proof of "secure code," ask the follow-up question this article opened with: show the specific SAST/DAST tooling and OWASP ASVS-aligned checklist applied to *this application*, not just the organization's paperwork.
@@ -112,27 +112,27 @@ Stop outsourcing your security architecture to cheap agencies. Contact our Amste
 
 ---
 
-## Frequently Asked Questions
+## FAQs
 
-### (Scenario: IT Director reviewing a vulnerability report) What is an IDOR vulnerability and why is it so common?
+### [Scenario: IT Director reviewing a vulnerability report] What is an IDOR vulnerability and why is it so common?
 Insecure Direct Object Reference (IDOR) happens when an application provides direct access to an object (like a database record) based on user-supplied input (like a URL parameter `id=5`), without verifying if the user is authorized to view it. It is common in cheap offshore development because it requires extra backend code and careful RBAC planning to prevent, which order-taker agencies usually skip.
 
-### (Scenario: CISO establishing vendor guidelines) Why isn't hiding a button on the frontend sufficient for security?
+### [Scenario: CISO establishing vendor guidelines] Why isn't hiding a button on the frontend sufficient for security?
 Because the frontend (the browser) is entirely controlled by the user. Any user with basic knowledge can open the browser's Developer Tools, unhide the button, or simply bypass the frontend entirely and send a malicious request directly to your backend API using a tool like Postman. All authorization logic must exist on the backend server, which the user cannot manipulate.
 
-### (Scenario: CTO planning a GDPR compliance audit) What is the difference between Data in Transit and Data at Rest encryption?
+### [Scenario: CTO planning a GDPR compliance audit] What is the difference between Data in Transit and Data at Rest encryption?
 Data in Transit (HTTPS) encrypts data as it travels between the user's browser and your server, stopping hackers from intercepting it on public Wi-Fi. Data at Rest encrypts the data as it is stored on your actual hard drives or databases. If a hacker breaches your server, Data at Rest encryption ensures they only steal unreadable ciphertext, not plain-text user emails and passwords.
 
-### (Scenario: VP Engineering setting up CI/CD pipelines) How can we automatically catch security flaws in offshore code?
+### [Scenario: VP Engineering setting up CI/CD pipelines] How can we automatically catch security flaws in offshore code?
 By integrating SAST (Static Application Security Testing) tools like SonarQube or Snyk into your CI/CD pipeline. These tools automatically scan the offshore team's code on every Pull Request. If they detect hardcoded passwords, SQL injection vulnerabilities, or obvious IDOR flaws, the pipeline automatically blocks the code from being merged into production.
 
-### (Scenario: Procurement Officer evaluating risk) How does Manifera ensure GDPR compliance with an offshore team?
+### [Scenario: Procurement Officer evaluating risk] How does Manifera ensure GDPR compliance with an offshore team?
 Through our Hybrid Offshore model. Our Dutch Architects act as the compliance firewall. Furthermore, we employ a Zero Trust development environment: our Vietnamese engineers never have access to production databases containing real PII. They build and test the software using strictly anonymized, synthetic data, ensuring GDPR compliance is maintained at all times.
 
-### (Scenario: CISO worried about risks outside the vendor's own code) Can our application be breached even if the vendor's custom code has no vulnerabilities?
+### [Scenario: CISO worried about risks outside the vendor's own code] Can our application be breached even if the vendor's custom code has no vulnerabilities?
 Yes. A typical web application depends on hundreds or thousands of third-party open-source packages that the vendor's engineers never wrote or reviewed, and a single unpatched or malicious package buried deep in that dependency tree (as happened with the Log4Shell vulnerability) can compromise the entire system. Demand a Software Bill of Materials (SBOM) and automated Software Composition Analysis (SCA) scanning on every build, so vulnerable or compromised dependencies are flagged and blocked before they reach production.
 
-### (Scenario: Procurement treating "ISO 27001 certified" as sufficient proof of secure code) If a vendor already holds ISO 27001 or SOC 2 certification, do we still need to ask about application-level security like IDOR?
+### [Scenario: Procurement treating "ISO 27001 certified" as sufficient proof of secure code] If a vendor already holds ISO 27001 or SOC 2 certification, do we still need to ask about application-level security like IDOR?
 Yes, and this is one of the most common procurement blind spots. ISO 27001 certifies that the vendor organization runs a disciplined Information Security Management System - documented policies, risk processes, continual improvement - audited at the organizational level. SOC 2 Type II certifies that specific operational controls functioned correctly over an observation window. Neither one is a code audit, and neither one verifies that a specific application enforces server-side authorization on every endpoint. A vendor can hold both certifications and still ship an application riddled with IDOR vulnerabilities, because those credentials were never designed to catch that class of bug. For application-level assurance, ask specifically about OWASP ASVS-aligned code verification, SAST/DAST tooling, and server-side RBAC enforcement - the certifications and the code audit answer different questions, and you need both.
 
 <script type="application/ld+json">
