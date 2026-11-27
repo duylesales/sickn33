@@ -32,7 +32,7 @@ You cannot manage a complex software project by throwing Jira tickets over a geo
 
 ## The Core Function of the Software Development Manager
 
-When you hire developers directly, you are buying *Syntax Knowledge* (the ability to write code). But enterprise software requires *Domain Knowledge* (understanding European business logic, data privacy laws, and scaling requirements).
+When you hire developers directly, you are buying *Syntax Knowledge* (the ability to write code). But enterprise software requires *Domain Knowledge* [understanding European business logic, data privacy laws, and scaling requirements].
 
 The **Software Development Manager** (SDM) or Tech Lead is the strategic bridge between Business Intent and Technical Execution. Without an SDM, offshore developers become "Order Takers." They will build exactly what the Jira ticket says, even if the ticket describes a structurally flawed feature.
 
@@ -67,7 +67,7 @@ An elite SDM answers with the four **DORA metrics** (DevOps Research and Assessm
 
 **3. Change Failure Rate** - the percentage of deployments that cause an incident, rollback, or hotfix in production. This is the metric that most directly punishes the "Feature Factory" behavior described above: a team racing through tickets without proper testing will show a change failure rate north of 15-20%, while a disciplined team stays under 5%.
 
-**4. Mean Time to Restore (MTTR)** - when something does break, how long does it take the team to detect it and restore service. This metric reveals whether the team has real observability (structured logging, alerting, dashboards) or is debugging blind via SSH and grep.
+**4. Mean Time to Restore (MTTR)** - when something does break, how long does it take the team to detect it and restore service. This metric reveals whether the team has real observability [structured logging, alerting, dashboards] or is debugging blind via SSH and grep.
 
 The reason these four metrics matter for offshore governance specifically: they are objective, they cannot be gamed by an offshore team eager to look productive to a distant client, and they expose architectural problems before those problems become outages. A Software Development Manager who reports Deployment Frequency and Change Failure Rate weekly is running an evidence-based engineering organization. One who reports only "tickets closed this sprint" is running a Feature Factory with better branding.
 
@@ -104,25 +104,22 @@ If you want the cost advantages of offshore engineering without sacrificing the 
 
 ---
 
-## Frequently Asked Questions
+## FAQs
 
-### (Scenario: Startup CEO scaling a tech team) Why did my project fail when I hired highly skilled offshore freelancers?
+### [Scenario: Startup CEO scaling a tech team] Why did my project fail when I hired highly skilled offshore freelancers?
 Because you hired for Syntax Knowledge (coding skills) but lacked Domain Knowledge and architectural governance. Without a Software Development Manager to translate your business goals into technical constraints, freelancers act as 'Order Takers'. They build exactly what is asked, without considering how it impacts the overall system architecture, leading to massive technical debt.
 
-### (Scenario: CTO overwhelmed with management tasks) What is the difference between a Developer and a Software Development Manager (SDM)?
+### [Scenario: CTO overwhelmed with management tasks] What is the difference between a Developer and a Software Development Manager (SDM)?
 A developer's primary job is to write code that fulfills a specific requirement. An SDM's job is to protect the architecture. The SDM decides *how* the requirement should be built, enforces coding standards through Pull Request reviews, manages the CI/CD pipeline, and ensures the code is scalable and secure before it ever reaches production.
 
-### (Scenario: VP Engineering auditing technical debt) How does an SDM prevent a team from becoming a 'Feature Factory'?
+### [Scenario: VP Engineering auditing technical debt] How does an SDM prevent a team from becoming a 'Feature Factory'?
 A Feature Factory is a team that measures success by how many Jira tickets they close, regardless of business value. An SDM prevents this by interrogating the requirements. If a requested feature is structurally dangerous or won't move the business KPI, the SDM pushes back on Product Management and proposes a leaner, safer technical alternative.
 
-### (Scenario: Procurement Director evaluating offshore agencies) How does Manifera's Hybrid Offshore model solve the management overhead problem?
+### [Scenario: Procurement Director evaluating offshore agencies] How does Manifera's Hybrid Offshore model solve the management overhead problem?
 When you hire standard offshore agencies, your internal Tech Lead must spend hours managing their code. In Manifera's Hybrid model, we provide a Dutch SDM who sits in Europe. This SDM acts as a buffer, understanding your business needs natively, and managing the Vietnamese engineering pod on your behalf. Your internal team focuses on strategy, not babysitting.
 
-### (Scenario: Lead Developer worried about code quality) How does the Dutch SDM ensure the Vietnamese pod writes high-quality code?
+### [Scenario: Lead Developer worried about code quality] How does the Dutch SDM ensure the Vietnamese pod writes high-quality code?
 Through strict architectural governance. The Dutch SDM designs the system architecture, sets up automated Static Application Security Testing (SAST) in the deployment pipeline, and mandates that every Pull Request must pass their manual review before being merged into the main branch. They enforce European engineering standards on every commit.
-
-### (Scenario: CEO asking how to evaluate an offshore team objectively) How do I know if my offshore engineering team is actually performing well, rather than just closing tickets?
-Ignore vanity metrics like lines of code or tickets closed - they reward busywork, not value. Instead, ask your SDM to report the four DORA metrics: Deployment Frequency, Lead Time for Changes, Change Failure Rate, and Mean Time to Restore. These are objective, cannot be gamed, and reveal whether the team is shipping safely or racing through tickets and creating hidden technical debt.
 
 <script type="application/ld+json">
 {
@@ -167,14 +164,6 @@ Ignore vanity metrics like lines of code or tickets closed - they reward busywor
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Through strict architectural governance. The Dutch SDM designs the system, implements automated security testing in the CI/CD pipeline, and manually reviews every Pull Request to enforce European engineering standards."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I know if my offshore engineering team is actually performing well, rather than just closing tickets?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Ignore vanity metrics like tickets closed. Track the four DORA metrics instead: Deployment Frequency, Lead Time for Changes, Change Failure Rate, and Mean Time to Restore. These objective figures cannot be gamed and expose whether a team is shipping safely or racing through work while creating hidden technical debt."
       }
     }
   ]
