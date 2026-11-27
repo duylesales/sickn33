@@ -113,27 +113,27 @@ If you are planning a SaaS build, do not trust your tenancy architecture to a ju
 
 ---
 
-## Frequently Asked Questions
+## FAQs
 
-### (Scenario: Startup Founder evaluating a SaaS MVP quote) Why shouldn't I just use simple application-level tenancy for my MVP?
+### [Scenario: Startup Founder evaluating a SaaS MVP quote] Why shouldn't I just use simple application-level tenancy for my MVP?
 Because if a data leak occurs during your MVP phase, your company's reputation will be permanently destroyed before you even launch Phase 2. Application-level tenancy relies entirely on human developers never making a single mistake across thousands of queries. It is an unacceptable level of risk when robust database-level tools like PostgreSQL Row-Level Security (RLS) are readily available and easy to implement from Day 1.
 
-### (Scenario: CTO planning for SOC2 compliance) What is PostgreSQL Row-Level Security (RLS)?
+### [Scenario: CTO planning for SOC2 compliance] What is PostgreSQL Row-Level Security (RLS)?
 RLS is a database feature that enforces data access policies at the database engine level, rather than in the application code (Node/PHP). It ensures that a query can physically only return rows that belong to the current authenticated tenant context. Even if a developer writes a completely unrestricted `SELECT *` query, the database engine intervenes and restricts the data, preventing cross-tenant leaks.
 
-### (Scenario: VP Engineering debating architecture) When is Row-Level Security (RLS) not enough?
+### [Scenario: VP Engineering debating architecture] When is Row-Level Security (RLS) not enough?
 RLS is sufficient for 90% of B2B SaaS applications. However, if you are selling to highly regulated industries (like banking, defense, or healthcare), they may demand Physical Database Separation (a dedicated database instance or schema just for their data) to comply with internal risk policies. They want mathematical proof that their data does not sit on the same hard drive as their competitors.
 
-### (Scenario: IT Director evaluating offshore agencies) How can I verify that an agency understands multi-tenant security?
+### [Scenario: IT Director evaluating offshore agencies] How can I verify that an agency understands multi-tenant security?
 Ask them this question during due diligence: *"How do you prevent a developer from writing a query that accidentally leaks data between tenants?"* If they answer, *"We use rigorous code reviews to catch missing tenant_ids,"* they are using vulnerable Application-Level Tenancy. If they answer, *"We use database-level Row-Level Security (RLS),"* they understand enterprise SaaS architecture.
 
-### (Scenario: Product Manager planning an enterprise tier) Why is Physical Database Separation so difficult to maintain?
+### [Scenario: Product Manager planning an enterprise tier] Why is Physical Database Separation so difficult to maintain?
 Because database migrations (changing the structure of tables when deploying a new feature) become a massive DevOps challenge. Instead of running a migration script once on a unified database, you must build automation pipelines to perfectly run that script across 500 separate tenant databases simultaneously without failing. It requires highly advanced CI/CD engineering.
 
-### (Scenario: CTO troubleshooting slow performance despite solid security) Our multi-tenant security architecture is solid, so why do customers complain the app is slow whenever one big client runs a large report?
+### [Scenario: CTO troubleshooting slow performance despite solid security] Our multi-tenant security architecture is solid, so why do customers complain the app is slow whenever one big client runs a large report?
 This is the Noisy Neighbor Problem, a resource-isolation issue rather than a security issue. RLS controls which rows a query can see, not how much CPU, memory, or connection pool capacity that query consumes. A large tenant's heavy report or export can exhaust shared database resources and slow every other tenant down. The fix is per-tenant connection pool limits, query timeouts with resource governors, routing heavy analytical workloads to a dedicated read replica, and tiered infrastructure for your largest accounts.
 
-### (Scenario: CTO deciding architecture before a board or security-audit presentation) Is there an industry-standard vocabulary for explaining our multi-tenancy trade-offs to auditors and investors?
+### [Scenario: CTO deciding architecture before a board or security-audit presentation] Is there an industry-standard vocabulary for explaining our multi-tenancy trade-offs to auditors and investors?
 Yes - AWS's SaaS Factory whitepaper on tenant isolation strategies defines three widely referenced models: Pool (tenants share compute and storage, isolation enforced in software - maps to Row-Level Security), Silo (each tenant gets fully dedicated resources - maps to Physical Database Separation), and Bridge (a mix, with specific services or accounts siloed while the rest stay pooled). Framing your architecture in this vocabulary lets a security auditor or board member quickly place your design against an industry-recognized standard instead of evaluating bespoke terminology from scratch.
 
 <script type="application/ld+json">
